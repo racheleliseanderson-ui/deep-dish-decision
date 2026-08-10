@@ -120,7 +120,7 @@ export type Dataset = {
   formalityOptions: string[];
   noiseBandOptions: string[];
   planningLoadOptions: string[];
-  records: Record[];
+  records: RestaurantRecord[];
 };
 
 type RecordTax = {
