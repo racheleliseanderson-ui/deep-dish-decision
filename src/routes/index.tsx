@@ -87,12 +87,8 @@ function Hub() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-background to-transparent" />
 
         <div className="mx-auto max-w-7xl px-4 pb-14 pt-10 sm:px-6 sm:pb-20 sm:pt-14">
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-            <span className="text-eyebrow">Salty &amp; Clever</span>
-            <span className="h-px w-10 bg-border-strong" />
-            <span className="text-eyebrow">Restaurant Intelligence Hub</span>
-            <ThemeToggle className="ml-auto" />
-          </div>
+          <SiteNav />
+
 
           <h1 className="mt-8 max-w-4xl font-display text-[2.6rem] font-normal leading-[0.98] tracking-[-0.02em] sm:text-6xl lg:text-[4.6rem]">
             A decision instrument,
