@@ -311,12 +311,30 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
                 </option>
               ))}
             </select>
-            <input
-              value={s.query}
-              onChange={(e) => set("query", e.target.value)}
-              placeholder="Search records, cities, signals"
-              className="min-w-[200px] flex-1 rounded-lg border border-input bg-surface-raised px-3 py-2 text-xs text-foreground placeholder:text-subtle"
-            />
+            <div className="relative min-w-0 flex-1 sm:min-w-[220px]">
+              <input
+                value={s.query}
+                onChange={(e) => set("query", e.target.value)}
+                type="search"
+                enterKeyHint="search"
+                autoComplete="off"
+                spellCheck={false}
+                aria-label="Search records, cities, signals"
+                placeholder="Search records, cities, signals"
+                className="tap w-full rounded-lg border border-input bg-surface-raised px-3 py-2 pr-10 text-xs text-foreground placeholder:text-subtle focus:outline-none focus:ring-2 focus:ring-ring"
+              />
+              {s.query ? (
+                <button
+                  type="button"
+                  onClick={() => set("query", "")}
+                  aria-label="Clear search"
+                  className="absolute right-1 top-1/2 flex size-9 -translate-y-1/2 items-center justify-center rounded-md text-subtle transition-colors hover:text-foreground"
+                >
+                  ×
+                </button>
+              ) : null}
+            </div>
+
           </div>
         </Field>
         <div className="ml-auto shrink-0">
