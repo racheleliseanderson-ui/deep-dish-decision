@@ -66,7 +66,7 @@ export function LayerStack({
       </div>
       <ul className="mt-1 divide-y divide-border">
         {findings.map((f) => (
-          <FindingRow key={f.id} f={f} compact={compact} />
+          <FindingRow key={f.id} f={f} compact={compact ?? false} />
         ))}
       </ul>
     </div>
