@@ -847,7 +847,7 @@ export function rank(list: RestaurantRecord[], s: Situation): Scored[] {
   return scored;
 }
 
-export function filterRecords(list: RestaurantRecord[], s: Situation): Record[] {
+export function filterRecords(list: RestaurantRecord[], s: Situation): RestaurantRecord[] {
   const q = s.query.trim().toLowerCase();
   return list.filter((r) => {
     if (s.regionGroup && r.regionGroup !== s.regionGroup) return false;
