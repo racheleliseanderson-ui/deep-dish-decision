@@ -2,68 +2,6 @@
   "runs": [
     {
       "kind": "enrich",
-      "startedAt": "2026-08-10T21:40:48.938Z",
-      "finishedAt": "2026-08-10T21:42:39.440Z",
-      "batchSize": 6,
-      "cities": [
-        "Helena, Montana",
-        "Billings, Montana",
-        "Missoula, Montana",
-        "Bozeman, Montana"
-      ],
-      "resolved": 6,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 86,
-      "corpusEnriched": 41,
-      "apiCalls": {
-        "google": 6,
-        "firecrawl": 15
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-40-48-936Z-enrich",
-      "records": [
-        {
-          "slug": "luccas",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "ten",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        },
-        {
-          "slug": "the-keep-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "walkers-grill",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        },
-        {
-          "slug": "bistro-enzo",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "blackbird-kitchen",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
       "startedAt": "2026-08-10T21:39:12.848Z",
       "finishedAt": "2026-08-10T21:39:36.090Z",
       "batchSize": 9,

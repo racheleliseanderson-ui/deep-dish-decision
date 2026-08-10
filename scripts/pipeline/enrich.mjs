@@ -21,6 +21,7 @@ import {
   snapshot,
   writeJson,
 } from "./lib.mjs";
+import { regionCode } from "./regions.mjs";
 import { summarize } from "./summarize.mjs";
 import { extractFromSite, pickSitePages } from "./site.mjs";
 
