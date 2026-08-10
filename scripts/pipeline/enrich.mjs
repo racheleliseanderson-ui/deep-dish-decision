@@ -86,7 +86,9 @@ function chooseMatch(record, places) {
     confidence += name * 0.4;
     if (cityOk) confidence += 0.1;
 
-    const acceptable = (host || phone || name >= 0.72) && cityOk && stateOk;
+    // City is a confidence signal, not a gate: recorded city names are often a
+    // coverage area ("Hood Canal") rather than the municipality Google returns.
+    const acceptable = (host || phone || name >= 0.72) && stateOk;
     if (!acceptable) continue;
     if (!best || confidence > best.confidence) {
       best = {
