@@ -240,6 +240,89 @@
   scrollbar-color: var(--color-border-strong) transparent;
 }
 
+/* Minimum comfortable touch target on phones, without changing type scale. */
+@utility tap {
+  min-height: 2.75rem;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Black-and-white reading: hue removed from every semantic token, meaning carried
+   by lightness and by the text labels that always accompany a colour. */
+.mode-mono {
+  --primary: oklch(0.62 0 0);
+  --primary-strong: oklch(0.74 0 0);
+  --primary-foreground: oklch(0.14 0 0);
+  --accent: oklch(0.34 0 0);
+  --accent-foreground: oklch(0.96 0 0);
+  --ring: oklch(0.7 0 0 / 60%);
+  --critical: oklch(0.94 0 0);
+  --critical-soft: oklch(1 0 0 / 16%);
+  --watch: oklch(0.78 0 0);
+  --watch-soft: oklch(1 0 0 / 11%);
+  --unknown: oklch(0.6 0 0);
+  --unknown-soft: oklch(1 0 0 / 8%);
+  --verified: oklch(0.86 0 0);
+  --verified-soft: oklch(1 0 0 / 13%);
+}
+
+.mode-mono:not(.dark) {
+  --critical: oklch(0.2 0 0);
+  --critical-soft: oklch(0 0 0 / 12%);
+  --watch: oklch(0.4 0 0);
+  --watch-soft: oklch(0 0 0 / 9%);
+  --unknown: oklch(0.55 0 0);
+  --unknown-soft: oklch(0 0 0 / 7%);
+  --verified: oklch(0.3 0 0);
+  --verified-soft: oklch(0 0 0 / 10%);
+  --primary: oklch(0.28 0 0);
+  --primary-strong: oklch(0.16 0 0);
+  --primary-foreground: oklch(0.99 0 0);
+}
+
+.mode-mono .grain-veil::after {
+  opacity: 0.16;
+}
+
+/* Colour-blind safe: blue / amber / magenta only — no red-green pairing anywhere. */
+.mode-cvd {
+  --critical: oklch(0.68 0.2 340);
+  --critical-soft: oklch(0.68 0.2 340 / 15%);
+  --watch: oklch(0.83 0.14 82);
+  --watch-soft: oklch(0.83 0.14 82 / 14%);
+  --unknown: oklch(0.72 0.04 250);
+  --unknown-soft: oklch(0.72 0.04 250 / 12%);
+  --verified: oklch(0.72 0.13 235);
+  --verified-soft: oklch(0.72 0.13 235 / 14%);
+  --primary: oklch(0.74 0.13 232);
+  --primary-strong: oklch(0.84 0.1 230);
+  --primary-foreground: oklch(0.16 0.02 240);
+  --ring: oklch(0.74 0.13 232 / 55%);
+}
+
+.mode-cvd:not(.dark) {
+  --primary: oklch(0.46 0.13 245);
+  --primary-strong: oklch(0.34 0.12 248);
+  --primary-foreground: oklch(0.99 0.005 240);
+  --critical: oklch(0.48 0.2 340);
+  --watch: oklch(0.52 0.12 78);
+  --verified: oklch(0.44 0.13 240);
+  --unknown: oklch(0.5 0.03 250);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
 @media print {
   .no-print {
     display: none !important;
