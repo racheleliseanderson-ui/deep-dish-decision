@@ -4,6 +4,7 @@ import { CompareDialog, CompareTray } from "@/components/rih/compare";
 import { DecisionBrief } from "@/components/rih/decision-brief";
 import { RecordCard } from "@/components/rih/record-card";
 import { SituationConsole } from "@/components/rih/situation-console";
+import { ThemeToggle } from "@/components/rih/theme-toggle";
 import heroPass from "@/assets/hero-pass.jpg";
 import { dataset, records } from "@/lib/dataset";
 import {
