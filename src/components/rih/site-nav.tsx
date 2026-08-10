@@ -1,47 +1,53 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { ThemeToggle } from "@/components/rih/theme-toggle";
+import { DisplayControls } from "@/components/rih/display-controls";
+import { useT } from "@/lib/i18n";
 import { useShortlist } from "@/lib/shortlist";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
-  { to: "/", label: "Instrument" },
-  { to: "/atlas", label: "Atlas" },
-  { to: "/shortlist", label: "Night plan" },
+  { to: "/", key: "nav.instrument" },
+  { to: "/guide", key: "nav.guide" },
+  { to: "/atlas", key: "nav.atlas" },
+  { to: "/console", key: "nav.console" },
+  { to: "/shortlist", key: "nav.shortlist" },
 ] as const;
 
 export function SiteNav({ className }: { className?: string }) {
   const { slugs } = useShortlist();
+  const { t } = useT();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   return (
-    <nav
-      className={cn(
-        "no-print flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] uppercase tracking-[0.16em]",
-        className,
-      )}
-      aria-label="Sections"
-    >
-      <span className="text-eyebrow">Salty &amp; Clever</span>
-      <span className="h-px w-8 bg-border-strong" />
-      {LINKS.map((l) => {
-        const active = l.to === "/" ? pathname === "/" : pathname.startsWith(l.to);
-        return (
-          <Link
-            key={l.to}
-            to={l.to}
-            className={cn(
-              "transition-colors duration-300",
-              active ? "text-primary" : "text-subtle hover:text-foreground",
-            )}
-          >
-            {l.label}
-            {l.to === "/shortlist" && slugs.length ? (
-              <span className="text-num ml-1.5 text-primary">{slugs.length}</span>
-            ) : null}
-          </Link>
-        );
-      })}
-      <ThemeToggle className="ml-auto" />
-    </nav>
+    <div className={cn("no-print flex flex-col gap-3 sm:flex-row sm:items-center", className)}>
+      <nav
+        className="-mx-1 flex min-w-0 flex-1 items-center gap-x-4 gap-y-2 overflow-x-auto px-1 text-[11px] uppercase tracking-[0.16em] scroll-slim sm:flex-wrap sm:overflow-visible"
+        aria-label={t("nav.sections")}
+      >
+        <span className="text-eyebrow shrink-0">{t("nav.brand")}</span>
+        <span className="hidden h-px w-8 shrink-0 bg-border-strong sm:block" />
+        {LINKS.map((l) => {
+          const active = l.to === "/" ? pathname === "/" : pathname.startsWith(l.to);
+          return (
+            <Link
+              key={l.to}
+              to={l.to}
+              aria-current={active ? "page" : undefined}
+              className={cn(
+                "tap inline-flex shrink-0 items-center transition-colors duration-300",
+                active
+                  ? "text-primary underline decoration-primary/50 decoration-1 underline-offset-8"
+                  : "text-subtle hover:text-foreground",
+              )}
+            >
+              {t(l.key)}
+              {l.to === "/shortlist" && slugs.length ? (
+                <span className="text-num ml-1.5 text-primary">{slugs.length}</span>
+              ) : null}
+            </Link>
+          );
+        })}
+      </nav>
+      <DisplayControls className="sm:ml-auto sm:shrink-0" />
+    </div>
   );
 }
