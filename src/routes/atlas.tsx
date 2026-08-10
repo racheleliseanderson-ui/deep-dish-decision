@@ -48,7 +48,7 @@ export const Route = createFileRoute("/atlas")({
 });
 
 function FacetTable({
-  title, // eslint-disable-line @typescript-eslint/no-unused-vars
+  title,
   note,
   rows,
   limit = 10,
