@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Restaurant Intelligence Hub — evidence-led restaurant decisions" },
+      { name: "description", content: "First-party restaurant evidence, scored against your situation: occasion fit, commitment, booking pathway and every question a restaurant has not answered." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Restaurant Intelligence Hub" },
+      { property: "og:description", content: "Evidence-led restaurant decisions — coverage, depth and the gaps kept visible." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
@@ -100,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
-const themeInit = `try{var m=localStorage.getItem("rih-theme");if(m!=="light"){document.documentElement.classList.add("dark")}}catch(e){document.documentElement.classList.add("dark")}`;
+const themeInit = `try{var d=document.documentElement;var m=localStorage.getItem("rih-theme");if(m!=="light"){d.classList.add("dark")}var c=localStorage.getItem("rih-contrast");if(c==="mono"){d.classList.add("mode-mono")}else if(c==="cvd"){d.classList.add("mode-cvd")}var l=localStorage.getItem("rih-locale");if(l==="es"){d.lang="es"}}catch(e){document.documentElement.classList.add("dark")}`;
 
 function RootShell({ children }: { children: ReactNode }) {
   return (

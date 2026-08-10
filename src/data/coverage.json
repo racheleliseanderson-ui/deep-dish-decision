@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-08-10T21:43:45.568Z",
+  "generatedAt": "2026-08-10T23:17:56.147Z",
   "totals": {
-    "records": 41,
-    "enriched": 41,
-    "resolved": 41,
+    "records": 81,
+    "enriched": 66,
+    "resolved": 66,
     "unresolved": 0,
-    "statesCovered": 4,
+    "statesCovered": 8,
     "statesTotal": 51,
-    "avgCompleteness": 86,
-    "withRating": 41,
-    "withPrice": 39
+    "avgCompleteness": 84,
+    "withRating": 66,
+    "withPrice": 63
   },
   "distribution": [
     {
       "label": "90-100",
-      "count": 6
+      "count": 7
     },
     {
       "label": "75-89",
-      "count": 35
+      "count": 55
     },
     {
       "label": "50-74",
-      "count": 0
+      "count": 4
     },
     {
       "label": "under 50",
-      "count": 0
+      "count": 15
     }
   ],
   "states": [
@@ -37,6 +37,38 @@
       "avgCompleteness": 85,
       "population": 7812880,
       "perMillion": 2.05
+    },
+    {
+      "code": "CA",
+      "count": 10,
+      "enriched": 10,
+      "avgCompleteness": 81,
+      "population": 38965193,
+      "perMillion": 0.26
+    },
+    {
+      "code": "IL",
+      "count": 10,
+      "enriched": 5,
+      "avgCompleteness": 81,
+      "population": 12549689,
+      "perMillion": 0.8
+    },
+    {
+      "code": "NY",
+      "count": 10,
+      "enriched": 10,
+      "avgCompleteness": 77,
+      "population": 19571216,
+      "perMillion": 0.51
+    },
+    {
+      "code": "TX",
+      "count": 10,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 30503301,
+      "perMillion": 0.33
     },
     {
       "code": "OR",
@@ -92,14 +124,6 @@
       "enriched": 0,
       "avgCompleteness": 0,
       "population": 7431344,
-      "perMillion": 0
-    },
-    {
-      "code": "CA",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 38965193,
       "perMillion": 0
     },
     {
@@ -164,14 +188,6 @@
       "enriched": 0,
       "avgCompleteness": 0,
       "population": 3207004,
-      "perMillion": 0
-    },
-    {
-      "code": "IL",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 12549689,
       "perMillion": 0
     },
     {
@@ -319,14 +335,6 @@
       "perMillion": 0
     },
     {
-      "code": "NY",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 19571216,
-      "perMillion": 0
-    },
-    {
       "code": "OH",
       "count": 0,
       "enriched": 0,
@@ -380,14 +388,6 @@
       "enriched": 0,
       "avgCompleteness": 0,
       "population": 7126489,
-      "perMillion": 0
-    },
-    {
-      "code": "TX",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 30503301,
       "perMillion": 0
     },
     {
@@ -524,6 +524,19 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:41:24.517Z",
       "addedAt": null
+    },
+    {
+      "slug": "joey-dtla",
+      "title": "JOEY DTLA",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 92,
+      "matchStatus": "resolved",
+      "rating": 4.8,
+      "reviewCount": 5653,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:10.154Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
     },
     {
       "slug": "nue",
@@ -706,6 +719,84 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:41:11.737Z",
       "addedAt": null
+    },
+    {
+      "slug": "carmine-s-44th-street-nyc",
+      "title": "Carmine's - 44th Street - NYC",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 19354,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:05:55.804Z",
+      "addedAt": "2026-08-10T22:54:31.693Z"
+    },
+    {
+      "slug": "au-cheval",
+      "title": "Au Cheval",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 6846,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:06:13.448Z",
+      "addedAt": "2026-08-10T22:54:31.695Z"
+    },
+    {
+      "slug": "e-lephante",
+      "title": "Élephante",
+      "stateCode": "CA",
+      "city": "Santa Monica",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.3,
+      "reviewCount": 3326,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:33.978Z",
+      "addedAt": "2026-08-10T22:54:32.854Z"
+    },
+    {
+      "slug": "home-restaurant",
+      "title": "Home Restaurant",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 3206,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:09:11.490Z",
+      "addedAt": "2026-08-10T22:54:32.854Z"
+    },
+    {
+      "slug": "stk-steakhouse",
+      "title": "STK Steakhouse",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 17801,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T23:09:20.258Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
+    },
+    {
+      "slug": "the-purple-pig-restaurant",
+      "title": "The Purple Pig Restaurant",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 7457,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:10:07.244Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
     },
     {
       "slug": "canlis",
@@ -955,6 +1046,32 @@
       "addedAt": null
     },
     {
+      "slug": "philippe-the-original",
+      "title": "Philippe The Original",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 12245,
+      "priceBand": "$",
+      "lastEnrichedAt": "2026-08-10T23:07:21.174Z",
+      "addedAt": "2026-08-10T22:54:32.852Z"
+    },
+    {
+      "slug": "the-dearborn",
+      "title": "The Dearborn",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 9961,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:09:43.254Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
+    },
+    {
       "slug": "ariana",
       "title": "Ariana",
       "stateCode": "OR",
@@ -979,164 +1096,567 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:35:23.576Z",
       "addedAt": null
+    },
+    {
+      "slug": "buddakan",
+      "title": "Buddakan",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 79,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 5893,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T23:06:45.778Z",
+      "addedAt": "2026-08-10T22:54:31.695Z"
+    },
+    {
+      "slug": "boucherie-union-square",
+      "title": "Boucherie Union Square",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 79,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 5218,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:07:03.893Z",
+      "addedAt": "2026-08-10T22:54:31.695Z"
+    },
+    {
+      "slug": "bottega-louie",
+      "title": "Bottega Louie",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 79,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 7770,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:07:30.117Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
+    },
+    {
+      "slug": "re-publique",
+      "title": "République",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 79,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 7306,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:07:52.162Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
+    },
+    {
+      "slug": "chubby-cattle-bbq-little-tokyo",
+      "title": "Chubby Cattle BBQ | Little Tokyo",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 79,
+      "matchStatus": "resolved",
+      "rating": 4.9,
+      "reviewCount": 3914,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:25.248Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
+    },
+    {
+      "slug": "balthazar",
+      "title": "Balthazar",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 75,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 7875,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:06:09.273Z",
+      "addedAt": "2026-08-10T22:54:31.694Z"
+    },
+    {
+      "slug": "fraunces-tavern",
+      "title": "Fraunces Tavern",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 75,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 6808,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:06:24.345Z",
+      "addedAt": "2026-08-10T22:54:31.695Z"
+    },
+    {
+      "slug": "gramercy-tavern",
+      "title": "Gramercy Tavern",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 75,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 4982,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T23:07:12.473Z",
+      "addedAt": "2026-08-10T22:54:31.696Z"
+    },
+    {
+      "slug": "le-bernardin",
+      "title": "Le Bernardin",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 75,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 4642,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T23:07:17.031Z",
+      "addedAt": "2026-08-10T22:54:31.696Z"
+    },
+    {
+      "slug": "bestia",
+      "title": "Bestia",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 75,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 4063,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:21.100Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
+    },
+    {
+      "slug": "girl-the-goat-los-angeles",
+      "title": "Girl & the Goat Los Angeles",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 75,
+      "matchStatus": "resolved",
+      "rating": 4.8,
+      "reviewCount": 3823,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:29.577Z",
+      "addedAt": "2026-08-10T22:54:32.854Z"
+    },
+    {
+      "slug": "aba",
+      "title": "Aba",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 75,
+      "matchStatus": "resolved",
+      "rating": 4.8,
+      "reviewCount": 10928,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:09:35.877Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
+    },
+    {
+      "slug": "the-smith",
+      "title": "The Smith",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 71,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 6365,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:06:28.792Z",
+      "addedAt": "2026-08-10T22:54:31.695Z"
+    },
+    {
+      "slug": "perch",
+      "title": "Perch",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 71,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 7650,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:07:34.406Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
+    },
+    {
+      "slug": "summer-house-santa-monica",
+      "title": "Summer House Santa Monica",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 71,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 8309,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:09:49.503Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
+    },
+    {
+      "slug": "pier-17",
+      "title": "Pier 17",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 12459,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-10T23:06:02.680Z",
+      "addedAt": "2026-08-10T22:54:31.694Z"
+    },
+    {
+      "slug": "river-roast",
+      "title": "River Roast",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:34.017Z"
+    },
+    {
+      "slug": "il-porcellino",
+      "title": "Il Porcellino",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:34.018Z"
+    },
+    {
+      "slug": "alla-vita",
+      "title": "Alla Vita",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:34.018Z"
+    },
+    {
+      "slug": "siena-tavern",
+      "title": "Siena Tavern",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:34.018Z"
+    },
+    {
+      "slug": "maple-ash",
+      "title": "Maple & Ash",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:34.018Z"
+    },
+    {
+      "slug": "kitchen-kocktails",
+      "title": "Kitchen + Kocktails",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.174Z"
+    },
+    {
+      "slug": "terry-black-s-barbecue",
+      "title": "Terry Black's Barbecue",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.174Z"
+    },
+    {
+      "slug": "y-o-ranch-steakhouse",
+      "title": "Y.O. Ranch Steakhouse",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.174Z"
+    },
+    {
+      "slug": "the-woolworth",
+      "title": "The Woolworth",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.175Z"
+    },
+    {
+      "slug": "3eleven-kitchen-and-cocktails",
+      "title": "3Eleven Kitchen and Cocktails",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.175Z"
+    },
+    {
+      "slug": "the-hampton-social-dallas",
+      "title": "The Hampton Social - Dallas",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.175Z"
+    },
+    {
+      "slug": "kenny-s-wood-fired-grill",
+      "title": "Kenny's Wood Fired Grill",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.177Z"
+    },
+    {
+      "slug": "perry-s-steakhouse-grille",
+      "title": "Perry's Steakhouse & Grille",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.178Z"
+    },
+    {
+      "slug": "the-henry",
+      "title": "The Henry",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.178Z"
+    },
+    {
+      "slug": "chet-s-dallas",
+      "title": "Chet's Dallas",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-10T22:54:35.178Z"
     }
   ],
   "recent": [
     {
-      "slug": "blackbird-kitchen",
-      "title": "Blackbird Kitchen",
-      "stateCode": "MT",
-      "city": "Bozeman",
-      "completeness": 83,
-      "matchStatus": "resolved",
-      "rating": 4.6,
-      "reviewCount": 1057,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-10T21:42:33.489Z",
-      "addedAt": null
-    },
-    {
-      "slug": "bistro-enzo",
-      "title": "Bistro Enzo",
-      "stateCode": "MT",
-      "city": "Billings",
-      "completeness": 83,
-      "matchStatus": "resolved",
-      "rating": 4.5,
-      "reviewCount": 569,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-10T21:42:21.008Z",
-      "addedAt": null
-    },
-    {
-      "slug": "walkers-grill",
-      "title": "Walkers Grill",
-      "stateCode": "MT",
-      "city": "Billings",
-      "completeness": 92,
-      "matchStatus": "resolved",
-      "rating": 4.6,
-      "reviewCount": 884,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-10T21:41:24.517Z",
-      "addedAt": null
-    },
-    {
-      "slug": "the-keep-restaurant",
-      "title": "The Keep Restaurant",
-      "stateCode": "MT",
-      "city": "Missoula",
+      "slug": "the-purple-pig-restaurant",
+      "title": "The Purple Pig Restaurant",
+      "stateCode": "IL",
+      "city": "Chicago",
       "completeness": 88,
       "matchStatus": "resolved",
       "rating": 4.6,
-      "reviewCount": 604,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-10T21:41:11.737Z",
-      "addedAt": null
-    },
-    {
-      "slug": "ten",
-      "title": "TEN",
-      "stateCode": "MT",
-      "city": "Billings",
-      "completeness": 92,
-      "matchStatus": "resolved",
-      "rating": 4.2,
-      "reviewCount": 270,
+      "reviewCount": 7457,
       "priceBand": "$$$",
-      "lastEnrichedAt": "2026-08-10T21:41:00.154Z",
-      "addedAt": null
+      "lastEnrichedAt": "2026-08-10T23:10:07.244Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
     },
     {
-      "slug": "luccas",
-      "title": "Lucca’s",
-      "stateCode": "MT",
-      "city": "Helena",
+      "slug": "summer-house-santa-monica",
+      "title": "Summer House Santa Monica",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 71,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 8309,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:09:49.503Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
+    },
+    {
+      "slug": "the-dearborn",
+      "title": "The Dearborn",
+      "stateCode": "IL",
+      "city": "Chicago",
       "completeness": 83,
       "matchStatus": "resolved",
       "rating": 4.7,
-      "reviewCount": 479,
+      "reviewCount": 9961,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-10T21:40:48.938Z",
-      "addedAt": null
+      "lastEnrichedAt": "2026-08-10T23:09:43.254Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
     },
     {
-      "slug": "the-lively",
-      "title": "The Lively",
-      "stateCode": "ID",
-      "city": "Boise",
-      "completeness": 88,
+      "slug": "aba",
+      "title": "Aba",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 75,
       "matchStatus": "resolved",
-      "rating": 4.4,
-      "reviewCount": 432,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-10T21:39:26.892Z",
-      "addedAt": null
-    },
-    {
-      "slug": "anthonys-at-columbia-point",
-      "title": "Anthony’s at Columbia Point",
-      "stateCode": "WA",
-      "city": "Richland",
-      "completeness": 92,
-      "matchStatus": "resolved",
-      "rating": 4.5,
-      "reviewCount": 2427,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-10T21:39:18.330Z",
-      "addedAt": null
-    },
-    {
-      "slug": "crafted-yakima",
-      "title": "Crafted Yakima",
-      "stateCode": "WA",
-      "city": "Yakima",
-      "completeness": 83,
-      "matchStatus": "resolved",
-      "rating": 4.7,
-      "reviewCount": 570,
+      "rating": 4.8,
+      "reviewCount": 10928,
       "priceBand": "$$$",
-      "lastEnrichedAt": "2026-08-10T21:39:12.848Z",
-      "addedAt": null
+      "lastEnrichedAt": "2026-08-10T23:09:35.877Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
     },
     {
-      "slug": "peerless-restaurant-bar",
-      "title": "Peerless Restaurant & Bar",
-      "stateCode": "OR",
-      "city": "Ashland",
+      "slug": "stk-steakhouse",
+      "title": "STK Steakhouse",
+      "stateCode": "IL",
+      "city": "Chicago",
       "completeness": 88,
       "matchStatus": "resolved",
-      "rating": 4.5,
-      "reviewCount": 356,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-10T21:38:56.709Z",
-      "addedAt": null
-    },
-    {
-      "slug": "wild-mountain-food-drink",
-      "title": "Wild Mountain Food + Drink",
-      "stateCode": "BC",
-      "city": "Sooke",
-      "completeness": 83,
-      "matchStatus": "resolved",
       "rating": 4.7,
-      "reviewCount": 551,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-10T21:38:33.546Z",
-      "addedAt": null
-    },
-    {
-      "slug": "araxi-restaurant-oyster-bar",
-      "title": "Araxi Restaurant + Oyster Bar",
-      "stateCode": "BC",
-      "city": "Whistler",
-      "completeness": 83,
-      "matchStatus": "resolved",
-      "rating": 4.5,
-      "reviewCount": 2361,
+      "reviewCount": 17801,
       "priceBand": "$$$$",
-      "lastEnrichedAt": "2026-08-10T21:38:14.717Z",
-      "addedAt": null
+      "lastEnrichedAt": "2026-08-10T23:09:20.258Z",
+      "addedAt": "2026-08-10T22:54:34.017Z"
+    },
+    {
+      "slug": "home-restaurant",
+      "title": "Home Restaurant",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 3206,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:09:11.490Z",
+      "addedAt": "2026-08-10T22:54:32.854Z"
+    },
+    {
+      "slug": "e-lephante",
+      "title": "Élephante",
+      "stateCode": "CA",
+      "city": "Santa Monica",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.3,
+      "reviewCount": 3326,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:33.978Z",
+      "addedAt": "2026-08-10T22:54:32.854Z"
+    },
+    {
+      "slug": "girl-the-goat-los-angeles",
+      "title": "Girl & the Goat Los Angeles",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 75,
+      "matchStatus": "resolved",
+      "rating": 4.8,
+      "reviewCount": 3823,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:29.577Z",
+      "addedAt": "2026-08-10T22:54:32.854Z"
+    },
+    {
+      "slug": "chubby-cattle-bbq-little-tokyo",
+      "title": "Chubby Cattle BBQ | Little Tokyo",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 79,
+      "matchStatus": "resolved",
+      "rating": 4.9,
+      "reviewCount": 3914,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:25.248Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
+    },
+    {
+      "slug": "bestia",
+      "title": "Bestia",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 75,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 4063,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:21.100Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
+    },
+    {
+      "slug": "joey-dtla",
+      "title": "JOEY DTLA",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 92,
+      "matchStatus": "resolved",
+      "rating": 4.8,
+      "reviewCount": 5653,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T23:08:10.154Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
+    },
+    {
+      "slug": "re-publique",
+      "title": "République",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 79,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 7306,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T23:07:52.162Z",
+      "addedAt": "2026-08-10T22:54:32.853Z"
     }
   ],
   "queue": {
@@ -1144,57 +1664,9 @@
     "restaurantsPerRun": 25,
     "citiesPerRun": 1,
     "dailyCap": 200,
-    "pending": 79,
-    "done": 0,
+    "pending": 75,
+    "done": 4,
     "next": [
-      {
-        "city": "New York",
-        "stateCode": "NY",
-        "population": 19498249,
-        "priority": 1,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Los Angeles",
-        "stateCode": "CA",
-        "population": 12799100,
-        "priority": 2,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Chicago",
-        "stateCode": "IL",
-        "population": 9262825,
-        "priority": 3,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Dallas",
-        "stateCode": "TX",
-        "population": 8100037,
-        "priority": 4,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
       {
         "city": "Houston",
         "stateCode": "TX",
@@ -1266,10 +1738,121 @@
         "inserted": 0,
         "lastRunAt": null,
         "note": ""
+      },
+      {
+        "city": "Boston",
+        "stateCode": "MA",
+        "population": 4919179,
+        "priority": 11,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Riverside",
+        "stateCode": "CA",
+        "population": 4688053,
+        "priority": 12,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "San Francisco",
+        "stateCode": "CA",
+        "population": 4566961,
+        "priority": 13,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Detroit",
+        "stateCode": "MI",
+        "population": 4342304,
+        "priority": 14,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
       }
     ]
   },
   "runs": [
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T23:05:55.804Z",
+      "batchSize": 25,
+      "inserted": 0,
+      "cities": [
+        "New York, New York",
+        "Los Angeles, California",
+        "Santa Monica, California",
+        "Chicago, Illinois"
+      ],
+      "resolved": 25,
+      "unresolved": 0,
+      "avgCompleteness": 84,
+      "apiCalls": {
+        "google": 25,
+        "firecrawl": 74
+      },
+      "retries": 28,
+      "failures": 4,
+      "flagged": false
+    },
+    {
+      "kind": "discover",
+      "startedAt": "2026-08-10T22:54:30.345Z",
+      "batchSize": 10,
+      "inserted": 40,
+      "cities": [
+        {
+          "city": "New York, NY",
+          "found": 37,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Los Angeles, CA",
+          "found": 31,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Chicago, IL",
+          "found": 32,
+          "inserted": 10,
+          "duplicates": 2
+        },
+        {
+          "city": "Dallas, TX",
+          "found": 30,
+          "inserted": 10,
+          "duplicates": 1
+        }
+      ],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {
+        "placesSearchText": 8
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
     {
       "kind": "enrich",
       "startedAt": "2026-08-10T21:40:48.938Z",
@@ -1411,48 +1994,6 @@
       },
       "retries": 10,
       "failures": 1,
-      "flagged": false
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:33:02.215Z",
-      "batchSize": 10,
-      "inserted": 0,
-      "cities": [
-        "Seattle, Washington",
-        "Portland, Oregon",
-        "Boise, Idaho",
-        "Bend, Oregon"
-      ],
-      "resolved": 10,
-      "unresolved": 0,
-      "avgCompleteness": 86,
-      "apiCalls": {
-        "google": 10,
-        "firecrawl": 27
-      },
-      "retries": 8,
-      "failures": 1,
-      "flagged": false
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:32:40.599Z",
-      "batchSize": 2,
-      "inserted": 0,
-      "cities": [
-        "Seattle, Washington",
-        "Portland, Oregon"
-      ],
-      "resolved": 2,
-      "unresolved": 0,
-      "avgCompleteness": 83,
-      "apiCalls": {
-        "google": 2,
-        "firecrawl": 2
-      },
-      "retries": 0,
-      "failures": 0,
       "flagged": false
     }
   ]

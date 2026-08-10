@@ -1,0 +1,408 @@
+import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
+import { GrowBar, Reveal } from "@/components/rih/reveal";
+import { SiteNav } from "@/components/rih/site-nav";
+import coverage from "@/data/coverage.json";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useMemo, useState } from "react";
+
+export const Route = createFileRoute("/console")({
+  head: () => ({
+    meta: [
+      { title: "Coverage Console — Restaurant Intelligence Hub" },
+      {
+        name: "description",
+        content:
+          "Live coverage of the restaurant corpus: records by state, completeness scores, recent enrichment, pipeline quota and the cities still queued for discovery.",
+      },
+      { property: "og:title", content: "Coverage Console — where the corpus is thin" },
+      {
+        property: "og:description",
+        content:
+          "State-by-state coverage, completeness distribution, recent additions and the controlled expansion queue.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
+  component: Console,
+});
+
+const dt = (iso: string | null | undefined) =>
+  iso ? new Date(iso).toISOString().slice(0, 16).replace("T", " ") : "—";
+
+function scoreTone(score: number) {
+  if (score >= 85) return "verified" as const;
+  if (score >= 70) return "primary" as const;
+  if (score >= 50) return "watch" as const;
+  return "critical" as const;
+}
+
+function Console() {
+  const { totals, states, distribution, records, recent, queue, runs, outsideUs, generatedAt } =
+    coverage;
+  const [query, setQuery] = useState("");
+  const [minScore, setMinScore] = useState(0);
+  const [state, setState] = useState("");
+
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return records.filter(
+      (r) =>
+        r.completeness >= minScore &&
+        (!state || r.stateCode === state) &&
+        (!q ||
+          r.title.toLowerCase().includes(q) ||
+          String(r.city ?? "").toLowerCase().includes(q) ||
+          String(r.stateCode ?? "").toLowerCase().includes(q) ||
+          r.slug.includes(q)),
+    );
+  }, [query, minScore, state, records]);
+
+  const maxStateCount = Math.max(...states.map((s) => s.count), 1);
+  const covered = states.filter((s) => s.count > 0);
+  const empty = states.filter((s) => s.count === 0);
+
+  return (
+    <main className="min-h-dvh pb-28">
+      <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
+        <div className="mx-auto max-w-7xl px-4 pb-14 pt-8 sm:px-6 sm:pb-20">
+          <SiteNav />
+          <h1 className="mt-10 max-w-4xl font-display text-[2.2rem] font-normal leading-[1.02] tracking-[-0.02em] sm:text-5xl lg:text-[3.9rem]">
+            Coverage console —
+            <br />
+            <span className="text-primary">how far the corpus reaches.</span>
+          </h1>
+          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            Counted at {dt(generatedAt)} UTC from the enrichment ledger on disk. Completeness is a
+            24-check score over address, hours, contact, booking path, price, rating, amenities,
+            policy language and provenance — a low score means fields are unstated, not wrong.
+          </p>
+
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <Stat
+              label="Records"
+              value={totals.records}
+              note={`${totals.enriched} carry third-party enrichment`}
+            />
+            <Stat
+              label="Mean completeness"
+              value={`${totals.avgCompleteness}%`}
+              note={`${totals.resolved} matched, ${totals.unresolved} unresolved`}
+              tone="verified"
+            />
+            <Stat
+              label="US states covered"
+              value={`${totals.statesCovered}/${totals.statesTotal}`}
+              note={`${empty.length} still empty`}
+              tone="unknown"
+            />
+            <Stat
+              label="Queue pending"
+              value={queue.pending}
+              note={
+                queue.paused
+                  ? "Expansion paused"
+                  : `${queue.restaurantsPerRun}/run · cap ${queue.dailyCap}/day`
+              }
+              tone={queue.paused ? "critical" : "verified"}
+            />
+          </div>
+        </div>
+      </header>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        {/* Completeness distribution */}
+        <Reveal as="section" className="mt-12">
+          <div className="plate p-6 sm:p-8">
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <Eyebrow>Completeness distribution</Eyebrow>
+                <h2 className="mt-2 font-display text-2xl leading-tight tracking-tight sm:text-3xl">
+                  Where the depth actually sits.
+                </h2>
+              </div>
+              <p className="max-w-md text-[12px] leading-relaxed text-subtle">
+                {totals.withRating} records carry an aggregate rating, {totals.withPrice} carry a
+                price band. Everything else stays open rather than being filled by inference.
+              </p>
+            </div>
+            <ul className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {distribution.map((band) => (
+                <li key={band.label} className="rounded-xl border border-border p-4">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <span className="text-[13px] text-foreground">{band.label}%</span>
+                    <span className="text-num text-[15px] text-foreground">{band.count}</span>
+                  </div>
+                  <GrowBar
+                    className="mt-3"
+                    value={(band.count / Math.max(totals.records, 1)) * 100}
+                    tone={
+                      band.label === "90-100"
+                        ? "verified"
+                        : band.label === "under 50"
+                          ? "critical"
+                          : "primary"
+                    }
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Reveal>
+
+        <Rule className="my-14" />
+
+        {/* Geography */}
+        <Reveal as="section">
+          <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+            <div className="min-w-0">
+              <div className="flex items-baseline justify-between gap-3">
+                <Eyebrow>Records by US state</Eyebrow>
+                <span className="text-num text-[11px] text-subtle">{covered.length} with records</span>
+              </div>
+              <ul className="mt-4 divide-y divide-border">
+                {covered.map((s) => (
+                  <li key={s.code} className="py-3">
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="text-num text-[13px] text-foreground">{s.code}</span>
+                      <span className="text-num shrink-0 text-[13px] text-muted-foreground">
+                        {s.count}
+                        <span className="text-subtle"> · {s.avgCompleteness}% mean</span>
+                      </span>
+                    </div>
+                    <GrowBar
+                      className="mt-2"
+                      value={(s.count / maxStateCount) * 100}
+                      tone={scoreTone(s.avgCompleteness)}
+                    />
+                    <p className="mt-1.5 text-[11px] text-subtle">
+                      {s.enriched}/{s.count} enriched · {s.perMillion} per million residents
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="min-w-0">
+              <Eyebrow>Not yet represented</Eyebrow>
+              <p className="mt-2 text-[12px] leading-relaxed text-subtle">
+                These states hold no record yet. They are queued by population, not filled to make a
+                map look complete.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {empty.map((s) => (
+                  <span
+                    key={s.code}
+                    className="text-num rounded-md border border-border bg-surface-raised px-2 py-1 text-[11px] text-subtle"
+                  >
+                    {s.code}
+                  </span>
+                ))}
+              </div>
+
+              {outsideUs.length ? (
+                <>
+                  <Eyebrow className="mt-8">Outside the United States</Eyebrow>
+                  <ul className="mt-3 divide-y divide-border">
+                    {outsideUs.map((o) => (
+                      <li key={o.code} className="flex items-baseline justify-between py-2">
+                        <span className="text-num text-[12px] text-foreground">{o.code}</span>
+                        <span className="text-num text-[12px] text-subtle">
+                          {o.count} · {o.avgCompleteness}%
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
+
+              <Eyebrow className="mt-8">Next cities queued</Eyebrow>
+              <ul className="mt-3 divide-y divide-border">
+                {queue.next.map((c) => (
+                  <li key={`${c.city}-${c.stateCode}`} className="flex items-baseline justify-between gap-3 py-2">
+                    <span className="truncate text-[12px] text-foreground">
+                      {c.city}, {c.stateCode}
+                    </span>
+                    <span className="text-num shrink-0 text-[11px] text-subtle">
+                      #{c.priority} · {c.tier}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Reveal>
+
+        <Rule className="my-14" />
+
+        {/* Record ledger with search */}
+        <Reveal as="section">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <Eyebrow>Record ledger</Eyebrow>
+              <h2 className="mt-2 font-display text-2xl leading-tight tracking-tight sm:text-3xl">
+                Search the corpus by name, city or state.
+              </h2>
+            </div>
+            <Chip tone={filtered.length === records.length ? "neutral" : "accent"}>
+              <span className="text-num">{filtered.length}</span> of {records.length} shown
+            </Chip>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            <div className="relative min-w-0 flex-1 sm:min-w-[260px]">
+              <input
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                type="search"
+                enterKeyHint="search"
+                autoComplete="off"
+                placeholder="Search name, city, state code"
+                aria-label="Search the record ledger"
+                className="tap w-full rounded-lg border border-input bg-surface-raised px-3 py-2 pr-10 text-[13px] text-foreground placeholder:text-subtle focus:outline-none focus:ring-2 focus:ring-ring"
+              />
+              {query ? (
+                <button
+                  type="button"
+                  onClick={() => setQuery("")}
+                  aria-label="Clear search"
+                  className="absolute right-1 top-1/2 flex size-9 -translate-y-1/2 items-center justify-center rounded-md text-subtle transition-colors hover:text-foreground"
+                >
+                  ×
+                </button>
+              ) : null}
+            </div>
+            <select
+              value={state}
+              onChange={(e) => setState(e.target.value)}
+              aria-label="Filter by state"
+              className="tap rounded-lg border border-input bg-surface-raised px-3 py-2 text-[13px] text-foreground"
+            >
+              <option value="">All states</option>
+              {covered.map((s) => (
+                <option key={s.code} value={s.code}>
+                  {s.code} ({s.count})
+                </option>
+              ))}
+            </select>
+            <div
+              className="flex items-center gap-0.5 rounded-lg border border-border bg-surface-raised/70 p-0.5"
+              role="group"
+              aria-label="Minimum completeness"
+            >
+              {[0, 50, 75, 90].map((v) => (
+                <button
+                  key={v}
+                  type="button"
+                  onClick={() => setMinScore(v)}
+                  aria-pressed={minScore === v}
+                  className={`tap min-w-11 rounded-md px-2.5 text-[11px] uppercase tracking-[0.12em] transition-colors ${
+                    minScore === v ? "bg-primary/15 text-primary" : "text-subtle hover:text-foreground"
+                  }`}
+                >
+                  {v === 0 ? "All" : `${v}+`}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <ul className="mt-6 divide-y divide-border">
+            {filtered.slice(0, 120).map((r) => (
+              <li key={r.slug} className="py-3">
+                <Link
+                  to="/record/$slug"
+                  params={{ slug: r.slug }}
+                  className="tap group flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1"
+                >
+                  <span className="min-w-0 truncate text-[13px] text-foreground transition-colors group-hover:text-primary">
+                    {r.title}
+                  </span>
+                  <span className="text-num shrink-0 text-[12px] text-muted-foreground">
+                    {r.completeness}%
+                  </span>
+                </Link>
+                <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-subtle">
+                  <span>
+                    {r.city || "—"}
+                    {r.stateCode ? `, ${r.stateCode}` : ""}
+                  </span>
+                  <span>{r.matchStatus}</span>
+                  {r.priceBand ? <span>{r.priceBand}</span> : null}
+                  {r.rating != null ? (
+                    <span className="text-num">
+                      {r.rating} · {r.reviewCount ?? 0} reviews
+                    </span>
+                  ) : (
+                    <span>rating unstated</span>
+                  )}
+                  <span>enriched {dt(r.lastEnrichedAt)}</span>
+                </div>
+                <GrowBar className="mt-2" value={r.completeness} tone={scoreTone(r.completeness)} />
+              </li>
+            ))}
+          </ul>
+          {filtered.length > 120 ? (
+            <p className="mt-4 text-[12px] text-subtle">
+              Showing the first 120 matches — narrow the search to see the rest.
+            </p>
+          ) : null}
+          {!filtered.length ? (
+            <p className="mt-6 text-[13px] text-muted-foreground">
+              No record matches that search. Clear the filters to see the full ledger.
+            </p>
+          ) : null}
+        </Reveal>
+
+        <Rule className="my-14" />
+
+        {/* Pipeline */}
+        <Reveal as="section">
+          <div className="grid gap-10 lg:grid-cols-2">
+            <div>
+              <Eyebrow>Recent enrichment</Eyebrow>
+              <ul className="mt-4 divide-y divide-border">
+                {recent.map((r) => (
+                  <li key={r.slug} className="flex flex-wrap items-baseline justify-between gap-2 py-2.5">
+                    <Link
+                      to="/record/$slug"
+                      params={{ slug: r.slug }}
+                      className="tap min-w-0 truncate text-[13px] text-foreground hover:text-primary"
+                    >
+                      {r.title}
+                    </Link>
+                    <span className="text-num shrink-0 text-[11px] text-subtle">
+                      {r.completeness}% · {dt(r.lastEnrichedAt)}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <Eyebrow>Pipeline runs</Eyebrow>
+              <p className="mt-2 text-[12px] leading-relaxed text-subtle">
+                Batch size, quota and pinned cities are steered from the queue file, so growth
+                continues on a controlled schedule rather than a national sprint.
+              </p>
+              <ul className="mt-4 divide-y divide-border">
+                {runs.map((r, i) => (
+                  <li key={`${r.kind}-${r.startedAt}-${i}`} className="py-3">
+                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                      <span className="text-[13px] text-foreground">{r.kind}</span>
+                      <span className="text-num text-[11px] text-subtle">{dt(r.startedAt)}</span>
+                    </div>
+                    <p className="mt-1 text-[11px] text-subtle">
+                      batch {r.batchSize} · inserted {r.inserted} · resolved {r.resolved} ·
+                      unresolved {r.unresolved} · mean {r.avgCompleteness}% · retries {r.retries} ·
+                      failures {r.failures}
+                      {r.cities?.length ? ` · ${r.cities.join(", ")}` : ""}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </main>
+  );
+}
