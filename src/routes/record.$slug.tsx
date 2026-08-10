@@ -108,7 +108,7 @@ function Dossier() {
             <Link
               to="/packet/$slug"
               params={{ slug: record.slug }}
-              search={q ? (Object.fromEntries(new URLSearchParams(q)) as never) : undefined}
+              search={(q ? Object.fromEntries(new URLSearchParams(q)) : {}) as never}
               className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
             >
               Open decision packet
