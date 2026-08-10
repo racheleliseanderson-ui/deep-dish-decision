@@ -1,4 +1,4 @@
-import { dataset, type Record } from "@/lib/dataset";
+import { dataset, type RestaurantRecord } from "@/lib/dataset";
 
 /* ------------------------------------------------------------------ *
  * Situation model
@@ -216,7 +216,7 @@ function hits(list: string[] | undefined, pool: string[] | undefined): number {
   return list.filter((v) => pool.includes(v)).length;
 }
 
-export function occasionScore(r: Record, occasion: Occasion): number {
+export function occasionScore(r: RestaurantRecord, occasion: Occasion): number {
   const p = PROFILES[occasion];
   let score = 30;
   score += Math.min(3, hits(p.groupFit, r.groupFitTags)) * 9;
@@ -240,7 +240,7 @@ export function occasionScore(r: Record, occasion: Occasion): number {
   return clamp(Math.round(score), 0, 100);
 }
 
-export function topOccasion(r: Record): { occasion: Occasion; score: number } {
+export function topOccasion(r: RestaurantRecord): { occasion: Occasion; score: number } {
   let best: { occasion: Occasion; score: number } = { occasion: OCCASIONS[0], score: -1 };
   for (const o of OCCASIONS) {
     const s = occasionScore(r, o);
@@ -285,7 +285,7 @@ const clamp = (n: number, a: number, b: number) => Math.max(a, Math.min(b, n));
 const levelIndex = (list: readonly string[], v: string | undefined) =>
   v ? list.indexOf(v) : -1;
 
-export function buildFindings(r: Record, s: Situation): Finding[] {
+export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
   const f: Finding[] = [];
   const c = (x: Constraint) => s.constraints.includes(x);
   const push = (x: Finding) => f.push(x);
@@ -714,7 +714,7 @@ function capitalize(s: string) {
  * Confirm burden + scoring
  * ------------------------------------------------------------------ */
 
-export function confirmBurden(r: Record, findings: Finding[]): number {
+export function confirmBurden(r: RestaurantRecord, findings: Finding[]): number {
   let b = 12;
   b += Math.min(6, r.unknownsCount) * 5;
   b += Math.min(4, r.thinFieldCount) * 4;
@@ -730,7 +730,7 @@ export function confirmBurden(r: Record, findings: Finding[]): number {
 }
 
 export type Scored = {
-  record: Record;
+  record: RestaurantRecord;
   fit: number;
   rank: number;
   burden: number;
@@ -743,7 +743,7 @@ export type Scored = {
   blocked: boolean;
 };
 
-export function scoreRecord(r: Record, s: Situation): Scored {
+export function scoreRecord(r: RestaurantRecord, s: Situation): Scored {
   const findings = buildFindings(r, s);
   const burden = confirmBurden(r, findings);
   const reasons: string[] = [];
@@ -835,7 +835,7 @@ export function scoreRecord(r: Record, s: Situation): Scored {
   };
 }
 
-export function rank(list: Record[], s: Situation): Scored[] {
+export function rank(list: RestaurantRecord[], s: Situation): Scored[] {
   const scored = list.map((r) => scoreRecord(r, s));
   scored.sort((a, b) => {
     if (a.blocked !== b.blocked) return a.blocked ? 1 : -1;
@@ -847,7 +847,7 @@ export function rank(list: Record[], s: Situation): Scored[] {
   return scored;
 }
 
-export function filterRecords(list: Record[], s: Situation): Record[] {
+export function filterRecords(list: RestaurantRecord[], s: Situation): Record[] {
   const q = s.query.trim().toLowerCase();
   return list.filter((r) => {
     if (s.regionGroup && r.regionGroup !== s.regionGroup) return false;

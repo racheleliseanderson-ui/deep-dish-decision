@@ -12,7 +12,7 @@ export type Signals = {
   private?: string;
 };
 
-export type Record = {
+export type RestaurantRecord = {
   id: number;
   slug: string;
   title: string;
@@ -113,7 +113,7 @@ export type Dataset = {
     lastReviewAt: string;
     reachableAtLastReview: number;
   };
-  taxOptions: Record$Tax;
+  taxOptions: RecordTax;
   spendBandOptions: string[];
   guestConstraintOptions: string[];
   daypartOptions: string[];
@@ -123,7 +123,7 @@ export type Dataset = {
   records: Record[];
 };
 
-type Record$Tax = {
+type RecordTax = {
   ri_region?: string[];
   ri_service_style?: string[];
   ri_dietary?: string[];
@@ -134,7 +134,7 @@ type Record$Tax = {
 };
 
 export const dataset = raw as unknown as Dataset;
-export const records: Record[] = dataset.records;
+export const records: RestaurantRecord[] = dataset.records;
 
 export const bySlug = new Map(records.map((r) => [r.slug, r]));
 
