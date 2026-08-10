@@ -161,7 +161,7 @@ function Dossier() {
           <div className="plate p-5 sm:p-6">
             <Eyebrow>Confirmation pass</Eyebrow>
             <ul className="mt-4 space-y-3 text-[13px] leading-relaxed text-muted-foreground">
-              {record.checklist.map((c) => (
+              {record.checklist.map((c: string) => (
                 <li key={c} className="flex gap-3">
                   <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary" />
                   {c}
@@ -171,7 +171,7 @@ function Dossier() {
             <Rule className="my-6" />
             <Eyebrow>Sources of record</Eyebrow>
             <ul className="mt-3 space-y-2 text-[12px]">
-              {record.sources.map((s) => (
+              {record.sources.map((s: string) => (
                 <li key={s} className="truncate">
                   <a
                     href={s}
