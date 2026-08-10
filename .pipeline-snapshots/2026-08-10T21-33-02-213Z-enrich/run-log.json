@@ -1,0 +1,40 @@
+{
+  "runs": [
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:32:40.599Z",
+      "finishedAt": "2026-08-10T21:32:50.777Z",
+      "batchSize": 2,
+      "cities": [
+        "Seattle, Washington",
+        "Portland, Oregon"
+      ],
+      "resolved": 2,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 83,
+      "corpusEnriched": 2,
+      "apiCalls": {
+        "google": 2,
+        "firecrawl": 2
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-32-40-597Z-enrich",
+      "records": [
+        {
+          "slug": "canlis",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "kann",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        }
+      ]
+    }
+  ]
+}
