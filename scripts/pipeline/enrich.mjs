@@ -77,8 +77,16 @@ function chooseMatch(record, places) {
         ?.shortText ?? ""
     ).toLowerCase();
     const cityOk = !record.city || addressText.includes(String(record.city).toLowerCase());
+    // "British Columbia" -> "bc"; "Washington" -> "w". Initials cover both
+    // multi-word provinces and single-word states that Google abbreviates.
+    const wantInitials = wantState
+      .split(/\s+/)
+      .map((w) => w[0])
+      .join("");
     const stateOk =
-      !wantState || addressText.includes(wantState) || (stateCode && wantState.startsWith(stateCode));
+      !wantState ||
+      addressText.includes(wantState) ||
+      (Boolean(stateCode) && (stateCode === wantInitials || wantState.startsWith(stateCode)));
 
     let confidence = 0;
     if (host) confidence += 0.45;
