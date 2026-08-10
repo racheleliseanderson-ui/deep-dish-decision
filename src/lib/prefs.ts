@@ -1,0 +1,87 @@
+import { useCallback, useEffect, useState } from "react";
+
+/**
+ * Display preferences that change how the instrument is read rather than what it
+ * says: contrast mode (full colour / black-and-white / colour-blind safe) and
+ * interface language. Persisted per browser, applied as classes on <html> so the
+ * pre-hydration script in __root can restore them before first paint.
+ */
+
+export type ContrastMode = "standard" | "mono" | "cvd";
+export type Locale = "en" | "es";
+
+export const CONTRAST_KEY = "rih-contrast";
+export const LOCALE_KEY = "rih-locale";
+
+const EVENT = "rih-prefs";
+
+const CONTRAST_CLASS: Record<ContrastMode, string> = {
+  standard: "",
+  mono: "mode-mono",
+  cvd: "mode-cvd",
+};
+
+function readStored<T extends string>(key: string, allowed: readonly T[], fallback: T): T {
+  try {
+    const raw = localStorage.getItem(key) as T | null;
+    return raw && allowed.includes(raw) ? raw : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function store(key: string, value: string) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    /* storage unavailable — session-only preference */
+  }
+  window.dispatchEvent(new Event(EVENT));
+}
+
+export function applyContrast(mode: ContrastMode) {
+  const root = document.documentElement;
+  for (const cls of Object.values(CONTRAST_CLASS)) if (cls) root.classList.remove(cls);
+  if (CONTRAST_CLASS[mode]) root.classList.add(CONTRAST_CLASS[mode]);
+}
+
+export function useContrastMode() {
+  const [mode, setMode] = useState<ContrastMode>("standard");
+
+  useEffect(() => {
+    const sync = () => setMode(readStored(CONTRAST_KEY, ["standard", "mono", "cvd"], "standard"));
+    sync();
+    window.addEventListener(EVENT, sync);
+    return () => window.removeEventListener(EVENT, sync);
+  }, []);
+
+  const set = useCallback((next: ContrastMode) => {
+    applyContrast(next);
+    store(CONTRAST_KEY, next);
+    setMode(next);
+  }, []);
+
+  return { mode, set };
+}
+
+export function useLocale() {
+  const [locale, setLocale] = useState<Locale>("en");
+
+  useEffect(() => {
+    const sync = () => setLocale(readStored(LOCALE_KEY, ["en", "es"], "en"));
+    sync();
+    window.addEventListener(EVENT, sync);
+    return () => window.removeEventListener(EVENT, sync);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = locale;
+  }, [locale]);
+
+  const set = useCallback((next: Locale) => {
+    store(LOCALE_KEY, next);
+    setLocale(next);
+  }, []);
+
+  return { locale, set };
+}
