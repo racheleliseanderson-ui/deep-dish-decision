@@ -57,7 +57,14 @@ export function RecordCard({
                 {r.region} · {r.cuisineTags.slice(0, 3).join(" · ") || "style unstated"}
               </p>
             </div>
-            <span className="text-num shrink-0 text-[11px] text-subtle">{r.recordId}</span>
+            <div className="shrink-0 text-right">
+              <span className="text-num text-[11px] text-subtle">{r.recordId}</span>
+              {situation.occasion ? (
+                <p className="text-[11px] text-subtle">
+                  {situation.occasion} fit <span className="text-num">{sc.occasionScore}</span>
+                </p>
+              ) : null}
+            </div>
           </div>
 
           <div className="mt-3 flex flex-wrap gap-1.5">
@@ -152,11 +159,6 @@ export function RecordCard({
           </div>
         </div>
       </div>
-      {situation.occasion ? (
-        <span className="pointer-events-none absolute right-5 top-5 hidden text-[11px] text-subtle sm:block">
-          {situation.occasion} · <span className="text-num">{sc.occasionScore}</span>
-        </span>
-      ) : null}
     </article>
   );
 }
