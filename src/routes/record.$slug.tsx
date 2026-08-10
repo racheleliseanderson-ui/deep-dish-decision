@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/record/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { record: RestaurantRecord } => {
     const record = bySlug.get(params.slug);
     if (!record) throw notFound();
     return { record };
