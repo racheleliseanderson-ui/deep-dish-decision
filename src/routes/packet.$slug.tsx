@@ -81,13 +81,16 @@ function Packet() {
         >
           ← Back to the hub
         </Link>
-        <button
-          type="button"
-          onClick={() => window.print()}
-          className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
-        >
-          Print / save as PDF
-        </button>
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            type="button"
+            onClick={() => window.print()}
+            className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
+          >
+            Print / save as PDF
+          </button>
+        </div>
       </div>
 
       <article className="plate space-y-5 p-7 print:border-0 print:p-0">
