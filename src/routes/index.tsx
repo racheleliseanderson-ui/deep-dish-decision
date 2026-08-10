@@ -90,6 +90,7 @@ function Hub() {
             <span className="text-eyebrow">Salty &amp; Clever</span>
             <span className="h-px w-10 bg-border-strong" />
             <span className="text-eyebrow">Restaurant Intelligence Hub</span>
+            <ThemeToggle className="ml-auto" />
           </div>
 
           <h1 className="mt-8 max-w-4xl font-display text-[2.6rem] font-normal leading-[0.98] tracking-[-0.02em] sm:text-6xl lg:text-[4.6rem]">
