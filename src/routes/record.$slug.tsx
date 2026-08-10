@@ -3,7 +3,7 @@ import { DecisionBrief } from "@/components/rih/decision-brief";
 import { LayerStack } from "@/components/rih/findings";
 import { Reveal } from "@/components/rih/reveal";
 import { SiteNav } from "@/components/rih/site-nav";
-import { bySlug } from "@/lib/dataset";
+import { bySlug, type RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
 import { useShortlist } from "@/lib/shortlist";
 import { decodeSituation, encodeSituation } from "@/lib/situation-url";
