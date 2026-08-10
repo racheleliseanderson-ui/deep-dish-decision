@@ -1,0 +1,1459 @@
+{
+  "generatedAt": "2026-08-10T21:43:45.568Z",
+  "totals": {
+    "records": 41,
+    "enriched": 41,
+    "resolved": 41,
+    "unresolved": 0,
+    "statesCovered": 4,
+    "statesTotal": 51,
+    "avgCompleteness": 86,
+    "withRating": 41,
+    "withPrice": 39
+  },
+  "distribution": [
+    {
+      "label": "90-100",
+      "count": 6
+    },
+    {
+      "label": "75-89",
+      "count": 35
+    },
+    {
+      "label": "50-74",
+      "count": 0
+    },
+    {
+      "label": "under 50",
+      "count": 0
+    }
+  ],
+  "states": [
+    {
+      "code": "WA",
+      "count": 16,
+      "enriched": 16,
+      "avgCompleteness": 85,
+      "population": 7812880,
+      "perMillion": 2.05
+    },
+    {
+      "code": "OR",
+      "count": 9,
+      "enriched": 9,
+      "avgCompleteness": 87,
+      "population": 4233358,
+      "perMillion": 2.13
+    },
+    {
+      "code": "MT",
+      "count": 6,
+      "enriched": 6,
+      "avgCompleteness": 87,
+      "population": 1132812,
+      "perMillion": 5.3
+    },
+    {
+      "code": "ID",
+      "count": 3,
+      "enriched": 3,
+      "avgCompleteness": 89,
+      "population": 1964726,
+      "perMillion": 1.53
+    },
+    {
+      "code": "AK",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 733406,
+      "perMillion": 0
+    },
+    {
+      "code": "AL",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 5108468,
+      "perMillion": 0
+    },
+    {
+      "code": "AR",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 3067732,
+      "perMillion": 0
+    },
+    {
+      "code": "AZ",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 7431344,
+      "perMillion": 0
+    },
+    {
+      "code": "CA",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 38965193,
+      "perMillion": 0
+    },
+    {
+      "code": "CO",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 5877610,
+      "perMillion": 0
+    },
+    {
+      "code": "CT",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 3617176,
+      "perMillion": 0
+    },
+    {
+      "code": "DC",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 678972,
+      "perMillion": 0
+    },
+    {
+      "code": "DE",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 1031890,
+      "perMillion": 0
+    },
+    {
+      "code": "FL",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 22610726,
+      "perMillion": 0
+    },
+    {
+      "code": "GA",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 11029227,
+      "perMillion": 0
+    },
+    {
+      "code": "HI",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 1435138,
+      "perMillion": 0
+    },
+    {
+      "code": "IA",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 3207004,
+      "perMillion": 0
+    },
+    {
+      "code": "IL",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 12549689,
+      "perMillion": 0
+    },
+    {
+      "code": "IN",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 6862199,
+      "perMillion": 0
+    },
+    {
+      "code": "KS",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 2940546,
+      "perMillion": 0
+    },
+    {
+      "code": "KY",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 4526154,
+      "perMillion": 0
+    },
+    {
+      "code": "LA",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 4573749,
+      "perMillion": 0
+    },
+    {
+      "code": "MA",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 7001399,
+      "perMillion": 0
+    },
+    {
+      "code": "MD",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 6180253,
+      "perMillion": 0
+    },
+    {
+      "code": "ME",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 1395722,
+      "perMillion": 0
+    },
+    {
+      "code": "MI",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 10037261,
+      "perMillion": 0
+    },
+    {
+      "code": "MN",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 5737915,
+      "perMillion": 0
+    },
+    {
+      "code": "MO",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 6196156,
+      "perMillion": 0
+    },
+    {
+      "code": "MS",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 2939690,
+      "perMillion": 0
+    },
+    {
+      "code": "NC",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 10835491,
+      "perMillion": 0
+    },
+    {
+      "code": "ND",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 783926,
+      "perMillion": 0
+    },
+    {
+      "code": "NE",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 1978379,
+      "perMillion": 0
+    },
+    {
+      "code": "NH",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 1402054,
+      "perMillion": 0
+    },
+    {
+      "code": "NJ",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 9290841,
+      "perMillion": 0
+    },
+    {
+      "code": "NM",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 2114371,
+      "perMillion": 0
+    },
+    {
+      "code": "NV",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 3194176,
+      "perMillion": 0
+    },
+    {
+      "code": "NY",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 19571216,
+      "perMillion": 0
+    },
+    {
+      "code": "OH",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 11785935,
+      "perMillion": 0
+    },
+    {
+      "code": "OK",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 4053824,
+      "perMillion": 0
+    },
+    {
+      "code": "PA",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 12961683,
+      "perMillion": 0
+    },
+    {
+      "code": "RI",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 1095962,
+      "perMillion": 0
+    },
+    {
+      "code": "SC",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 5373555,
+      "perMillion": 0
+    },
+    {
+      "code": "SD",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 919318,
+      "perMillion": 0
+    },
+    {
+      "code": "TN",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 7126489,
+      "perMillion": 0
+    },
+    {
+      "code": "TX",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 30503301,
+      "perMillion": 0
+    },
+    {
+      "code": "UT",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 3417734,
+      "perMillion": 0
+    },
+    {
+      "code": "VA",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 8715698,
+      "perMillion": 0
+    },
+    {
+      "code": "VT",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 647464,
+      "perMillion": 0
+    },
+    {
+      "code": "WI",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 5910955,
+      "perMillion": 0
+    },
+    {
+      "code": "WV",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 1770071,
+      "perMillion": 0
+    },
+    {
+      "code": "WY",
+      "count": 0,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 584057,
+      "perMillion": 0
+    }
+  ],
+  "outsideUs": [
+    {
+      "code": "BC",
+      "count": 7,
+      "avgCompleteness": 86
+    }
+  ],
+  "records": [
+    {
+      "slug": "tusk",
+      "title": "Tusk",
+      "stateCode": "OR",
+      "city": "Portland",
+      "completeness": 96,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 1213,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:33:15.661Z",
+      "addedAt": null
+    },
+    {
+      "slug": "part-parcel",
+      "title": "Part & Parcel",
+      "stateCode": "BC",
+      "city": "Victoria",
+      "completeness": 96,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 1056,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:36:41.942Z",
+      "addedAt": null
+    },
+    {
+      "slug": "kin",
+      "title": "KIN",
+      "stateCode": "ID",
+      "city": "Boise",
+      "completeness": 92,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 196,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:34:12.604Z",
+      "addedAt": null
+    },
+    {
+      "slug": "anthonys-at-columbia-point",
+      "title": "Anthony’s at Columbia Point",
+      "stateCode": "WA",
+      "city": "Richland",
+      "completeness": 92,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 2427,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:39:18.330Z",
+      "addedAt": null
+    },
+    {
+      "slug": "ten",
+      "title": "TEN",
+      "stateCode": "MT",
+      "city": "Billings",
+      "completeness": 92,
+      "matchStatus": "resolved",
+      "rating": 4.2,
+      "reviewCount": 270,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T21:41:00.154Z",
+      "addedAt": null
+    },
+    {
+      "slug": "walkers-grill",
+      "title": "Walkers Grill",
+      "stateCode": "MT",
+      "city": "Billings",
+      "completeness": 92,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 884,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:41:24.517Z",
+      "addedAt": null
+    },
+    {
+      "slug": "nue",
+      "title": "Nue",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 2193,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:33:02.215Z",
+      "addedAt": null
+    },
+    {
+      "slug": "le-pigeon",
+      "title": "Le Pigeon",
+      "stateCode": "OR",
+      "city": "Portland",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 1149,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:33:28.015Z",
+      "addedAt": null
+    },
+    {
+      "slug": "langbaan",
+      "title": "Langbaan",
+      "stateCode": "OR",
+      "city": "Portland",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 466,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:33:55.635Z",
+      "addedAt": null
+    },
+    {
+      "slug": "kachka",
+      "title": "Kachka",
+      "stateCode": "OR",
+      "city": "Portland",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 2826,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:34:07.260Z",
+      "addedAt": null
+    },
+    {
+      "slug": "gander-and-ryegrass",
+      "title": "Gander and Ryegrass",
+      "stateCode": "WA",
+      "city": "Spokane",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 402,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:34:37.068Z",
+      "addedAt": null
+    },
+    {
+      "slug": "cynara-restaurant-lounge",
+      "title": "Cynara Restaurant & Lounge",
+      "stateCode": "WA",
+      "city": "Olympia",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 431,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:35:00.424Z",
+      "addedAt": null
+    },
+    {
+      "slug": "marche",
+      "title": "Marché",
+      "stateCode": "OR",
+      "city": "Eugene",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.3,
+      "reviewCount": 1065,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:35:04.512Z",
+      "addedAt": null
+    },
+    {
+      "slug": "hama-hama-oyster-saloon",
+      "title": "Hama Hama Oyster Saloon",
+      "stateCode": "WA",
+      "city": "Lilliwaup",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 1391,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:36:13.055Z",
+      "addedAt": null
+    },
+    {
+      "slug": "st-lawrence",
+      "title": "St. Lawrence",
+      "stateCode": "BC",
+      "city": "Vancouver",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 1508,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:37:28.031Z",
+      "addedAt": null
+    },
+    {
+      "slug": "duck-soup",
+      "title": "Duck Soup",
+      "stateCode": "WA",
+      "city": "Friday Harbor",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 486,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:37:56.624Z",
+      "addedAt": null
+    },
+    {
+      "slug": "beverlys",
+      "title": "Beverly’s",
+      "stateCode": "ID",
+      "city": "Coeur d'Alene",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 1257,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T21:38:05.173Z",
+      "addedAt": null
+    },
+    {
+      "slug": "peerless-restaurant-bar",
+      "title": "Peerless Restaurant & Bar",
+      "stateCode": "OR",
+      "city": "Ashland",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 356,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:38:56.709Z",
+      "addedAt": null
+    },
+    {
+      "slug": "the-lively",
+      "title": "The Lively",
+      "stateCode": "ID",
+      "city": "Boise",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 432,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:39:26.892Z",
+      "addedAt": null
+    },
+    {
+      "slug": "the-keep-restaurant",
+      "title": "The Keep Restaurant",
+      "stateCode": "MT",
+      "city": "Missoula",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 604,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:41:11.737Z",
+      "addedAt": null
+    },
+    {
+      "slug": "canlis",
+      "title": "Canlis",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 2872,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:32:40.599Z",
+      "addedAt": null
+    },
+    {
+      "slug": "kann",
+      "title": "Kann",
+      "stateCode": "OR",
+      "city": "Portland",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 1255,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:32:44.308Z",
+      "addedAt": null
+    },
+    {
+      "slug": "the-pink-door",
+      "title": "The Pink Door",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 7265,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:33:09.185Z",
+      "addedAt": null
+    },
+    {
+      "slug": "revel",
+      "title": "Revel",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.3,
+      "reviewCount": 1086,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:33:49.195Z",
+      "addedAt": null
+    },
+    {
+      "slug": "ox",
+      "title": "Ox",
+      "stateCode": "OR",
+      "city": "Portland",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 1942,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:33:52.340Z",
+      "addedAt": null
+    },
+    {
+      "slug": "published-on-main",
+      "title": "Published on Main",
+      "stateCode": "BC",
+      "city": "Vancouver",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 1818,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:36:33.397Z",
+      "addedAt": null
+    },
+    {
+      "slug": "wooden-city-tacoma",
+      "title": "Wooden City Tacoma",
+      "stateCode": "WA",
+      "city": "Tacoma",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 1316,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:34:51.733Z",
+      "addedAt": null
+    },
+    {
+      "slug": "elements-restaurant",
+      "title": "Elements Restaurant",
+      "stateCode": "WA",
+      "city": "Vancouver",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 863,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T21:35:19.116Z",
+      "addedAt": null
+    },
+    {
+      "slug": "saffron-mediterranean-kitchen",
+      "title": "Saffron Mediterranean Kitchen",
+      "stateCode": "WA",
+      "city": "Walla Walla",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 737,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:35:40.850Z",
+      "addedAt": null
+    },
+    {
+      "slug": "passatempo-taverna",
+      "title": "Passatempo Taverna",
+      "stateCode": "WA",
+      "city": "Walla Walla",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 988,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:37:04.913Z",
+      "addedAt": null
+    },
+    {
+      "slug": "wind-cries-mary",
+      "title": "Wind Cries Mary",
+      "stateCode": "BC",
+      "city": "Victoria",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 1329,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-10T21:37:20.699Z",
+      "addedAt": null
+    },
+    {
+      "slug": "the-courtney-room",
+      "title": "The Courtney Room",
+      "stateCode": "BC",
+      "city": "Victoria",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.3,
+      "reviewCount": 641,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:37:37.539Z",
+      "addedAt": null
+    },
+    {
+      "slug": "matia-kitchen",
+      "title": "Matia Kitchen",
+      "stateCode": "WA",
+      "city": "Eastsound",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 80,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T21:37:50.851Z",
+      "addedAt": null
+    },
+    {
+      "slug": "araxi-restaurant-oyster-bar",
+      "title": "Araxi Restaurant + Oyster Bar",
+      "stateCode": "BC",
+      "city": "Whistler",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 2361,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:38:14.717Z",
+      "addedAt": null
+    },
+    {
+      "slug": "wild-mountain-food-drink",
+      "title": "Wild Mountain Food + Drink",
+      "stateCode": "BC",
+      "city": "Sooke",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 551,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-10T21:38:33.546Z",
+      "addedAt": null
+    },
+    {
+      "slug": "crafted-yakima",
+      "title": "Crafted Yakima",
+      "stateCode": "WA",
+      "city": "Yakima",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 570,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T21:39:12.848Z",
+      "addedAt": null
+    },
+    {
+      "slug": "luccas",
+      "title": "Lucca’s",
+      "stateCode": "MT",
+      "city": "Helena",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 479,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:40:48.938Z",
+      "addedAt": null
+    },
+    {
+      "slug": "bistro-enzo",
+      "title": "Bistro Enzo",
+      "stateCode": "MT",
+      "city": "Billings",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 569,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:42:21.008Z",
+      "addedAt": null
+    },
+    {
+      "slug": "blackbird-kitchen",
+      "title": "Blackbird Kitchen",
+      "stateCode": "MT",
+      "city": "Bozeman",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 1057,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:42:33.489Z",
+      "addedAt": null
+    },
+    {
+      "slug": "ariana",
+      "title": "Ariana",
+      "stateCode": "OR",
+      "city": "Bend",
+      "completeness": 79,
+      "matchStatus": "resolved",
+      "rating": 4.8,
+      "reviewCount": 453,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:34:17.135Z",
+      "addedAt": null
+    },
+    {
+      "slug": "roe",
+      "title": "Roe",
+      "stateCode": "WA",
+      "city": "Bellingham",
+      "completeness": 79,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 211,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:35:23.576Z",
+      "addedAt": null
+    }
+  ],
+  "recent": [
+    {
+      "slug": "blackbird-kitchen",
+      "title": "Blackbird Kitchen",
+      "stateCode": "MT",
+      "city": "Bozeman",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 1057,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:42:33.489Z",
+      "addedAt": null
+    },
+    {
+      "slug": "bistro-enzo",
+      "title": "Bistro Enzo",
+      "stateCode": "MT",
+      "city": "Billings",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 569,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:42:21.008Z",
+      "addedAt": null
+    },
+    {
+      "slug": "walkers-grill",
+      "title": "Walkers Grill",
+      "stateCode": "MT",
+      "city": "Billings",
+      "completeness": 92,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 884,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:41:24.517Z",
+      "addedAt": null
+    },
+    {
+      "slug": "the-keep-restaurant",
+      "title": "The Keep Restaurant",
+      "stateCode": "MT",
+      "city": "Missoula",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 604,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:41:11.737Z",
+      "addedAt": null
+    },
+    {
+      "slug": "ten",
+      "title": "TEN",
+      "stateCode": "MT",
+      "city": "Billings",
+      "completeness": 92,
+      "matchStatus": "resolved",
+      "rating": 4.2,
+      "reviewCount": 270,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T21:41:00.154Z",
+      "addedAt": null
+    },
+    {
+      "slug": "luccas",
+      "title": "Lucca’s",
+      "stateCode": "MT",
+      "city": "Helena",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 479,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:40:48.938Z",
+      "addedAt": null
+    },
+    {
+      "slug": "the-lively",
+      "title": "The Lively",
+      "stateCode": "ID",
+      "city": "Boise",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 432,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:39:26.892Z",
+      "addedAt": null
+    },
+    {
+      "slug": "anthonys-at-columbia-point",
+      "title": "Anthony’s at Columbia Point",
+      "stateCode": "WA",
+      "city": "Richland",
+      "completeness": 92,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 2427,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:39:18.330Z",
+      "addedAt": null
+    },
+    {
+      "slug": "crafted-yakima",
+      "title": "Crafted Yakima",
+      "stateCode": "WA",
+      "city": "Yakima",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 570,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-10T21:39:12.848Z",
+      "addedAt": null
+    },
+    {
+      "slug": "peerless-restaurant-bar",
+      "title": "Peerless Restaurant & Bar",
+      "stateCode": "OR",
+      "city": "Ashland",
+      "completeness": 88,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 356,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-10T21:38:56.709Z",
+      "addedAt": null
+    },
+    {
+      "slug": "wild-mountain-food-drink",
+      "title": "Wild Mountain Food + Drink",
+      "stateCode": "BC",
+      "city": "Sooke",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 551,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-10T21:38:33.546Z",
+      "addedAt": null
+    },
+    {
+      "slug": "araxi-restaurant-oyster-bar",
+      "title": "Araxi Restaurant + Oyster Bar",
+      "stateCode": "BC",
+      "city": "Whistler",
+      "completeness": 83,
+      "matchStatus": "resolved",
+      "rating": 4.5,
+      "reviewCount": 2361,
+      "priceBand": "$$$$",
+      "lastEnrichedAt": "2026-08-10T21:38:14.717Z",
+      "addedAt": null
+    }
+  ],
+  "queue": {
+    "paused": false,
+    "restaurantsPerRun": 25,
+    "citiesPerRun": 1,
+    "dailyCap": 200,
+    "pending": 79,
+    "done": 0,
+    "next": [
+      {
+        "city": "New York",
+        "stateCode": "NY",
+        "population": 19498249,
+        "priority": 1,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Los Angeles",
+        "stateCode": "CA",
+        "population": 12799100,
+        "priority": 2,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Chicago",
+        "stateCode": "IL",
+        "population": 9262825,
+        "priority": 3,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Dallas",
+        "stateCode": "TX",
+        "population": 8100037,
+        "priority": 4,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Houston",
+        "stateCode": "TX",
+        "population": 7510253,
+        "priority": 5,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Atlanta",
+        "stateCode": "GA",
+        "population": 6307261,
+        "priority": 6,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Washington",
+        "stateCode": "DC",
+        "population": 6304975,
+        "priority": 7,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Philadelphia",
+        "stateCode": "PA",
+        "population": 6246160,
+        "priority": 8,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Miami",
+        "stateCode": "FL",
+        "population": 6183199,
+        "priority": 9,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Phoenix",
+        "stateCode": "AZ",
+        "population": 5070110,
+        "priority": 10,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      }
+    ]
+  },
+  "runs": [
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:40:48.938Z",
+      "batchSize": 6,
+      "inserted": 0,
+      "cities": [
+        "Helena, Montana",
+        "Billings, Montana",
+        "Missoula, Montana",
+        "Bozeman, Montana"
+      ],
+      "resolved": 6,
+      "unresolved": 0,
+      "avgCompleteness": 86,
+      "apiCalls": {
+        "google": 6,
+        "firecrawl": 15
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:39:12.848Z",
+      "batchSize": 9,
+      "inserted": 0,
+      "cities": [
+        "Yakima, Washington",
+        "Richland, Washington",
+        "Boise, Idaho",
+        "Helena, Montana",
+        "Billings, Montana",
+        "Missoula, Montana",
+        "Bozeman, Montana"
+      ],
+      "resolved": 3,
+      "unresolved": 6,
+      "avgCompleteness": 78,
+      "apiCalls": {
+        "google": 9,
+        "firecrawl": 4
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:37:04.913Z",
+      "batchSize": 10,
+      "inserted": 0,
+      "cities": [
+        "Walla Walla, Washington",
+        "Victoria, British Columbia",
+        "Vancouver, British Columbia",
+        "Orcas Island, Washington",
+        "San Juan Island, Washington",
+        "Coeur d’Alene, Idaho",
+        "Whistler, British Columbia",
+        "Sooke, British Columbia",
+        "Ashland, Oregon"
+      ],
+      "resolved": 10,
+      "unresolved": 0,
+      "avgCompleteness": 86,
+      "apiCalls": {
+        "google": 10,
+        "firecrawl": 29
+      },
+      "retries": 7,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:36:33.397Z",
+      "batchSize": 2,
+      "inserted": 0,
+      "cities": [
+        "Vancouver, British Columbia",
+        "Victoria, British Columbia"
+      ],
+      "resolved": 2,
+      "unresolved": 0,
+      "avgCompleteness": 86,
+      "apiCalls": {
+        "google": 2,
+        "firecrawl": 5
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:36:11.896Z",
+      "batchSize": 3,
+      "inserted": 0,
+      "cities": [
+        "Vancouver, British Columbia",
+        "Victoria, British Columbia",
+        "Hood Canal, Washington"
+      ],
+      "resolved": 1,
+      "unresolved": 2,
+      "avgCompleteness": 81,
+      "apiCalls": {
+        "google": 3,
+        "firecrawl": 1
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:34:37.068Z",
+      "batchSize": 10,
+      "inserted": 0,
+      "cities": [
+        "Spokane, Washington",
+        "Vancouver, British Columbia",
+        "Tacoma, Washington",
+        "Olympia, Washington",
+        "Eugene, Oregon",
+        "Vancouver, Washington",
+        "Bellingham, Washington",
+        "Victoria, British Columbia",
+        "Hood Canal, Washington",
+        "Walla Walla, Washington"
+      ],
+      "resolved": 7,
+      "unresolved": 3,
+      "avgCompleteness": 78,
+      "apiCalls": {
+        "google": 10,
+        "firecrawl": 22
+      },
+      "retries": 10,
+      "failures": 1,
+      "flagged": false
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:33:02.215Z",
+      "batchSize": 10,
+      "inserted": 0,
+      "cities": [
+        "Seattle, Washington",
+        "Portland, Oregon",
+        "Boise, Idaho",
+        "Bend, Oregon"
+      ],
+      "resolved": 10,
+      "unresolved": 0,
+      "avgCompleteness": 86,
+      "apiCalls": {
+        "google": 10,
+        "firecrawl": 27
+      },
+      "retries": 8,
+      "failures": 1,
+      "flagged": false
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:32:40.599Z",
+      "batchSize": 2,
+      "inserted": 0,
+      "cities": [
+        "Seattle, Washington",
+        "Portland, Oregon"
+      ],
+      "resolved": 2,
+      "unresolved": 0,
+      "avgCompleteness": 83,
+      "apiCalls": {
+        "google": 2,
+        "firecrawl": 2
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    }
+  ]
+}
