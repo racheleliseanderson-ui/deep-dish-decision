@@ -104,7 +104,7 @@ function Console() {
                   ? "Expansion paused"
                   : `${queue.restaurantsPerRun}/run · cap ${queue.dailyCap}/day`
               }
-              tone={queue.paused ? "critical" : "primary"}
+              tone={queue.paused ? "critical" : "verified"}
             />
           </div>
         </div>
