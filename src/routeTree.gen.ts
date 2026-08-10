@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AtlasRouteImport } from './routes/atlas'
+import { Route as ShortlistRouteImport } from './routes/shortlist'
 import { Route as PacketSlugRouteImport } from './routes/packet.$slug'
 import { Route as RecordSlugRouteImport } from './routes/record.$slug'
 
@@ -22,6 +23,11 @@ const IndexRoute = IndexRouteImport.update({
 const AtlasRoute = AtlasRouteImport.update({
   id: '/atlas',
   path: '/atlas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShortlistRoute = ShortlistRouteImport.update({
+  id: '/shortlist',
+  path: '/shortlist',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PacketSlugRoute = PacketSlugRouteImport.update({
@@ -38,12 +44,14 @@ const RecordSlugRoute = RecordSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
+  '/shortlist': typeof ShortlistRoute
   '/packet/$slug': typeof PacketSlugRoute
   '/record/$slug': typeof RecordSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
+  '/shortlist': typeof ShortlistRoute
   '/packet/$slug': typeof PacketSlugRoute
   '/record/$slug': typeof RecordSlugRoute
 }
@@ -51,20 +59,28 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
+  '/shortlist': typeof ShortlistRoute
   '/packet/$slug': typeof PacketSlugRoute
   '/record/$slug': typeof RecordSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/atlas' | '/packet/$slug' | '/record/$slug'
+  fullPaths: '/' | '/atlas' | '/shortlist' | '/packet/$slug' | '/record/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/atlas' | '/packet/$slug' | '/record/$slug'
-  id: '__root__' | '/' | '/atlas' | '/packet/$slug' | '/record/$slug'
+  to: '/' | '/atlas' | '/shortlist' | '/packet/$slug' | '/record/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/atlas'
+    | '/shortlist'
+    | '/packet/$slug'
+    | '/record/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AtlasRoute: typeof AtlasRoute
+  ShortlistRoute: typeof ShortlistRoute
   PacketSlugRoute: typeof PacketSlugRoute
   RecordSlugRoute: typeof RecordSlugRoute
 }
@@ -83,6 +99,13 @@ declare module '@tanstack/react-router' {
       path: '/atlas'
       fullPath: '/atlas'
       preLoaderRoute: typeof AtlasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shortlist': {
+      id: '/shortlist'
+      path: '/shortlist'
+      fullPath: '/shortlist'
+      preLoaderRoute: typeof ShortlistRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/packet/$slug': {
@@ -105,6 +128,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AtlasRoute: AtlasRoute,
+  ShortlistRoute: ShortlistRoute,
   PacketSlugRoute: PacketSlugRoute,
   RecordSlugRoute: RecordSlugRoute,
 }
