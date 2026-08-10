@@ -126,6 +126,25 @@ export function RecordCard({
             >
               Open case file
             </button>
+            <Link
+              to="/record/$slug"
+              params={{ slug: r.slug }}
+              className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
+            >
+              Full dossier
+            </Link>
+            <button
+              type="button"
+              onClick={() => shortlist.toggle(r.slug)}
+              className={cn(
+                "rounded-full border px-4 py-2 text-xs transition-colors",
+                shortlist.has(r.slug)
+                  ? "border-primary/50 bg-primary/12 text-primary"
+                  : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground",
+              )}
+            >
+              {shortlist.has(r.slug) ? "On night plan" : "Add to night plan"}
+            </button>
             <button
               type="button"
               onClick={onCompare}
@@ -138,6 +157,7 @@ export function RecordCard({
             >
               {compared ? "In comparison" : "Compare"}
             </button>
+
             {r.reservationUrl || r.website ? (
               <a
                 href={r.reservationUrl || r.website}
