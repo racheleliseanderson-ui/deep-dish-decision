@@ -43,7 +43,6 @@ export function CaseFile({
   return (
     <Dialog open={!!sc} onOpenChange={(v) => !v && onClose()}>
       <DialogContent
-        showCloseButton
         className="max-h-[92vh] w-[min(1040px,96vw)] max-w-none overflow-hidden border-border bg-surface p-0 sm:max-w-none"
       >
         <div className="grain-veil relative border-b border-border px-6 py-5">
