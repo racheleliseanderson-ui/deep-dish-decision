@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AtlasRouteImport } from './routes/atlas'
 import { Route as PacketSlugRouteImport } from './routes/packet.$slug'
+import { Route as RecordSlugRouteImport } from './routes/record.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -28,35 +29,44 @@ const PacketSlugRoute = PacketSlugRouteImport.update({
   path: '/packet/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RecordSlugRoute = RecordSlugRouteImport.update({
+  id: '/record/$slug',
+  path: '/record/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
   '/packet/$slug': typeof PacketSlugRoute
+  '/record/$slug': typeof RecordSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
   '/packet/$slug': typeof PacketSlugRoute
+  '/record/$slug': typeof RecordSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
   '/packet/$slug': typeof PacketSlugRoute
+  '/record/$slug': typeof RecordSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/atlas' | '/packet/$slug'
+  fullPaths: '/' | '/atlas' | '/packet/$slug' | '/record/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/atlas' | '/packet/$slug'
-  id: '__root__' | '/' | '/atlas' | '/packet/$slug'
+  to: '/' | '/atlas' | '/packet/$slug' | '/record/$slug'
+  id: '__root__' | '/' | '/atlas' | '/packet/$slug' | '/record/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AtlasRoute: typeof AtlasRoute
   PacketSlugRoute: typeof PacketSlugRoute
+  RecordSlugRoute: typeof RecordSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +92,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PacketSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/record/$slug': {
+      id: '/record/$slug'
+      path: '/record/$slug'
+      fullPath: '/record/$slug'
+      preLoaderRoute: typeof RecordSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,6 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AtlasRoute: AtlasRoute,
   PacketSlugRoute: PacketSlugRoute,
+  RecordSlugRoute: RecordSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
