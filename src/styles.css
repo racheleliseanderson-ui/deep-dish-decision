@@ -64,9 +64,55 @@
   --ease-instrument: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Light — warm paper, printed-brief feel */
 :root {
   --radius: 0.5rem;
 
+  --background: oklch(0.973 0.006 85);
+  --foreground: oklch(0.21 0.012 60);
+  --surface: oklch(0.995 0.003 85);
+  --surface-raised: oklch(0.955 0.007 85);
+  --surface-sunken: oklch(0.93 0.008 85);
+
+  --card: oklch(0.995 0.003 85);
+  --card-foreground: oklch(0.21 0.012 60);
+  --popover: oklch(0.995 0.003 85);
+  --popover-foreground: oklch(0.21 0.012 60);
+
+  --primary: oklch(0.52 0.1 72);
+  --primary-foreground: oklch(0.98 0.006 85);
+  --secondary: oklch(0.93 0.008 85);
+  --secondary-foreground: oklch(0.24 0.012 60);
+
+  --muted: oklch(0.94 0.007 85);
+  --muted-foreground: oklch(0.44 0.012 65);
+  --subtle: oklch(0.55 0.012 65);
+
+  --accent: oklch(0.5 0.07 205);
+  --accent-foreground: oklch(0.98 0.006 85);
+
+  --destructive: oklch(0.52 0.18 25);
+  --destructive-foreground: oklch(0.98 0.006 85);
+
+  --critical: oklch(0.5 0.17 30);
+  --critical-soft: oklch(0.5 0.17 30 / 10%);
+  --watch: oklch(0.55 0.12 72);
+  --watch-soft: oklch(0.55 0.12 72 / 12%);
+  --unknown: oklch(0.48 0.07 250);
+  --unknown-soft: oklch(0.48 0.07 250 / 10%);
+  --verified: oklch(0.47 0.11 152);
+  --verified-soft: oklch(0.47 0.11 152 / 11%);
+
+  --border: oklch(0.21 0.012 60 / 13%);
+  --border-strong: oklch(0.21 0.012 60 / 26%);
+  --input: oklch(0.21 0.012 60 / 18%);
+  --ring: oklch(0.52 0.1 72 / 45%);
+
+  color-scheme: light;
+}
+
+/* Dark — deep charcoal instrument */
+.dark {
   --background: oklch(0.16 0.007 60);
   --foreground: oklch(0.95 0.007 80);
   --surface: oklch(0.196 0.008 62);
@@ -106,6 +152,8 @@
   --border-strong: oklch(1 0 0 / 17%);
   --input: oklch(1 0 0 / 12%);
   --ring: oklch(0.79 0.11 78 / 55%);
+
+  color-scheme: dark;
 }
 
 @layer base {
