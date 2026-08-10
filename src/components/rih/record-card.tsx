@@ -21,6 +21,7 @@ export function RecordCard({
   compared: boolean;
 }) {
   const [open, setOpen] = useState(false);
+  const shortlist = useShortlist();
   const r = sc.record;
   const lead = sc.findings.slice(0, open ? sc.findings.length : 2);
 
