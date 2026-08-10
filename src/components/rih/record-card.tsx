@@ -1,8 +1,11 @@
 import { Chip, Meter } from "@/components/rih/bits";
 import { FindingRow } from "@/components/rih/findings";
 import type { Scored, Situation } from "@/lib/intelligence";
+import { useShortlist } from "@/lib/shortlist";
 import { cn } from "@/lib/utils";
+import { Link } from "@tanstack/react-router";
 import { useState } from "react";
+
 
 export function RecordCard({
   sc,
