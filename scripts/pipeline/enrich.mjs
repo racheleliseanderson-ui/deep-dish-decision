@@ -55,7 +55,7 @@ if (!batch.length) {
 
 const snapshotDir = snapshot("enrich");
 const gLimiter = createLimiter({ minDelayMs: 220 });
-const fLimiter = createLimiter({ minDelayMs: 600 });
+const fLimiter = createLimiter({ minDelayMs: 1800 });
 const google = googleClient(gLimiter);
 const firecrawl = firecrawlClient(fLimiter);
 const startedAt = new Date().toISOString();

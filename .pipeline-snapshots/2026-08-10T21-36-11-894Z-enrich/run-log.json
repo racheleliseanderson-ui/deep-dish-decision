@@ -2,53 +2,6 @@
   "runs": [
     {
       "kind": "enrich",
-      "startedAt": "2026-08-10T21:36:11.896Z",
-      "finishedAt": "2026-08-10T21:36:17.567Z",
-      "batchSize": 3,
-      "cities": [
-        "Vancouver, British Columbia",
-        "Victoria, British Columbia",
-        "Hood Canal, Washington"
-      ],
-      "resolved": 1,
-      "unresolved": 2,
-      "deferred": 0,
-      "avgCompleteness": 81,
-      "corpusEnriched": 22,
-      "apiCalls": {
-        "google": 3,
-        "firecrawl": 1
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-36-11-894Z-enrich",
-      "records": [
-        {
-          "slug": "published-on-main",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "part-parcel",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "hama-hama-oyster-saloon",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
       "startedAt": "2026-08-10T21:34:37.068Z",
       "finishedAt": "2026-08-10T21:35:52.340Z",
       "batchSize": 10,

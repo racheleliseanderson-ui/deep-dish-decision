@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T21:36:17.566Z",
+  "generatedAt": "2026-08-10T21:35:52.338Z",
   "records": {
     "canlis": {
       "google": {
@@ -2373,7 +2373,7 @@
       "meta": {
         "matchStatus": "unresolved",
         "confidence": 0,
-        "lastEnrichedAt": "2026-08-10T21:36:11.896Z",
+        "lastEnrichedAt": "2026-08-10T21:34:51.081Z",
         "note": "No Places result cleared the name and location thresholds.",
         "completeness": 29
       }
@@ -3278,174 +3278,21 @@
       "meta": {
         "matchStatus": "unresolved",
         "confidence": 0,
-        "lastEnrichedAt": "2026-08-10T21:36:12.565Z",
+        "lastEnrichedAt": "2026-08-10T21:35:39.722Z",
         "note": "No Places result cleared the name and location thresholds.",
         "completeness": 29
       }
     },
     "hama-hama-oyster-saloon": {
-      "google": {
-        "placeId": "ChIJ88qWuaDNkVQR3ptf1sFACEg",
-        "displayName": "Hama Hama Oyster Saloon",
-        "businessStatus": "OPERATIONAL",
-        "formattedAddress": "35846 US-101 Suite B, Lilliwaup, WA 98555, USA",
-        "address": {
-          "streetNumber": "35846",
-          "route": "U.S. 101",
-          "neighborhood": "",
-          "locality": "Lilliwaup",
-          "county": "Mason County",
-          "state": "Washington",
-          "stateCode": "WA",
-          "postalCode": "98555",
-          "country": "US"
-        },
-        "latLng": {
-          "latitude": 47.542349599999994,
-          "longitude": -123.04070539999998
-        },
-        "phone": "(360) 877-5811",
-        "phoneE164": "+13608775811",
-        "website": "http://hamahamaoysters.com/",
-        "googleMapsUri": "https://maps.google.com/?cid=5190469771813952478&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "priceLevel": "PRICE_LEVEL_MODERATE",
-        "priceBand": "$$",
-        "rating": 4.7,
-        "reviewCount": 1391,
-        "categories": [
-          "seafood_restaurant",
-          "beer_garden",
-          "bar",
-          "restaurant"
-        ],
-        "primaryCategory": "Seafood Restaurant",
-        "hours": [
-          {
-            "day": "Sunday",
-            "intervals": [
-              {
-                "open": "11:00",
-                "close": "17:00"
-              }
-            ]
-          },
-          {
-            "day": "Monday",
-            "intervals": []
-          },
-          {
-            "day": "Tuesday",
-            "intervals": []
-          },
-          {
-            "day": "Wednesday",
-            "intervals": []
-          },
-          {
-            "day": "Thursday",
-            "intervals": []
-          },
-          {
-            "day": "Friday",
-            "intervals": [
-              {
-                "open": "11:00",
-                "close": "17:00"
-              }
-            ]
-          },
-          {
-            "day": "Saturday",
-            "intervals": [
-              {
-                "open": "11:00",
-                "close": "17:00"
-              }
-            ]
-          }
-        ],
-        "amenities": {
-          "outdoorSeating": true,
-          "reservable": true,
-          "delivery": false,
-          "dineIn": true,
-          "goodForGroups": true,
-          "goodForChildren": true,
-          "liveMusic": false,
-          "restroom": true,
-          "menuForChildren": false,
-          "servesVegetarianFood": false,
-          "servesBeer": true,
-          "servesWine": true,
-          "servesCocktails": false,
-          "servesBreakfast": false,
-          "servesBrunch": false,
-          "servesLunch": true,
-          "servesDinner": false,
-          "servesDessert": true
-        },
-        "accessibility": {
-          "wheelchairAccessibleParking": true,
-          "wheelchairAccessibleEntrance": true,
-          "wheelchairAccessibleRestroom": true,
-          "wheelchairAccessibleSeating": true
-        },
-        "parking": {
-          "freeParkingLot": true,
-          "paidParkingLot": true,
-          "freeStreetParking": true
-        },
-        "editorialSummary": "",
-        "retrievedAt": "2026-08-10T21:36:13.055Z"
-      },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "https://www.exploretock.com/hamahamaoystersaloon?tock_source=tock&tock_medium=search_nav",
-        "reservationPlatform": "Tock",
-        "dietaryLanguage": [
-          {
-            "quote": "Menu & Dietary Options Our menu features fresh oysters and shellfish, alongside gluten-free, vegetarian, and non-seafood options.",
-            "sourceUrl": "https://hamahamaoysters.com/pages/oyster-saloon"
-          }
-        ],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "https://hamahamaoysters.com/pages/oyster-saloon"
-        ],
-        "retrievedAt": "2026-08-10T21:36:13.055Z"
-      },
-      "summary": {
-        "text": "Hama Hama Oyster Saloon is a seafood restaurant located in Lilliwaup, Washington, also operating as a beer garden and bar. It offers outdoor seating, is reservable via Tock, and serves lunch and dessert. The menu includes fresh oysters and shellfish, with gluten-free, vegetarian, and non-seafood options available.",
-        "model": "google/gemini-2.5-flash",
-        "basedOnFields": [
-          "name",
-          "city",
-          "state",
-          "googleCategories",
-          "primaryCategory",
-          "recordedCuisine",
-          "priceBand",
-          "rating",
-          "reviewCount",
-          "amenities",
-          "accessibility",
-          "servesDaysCount",
-          "reservationPlatform",
-          "dietaryQuotes"
-        ],
-        "generatedAt": "2026-08-10T21:36:17.566Z"
-      },
+      "google": null,
+      "site": null,
+      "summary": null,
       "meta": {
-        "matchStatus": "resolved",
-        "confidence": 1,
-        "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:36:13.055Z",
-        "completeness": 88
+        "matchStatus": "unresolved",
+        "confidence": 0,
+        "lastEnrichedAt": "2026-08-10T21:35:40.220Z",
+        "note": "No Places result cleared the name and location thresholds.",
+        "completeness": 29
       }
     },
     "saffron-mediterranean-kitchen": {
