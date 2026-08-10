@@ -359,7 +359,7 @@ appendRun({
   inserted,
   duplicatesSkipped: skipped,
   apiCalls: { placesSearchText: searches },
-  retries: gLimiter.retries ?? 0,
+  retries: gLimiter.stats?.retries ?? 0,
   failures,
   snapshot: snapshotDir,
   insertedSlugs,
