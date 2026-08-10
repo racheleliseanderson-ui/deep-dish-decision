@@ -2,42 +2,6 @@
   "runs": [
     {
       "kind": "enrich",
-      "startedAt": "2026-08-10T21:36:33.397Z",
-      "finishedAt": "2026-08-10T21:36:57.332Z",
-      "batchSize": 2,
-      "cities": [
-        "Vancouver, British Columbia",
-        "Victoria, British Columbia"
-      ],
-      "resolved": 2,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 86,
-      "corpusEnriched": 22,
-      "apiCalls": {
-        "google": 2,
-        "firecrawl": 5
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-36-33-396Z-enrich",
-      "records": [
-        {
-          "slug": "published-on-main",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "part-parcel",
-          "matchStatus": "resolved",
-          "completeness": 96,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
       "startedAt": "2026-08-10T21:36:11.896Z",
       "finishedAt": "2026-08-10T21:36:17.567Z",
       "batchSize": 3,
