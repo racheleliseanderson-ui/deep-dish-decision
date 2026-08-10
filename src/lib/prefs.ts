@@ -49,7 +49,7 @@ export function useContrastMode() {
   const [mode, setMode] = useState<ContrastMode>("standard");
 
   useEffect(() => {
-    const sync = () => setMode(readStored(CONTRAST_KEY, ["standard", "mono", "cvd"], "standard"));
+    const sync = () => setMode(readStored<ContrastMode>(CONTRAST_KEY, ["standard", "mono", "cvd"], "standard"));
     sync();
     window.addEventListener(EVENT, sync);
     return () => window.removeEventListener(EVENT, sync);
@@ -68,7 +68,7 @@ export function useLocale() {
   const [locale, setLocale] = useState<Locale>("en");
 
   useEffect(() => {
-    const sync = () => setLocale(readStored(LOCALE_KEY, ["en", "es"], "en"));
+    const sync = () => setLocale(readStored<Locale>(LOCALE_KEY, ["en", "es"], "en"));
     sync();
     window.addEventListener(EVENT, sync);
     return () => window.removeEventListener(EVENT, sync);
