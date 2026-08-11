@@ -28,16 +28,21 @@ export function RecordCard({
   return (
     <article
       className={cn(
-        "group relative rounded-2xl border bg-surface transition-all duration-500 ease-instrument",
+        "group relative rounded-2xl border bg-surface transition-all duration-500 ease-instrument will-change-transform",
         sc.blocked
           ? "border-critical/30"
           : "border-border hover:border-border-strong hover:shadow-lift",
       )}
+      data-rank={sc.rank}
+      data-blocked={sc.blocked ? "1" : "0"}
     >
       <div className="flex flex-col gap-5 p-5 sm:flex-row sm:p-6">
         <div className="flex shrink-0 flex-col items-start gap-3 sm:w-[104px]">
           <div className="flex items-baseline gap-2">
-            <span className="text-num text-3xl font-medium leading-none text-primary">
+            <span
+              key={sc.rank}
+              className="text-num text-3xl font-medium leading-none text-primary transition-all duration-500 ease-instrument animate-in fade-in"
+            >
               {String(sc.rank).padStart(2, "0")}
             </span>
           </div>
@@ -90,6 +95,17 @@ export function RecordCard({
             </Chip>
             <Chip>{r.planningLoad ?? "load unstated"} load</Chip>
             <Chip>{r.depthLabel}</Chip>
+            {sc.findings.some((f) => f.provenance && f.provenance !== "first-party") ? (
+              <Chip tone="unknown">
+                <span className="text-num">
+                  {sc.findings.filter((f) => f.provenance && f.provenance !== "first-party").length}
+                </span>{" "}
+                labeled signal
+                {sc.findings.filter((f) => f.provenance && f.provenance !== "first-party").length === 1
+                  ? ""
+                  : "s"}
+              </Chip>
+            ) : null}
           </div>
 
           {sc.reasons.length ? (

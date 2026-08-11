@@ -46,22 +46,39 @@ export function snapshot(tag) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-/** Single in-flight request per provider, with backoff on 429/5xx. */
-export function createLimiter({ minDelayMs = 220, maxRetries = 4 } = {}) {
+/** Retriable HTTP statuses: request timeout, rate limit, server errors. */
+function isRetriableStatus(status) {
+  return status === 408 || status === 425 || status === 429 || status >= 500;
+}
+
+/** Single in-flight request per provider, with backoff on 408/429/5xx and network throws. */
+export function createLimiter({ minDelayMs = 220, maxRetries = 5 } = {}) {
   let chain = Promise.resolve();
   const stats = { calls: 0, retries: 0, failures: 0, deferred: 0 };
 
   async function attempt(fn) {
     for (let i = 0; i <= maxRetries; i += 1) {
       stats.calls += 1;
-      const res = await fn();
-      if (res.status !== 429 && res.status < 500) return res;
+      let res;
+      try {
+        res = await fn();
+      } catch (err) {
+        if (i === maxRetries) {
+          stats.failures += 1;
+          throw err;
+        }
+        stats.retries += 1;
+        const wait = Math.min(30_000, 2 ** i * 900) + Math.floor(Math.random() * 500);
+        await sleep(wait);
+        continue;
+      }
+      if (!isRetriableStatus(res.status)) return res;
       if (i === maxRetries) {
         stats.failures += 1;
         return res;
       }
       stats.retries += 1;
-      const wait = Math.min(30_000, 2 ** i * 800) + Math.floor(Math.random() * 400);
+      const wait = Math.min(30_000, 2 ** i * 900) + Math.floor(Math.random() * 500);
       await sleep(wait);
     }
     return null;

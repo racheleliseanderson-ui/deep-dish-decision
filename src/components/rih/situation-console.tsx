@@ -46,9 +46,9 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
               Describe the night, not just the cuisine.
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-              Occasion, party composition, guest constraints, lead time, planning tolerance,
-              daypart and spend band all reshape ranking order and which findings rise first.
-              Partial input is fine — unknowns stay visible rather than being filled in.
+              Occasion and guest constraints weigh more heavily on depth and ranking. Party size, lead
+              time, planning tolerance, daypart and spend band further reshape which findings rise
+              first. Partial input is fine — unknowns stay visible rather than being filled in.
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -130,18 +130,33 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
 
         <div className="space-y-6">
           <div className="grid grid-cols-2 gap-5">
-            <Field label="Party size" hint={s.partySize ? `${s.partySize}` : "unset"}>
+            <Field label="Party size" hint={s.partySize !== null ? `${s.partySize}` : "unset"}>
               <input
                 type="range"
                 min={1}
                 max={14}
                 value={s.partySize ?? 2}
                 onChange={(e) => set("partySize", Number(e.target.value))}
-                className="w-full accent-[var(--color-primary)]"
+                className={cn(
+                  "w-full accent-[var(--color-primary)] transition-opacity",
+                  s.partySize === null ? "opacity-40" : "opacity-100",
+                )}
                 aria-label="Party size"
+                aria-valuetext={s.partySize === null ? "unset" : String(s.partySize)}
               />
-              <div className="mt-1 flex justify-between text-[10px] text-subtle">
+              <div className="mt-1 flex items-center justify-between text-[10px] text-subtle">
                 <span>solo</span>
+                {s.partySize === null ? (
+                  <span className="text-unknown">not set — move to apply</span>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => set("partySize", null)}
+                    className="text-subtle underline-offset-2 hover:text-foreground hover:underline"
+                  >
+                    clear
+                  </button>
+                )}
                 <span>14+</span>
               </div>
             </Field>
@@ -155,11 +170,26 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
                 max={60}
                 value={s.leadDays ?? 14}
                 onChange={(e) => set("leadDays", Number(e.target.value))}
-                className="w-full accent-[var(--color-primary)]"
+                className={cn(
+                  "w-full accent-[var(--color-primary)] transition-opacity",
+                  s.leadDays === null ? "opacity-40" : "opacity-100",
+                )}
                 aria-label="Days until dinner"
+                aria-valuetext={s.leadDays === null ? "unset" : `${s.leadDays} days`}
               />
-              <div className="mt-1 flex justify-between text-[10px] text-subtle">
+              <div className="mt-1 flex items-center justify-between text-[10px] text-subtle">
                 <span>tonight</span>
+                {s.leadDays === null ? (
+                  <span className="text-unknown">not set — move to apply</span>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => set("leadDays", null)}
+                    className="text-subtle underline-offset-2 hover:text-foreground hover:underline"
+                  >
+                    clear
+                  </button>
+                )}
                 <span>60</span>
               </div>
             </Field>

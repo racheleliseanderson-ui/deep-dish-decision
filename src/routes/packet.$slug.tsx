@@ -2,6 +2,7 @@ import { Eyebrow } from "@/components/rih/bits";
 import { ThemeToggle } from "@/components/rih/theme-toggle";
 import { bySlug } from "@/lib/dataset";
 import { decisionBrief, scoreRecord, situationDepth, SITUATION_SLOTS } from "@/lib/intelligence";
+import { readEnrichmentEnabled } from "@/lib/prefs";
 import { decodeSituation } from "@/lib/situation-url";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 
@@ -45,7 +46,9 @@ function Packet() {
     typeof window === "undefined"
       ? decodeSituation("")
       : decodeSituation(window.location.search);
-  const sc = scoreRecord(record, situation);
+  const sc = scoreRecord(record, situation, {
+    useEnrichment: typeof window === "undefined" ? true : readEnrichmentEnabled(),
+  });
   const brief = decisionBrief(sc, situation);
   const depth = situationDepth(situation);
 

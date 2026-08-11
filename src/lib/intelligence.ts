@@ -1,4 +1,5 @@
 import { dataset, type RestaurantRecord } from "@/lib/dataset";
+import * as enrichmentJoin from "@/lib/enrichment";
 
 /* ------------------------------------------------------------------ *
  * Situation model
@@ -77,7 +78,27 @@ export const emptySituation: Situation = {
   wineForward: false,
 };
 
+/**
+ * Weighted depth (0–9). Occasion and guest constraints count more heavily
+ * because they reshape fail-closed findings and ranking order the most.
+ * Clamped so the meter stays readable as nine bars.
+ */
 export function situationDepth(s: Situation): number {
+  let d = 0;
+  if (s.occasion) d += 2;
+  if (s.constraints.length) d += 2;
+  if (s.partySize !== null) d += 1;
+  if (s.leadDays !== null) d += 1;
+  if (s.maxCommitment) d += 1;
+  if (s.maxPlanningLoad) d += 1;
+  if (s.daypart) d += 1;
+  if (s.spendBand) d += 1;
+  if (s.regionGroup ?? s.region) d += 1;
+  return Math.min(SITUATION_SLOTS, d);
+}
+
+/** Unweighted slot fill count for diagnostics (nine binary slots). */
+export function situationSlotCount(s: Situation): number {
   const slots = [
     s.occasion,
     s.partySize,
@@ -93,6 +114,12 @@ export function situationDepth(s: Situation): number {
 }
 
 export const SITUATION_SLOTS = 9;
+
+/** Ranking / findings options — enrichment is opt-in at call sites via prefs. */
+export type ScoreOptions = {
+  /** When true, labeled third-party signals join as watch/unknown only. Default true. */
+  useEnrichment?: boolean;
+};
 
 /* ------------------------------------------------------------------ *
  * Occasion profiles — how each occasion reads a record
@@ -265,6 +292,8 @@ export type Finding = {
   impact: number; // 0-100, decision impact for this situation
   confidence: "high" | "moderate" | "low";
   situational: boolean;
+  /** Set only on labeled third-party enrichment findings. */
+  provenance?: "first-party" | "google-places" | "site-scrape" | "enrichment";
 };
 
 const NOT_STATED = ["Not stated", "Direct confirmation required", "Route details unknown"];
@@ -285,7 +314,11 @@ const clamp = (n: number, a: number, b: number) => Math.max(a, Math.min(b, n));
 const levelIndex = (list: readonly string[], v: string | undefined) =>
   v ? list.indexOf(v) : -1;
 
-export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
+export function buildFindings(
+  r: RestaurantRecord,
+  s: Situation,
+  opts: ScoreOptions = {},
+): Finding[] {
   const f: Finding[] = [];
   const c = (x: Constraint) => s.constraints.includes(x);
   const push = (x: Finding) => f.push(x);
@@ -697,7 +730,23 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       impact: 20,
       confidence: "high",
       situational: false,
+      provenance: "first-party",
     });
+  }
+
+  /* --- labeled enrichment join (never critical / never overwrites) ---- */
+  if (opts.useEnrichment !== false) {
+    // Lazy import avoided: static import at top would cycle; call via require-like helper.
+    const { buildEnrichmentFindings } = enrichmentJoin;
+    for (const ef of buildEnrichmentFindings(r, s)) {
+      // Force non-critical: third-party must not fail-close.
+      if (ef.layer === "critical") continue;
+      push({
+        ...ef,
+        layer: ef.layer === "watch" ? "watch" : "unknown",
+        provenance: ef.provenance ?? "enrichment",
+      });
+    }
   }
 
   const order: Record<FindingLayer, number> = { critical: 0, watch: 1, unknown: 2 } as never;
@@ -705,6 +754,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
     .sort((a, b) => order[a.layer] - order[b.layer] || b.impact - a.impact)
     .filter((v, i, arr) => arr.findIndex((x) => x.id === v.id) === i);
 }
+
 
 function capitalize(s: string) {
   return s.charAt(0).toUpperCase() + s.slice(1);
@@ -743,8 +793,8 @@ export type Scored = {
   blocked: boolean;
 };
 
-export function scoreRecord(r: RestaurantRecord, s: Situation): Scored {
-  const findings = buildFindings(r, s);
+export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOptions = {}): Scored {
+  const findings = buildFindings(r, s, opts);
   const burden = confirmBurden(r, findings);
   const reasons: string[] = [];
 
@@ -835,8 +885,8 @@ export function scoreRecord(r: RestaurantRecord, s: Situation): Scored {
   };
 }
 
-export function rank(list: RestaurantRecord[], s: Situation): Scored[] {
-  const scored = list.map((r) => scoreRecord(r, s));
+export function rank(list: RestaurantRecord[], s: Situation, opts: ScoreOptions = {}): Scored[] {
+  const scored = list.map((r) => scoreRecord(r, s, opts));
   scored.sort((a, b) => {
     if (a.blocked !== b.blocked) return a.blocked ? 1 : -1;
     if (b.fit !== a.fit) return b.fit - a.fit;

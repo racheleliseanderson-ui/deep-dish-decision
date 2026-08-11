@@ -5,7 +5,9 @@ import { Reveal } from "@/components/rih/reveal";
 import { SiteNav } from "@/components/rih/site-nav";
 import { bySlug, type RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
+import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
+import { enrichmentAudit } from "@/lib/enrichment";
 import { decodeSituation, encodeSituation } from "@/lib/situation-url";
 import { cn } from "@/lib/utils";
 import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
@@ -76,8 +78,10 @@ function Dossier() {
   const { record } = Route.useLoaderData();
   const search = useRouterState({ select: (s) => s.location.searchStr });
   const situation = search ? decodeSituation(search) : emptySituation;
-  const sc = scoreRecord(record, situation);
+  const enrichment = useEnrichmentSignals();
+  const sc = scoreRecord(record, situation, { useEnrichment: enrichment.enabled });
   const shortlist = useShortlist();
+  const audit = enrichmentAudit(record.slug);
   const q = encodeSituation(situation);
   const strongest = topOccasion(record);
 

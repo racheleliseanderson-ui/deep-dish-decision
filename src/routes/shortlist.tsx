@@ -3,6 +3,7 @@ import { Reveal } from "@/components/rih/reveal";
 import { SiteNav } from "@/components/rih/site-nav";
 import { bySlug, type RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
+import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
@@ -30,10 +31,14 @@ export const Route = createFileRoute("/shortlist")({
 
 function Shortlist() {
   const { slugs, remove, clear, move } = useShortlist();
+  const enrichment = useEnrichmentSignals();
   const rows = slugs
     .map((s) => bySlug.get(s))
     .filter((r): r is RestaurantRecord => Boolean(r))
-    .map((r) => ({ record: r, sc: scoreRecord(r, emptySituation) }));
+    .map((r) => ({
+      record: r,
+      sc: scoreRecord(r, emptySituation, { useEnrichment: enrichment.enabled }),
+    }));
 
   const criticals = rows.reduce((a, r) => a + r.sc.criticals.length, 0);
   const unknowns = rows.reduce((a, r) => a + r.record.unknownsCount, 0);

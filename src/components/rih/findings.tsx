@@ -32,6 +32,17 @@ export function FindingRow({ f, compact = false }: { f: Finding; compact?: boole
           </span>
         </div>
         <p className="mt-1 text-sm leading-snug text-foreground">{f.title}</p>
+        {f.provenance && f.provenance !== "first-party" ? (
+          <p className="mt-1">
+            <Chip tone="unknown">
+              {f.provenance === "google-places"
+                ? "Google Places · labeled"
+                : f.provenance === "site-scrape"
+                  ? "Site scrape · labeled"
+                  : "Third-party · labeled"}
+            </Chip>
+          </p>
+        ) : null}
         {!compact && f.detail ? (
           <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground">{f.detail}</p>
         ) : null}

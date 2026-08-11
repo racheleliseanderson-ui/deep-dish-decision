@@ -2,6 +2,7 @@ import { Chip, Eyebrow, Rule } from "@/components/rih/bits";
 import { DecisionBrief } from "@/components/rih/decision-brief";
 import { LayerStack } from "@/components/rih/findings";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { enrichmentAudit } from "@/lib/enrichment";
 import type { Scored, Situation } from "@/lib/intelligence";
 import { useState } from "react";
 
@@ -62,6 +63,16 @@ export function CaseFile({
             <Chip tone="unknown">{r.unknownsCount} unknowns</Chip>
             <Chip>{r.depthLabel}</Chip>
             <Chip>Reviewed {r.reviewedAt}</Chip>
+            {(() => {
+              const audit = enrichmentAudit(r.slug);
+              return audit.present ? (
+                <Chip tone="unknown">
+                  Enrichment {audit.completeness ?? "—"}% · {audit.matchStatus ?? "matched"}
+                </Chip>
+              ) : (
+                <Chip tone="neutral">No third-party enrichment</Chip>
+              );
+            })()}
           </div>
           <nav className="mt-4 flex gap-1">
             {TABS.map((t) => (
@@ -160,6 +171,8 @@ export function CaseFile({
                 {r.fieldVolatility}
               </p>
               <p className="mt-2 text-[12px] leading-relaxed text-subtle">{r.disclaimer}</p>
+              <Rule />
+              <EnrichmentDisclosure slug={r.slug} />
             </div>
           ) : null}
 
@@ -226,5 +239,63 @@ export function CaseFile({
         </div>
       </DialogContent>
     </Dialog>
+  );
+}
+
+function EnrichmentDisclosure({ slug }: { slug: string }) {
+  const [open, setOpen] = useState(false);
+  const audit = enrichmentAudit(slug);
+  return (
+    <div className="mt-2">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="flex w-full items-center justify-between rounded-lg border border-border bg-surface-raised/40 px-3 py-2.5 text-left transition-colors hover:border-border-strong"
+      >
+        <div>
+          <Eyebrow>Enrichment signals · audit only</Eyebrow>
+          <p className="mt-1 text-[13px] text-muted-foreground">
+            {audit.present
+              ? `Third-party completeness ${audit.completeness ?? "—"}% · ${audit.matchStatus ?? "matched"} · never overwrites first-party`
+              : "No enrichment ledger entry for this slug — first-party only."}
+          </p>
+        </div>
+        <span className="text-[11px] uppercase tracking-[0.14em] text-subtle">
+          {open ? "Hide" : "Show"}
+        </span>
+      </button>
+      {open && audit.present ? (
+        <div className="mt-3 space-y-3 rounded-xl border border-border bg-surface-sunken/40 px-4 py-3">
+          <p className="text-[12px] leading-relaxed text-subtle">
+            Labeled directory and site-scrape signals. They surface in findings only when the
+            matching first-party field is thin, and never enter the fail-closed path. Last enriched{" "}
+            {audit.lastEnrichedAt ?? "—"}.
+          </p>
+          {audit.signals.length ? (
+            <ul className="space-y-1.5">
+              {audit.signals.map((s) => (
+                <li key={s} className="text-[13px] text-muted-foreground">
+                  · {s}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-[13px] text-muted-foreground">No discrete signals recorded.</p>
+          )}
+          {audit.sources.length ? (
+            <div>
+              <Eyebrow>Source stamps</Eyebrow>
+              <ul className="mt-1.5 space-y-1">
+                {audit.sources.map((s) => (
+                  <li key={s} className="break-all text-[12px] text-subtle">
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+    </div>
   );
 }

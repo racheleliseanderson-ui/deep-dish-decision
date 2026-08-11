@@ -12,6 +12,7 @@ export type Locale = "en" | "es";
 
 export const CONTRAST_KEY = "rih-contrast";
 export const LOCALE_KEY = "rih-locale";
+export const ENRICHMENT_KEY = "rih-enrichment-signals";
 
 const EVENT = "rih-prefs";
 
@@ -84,4 +85,34 @@ export function useLocale() {
   }, []);
 
   return { locale, set };
+}
+
+
+/** Labeled third-party enrichment signals in findings. Default ON; pure first-party when off. */
+export function readEnrichmentEnabled(): boolean {
+  try {
+    const raw = localStorage.getItem(ENRICHMENT_KEY);
+    if (raw === null) return true;
+    return raw === "1" || raw === "true";
+  } catch {
+    return true;
+  }
+}
+
+export function useEnrichmentSignals() {
+  const [enabled, setEnabled] = useState(true);
+
+  useEffect(() => {
+    const sync = () => setEnabled(readEnrichmentEnabled());
+    sync();
+    window.addEventListener(EVENT, sync);
+    return () => window.removeEventListener(EVENT, sync);
+  }, []);
+
+  const set = useCallback((next: boolean) => {
+    store(ENRICHMENT_KEY, next ? "1" : "0");
+    setEnabled(next);
+  }, []);
+
+  return { enabled, set };
 }

@@ -17,9 +17,11 @@ import {
   SITUATION_SLOTS,
   type Situation,
 } from "@/lib/intelligence";
+import { useEnrichmentSignals } from "@/lib/prefs";
 import { encodeSituation } from "@/lib/situation-url";
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
+import { Reveal } from "@/components/rih/reveal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -49,10 +51,15 @@ function Hub() {
   const [compareSlugs, setCompareSlugs] = useState<string[]>([]);
   const [compareOpen, setCompareOpen] = useState(false);
   const [limit, setLimit] = useState(8);
+  const enrichment = useEnrichmentSignals();
+  const scoreOpts = useMemo(
+    () => ({ useEnrichment: enrichment.enabled }),
+    [enrichment.enabled],
+  );
 
   const ranked = useMemo(
-    () => rank(filterRecords(records, situation), situation),
-    [situation],
+    () => rank(filterRecords(records, situation), situation, scoreOpts),
+    [situation, scoreOpts],
   );
   const depth = situationDepth(situation);
   const lead = ranked[0] ?? null;
@@ -204,22 +211,36 @@ function Hub() {
           </div>
 
           <div className="mt-6 space-y-4">
-            {ranked.slice(0, limit).map((sc) => (
-              <RecordCard
-                key={sc.record.slug}
-                sc={sc}
-                situation={situation}
-                onOpen={() => setOpenSlug(sc.record.slug)}
-                onCompare={() => toggleCompare(sc.record.slug)}
-                compared={compareSlugs.includes(sc.record.slug)}
-              />
+            {ranked.slice(0, limit).map((sc, i) => (
+              <Reveal key={sc.record.slug} delay={Math.min(i * 40, 240)} as="div">
+                <RecordCard
+                  sc={sc}
+                  situation={situation}
+                  onOpen={() => setOpenSlug(sc.record.slug)}
+                  onCompare={() => toggleCompare(sc.record.slug)}
+                  compared={compareSlugs.includes(sc.record.slug)}
+                />
+              </Reveal>
             ))}
           </div>
 
           {!ranked.length ? (
-            <p className="mt-6 rounded-xl border border-border bg-surface p-6 text-sm leading-relaxed text-muted-foreground">
-              Nothing in the corpus matches those filters. The instrument will not widen your
-              constraints to produce a result — loosen a filter above instead.
+            <div className="mt-6 rounded-2xl border border-border bg-surface p-8 text-center">
+              <Eyebrow>No matches</Eyebrow>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Nothing in the corpus matches those filters. The instrument will not widen your
+                constraints to produce a result — loosen geography, cuisine, or search above.
+              </p>
+            </div>
+          ) : null}
+
+          {ranked.length > 0 && depth < 2 ? (
+            <p className="mt-4 rounded-xl border border-border/80 bg-surface-sunken/50 px-4 py-3 text-[12px] leading-relaxed text-subtle">
+              Situation depth {depth}/{SITUATION_SLOTS} — ordering is provisional. Add an occasion
+              or guest constraint to reshape fit, findings, and fail-closed holds.
+              {enrichment.enabled
+                ? " Labeled enrichment signals are on (reading controls)."
+                : " Pure first-party mode — enrichment signals hidden."}
             </p>
           ) : null}
 

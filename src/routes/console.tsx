@@ -43,13 +43,15 @@ function Console() {
     coverage;
   const [query, setQuery] = useState("");
   const [minScore, setMinScore] = useState(0);
+  const [maxScore, setMaxScore] = useState(100);
   const [state, setState] = useState("");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return records.filter(
+    const list = records.filter(
       (r) =>
         r.completeness >= minScore &&
+        r.completeness <= maxScore &&
         (!state || r.stateCode === state) &&
         (!q ||
           r.title.toLowerCase().includes(q) ||
@@ -57,7 +59,8 @@ function Console() {
           String(r.stateCode ?? "").toLowerCase().includes(q) ||
           r.slug.includes(q)),
     );
-  }, [query, minScore, state, records]);
+    return list.slice().sort((a, b) => a.completeness - b.completeness || a.title.localeCompare(b.title));
+  }, [query, minScore, maxScore, state, records]);
 
   const maxStateCount = Math.max(...states.map((s) => s.count), 1);
   const covered = states.filter((s) => s.count > 0);
@@ -77,6 +80,8 @@ function Console() {
             Counted at {dt(generatedAt)} UTC from the enrichment ledger on disk. Completeness is a
             24-check score over address, hours, contact, booking path, price, rating, amenities,
             policy language and provenance — a low score means fields are unstated, not wrong.
+            Labeled enrichment signals now join findings on the instrument when first-party fields
+            are thin (toggle off under reading controls for pure first-party).
           </p>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -110,6 +115,45 @@ function Console() {
           </div>
         </div>
       </header>
+      <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6">
+        <div className="plate grain-veil flex flex-wrap items-start justify-between gap-4 p-5">
+          <div className="min-w-0 max-w-2xl">
+            <Eyebrow>Thin-record priority</Eyebrow>
+            <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
+              Pipeline batches should prefer low-completeness and unresolved matches first. Use the
+              completeness filter below (under 70%) and feed those slugs to the Run Planner. Scrape
+              retries now cover 408/425/429/5xx with extra backoff.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setMinScore(0);
+                setMaxScore(100);
+                setQuery("");
+                setState("");
+              }}
+              className="rounded-full border border-border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-muted-foreground hover:text-foreground"
+            >
+              Show all
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setMinScore(0);
+                setMaxScore(69);
+                setQuery("");
+                setState("");
+              }}
+              className="rounded-full border border-critical/40 bg-critical-soft px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-foreground"
+            >
+              Prioritize thin {'<70%'}
+            </button>
+          </div>
+        </div>
+      </div>
+
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Completeness distribution */}

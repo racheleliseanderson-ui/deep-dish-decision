@@ -1,6 +1,6 @@
 import { ThemeToggle } from "@/components/rih/theme-toggle";
 import { useT } from "@/lib/i18n";
-import { useContrastMode, type ContrastMode, type Locale } from "@/lib/prefs";
+import { useContrastMode, useEnrichmentSignals, type ContrastMode, type Locale } from "@/lib/prefs";
 import { cn } from "@/lib/utils";
 
 const SEG =
@@ -48,6 +48,7 @@ function Segmented<T extends string>({
 export function DisplayControls({ className }: { className?: string }) {
   const { t, locale, setLocale } = useT();
   const { mode, set } = useContrastMode();
+  const enrichment = useEnrichmentSignals();
 
   return (
     <div className={cn("no-print flex flex-wrap items-center gap-2", className)}>
@@ -69,6 +70,15 @@ export function DisplayControls({ className }: { className?: string }) {
         options={[
           ["en", "EN"],
           ["es", "ES"],
+        ]}
+      />
+      <Segmented<"on" | "off">
+        label="Enrichment signals"
+        value={enrichment.enabled ? "on" : "off"}
+        onChange={(v) => enrichment.set(v === "on")}
+        options={[
+          ["on", "Enrich on"],
+          ["off", "1st-party"],
         ]}
       />
     </div>
