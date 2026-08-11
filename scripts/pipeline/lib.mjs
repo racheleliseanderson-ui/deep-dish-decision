@@ -152,13 +152,38 @@ const PLACE_FIELDS = [
   "accessibilityOptions",
 ];
 
+/**
+ * Google Places (New) client.
+ *
+ * Direct (preferred): GOOGLE_MAPS_API_KEY only → places.googleapis.com
+ * Legacy Lovable:    LOVABLE_API_KEY + GOOGLE_MAPS_API_KEY → connector gateway
+ *
+ * Set GOOGLE_PLACES_DIRECT=0 to force the Lovable gateway when both keys exist.
+ */
 export function googleClient(limiter) {
-  const lovableKey = requireEnv("LOVABLE_API_KEY");
   const mapsKey = requireEnv("GOOGLE_MAPS_API_KEY");
+  const lovableKey = process.env.LOVABLE_API_KEY;
+  const forceGateway = process.env.GOOGLE_PLACES_DIRECT === "0";
+  const useDirect = !forceGateway || !lovableKey;
 
   async function post(pathname, body, fieldMask) {
-    const res = await limiter.run(() =>
-      fetch(`${GATEWAY}/google_maps${pathname}`, {
+    const res = await limiter.run(() => {
+      if (useDirect) {
+        // Places API (New) — https://places.googleapis.com/v1/...
+        const directPath = pathname.includes("searchNearby")
+          ? "/places:searchNearby"
+          : "/places:searchText";
+        return fetch(`https://places.googleapis.com/v1${directPath}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-Goog-Api-Key": mapsKey,
+            "X-Goog-FieldMask": fieldMask,
+          },
+          body: JSON.stringify(body),
+        });
+      }
+      return fetch(`${GATEWAY}/google_maps${pathname}`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${lovableKey}`,
@@ -167,8 +192,8 @@ export function googleClient(limiter) {
           "X-Goog-FieldMask": fieldMask,
         },
         body: JSON.stringify(body),
-      }),
-    );
+      });
+    });
     const text = await res.text();
     if (!res.ok) {
       return { ok: false, status: res.status, error: text.slice(0, 500) };
