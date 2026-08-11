@@ -2,6 +2,7 @@ import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { CaseFile } from "@/components/rih/case-file";
 import { CompareDialog, CompareTray } from "@/components/rih/compare";
 import { DecisionBrief } from "@/components/rih/decision-brief";
+import { GiltRule, Marquee } from "@/components/rih/gilt";
 import { RecordCard } from "@/components/rih/record-card";
 import { SituationConsole } from "@/components/rih/situation-console";
 import { SiteNav } from "@/components/rih/site-nav";
@@ -62,6 +63,20 @@ function Hub() {
     .map((s) => ranked.find((x) => x.record.slug === s))
     .filter((x): x is NonNullable<typeof x> => !!x);
 
+  // Ticker copy is counted from the corpus, never written by hand.
+  const tickerItems = useMemo(
+    () => [
+      `${dataset.count} records under review`,
+      `${dataset.regions} regions`,
+      `${OPS.officialConflicts} official conflicts open`,
+      `${OPS.avgUnknowns} mean unknowns per record`,
+      `${OPS.overdue} reviews overdue`,
+      "no sentiment scores",
+      "fail-closed on stated constraints",
+    ],
+    [],
+  );
+
   const packetHref = (slug: string) => {
     const q = encodeSituation(situation);
     return `/packet/${slug}${q ? `?${q}` : ""}`;
@@ -89,11 +104,16 @@ function Hub() {
         <div className="mx-auto max-w-7xl px-4 pb-14 pt-10 sm:px-6 sm:pb-20 sm:pt-14">
           <SiteNav />
 
+          <div className="mt-10 grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
+            <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">001</span>
+            <span className="text-eyebrow truncate">The window</span>
+          </div>
+          <GiltRule className="mt-3" />
 
-          <h1 className="mt-8 max-w-4xl font-display text-[2.6rem] font-normal leading-[0.98] tracking-[-0.02em] sm:text-6xl lg:text-[4.6rem]">
+          <h1 className="display-statement mt-7 max-w-[19ch]">
             A decision instrument,
             <br />
-            <span className="text-primary">not a ratings board.</span>
+            <span className="text-gilt">not a ratings board.</span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground sm:text-base">
@@ -126,6 +146,9 @@ function Hub() {
           </div>
         </div>
       </header>
+
+      <Marquee items={tickerItems} />
+
 
       {/* ---------------- Situation ---------------- */}
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">

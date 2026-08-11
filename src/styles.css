@@ -58,9 +58,28 @@
 
   --shadow-plate: var(--plate-shadow);
   --shadow-lift: var(--lift-shadow);
+  --shadow-vitrine: var(--vitrine-shadow);
+
+  --color-gilt: var(--gilt);
+  --color-gilt-soft: var(--gilt-soft);
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-marble: var(--marble);
 
   --ease-instrument: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-marquee: marquee 46s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
+
 
 /* Light — warm paper, printed-brief feel */
 :root {
@@ -108,8 +127,19 @@
 
   --plate-shadow: 0 1px 0 0 oklch(1 0 0 / 60%) inset, 0 14px 34px -22px oklch(0.21 0.012 60 / 28%);
   --lift-shadow: 0 1px 0 0 oklch(1 0 0 / 70%) inset, 0 28px 60px -30px oklch(0.21 0.012 60 / 34%);
+  --vitrine-shadow: 0 1px 0 0 oklch(1 0 0 / 75%) inset,
+    0 0 0 1px color-mix(in oklab, var(--gilt) 22%, transparent),
+    0 40px 90px -46px oklch(0.21 0.012 60 / 42%);
+
+  /* Fifth Avenue register: lacquered ink ground, brass, travertine. */
+  --gilt: oklch(0.62 0.11 82);
+  --gilt-soft: oklch(0.62 0.11 82 / 14%);
+  --ink: oklch(0.19 0.014 62);
+  --ink-foreground: oklch(0.96 0.008 84);
+  --marble: oklch(0.965 0.008 92);
 
   color-scheme: light;
+
 }
 
 /* Dark — deep charcoal instrument */
@@ -156,8 +186,18 @@
 
   --plate-shadow: 0 1px 0 0 oklch(1 0 0 / 4%) inset, 0 18px 40px -24px oklch(0 0 0 / 70%);
   --lift-shadow: 0 1px 0 0 oklch(1 0 0 / 6%) inset, 0 30px 70px -30px oklch(0 0 0 / 80%);
+  --vitrine-shadow: 0 1px 0 0 oklch(1 0 0 / 7%) inset,
+    0 0 0 1px color-mix(in oklab, var(--gilt) 30%, transparent),
+    0 44px 100px -46px oklch(0 0 0 / 85%);
+
+  --gilt: oklch(0.82 0.12 84);
+  --gilt-soft: oklch(0.82 0.12 84 / 15%);
+  --ink: oklch(0.125 0.008 62);
+  --ink-foreground: oklch(0.96 0.008 84);
+  --marble: oklch(0.245 0.009 70);
 
   color-scheme: dark;
+
 }
 
 @layer base {
@@ -247,6 +287,73 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Vitrine — a plate-glass display case: gilt hairline, sheen, deep drop. */
+@utility vitrine {
+  position: relative;
+  background-image: linear-gradient(
+    170deg,
+    color-mix(in oklab, var(--color-gilt) 7%, var(--color-surface)),
+    var(--color-surface) 42%,
+    color-mix(in oklab, var(--color-ink) 6%, var(--color-surface))
+  );
+  border: 1px solid color-mix(in oklab, var(--color-gilt) 34%, transparent);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-vitrine);
+}
+
+/* Gilt hairline used to open and close sections. */
+@utility gilt-rule {
+  height: 1px;
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gilt) 8%,
+    color-mix(in oklab, var(--color-gilt) 45%, transparent) 55%,
+    transparent
+  );
+}
+
+/* Lacquered ink band — full-bleed chapters. */
+@utility ink-band {
+  background-color: var(--color-ink);
+  color: var(--color-ink-foreground);
+  background-image: radial-gradient(
+      ellipse 60% 60% at 78% 6%,
+      color-mix(in oklab, var(--color-gilt) 18%, transparent),
+      transparent 68%
+    ),
+    linear-gradient(180deg, color-mix(in oklab, var(--color-gilt) 5%, transparent), transparent 62%);
+}
+
+/* Display statement type — Fifth Avenue window lettering. */
+@utility display-statement {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 7.2vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+@utility display-chapter {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.6vw, 3.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+@utility marquee-track {
+  display: flex;
+  width: max-content;
+  animation: var(--animate-marquee);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+
 /* Black-and-white reading: hue removed from every semantic token, meaning carried
    by lightness and by the text labels that always accompany a colour. */
 .mode-mono {
@@ -323,7 +430,29 @@
 
 
 
+/* Gilt has to survive the accessibility modes: mono drops the hue, CVD moves the
+   accent to the blue end so it never pairs red with green. */
+.mode-mono {
+  --gilt: oklch(0.78 0 0);
+  --gilt-soft: oklch(1 0 0 / 12%);
+  --marble: oklch(0.24 0 0);
+}
+.mode-mono:not(.dark) {
+  --gilt: oklch(0.32 0 0);
+  --gilt-soft: oklch(0 0 0 / 10%);
+  --marble: oklch(0.96 0 0);
+}
+.mode-cvd {
+  --gilt: oklch(0.84 0.11 88);
+  --gilt-soft: oklch(0.84 0.11 88 / 15%);
+}
+.mode-cvd:not(.dark) {
+  --gilt: oklch(0.5 0.11 82);
+  --gilt-soft: oklch(0.5 0.11 82 / 12%);
+}
+
 @media print {
+
   .no-print {
     display: none !important;
   }
@@ -340,6 +469,11 @@
     --border: oklch(0 0 0 / 16%);
     --border-strong: oklch(0 0 0 / 30%);
     --primary: oklch(0.45 0.09 70);
+    --gilt: oklch(0.35 0.02 80);
+    --gilt-soft: oklch(0 0 0 / 6%);
+    --ink: oklch(1 0 0);
+    --ink-foreground: oklch(0.18 0.01 60);
+    --marble: oklch(1 0 0);
   }
   html {
     color-scheme: light;
@@ -347,7 +481,12 @@
   body {
     background: #fff;
   }
-  .plate {
+  .plate,
+  .vitrine {
     box-shadow: none;
   }
+  .ink-band {
+    background-image: none;
+  }
 }
+

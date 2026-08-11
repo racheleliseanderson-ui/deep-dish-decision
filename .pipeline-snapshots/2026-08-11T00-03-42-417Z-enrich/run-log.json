@@ -1,59 +1,6 @@
 {
   "runs": [
     {
-      "kind": "enrich",
-      "startedAt": "2026-08-11T00:03:42.419Z",
-      "finishedAt": "2026-08-11T00:04:59.421Z",
-      "batchSize": 5,
-      "cities": [
-        "San Francisco, California"
-      ],
-      "resolved": 5,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 82,
-      "corpusEnriched": 91,
-      "apiCalls": {
-        "google": 5,
-        "firecrawl": 12
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-03-42-417Z-enrich",
-      "records": [
-        {
-          "slug": "r-g-lounge",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "good-mong-kok-bakery",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "hong-kong-clay-pot-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "hong-kong-lounge",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "palette-tea-house",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        }
-      ]
-    },
-    {
       "kind": "discover",
       "startedAt": "2026-08-11T00:03:41.686Z",
       "finishedAt": "2026-08-11T00:03:42.338Z",
