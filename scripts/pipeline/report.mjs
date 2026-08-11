@@ -4,6 +4,7 @@
  * for the Coverage Console route.
  */
 import { PATHS, completeness, readJson, writeJson } from "./lib.mjs";
+import { buildRefreshQueue, TIERS } from "./refresh.mjs";
 import { STATES, regionCode } from "./regions.mjs";
 import path from "node:path";
 
@@ -11,6 +12,9 @@ const dataset = readJson(PATHS.dataset, { records: [] });
 const store = readJson(PATHS.enrichment, { records: {} });
 const queue = readJson(PATHS.queue, { settings: {}, cities: [] });
 const runLog = readJson(PATHS.runLog, { runs: [] });
+const refresh = buildRefreshQueue({ dataset, store, runLog });
+writeJson(PATHS.refreshQueue, refresh);
+const refreshBySlug = new Map(refresh.items.map((i) => [i.slug, i]));
 
 const byState = new Map();
 const rows = [];
@@ -19,6 +23,7 @@ for (const record of dataset.records) {
   const entry = store.records[record.slug] ?? null;
   const score = entry ? completeness(record, entry).score : 0;
   const code = regionCode(entry?.google?.address?.stateCode || record.stateProvince);
+  const rf = refreshBySlug.get(record.slug);
   rows.push({
     slug: record.slug,
     title: record.title,
@@ -31,6 +36,16 @@ for (const record of dataset.records) {
     priceBand: entry?.google?.priceBand ?? "",
     lastEnrichedAt: entry?.meta?.lastEnrichedAt ?? null,
     addedAt: record.addedAt ?? null,
+    reviewStatus: record.reviewStatus ?? null,
+    nextReviewAt: record.nextReviewAt ?? null,
+    reviewedAt: record.reviewedAt ?? null,
+    reviewDueSoon: Boolean(record.reviewDueSoon),
+    hygiene: Boolean(rf?.hygiene),
+    refreshPriority: rf?.priority ?? 0,
+    refreshReasons: rf?.reasons ?? [],
+    staleTier: rf?.staleTier ?? null,
+    ageDays: rf?.ageDays ?? null,
+    siteFailures: rf?.siteFailures ?? [],
   });
   const bucket = byState.get(code) ?? { code, count: 0, scoreSum: 0, enriched: 0 };
   bucket.count += 1;
@@ -90,6 +105,22 @@ const coverage = {
       : 0,
     withRating: rows.filter((r) => r.rating != null).length,
     withPrice: rows.filter((r) => r.priceBand).length,
+    hygiene: refresh.totals.hygiene,
+    neverEnriched: refresh.totals.neverEnriched,
+    thin: refresh.totals.thin,
+    siteFailures: refresh.totals.siteFailures,
+    reviewDue: refresh.totals.reviewDue,
+    staleA: refresh.totals.staleA,
+    staleB: refresh.totals.staleB,
+    staleC: refresh.totals.staleC,
+  },
+  freshness: {
+    tiers: { A: TIERS.A.days, B: TIERS.B.days, C: TIERS.C.days },
+    preferRefreshOverDiscover: true,
+    hygieneBatchSize: refresh.settings.hygieneBatchSize,
+    hygieneSlugs: refresh.hygiene.slice(0, refresh.settings.hygieneBatchSize),
+    nextHygiene: refresh.items.filter((i) => i.hygiene).slice(0, 40),
+    stale: refresh.items.filter((i) => i.staleTier || (i.ageDays != null && i.ageDays >= TIERS.A.days)).slice(0, 40),
   },
   distribution: bands.map((band, i) => {
     const max = i === 0 ? 101 : bands[i - 1].min;
@@ -141,5 +172,11 @@ console.log(
     `avg completeness   ${coverage.totals.avgCompleteness}%`,
     `US states covered  ${coverage.totals.statesCovered}/${coverage.totals.statesTotal}`,
     `queue pending      ${coverage.queue.pending}`,
+    `hygiene due        ${coverage.totals.hygiene}`,
+    `  never enriched   ${coverage.totals.neverEnriched}`,
+    `  thin             ${coverage.totals.thin}`,
+    `  site failures    ${coverage.totals.siteFailures}`,
+    `  review due       ${coverage.totals.reviewDue}`,
+    `stale A/B/C        ${coverage.totals.staleA}/${coverage.totals.staleB}/${coverage.totals.staleC}`,
   ].join("\n"),
 );

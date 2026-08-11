@@ -115,6 +115,15 @@ export function planCommand(plan: RunPlan) {
   return `node scripts/pipeline/discover.mjs ${flags.join(" ")}`;
 }
 
+/** Hygiene before expansion — never-enriched, thin, site failures, review due. */
+export function hygieneCommand(batch = 25) {
+  return `node scripts/pipeline/enrich.mjs --hygiene --batch=${batch}`;
+}
+
+export function refreshQueueCommand() {
+  return `node scripts/pipeline/refresh.mjs && node scripts/pipeline/report.mjs`;
+}
+
 export function planJson(plan: RunPlan) {
   return JSON.stringify(
     {

@@ -4,10 +4,12 @@ import queue from "@/data/expansion-queue.json";
 import {
   CUISINE_FOCUS_OPTIONS,
   clamp,
+  hygieneCommand,
   planCommand,
   planJson,
   projectedInserts,
   projectedSearchCalls,
+  refreshQueueCommand,
   useRunPlan,
 } from "@/lib/run-plan";
 import { useMemo, useState } from "react";
@@ -138,8 +140,20 @@ export function RunPlanner() {
               The pipeline is a set of scripts over the JSON corpus, so nothing here launches a run
               from the browser — that would be a button pretending to have a backend. This panel
               composes the plan, projects its cost, and emits the exact command and file that
-              execute it unchanged.
+              execute it unchanged. Hygiene runs ahead of expansion whenever the refresh queue is
+              non-empty.
             </p>
+            <div className="mt-4 rounded-xl border border-border bg-surface-sunken/50 px-4 py-3">
+              <Eyebrow>Hygiene first</Eyebrow>
+              <p className="mt-1.5 font-mono text-[11px] leading-relaxed text-foreground">
+                {hygieneCommand(25)}
+              </p>
+              <p className="mt-1 font-mono text-[11px] text-subtle">{refreshQueueCommand()}</p>
+              <p className="mt-2 text-[12px] text-muted-foreground">
+                Rebuilds the stale-by-tier queue, then enriches never-enriched, thin, site-failure,
+                and review-due slugs only — no new cities.
+              </p>
+            </div>
           </div>
           <button
             type="button"

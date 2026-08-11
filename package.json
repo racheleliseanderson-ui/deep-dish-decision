@@ -10,7 +10,11 @@
     "preview": "vite preview --host 0.0.0.0 --port 8080",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "pipeline:report": "node scripts/pipeline/report.mjs",
+    "pipeline:refresh-queue": "node scripts/pipeline/refresh.mjs",
+    "pipeline:hygiene": "node scripts/pipeline/enrich.mjs --hygiene --batch=25",
+    "pipeline:discover": "node scripts/pipeline/discover.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

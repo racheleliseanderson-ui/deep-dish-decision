@@ -1,0 +1,61 @@
+name: Corpus refresh hygiene
+
+# Ready when LOVABLE_API_KEY, GOOGLE_MAPS_API_KEY, and FIRECRAWL_API_KEY
+# are set as repository secrets. Prefer hygiene over discovery every run.
+
+on:
+  schedule:
+    # Tuesdays and Fridays 14:00 UTC — adjust once secrets are live
+    - cron: "0 14 * * 2,5"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "hygiene | discover"
+        required: true
+        default: "hygiene"
+      batch:
+        description: "Batch size"
+        required: false
+        default: "25"
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Rebuild refresh queue + coverage
+        run: |
+          node scripts/pipeline/refresh.mjs
+          node scripts/pipeline/report.mjs
+      - name: Hygiene enrich
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'hygiene' }}
+        env:
+          LOVABLE_API_KEY: ${{ secrets.LOVABLE_API_KEY }}
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+        run: node scripts/pipeline/enrich.mjs --hygiene --batch=${{ inputs.batch || 25 }}
+      - name: Controlled discover (manual only)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'discover' }}
+        env:
+          LOVABLE_API_KEY: ${{ secrets.LOVABLE_API_KEY }}
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+        run: node scripts/pipeline/discover.mjs --batch=${{ inputs.batch || 10 }}
+      - name: Recompute coverage
+        run: node scripts/pipeline/report.mjs
+      - name: Commit corpus updates
+        run: |
+          git config user.name "Rachel Elise Anderson"
+          git config user.email "Rachel.Elise.Anderson@gmail.com"
+          git add src/data/enrichment.json src/data/dataset.json src/data/refresh-queue.json src/data/coverage.json src/data/run-log.json src/data/expansion-queue.json || true
+          if git diff --staged --quiet; then
+            echo "No corpus changes"
+          else
+            git commit -m "chore(corpus): scheduled hygiene refresh"
+            git push
+          fi

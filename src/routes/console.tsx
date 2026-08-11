@@ -38,29 +38,94 @@ function scoreTone(score: number) {
   return "critical" as const;
 }
 
+type LedgerFilter = "all" | "hygiene" | "stale" | "thin" | "site" | "review";
+
 function Console() {
-  const { totals, states, distribution, records, recent, queue, runs, outsideUs, generatedAt } =
-    coverage;
+  const { totals, states, distribution, records, recent, queue, runs, outsideUs, generatedAt, freshness } =
+    coverage as typeof coverage & {
+      freshness?: {
+        tiers: { A: number; B: number; C: number };
+        preferRefreshOverDiscover: boolean;
+        hygieneBatchSize: number;
+        hygieneSlugs: string[];
+        nextHygiene: Array<{
+          slug: string;
+          title: string;
+          priority: number;
+          reasons: string[];
+          completeness: number;
+          ageDays: number | null;
+          lastEnrichedAt: string | null;
+          reviewStatus: string | null;
+          siteFailures: string[];
+          hygiene: boolean;
+          staleTier: string | null;
+        }>;
+        stale: Array<{
+          slug: string;
+          title: string;
+          priority: number;
+          reasons: string[];
+          completeness: number;
+          ageDays: number | null;
+          lastEnrichedAt: string | null;
+          staleTier: string | null;
+        }>;
+      };
+    };
   const [query, setQuery] = useState("");
   const [minScore, setMinScore] = useState(0);
   const [maxScore, setMaxScore] = useState(100);
   const [state, setState] = useState("");
+  const [ledgerFilter, setLedgerFilter] = useState<LedgerFilter>("all");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const list = records.filter(
-      (r) =>
-        r.completeness >= minScore &&
-        r.completeness <= maxScore &&
-        (!state || r.stateCode === state) &&
-        (!q ||
+    const list = records.filter((r) => {
+      if (r.completeness < minScore || r.completeness > maxScore) return false;
+      if (state && r.stateCode !== state) return false;
+      if (
+        q &&
+        !(
           r.title.toLowerCase().includes(q) ||
           String(r.city ?? "").toLowerCase().includes(q) ||
           String(r.stateCode ?? "").toLowerCase().includes(q) ||
-          r.slug.includes(q)),
-    );
+          r.slug.includes(q)
+        )
+      ) {
+        return false;
+      }
+      const reasons: string[] = (r as { refreshReasons?: string[] }).refreshReasons ?? [];
+      const hygiene = Boolean((r as { hygiene?: boolean }).hygiene);
+      const age = (r as { ageDays?: number | null }).ageDays;
+      if (ledgerFilter === "hygiene" && !hygiene) return false;
+      if (ledgerFilter === "thin" && !reasons.some((x) => x.startsWith("thin-"))) return false;
+      if (ledgerFilter === "site" && !reasons.some((x) => x.startsWith("site-failure"))) return false;
+      if (
+        ledgerFilter === "review" &&
+        !reasons.some((x) => x === "review-overdue" || x === "review-due-soon")
+      ) {
+        return false;
+      }
+      if (ledgerFilter === "stale") {
+        const tier = (r as { staleTier?: string | null }).staleTier;
+        const staleA = typeof age === "number" && age >= (freshness?.tiers.A ?? 30);
+        if (!tier && !staleA && !reasons.includes("never-enriched")) return false;
+      }
+      return true;
+    });
+    if (ledgerFilter === "hygiene" || ledgerFilter === "stale") {
+      return list
+        .slice()
+        .sort(
+          (a, b) =>
+            ((b as { refreshPriority?: number }).refreshPriority ?? 0) -
+              ((a as { refreshPriority?: number }).refreshPriority ?? 0) ||
+            a.completeness - b.completeness,
+        );
+    }
     return list.slice().sort((a, b) => a.completeness - b.completeness || a.title.localeCompare(b.title));
-  }, [query, minScore, maxScore, state, records]);
+  }, [query, minScore, maxScore, state, records, ledgerFilter, freshness?.tiers.A]);
 
   const maxStateCount = Math.max(...states.map((s) => s.count), 1);
   const covered = states.filter((s) => s.count > 0);
@@ -108,49 +173,132 @@ function Console() {
               note={
                 queue.paused
                   ? "Expansion paused"
-                  : `${queue.restaurantsPerRun}/run · cap ${queue.dailyCap}/day`
+                  : (totals.hygiene ?? 0) > 0
+                    ? `Hygiene ${totals.hygiene} first · cap ${queue.dailyCap}/day`
+                    : `${queue.restaurantsPerRun}/run · cap ${queue.dailyCap}/day`
               }
-              tone={queue.paused ? "critical" : "verified"}
+              tone={queue.paused || (totals.hygiene ?? 0) > 0 ? "watch" : "verified"}
             />
           </div>
         </div>
       </header>
       <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6">
-        <div className="plate grain-veil flex flex-wrap items-start justify-between gap-4 p-5">
-          <div className="min-w-0 max-w-2xl">
-            <Eyebrow>Thin-record priority</Eyebrow>
-            <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
-              Pipeline batches should prefer low-completeness and unresolved matches first. Use the
-              completeness filter below (under 70%) and feed those slugs to the Run Planner. Scrape
-              retries now cover 408/425/429/5xx with extra backoff.
+        <div className="plate grain-veil space-y-5 p-5 sm:p-6">
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div className="min-w-0 max-w-2xl">
+              <Eyebrow>Refresh & hygiene · operate without the run-log</Eyebrow>
+              <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
+                Refresh competes ahead of discovery under the daily cap. Hygiene covers
+                never-enriched shells, completeness under 70%, site scrape failures, and first-party
+                review windows. Calendar tiers: A {freshness?.tiers.A ?? 30}d (hours/price), B{" "}
+                {freshness?.tiers.B ?? 90}d (identity), C {freshness?.tiers.C ?? 120}d (policy scrape).
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {(
+                [
+                  ["all", "Show all"],
+                  ["hygiene", "Hygiene due"],
+                  ["stale", "Stale view"],
+                  ["thin", "Thin <70%"],
+                  ["site", "Site failures"],
+                  ["review", "Review due"],
+                ] as const
+              ).map(([id, label]) => (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => {
+                    setLedgerFilter(id);
+                    setMinScore(0);
+                    setMaxScore(100);
+                    setQuery("");
+                    setState("");
+                  }}
+                  aria-pressed={ledgerFilter === id}
+                  className={
+                    "rounded-full border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] transition-colors " +
+                    (ledgerFilter === id
+                      ? "border-primary/40 bg-primary/12 text-primary"
+                      : "border-border text-muted-foreground hover:text-foreground")
+                  }
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            <Stat
+              label="Hygiene due"
+              value={totals.hygiene ?? 0}
+              note={`next batch ${freshness?.hygieneBatchSize ?? 25}`}
+              tone={(totals.hygiene ?? 0) > 0 ? "watch" : "verified"}
+            />
+            <Stat
+              label="Never enriched"
+              value={totals.neverEnriched ?? 0}
+              note="Listing shells first"
+              tone={(totals.neverEnriched ?? 0) > 0 ? "critical" : "verified"}
+            />
+            <Stat
+              label="Thin / site fail"
+              value={`${totals.thin ?? 0} / ${totals.siteFailures ?? 0}`}
+              note="Completeness & scrape"
+              tone={(totals.thin ?? 0) + (totals.siteFailures ?? 0) > 0 ? "watch" : "unknown"}
+
+            />
+            <Stat
+              label="Review due"
+              value={totals.reviewDue ?? 0}
+              note="First-party window"
+              tone={(totals.reviewDue ?? 0) > 0 ? "watch" : "verified"}
+            />
+            <Stat
+              label="Stale A / B / C"
+              value={`${totals.staleA ?? 0}/${totals.staleB ?? 0}/${totals.staleC ?? 0}`}
+              note="Calendar tiers"
+              tone={(totals.staleA ?? 0) > 0 ? "unknown" : "verified"}
+            />
+          </div>
+
+          {freshness?.nextHygiene?.length ? (
+            <div>
+              <Eyebrow>Next hygiene batch (priority order)</Eyebrow>
+              <ul className="mt-3 divide-y divide-border rounded-xl border border-border">
+                {freshness.nextHygiene.slice(0, freshness.hygieneBatchSize ?? 25).map((item) => (
+                  <li
+                    key={item.slug}
+                    className="flex flex-wrap items-baseline justify-between gap-2 px-3 py-2.5"
+                  >
+                    <Link
+                      to="/record/$slug"
+                      params={{ slug: item.slug }}
+                      className="tap min-w-0 truncate text-[13px] text-foreground hover:text-primary"
+                    >
+                      {item.title}
+                    </Link>
+                    <span className="text-num shrink-0 text-[11px] text-subtle">
+                      p{item.priority} · {item.completeness}% · {item.reasons.slice(0, 3).join(" · ")}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 text-[12px] leading-relaxed text-subtle">
+                Command:{" "}
+                <code className="text-num text-[11px] text-foreground">
+                  node scripts/pipeline/enrich.mjs --hygiene --batch=
+                  {freshness.hygieneBatchSize ?? 25}
+                </code>
+                . Run before any metro expansion. Expansion resumes only after this batch clears.
+              </p>
+            </div>
+          ) : (
+            <p className="text-[13px] text-muted-foreground">
+              Hygiene queue is empty — safe to resume controlled expansion on pending metros.
             </p>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <button
-              type="button"
-              onClick={() => {
-                setMinScore(0);
-                setMaxScore(100);
-                setQuery("");
-                setState("");
-              }}
-              className="rounded-full border border-border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-muted-foreground hover:text-foreground"
-            >
-              Show all
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setMinScore(0);
-                setMaxScore(69);
-                setQuery("");
-                setState("");
-              }}
-              className="rounded-full border border-critical/40 bg-critical-soft px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-foreground"
-            >
-              Prioritize thin {'<70%'}
-            </button>
-          </div>
+          )}
         </div>
       </div>
 
@@ -381,6 +529,14 @@ function Console() {
                     <span>rating unstated</span>
                   )}
                   <span>enriched {dt(r.lastEnrichedAt)}</span>
+                  {(r as { hygiene?: boolean }).hygiene ? (
+                    <Chip tone="watch">hygiene</Chip>
+                  ) : null}
+                  {(r as { refreshReasons?: string[] }).refreshReasons?.length ? (
+                    <span className="truncate">
+                      {(r as { refreshReasons?: string[] }).refreshReasons!.slice(0, 3).join(" · ")}
+                    </span>
+                  ) : null}
                 </div>
                 <GrowBar className="mt-2" value={r.completeness} tone={scoreTone(r.completeness)} />
               </li>

@@ -1,7 +1,13 @@
 /**
  * Phase 1 — enrich existing records. Creates no new restaurants.
  *
- * Usage: node scripts/pipeline/enrich.mjs [--batch=10] [--slugs=a,b] [--refresh]
+ * Usage:
+ *   node scripts/pipeline/enrich.mjs [--batch=10] [--slugs=a,b] [--refresh]
+ *   node scripts/pipeline/enrich.mjs --hygiene [--batch=25]
+ *
+ * --hygiene rebuilds the refresh queue and processes the top hygiene slugs
+ * (never-enriched, site failures, thin <70%, review due) before any discovery.
+ * Implies refresh for slugs that already carry enrichment.
  *
  * Third-party evidence is written into src/data/enrichment.json, keyed by slug,
  * and never overwrites the first-party fields in dataset.json.
@@ -21,6 +27,7 @@ import {
   snapshot,
   writeJson,
 } from "./lib.mjs";
+import { buildRefreshQueue } from "./refresh.mjs";
 import { regionCode } from "./regions.mjs";
 import { summarize } from "./summarize.mjs";
 import { extractFromSite, pickSitePages } from "./site.mjs";
@@ -32,29 +39,53 @@ const args = Object.fromEntries(
   }),
 );
 
-const BATCH = Number(args.batch ?? 10);
-const ONLY = args.slugs ? String(args.slugs).split(",") : null;
-const REFRESH = Boolean(args.refresh);
+const HYGIENE = Boolean(args.hygiene);
+const BATCH = Number(args.batch ?? (HYGIENE ? 25 : 10));
+const ONLY = args.slugs ? String(args.slugs).split(",").map((s) => s.trim()).filter(Boolean) : null;
+const REFRESH = Boolean(args.refresh) || HYGIENE;
 
 const dataset = readJson(PATHS.dataset, null);
 if (!dataset) throw new Error("dataset.json not found");
 const store = readJson(PATHS.enrichment, { generatedAt: null, records: {} });
+const bySlug = new Map(dataset.records.map((r) => [r.slug, r]));
 
-const candidates = dataset.records.filter((r) => {
-  if (ONLY) return ONLY.includes(r.slug);
-  const existing = store.records[r.slug];
-  if (!existing) return true;
-  if (REFRESH) return true;
-  return existing.meta?.matchStatus === "deferred";
-});
+let batch = [];
+let hygieneMeta = null;
 
-const batch = candidates.slice(0, BATCH);
+if (HYGIENE) {
+  const queue = buildRefreshQueue({ dataset, store });
+  writeJson(PATHS.refreshQueue, queue);
+  hygieneMeta = {
+    hygieneDue: queue.totals.hygiene,
+    selected: queue.hygiene.slice(0, BATCH),
+    reasons: Object.fromEntries(
+      queue.items
+        .filter((i) => queue.hygiene.slice(0, BATCH).includes(i.slug))
+        .map((i) => [i.slug, i.reasons]),
+    ),
+  };
+  batch = hygieneMeta.selected.map((s) => bySlug.get(s)).filter(Boolean);
+  console.log(
+    `Hygiene mode — ${queue.totals.hygiene} due, taking ${batch.length}: ${batch.map((r) => r.slug).join(", ")}`,
+  );
+} else if (ONLY) {
+  batch = ONLY.map((s) => bySlug.get(s)).filter(Boolean);
+} else {
+  const candidates = dataset.records.filter((r) => {
+    const existing = store.records[r.slug];
+    if (!existing) return true;
+    if (REFRESH) return true;
+    return existing.meta?.matchStatus === "deferred";
+  });
+  batch = candidates.slice(0, BATCH);
+}
 if (!batch.length) {
   console.log("Nothing to enrich — every record already carries enrichment. Use --refresh to re-check.");
   process.exit(0);
 }
 
-const snapshotDir = snapshot("enrich");
+const snapshotDir = snapshot(HYGIENE ? "hygiene" : "enrich");
+
 const gLimiter = createLimiter({ minDelayMs: 220 });
 const fLimiter = createLimiter({ minDelayMs: 1800 });
 const google = googleClient(gLimiter);
@@ -189,7 +220,7 @@ const scores = Object.values(store.records)
 const avg = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
 
 appendRun({
-  kind: "enrich",
+  kind: HYGIENE ? "hygiene" : "enrich",
   startedAt,
   finishedAt: new Date().toISOString(),
   batchSize: batch.length,

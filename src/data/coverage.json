@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T00:15:32.338Z",
+  "generatedAt": "2026-08-11T21:20:04.968Z",
   "totals": {
     "records": 136,
     "enriched": 111,
@@ -9,7 +9,1423 @@
     "statesTotal": 51,
     "avgCompleteness": 81,
     "withRating": 111,
-    "withPrice": 108
+    "withPrice": 108,
+    "hygiene": 49,
+    "neverEnriched": 25,
+    "thin": 4,
+    "siteFailures": 9,
+    "reviewDue": 11,
+    "staleA": 25,
+    "staleB": 0,
+    "staleC": 0
+  },
+  "freshness": {
+    "tiers": {
+      "A": 30,
+      "B": 90,
+      "C": 120
+    },
+    "preferRefreshOverDiscover": true,
+    "hygieneBatchSize": 25,
+    "hygieneSlugs": [
+      "3eleven-kitchen-and-cocktails",
+      "alla-vita",
+      "billy-goat-tavern-the-original",
+      "chet-s-dallas",
+      "demera-restaurant",
+      "flo-santos",
+      "good-mong-kok-bakery",
+      "hong-kong-clay-pot-restaurant",
+      "hong-kong-lounge",
+      "il-porcellino",
+      "jim-s-original",
+      "kenny-s-wood-fired-grill",
+      "kitchen-kocktails",
+      "maple-ash",
+      "palette-tea-house",
+      "perry-s-steakhouse-grille",
+      "portillo-s-barnelli-s-chicago",
+      "r-g-lounge",
+      "river-roast",
+      "siena-tavern",
+      "terry-black-s-barbecue",
+      "the-hampton-social-dallas",
+      "the-henry",
+      "the-woolworth",
+      "y-o-ranch-steakhouse"
+    ],
+    "nextHygiene": [
+      {
+        "slug": "3eleven-kitchen-and-cocktails",
+        "title": "3Eleven Kitchen and Cocktails",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "alla-vita",
+        "title": "Alla Vita",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "billy-goat-tavern-the-original",
+        "title": "Billy Goat Tavern (The Original)",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "chet-s-dallas",
+        "title": "Chet's Dallas",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "demera-restaurant",
+        "title": "Demera Restaurant",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "flo-santos",
+        "title": "Flo & Santos",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "good-mong-kok-bakery",
+        "title": "Good Mong Kok Bakery",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "hong-kong-clay-pot-restaurant",
+        "title": "Hong Kong Clay Pot Restaurant",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "hong-kong-lounge",
+        "title": "Hong Kong Lounge",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "il-porcellino",
+        "title": "Il Porcellino",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "jim-s-original",
+        "title": "Jim's Original",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "kenny-s-wood-fired-grill",
+        "title": "Kenny's Wood Fired Grill",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "kitchen-kocktails",
+        "title": "Kitchen + Kocktails",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "maple-ash",
+        "title": "Maple & Ash",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "palette-tea-house",
+        "title": "Palette Tea House",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "perry-s-steakhouse-grille",
+        "title": "Perry's Steakhouse & Grille",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "portillo-s-barnelli-s-chicago",
+        "title": "Portillo's & Barnelli's Chicago",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "r-g-lounge",
+        "title": "R & G Lounge",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "river-roast",
+        "title": "River Roast",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "siena-tavern",
+        "title": "Siena Tavern",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "terry-black-s-barbecue",
+        "title": "Terry Black's Barbecue",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "the-hampton-social-dallas",
+        "title": "The Hampton Social - Dallas",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "the-henry",
+        "title": "The Henry",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "the-woolworth",
+        "title": "The Woolworth",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "y-o-ranch-steakhouse",
+        "title": "Y.O. Ranch Steakhouse",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "mr-szechuan",
+        "title": "Mr Szechuan",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 408"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 71,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-11T00:10:23.416Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": [
+          "site 408"
+        ]
+      },
+      {
+        "slug": "perch",
+        "title": "Perch",
+        "city": "Los Angeles",
+        "stateProvince": "California",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 429"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 71,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-10T23:07:34.406Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": [
+          "site 429"
+        ]
+      },
+      {
+        "slug": "spicy-king",
+        "title": "Spicy King",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 500"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 71,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-11T00:09:25.388Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": [
+          "site 500"
+        ]
+      },
+      {
+        "slug": "summer-house-santa-monica",
+        "title": "Summer House Santa Monica",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 429"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 71,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-10T23:09:49.503Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": [
+          "site 429"
+        ]
+      },
+      {
+        "slug": "the-best-sichuan",
+        "title": "The Best Sichuan",
+        "city": "New York",
+        "stateProvince": "New York",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 408"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 71,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-11T00:03:40.316Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": [
+          "site 408"
+        ]
+      },
+      {
+        "slug": "the-best-sichuan-39",
+        "title": "The Best Sichuan 39 一品成都",
+        "city": "New York",
+        "stateProvince": "New York",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 408"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 71,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-11T00:03:05.631Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": [
+          "site 408"
+        ]
+      },
+      {
+        "slug": "the-smith",
+        "title": "The Smith",
+        "city": "New York",
+        "stateProvince": "New York",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 429"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 71,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-10T23:06:28.792Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": [
+          "site 429"
+        ]
+      },
+      {
+        "slug": "ariana",
+        "title": "Ariana",
+        "city": "Bend",
+        "stateProvince": "Oregon",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 429"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 79,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-10T21:34:17.135Z",
+        "reviewStatus": "current",
+        "nextReviewAt": "2026-08-19",
+        "reviewedAt": "2026-08-05",
+        "siteFailures": [
+          "site 429"
+        ]
+      },
+      {
+        "slug": "roe",
+        "title": "Roe",
+        "city": "Bellingham",
+        "stateProvince": "Washington",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 429"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 79,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-10T21:35:23.576Z",
+        "reviewStatus": "current",
+        "nextReviewAt": "2026-08-19",
+        "reviewedAt": "2026-08-05",
+        "siteFailures": [
+          "site 429"
+        ]
+      },
+      {
+        "slug": "delicious-chengdu",
+        "title": "Delicious Chengdu",
+        "city": "Temple City",
+        "stateProvince": "California",
+        "priority": 407,
+        "reasons": [
+          "thin-63"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 63,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-11T00:05:59.329Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "chengdu-taste",
+        "title": "Chengdu Taste",
+        "city": "Alhambra",
+        "stateProvince": "California",
+        "priority": 403,
+        "reasons": [
+          "thin-67"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 67,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-11T00:05:50.420Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "di-an-pho",
+        "title": "Di An Pho",
+        "city": "Houston",
+        "stateProvince": "Texas",
+        "priority": 403,
+        "reasons": [
+          "thin-67"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 67,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-11T00:00:38.359Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "pier-17",
+        "title": "Pier 17",
+        "city": "New York",
+        "stateProvince": "New York",
+        "priority": 403,
+        "reasons": [
+          "thin-67"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 67,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-10T23:06:02.680Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "canlis",
+        "title": "Canlis",
+        "city": "Seattle",
+        "stateProvince": "Washington",
+        "priority": 220,
+        "reasons": [
+          "review-due-soon"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 83,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-10T21:32:40.599Z",
+        "reviewStatus": "due_soon",
+        "nextReviewAt": "2026-08-12",
+        "reviewedAt": "2026-08-05",
+        "siteFailures": []
+      },
+      {
+        "slug": "kann",
+        "title": "Kann",
+        "city": "Portland",
+        "stateProvince": "Oregon",
+        "priority": 220,
+        "reasons": [
+          "review-due-soon"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 83,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-10T21:32:44.308Z",
+        "reviewStatus": "due_soon",
+        "nextReviewAt": "2026-08-12",
+        "reviewedAt": "2026-08-05",
+        "siteFailures": []
+      }
+    ],
+    "stale": [
+      {
+        "slug": "3eleven-kitchen-and-cocktails",
+        "title": "3Eleven Kitchen and Cocktails",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "alla-vita",
+        "title": "Alla Vita",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "billy-goat-tavern-the-original",
+        "title": "Billy Goat Tavern (The Original)",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "chet-s-dallas",
+        "title": "Chet's Dallas",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "demera-restaurant",
+        "title": "Demera Restaurant",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "flo-santos",
+        "title": "Flo & Santos",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "good-mong-kok-bakery",
+        "title": "Good Mong Kok Bakery",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "hong-kong-clay-pot-restaurant",
+        "title": "Hong Kong Clay Pot Restaurant",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "hong-kong-lounge",
+        "title": "Hong Kong Lounge",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "il-porcellino",
+        "title": "Il Porcellino",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "jim-s-original",
+        "title": "Jim's Original",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "kenny-s-wood-fired-grill",
+        "title": "Kenny's Wood Fired Grill",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "kitchen-kocktails",
+        "title": "Kitchen + Kocktails",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "maple-ash",
+        "title": "Maple & Ash",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "palette-tea-house",
+        "title": "Palette Tea House",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "perry-s-steakhouse-grille",
+        "title": "Perry's Steakhouse & Grille",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "portillo-s-barnelli-s-chicago",
+        "title": "Portillo's & Barnelli's Chicago",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "r-g-lounge",
+        "title": "R & G Lounge",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "river-roast",
+        "title": "River Roast",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "siena-tavern",
+        "title": "Siena Tavern",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "terry-black-s-barbecue",
+        "title": "Terry Black's Barbecue",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "the-hampton-social-dallas",
+        "title": "The Hampton Social - Dallas",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "the-henry",
+        "title": "The Henry",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "the-woolworth",
+        "title": "The Woolworth",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "y-o-ranch-steakhouse",
+        "title": "Y.O. Ranch Steakhouse",
+        "city": "Dallas",
+        "stateProvince": "Texas",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      }
+    ]
   },
   "distribution": [
     {
@@ -458,7 +1874,19 @@
       "reviewCount": 1213,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:33:15.661Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "part-parcel",
@@ -471,7 +1899,17 @@
       "reviewCount": 1056,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:36:41.942Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "kin",
@@ -484,7 +1922,17 @@
       "reviewCount": 196,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:34:12.604Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "anthonys-at-columbia-point",
@@ -497,7 +1945,17 @@
       "reviewCount": 2427,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:39:18.330Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "ten",
@@ -510,7 +1968,17 @@
       "reviewCount": 270,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T21:41:00.154Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "walkers-grill",
@@ -523,7 +1991,17 @@
       "reviewCount": 884,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:41:24.517Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "joey-dtla",
@@ -536,7 +2014,17 @@
       "reviewCount": 5653,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:08:10.154Z",
-      "addedAt": "2026-08-10T22:54:32.853Z"
+      "addedAt": "2026-08-10T22:54:32.853Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "nue",
@@ -549,7 +2037,19 @@
       "reviewCount": 2193,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:33:02.215Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "le-pigeon",
@@ -562,7 +2062,19 @@
       "reviewCount": 1149,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:33:28.015Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "langbaan",
@@ -575,7 +2087,19 @@
       "reviewCount": 466,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:33:55.635Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "kachka",
@@ -588,7 +2112,19 @@
       "reviewCount": 2826,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:34:07.260Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "gander-and-ryegrass",
@@ -601,7 +2137,17 @@
       "reviewCount": 402,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:34:37.068Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "cynara-restaurant-lounge",
@@ -614,7 +2160,17 @@
       "reviewCount": 431,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:35:00.424Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "marche",
@@ -627,7 +2183,17 @@
       "reviewCount": 1065,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:35:04.512Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "hama-hama-oyster-saloon",
@@ -640,7 +2206,17 @@
       "reviewCount": 1391,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:36:13.055Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "st-lawrence",
@@ -653,7 +2229,19 @@
       "reviewCount": 1508,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:37:28.031Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "duck-soup",
@@ -666,7 +2254,17 @@
       "reviewCount": 486,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:37:56.624Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "beverlys",
@@ -679,7 +2277,17 @@
       "reviewCount": 1257,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T21:38:05.173Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "peerless-restaurant-bar",
@@ -692,7 +2300,17 @@
       "reviewCount": 356,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:38:56.709Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "the-lively",
@@ -705,7 +2323,17 @@
       "reviewCount": 432,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:39:26.892Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "the-keep-restaurant",
@@ -718,7 +2346,17 @@
       "reviewCount": 604,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:41:11.737Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "carmine-s-44th-street-nyc",
@@ -731,7 +2369,17 @@
       "reviewCount": 19354,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:05:55.804Z",
-      "addedAt": "2026-08-10T22:54:31.693Z"
+      "addedAt": "2026-08-10T22:54:31.693Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "au-cheval",
@@ -744,7 +2392,17 @@
       "reviewCount": 6846,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:06:13.448Z",
-      "addedAt": "2026-08-10T22:54:31.695Z"
+      "addedAt": "2026-08-10T22:54:31.695Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "e-lephante",
@@ -757,7 +2415,17 @@
       "reviewCount": 3326,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:08:33.978Z",
-      "addedAt": "2026-08-10T22:54:32.854Z"
+      "addedAt": "2026-08-10T22:54:32.854Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "home-restaurant",
@@ -770,7 +2438,17 @@
       "reviewCount": 3206,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:09:11.490Z",
-      "addedAt": "2026-08-10T22:54:32.854Z"
+      "addedAt": "2026-08-10T22:54:32.854Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "stk-steakhouse",
@@ -783,7 +2461,17 @@
       "reviewCount": 17801,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T23:09:20.258Z",
-      "addedAt": "2026-08-10T22:54:34.017Z"
+      "addedAt": "2026-08-10T22:54:34.017Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "the-purple-pig-restaurant",
@@ -796,7 +2484,17 @@
       "reviewCount": 7457,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:10:07.244Z",
-      "addedAt": "2026-08-10T22:54:34.017Z"
+      "addedAt": "2026-08-10T22:54:34.017Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "amor-loco",
@@ -809,7 +2507,17 @@
       "reviewCount": 6107,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:57:57.513Z",
-      "addedAt": "2026-08-10T23:57:53.231Z"
+      "addedAt": "2026-08-10T23:57:53.231Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "canlis",
@@ -822,7 +2530,19 @@
       "reviewCount": 2872,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:32:40.599Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "kann",
@@ -835,7 +2555,19 @@
       "reviewCount": 1255,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:32:44.308Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "the-pink-door",
@@ -848,7 +2580,19 @@
       "reviewCount": 7265,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:33:09.185Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "revel",
@@ -861,7 +2605,19 @@
       "reviewCount": 1086,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:33:49.195Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "ox",
@@ -874,7 +2630,19 @@
       "reviewCount": 1942,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:33:52.340Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "due_soon",
+      "nextReviewAt": "2026-08-12",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": true,
+      "hygiene": true,
+      "refreshPriority": 220,
+      "refreshReasons": [
+        "review-due-soon"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "published-on-main",
@@ -887,7 +2655,17 @@
       "reviewCount": 1818,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:36:33.397Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "wooden-city-tacoma",
@@ -900,7 +2678,17 @@
       "reviewCount": 1316,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:34:51.733Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "elements-restaurant",
@@ -913,7 +2701,17 @@
       "reviewCount": 863,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T21:35:19.116Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "saffron-mediterranean-kitchen",
@@ -926,7 +2724,17 @@
       "reviewCount": 737,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:35:40.850Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "passatempo-taverna",
@@ -939,7 +2747,17 @@
       "reviewCount": 988,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:37:04.913Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "wind-cries-mary",
@@ -952,7 +2770,17 @@
       "reviewCount": 1329,
       "priceBand": "",
       "lastEnrichedAt": "2026-08-10T21:37:20.699Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "the-courtney-room",
@@ -965,7 +2793,17 @@
       "reviewCount": 641,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:37:37.539Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "matia-kitchen",
@@ -978,7 +2816,17 @@
       "reviewCount": 80,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T21:37:50.851Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "araxi-restaurant-oyster-bar",
@@ -991,7 +2839,17 @@
       "reviewCount": 2361,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:38:14.717Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "wild-mountain-food-drink",
@@ -1004,7 +2862,17 @@
       "reviewCount": 551,
       "priceBand": "",
       "lastEnrichedAt": "2026-08-10T21:38:33.546Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "crafted-yakima",
@@ -1017,7 +2885,17 @@
       "reviewCount": 570,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T21:39:12.848Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "luccas",
@@ -1030,7 +2908,17 @@
       "reviewCount": 479,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:40:48.938Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "bistro-enzo",
@@ -1043,7 +2931,17 @@
       "reviewCount": 569,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:42:21.008Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "blackbird-kitchen",
@@ -1056,7 +2954,17 @@
       "reviewCount": 1057,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:42:33.489Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "philippe-the-original",
@@ -1069,7 +2977,17 @@
       "reviewCount": 12245,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-10T23:07:21.174Z",
-      "addedAt": "2026-08-10T22:54:32.852Z"
+      "addedAt": "2026-08-10T22:54:32.852Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "the-dearborn",
@@ -1082,7 +3000,17 @@
       "reviewCount": 9961,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:09:43.254Z",
-      "addedAt": "2026-08-10T22:54:34.017Z"
+      "addedAt": "2026-08-10T22:54:34.017Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "rosa-mexicano",
@@ -1095,7 +3023,17 @@
       "reviewCount": 4830,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:58:10.995Z",
-      "addedAt": "2026-08-10T23:57:53.232Z"
+      "addedAt": "2026-08-10T23:57:53.232Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "tacombi",
@@ -1108,7 +3046,17 @@
       "reviewCount": 3036,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:58:51.271Z",
-      "addedAt": "2026-08-10T23:57:53.232Z"
+      "addedAt": "2026-08-10T23:57:53.232Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "sabores-oaxaquen-os-restaurant",
@@ -1121,7 +3069,17 @@
       "reviewCount": 1520,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:59:25.499Z",
-      "addedAt": "2026-08-10T23:59:07.525Z"
+      "addedAt": "2026-08-10T23:59:07.525Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "huynh-restaurant",
@@ -1134,7 +3092,17 @@
       "reviewCount": 2769,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:00:19.014Z",
-      "addedAt": "2026-08-11T00:00:18.923Z"
+      "addedAt": "2026-08-11T00:00:18.923Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "spicy-girl",
@@ -1147,7 +3115,17 @@
       "reviewCount": 2926,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:06:33.339Z",
-      "addedAt": "2026-08-11T00:03:04.523Z"
+      "addedAt": "2026-08-11T00:03:04.523Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chong-qing-xiao-mian",
@@ -1160,7 +3138,17 @@
       "reviewCount": 1289,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:09:09.221Z",
-      "addedAt": "2026-08-11T00:03:05.542Z"
+      "addedAt": "2026-08-11T00:03:05.542Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "ariana",
@@ -1173,7 +3161,21 @@
       "reviewCount": 453,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T21:34:17.135Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 429"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429"
+      ]
     },
     {
       "slug": "roe",
@@ -1186,7 +3188,21 @@
       "reviewCount": 211,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T21:35:23.576Z",
-      "addedAt": null
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 429"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429"
+      ]
     },
     {
       "slug": "buddakan",
@@ -1199,7 +3215,17 @@
       "reviewCount": 5893,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T23:06:45.778Z",
-      "addedAt": "2026-08-10T22:54:31.695Z"
+      "addedAt": "2026-08-10T22:54:31.695Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "boucherie-union-square",
@@ -1212,7 +3238,17 @@
       "reviewCount": 5218,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:07:03.893Z",
-      "addedAt": "2026-08-10T22:54:31.695Z"
+      "addedAt": "2026-08-10T22:54:31.695Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "bottega-louie",
@@ -1225,7 +3261,17 @@
       "reviewCount": 7770,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:07:30.117Z",
-      "addedAt": "2026-08-10T22:54:32.853Z"
+      "addedAt": "2026-08-10T22:54:32.853Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "re-publique",
@@ -1238,7 +3284,17 @@
       "reviewCount": 7306,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:07:52.162Z",
-      "addedAt": "2026-08-10T22:54:32.853Z"
+      "addedAt": "2026-08-10T22:54:32.853Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chubby-cattle-bbq-little-tokyo",
@@ -1251,7 +3307,17 @@
       "reviewCount": 3914,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:08:25.248Z",
-      "addedAt": "2026-08-10T22:54:32.853Z"
+      "addedAt": "2026-08-10T22:54:32.853Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "vida-verde-tequila-bar",
@@ -1264,7 +3330,17 @@
       "reviewCount": 4383,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:58:27.018Z",
-      "addedAt": "2026-08-10T23:57:53.232Z"
+      "addedAt": "2026-08-10T23:57:53.232Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "guelaguetza-restaurant",
@@ -1277,7 +3353,17 @@
       "reviewCount": 6553,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:59:07.611Z",
-      "addedAt": "2026-08-10T23:59:07.523Z"
+      "addedAt": "2026-08-10T23:59:07.523Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "madre-oaxacan-restaurant-and-mezcaleria",
@@ -1290,7 +3376,17 @@
       "reviewCount": 2221,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:59:17.802Z",
-      "addedAt": "2026-08-10T23:59:07.525Z"
+      "addedAt": "2026-08-10T23:59:07.525Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "real-de-oaxaca",
@@ -1303,7 +3399,17 @@
       "reviewCount": 1176,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:59:41.519Z",
-      "addedAt": "2026-08-10T23:59:07.526Z"
+      "addedAt": "2026-08-10T23:59:07.526Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "the-best-sichuan-21",
@@ -1316,7 +3422,17 @@
       "reviewCount": 2802,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:04:17.403Z",
-      "addedAt": "2026-08-11T00:03:03.488Z"
+      "addedAt": "2026-08-11T00:03:03.488Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "sichuan-impression",
@@ -1329,7 +3445,17 @@
       "reviewCount": 1023,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:05:23.052Z",
-      "addedAt": "2026-08-11T00:03:04.024Z"
+      "addedAt": "2026-08-11T00:03:04.024Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "sichuan-impression-los-angeles",
@@ -1342,7 +3468,17 @@
       "reviewCount": 729,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:05:52.081Z",
-      "addedAt": "2026-08-11T00:03:04.024Z"
+      "addedAt": "2026-08-11T00:03:04.024Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "mala-sichuan-bistro",
@@ -1355,7 +3491,17 @@
       "reviewCount": 2024,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:07:20.306Z",
-      "addedAt": "2026-08-11T00:03:04.523Z"
+      "addedAt": "2026-08-11T00:03:04.523Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "szechuan-spice-restaurant",
@@ -1368,7 +3514,17 @@
       "reviewCount": 735,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:07:35.135Z",
-      "addedAt": "2026-08-11T00:03:04.524Z"
+      "addedAt": "2026-08-11T00:03:04.524Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "triple-pepper-river-oaks",
@@ -1381,7 +3537,17 @@
       "reviewCount": 558,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:07:45.740Z",
-      "addedAt": "2026-08-11T00:03:04.524Z"
+      "addedAt": "2026-08-11T00:03:04.524Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "cooking-girl",
@@ -1394,7 +3560,17 @@
       "reviewCount": 434,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:07:51.771Z",
-      "addedAt": "2026-08-11T00:03:04.524Z"
+      "addedAt": "2026-08-11T00:03:04.524Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chengdu-impression-restaurant",
@@ -1407,7 +3583,17 @@
       "reviewCount": 692,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:08:21.553Z",
-      "addedAt": "2026-08-11T00:03:05.025Z"
+      "addedAt": "2026-08-11T00:03:05.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "balthazar",
@@ -1420,7 +3606,17 @@
       "reviewCount": 7875,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:06:09.273Z",
-      "addedAt": "2026-08-10T22:54:31.694Z"
+      "addedAt": "2026-08-10T22:54:31.694Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "fraunces-tavern",
@@ -1433,7 +3629,17 @@
       "reviewCount": 6808,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:06:24.345Z",
-      "addedAt": "2026-08-10T22:54:31.695Z"
+      "addedAt": "2026-08-10T22:54:31.695Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "gramercy-tavern",
@@ -1446,7 +3652,17 @@
       "reviewCount": 4982,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T23:07:12.473Z",
-      "addedAt": "2026-08-10T22:54:31.696Z"
+      "addedAt": "2026-08-10T22:54:31.696Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "le-bernardin",
@@ -1459,7 +3675,17 @@
       "reviewCount": 4642,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T23:07:17.031Z",
-      "addedAt": "2026-08-10T22:54:31.696Z"
+      "addedAt": "2026-08-10T22:54:31.696Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "bestia",
@@ -1472,7 +3698,17 @@
       "reviewCount": 4063,
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-10T23:08:21.100Z",
-      "addedAt": "2026-08-10T22:54:32.853Z"
+      "addedAt": "2026-08-10T22:54:32.853Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "girl-the-goat-los-angeles",
@@ -1485,7 +3721,17 @@
       "reviewCount": 3823,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:08:29.577Z",
-      "addedAt": "2026-08-10T22:54:32.854Z"
+      "addedAt": "2026-08-10T22:54:32.854Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "aba",
@@ -1498,7 +3744,17 @@
       "reviewCount": 10928,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:09:35.877Z",
-      "addedAt": "2026-08-10T22:54:34.017Z"
+      "addedAt": "2026-08-10T22:54:34.017Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "expresion-oaxaquena-restaurante",
@@ -1511,7 +3767,17 @@
       "reviewCount": 1506,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:59:35.828Z",
-      "addedAt": "2026-08-10T23:59:07.525Z"
+      "addedAt": "2026-08-10T23:59:07.525Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "pho-saigon",
@@ -1524,7 +3790,17 @@
       "reviewCount": 2248,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:00:43.245Z",
-      "addedAt": "2026-08-11T00:00:18.928Z"
+      "addedAt": "2026-08-11T00:00:18.928Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "simply-pho",
@@ -1537,7 +3813,17 @@
       "reviewCount": 1851,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:00:57.373Z",
-      "addedAt": "2026-08-11T00:00:18.928Z"
+      "addedAt": "2026-08-11T00:00:18.928Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "pho-binh-heights",
@@ -1550,7 +3836,17 @@
       "reviewCount": 1272,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:01:06.631Z",
-      "addedAt": "2026-08-11T00:00:18.928Z"
+      "addedAt": "2026-08-11T00:00:18.928Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chi-restaurant-bar",
@@ -1563,7 +3859,17 @@
       "reviewCount": 2652,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:04:45.571Z",
-      "addedAt": "2026-08-11T00:03:03.488Z"
+      "addedAt": "2026-08-11T00:03:03.488Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "mountain-house-east-village",
@@ -1576,7 +3882,17 @@
       "reviewCount": 2635,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:05:01.246Z",
-      "addedAt": "2026-08-11T00:03:03.489Z"
+      "addedAt": "2026-08-11T00:03:03.489Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "jiang-nan-nyc",
@@ -1589,7 +3905,17 @@
       "reviewCount": 2109,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:05:13.114Z",
-      "addedAt": "2026-08-11T00:03:03.490Z"
+      "addedAt": "2026-08-11T00:03:03.490Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chong-qing-special-noodles",
@@ -1602,7 +3928,17 @@
       "reviewCount": 490,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:06:01.506Z",
-      "addedAt": "2026-08-11T00:03:04.025Z"
+      "addedAt": "2026-08-11T00:03:04.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "tai-er-sichuan-cuisine",
@@ -1615,7 +3951,17 @@
       "reviewCount": 399,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:06:16.780Z",
-      "addedAt": "2026-08-11T00:03:04.025Z"
+      "addedAt": "2026-08-11T00:03:04.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "xiaolong-dumpling",
@@ -1628,7 +3974,17 @@
       "reviewCount": 771,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:07:27.908Z",
-      "addedAt": "2026-08-11T00:03:04.523Z"
+      "addedAt": "2026-08-11T00:03:04.523Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "lao-sze-chuan-downtown",
@@ -1641,7 +3997,17 @@
       "reviewCount": 1586,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:08:11.188Z",
-      "addedAt": "2026-08-11T00:03:05.025Z"
+      "addedAt": "2026-08-11T00:03:05.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chef-xiong-taste-of-szechuan",
@@ -1654,7 +4020,17 @@
       "reviewCount": 483,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:08:33.710Z",
-      "addedAt": "2026-08-11T00:03:05.025Z"
+      "addedAt": "2026-08-11T00:03:05.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "lao-sze-chuan",
@@ -1667,7 +4043,17 @@
       "reviewCount": 413,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:08:47.050Z",
-      "addedAt": "2026-08-11T00:03:05.026Z"
+      "addedAt": "2026-08-11T00:03:05.026Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "szechwan-north-authentic-sichuan-cuisine-glenview",
@@ -1680,7 +4066,17 @@
       "reviewCount": 360,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:08:52.995Z",
-      "addedAt": "2026-08-11T00:03:05.026Z"
+      "addedAt": "2026-08-11T00:03:05.026Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chengdu-bistro-west-town",
@@ -1693,7 +4089,17 @@
       "reviewCount": 353,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:08:59.143Z",
-      "addedAt": "2026-08-11T00:03:05.026Z"
+      "addedAt": "2026-08-11T00:03:05.026Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "house-of-nanking",
@@ -1706,7 +4112,17 @@
       "reviewCount": 5373,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:09:03.207Z",
-      "addedAt": "2026-08-11T00:03:05.542Z"
+      "addedAt": "2026-08-11T00:03:05.542Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "house-of-xian-dumpling",
@@ -1719,7 +4135,17 @@
       "reviewCount": 1027,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:10:10.225Z",
-      "addedAt": "2026-08-11T00:03:05.543Z"
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "mama-ji-s",
@@ -1732,7 +4158,17 @@
       "reviewCount": 951,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:10:17.314Z",
-      "addedAt": "2026-08-11T00:03:05.543Z"
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "the-smith",
@@ -1745,7 +4181,21 @@
       "reviewCount": 6365,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:06:28.792Z",
-      "addedAt": "2026-08-10T22:54:31.695Z"
+      "addedAt": "2026-08-10T22:54:31.695Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 429"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429"
+      ]
     },
     {
       "slug": "perch",
@@ -1758,7 +4208,21 @@
       "reviewCount": 7650,
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-08-10T23:07:34.406Z",
-      "addedAt": "2026-08-10T22:54:32.853Z"
+      "addedAt": "2026-08-10T22:54:32.853Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 429"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429"
+      ]
     },
     {
       "slug": "summer-house-santa-monica",
@@ -1771,7 +4235,21 @@
       "reviewCount": 8309,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-10T23:09:49.503Z",
-      "addedAt": "2026-08-10T22:54:34.017Z"
+      "addedAt": "2026-08-10T22:54:34.017Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 429"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429"
+      ]
     },
     {
       "slug": "los-tacos-no-1",
@@ -1784,7 +4262,17 @@
       "reviewCount": 4802,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-10T23:57:53.313Z",
-      "addedAt": "2026-08-10T23:57:53.230Z"
+      "addedAt": "2026-08-10T23:57:53.230Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "the-best-sichuan-39",
@@ -1797,7 +4285,21 @@
       "reviewCount": 3717,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:03:05.631Z",
-      "addedAt": "2026-08-11T00:03:03.486Z"
+      "addedAt": "2026-08-11T00:03:03.486Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 408"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 408"
+      ]
     },
     {
       "slug": "the-best-sichuan",
@@ -1810,7 +4312,21 @@
       "reviewCount": 3079,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:03:40.316Z",
-      "addedAt": "2026-08-11T00:03:03.487Z"
+      "addedAt": "2026-08-11T00:03:03.487Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 408"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 408"
+      ]
     },
     {
       "slug": "spicy-king",
@@ -1823,7 +4339,21 @@
       "reviewCount": 1063,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:09:25.388Z",
-      "addedAt": "2026-08-11T00:03:05.543Z"
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 500"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 500"
+      ]
     },
     {
       "slug": "mr-szechuan",
@@ -1836,7 +4366,21 @@
       "reviewCount": 809,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:10:23.416Z",
-      "addedAt": "2026-08-11T00:03:05.543Z"
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 408"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 408"
+      ]
     },
     {
       "slug": "pier-17",
@@ -1849,7 +4393,19 @@
       "reviewCount": 12459,
       "priceBand": "",
       "lastEnrichedAt": "2026-08-10T23:06:02.680Z",
-      "addedAt": "2026-08-10T22:54:31.694Z"
+      "addedAt": "2026-08-10T22:54:31.694Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "di-an-pho",
@@ -1862,7 +4418,19 @@
       "reviewCount": 2559,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:00:38.359Z",
-      "addedAt": "2026-08-11T00:00:18.927Z"
+      "addedAt": "2026-08-11T00:00:18.927Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chengdu-taste",
@@ -1875,7 +4443,19 @@
       "reviewCount": 850,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:05:50.420Z",
-      "addedAt": "2026-08-11T00:03:04.024Z"
+      "addedAt": "2026-08-11T00:03:04.024Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "delicious-chengdu",
@@ -1888,7 +4468,19 @@
       "reviewCount": 571,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:05:59.329Z",
-      "addedAt": "2026-08-11T00:03:04.025Z"
+      "addedAt": "2026-08-11T00:03:04.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 407,
+      "refreshReasons": [
+        "thin-63"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "river-roast",
@@ -1901,7 +4493,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:34.017Z"
+      "addedAt": "2026-08-10T22:54:34.017Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "il-porcellino",
@@ -1914,7 +4519,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:34.018Z"
+      "addedAt": "2026-08-10T22:54:34.018Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "alla-vita",
@@ -1927,7 +4545,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:34.018Z"
+      "addedAt": "2026-08-10T22:54:34.018Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "siena-tavern",
@@ -1940,7 +4571,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:34.018Z"
+      "addedAt": "2026-08-10T22:54:34.018Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "maple-ash",
@@ -1953,7 +4597,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:34.018Z"
+      "addedAt": "2026-08-10T22:54:34.018Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "kitchen-kocktails",
@@ -1966,7 +4623,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.174Z"
+      "addedAt": "2026-08-10T22:54:35.174Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "terry-black-s-barbecue",
@@ -1979,7 +4649,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.174Z"
+      "addedAt": "2026-08-10T22:54:35.174Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "y-o-ranch-steakhouse",
@@ -1992,7 +4675,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.174Z"
+      "addedAt": "2026-08-10T22:54:35.174Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "the-woolworth",
@@ -2005,7 +4701,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.175Z"
+      "addedAt": "2026-08-10T22:54:35.175Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "3eleven-kitchen-and-cocktails",
@@ -2018,7 +4727,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.175Z"
+      "addedAt": "2026-08-10T22:54:35.175Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "the-hampton-social-dallas",
@@ -2031,7 +4753,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.175Z"
+      "addedAt": "2026-08-10T22:54:35.175Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "kenny-s-wood-fired-grill",
@@ -2044,7 +4779,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.177Z"
+      "addedAt": "2026-08-10T22:54:35.177Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "perry-s-steakhouse-grille",
@@ -2057,7 +4805,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.178Z"
+      "addedAt": "2026-08-10T22:54:35.178Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "the-henry",
@@ -2070,7 +4831,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.178Z"
+      "addedAt": "2026-08-10T22:54:35.178Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "chet-s-dallas",
@@ -2083,7 +4857,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-10T22:54:35.178Z"
+      "addedAt": "2026-08-10T22:54:35.178Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "portillo-s-barnelli-s-chicago",
@@ -2096,7 +4883,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:01:15.925Z"
+      "addedAt": "2026-08-11T00:01:15.925Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "jim-s-original",
@@ -2109,7 +4909,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:01:15.927Z"
+      "addedAt": "2026-08-11T00:01:15.927Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "billy-goat-tavern-the-original",
@@ -2122,7 +4935,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:01:15.928Z"
+      "addedAt": "2026-08-11T00:01:15.928Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "demera-restaurant",
@@ -2135,7 +4961,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:01:15.928Z"
+      "addedAt": "2026-08-11T00:01:15.928Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "flo-santos",
@@ -2148,7 +4987,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:01:15.928Z"
+      "addedAt": "2026-08-11T00:01:15.928Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "r-g-lounge",
@@ -2161,7 +5013,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:03:42.327Z"
+      "addedAt": "2026-08-11T00:03:42.327Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "good-mong-kok-bakery",
@@ -2174,7 +5039,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:03:42.329Z"
+      "addedAt": "2026-08-11T00:03:42.329Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "hong-kong-clay-pot-restaurant",
@@ -2187,7 +5065,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:03:42.329Z"
+      "addedAt": "2026-08-11T00:03:42.329Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "hong-kong-lounge",
@@ -2200,7 +5091,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:03:42.330Z"
+      "addedAt": "2026-08-11T00:03:42.330Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     },
     {
       "slug": "palette-tea-house",
@@ -2213,7 +5117,20 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": null,
-      "addedAt": "2026-08-11T00:03:42.330Z"
+      "addedAt": "2026-08-11T00:03:42.330Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     }
   ],
   "recent": [
@@ -2228,7 +5145,21 @@
       "reviewCount": 809,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:10:23.416Z",
-      "addedAt": "2026-08-11T00:03:05.543Z"
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 408"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 408"
+      ]
     },
     {
       "slug": "mama-ji-s",
@@ -2241,7 +5172,17 @@
       "reviewCount": 951,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:10:17.314Z",
-      "addedAt": "2026-08-11T00:03:05.543Z"
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "house-of-xian-dumpling",
@@ -2254,7 +5195,17 @@
       "reviewCount": 1027,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:10:10.225Z",
-      "addedAt": "2026-08-11T00:03:05.543Z"
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "spicy-king",
@@ -2267,7 +5218,21 @@
       "reviewCount": 1063,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:09:25.388Z",
-      "addedAt": "2026-08-11T00:03:05.543Z"
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 500"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 500"
+      ]
     },
     {
       "slug": "chong-qing-xiao-mian",
@@ -2280,7 +5245,17 @@
       "reviewCount": 1289,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:09:09.221Z",
-      "addedAt": "2026-08-11T00:03:05.542Z"
+      "addedAt": "2026-08-11T00:03:05.542Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "house-of-nanking",
@@ -2293,7 +5268,17 @@
       "reviewCount": 5373,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:09:03.207Z",
-      "addedAt": "2026-08-11T00:03:05.542Z"
+      "addedAt": "2026-08-11T00:03:05.542Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chengdu-bistro-west-town",
@@ -2306,7 +5291,17 @@
       "reviewCount": 353,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:08:59.143Z",
-      "addedAt": "2026-08-11T00:03:05.026Z"
+      "addedAt": "2026-08-11T00:03:05.026Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "szechwan-north-authentic-sichuan-cuisine-glenview",
@@ -2319,7 +5314,17 @@
       "reviewCount": 360,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:08:52.995Z",
-      "addedAt": "2026-08-11T00:03:05.026Z"
+      "addedAt": "2026-08-11T00:03:05.026Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "lao-sze-chuan",
@@ -2332,7 +5337,17 @@
       "reviewCount": 413,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:08:47.050Z",
-      "addedAt": "2026-08-11T00:03:05.026Z"
+      "addedAt": "2026-08-11T00:03:05.026Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chef-xiong-taste-of-szechuan",
@@ -2345,7 +5360,17 @@
       "reviewCount": 483,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:08:33.710Z",
-      "addedAt": "2026-08-11T00:03:05.025Z"
+      "addedAt": "2026-08-11T00:03:05.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "chengdu-impression-restaurant",
@@ -2358,7 +5383,17 @@
       "reviewCount": 692,
       "priceBand": "$",
       "lastEnrichedAt": "2026-08-11T00:08:21.553Z",
-      "addedAt": "2026-08-11T00:03:05.025Z"
+      "addedAt": "2026-08-11T00:03:05.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     },
     {
       "slug": "lao-sze-chuan-downtown",
@@ -2371,7 +5406,17 @@
       "reviewCount": 1586,
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-11T00:08:11.188Z",
-      "addedAt": "2026-08-11T00:03:05.025Z"
+      "addedAt": "2026-08-11T00:03:05.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
     }
   ],
   "queue": {

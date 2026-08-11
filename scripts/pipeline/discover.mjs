@@ -28,6 +28,7 @@ import {
   snapshot,
   writeJson,
 } from "./lib.mjs";
+import { buildRefreshQueue } from "./refresh.mjs";
 import { STATES, regionCode } from "./regions.mjs";
 
 const args = Object.fromEntries(
@@ -294,6 +295,20 @@ function toRecord(place, target, retrievedAt) {
 }
 
 // ------------------------------------------------------------------------- run
+// Prefer hygiene over geographic expansion when the refresh queue is hot.
+const _hygienePreview = buildRefreshQueue({ dataset });
+if (
+  _hygienePreview.totals.hygiene > 0 &&
+  !args.force &&
+  !args["allow-with-hygiene"]
+) {
+  console.warn(
+    `Refresh hygiene has ${_hygienePreview.totals.hygiene} records due. Run ` +
+      `node scripts/pipeline/enrich.mjs --hygiene first (or pass --allow-with-hygiene / --force).`,
+  );
+  process.exit(2);
+}
+
 const gLimiter = createLimiter({ minDelayMs: 220 });
 const google = googleClient(gLimiter);
 const seeds = args.seeds
