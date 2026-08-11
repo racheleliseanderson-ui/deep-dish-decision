@@ -42,16 +42,35 @@ if (!dataset) throw new Error("dataset.json not found");
 const queue = readJson(PATHS.queue, null);
 if (!queue) throw new Error("expansion-queue.json not found — run build-queue.mjs first");
 
-const settings = queue.settings ?? {};
+/**
+ * A run plan is the JSON the Coverage Console composes: batch size, cities per
+ * run, pause flag, pinned cities and cuisine focus. Passing --plan=<file> makes
+ * the script execute exactly what the operator assembled in the UI.
+ */
+const plan = args.plan ? readJson(String(args.plan), null) : null;
+if (args.plan && !plan) throw new Error(`Run plan not found: ${args.plan}`);
+
+const settings = { ...(queue.settings ?? {}) };
+if (plan) {
+  if (plan.restaurantsPerRun) settings.restaurantsPerRun = plan.restaurantsPerRun;
+  if (plan.citiesPerRun) settings.citiesPerRun = plan.citiesPerRun;
+  if (plan.dailyCap) settings.dailyCap = plan.dailyCap;
+  if (typeof plan.paused === "boolean") settings.paused = plan.paused;
+  if (plan.seeds?.length) settings.seeds = plan.seeds;
+  else if (plan.cuisineFocus?.length)
+    settings.seeds = plan.cuisineFocus.map((c) => `${c} restaurant`);
+}
+
 const DRY = Boolean(args.dry);
 const PER_CITY = Number(args.limit ?? settings.restaurantsPerRun ?? 25);
 const CITY_COUNT = Number(args.cities ?? settings.citiesPerRun ?? 1);
 const DAILY_CAP = Number(settings.dailyCap ?? 200);
 
 if (settings.paused && !args.force) {
-  console.log("Expansion is paused in expansion-queue.json (settings.paused). Use --force to override.");
+  console.log("Expansion is paused (queue settings or run plan). Use --force to override.");
   process.exit(0);
 }
+
 
 // ------------------------------------------------------------- daily cap check
 const runLog = readJson(PATHS.runLog, { runs: [] });
@@ -66,15 +85,21 @@ if (!remainingToday) {
 }
 
 // ------------------------------------------------------------- target selection
+function findCity(label) {
+  const [city, code] = String(label).split(",").map((s) => s.trim());
+  const found = queue.cities.find(
+    (c) => c.city.toLowerCase() === String(city).toLowerCase() && (!code || c.stateCode === code),
+  );
+  if (!found) throw new Error(`City "${label}" is not in the queue`);
+  return found;
+}
+
 function targetsFor() {
-  if (args.city) {
-    const [city, code] = String(args.city).split(",").map((s) => s.trim());
-    const found = queue.cities.find(
-      (c) => c.city.toLowerCase() === String(city).toLowerCase() && (!code || c.stateCode === code),
-    );
-    if (!found) throw new Error(`City "${args.city}" is not in the queue`);
-    return [found];
+  if (args.city) return [findCity(args.city)];
+  if (plan?.pinnedCities?.length) {
+    return plan.pinnedCities.map(findCity).slice(0, CITY_COUNT || plan.pinnedCities.length);
   }
+
   const pending = queue.cities.filter((c) => c.status === "pending");
   const pinned = pending.filter((c) => c.pinned);
   const rest = pending.sort((a, b) => a.priority - b.priority);
@@ -271,7 +296,10 @@ function toRecord(place, target, retrievedAt) {
 // ------------------------------------------------------------------------- run
 const gLimiter = createLimiter({ minDelayMs: 220 });
 const google = googleClient(gLimiter);
-const seeds = settings.seeds ?? ["best restaurants", "fine dining", "neighborhood restaurant"];
+const seeds = args.seeds
+  ? String(args.seeds).split("|").map((s) => s.trim()).filter(Boolean)
+  : (settings.seeds ?? ["best restaurants", "fine dining", "neighborhood restaurant"]);
+
 const startedAt = new Date().toISOString();
 const snapshotDir = DRY ? null : snapshot("discover");
 

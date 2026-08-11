@@ -1,4 +1,5 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
+import { RunPlanner } from "@/components/rih/run-planner";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
 import { SiteNav } from "@/components/rih/site-nav";
 import coverage from "@/data/coverage.json";
@@ -402,6 +403,13 @@ function Console() {
             </div>
           </div>
         </Reveal>
+
+        <Rule className="my-14" />
+
+        <Reveal as="section">
+          <RunPlanner />
+        </Reveal>
+
       </div>
     </main>
   );
