@@ -197,14 +197,36 @@ export function googleClient(limiter) {
 
 // ------------------------------------------------------------------ firecrawl
 
+/**
+ * Prefer direct Firecrawl API when FIRECRAWL_API_KEY is set.
+ * Falls back to Lovable connector gateway only if LOVABLE_API_KEY is also present
+ * and FIRECRAWL_DIRECT=0 (legacy path).
+ */
 export function firecrawlClient(limiter) {
-  const lovableKey = requireEnv("LOVABLE_API_KEY");
   const fcKey = requireEnv("FIRECRAWL_API_KEY");
+  const useDirect = process.env.FIRECRAWL_DIRECT !== "0";
+  const lovableKey = process.env.LOVABLE_API_KEY;
 
   return {
     async scrape(url) {
-      const res = await limiter.run(() =>
-        fetch(`${GATEWAY}/firecrawl/v2/scrape`, {
+      const res = await limiter.run(() => {
+        if (useDirect || !lovableKey) {
+          // Direct Firecrawl (v1 scrape — stable with fc- keys)
+          return fetch("https://api.firecrawl.dev/v1/scrape", {
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${fcKey}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              url,
+              formats: ["markdown", "links"],
+              onlyMainContent: true,
+              timeout: 25000,
+            }),
+          });
+        }
+        return fetch(`${GATEWAY}/firecrawl/v2/scrape`, {
           method: "POST",
           headers: {
             Authorization: `Bearer ${lovableKey}`,
@@ -217,16 +239,22 @@ export function firecrawlClient(limiter) {
             onlyMainContent: true,
             timeout: 25000,
           }),
-        }),
-      );
+        });
+      });
       const text = await res.text();
       if (!res.ok) return { ok: false, status: res.status, error: text.slice(0, 400) };
       const json = JSON.parse(text);
       const doc = json.data ?? json;
-      return { ok: true, markdown: doc.markdown ?? "", links: doc.links ?? [], metadata: doc.metadata ?? {} };
+      return {
+        ok: true,
+        markdown: doc.markdown ?? "",
+        links: doc.links ?? [],
+        metadata: doc.metadata ?? {},
+      };
     },
   };
 }
+
 
 // ------------------------------------------------------------------ normalize
 
