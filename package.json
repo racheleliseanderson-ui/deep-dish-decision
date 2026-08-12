@@ -14,7 +14,8 @@
     "pipeline:report": "node scripts/pipeline/report.mjs",
     "pipeline:refresh-queue": "node scripts/pipeline/refresh.mjs",
     "pipeline:hygiene": "node scripts/pipeline/enrich.mjs --hygiene --batch=25",
-    "pipeline:discover": "node scripts/pipeline/discover.mjs"
+    "pipeline:discover": "node scripts/pipeline/discover.mjs",
+    "pipeline:seed": "node scripts/pipeline/seed-listings.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

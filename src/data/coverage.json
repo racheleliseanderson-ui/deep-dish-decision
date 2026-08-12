@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-11T21:20:04.968Z",
+  "generatedAt": "2026-08-12T06:45:35.088Z",
   "totals": {
-    "records": 136,
+    "records": 225,
     "enriched": 111,
     "resolved": 111,
     "unresolved": 0,
-    "statesCovered": 8,
+    "statesCovered": 14,
     "statesTotal": 51,
     "avgCompleteness": 81,
     "withRating": 111,
     "withPrice": 108,
-    "hygiene": 49,
-    "neverEnriched": 25,
+    "hygiene": 138,
+    "neverEnriched": 114,
     "thin": 4,
     "siteFailures": 9,
     "reviewDue": 11,
-    "staleA": 25,
+    "staleA": 114,
     "staleB": 0,
     "staleC": 0
   },
@@ -29,30 +29,30 @@
     "hygieneBatchSize": 25,
     "hygieneSlugs": [
       "3eleven-kitchen-and-cocktails",
+      "5church-atlanta-atlanta",
       "alla-vita",
+      "angelo-s-pizzeria-philadelphia",
+      "aria-atlanta",
+      "ariete-miami",
+      "atlanta-fish-market-atlanta",
+      "atlas-atlanta",
+      "bacchanalia-atlanta",
+      "barrio-caf-phoenix",
       "billy-goat-tavern-the-original",
+      "boia-de-miami",
+      "carbone-miami-miami",
+      "causa-washington",
       "chet-s-dallas",
+      "christopher-s-phoenix",
+      "committee-boston",
+      "contessa-boston",
+      "cote-miami-miami",
+      "del-mar-washington",
       "demera-restaurant",
-      "flo-santos",
-      "good-mong-kok-bakery",
-      "hong-kong-clay-pot-restaurant",
-      "hong-kong-lounge",
-      "il-porcellino",
-      "jim-s-original",
-      "kenny-s-wood-fired-grill",
-      "kitchen-kocktails",
-      "maple-ash",
-      "palette-tea-house",
-      "perry-s-steakhouse-grille",
-      "portillo-s-barnelli-s-chicago",
-      "r-g-lounge",
-      "river-roast",
-      "siena-tavern",
-      "terry-black-s-barbecue",
-      "the-hampton-social-dallas",
-      "the-henry",
-      "the-woolworth",
-      "y-o-ranch-steakhouse"
+      "dizengoff-philadelphia",
+      "durant-s-phoenix",
+      "establishment-atlanta-atlanta",
+      "estiatorio-milos-miami-miami"
     ],
     "nextHygiene": [
       {
@@ -77,6 +77,27 @@
         "siteFailures": []
       },
       {
+        "slug": "5church-atlanta-atlanta",
+        "title": "5Church Atlanta",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
         "slug": "alla-vita",
         "title": "Alla Vita",
         "city": "Chicago",
@@ -95,6 +116,153 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "angelo-s-pizzeria-philadelphia",
+        "title": "Angelo's Pizzeria",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "aria-atlanta",
+        "title": "Aria",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "ariete-miami",
+        "title": "Ariete",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "atlanta-fish-market-atlanta",
+        "title": "Atlanta Fish Market",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "atlas-atlanta",
+        "title": "Atlas",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "bacchanalia-atlanta",
+        "title": "Bacchanalia",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "barrio-caf-phoenix",
+        "title": "Barrio Café",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
         "siteFailures": []
       },
       {
@@ -119,6 +287,69 @@
         "siteFailures": []
       },
       {
+        "slug": "boia-de-miami",
+        "title": "Boia De",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "carbone-miami-miami",
+        "title": "Carbone Miami",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "causa-washington",
+        "title": "Causa",
+        "city": "Washington",
+        "stateProvince": "District Of Columbia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
         "slug": "chet-s-dallas",
         "title": "Chet's Dallas",
         "city": "Dallas",
@@ -137,6 +368,111 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "christopher-s-phoenix",
+        "title": "Christopher's",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "committee-boston",
+        "title": "Committee",
+        "city": "Boston",
+        "stateProvince": "Massachusetts",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "contessa-boston",
+        "title": "Contessa",
+        "city": "Boston",
+        "stateProvince": "Massachusetts",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "cote-miami-miami",
+        "title": "Cote Miami",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "del-mar-washington",
+        "title": "Del Mar",
+        "city": "Washington",
+        "stateProvince": "District Of Columbia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
         "siteFailures": []
       },
       {
@@ -161,6 +497,132 @@
         "siteFailures": []
       },
       {
+        "slug": "dizengoff-philadelphia",
+        "title": "Dizengoff",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "durant-s-phoenix",
+        "title": "Durant's",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "establishment-atlanta-atlanta",
+        "title": "Establishment Atlanta",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "estiatorio-milos-miami-miami",
+        "title": "Estiatorio Milos Miami",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "fiola-washington",
+        "title": "Fiola",
+        "city": "Washington",
+        "stateProvince": "District Of Columbia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "fiorella-philadelphia",
+        "title": "Fiorella",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
         "slug": "flo-santos",
         "title": "Flo & Santos",
         "city": "Chicago",
@@ -182,6 +644,69 @@
         "siteFailures": []
       },
       {
+        "slug": "fnb-phoenix",
+        "title": "FnB",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "fork-philadelphia",
+        "title": "Fork",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "friday-saturday-sunday-philadelphia",
+        "title": "Friday Saturday Sunday",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
         "slug": "good-mong-kok-bakery",
         "title": "Good Mong Kok Bakery",
         "city": "San Francisco",
@@ -200,6 +725,111 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "gunshow-atlanta",
+        "title": "Gunshow",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "hakkasan-miami-miami",
+        "title": "Hakkasan Miami",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "hana-japanese-eatery-phoenix",
+        "title": "Hana Japanese Eatery",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "hayakawa-atlanta",
+        "title": "Hayakawa",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "her-place-supper-club-philadelphia",
+        "title": "Her Place Supper Club",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
         "siteFailures": []
       },
       {
@@ -263,639 +893,6 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "jim-s-original",
-        "title": "Jim's Original",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "kenny-s-wood-fired-grill",
-        "title": "Kenny's Wood Fired Grill",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "kitchen-kocktails",
-        "title": "Kitchen + Kocktails",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "maple-ash",
-        "title": "Maple & Ash",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "palette-tea-house",
-        "title": "Palette Tea House",
-        "city": "San Francisco",
-        "stateProvince": "California",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "perry-s-steakhouse-grille",
-        "title": "Perry's Steakhouse & Grille",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "portillo-s-barnelli-s-chicago",
-        "title": "Portillo's & Barnelli's Chicago",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "r-g-lounge",
-        "title": "R & G Lounge",
-        "city": "San Francisco",
-        "stateProvince": "California",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "river-roast",
-        "title": "River Roast",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "siena-tavern",
-        "title": "Siena Tavern",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "terry-black-s-barbecue",
-        "title": "Terry Black's Barbecue",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "the-hampton-social-dallas",
-        "title": "The Hampton Social - Dallas",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "the-henry",
-        "title": "The Henry",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "the-woolworth",
-        "title": "The Woolworth",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "y-o-ranch-steakhouse",
-        "title": "Y.O. Ranch Steakhouse",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "mr-szechuan",
-        "title": "Mr Szechuan",
-        "city": "San Francisco",
-        "stateProvince": "California",
-        "priority": 500,
-        "reasons": [
-          "site-failure:site 408"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 71,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-11T00:10:23.416Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": [
-          "site 408"
-        ]
-      },
-      {
-        "slug": "perch",
-        "title": "Perch",
-        "city": "Los Angeles",
-        "stateProvince": "California",
-        "priority": 500,
-        "reasons": [
-          "site-failure:site 429"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 71,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:07:34.406Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": [
-          "site 429"
-        ]
-      },
-      {
-        "slug": "spicy-king",
-        "title": "Spicy King",
-        "city": "San Francisco",
-        "stateProvince": "California",
-        "priority": 500,
-        "reasons": [
-          "site-failure:site 500"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 71,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-11T00:09:25.388Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": [
-          "site 500"
-        ]
-      },
-      {
-        "slug": "summer-house-santa-monica",
-        "title": "Summer House Santa Monica",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 500,
-        "reasons": [
-          "site-failure:site 429"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 71,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:09:49.503Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": [
-          "site 429"
-        ]
-      },
-      {
-        "slug": "the-best-sichuan",
-        "title": "The Best Sichuan",
-        "city": "New York",
-        "stateProvince": "New York",
-        "priority": 500,
-        "reasons": [
-          "site-failure:site 408"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 71,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-11T00:03:40.316Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": [
-          "site 408"
-        ]
-      },
-      {
-        "slug": "the-best-sichuan-39",
-        "title": "The Best Sichuan 39 一品成都",
-        "city": "New York",
-        "stateProvince": "New York",
-        "priority": 500,
-        "reasons": [
-          "site-failure:site 408"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 71,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-11T00:03:05.631Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": [
-          "site 408"
-        ]
-      },
-      {
-        "slug": "the-smith",
-        "title": "The Smith",
-        "city": "New York",
-        "stateProvince": "New York",
-        "priority": 500,
-        "reasons": [
-          "site-failure:site 429"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 71,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:06:28.792Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": [
-          "site 429"
-        ]
-      },
-      {
-        "slug": "ariana",
-        "title": "Ariana",
-        "city": "Bend",
-        "stateProvince": "Oregon",
-        "priority": 500,
-        "reasons": [
-          "site-failure:site 429"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 79,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T21:34:17.135Z",
-        "reviewStatus": "current",
-        "nextReviewAt": "2026-08-19",
-        "reviewedAt": "2026-08-05",
-        "siteFailures": [
-          "site 429"
-        ]
-      },
-      {
-        "slug": "roe",
-        "title": "Roe",
-        "city": "Bellingham",
-        "stateProvince": "Washington",
-        "priority": 500,
-        "reasons": [
-          "site-failure:site 429"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 79,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T21:35:23.576Z",
-        "reviewStatus": "current",
-        "nextReviewAt": "2026-08-19",
-        "reviewedAt": "2026-08-05",
-        "siteFailures": [
-          "site 429"
-        ]
-      },
-      {
-        "slug": "delicious-chengdu",
-        "title": "Delicious Chengdu",
-        "city": "Temple City",
-        "stateProvince": "California",
-        "priority": 407,
-        "reasons": [
-          "thin-63"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 63,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-11T00:05:59.329Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "chengdu-taste",
-        "title": "Chengdu Taste",
-        "city": "Alhambra",
-        "stateProvince": "California",
-        "priority": 403,
-        "reasons": [
-          "thin-67"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 67,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-11T00:05:50.420Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "di-an-pho",
-        "title": "Di An Pho",
-        "city": "Houston",
-        "stateProvince": "Texas",
-        "priority": 403,
-        "reasons": [
-          "thin-67"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 67,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-11T00:00:38.359Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "pier-17",
-        "title": "Pier 17",
-        "city": "New York",
-        "stateProvince": "New York",
-        "priority": 403,
-        "reasons": [
-          "thin-67"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 67,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:06:02.680Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "canlis",
-        "title": "Canlis",
-        "city": "Seattle",
-        "stateProvince": "Washington",
-        "priority": 220,
-        "reasons": [
-          "review-due-soon"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 83,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T21:32:40.599Z",
-        "reviewStatus": "due_soon",
-        "nextReviewAt": "2026-08-12",
-        "reviewedAt": "2026-08-05",
-        "siteFailures": []
-      },
-      {
-        "slug": "kann",
-        "title": "Kann",
-        "city": "Portland",
-        "stateProvince": "Oregon",
-        "priority": 220,
-        "reasons": [
-          "review-due-soon"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 83,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T21:32:44.308Z",
-        "reviewStatus": "due_soon",
-        "nextReviewAt": "2026-08-12",
-        "reviewedAt": "2026-08-05",
         "siteFailures": []
       }
     ],
@@ -922,6 +919,27 @@
         "siteFailures": []
       },
       {
+        "slug": "5church-atlanta-atlanta",
+        "title": "5Church Atlanta",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
         "slug": "alla-vita",
         "title": "Alla Vita",
         "city": "Chicago",
@@ -940,6 +958,153 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "angelo-s-pizzeria-philadelphia",
+        "title": "Angelo's Pizzeria",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "aria-atlanta",
+        "title": "Aria",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "ariete-miami",
+        "title": "Ariete",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "atlanta-fish-market-atlanta",
+        "title": "Atlanta Fish Market",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "atlas-atlanta",
+        "title": "Atlas",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "bacchanalia-atlanta",
+        "title": "Bacchanalia",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "barrio-caf-phoenix",
+        "title": "Barrio Café",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
         "siteFailures": []
       },
       {
@@ -964,6 +1129,69 @@
         "siteFailures": []
       },
       {
+        "slug": "boia-de-miami",
+        "title": "Boia De",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "carbone-miami-miami",
+        "title": "Carbone Miami",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "causa-washington",
+        "title": "Causa",
+        "city": "Washington",
+        "stateProvince": "District Of Columbia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
         "slug": "chet-s-dallas",
         "title": "Chet's Dallas",
         "city": "Dallas",
@@ -982,6 +1210,111 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "christopher-s-phoenix",
+        "title": "Christopher's",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "committee-boston",
+        "title": "Committee",
+        "city": "Boston",
+        "stateProvince": "Massachusetts",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "contessa-boston",
+        "title": "Contessa",
+        "city": "Boston",
+        "stateProvince": "Massachusetts",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "cote-miami-miami",
+        "title": "Cote Miami",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "del-mar-washington",
+        "title": "Del Mar",
+        "city": "Washington",
+        "stateProvince": "District Of Columbia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
         "siteFailures": []
       },
       {
@@ -1006,6 +1339,132 @@
         "siteFailures": []
       },
       {
+        "slug": "dizengoff-philadelphia",
+        "title": "Dizengoff",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "durant-s-phoenix",
+        "title": "Durant's",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "establishment-atlanta-atlanta",
+        "title": "Establishment Atlanta",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "estiatorio-milos-miami-miami",
+        "title": "Estiatorio Milos Miami",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "fiola-washington",
+        "title": "Fiola",
+        "city": "Washington",
+        "stateProvince": "District Of Columbia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "fiorella-philadelphia",
+        "title": "Fiorella",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
         "slug": "flo-santos",
         "title": "Flo & Santos",
         "city": "Chicago",
@@ -1027,6 +1486,69 @@
         "siteFailures": []
       },
       {
+        "slug": "fnb-phoenix",
+        "title": "FnB",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "fork-philadelphia",
+        "title": "Fork",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "friday-saturday-sunday-philadelphia",
+        "title": "Friday Saturday Sunday",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
         "slug": "good-mong-kok-bakery",
         "title": "Good Mong Kok Bakery",
         "city": "San Francisco",
@@ -1045,6 +1567,111 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "gunshow-atlanta",
+        "title": "Gunshow",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "hakkasan-miami-miami",
+        "title": "Hakkasan Miami",
+        "city": "Miami",
+        "stateProvince": "Florida",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "hana-japanese-eatery-phoenix",
+        "title": "Hana Japanese Eatery",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "hayakawa-atlanta",
+        "title": "Hayakawa",
+        "city": "Atlanta",
+        "stateProvince": "Georgia",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "her-place-supper-club-philadelphia",
+        "title": "Her Place Supper Club",
+        "city": "Philadelphia",
+        "stateProvince": "Pennsylvania",
+        "priority": 1020,
+        "reasons": [
+          "never-enriched",
+          "listing-only"
+        ],
+        "hygiene": true,
+        "staleTier": "A",
+        "ageDays": null,
+        "completeness": 0,
+        "matchStatus": "none",
+        "lastEnrichedAt": null,
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
         "siteFailures": []
       },
       {
@@ -1094,321 +1721,6 @@
         "title": "Il Porcellino",
         "city": "Chicago",
         "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "jim-s-original",
-        "title": "Jim's Original",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "kenny-s-wood-fired-grill",
-        "title": "Kenny's Wood Fired Grill",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "kitchen-kocktails",
-        "title": "Kitchen + Kocktails",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "maple-ash",
-        "title": "Maple & Ash",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "palette-tea-house",
-        "title": "Palette Tea House",
-        "city": "San Francisco",
-        "stateProvince": "California",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "perry-s-steakhouse-grille",
-        "title": "Perry's Steakhouse & Grille",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "portillo-s-barnelli-s-chicago",
-        "title": "Portillo's & Barnelli's Chicago",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "r-g-lounge",
-        "title": "R & G Lounge",
-        "city": "San Francisco",
-        "stateProvince": "California",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "river-roast",
-        "title": "River Roast",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "siena-tavern",
-        "title": "Siena Tavern",
-        "city": "Chicago",
-        "stateProvince": "Illinois",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "terry-black-s-barbecue",
-        "title": "Terry Black's Barbecue",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "the-hampton-social-dallas",
-        "title": "The Hampton Social - Dallas",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "the-henry",
-        "title": "The Henry",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "the-woolworth",
-        "title": "The Woolworth",
-        "city": "Dallas",
-        "stateProvince": "Texas",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "y-o-ranch-steakhouse",
-        "title": "Y.O. Ranch Steakhouse",
-        "city": "Dallas",
-        "stateProvince": "Texas",
         "priority": 1020,
         "reasons": [
           "never-enriched",
@@ -1442,7 +1754,7 @@
     },
     {
       "label": "under 50",
-      "count": 25
+      "count": 114
     }
   ],
   "states": [
@@ -1485,6 +1797,54 @@
       "avgCompleteness": 85,
       "population": 7812880,
       "perMillion": 2.05
+    },
+    {
+      "code": "AZ",
+      "count": 15,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 7431344,
+      "perMillion": 2.02
+    },
+    {
+      "code": "DC",
+      "count": 15,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 678972,
+      "perMillion": 22.09
+    },
+    {
+      "code": "FL",
+      "count": 15,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 22610726,
+      "perMillion": 0.66
+    },
+    {
+      "code": "GA",
+      "count": 15,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 11029227,
+      "perMillion": 1.36
+    },
+    {
+      "code": "MA",
+      "count": 15,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 7001399,
+      "perMillion": 2.14
+    },
+    {
+      "code": "PA",
+      "count": 14,
+      "enriched": 0,
+      "avgCompleteness": 0,
+      "population": 12961683,
+      "perMillion": 1.08
     },
     {
       "code": "OR",
@@ -1535,14 +1895,6 @@
       "perMillion": 0
     },
     {
-      "code": "AZ",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 7431344,
-      "perMillion": 0
-    },
-    {
       "code": "CO",
       "count": 0,
       "enriched": 0,
@@ -1559,35 +1911,11 @@
       "perMillion": 0
     },
     {
-      "code": "DC",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 678972,
-      "perMillion": 0
-    },
-    {
       "code": "DE",
       "count": 0,
       "enriched": 0,
       "avgCompleteness": 0,
       "population": 1031890,
-      "perMillion": 0
-    },
-    {
-      "code": "FL",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 22610726,
-      "perMillion": 0
-    },
-    {
-      "code": "GA",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 11029227,
       "perMillion": 0
     },
     {
@@ -1636,14 +1964,6 @@
       "enriched": 0,
       "avgCompleteness": 0,
       "population": 4573749,
-      "perMillion": 0
-    },
-    {
-      "code": "MA",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 7001399,
       "perMillion": 0
     },
     {
@@ -1767,14 +2087,6 @@
       "perMillion": 0
     },
     {
-      "code": "PA",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 12961683,
-      "perMillion": 0
-    },
-    {
       "code": "RI",
       "count": 0,
       "enriched": 0,
@@ -1885,7 +2197,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -1908,7 +2220,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -1931,7 +2243,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -1954,7 +2266,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -1977,7 +2289,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2000,7 +2312,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2023,7 +2335,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2048,7 +2360,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2073,7 +2385,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2098,7 +2410,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2123,7 +2435,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2146,7 +2458,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2169,7 +2481,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2192,7 +2504,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2215,7 +2527,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2240,7 +2552,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2263,7 +2575,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2286,7 +2598,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2309,7 +2621,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2332,7 +2644,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2355,7 +2667,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2378,7 +2690,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2401,7 +2713,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2424,7 +2736,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2447,7 +2759,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2470,7 +2782,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2493,7 +2805,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2516,7 +2828,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2541,7 +2853,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2566,7 +2878,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2591,7 +2903,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2616,7 +2928,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2641,7 +2953,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2664,7 +2976,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2687,7 +2999,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2710,7 +3022,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2733,7 +3045,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2756,7 +3068,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2779,7 +3091,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2802,7 +3114,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2825,7 +3137,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2848,7 +3160,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2871,7 +3183,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2894,7 +3206,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2917,7 +3229,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2940,7 +3252,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2963,7 +3275,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2986,7 +3298,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3009,7 +3321,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3032,7 +3344,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3055,7 +3367,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3078,7 +3390,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3101,7 +3413,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3124,7 +3436,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3147,7 +3459,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3172,7 +3484,7 @@
         "site-failure:site 429"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 429"
       ]
@@ -3199,7 +3511,7 @@
         "site-failure:site 429"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 429"
       ]
@@ -3224,7 +3536,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3247,7 +3559,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3270,7 +3582,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3293,7 +3605,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3316,7 +3628,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3339,7 +3651,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3362,7 +3674,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3385,7 +3697,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3408,7 +3720,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3431,7 +3743,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3454,7 +3766,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3477,7 +3789,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3500,7 +3812,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3523,7 +3835,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3546,7 +3858,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3569,7 +3881,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3592,7 +3904,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3615,7 +3927,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3638,7 +3950,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3661,7 +3973,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3684,7 +3996,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3707,7 +4019,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3730,7 +4042,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3753,7 +4065,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3776,7 +4088,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3799,7 +4111,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3822,7 +4134,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3845,7 +4157,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3868,7 +4180,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3891,7 +4203,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3914,7 +4226,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3937,7 +4249,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3960,7 +4272,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3983,7 +4295,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4006,7 +4318,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4029,7 +4341,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4052,7 +4364,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4075,7 +4387,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4098,7 +4410,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4121,7 +4433,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4144,7 +4456,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4167,7 +4479,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4192,7 +4504,7 @@
         "site-failure:site 429"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 429"
       ]
@@ -4219,7 +4531,7 @@
         "site-failure:site 429"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 429"
       ]
@@ -4246,7 +4558,7 @@
         "site-failure:site 429"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 429"
       ]
@@ -4271,7 +4583,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4296,7 +4608,7 @@
         "site-failure:site 408"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 408"
       ]
@@ -4323,7 +4635,7 @@
         "site-failure:site 408"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 408"
       ]
@@ -4350,7 +4662,7 @@
         "site-failure:site 500"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 500"
       ]
@@ -4377,7 +4689,7 @@
         "site-failure:site 408"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 408"
       ]
@@ -4404,7 +4716,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4429,7 +4741,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4454,7 +4766,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4479,7 +4791,7 @@
         "thin-63"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5131,6 +5443,2320 @@
       "staleTier": "A",
       "ageDays": null,
       "siteFailures": []
+    },
+    {
+      "slug": "lazy-betty-atlanta",
+      "title": "Lazy Betty",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "hayakawa-atlanta",
+      "title": "Hayakawa",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "muj-atlanta",
+      "title": "Mujō",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "nan-thai-fine-dining-atlanta",
+      "title": "Nan Thai Fine Dining",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "atlanta-fish-market-atlanta",
+      "title": "Atlanta Fish Market",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "5church-atlanta-atlanta",
+      "title": "5Church Atlanta",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "establishment-atlanta-atlanta",
+      "title": "Establishment Atlanta",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "bacchanalia-atlanta",
+      "title": "Bacchanalia",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "miller-union-atlanta",
+      "title": "Miller Union",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "staplehouse-atlanta",
+      "title": "Staplehouse",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "gunshow-atlanta",
+      "title": "Gunshow",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "kimball-house-atlanta",
+      "title": "Kimball House",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "atlas-atlanta",
+      "title": "Atlas",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "aria-atlanta",
+      "title": "Aria",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "trader-vic-s-atlanta-atlanta",
+      "title": "Trader Vic's Atlanta",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-dabney-washington",
+      "title": "The Dabney",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "pineapple-and-pearls-washington",
+      "title": "Pineapple and Pearls",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "rose-s-luxury-washington",
+      "title": "Rose's Luxury",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "minibar-by-jos-andr-s-washington",
+      "title": "minibar by José Andrés",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "fiola-washington",
+      "title": "Fiola",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "rasika-washington",
+      "title": "Rasika",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "zaytinya-washington",
+      "title": "Zaytinya",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "oyamel-washington",
+      "title": "Oyamel",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "jaleo-washington",
+      "title": "Jaleo",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "moon-rabbit-washington",
+      "title": "Moon Rabbit",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "succotash-prime-washington-dc-washington",
+      "title": "Succotash Prime Washington DC",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "joe-s-seafood-prime-steak-stone-crab-washington-dc-washington",
+      "title": "Joe's Seafood Prime Steak & Stone Crab — Washington DC",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-capital-grille-washington-dc-washington",
+      "title": "The Capital Grille — Washington DC",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "del-mar-washington",
+      "title": "Del Mar",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "causa-washington",
+      "title": "Causa",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "friday-saturday-sunday-philadelphia",
+      "title": "Friday Saturday Sunday",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "her-place-supper-club-philadelphia",
+      "title": "Her Place Supper Club",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "provenance-philadelphia",
+      "title": "Provenance",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "zahav-philadelphia",
+      "title": "Zahav",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "vetri-cucina-philadelphia",
+      "title": "Vetri Cucina",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "royal-sushi-izakaya-philadelphia",
+      "title": "Royal Sushi & Izakaya",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "fiorella-philadelphia",
+      "title": "Fiorella",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "pizzeria-beddia-philadelphia",
+      "title": "Pizzeria Beddia",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "dizengoff-philadelphia",
+      "title": "Dizengoff",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "angelo-s-pizzeria-philadelphia",
+      "title": "Angelo's Pizzeria",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "suraya-philadelphia",
+      "title": "Suraya",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "kalaya-philadelphia",
+      "title": "Kalaya",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "vernick-food-drink-philadelphia",
+      "title": "Vernick Food & Drink",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "fork-philadelphia",
+      "title": "Fork",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "carbone-miami-miami",
+      "title": "Carbone Miami",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "estiatorio-milos-miami-miami",
+      "title": "Estiatorio Milos Miami",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "wayan-miami-miami",
+      "title": "Wayan Miami",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "zuma-miami-miami",
+      "title": "Zuma Miami",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "hakkasan-miami-miami",
+      "title": "Hakkasan Miami",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "cote-miami-miami",
+      "title": "Cote Miami",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "joe-s-stone-crab-miami",
+      "title": "Joe's Stone Crab",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "versailles-restaurant-miami",
+      "title": "Versailles Restaurant",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "ky-miami",
+      "title": "Kyū",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "los-f-lix-miami",
+      "title": "Los Félix",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "ariete-miami",
+      "title": "Ariete",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "boia-de-miami",
+      "title": "Boia De",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "itamae-miami",
+      "title": "Itamae",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "mandolin-aegean-bistro-miami",
+      "title": "Mandolin Aegean Bistro",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "la-carreta-miami",
+      "title": "La Carreta",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "kai-restaurant-phoenix",
+      "title": "Kai Restaurant",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "fnb-phoenix",
+      "title": "FnB",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-gladly-phoenix",
+      "title": "The Gladly",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "barrio-caf-phoenix",
+      "title": "Barrio Café",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "pizzeria-bianco-phoenix",
+      "title": "Pizzeria Bianco",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "christopher-s-phoenix",
+      "title": "Christopher's",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "durant-s-phoenix",
+      "title": "Durant's",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "hana-japanese-eatery-phoenix",
+      "title": "Hana Japanese Eatery",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "tarbell-s-phoenix",
+      "title": "Tarbell's",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "lon-s-at-the-hermosa-phoenix",
+      "title": "Lon's at the Hermosa",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "mastro-s-city-hall-phoenix",
+      "title": "Mastro's City Hall",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "virt-honest-craft-phoenix",
+      "title": "Virtù Honest Craft",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "pa-la-phoenix",
+      "title": "Pa'La",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "welcome-diner-phoenix",
+      "title": "Welcome Diner",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "tratto-phoenix",
+      "title": "Tratto",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "menton-boston",
+      "title": "Menton",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "o-ya-boston",
+      "title": "O Ya",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "yume-wo-katare-boston",
+      "title": "Yume Wo Katare",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "oleana-boston",
+      "title": "Oleana",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "sarma-boston",
+      "title": "Sarma",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "contessa-boston",
+      "title": "Contessa",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "woods-hill-pier-4-boston",
+      "title": "Woods Hill Pier 4",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "committee-boston",
+      "title": "Committee",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "neptune-oyster-boston",
+      "title": "Neptune Oyster",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "row-34-boston",
+      "title": "Row 34",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "sportello-boston",
+      "title": "Sportello",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "no-9-park-boston",
+      "title": "No. 9 Park",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "uni-boston",
+      "title": "Uni",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "little-donkey-boston",
+      "title": "Little Donkey",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
+    },
+    {
+      "slug": "puritan-company-boston",
+      "title": "Puritan & Company",
+      "stateCode": "MA",
+      "city": "Boston",
+      "completeness": 0,
+      "matchStatus": "none",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": null,
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1020,
+      "refreshReasons": [
+        "never-enriched",
+        "listing-only"
+      ],
+      "staleTier": "A",
+      "ageDays": null,
+      "siteFailures": []
     }
   ],
   "recent": [
@@ -5156,7 +7782,7 @@
         "site-failure:site 408"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 408"
       ]
@@ -5181,7 +7807,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5204,7 +7830,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5229,7 +7855,7 @@
         "site-failure:site 500"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 500"
       ]
@@ -5254,7 +7880,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5277,7 +7903,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5300,7 +7926,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5323,7 +7949,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5346,7 +7972,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5369,7 +7995,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5392,7 +8018,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5415,90 +8041,18 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     }
   ],
   "queue": {
     "paused": false,
-    "restaurantsPerRun": 25,
-    "citiesPerRun": 1,
+    "restaurantsPerRun": 20,
+    "citiesPerRun": 3,
     "dailyCap": 200,
-    "pending": 73,
-    "done": 6,
+    "pending": 67,
+    "done": 12,
     "next": [
-      {
-        "city": "Atlanta",
-        "stateCode": "GA",
-        "population": 6307261,
-        "priority": 6,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Washington",
-        "stateCode": "DC",
-        "population": 6304975,
-        "priority": 7,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Philadelphia",
-        "stateCode": "PA",
-        "population": 6246160,
-        "priority": 8,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Miami",
-        "stateCode": "FL",
-        "population": 6183199,
-        "priority": 9,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Phoenix",
-        "stateCode": "AZ",
-        "population": 5070110,
-        "priority": 10,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Boston",
-        "stateCode": "MA",
-        "population": 4919179,
-        "priority": 11,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
       {
         "city": "Riverside",
         "stateCode": "CA",
@@ -5546,10 +8100,148 @@
         "inserted": 0,
         "lastRunAt": null,
         "note": ""
+      },
+      {
+        "city": "Tampa",
+        "stateCode": "FL",
+        "population": 3342963,
+        "priority": 17,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "San Diego",
+        "stateCode": "CA",
+        "population": 3269973,
+        "priority": 18,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Denver",
+        "stateCode": "CO",
+        "population": 3005131,
+        "priority": 19,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Baltimore",
+        "stateCode": "MD",
+        "population": 2834316,
+        "priority": 20,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Orlando",
+        "stateCode": "FL",
+        "population": 2817933,
+        "priority": 21,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Charlotte",
+        "stateCode": "NC",
+        "population": 2805115,
+        "priority": 22,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
       }
     ]
   },
   "runs": [
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-12T06:45:34.941Z",
+      "batchSize": 0,
+      "inserted": 45,
+      "cities": [
+        {
+          "city": "Miami, FL",
+          "found": 15,
+          "inserted": 15,
+          "duplicates": 0
+        },
+        {
+          "city": "Phoenix, AZ",
+          "found": 15,
+          "inserted": 15,
+          "duplicates": 0
+        },
+        {
+          "city": "Boston, MA",
+          "found": 15,
+          "inserted": 15,
+          "duplicates": 0
+        }
+      ],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-12T06:45:02.762Z",
+      "batchSize": 0,
+      "inserted": 44,
+      "cities": [
+        {
+          "city": "Atlanta, GA",
+          "found": 15,
+          "inserted": 15,
+          "duplicates": 0
+        },
+        {
+          "city": "Washington, DC",
+          "found": 15,
+          "inserted": 15,
+          "duplicates": 0
+        },
+        {
+          "city": "Philadelphia, PA",
+          "found": 15,
+          "inserted": 14,
+          "duplicates": 1
+        }
+      ],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
     {
       "kind": "enrich",
       "startedAt": "2026-08-11T00:03:05.631Z",
@@ -5707,48 +8399,6 @@
       "avgCompleteness": 0,
       "apiCalls": {
         "placesSearchText": 2
-      },
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-11T00:00:19.014Z",
-      "batchSize": 5,
-      "inserted": 0,
-      "cities": [
-        "Houston, Texas"
-      ],
-      "resolved": 5,
-      "unresolved": 0,
-      "avgCompleteness": 83,
-      "apiCalls": {
-        "google": 5,
-        "firecrawl": 4
-      },
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "discover",
-      "startedAt": "2026-08-11T00:00:18.242Z",
-      "batchSize": 5,
-      "inserted": 5,
-      "cities": [
-        {
-          "city": "Houston, TX",
-          "found": 19,
-          "inserted": 5,
-          "duplicates": 0
-        }
-      ],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {
-        "placesSearchText": 1
       },
       "retries": 0,
       "failures": 0,

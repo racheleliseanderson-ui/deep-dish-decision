@@ -1,0 +1,829 @@
+{
+  "note": "Controlled geographic seeds for metros not yet in the corpus. Every entry is a real named establishment with a public listing or official site. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
+  "generatedAt": "2026-08-12T06:45:00.000Z",
+  "batches": [
+    {
+      "city": "Atlanta",
+      "stateCode": "GA",
+      "listings": [
+        {
+          "title": "Lazy Betty",
+          "website": "https://www.lazybettyatl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Hayakawa",
+          "website": "https://www.hayakawa-atl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Mujō",
+          "website": "https://www.mujoatl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Nan Thai Fine Dining",
+          "website": "https://www.nanfinedining.com/",
+          "phone": "+1-404-870-9933",
+          "address": "1350 Spring Street NW, Atlanta, GA 30309",
+          "cuisineTags": [
+            "Thai",
+            "Fine dining"
+          ]
+        },
+        {
+          "title": "Atlanta Fish Market",
+          "website": "https://www.buckheadrestaurants.com/atlanta-fish-market",
+          "phone": "+1-404-262-3165",
+          "address": "265 Pharr Road NE, Atlanta, GA 30305",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "5Church Atlanta",
+          "website": "https://midtown.5church-atlanta.com/",
+          "phone": "+1-404-400-3669",
+          "address": "1197 Peachtree Street NE, Atlanta, GA 30361",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Establishment Atlanta",
+          "website": "https://establishmentatlanta.com/",
+          "phone": "+1-404-347-5291",
+          "address": "1197 Peachtree Street NE, Atlanta, GA 30308",
+          "cuisineTags": [
+            "American",
+            "Steak"
+          ]
+        },
+        {
+          "title": "Bacchanalia",
+          "website": "https://www.starprovisions.com/bacchanalia",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Miller Union",
+          "website": "https://www.millerunion.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Staplehouse",
+          "website": "https://www.staplehouse.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Gunshow",
+          "website": "https://www.gunshowatl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Kimball House",
+          "website": "https://www.kimball-house.com/",
+          "address": "Decatur, GA",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "Atlas",
+          "website": "https://www.atlasrestaurant.com/",
+          "address": "St. Regis Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary",
+            "Fine dining"
+          ]
+        },
+        {
+          "title": "Aria",
+          "website": "https://www.aria-atl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "American",
+            "Fine dining"
+          ]
+        },
+        {
+          "title": "Trader Vic's Atlanta",
+          "website": "https://tradervicsatl.com/",
+          "phone": "+1-404-221-6339",
+          "address": "255 Courtland Street NE, Atlanta, GA 30303",
+          "cuisineTags": [
+            "Polynesian",
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Washington",
+      "stateCode": "DC",
+      "listings": [
+        {
+          "title": "The Dabney",
+          "website": "https://www.thedabney.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "American",
+            "Mid-Atlantic"
+          ]
+        },
+        {
+          "title": "Pineapple and Pearls",
+          "website": "https://www.pineappleandpearls.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Rose's Luxury",
+          "website": "https://www.rosesluxury.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "minibar by José Andrés",
+          "website": "https://www.minibarbyjoseandres.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Creative",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Fiola",
+          "website": "https://www.fioladc.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Rasika",
+          "website": "https://www.rasikarestaurant.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Indian"
+          ]
+        },
+        {
+          "title": "Zaytinya",
+          "website": "https://www.zaytinya.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Mediterranean",
+            "Mezze"
+          ]
+        },
+        {
+          "title": "Oyamel",
+          "website": "https://www.oyamel.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Jaleo",
+          "website": "https://www.jaleo.com/location/washington-dc/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Spanish",
+            "Tapas"
+          ]
+        },
+        {
+          "title": "Moon Rabbit",
+          "website": "https://www.moonrabbitdc.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Vietnamese"
+          ]
+        },
+        {
+          "title": "Succotash Prime Washington DC",
+          "website": "https://www.succotashrestaurant.com/",
+          "phone": "+1-202-849-6933",
+          "address": "915 F Street NW, Washington, DC 20004",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Joe's Seafood Prime Steak & Stone Crab — Washington DC",
+          "website": "https://www.joes.net/washington-dc",
+          "phone": "+1-202-489-0140",
+          "address": "750 15th Street NW, Washington, DC 20005",
+          "cuisineTags": [
+            "Seafood",
+            "Steak"
+          ]
+        },
+        {
+          "title": "The Capital Grille — Washington DC",
+          "website": "https://www.thecapitalgrille.com/locations/dc/washington/washington-dc/8003",
+          "phone": "+1-202-737-6200",
+          "address": "601 Pennsylvania Avenue NW, Washington, DC 20004",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Del Mar",
+          "website": "https://www.delmardc.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Spanish",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Causa",
+          "website": "https://www.causadc.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Peruvian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Philadelphia",
+      "stateCode": "PA",
+      "listings": [
+        {
+          "title": "Friday Saturday Sunday",
+          "website": "https://www.fridaysaturdaysunday.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Her Place Supper Club",
+          "website": "https://www.herplacephilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Provenance",
+          "website": "https://provenancephl.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Zahav",
+          "website": "https://www.zahavrestaurant.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Israeli",
+            "Middle Eastern"
+          ]
+        },
+        {
+          "title": "Vetri Cucina",
+          "website": "https://www.vetricucina.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Royal Sushi & Izakaya",
+          "website": "https://www.royalsushiandizakaya.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Fiorella",
+          "website": "https://www.fiorellaphilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Pizzeria Beddia",
+          "website": "https://www.pizzeriabeddia.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Dizengoff",
+          "website": "https://www.dizengoffhummus.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Israeli",
+            "Hummus"
+          ]
+        },
+        {
+          "title": "Angelo's Pizzeria",
+          "website": "https://angelospizzeriasouthphiladelphia.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "JiangNan Philadelphia",
+          "website": "https://jiangnanny.com/",
+          "phone": "+1-267-534-5276",
+          "address": "927 Arch Street, Philadelphia, PA 19107",
+          "cuisineTags": [
+            "Chinese",
+            "Jiangnan"
+          ]
+        },
+        {
+          "title": "Suraya",
+          "website": "https://www.surayaphilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Lebanese",
+            "Middle Eastern"
+          ]
+        },
+        {
+          "title": "Kalaya",
+          "website": "https://www.kalaya.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Vernick Food & Drink",
+          "website": "https://www.vernickphilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Fork",
+          "website": "https://www.forkrestaurant.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Miami",
+      "stateCode": "FL",
+      "listings": [
+        {
+          "title": "Carbone Miami",
+          "website": "https://carbonemiami.com/",
+          "address": "Miami Beach, FL",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Estiatorio Milos Miami",
+          "website": "https://www.estiatoriomilos.com/location/miami/",
+          "phone": "+1-305-604-6800",
+          "address": "730 1st Street, Miami Beach, FL 33139",
+          "cuisineTags": [
+            "Greek",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Wayan Miami",
+          "website": "https://wayan-miami.com",
+          "phone": "+1-786-691-7681",
+          "address": "50 NW 24th Street, Miami, FL 33127",
+          "cuisineTags": [
+            "Indonesian",
+            "Asian"
+          ]
+        },
+        {
+          "title": "Zuma Miami",
+          "website": "https://www.zumarestaurant.com/en/miami/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Hakkasan Miami",
+          "website": "https://hakkasan.com/miami/",
+          "address": "Miami Beach, FL",
+          "cuisineTags": [
+            "Chinese"
+          ]
+        },
+        {
+          "title": "Cote Miami",
+          "website": "https://www.cotemiami.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Korean",
+            "Steak"
+          ]
+        },
+        {
+          "title": "Joe's Stone Crab",
+          "website": "https://www.joesstonecrab.com/",
+          "address": "Miami Beach, FL",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Versailles Restaurant",
+          "website": "https://versaillesrestaurant.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Cuban"
+          ]
+        },
+        {
+          "title": "Kyū",
+          "website": "https://www.kyumiami.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Robata"
+          ]
+        },
+        {
+          "title": "Los Félix",
+          "website": "https://www.losfelixmiami.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Ariete",
+          "website": "https://www.arietecoconutgrove.com/",
+          "address": "Coconut Grove, FL",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Boia De",
+          "website": "https://www.boiade.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Itamae",
+          "website": "https://www.itamaemiami.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Peruvian"
+          ]
+        },
+        {
+          "title": "Mandolin Aegean Bistro",
+          "website": "https://www.mandolinmiami.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Greek",
+            "Turkish"
+          ]
+        },
+        {
+          "title": "La Carreta",
+          "website": "https://lacarreta.com/",
+          "phone": "+1-305-869-3003",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Cuban"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Phoenix",
+      "stateCode": "AZ",
+      "listings": [
+        {
+          "title": "Kai Restaurant",
+          "website": "https://www.wildhorsepass.com/dining/kai",
+          "address": "Chandler, AZ",
+          "cuisineTags": [
+            "Native American",
+            "Fine dining"
+          ]
+        },
+        {
+          "title": "FnB",
+          "website": "https://www.fnbrestaurant.com/",
+          "address": "Scottsdale, AZ",
+          "cuisineTags": [
+            "American",
+            "Wine"
+          ]
+        },
+        {
+          "title": "The Gladly",
+          "website": "https://www.thegladly.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Barrio Café",
+          "website": "https://www.barriocafe.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Pizzeria Bianco",
+          "website": "https://www.pizzeriabianco.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Christopher's",
+          "website": "https://www.christophersaz.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "French",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Durant's",
+          "website": "https://www.durantsaz.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Hana Japanese Eatery",
+          "website": "https://www.hanajapanese.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Tarbell's",
+          "website": "https://www.tarbells.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Lon's at the Hermosa",
+          "website": "https://www.lons.com/",
+          "address": "Paradise Valley, AZ",
+          "cuisineTags": [
+            "American",
+            "Southwestern"
+          ]
+        },
+        {
+          "title": "Mastro's City Hall",
+          "website": "https://www.mastrosrestaurants.com/",
+          "address": "Scottsdale, AZ",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Virtù Honest Craft",
+          "website": "https://www.virtuscottsdale.com/",
+          "address": "Scottsdale, AZ",
+          "cuisineTags": [
+            "Italian",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Pa'La",
+          "website": "https://www.palavegan.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Plant-based",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Welcome Diner",
+          "website": "https://www.welcomediner.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "American",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Tratto",
+          "website": "https://www.trattophx.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Italian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Boston",
+      "stateCode": "MA",
+      "listings": [
+        {
+          "title": "Menton",
+          "website": "https://www.mentonboston.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "French",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "O Ya",
+          "website": "https://www.o-ya.restaurant/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Yume Wo Katare",
+          "website": "https://www.yumewokatare.com/",
+          "address": "Cambridge, MA",
+          "cuisineTags": [
+            "Ramen",
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Oleana",
+          "website": "https://www.oleanarestaurant.com/",
+          "address": "Cambridge, MA",
+          "cuisineTags": [
+            "Eastern Mediterranean"
+          ]
+        },
+        {
+          "title": "Sarma",
+          "website": "https://www.sarmarestaurant.com/",
+          "address": "Somerville, MA",
+          "cuisineTags": [
+            "Eastern Mediterranean"
+          ]
+        },
+        {
+          "title": "Contessa",
+          "website": "https://www.contessaristorante.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Woods Hill Pier 4",
+          "website": "https://www.woodshillpier4.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "American",
+            "Sustainable"
+          ]
+        },
+        {
+          "title": "Committee",
+          "website": "https://www.committeeboston.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Greek",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Neptune Oyster",
+          "website": "https://www.neptuneoyster.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Row 34",
+          "website": "https://www.row34.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Sportello",
+          "website": "https://www.sportelloboston.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "No. 9 Park",
+          "website": "https://www.no9park.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "European",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Uni",
+          "website": "https://www.uni-boston.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Little Donkey",
+          "website": "https://www.littledonkeybos.com/",
+          "address": "Cambridge, MA",
+          "cuisineTags": [
+            "Global",
+            "American"
+          ]
+        },
+        {
+          "title": "Puritan & Company",
+          "website": "https://www.puritancambridge.com/",
+          "address": "Cambridge, MA",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    }
+  ]
+}
