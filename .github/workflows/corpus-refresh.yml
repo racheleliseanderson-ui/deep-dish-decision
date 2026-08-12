@@ -10,13 +10,17 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "hygiene | discover"
+        description: "hygiene | discover | seed (hygiene then multi-city discover)"
         required: true
         default: "hygiene"
       batch:
-        description: "Batch size"
+        description: "Hygiene batch size / restaurants per city on discover"
         required: false
         default: "25"
+      cities:
+        description: "Cities per discover run (discover/seed modes)"
+        required: false
+        default: "3"
 
 jobs:
   refresh:
@@ -28,34 +32,51 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+
       - name: Rebuild refresh queue + coverage
         run: |
           node scripts/pipeline/refresh.mjs
           node scripts/pipeline/report.mjs
+
+      # Hygiene first on schedule, hygiene mode, and seed mode (seed always clears the due list)
       - name: Hygiene enrich
-        if: ${{ github.event_name == 'schedule' || inputs.mode == 'hygiene' }}
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'hygiene' || inputs.mode == 'seed' }}
         env:
           LOVABLE_API_KEY: ${{ secrets.LOVABLE_API_KEY }}
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: node scripts/pipeline/enrich.mjs --hygiene --batch=${{ inputs.batch || 25 }}
-      - name: Controlled discover (manual only)
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'discover' }}
+
+      # Pure discover still allowed, but must clear hygiene gate or allow-with-hygiene
+      - name: Controlled discover
+        if: ${{ github.event_name == 'workflow_dispatch' && (inputs.mode == 'discover' || inputs.mode == 'seed') }}
         env:
           LOVABLE_API_KEY: ${{ secrets.LOVABLE_API_KEY }}
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
-        run: node scripts/pipeline/discover.mjs --batch=${{ inputs.batch || 10 }}
+        run: |
+          CITIES="${{ inputs.cities || 3 }}"
+          LIMIT="${{ inputs.batch || 25 }}"
+          # discover.mjs uses --cities and --limit (not --batch).
+          # After seed-mode hygiene, allow-with-hygiene still guards residual due items.
+          node scripts/pipeline/discover.mjs \
+            --cities="$CITIES" \
+            --limit="$LIMIT" \
+            --allow-with-hygiene
+
       - name: Recompute coverage
         run: node scripts/pipeline/report.mjs
+
       - name: Commit corpus updates
         run: |
           git config user.name "Rachel Elise Anderson"
           git config user.email "Rachel.Elise.Anderson@gmail.com"
-          git add src/data/enrichment.json src/data/dataset.json src/data/refresh-queue.json src/data/coverage.json src/data/run-log.json src/data/expansion-queue.json || true
+          git add src/data/enrichment.json src/data/dataset.json src/data/refresh-queue.json \
+            src/data/coverage.json src/data/run-log.json src/data/expansion-queue.json || true
           if git diff --staged --quiet; then
             echo "No corpus changes"
           else
-            git commit -m "chore(corpus): scheduled hygiene refresh"
+            MODE="${{ inputs.mode || 'hygiene' }}"
+            git commit -m "chore(corpus): ${MODE} pass — seed / refresh locations"
             git push
           fi

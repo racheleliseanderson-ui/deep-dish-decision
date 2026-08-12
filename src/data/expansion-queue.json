@@ -2,10 +2,10 @@
   "generatedAt": "2026-08-11T00:15:32.424Z",
   "settings": {
     "paused": false,
-    "restaurantsPerRun": 25,
-    "citiesPerRun": 1,
+    "restaurantsPerRun": 20,
+    "citiesPerRun": 3,
     "dailyCap": 200,
-    "maxCitiesPerDay": 3,
+    "maxCitiesPerDay": 6,
     "minCompletenessToKeep": 55,
     "seeds": [
       "best restaurants",
