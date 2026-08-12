@@ -122,7 +122,10 @@ export function Toggle({
       aria-pressed={active}
       className={cn(
         "rounded-full border text-left transition-all duration-300 ease-instrument",
-        size === "sm" ? "px-2.5 py-1 text-[11px]" : "px-3 py-1.5 text-xs",
+        /* Mobile: ≥44px touch; desktop keeps the denser instrument density */
+        size === "sm"
+          ? "min-h-10 px-3 py-2 text-[11px] sm:min-h-0 sm:px-2.5 sm:py-1"
+          : "min-h-11 px-3.5 py-2.5 text-xs sm:min-h-0 sm:px-3 sm:py-1.5",
         active
           ? "border-primary/50 bg-primary/12 text-primary shadow-[0_0_0_1px_var(--color-primary)_inset]"
           : "border-border bg-surface-raised/60 text-muted-foreground hover:border-border-strong hover:text-foreground",
@@ -143,10 +146,10 @@ export function Field({
   hint?: string;
 }) {
   return (
-    <div>
+    <div className="min-w-0">
       <div className="mb-2 flex items-baseline justify-between gap-3">
         <span className="text-eyebrow">{label}</span>
-        {hint ? <span className="text-[11px] text-subtle">{hint}</span> : null}
+        {hint ? <span className="shrink-0 text-[11px] text-subtle">{hint}</span> : null}
       </div>
       {children}
     </div>
