@@ -69,6 +69,7 @@
   --ease-instrument: cubic-bezier(0.16, 1, 0.3, 1);
 
   --animate-marquee: marquee 46s linear infinite;
+  --animate-rank-flash: rank-flash 640ms cubic-bezier(0.16, 1, 0.3, 1);
 
   @keyframes marquee {
     from {
@@ -76,6 +77,19 @@
     }
     to {
       transform: translateX(-50%);
+    }
+  }
+
+  @keyframes rank-flash {
+    0% {
+      box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-primary) 0%, transparent);
+    }
+    35% {
+      box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-primary) 42%, transparent),
+        0 0 28px -8px color-mix(in oklab, var(--color-primary) 35%, transparent);
+    }
+    100% {
+      box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-primary) 0%, transparent);
     }
   }
 }
@@ -299,6 +313,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Soft gilt pulse when a card keeps position but its rank index changes. */
+@utility rank-flash {
+  animation: var(--animate-rank-flash);
+}
+
 /* Vitrine — a plate-glass display case: gilt hairline, sheen, deep drop. */
 @utility vitrine {
   position: relative;
@@ -361,6 +380,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
+    animation: none;
+  }
+  .rank-flash {
     animation: none;
   }
 }

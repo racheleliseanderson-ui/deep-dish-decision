@@ -4,8 +4,7 @@ import type { Scored, Situation } from "@/lib/intelligence";
 import { useShortlist } from "@/lib/shortlist";
 import { cn } from "@/lib/utils";
 import { Link } from "@tanstack/react-router";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 
 export function RecordCard({
   sc,
@@ -21,9 +20,18 @@ export function RecordCard({
   compared: boolean;
 }) {
   const [open, setOpen] = useState(false);
+  const [fitPulse, setFitPulse] = useState(false);
   const shortlist = useShortlist();
   const r = sc.record;
   const lead = sc.findings.slice(0, open ? sc.findings.length : 2);
+
+  // Soft cue when fit moves with the situation — meters already animate width.
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    setFitPulse(true);
+    const t = window.setTimeout(() => setFitPulse(false), 520);
+    return () => window.clearTimeout(t);
+  }, [sc.fit, sc.rank]);
 
   return (
     <article
@@ -32,6 +40,7 @@ export function RecordCard({
         sc.blocked
           ? "border-critical/30"
           : "border-border hover:border-border-strong hover:shadow-lift",
+        fitPulse && !sc.blocked && "border-primary/25",
       )}
       data-rank={sc.rank}
       data-blocked={sc.blocked ? "1" : "0"}
@@ -41,7 +50,7 @@ export function RecordCard({
           <div className="flex items-baseline gap-2">
             <span
               key={sc.rank}
-              className="text-num text-3xl font-medium leading-none text-primary transition-all duration-500 ease-instrument animate-in fade-in"
+              className="text-num text-3xl font-medium leading-none text-primary transition-all duration-500 ease-instrument animate-in fade-in zoom-in-95"
             >
               {String(sc.rank).padStart(2, "0")}
             </span>
@@ -119,7 +128,7 @@ export function RecordCard({
             {r.serviceSummary}
           </p>
 
-          <div className="mt-4 rounded-xl border border-border bg-surface-sunken/50 px-4">
+          <div className="mt-4 overflow-hidden rounded-xl border border-border bg-surface-sunken/50 px-4 transition-[max-height] duration-500 ease-instrument">
             <ul className="divide-y divide-border">
               {lead.map((f) => (
                 <FindingRow key={f.id} f={f} compact />
@@ -129,7 +138,7 @@ export function RecordCard({
               <button
                 type="button"
                 onClick={() => setOpen((v) => !v)}
-                className="w-full border-t border-border py-2.5 text-[11px] uppercase tracking-[0.16em] text-subtle transition-colors hover:text-primary"
+                className="tap w-full border-t border-border py-2.5 text-[11px] uppercase tracking-[0.16em] text-subtle transition-colors hover:text-primary"
               >
                 {open
                   ? "Collapse findings"
@@ -142,14 +151,14 @@ export function RecordCard({
             <button
               type="button"
               onClick={onOpen}
-              className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              className="tap rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
               Open case file
             </button>
             <Link
               to="/record/$slug"
               params={{ slug: r.slug }}
-              className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
+              className="tap rounded-full border border-border px-4 py-2 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
             >
               Full dossier
             </Link>
@@ -157,7 +166,7 @@ export function RecordCard({
               type="button"
               onClick={() => shortlist.toggle(r.slug)}
               className={cn(
-                "rounded-full border px-4 py-2 text-xs transition-colors",
+                "tap rounded-full border px-4 py-2 text-xs transition-colors",
                 shortlist.has(r.slug)
                   ? "border-primary/50 bg-primary/12 text-primary"
                   : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground",
@@ -169,7 +178,7 @@ export function RecordCard({
               type="button"
               onClick={onCompare}
               className={cn(
-                "rounded-full border px-4 py-2 text-xs transition-colors",
+                "tap rounded-full border px-4 py-2 text-xs transition-colors",
                 compared
                   ? "border-primary/50 bg-primary/12 text-primary"
                   : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground",
@@ -183,7 +192,7 @@ export function RecordCard({
                 href={r.reservationUrl || r.website}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
+                className="tap rounded-full border border-border px-4 py-2 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
               >
                 Booking pathway ({r.bookingPlatforms[0] ?? "direct"})
               </a>
@@ -191,7 +200,7 @@ export function RecordCard({
             {r.hasPhone ? (
               <a
                 href={`tel:${r.phone.replace(/[^\d+]/g, "")}`}
-                className="text-num rounded-full border border-border px-4 py-2 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
+                className="text-num tap rounded-full border border-border px-4 py-2 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
               >
                 {r.phone}
               </a>

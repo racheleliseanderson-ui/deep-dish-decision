@@ -1,4 +1,5 @@
 import { Chip, Eyebrow, Meter } from "@/components/rih/bits";
+import { GrowBar } from "@/components/rih/reveal";
 import { decisionBrief, type Scored, type Situation } from "@/lib/intelligence";
 import { cn } from "@/lib/utils";
 
@@ -22,7 +23,7 @@ export function DecisionBrief({
           <Eyebrow>Decision brief</Eyebrow>
           <p
             className={cn(
-              "mt-1.5 font-display text-lg leading-snug tracking-tight",
+              "mt-1.5 font-display text-lg leading-snug tracking-tight transition-colors duration-500 ease-instrument",
               tone === "critical"
                 ? "text-critical"
                 : tone === "watch"
@@ -39,6 +40,14 @@ export function DecisionBrief({
             label="Confirm burden"
             value={sc.burden}
             tone={sc.burden >= 70 ? "critical" : sc.burden >= 45 ? "watch" : "primary"}
+          />
+          <GrowBar
+            value={sc.fit}
+            tone={
+              b.verdictTone === "hold" ? "critical" : b.verdictTone === "conditional" ? "watch" : "verified"
+            }
+            live
+            className="mt-0.5"
           />
         </div>
       </div>
@@ -58,7 +67,7 @@ export function DecisionBrief({
         </div>
       </dl>
 
-      <div className="mt-4 rounded-lg border border-primary/25 bg-primary/8 p-3.5">
+      <div className="mt-4 rounded-lg border border-primary/25 bg-primary/8 p-3.5 transition-colors duration-500 ease-instrument">
         <Eyebrow className="text-primary/80">Recommended next action</Eyebrow>
         <p className="mt-1.5 text-sm leading-relaxed text-foreground">{b.nextAction}</p>
       </div>

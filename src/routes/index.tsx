@@ -2,7 +2,7 @@ import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { CaseFile } from "@/components/rih/case-file";
 import { CompareDialog, CompareTray } from "@/components/rih/compare";
 import { DecisionBrief } from "@/components/rih/decision-brief";
-import { GiltRule, Marquee } from "@/components/rih/gilt";
+import { Figure, GiltRule, Marquee, Vitrine } from "@/components/rih/gilt";
 import { RecordCard } from "@/components/rih/record-card";
 import { SituationConsole } from "@/components/rih/situation-console";
 import { SiteNav } from "@/components/rih/site-nav";
@@ -21,7 +21,7 @@ import { useEnrichmentSignals } from "@/lib/prefs";
 import { encodeSituation } from "@/lib/situation-url";
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Reveal } from "@/components/rih/reveal";
+import { FadeKey, GrowBar, RankSlot, Reveal } from "@/components/rih/reveal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -62,6 +62,7 @@ function Hub() {
     [situation, scoreOpts],
   );
   const depth = situationDepth(situation);
+  const depthPct = Math.round((depth / SITUATION_SLOTS) * 100);
   const lead = ranked[0] ?? null;
   const clear = ranked.filter((x) => !x.blocked && !x.criticals.length).length;
   const blocked = ranked.filter((x) => x.blocked).length;
@@ -124,7 +125,7 @@ function Hub() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground sm:text-base">
-            Every line here is read from first-party sources — the restaurant&apos;s own site, menu,
+            Every line here is read from first-party sources — the restaurant's own site, menu,
             reservation page, or a direct call. Nothing is scored on sentiment. Where the evidence
             stops, the record says so and stays open. When a constraint you have stated cannot be
             satisfied on the record, the instrument fails closed and holds the booking.
@@ -171,84 +172,152 @@ function Hub() {
 
         {/* ---------------- Lead reading ---------------- */}
         {lead ? (
-          <section className="mt-12">
-            <div className="flex flex-wrap items-end justify-between gap-3">
-              <div>
-                <Eyebrow>Lead reading</Eyebrow>
-                <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
-                  {lead.record.title}
-                </h2>
-                <p className="mt-1.5 text-[13px] text-muted-foreground">
-                  {lead.record.region} · {lead.record.recordId} ·{" "}
-                  {depth < 3
-                    ? `situation ${depth}/${SITUATION_SLOTS} — this ordering is provisional`
-                    : `situation ${depth}/${SITUATION_SLOTS}`}
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                <Chip tone="verified">{clear} clear on evidence</Chip>
-                <Chip tone="critical">{blocked} held closed</Chip>
-                <Chip tone="unknown">{ranked.length} in view</Chip>
+          <Reveal as="section" className="mt-12">
+            <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
+              <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">002</span>
+              <span className="text-eyebrow truncate">Lead reading</span>
+            </div>
+            <GiltRule className="mt-3" />
+
+            <div className="mt-5 flex flex-wrap items-end justify-between gap-4">
+              <FadeKey k={lead.record.slug} className="min-w-0">
+                <div>
+                  <h2 className="font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+                    {lead.record.title}
+                  </h2>
+                  <p className="mt-1.5 text-[13px] text-muted-foreground">
+                    {lead.record.region} · {lead.record.recordId} ·{" "}
+                    {depth < 3
+                      ? `situation ${depth}/${SITUATION_SLOTS} — this ordering is provisional`
+                      : `situation ${depth}/${SITUATION_SLOTS}`}
+                  </p>
+                </div>
+              </FadeKey>
+
+              <div className="flex flex-wrap items-end gap-4">
+                <div className="min-w-[120px]">
+                  <p className="text-eyebrow">Situation fit</p>
+                  <p className="mt-1 flex items-baseline gap-1">
+                    <Figure
+                      key={`${lead.record.slug}-fit-${lead.fit}`}
+                      value={lead.fit}
+                      className="text-3xl font-medium text-primary"
+                    />
+                    <span className="text-num text-xs text-subtle">/100</span>
+                  </p>
+                </div>
+                <div className="min-w-[140px]">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <p className="text-eyebrow">Depth</p>
+                    <p className="text-num text-xs text-subtle">
+                      {depth}/{SITUATION_SLOTS}
+                    </p>
+                  </div>
+                  <GrowBar
+                    className="mt-2"
+                    value={depthPct}
+                    tone={depth < 3 ? "watch" : depth < 6 ? "primary" : "verified"}
+                    live
+                  />
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  <Chip tone="verified">
+                    <span className="text-num">{clear}</span> clear on evidence
+                  </Chip>
+                  <Chip tone="critical">
+                    <span className="text-num">{blocked}</span> held closed
+                  </Chip>
+                  <Chip tone="unknown">
+                    <span className="text-num">{ranked.length}</span> in view
+                  </Chip>
+                </div>
               </div>
             </div>
+
             <div className="mt-5">
-              <DecisionBrief sc={lead} situation={situation} />
+              <FadeKey k={`${lead.record.slug}:${depth}:${lead.fit}`}>
+                <DecisionBrief sc={lead} situation={situation} />
+              </FadeKey>
             </div>
-          </section>
+          </Reveal>
         ) : null}
 
         {/* ---------------- Ranked records ---------------- */}
         <section className="mt-14">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <div>
-              <Eyebrow>Ranked against your situation</Eyebrow>
-              <p className="mt-2 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div className="min-w-0">
+              <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
+                <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">003</span>
+                <span className="text-eyebrow truncate">Ranked against your situation</span>
+              </div>
+              <GiltRule className="mt-3 max-w-xl" />
+              <p className="mt-4 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
                 Order is a function of situation fit, confirm burden and time pressure. Records
                 blocked on a stated constraint are demoted to the end rather than removed, so you
-                can see what was excluded and why.
+                can see what was excluded and why. Refine the console above — the list reorders live.
               </p>
             </div>
           </div>
 
+          {/* Partial situation — deliberate, instrument-grade banner */}
+          {ranked.length > 0 && depth < 3 ? (
+            <div className="mt-6 rounded-2xl border border-border bg-surface-sunken/55 px-4 py-4 sm:px-5">
+              <div className="flex flex-wrap items-start justify-between gap-3">
+                <div className="min-w-0 max-w-xl">
+                  <Eyebrow>Provisional ordering</Eyebrow>
+                  <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
+                    Situation depth {depth}/{SITUATION_SLOTS}. Add an occasion or guest constraint to
+                    reshape fit, findings, and fail-closed holds.
+                    {enrichment.enabled
+                      ? " Labeled enrichment signals are on (reading controls)."
+                      : " Pure first-party mode — enrichment signals hidden."}
+                  </p>
+                </div>
+                <div className="w-full max-w-[200px]">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <span className="text-eyebrow">Depth</span>
+                    <span className="text-num text-xs text-subtle">
+                      {depth}/{SITUATION_SLOTS}
+                    </span>
+                  </div>
+                  <GrowBar className="mt-2" value={depthPct} tone="watch" live />
+                </div>
+              </div>
+            </div>
+          ) : null}
+
           <div className="mt-6 space-y-4">
             {ranked.slice(0, limit).map((sc, i) => (
-              <Reveal key={sc.record.slug} delay={Math.min(i * 40, 240)} as="div">
-                <RecordCard
-                  sc={sc}
-                  situation={situation}
-                  onOpen={() => setOpenSlug(sc.record.slug)}
-                  onCompare={() => toggleCompare(sc.record.slug)}
-                  compared={compareSlugs.includes(sc.record.slug)}
-                />
-              </Reveal>
+              <RankSlot key={sc.record.slug} id={sc.record.slug} rank={sc.rank}>
+                <Reveal delay={Math.min(i * 40, 240)} as="div">
+                  <RecordCard
+                    sc={sc}
+                    situation={situation}
+                    onOpen={() => setOpenSlug(sc.record.slug)}
+                    onCompare={() => toggleCompare(sc.record.slug)}
+                    compared={compareSlugs.includes(sc.record.slug)}
+                  />
+                </Reveal>
+              </RankSlot>
             ))}
           </div>
 
           {!ranked.length ? (
-            <div className="mt-6 rounded-2xl border border-border bg-surface p-8 text-center">
+            <Vitrine className="mt-6 p-8 text-center sm:p-10">
               <Eyebrow>No matches</Eyebrow>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <GiltRule className="mx-auto mt-3 max-w-xs" />
+              <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
                 Nothing in the corpus matches those filters. The instrument will not widen your
                 constraints to produce a result — loosen geography, cuisine, or search above.
               </p>
-            </div>
-          ) : null}
-
-          {ranked.length > 0 && depth < 2 ? (
-            <p className="mt-4 rounded-xl border border-border/80 bg-surface-sunken/50 px-4 py-3 text-[12px] leading-relaxed text-subtle">
-              Situation depth {depth}/{SITUATION_SLOTS} — ordering is provisional. Add an occasion
-              or guest constraint to reshape fit, findings, and fail-closed holds.
-              {enrichment.enabled
-                ? " Labeled enrichment signals are on (reading controls)."
-                : " Pure first-party mode — enrichment signals hidden."}
-            </p>
+            </Vitrine>
           ) : null}
 
           {limit < ranked.length ? (
             <button
               type="button"
               onClick={() => setLimit((l) => l + 8)}
-              className="mt-6 w-full rounded-xl border border-border bg-surface py-3.5 text-xs uppercase tracking-[0.16em] text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
+              className="tap mt-6 w-full rounded-xl border border-border bg-surface py-3.5 text-xs uppercase tracking-[0.16em] text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
             >
               Show {Math.min(8, ranked.length - limit)} more of {ranked.length}
             </button>
@@ -257,7 +326,7 @@ function Hub() {
 
         <Rule className="my-14" />
 
-        <section className="grid gap-8 lg:grid-cols-[1.1fr_1fr]">
+        <Reveal as="section" className="grid gap-8 lg:grid-cols-[1.1fr_1fr]">
           <div>
             <Eyebrow>Method</Eyebrow>
             <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight">
@@ -308,7 +377,7 @@ function Hub() {
               Confirm them live before you commit, regardless of how complete a record looks.
             </p>
           </div>
-        </section>
+        </Reveal>
       </div>
 
       <CaseFile
