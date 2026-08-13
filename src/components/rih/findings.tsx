@@ -36,9 +36,9 @@ export function FindingRow({ f, compact = false }: { f: Finding; compact?: boole
           <p className="mt-1">
             <Chip tone="unknown">
               {f.provenance === "google-places"
-                ? "Google Places · labeled"
+                ? "Google listing · labeled"
                 : f.provenance === "site-scrape"
-                  ? "Site scrape · labeled"
+                  ? "Venue website · labeled"
                   : "Third-party · labeled"}
             </Chip>
           </p>

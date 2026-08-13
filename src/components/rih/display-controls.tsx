@@ -73,12 +73,12 @@ export function DisplayControls({ className }: { className?: string }) {
         ]}
       />
       <Segmented<"on" | "off">
-        label="Enrichment signals"
+        label="Listing signals"
         value={enrichment.enabled ? "on" : "off"}
         onChange={(v) => enrichment.set(v === "on")}
         options={[
-          ["on", "Enrich on"],
-          ["off", "1st-party"],
+          ["on", "All sources"],
+          ["off", "First-party only"],
         ]}
       />
     </div>
