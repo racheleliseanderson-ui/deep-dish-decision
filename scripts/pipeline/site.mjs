@@ -144,16 +144,18 @@ export function extractFromSite(pages, retrievedAt) {
   const dress = matchGroup(all, PHRASE_GROUPS.dressCodeLanguage, 2);
   const cancellation = matchGroup(all, PHRASE_GROUPS.cancellationLanguage, 3);
 
+  const quotes = (items) => items.map((x) => (typeof x === "string" ? x : x.quote)).filter(Boolean);
+
   return {
     menuUrl,
     reservationUrl,
     reservationPlatform: platform,
-    dietaryLanguage: dietary,
-    accessibilityLanguage: accessibility,
+    dietaryLanguage: quotes(dietary),
+    accessibilityLanguage: quotes(accessibility),
     groupPolicy: group.length ? group[0].quote : "",
-    groupPolicyLanguage: group,
+    groupPolicyLanguage: quotes(group),
     dressCode: dress.length ? dress[0].quote : "",
-    cancellationLanguage: cancellation,
+    cancellationLanguage: quotes(cancellation),
     pagesRead: pages.length,
     sourceUrls: pages.map((p) => p.url),
     retrievedAt,
