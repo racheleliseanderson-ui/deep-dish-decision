@@ -1,6 +1,358 @@
 {
   "runs": [
     {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-14T14:46:48.180Z",
+      "finishedAt": "2026-08-14T14:47:46.018Z",
+      "batchSize": 25,
+      "cities": [
+        "San Francisco, California",
+        "Los Angeles, California",
+        "Chicago, Illinois",
+        "New York, New York",
+        "Pacific Northwest",
+        "Temple City, California",
+        "Miami, Florida",
+        "Alhambra, California",
+        "Dallas, Texas",
+        "Houston, Texas",
+        "Philadelphia, Pennsylvania",
+        "Atlanta, Georgia",
+        "Boston, Massachusetts",
+        "Phoenix, Arizona",
+        "Washington, District Of Columbia"
+      ],
+      "resolved": 7,
+      "unresolved": 18,
+      "deferred": 0,
+      "avgCompleteness": 66,
+      "corpusEnriched": 225,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 22
+      },
+      "retries": 0,
+      "failures": 18,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-14T14-46-48-180Z-hygiene-owned",
+      "records": [
+        {
+          "slug": "mr-szechuan",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "perch",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "spicy-king",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "summer-house-santa-monica",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "the-best-sichuan",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "the-best-sichuan-39",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "the-smith",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "ariana",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "roe",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "delicious-chengdu",
+          "matchStatus": "no-website",
+          "completeness": 17,
+          "notes": [
+            "no website"
+          ]
+        },
+        {
+          "slug": "boia-de-miami",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "chengdu-taste",
+          "matchStatus": "no-website",
+          "completeness": 22,
+          "notes": [
+            "no website"
+          ]
+        },
+        {
+          "slug": "chet-s-dallas",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "di-an-pho",
+          "matchStatus": "no-website",
+          "completeness": 22,
+          "notes": [
+            "no website"
+          ]
+        },
+        {
+          "slug": "dizengoff-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "hayakawa-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "kalaya-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "kenny-s-wood-fired-grill",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "ky-miami",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "no-9-park-boston",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "pa-la-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "the-dabney-washington",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "the-hampton-social-dallas",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "welcome-diner-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "atlanta-fish-market-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 404 HTTP 404"
+          ]
+        }
+      ],
+      "hygiene": {
+        "hygieneDue": 191,
+        "selected": [
+          "mr-szechuan",
+          "perch",
+          "spicy-king",
+          "summer-house-santa-monica",
+          "the-best-sichuan",
+          "the-best-sichuan-39",
+          "the-smith",
+          "ariana",
+          "roe",
+          "delicious-chengdu",
+          "boia-de-miami",
+          "chengdu-taste",
+          "chet-s-dallas",
+          "di-an-pho",
+          "dizengoff-philadelphia",
+          "hayakawa-atlanta",
+          "kalaya-philadelphia",
+          "kenny-s-wood-fired-grill",
+          "ky-miami",
+          "no-9-park-boston",
+          "pa-la-phoenix",
+          "the-dabney-washington",
+          "the-hampton-social-dallas",
+          "welcome-diner-phoenix",
+          "atlanta-fish-market-atlanta"
+        ],
+        "reasons": {
+          "mr-szechuan": [
+            "site-failure:site 408",
+            "thin-33"
+          ],
+          "perch": [
+            "site-failure:site 429",
+            "thin-33"
+          ],
+          "spicy-king": [
+            "site-failure:site 500",
+            "thin-33"
+          ],
+          "summer-house-santa-monica": [
+            "site-failure:site 429",
+            "thin-33"
+          ],
+          "the-best-sichuan": [
+            "site-failure:site 408",
+            "thin-33"
+          ],
+          "the-best-sichuan-39": [
+            "site-failure:site 408",
+            "thin-33"
+          ],
+          "the-smith": [
+            "site-failure:site 429",
+            "thin-33"
+          ],
+          "ariana": [
+            "site-failure:site 429"
+          ],
+          "roe": [
+            "site-failure:site 429"
+          ],
+          "delicious-chengdu": [
+            "thin-22"
+          ],
+          "boia-de-miami": [
+            "thin-28"
+          ],
+          "chengdu-taste": [
+            "thin-28"
+          ],
+          "chet-s-dallas": [
+            "thin-28"
+          ],
+          "di-an-pho": [
+            "thin-28"
+          ],
+          "dizengoff-philadelphia": [
+            "thin-28"
+          ],
+          "hayakawa-atlanta": [
+            "thin-28"
+          ],
+          "kalaya-philadelphia": [
+            "thin-28"
+          ],
+          "kenny-s-wood-fired-grill": [
+            "thin-28"
+          ],
+          "ky-miami": [
+            "thin-28"
+          ],
+          "no-9-park-boston": [
+            "thin-28"
+          ],
+          "pa-la-phoenix": [
+            "thin-28"
+          ],
+          "the-dabney-washington": [
+            "thin-28"
+          ],
+          "the-hampton-social-dallas": [
+            "thin-28"
+          ],
+          "welcome-diner-phoenix": [
+            "thin-28"
+          ],
+          "atlanta-fish-market-atlanta": [
+            "thin-33"
+          ]
+        }
+      }
+    },
+    {
       "kind": "enrich-owned",
       "startedAt": "2026-08-14T14:25:20.034Z",
       "finishedAt": "2026-08-14T14:25:39.424Z",

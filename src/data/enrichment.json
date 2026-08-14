@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T14:25:39.417Z",
+  "generatedAt": "2026-08-14T14:47:46.012Z",
   "records": {
     "canlis": {
       "google": {
@@ -2148,7 +2148,6 @@
         "editorialSummary": "Inventive New American cuisine & house cocktails are offered in a cozy Craftsman bungalow.",
         "retrievedAt": "2026-08-10T21:34:17.135Z"
       },
-      "site": null,
       "summary": {
         "text": "Ariana is a fine dining restaurant located in River West, Bend, Oregon. It offers a plant-forward, seasonal menu with a price band of $$$$ and has a 4.8 rating from 453 reviews. Amenities include outdoor seating, reservations, takeout, and a full bar, with wheelchair accessible parking, entrance, restroom, and seating.",
         "model": "google/gemini-2.5-flash",
@@ -2173,8 +2172,28 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:34:17.135Z",
-        "completeness": 79
+        "lastEnrichedAt": "2026-08-14T14:47:04.637Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.arianarestaurantbend.com/menu/",
+        "reservationUrl": "https://www.exploretock.com/arianarestaurant",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.arianarestaurantbend.com/",
+          "https://www.arianarestaurantbend.com/info/",
+          "https://www.arianarestaurantbend.com/menu/",
+          "https://www.arianarestaurantbend.com/reservations/"
+        ],
+        "retrievedAt": "2026-08-14T14:47:04.637Z"
       }
     },
     "gander-and-ryegrass": {
@@ -3413,7 +3432,6 @@
         "editorialSummary": "",
         "retrievedAt": "2026-08-10T21:35:23.576Z"
       },
-      "site": null,
       "summary": {
         "text": "Roe is a restaurant in Bellingham, Washington, with a 4.6 rating from 211 reviews. It offers seasonal and market-focused cocktail/lounge options, serves breakfast and brunch, and is reservable. Amenities include wheelchair accessible features, good for children, and serves vegetarian food, beer, wine, and cocktails.",
         "model": "google/gemini-2.5-flash",
@@ -3437,8 +3455,29 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:35:23.576Z",
-        "completeness": 79
+        "lastEnrichedAt": "2026-08-14T14:47:06.149Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://eatroe.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/roe-seattle",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "20% gratuity will be added to parties of 6 or more",
+        "groupPolicyLanguage": [
+          "20% gratuity will be added to parties of 6 or more"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://eatroe.com/",
+          "https://eatroe.com/menu",
+          "https://eatroe.com/about"
+        ],
+        "retrievedAt": "2026-08-14T14:47:06.149Z"
       }
     },
     "part-parcel": {
@@ -8458,7 +8497,6 @@
         "editorialSummary": "",
         "retrievedAt": "2026-08-10T23:06:28.792Z"
       },
-      "site": null,
       "summary": {
         "text": "The Smith is an American restaurant located in New York, New York. It has a rating of 4.4 based on 6365 reviews and a price band of $$. The restaurant offers outdoor seating, reservations, delivery, takeout, and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
@@ -8481,8 +8519,26 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T23:06:28.792Z",
-        "completeness": 71
+        "lastEnrichedAt": "2026-08-14T14:47:03.727Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://thesmithrestaurant.com/location/nomad/",
+          "https://thesmithrestaurant.com/about/"
+        ],
+        "retrievedAt": "2026-08-14T14:47:03.727Z"
       }
     },
     "buddakan": {
@@ -9760,7 +9816,6 @@
         "editorialSummary": "Glamorous rooftop setting with French small plates, handcrafted cocktails & grand views of the city.",
         "retrievedAt": "2026-08-10T23:07:34.406Z"
       },
-      "site": null,
       "summary": {
         "text": "Perch is a French restaurant located in Downtown Los Angeles, California, also operating as a cocktail bar and live music venue. It has a rating of 4.4 based on 7650 reviews and offers amenities such as outdoor seating, live music, and is reservable. The establishment is wheelchair accessible and serves seven days a week.",
         "model": "google/gemini-2.5-flash",
@@ -9784,8 +9839,31 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T23:07:34.406Z",
-        "completeness": 71
+        "lastEnrichedAt": "2026-08-14T14:46:58.836Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "http://perchla.com/menu-gallery",
+        "reservationUrl": "https://www.opentable.com/restref/client/?color=1&corrid=344d7c95-17a2-4664-8e8d-a13d289e5f30&datetime=2023-12-05T20%3A00&lang=en-US&partysize=2&r3uid=h63ykElBDB&restref=67720&rid=67720",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Perch 16th Floor rooftop Skydeck private event seated dinner",
+        "groupPolicyLanguage": [
+          "Perch 16th Floor rooftop Skydeck private event seated dinner",
+          "Tables and Private Dining",
+          "The restaurant charges a 20% automatic gratuity on all food and beverage items for large parties of 8 or more."
+        ],
+        "dressCode": "Our dress code is Upscale/Casual preferred.",
+        "cancellationLanguage": [],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "http://perchla.com/",
+          "http://perchla.com/reservations",
+          "http://perchla.com/menu-gallery"
+        ],
+        "retrievedAt": "2026-08-14T14:46:58.836Z"
       }
     },
     "re-publique": {
@@ -11875,7 +11953,6 @@
         "editorialSummary": "California fare & wines, plus homemade breads, served in a breezy, beach house-inspired space.",
         "retrievedAt": "2026-08-10T23:09:49.503Z"
       },
-      "site": null,
       "summary": {
         "text": "Summer House Santa Monica is an American restaurant located in Chicago, Illinois, in the Lincoln Park neighborhood. It offers dine-in, takeout, and delivery services, with amenities including outdoor seating and reservations. The restaurant is open seven days a week and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
@@ -11899,8 +11976,25 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T23:09:49.503Z",
-        "completeness": 71
+        "lastEnrichedAt": "2026-08-14T14:47:00.677Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.summerhouserestaurants.com/?utm_source=google&utm_medium=social&utm_campaign=SHSMLP-GBiz"
+        ],
+        "retrievedAt": "2026-08-14T14:47:00.677Z"
       }
     },
     "the-purple-pig-restaurant": {
@@ -14311,7 +14405,6 @@
         "editorialSummary": "",
         "retrievedAt": "2026-08-11T00:00:38.359Z"
       },
-      "site": null,
       "summary": {
         "text": "Di An Pho is a restaurant located in Alief, Houston, Texas, with a rating of 4.8 based on 2559 reviews. It offers delivery, takeout, dine-in, and curbside pickup, and is good for groups and children, with a menu for children available. The establishment is wheelchair accessible, including parking, entrance, restroom, and seating, and serves brunch and lunch six days a week.",
         "model": "google/gemini-2.5-flash",
@@ -14332,11 +14425,12 @@
         "generatedAt": "2026-08-11T00:00:43.245Z"
       },
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "no-website",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-11T00:00:38.359Z",
-        "completeness": 67
+        "lastEnrichedAt": "2026-08-14T14:47:07.944Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 22
       }
     },
     "pho-saigon": {
@@ -15011,7 +15105,6 @@
         "editorialSummary": "Bi-level bar & eatery with classic decor for a vast menu of Chinese dishes from various regions.",
         "retrievedAt": "2026-08-11T00:03:05.631Z"
       },
-      "site": null,
       "summary": {
         "text": "The Best Sichuan 39 一品成都 is a Chinese restaurant located in New York, New York. It has a rating of 4.7 from 3717 reviews and a price band of $$. The restaurant offers delivery, takeout, and dine-in, and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
@@ -15034,8 +15127,26 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-11T00:03:05.631Z",
-        "completeness": 71
+        "lastEnrichedAt": "2026-08-14T14:47:02.678Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "http://www.bestsichuan.com/",
+          "https://www.bestsichuan.com/about/"
+        ],
+        "retrievedAt": "2026-08-14T14:47:02.678Z"
       }
     },
     "the-best-sichuan": {
@@ -15169,7 +15280,6 @@
         "editorialSummary": "",
         "retrievedAt": "2026-08-11T00:03:40.316Z"
       },
-      "site": null,
       "summary": {
         "text": "The Best Sichuan is a Chinese Restaurant located in New York, New York. It has a rating of 4.8 based on 3079 reviews and a price band of $$. The restaurant offers dine-in, takeout, delivery, and is reservable, serving food seven days a week.",
         "model": "google/gemini-2.5-flash",
@@ -15192,8 +15302,26 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-11T00:03:40.316Z",
-        "completeness": 71
+        "lastEnrichedAt": "2026-08-14T14:47:01.891Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.mala747.com/",
+          "https://www.mala747.com/contact-us/"
+        ],
+        "retrievedAt": "2026-08-14T14:47:01.891Z"
       }
     },
     "the-best-sichuan-21": {
@@ -16255,7 +16383,6 @@
         "editorialSummary": "Easygoing location turning out family-style, Chinese platters in a basic dining room.",
         "retrievedAt": "2026-08-11T00:05:50.420Z"
       },
-      "site": null,
       "summary": {
         "text": "Chengdu Taste is a Chinese restaurant located in Alhambra, California. It is open seven days a week, serves lunch and dinner, and offers dine-in, takeout, and delivery options. The restaurant has a price band of $$ and a rating of 4.3 based on 850 reviews.",
         "model": "google/gemini-2.5-flash",
@@ -16275,11 +16402,12 @@
         "generatedAt": "2026-08-11T00:05:52.081Z"
       },
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "no-website",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-11T00:05:50.420Z",
-        "completeness": 67
+        "lastEnrichedAt": "2026-08-14T14:47:07.429Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 22
       }
     },
     "sichuan-impression-los-angeles": {
@@ -16641,7 +16769,6 @@
         "editorialSummary": "",
         "retrievedAt": "2026-08-11T00:05:59.329Z"
       },
-      "site": null,
       "summary": {
         "text": "Delicious Chengdu is a Chinese Restaurant located in Temple City, California. It has a price band of $$ and a rating of 4.7 based on 571 reviews. The restaurant serves six days a week and offers amenities such as outdoor seating, reservations, delivery, and takeout, with full wheelchair accessibility.",
         "model": "google/gemini-2.5-flash",
@@ -16661,11 +16788,12 @@
         "generatedAt": "2026-08-11T00:06:01.505Z"
       },
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "no-website",
         "confidence": 0.5,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-11T00:05:59.329Z",
-        "completeness": 63
+        "lastEnrichedAt": "2026-08-14T14:47:06.931Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 17
       }
     },
     "chong-qing-special-noodles": {
@@ -19642,7 +19770,6 @@
         "editorialSummary": "Casual Chinese bar/eatery with old-world decor & hot pot tables preparing Mandarin & Sichuan dishes.",
         "retrievedAt": "2026-08-11T00:09:25.388Z"
       },
-      "site": null,
       "summary": {
         "text": "Spicy King is a Chinese restaurant located in San Francisco's Chinatown, open seven days a week. It offers dine-in, delivery, and takeout services, with amenities including reservations, options for groups and children, and serves vegetarian food, beer, and wine. The restaurant has a 4.2 rating from 1063 reviews and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
@@ -19663,11 +19790,12 @@
         "generatedAt": "2026-08-11T00:10:10.225Z"
       },
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-11T00:09:25.388Z",
-        "completeness": 71
+        "lastEnrichedAt": "2026-08-14T14:47:00.043Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 28
       }
     },
     "house-of-xian-dumpling": {
@@ -20178,7 +20306,6 @@
         "editorialSummary": "",
         "retrievedAt": "2026-08-11T00:10:23.416Z"
       },
-      "site": null,
       "summary": {
         "text": "Mr Szechuan is a Chinese restaurant located in San Francisco's Golden Gate Heights neighborhood. It operates seven days a week, offers dine-in, delivery, and takeout, and has a 4.4-star rating from 809 reviews. The restaurant is wheelchair accessible and serves vegetarian food, beer, and lunch.",
         "model": "google/gemini-2.5-flash",
@@ -20199,11 +20326,12 @@
         "generatedAt": "2026-08-11T00:11:27.199Z"
       },
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-11T00:10:23.416Z",
-        "completeness": 71
+        "lastEnrichedAt": "2026-08-14T14:46:48.181Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 28
       }
     },
     "3eleven-kitchen-and-cocktails": {
@@ -20392,7 +20520,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:22:04.064Z",
+        "lastEnrichedAt": "2026-08-14T14:47:44.879Z",
         "enrichmentMode": "owned-site",
         "completeness": 33
       }
@@ -20514,7 +20642,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:22:12.766Z",
+        "lastEnrichedAt": "2026-08-14T14:47:06.932Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20581,7 +20709,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:22:14.542Z",
+        "lastEnrichedAt": "2026-08-14T14:47:07.429Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20783,7 +20911,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:22:20.439Z",
+        "lastEnrichedAt": "2026-08-14T14:47:07.944Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21193,7 +21321,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:22:56.885Z",
+        "lastEnrichedAt": "2026-08-14T14:47:18.839Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21518,7 +21646,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:23:09.053Z",
+        "lastEnrichedAt": "2026-08-14T14:47:19.267Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21528,7 +21656,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:23:09.493Z",
+        "lastEnrichedAt": "2026-08-14T14:47:19.821Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21597,7 +21725,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:24:04.448Z",
+        "lastEnrichedAt": "2026-08-14T14:47:20.563Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22084,7 +22212,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:24:21.326Z",
+        "lastEnrichedAt": "2026-08-14T14:47:30.977Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22199,7 +22327,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:24:34.299Z",
+        "lastEnrichedAt": "2026-08-14T14:47:41.448Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22510,7 +22638,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:24:56.399Z",
+        "lastEnrichedAt": "2026-08-14T14:47:42.548Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22682,7 +22810,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:25:00.599Z",
+        "lastEnrichedAt": "2026-08-14T14:47:41.879Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -23229,7 +23357,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:25:30.661Z",
+        "lastEnrichedAt": "2026-08-14T14:47:43.121Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
