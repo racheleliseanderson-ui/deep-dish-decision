@@ -296,4 +296,4 @@ try {
 console.log(
   `\nSeeded ${inserted} listing-only records (${skipped} duplicates skipped). Corpus now ${dataset.records.length}.`,
 );
-console.log("Run enrich.mjs once GOOGLE_MAPS_API_KEY + FIRECRAWL_API_KEY are available.");
+console.log("Run: node scripts/pipeline/enrich.mjs --hygiene   (owned site reads — no API keys required).");

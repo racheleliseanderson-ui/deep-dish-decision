@@ -1,6 +1,1466 @@
 {
   "runs": [
     {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-14T14:25:20.034Z",
+      "finishedAt": "2026-08-14T14:25:39.424Z",
+      "batchSize": 19,
+      "cities": [
+        "Philadelphia, Pennsylvania",
+        "Miami, Florida",
+        "Phoenix, Arizona",
+        "Boston, Massachusetts"
+      ],
+      "resolved": 18,
+      "unresolved": 1,
+      "deferred": 0,
+      "avgCompleteness": 67,
+      "corpusEnriched": 225,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 19
+      },
+      "retries": 0,
+      "failures": 1,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-14T14-25-20-034Z-enrich-owned",
+      "records": [
+        {
+          "slug": "royal-sushi-izakaya-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "suraya-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "vernick-food-drink-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "wayan-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "zuma-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "versailles-restaurant-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "the-gladly-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "pizzeria-bianco-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "tarbell-s-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "virt-honest-craft-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "welcome-diner-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "tratto-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "yume-wo-katare-boston",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "sarma-boston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "woods-hill-pier-4-boston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "row-34-boston",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "sportello-boston",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "uni-boston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "puritan-company-boston",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-14T14:24:52.171Z",
+      "finishedAt": "2026-08-14T14:25:05.542Z",
+      "batchSize": 20,
+      "cities": [
+        "Chicago, Illinois",
+        "Dallas, Texas",
+        "San Francisco, California",
+        "Atlanta, Georgia",
+        "Washington, District Of Columbia",
+        "Philadelphia, Pennsylvania"
+      ],
+      "resolved": 18,
+      "unresolved": 2,
+      "deferred": 0,
+      "avgCompleteness": 69,
+      "corpusEnriched": 206,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 20
+      },
+      "retries": 0,
+      "failures": 2,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-14T14-24-52-172Z-enrich-owned",
+      "records": [
+        {
+          "slug": "river-roast",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "siena-tavern",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "terry-black-s-barbecue",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "y-o-ranch-steakhouse",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "the-woolworth",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "the-hampton-social-dallas",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "the-henry",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "portillo-s-barnelli-s-chicago",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "r-g-lounge",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "staplehouse-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "trader-vic-s-atlanta-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "the-dabney-washington",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "rose-s-luxury-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "rasika-washington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "zaytinya-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "succotash-prime-washington-dc-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "the-capital-grille-washington-dc-washington",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "provenance-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "zahav-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "vetri-cucina-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-14T14:24:04.444Z",
+      "finishedAt": "2026-08-14T14:24:38.391Z",
+      "batchSize": 25,
+      "cities": [
+        "Miami, Florida",
+        "Atlanta, Georgia",
+        "Boston, Massachusetts",
+        "Phoenix, Arizona",
+        "Chicago, Illinois",
+        "Washington, District Of Columbia",
+        "San Francisco, California",
+        "Dallas, Texas",
+        "Philadelphia, Pennsylvania"
+      ],
+      "resolved": 22,
+      "unresolved": 3,
+      "deferred": 0,
+      "avgCompleteness": 70,
+      "corpusEnriched": 186,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 25
+      },
+      "retries": 0,
+      "failures": 3,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-14T14-24-04-444Z-hygiene-owned",
+      "records": [
+        {
+          "slug": "ky-miami",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "la-carreta-miami",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "lazy-betty-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "little-donkey-boston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "lon-s-at-the-hermosa-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "los-f-lix-miami",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "mandolin-aegean-bistro-miami",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "maple-ash",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "mastro-s-city-hall-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "menton-boston",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "miller-union-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "minibar-by-jos-andr-s-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "moon-rabbit-washington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "muj-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "nan-thai-fine-dining-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "neptune-oyster-boston",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "no-9-park-boston",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "o-ya-boston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "oleana-boston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "oyamel-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "pa-la-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "palette-tea-house",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "perry-s-steakhouse-grille",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "pineapple-and-pearls-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "pizzeria-beddia-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        }
+      ],
+      "hygiene": {
+        "hygieneDue": 194,
+        "selected": [
+          "ky-miami",
+          "la-carreta-miami",
+          "lazy-betty-atlanta",
+          "little-donkey-boston",
+          "lon-s-at-the-hermosa-phoenix",
+          "los-f-lix-miami",
+          "mandolin-aegean-bistro-miami",
+          "maple-ash",
+          "mastro-s-city-hall-phoenix",
+          "menton-boston",
+          "miller-union-atlanta",
+          "minibar-by-jos-andr-s-washington",
+          "moon-rabbit-washington",
+          "muj-atlanta",
+          "nan-thai-fine-dining-atlanta",
+          "neptune-oyster-boston",
+          "no-9-park-boston",
+          "o-ya-boston",
+          "oleana-boston",
+          "oyamel-washington",
+          "pa-la-phoenix",
+          "palette-tea-house",
+          "perry-s-steakhouse-grille",
+          "pineapple-and-pearls-washington",
+          "pizzeria-beddia-philadelphia"
+        ],
+        "reasons": {
+          "ky-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "la-carreta-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "lazy-betty-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "little-donkey-boston": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "lon-s-at-the-hermosa-phoenix": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "los-f-lix-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "mandolin-aegean-bistro-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "maple-ash": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "mastro-s-city-hall-phoenix": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "menton-boston": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "miller-union-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "minibar-by-jos-andr-s-washington": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "moon-rabbit-washington": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "muj-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "nan-thai-fine-dining-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "neptune-oyster-boston": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "no-9-park-boston": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "o-ya-boston": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "oleana-boston": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "oyamel-washington": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "pa-la-phoenix": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "palette-tea-house": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "perry-s-steakhouse-grille": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "pineapple-and-pearls-washington": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "pizzeria-beddia-philadelphia": [
+            "never-enriched",
+            "listing-only"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-14T14:22:48.764Z",
+      "finishedAt": "2026-08-14T14:23:11.052Z",
+      "batchSize": 25,
+      "cities": [
+        "Washington, District Of Columbia",
+        "Philadelphia, Pennsylvania",
+        "Chicago, Illinois",
+        "Phoenix, Arizona",
+        "San Francisco, California",
+        "Atlanta, Georgia",
+        "Miami, Florida",
+        "Dallas, Texas"
+      ],
+      "resolved": 22,
+      "unresolved": 3,
+      "deferred": 0,
+      "avgCompleteness": 72,
+      "corpusEnriched": 161,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 25
+      },
+      "retries": 0,
+      "failures": 3,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-14T14-22-48-764Z-hygiene-owned",
+      "records": [
+        {
+          "slug": "fiola-washington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "fiorella-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "flo-santos",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "fnb-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "fork-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "friday-saturday-sunday-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "good-mong-kok-bakery",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "gunshow-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "hakkasan-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "hana-japanese-eatery-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "hayakawa-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "her-place-supper-club-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "hong-kong-clay-pot-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "hong-kong-lounge",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "il-porcellino",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "itamae-miami",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "jaleo-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "jim-s-original",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "joe-s-seafood-prime-steak-stone-crab-washington-dc-washington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "joe-s-stone-crab-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "kai-restaurant-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "kalaya-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "kenny-s-wood-fired-grill",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "kimball-house-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "kitchen-kocktails",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        }
+      ],
+      "hygiene": {
+        "hygieneDue": 196,
+        "selected": [
+          "fiola-washington",
+          "fiorella-philadelphia",
+          "flo-santos",
+          "fnb-phoenix",
+          "fork-philadelphia",
+          "friday-saturday-sunday-philadelphia",
+          "good-mong-kok-bakery",
+          "gunshow-atlanta",
+          "hakkasan-miami-miami",
+          "hana-japanese-eatery-phoenix",
+          "hayakawa-atlanta",
+          "her-place-supper-club-philadelphia",
+          "hong-kong-clay-pot-restaurant",
+          "hong-kong-lounge",
+          "il-porcellino",
+          "itamae-miami",
+          "jaleo-washington",
+          "jim-s-original",
+          "joe-s-seafood-prime-steak-stone-crab-washington-dc-washington",
+          "joe-s-stone-crab-miami",
+          "kai-restaurant-phoenix",
+          "kalaya-philadelphia",
+          "kenny-s-wood-fired-grill",
+          "kimball-house-atlanta",
+          "kitchen-kocktails"
+        ],
+        "reasons": {
+          "fiola-washington": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "fiorella-philadelphia": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "flo-santos": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "fnb-phoenix": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "fork-philadelphia": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "friday-saturday-sunday-philadelphia": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "good-mong-kok-bakery": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "gunshow-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "hakkasan-miami-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "hana-japanese-eatery-phoenix": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "hayakawa-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "her-place-supper-club-philadelphia": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "hong-kong-clay-pot-restaurant": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "hong-kong-lounge": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "il-porcellino": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "itamae-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "jaleo-washington": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "jim-s-original": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "joe-s-seafood-prime-steak-stone-crab-washington-dc-washington": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "joe-s-stone-crab-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "kai-restaurant-phoenix": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "kalaya-philadelphia": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "kenny-s-wood-fired-grill": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "kimball-house-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "kitchen-kocktails": [
+            "never-enriched",
+            "listing-only"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-14T14:21:57.654Z",
+      "finishedAt": "2026-08-14T14:22:33.343Z",
+      "batchSize": 25,
+      "cities": [
+        "Dallas, Texas",
+        "Atlanta, Georgia",
+        "Chicago, Illinois",
+        "Philadelphia, Pennsylvania",
+        "Miami, Florida",
+        "Phoenix, Arizona",
+        "Washington, District Of Columbia",
+        "Boston, Massachusetts"
+      ],
+      "resolved": 21,
+      "unresolved": 4,
+      "deferred": 0,
+      "avgCompleteness": 76,
+      "corpusEnriched": 136,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 25
+      },
+      "retries": 0,
+      "failures": 4,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-14T14-21-57-654Z-hygiene-owned",
+      "records": [
+        {
+          "slug": "3eleven-kitchen-and-cocktails",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "5church-atlanta-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "alla-vita",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "angelo-s-pizzeria-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "aria-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "ariete-miami",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "atlanta-fish-market-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 404 HTTP 404"
+          ]
+        },
+        {
+          "slug": "atlas-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "bacchanalia-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "barrio-caf-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "billy-goat-tavern-the-original",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "boia-de-miami",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "carbone-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "causa-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "chet-s-dallas",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "christopher-s-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "committee-boston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "contessa-boston",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "cote-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "del-mar-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "demera-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "dizengoff-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "durant-s-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "establishment-atlanta-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "estiatorio-milos-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        }
+      ],
+      "hygiene": {
+        "hygieneDue": 197,
+        "selected": [
+          "3eleven-kitchen-and-cocktails",
+          "5church-atlanta-atlanta",
+          "alla-vita",
+          "angelo-s-pizzeria-philadelphia",
+          "aria-atlanta",
+          "ariete-miami",
+          "atlanta-fish-market-atlanta",
+          "atlas-atlanta",
+          "bacchanalia-atlanta",
+          "barrio-caf-phoenix",
+          "billy-goat-tavern-the-original",
+          "boia-de-miami",
+          "carbone-miami-miami",
+          "causa-washington",
+          "chet-s-dallas",
+          "christopher-s-phoenix",
+          "committee-boston",
+          "contessa-boston",
+          "cote-miami-miami",
+          "del-mar-washington",
+          "demera-restaurant",
+          "dizengoff-philadelphia",
+          "durant-s-phoenix",
+          "establishment-atlanta-atlanta",
+          "estiatorio-milos-miami-miami"
+        ],
+        "reasons": {
+          "3eleven-kitchen-and-cocktails": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "5church-atlanta-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "alla-vita": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "angelo-s-pizzeria-philadelphia": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "aria-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "ariete-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "atlanta-fish-market-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "atlas-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "bacchanalia-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "barrio-caf-phoenix": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "billy-goat-tavern-the-original": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "boia-de-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "carbone-miami-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "causa-washington": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "chet-s-dallas": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "christopher-s-phoenix": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "committee-boston": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "contessa-boston": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "cote-miami-miami": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "del-mar-washington": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "demera-restaurant": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "dizengoff-philadelphia": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "durant-s-phoenix": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "establishment-atlanta-atlanta": [
+            "never-enriched",
+            "listing-only"
+          ],
+          "estiatorio-milos-miami-miami": [
+            "never-enriched",
+            "listing-only"
+          ]
+        }
+      }
+    },
+    {
       "kind": "seed-listings",
       "startedAt": "2026-08-12T06:45:34.941Z",
       "finishedAt": "2026-08-12T06:45:34.962Z",
