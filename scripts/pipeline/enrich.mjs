@@ -1,36 +1,31 @@
 /**
- * Phase 1 — enrich existing records. Creates no new restaurants.
+ * Owned enrichment — first-party website reads only.
+ *
+ * No Google Places. No Firecrawl. No Lovable connector gateway.
  *
  * Usage:
  *   node scripts/pipeline/enrich.mjs [--batch=10] [--slugs=a,b] [--refresh]
  *   node scripts/pipeline/enrich.mjs --hygiene [--batch=25]
  *
- * --hygiene rebuilds the refresh queue and processes the top hygiene slugs
- * (never-enriched, site failures, thin <70%, review due) before any discovery.
- * Implies refresh for slugs that already carry enrichment.
+ * Evidence is written into src/data/enrichment.json under the `site` block only,
+ * keyed by slug, and never overwrites first-party fields in dataset.json.
  *
- * Third-party evidence is written into src/data/enrichment.json, keyed by slug,
- * and never overwrites the first-party fields in dataset.json.
+ * Existing `google` blocks from prior GPI runs are left for audit history only.
  */
 import {
   PATHS,
   appendRun,
   completeness,
-  createLimiter,
-  firecrawlClient,
-  googleClient,
-  normalizeHost,
-  normalizePhone,
   readJson,
-  shapeGoogle,
-  similarity,
   snapshot,
   writeJson,
 } from "./lib.mjs";
+import { fetchSitePages } from "./own-fetch.mjs";
 import { buildRefreshQueue } from "./refresh.mjs";
-import { regionCode } from "./regions.mjs";
-import { summarize } from "./summarize.mjs";
 import { extractFromSite, pickSitePages } from "./site.mjs";
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const MIN_DELAY_MS = 400;
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -66,134 +61,71 @@ if (HYGIENE) {
   };
   batch = hygieneMeta.selected.map((s) => bySlug.get(s)).filter(Boolean);
   console.log(
-    `Hygiene mode — ${queue.totals.hygiene} due, taking ${batch.length}: ${batch.map((r) => r.slug).join(", ")}`,
+    `Hygiene mode (owned site reads) — ${queue.totals.hygiene} due, taking ${batch.length}: ${batch.map((r) => r.slug).join(", ")}`,
   );
 } else if (ONLY) {
   batch = ONLY.map((s) => bySlug.get(s)).filter(Boolean);
+  console.log(`Slug mode — ${batch.length}: ${batch.map((r) => r.slug).join(", ")}`);
 } else {
   const candidates = dataset.records.filter((r) => {
     const existing = store.records[r.slug];
     if (!existing) return true;
     if (REFRESH) return true;
-    return existing.meta?.matchStatus === "deferred";
+    return !existing.site;
   });
   batch = candidates.slice(0, BATCH);
+  console.log(
+    `Batch mode — ${candidates.length} candidates, taking ${batch.length}: ${batch.map((r) => r.slug).join(", ")}`,
+  );
 }
+
 if (!batch.length) {
-  console.log("Nothing to enrich — every record already carries enrichment. Use --refresh to re-check.");
+  console.log("Nothing to enrich.");
   process.exit(0);
 }
 
-const snapshotDir = snapshot(HYGIENE ? "hygiene" : "enrich");
-
-const gLimiter = createLimiter({ minDelayMs: 220 });
-const fLimiter = createLimiter({ minDelayMs: 1800 });
-const google = googleClient(gLimiter);
-const firecrawl = firecrawlClient(fLimiter);
 const startedAt = new Date().toISOString();
+const snapshotDir = snapshot(HYGIENE ? "hygiene-owned" : "enrich-owned");
 const log = [];
-
-/** Accept a Places result only on name similarity plus location agreement. */
-function chooseMatch(record, places) {
-  const wantHost = normalizeHost(record.website);
-  const wantPhone = normalizePhone(record.phone);
-  const wantState = (record.stateProvince || "").toLowerCase();
-  let best = null;
-  for (const p of places ?? []) {
-    const name = similarity(record.title, p.displayName?.text ?? "");
-    const host = Boolean(wantHost) && normalizeHost(p.websiteUri) === wantHost;
-    const phone = Boolean(wantPhone) && normalizePhone(p.nationalPhoneNumber) === wantPhone;
-    const addressText = (p.formattedAddress ?? "").toLowerCase();
-    const stateCode = (
-      p.addressComponents?.find((c) => c.types?.includes("administrative_area_level_1"))
-        ?.shortText ?? ""
-    ).toLowerCase();
-    const cityOk = !record.city || addressText.includes(String(record.city).toLowerCase());
-    const wantCode = regionCode(record.stateProvince).toLowerCase();
-    const stateOk =
-      !wantState ||
-      addressText.includes(wantState) ||
-      (Boolean(stateCode) && stateCode === wantCode);
-
-    let confidence = 0;
-    if (host) confidence += 0.45;
-    if (phone) confidence += 0.35;
-    confidence += name * 0.4;
-    if (cityOk) confidence += 0.1;
-
-    // City is a confidence signal, not a gate: recorded city names are often a
-    // coverage area ("Hood Canal") rather than the municipality Google returns.
-    const acceptable = (host || phone || name >= 0.72) && stateOk;
-    if (!acceptable) continue;
-    if (!best || confidence > best.confidence) {
-      best = {
-        place: p,
-        confidence: Math.min(1, Math.round(confidence * 100) / 100),
-        nameScore: Math.round(name * 100) / 100,
-      };
-    }
-  }
-  return best;
-}
+let pacedCalls = 0;
 
 for (const record of batch) {
-  const retrievedAt = new Date().toISOString();
-  const entry = { google: null, site: null, summary: null, meta: {} };
   const notes = [];
+  const retrievedAt = new Date().toISOString();
+  const prior = store.records[record.slug] ?? {};
 
-  const query = [record.title, record.city, record.stateProvince, "restaurant"]
-    .filter(Boolean)
-    .join(" ");
-  const search = await google.searchText(query);
-
-  if (!search.ok) {
-    entry.meta = {
-      matchStatus: search.status === 429 || search.status >= 500 ? "deferred" : "error",
-      confidence: 0,
+  const entry = {
+    ...(prior.google ? { google: prior.google } : {}),
+    ...(prior.summary ? { summary: prior.summary } : {}),
+    meta: {
+      matchStatus: prior.meta?.matchStatus ?? "site-only",
+      confidence: prior.meta?.confidence ?? null,
+      nameScore: prior.meta?.nameScore ?? null,
       lastEnrichedAt: retrievedAt,
-      note: `Places search failed (${search.status})`,
-    };
-    notes.push(`places ${search.status}`);
+      enrichmentMode: "owned-site",
+    },
+  };
+
+  const siteUrl = typeof record.website === "string" ? record.website.trim() : "";
+  if (!siteUrl || !/^https?:\/\//i.test(siteUrl)) {
+    notes.push("no website");
+    entry.meta.matchStatus = "no-website";
   } else {
-    const match = chooseMatch(record, search.data.places);
-    if (!match) {
-      entry.meta = {
-        matchStatus: "unresolved",
-        confidence: 0,
-        lastEnrichedAt: retrievedAt,
-        note: "No Places result cleared the name and location thresholds.",
-      };
-      notes.push("unresolved");
-    } else {
-      entry.google = shapeGoogle(match.place, retrievedAt);
-      entry.meta = {
-        matchStatus: "resolved",
-        confidence: match.confidence,
-        nameScore: match.nameScore,
-        lastEnrichedAt: retrievedAt,
-      };
+    if (pacedCalls > 0) await sleep(MIN_DELAY_MS);
+    pacedCalls += 1;
 
-      // ---- first-party site scrape
-      const siteUrl = record.website || entry.google.website;
-      if (siteUrl) {
-        const pages = [];
-        const home = await firecrawl.scrape(siteUrl);
-        if (home.ok) {
-          pages.push({ url: siteUrl, ...home });
-          for (const extra of pickSitePages(siteUrl, home.links)) {
-            const page = await firecrawl.scrape(extra);
-            if (page.ok) pages.push({ url: extra, ...page });
-          }
-        } else {
-          notes.push(`site ${home.status}`);
-        }
-        if (pages.length) entry.site = extractFromSite(pages, retrievedAt);
-      }
-
-      // ---- summary from retrieved fields only
-      const summary = await summarize(record, entry);
-      if (summary) entry.summary = summary;
-      else notes.push("summary skipped");
+    const { pages, homeError } = await fetchSitePages(siteUrl, pickSitePages);
+    if (homeError) {
+      notes.push(`site ${homeError}`);
+      entry.meta.matchStatus = "site-failure";
+    }
+    if (pages.length) {
+      entry.site = extractFromSite(pages, retrievedAt);
+      entry.meta.matchStatus = entry.meta.matchStatus === "site-failure" ? "partial" : "resolved";
+      notes.push(`pages ${pages.length}`);
+    } else if (!homeError) {
+      notes.push("no pages extracted");
+      entry.meta.matchStatus = "empty";
     }
   }
 
@@ -201,7 +133,7 @@ for (const record of batch) {
   store.records[record.slug] = entry;
 
   console.log(
-    `${record.slug.padEnd(28)} ${String(entry.meta.matchStatus).padEnd(10)} completeness ${String(entry.meta.completeness).padStart(3)}%${notes.length ? `  (${notes.join(", ")})` : ""}`,
+    `${record.slug.padEnd(28)} ${String(entry.meta.matchStatus).padEnd(12)} completeness ${String(entry.meta.completeness).padStart(3)}%${notes.length ? `  (${notes.join(", ")})` : ""}`,
   );
   log.push({
     slug: record.slug,
@@ -220,23 +152,25 @@ const scores = Object.values(store.records)
 const avg = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
 
 appendRun({
-  kind: HYGIENE ? "hygiene" : "enrich",
+  kind: HYGIENE ? "hygiene-owned" : "enrich-owned",
   startedAt,
   finishedAt: new Date().toISOString(),
   batchSize: batch.length,
-  cities: [...new Set(batch.map((r) => `${r.city}, ${r.stateProvince}`))],
-  resolved: log.filter((l) => l.matchStatus === "resolved").length,
-  unresolved: log.filter((l) => l.matchStatus === "unresolved").length,
-  deferred: log.filter((l) => l.matchStatus === "deferred").length,
+  cities: [...new Set(batch.map((r) => r.coverageArea || `${r.city || ""}, ${r.stateProvince || ""}`))],
+  resolved: log.filter((l) => l.matchStatus === "resolved" || l.matchStatus === "partial").length,
+  unresolved: log.filter((l) => l.matchStatus === "site-failure" || l.matchStatus === "no-website").length,
+  deferred: log.filter((l) => l.matchStatus === "empty").length,
   avgCompleteness: avg,
   corpusEnriched: Object.keys(store.records).length,
-  apiCalls: { google: gLimiter.stats.calls, firecrawl: fLimiter.stats.calls },
-  retries: gLimiter.stats.retries + fLimiter.stats.retries,
-  failures: gLimiter.stats.failures + fLimiter.stats.failures,
+  apiCalls: { google: 0, firecrawl: 0, ownedFetch: pacedCalls },
+  retries: 0,
+  failures: log.filter((l) => String(l.matchStatus).includes("failure") || l.matchStatus === "no-website").length,
   snapshot: snapshotDir,
   records: log,
+  hygiene: hygieneMeta,
 });
 
 console.log(
-  `\nBatch of ${batch.length} done. Corpus enriched: ${Object.keys(store.records).length}/${dataset.records.length}. Average completeness ${avg}%.`,
+  `\nOwned enrichment batch of ${batch.length} done. Corpus with enrichment entries: ${Object.keys(store.records).length}/${dataset.records.length}. Average completeness ${avg}%.`,
 );
+console.log("No Google Places. No Firecrawl. Site reads only.\n");
