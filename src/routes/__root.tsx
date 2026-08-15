@@ -79,12 +79,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Restaurant Intelligence Hub — evidence-led restaurant decisions" },
       { name: "description", content: "First-party restaurant evidence, scored against your situation: occasion fit, commitment, booking pathway and every question a restaurant has not answered." },
-      { name: "author", content: "Lovable" },
       { property: "og:title", content: "Restaurant Intelligence Hub" },
       { property: "og:description", content: "Evidence-led restaurant decisions — coverage, depth and the gaps kept visible." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:image", content: "https://deep-dish-decision.lovable.app/og/home.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "A single plate finished under brass lamplight on a marble pass" },
+      { property: "og:url", content: "https://deep-dish-decision.lovable.app/" },
+      { name: "twitter:image", content: "https://deep-dish-decision.lovable.app/og/home.jpg" },
     ],
     links: [
       {
