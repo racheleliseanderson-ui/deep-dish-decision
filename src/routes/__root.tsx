@@ -83,12 +83,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Evidence-led restaurant decisions — coverage, depth and the gaps kept visible." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: "https://deep-dish-decision.lovable.app/og/home.jpg" },
+      { property: "og:image", content: "https://i0.wp.com/saltnotes.blog/wp-content/uploads/2026/07/Chef-plating-restaurant-dish-overhead-%E2%80%94-Sebastian-Coman.jpg?resize=1200%2C630&ssl=1" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "A single plate finished under brass lamplight on a marble pass" },
-      { property: "og:url", content: "https://deep-dish-decision.lovable.app/" },
-      { name: "twitter:image", content: "https://deep-dish-decision.lovable.app/og/home.jpg" },
+      { property: "og:image:alt", content: "Chef hands plating a restaurant dish from overhead with dramatic service energy" },
+      { property: "og:url", content: "https://deepdish.saltnotes.blog/" },
+      { name: "twitter:image", content: "https://i0.wp.com/saltnotes.blog/wp-content/uploads/2026/07/Chef-plating-restaurant-dish-overhead-%E2%80%94-Sebastian-Coman.jpg?resize=1200%2C630&ssl=1" },
     ],
     links: [
       {
