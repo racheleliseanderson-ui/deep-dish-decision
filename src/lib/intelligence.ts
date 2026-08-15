@@ -738,7 +738,7 @@ export function buildFindings(
   if (opts.useEnrichment !== false) {
     // Lazy import avoided: static import at top would cycle; call via require-like helper.
     const { buildEnrichmentFindings } = enrichmentJoin;
-    for (const ef of buildEnrichmentFindings(r, s)) {
+    for (const ef of buildEnrichmentFindings(r, s, c)) {
       // Force non-critical: third-party must not fail-close.
       if (ef.layer === "critical") continue;
       push({
