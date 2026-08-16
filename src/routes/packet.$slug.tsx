@@ -2,9 +2,10 @@ import { Eyebrow } from "@/components/rih/bits";
 import { ThemeToggle } from "@/components/rih/theme-toggle";
 import { bySlug } from "@/lib/dataset";
 import { decisionBrief, scoreRecord, situationDepth, SITUATION_SLOTS } from "@/lib/intelligence";
-import { readEnrichmentEnabled } from "@/lib/prefs";
+import { useEnrichmentSignals } from "@/lib/prefs";
 import { decodeSituation } from "@/lib/situation-url";
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
+
 
 export const Route = createFileRoute("/packet/$slug")({
   head: () => ({
@@ -42,13 +43,11 @@ function Packet() {
   const record = bySlug.get(slug);
   if (!record) throw notFound();
 
-  const situation =
-    typeof window === "undefined"
-      ? decodeSituation("")
-      : decodeSituation(window.location.search);
-  const sc = scoreRecord(record, situation, {
-    useEnrichment: typeof window === "undefined" ? true : readEnrichmentEnabled(),
-  });
+  const search = useRouterState({ select: (s) => s.location.searchStr });
+  const situation = decodeSituation(search ?? "");
+  const enrichment = useEnrichmentSignals();
+  const sc = scoreRecord(record, situation, { useEnrichment: enrichment.enabled });
+
   const brief = decisionBrief(sc, situation);
   const depth = situationDepth(situation);
 
