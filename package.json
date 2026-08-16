@@ -18,7 +18,8 @@
     "pipeline:enrich:slugs": "node scripts/pipeline/enrich.mjs --slugs",
     "pipeline:discover": "node scripts/pipeline/discover.mjs",
     "pipeline:seed": "node scripts/pipeline/seed-listings.mjs",
-    "validate:seed": "node scripts/validate-seed.mjs"
+    "validate:seed": "node scripts/validate-seed.mjs",
+    "test": "vitest run"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
