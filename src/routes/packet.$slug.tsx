@@ -2,6 +2,7 @@ import { Eyebrow } from "@/components/rih/bits";
 import { ThemeToggle } from "@/components/rih/theme-toggle";
 import { bySlug } from "@/lib/dataset";
 import { decisionBrief, scoreRecord, situationDepth, SITUATION_SLOTS } from "@/lib/intelligence";
+import { downloadPacketPdf } from "@/lib/packet-pdf";
 import { useEnrichmentSignals } from "@/lib/prefs";
 import { decodeSituation } from "@/lib/situation-url";
 import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
@@ -88,10 +89,26 @@ function Packet() {
           <ThemeToggle />
           <button
             type="button"
-            onClick={() => window.print()}
+            onClick={() =>
+              downloadPacketPdf({
+                record,
+                situation,
+                scored: sc,
+                brief,
+                enrichment: enrichment.enabled,
+                generatedAt: new Date().toISOString().slice(0, 16).replace("T", " ") + " UTC",
+              })
+            }
             className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
           >
-            Print / save as PDF
+            Download packet PDF
+          </button>
+          <button
+            type="button"
+            onClick={() => window.print()}
+            className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:text-foreground"
+          >
+            Print
           </button>
         </div>
       </div>
