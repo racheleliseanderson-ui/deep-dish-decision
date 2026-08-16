@@ -60,7 +60,6 @@ const WINANSI: Record<string, string> = {
   "≈": "~",
   "×": "\\327",
   "•": "\\225",
-  "\u00a0": "\\240",
   "é": "\\351",
   "è": "\\350",
   "ñ": "\\361",
@@ -158,14 +157,17 @@ export class PdfDoc {
     const leading = opts.leading ?? size * 1.42;
     const indent = opts.indent ?? 0;
     const width = opts.width ?? this.contentWidth - indent;
-    /* Letter tracking must survive whitespace collapsing in wrapText, so word
-       gaps are carried by a non-breaking space rather than a plain run. */
-    const body = opts.tracking
-      ? String(text)
-          .split(/\s+/)
-          .map((w) => [...w].join(" ".repeat(opts.tracking!)))
-          .join(" \u00a0 ")
-      : text;
+    /* Tracked lines (eyebrows, masthead) are short by construction and are
+       drawn unwrapped so word gaps survive whitespace normalisation. */
+    if (opts.tracking) {
+      const tracked = String(text)
+        .split(/\s+/)
+        .map((w) => [...w].join(" ".repeat(opts.tracking!)))
+        .join("   ");
+      this.drawLine(tracked, PAGE.margin + indent, size, font, leading, opts.gray ?? 0.13);
+      return;
+    }
+    const body = text;
     for (const l of wrapText(body, size, font, width)) {
       this.drawLine(l, PAGE.margin + indent, size, font, leading, opts.gray ?? 0.13);
     }
