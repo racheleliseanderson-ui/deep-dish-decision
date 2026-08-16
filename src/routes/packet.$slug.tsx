@@ -2,9 +2,10 @@ import { Eyebrow } from "@/components/rih/bits";
 import { ThemeToggle } from "@/components/rih/theme-toggle";
 import { bySlug } from "@/lib/dataset";
 import { decisionBrief, scoreRecord, situationDepth, SITUATION_SLOTS } from "@/lib/intelligence";
-import { readEnrichmentEnabled } from "@/lib/prefs";
+import { useEnrichmentSignals } from "@/lib/prefs";
 import { decodeSituation } from "@/lib/situation-url";
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
+
 
 export const Route = createFileRoute("/packet/$slug")({
   head: () => ({
