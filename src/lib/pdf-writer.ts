@@ -114,7 +114,6 @@ export class PdfDoc {
 
   space(amount: number) {
     this.y -= amount;
-    if (this.y < PAGE.margin) this.ensure(Infinity === Infinity ? 0 : 0);
   }
 
   line(opts: { gray?: number; width?: number; indent?: number } = {}) {
