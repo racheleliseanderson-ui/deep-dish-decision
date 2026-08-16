@@ -65,9 +65,9 @@ async function hydrateProbe(searchStr: string) {
 }
 
 function hydrationComplaints() {
-  return errorSpy.mock.calls
+  return (errorSpy.mock.calls as unknown[][])
     .map((c) => c.map((a) => String(a)).join(" "))
-    .filter((m) => /hydrat|did not match|server rendered/i.test(m));
+    .filter((m: string) => /hydrat|did not match|server rendered/i.test(m));
 }
 
 describe("decision packet hydration", () => {
