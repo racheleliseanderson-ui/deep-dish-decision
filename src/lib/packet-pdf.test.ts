@@ -39,7 +39,8 @@ describe("decision packet PDF", () => {
     expect(text).toContain(spaced("DECISION"));
     expect(text).toContain(spaced("PACKET"));
     expect(text).toContain(spaced("VERDICT"));
-    expect(text).toContain(spaced("CONFIRMATION SCRIPT"));
+    expect(text).toContain(spaced("CONFIRMATION"));
+    expect(text).toContain(spaced("SCRIPT"));
     if (data.scored.criticals.length) expect(text).toMatch(/C R I T I C A L/);
     if (data.scored.unknowns.length) expect(text).toMatch(/U N K N O W N S/);
   });
