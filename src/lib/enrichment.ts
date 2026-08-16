@@ -120,13 +120,27 @@ export function getEnrichment(slug: string): EnrichmentRecord | null {
   return data.records[slug] ?? null;
 }
 
-const NOT_STATED = ["Not stated", "not stated", "Unstated", "unstated", "—", "-", ""];
+const NOT_STATED = [
+  "not stated",
+  "unstated",
+  "not provided",
+  "unknown",
+  "none",
+  "n/a",
+  "na",
+  "tbd",
+  "—",
+  "–",
+  "-",
+  "",
+];
 
 function isThin(v: string | null | undefined): boolean {
   if (v == null) return true;
-  const t = String(v).trim();
+  const t = String(v).trim().toLowerCase();
   return !t || NOT_STATED.includes(t) || /^not stated/i.test(t);
 }
+
 
 function accessLabels(a: GoogleAccessibility): string[] {
   const out: string[] = [];
