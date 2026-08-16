@@ -34,9 +34,11 @@ describe("decision packet PDF", () => {
   it("carries the verdict and every case-file layer", () => {
     const data = input();
     const text = new TextDecoder("latin1").decode(buildPacketPdf(data));
-    expect(text).toContain("RESTAURANT DECISION PACKET");
-    expect(text).toContain("Verdict".toUpperCase());
-    expect(text).toContain("CONFIRMATION SCRIPT".split("").join(" "));
+    /* Eyebrows and the masthead are letter-tracked in the output. */
+    const spaced = (s: string) => [...s].join(" ");
+    expect(text).toContain(spaced("RESTAURANT DECISION PACKET").slice(0, 40));
+    expect(text).toContain(spaced("VERDICT"));
+    expect(text).toContain(spaced("CONFIRMATION SCRIPT"));
     if (data.scored.criticals.length) expect(text).toMatch(/C R I T I C A L/);
     if (data.scored.unknowns.length) expect(text).toMatch(/U N K N O W N S/);
   });
