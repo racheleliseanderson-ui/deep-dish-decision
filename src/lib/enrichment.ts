@@ -7,7 +7,7 @@
  * first-party values.
  */
 import raw from "@/data/enrichment.json";
-import type { Finding, Situation } from "@/lib/intelligence";
+import type { Constraint, Finding, Situation } from "@/lib/intelligence";
 import type { RestaurantRecord } from "@/lib/dataset";
 
 export type GoogleAmenities = {
@@ -60,16 +60,21 @@ export type EnrichmentGoogle = {
   retrievedAt?: string;
 };
 
+export type SiteQuote = {
+  quote: string;
+  sourceUrl?: string;
+};
+
 export type EnrichmentSite = {
   menuUrl?: string;
   reservationUrl?: string;
   reservationPlatform?: string;
-  dietaryLanguage?: string[];
-  accessibilityLanguage?: string[];
+  dietaryLanguage?: SiteQuote[];
+  accessibilityLanguage?: SiteQuote[];
   groupPolicy?: string;
-  groupPolicyLanguage?: string[];
+  groupPolicyLanguage?: SiteQuote[];
   dressCode?: string;
-  cancellationLanguage?: string[];
+  cancellationLanguage?: SiteQuote[];
   pagesRead?: number;
   sourceUrls?: string[];
   retrievedAt?: string;
@@ -151,7 +156,7 @@ function hoursLine(
 export function buildEnrichmentFindings(
   r: RestaurantRecord,
   s: Situation,
-  c: (constraint: string) => boolean,
+  c: (constraint: Constraint) => boolean,
 ): Finding[] {
   const enr = getEnrichment(r.slug);
   if (!enr) return [];
@@ -168,12 +173,12 @@ export function buildEnrichmentFindings(
     });
   };
 
-  const accessThin = isThin(r.accessibilitySummary) && isThin(r.signals.access);
-  const parkingThin = isThin(r.parkingSummary);
+  const accessThin = isThin(r.accessibilityState);
+  const parkingThin = isThin(r.parkingTransit);
   const hoursThin = isThin(r.hoursSummary) || !r.hoursSummary;
-  const priceThin = isThin(r.priceSummary) && isThin(r.signals.price);
+  const priceThin = isThin(r.priceDetails);
   const dressThin = isThin(r.dressCode);
-  const groupThin = isThin(r.groupPolicy) && isThin(r.signals.groups);
+  const groupThin = isThin(r.groupDetails);
   const dietThin =
     r.dietaryTags.some((t) => NOT_STATED.includes(t)) || isThin(r.dietaryDetails);
 
@@ -205,7 +210,7 @@ export function buildEnrichmentFindings(
       layer: "watch",
       domain: "enrichment",
       title: "Accessibility wording from the venue's own website",
-      detail: site.accessibilityLanguage.slice(0, 3).join(" · "),
+      detail: site.accessibilityLanguage.slice(0, 3).map((q) => q.quote).join(" · "),
       action:
         "Read the official page, then confirm the live route — website wording is not a guarantee of step-free access.",
       impact: c("Mobility / step-free needs") ? 44 : 26,
@@ -361,7 +366,7 @@ export function buildEnrichmentFindings(
       title: "Group-policy note from the venue's website",
       detail:
         site.groupPolicy ||
-        (site.groupPolicyLanguage ?? []).slice(0, 2).join(" · ") ||
+        (site.groupPolicyLanguage ?? []).slice(0, 2).map((q) => q.quote).join(" · ") ||
         "Group policy language present on the venue's pages.",
       action: "Confirm deposits, set menus, and cut-off times on the official group path.",
       impact: c("Large party (6+)") || (s.partySize ?? 0) >= 6 ? 42 : 22,
@@ -376,7 +381,7 @@ export function buildEnrichmentFindings(
       layer: "watch",
       domain: "enrichment",
       title: "Dietary wording from the venue's website",
-      detail: site.dietaryLanguage.slice(0, 3).join(" · "),
+      detail: site.dietaryLanguage.slice(0, 3).map((q) => q.quote).join(" · "),
       action: c("Severe allergy / celiac")
         ? "Website text is not a kitchen guarantee — name the allergen and confirm cross-contact practice live."
         : "Read the official dietary note and confirm before inviting restricted guests.",
