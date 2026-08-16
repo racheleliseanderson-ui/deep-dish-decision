@@ -96,8 +96,8 @@ export type EnrichmentSummary = {
 
 export type EnrichmentMeta = {
   matchStatus?: string;
-  confidence?: number;
-  nameScore?: number;
+  confidence?: number | null;
+  nameScore?: number | null;
   lastEnrichedAt?: string;
   completeness?: number;
 };
