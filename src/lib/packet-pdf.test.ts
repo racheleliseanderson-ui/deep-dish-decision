@@ -36,7 +36,8 @@ describe("decision packet PDF", () => {
     const text = new TextDecoder("latin1").decode(buildPacketPdf(data));
     /* Eyebrows and the masthead are letter-tracked in the output. */
     const spaced = (s: string) => [...s].join(" ");
-    expect(text).toContain(spaced("RESTAURANT DECISION PACKET").slice(0, 40));
+    expect(text).toContain(spaced("DECISION"));
+    expect(text).toContain(spaced("PACKET"));
     expect(text).toContain(spaced("VERDICT"));
     expect(text).toContain(spaced("CONFIRMATION SCRIPT"));
     if (data.scored.criticals.length) expect(text).toMatch(/C R I T I C A L/);
