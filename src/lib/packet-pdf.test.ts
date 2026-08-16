@@ -5,8 +5,8 @@ import { decisionBrief, emptySituation, scoreRecord } from "@/lib/intelligence";
 import { buildPacketPdf, packetFilename } from "@/lib/packet-pdf";
 
 function input(index = 0) {
-  const record = records[index];
-  const situation = { ...emptySituation, occasion: "anniversary" as const, partySize: 2 };
+  const record = records[index]!;
+  const situation = { ...emptySituation, occasion: "Date night" as const, partySize: 2 };
   const scored = scoreRecord(record, situation);
   return {
     record,
@@ -46,6 +46,6 @@ describe("decision packet PDF", () => {
   });
 
   it("names the file after the record slug", () => {
-    expect(packetFilename(records[0])).toBe(`decision-packet-${records[0].slug}.pdf`);
+    expect(packetFilename(records[0]!)).toBe(`decision-packet-${records[0]!.slug}.pdf`);
   });
 });

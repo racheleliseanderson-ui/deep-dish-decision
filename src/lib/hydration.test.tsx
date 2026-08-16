@@ -72,16 +72,16 @@ function hydrationComplaints() {
 
 describe("decision packet hydration", () => {
   it("hydrates a situation-bearing packet without mismatch", async () => {
-    const { host } = await hydrateProbe("?o=anniversary&p=4&l=10");
+    const { host } = await hydrateProbe("?o=Date+night&p=4&l=10");
     expect(hydrationComplaints()).toEqual([]);
-    expect(host.textContent).toContain("occasion:anniversary");
+    expect(host.textContent).toContain("occasion:Date night");
     expect(host.textContent).toContain("party:4");
   });
 
   it("hydrates cleanly when stored prefs disagree with the server default", async () => {
     // Server renders the default (signals on); this browser has them off.
     localStorage.setItem(ENRICHMENT_KEY, "0");
-    const { host } = await hydrateProbe("?o=business_dinner&p=6");
+    const { host } = await hydrateProbe("?o=Business+dining&p=6");
     expect(hydrationComplaints()).toEqual([]);
     // Effect-applied preference wins after hydration — no render-time read.
     expect(host.textContent).toContain("signals:off");
