@@ -65,16 +65,23 @@ export type SiteQuote = {
   sourceUrl?: string;
 };
 
+/** Older pipeline runs stored plain strings; newer runs store quote objects. */
+export type SiteLanguage = string | SiteQuote;
+
+export function quoteText(q: SiteLanguage): string {
+  return typeof q === "string" ? q : q.quote;
+}
+
 export type EnrichmentSite = {
   menuUrl?: string;
   reservationUrl?: string;
   reservationPlatform?: string;
-  dietaryLanguage?: SiteQuote[];
-  accessibilityLanguage?: SiteQuote[];
+  dietaryLanguage?: SiteLanguage[];
+  accessibilityLanguage?: SiteLanguage[];
   groupPolicy?: string;
-  groupPolicyLanguage?: SiteQuote[];
+  groupPolicyLanguage?: SiteLanguage[];
   dressCode?: string;
-  cancellationLanguage?: SiteQuote[];
+  cancellationLanguage?: SiteLanguage[];
   pagesRead?: number;
   sourceUrls?: string[];
   retrievedAt?: string;
@@ -210,7 +217,7 @@ export function buildEnrichmentFindings(
       layer: "watch",
       domain: "enrichment",
       title: "Accessibility wording from the venue's own website",
-      detail: site.accessibilityLanguage.slice(0, 3).map((q) => q.quote).join(" · "),
+      detail: site.accessibilityLanguage.slice(0, 3).map(quoteText).join(" · "),
       action:
         "Read the official page, then confirm the live route — website wording is not a guarantee of step-free access.",
       impact: c("Mobility / step-free needs") ? 44 : 26,
@@ -366,7 +373,7 @@ export function buildEnrichmentFindings(
       title: "Group-policy note from the venue's website",
       detail:
         site.groupPolicy ||
-        (site.groupPolicyLanguage ?? []).slice(0, 2).map((q) => q.quote).join(" · ") ||
+        (site.groupPolicyLanguage ?? []).slice(0, 2).map(quoteText).join(" · ") ||
         "Group policy language present on the venue's pages.",
       action: "Confirm deposits, set menus, and cut-off times on the official group path.",
       impact: c("Large party (6+)") || (s.partySize ?? 0) >= 6 ? 42 : 22,
@@ -381,7 +388,7 @@ export function buildEnrichmentFindings(
       layer: "watch",
       domain: "enrichment",
       title: "Dietary wording from the venue's website",
-      detail: site.dietaryLanguage.slice(0, 3).map((q) => q.quote).join(" · "),
+      detail: site.dietaryLanguage.slice(0, 3).map(quoteText).join(" · "),
       action: c("Severe allergy / celiac")
         ? "Website text is not a kitchen guarantee — name the allergen and confirm cross-contact practice live."
         : "Read the official dietary note and confirm before inviting restricted guests.",
