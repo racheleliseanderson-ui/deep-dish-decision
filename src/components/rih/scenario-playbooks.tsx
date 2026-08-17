@@ -39,7 +39,7 @@ function PlaybookCard({
       type="button"
       onClick={() => onApply(p)}
       className={cn(
-        "tap rounded-2xl border p-4 text-left transition-all duration-300 ease-instrument",
+        "tap rounded-2xl border p-3.5 text-left transition-all duration-300 ease-instrument sm:p-4",
         active
           ? "border-primary/45 bg-primary/8 shadow-lift"
           : "border-border bg-surface hover:border-border-strong hover:shadow-lift",
