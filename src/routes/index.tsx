@@ -3,7 +3,9 @@ import { CaseFile } from "@/components/rih/case-file";
 import { CompareDialog, CompareTray } from "@/components/rih/compare";
 import { DecisionBrief } from "@/components/rih/decision-brief";
 import { Figure, GiltRule, Marquee, Vitrine } from "@/components/rih/gilt";
+import { ListingFace } from "@/components/rih/listing-face";
 import { RecordCard } from "@/components/rih/record-card";
+import { ScenarioPlaybooks } from "@/components/rih/scenario-playbooks";
 import { SituationConsole } from "@/components/rih/situation-console";
 import { SiteNav } from "@/components/rih/site-nav";
 import heroPass from "@/assets/hero-pass.jpg";
@@ -71,7 +73,6 @@ function Hub() {
     .map((s) => ranked.find((x) => x.record.slug === s))
     .filter((x): x is NonNullable<typeof x> => !!x);
 
-  // Ticker copy is counted from the corpus, never written by hand.
   const tickerItems = useMemo(
     () => [
       `${dataset.count} records under review`,
@@ -97,7 +98,6 @@ function Hub() {
 
   return (
     <main className="min-h-screen pb-32">
-      {/* ---------------- Masthead ---------------- */}
       <header className="relative isolate overflow-hidden border-b border-border-strong">
         <img
           src={heroPass}
@@ -125,7 +125,7 @@ function Hub() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground sm:text-base">
-            Every line here is read from first-party sources — the restaurant's own site, menu,
+            Every line here is read from first-party sources — the restaurant&apos;s own site, menu,
             reservation page, or a direct call. Nothing is scored on sentiment. Where the evidence
             stops, the record says so and stays open. When a constraint you have stated cannot be
             satisfied on the record, the instrument fails closed and holds the booking.
@@ -157,8 +157,6 @@ function Hub() {
 
       <Marquee items={tickerItems} />
 
-
-      {/* ---------------- Situation ---------------- */}
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
         <SituationConsole
           situation={situation}
@@ -170,7 +168,14 @@ function Hub() {
           totalCount={records.length}
         />
 
-        {/* ---------------- Lead reading ---------------- */}
+        <ScenarioPlaybooks
+          situation={situation}
+          onApply={(next) => {
+            setSituation(next);
+            setLimit(8);
+          }}
+        />
+
         {lead ? (
           <Reveal as="section" className="mt-12">
             <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
@@ -180,7 +185,15 @@ function Hub() {
             <GiltRule className="mt-3" />
 
             <div className="mt-5 flex flex-wrap items-end justify-between gap-4">
-              <FadeKey k={lead.record.slug} className="min-w-0">
+              <FadeKey k={lead.record.slug} className="flex min-w-0 items-start gap-4">
+                <ListingFace
+                  record={lead.record}
+                  rank={lead.rank}
+                  fit={lead.fit}
+                  burden={lead.burden}
+                  size={64}
+                  showGauges={false}
+                />
                 <div>
                   <h2 className="font-display text-3xl leading-tight tracking-tight sm:text-4xl">
                     {lead.record.title}
@@ -242,8 +255,7 @@ function Hub() {
           </Reveal>
         ) : null}
 
-        {/* ---------------- Ranked records ---------------- */}
-        <section className="mt-14">
+        <section id="ranked" className="mt-14 scroll-mt-24">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div className="min-w-0">
               <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
@@ -259,7 +271,6 @@ function Hub() {
             </div>
           </div>
 
-          {/* Partial situation — deliberate, instrument-grade banner */}
           {ranked.length > 0 && depth < 3 ? (
             <div className="mt-6 rounded-2xl border border-border bg-surface-sunken/55 px-4 py-4 sm:px-5">
               <div className="flex flex-wrap items-start justify-between gap-3">
