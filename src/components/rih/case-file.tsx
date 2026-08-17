@@ -1,7 +1,7 @@
 import { Chip, Eyebrow, Rule } from "@/components/rih/bits";
 import { ListingFace } from "@/components/rih/listing-face";
 import { DecisionBrief } from "@/components/rih/decision-brief";
-import { LayerStack } from "@/components/rih/findings";
+import { FindingsStack } from "@/components/rih/findings";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { enrichmentAudit } from "@/lib/enrichment";
 import type { Scored, Situation } from "@/lib/intelligence";
@@ -103,7 +103,7 @@ export function CaseFile({
           {tab === "Brief" ? (
             <DecisionBrief sc={sc} situation={situation} />
           ) : null}
-          {tab === "Findings" ? <LayerStack findings={sc.findings} /> : null}
+          {tab === "Findings" ? <FindingsStack findings={sc.findings} /> : null}
           {tab === "Evidence" ? (
             <dl className="divide-y divide-border">
               {rows.map(([label, value]) => (
