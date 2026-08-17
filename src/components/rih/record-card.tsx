@@ -26,8 +26,8 @@ export function RecordCard({
   const shortlist = useShortlist();
   const r = sc.record;
   const lead = sc.findings.slice(0, open ? sc.findings.length : 2);
-  const sitChips = scenarioChips(situation);
-  const condChips = conditionChips(r, sc);
+  const sitChips = scenarioChips(situation).slice(0, 4);
+  const condChips = conditionChips(r, situation, sc.blocked);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -49,7 +49,14 @@ export function RecordCard({
       data-blocked={sc.blocked ? "1" : "0"}
     >
       <div className="flex flex-col gap-5 p-5 sm:flex-row sm:p-6">
-        <ListingFace r={r} rank={sc.rank} fit={sc.fit} burden={sc.burden} size={88} className="sm:w-[104px]" />
+        <ListingFace
+          record={r}
+          fit={sc.fit}
+          burden={sc.burden}
+          rank={sc.rank}
+          size={80}
+          className="sm:w-[104px]"
+        />
 
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-start justify-between gap-3">
@@ -71,16 +78,18 @@ export function RecordCard({
             </div>
           </div>
 
-          {(sitChips.length > 0 || condChips.length > 0) && (
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              {sitChips.map((c) => (
-                <Chip key={c.id} tone={c.tone}>{c.label}</Chip>
-              ))}
-              {condChips.map((c) => (
-                <Chip key={c.id} tone={c.tone}>{c.label}</Chip>
-              ))}
-            </div>
-          )}
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            {condChips.map((c) => (
+              <Chip key={c.id} tone={c.tone}>
+                {c.label}
+              </Chip>
+            ))}
+            {sitChips.map((c) => (
+              <Chip key={c.id} tone={c.tone}>
+                {c.label}
+              </Chip>
+            ))}
+          </div>
 
           {sc.reasons.length ? (
             <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
@@ -94,8 +103,8 @@ export function RecordCard({
           </p>
 
           {r.nextAction ? (
-            <p className="mt-3 rounded-lg border border-border bg-surface-sunken/40 px-3 py-2 text-[12px] leading-relaxed text-muted-foreground">
-              <span className="text-eyebrow mr-2">Next</span>
+            <p className="mt-3 rounded-xl border border-border bg-surface-sunken/40 px-3 py-2 text-[12px] leading-relaxed text-muted-foreground">
+              <span className="text-eyebrow mr-2">Next action</span>
               {r.nextAction}
             </p>
           ) : null}
