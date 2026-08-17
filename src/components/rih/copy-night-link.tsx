@@ -21,7 +21,8 @@ export function CopyNightLink({
     const q = encodeSituation(situation);
     const origin =
       typeof window !== "undefined" ? window.location.origin : "https://deepdish.saltnotes.blog";
-    const url = `${origin}/${q ? `?${q}` : ""}`;
+    // Canonical share URL: origin root with situation query when present.
+    const url = q ? `${origin}/?${q}` : `${origin}/`;
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);
