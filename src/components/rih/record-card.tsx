@@ -1,5 +1,7 @@
-import { Chip, Meter } from "@/components/rih/bits";
+import { Chip } from "@/components/rih/bits";
 import { FindingRow } from "@/components/rih/findings";
+import { ListingFace } from "@/components/rih/listing-face";
+import { conditionChips, scenarioChips } from "@/lib/scenario-chips";
 import type { Scored, Situation } from "@/lib/intelligence";
 import { useShortlist } from "@/lib/shortlist";
 import { cn } from "@/lib/utils";
@@ -24,8 +26,9 @@ export function RecordCard({
   const shortlist = useShortlist();
   const r = sc.record;
   const lead = sc.findings.slice(0, open ? sc.findings.length : 2);
+  const sitChips = scenarioChips(situation);
+  const condChips = conditionChips(r, sc);
 
-  // Soft cue when fit moves with the situation — meters already animate width.
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     setFitPulse(true);
@@ -46,24 +49,7 @@ export function RecordCard({
       data-blocked={sc.blocked ? "1" : "0"}
     >
       <div className="flex flex-col gap-5 p-5 sm:flex-row sm:p-6">
-        <div className="flex shrink-0 flex-col items-start gap-3 sm:w-[104px]">
-          <div className="flex items-baseline gap-2">
-            <span
-              key={sc.rank}
-              className="text-num text-3xl font-medium leading-none text-primary transition-all duration-500 ease-instrument animate-in fade-in zoom-in-95"
-            >
-              {String(sc.rank).padStart(2, "0")}
-            </span>
-          </div>
-          <div className="w-full space-y-2.5">
-            <Meter label="Fit" value={sc.fit} />
-            <Meter
-              label="Burden"
-              value={sc.burden}
-              tone={sc.burden >= 70 ? "critical" : sc.burden >= 45 ? "watch" : "primary"}
-            />
-          </div>
-        </div>
+        <ListingFace r={r} rank={sc.rank} fit={sc.fit} burden={sc.burden} size={88} className="sm:w-[104px]" />
 
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-start justify-between gap-3">
@@ -85,37 +71,16 @@ export function RecordCard({
             </div>
           </div>
 
-          <div className="mt-3 flex flex-wrap gap-1.5">
-            {sc.blocked ? <Chip tone="critical">Blocked on a stated constraint</Chip> : null}
-            {r.hasOfficialConflict ? <Chip tone="critical">Official conflict</Chip> : null}
-            {r.reviewStatus === "overdue" ? (
-              <Chip tone="critical">Review overdue</Chip>
-            ) : r.reviewDueSoon ? (
-              <Chip tone="watch">Review due {r.nextReviewAt}</Chip>
-            ) : (
-              <Chip tone="verified">Review current</Chip>
-            )}
-            <Chip tone={r.thinFieldCount ? "unknown" : "neutral"}>
-              {r.thinFieldCount} thin field{r.thinFieldCount === 1 ? "" : "s"}
-            </Chip>
-            <Chip tone="unknown">
-              <span className="text-num">{r.unknownsCount}</span> unknown
-              {r.unknownsCount === 1 ? "" : "s"}
-            </Chip>
-            <Chip>{r.planningLoad ?? "load unstated"} load</Chip>
-            <Chip>{r.depthLabel}</Chip>
-            {sc.findings.some((f) => f.provenance && f.provenance !== "first-party") ? (
-              <Chip tone="unknown">
-                <span className="text-num">
-                  {sc.findings.filter((f) => f.provenance && f.provenance !== "first-party").length}
-                </span>{" "}
-                labeled signal
-                {sc.findings.filter((f) => f.provenance && f.provenance !== "first-party").length === 1
-                  ? ""
-                  : "s"}
-              </Chip>
-            ) : null}
-          </div>
+          {(sitChips.length > 0 || condChips.length > 0) && (
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {sitChips.map((c) => (
+                <Chip key={c.id} tone={c.tone}>{c.label}</Chip>
+              ))}
+              {condChips.map((c) => (
+                <Chip key={c.id} tone={c.tone}>{c.label}</Chip>
+              ))}
+            </div>
+          )}
 
           {sc.reasons.length ? (
             <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
@@ -127,6 +92,13 @@ export function RecordCard({
           <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
             {r.serviceSummary}
           </p>
+
+          {r.nextAction ? (
+            <p className="mt-3 rounded-lg border border-border bg-surface-sunken/40 px-3 py-2 text-[12px] leading-relaxed text-muted-foreground">
+              <span className="text-eyebrow mr-2">Next</span>
+              {r.nextAction}
+            </p>
+          ) : null}
 
           <div className="mt-4 overflow-hidden rounded-xl border border-border bg-surface-sunken/50 px-4 transition-[max-height] duration-500 ease-instrument">
             <ul className="divide-y divide-border">
