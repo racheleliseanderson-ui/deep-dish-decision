@@ -55,6 +55,7 @@ export function FindingRow({ f, compact = false }: { f: Finding; compact?: boole
   );
 }
 
+/** Single-layer stack. Prefer FindingsStack when showing the full set. */
 export function LayerStack({
   title,
   findings,
@@ -80,6 +81,49 @@ export function LayerStack({
           <FindingRow key={f.id} f={f} compact={compact ?? false} />
         ))}
       </ul>
+    </div>
+  );
+}
+
+const LAYER_ORDER: FindingLayer[] = ["critical", "watch", "unknown"];
+const LAYER_TITLE: Record<FindingLayer, string> = {
+  critical: "Critical",
+  watch: "Watch",
+  unknown: "Unknown",
+};
+
+/**
+ * Full findings stack grouped by layer (critical → watch → unknown).
+ * Call sites that only have the combined findings array use this.
+ */
+export function FindingsStack({
+  findings,
+  compact,
+}: {
+  findings: Finding[];
+  compact?: boolean;
+}) {
+  if (!findings.length) {
+    return (
+      <p className="text-sm text-muted-foreground">
+        No findings recorded for this situation.
+      </p>
+    );
+  }
+  return (
+    <div className="space-y-6">
+      {LAYER_ORDER.map((layer) => {
+        const slice = findings.filter((f) => f.layer === layer);
+        return (
+          <LayerStack
+            key={layer}
+            title={LAYER_TITLE[layer]}
+            findings={slice}
+            layer={layer}
+            {...(compact !== undefined ? { compact } : {})}
+          />
+        );
+      })}
     </div>
   );
 }
