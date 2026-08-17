@@ -73,7 +73,14 @@ export function ListingFace({
   className?: string;
 }) {
   return (
-    <div className={cn("flex shrink-0 flex-col items-center gap-3", className)}>
+    <div
+      className={cn(
+        // Mobile: plate + gauges side-by-side to save vertical space.
+        // sm+: stacked left column as before.
+        "flex shrink-0 flex-row items-center gap-4 sm:flex-col sm:items-center sm:gap-3",
+        className,
+      )}
+    >
       <div className="relative">
         {rank != null ? (
           <span className="text-num absolute -left-1 -top-1 z-10 text-2xl font-medium leading-none text-primary">
@@ -85,7 +92,7 @@ export function ListingFace({
         </div>
       </div>
       {showGauges && fit != null && burden != null ? (
-        <FitBurden fit={fit} burden={burden} className="w-[88px]" />
+        <FitBurden fit={fit} burden={burden} className="w-[100px] sm:w-[88px]" />
       ) : null}
     </div>
   );
