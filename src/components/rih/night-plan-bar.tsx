@@ -2,10 +2,13 @@ import { useShortlist } from "@/lib/shortlist";
 import { bySlug } from "@/lib/dataset";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 /**
  * Always-visible slim bar for the night plan (browser-local shortlist).
  * Empty state invites the reader to the ranked rooms.
+ * When the address bar already carries a situation query, expose a quick
+ * "Copy link" that shares the current URL (no situation prop required).
  */
 export function NightPlanBar() {
   const shortlist = useShortlist();
@@ -14,6 +17,23 @@ export function NightPlanBar() {
     .map((s) => bySlug.get(s)?.title)
     .filter(Boolean)
     .slice(0, 3) as string[];
+  const [copied, setCopied] = useState(false);
+  const [hasQuery, setHasQuery] = useState(false);
+
+  // Client-only: avoid SSR/client mismatch on search params.
+  useEffect(() => {
+    setHasQuery(window.location.search.length > 1);
+  }, []);
+
+  const onCopyUrl = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1800);
+    } catch {
+      /* clipboard unavailable */
+    }
+  };
 
   return (
     <div
@@ -38,9 +58,23 @@ export function NightPlanBar() {
           )}
         </div>
         <div className="flex shrink-0 items-center gap-2">
+          {hasQuery ? (
+            <button
+              type="button"
+              onClick={onCopyUrl}
+              className={cn(
+                "tap rounded-full border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] transition-colors",
+                copied
+                  ? "border-verified/45 bg-verified-soft text-verified"
+                  : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground",
+              )}
+            >
+              {copied ? "Copied" : "Copy link"}
+            </button>
+          ) : null}
           <a
             href="/#ranked"
-            className="tap rounded-full border border-border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
+            className="tap rounded-full border border-border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-muted-foreground hover:border-border-strong hover:text-foreground"
           >
             Rooms
           </a>
