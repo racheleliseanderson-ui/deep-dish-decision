@@ -2,6 +2,7 @@ import { PlateMarkSvg } from "@/lib/listing-visual";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { cn } from "@/lib/utils";
 
+/** Compact fit / burden meters for the plate column. */
 export function MiniMeter({
   label,
   value,
@@ -50,36 +51,41 @@ export function FitBurden({
   );
 }
 
-/** Left-column face for listings: plate mark + rank + fit/burden gauges. */
+/**
+ * Left-column face of a listing: deterministic plate mark + optional gauges.
+ * Never uses photographs or stock imagery.
+ */
 export function ListingFace({
-  r,
-  rank,
+  record,
   fit,
   burden,
-  size = 72,
+  rank,
+  size = 88,
+  showGauges = true,
   className,
 }: {
-  r: RestaurantRecord;
-  rank?: number;
+  record: RestaurantRecord;
   fit?: number;
   burden?: number;
+  rank?: number;
   size?: number;
+  showGauges?: boolean;
   className?: string;
 }) {
   return (
-    <div className={cn("flex shrink-0 flex-col items-start gap-3", className)}>
+    <div className={cn("flex shrink-0 flex-col items-center gap-3", className)}>
       <div className="relative">
-        <div className="plate flex items-center justify-center overflow-hidden text-foreground" style={{ width: size, height: size }}>
-          <PlateMarkSvg r={r} size={size - 12} />
-        </div>
         {rank != null ? (
-          <span className="text-num absolute -left-1 -top-1 rounded-full bg-surface px-1.5 py-0.5 text-[11px] font-medium text-primary shadow-sm">
+          <span className="text-num absolute -left-1 -top-1 z-10 text-2xl font-medium leading-none text-primary">
             {String(rank).padStart(2, "0")}
           </span>
         ) : null}
+        <div className="plate flex items-center justify-center p-2 text-muted-foreground">
+          <PlateMarkSvg r={record} size={size} />
+        </div>
       </div>
-      {fit != null && burden != null ? (
-        <FitBurden fit={fit} burden={burden} className="w-full max-w-[88px]" />
+      {showGauges && fit != null && burden != null ? (
+        <FitBurden fit={fit} burden={burden} className="w-[88px]" />
       ) : null}
     </div>
   );
