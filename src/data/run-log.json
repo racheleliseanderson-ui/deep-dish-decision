@@ -1,6 +1,357 @@
 {
   "runs": [
     {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-18T20:29:50.673Z",
+      "finishedAt": "2026-08-18T20:31:02.748Z",
+      "batchSize": 21,
+      "cities": [
+        "Chicago, Illinois",
+        "New York, New York",
+        "Los Angeles, California",
+        "Pacific Northwest",
+        "San Francisco, California",
+        "Miami, Florida",
+        "Dallas, Texas",
+        "Philadelphia, Pennsylvania",
+        "Atlanta, Georgia",
+        "Boston, Massachusetts",
+        "Phoenix, Arizona",
+        "Washington, District Of Columbia"
+      ],
+      "resolved": 7,
+      "unresolved": 14,
+      "deferred": 0,
+      "avgCompleteness": 66,
+      "corpusEnriched": 225,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 21
+      },
+      "retries": 0,
+      "failures": 14,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-18T20-29-50-673Z-enrich-owned",
+      "records": [
+        {
+          "slug": "summer-house-santa-monica",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "the-smith",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "perch",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "jsonld 1",
+            "relabeled resolved (prior site-failure was inherited)"
+          ]
+        },
+        {
+          "slug": "ariana",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "playwright 3"
+          ]
+        },
+        {
+          "slug": "roe",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "relabeled resolved (prior site-failure was inherited)"
+          ]
+        },
+        {
+          "slug": "mr-szechuan",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "spicy-king",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "the-best-sichuan",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "playwright 1",
+            "relabeled resolved (prior site-failure was inherited)"
+          ]
+        },
+        {
+          "slug": "the-best-sichuan-39",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "relabeled resolved (prior site-failure was inherited)"
+          ]
+        },
+        {
+          "slug": "boia-de-miami",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "chet-s-dallas",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "dizengoff-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "hayakawa-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "kalaya-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "ky-miami",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "no-9-park-boston",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "pa-la-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "the-dabney-washington",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "the-hampton-social-dallas",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "welcome-diner-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site err fetch failed"
+          ]
+        },
+        {
+          "slug": "atlanta-fish-market-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 404 HTTP 404"
+          ]
+        }
+      ],
+      "hygiene": null,
+      "diagnosis": {
+        "cohort": "429-and-js-shell-plus-remaining-site-failures",
+        "ladder": "jsonld-before-strip + Retry-After limiter + gated Playwright",
+        "recovered": [
+          {
+            "slug": "summer-house-santa-monica",
+            "was": "429",
+            "now": "resolved",
+            "pages": 1
+          },
+          {
+            "slug": "the-smith",
+            "was": "429",
+            "now": "resolved",
+            "pages": 2,
+            "playwright": 2
+          },
+          {
+            "slug": "perch",
+            "was": "429",
+            "now": "resolved",
+            "pages": 3,
+            "jsonld": 1
+          },
+          {
+            "slug": "ariana",
+            "was": "429",
+            "now": "resolved",
+            "pages": 4,
+            "playwright": 3
+          },
+          {
+            "slug": "roe",
+            "was": "429/js-shell",
+            "now": "resolved",
+            "pages": 3,
+            "note": "OpenTable link on site is /r/roe-seattle \u2014 confirm Bellingham vs Seattle live"
+          },
+          {
+            "slug": "the-best-sichuan",
+            "was": "408",
+            "now": "resolved",
+            "pages": 2,
+            "playwright": 1
+          },
+          {
+            "slug": "the-best-sichuan-39",
+            "was": "408",
+            "now": "resolved",
+            "pages": 2
+          }
+        ],
+        "remaining": [
+          {
+            "slug": "chet-s-dallas",
+            "class": "waf-403",
+            "detail": "Cloudflare 'Just a moment' interstitial. Do not stealth-bypass."
+          },
+          {
+            "slug": "the-hampton-social-dallas",
+            "class": "waf-403",
+            "detail": "Cloudflare 'Just a moment' interstitial. Same edge as Chet's. Do not stealth-bypass."
+          },
+          {
+            "slug": "atlanta-fish-market-atlanta",
+            "class": "stale-404",
+            "detail": "buckheadrestaurants.com/atlanta-fish-market returns 404. Parent group site 200. Dataset path is stale; do not invent a venue URL."
+          },
+          {
+            "slug": "boia-de-miami",
+            "class": "listing-url-dead",
+            "detail": "www.boiade.com NXDOMAIN. Apex boiade.com 302s to first-party https://www.boiaderestaurant.com/ (200). Dataset website field needs a human rewrite."
+          },
+          {
+            "slug": "the-dabney-washington",
+            "class": "tls-name",
+            "detail": "www.thedabney.com cert altname invalid. Apex https://thedabney.com/ is 200. Dataset www host is the blocker."
+          },
+          {
+            "slug": "welcome-diner-phoenix",
+            "class": "tls-expired",
+            "detail": "CERT_HAS_EXPIRED on welcomediner.com. Host resolves."
+          },
+          {
+            "slug": "spicy-king",
+            "class": "tls-handshake",
+            "detail": "TLSV1_ALERT_INTERNAL_ERROR on spicyking-sf.com. Host resolves."
+          },
+          {
+            "slug": "kalaya-philadelphia",
+            "class": "tls-chain",
+            "detail": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY on kalaya.com. Host resolves."
+          },
+          {
+            "slug": "hayakawa-atlanta",
+            "class": "nxdomain",
+            "detail": "hayakawa-atl.com and www both NXDOMAIN. Listing URL dead. Do not invent a replacement."
+          },
+          {
+            "slug": "ky-miami",
+            "class": "nxdomain",
+            "detail": "kyumiami.com has no address. Listing URL dead. Do not invent a replacement."
+          },
+          {
+            "slug": "pa-la-phoenix",
+            "class": "nxdomain",
+            "detail": "palavegan.com NXDOMAIN. Listing URL dead. Do not invent a replacement."
+          },
+          {
+            "slug": "mr-szechuan",
+            "class": "connect-timeout",
+            "detail": "mrszechuan.shop resolves (167.71.208.19) then UND_ERR_CONNECT_TIMEOUT."
+          },
+          {
+            "slug": "dizengoff-philadelphia",
+            "class": "connect-timeout",
+            "detail": "dizengoffhummus.com resolves then UND_ERR_CONNECT_TIMEOUT."
+          },
+          {
+            "slug": "no-9-park-boston",
+            "class": "connect-timeout",
+            "detail": "no9park.com resolves then UND_ERR_CONNECT_TIMEOUT."
+          }
+        ],
+        "noWebsiteUnchanged": [
+          "delicious-chengdu",
+          "chengdu-taste",
+          "di-an-pho"
+        ],
+        "codeFollowups": [
+          "classifyFetchError now surfaces cause codes; connect timeouts map to 408",
+          "matchStatus no longer inherits prior site-failure as this-run partial"
+        ],
+        "notDone": [
+          "Did not rewrite dataset.json websites",
+          "Did not bypass Cloudflare 403",
+          "Did not invent replacement URLs for NXDOMAIN listings"
+        ]
+      }
+    },
+    {
       "kind": "hygiene-owned",
       "startedAt": "2026-08-18T14:28:18.173Z",
       "finishedAt": "2026-08-18T14:29:58.973Z",
@@ -3458,7 +3809,7 @@
         "Vancouver, British Columbia",
         "Orcas Island, Washington",
         "San Juan Island, Washington",
-        "Coeur d’Alene, Idaho",
+        "Coeur d\u2019Alene, Idaho",
         "Whistler, British Columbia",
         "Sooke, British Columbia",
         "Ashland, Oregon"

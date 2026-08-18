@@ -18,6 +18,23 @@ const UA =
 const FETCH_TIMEOUT_MS = 20_000;
 export const TEXT_FLOOR = 400;
 
+/** Surface Node fetch cause codes. Connect timeouts become 408 so the limiter retries. */
+export function classifyFetchError(err) {
+  if (!err) return { status: 0, error: "fetch failed" };
+  if (err.name === "AbortError") return { status: 408, error: "timeout" };
+  const code = err.cause?.code || err.code || "";
+  const msg = String(err.message ?? err);
+  if (
+    code === "UND_ERR_CONNECT_TIMEOUT" ||
+    code === "UND_ERR_HEADERS_TIMEOUT" ||
+    code === "ETIMEDOUT"
+  ) {
+    return { status: 408, error: `timeout:${code}` };
+  }
+  const error = code && !String(msg).includes(code) ? `${msg}:${code}` : msg;
+  return { status: 0, error };
+}
+
 /** Shared limiter: one in-flight owned fetch, Retry-After honored. */
 export const siteLimiter = createLimiter({ minDelayMs: 400, maxRetries: 5 });
 
@@ -264,9 +281,8 @@ async function fetchOnce(url) {
       finalUrl: res.url || url,
     };
   } catch (err) {
-    const msg = err?.name === "AbortError" ? "timeout" : String(err?.message ?? err);
-    const status = msg === "timeout" ? 408 : 0;
-    return { ok: false, status, error: msg };
+    const classified = classifyFetchError(err);
+    return { ok: false, status: classified.status, error: classified.error };
   } finally {
     clearTimeout(timer);
   }
@@ -391,7 +407,7 @@ export async function fetchSitePages(siteUrl, pickPages) {
   const pages = [];
   const home = await fetchPage(siteUrl);
   if (!home.ok) {
-    return { pages, homeError: `${home.status || "err"} ${home.error || ""}`.trim() };
+    return { pages, homeError: `${home.status ?? "err"} ${home.error || ""}`.trim() };
   }
   pages.push({
     url: siteUrl,

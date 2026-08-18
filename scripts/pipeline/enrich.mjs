@@ -98,7 +98,7 @@ for (const record of batch) {
     ...(prior.google ? { google: prior.google } : {}),
     ...(prior.summary ? { summary: prior.summary } : {}),
     meta: {
-      matchStatus: prior.meta?.matchStatus ?? "site-only",
+      matchStatus: "site-only",
       confidence: prior.meta?.confidence ?? null,
       nameScore: prior.meta?.nameScore ?? null,
       lastEnrichedAt: retrievedAt,

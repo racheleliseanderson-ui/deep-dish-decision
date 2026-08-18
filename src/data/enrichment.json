@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T14:29:58.967Z",
+  "generatedAt": "2026-08-18T20:31:02.740Z",
   "records": {
     "canlis": {
       "google": {
@@ -2172,7 +2172,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:29:03.475Z",
+        "lastEnrichedAt": "2026-08-18T20:29:59.759Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -2186,6 +2186,7 @@
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
+        "jsonLdLanguage": [],
         "pagesRead": 4,
         "sourceUrls": [
           "https://www.arianarestaurantbend.com/",
@@ -2193,7 +2194,8 @@
           "https://www.arianarestaurantbend.com/menu/",
           "https://www.arianarestaurantbend.com/reservations/"
         ],
-        "retrievedAt": "2026-08-18T14:29:03.475Z"
+        "retrievedAt": "2026-08-18T20:29:59.759Z",
+        "playwrightPages": 3
       }
     },
     "gander-and-ryegrass": {
@@ -2342,7 +2344,7 @@
             "sourceUrl": "https://www.ganderandryegrass.com/events-1"
           },
           {
-            "quote": "With flexible private and semi-private dining options, we’re here to help you create a memorable event—rooted in the flavors of the Inland Northwest.",
+            "quote": "With flexible private and semi-private dining options, we\u2019re here to help you create a memorable event\u2014rooted in the flavors of the Inland Northwest.",
             "sourceUrl": "https://www.ganderandryegrass.com/events-1"
           }
         ],
@@ -2394,7 +2396,7 @@
         "address": {
           "streetNumber": "3593",
           "route": "Main Street",
-          "neighborhood": "Riley Park–Little Mountain",
+          "neighborhood": "Riley Park\u2013Little Mountain",
           "locality": "Vancouver",
           "county": "Metro Vancouver",
           "state": "British Columbia",
@@ -2540,7 +2542,7 @@
         "retrievedAt": "2026-08-10T21:36:33.397Z"
       },
       "summary": {
-        "text": "Published on Main is a restaurant located in Vancouver, British Columbia, in the Riley Park–Little Mountain neighborhood. It is categorized as a fine dining, seafood, and contemporary American restaurant with a price band of $$$$. The establishment serves dinner and dessert daily, offers a full bar, and provides amenities such as reservations, vegetarian options, and wheelchair accessibility.",
+        "text": "Published on Main is a restaurant located in Vancouver, British Columbia, in the Riley Park\u2013Little Mountain neighborhood. It is categorized as a fine dining, seafood, and contemporary American restaurant with a price band of $$$$. The establishment serves dinner and dessert daily, offers a full bar, and provides amenities such as reservations, vegetarian options, and wheelchair accessibility.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -2939,7 +2941,7 @@
     "marche": {
       "google": {
         "placeId": "ChIJubhuZBEewVQRaoyl6nchG8I",
-        "displayName": "Marché",
+        "displayName": "March\u00e9",
         "businessStatus": "OPERATIONAL",
         "formattedAddress": "296 E 5th Ave, Eugene, OR 97401, USA",
         "address": {
@@ -3095,7 +3097,7 @@
         "retrievedAt": "2026-08-10T21:35:04.512Z"
       },
       "summary": {
-        "text": "Marché is a French restaurant located in the Market District of Eugene, Oregon, with a 4.3 rating from 1065 reviews. It offers breakfast/brunch, French, and seasonal/market cuisine, with amenities including outdoor seating, reservations, takeout, and options for groups and children. The restaurant is open seven days a week and provides wheelchair accessible parking, entrance, restroom, and seating.",
+        "text": "March\u00e9 is a French restaurant located in the Market District of Eugene, Oregon, with a 4.3 rating from 1065 reviews. It offers breakfast/brunch, French, and seasonal/market cuisine, with amenities including outdoor seating, reservations, takeout, and options for groups and children. The restaurant is open seven days a week and provides wheelchair accessible parking, entrance, restroom, and seating.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -3452,12 +3454,34 @@
         "generatedAt": "2026-08-10T21:35:39.722Z"
       },
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:29:04.999Z",
+        "lastEnrichedAt": "2026-08-18T20:30:09.163Z",
         "enrichmentMode": "owned-site",
-        "completeness": 83
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://eatroe.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/roe-seattle",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "20% gratuity will be added to parties of 6 or more",
+        "groupPolicyLanguage": [
+          "20% gratuity will be added to parties of 6 or more"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://eatroe.com/",
+          "https://eatroe.com/menu",
+          "https://eatroe.com/about"
+        ],
+        "retrievedAt": "2026-08-18T20:30:09.163Z",
+        "playwrightPages": 0
       }
     },
     "part-parcel": {
@@ -5216,7 +5240,7 @@
         "retrievedAt": "2026-08-10T21:38:05.173Z"
       },
       "summary": {
-        "text": "Beverly’s is a restaurant in Coeur d'Alene, Idaho, offering fine dining, Pacific Northwest, seafood, and seasonal/market options, alongside cocktail/lounge service. It has a price band of $$$ and a rating of 4.5 based on 1257 reviews. The establishment serves seven days a week, provides amenities such as reservations, takeout, and dine-in, and is wheelchair accessible.",
+        "text": "Beverly\u2019s is a restaurant in Coeur d'Alene, Idaho, offering fine dining, Pacific Northwest, seafood, and seasonal/market options, alongside cocktail/lounge service. It has a price band of $$$ and a rating of 4.5 based on 1257 reviews. The establishment serves seven days a week, provides amenities such as reservations, takeout, and dine-in, and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -6077,11 +6101,11 @@
         "dietaryLanguage": [],
         "accessibilityLanguage": [
           {
-            "quote": "Guests can enjoy free parking, ADA-accessible accommodations, and the warm Northwest hospitality Anthony’s is known for.",
+            "quote": "Guests can enjoy free parking, ADA-accessible accommodations, and the warm Northwest hospitality Anthony\u2019s is known for.",
             "sourceUrl": "https://anthonys.com/private-dining/"
           },
           {
-            "quote": "Guests can enjoy fresh Northwest seafood, hand-cut steaks, curated group menus, kid-friendly options, ADA-accessible spaces, and free parking - all paired with the warm hospitality Anthony’s is known for.",
+            "quote": "Guests can enjoy fresh Northwest seafood, hand-cut steaks, curated group menus, kid-friendly options, ADA-accessible spaces, and free parking - all paired with the warm hospitality Anthony\u2019s is known for.",
             "sourceUrl": "https://anthonys.com/private-dining/"
           }
         ],
@@ -6114,7 +6138,7 @@
         "retrievedAt": "2026-08-10T21:39:18.330Z"
       },
       "summary": {
-        "text": "Anthony’s at Columbia Point is a restaurant in Richland, Washington, with a 4.5 rating from 2427 reviews and a price band of $$. It offers Pacific Northwest, Seafood, Seasonal/market, Steak/grill, and Wine-forward cuisine, along with amenities like outdoor seating, reservations, delivery, takeout, and wheelchair accessibility. The establishment serves seven days a week and provides waterfront private dining for groups.",
+        "text": "Anthony\u2019s at Columbia Point is a restaurant in Richland, Washington, with a 4.5 rating from 2427 reviews and a price band of $$. It offers Pacific Northwest, Seafood, Seasonal/market, Steak/grill, and Wine-forward cuisine, along with amenities like outdoor seating, reservations, delivery, takeout, and wheelchair accessibility. The establishment serves seven days a week and provides waterfront private dining for groups.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -6457,7 +6481,7 @@
         "retrievedAt": "2026-08-10T21:40:48.938Z"
       },
       "summary": {
-        "text": "Lucca’s is an Italian restaurant located in Helena, Montana, with a 4.7 rating from 479 reviews. It offers Eastern European, Fine dining, Italian, Seasonal / market, and Wine-forward cuisine, with amenities including reservations, takeout, dine-in, and alcoholic beverages. The restaurant is wheelchair accessible and serves dinner five days a week.",
+        "text": "Lucca\u2019s is an Italian restaurant located in Helena, Montana, with a 4.7 rating from 479 reviews. It offers Eastern European, Fine dining, Italian, Seasonal / market, and Wine-forward cuisine, with amenities including reservations, takeout, dine-in, and alcoholic beverages. The restaurant is wheelchair accessible and serves dinner five days a week.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -6641,7 +6665,7 @@
             "sourceUrl": "https://nhten.com/"
           },
           {
-            "quote": "If you’re searching for private dining near me, then give us a call.",
+            "quote": "If you\u2019re searching for private dining near me, then give us a call.",
             "sourceUrl": "https://nhten.com/"
           },
           {
@@ -8106,7 +8130,7 @@
             "sourceUrl": "https://www.auchevaldiner.com/nyc/menus"
           },
           {
-            "quote": "Gluten-Free Amber Ale Green’s Brewery",
+            "quote": "Gluten-Free Amber Ale Green\u2019s Brewery",
             "sourceUrl": "https://www.auchevaldiner.com/nyc/menus"
           },
           {
@@ -8499,7 +8523,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:51.817Z",
+        "lastEnrichedAt": "2026-08-18T20:29:51.694Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -8513,12 +8537,14 @@
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
+        "jsonLdLanguage": [],
         "pagesRead": 2,
         "sourceUrls": [
           "https://thesmithrestaurant.com/location/nomad/",
           "https://thesmithrestaurant.com/about/"
         ],
-        "retrievedAt": "2026-08-18T14:28:51.817Z"
+        "retrievedAt": "2026-08-18T20:29:51.694Z",
+        "playwrightPages": 2
       }
     },
     "buddakan": {
@@ -9816,18 +9842,47 @@
         "generatedAt": "2026-08-10T23:07:52.162Z"
       },
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:52.582Z",
+        "lastEnrichedAt": "2026-08-18T20:29:57.876Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "http://perchla.com/menu-gallery",
+        "reservationUrl": "https://www.opentable.com/restref/client/?color=1&amp;corrid=344d7c95-17a2-4664-8e8d-a13d289e5f30&amp;datetime=2023-12-05T20%3A00&amp;lang=en-US&amp;partysize=2&amp;r3uid=h63ykElBDB&amp;restref=67720&amp;rid=67720",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Perch 16th Floor rooftop Skydeck private event seated dinner",
+        "groupPolicyLanguage": [
+          "Perch 16th Floor rooftop Skydeck private event seated dinner",
+          "Tables and Private Dining",
+          "The restaurant charges a 20% automatic gratuity on all food and beverage items for large parties of 8 or more."
+        ],
+        "dressCode": "Our dress code is Upscale/Casual preferred.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 16:00-01:00, Tu 16:00-01:00, We 16:00-01:00, Th 16:00-01:00, Fr 16:00-01:30, Sa 10:00-01:30, Su 10:00-01:00",
+            "sourceUrl": "http://perchla.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "http://perchla.com/",
+          "http://perchla.com/reservations",
+          "http://perchla.com/menu-gallery"
+        ],
+        "retrievedAt": "2026-08-18T20:29:57.876Z",
+        "playwrightPages": 0
       }
     },
     "re-publique": {
       "google": {
         "placeId": "ChIJqaA5zt-4woARHGIEp3XlsZo",
-        "displayName": "République",
+        "displayName": "R\u00e9publique",
         "businessStatus": "OPERATIONAL",
         "formattedAddress": "624 S La Brea Ave, Los Angeles, CA 90036, USA",
         "address": {
@@ -10007,7 +10062,7 @@
         "retrievedAt": "2026-08-10T23:07:52.162Z"
       },
       "summary": {
-        "text": "République is a French restaurant located in Central LA, California, with a price band of $$. It has a rating of 4.5 based on 7306 reviews and offers amenities such as outdoor seating, reservations via Toast, delivery, and takeout. The restaurant is open seven days a week and is wheelchair accessible.",
+        "text": "R\u00e9publique is a French restaurant located in Central LA, California, with a price band of $$. It has a rating of 4.5 based on 7306 reviews and offers amenities such as outdoor seating, reservations via Toast, delivery, and takeout. The restaurant is open seven days a week and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -10781,7 +10836,7 @@
     "e-lephante": {
       "google": {
         "placeId": "ChIJ0YbI98-kwoARR9xzsPQ28cE",
-        "displayName": "Élephante",
+        "displayName": "\u00c9lephante",
         "businessStatus": "OPERATIONAL",
         "formattedAddress": "1332 2nd St Rooftop, Santa Monica, CA 90401, USA",
         "address": {
@@ -10951,7 +11006,7 @@
         "retrievedAt": "2026-08-10T23:08:33.978Z"
       },
       "summary": {
-        "text": "Élephante is an Italian restaurant located in Santa Monica, California, with a price band of $$$. It has a rating of 4.3 based on 3326 reviews and serves food seven days a week. The restaurant offers amenities such as outdoor seating, delivery, takeout, and is reservable via OpenTable.",
+        "text": "\u00c9lephante is an Italian restaurant located in Santa Monica, California, with a price band of $$$. It has a rating of 4.3 based on 3326 reviews and serves food seven days a week. The restaurant offers amenities such as outdoor seating, delivery, takeout, and is reservable via OpenTable.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -11934,7 +11989,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:29.210Z",
+        "lastEnrichedAt": "2026-08-18T20:29:50.679Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -11948,11 +12003,13 @@
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
+        "jsonLdLanguage": [],
         "pagesRead": 1,
         "sourceUrls": [
           "https://www.summerhouserestaurants.com/?utm_source=google&utm_medium=social&utm_campaign=SHSMLP-GBiz"
         ],
-        "retrievedAt": "2026-08-18T14:28:29.210Z"
+        "retrievedAt": "2026-08-18T20:29:50.679Z",
+        "playwrightPages": 0
       }
     },
     "the-purple-pig-restaurant": {
@@ -12102,7 +12159,7 @@
         "reservationPlatform": "SevenRooms",
         "dietaryLanguage": [
           {
-            "quote": "We’ll tailor courses to your group and budget, including vegetarian and dietary accommodations.",
+            "quote": "We\u2019ll tailor courses to your group and budget, including vegetarian and dietary accommodations.",
             "sourceUrl": "https://thepurplepigrestaurantgroup.com/private-dining/private-dining-chicago/"
           }
         ],
@@ -12118,7 +12175,7 @@
             "sourceUrl": "https://thepurplepigrestaurantgroup.com/"
           },
           {
-            "quote": "Private dining shaped around Michigan Avenue’s signature seasonal menu, hosted by a team that handles every detail.",
+            "quote": "Private dining shaped around Michigan Avenue\u2019s signature seasonal menu, hosted by a team that handles every detail.",
             "sourceUrl": "https://thepurplepigrestaurantgroup.com/private-dining/private-dining-chicago/"
           }
         ],
@@ -13264,7 +13321,7 @@
             "sourceUrl": "http://www.ilovemole.com/"
           },
           {
-            "quote": "- Two cookbooks from our family: OAXACA (2019) and ASADA — a New York Times best cookbook of 2023",
+            "quote": "- Two cookbooks from our family: OAXACA (2019) and ASADA \u2014 a New York Times best cookbook of 2023",
             "sourceUrl": "https://www.ilovemole.com/pages/about"
           }
         ],
@@ -13491,7 +13548,7 @@
     "sabores-oaxaquen-os-restaurant": {
       "google": {
         "placeId": "ChIJW3QNmoG4woARMfBPIaDF3II",
-        "displayName": "Sabores Oaxaqueños Restaurant",
+        "displayName": "Sabores Oaxaque\u00f1os Restaurant",
         "businessStatus": "OPERATIONAL",
         "formattedAddress": "3337 1/2 W 8th St, Los Angeles, CA 90005, USA",
         "address": {
@@ -13631,7 +13688,7 @@
             "sourceUrl": "https://misaboresoaxaquenos.com/menu"
           },
           {
-            "quote": "Enchiladas Oaxaqueñas Vegetariano \\\\",
+            "quote": "Enchiladas Oaxaque\u00f1as Vegetariano \\\\",
             "sourceUrl": "https://misaboresoaxaquenos.com/menu"
           },
           {
@@ -13656,7 +13713,7 @@
         "retrievedAt": "2026-08-10T23:59:25.499Z"
       },
       "summary": {
-        "text": "Sabores Oaxaqueños Restaurant is a Mexican restaurant located in Koreatown, Los Angeles, California. It has a rating of 4.3 based on 1520 reviews and a price band of $$. The restaurant offers dine-in, delivery, and takeout services, is reservable, and provides options for groups and children, including vegetarian dishes.",
+        "text": "Sabores Oaxaque\u00f1os Restaurant is a Mexican restaurant located in Koreatown, Los Angeles, California. It has a rating of 4.3 based on 1520 reviews and a price band of $$. The restaurant offers dine-in, delivery, and takeout services, is reservable, and provides options for groups and children, including vegetarian dishes.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -14928,7 +14985,7 @@
     "the-best-sichuan-39": {
       "google": {
         "placeId": "ChIJSzY_qqtZwokRiLyLL2_upv0",
-        "displayName": "The Best Sichuan 39 一品成都",
+        "displayName": "The Best Sichuan 39 \u4e00\u54c1\u6210\u90fd",
         "businessStatus": "OPERATIONAL",
         "formattedAddress": "47 W 39th St, New York, NY 10018, USA",
         "address": {
@@ -15064,7 +15121,7 @@
         "retrievedAt": "2026-08-11T00:03:05.631Z"
       },
       "summary": {
-        "text": "The Best Sichuan 39 一品成都 is a Chinese restaurant located in New York, New York. It has a rating of 4.7 from 3717 reviews and a price band of $$. The restaurant offers delivery, takeout, and dine-in, and is wheelchair accessible.",
+        "text": "The Best Sichuan 39 \u4e00\u54c1\u6210\u90fd is a Chinese restaurant located in New York, New York. It has a rating of 4.7 from 3717 reviews and a price band of $$. The restaurant offers delivery, takeout, and dine-in, and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -15082,12 +15139,31 @@
         "generatedAt": "2026-08-11T00:03:40.315Z"
       },
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:40.924Z",
+        "lastEnrichedAt": "2026-08-18T20:30:27.302Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "http://www.bestsichuan.com/",
+          "https://www.bestsichuan.com/about/"
+        ],
+        "retrievedAt": "2026-08-18T20:30:27.302Z",
+        "playwrightPages": 0
       }
     },
     "the-best-sichuan": {
@@ -15240,18 +15316,37 @@
         "generatedAt": "2026-08-11T00:04:17.402Z"
       },
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:30.439Z",
+        "lastEnrichedAt": "2026-08-18T20:30:24.099Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.mala747.com/",
+          "https://www.mala747.com/contact-us/"
+        ],
+        "retrievedAt": "2026-08-18T20:30:24.099Z",
+        "playwrightPages": 1
       }
     },
     "the-best-sichuan-21": {
       "google": {
         "placeId": "ChIJX68xNnhZwokRbktHVFdiUKo",
-        "displayName": "The Best Sichuan 21 一品成都",
+        "displayName": "The Best Sichuan 21 \u4e00\u54c1\u6210\u90fd",
         "businessStatus": "OPERATIONAL",
         "formattedAddress": "22 E 21st St, New York, NY 10010, USA",
         "address": {
@@ -15403,7 +15498,7 @@
         "retrievedAt": "2026-08-11T00:04:17.403Z"
       },
       "summary": {
-        "text": "The Best Sichuan 21 一品成都 is a Chinese restaurant located in New York, New York. It offers dine-in, takeout, and delivery services, with amenities including reservations, vegetarian options, and alcoholic beverages. The restaurant is wheelchair accessible and has a 4.9-star rating from 2802 reviews, operating seven days a week.\"",
+        "text": "The Best Sichuan 21 \u4e00\u54c1\u6210\u90fd is a Chinese restaurant located in New York, New York. It offers dine-in, takeout, and delivery services, with amenities including reservations, vegetarian options, and alcoholic beverages. The restaurant is wheelchair accessible and has a 4.9-star rating from 2802 reviews, operating seven days a week.\"",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -17795,7 +17890,7 @@
     "triple-pepper-river-oaks": {
       "google": {
         "placeId": "ChIJbY764vjBQIYRfMk0y-IETkA",
-        "displayName": "Triple Pepper 川三椒 River Oaks",
+        "displayName": "Triple Pepper \u5ddd\u4e09\u6912 River Oaks",
         "businessStatus": "OPERATIONAL",
         "formattedAddress": "1915 W Gray St Ste A, Houston, TX 77019, USA",
         "address": {
@@ -17932,7 +18027,7 @@
         "reservationPlatform": "",
         "dietaryLanguage": [
           {
-            "quote": "vegan options are great, i love the mapo tofu :) i’ve been here several times just to get that",
+            "quote": "vegan options are great, i love the mapo tofu :) i\u2019ve been here several times just to get that",
             "sourceUrl": "https://triplepeppertx.com/river-oaks/"
           }
         ],
@@ -17948,7 +18043,7 @@
         "retrievedAt": "2026-08-11T00:07:45.740Z"
       },
       "summary": {
-        "text": "Triple Pepper 川三椒 River Oaks is a Chinese restaurant located in Houston, Texas, in the Hyde Park neighborhood. It has a rating of 4.8 based on 558 reviews and is priced in the $$ range. The restaurant offers delivery, takeout, dine-in, and curbside pickup, with amenities including wheelchair accessibility and options for vegetarian food, beer, and wine.",
+        "text": "Triple Pepper \u5ddd\u4e09\u6912 River Oaks is a Chinese restaurant located in Houston, Texas, in the Hyde Park neighborhood. It has a rating of 4.8 based on 558 reviews and is priced in the $$ range. The restaurant offers delivery, takeout, dine-in, and curbside pickup, with amenities including wheelchair accessibility and options for vegetarian food, beer, and wine.",
         "model": "google/gemini-2.5-flash",
         "basedOnFields": [
           "name",
@@ -19717,7 +19812,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:28.694Z",
+        "lastEnrichedAt": "2026-08-18T20:30:22.232Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20253,7 +20348,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:18.174Z",
+        "lastEnrichedAt": "2026-08-18T20:30:10.936Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20444,7 +20539,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:57.705Z",
+        "lastEnrichedAt": "2026-08-18T20:31:01.065Z",
         "enrichmentMode": "owned-site",
         "completeness": 33
       }
@@ -20566,7 +20661,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:15.490Z",
+        "lastEnrichedAt": "2026-08-18T20:30:28.712Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20633,7 +20728,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:16.050Z",
+        "lastEnrichedAt": "2026-08-18T20:30:29.536Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20809,9 +20904,9 @@
         "reservationPlatform": "Toast",
         "dietaryLanguage": [
           "Can be made vegan upon request",
-          "A chef’s selection of 8 dishes, including: 1 beef, 1 chicken, 1 lamb, 1 seafood, and 4 vegetarian portions.",
+          "A chef\u2019s selection of 8 dishes, including: 1 beef, 1 chicken, 1 lamb, 1 seafood, and 4 vegetarian portions.",
           "VEGETARIAN MESSOB (SERVES 2)",
-          "From the Amharic word meaning “Many Kinds” the Vegetable Bayanetu is a platter made up of the first 9 of our vegetarian dishes – it’s the perfect way to try a bit of everything."
+          "From the Amharic word meaning \u201cMany Kinds\u201d the Vegetable Bayanetu is a platter made up of the first 9 of our vegetarian dishes \u2013 it\u2019s the perfect way to try a bit of everything."
         ],
         "accessibilityLanguage": [],
         "groupPolicy": "For parties of 3 or more only.",
@@ -20835,7 +20930,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:16.646Z",
+        "lastEnrichedAt": "2026-08-18T20:30:30.370Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20855,11 +20950,11 @@
         "reservationPlatform": "",
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
-        "groupPolicy": "Whether you are joining us for a special celebration, a private event , a memorable night out, or simply one of the best steaks in Phoenix, Durant’s menu offers a dining experience rooted in tradition, flavor, and timeless steakhouse hospitality.",
+        "groupPolicy": "Whether you are joining us for a special celebration, a private event , a memorable night out, or simply one of the best steaks in Phoenix, Durant\u2019s menu offers a dining experience rooted in tradition, flavor, and timeless steakhouse hospitality.",
         "groupPolicyLanguage": [
-          "Whether you are joining us for a special celebration, a private event , a memorable night out, or simply one of the best steaks in Phoenix, Durant’s menu offers a dining experience rooted in tradition, flavor, and timeless steakhouse hospitality.",
+          "Whether you are joining us for a special celebration, a private event , a memorable night out, or simply one of the best steaks in Phoenix, Durant\u2019s menu offers a dining experience rooted in tradition, flavor, and timeless steakhouse hospitality.",
           "Private Dining & Event Spaces in Phoenix",
-          "Whether you’re planning a corporate dinner, milestone celebration, or private party, Durant’s combines legendary hospitality with timeless ambiance, making it one of the top steakhouses with private rooms in Phoenix.",
+          "Whether you\u2019re planning a corporate dinner, milestone celebration, or private party, Durant\u2019s combines legendary hospitality with timeless ambiance, making it one of the top steakhouses with private rooms in Phoenix.",
           "Private Event Software powered by"
         ],
         "dressCode": "Fine Dining Dress Code Policy",
@@ -21245,7 +21340,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:27.538Z",
+        "lastEnrichedAt": "2026-08-18T20:30:41.665Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21335,7 +21430,7 @@
         "reservationUrl": "",
         "reservationPlatform": "",
         "dietaryLanguage": [
-          "上素斎餃 Vegetarian Dumplings",
+          "\u4e0a\u7d20\u658e\u9903 Vegetarian Dumplings",
           "Our new vegetarian noodle roll.",
           "Please let us know if you have a peanut allergy, it can be left out."
         ],
@@ -21570,7 +21665,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:27.984Z",
+        "lastEnrichedAt": "2026-08-18T20:30:42.478Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21665,7 +21760,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:29.009Z",
+        "lastEnrichedAt": "2026-08-18T20:30:43.313Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21714,7 +21809,7 @@
         "reservationPlatform": "",
         "dietaryLanguage": [
           "A multi-course Vegetarian Menu is available upon request.",
-          "​ As always, we do our best to accommodate any allergies or dietary restrictions.",
+          "\u200b As always, we do our best to accommodate any allergies or dietary restrictions.",
           "Please let us know as soon as possible if there are any allergies or dietary restrictions so that we may prepare substitutions.",
           "Diners with severe sensitivities to allium or dairy, and vegan diners may not be able to partake in the tasting due to the nature of the season's menu."
         ],
@@ -21752,7 +21847,7 @@
         "reservationUrl": "https://www.toasttab.com/little-donkey/giftcards",
         "reservationPlatform": "Toast",
         "dietaryLanguage": [
-          "With a full raw bar, vegan, vegetarian and gluten-free options, we’ve truly got something for everyone.",
+          "With a full raw bar, vegan, vegetarian and gluten-free options, we\u2019ve truly got something for everyone.",
           "GF = gluten-free V = vegetarian VG = vegan",
           "Please let your server know if you have allergies or dietary restrictions, as a number of our dishes can be modified to meet your needs."
         ],
@@ -22152,7 +22247,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:39.428Z",
+        "lastEnrichedAt": "2026-08-18T20:30:44.161Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22212,7 +22307,7 @@
         "reservationUrl": "https://resy.com/cities/bos/oleana",
         "reservationPlatform": "Resy",
         "dietaryLanguage": [
-          "Grapefruit IPA (Gluten Free!) , Ghostfish ‘Grapefruit IPA,’ Seattle, WA"
+          "Grapefruit IPA (Gluten Free!) , Ghostfish \u2018Grapefruit IPA,\u2019 Seattle, WA"
         ],
         "accessibilityLanguage": [],
         "groupPolicy": "For questions about making a reservation for parties of 1-6 guests, please call our host team any day after 3pm at 617-661-0505.",
@@ -22267,7 +22362,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:50.322Z",
+        "lastEnrichedAt": "2026-08-18T20:30:55.458Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22323,9 +22418,9 @@
         "groupPolicy": "Private Dining Bar 79 &reg;",
         "groupPolicyLanguage": [
           "Private Dining Bar 79 &reg;",
-          "Ascend the stunning staircase wrapping the 30-foot-high wine tower to find an expansive main dining room with four private dining rooms — a perfect spot to enjoy Perry’s award-winning menu.",
+          "Ascend the stunning staircase wrapping the 30-foot-high wine tower to find an expansive main dining room with four private dining rooms \u2014 a perfect spot to enjoy Perry\u2019s award-winning menu.",
           "Park District Semi-Private Dining in Upstairs Bar",
-          "Perry’s offers the most unique private dining experience for your most important business and personal moments."
+          "Perry\u2019s offers the most unique private dining experience for your most important business and personal moments."
         ],
         "dressCode": "Dinner Dress Code Policy",
         "cancellationLanguage": [],
@@ -22448,7 +22543,7 @@
         "reservationUrl": "https://www.opentable.com/r/siena-tavern-reservations-chicago?restref=101668&lang=en-US&ot_source=Restaurant%20website&ot_campaign=Daily%20Reservations",
         "reservationPlatform": "OpenTable",
         "dietaryLanguage": [
-          "Made from scratch daily • Gluten free pasta available"
+          "Made from scratch daily \u2022 Gluten free pasta available"
         ],
         "accessibilityLanguage": [],
         "groupPolicy": "From executive dinners and full venue buyouts to curated celebrations and off-premise catering, our dedicated events team delivers a seamless, tailored experience worthy of every occasion.",
@@ -22578,7 +22673,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:51.465Z",
+        "lastEnrichedAt": "2026-08-18T20:30:57.144Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22631,7 +22726,7 @@
           "Where can I find Portillo's nutritional and allergen information?",
           "Does Portillo's offer a gluten-free menu?",
           "Does Portillo's have a vegan menu or vegetarian options?",
-          "What is the Portillo's Garden Dog®, and is it vegan?"
+          "What is the Portillo's Garden Dog\u00ae, and is it vegan?"
         ],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -22750,7 +22845,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:50.837Z",
+        "lastEnrichedAt": "2026-08-18T20:30:56.277Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22974,7 +23069,7 @@
         "reservationUrl": "https://www.opentable.com/r/vetri-reservations-philadelphia?restref=2575&lang=en-US&ot_source=Restaurant%20website",
         "reservationPlatform": "OpenTable",
         "dietaryLanguage": [
-          "While you enjoy, a server presents the evening’s menu, allowing you to share your dietary restrictions.",
+          "While you enjoy, a server presents the evening\u2019s menu, allowing you to share your dietary restrictions.",
           "Menus are developed prior to the event with preferences, dietary restrictions and food allergies in mind."
         ],
         "accessibilityLanguage": [],
@@ -22982,7 +23077,7 @@
         "groupPolicyLanguage": [
           "For Private Dining and Event inquires, please contact [email protected]",
           "In the spring of 2014, Vetri Cucina introduced a private dining room.",
-          "The private dining room is available for a variety of gatherings, including chef’s counter experiences and seated dinners.",
+          "The private dining room is available for a variety of gatherings, including chef\u2019s counter experiences and seated dinners.",
           "Seated dinners in our private dining room are memorable affairs."
         ],
         "dressCode": "No formal dress code required",
@@ -23190,7 +23285,7 @@
         "groupPolicyLanguage": [
           "Private dining spaces offer an ideal setting for everything from celebrations to business dinners, all in a space that feels equal parts polished and welcoming.",
           "Over the years, The Gladly has become a place where business deals are made over lunch, where friends gather for happy hour, where whiskey enthusiasts find rare pours, and where milestones are celebrated in beautifully hosted private events.",
-          "Beyond everyday dining, The Gladly has also become one of Phoenix’s most sought-after venues for private dining and events.",
+          "Beyond everyday dining, The Gladly has also become one of Phoenix\u2019s most sought-after venues for private dining and events.",
           "Does The Gladly have private event spaces?"
         ],
         "dressCode": "",
@@ -23297,7 +23392,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:51.992Z",
+        "lastEnrichedAt": "2026-08-18T20:30:58.021Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -23417,7 +23512,7 @@
           "However, we recognize the controversies and the potential health risks, including: allergies, antibiotic resistance, and unknown effects."
         ],
         "accessibilityLanguage": [
-          "2024 RAVENTÓS, BLANC DE BLANC (MACABEU, XAREL·LO, PARELLADA)"
+          "2024 RAVENT\u00d3S, BLANC DE BLANC (MACABEU, XAREL\u00b7LO, PARELLADA)"
         ],
         "groupPolicy": "PRIVATE Events & Catering",
         "groupPolicyLanguage": [
