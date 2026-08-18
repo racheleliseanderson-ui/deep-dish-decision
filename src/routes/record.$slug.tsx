@@ -1,6 +1,6 @@
 import { Chip, Eyebrow, Rule } from "@/components/rih/bits";
 import { DecisionBrief } from "@/components/rih/decision-brief";
-import { LayerStack } from "@/components/rih/findings";
+import { FindingsStack } from "@/components/rih/findings";
 import { Reveal } from "@/components/rih/reveal";
 import { SiteNav } from "@/components/rih/site-nav";
 import { bySlug, type RestaurantRecord } from "@/lib/dataset";
@@ -160,7 +160,7 @@ function Dossier() {
           <Eyebrow>Findings</Eyebrow>
           <h2 className="mt-2 font-display text-2xl tracking-tight">Against this situation</h2>
           <div className="mt-5">
-            <LayerStack findings={sc.findings} />
+            <FindingsStack findings={sc.findings} />
           </div>
         </Reveal>
 
