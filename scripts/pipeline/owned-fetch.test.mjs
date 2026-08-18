@@ -12,6 +12,11 @@ import {
   parseHtmlDocument,
   shouldRenderPlaywright,
   classifyFetchError,
+  extractUsefulNoscript,
+  pageMetaQuotes,
+  extractHydrationBlocks,
+  flattenHydration,
+  pickContentRegion,
   TEXT_FLOOR,
 } from "./own-fetch.mjs";
 import { extractFromSite } from "./site.mjs";
@@ -31,6 +36,8 @@ const RESTAURANT_LD = {
 const SHELL_HTML = `<!doctype html><html><body><div id="root"></div>
 <script type="application/ld+json">${JSON.stringify(RESTAURANT_LD)}</script>
 <script>window.__APP=1</script></body></html>`;
+
+const LONG_COPY = `Reserve a table for dinner tonight at the bar. Walk-ins are welcome after eight. ${"Seasonal cooking from the market. ".repeat(20)}`;
 
 describe("JSON-LD before script strip", () => {
   it("extracts application/ld+json before tags are thrown away", () => {
@@ -88,6 +95,7 @@ describe("extractFromSite quotes-only JSON-LD", () => {
           markdown: parsed.text,
           links: parsed.links,
           jsonLdQuotes: parsed.jsonLdQuotes,
+          pageQuotes: parsed.pageQuotes,
         },
       ],
       "2026-08-18T00:00:00Z",
@@ -162,6 +170,17 @@ describe("Playwright gate", () => {
     ).toBe(false);
   });
 
+  it("does not render when hydration is already rich", () => {
+    expect(
+      shouldRenderPlaywright({
+        status: 200,
+        textLength: 12,
+        jsonLd: [],
+        hydrationRich: true,
+      }),
+    ).toBe(false);
+  });
+
   it("does not render on non-200", () => {
     expect(shouldRenderPlaywright({ status: 403, textLength: 10, jsonLd: [] })).toBe(false);
   });
@@ -195,5 +214,88 @@ describe("classifyFetchError", () => {
     expect(
       classifyFetchError({ name: "TypeError", message: "fetch failed", cause: { code: "CERT_HAS_EXPIRED" } }),
     ).toEqual({ status: 0, error: "fetch failed:CERT_HAS_EXPIRED" });
+  });
+});
+
+describe("false-shell region picker", () => {
+  it("keeps a long [role=main] even when the first child is a short heading", () => {
+    const html = `<body><div role="main"><h1>NoMad</h1><p>${LONG_COPY}</p></div></body>`;
+    const region = pickContentRegion(html);
+    expect(region).toMatch(/Seasonal cooking/);
+    expect(region).not.toBe("NoMad");
+  });
+
+  it("falls back to body when [role=main] is only a title", () => {
+    const html = `<body><div role="main"><h1>Info</h1></div><p>${LONG_COPY}</p></body>`;
+    const region = pickContentRegion(html);
+    expect(region).toMatch(/Seasonal cooking/);
+    const parsed = parseHtmlDocument(
+      `<html>${html}</html>`,
+      "https://example.com/info/",
+    );
+    expect(parsed.text.length).toBeGreaterThan(TEXT_FLOOR);
+    expect(
+      shouldRenderPlaywright({
+        status: 200,
+        textLength: parsed.text.length,
+        jsonLd: parsed.jsonLd,
+        hydrationRich: parsed.hydrationRich,
+      }),
+    ).toBe(false);
+  });
+});
+
+describe("noscript + meta + hydration quotes", () => {
+  it("keeps useful noscript and drops Cloudflare enable-JS stubs", () => {
+    const useful = extractUsefulNoscript(
+      `<noscript><p>Hours: Wednesday through Saturday 5pm to 10pm. Vegetarian tasting available.</p></noscript>`,
+    );
+    expect(useful.join(" ")).toMatch(/Wednesday through Saturday/);
+    const stub = extractUsefulNoscript(`<noscript>Enable JavaScript and cookies to continue</noscript>`);
+    expect(stub).toEqual([]);
+  });
+
+  it("quotes og:description and ignores wp-emoji JSON", () => {
+    const html = `<html><head>
+      <title>Roe | Elevated Comfort Food</title>
+      <meta property="og:description" content="Roe is a Bellingham restaurant serving elevated comfort dishes with dinner-party vibes.">
+      </head><body><p>Hi</p>
+      <script id="wp-emoji-settings" type="application/json">{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/"}</script>
+      </body></html>`;
+    const meta = pageMetaQuotes(html, "https://eatroe.com/");
+    expect(meta.some((q) => q.kind === "og" && /dinner-party/i.test(q.quote))).toBe(true);
+    expect(flattenHydration(extractHydrationBlocks(html))).toEqual([]);
+  });
+
+  it("quotes venue facts from __NEXT_DATA__ and does not treat them as access language", () => {
+    const html = `<html><body><div id="root"></div>
+      <script id="__NEXT_DATA__" type="application/json">${JSON.stringify({
+        props: {
+          pageProps: {
+            venue: {
+              "@type": "Restaurant",
+              telephone: "+1-212-555-0199",
+              openingHours: "We-Sa 17:00-22:00",
+            },
+          },
+        },
+      })}</script></body></html>`;
+    const parsed = parseHtmlDocument(html, "https://example.com/");
+    expect(parsed.hydrationRich).toBe(true);
+    expect(parsed.pageQuotes.some((q) => /hydration telephone/i.test(q.quote))).toBe(true);
+    const site = extractFromSite(
+      [
+        {
+          url: "https://example.com/",
+          markdown: parsed.text,
+          links: parsed.links,
+          jsonLdQuotes: parsed.jsonLdQuotes,
+          pageQuotes: parsed.pageQuotes,
+        },
+      ],
+      "2026-08-18T00:00:00Z",
+    );
+    expect(site.jsonLdLanguage.some((q) => /hydration telephone/i.test(q.quote))).toBe(true);
+    expect(site.accessibilityLanguage).toEqual([]);
   });
 });
