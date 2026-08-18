@@ -1,7 +1,50 @@
 import { Chip, Eyebrow, Meter } from "@/components/rih/bits";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import type { RestaurantRecord } from "@/lib/dataset";
 import { decisionBrief, type Scored, type Situation } from "@/lib/intelligence";
 import { cn } from "@/lib/utils";
+
+const OPEN = /^(unstated|not stated|unknown|—|-|none)$/i;
+
+function isOpenValue(value: string): boolean {
+  const t = value.trim();
+  return !t || OPEN.test(t);
+}
+
+/** First-party menu architecture only — never invents a format. */
+function architectureLine(r: RestaurantRecord): string {
+  const blob = [r.menuSummary, r.serviceSummary, r.beverageDetails].filter(Boolean).join(" · ");
+  const hits: string[] = [];
+  if (/tasting|prix fixe|six-course|multi-course|chef'?s menu|format lock/i.test(blob)) {
+    hits.push("Tasting / format lock");
+  }
+  if (/small plates|shared|family.?style|snacks|communal/i.test(blob)) {
+    hits.push("Small plates / shared");
+  }
+  if (/a la carte|à la carte|entree|larger plates/i.test(blob)) {
+    hits.push("A la carte");
+  }
+  if (/lounge|bar menu|counter|happy hour/i.test(blob)) {
+    hits.push("Lounge / bar path");
+  }
+  if (hits.length) return hits.join(" · ");
+  if (r.signals.commitment) return r.signals.commitment;
+  return "unstated";
+}
+
+function domainCritical(sc: Scored, domain: string): boolean {
+  return sc.findings.some((f) => f.domain === domain && f.layer === "critical" && f.situational);
+}
+
+function domainTitle(sc: Scored, domain: string): string | null {
+  return sc.findings.find((f) => f.domain === domain && f.situational)?.title ?? null;
+}
+
+type Row = {
+  label: string;
+  get: (sc: Scored) => string;
+  held?: (sc: Scored) => boolean;
+};
 
 export function CompareTray({
   items,
@@ -16,7 +59,7 @@ export function CompareTray({
 }) {
   if (!items.length) return null;
   return (
-    <div className="no-print fixed inset-x-0 bottom-0 z-40 border-t border-border-strong bg-surface/95 backdrop-blur-xl">
+    <div className="no-print fixed inset-x-0 bottom-0 z-50 border-t border-border-strong bg-surface/95 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 px-4 py-3 sm:px-6">
         <Eyebrow>Comparison ({items.length}/3)</Eyebrow>
         <div className="flex flex-wrap gap-1.5">
@@ -25,7 +68,7 @@ export function CompareTray({
               key={sc.record.slug}
               type="button"
               onClick={() => onRemove(sc.record.slug)}
-              className="rounded-full border border-border bg-surface-raised px-3 py-1.5 text-xs text-muted-foreground hover:border-critical/40 hover:text-critical"
+              className="tap min-h-11 rounded-full border border-border bg-surface-raised px-3 py-1.5 text-xs text-muted-foreground hover:border-critical/40 hover:text-critical sm:min-h-0"
             >
               {sc.record.title} ×
             </button>
@@ -35,7 +78,7 @@ export function CompareTray({
           <button
             type="button"
             onClick={onClear}
-            className="rounded-full border border-border px-3.5 py-1.5 text-xs text-muted-foreground hover:text-foreground"
+            className="tap min-h-11 rounded-full border border-border px-3.5 py-1.5 text-xs text-muted-foreground hover:text-foreground sm:min-h-0"
           >
             Clear
           </button>
@@ -43,7 +86,7 @@ export function CompareTray({
             type="button"
             onClick={onOpen}
             disabled={items.length < 2}
-            className="rounded-full bg-primary px-4 py-1.5 text-xs font-medium text-primary-foreground disabled:opacity-40"
+            className="tap min-h-11 rounded-full bg-primary px-4 py-1.5 text-xs font-medium text-primary-foreground disabled:opacity-40 sm:min-h-0"
           >
             Compare side by side
           </button>
@@ -64,22 +107,63 @@ export function CompareDialog({
   situation: Situation;
   onClose: () => void;
 }) {
-  const rows: { label: string; get: (sc: Scored) => string }[] = [
+  const allergy = situation.constraints.includes("Severe allergy / celiac");
+  const mobility = situation.constraints.includes("Mobility / step-free needs");
+  const privateNeed = situation.constraints.includes("Private / semi-private required");
+
+  const rows: Row[] = [
+    {
+      label: "Spend band",
+      get: (s) => (s.record.spendBands ?? []).join(", ") || "unstated",
+    },
+    {
+      label: "Menu architecture",
+      get: (s) => architectureLine(s.record),
+    },
+    {
+      label: "Dietary hold",
+      get: (s) => {
+        if (allergy && domainCritical(s, "dietary")) {
+          return domainTitle(s, "dietary") ?? "Held closed — allergy path unconfirmed";
+        }
+        return s.record.dietaryTags.join(", ") || s.record.dietaryDetails || "unstated";
+      },
+      held: (s) => allergy && domainCritical(s, "dietary"),
+    },
+    {
+      label: "Access",
+      get: (s) => {
+        if (mobility && domainCritical(s, "access")) {
+          return domainTitle(s, "access") ?? "Held closed — access route unconfirmed";
+        }
+        return s.record.accessibilityTags.join(", ") || s.record.accessibilityState || "unstated";
+      },
+      held: (s) => mobility && domainCritical(s, "access"),
+    },
+    {
+      label: "Private room",
+      get: (s) => {
+        if (privateNeed && domainCritical(s, "party")) {
+          return domainTitle(s, "party") ?? "Held closed — private path unconfirmed";
+        }
+        return s.record.signals.private ?? "unstated";
+      },
+      held: (s) => privateNeed && domainCritical(s, "party"),
+    },
     { label: "Region", get: (s) => s.record.region },
     { label: "Format", get: (s) => s.record.signals.commitment ?? "unstated" },
     { label: "Booking", get: (s) => s.record.signals.booking ?? "unstated" },
-    { label: "Pathways", get: (s) => s.record.bookingPlatforms.join(", ") },
+    { label: "Pathways", get: (s) => s.record.bookingPlatforms.join(", ") || "unstated" },
     { label: "Pacing", get: (s) => s.record.signals.pacing ?? "unstated" },
     { label: "Noise band", get: (s) => s.record.noiseBand ?? "unstated" },
     { label: "Formality", get: (s) => s.record.formalityBand ?? "unstated" },
     { label: "Party", get: (s) => s.record.signals.party ?? "unstated" },
-    { label: "Private", get: (s) => s.record.signals.private ?? "Not stated" },
     { label: "Wine", get: (s) => s.record.signals.wine ?? "unstated" },
     { label: "Planning load", get: (s) => s.record.planningLoad ?? "unstated" },
-    { label: "Spend band", get: (s) => (s.record.spendBands ?? []).join(", ") || "unstated" },
-    { label: "Access", get: (s) => s.record.accessibilityTags.join(", ") },
-    { label: "Dietary", get: (s) => s.record.dietaryTags.join(", ") },
-    { label: "Conflict", get: (s) => (s.record.hasOfficialConflict ? "Open — preserved" : "None") },
+    {
+      label: "Conflict",
+      get: (s) => (s.record.hasOfficialConflict ? "Open — preserved" : "None"),
+    },
     { label: "Review", get: (s) => `${s.record.reviewedAt} → ${s.record.nextReviewAt}` },
     { label: "Unknowns", get: (s) => String(s.record.unknownsCount) },
   ];
@@ -87,17 +171,17 @@ export function CompareDialog({
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
       <DialogContent className="max-h-[92vh] w-[min(1180px,96vw)] max-w-none overflow-hidden border-border bg-surface p-0 sm:max-w-none">
-        <div className="border-b border-border px-6 py-5">
+        <div className="border-b border-border px-5 py-5 sm:px-6">
           <Eyebrow>Comparison</Eyebrow>
           <DialogTitle className="mt-2 font-display text-2xl font-normal tracking-tight">
             {items.map((i) => i.record.title).join("  ·  ")}
           </DialogTitle>
           <p className="mt-1 text-[13px] text-muted-foreground">
-            Ranked against the same situation. Divergent values are marked; unknowns are not filled
-            in to make a column look complete.
+            Ranked against the same situation. Fail-closed holds stay visible. Unknowns are held
+            open — never filled in to make a column look complete.
           </p>
         </div>
-        <div className="scroll-slim max-h-[74vh] overflow-y-auto px-6 py-5">
+        <div className="scroll-slim max-h-[74vh] overflow-y-auto px-5 py-5 sm:px-6">
           <div
             className="grid gap-4"
             style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0,1fr))` }}
@@ -125,6 +209,7 @@ export function CompareDialog({
                     <Chip tone="critical">{sc.criticals.length} critical</Chip>
                     <Chip tone="watch">{sc.watch.length} watch</Chip>
                     <Chip tone="unknown">{sc.unknowns.length} unknown</Chip>
+                    {sc.blocked ? <Chip tone="critical">Held closed</Chip> : null}
                   </div>
                   <p
                     className={cn(
@@ -150,27 +235,31 @@ export function CompareDialog({
             <tbody>
               {rows.map((row) => {
                 const values = items.map(row.get);
+                const holds = items.map((sc) => Boolean(row.held?.(sc)));
                 const diverges = new Set(values).size > 1;
                 return (
                   <tr key={row.label} className="border-t border-border align-top">
-                    <th
-                      scope="row"
-                      className="text-eyebrow w-[140px] py-3 pr-4 font-normal"
-                    >
+                    <th scope="row" className="text-eyebrow w-[140px] py-3 pr-4 font-normal">
                       {row.label}
                       {diverges ? <span className="ml-1.5 text-primary">·</span> : null}
                     </th>
-                    {values.map((v, i) => (
-                      <td
-                        key={i}
-                        className={cn(
-                          "py-3 pr-4 text-[13px] leading-relaxed",
-                          diverges ? "text-foreground" : "text-muted-foreground",
-                        )}
-                      >
-                        {v || "not stated"}
-                      </td>
-                    ))}
+                    {values.map((v, i) => {
+                      const held = holds[i];
+                      const open = !held && isOpenValue(v);
+                      return (
+                        <td
+                          key={i}
+                          className={cn(
+                            "py-3 pr-4 text-[13px] leading-relaxed",
+                            held && "bg-critical-soft px-2 text-critical",
+                            open && "bg-unknown-soft px-2 text-unknown",
+                            !held && !open && (diverges ? "text-foreground" : "text-muted-foreground"),
+                          )}
+                        >
+                          {v || "not stated"}
+                        </td>
+                      );
+                    })}
                   </tr>
                 );
               })}
