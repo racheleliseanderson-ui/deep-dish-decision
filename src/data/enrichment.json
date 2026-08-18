@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T21:06:32.604Z",
+  "generatedAt": "2026-08-18T22:57:25.414Z",
   "records": {
     "canlis": {
       "google": {
@@ -23699,6 +23699,2941 @@
           "https://www.puritancambridge.com/reserve"
         ],
         "retrievedAt": "2026-08-14T14:25:38.856Z"
+      }
+    },
+    "selden-standard-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:25.118Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "http://www.seldenstandard.com/menus",
+        "reservationUrl": "https://www.opentable.com/r/selden-standard-reservations-detroit?restref=290332&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "About Us Menus Events Stories Contact Reserve Private Events Selden Standard can host a variety of events for 10 to 30 people.",
+        "groupPolicyLanguage": [
+          "About Us Menus Events Stories Contact Reserve Private Events Selden Standard can host a variety of events for 10 to 30 people.",
+          "Facilities include a large semi-private table in the main dining room, an outdoor patio, and a private dining room with A/V gear."
+        ],
+        "dressCode": "Our concept and our dining room are rustic and casual – come as you are – but with an ever-present eye for quality, creativity, and fun.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: A seasonal New American restaurant in Detroit.",
+            "sourceUrl": "http://www.seldenstandard.com/"
+          },
+          {
+            "quote": "title: Home | Selden Standard | A seasonal New American restaurant in Detroit",
+            "sourceUrl": "http://www.seldenstandard.com/"
+          },
+          {
+            "quote": "og:description: Nothing brings us more joy than a great meal with friends. Sharing that experience is at the heart of why we opened Selden Standard. And central to that experience is Chef Andy Hollyday’s food – flavors born in local farms,...",
+            "sourceUrl": "http://www.seldenstandard.com/about"
+          },
+          {
+            "quote": "title: About Us | Selden Standard",
+            "sourceUrl": "http://www.seldenstandard.com/about"
+          },
+          {
+            "quote": "og:description: Selden Standard's facilities include a large semi-private table in the main dining room, an outdoor patio, and a private dining room with A/V gear.",
+            "sourceUrl": "http://www.seldenstandard.com/events"
+          },
+          {
+            "quote": "title: Events | Selden Standard",
+            "sourceUrl": "http://www.seldenstandard.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "http://www.seldenstandard.com/",
+          "http://www.seldenstandard.com/about",
+          "http://www.seldenstandard.com/menus",
+          "http://www.seldenstandard.com/events"
+        ],
+        "retrievedAt": "2026-08-18T22:55:25.118Z",
+        "playwrightPages": 0
+      }
+    },
+    "marrow-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:27.720Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 72
+      },
+      "site": {
+        "menuUrl": "https://marrowinthemarket.com/menus",
+        "reservationUrl": "https://order.toasttab.com/egiftcards/marrow",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [
+          "Can you accommodate dietary restrictions and allergies?",
+          "Do you accommodate dietary restrictions?"
+        ],
+        "accessibilityLanguage": [
+          "The main dining floor and restrooms are wheelchair accessible."
+        ],
+        "groupPolicy": "Marrow in the Market — a butcher's brasserie in Detroit's Eastern Market Restaurant Book a table View menus Private Events Scroll Butcher Shop Visit the shop Submit a butcher request Join the Meat Club Scroll A butcher's brasserie in a 1909 brick building.",
+        "groupPolicyLanguage": [
+          "Marrow in the Market — a butcher's brasserie in Detroit's Eastern Market Restaurant Book a table View menus Private Events Scroll Butcher Shop Visit the shop Submit a butcher request Join the Meat Club Scroll A butcher's brasserie in a 1909 brick building.",
+          "At the edge of Eastern Market — dining room, two bars, retail butcher shop adjoining a state-of-the-art meat processing facility, and private event spaces upstairs.",
+          "See menu → Private events Host it above the market.",
+          "Our private event floor sits on the top of a 1909 brick building in Detroit's Eastern Market — original timber, tall windows, and a menu built around the butcher shop downstairs."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Is a deposit required to hold the space?",
+          "A deposit based on your food and beverage minimum reserves your date.",
+          "Deposit terms are shared when a proposal is prepared."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +13136241537",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American, French brasserie, Farm-to-table, Seasonal Midwest",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 23:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 10:00 23:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 10:00 16:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 10:00 17:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 18:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 18:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 18:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 09:00 18:00",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "og:description: Seasonal brasserie cooking and whole-craft butchery in Detroit's Eastern Market — dining room, two bars, retail butcher shop, and private events.",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "title: Marrow in the Market — Detroit Restaurant & Butcher Shop",
+            "sourceUrl": "https://marrowinthemarket.com/"
+          },
+          {
+            "quote": "og:description: Seasonal Detroit dinner, lunch, and brunch menus at Marrow in the Market — a butcher's brasserie in Eastern Market serving farm-driven food and craft drinks.",
+            "sourceUrl": "https://marrowinthemarket.com/menus"
+          },
+          {
+            "quote": "title: Detroit Dinner, Lunch & Brunch Menus — Marrow in the Market",
+            "sourceUrl": "https://marrowinthemarket.com/menus"
+          },
+          {
+            "quote": "og:description: Private events and catering in Detroit — five spaces in a 1909 Eastern Market building, from intimate gatherings to full buyouts for 200+ guests.",
+            "sourceUrl": "https://marrowinthemarket.com/events"
+          },
+          {
+            "quote": "title: Private Events Detroit — Marrow in the Market",
+            "sourceUrl": "https://marrowinthemarket.com/events"
+          },
+          {
+            "quote": "og:description: A Detroit restaurant and butcher's brasserie in Eastern Market — dining room, two bars, retail butcher shop, and private events at 2442 Riopelle.",
+            "sourceUrl": "https://marrowinthemarket.com/about"
+          },
+          {
+            "quote": "title: About — Marrow in the Market | Eastern Market Restaurant",
+            "sourceUrl": "https://marrowinthemarket.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://marrowinthemarket.com/",
+          "https://marrowinthemarket.com/menus",
+          "https://marrowinthemarket.com/events",
+          "https://marrowinthemarket.com/about"
+        ],
+        "retrievedAt": "2026-08-18T22:55:27.720Z",
+        "playwrightPages": 0
+      }
+    },
+    "grey-ghost-detroit-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:30.210Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://greyghostdetroit.com/food/",
+        "reservationUrl": "https://resy.com/cities/det/grey-ghost-detroit",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [
+          "Dining out can be a challenge with my gluten allergies (celiac) and my wife being a vegetarian."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Dinner Menu oysters on the half shell tomato mignonette. salsa verde. masa. beef tartare sweet soy. daikon. chili crisp. bibb lettuce salad walnut vinaigrette. kohlrabi. celery. grape. caprese sundae give it a try. pork dumplings jalapeño. blue",
+            "sourceUrl": "https://greyghostdetroit.com/food/"
+          },
+          {
+            "quote": "title: Food - Grey Ghost Detroit",
+            "sourceUrl": "https://greyghostdetroit.com/food/"
+          },
+          {
+            "quote": "og:description: booking a table online is easy Make a reservation or just walk in... we got you either way. We look forward to serving you! Make a reservation Book your Grey Ghost Detroit reservation on Resy",
+            "sourceUrl": "https://greyghostdetroit.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations - Grey Ghost Detroit",
+            "sourceUrl": "https://greyghostdetroit.com/reservations/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://greyghostdetroit.com/",
+          "https://greyghostdetroit.com/food/",
+          "https://greyghostdetroit.com/reservations/"
+        ],
+        "retrievedAt": "2026-08-18T22:55:30.210Z",
+        "playwrightPages": 0
+      }
+    },
+    "takoi-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:31.951Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.takoidetroit.com/menu",
+        "reservationUrl": "https://order.toasttab.com/online/takoi",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [
+          "DIETARY RESTRICTIONS AND ALLERGIES We use ingredients such as soy, fish sauce, shellfish, pork, tree nuts, peanuts, and more.",
+          "Please let us know about any and all restrictions and allergies prior to your reservation."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Our buyout option includes both food and beverage packages.",
+        "groupPolicyLanguage": [
+          "Our buyout option includes both food and beverage packages.",
+          "For info about buyout details, please email us at yes@takoidetroit.com."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "RESERVATIONS We no longer require deposits for reservations."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 16:00-22:00, We 16:00-22:00, Th 16:00-22:00, Fr 16:00-22:00, Sa 16:00-22:00,",
+            "sourceUrl": "https://www.takoidetroit.com/"
+          },
+          {
+            "quote": "title: Reservations &mdash; Takoi",
+            "sourceUrl": "https://www.takoidetroit.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.takoidetroit.com/",
+          "https://www.takoidetroit.com/menu",
+          "https://www.takoidetroit.com/reservations",
+          "https://www.takoidetroit.com/contact"
+        ],
+        "retrievedAt": "2026-08-18T22:55:31.951Z",
+        "playwrightPages": 0
+      }
+    },
+    "shewolf-pastificio-bar-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:34.493Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://shewolfdetroit.com/menu",
+        "reservationUrl": "https://www.exploretock.com/shewolf?tock_source=tock&",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Shewolf Detroit | Shewolf Detroit",
+            "sourceUrl": "https://shewolfdetroit.com/"
+          },
+          {
+            "quote": "title: EVENTS | Shewolf Detroit",
+            "sourceUrl": "https://shewolfdetroit.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://shewolfdetroit.com/",
+          "https://shewolfdetroit.com/about",
+          "https://shewolfdetroit.com/menu",
+          "https://shewolfdetroit.com/events"
+        ],
+        "retrievedAt": "2026-08-18T22:55:34.493Z",
+        "playwrightPages": 0
+      }
+    },
+    "london-chop-house-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:37.588Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/restaurant/profile/287722/reserve?rid=287722&restref=287722",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "A Detroit Tradition Continues HOME ODUgXUjLuQ 2026-08-03T14:26:38-04:00 DINNER Monday – Saturday: 4:00 PM – 10:00 PM Sundays: Private Events LONDON CHOP HOUSE 155 W.",
+        "groupPolicyLanguage": [
+          "A Detroit Tradition Continues HOME ODUgXUjLuQ 2026-08-03T14:26:38-04:00 DINNER Monday – Saturday: 4:00 PM – 10:00 PM Sundays: Private Events LONDON CHOP HOUSE 155 W.",
+          "Congress Detroit, Michigan Tel: 313-962-0277 – PROPER ATTIRE REQUIRED – LCH BAR Monday – Saturday: 4:00 PM – 10:00 PM Sundays: Private Events CAREERS The London Chop House ©1938 – 2026 Go to Top",
+          "RESERVATIONS Dinner reservations welcome online at Open Table or by calling LCH at 313 962-0277 For parties of 5 or more, Please call 313 962-0277.",
+          "RESERVATIONS ODUgXUjLuQ 2021-07-12T15:22:07-04:00 DINNER Monday – Saturday: 4:00 PM – 10:00 PM Sundays: Private Events LONDON CHOP HOUSE 155 W."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: The London Chop House – Detroit's Historic London Chop House",
+            "sourceUrl": "https://www.thelondonchophouse.com/"
+          },
+          {
+            "quote": "title: Events from August 6 – August 29 – The London Chop House",
+            "sourceUrl": "https://www.thelondonchophouse.com/index.php/events/"
+          },
+          {
+            "quote": "title: RESERVATIONS – The London Chop House",
+            "sourceUrl": "https://www.thelondonchophouse.com/index.php/reservations/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.thelondonchophouse.com/",
+          "https://www.thelondonchophouse.com/index.php/events/",
+          "https://www.thelondonchophouse.com/index.php/reservations/"
+        ],
+        "retrievedAt": "2026-08-18T22:55:37.588Z",
+        "playwrightPages": 0
+      }
+    },
+    "buddy-s-pizza-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:39.386Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "https://buddyspizza.com/menu/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: In 1946, a new style of pizza was born at Buddy’s and it was different. Our one of a kind square pies are built by hand with the best ingredients. No shortcuts, just a stubborn belief in doing things right. We believe in creating good food that",
+            "sourceUrl": "https://buddyspizza.com/"
+          },
+          {
+            "quote": "og:description: The Original Detroit-Style Pizza",
+            "sourceUrl": "https://buddyspizza.com/menu/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://buddyspizza.com/",
+          "https://buddyspizza.com/menu/",
+          "https://buddyspizza.com/contact/"
+        ],
+        "retrievedAt": "2026-08-18T22:55:39.386Z",
+        "playwrightPages": 0
+      }
+    },
+    "supino-pizzeria-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:41.183Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/supino-pizzeria-russell-st-2457-russell-st/giftcards?utmCampaign=onlineOrdering",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "For party sizes of 8-24, we require a 48-hour notice and may require a large party contract.",
+        "groupPolicyLanguage": [
+          "For party sizes of 8-24, we require a 48-hour notice and may require a large party contract.",
+          "For parties of 25-65, we require a 72-hour notice and offer a rental option at both locations."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.supinopizzeria.com/"
+          },
+          {
+            "quote": "title: Reservations + Events &mdash; SUPINO PIZZERIA",
+            "sourceUrl": "https://www.supinopizzeria.com/events"
+          },
+          {
+            "quote": "title: About &mdash; SUPINO PIZZERIA",
+            "sourceUrl": "https://www.supinopizzeria.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.supinopizzeria.com/",
+          "https://www.supinopizzeria.com/events",
+          "https://www.supinopizzeria.com/about"
+        ],
+        "retrievedAt": "2026-08-18T22:55:41.183Z",
+        "playwrightPages": 0
+      }
+    },
+    "baobab-fare-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:42.911Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://baobabfare.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/baobab-fare-new-6568-woodward-avenue-suite-100",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: A celebration of East African food & culture Bringing the vibrant flavors of East Africa to Detroit, Baobab Fare is an award-winning restaurant founded by refugees from Burundi that embodies the spirit of “Detroit Ni Nyumbani” — Detroit is Home",
+            "sourceUrl": "https://baobabfare.com/"
+          },
+          {
+            "quote": "title: A Celebration of East African Food & Culture - Baobab Fare",
+            "sourceUrl": "https://baobabfare.com/"
+          },
+          {
+            "quote": "og:description: Menu Discover the vibrant flavors of Burundi through our carefully crafted menu of East African specialties. At Baobab Fare, we take pride in sharing our cultural heritage through traditional dishes made with fresh ingredients and authentic spi",
+            "sourceUrl": "https://baobabfare.com/menu/"
+          },
+          {
+            "quote": "og:description: Baobab Fare accepts a limited number of reservations for dine-in service.",
+            "sourceUrl": "https://baobabfare.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations - Baobab Fare",
+            "sourceUrl": "https://baobabfare.com/reservations/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://baobabfare.com/",
+          "https://baobabfare.com/menu/",
+          "https://baobabfare.com/reservations/"
+        ],
+        "retrievedAt": "2026-08-18T22:55:42.911Z",
+        "playwrightPages": 0
+      }
+    },
+    "flowers-of-vietnam-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:44.624Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.flowersofvietnam.com/menu-copy",
+        "reservationUrl": "https://www.exploretock.com/flowersofvietnam",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.flowersofvietnam.com/"
+          },
+          {
+            "quote": "title: Contact &mdash; FLOWERS OF VIETNAM",
+            "sourceUrl": "https://www.flowersofvietnam.com/contact"
+          },
+          {
+            "quote": "title: menu (Copy) &mdash; FLOWERS OF VIETNAM",
+            "sourceUrl": "https://www.flowersofvietnam.com/menu-copy"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.flowersofvietnam.com/",
+          "https://www.flowersofvietnam.com/contact",
+          "https://www.flowersofvietnam.com/menu-copy"
+        ],
+        "retrievedAt": "2026-08-18T22:55:44.624Z",
+        "playwrightPages": 0
+      }
+    },
+    "standby-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:46.590Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://standbydetroit.com/food-current",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Please note we only take reservations of parties of six or less on weekends.",
+        "groupPolicyLanguage": [
+          "Please note we only take reservations of parties of six or less on weekends.",
+          "PRIVATE EVENTS Let our team coordinate food, drink, and hospitality with our full event planning services, while you enjoy the experience of a night out in downtown Detroit at one of the region’s top cocktail bars and restaurants."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , We 17:00-00:00, Th 17:00-00:00, Fr 17:00-02:00, Sa 17:00-02:00, Su 17:00-00:00",
+            "sourceUrl": "https://standbydetroit.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +1-313-241-5719",
+            "sourceUrl": "https://standbydetroit.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://standbydetroit.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Cocktails, American",
+            "sourceUrl": "https://standbydetroit.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday,Thursday,Sunday 17:00 00:00",
+            "sourceUrl": "https://standbydetroit.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 17:00 02:00",
+            "sourceUrl": "https://standbydetroit.com/"
+          },
+          {
+            "quote": "og:description: Celebrating the modern cocktail in downtown Detroit for over a decade. James Beard recognized bar and scratch kitchen in The Belt alley. Walk-ins welcome.",
+            "sourceUrl": "https://standbydetroit.com/"
+          },
+          {
+            "quote": "title: Standby | Detroit's Modern Cocktail Bar, Downtown in The Belt",
+            "sourceUrl": "https://standbydetroit.com/"
+          },
+          {
+            "quote": "og:description: Shareables, entrees, and dessert from Standby",
+            "sourceUrl": "https://standbydetroit.com/food-current"
+          },
+          {
+            "quote": "title: Food Menu | Standby Detroit Scratch Kitchen",
+            "sourceUrl": "https://standbydetroit.com/food-current"
+          },
+          {
+            "quote": "og:description: Host your private event at Standby in downtown Detroit. Full-service cocktails, food, and offsite catering for groups of any size. Inquire today.",
+            "sourceUrl": "https://standbydetroit.com/private-events"
+          },
+          {
+            "quote": "title: Private Events & Catering | Standby Detroit",
+            "sourceUrl": "https://standbydetroit.com/private-events"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://standbydetroit.com/",
+          "https://standbydetroit.com/food-current",
+          "https://standbydetroit.com/private-events"
+        ],
+        "retrievedAt": "2026-08-18T22:55:46.590Z",
+        "playwrightPages": 0
+      }
+    },
+    "spoon-and-stable-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:48.596Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.spoonandstable.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/spoonandstable/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "skip to Main Content Home About Visit Us The Team Reserve Menu Dinner Menu Bar Menu Dessert Menu Brunch Menu Private Dining Gift Cards Cookbook Reserve Home » Reservations RESERVE A TABLE Currently booking through September 30th.",
+        "groupPolicyLanguage": [
+          "skip to Main Content Home About Visit Us The Team Reserve Menu Dinner Menu Bar Menu Dessert Menu Brunch Menu Private Dining Gift Cards Cookbook Reserve Home » Reservations RESERVE A TABLE Currently booking through September 30th.",
+          "For reservations for 9 or more guests, please visit our Private Dining page.",
+          "Reserve on Tock SPOON AND STABLE 211 North First Street • Minneapolis, Minnesota • 55401 612.224.9850 Facebook Instagram Twitter Home About Visit Us The Team Reserve Menu Dinner Menu Bar Menu Dessert Menu Brunch Menu Private Dining Gift Cards Cookbook"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Spoon and Stable is a downtown Minneapolis restaurant created by James Beard Award-Winning Chef, Gavin Kaysen.",
+            "sourceUrl": "https://www.spoonandstable.com/"
+          },
+          {
+            "quote": "title: Spoon and Stable - Minneapolis, MN",
+            "sourceUrl": "https://www.spoonandstable.com/"
+          },
+          {
+            "quote": "noscript: body:not(.content-full-screen) .wpex-vc-row-stretched[data-vc-full-width-init=\"false\"]{visibility:visible;}",
+            "sourceUrl": "https://www.spoonandstable.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://www.spoonandstable.com/"
+          },
+          {
+            "quote": "meta description: Spoon and Stable is a restaurant located in what was once a horse stable, dating back to 1906, in the heart of the North Loop Neighborhood. It is the dream of C",
+            "sourceUrl": "https://www.spoonandstable.com/about/"
+          },
+          {
+            "quote": "title: About - Spoon and Stable",
+            "sourceUrl": "https://www.spoonandstable.com/about/"
+          },
+          {
+            "quote": "og:description: Reservations are available in Spoon and Stable's dining room. Our bar and lounge seating is available on a first-come, first-served basis.",
+            "sourceUrl": "https://www.spoonandstable.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations - Spoon and Stable",
+            "sourceUrl": "https://www.spoonandstable.com/reservations/"
+          },
+          {
+            "quote": "og:description: Find menus for dinner, drinks, desserts, and brunch at Spoon and Stable here, updated daily.",
+            "sourceUrl": "https://www.spoonandstable.com/menu/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.spoonandstable.com/",
+          "https://www.spoonandstable.com/about/",
+          "https://www.spoonandstable.com/reservations/",
+          "https://www.spoonandstable.com/menu/"
+        ],
+        "retrievedAt": "2026-08-18T22:55:48.596Z",
+        "playwrightPages": 0
+      }
+    },
+    "demi-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:50.797Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/demi/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [
+          "With advance notice, we are able to accommodate most allergies and dietary restrictions."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Skip to content Reserve About Private Events Gift Cards Back To Top",
+        "groupPolicyLanguage": [
+          "Skip to content Reserve About Private Events Gift Cards Back To Top"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Demi, a new restaurant by James Beard Award Winning Chef, Gavin Kaysen, located in the North Loop neighborhood of Minneapolis, Minnesota, is a 20 counter-seat tasting menu experience. We shine light on ingredients grown in this small corner of ",
+            "sourceUrl": "https://demimpls.com/"
+          },
+          {
+            "quote": "title: Demi | Minneapolis, Minnesota Restaurant by Gavin Kaysen",
+            "sourceUrl": "https://demimpls.com/"
+          },
+          {
+            "quote": "noscript: body:not(.content-full-screen) .wpex-vc-row-stretched[data-vc-full-width-init=\"false\"]{visibility:visible;}",
+            "sourceUrl": "https://demimpls.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://demimpls.com/"
+          },
+          {
+            "quote": "meta description: Demi focuses on creating and serving delicious food. We shine light on ingredients grown in this small corner of the country, while also incorporating special a",
+            "sourceUrl": "https://demimpls.com/about/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://demimpls.com/",
+          "https://demimpls.com/reserve/",
+          "https://demimpls.com/about/"
+        ],
+        "retrievedAt": "2026-08-18T22:55:50.797Z",
+        "playwrightPages": 0
+      }
+    },
+    "owamni-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:52.637Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/indigena-by-owamni-minneapolis",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: is the next generation of the pioneering Indigenous restaurant Owamni, dedicated to celebrating the culinary traditions of Indigenous peoples across the Americas. Best New Restaurant Award – 2022.",
+            "sourceUrl": "https://owamni.com/"
+          },
+          {
+            "quote": "title: Indígena by Owamni Restaurant - Minneapolis, MN",
+            "sourceUrl": "https://owamni.com/"
+          },
+          {
+            "quote": "og:description: At Owamni restaurant in downtown Minneapolis, MN, our indoor and outdoor space is perfect for your next event or private gathering.",
+            "sourceUrl": "https://owamni.com/private-dining/"
+          },
+          {
+            "quote": "title: Owamni - Request private dining event",
+            "sourceUrl": "https://owamni.com/private-dining/"
+          },
+          {
+            "quote": "og:description: Owamni is an award winning full-service Indigenous restaurant by The Sioux Chef Sean Sherman showcasing true North American Indigenous foods and culture.",
+            "sourceUrl": "https://owamni.com/about/"
+          },
+          {
+            "quote": "title: About - Indígena Restaurant",
+            "sourceUrl": "https://owamni.com/about/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://owamni.com/",
+          "https://owamni.com/private-dining/",
+          "https://owamni.com/about/"
+        ],
+        "retrievedAt": "2026-08-18T22:55:52.637Z",
+        "playwrightPages": 0
+      }
+    },
+    "112-eatery-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:54.504Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.112eatery.com/wine-list",
+        "reservationUrl": "https://resy.com/cities/msp/112-eatery?date=2021-10-16&seats=2",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining at 112 Eatery Our main upper level private dining area is available for up to 36 for seated functions and up to 50 guests for cocktail receptions.",
+        "groupPolicyLanguage": [
+          "Private Dining at 112 Eatery Our main upper level private dining area is available for up to 36 for seated functions and up to 50 guests for cocktail receptions.",
+          "2nd Floor Buyout Info The Wine Room is a separate, private dining room located upstairs.",
+          "Additional details regarding private dining are included below.",
+          "To plan your event, please call us at 612.343.7696 or complete the private dining request form below."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: WINE LIST &mdash; 112 Eatery",
+            "sourceUrl": "https://www.112eatery.com/wine-list"
+          },
+          {
+            "quote": "title: Reservations &mdash; 112 Eatery",
+            "sourceUrl": "https://www.112eatery.com/reservations"
+          },
+          {
+            "quote": "title: Private Dining &mdash; 112 Eatery",
+            "sourceUrl": "https://www.112eatery.com/private-dining"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.112eatery.com/",
+          "https://www.112eatery.com/wine-list",
+          "https://www.112eatery.com/reservations",
+          "https://www.112eatery.com/private-dining"
+        ],
+        "retrievedAt": "2026-08-18T22:55:54.504Z",
+        "playwrightPages": 0
+      }
+    },
+    "hai-hai-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:56.761Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.haihaimpls.com/menus",
+        "reservationUrl": "https://www.opentable.com/r/hai-hai-reservations-minneapolis?restref=1033801&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "CHEF'S KISS POTLUCK Menus Reservations Private Dining & Events Order SHOP Hola Arepa Home CHEF'S KISS POTLUCK Menus Reservations Private Dining & Events Order SHOP Hola Arepa Home Cover Food Cocktails You Ready?",
+        "groupPolicyLanguage": [
+          "CHEF'S KISS POTLUCK Menus Reservations Private Dining & Events Order SHOP Hola Arepa Home CHEF'S KISS POTLUCK Menus Reservations Private Dining & Events Order SHOP Hola Arepa Home Cover Food Cocktails You Ready?",
+          "We offer full or partial restaurant buyouts at Hai Hai for private or semi-private dining experiences to fit your group size, budget & timing."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 15:00-23:00, We 15:00-23:00, Th 15:00-23:00, Fr 15:00-00:00, Sa 10:00-00:00, Su 10:00-00:00",
+            "sourceUrl": "https://www.haihaimpls.com/"
+          },
+          {
+            "quote": "title: Dine With Us &mdash; Hai Hai",
+            "sourceUrl": "https://www.haihaimpls.com/reservations-2"
+          },
+          {
+            "quote": "title: Private Dining & Events &mdash; Hai Hai",
+            "sourceUrl": "https://www.haihaimpls.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.haihaimpls.com/",
+          "https://www.haihaimpls.com/menus",
+          "https://www.haihaimpls.com/reservations-2",
+          "https://www.haihaimpls.com/events"
+        ],
+        "retrievedAt": "2026-08-18T22:55:56.761Z",
+        "playwrightPages": 0
+      }
+    },
+    "bar-la-grassa-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:55:58.952Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.barlagrassa.com/menu",
+        "reservationUrl": "https://resy.com/cities/minneapolis-mn/venues/bar-la-grassa?date=2024-07-02&seats=2",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "We also offer several options for PRIVATE DINING .",
+        "groupPolicyLanguage": [
+          "We also offer several options for PRIVATE DINING .",
+          "PRIVATE DINING AT BAR LA GRASSA Our private dining room is available for groups up to 32 for seated functions.",
+          "We also offer Lounge Dining and the Wine Room for private events.",
+          "Please contact us for information about standing reception options or full restaurant buyouts."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: MENU &mdash; Bar la Grassa",
+            "sourceUrl": "https://www.barlagrassa.com/menu"
+          },
+          {
+            "quote": "title: Reservations &mdash; Bar la Grassa",
+            "sourceUrl": "https://www.barlagrassa.com/reservations"
+          },
+          {
+            "quote": "title: Private Dining &mdash; Bar la Grassa",
+            "sourceUrl": "https://www.barlagrassa.com/private-dining"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.barlagrassa.com/",
+          "https://www.barlagrassa.com/menu",
+          "https://www.barlagrassa.com/reservations",
+          "https://www.barlagrassa.com/private-dining"
+        ],
+        "retrievedAt": "2026-08-18T22:55:58.952Z",
+        "playwrightPages": 0
+      }
+    },
+    "restaurant-alma-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:01.130Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Je m'appelle Nathalie et sur ce blog, je partage mon expérience en matière de Cuisine. Toutes mes recettes seront ajoutées petit à petit, et elles sont délicieuses. Vous allez vous régaler !",
+            "sourceUrl": "https://www.restaurantalma.com/"
+          },
+          {
+            "quote": "title: Contact - Restaurant Alma",
+            "sourceUrl": "https://www.restaurantalma.com/contact/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.restaurantalma.com/",
+          "https://www.restaurantalma.com/contact/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:01.130Z",
+        "playwrightPages": 0
+      }
+    },
+    "kado-no-mise-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:03.109Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/kadonomise/",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Reservation Terms Before proceeding to our reservation system, please take a moment to review our cancellation policy.",
+          "Cancellation Policy Your reservation can be canceled at any time before the time of the reservation should your plans change.",
+          "Deposits are refundable up to 48 hours before a reservation."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Kado no Mise, translating to “Corner Restaurant,” serves Edomae sushi and simple, delicate Japanese fare, true to the tastes and form that Chef Furukawa learned when he first started cooking professionally in his hometown of Tokyo.",
+            "sourceUrl": "https://www.kadonomise.com/"
+          },
+          {
+            "quote": "title: Kado no Mise: We are a Japanese restaurant & bar in Minneapolis",
+            "sourceUrl": "https://www.kadonomise.com/"
+          },
+          {
+            "quote": "title: Reserve &mdash; Kado no Mise Japanese restaurant & bar",
+            "sourceUrl": "https://www.kadonomise.com/reserve"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.kadonomise.com/",
+          "https://www.kadonomise.com/reserve"
+        ],
+        "retrievedAt": "2026-08-18T22:56:03.109Z",
+        "playwrightPages": 0
+      }
+    },
+    "colita-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:04.453Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.colitampls.com/menu/dinner",
+        "reservationUrl": "https://www.opentable.com/r/colita-reservations-minneapolis?restref=731530&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private EventS Celebrate in style at Colita—perfect for small weddings, rehearsal dinners, parties, or corporate events.",
+        "groupPolicyLanguage": [
+          "Private EventS Celebrate in style at Colita—perfect for small weddings, rehearsal dinners, parties, or corporate events.",
+          "Semi Private 30 guests Full Restaurant buyout 74 inside, 48 patio A 25% service fee, administrative fees, taxes or other charges may be included."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:00-21:00, Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 16:00-22:00, Sa 16:00-22:00, Su 16:00-21:00",
+            "sourceUrl": "https://www.colitampls.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: 612-886-1606",
+            "sourceUrl": "https://www.colitampls.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://www.colitampls.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Oaxacan, Mexican, Tex-Oaxacan",
+            "sourceUrl": "https://www.colitampls.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday,Monday,Tuesday,Wednesday,Thursday 16:00 21:00",
+            "sourceUrl": "https://www.colitampls.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 16:00 22:00",
+            "sourceUrl": "https://www.colitampls.com/"
+          },
+          {
+            "quote": "og:description: Colita integrates the incredibly diverse flavors of Mexico with barbecue and smoking techniques from all over the world. We focus on the flavors & moles of Oaxaca, and eventually will explore the rest of Mexico’s culinary expressions.",
+            "sourceUrl": "https://www.colitampls.com/"
+          },
+          {
+            "quote": "title: Colita &mdash; Armatage Tex-Oaxacan Restaurant from Chef Daniel Del Prado.",
+            "sourceUrl": "https://www.colitampls.com/"
+          },
+          {
+            "quote": "og:description: Visit Colita at 5400 Penn Ave South, Minneapolis. Open Sunday–Thursday 4–9PM, Friday–Saturday 4–10PM. Daily happy hour 4–6PM. Reservations via OpenTable or call (612) 886-1606.",
+            "sourceUrl": "https://www.colitampls.com/visit"
+          },
+          {
+            "quote": "og:description: Celebrate in style at Colita— perfect for small weddings, rehearsal dinners, parties, or corporate events. Enjoy Oaxacan-inspired flavors, crafted cocktails, and seamless service that make every occasion unforgettable.",
+            "sourceUrl": "https://www.colitampls.com/private-events"
+          },
+          {
+            "quote": "title: Private Events &mdash; Colita",
+            "sourceUrl": "https://www.colitampls.com/private-events"
+          },
+          {
+            "quote": "title: Reservations &mdash; Colita",
+            "sourceUrl": "https://www.colitampls.com/reservation-section"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.colitampls.com/",
+          "https://www.colitampls.com/visit",
+          "https://www.colitampls.com/private-events",
+          "https://www.colitampls.com/reservation-section"
+        ],
+        "retrievedAt": "2026-08-18T22:56:04.453Z",
+        "playwrightPages": 0
+      }
+    },
+    "pizzeria-lola-minneapolis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:06.809Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.pizzerialola.com/menu/",
+        "reservationUrl": "https://www.opentable.com/r/pizzeria-lola-minneapolis",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Pizzeria Lola is Chef Ann Kim",
+            "sourceUrl": "https://www.pizzerialola.com/"
+          },
+          {
+            "quote": "title: Chef Ann Kim's Minneapolis Pizza Restaurant",
+            "sourceUrl": "https://www.pizzerialola.com/"
+          },
+          {
+            "quote": "og:description: Explore our dine in and takeaway menus",
+            "sourceUrl": "https://www.pizzerialola.com/menu/"
+          },
+          {
+            "quote": "title: Private Events | Pizzeria Lola | Pizza Restaurant in Minneapolis, MN",
+            "sourceUrl": "https://www.pizzerialola.com/private-events/"
+          },
+          {
+            "quote": "title: Contact | Pizzeria Lola in Minneapolis, MN",
+            "sourceUrl": "https://www.pizzerialola.com/contact/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.pizzerialola.com/",
+          "https://www.pizzerialola.com/menu/",
+          "https://www.pizzerialola.com/private-events/",
+          "https://www.pizzerialola.com/contact/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:06.809Z",
+        "playwrightPages": 0
+      }
+    },
+    "tavernetta-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:08.934Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.tavernettadenver.com/menus/",
+        "reservationUrl": "https://www.opentable.com/r/tavernetta-denver",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Main content starts here, tab to start navigating Private Dining Book an Event with Us Memorable gatherings begin with imagination and thoughtful planning.",
+        "groupPolicyLanguage": [
+          "Main content starts here, tab to start navigating Private Dining Book an Event with Us Memorable gatherings begin with imagination and thoughtful planning.",
+          "Private Dining Guide Inquire Now La Casina at Tavernetta La Casina is Tavernetta&rsquo;s new stand-alone private event space, offering the full amenities of a restaurant with the same modern alpine design and vintage Slim Aarons charm guests love.",
+          "Our beautiful custom oak table offers a warm and inviting private dining experience.",
+          "Capacity: 60 Seated Full Restaurant Buyout A full buyout offers an elegant setting for a large group to enjoy Tavernetta exclusively."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Inspired by the food, wine and culture of Italy, Tavernetta brings la dolce vita style to Denver",
+            "sourceUrl": "https://www.tavernettadenver.com/"
+          },
+          {
+            "quote": "title: Tavernetta | Italian Restaurant in Denver, CO",
+            "sourceUrl": "https://www.tavernettadenver.com/"
+          },
+          {
+            "quote": "title: Menus & Wine List | Tavernetta | Italian Restaurant in Denver, CO",
+            "sourceUrl": "https://www.tavernettadenver.com/menus/"
+          },
+          {
+            "quote": "title: About | Tavernetta in Denver, CO",
+            "sourceUrl": "https://www.tavernettadenver.com/about/"
+          },
+          {
+            "quote": "title: Private Dining | Tavernetta in Denver, CO",
+            "sourceUrl": "https://www.tavernettadenver.com/private-dining/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.tavernettadenver.com/",
+          "https://www.tavernettadenver.com/menus/",
+          "https://www.tavernettadenver.com/about/",
+          "https://www.tavernettadenver.com/private-dining/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:08.934Z",
+        "playwrightPages": 0
+      }
+    },
+    "hop-alley-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:11.036Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/hop-alley/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [
+          "We can accommodate certain dietary restrictions and allergies, please contact us at least 14 days in advance."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:00-22:00, Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,",
+            "sourceUrl": "https://hopalleydenver.com/"
+          },
+          {
+            "quote": "og:description: Hop Alley is a new restaurant concept from Tommy Lee and the Uncle team that serves traditional, regional Chinese cuisine served family-style as well as dishes with a unique spin on other Asian ideas. 3500 LARIMER ST, DENVER, CO, 80205 (720) 3",
+            "sourceUrl": "https://hopalleydenver.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://hopalleydenver.com/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:11.036Z",
+        "playwrightPages": 0
+      }
+    },
+    "uncle-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:11.909Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/uncle-highlands-reservations-denver?restref=228973&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:00-22:00, Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,",
+            "sourceUrl": "https://www.uncleramen.com/"
+          },
+          {
+            "quote": "og:description: uncle is a small, no-brow, ramen shop in denver, colorado serving their take on a traditional japanese staple.",
+            "sourceUrl": "https://www.uncleramen.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.uncleramen.com/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:11.909Z",
+        "playwrightPages": 0
+      }
+    },
+    "cart-driver-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:12.772Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/cart-driver-west-ave/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Contact &mdash; CART-DRIVER",
+            "sourceUrl": "https://www.cart-driver.com/contact-feed"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.cart-driver.com/",
+          "https://www.cart-driver.com/contact-feed"
+        ],
+        "retrievedAt": "2026-08-18T22:56:12.772Z",
+        "playwrightPages": 0
+      }
+    },
+    "guard-and-grace-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:14.079Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/restref/client/?rid=115339&restref=115339&lang=en-US&color=1&r3uid=cfe&dark=false&partysize=2&datetime=2024-07-11T19%3A00&ot_source=Restaurant%20website&corrid=7422f682-8e69-4a0b-bd11-0cf6377c7561",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "For larger events, you can combine all three private dining rooms to create The Ohana Room, which can accommodate up to 80 people.",
+        "groupPolicyLanguage": [
+          "For larger events, you can combine all three private dining rooms to create The Ohana Room, which can accommodate up to 80 people.",
+          "Done Deal Cocktail Lounge Located at 370 17th St., Done Deal Cocktail Lounge offers a premier venue for private events, from intimate cocktail hours to full buyouts.",
+          "With vaulted ceilings and an elegant feel, it's perfect for large buyout events.",
+          "Book now Inquire Now Private Event Software powered by Tripleseat"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Discover premier venues in Denver for private events with Guard and Grace. Choose from chic dining rooms and a spacious patio for an unforgettable experience.",
+            "sourceUrl": "https://www.guardandgrace.com/private-events-denver"
+          },
+          {
+            "quote": "title: Denver Private Events | Book Your Event Today &mdash; guardandgrace.com",
+            "sourceUrl": "https://www.guardandgrace.com/private-events-denver"
+          },
+          {
+            "quote": "title: Reservations &mdash; guardandgrace.com",
+            "sourceUrl": "https://www.guardandgrace.com/reservations"
+          },
+          {
+            "quote": "og:description: Reach out to Guard and Grace for inquiries or reservations at our Denver and Houston locations. Connect for private events or general questions.",
+            "sourceUrl": "https://www.guardandgrace.com/contact-us"
+          },
+          {
+            "quote": "title: Contact Us | Get In Touch Today &mdash; guardandgrace.com",
+            "sourceUrl": "https://www.guardandgrace.com/contact-us"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.guardandgrace.com/",
+          "https://www.guardandgrace.com/private-events-denver",
+          "https://www.guardandgrace.com/reservations",
+          "https://www.guardandgrace.com/contact-us"
+        ],
+        "retrievedAt": "2026-08-18T22:56:14.079Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-wolf-s-tailor-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:16.275Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: A tribute to the artisans who crafted sheep’s attire for the cunning wolf. The innovative, multi-course tasting experience at the Wolf’s Tailor revolves around two prominent seasons: warmer months spotlight garden-fresh produce, while cooler mo",
+            "sourceUrl": "https://www.thewolfstailor.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.thewolfstailor.com/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:16.275Z",
+        "playwrightPages": 0
+      }
+    },
+    "mercantile-dining-provision-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:17.171Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.mercantiledenver.com/menus/",
+        "reservationUrl": "https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=b56380a9-9db5-4247-aa90-acb4100d542e&restRef=150205&otSource=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [
+          "Please inform us of any allergies or dietary restrictions."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "View Menus Reservations Book Now Private Events Gather, celebrate, and connect at Mercantile&mdash;where every event is elevated by seasonal flavors, curated experiences, and warm hospitality.",
+        "groupPolicyLanguage": [
+          "View Menus Reservations Book Now Private Events Gather, celebrate, and connect at Mercantile&mdash;where every event is elevated by seasonal flavors, curated experiences, and warm hospitality."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Enjoy seasonal American cuisine, craft cocktails, and exceptional hospitality at Mercantile Denver, located in the heart of Denver Union Station.",
+            "sourceUrl": "https://www.mercantiledenver.com/"
+          },
+          {
+            "quote": "title: Mercantile Denver | American Restaurant in Union Station Denver",
+            "sourceUrl": "https://www.mercantiledenver.com/"
+          },
+          {
+            "quote": "og:description: xplore Mercantile Denver",
+            "sourceUrl": "https://www.mercantiledenver.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Mercantile Restaurant in Union Station Denver",
+            "sourceUrl": "https://www.mercantiledenver.com/menus/"
+          },
+          {
+            "quote": "og:description: Host corporate events, rehearsal dinners, celebrations, and private dining experiences at Mercantile Denver in Union Station.",
+            "sourceUrl": "https://www.mercantiledenver.com/private-events/"
+          },
+          {
+            "quote": "title: Private Dining & Event Venue in Denver | Mercantile Denver",
+            "sourceUrl": "https://www.mercantiledenver.com/private-events/"
+          },
+          {
+            "quote": "og:description: Learn about Mercantile Denver",
+            "sourceUrl": "https://www.mercantiledenver.com/about/"
+          },
+          {
+            "quote": "title: About Mercantile Denver | Seasonal Dining in Union Station",
+            "sourceUrl": "https://www.mercantiledenver.com/about/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.mercantiledenver.com/",
+          "https://www.mercantiledenver.com/menus/",
+          "https://www.mercantiledenver.com/private-events/",
+          "https://www.mercantiledenver.com/about/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:17.171Z",
+        "playwrightPages": 0
+      }
+    },
+    "work-class-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:19.242Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://workandclassdenver.com/menus-rino",
+        "reservationUrl": "https://www.toasttab.com/work&class/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Founded by 6-time James Beard Award nominee, Dana Rodriguez, Work & Class is and always has been a place to find a \"stiff drink with a square meal.\" The menu reflects the down-to-earth personality of Chef Dana, who grew up and learned to cook o",
+            "sourceUrl": "https://workandclassdenver.com/"
+          },
+          {
+            "quote": "meta description: Founded by 6-time James Beard Award nominee, Dana Rodriguez, Work & Class is and always has been a place to find a \"stiff drink with a square meal.\" The menu reflects the down-to-earth personality of Chef Dana, who grew up and learned to cook",
+            "sourceUrl": "https://workandclassdenver.com/"
+          },
+          {
+            "quote": "title: RINO &mdash; Work & Class",
+            "sourceUrl": "https://workandclassdenver.com/menus-rino"
+          },
+          {
+            "quote": "title: ABOUT &mdash; Work & Class",
+            "sourceUrl": "https://workandclassdenver.com/about"
+          },
+          {
+            "quote": "og:description: Discover restaurants to love in your city and beyond. Get the latest restaurant intel and explore Resy’s curated guides to find the right spot for any occasion. Book your table now through the Resy iOS app or Resy.com.",
+            "sourceUrl": "https://workandclassdenver.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://workandclassdenver.com/",
+          "https://workandclassdenver.com/menus-rino",
+          "https://workandclassdenver.com/about",
+          "https://workandclassdenver.com/reservations"
+        ],
+        "retrievedAt": "2026-08-18T22:56:19.242Z",
+        "playwrightPages": 0
+      }
+    },
+    "ultreia-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:21.921Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://ultreiadenver.com/menus/",
+        "reservationUrl": "https://order.toasttab.com/online/ultreia-1701-wynkoop-st-suite-105",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "FOR PRIVATE EVENTS Event Request Ultreia is part of Crafted Concepts restaurant group along with Rioja and Bistro Vendome and we welcome your private dining event at all of those locations.",
+        "groupPolicyLanguage": [
+          "FOR PRIVATE EVENTS Event Request Ultreia is part of Crafted Concepts restaurant group along with Rioja and Bistro Vendome and we welcome your private dining event at all of those locations.",
+          "FOR PRIVATE EVENTS Ultreia is part of Crafted Concepts restaurant group along with Rioja and Bistro Vendome and we welcome your private dining event at all of those locations."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Looking for Spanish restaurants in Denver? Ultreia Denver, located in Union Station, offers Spanish tapas, Portuguese petiscos and more in a mural-lined, split-level Union Station space. Call today for a reservation 303.534.1970",
+            "sourceUrl": "https://ultreiadenver.com/"
+          },
+          {
+            "quote": "title: Union Station Denver Restaurants | Spanish Restaurant Denver | Ultreia",
+            "sourceUrl": "https://ultreiadenver.com/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://ultreiadenver.com/",
+          "https://ultreiadenver.com/menus/",
+          "https://ultreiadenver.com/events/",
+          "https://ultreiadenver.com/contact/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:21.921Z",
+        "playwrightPages": 0
+      }
+    },
+    "el-five-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:29.034Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://ediblebeats.com/menus/el-five-menu",
+        "reservationUrl": "https://www.opentable.com/restref/client/?restref=443986&",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [
+          "Denver, CO 80212 Located in a reformed candy factory on historic Tennyson Street, the space is Gluten-Free Certified and brimming with plants and natural light.",
+          "Serving up vegan, gluten-free, sustainably sourced fare, with all-day brunch and the option to add animal-based proteins.",
+          "FULL RESTAURANT BUYOUT UP TO 175 GUESTS Gluten-Free Certified Space Dual Patios — Tennyson St.",
+          "All animal proteins are certified humane, pasture-raised and utilize non-GMO, vegetarian feed."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Home » Private Events Private Events Let us host your next party!",
+        "groupPolicyLanguage": [
+          "Home » Private Events Private Events Let us host your next party!",
+          "FULL RESTAURANT BUYOUT UP TO 175 GUESTS Gluten-Free Certified Space Dual Patios — Tennyson St.",
+          "instagram Close Menu Linger Vital Root El Five Root Down Root Down DIA Private Events About Careers Contact Gift Cards Beat Box Farms instagram"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Nestled five floors above LoHi in Denver, El Five serves traditional Spanish and Mediterranean tapas with influences from North Africa and the Middle East. The large, open-air patio boasts spectacular rooftop views, while the space inside is un",
+            "sourceUrl": "https://ediblebeats.com/restaurants/el-five/"
+          },
+          {
+            "quote": "title: Tapas with a View in LoHi Denver | El Five",
+            "sourceUrl": "https://ediblebeats.com/restaurants/el-five/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://ediblebeats.com/restaurants/el-five/"
+          },
+          {
+            "quote": "og:description: Plan unforgettable private dining events in Denver at Edible Beats' award-winning restaurants. Enjoy chef-crafted menus, unique event spaces, and stunning ambiance for any occasion. Book your event today!",
+            "sourceUrl": "https://ediblebeats.com/private-events/"
+          },
+          {
+            "quote": "title: Private Events - Edible Beats",
+            "sourceUrl": "https://ediblebeats.com/private-events/"
+          },
+          {
+            "quote": "title: El Five Menu - Edible Beats",
+            "sourceUrl": "https://ediblebeats.com/menus/el-five-menu"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://ediblebeats.com/restaurants/el-five/",
+          "https://ediblebeats.com/private-events/",
+          "https://ediblebeats.com/about/",
+          "https://ediblebeats.com/menus/el-five-menu"
+        ],
+        "retrievedAt": "2026-08-18T22:56:29.034Z",
+        "playwrightPages": 0
+      }
+    },
+    "sushi-den-denver": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:31.742Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/sushi-den",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Chef’s Table Private Room Chef’s Table in Okonomi-style with Private Chef Chef’s Table takes place in Sushi Den’s private room, with your Omakase Chef.",
+        "groupPolicyLanguage": [
+          "Chef’s Table Private Room Chef’s Table in Okonomi-style with Private Chef Chef’s Table takes place in Sushi Den’s private room, with your Omakase Chef."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: 2026 Summer Rooftop Party! Tickets Now Available! September 1 (tues) & 2 (wed) Join us for the 10th Anniversary of our first Rooftop Party Benefit. Ticket includes an evening of all-you-can-eat street food, Including Sushi, unlimited water, 5",
+            "sourceUrl": "https://www.sushiden.net/"
+          },
+          {
+            "quote": "title: Sushi Den - Sushi & Japanese Restaurant",
+            "sourceUrl": "https://www.sushiden.net/"
+          },
+          {
+            "quote": "meta description: About Us | Comment Form | Gift Cards | DENCHU ROOM Sushi Den Sushi Den has been on the vanguard and regarded as one of the premier sushi and Japanese restaurants in the United States since opening Christmas 1984. Independently owned and opera",
+            "sourceUrl": "https://www.sushiden.net/about/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.sushiden.net/",
+          "https://www.sushiden.net/about/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:31.742Z",
+        "playwrightPages": 0
+      }
+    },
+    "charleston-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:33.051Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://charlestonrestaurant.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/charleston-baltimore-1000-lancaster-st/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "An Exceptional Dining Experience Charleston’s private dining features the culinary talents of award winning chef, Cindy Wolf.",
+        "groupPolicyLanguage": [
+          "An Exceptional Dining Experience Charleston’s private dining features the culinary talents of award winning chef, Cindy Wolf.",
+          "Private Dining Guide Our Private Dining Manager, Abbe Gould , will be your dedicated guide in crafting and delivering an unforgettable event experience.",
+          "For private dining requests, please complete the inquiry form below or email events@charlestonrestaurant.com and we will contact you within 24 – 48 hours.",
+          "Private Event Software powered by Tripleseat Follow Follow 1000 Lancaster Street Baltimore, Maryland 21202 410.332.7373 Dine-In Service: Monday - Thursday 5:30pm - 9:00pm, Friday & Saturday 5:00pm - 9:30pm, Sunday 5:00pm - 8:30pm"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Charleston is an award-winning fine dining restaurant in Baltimore’s Harbor East, led by Chef Cindy Wolf. Experience world-class cuisine and our 2025 James Beard Award–winning wine program.",
+            "sourceUrl": "https://charlestonrestaurant.com/"
+          },
+          {
+            "quote": "title: Charleston Restaurant - Fine Dining in Baltimore",
+            "sourceUrl": "https://charlestonrestaurant.com/"
+          },
+          {
+            "quote": "og:description: Charleston, led by Chef Cindy Wolf since 1997, won the 2025 James Beard Award for Outstanding Wine Program. Experience exceptional fine dining and an acclaimed, dynamic wine selection.",
+            "sourceUrl": "https://charlestonrestaurant.com/about-us/"
+          },
+          {
+            "quote": "title: Chef Cindy Wolf- Charleston Restaurant",
+            "sourceUrl": "https://charlestonrestaurant.com/about-us/"
+          },
+          {
+            "quote": "og:description: Charleston offers an extensive prix fixe tasting menu from which guests choose between three and up to six courses. Service is experienced, informed, and intuitive.",
+            "sourceUrl": "https://charlestonrestaurant.com/menu/"
+          },
+          {
+            "quote": "title: Menu - Charleston Restaurant",
+            "sourceUrl": "https://charlestonrestaurant.com/menu/"
+          },
+          {
+            "quote": "og:description: Charleston’s private dining features the culinary talents of award winning chef, Cindy Wolf. The restaurant is available for intimate dining groups of up to 90.",
+            "sourceUrl": "https://charlestonrestaurant.com/private-dining-rooms/"
+          },
+          {
+            "quote": "title: Private Dining Baltimore - Charleston Restaurant",
+            "sourceUrl": "https://charlestonrestaurant.com/private-dining-rooms/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://charlestonrestaurant.com/",
+          "https://charlestonrestaurant.com/about-us/",
+          "https://charlestonrestaurant.com/menu/",
+          "https://charlestonrestaurant.com/private-dining-rooms/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:33.051Z",
+        "playwrightPages": 0
+      }
+    },
+    "thames-street-oyster-house-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:36.158Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "http://www.thamesstreetoysterhouse.com/menu/TSOH_Menu-carryout.pdf",
+        "reservationUrl": "https://resy.com/cities/bal/thames-street-oyster-house?date=2021-02-09&seats=2",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Thames Street Oyster House",
+            "sourceUrl": "https://thamesstreetoysterhouse.com/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://thamesstreetoysterhouse.com/",
+          "https://thamesstreetoysterhouse.com/hours.htm"
+        ],
+        "retrievedAt": "2026-08-18T22:56:36.158Z",
+        "playwrightPages": 0
+      }
+    },
+    "la-cuchara-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:37.519Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.lacucharabaltimore.com/menu",
+        "reservationUrl": "https://resy.com/cities/bal/la-cuchara?date=2021-03-03&seats=2",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "top of page MENUS EVENTS RESERVATIONS DIRECTIONS PRIVATE DINING ABOUT US PRESS More Use tab to navigate through the menu items.",
+        "groupPolicyLanguage": [
+          "top of page MENUS EVENTS RESERVATIONS DIRECTIONS PRIVATE DINING ABOUT US PRESS More Use tab to navigate through the menu items.",
+          "Dinner Menu Wine List Beverage Dessert Menu Happy Hour Drink Specials Private Dining Inquiries (443) 708-3838 3600 Clipper Mill Rd.",
+          "Private Dining Inquiries (443) 708-3838 3600 Clipper Mill Rd."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: + +14437083838",
+            "sourceUrl": "https://www.lacucharabaltimore.com/"
+          },
+          {
+            "quote": "og:description: Rated as one of the best restaurants in Baltimore, La Cuchara offers seasonal, wood fired cuisine inspired by the Basque regions of France and Spain.",
+            "sourceUrl": "https://www.lacucharabaltimore.com/"
+          },
+          {
+            "quote": "title: La Cuchara | Baltimore Spanish Restaurant | Extensive Wine List | Rehearsal Dinners",
+            "sourceUrl": "https://www.lacucharabaltimore.com/"
+          },
+          {
+            "quote": "title: Menu | La Cuchara | Baltimore Restaurant",
+            "sourceUrl": "https://www.lacucharabaltimore.com/menu"
+          },
+          {
+            "quote": "title: Events | La Cuchara | Baltimore Restaurant",
+            "sourceUrl": "https://www.lacucharabaltimore.com/events"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.lacucharabaltimore.com/",
+          "https://www.lacucharabaltimore.com/menu",
+          "https://www.lacucharabaltimore.com/events"
+        ],
+        "retrievedAt": "2026-08-18T22:56:37.519Z",
+        "playwrightPages": 0
+      }
+    },
+    "woodberry-kitchen-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:39.308Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/woodberry-kitchen-2010-clipper-park-rd-ste-126/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Woodberry Kitchen &mdash; Woodberry Kitchen",
+            "sourceUrl": "https://www.woodberrykitchen.com/about"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.woodberrykitchen.com/",
+          "https://www.woodberrykitchen.com/about"
+        ],
+        "retrievedAt": "2026-08-18T22:56:39.308Z",
+        "playwrightPages": 0
+      }
+    },
+    "azumi-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:40.606Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: A contemporary Japanese experience Azumi brings an uncompromising commitment to the Japanese craft, ingredients and creativity.",
+            "sourceUrl": "https://azumirestaurant.com/"
+          },
+          {
+            "quote": "title: Azumi | Houston, TX - Baltimore, MD | A contemporary Japanese experience",
+            "sourceUrl": "https://azumirestaurant.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://azumirestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:40.606Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-bygone-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:41.446Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Step back into the roaring glamour of days passed at The Bygone, Harbor East’s most elevated and exciting dining experience. We’re a full-service American gastro bistro that represents historic, vibrant, authentic Baltimore. We blend modern ene",
+            "sourceUrl": "https://www.thebygonerestaurant.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.thebygonerestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:41.446Z",
+        "playwrightPages": 0
+      }
+    },
+    "cinghiale-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:42.269Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "DEPOSIT We require a $1,000 deposit per person in order to confirm your space/s on the tour.",
+          "We will provide you with electronic deposit information when we confirm your booking form via email.",
+          "Once receiving your deposit you will get an email receipt and confirmation from us, with a balance and your next payment due date."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.cinghiale.com/"
+          },
+          {
+            "quote": "title: Cinghiale: Cycling tours with Andy Hampsten",
+            "sourceUrl": "https://www.cinghiale.com/"
+          },
+          {
+            "quote": "title: About Us &mdash; Cinghiale: Cycling tours with Andy Hampsten",
+            "sourceUrl": "https://www.cinghiale.com/about-us"
+          },
+          {
+            "quote": "title: General 2 &mdash; Cinghiale: Cycling tours with Andy Hampsten",
+            "sourceUrl": "https://www.cinghiale.com/booking"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.cinghiale.com/",
+          "https://www.cinghiale.com/about-us",
+          "https://www.cinghiale.com/booking"
+        ],
+        "retrievedAt": "2026-08-18T22:56:42.269Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-asbury-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:44.300Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.theasbury.com/menus/",
+        "reservationUrl": "https://order.toasttab.com/online/theasbury",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "The Dunhill Bar Private Events A historic setting for all types of private events with catering by The Asbury.",
+        "groupPolicyLanguage": [
+          "The Dunhill Bar Private Events A historic setting for all types of private events with catering by The Asbury.",
+          "Private Events Don't Miss a Thing: Sign up for our newsletter Newsletter"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Located in The Dunhill Hotel, The Asbury provides modern southern dining in uptown Charlotte, North Carolina. Learn More.",
+            "sourceUrl": "https://www.theasbury.com/"
+          },
+          {
+            "quote": "title: Southern Cuisine - Restaurant in Charlotte, NC | The Asbury",
+            "sourceUrl": "https://www.theasbury.com/"
+          },
+          {
+            "quote": "og:description: Parlor of Wonder is an intimate and interactive dining and magic experience happening at The Dunhill on Saturday, August 22. Guests will enjoy a cocktail hour and three-course dinner from The Asbury’s culinary team followed by a dynamic perform",
+            "sourceUrl": "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/"
+          },
+          {
+            "quote": "title: Parlor of Wonder: Dinner & a Magic Show | Uptown Charlotte Event",
+            "sourceUrl": "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/"
+          },
+          {
+            "quote": "og:description: Discover a uniquely Carolinian experience at The Asbury: Modern southern cuisine, made with ingredients from small, local family farms. View Menus.",
+            "sourceUrl": "https://www.theasbury.com/menus/"
+          },
+          {
+            "quote": "title: Menus - Modern Southern Cuisine | The Asbury",
+            "sourceUrl": "https://www.theasbury.com/menus/"
+          },
+          {
+            "quote": "og:description: The Asbury restaurant is named in honor of Louis Asbury, Sr. In 1929, the Charlotte architect designed what is now The Dunhill Hotel. Learn More.",
+            "sourceUrl": "https://www.theasbury.com/about/"
+          },
+          {
+            "quote": "title: About Us - Southern Restaurant at The Dunhill Hotel | The Asbury",
+            "sourceUrl": "https://www.theasbury.com/about/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.theasbury.com/",
+          "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/",
+          "https://www.theasbury.com/menus/",
+          "https://www.theasbury.com/about/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:44.300Z",
+        "playwrightPages": 0
+      }
+    },
+    "kindred-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:46.917Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.kindreddavidson.com/menu",
+        "reservationUrl": "https://resy.com/cities/davidson-nc/venues/kindred-restaurant",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [
+          "Our team is delighted to offer assistance with identifying options to accommodate any restrictions or allergies."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Our dining rooms can accommodate as few as one to one hundred fifty guests for private events.",
+        "groupPolicyLanguage": [
+          "Our dining rooms can accommodate as few as one to one hundred fifty guests for private events.",
+          "Tues - Thurs $5,500 Fri & Sat $8,500 Private Partial Buyout Reserve a private dining room at Kindred for up to 70 guests.",
+          "You’ll receive access to Kindred’s second-floor private dining space with dedicated waitstaff, restrooms, and more.",
+          "Tues - Thurs $10,000 Fri & Sat $15,000 Private Full Buyout Reserve a fully private experience at Kindred for up to 165 guests."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,",
+            "sourceUrl": "https://www.kindreddavidson.com/"
+          },
+          {
+            "quote": "og:description: Kindred Restaurant, located in Downtown Davidson, NC. Chef-driven restaurant and private event and wedding space in Davidson, NC. Enjoy a nationally recognized culinary program by Chef Joe and Katy Kindred. James Beard Foundation Best Chef Sout",
+            "sourceUrl": "https://www.kindreddavidson.com/"
+          },
+          {
+            "quote": "meta description: Kindred Restaurant, located in Downtown Davidson, NC. Chef-driven restaurant and private event and wedding space in Davidson, NC. Enjoy a nationally recognized culinary program by Chef Joe and Katy Kindred. James Beard Foundation Best Chef So",
+            "sourceUrl": "https://www.kindreddavidson.com/"
+          },
+          {
+            "quote": "title: Kindred Restaurant | Restaurant & Event Space in Davidson, NC",
+            "sourceUrl": "https://www.kindreddavidson.com/"
+          },
+          {
+            "quote": "og:description: The best venue for events in the Lake Norman and Charlotte area. Perfect for weddings, corporate events, special occasions, and more.",
+            "sourceUrl": "https://www.kindreddavidson.com/events"
+          },
+          {
+            "quote": "title: Events & Wedding Venue, Serving Lake Norman & Charlotte, NC &mdash; Kindred Restaurant | Voted Best Restaurant in Charlotte",
+            "sourceUrl": "https://www.kindreddavidson.com/events"
+          },
+          {
+            "quote": "og:description: View a sample of our award-winning menu at Kindred Restaurant in Davidson, NC.",
+            "sourceUrl": "https://www.kindreddavidson.com/menu"
+          },
+          {
+            "quote": "title: Kindred Menu &mdash; Kindred Restaurant | Voted Best Restaurant in Charlotte",
+            "sourceUrl": "https://www.kindreddavidson.com/menu"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.kindreddavidson.com/",
+          "https://www.kindreddavidson.com/events",
+          "https://www.kindreddavidson.com/menu"
+        ],
+        "retrievedAt": "2026-08-18T22:56:46.917Z",
+        "playwrightPages": 0
+      }
+    },
+    "haberdish-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:48.712Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://haberdish.com/food-philosophy/",
+        "reservationUrl": "https://www.toasttab.com/haberdish/v2/online-order",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Food Philosophy - Haberdish",
+            "sourceUrl": "https://haberdish.com/food-philosophy/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://haberdish.com/",
+          "https://haberdish.com/about-us/",
+          "https://haberdish.com/food-philosophy/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:48.712Z",
+        "playwrightPages": 0
+      }
+    },
+    "midwood-smokehouse-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:52.789Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://midwoodsmokehouse.com/menus/",
+        "reservationUrl": "https://order.toasttab.com/online/locations/34fff39a-b77f-46c7-bad4-bdf6bec8c7ae/1234",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [
+          "Vegetarians and health-conscious diners will find plenty to savor, from fresh salads to inventive veggie dishes."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-704-295-4227",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Barbecue",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +1-980-430-1086",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +1-980-237-7929",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +1-980-689-2990",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +1-803-764-1231",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +1-919-267-2666",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "og:description: We invite you to visit all of our FS Food Group concepts that our customers and The Carolina’s have wholeheartedly embraced.",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "meta description: Midwood Smokehouse, one of the top BBQ restaurants, serves up authentic barbecue across North Carolina and South Carolina. Bold flavors. True Southern style.",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "title: Midwood Smokehouse | BBQ Restaurants North Carolina & South Carolina | Barbecue Near Me",
+            "sourceUrl": "https://midwoodsmokehouse.com/"
+          },
+          {
+            "quote": "og:description: Park Road Ballantyne Birkdale Central Ave Columbia Raleigh",
+            "sourceUrl": "https://midwoodsmokehouse.com/group-ordering/"
+          },
+          {
+            "quote": "title: Pick Up & Drop Off Catering – Choose Your Location - Midwood Smokehouse",
+            "sourceUrl": "https://midwoodsmokehouse.com/group-ordering/"
+          },
+          {
+            "quote": "og:description: Let’s get one thing out of the way: in the Carolinas, barbecue isn’t food—it’s identity, heritage, and for some, an unspoken religion. You don’t casually mention you like a certain barbecue spot around here unless you’re ready to lose a friends",
+            "sourceUrl": "https://midwoodsmokehouse.com/about/"
+          },
+          {
+            "quote": "title: Why Midwood Smokehouse Isn’t Just the Best BBQ in Town—It’s a Way of Life - Midwood Smokehouse",
+            "sourceUrl": "https://midwoodsmokehouse.com/about/"
+          },
+          {
+            "quote": "og:description: Explore Midwood Smokehouse's mouthwatering BBQ menu; featuring smoked meats, Southern sides, and bold flavors served fresh at all our locations.",
+            "sourceUrl": "https://midwoodsmokehouse.com/menus/"
+          },
+          {
+            "quote": "title: BBQ Menus NC & SC | Midwood Smokehouse",
+            "sourceUrl": "https://midwoodsmokehouse.com/menus/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://midwoodsmokehouse.com/",
+          "https://midwoodsmokehouse.com/group-ordering/",
+          "https://midwoodsmokehouse.com/about/",
+          "https://midwoodsmokehouse.com/menus/"
+        ],
+        "retrievedAt": "2026-08-18T22:56:52.789Z",
+        "playwrightPages": 0
+      }
+    },
+    "stagioni-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:56.975Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.stagioniclt.com/menu.php",
+        "reservationUrl": "https://www.toasttab.com/stagioni-four-seasons-of-food-715-providence-rd/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Stagioni | An MRG* Restaurant",
+            "sourceUrl": "https://www.stagioniclt.com/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.stagioniclt.com/",
+          "https://www.stagioniclt.com/about.php",
+          "https://www.stagioniclt.com/menu.php",
+          "https://www.stagioniclt.com/reserve.php"
+        ],
+        "retrievedAt": "2026-08-18T22:56:56.975Z",
+        "playwrightPages": 0
+      }
+    },
+    "customshop-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:56:59.436Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/the-custom-shop-1601-elizabeth-ave/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [
+          "Allergies & Accommodations We can accommodate most allergies, with the exception of Allium.",
+          "Feel free to reach out to us directly at info@customshopfood.com for any allergy questions or specific accommodations you might need."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Parties Celebrate your next special occasion with us—intimate gatherings, private events, or festive parties tailored to your taste and style.",
+        "groupPolicyLanguage": [
+          "Parties Celebrate your next special occasion with us—intimate gatherings, private events, or festive parties tailored to your taste and style.",
+          "For parties larger than 8 people please use the ‘Large Party / Private Dining Inquiry’ form on our website.",
+          "Reservations Restaurant CustomShop Large Party & Private Dining Inquires Host your next gathering at Customshop.",
+          "Whether you’re planning an intimate dinner or a full restaurant buyout, our team will work with you to create a memorable experience tailored to your group."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Where Local Ingredients Meet Exceptional Flavor Make a Reservation: Book a Table About Us About us Executive Chef and Owner Andres Kaifer and his team blend Latin and Italian influences with North Carolina produce that is both inventive and app",
+            "sourceUrl": "https://customshopfood.com/"
+          },
+          {
+            "quote": "title: CustomShop Handcrafted Food - Elizabeth, Charlotte, NC",
+            "sourceUrl": "https://customshopfood.com/"
+          },
+          {
+            "quote": "og:description: Reservations Booking Make a reservation Time Tue to Sat : 5pm – 10pm Sun – Mon : Closed Address 1601 Elizabeth Avenue Charlotte, NC 28204 Phone Number (704)-333-3396",
+            "sourceUrl": "https://customshopfood.com/reservations"
+          },
+          {
+            "quote": "title: Reservations - Custom Shop",
+            "sourceUrl": "https://customshopfood.com/reservations"
+          },
+          {
+            "quote": "og:description: About Us Welcome Customshop is a chef-driven restaurant that showcases local farms and purveyors in an effort to bring our guests the highest quality ingredients within our community. Executive Chef and Owner Andres Kaifer along with his team b",
+            "sourceUrl": "https://customshopfood.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://customshopfood.com/",
+          "https://customshopfood.com/reservations",
+          "https://customshopfood.com/about"
+        ],
+        "retrievedAt": "2026-08-18T22:56:59.436Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-catbird-seat-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:06.561Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/the-catbird-seat",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "PRIVATE EVENTS GIFT CARDS Now located atop the Bill Voorhees Building on 8th Avenue South, the restaurant enters a new chapter with chefs Andy Doubrava and Tiffani Ortiz at the helm.",
+        "groupPolicyLanguage": [
+          "PRIVATE EVENTS GIFT CARDS Now located atop the Bill Voorhees Building on 8th Avenue South, the restaurant enters a new chapter with chefs Andy Doubrava and Tiffani Ortiz at the helm.",
+          "PRIVATE EVENTS WORK WITH US GIFT CARDS Chefs Tiffani Ortiz and Andy Doubrava lead The Catbird Seat - Nashville's award-winning culinary incubator, honored with a Michelin Star in 2025 and named a James Beard Foundation NOMINEE for Outstanding Restaurant."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , We 00:00-00:00, Th 00:00-00:00, Fr 00:00-00:00, Sa 00:00-00:00,",
+            "sourceUrl": "https://www.thecatbirdseatrestaurant.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.thecatbirdseatrestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-18T22:57:06.561Z",
+        "playwrightPages": 0
+      }
+    },
+    "husk-nashville-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:07.443Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://husknashville.com/menus/",
+        "reservationUrl": "https://www.toasttab.com/husk-nashville/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining Options Spotlight on some of our Southern suppliers Villa Acres Farms Sparta, TN Bucksnort Trout Ranch McEwen, TN Blue Heron Farmstead Milton, TN Interested in Joining Our Team?",
+        "groupPolicyLanguage": [
+          "Private Dining Options Spotlight on some of our Southern suppliers Villa Acres Farms Sparta, TN Bucksnort Trout Ranch McEwen, TN Blue Heron Farmstead Milton, TN Interested in Joining Our Team?",
+          "Private Dining The Stables at Husk is a private dining and events space in our historic carriage house offering a customized and exclusive Husk experience.",
+          "For groups that exceed private dining capacity, we are happy to consider a full restaurant buyout of the main restaurant.",
+          "Private Event Information Event Request Private Event Software powered by Tripleseat"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: In the heart of the Music City, Husk Nashville redefines Southern classics through an ingredient-driven menu that draws dish inspiration from Tennessee purveyors and farmers.",
+            "sourceUrl": "https://husknashville.com/"
+          },
+          {
+            "quote": "title: Modern Southern Cuisine in Nashville Tennessee | Husk Restaurant",
+            "sourceUrl": "https://husknashville.com/"
+          },
+          {
+            "quote": "og:description: Husk offers a modern approach to southern ingredients. We serve brunch and dinner with homemade desserts, hand-crafted cocktails and local beers.",
+            "sourceUrl": "https://husknashville.com/menus/"
+          },
+          {
+            "quote": "title: Our Menus - Husk Restaurant | Nashville TN",
+            "sourceUrl": "https://husknashville.com/menus/"
+          },
+          {
+            "quote": "og:description: Interested in reservations or setting up private dining? Call our restaurant at 615-256-6565, book on Resy or fill out a form and a member of the Husk team will get in contact with you.",
+            "sourceUrl": "https://husknashville.com/contact/"
+          },
+          {
+            "quote": "title: Contact Us - Husk Restaurant | Nashville TN",
+            "sourceUrl": "https://husknashville.com/contact/"
+          },
+          {
+            "quote": "og:description: The Stables at Husk Nashville is a private dining and events space in our historic carriage house, offering a customized and exclusive Husk experience. Contact us today to set up your private dining experience.",
+            "sourceUrl": "https://husknashville.com/private-dining/"
+          },
+          {
+            "quote": "title: Private Dining - Husk Restaurant | Nashville TN",
+            "sourceUrl": "https://husknashville.com/private-dining/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://husknashville.com/",
+          "https://husknashville.com/menus/",
+          "https://husknashville.com/contact/",
+          "https://husknashville.com/private-dining/"
+        ],
+        "retrievedAt": "2026-08-18T22:57:07.443Z",
+        "playwrightPages": 0
+      }
+    },
+    "butcher-bee-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:09.700Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.nashvillescene.com/bon/2025/food-and-drink/writers-choice/butcher-bee/article_4303b6b7-c12f-490d-ad95-b64c2b7d45bb.html",
+        "reservationUrl": "https://blog.resy.com/the-hit-list/nashville-restaurants-may-2026/",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Our party of 4 did the chef&rsquo;s choice style dinner and got to try so many delicious dishes.",
+        "groupPolicyLanguage": [
+          "Our party of 4 did the chef&rsquo;s choice style dinner and got to try so many delicious dishes.",
+          "The Rose Room A private dining venue and lounge located at Butcher & Bee Nashville.",
+          "Email Sign Up Private Dining Spaces Break bread with us.",
+          "The Rose Room is a fully private dining room that is versatile enough to swing from cozy lounge space to dinner party."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Explore our ever-changing menu of honest to goodness eats. Recipes are adventurous, familiar and lovingly crafted from farm-fresh foods.",
+            "sourceUrl": "https://www.butcherandbee.com/"
+          },
+          {
+            "quote": "title: Butcher & Bee | Nashville",
+            "sourceUrl": "https://www.butcherandbee.com/"
+          },
+          {
+            "quote": "og:description: Discover what’s happening at Butcher & Bee next. Look over our list of local events and happenings.",
+            "sourceUrl": "https://www.butcherandbee.com/locations/nashville/events"
+          },
+          {
+            "quote": "title: Events | Happenings | Butcher & Bee",
+            "sourceUrl": "https://www.butcherandbee.com/locations/nashville/events"
+          },
+          {
+            "quote": "og:description: We lovingly craft foods with the finest local ingredients to create a menu that’s both adventurous and familiar.",
+            "sourceUrl": "https://www.butcherandbee.com/about-us/"
+          },
+          {
+            "quote": "title: About | Vision | Butcher & Bee",
+            "sourceUrl": "https://www.butcherandbee.com/about-us/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.butcherandbee.com/",
+          "https://www.butcherandbee.com/locations/nashville/events",
+          "https://www.butcherandbee.com/about-us/"
+        ],
+        "retrievedAt": "2026-08-18T22:57:09.700Z",
+        "playwrightPages": 0
+      }
+    },
+    "rolf-and-daughters-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:12.079Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.rolfanddaughters.com/menu-1",
+        "reservationUrl": "https://www.toasttab.com/rolf-and-daughters/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "menu large parties merch gift cards about contact jobs Make a Reservation View the Menu Our Menu Changes with the Seasons.",
+        "groupPolicyLanguage": [
+          "menu large parties merch gift cards about contact jobs Make a Reservation View the Menu Our Menu Changes with the Seasons."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Seasonal New American cooking in Nashville",
+            "sourceUrl": "https://www.rolfanddaughters.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: New American, Farm-to-Table, Seasonal, Pasta",
+            "sourceUrl": "https://www.rolfanddaughters.com/menu-1"
+          },
+          {
+            "quote": "og:description: See the current menu at Rolf and Daughters: house made pasta, seasonal plates, natural wine and cocktails. Germantown, Nashville. Dinner nightly.",
+            "sourceUrl": "https://www.rolfanddaughters.com/menu-1"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Farm-to-Table, Seasonal, New American, Pasta",
+            "sourceUrl": "https://www.rolfanddaughters.com/about"
+          },
+          {
+            "quote": "og:description: The story behind Rolf and Daughters in Germantown, Nashville. Chef Philip Krajeck, house made pasta, and farm relationships across Middle Tennessee.",
+            "sourceUrl": "https://www.rolfanddaughters.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.rolfanddaughters.com/",
+          "https://www.rolfanddaughters.com/menu-1",
+          "https://www.rolfanddaughters.com/about"
+        ],
+        "retrievedAt": "2026-08-18T22:57:12.079Z",
+        "playwrightPages": 0
+      }
+    },
+    "henrietta-red-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:13.832Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.henriettared.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/henrietta-red-nashville-3",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [
+          "I have dietary restrictions, is that okay?",
+          "We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry.",
+          "We do ask that you inform us of any allergies or dietary restrictions in the notes area when making your reservation so we have plenty of time to plan for your dinner.",
+          "No allergy is too insignificant, so please do not hesitate to let us know!"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "If you have a larger party, we encourage inquiring about our private event space!",
+        "groupPolicyLanguage": [
+          "If you have a larger party, we encourage inquiring about our private event space!"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 10:00-14:00, Sa 17:00-22:00, Su 10:00-14:00, Su 17:00-21:00",
+            "sourceUrl": "https://www.henriettared.com/"
+          },
+          {
+            "quote": "title: MENU &mdash; Henrietta Red",
+            "sourceUrl": "https://www.henriettared.com/menu"
+          },
+          {
+            "quote": "title: FAQ &mdash; Henrietta Red",
+            "sourceUrl": "https://www.henriettared.com/faq"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.henriettared.com/",
+          "https://www.henriettared.com/menu",
+          "https://www.henriettared.com/faq"
+        ],
+        "retrievedAt": "2026-08-18T22:57:13.832Z",
+        "playwrightPages": 0
+      }
+    },
+    "bastion-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:15.581Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/bastion-reservations-nashville?restref=985351&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [
+          "I have dietary restrictions, is that OK?",
+          "We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry.",
+          "Unfortunately, we cannot adjust the set menu for strict vegan diets.",
+          "Please inform us of any allergies or aversions in the notes area when making your reservation so we have plenty of time to plan for your dinner."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "The restaurant operates Wednesday thru Saturday with reservations available from 5:30pm to 9:00pm for parties of 1 to 6.",
+        "groupPolicyLanguage": [
+          "The restaurant operates Wednesday thru Saturday with reservations available from 5:30pm to 9:00pm for parties of 1 to 6.",
+          "There are several options for private events at Bastion.",
+          "A non-refundable 40% deposit is required 30 days prior to all private events.",
+          "Ready to get the ball rolling on your private event?"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Reservations are prepaid and can be made online here.",
+          "We book private dinners a minimum of 60 days in advance with a 40% non-refundable deposit.",
+          "A non-refundable 40% deposit is required 30 days prior to all private events."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:00-00:00, Tu 17:00-00:00, We 17:00-00:00, Th 17:00-00:00, Fr 17:00-01:00, Sa 17:00-01:00, Su 17:00-00:00",
+            "sourceUrl": "https://www.bastionnashville.com/"
+          },
+          {
+            "quote": "og:description: Bastion is an upscale reservation-only tasting menu restaurant and neighborhood bar in Wedgewood-Houston just south of downtown Nashville, Tennessee by chef Josh Habiger and Strategic Hospitality.",
+            "sourceUrl": "https://www.bastionnashville.com/"
+          },
+          {
+            "quote": "og:description: Information on reservations, hours, parking and more for Bastion Restaurant. Bastion is an upscale reservation-only tasting menu restaurant in the Wedgewood-Houston neighborhood just south of downtown Nashville, Tennessee by chef Josh Habiger a",
+            "sourceUrl": "https://www.bastionnashville.com/faq"
+          },
+          {
+            "quote": "title: Bastion Restaurant FAQ Frequently Asked Questions &mdash; Bastion Nashville",
+            "sourceUrl": "https://www.bastionnashville.com/faq"
+          },
+          {
+            "quote": "og:description: Find information about hosting your next event with us.",
+            "sourceUrl": "https://www.bastionnashville.com/private-events"
+          },
+          {
+            "quote": "title: Private Events at Bastion &mdash; Bastion Nashville",
+            "sourceUrl": "https://www.bastionnashville.com/private-events"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.bastionnashville.com/",
+          "https://www.bastionnashville.com/faq",
+          "https://www.bastionnashville.com/private-events"
+        ],
+        "retrievedAt": "2026-08-18T22:57:15.581Z",
+        "playwrightPages": 0
+      }
+    },
+    "locust-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:17.362Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.locustnashville.com/menus",
+        "reservationUrl": "https://www.opentable.com/r/locust-nashville?corrid=dfcf995d-0153-4767-afa7-a7d874494bf6&p=4&sd=2025-05-30T19%3A00%3A00",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [
+          "Can you accommodate dietary restrictions?",
+          "We are not able to cater to vegetarian or vegan diets.",
+          "While we can accommodate most other dietary restrictions, we do not alter existing dishes to cater to restrictions.",
+          "Please notify us of any allergies in your party ahead of your visit by noting them on your reservation or reaching out to our team at info@locustnashville.com ."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "we cannot combine reservations to create large parties.",
+        "groupPolicyLanguage": [
+          "we cannot combine reservations to create large parties.",
+          "This is considered to be a minimum spend for your visit .",
+          "Do you accommodate large parties?",
+          "We accept reservations for parties of 1-4 guests, and have very limited availability for parties of 5 or 6."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Reductions in guest count upon arrival will result in forfeiture of deposit.",
+          "We require a $75.00 per person deposit at the time of booking to secure your reservation.",
+          "The total deposit is applied as a credit to your final check, however if your total bill does not meet the deposit paid, the remainder cannot be refunded."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Discover Locust Nashville offering lunch, dinner, private events, and reservations at 12th Ave. Enjoy seasonal patio dining in a vibrant city setting.",
+            "sourceUrl": "https://www.locustnashville.com/"
+          },
+          {
+            "quote": "title: Locust | Experience Fine Dining – Reserve Today",
+            "sourceUrl": "https://www.locustnashville.com/"
+          },
+          {
+            "quote": "og:description: Find FAQs about reservations, hours, parking, private events, and policies at Locust Nashville. Get quick answers to plan your visit with confidence.",
+            "sourceUrl": "https://www.locustnashville.com/faq"
+          },
+          {
+            "quote": "title: faq | Plan Your Visit Today &mdash; Locust",
+            "sourceUrl": "https://www.locustnashville.com/faq"
+          },
+          {
+            "quote": "title: General 3 &mdash; Locust",
+            "sourceUrl": "https://www.locustnashville.com/menus"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.locustnashville.com/",
+          "https://www.locustnashville.com/faq",
+          "https://www.locustnashville.com/menus"
+        ],
+        "retrievedAt": "2026-08-18T22:57:17.362Z",
+        "playwrightPages": 0
+      }
+    },
+    "lockeland-table-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:19.231Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.lockelandtable.com/drinks",
+        "reservationUrl": "https://order.toasttab.com/online/lockeland-table-1520-woodland-st",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 16:00-22:00, Tu 16:00-22:00, We 16:00-22:00, Th 16:00-22:00, Fr 16:00-22:00, Sa 16:00-22:00,",
+            "sourceUrl": "https://www.lockelandtable.com/"
+          },
+          {
+            "quote": "title: Drinks &mdash; LOCKELAND TABLE",
+            "sourceUrl": "https://www.lockelandtable.com/drinks"
+          },
+          {
+            "quote": "title: Events @ LT &mdash; LOCKELAND TABLE",
+            "sourceUrl": "https://www.lockelandtable.com/events"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.lockelandtable.com/",
+          "https://www.lockelandtable.com/drinks",
+          "https://www.lockelandtable.com/events"
+        ],
+        "retrievedAt": "2026-08-18T22:57:19.231Z",
+        "playwrightPages": 0
+      }
+    },
+    "folk-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:21.076Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.goodasfolk.com/menu",
+        "reservationUrl": "https://order.toasttab.com/online/folknashville",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Menu Large Parties Online Orders Gift Cards About Contact Jobs Cake Orders Uber Eats Delivery Make a Reservation VIEW THE MENU Seasonal Cooking.",
+        "groupPolicyLanguage": [
+          "Menu Large Parties Online Orders Gift Cards About Contact Jobs Cake Orders Uber Eats Delivery Make a Reservation VIEW THE MENU Seasonal Cooking."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:00-22:00, , , Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00, Su 17:00-22:00",
+            "sourceUrl": "https://www.goodasfolk.com/"
+          },
+          {
+            "quote": "og:description: A neighborhood restaurant on Meridian Street in East Nashville. Sourdough pizza, seasonal vegetable plates and natural wine, seven nights a week.",
+            "sourceUrl": "https://www.goodasfolk.com/"
+          },
+          {
+            "quote": "title: Folk | Natural Wine and Sourdough Pizza in East Nashville",
+            "sourceUrl": "https://www.goodasfolk.com/"
+          },
+          {
+            "quote": "og:description: The Folk menu changes with the season. Sourdough pizza, vegetable plates and large format dishes in East Nashville, with natural wine at the bar.",
+            "sourceUrl": "https://www.goodasfolk.com/menu"
+          },
+          {
+            "quote": "title: Menu - Folk | Natural Wine & Pizza &mdash; FOLK",
+            "sourceUrl": "https://www.goodasfolk.com/menu"
+          },
+          {
+            "quote": "og:description: Chef Philip Krajeck cooks from what local farms are growing at Folk in East Nashville, with sourdough pizza, vegetable plates and natural wine",
+            "sourceUrl": "https://www.goodasfolk.com/about"
+          },
+          {
+            "quote": "title: About Folk | Natural Wine and Sourdough Pizza in East Nashville &mdash; FOLK",
+            "sourceUrl": "https://www.goodasfolk.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.goodasfolk.com/",
+          "https://www.goodasfolk.com/menu",
+          "https://www.goodasfolk.com/about"
+        ],
+        "retrievedAt": "2026-08-18T22:57:21.076Z",
+        "playwrightPages": 0
+      }
+    },
+    "josephine-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-18T22:57:22.777Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: สล็อตเว็บตรง รองรับการเล่นผ่านมือถือทุกระบบ เว็บตรงไม่ผ่านเอเย่นต์ ฝากถอนออโต้ สล็อตแตกง่าย จ่ายจริง ปลอดภัยทุกธุรกรรม",
+            "sourceUrl": "https://josephineon12th.com/"
+          },
+          {
+            "quote": "title: สล็อตเว็บตรง ค่า RTP สูง ทุกเกม เว็บตรง แตกง่าย ตลอด 24 ชม",
+            "sourceUrl": "https://josephineon12th.com/"
+          },
+          {
+            "quote": "noscript: body { -webkit-animation: none; -moz-animation: none; -ms-animation: none; animation: none }",
+            "sourceUrl": "https://josephineon12th.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://josephineon12th.com/"
+        ],
+        "retrievedAt": "2026-08-18T22:57:22.777Z",
+        "playwrightPages": 0
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "note": "Controlled geographic seeds for metros not yet in the corpus. Every entry is a real named establishment with a public listing or official site. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
-  "generatedAt": "2026-08-12T06:45:00.000Z",
+  "generatedAt": "2026-08-18T22:50:00.000Z",
   "batches": [
     {
       "city": "Atlanta",
@@ -25,7 +25,7 @@
           ]
         },
         {
-          "title": "Mujō",
+          "title": "Muj\u014d",
           "website": "https://www.mujoatl.com/",
           "address": "Atlanta, GA",
           "cuisineTags": [
@@ -177,7 +177,7 @@
           ]
         },
         {
-          "title": "minibar by José Andrés",
+          "title": "minibar by Jos\u00e9 Andr\u00e9s",
           "website": "https://www.minibarbyjoseandres.com/",
           "address": "Washington, DC",
           "cuisineTags": [
@@ -246,7 +246,7 @@
           ]
         },
         {
-          "title": "Joe's Seafood Prime Steak & Stone Crab — Washington DC",
+          "title": "Joe's Seafood Prime Steak & Stone Crab \u2014 Washington DC",
           "website": "https://www.joes.net/washington-dc",
           "phone": "+1-202-489-0140",
           "address": "750 15th Street NW, Washington, DC 20005",
@@ -256,7 +256,7 @@
           ]
         },
         {
-          "title": "The Capital Grille — Washington DC",
+          "title": "The Capital Grille \u2014 Washington DC",
           "website": "https://www.thecapitalgrille.com/locations/dc/washington/washington-dc/8003",
           "phone": "+1-202-737-6200",
           "address": "601 Pennsylvania Avenue NW, Washington, DC 20004",
@@ -494,7 +494,7 @@
           ]
         },
         {
-          "title": "Kyū",
+          "title": "Ky\u016b",
           "website": "https://www.kyumiami.com/",
           "address": "Miami, FL",
           "cuisineTags": [
@@ -503,7 +503,7 @@
           ]
         },
         {
-          "title": "Los Félix",
+          "title": "Los F\u00e9lix",
           "website": "https://www.losfelixmiami.com/",
           "address": "Miami, FL",
           "cuisineTags": [
@@ -587,7 +587,7 @@
           ]
         },
         {
-          "title": "Barrio Café",
+          "title": "Barrio Caf\u00e9",
           "website": "https://www.barriocafe.com/",
           "address": "Phoenix, AZ",
           "cuisineTags": [
@@ -655,7 +655,7 @@
           ]
         },
         {
-          "title": "Virtù Honest Craft",
+          "title": "Virt\u00f9 Honest Craft",
           "website": "https://www.virtuscottsdale.com/",
           "address": "Scottsdale, AZ",
           "cuisineTags": [
@@ -819,6 +819,516 @@
           "title": "Puritan & Company",
           "website": "https://www.puritancambridge.com/",
           "address": "Cambridge, MA",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Detroit",
+      "stateCode": "MI",
+      "listings": [
+        {
+          "title": "Selden Standard",
+          "website": "http://www.seldenstandard.com/",
+          "address": "3921 2nd Ave, Detroit, MI 48201",
+          "cuisineTags": [
+            "American",
+            "Seasonal"
+          ]
+        },
+        {
+          "title": "Marrow",
+          "website": "https://marrowinthemarket.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "American",
+            "Nose-to-tail"
+          ]
+        },
+        {
+          "title": "Grey Ghost Detroit",
+          "website": "https://greyghostdetroit.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Takoi",
+          "website": "https://www.takoidetroit.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Thai",
+            "Southeast Asian"
+          ]
+        },
+        {
+          "title": "SheWolf Pastificio & Bar",
+          "website": "https://shewolfdetroit.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "London Chop House",
+          "website": "https://www.thelondonchophouse.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Buddy's Pizza",
+          "website": "https://buddyspizza.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Pizza",
+            "Detroit-style"
+          ]
+        },
+        {
+          "title": "Supino Pizzeria",
+          "website": "https://www.supinopizzeria.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Baobab Fare",
+          "website": "https://baobabfare.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "East African"
+          ]
+        },
+        {
+          "title": "Flowers of Vietnam",
+          "website": "https://www.flowersofvietnam.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Vietnamese"
+          ]
+        },
+        {
+          "title": "Standby",
+          "website": "https://standbydetroit.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "American",
+            "Cocktails"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Minneapolis",
+      "stateCode": "MN",
+      "listings": [
+        {
+          "title": "Spoon and Stable",
+          "website": "https://www.spoonandstable.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Demi",
+          "website": "https://demimpls.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Tasting menu",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Owamni",
+          "website": "https://owamni.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Indigenous",
+            "American"
+          ]
+        },
+        {
+          "title": "112 Eatery",
+          "website": "https://www.112eatery.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Hai Hai",
+          "website": "https://www.haihaimpls.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Southeast Asian"
+          ]
+        },
+        {
+          "title": "Bar La Grassa",
+          "website": "https://www.barlagrassa.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Restaurant Alma",
+          "website": "https://www.restaurantalma.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Kado no Mise",
+          "website": "https://www.kadonomise.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Colita",
+          "website": "https://www.colitampls.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Pizzeria Lola",
+          "website": "https://www.pizzerialola.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Pizza"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Denver",
+      "stateCode": "CO",
+      "listings": [
+        {
+          "title": "Tavernetta",
+          "website": "https://www.tavernettadenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Hop Alley",
+          "website": "https://hopalleydenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Chinese"
+          ]
+        },
+        {
+          "title": "Uncle",
+          "website": "https://www.uncleramen.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Ramen",
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Cart-Driver",
+          "website": "https://www.cart-driver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Guard and Grace",
+          "website": "https://www.guardandgrace.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "The Wolf's Tailor",
+          "website": "https://www.thewolfstailor.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Mercantile Dining & Provision",
+          "website": "https://www.mercantiledenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Work & Class",
+          "website": "https://workandclassdenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "American",
+            "Latin"
+          ]
+        },
+        {
+          "title": "Ultreia",
+          "website": "https://ultreiadenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Spanish",
+            "Portuguese"
+          ]
+        },
+        {
+          "title": "El Five",
+          "website": "https://ediblebeats.com/restaurants/el-five/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Spanish",
+            "Tapas"
+          ]
+        },
+        {
+          "title": "Sushi Den",
+          "website": "https://www.sushiden.net/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Baltimore",
+      "stateCode": "MD",
+      "listings": [
+        {
+          "title": "Charleston",
+          "website": "https://charlestonrestaurant.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "American",
+            "Lowcountry"
+          ]
+        },
+        {
+          "title": "Thames Street Oyster House",
+          "website": "https://thamesstreetoysterhouse.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "La Cuchara",
+          "website": "https://www.lacucharabaltimore.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "Basque",
+            "Spanish"
+          ]
+        },
+        {
+          "title": "Woodberry Kitchen",
+          "website": "https://www.woodberrykitchen.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "American",
+            "Seasonal"
+          ]
+        },
+        {
+          "title": "Azumi",
+          "website": "https://azumirestaurant.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "The Bygone",
+          "website": "https://www.thebygonerestaurant.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "American",
+            "Steak"
+          ]
+        },
+        {
+          "title": "Cinghiale",
+          "website": "https://www.cinghiale.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "Italian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "The Asbury",
+          "website": "https://www.theasbury.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "American",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Kindred",
+          "website": "https://www.kindreddavidson.com/",
+          "address": "Davidson, NC",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Haberdish",
+          "website": "https://haberdish.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "Southern"
+          ]
+        },
+        {
+          "title": "Midwood Smokehouse",
+          "website": "https://midwoodsmokehouse.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Stagioni",
+          "website": "https://www.stagioniclt.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Customshop",
+          "website": "https://customshopfood.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Nashville",
+      "stateCode": "TN",
+      "listings": [
+        {
+          "title": "The Catbird Seat",
+          "website": "https://www.thecatbirdseatrestaurant.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Tasting menu",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Husk Nashville",
+          "website": "https://husknashville.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Butcher & Bee",
+          "website": "https://www.butcherandbee.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Rolf and Daughters",
+          "website": "https://www.rolfanddaughters.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "American",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Henrietta Red",
+          "website": "https://www.henriettared.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "Bastion",
+          "website": "https://www.bastionnashville.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Locust",
+          "website": "https://www.locustnashville.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Lockeland Table",
+          "website": "https://www.lockelandtable.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "American",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Folk",
+          "website": "https://www.goodasfolk.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Pizza",
+            "American"
+          ]
+        },
+        {
+          "title": "Josephine",
+          "website": "https://josephineon12th.com/",
+          "address": "Nashville, TN",
           "cuisineTags": [
             "American"
           ]

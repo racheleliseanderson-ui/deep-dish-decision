@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-18T14:29:59.042Z",
+  "generatedAt": "2026-08-18T22:57:29.525Z",
   "totals": {
-    "records": 225,
-    "enriched": 225,
-    "resolved": 203,
+    "records": 280,
+    "enriched": 280,
+    "resolved": 264,
     "unresolved": 0,
-    "statesCovered": 14,
+    "statesCovered": 20,
     "statesTotal": 51,
     "avgCompleteness": 60,
     "withRating": 111,
     "withPrice": 108,
-    "hygiene": 191,
+    "hygiene": 245,
     "neverEnriched": 0,
-    "thin": 178,
+    "thin": 232,
     "siteFailures": 9,
     "reviewDue": 11,
     "staleA": 0,
@@ -29,18 +29,17 @@
     "hygieneBatchSize": 25,
     "hygieneSlugs": [
       "mr-szechuan",
-      "perch",
       "spicy-king",
+      "summer-house-santa-monica",
       "the-best-sichuan",
       "the-best-sichuan-39",
-      "summer-house-santa-monica",
       "the-smith",
-      "roe",
+      "perch",
       "ariana",
+      "roe",
       "delicious-chengdu",
       "chengdu-taste",
       "di-an-pho",
-      "boia-de-miami",
       "chet-s-dallas",
       "dizengoff-philadelphia",
       "hayakawa-atlanta",
@@ -48,11 +47,12 @@
       "ky-miami",
       "no-9-park-boston",
       "pa-la-phoenix",
-      "the-dabney-washington",
       "the-hampton-social-dallas",
       "welcome-diner-phoenix",
       "atlanta-fish-market-atlanta",
-      "los-tacos-no-1"
+      "los-tacos-no-1",
+      "pier-17",
+      "aba"
     ],
     "nextHygiene": [
       {
@@ -70,35 +70,12 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:28:18.174Z",
+        "lastEnrichedAt": "2026-08-18T20:30:10.936Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
         "siteFailures": [
           "site 408"
-        ]
-      },
-      {
-        "slug": "perch",
-        "title": "Perch",
-        "city": "Los Angeles",
-        "stateProvince": "California",
-        "priority": 942,
-        "reasons": [
-          "site-failure:site 429",
-          "thin-28"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 28,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:28:52.582Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": [
-          "site 429"
         ]
       },
       {
@@ -116,58 +93,12 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:28:28.694Z",
+        "lastEnrichedAt": "2026-08-18T20:30:22.232Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
         "siteFailures": [
           "site 500"
-        ]
-      },
-      {
-        "slug": "the-best-sichuan",
-        "title": "The Best Sichuan",
-        "city": "New York",
-        "stateProvince": "New York",
-        "priority": 942,
-        "reasons": [
-          "site-failure:site 408",
-          "thin-28"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 28,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:28:30.439Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": [
-          "site 408"
-        ]
-      },
-      {
-        "slug": "the-best-sichuan-39",
-        "title": "The Best Sichuan 39 一品成都",
-        "city": "New York",
-        "stateProvince": "New York",
-        "priority": 942,
-        "reasons": [
-          "site-failure:site 408",
-          "thin-28"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 28,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:28:40.924Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": [
-          "site 408"
         ]
       },
       {
@@ -185,12 +116,58 @@
         "ageDays": 0,
         "completeness": 44,
         "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-18T14:28:29.210Z",
+        "lastEnrichedAt": "2026-08-18T20:29:50.679Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
         "siteFailures": [
           "site 429"
+        ]
+      },
+      {
+        "slug": "the-best-sichuan",
+        "title": "The Best Sichuan",
+        "city": "New York",
+        "stateProvince": "New York",
+        "priority": 926,
+        "reasons": [
+          "site-failure:site 408",
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-18T20:30:24.099Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": [
+          "site 408"
+        ]
+      },
+      {
+        "slug": "the-best-sichuan-39",
+        "title": "The Best Sichuan 39 一品成都",
+        "city": "New York",
+        "stateProvince": "New York",
+        "priority": 926,
+        "reasons": [
+          "site-failure:site 408",
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-18T20:30:27.302Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-10",
+        "reviewedAt": "2026-08-11",
+        "siteFailures": [
+          "site 408"
         ]
       },
       {
@@ -208,7 +185,7 @@
         "ageDays": 0,
         "completeness": 44,
         "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-18T14:28:51.817Z",
+        "lastEnrichedAt": "2026-08-18T20:29:51.694Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
@@ -217,23 +194,24 @@
         ]
       },
       {
-        "slug": "roe",
-        "title": "Roe",
-        "city": "Bellingham",
-        "stateProvince": "Washington",
-        "priority": 500,
+        "slug": "perch",
+        "title": "Perch",
+        "city": "Los Angeles",
+        "stateProvince": "California",
+        "priority": 903,
         "reasons": [
-          "site-failure:site 429"
+          "site-failure:site 429",
+          "thin-67"
         ],
         "hygiene": true,
         "staleTier": null,
         "ageDays": 0,
-        "completeness": 83,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:04.999Z",
-        "reviewStatus": "current",
-        "nextReviewAt": "2026-08-19",
-        "reviewedAt": "2026-08-05",
+        "completeness": 67,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-18T20:29:57.876Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
         "siteFailures": [
           "site 429"
         ]
@@ -252,7 +230,29 @@
         "ageDays": 0,
         "completeness": 100,
         "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-18T14:29:03.475Z",
+        "lastEnrichedAt": "2026-08-18T20:29:59.759Z",
+        "reviewStatus": "current",
+        "nextReviewAt": "2026-08-19",
+        "reviewedAt": "2026-08-05",
+        "siteFailures": [
+          "site 429"
+        ]
+      },
+      {
+        "slug": "roe",
+        "title": "Roe",
+        "city": "Bellingham",
+        "stateProvince": "Washington",
+        "priority": 500,
+        "reasons": [
+          "site-failure:site 429"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 100,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-18T20:30:09.163Z",
         "reviewStatus": "current",
         "nextReviewAt": "2026-08-19",
         "reviewedAt": "2026-08-05",
@@ -321,26 +321,6 @@
         "siteFailures": []
       },
       {
-        "slug": "boia-de-miami",
-        "title": "Boia De",
-        "city": "Miami",
-        "stateProvince": "Florida",
-        "priority": 442,
-        "reasons": [
-          "thin-28"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 28,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:15.490Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-11",
-        "reviewedAt": "2026-08-12",
-        "siteFailures": []
-      },
-      {
         "slug": "chet-s-dallas",
         "title": "Chet's Dallas",
         "city": "Dallas",
@@ -354,7 +334,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:16.050Z",
+        "lastEnrichedAt": "2026-08-18T20:30:29.536Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
@@ -374,7 +354,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:16.646Z",
+        "lastEnrichedAt": "2026-08-18T20:30:30.370Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-11",
         "reviewedAt": "2026-08-12",
@@ -394,7 +374,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:27.538Z",
+        "lastEnrichedAt": "2026-08-18T20:30:41.665Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-11",
         "reviewedAt": "2026-08-12",
@@ -414,7 +394,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:27.984Z",
+        "lastEnrichedAt": "2026-08-18T20:30:42.478Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-11",
         "reviewedAt": "2026-08-12",
@@ -434,7 +414,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:29.009Z",
+        "lastEnrichedAt": "2026-08-18T20:30:43.313Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-11",
         "reviewedAt": "2026-08-12",
@@ -454,7 +434,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:39.428Z",
+        "lastEnrichedAt": "2026-08-18T20:30:44.161Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-11",
         "reviewedAt": "2026-08-12",
@@ -474,27 +454,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:50.322Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-11",
-        "reviewedAt": "2026-08-12",
-        "siteFailures": []
-      },
-      {
-        "slug": "the-dabney-washington",
-        "title": "The Dabney",
-        "city": "Washington",
-        "stateProvince": "District Of Columbia",
-        "priority": 442,
-        "reasons": [
-          "thin-28"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 28,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:50.837Z",
+        "lastEnrichedAt": "2026-08-18T20:30:55.458Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-11",
         "reviewedAt": "2026-08-12",
@@ -514,7 +474,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:51.465Z",
+        "lastEnrichedAt": "2026-08-18T20:30:57.144Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
@@ -534,7 +494,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:51.992Z",
+        "lastEnrichedAt": "2026-08-18T20:30:58.021Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-11",
         "reviewedAt": "2026-08-12",
@@ -554,7 +514,7 @@
         "ageDays": 0,
         "completeness": 33,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-18T14:29:57.705Z",
+        "lastEnrichedAt": "2026-08-18T20:31:01.065Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-11",
         "reviewedAt": "2026-08-12",
@@ -618,6 +578,26 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "azumi-baltimore",
+        "title": "Azumi",
+        "city": "Baltimore",
+        "stateProvince": "Maryland",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-18T22:56:40.606Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-17",
+        "reviewedAt": "2026-08-18",
         "siteFailures": []
       },
       {
@@ -781,6 +761,26 @@
         "siteFailures": []
       },
       {
+        "slug": "cinghiale-baltimore",
+        "title": "Cinghiale",
+        "city": "Baltimore",
+        "stateProvince": "Maryland",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-18T22:56:42.269Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-17",
+        "reviewedAt": "2026-08-18",
+        "siteFailures": []
+      },
+      {
         "slug": "contessa-boston",
         "title": "Contessa",
         "city": "Boston",
@@ -886,19 +886,19 @@
   "distribution": [
     {
       "label": "90-100",
-      "count": 40
+      "count": 41
     },
     {
       "label": "75-89",
-      "count": 1
+      "count": 0
     },
     {
       "label": "50-74",
-      "count": 122
+      "count": 174
     },
     {
       "label": "under 50",
-      "count": 62
+      "count": 65
     }
   ],
   "states": [
@@ -906,7 +906,7 @@
       "code": "CA",
       "count": 32,
       "enriched": 32,
-      "avgCompleteness": 47,
+      "avgCompleteness": 49,
       "population": 38965193,
       "perMillion": 0.82
     },
@@ -922,7 +922,7 @@
       "code": "NY",
       "count": 21,
       "enriched": 21,
-      "avgCompleteness": 47,
+      "avgCompleteness": 48,
       "population": 19571216,
       "perMillion": 1.07
     },
@@ -938,7 +938,7 @@
       "code": "WA",
       "count": 16,
       "enriched": 16,
-      "avgCompleteness": 99,
+      "avgCompleteness": 100,
       "population": 7812880,
       "perMillion": 2.05
     },
@@ -954,7 +954,7 @@
       "code": "DC",
       "count": 15,
       "enriched": 15,
-      "avgCompleteness": 58,
+      "avgCompleteness": 60,
       "population": 678972,
       "perMillion": 22.09
     },
@@ -962,7 +962,7 @@
       "code": "FL",
       "count": 15,
       "enriched": 15,
-      "avgCompleteness": 56,
+      "avgCompleteness": 58,
       "population": 22610726,
       "perMillion": 0.66
     },
@@ -991,6 +991,38 @@
       "perMillion": 1.08
     },
     {
+      "code": "CO",
+      "count": 11,
+      "enriched": 11,
+      "avgCompleteness": 57,
+      "population": 5877610,
+      "perMillion": 1.87
+    },
+    {
+      "code": "MI",
+      "count": 11,
+      "enriched": 11,
+      "avgCompleteness": 59,
+      "population": 10037261,
+      "perMillion": 1.1
+    },
+    {
+      "code": "MN",
+      "count": 10,
+      "enriched": 10,
+      "avgCompleteness": 57,
+      "population": 5737915,
+      "perMillion": 1.74
+    },
+    {
+      "code": "TN",
+      "count": 10,
+      "enriched": 10,
+      "avgCompleteness": 60,
+      "population": 7126489,
+      "perMillion": 1.4
+    },
+    {
       "code": "OR",
       "count": 9,
       "enriched": 9,
@@ -999,12 +1031,28 @@
       "perMillion": 2.13
     },
     {
+      "code": "MD",
+      "count": 7,
+      "enriched": 7,
+      "avgCompleteness": 51,
+      "population": 6180253,
+      "perMillion": 1.13
+    },
+    {
       "code": "MT",
       "count": 6,
       "enriched": 6,
       "avgCompleteness": 100,
       "population": 1132812,
       "perMillion": 5.3
+    },
+    {
+      "code": "NC",
+      "count": 6,
+      "enriched": 6,
+      "avgCompleteness": 60,
+      "population": 10835491,
+      "perMillion": 0.55
     },
     {
       "code": "ID",
@@ -1036,14 +1084,6 @@
       "enriched": 0,
       "avgCompleteness": 0,
       "population": 3067732,
-      "perMillion": 0
-    },
-    {
-      "code": "CO",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 5877610,
       "perMillion": 0
     },
     {
@@ -1111,35 +1151,11 @@
       "perMillion": 0
     },
     {
-      "code": "MD",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 6180253,
-      "perMillion": 0
-    },
-    {
       "code": "ME",
       "count": 0,
       "enriched": 0,
       "avgCompleteness": 0,
       "population": 1395722,
-      "perMillion": 0
-    },
-    {
-      "code": "MI",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 10037261,
-      "perMillion": 0
-    },
-    {
-      "code": "MN",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 5737915,
       "perMillion": 0
     },
     {
@@ -1156,14 +1172,6 @@
       "enriched": 0,
       "avgCompleteness": 0,
       "population": 2939690,
-      "perMillion": 0
-    },
-    {
-      "code": "NC",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 10835491,
       "perMillion": 0
     },
     {
@@ -1255,14 +1263,6 @@
       "perMillion": 0
     },
     {
-      "code": "TN",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 7126489,
-      "perMillion": 0
-    },
-    {
       "code": "UT",
       "count": 0,
       "enriched": 0,
@@ -1341,7 +1341,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1366,7 +1366,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1391,7 +1391,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1416,7 +1416,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1441,7 +1441,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1466,7 +1466,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1491,7 +1491,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1516,7 +1516,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1541,7 +1541,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1566,7 +1566,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1589,7 +1589,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1602,7 +1602,7 @@
       "rating": 4.8,
       "reviewCount": 453,
       "priceBand": "$$$$",
-      "lastEnrichedAt": "2026-08-18T14:29:03.475Z",
+      "lastEnrichedAt": "2026-08-18T20:29:59.759Z",
       "addedAt": null,
       "reviewStatus": "current",
       "nextReviewAt": "2026-08-19",
@@ -1639,7 +1639,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1662,7 +1662,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1685,7 +1685,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1708,7 +1708,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1731,7 +1731,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1754,8 +1754,35 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
+    },
+    {
+      "slug": "roe",
+      "title": "Roe",
+      "stateCode": "WA",
+      "city": "Bellingham",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": 4.6,
+      "reviewCount": 211,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-18T20:30:09.163Z",
+      "addedAt": null,
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-08-19",
+      "reviewedAt": "2026-08-05",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 500,
+      "refreshReasons": [
+        "site-failure:site 429"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429"
+      ]
     },
     {
       "slug": "part-parcel",
@@ -1777,7 +1804,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1800,7 +1827,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1823,7 +1850,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1846,7 +1873,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1869,7 +1896,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1894,7 +1921,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1917,7 +1944,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1940,7 +1967,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1963,7 +1990,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -1986,7 +2013,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2009,7 +2036,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2032,7 +2059,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2055,7 +2082,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2078,7 +2105,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2101,7 +2128,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2124,7 +2151,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2147,7 +2174,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2170,7 +2197,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2193,7 +2220,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2216,7 +2243,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2239,7 +2266,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -2262,35 +2289,8 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
-    },
-    {
-      "slug": "roe",
-      "title": "Roe",
-      "stateCode": "WA",
-      "city": "Bellingham",
-      "completeness": 83,
-      "matchStatus": "site-failure",
-      "rating": 4.6,
-      "reviewCount": 211,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-18T14:29:04.999Z",
-      "addedAt": null,
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-08-19",
-      "reviewedAt": "2026-08-05",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 500,
-      "refreshReasons": [
-        "site-failure:site 429"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": [
-        "site 429"
-      ]
     },
     {
       "slug": "y-o-ranch-steakhouse",
@@ -2429,6 +2429,57 @@
       "staleTier": null,
       "ageDays": 4,
       "siteFailures": []
+    },
+    {
+      "slug": "marrow-detroit",
+      "title": "Marrow",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 72,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:27.720Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "perch",
+      "title": "Perch",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": 4.4,
+      "reviewCount": 7650,
+      "priceBand": "$$$",
+      "lastEnrichedAt": "2026-08-18T20:29:57.876Z",
+      "addedAt": "2026-08-10T22:54:32.853Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-09",
+      "reviewedAt": "2026-08-10",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 903,
+      "refreshReasons": [
+        "site-failure:site 429",
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429"
+      ]
     },
     {
       "slug": "joey-dtla",
@@ -2903,6 +2954,181 @@
       ],
       "staleTier": null,
       "ageDays": 4,
+      "siteFailures": []
+    },
+    {
+      "slug": "selden-standard-detroit",
+      "title": "Selden Standard",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:25.118Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "takoi-detroit",
+      "title": "Takoi",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:31.951Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "mercantile-dining-provision-denver",
+      "title": "Mercantile Dining & Provision",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:17.171Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "el-five-denver",
+      "title": "El Five",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:29.034Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "kindred-charlotte",
+      "title": "Kindred",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:46.917Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "henrietta-red-nashville",
+      "title": "Henrietta Red",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:13.832Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "locust-nashville",
+      "title": "Locust",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:17.362Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -3556,6 +3782,31 @@
       "siteFailures": []
     },
     {
+      "slug": "boia-de-miami",
+      "title": "Boia De",
+      "stateCode": "FL",
+      "city": "Miami",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T21:06:23.275Z",
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "durant-s-phoenix",
       "title": "Durant's",
       "stateCode": "AZ",
@@ -3703,6 +3954,481 @@
       ],
       "staleTier": null,
       "ageDays": 4,
+      "siteFailures": []
+    },
+    {
+      "slug": "grey-ghost-detroit-detroit",
+      "title": "Grey Ghost Detroit",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:30.210Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "spoon-and-stable-minneapolis",
+      "title": "Spoon and Stable",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:48.596Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "demi-minneapolis",
+      "title": "Demi",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:50.797Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "112-eatery-minneapolis",
+      "title": "112 Eatery",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:54.504Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "hai-hai-minneapolis",
+      "title": "Hai Hai",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:56.761Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "bar-la-grassa-minneapolis",
+      "title": "Bar La Grassa",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:58.952Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "colita-minneapolis",
+      "title": "Colita",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:04.453Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "tavernetta-denver",
+      "title": "Tavernetta",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:08.934Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "ultreia-denver",
+      "title": "Ultreia",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:21.921Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "charleston-baltimore",
+      "title": "Charleston",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:33.051Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "la-cuchara-baltimore",
+      "title": "La Cuchara",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:37.519Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-asbury-charlotte",
+      "title": "The Asbury",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:44.300Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "midwood-smokehouse-charlotte",
+      "title": "Midwood Smokehouse",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:52.789Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "customshop-charlotte",
+      "title": "Customshop",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:59.436Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "husk-nashville-nashville",
+      "title": "Husk Nashville",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:07.443Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "butcher-bee-nashville",
+      "title": "Butcher & Bee",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:09.700Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "rolf-and-daughters-nashville",
+      "title": "Rolf and Daughters",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:12.079Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "bastion-nashville",
+      "title": "Bastion",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:15.581Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "folk-nashville",
+      "title": "Folk",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:21.076Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -4206,6 +4932,31 @@
       "siteFailures": []
     },
     {
+      "slug": "the-dabney-washington",
+      "title": "The Dabney",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T21:06:31.696Z",
+      "addedAt": "2026-08-12T06:45:02.762Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-11",
+      "reviewedAt": "2026-08-12",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "pineapple-and-pearls-washington",
       "title": "Pineapple and Pearls",
       "stateCode": "DC",
@@ -4603,6 +5354,406 @@
       ],
       "staleTier": null,
       "ageDays": 4,
+      "siteFailures": []
+    },
+    {
+      "slug": "shewolf-pastificio-bar-detroit",
+      "title": "SheWolf Pastificio & Bar",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:34.493Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "london-chop-house-detroit",
+      "title": "London Chop House",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:37.588Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "supino-pizzeria-detroit",
+      "title": "Supino Pizzeria",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:41.183Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "baobab-fare-detroit",
+      "title": "Baobab Fare",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:42.911Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "flowers-of-vietnam-detroit",
+      "title": "Flowers of Vietnam",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:44.624Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "standby-detroit",
+      "title": "Standby",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:46.590Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "pizzeria-lola-minneapolis",
+      "title": "Pizzeria Lola",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:06.809Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "hop-alley-denver",
+      "title": "Hop Alley",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:11.036Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "guard-and-grace-denver",
+      "title": "Guard and Grace",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:14.079Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "work-class-denver",
+      "title": "Work & Class",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:19.242Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "sushi-den-denver",
+      "title": "Sushi Den",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:31.742Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "thames-street-oyster-house-baltimore",
+      "title": "Thames Street Oyster House",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:36.158Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "haberdish-charlotte",
+      "title": "Haberdish",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:48.712Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "stagioni-charlotte",
+      "title": "Stagioni",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:56.975Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-catbird-seat-nashville",
+      "title": "The Catbird Seat",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:06.561Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "lockeland-table-nashville",
+      "title": "Lockeland Table",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:19.231Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -5331,6 +6482,156 @@
       "siteFailures": []
     },
     {
+      "slug": "buddy-s-pizza-detroit",
+      "title": "Buddy's Pizza",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:39.386Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "owamni-minneapolis",
+      "title": "Owamni",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:55:52.637Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "kado-no-mise-minneapolis",
+      "title": "Kado no Mise",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:03.109Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "uncle-denver",
+      "title": "Uncle",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:11.909Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "cart-driver-denver",
+      "title": "Cart-Driver",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:12.772Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "woodberry-kitchen-baltimore",
+      "title": "Woodberry Kitchen",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:39.308Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "balthazar",
       "title": "Balthazar",
       "stateCode": "NY",
@@ -5390,7 +6691,7 @@
       "rating": 4.4,
       "reviewCount": 6365,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-18T14:28:51.817Z",
+      "lastEnrichedAt": "2026-08-18T20:29:51.694Z",
       "addedAt": "2026-08-10T22:54:31.695Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-09",
@@ -5543,7 +6844,7 @@
       "rating": 4.7,
       "reviewCount": 8309,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-18T14:28:29.210Z",
+      "lastEnrichedAt": "2026-08-18T20:29:50.679Z",
       "addedAt": "2026-08-10T22:54:34.017Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-09",
@@ -5735,6 +7036,62 @@
       "staleTier": null,
       "ageDays": 4,
       "siteFailures": []
+    },
+    {
+      "slug": "the-best-sichuan-39",
+      "title": "The Best Sichuan 39 一品成都",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 3717,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-18T20:30:27.302Z",
+      "addedAt": "2026-08-11T00:03:03.486Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 926,
+      "refreshReasons": [
+        "site-failure:site 408",
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 408"
+      ]
+    },
+    {
+      "slug": "the-best-sichuan",
+      "title": "The Best Sichuan",
+      "stateCode": "NY",
+      "city": "New York",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": 4.8,
+      "reviewCount": 3079,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-18T20:30:24.099Z",
+      "addedAt": "2026-08-11T00:03:03.487Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 926,
+      "refreshReasons": [
+        "site-failure:site 408",
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 408"
+      ]
     },
     {
       "slug": "chi-restaurant-bar",
@@ -6337,6 +7694,156 @@
       "siteFailures": []
     },
     {
+      "slug": "restaurant-alma-minneapolis",
+      "title": "Restaurant Alma",
+      "stateCode": "MN",
+      "city": "Minneapolis",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:01.130Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-wolf-s-tailor-denver",
+      "title": "The Wolf's Tailor",
+      "stateCode": "CO",
+      "city": "Denver",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:16.275Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "azumi-baltimore",
+      "title": "Azumi",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:40.606Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-bygone-baltimore",
+      "title": "The Bygone",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:41.446Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "cinghiale-baltimore",
+      "title": "Cinghiale",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:42.269Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "josephine-nashville",
+      "title": "Josephine",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:22.777Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "pier-17",
       "title": "Pier 17",
       "stateCode": "NY",
@@ -6396,7 +7903,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:57.705Z",
+      "lastEnrichedAt": "2026-08-18T20:31:01.065Z",
       "addedAt": "2026-08-12T06:45:02.762Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
@@ -6412,34 +7919,6 @@
       "siteFailures": []
     },
     {
-      "slug": "perch",
-      "title": "Perch",
-      "stateCode": "CA",
-      "city": "Los Angeles",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": 4.4,
-      "reviewCount": 7650,
-      "priceBand": "$$$",
-      "lastEnrichedAt": "2026-08-18T14:28:52.582Z",
-      "addedAt": "2026-08-10T22:54:32.853Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-09",
-      "reviewedAt": "2026-08-10",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 942,
-      "refreshReasons": [
-        "site-failure:site 429",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": [
-        "site 429"
-      ]
-    },
-    {
       "slug": "the-hampton-social-dallas",
       "title": "The Hampton Social - Dallas",
       "stateCode": "TX",
@@ -6449,7 +7928,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:51.465Z",
+      "lastEnrichedAt": "2026-08-18T20:30:57.144Z",
       "addedAt": "2026-08-10T22:54:35.175Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-09",
@@ -6474,7 +7953,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:16.050Z",
+      "lastEnrichedAt": "2026-08-18T20:30:29.536Z",
       "addedAt": "2026-08-10T22:54:35.178Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-09",
@@ -6490,62 +7969,6 @@
       "siteFailures": []
     },
     {
-      "slug": "the-best-sichuan-39",
-      "title": "The Best Sichuan 39 一品成都",
-      "stateCode": "NY",
-      "city": "New York",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": 4.7,
-      "reviewCount": 3717,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-18T14:28:40.924Z",
-      "addedAt": "2026-08-11T00:03:03.486Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-10",
-      "reviewedAt": "2026-08-11",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 942,
-      "refreshReasons": [
-        "site-failure:site 408",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": [
-        "site 408"
-      ]
-    },
-    {
-      "slug": "the-best-sichuan",
-      "title": "The Best Sichuan",
-      "stateCode": "NY",
-      "city": "New York",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": 4.8,
-      "reviewCount": 3079,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-18T14:28:30.439Z",
-      "addedAt": "2026-08-11T00:03:03.487Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-10",
-      "reviewedAt": "2026-08-11",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 942,
-      "refreshReasons": [
-        "site-failure:site 408",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": [
-        "site 408"
-      ]
-    },
-    {
       "slug": "spicy-king",
       "title": "Spicy King",
       "stateCode": "CA",
@@ -6555,7 +7978,7 @@
       "rating": 4.2,
       "reviewCount": 1063,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-18T14:28:28.694Z",
+      "lastEnrichedAt": "2026-08-18T20:30:22.232Z",
       "addedAt": "2026-08-11T00:03:05.543Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
@@ -6583,7 +8006,7 @@
       "rating": 4.4,
       "reviewCount": 809,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-18T14:28:18.174Z",
+      "lastEnrichedAt": "2026-08-18T20:30:10.936Z",
       "addedAt": "2026-08-11T00:03:05.543Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
@@ -6611,32 +8034,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:27.538Z",
-      "addedAt": "2026-08-12T06:45:02.762Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 442,
-      "refreshReasons": [
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "the-dabney-washington",
-      "title": "The Dabney",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:50.837Z",
+      "lastEnrichedAt": "2026-08-18T20:30:41.665Z",
       "addedAt": "2026-08-12T06:45:02.762Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
@@ -6661,7 +8059,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:16.646Z",
+      "lastEnrichedAt": "2026-08-18T20:30:30.370Z",
       "addedAt": "2026-08-12T06:45:02.762Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
@@ -6686,7 +8084,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:27.984Z",
+      "lastEnrichedAt": "2026-08-18T20:30:42.478Z",
       "addedAt": "2026-08-12T06:45:02.762Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
@@ -6711,32 +8109,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:29.009Z",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 442,
-      "refreshReasons": [
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "boia-de-miami",
-      "title": "Boia De",
-      "stateCode": "FL",
-      "city": "Miami",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:15.490Z",
+      "lastEnrichedAt": "2026-08-18T20:30:43.313Z",
       "addedAt": "2026-08-12T06:45:34.941Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
@@ -6761,7 +8134,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:50.322Z",
+      "lastEnrichedAt": "2026-08-18T20:30:55.458Z",
       "addedAt": "2026-08-12T06:45:34.941Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
@@ -6786,7 +8159,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:51.992Z",
+      "lastEnrichedAt": "2026-08-18T20:30:58.021Z",
       "addedAt": "2026-08-12T06:45:34.941Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
@@ -6811,7 +8184,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:39.428Z",
+      "lastEnrichedAt": "2026-08-18T20:30:44.161Z",
       "addedAt": "2026-08-12T06:45:34.941Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
@@ -6904,195 +8277,20 @@
   ],
   "recent": [
     {
-      "slug": "atlanta-fish-market-atlanta",
-      "title": "Atlanta Fish Market",
-      "stateCode": "GA",
-      "city": "Atlanta",
-      "completeness": 33,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:57.705Z",
-      "addedAt": "2026-08-12T06:45:02.762Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 437,
-      "refreshReasons": [
-        "thin-33"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "welcome-diner-phoenix",
-      "title": "Welcome Diner",
-      "stateCode": "AZ",
-      "city": "Phoenix",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:51.992Z",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 442,
-      "refreshReasons": [
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "the-hampton-social-dallas",
-      "title": "The Hampton Social - Dallas",
-      "stateCode": "TX",
-      "city": "Dallas",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:51.465Z",
-      "addedAt": "2026-08-10T22:54:35.175Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-09",
-      "reviewedAt": "2026-08-10",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 442,
-      "refreshReasons": [
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "the-dabney-washington",
-      "title": "The Dabney",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:50.837Z",
-      "addedAt": "2026-08-12T06:45:02.762Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 442,
-      "refreshReasons": [
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "pa-la-phoenix",
-      "title": "Pa'La",
-      "stateCode": "AZ",
-      "city": "Phoenix",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:50.322Z",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 442,
-      "refreshReasons": [
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "no-9-park-boston",
-      "title": "No. 9 Park",
-      "stateCode": "MA",
-      "city": "Boston",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:39.428Z",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 442,
-      "refreshReasons": [
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "ky-miami",
-      "title": "Kyū",
-      "stateCode": "FL",
-      "city": "Miami",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:29.009Z",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 442,
-      "refreshReasons": [
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "kenny-s-wood-fired-grill",
-      "title": "Kenny's Wood Fired Grill",
-      "stateCode": "TX",
-      "city": "Dallas",
+      "slug": "josephine-nashville",
+      "title": "Josephine",
+      "stateCode": "TN",
+      "city": "Nashville",
       "completeness": 44,
-      "matchStatus": "partial",
+      "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:28.499Z",
-      "addedAt": "2026-08-10T22:54:35.177Z",
+      "lastEnrichedAt": "2026-08-18T22:57:22.777Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-09",
-      "reviewedAt": "2026-08-10",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 426,
@@ -7104,100 +8302,275 @@
       "siteFailures": []
     },
     {
-      "slug": "kalaya-philadelphia",
-      "title": "Kalaya",
-      "stateCode": "PA",
-      "city": "Philadelphia",
-      "completeness": 28,
-      "matchStatus": "site-failure",
+      "slug": "folk-nashville",
+      "title": "Folk",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:27.984Z",
-      "addedAt": "2026-08-12T06:45:02.762Z",
+      "lastEnrichedAt": "2026-08-18T22:57:21.076Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 442,
+      "refreshPriority": 409,
       "refreshReasons": [
-        "thin-28"
+        "thin-61"
       ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
     },
     {
-      "slug": "hayakawa-atlanta",
-      "title": "Hayakawa",
-      "stateCode": "GA",
-      "city": "Atlanta",
-      "completeness": 28,
-      "matchStatus": "site-failure",
+      "slug": "lockeland-table-nashville",
+      "title": "Lockeland Table",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 56,
+      "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:27.538Z",
-      "addedAt": "2026-08-12T06:45:02.762Z",
+      "lastEnrichedAt": "2026-08-18T22:57:19.231Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 442,
+      "refreshPriority": 414,
       "refreshReasons": [
-        "thin-28"
+        "thin-56"
       ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
     },
     {
-      "slug": "dizengoff-philadelphia",
-      "title": "Dizengoff",
-      "stateCode": "PA",
-      "city": "Philadelphia",
-      "completeness": 28,
-      "matchStatus": "site-failure",
+      "slug": "locust-nashville",
+      "title": "Locust",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 67,
+      "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:16.646Z",
-      "addedAt": "2026-08-12T06:45:02.762Z",
+      "lastEnrichedAt": "2026-08-18T22:57:17.362Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 442,
+      "refreshPriority": 403,
       "refreshReasons": [
-        "thin-28"
+        "thin-67"
       ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
     },
     {
-      "slug": "chet-s-dallas",
-      "title": "Chet's Dallas",
-      "stateCode": "TX",
-      "city": "Dallas",
-      "completeness": 28,
-      "matchStatus": "site-failure",
+      "slug": "bastion-nashville",
+      "title": "Bastion",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T14:29:16.050Z",
-      "addedAt": "2026-08-10T22:54:35.178Z",
+      "lastEnrichedAt": "2026-08-18T22:57:15.581Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-09",
-      "reviewedAt": "2026-08-10",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 442,
+      "refreshPriority": 409,
       "refreshReasons": [
-        "thin-28"
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "henrietta-red-nashville",
+      "title": "Henrietta Red",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:13.832Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "rolf-and-daughters-nashville",
+      "title": "Rolf and Daughters",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:12.079Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "butcher-bee-nashville",
+      "title": "Butcher & Bee",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:09.700Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "husk-nashville-nashville",
+      "title": "Husk Nashville",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:07.443Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-catbird-seat-nashville",
+      "title": "The Catbird Seat",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:57:06.561Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "customshop-charlotte",
+      "title": "Customshop",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:59.436Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "stagioni-charlotte",
+      "title": "Stagioni",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-18T22:56:56.975Z",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-17",
+      "reviewedAt": "2026-08-18",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
       ],
       "staleTier": null,
       "ageDays": 0,
@@ -7209,8 +8582,8 @@
     "restaurantsPerRun": 20,
     "citiesPerRun": 3,
     "dailyCap": 200,
-    "pending": 67,
-    "done": 12,
+    "pending": 61,
+    "done": 18,
     "next": [
       {
         "city": "Riverside",
@@ -7225,34 +8598,10 @@
         "note": ""
       },
       {
-        "city": "Detroit",
-        "stateCode": "MI",
-        "population": 4342304,
-        "priority": 14,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
         "city": "Seattle",
         "stateCode": "WA",
         "population": 4044837,
         "priority": 15,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Minneapolis",
-        "stateCode": "MN",
-        "population": 3712020,
-        "priority": 16,
         "tier": "top-50-metro",
         "status": "pending",
         "pinned": false,
@@ -7285,30 +8634,6 @@
         "note": ""
       },
       {
-        "city": "Denver",
-        "stateCode": "CO",
-        "population": 3005131,
-        "priority": 19,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Baltimore",
-        "stateCode": "MD",
-        "population": 2834316,
-        "priority": 20,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
         "city": "Orlando",
         "stateCode": "FL",
         "population": 2817933,
@@ -7321,10 +8646,58 @@
         "note": ""
       },
       {
-        "city": "Charlotte",
-        "stateCode": "NC",
-        "population": 2805115,
-        "priority": 22,
+        "city": "San Antonio",
+        "stateCode": "TX",
+        "population": 2703999,
+        "priority": 23,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Portland",
+        "stateCode": "OR",
+        "population": 2508050,
+        "priority": 24,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Austin",
+        "stateCode": "TX",
+        "population": 2473275,
+        "priority": 25,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Pittsburgh",
+        "stateCode": "PA",
+        "population": 2422725,
+        "priority": 26,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Sacramento",
+        "stateCode": "CA",
+        "population": 2420608,
+        "priority": 27,
         "tier": "top-50-metro",
         "status": "pending",
         "pinned": false,
@@ -7335,6 +8708,134 @@
     ]
   },
   "runs": [
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-18T22:55:25.109Z",
+      "batchSize": 55,
+      "inserted": 0,
+      "cities": [
+        "Detroit, Michigan",
+        "Minneapolis, Minnesota",
+        "Denver, Colorado",
+        "Baltimore, Maryland",
+        "Charlotte, North Carolina",
+        "Nashville, Tennessee"
+      ],
+      "resolved": 55,
+      "unresolved": 0,
+      "avgCompleteness": 65,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 55
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-18T22:55:05.661Z",
+      "batchSize": 0,
+      "inserted": 55,
+      "cities": [
+        {
+          "city": "Detroit, MI",
+          "found": 11,
+          "inserted": 11,
+          "duplicates": 0
+        },
+        {
+          "city": "Minneapolis, MN",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Denver, CO",
+          "found": 11,
+          "inserted": 11,
+          "duplicates": 0
+        },
+        {
+          "city": "Baltimore, MD",
+          "found": 7,
+          "inserted": 7,
+          "duplicates": 0
+        },
+        {
+          "city": "Charlotte, NC",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Nashville, TN",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        }
+      ],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-18T21:06:23.270Z",
+      "batchSize": 2,
+      "inserted": 0,
+      "cities": [
+        "Miami, Florida",
+        "Washington, District Of Columbia"
+      ],
+      "resolved": 2,
+      "unresolved": 0,
+      "avgCompleteness": 66,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 2
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-18T20:29:50.673Z",
+      "batchSize": 21,
+      "inserted": 0,
+      "cities": [
+        "Chicago, Illinois",
+        "New York, New York",
+        "Los Angeles, California",
+        "Pacific Northwest",
+        "San Francisco, California",
+        "Miami, Florida",
+        "Dallas, Texas",
+        "Philadelphia, Pennsylvania",
+        "Atlanta, Georgia",
+        "Boston, Massachusetts",
+        "Phoenix, Arizona",
+        "Washington, District Of Columbia"
+      ],
+      "resolved": 7,
+      "unresolved": 14,
+      "avgCompleteness": 66,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 21
+      },
+      "retries": 0,
+      "failures": 14,
+      "flagged": false
+    },
     {
       "kind": "hygiene-owned",
       "startedAt": "2026-08-18T14:28:18.173Z",
@@ -7449,121 +8950,6 @@
       },
       "retries": 0,
       "failures": 2,
-      "flagged": false
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-14T14:24:04.444Z",
-      "batchSize": 25,
-      "inserted": 0,
-      "cities": [
-        "Miami, Florida",
-        "Atlanta, Georgia",
-        "Boston, Massachusetts",
-        "Phoenix, Arizona",
-        "Chicago, Illinois",
-        "Washington, District Of Columbia",
-        "San Francisco, California",
-        "Dallas, Texas",
-        "Philadelphia, Pennsylvania"
-      ],
-      "resolved": 22,
-      "unresolved": 3,
-      "avgCompleteness": 70,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 25
-      },
-      "retries": 0,
-      "failures": 3,
-      "flagged": false
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-14T14:22:48.764Z",
-      "batchSize": 25,
-      "inserted": 0,
-      "cities": [
-        "Washington, District Of Columbia",
-        "Philadelphia, Pennsylvania",
-        "Chicago, Illinois",
-        "Phoenix, Arizona",
-        "San Francisco, California",
-        "Atlanta, Georgia",
-        "Miami, Florida",
-        "Dallas, Texas"
-      ],
-      "resolved": 22,
-      "unresolved": 3,
-      "avgCompleteness": 72,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 25
-      },
-      "retries": 0,
-      "failures": 3,
-      "flagged": false
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-14T14:21:57.654Z",
-      "batchSize": 25,
-      "inserted": 0,
-      "cities": [
-        "Dallas, Texas",
-        "Atlanta, Georgia",
-        "Chicago, Illinois",
-        "Philadelphia, Pennsylvania",
-        "Miami, Florida",
-        "Phoenix, Arizona",
-        "Washington, District Of Columbia",
-        "Boston, Massachusetts"
-      ],
-      "resolved": 21,
-      "unresolved": 4,
-      "avgCompleteness": 76,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 25
-      },
-      "retries": 0,
-      "failures": 4,
-      "flagged": false
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-12T06:45:34.941Z",
-      "batchSize": 0,
-      "inserted": 45,
-      "cities": [
-        {
-          "city": "Miami, FL",
-          "found": 15,
-          "inserted": 15,
-          "duplicates": 0
-        },
-        {
-          "city": "Phoenix, AZ",
-          "found": 15,
-          "inserted": 15,
-          "duplicates": 0
-        },
-        {
-          "city": "Boston, MA",
-          "found": 15,
-          "inserted": 15,
-          "duplicates": 0
-        }
-      ],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
       "flagged": false
     }
   ]
