@@ -1,6 +1,6 @@
 import { Chip, Eyebrow, Field, Toggle } from "@/components/rih/bits";
 import { CopyNightLink } from "@/components/rih/copy-night-link";
-import { dataset } from "@/lib/dataset";
+import { dataset, records } from "@/lib/dataset";
 import {
   COMMITMENT_LEVELS,
   CONSTRAINTS,
@@ -32,6 +32,14 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
       s.constraints.includes(c) ? s.constraints.filter((x) => x !== c) : [...s.constraints, c],
     );
   const depth = situationDepth(s);
+  const regionChoices = Array.from(
+    new Set(
+      records
+        .filter((r) => !s.regionGroup || r.regionGroup === s.regionGroup)
+        .map((r) => r.region)
+        .filter(Boolean),
+    ),
+  ).sort();
 
   return (
     <section
@@ -229,13 +237,11 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
               className="w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm"
             >
               <option value="">Any region</option>
-              {dataset.regions
-                .filter((r) => !s.regionGroup || r.group === s.regionGroup)
-                .map((r) => (
-                  <option key={r.name} value={r.name}>
-                    {r.name}
-                  </option>
-                ))}
+              {regionChoices.map((name) => (
+                <option key={name} value={name}>
+                  {name}
+                </option>
+              ))}
             </select>
           </Field>
 
