@@ -1,10 +1,17 @@
+import { useState } from "react";
 import { Chip, Eyebrow, Rule } from "@/components/rih/bits";
 import { DecisionBrief } from "@/components/rih/decision-brief";
+import { EvidenceFromPhoto } from "@/components/rih/evidence-from-photo";
 import { FindingsStack } from "@/components/rih/findings";
 import { Reveal } from "@/components/rih/reveal";
 import { SiteNav } from "@/components/rih/site-nav";
 import { bySlug, type RestaurantRecord } from "@/lib/dataset";
-import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
+import {
+  emptySituation,
+  scoreRecord,
+  topOccasion,
+  type Finding,
+} from "@/lib/intelligence";
 import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
 import { enrichmentAudit } from "@/lib/enrichment";
@@ -85,6 +92,10 @@ function Dossier() {
   const q = encodeSituation(situation);
   const strongest = topOccasion(record);
 
+  // User-photo evidence is additive only (watch/unknown). Never overwrites first-party.
+  const [photoFindings, setPhotoFindings] = useState<Finding[]>([]);
+  const mergedFindings = [...sc.findings, ...photoFindings];
+
   return (
     <main className="min-h-screen pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
@@ -159,8 +170,9 @@ function Dossier() {
         <Reveal as="section" className="mt-12">
           <Eyebrow>Findings</Eyebrow>
           <h2 className="mt-2 font-display text-2xl tracking-tight">Against this situation</h2>
-          <div className="mt-5">
-            <FindingsStack findings={sc.findings} />
+          <div className="mt-5 space-y-6">
+            <EvidenceFromPhoto onFindings={setPhotoFindings} />
+            <FindingsStack findings={mergedFindings} />
           </div>
         </Reveal>
 
