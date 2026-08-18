@@ -82,6 +82,9 @@ export type EnrichmentSite = {
   groupPolicyLanguage?: SiteLanguage[];
   dressCode?: string;
   cancellationLanguage?: SiteLanguage[];
+  /** JSON-LD hours / telephone / amenity quotes. Not a verified access route. */
+  jsonLdLanguage?: SiteLanguage[];
+  playwrightPages?: number;
   pagesRead?: number;
   sourceUrls?: string[];
   retrievedAt?: string;
@@ -484,6 +487,7 @@ export function enrichmentAudit(slug: string): {
   if (site?.accessibilityLanguage?.length) signals.push("Venue website accessibility language");
   if (site?.groupPolicy || site?.groupPolicyLanguage?.length) signals.push("Venue website group policy");
   if (site?.dressCode) signals.push("Venue website dress note");
+  if (site?.jsonLdLanguage?.length) signals.push("Venue website JSON-LD quotes (not applied as facts)");
   if (enr.summary?.text) signals.push("Model summary (audit only)");
 
   const sources: string[] = [];

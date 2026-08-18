@@ -47,11 +47,40 @@ export function snapshot(tag) {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 /** Retriable HTTP statuses: request timeout, rate limit, server errors. */
-function isRetriableStatus(status) {
+export function isRetriableStatus(status) {
   return status === 408 || status === 425 || status === 429 || status >= 500;
 }
 
-/** Single in-flight request per provider, with backoff on 408/429/5xx and network throws. */
+/**
+ * Parse Retry-After (delta-seconds or HTTP-date) into a wait in ms.
+ * Caps at 60s so a hostile header cannot stall a batch.
+ * @param {string | number | null | undefined} header
+ * @param {number} [now]
+ */
+export function parseRetryAfter(header, now = Date.now()) {
+  if (header == null || header === "") return null;
+  const s = String(header).trim();
+  if (/^\d+(\.\d+)?$/.test(s)) {
+    return Math.min(60_000, Math.max(0, Number(s) * 1000));
+  }
+  const when = Date.parse(s);
+  if (!Number.isNaN(when)) {
+    return Math.min(60_000, Math.max(0, when - now));
+  }
+  return null;
+}
+
+function retryAfterFrom(res) {
+  if (!res || typeof res !== "object") return null;
+  if (res.retryAfter != null) return parseRetryAfter(res.retryAfter);
+  const headers = res.headers;
+  if (headers && typeof headers.get === "function") {
+    return parseRetryAfter(headers.get("retry-after"));
+  }
+  return null;
+}
+
+/** Single in-flight request per provider, with backoff on 408/429/5xx and network throws. Honors Retry-After. */
 export function createLimiter({ minDelayMs = 220, maxRetries = 5 } = {}) {
   let chain = Promise.resolve();
   const stats = { calls: 0, retries: 0, failures: 0, deferred: 0 };
@@ -78,7 +107,11 @@ export function createLimiter({ minDelayMs = 220, maxRetries = 5 } = {}) {
         return res;
       }
       stats.retries += 1;
-      const wait = Math.min(30_000, 2 ** i * 900) + Math.floor(Math.random() * 500);
+      const headerWait = retryAfterFrom(res);
+      const wait =
+        headerWait != null
+          ? headerWait
+          : Math.min(30_000, 2 ** i * 900) + Math.floor(Math.random() * 500);
       await sleep(wait);
     }
     return null;
@@ -187,6 +220,7 @@ export function metersBetween(a, b) {
 /**
  * Completeness against first-party record + owned site enrichment.
  * Google directory fields are no longer scored (GPI removed).
+ * JSON-LD amenity / hours quotes do not count as access or hours fills.
  */
 export function completeness(record, enrichment) {
   const s = enrichment?.site;
