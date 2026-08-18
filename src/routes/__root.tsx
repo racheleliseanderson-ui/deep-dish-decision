@@ -80,6 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "google-adsense-account", content: ADSENSE_CLIENT },
       { title: "Restaurant Intelligence Hub — evidence-led restaurant decisions" },
       { name: "description", content: "First-party restaurant evidence, scored against your situation: occasion fit, commitment, booking pathway and every question a restaurant has not answered." },
       { property: "og:title", content: "Restaurant Intelligence Hub" },
