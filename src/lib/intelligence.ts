@@ -292,8 +292,8 @@ export type Finding = {
   impact: number; // 0-100, decision impact for this situation
   confidence: "high" | "moderate" | "low";
   situational: boolean;
-  /** Set only on labeled third-party enrichment findings. */
-  provenance?: "first-party" | "google-places" | "site-scrape" | "enrichment";
+  /** Provenance of the finding. user-photo is for multimodal vision OCR/detection results. */
+  provenance?: "first-party" | "google-places" | "site-scrape" | "enrichment" | "user-photo";
 };
 
 const NOT_STATED = ["Not stated", "Direct confirmation required", "Route details unknown"];
