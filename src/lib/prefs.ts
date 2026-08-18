@@ -8,7 +8,7 @@ import { useCallback, useEffect, useState } from "react";
  */
 
 export type ContrastMode = "standard" | "mono" | "cvd";
-export type Locale = "en" | "es";
+export type Locale = "en";
 
 export const CONTRAST_KEY = "rih-contrast";
 export const LOCALE_KEY = "rih-locale";
@@ -66,25 +66,10 @@ export function useContrastMode() {
 }
 
 export function useLocale() {
-  const [locale, setLocale] = useState<Locale>("en");
-
-  useEffect(() => {
-    const sync = () => setLocale(readStored<Locale>(LOCALE_KEY, ["en", "es"], "en"));
-    sync();
-    window.addEventListener(EVENT, sync);
-    return () => window.removeEventListener(EVENT, sync);
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.lang = locale;
-  }, [locale]);
-
-  const set = useCallback((next: Locale) => {
-    store(LOCALE_KEY, next);
-    setLocale(next);
-  }, []);
-
-  return { locale, set };
+  return {
+    locale: "en" as Locale,
+    set: (_next: Locale) => {},
+  };
 }
 
 
