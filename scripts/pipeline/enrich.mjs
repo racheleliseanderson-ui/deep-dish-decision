@@ -124,7 +124,7 @@ for (const record of batch) {
       entry.meta.matchStatus = entry.meta.matchStatus === "site-failure" ? "partial" : "resolved";
       notes.push(`pages ${pages.length}`);
       if (entry.site.jsonLdLanguage?.length) {
-        notes.push(`jsonld ${entry.site.jsonLdLanguage.length}`);
+        notes.push(`quotes ${entry.site.jsonLdLanguage.length}`);
       }
       if (entry.site.playwrightPages) {
         notes.push(`playwright ${entry.site.playwrightPages}`);

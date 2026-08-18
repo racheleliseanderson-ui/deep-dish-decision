@@ -3,7 +3,7 @@
  * (never an aggregator) and records the sentence that supports each value so
  * the dossier can show its working.
  *
- * JSON-LD quotes (hours / telephone / amenityFeature / menu URL) land in
+ * JSON-LD, og/twitter, noscript, and hydration quotes land in
  * enrichment.site only. amenityFeature is never treated as a verified
  * access route. Nothing here writes dataset.json fields.
  */
@@ -125,38 +125,41 @@ function matchGroup(all, patterns, limit = 4) {
   return out;
 }
 
-function collectJsonLdQuotes(pages) {
+function collectPageQuotes(pages) {
   const out = [];
   const seen = new Set();
   for (const page of pages) {
-    for (const q of page.jsonLdQuotes ?? []) {
-      const quote = typeof q === "string" ? q : q.quote;
-      if (!quote) continue;
-      const key = quote.toLowerCase().slice(0, 80);
-      if (seen.has(key)) continue;
-      seen.add(key);
-      out.push({
-        kind: q.kind ?? "jsonld",
-        quote,
-        sourceUrl: q.sourceUrl || page.url,
-        url: q.url,
-      });
+    const lists = [page.jsonLdQuotes, page.pageQuotes];
+    for (const list of lists) {
+      for (const q of list ?? []) {
+        const quote = typeof q === "string" ? q : q.quote;
+        if (!quote) continue;
+        const key = quote.toLowerCase().slice(0, 80);
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push({
+          kind: q.kind ?? "jsonld",
+          quote,
+          sourceUrl: q.sourceUrl || page.url,
+          url: q.url,
+        });
+      }
     }
   }
   return out;
 }
 
-/** @param pages Array of { url, markdown, links, jsonLdQuotes? } already scraped. */
+/** @param pages Array of { url, markdown, links, jsonLdQuotes?, pageQuotes? } already scraped. */
 export function extractFromSite(pages, retrievedAt) {
   const all = [];
   for (const page of pages) {
     for (const text of sentences(page.markdown ?? "")) all.push({ text, url: page.url });
   }
   const links = pages.flatMap((p) => (p.links ?? []).filter((l) => typeof l === "string"));
-  const jsonLd = collectJsonLdQuotes(pages);
+  const pageQuotes = collectPageQuotes(pages);
 
-  const jsonLdMenu = jsonLd.find((q) => q.kind === "menuUrl" && q.url)?.url ?? "";
-  const jsonLdReserve = jsonLd.find((q) => q.kind === "reservationUrl" && q.url)?.url ?? "";
+  const jsonLdMenu = pageQuotes.find((q) => q.kind === "menuUrl" && q.url)?.url ?? "";
+  const jsonLdReserve = pageQuotes.find((q) => q.kind === "reservationUrl" && q.url)?.url ?? "";
 
   const reservationUrl =
     links.find((l) => BOOKING_PLATFORMS.some(([, re]) => re.test(l))) ??
@@ -176,10 +179,10 @@ export function extractFromSite(pages, retrievedAt) {
 
   const quotes = (items) => items.map((x) => (typeof x === "string" ? x : x.quote)).filter(Boolean);
 
-  // JSON-LD amenity/hours/telephone stay in jsonLdLanguage — not folded into
-  // accessibilityLanguage, so completeness does not treat schema flags as
-  // a verified access route.
-  const jsonLdLanguage = jsonLd
+  // JSON-LD / og / hydration / noscript stay in jsonLdLanguage — not folded
+  // into accessibilityLanguage, so completeness does not treat schema flags
+  // or marketing copy as a verified access route.
+  const jsonLdLanguage = pageQuotes
     .filter((q) => q.kind !== "menuUrl" && q.kind !== "reservationUrl")
     .map((q) => ({ quote: q.quote, sourceUrl: q.sourceUrl }));
 

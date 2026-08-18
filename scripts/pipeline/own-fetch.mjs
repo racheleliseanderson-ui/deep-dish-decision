@@ -3,11 +3,19 @@
  *
  * Fetches the restaurant's own public pages over plain HTTPS, parses
  * JSON-LD *before* stripping <script>, then collects readable text and
- * same-host links. A gated Playwright render runs only when HTTP 200
- * text is below the floor and JSON-LD is not already rich.
+ * same-host links.
+ *
+ * JS-shell recovery (honesty-preserving):
+ *   1. Prefer <main> / [role=main] / <article>, but fall back to <body>
+ *      when the chosen region is under TEXT_FLOOR (false-shell fix).
+ *   2. Keep useful <noscript> text; drop "enable JavaScript" stubs.
+ *   3. Quote og/twitter description and hydration JSON into pageQuotes.
+ *   4. Gated Playwright only when HTTP 200 text is still a shell and
+ *      JSON-LD / hydration is not already rich. Honest UA — no stealth.
+ *      Wait for innerText >= floor (cap 8s). Reuse one Chromium.
  *
  * Output shape matches what extractFromSite() already expects:
- *   { url, markdown, links, jsonLd, jsonLdQuotes, rendered }
+ *   { url, markdown, links, jsonLd, jsonLdQuotes, pageQuotes, rendered }
  */
 
 import { createLimiter } from "./lib.mjs";
@@ -17,6 +25,11 @@ const UA =
 
 const FETCH_TIMEOUT_MS = 20_000;
 export const TEXT_FLOOR = 400;
+const PW_TEXT_WAIT_MS = 8_000;
+const ENABLE_JS_RE =
+  /enable javascript|enable js|turn on javascript|cookies to continue|please enable/i;
+const IGNORE_JSON_ATTR =
+  /wp-emoji|emoji-settings|webpack|vite-plugin|__NEXT_FONT|__framer/i;
 
 /** Surface Node fetch cause codes. Connect timeouts become 408 so the limiter retries. */
 export function classifyFetchError(err) {
@@ -39,9 +52,101 @@ export function classifyFetchError(err) {
 export const siteLimiter = createLimiter({ minDelayMs: 400, maxRetries: 5 });
 
 const VENUE_TYPES = /Restaurant|FoodEstablishment|LocalBusiness|BarOrPub|CafeOrCoffeeShop|Bakery|Winery|Brewery|Distillery/i;
+const VENUE_KEYS = new Set([
+  "telephone",
+  "openingHours",
+  "openingHoursSpecification",
+  "hasMenu",
+  "menu",
+  "priceRange",
+  "servesCuisine",
+  "amenityFeature",
+  "acceptsReservations",
+]);
 
 const JSONLD_RE =
   /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+
+function decodeEntities(value) {
+  return String(value ?? "")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/gi, "'")
+    .replace(/&#(\d+);/g, (_, n) => {
+      const code = Number(n);
+      return code > 0 && code < 0x10ffff ? String.fromCodePoint(code) : " ";
+    })
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function roughTextLength(html) {
+  return decodeEntities(String(html ?? "").replace(/<[^>]+>/g, " ")).length;
+}
+
+function sameHost(a, b) {
+  try {
+    const ha = new URL(a).host.replace(/^www\./, "");
+    const hb = new URL(b).host.replace(/^www\./, "");
+    return Boolean(ha) && ha === hb;
+  } catch {
+    return false;
+  }
+}
+
+/** Balanced inner HTML for a tag that opened at `start`. */
+export function balancedInner(html, tag, start) {
+  const openRe = new RegExp(`<${tag}\\b[^>]*>`, "gi");
+  const closeRe = new RegExp(`</${tag}\\s*>`, "gi");
+  let depth = 1;
+  let i = start;
+  while (i < html.length && depth > 0) {
+    openRe.lastIndex = i;
+    closeRe.lastIndex = i;
+    const nextOpen = openRe.exec(html);
+    const nextClose = closeRe.exec(html);
+    if (!nextClose) return null;
+    if (nextOpen && nextOpen.index < nextClose.index) {
+      depth += 1;
+      i = nextOpen.index + nextOpen[0].length;
+    } else {
+      depth -= 1;
+      if (depth === 0) return html.slice(start, nextClose.index);
+      i = nextClose.index + nextClose[0].length;
+    }
+  }
+  return null;
+}
+
+function innerOfTag(html, tag) {
+  const open = new RegExp(`<${tag}\\b[^>]*>`, "i").exec(html);
+  if (!open) return null;
+  return balancedInner(html, tag, open.index + open[0].length);
+}
+
+function roleMainInner(html) {
+  const open = /<([a-zA-Z0-9-]+)\b[^>]*\brole=["']main["'][^>]*>/i.exec(html);
+  if (!open) return null;
+  return balancedInner(html, open[1], open.index + open[0].length);
+}
+
+/**
+ * Prefer main / role=main / article when they actually have content.
+ * A short heading inside [role=main] is a false shell — fall back to body.
+ */
+export function pickContentRegion(cleaned) {
+  const candidates = [innerOfTag(cleaned, "main"), roleMainInner(cleaned), innerOfTag(cleaned, "article")];
+  const body = innerOfTag(cleaned, "body") ?? cleaned;
+  for (const region of candidates) {
+    if (region && roughTextLength(region) >= TEXT_FLOOR) return region;
+  }
+  return body;
+}
 
 /** @param {string} html */
 export function extractJsonLdBlocks(html) {
@@ -80,6 +185,75 @@ export function flattenJsonLd(blocks) {
   const nodes = [];
   walkNodes(blocks, nodes);
   return nodes;
+}
+
+function isVenueLike(node) {
+  if (!node || typeof node !== "object" || Array.isArray(node)) return false;
+  const types = [].concat(node["@type"] ?? []).map(String);
+  if (types.some((t) => VENUE_TYPES.test(t))) return true;
+  const keys = Object.keys(node).filter((k) => VENUE_KEYS.has(k));
+  if (keys.some((k) => k === "openingHours" || k === "openingHoursSpecification" || k === "hasMenu")) {
+    return true;
+  }
+  return keys.length >= 2;
+}
+
+function collectVenueLike(node, out, seen = new Set()) {
+  if (!node || typeof node !== "object") return;
+  if (seen.has(node) || out.length >= 20) return;
+  seen.add(node);
+  if (Array.isArray(node)) {
+    for (const item of node) collectVenueLike(item, out, seen);
+    return;
+  }
+  if (isVenueLike(node)) out.push(node);
+  for (const value of Object.values(node)) {
+    if (value && typeof value === "object") collectVenueLike(value, out, seen);
+  }
+}
+
+/** Next/Nuxt/application/json blobs. Ignores wp-emoji and webpack settings. */
+export function extractHydrationBlocks(html) {
+  const blocks = [];
+  if (!html) return blocks;
+  const re = /<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    const attrs = m[1] || "";
+    const body = String(m[2] ?? "").trim();
+    if (!body || body.length < 20) continue;
+    if (IGNORE_JSON_ATTR.test(attrs)) continue;
+    const id = /id=["']([^"']+)["']/i.exec(attrs)?.[1] || "";
+    const type = /type=["']([^"']+)["']/i.exec(attrs)?.[1] || "";
+    if (/ld\+json/i.test(type)) continue;
+    if (/__NEXT_DATA__|__NUXT_DATA__/i.test(id) || /application\/json/i.test(type)) {
+      try {
+        blocks.push(JSON.parse(body));
+      } catch {
+        /* ignore */
+      }
+      continue;
+    }
+    const nuxt = /window\.__NUXT__\s*=\s*(\{[\s\S]*\})\s*;?\s*$/.exec(body);
+    if (nuxt) {
+      try {
+        blocks.push(JSON.parse(nuxt[1]));
+      } catch {
+        /* ignore */
+      }
+    }
+  }
+  return blocks;
+}
+
+export function flattenHydration(blocks) {
+  const nodes = [];
+  collectVenueLike(blocks, nodes);
+  return nodes;
+}
+
+export function hydrationIsRich(nodes) {
+  return jsonLdIsRich(nodes);
 }
 
 function asUrl(value) {
@@ -121,7 +295,7 @@ export function jsonLdIsRich(nodes) {
  * @param {object[]} nodes
  * @param {string} sourceUrl
  */
-export function jsonLdQuotes(nodes, sourceUrl) {
+export function jsonLdQuotes(nodes, sourceUrl, label = "JSON-LD") {
   const quotes = [];
   const push = (kind, quote, extra = {}) => {
     const text = String(quote ?? "").replace(/\s+/g, " ").trim();
@@ -130,15 +304,15 @@ export function jsonLdQuotes(nodes, sourceUrl) {
   };
 
   for (const n of nodes ?? []) {
-    if (n.telephone) push("telephone", `JSON-LD telephone: ${n.telephone}`);
-    if (n.priceRange) push("price", `JSON-LD priceRange: ${n.priceRange}`);
+    if (n.telephone) push("telephone", `${label} telephone: ${n.telephone}`);
+    if (n.priceRange) push("price", `${label} priceRange: ${n.priceRange}`);
     if (n.servesCuisine) {
       const cuisine = Array.isArray(n.servesCuisine) ? n.servesCuisine.join(", ") : n.servesCuisine;
-      push("cuisine", `JSON-LD servesCuisine: ${cuisine}`);
+      push("cuisine", `${label} servesCuisine: ${cuisine}`);
     }
     if (n.openingHours) {
       const hours = Array.isArray(n.openingHours) ? n.openingHours.join("; ") : n.openingHours;
-      push("hours", `JSON-LD openingHours: ${hours}`);
+      push("hours", `${label} openingHours: ${hours}`);
     }
     const specs = n.openingHoursSpecification
       ? [].concat(n.openingHoursSpecification)
@@ -150,7 +324,7 @@ export function jsonLdQuotes(nodes, sourceUrl) {
         .map((d) => String(d).replace(/^https?:\/\/schema\.org\//, ""))
         .join(",");
       const line = [days, spec.opens, spec.closes].filter(Boolean).join(" ");
-      if (line) push("hours", `JSON-LD openingHoursSpecification: ${line}`);
+      if (line) push("hours", `${label} openingHoursSpecification: ${line}`);
     }
     const features = n.amenityFeature ? [].concat(n.amenityFeature) : [];
     for (const f of features) {
@@ -158,7 +332,7 @@ export function jsonLdQuotes(nodes, sourceUrl) {
       if (!name) continue;
       push(
         "amenity",
-        `JSON-LD amenityFeature (first-party statement, not a verified access route): ${name}`,
+        `${label} amenityFeature (first-party statement, not a verified access route): ${name}`,
       );
     }
     const menuUrl = asUrl(n.hasMenu) || asUrl(n.menu);
@@ -172,12 +346,88 @@ export function jsonLdQuotes(nodes, sourceUrl) {
   return quotes;
 }
 
+export function hydrationQuotes(nodes, sourceUrl) {
+  return jsonLdQuotes(nodes, sourceUrl, "hydration");
+}
+
+/** Keep real fallback copy. Drop Cloudflare / "enable JS" stubs. */
+export function extractUsefulNoscript(html) {
+  const out = [];
+  if (!html) return out;
+  const re = /<noscript\b[^>]*>([\s\S]*?)<\/noscript>/gi;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    const text = decodeEntities(String(m[1] ?? "").replace(/<[^>]+>/g, " "));
+    if (text.length < 40) continue;
+    if (ENABLE_JS_RE.test(text) && text.length < 160) continue;
+    out.push(text);
+  }
+  return out;
+}
+
+function metaContent(html, key) {
+  if (!html) return "";
+  const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const named = new RegExp(
+    `<meta\\b[^>]*(?:property|name)=["']${escaped}["'][^>]*>`,
+    "i",
+  ).exec(html)?.[0];
+  if (named) {
+    return decodeEntities(/content=["']([^"']*)["']/i.exec(named)?.[1] || "");
+  }
+  const reversed = new RegExp(
+    `<meta\\b[^>]*content=["']([^"']*)["'][^>]*(?:property|name)=["']${escaped}["'][^>]*>`,
+    "i",
+  ).exec(html);
+  return decodeEntities(reversed?.[1] || "");
+}
+
+/** og/twitter description and a long-enough <title> as quotes only. */
+export function pageMetaQuotes(html, sourceUrl) {
+  const quotes = [];
+  const push = (kind, label, value) => {
+    const text = decodeEntities(value);
+    if (text.length < 24) return;
+    quotes.push({
+      kind,
+      quote: `${label}: ${text}`.slice(0, 260),
+      sourceUrl,
+    });
+  };
+  const og = metaContent(html, "og:description");
+  const twitter = metaContent(html, "twitter:description");
+  const descr = metaContent(html, "description");
+  const title = decodeEntities(/<title[^>]*>([^<]+)/i.exec(html)?.[1] || "");
+  push("og", "og:description", og);
+  if (twitter && twitter !== og) push("twitter", "twitter:description", twitter);
+  if (descr && descr !== og && descr !== twitter) push("meta", "meta description", descr);
+  if (title.length >= 24) push("title", "title", title);
+  return quotes;
+}
+
 export function parseHtmlDocument(html, url) {
   const blocks = extractJsonLdBlocks(html);
   const nodes = flattenJsonLd(blocks);
   const quotes = jsonLdQuotes(nodes, url);
-  const { text, links } = htmlToTextAndLinks(html, url);
-  return { text, links, jsonLd: nodes, jsonLdQuotes: quotes };
+  const hydrationNodes = flattenHydration(extractHydrationBlocks(html));
+  const { text, links, noscriptTexts } = htmlToTextAndLinks(html, url);
+  const pageQuotes = [
+    ...pageMetaQuotes(html, url),
+    ...noscriptTexts.map((quote) => ({
+      kind: "noscript",
+      quote: `noscript: ${quote}`.slice(0, 260),
+      sourceUrl: url,
+    })),
+    ...hydrationQuotes(hydrationNodes, url),
+  ];
+  return {
+    text,
+    links,
+    jsonLd: nodes,
+    jsonLdQuotes: quotes,
+    pageQuotes,
+    hydrationRich: hydrationIsRich(hydrationNodes),
+  };
 }
 
 function playwrightWanted() {
@@ -187,6 +437,8 @@ function playwrightWanted() {
 let playwrightTried = false;
 let playwrightMod = null;
 let pwChain = Promise.resolve();
+let sharedBrowser = null;
+let sharedBrowserFailed = false;
 
 async function loadPlaywright() {
   if (playwrightTried) return playwrightMod;
@@ -200,31 +452,79 @@ async function loadPlaywright() {
   return playwrightMod;
 }
 
+async function sharedChromium() {
+  if (!playwrightWanted() || sharedBrowserFailed) return null;
+  if (sharedBrowser) return sharedBrowser;
+  const pw = await loadPlaywright();
+  if (!pw?.chromium) {
+    sharedBrowserFailed = true;
+    return null;
+  }
+  try {
+    sharedBrowser = await pw.chromium.launch({ headless: true });
+    sharedBrowser.on("disconnected", () => {
+      sharedBrowser = null;
+    });
+    return sharedBrowser;
+  } catch {
+    sharedBrowserFailed = true;
+    return null;
+  }
+}
+
+async function collectXhrQuotes(res, pageUrl) {
+  try {
+    if (res.status() !== 200) return [];
+    const resUrl = res.url();
+    if (!sameHost(resUrl, pageUrl)) return [];
+    if (/\/_next\/static\/|\.js$/i.test(resUrl)) return [];
+    const ct = String(res.headers()["content-type"] || "");
+    if (!/json/i.test(ct) || /ld\+json/i.test(ct)) return [];
+    const data = await res.json();
+    const nodes = [];
+    collectVenueLike(data, nodes);
+    return hydrationQuotes(nodes, resUrl).slice(0, 12);
+  } catch {
+    return [];
+  }
+}
+
 /**
  * Render a URL in Chromium. Serialized. Fail-closed if Playwright / browser
- * is missing. Honest UA — no stealth.
+ * is missing. Honest UA — no stealth. Reuses one browser; waits for text.
  * @param {string} url
- * @returns {Promise<string | null>}
+ * @returns {Promise<{ html: string, xhrQuotes: object[] } | null>}
  */
 export async function renderWithPlaywright(url) {
   if (!playwrightWanted()) return null;
-  const pw = await loadPlaywright();
-  if (!pw?.chromium) return null;
+  const browser = await sharedChromium();
+  if (!browser) return null;
 
   const task = pwChain.then(async () => {
-    let browser;
+    let page;
     try {
-      browser = await pw.chromium.launch({ headless: true });
-      const page = await browser.newPage({ userAgent: UA });
+      page = await browser.newPage({ userAgent: UA });
+      const pending = [];
+      page.on("response", (res) => {
+        pending.push(collectXhrQuotes(res, url));
+      });
       await page.goto(url, { waitUntil: "domcontentloaded", timeout: 25_000 });
-      await new Promise((r) => setTimeout(r, 1_500));
-      return await page.content();
+      await page
+        .waitForFunction(
+          (floor) => (document.body?.innerText || "").trim().length >= floor,
+          TEXT_FLOOR,
+          { timeout: PW_TEXT_WAIT_MS },
+        )
+        .catch(() => {});
+      const html = await page.content();
+      const xhrQuotes = (await Promise.all(pending)).flat().slice(0, 12);
+      return { html, xhrQuotes };
     } catch {
       return null;
     } finally {
-      if (browser) {
+      if (page) {
         try {
-          await browser.close();
+          await page.close();
         } catch {
           /* ignore */
         }
@@ -238,11 +538,12 @@ export async function renderWithPlaywright(url) {
   return task;
 }
 
-export function shouldRenderPlaywright({ status, textLength, jsonLd }) {
+export function shouldRenderPlaywright({ status, textLength, jsonLd, hydrationRich }) {
   if (!playwrightWanted()) return false;
   if (status !== 200) return false;
   if ((textLength ?? 0) >= TEXT_FLOOR) return false;
   if (jsonLdIsRich(jsonLd)) return false;
+  if (hydrationRich) return false;
   return true;
 }
 
@@ -302,12 +603,21 @@ export async function fetchPage(url) {
   let html = raw.html;
   let parsed = parseHtmlDocument(html, url);
   let playwright = false;
+  let xhrQuotes = [];
 
-  if (shouldRenderPlaywright({ status: raw.status, textLength: parsed.text.length, jsonLd: parsed.jsonLd })) {
+  if (
+    shouldRenderPlaywright({
+      status: raw.status,
+      textLength: parsed.text.length,
+      jsonLd: parsed.jsonLd,
+      hydrationRich: parsed.hydrationRich,
+    })
+  ) {
     const rendered = await renderWithPlaywright(url);
-    if (rendered && rendered.length > html.length) {
-      html = rendered;
+    if (rendered?.html && rendered.html.length > html.length) {
+      html = rendered.html;
       parsed = parseHtmlDocument(html, url);
+      xhrQuotes = rendered.xhrQuotes ?? [];
       playwright = true;
     }
   }
@@ -318,6 +628,7 @@ export async function fetchPage(url) {
     links: parsed.links,
     jsonLd: parsed.jsonLd,
     jsonLdQuotes: parsed.jsonLdQuotes,
+    pageQuotes: [...(parsed.pageQuotes ?? []), ...xhrQuotes],
     metadata: {
       finalUrl: raw.finalUrl || url,
       bytes: html.length,
@@ -330,12 +641,12 @@ export async function fetchPage(url) {
 
 /**
  * Lightweight HTML → text + absolute links. No external parser dependency.
- * Good enough for policy-language sentence extraction; not a full browser.
- * JSON-LD must be parsed *before* this runs (scripts are stripped here).
+ * JSON-LD / hydration must be parsed *before* this runs (scripts are stripped).
  * @param {string} html
  * @param {string} baseUrl
  */
 export function htmlToTextAndLinks(html, baseUrl) {
+  const noscriptTexts = extractUsefulNoscript(html);
   // Drop non-content blocks early — JSON-LD lives in <script> and is gone after this.
   let cleaned = html
     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, " ")
@@ -344,13 +655,7 @@ export function htmlToTextAndLinks(html, baseUrl) {
     .replace(/<svg\b[^<]*(?:(?!<\/svg>)<[^<]*)*<\/svg>/gi, " ")
     .replace(/<!--[\s\S]*?-->/g, " ");
 
-  // Prefer <main> / role=main / <article> when present
-  const mainMatch =
-    cleaned.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i) ||
-    cleaned.match(/<[^>]+role=["']main["'][^>]*>([\s\S]*?)<\/[^>]+>/i) ||
-    cleaned.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i);
-  const bodyMatch = cleaned.match(/<body\b[^>]*>([\s\S]*?)<\/body>/i);
-  const region = mainMatch?.[1] ?? bodyMatch?.[1] ?? cleaned;
+  const region = pickContentRegion(cleaned);
 
   // Collect hrefs from the full document (better coverage for menu/reserve links)
   const linkSet = new Set();
@@ -363,8 +668,8 @@ export function htmlToTextAndLinks(html, baseUrl) {
     }
     try {
       const decoded = href
-        .replace(/&/gi, "&")
-        .replace(/"/gi, '"')
+        .replace(/&amp;/gi, "&")
+        .replace(/&quot;/gi, '"')
         .replace(/&#39;/g, "'");
       const abs = new URL(decoded, baseUrl).href;
       if (/^https?:/i.test(abs)) linkSet.add(abs.split("#")[0]);
@@ -374,28 +679,20 @@ export function htmlToTextAndLinks(html, baseUrl) {
   }
 
   // Block-ish tags → newlines so sentence splitting still works
-  let text = region
-    .replace(/<(br|hr)\s*\/?>/gi, "\n")
-    .replace(/<\/(p|div|li|h[1-6]|tr|section|article|header|footer|nav|blockquote)>/gi, "\n")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/gi, " ")
-    .replace(/&/gi, "&")
-    .replace(/</gi, "<")
-    .replace(/>/gi, ">")
-    .replace(/"/gi, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&#x27;/gi, "'")
-    .replace(/&#(\d+);/g, (_, n) => {
-      const code = Number(n);
-      return code > 0 && code < 0x10ffff ? String.fromCodePoint(code) : " ";
-    })
-    .replace(/\u00a0/g, " ")
-    .replace(/[ \t]+\n/g, "\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .replace(/[ \t]{2,}/g, " ")
-    .trim();
+  let text = decodeEntities(
+    region
+      .replace(/<(br|hr)\s*\/?>/gi, "\n")
+      .replace(/<\/(p|div|li|h[1-6]|tr|section|article|header|footer|nav|blockquote)>/gi, "\n")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/[ \t]+\n/g, "\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .replace(/[ \t]{2,}/g, " "),
+  );
+  if (noscriptTexts.length) {
+    text = [text, ...noscriptTexts].filter(Boolean).join("\n\n");
+  }
 
-  return { text, links: [...linkSet] };
+  return { text, links: [...linkSet], noscriptTexts };
 }
 
 /**
@@ -415,6 +712,7 @@ export async function fetchSitePages(siteUrl, pickPages) {
     links: home.links,
     jsonLd: home.jsonLd,
     jsonLdQuotes: home.jsonLdQuotes,
+    pageQuotes: home.pageQuotes,
     rendered: Boolean(home.metadata?.playwright),
   });
 
@@ -428,6 +726,7 @@ export async function fetchSitePages(siteUrl, pickPages) {
         links: page.links,
         jsonLd: page.jsonLd,
         jsonLdQuotes: page.jsonLdQuotes,
+        pageQuotes: page.pageQuotes,
         rendered: Boolean(page.metadata?.playwright),
       });
     }
