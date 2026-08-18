@@ -11,6 +11,7 @@ import {
   jsonLdQuotes,
   parseHtmlDocument,
   shouldRenderPlaywright,
+  classifyFetchError,
   TEXT_FLOOR,
 } from "./own-fetch.mjs";
 import { extractFromSite } from "./site.mjs";
@@ -173,5 +174,26 @@ describe("Playwright gate", () => {
   it("skips when RI_PLAYWRIGHT=0", () => {
     process.env.RI_PLAYWRIGHT = "0";
     expect(shouldRenderPlaywright({ status: 200, textLength: 12, jsonLd: [] })).toBe(false);
+  });
+});
+
+describe("classifyFetchError", () => {
+  it("maps AbortError and connect timeouts to 408", () => {
+    expect(classifyFetchError({ name: "AbortError", message: "This operation was aborted" })).toEqual({
+      status: 408,
+      error: "timeout",
+    });
+    expect(
+      classifyFetchError({ name: "TypeError", message: "fetch failed", cause: { code: "UND_ERR_CONNECT_TIMEOUT" } }),
+    ).toEqual({ status: 408, error: "timeout:UND_ERR_CONNECT_TIMEOUT" });
+  });
+
+  it("keeps TLS and DNS codes on status 0", () => {
+    expect(
+      classifyFetchError({ name: "TypeError", message: "fetch failed", cause: { code: "ENOTFOUND" } }),
+    ).toEqual({ status: 0, error: "fetch failed:ENOTFOUND" });
+    expect(
+      classifyFetchError({ name: "TypeError", message: "fetch failed", cause: { code: "CERT_HAS_EXPIRED" } }),
+    ).toEqual({ status: 0, error: "fetch failed:CERT_HAS_EXPIRED" });
   });
 });

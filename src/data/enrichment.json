@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T14:29:58.967Z",
+  "generatedAt": "2026-08-18T21:06:32.604Z",
   "records": {
     "canlis": {
       "google": {
@@ -2172,7 +2172,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:29:03.475Z",
+        "lastEnrichedAt": "2026-08-18T20:29:59.759Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -2186,6 +2186,7 @@
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
+        "jsonLdLanguage": [],
         "pagesRead": 4,
         "sourceUrls": [
           "https://www.arianarestaurantbend.com/",
@@ -2193,7 +2194,8 @@
           "https://www.arianarestaurantbend.com/menu/",
           "https://www.arianarestaurantbend.com/reservations/"
         ],
-        "retrievedAt": "2026-08-18T14:29:03.475Z"
+        "retrievedAt": "2026-08-18T20:29:59.759Z",
+        "playwrightPages": 3
       }
     },
     "gander-and-ryegrass": {
@@ -3452,12 +3454,34 @@
         "generatedAt": "2026-08-10T21:35:39.722Z"
       },
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:29:04.999Z",
+        "lastEnrichedAt": "2026-08-18T20:30:09.163Z",
         "enrichmentMode": "owned-site",
-        "completeness": 83
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://eatroe.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/roe-seattle",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "20% gratuity will be added to parties of 6 or more",
+        "groupPolicyLanguage": [
+          "20% gratuity will be added to parties of 6 or more"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://eatroe.com/",
+          "https://eatroe.com/menu",
+          "https://eatroe.com/about"
+        ],
+        "retrievedAt": "2026-08-18T20:30:09.163Z",
+        "playwrightPages": 0
       }
     },
     "part-parcel": {
@@ -8499,7 +8523,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:51.817Z",
+        "lastEnrichedAt": "2026-08-18T20:29:51.694Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -8513,12 +8537,14 @@
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
+        "jsonLdLanguage": [],
         "pagesRead": 2,
         "sourceUrls": [
           "https://thesmithrestaurant.com/location/nomad/",
           "https://thesmithrestaurant.com/about/"
         ],
-        "retrievedAt": "2026-08-18T14:28:51.817Z"
+        "retrievedAt": "2026-08-18T20:29:51.694Z",
+        "playwrightPages": 2
       }
     },
     "buddakan": {
@@ -9816,12 +9842,41 @@
         "generatedAt": "2026-08-10T23:07:52.162Z"
       },
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:52.582Z",
+        "lastEnrichedAt": "2026-08-18T20:29:57.876Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "http://perchla.com/menu-gallery",
+        "reservationUrl": "https://www.opentable.com/restref/client/?color=1&amp;corrid=344d7c95-17a2-4664-8e8d-a13d289e5f30&amp;datetime=2023-12-05T20%3A00&amp;lang=en-US&amp;partysize=2&amp;r3uid=h63ykElBDB&amp;restref=67720&amp;rid=67720",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Perch 16th Floor rooftop Skydeck private event seated dinner",
+        "groupPolicyLanguage": [
+          "Perch 16th Floor rooftop Skydeck private event seated dinner",
+          "Tables and Private Dining",
+          "The restaurant charges a 20% automatic gratuity on all food and beverage items for large parties of 8 or more."
+        ],
+        "dressCode": "Our dress code is Upscale/Casual preferred.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 16:00-01:00, Tu 16:00-01:00, We 16:00-01:00, Th 16:00-01:00, Fr 16:00-01:30, Sa 10:00-01:30, Su 10:00-01:00",
+            "sourceUrl": "http://perchla.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "http://perchla.com/",
+          "http://perchla.com/reservations",
+          "http://perchla.com/menu-gallery"
+        ],
+        "retrievedAt": "2026-08-18T20:29:57.876Z",
+        "playwrightPages": 0
       }
     },
     "re-publique": {
@@ -11934,7 +11989,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:29.210Z",
+        "lastEnrichedAt": "2026-08-18T20:29:50.679Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -11948,11 +12003,13 @@
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
+        "jsonLdLanguage": [],
         "pagesRead": 1,
         "sourceUrls": [
           "https://www.summerhouserestaurants.com/?utm_source=google&utm_medium=social&utm_campaign=SHSMLP-GBiz"
         ],
-        "retrievedAt": "2026-08-18T14:28:29.210Z"
+        "retrievedAt": "2026-08-18T20:29:50.679Z",
+        "playwrightPages": 0
       }
     },
     "the-purple-pig-restaurant": {
@@ -15082,12 +15139,31 @@
         "generatedAt": "2026-08-11T00:03:40.315Z"
       },
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:40.924Z",
+        "lastEnrichedAt": "2026-08-18T20:30:27.302Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "http://www.bestsichuan.com/",
+          "https://www.bestsichuan.com/about/"
+        ],
+        "retrievedAt": "2026-08-18T20:30:27.302Z",
+        "playwrightPages": 0
       }
     },
     "the-best-sichuan": {
@@ -15240,12 +15316,31 @@
         "generatedAt": "2026-08-11T00:04:17.402Z"
       },
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:30.439Z",
+        "lastEnrichedAt": "2026-08-18T20:30:24.099Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.mala747.com/",
+          "https://www.mala747.com/contact-us/"
+        ],
+        "retrievedAt": "2026-08-18T20:30:24.099Z",
+        "playwrightPages": 1
       }
     },
     "the-best-sichuan-21": {
@@ -19717,7 +19812,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:28.694Z",
+        "lastEnrichedAt": "2026-08-18T20:30:22.232Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20253,7 +20348,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T14:28:18.174Z",
+        "lastEnrichedAt": "2026-08-18T20:30:10.936Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20444,7 +20539,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:57.705Z",
+        "lastEnrichedAt": "2026-08-18T20:31:01.065Z",
         "enrichmentMode": "owned-site",
         "completeness": 33
       }
@@ -20563,12 +20658,35 @@
     },
     "boia-de-miami": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:15.490Z",
+        "lastEnrichedAt": "2026-08-18T21:06:23.275Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.boiaderestaurant.com/menus/",
+        "reservationUrl": "https://resy.com/cities/miami-fl/venues/boia-de?date=2024-04-12&amp;seats=2",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Due to the unique size of our restaurant, parties of 7+ are booked directly with our reservations team.",
+        "groupPolicyLanguage": [
+          "Due to the unique size of our restaurant, parties of 7+ are booked directly with our reservations team."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.boiaderestaurant.com/",
+          "https://www.boiaderestaurant.com/menus/",
+          "https://www.boiaderestaurant.com/about/",
+          "https://www.boiaderestaurant.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-18T21:06:23.275Z",
+        "playwrightPages": 3
       }
     },
     "carbone-miami-miami": {
@@ -20633,7 +20751,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:16.050Z",
+        "lastEnrichedAt": "2026-08-18T20:30:29.536Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20835,7 +20953,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:16.646Z",
+        "lastEnrichedAt": "2026-08-18T20:30:30.370Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21245,7 +21363,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:27.538Z",
+        "lastEnrichedAt": "2026-08-18T20:30:41.665Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21570,7 +21688,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:27.984Z",
+        "lastEnrichedAt": "2026-08-18T20:30:42.478Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21665,7 +21783,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:29.009Z",
+        "lastEnrichedAt": "2026-08-18T20:30:43.313Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22152,7 +22270,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:39.428Z",
+        "lastEnrichedAt": "2026-08-18T20:30:44.161Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22267,7 +22385,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:50.322Z",
+        "lastEnrichedAt": "2026-08-18T20:30:55.458Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22578,7 +22696,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:51.465Z",
+        "lastEnrichedAt": "2026-08-18T20:30:57.144Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22747,12 +22865,33 @@
     },
     "the-dabney-washington": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:50.837Z",
+        "lastEnrichedAt": "2026-08-18T21:06:31.696Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://resy.com/cities/washington-dc/venues/the-dabney",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [
+          "At this time we are unable to accommodate severe allium and dairy allergies as well as vegan diets.",
+          "(Please note: Without prior notice, we are unable to accommodate most allergies or dietary restrictions.)"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://thedabney.com/"
+        ],
+        "retrievedAt": "2026-08-18T21:06:31.696Z",
+        "playwrightPages": 0
       }
     },
     "rose-s-luxury-washington": {
@@ -23297,7 +23436,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T14:29:51.992Z",
+        "lastEnrichedAt": "2026-08-18T20:30:58.021Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
