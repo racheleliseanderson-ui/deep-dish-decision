@@ -2,6 +2,49 @@
   "runs": [
     {
       "kind": "enrich-owned",
+      "startedAt": "2026-08-18T21:06:23.270Z",
+      "finishedAt": "2026-08-18T21:06:32.612Z",
+      "batchSize": 2,
+      "cities": [
+        "Miami, Florida",
+        "Washington, District Of Columbia"
+      ],
+      "resolved": 2,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 66,
+      "corpusEnriched": 225,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 2
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-18T21-06-23-270Z-enrich-owned",
+      "records": [
+        {
+          "slug": "boia-de-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "playwright 3"
+          ]
+        },
+        {
+          "slug": "the-dabney-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "enrich-owned",
       "startedAt": "2026-08-18T20:29:50.673Z",
       "finishedAt": "2026-08-18T20:31:02.748Z",
       "batchSize": 21,
@@ -282,12 +325,16 @@
           {
             "slug": "boia-de-miami",
             "class": "listing-url-dead",
-            "detail": "www.boiade.com NXDOMAIN. Apex boiade.com 302s to first-party https://www.boiaderestaurant.com/ (200). Dataset website field needs a human rewrite."
+            "detail": "www.boiade.com NXDOMAIN. Apex boiade.com 302s to first-party https://www.boiaderestaurant.com/ (200). Dataset website field needs a human rewrite.",
+            "applied": true,
+            "newWebsite": "https://www.boiaderestaurant.com/"
           },
           {
             "slug": "the-dabney-washington",
             "class": "tls-name",
-            "detail": "www.thedabney.com cert altname invalid. Apex https://thedabney.com/ is 200. Dataset www host is the blocker."
+            "detail": "www.thedabney.com cert altname invalid. Apex https://thedabney.com/ is 200. Dataset www host is the blocker.",
+            "applied": true,
+            "newWebsite": "https://thedabney.com/"
           },
           {
             "slug": "welcome-diner-phoenix",
@@ -348,6 +395,18 @@
           "Did not rewrite dataset.json websites",
           "Did not bypass Cloudflare 403",
           "Did not invent replacement URLs for NXDOMAIN listings"
+        ],
+        "urlRewritesApplied": [
+          {
+            "slug": "boia-de-miami",
+            "from": "https://www.boiade.com/",
+            "to": "https://www.boiaderestaurant.com/"
+          },
+          {
+            "slug": "the-dabney-washington",
+            "from": "https://www.thedabney.com/",
+            "to": "https://thedabney.com/"
+          }
         ]
       }
     },
