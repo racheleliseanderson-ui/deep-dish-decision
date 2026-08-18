@@ -2,6 +2,10 @@
  * First-party site extraction. Reads only the restaurant's own public pages
  * (never an aggregator) and records the sentence that supports each value so
  * the dossier can show its working.
+ *
+ * JSON-LD quotes (hours / telephone / amenityFeature / menu URL) land in
+ * enrichment.site only. amenityFeature is never treated as a verified
+ * access route. Nothing here writes dataset.json fields.
  */
 
 const PAGE_HINTS = [
@@ -99,8 +103,8 @@ const PHRASE_GROUPS = {
 function sentences(markdown) {
   return markdown
     .replace(/\r/g, "")
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
-    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/!\[[^\]]*]\([^)]*\)/g, " ")
+    .replace(/\[([^\]]*)]\([^)]*\)/g, "$1")
     .replace(/[#>*_`|]/g, " ")
     .split(/(?<=[.!?])\s+|\n+/)
     .map((s) => s.replace(/\s+/g, " ").trim())
@@ -121,22 +125,48 @@ function matchGroup(all, patterns, limit = 4) {
   return out;
 }
 
-/** @param pages Array of { url, markdown, links } already scraped. */
+function collectJsonLdQuotes(pages) {
+  const out = [];
+  const seen = new Set();
+  for (const page of pages) {
+    for (const q of page.jsonLdQuotes ?? []) {
+      const quote = typeof q === "string" ? q : q.quote;
+      if (!quote) continue;
+      const key = quote.toLowerCase().slice(0, 80);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push({
+        kind: q.kind ?? "jsonld",
+        quote,
+        sourceUrl: q.sourceUrl || page.url,
+        url: q.url,
+      });
+    }
+  }
+  return out;
+}
+
+/** @param pages Array of { url, markdown, links, jsonLdQuotes? } already scraped. */
 export function extractFromSite(pages, retrievedAt) {
   const all = [];
   for (const page of pages) {
     for (const text of sentences(page.markdown ?? "")) all.push({ text, url: page.url });
   }
   const links = pages.flatMap((p) => (p.links ?? []).filter((l) => typeof l === "string"));
+  const jsonLd = collectJsonLdQuotes(pages);
+
+  const jsonLdMenu = jsonLd.find((q) => q.kind === "menuUrl" && q.url)?.url ?? "";
+  const jsonLdReserve = jsonLd.find((q) => q.kind === "reservationUrl" && q.url)?.url ?? "";
 
   const reservationUrl =
     links.find((l) => BOOKING_PLATFORMS.some(([, re]) => re.test(l))) ??
     links.find((l) => /\/(reservations?|book|reserve)\b/i.test(l)) ??
+    jsonLdReserve ??
     "";
   const platform =
     BOOKING_PLATFORMS.find(([, re]) => re.test(reservationUrl))?.[0] ??
     (reservationUrl ? "Direct" : "");
-  const menuUrl = links.find((l) => /\/(menus?|food|drinks?|wine)\b/i.test(l)) ?? "";
+  const menuUrl = links.find((l) => /\/(menus?|food|drinks?|wine)\b/i.test(l)) ?? jsonLdMenu ?? "";
 
   const dietary = matchGroup(all, PHRASE_GROUPS.dietaryLanguage);
   const accessibility = matchGroup(all, PHRASE_GROUPS.accessibilityLanguage);
@@ -145,6 +175,13 @@ export function extractFromSite(pages, retrievedAt) {
   const cancellation = matchGroup(all, PHRASE_GROUPS.cancellationLanguage, 3);
 
   const quotes = (items) => items.map((x) => (typeof x === "string" ? x : x.quote)).filter(Boolean);
+
+  // JSON-LD amenity/hours/telephone stay in jsonLdLanguage — not folded into
+  // accessibilityLanguage, so completeness does not treat schema flags as
+  // a verified access route.
+  const jsonLdLanguage = jsonLd
+    .filter((q) => q.kind !== "menuUrl" && q.kind !== "reservationUrl")
+    .map((q) => ({ quote: q.quote, sourceUrl: q.sourceUrl }));
 
   return {
     menuUrl,
@@ -156,8 +193,10 @@ export function extractFromSite(pages, retrievedAt) {
     groupPolicyLanguage: quotes(group),
     dressCode: dress.length ? dress[0].quote : "",
     cancellationLanguage: quotes(cancellation),
+    jsonLdLanguage,
     pagesRead: pages.length,
     sourceUrls: pages.map((p) => p.url),
     retrievedAt,
+    playwrightPages: pages.filter((p) => p.rendered).length,
   };
 }

@@ -20,7 +20,7 @@ import {
   snapshot,
   writeJson,
 } from "./lib.mjs";
-import { fetchSitePages } from "./own-fetch.mjs";
+import { fetchSitePages, siteLimiter } from "./own-fetch.mjs";
 import { buildRefreshQueue } from "./refresh.mjs";
 import { extractFromSite, pickSitePages } from "./site.mjs";
 
@@ -123,6 +123,12 @@ for (const record of batch) {
       entry.site = extractFromSite(pages, retrievedAt);
       entry.meta.matchStatus = entry.meta.matchStatus === "site-failure" ? "partial" : "resolved";
       notes.push(`pages ${pages.length}`);
+      if (entry.site.jsonLdLanguage?.length) {
+        notes.push(`jsonld ${entry.site.jsonLdLanguage.length}`);
+      }
+      if (entry.site.playwrightPages) {
+        notes.push(`playwright ${entry.site.playwrightPages}`);
+      }
     } else if (!homeError) {
       notes.push("no pages extracted");
       entry.meta.matchStatus = "empty";
@@ -163,7 +169,7 @@ appendRun({
   avgCompleteness: avg,
   corpusEnriched: Object.keys(store.records).length,
   apiCalls: { google: 0, firecrawl: 0, ownedFetch: pacedCalls },
-  retries: 0,
+  retries: siteLimiter.stats.retries,
   failures: log.filter((l) => String(l.matchStatus).includes("failure") || l.matchStatus === "no-website").length,
   snapshot: snapshotDir,
   records: log,
@@ -173,4 +179,4 @@ appendRun({
 console.log(
   `\nOwned enrichment batch of ${batch.length} done. Corpus with enrichment entries: ${Object.keys(store.records).length}/${dataset.records.length}. Average completeness ${avg}%.`,
 );
-console.log("No Google Places. No Firecrawl. Site reads only.\n");
+console.log("No Google Places. No Firecrawl. Site reads only. JSON-LD quoted; Playwright gated.\n");
