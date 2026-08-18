@@ -9,6 +9,8 @@ type Props = {
   className?: string;
 };
 
+const MAX_BYTES = 4 * 1024 * 1024; // 4 MB
+
 /**
  * Minimal photo evidence uploader for multi-item detection + OCR.
  * Results are converted to user-photo Findings and passed upward.
@@ -22,6 +24,10 @@ export function EvidenceFromPhoto({ onFindings, className }: Props) {
   async function handleFile(file: File) {
     if (!file.type.startsWith("image/")) {
       setError("Please choose an image file.");
+      return;
+    }
+    if (file.size > MAX_BYTES) {
+      setError("Image is too large (max 4 MB). Try a smaller photo or crop.");
       return;
     }
     setLoading(true);
@@ -67,7 +73,7 @@ export function EvidenceFromPhoto({ onFindings, className }: Props) {
       </div>
 
       <label className="flex cursor-pointer flex-col items-start gap-2">
-        <span className="text-xs text-muted-foreground">Choose image</span>
+        <span className="text-xs text-muted-foreground">Choose image (max 4 MB)</span>
         <input
           type="file"
           accept="image/*"
