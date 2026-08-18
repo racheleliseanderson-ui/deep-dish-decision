@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T14:47:46.012Z",
+  "generatedAt": "2026-08-18T14:29:58.967Z",
   "records": {
     "canlis": {
       "google": {
@@ -2172,7 +2172,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:04.637Z",
+        "lastEnrichedAt": "2026-08-18T14:29:03.475Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -2193,7 +2193,7 @@
           "https://www.arianarestaurantbend.com/menu/",
           "https://www.arianarestaurantbend.com/reservations/"
         ],
-        "retrievedAt": "2026-08-14T14:47:04.637Z"
+        "retrievedAt": "2026-08-18T14:29:03.475Z"
       }
     },
     "gander-and-ryegrass": {
@@ -3452,32 +3452,12 @@
         "generatedAt": "2026-08-10T21:35:39.722Z"
       },
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:06.149Z",
+        "lastEnrichedAt": "2026-08-18T14:29:04.999Z",
         "enrichmentMode": "owned-site",
-        "completeness": 100
-      },
-      "site": {
-        "menuUrl": "https://eatroe.com/menu",
-        "reservationUrl": "https://www.opentable.com/r/roe-seattle",
-        "reservationPlatform": "OpenTable",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "20% gratuity will be added to parties of 6 or more",
-        "groupPolicyLanguage": [
-          "20% gratuity will be added to parties of 6 or more"
-        ],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 3,
-        "sourceUrls": [
-          "https://eatroe.com/",
-          "https://eatroe.com/menu",
-          "https://eatroe.com/about"
-        ],
-        "retrievedAt": "2026-08-14T14:47:06.149Z"
+        "completeness": 83
       }
     },
     "part-parcel": {
@@ -8519,7 +8499,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:03.727Z",
+        "lastEnrichedAt": "2026-08-18T14:28:51.817Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -8538,7 +8518,7 @@
           "https://thesmithrestaurant.com/location/nomad/",
           "https://thesmithrestaurant.com/about/"
         ],
-        "retrievedAt": "2026-08-14T14:47:03.727Z"
+        "retrievedAt": "2026-08-18T14:28:51.817Z"
       }
     },
     "buddakan": {
@@ -9836,34 +9816,12 @@
         "generatedAt": "2026-08-10T23:07:52.162Z"
       },
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:46:58.836Z",
+        "lastEnrichedAt": "2026-08-18T14:28:52.582Z",
         "enrichmentMode": "owned-site",
-        "completeness": 67
-      },
-      "site": {
-        "menuUrl": "http://perchla.com/menu-gallery",
-        "reservationUrl": "https://www.opentable.com/restref/client/?color=1&corrid=344d7c95-17a2-4664-8e8d-a13d289e5f30&datetime=2023-12-05T20%3A00&lang=en-US&partysize=2&r3uid=h63ykElBDB&restref=67720&rid=67720",
-        "reservationPlatform": "OpenTable",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "Perch 16th Floor rooftop Skydeck private event seated dinner",
-        "groupPolicyLanguage": [
-          "Perch 16th Floor rooftop Skydeck private event seated dinner",
-          "Tables and Private Dining",
-          "The restaurant charges a 20% automatic gratuity on all food and beverage items for large parties of 8 or more."
-        ],
-        "dressCode": "Our dress code is Upscale/Casual preferred.",
-        "cancellationLanguage": [],
-        "pagesRead": 3,
-        "sourceUrls": [
-          "http://perchla.com/",
-          "http://perchla.com/reservations",
-          "http://perchla.com/menu-gallery"
-        ],
-        "retrievedAt": "2026-08-14T14:46:58.836Z"
+        "completeness": 28
       }
     },
     "re-publique": {
@@ -11976,7 +11934,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:00.677Z",
+        "lastEnrichedAt": "2026-08-18T14:28:29.210Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -11994,7 +11952,7 @@
         "sourceUrls": [
           "https://www.summerhouserestaurants.com/?utm_source=google&utm_medium=social&utm_campaign=SHSMLP-GBiz"
         ],
-        "retrievedAt": "2026-08-14T14:47:00.677Z"
+        "retrievedAt": "2026-08-18T14:28:29.210Z"
       }
     },
     "the-purple-pig-restaurant": {
@@ -14428,7 +14386,7 @@
         "matchStatus": "no-website",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:07.944Z",
+        "lastEnrichedAt": "2026-08-18T14:29:15.490Z",
         "enrichmentMode": "owned-site",
         "completeness": 22
       }
@@ -15124,29 +15082,12 @@
         "generatedAt": "2026-08-11T00:03:40.315Z"
       },
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:02.678Z",
+        "lastEnrichedAt": "2026-08-18T14:28:40.924Z",
         "enrichmentMode": "owned-site",
-        "completeness": 44
-      },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 2,
-        "sourceUrls": [
-          "http://www.bestsichuan.com/",
-          "https://www.bestsichuan.com/about/"
-        ],
-        "retrievedAt": "2026-08-14T14:47:02.678Z"
+        "completeness": 28
       }
     },
     "the-best-sichuan": {
@@ -15299,29 +15240,12 @@
         "generatedAt": "2026-08-11T00:04:17.402Z"
       },
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:01.891Z",
+        "lastEnrichedAt": "2026-08-18T14:28:30.439Z",
         "enrichmentMode": "owned-site",
-        "completeness": 44
-      },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 2,
-        "sourceUrls": [
-          "https://www.mala747.com/",
-          "https://www.mala747.com/contact-us/"
-        ],
-        "retrievedAt": "2026-08-14T14:47:01.891Z"
+        "completeness": 28
       }
     },
     "the-best-sichuan-21": {
@@ -16405,7 +16329,7 @@
         "matchStatus": "no-website",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:07.429Z",
+        "lastEnrichedAt": "2026-08-18T14:29:15.490Z",
         "enrichmentMode": "owned-site",
         "completeness": 22
       }
@@ -16791,7 +16715,7 @@
         "matchStatus": "no-website",
         "confidence": 0.5,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:06.931Z",
+        "lastEnrichedAt": "2026-08-18T14:29:15.490Z",
         "enrichmentMode": "owned-site",
         "completeness": 17
       }
@@ -19793,7 +19717,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:47:00.043Z",
+        "lastEnrichedAt": "2026-08-18T14:28:28.694Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20329,7 +20253,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-14T14:46:48.181Z",
+        "lastEnrichedAt": "2026-08-18T14:28:18.174Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20520,7 +20444,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:44.879Z",
+        "lastEnrichedAt": "2026-08-18T14:29:57.705Z",
         "enrichmentMode": "owned-site",
         "completeness": 33
       }
@@ -20642,7 +20566,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:06.932Z",
+        "lastEnrichedAt": "2026-08-18T14:29:15.490Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20709,7 +20633,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:07.429Z",
+        "lastEnrichedAt": "2026-08-18T14:29:16.050Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20911,7 +20835,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:07.944Z",
+        "lastEnrichedAt": "2026-08-18T14:29:16.646Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21321,7 +21245,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:18.839Z",
+        "lastEnrichedAt": "2026-08-18T14:29:27.538Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -21646,19 +21570,35 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:19.267Z",
+        "lastEnrichedAt": "2026-08-18T14:29:27.984Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
     },
     "kenny-s-wood-fired-grill": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "partial",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:19.821Z",
+        "lastEnrichedAt": "2026-08-18T14:29:28.499Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "http://www.kennyswoodfiredgrill.com/"
+        ],
+        "retrievedAt": "2026-08-18T14:29:28.499Z"
       }
     },
     "kimball-house-atlanta": {
@@ -21725,7 +21665,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:20.563Z",
+        "lastEnrichedAt": "2026-08-18T14:29:29.009Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22212,7 +22152,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:30.977Z",
+        "lastEnrichedAt": "2026-08-18T14:29:39.428Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22327,7 +22267,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:41.448Z",
+        "lastEnrichedAt": "2026-08-18T14:29:50.322Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22638,7 +22578,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:42.548Z",
+        "lastEnrichedAt": "2026-08-18T14:29:51.465Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22810,7 +22750,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:41.879Z",
+        "lastEnrichedAt": "2026-08-18T14:29:50.837Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -23357,7 +23297,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:47:43.121Z",
+        "lastEnrichedAt": "2026-08-18T14:29:51.992Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
