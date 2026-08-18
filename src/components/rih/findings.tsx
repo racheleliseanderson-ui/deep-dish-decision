@@ -8,6 +8,21 @@ const LABEL: Record<FindingLayer, string> = {
   unknown: "Unknown",
 };
 
+function provenanceLabel(provenance: string): string {
+  switch (provenance) {
+    case "google-places":
+      return "Google listing · labeled";
+    case "site-scrape":
+      return "Venue website · labeled";
+    case "user-photo":
+      return "User photo · OCR/vision";
+    case "enrichment":
+      return "Third-party · labeled";
+    default:
+      return "Third-party · labeled";
+  }
+}
+
 export function FindingRow({ f, compact = false }: { f: Finding; compact?: boolean }) {
   return (
     <li className="group relative flex gap-3 py-3">
@@ -34,13 +49,7 @@ export function FindingRow({ f, compact = false }: { f: Finding; compact?: boole
         <p className="mt-1 text-sm leading-snug text-foreground">{f.title}</p>
         {f.provenance && f.provenance !== "first-party" ? (
           <p className="mt-1">
-            <Chip tone="unknown">
-              {f.provenance === "google-places"
-                ? "Google listing · labeled"
-                : f.provenance === "site-scrape"
-                  ? "Venue website · labeled"
-                  : "Third-party · labeled"}
-            </Chip>
+            <Chip tone="unknown">{provenanceLabel(f.provenance)}</Chip>
           </p>
         ) : null}
         {!compact && f.detail ? (
