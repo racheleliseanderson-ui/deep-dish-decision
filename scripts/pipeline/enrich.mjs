@@ -20,7 +20,7 @@ import {
   snapshot,
   writeJson,
 } from "./lib.mjs";
-import { fetchSitePages, siteLimiter } from "./own-fetch.mjs";
+import { fetchSitePages, siteLimiter, closeSharedBrowser } from "./own-fetch.mjs";
 import { buildRefreshQueue } from "./refresh.mjs";
 import { extractFromSite, pickSitePages } from "./site.mjs";
 
@@ -180,3 +180,4 @@ console.log(
   `\nOwned enrichment batch of ${batch.length} done. Corpus with enrichment entries: ${Object.keys(store.records).length}/${dataset.records.length}. Average completeness ${avg}%.`,
 );
 console.log("No Google Places. No Firecrawl. Site reads only. JSON-LD quoted; Playwright gated.\n");
+await closeSharedBrowser();

@@ -2,6 +2,294 @@
   "runs": [
     {
       "kind": "enrich-owned",
+      "startedAt": "2026-08-19T12:25:23.456Z",
+      "finishedAt": "2026-08-19T12:29:46.031Z",
+      "batchSize": 17,
+      "cities": [
+        "New York, New York",
+        "Pacific Northwest",
+        "Miami, Florida",
+        "Atlanta, Georgia",
+        "Phoenix, Arizona",
+        "Philadelphia, Pennsylvania",
+        "Dallas, Texas",
+        "San Francisco, California",
+        "Boston, Massachusetts"
+      ],
+      "resolved": 14,
+      "unresolved": 3,
+      "deferred": 0,
+      "avgCompleteness": 68,
+      "corpusEnriched": 225,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 17
+      },
+      "retries": 10,
+      "failures": 3,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T12-25-23-457Z-enrich-owned",
+      "records": [
+        {
+          "slug": "the-smith",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "ariana",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "boia-de-miami",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "the-best-sichuan",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "quotes 2",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "roe",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "atlanta-fish-market-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "hayakawa-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "ky-miami",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 17"
+          ]
+        },
+        {
+          "slug": "pa-la-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "dizengoff-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "kalaya-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "welcome-diner-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 1",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "the-hampton-social-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 34",
+            "playwright 4"
+          ]
+        },
+        {
+          "slug": "chet-s-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 18",
+            "playwright 4"
+          ]
+        },
+        {
+          "slug": "spicy-king",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+          ]
+        },
+        {
+          "slug": "mr-szechuan",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        },
+        {
+          "slug": "no-9-park-boston",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        }
+      ],
+      "hygiene": null,
+      "diagnosis": {
+        "cohort": "playwright-leftovers-plus-12-site-failures",
+        "ladder": "region fallback + og/hydration quotes + 403-challenge Playwright (honest UA, no stealth)",
+        "datasetUrlRewrites": [
+          {
+            "slug": "atlanta-fish-market-atlanta",
+            "from": "https://www.buckheadrestaurants.com/atlanta-fish-market",
+            "to": "https://atlantafishmarket.com/",
+            "reason": "group path 404; venue-owned site 200"
+          },
+          {
+            "slug": "hayakawa-atlanta",
+            "from": "https://www.hayakawa-atl.com/",
+            "to": "https://www.hayakawaatl.com/",
+            "reason": "old host NXDOMAIN; official hayakawaatl.com 200"
+          },
+          {
+            "slug": "ky-miami",
+            "from": "https://www.kyumiami.com/",
+            "to": "https://kyurestaurants.com/",
+            "reason": "old host NXDOMAIN; first-party brand site 200"
+          },
+          {
+            "slug": "pa-la-phoenix",
+            "from": "https://www.palavegan.com/",
+            "to": "https://palakitchen.com/",
+            "reason": "old host NXDOMAIN; official palakitchen.com 200"
+          },
+          {
+            "slug": "dizengoff-philadelphia",
+            "from": "https://www.dizengoffhummus.com/",
+            "to": "https://www.dizengoffphilly.com/",
+            "reason": "old host connect-timeout; official dizengoffphilly.com 200"
+          },
+          {
+            "slug": "kalaya-philadelphia",
+            "from": "https://www.kalaya.com/",
+            "to": "https://kalayaphilly.com/",
+            "reason": "old host incomplete cert chain; official kalayaphilly.com 200"
+          },
+          {
+            "slug": "welcome-diner-phoenix",
+            "from": "https://www.welcomediner.com/",
+            "to": "https://welcomediner.net/",
+            "reason": "old host CERT_HAS_EXPIRED; official welcomediner.net 200"
+          },
+          {
+            "slug": "the-hampton-social-dallas",
+            "from": "https://www.thehamptonsocial.com/",
+            "to": "https://www.thehamptonsocial.com/dallas",
+            "reason": "Dallas case file now points at the Dallas location page"
+          }
+        ],
+        "playwrightLeftoversCleared": [
+          {
+            "slug": "the-smith",
+            "was": "playwright 2 / quotes 0",
+            "now": "resolved pages 2 quotes 3 playwright 0"
+          },
+          {
+            "slug": "ariana",
+            "was": "playwright 3 / quotes 0",
+            "now": "resolved pages 4 quotes 7 playwright 0"
+          },
+          {
+            "slug": "boia-de-miami",
+            "was": "playwright 3 / quotes 0",
+            "now": "resolved pages 4 quotes 6 playwright 0"
+          },
+          {
+            "slug": "roe",
+            "was": "quotes 0",
+            "now": "resolved pages 3 quotes 5 playwright 0"
+          }
+        ],
+        "remainingFailures": [
+          {
+            "slug": "spicy-king",
+            "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR",
+            "note": "Host resolves; TLS handshake dies. No verified replacement first-party URL. Delivery aggregators only."
+          },
+          {
+            "slug": "mr-szechuan",
+            "error": "timeout:UND_ERR_CONNECT_TIMEOUT",
+            "note": "mrszechuan.shop connects then hangs. No verified official replacement."
+          },
+          {
+            "slug": "no-9-park-boston",
+            "error": "timeout:UND_ERR_CONNECT_TIMEOUT",
+            "note": "no9park.com connect-timeout. Independent reporting says No. 9 Park closed 2024-12-31; successor Nine is a different restaurant and is also winding down. Do not rewrite the case file onto ninerg.com."
+          }
+        ],
+        "notDone": [
+          "stealth UA",
+          "Playwright on non-challenge 403/404",
+          "Firecrawl",
+          "Google Places",
+          "invented access/hours/diet"
+        ]
+      }
+    },
+    {
+      "kind": "enrich-owned",
       "startedAt": "2026-08-19T11:39:46.523Z",
       "finishedAt": "2026-08-19T11:43:44.889Z",
       "batchSize": 66,
