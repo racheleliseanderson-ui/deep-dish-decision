@@ -2,6 +2,678 @@
   "runs": [
     {
       "kind": "enrich-owned",
+      "startedAt": "2026-08-19T02:54:21.202Z",
+      "finishedAt": "2026-08-19T02:56:31.768Z",
+      "batchSize": 60,
+      "cities": [
+        "Seattle, Washington",
+        "Tampa, Florida",
+        "San Diego, California",
+        "Austin, Texas",
+        "Las Vegas, Nevada",
+        "Pittsburgh, Pennsylvania"
+      ],
+      "resolved": 60,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 63,
+      "corpusEnriched": 340,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 60
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T02-54-21-202Z-enrich-owned",
+      "records": [
+        {
+          "slug": "the-walrus-and-the-carpenter-seattle",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "joule-seattle",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "lark-seattle",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "cafe-juanita-seattle",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-herbfarm-seattle",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "the-whale-wins-seattle",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "musang-seattle",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "archipelago-seattle",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "staple-fancy-seattle",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "tilikum-place-cafe-seattle",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "bern-s-steak-house-tampa",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "ulele-tampa",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "columbia-restaurant-tampa",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "mise-en-place-tampa",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "oxford-exchange-tampa",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "rooster-and-the-till-tampa",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "rococo-steak-tampa",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "oak-ola-tampa",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "stillwaters-tavern-tampa",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 23"
+          ]
+        },
+        {
+          "slug": "edison-food-drink-lab-tampa",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "addison-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "juniper-ivy-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "herb-wood-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "callie-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "animae-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "the-fishery-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "jeune-et-jolie-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "cesarina-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "civico-1845-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 23"
+          ]
+        },
+        {
+          "slug": "uchi-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "uchiko-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "barley-swine-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "odd-duck-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "lenoir-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "suerte-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "l-oca-d-oro-austin",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "franklin-barbecue-austin",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "olamaie-austin",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "kemuri-tatsu-ya-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "canje-austin",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "jeffrey-s-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "bazaar-meat-las-vegas",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "esther-s-kitchen-las-vegas",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "sparrow-wolf-las-vegas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "carson-kitchen-las-vegas",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "honey-salt-las-vegas",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "ferraro-s-italian-restaurant-wine-bar-las-vegas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "anima-by-edo-las-vegas",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "lotus-of-siam-las-vegas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "partage-las-vegas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "superior-motors-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "morcilla-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "apteka-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "altius-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "meat-potatoes-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "legume-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "grit-grace-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "chengdu-gourmet-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "dianoia-s-eatery-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "point-brugge-caf-pittsburgh",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-19T02:53:28.994Z",
+      "finishedAt": "2026-08-19T02:53:29.068Z",
+      "cities": [
+        {
+          "city": "Seattle, WA",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Tampa, FL",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "San Diego, CA",
+          "found": 9,
+          "inserted": 9,
+          "duplicates": 0
+        },
+        {
+          "city": "Austin, TX",
+          "found": 12,
+          "inserted": 12,
+          "duplicates": 0
+        },
+        {
+          "city": "Las Vegas, NV",
+          "found": 10,
+          "inserted": 9,
+          "duplicates": 1
+        },
+        {
+          "city": "Pittsburgh, PA",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 60,
+      "duplicatesSkipped": 1,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T02-53-28-994Z-seed-listings",
+      "insertedSlugs": [
+        "the-walrus-and-the-carpenter-seattle",
+        "joule-seattle",
+        "lark-seattle",
+        "cafe-juanita-seattle",
+        "the-herbfarm-seattle",
+        "the-whale-wins-seattle",
+        "musang-seattle",
+        "archipelago-seattle",
+        "staple-fancy-seattle",
+        "tilikum-place-cafe-seattle",
+        "bern-s-steak-house-tampa",
+        "ulele-tampa",
+        "columbia-restaurant-tampa",
+        "mise-en-place-tampa",
+        "oxford-exchange-tampa",
+        "rooster-and-the-till-tampa",
+        "rococo-steak-tampa",
+        "oak-ola-tampa",
+        "stillwaters-tavern-tampa",
+        "edison-food-drink-lab-tampa",
+        "addison-san-diego",
+        "juniper-ivy-san-diego",
+        "herb-wood-san-diego",
+        "callie-san-diego",
+        "animae-san-diego",
+        "the-fishery-san-diego",
+        "jeune-et-jolie-san-diego",
+        "cesarina-san-diego",
+        "civico-1845-san-diego",
+        "uchi-austin",
+        "uchiko-austin",
+        "barley-swine-austin",
+        "odd-duck-austin",
+        "lenoir-austin",
+        "suerte-austin",
+        "l-oca-d-oro-austin",
+        "franklin-barbecue-austin",
+        "olamaie-austin",
+        "kemuri-tatsu-ya-austin",
+        "canje-austin",
+        "jeffrey-s-austin",
+        "bazaar-meat-las-vegas",
+        "esther-s-kitchen-las-vegas",
+        "sparrow-wolf-las-vegas",
+        "carson-kitchen-las-vegas",
+        "honey-salt-las-vegas",
+        "ferraro-s-italian-restaurant-wine-bar-las-vegas",
+        "anima-by-edo-las-vegas",
+        "lotus-of-siam-las-vegas",
+        "partage-las-vegas",
+        "superior-motors-pittsburgh",
+        "morcilla-pittsburgh",
+        "apteka-pittsburgh",
+        "altius-pittsburgh",
+        "meat-potatoes-pittsburgh",
+        "legume-pittsburgh",
+        "grit-grace-pittsburgh",
+        "chengdu-gourmet-pittsburgh",
+        "dianoia-s-eatery-pittsburgh",
+        "point-brugge-caf-pittsburgh"
+      ]
+    },
+    {
+      "kind": "enrich-owned",
       "startedAt": "2026-08-18T22:55:25.109Z",
       "finishedAt": "2026-08-18T22:57:25.423Z",
       "batchSize": 55,

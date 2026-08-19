@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-18T22:57:29.525Z",
+  "generatedAt": "2026-08-19T02:57:05.508Z",
   "totals": {
-    "records": 280,
-    "enriched": 280,
-    "resolved": 264,
+    "records": 340,
+    "enriched": 340,
+    "resolved": 324,
     "unresolved": 0,
-    "statesCovered": 20,
+    "statesCovered": 21,
     "statesTotal": 51,
     "avgCompleteness": 60,
     "withRating": 111,
     "withPrice": 108,
-    "hygiene": 245,
+    "hygiene": 304,
     "neverEnriched": 0,
-    "thin": 232,
+    "thin": 291,
     "siteFailures": 9,
     "reviewDue": 11,
     "staleA": 0,
@@ -531,7 +531,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 7,
+        "ageDays": 8,
         "completeness": 39,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:57:53.313Z",
@@ -551,7 +551,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 7,
+        "ageDays": 8,
         "completeness": 39,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:06:02.680Z",
@@ -571,13 +571,33 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 7,
+        "ageDays": 8,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:09:35.877Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
+        "siteFailures": []
+      },
+      {
+        "slug": "apteka-pittsburgh",
+        "title": "Apteka",
+        "city": "Pittsburgh",
+        "stateProvince": "Pennsylvania",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-19T02:56:17.719Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-18",
+        "reviewedAt": "2026-08-19",
         "siteFailures": []
       },
       {
@@ -611,7 +631,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 7,
+        "ageDays": 8,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:06:09.273Z",
@@ -641,6 +661,26 @@
         "siteFailures": []
       },
       {
+        "slug": "bazaar-meat-las-vegas",
+        "title": "Bazaar Meat",
+        "city": "Las Vegas",
+        "stateProvince": "Nevada",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-19T02:55:52.293Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-18",
+        "reviewedAt": "2026-08-19",
+        "siteFailures": []
+      },
+      {
         "slug": "bestia",
         "title": "Bestia",
         "city": "Los Angeles",
@@ -651,7 +691,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 7,
+        "ageDays": 8,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:08:21.100Z",
@@ -681,6 +721,46 @@
         "siteFailures": []
       },
       {
+        "slug": "canje-austin",
+        "title": "Canje",
+        "city": "Austin",
+        "stateProvince": "Texas",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-19T02:55:48.993Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-18",
+        "reviewedAt": "2026-08-19",
+        "siteFailures": []
+      },
+      {
+        "slug": "carson-kitchen-las-vegas",
+        "title": "Carson Kitchen",
+        "city": "Las Vegas",
+        "stateProvince": "Nevada",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-19T02:56:02.058Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-18",
+        "reviewedAt": "2026-08-19",
+        "siteFailures": []
+      },
+      {
         "slug": "chengdu-bistro-west-town",
         "title": "Chengdu Bistro West Town",
         "city": "Chicago",
@@ -691,13 +771,33 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 7,
+        "ageDays": 8,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-11T00:08:59.143Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "chengdu-gourmet-pittsburgh",
+        "title": "Chengdu Gourmet",
+        "city": "Pittsburgh",
+        "stateProvince": "Pennsylvania",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-19T02:56:26.291Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-18",
+        "reviewedAt": "2026-08-19",
         "siteFailures": []
       },
       {
@@ -711,7 +811,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 7,
+        "ageDays": 8,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-11T00:04:45.571Z",
@@ -731,7 +831,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 7,
+        "ageDays": 8,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-11T00:06:01.506Z",
@@ -779,106 +879,6 @@
         "nextReviewAt": "2026-09-17",
         "reviewedAt": "2026-08-18",
         "siteFailures": []
-      },
-      {
-        "slug": "contessa-boston",
-        "title": "Contessa",
-        "city": "Boston",
-        "stateProvince": "Massachusetts",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 4,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-14T14:22:18.011Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-11",
-        "reviewedAt": "2026-08-12",
-        "siteFailures": []
-      },
-      {
-        "slug": "expresion-oaxaquena-restaurante",
-        "title": "Expresion Oaxaquena Restaurante",
-        "city": "Los Angeles",
-        "stateProvince": "California",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 7,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:59:35.828Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "fraunces-tavern",
-        "title": "Fraunces Tavern",
-        "city": "New York",
-        "stateProvince": "New York",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 7,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:06:24.345Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "girl-the-goat-los-angeles",
-        "title": "Girl & the Goat Los Angeles",
-        "city": "Los Angeles",
-        "stateProvince": "California",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 7,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:08:29.577Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "gramercy-tavern",
-        "title": "Gramercy Tavern",
-        "city": "New York",
-        "stateProvince": "New York",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 7,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:07:12.473Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
       }
     ],
     "stale": []
@@ -894,21 +894,53 @@
     },
     {
       "label": "50-74",
-      "count": 174
+      "count": 221
     },
     {
       "label": "under 50",
-      "count": 65
+      "count": 78
     }
   ],
   "states": [
     {
       "code": "CA",
-      "count": 32,
-      "enriched": 32,
-      "avgCompleteness": 49,
+      "count": 41,
+      "enriched": 41,
+      "avgCompleteness": 51,
       "population": 38965193,
-      "perMillion": 0.82
+      "perMillion": 1.05
+    },
+    {
+      "code": "TX",
+      "count": 33,
+      "enriched": 33,
+      "avgCompleteness": 51,
+      "population": 30503301,
+      "perMillion": 1.08
+    },
+    {
+      "code": "WA",
+      "count": 26,
+      "enriched": 26,
+      "avgCompleteness": 85,
+      "population": 7812880,
+      "perMillion": 3.33
+    },
+    {
+      "code": "FL",
+      "count": 25,
+      "enriched": 25,
+      "avgCompleteness": 58,
+      "population": 22610726,
+      "perMillion": 1.11
+    },
+    {
+      "code": "PA",
+      "count": 24,
+      "enriched": 24,
+      "avgCompleteness": 53,
+      "population": 12961683,
+      "perMillion": 1.85
     },
     {
       "code": "IL",
@@ -927,22 +959,6 @@
       "perMillion": 1.07
     },
     {
-      "code": "TX",
-      "count": 21,
-      "enriched": 21,
-      "avgCompleteness": 49,
-      "population": 30503301,
-      "perMillion": 0.69
-    },
-    {
-      "code": "WA",
-      "count": 16,
-      "enriched": 16,
-      "avgCompleteness": 100,
-      "population": 7812880,
-      "perMillion": 2.05
-    },
-    {
       "code": "AZ",
       "count": 15,
       "enriched": 15,
@@ -959,14 +975,6 @@
       "perMillion": 22.09
     },
     {
-      "code": "FL",
-      "count": 15,
-      "enriched": 15,
-      "avgCompleteness": 58,
-      "population": 22610726,
-      "perMillion": 0.66
-    },
-    {
       "code": "GA",
       "count": 15,
       "enriched": 15,
@@ -981,14 +989,6 @@
       "avgCompleteness": 54,
       "population": 7001399,
       "perMillion": 2.14
-    },
-    {
-      "code": "PA",
-      "count": 14,
-      "enriched": 14,
-      "avgCompleteness": 54,
-      "population": 12961683,
-      "perMillion": 1.08
     },
     {
       "code": "CO",
@@ -1021,6 +1021,14 @@
       "avgCompleteness": 60,
       "population": 7126489,
       "perMillion": 1.4
+    },
+    {
+      "code": "NV",
+      "count": 9,
+      "enriched": 9,
+      "avgCompleteness": 56,
+      "population": 3194176,
+      "perMillion": 2.82
     },
     {
       "code": "OR",
@@ -1212,14 +1220,6 @@
       "enriched": 0,
       "avgCompleteness": 0,
       "population": 2114371,
-      "perMillion": 0
-    },
-    {
-      "code": "NV",
-      "count": 0,
-      "enriched": 0,
-      "avgCompleteness": 0,
-      "population": 3194176,
       "perMillion": 0
     },
     {
@@ -2454,6 +2454,29 @@
       "siteFailures": []
     },
     {
+      "slug": "lark-seattle",
+      "title": "Lark",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 72,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:26.358Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "perch",
       "title": "Perch",
       "stateCode": "CA",
@@ -2503,7 +2526,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -3132,6 +3155,356 @@
       "siteFailures": []
     },
     {
+      "slug": "cafe-juanita-seattle",
+      "title": "Cafe Juanita",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:28.522Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "musang-seattle",
+      "title": "Musang",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:35.543Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "archipelago-seattle",
+      "title": "Archipelago",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:37.541Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "bern-s-steak-house-tampa",
+      "title": "Bern's Steak House",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:42.295Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "ulele-tampa",
+      "title": "Ulele",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:44.791Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "columbia-restaurant-tampa",
+      "title": "Columbia Restaurant",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:48.614Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "addison-san-diego",
+      "title": "Addison",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:05.909Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "civico-1845-san-diego",
+      "title": "Civico 1845",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:22.555Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "franklin-barbecue-austin",
+      "title": "Franklin Barbecue",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:42.626Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "sparrow-wolf-las-vegas",
+      "title": "Sparrow + Wolf",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:56.039Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "ferraro-s-italian-restaurant-wine-bar-las-vegas",
+      "title": "Ferraro's Italian Restaurant & Wine Bar",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:04.216Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "lotus-of-siam-las-vegas",
+      "title": "Lotus of Siam",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:08.944Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "altius-pittsburgh",
+      "title": "Altius",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:18.636Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "dianoia-s-eatery-pittsburgh",
+      "title": "DiAnoia's Eatery",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:27.366Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "carmine-s-44th-street-nyc",
       "title": "Carmine's - 44th Street - NYC",
       "stateCode": "NY",
@@ -3153,7 +3526,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -3178,7 +3551,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -3203,7 +3576,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -3228,7 +3601,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -3253,7 +3626,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -3278,7 +3651,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -3453,7 +3826,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -4432,6 +4805,256 @@
       "siteFailures": []
     },
     {
+      "slug": "the-whale-wins-seattle",
+      "title": "The Whale Wins",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:32.550Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "mise-en-place-tampa",
+      "title": "Mise en Place",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:50.898Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "juniper-ivy-san-diego",
+      "title": "Juniper & Ivy",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:08.557Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "callie-san-diego",
+      "title": "Callie",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:13.058Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "cesarina-san-diego",
+      "title": "Cesarina",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:19.505Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "uchi-austin",
+      "title": "Uchi",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:25.136Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "uchiko-austin",
+      "title": "Uchiko",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:28.783Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "jeffrey-s-austin",
+      "title": "Jeffrey's",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:49.832Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "partage-las-vegas",
+      "title": "Partage",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:10.912Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "meat-potatoes-pittsburgh",
+      "title": "Meat & Potatoes",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:21.091Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "philippe-the-original",
       "title": "Philippe The Original",
       "stateCode": "CA",
@@ -4453,7 +5076,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -4478,7 +5101,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -4578,7 +5201,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -4603,7 +5226,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -4628,7 +5251,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -4653,7 +5276,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -4728,7 +5351,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -4753,7 +5376,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -5757,6 +6380,481 @@
       "siteFailures": []
     },
     {
+      "slug": "the-walrus-and-the-carpenter-seattle",
+      "title": "The Walrus and the Carpenter",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:21.209Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "joule-seattle",
+      "title": "Joule",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:24.792Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-herbfarm-seattle",
+      "title": "The Herbfarm",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:30.850Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "tilikum-place-cafe-seattle",
+      "title": "Tilikum Place Cafe",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:40.580Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "oxford-exchange-tampa",
+      "title": "Oxford Exchange",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:52.564Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "rooster-and-the-till-tampa",
+      "title": "Rooster and the Till",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:55.667Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "rococo-steak-tampa",
+      "title": "Rococo Steak",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:56.545Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "oak-ola-tampa",
+      "title": "Oak & Ola",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:59.089Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "stillwaters-tavern-tampa",
+      "title": "Stillwaters Tavern",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:00.792Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "herb-wood-san-diego",
+      "title": "Herb & Wood",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:11.186Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "animae-san-diego",
+      "title": "Animae",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:15.195Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-fishery-san-diego",
+      "title": "The Fishery",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:17.375Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "barley-swine-austin",
+      "title": "Barley Swine",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:34.557Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "odd-duck-austin",
+      "title": "Odd Duck",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:35.868Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "lenoir-austin",
+      "title": "Lenoir",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:37.755Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "suerte-austin",
+      "title": "Suerte",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:39.974Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "kemuri-tatsu-ya-austin",
+      "title": "Kemuri Tatsu-Ya",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:46.732Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "esther-s-kitchen-las-vegas",
+      "title": "Esther's Kitchen",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:53.954Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "legume-pittsburgh",
+      "title": "Legume",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:23.548Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "buddakan",
       "title": "Buddakan",
       "stateCode": "NY",
@@ -5778,7 +6876,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -5803,7 +6901,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -5828,7 +6926,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -5853,7 +6951,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -5878,7 +6976,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -5903,7 +7001,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -5928,7 +7026,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -5953,7 +7051,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -5978,7 +7076,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6028,7 +7126,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6053,7 +7151,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6078,7 +7176,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6103,7 +7201,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6128,7 +7226,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6153,7 +7251,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6178,7 +7276,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6203,7 +7301,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6228,7 +7326,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6632,6 +7730,81 @@
       "siteFailures": []
     },
     {
+      "slug": "edison-food-drink-lab-tampa",
+      "title": "Edison: food+drink lab",
+      "stateCode": "FL",
+      "city": "Tampa",
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:04.469Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "olamaie-austin",
+      "title": "Olamaie",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:44.843Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "anima-by-edo-las-vegas",
+      "title": "Anima by EDO",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:07.392Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "balthazar",
       "title": "Balthazar",
       "stateCode": "NY",
@@ -6653,7 +7826,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6678,7 +7851,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6731,7 +7904,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6756,7 +7929,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6781,7 +7954,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6806,7 +7979,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6831,7 +8004,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6934,7 +8107,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6959,7 +8132,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -6984,7 +8157,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7009,7 +8182,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7115,7 +8288,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7140,7 +8313,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7165,7 +8338,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7190,7 +8363,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7215,7 +8388,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7240,7 +8413,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7265,7 +8438,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7290,7 +8463,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7315,7 +8488,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7340,7 +8513,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7365,7 +8538,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7390,7 +8563,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7415,7 +8588,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7844,6 +9017,331 @@
       "siteFailures": []
     },
     {
+      "slug": "staple-fancy-seattle",
+      "title": "Staple & Fancy",
+      "stateCode": "WA",
+      "city": "Seattle",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:54:39.270Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "jeune-et-jolie-san-diego",
+      "title": "Jeune et Jolie",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:18.677Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "l-oca-d-oro-austin",
+      "title": "L'Oca d'Oro",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:41.617Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "canje-austin",
+      "title": "Canje",
+      "stateCode": "TX",
+      "city": "Austin",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:48.993Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "bazaar-meat-las-vegas",
+      "title": "Bazaar Meat",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:55:52.293Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "carson-kitchen-las-vegas",
+      "title": "Carson Kitchen",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:02.058Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "honey-salt-las-vegas",
+      "title": "Honey Salt",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:03.094Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "superior-motors-pittsburgh",
+      "title": "Superior Motors",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:13.156Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "morcilla-pittsburgh",
+      "title": "Morcilla",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:16.887Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "apteka-pittsburgh",
+      "title": "Apteka",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:17.719Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "grit-grace-pittsburgh",
+      "title": "Grit & Grace",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:24.409Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "chengdu-gourmet-pittsburgh",
+      "title": "Chengdu Gourmet",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:26.291Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "point-brugge-caf-pittsburgh",
+      "title": "Point Brugge Café",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:30.875Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "pier-17",
       "title": "Pier 17",
       "stateCode": "NY",
@@ -7865,7 +9363,7 @@
         "thin-39"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -7890,7 +9388,7 @@
         "thin-39"
       ],
       "staleTier": null,
-      "ageDays": 7,
+      "ageDays": 8,
       "siteFailures": []
     },
     {
@@ -8277,20 +9775,20 @@
   ],
   "recent": [
     {
-      "slug": "josephine-nashville",
-      "title": "Josephine",
-      "stateCode": "TN",
-      "city": "Nashville",
+      "slug": "point-brugge-caf-pittsburgh",
+      "title": "Point Brugge Café",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
       "completeness": 44,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:22.777Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
+      "lastEnrichedAt": "2026-08-19T02:56:30.875Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 426,
@@ -8302,70 +9800,20 @@
       "siteFailures": []
     },
     {
-      "slug": "folk-nashville",
-      "title": "Folk",
-      "stateCode": "TN",
-      "city": "Nashville",
-      "completeness": 61,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:21.076Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "lockeland-table-nashville",
-      "title": "Lockeland Table",
-      "stateCode": "TN",
-      "city": "Nashville",
-      "completeness": 56,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:19.231Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "locust-nashville",
-      "title": "Locust",
-      "stateCode": "TN",
-      "city": "Nashville",
+      "slug": "dianoia-s-eatery-pittsburgh",
+      "title": "DiAnoia's Eatery",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
       "completeness": 67,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:17.362Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
+      "lastEnrichedAt": "2026-08-19T02:56:27.366Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 403,
@@ -8377,20 +9825,95 @@
       "siteFailures": []
     },
     {
-      "slug": "bastion-nashville",
-      "title": "Bastion",
-      "stateCode": "TN",
-      "city": "Nashville",
+      "slug": "chengdu-gourmet-pittsburgh",
+      "title": "Chengdu Gourmet",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:26.291Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "grit-grace-pittsburgh",
+      "title": "Grit & Grace",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:24.409Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "legume-pittsburgh",
+      "title": "Legume",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:23.548Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "meat-potatoes-pittsburgh",
+      "title": "Meat & Potatoes",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
       "completeness": 61,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:15.581Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
+      "lastEnrichedAt": "2026-08-19T02:56:21.091Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 409,
@@ -8402,20 +9925,20 @@
       "siteFailures": []
     },
     {
-      "slug": "henrietta-red-nashville",
-      "title": "Henrietta Red",
-      "stateCode": "TN",
-      "city": "Nashville",
+      "slug": "altius-pittsburgh",
+      "title": "Altius",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
       "completeness": 67,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:13.832Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
+      "lastEnrichedAt": "2026-08-19T02:56:18.636Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 403,
@@ -8427,20 +9950,95 @@
       "siteFailures": []
     },
     {
-      "slug": "rolf-and-daughters-nashville",
-      "title": "Rolf and Daughters",
-      "stateCode": "TN",
-      "city": "Nashville",
+      "slug": "apteka-pittsburgh",
+      "title": "Apteka",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:17.719Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "morcilla-pittsburgh",
+      "title": "Morcilla",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:16.887Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "superior-motors-pittsburgh",
+      "title": "Superior Motors",
+      "stateCode": "PA",
+      "city": "Pittsburgh",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-19T02:56:13.156Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "partage-las-vegas",
+      "title": "Partage",
+      "stateCode": "NV",
+      "city": "Las Vegas",
       "completeness": 61,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:12.079Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
+      "lastEnrichedAt": "2026-08-19T02:56:10.912Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 409,
@@ -8452,125 +10050,25 @@
       "siteFailures": []
     },
     {
-      "slug": "butcher-bee-nashville",
-      "title": "Butcher & Bee",
-      "stateCode": "TN",
-      "city": "Nashville",
-      "completeness": 61,
+      "slug": "lotus-of-siam-las-vegas",
+      "title": "Lotus of Siam",
+      "stateCode": "NV",
+      "city": "Las Vegas",
+      "completeness": 67,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:09.700Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
+      "lastEnrichedAt": "2026-08-19T02:56:08.944Z",
+      "addedAt": "2026-08-19T02:53:28.994Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 409,
+      "refreshPriority": 403,
       "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "husk-nashville-nashville",
-      "title": "Husk Nashville",
-      "stateCode": "TN",
-      "city": "Nashville",
-      "completeness": 61,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:07.443Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "the-catbird-seat-nashville",
-      "title": "The Catbird Seat",
-      "stateCode": "TN",
-      "city": "Nashville",
-      "completeness": 56,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:57:06.561Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "customshop-charlotte",
-      "title": "Customshop",
-      "stateCode": "NC",
-      "city": "Charlotte",
-      "completeness": 61,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:56:59.436Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "stagioni-charlotte",
-      "title": "Stagioni",
-      "stateCode": "NC",
-      "city": "Charlotte",
-      "completeness": 56,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-18T22:56:56.975Z",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-17",
-      "reviewedAt": "2026-08-18",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
+        "thin-67"
       ],
       "staleTier": null,
       "ageDays": 0,
@@ -8582,50 +10080,14 @@
     "restaurantsPerRun": 20,
     "citiesPerRun": 3,
     "dailyCap": 200,
-    "pending": 61,
-    "done": 18,
+    "pending": 55,
+    "done": 24,
     "next": [
       {
         "city": "Riverside",
         "stateCode": "CA",
         "population": 4688053,
         "priority": 12,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Seattle",
-        "stateCode": "WA",
-        "population": 4044837,
-        "priority": 15,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Tampa",
-        "stateCode": "FL",
-        "population": 3342963,
-        "priority": 17,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "San Diego",
-        "stateCode": "CA",
-        "population": 3269973,
-        "priority": 18,
         "tier": "top-50-metro",
         "status": "pending",
         "pinned": false,
@@ -8670,30 +10132,6 @@
         "note": ""
       },
       {
-        "city": "Austin",
-        "stateCode": "TX",
-        "population": 2473275,
-        "priority": 25,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
-        "city": "Pittsburgh",
-        "stateCode": "PA",
-        "population": 2422725,
-        "priority": 26,
-        "tier": "top-50-metro",
-        "status": "pending",
-        "pinned": false,
-        "inserted": 0,
-        "lastRunAt": null,
-        "note": ""
-      },
-      {
         "city": "Sacramento",
         "stateCode": "CA",
         "population": 2420608,
@@ -8704,10 +10142,146 @@
         "inserted": 0,
         "lastRunAt": null,
         "note": ""
+      },
+      {
+        "city": "Cincinnati",
+        "stateCode": "OH",
+        "population": 2271479,
+        "priority": 29,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Kansas City",
+        "stateCode": "MO",
+        "population": 2221343,
+        "priority": 30,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Columbus",
+        "stateCode": "OH",
+        "population": 2180271,
+        "priority": 31,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Indianapolis",
+        "stateCode": "IN",
+        "population": 2138468,
+        "priority": 32,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
+      },
+      {
+        "city": "Cleveland",
+        "stateCode": "OH",
+        "population": 2158932,
+        "priority": 33,
+        "tier": "top-50-metro",
+        "status": "pending",
+        "pinned": false,
+        "inserted": 0,
+        "lastRunAt": null,
+        "note": ""
       }
     ]
   },
   "runs": [
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-19T02:54:21.202Z",
+      "batchSize": 60,
+      "inserted": 0,
+      "cities": [
+        "Seattle, Washington",
+        "Tampa, Florida",
+        "San Diego, California",
+        "Austin, Texas",
+        "Las Vegas, Nevada",
+        "Pittsburgh, Pennsylvania"
+      ],
+      "resolved": 60,
+      "unresolved": 0,
+      "avgCompleteness": 63,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 60
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-19T02:53:28.994Z",
+      "batchSize": 0,
+      "inserted": 60,
+      "cities": [
+        {
+          "city": "Seattle, WA",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Tampa, FL",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "San Diego, CA",
+          "found": 9,
+          "inserted": 9,
+          "duplicates": 0
+        },
+        {
+          "city": "Austin, TX",
+          "found": 12,
+          "inserted": 12,
+          "duplicates": 0
+        },
+        {
+          "city": "Las Vegas, NV",
+          "found": 10,
+          "inserted": 9,
+          "duplicates": 1
+        },
+        {
+          "city": "Pittsburgh, PA",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        }
+      ],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
     {
       "kind": "enrich-owned",
       "startedAt": "2026-08-18T22:55:25.109Z",
@@ -8902,54 +10476,6 @@
       },
       "retries": 0,
       "failures": 18,
-      "flagged": false
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-14T14:25:20.034Z",
-      "batchSize": 19,
-      "inserted": 0,
-      "cities": [
-        "Philadelphia, Pennsylvania",
-        "Miami, Florida",
-        "Phoenix, Arizona",
-        "Boston, Massachusetts"
-      ],
-      "resolved": 18,
-      "unresolved": 1,
-      "avgCompleteness": 67,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 19
-      },
-      "retries": 0,
-      "failures": 1,
-      "flagged": false
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-14T14:24:52.171Z",
-      "batchSize": 20,
-      "inserted": 0,
-      "cities": [
-        "Chicago, Illinois",
-        "Dallas, Texas",
-        "San Francisco, California",
-        "Atlanta, Georgia",
-        "Washington, District Of Columbia",
-        "Philadelphia, Pennsylvania"
-      ],
-      "resolved": 18,
-      "unresolved": 2,
-      "avgCompleteness": 69,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 20
-      },
-      "retries": 0,
-      "failures": 2,
       "flagged": false
     }
   ]
