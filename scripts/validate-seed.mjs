@@ -144,6 +144,22 @@ function main() {
     if (!String(r.stateProvince || "").trim()) note("warn", "no-state", r.slug);
   }
 
+  const retiredPath = path.join(path.dirname(SEED_PATH), "retired.json");
+  if (fs.existsSync(retiredPath)) {
+    const retired = JSON.parse(fs.readFileSync(retiredPath, "utf8"));
+    for (const row of retired.records || []) {
+      if (!row.slug || !row.operator || !row.source || !row.closedOn || !row.quote) {
+        note("fail", "retired-thin", `${row.slug || "?"} missing operator/source/closedOn/quote`);
+      }
+      if (row.successor) {
+        note("fail", "retired-successor", `${row.slug} must not point at a successor`);
+      }
+      if (bySlug.has(row.slug)) {
+        note("fail", "retired-still-present", row.slug);
+      }
+    }
+  }
+
   // --- per-record honesty ---
   const status = { resolved: 0, thin: 0, listing: 0 };
   let recountDrift = 0;

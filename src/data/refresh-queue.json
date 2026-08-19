@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T20:11:30.379Z",
+  "generatedAt": "2026-08-19T20:41:14.472Z",
   "settings": {
     "tiers": {
       "A": 30,
@@ -11,20 +11,19 @@
     "hygieneBatchSize": 25
   },
   "totals": {
-    "records": 467,
-    "hygiene": 429,
+    "records": 464,
+    "hygiene": 426,
     "neverEnriched": 0,
-    "thin": 416,
-    "siteFailures": 10,
+    "thin": 413,
+    "siteFailures": 9,
     "reviewDue": 11,
     "staleA": 0,
     "staleB": 0,
     "staleC": 0,
-    "dueNow": 429
+    "dueNow": 426
   },
   "hygiene": [
     "mr-szechuan",
-    "no-9-park-boston",
     "spicy-king",
     "summer-house-santa-monica",
     "the-best-sichuan",
@@ -86,7 +85,6 @@
     "mabel-s-bbq-cleveland",
     "mama-ji-s",
     "mayahuel-sacramento",
-    "menton-boston",
     "morcilla-pittsburgh",
     "mountain-house-east-village",
     "northstar-caf-columbus",
@@ -99,7 +97,6 @@
     "simple-simon-s-riverside",
     "simply-pho",
     "sokolowski-s-university-inn-cleveland",
-    "sportello-boston",
     "staple-fancy-seattle",
     "superior-motors-pittsburgh",
     "szechwan-north-authentic-sichuan-cuisine-glenview",
@@ -479,29 +476,6 @@
       ]
     },
     {
-      "slug": "no-9-park-boston",
-      "title": "No. 9 Park",
-      "city": "Boston",
-      "stateProvince": "Massachusetts",
-      "priority": 942,
-      "reasons": [
-        "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT",
-        "thin-28"
-      ],
-      "hygiene": true,
-      "staleTier": null,
-      "ageDays": 0,
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "lastEnrichedAt": "2026-08-19T20:04:39.043Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "siteFailures": [
-        "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
-      ]
-    },
-    {
       "slug": "spicy-king",
       "title": "Spicy King",
       "city": "San Francisco",
@@ -536,7 +510,7 @@
       ],
       "hygiene": true,
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "completeness": 44,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-18T20:29:50.679Z",
@@ -582,7 +556,7 @@
       ],
       "hygiene": true,
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "completeness": 44,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-18T20:30:27.302Z",
@@ -628,7 +602,7 @@
       ],
       "hygiene": true,
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "completeness": 67,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-18T20:29:57.876Z",
@@ -1744,26 +1718,6 @@
       "siteFailures": []
     },
     {
-      "slug": "menton-boston",
-      "title": "Menton",
-      "city": "Boston",
-      "stateProvince": "Massachusetts",
-      "priority": 426,
-      "reasons": [
-        "thin-44"
-      ],
-      "hygiene": true,
-      "staleTier": null,
-      "ageDays": 5,
-      "completeness": 44,
-      "matchStatus": "resolved",
-      "lastEnrichedAt": "2026-08-14T14:24:12.439Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "siteFailures": []
-    },
-    {
       "slug": "morcilla-pittsburgh",
       "title": "Morcilla",
       "city": "Pittsburgh",
@@ -2001,26 +1955,6 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
-      "siteFailures": []
-    },
-    {
-      "slug": "sportello-boston",
-      "title": "Sportello",
-      "city": "Boston",
-      "stateProvince": "Massachusetts",
-      "priority": 426,
-      "reasons": [
-        "thin-44"
-      ],
-      "hygiene": true,
-      "staleTier": null,
-      "ageDays": 5,
-      "completeness": 44,
-      "matchStatus": "resolved",
-      "lastEnrichedAt": "2026-08-14T14:25:36.805Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
       "siteFailures": []
     },
     {

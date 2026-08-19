@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-19T20:11:30.399Z",
+  "generatedAt": "2026-08-19T20:41:14.490Z",
   "totals": {
-    "records": 467,
-    "enriched": 467,
-    "resolved": 459,
+    "records": 464,
+    "enriched": 464,
+    "resolved": 457,
     "unresolved": 0,
     "statesCovered": 25,
     "statesTotal": 51,
     "avgCompleteness": 59,
     "withRating": 111,
     "withPrice": 108,
-    "hygiene": 429,
+    "hygiene": 426,
     "neverEnriched": 0,
-    "thin": 416,
-    "siteFailures": 10,
+    "thin": 413,
+    "siteFailures": 9,
     "reviewDue": 11,
     "staleA": 0,
     "staleB": 0,
@@ -29,7 +29,6 @@
     "hygieneBatchSize": 25,
     "hygieneSlugs": [
       "mr-szechuan",
-      "no-9-park-boston",
       "spicy-king",
       "summer-house-santa-monica",
       "the-best-sichuan",
@@ -52,7 +51,8 @@
       "bazaar-meat-las-vegas",
       "bestia",
       "billy-goat-tavern-the-original",
-      "canje-austin"
+      "canje-austin",
+      "carson-kitchen-las-vegas"
     ],
     "nextHygiene": [
       {
@@ -74,29 +74,6 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
-        "siteFailures": [
-          "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
-        ]
-      },
-      {
-        "slug": "no-9-park-boston",
-        "title": "No. 9 Park",
-        "city": "Boston",
-        "stateProvince": "Massachusetts",
-        "priority": 942,
-        "reasons": [
-          "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT",
-          "thin-28"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 28,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-19T20:04:39.043Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-11",
-        "reviewedAt": "2026-08-12",
         "siteFailures": [
           "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
         ]
@@ -136,7 +113,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 0,
+        "ageDays": 1,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-18T20:29:50.679Z",
@@ -182,7 +159,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 0,
+        "ageDays": 1,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-18T20:30:27.302Z",
@@ -228,7 +205,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 0,
+        "ageDays": 1,
         "completeness": 67,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-18T20:29:57.876Z",
@@ -882,6 +859,26 @@
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
         "siteFailures": []
+      },
+      {
+        "slug": "gramercy-tavern",
+        "title": "Gramercy Tavern",
+        "city": "New York",
+        "stateProvince": "New York",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 8,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-10T23:07:12.473Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-09",
+        "reviewedAt": "2026-08-10",
+        "siteFailures": []
       }
     ],
     "stale": []
@@ -901,7 +898,7 @@
     },
     {
       "label": "under 50",
-      "count": 89
+      "count": 86
     }
   ],
   "states": [
@@ -1003,11 +1000,11 @@
     },
     {
       "code": "MA",
-      "count": 15,
-      "enriched": 15,
-      "avgCompleteness": 54,
+      "count": 12,
+      "enriched": 12,
+      "avgCompleteness": 58,
       "population": 7001399,
-      "perMillion": 2.14
+      "perMillion": 1.71
     },
     {
       "code": "CO",
@@ -2548,7 +2545,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 429"
       ]
@@ -10929,7 +10926,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 429"
       ]
@@ -11132,7 +11129,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": [
         "site 408"
       ]
@@ -11716,31 +11713,6 @@
       "siteFailures": []
     },
     {
-      "slug": "menton-boston",
-      "title": "Menton",
-      "stateCode": "MA",
-      "city": "Boston",
-      "completeness": 44,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-14T14:24:12.439Z",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 426,
-      "refreshReasons": [
-        "thin-44"
-      ],
-      "staleTier": null,
-      "ageDays": 5,
-      "siteFailures": []
-    },
-    {
       "slug": "contessa-boston",
       "title": "Contessa",
       "stateCode": "MA",
@@ -11751,31 +11723,6 @@
       "reviewCount": null,
       "priceBand": "",
       "lastEnrichedAt": "2026-08-14T14:22:18.011Z",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 426,
-      "refreshReasons": [
-        "thin-44"
-      ],
-      "staleTier": null,
-      "ageDays": 5,
-      "siteFailures": []
-    },
-    {
-      "slug": "sportello-boston",
-      "title": "Sportello",
-      "stateCode": "MA",
-      "city": "Boston",
-      "completeness": 44,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-14T14:25:36.805Z",
       "addedAt": "2026-08-12T06:45:34.941Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
@@ -12822,34 +12769,6 @@
       ]
     },
     {
-      "slug": "no-9-park-boston",
-      "title": "No. 9 Park",
-      "stateCode": "MA",
-      "city": "Boston",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-19T20:04:39.043Z",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-11",
-      "reviewedAt": "2026-08-12",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 942,
-      "refreshReasons": [
-        "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": [
-        "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
-      ]
-    },
-    {
       "slug": "dovecote-orlando",
       "title": "DoveCote",
       "stateCode": "FL",
@@ -13384,6 +13303,20 @@
   },
   "runs": [
     {
+      "kind": "retire-closed",
+      "startedAt": "2026-08-19T20:41:14.354Z",
+      "batchSize": 0,
+      "inserted": 0,
+      "cities": [],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
       "kind": "enrich-owned",
       "startedAt": "2026-08-19T20:08:31.252Z",
       "batchSize": 27,
@@ -13633,31 +13566,6 @@
       "unresolved": 0,
       "avgCompleteness": 0,
       "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-18T22:55:25.109Z",
-      "batchSize": 55,
-      "inserted": 0,
-      "cities": [
-        "Detroit, Michigan",
-        "Minneapolis, Minnesota",
-        "Denver, Colorado",
-        "Baltimore, Maryland",
-        "Charlotte, North Carolina",
-        "Nashville, Tennessee"
-      ],
-      "resolved": 55,
-      "unresolved": 0,
-      "avgCompleteness": 65,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 55
-      },
       "retries": 0,
       "failures": 0,
       "flagged": false

@@ -16,6 +16,8 @@ export const PATHS = {
   queue: path.join(ROOT, "src/data/expansion-queue.json"),
   refreshQueue: path.join(ROOT, "src/data/refresh-queue.json"),
   runLog: path.join(ROOT, "src/data/run-log.json"),
+  retired: path.join(ROOT, "src/data/retired.json"),
+  seedListings: path.join(ROOT, "src/data/seed-listings.json"),
   snapshots: path.join(ROOT, ".pipeline-snapshots"),
 };
 
@@ -34,7 +36,7 @@ export function snapshot(tag) {
   const stamp = new Date().toISOString().replace(/[:.]/g, "-");
   const dir = path.join(PATHS.snapshots, `${stamp}-${tag}`);
   fs.mkdirSync(dir, { recursive: true });
-  for (const key of ["dataset", "enrichment", "queue", "refreshQueue", "runLog"]) {
+  for (const key of ["dataset", "enrichment", "queue", "refreshQueue", "runLog", "retired", "seedListings"]) {
     if (fs.existsSync(PATHS[key])) {
       fs.copyFileSync(PATHS[key], path.join(dir, path.basename(PATHS[key])));
     }

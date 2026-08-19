@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T20:10:28.810Z",
+  "generatedAt": "2026-08-19T20:41:14.354Z",
   "records": {
     "canlis": {
       "google": {
@@ -22486,32 +22486,6 @@
         "retrievedAt": "2026-08-14T14:24:11.953Z"
       }
     },
-    "menton-boston": {
-      "meta": {
-        "matchStatus": "resolved",
-        "confidence": null,
-        "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:24:12.439Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 44
-      },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "https://www.mentonboston.com/"
-        ],
-        "retrievedAt": "2026-08-14T14:24:12.439Z"
-      }
-    },
     "miller-union-atlanta": {
       "meta": {
         "matchStatus": "resolved",
@@ -22710,16 +22684,6 @@
           "https://www.neptuneoyster.com/events"
         ],
         "retrievedAt": "2026-08-14T14:24:20.556Z"
-      }
-    },
-    "no-9-park-boston": {
-      "meta": {
-        "matchStatus": "site-failure",
-        "confidence": null,
-        "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T20:04:39.043Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
       }
     },
     "o-ya-boston": {
@@ -24269,33 +24233,6 @@
           "https://www.row34.com/about/"
         ],
         "retrievedAt": "2026-08-14T14:25:36.350Z"
-      }
-    },
-    "sportello-boston": {
-      "meta": {
-        "matchStatus": "resolved",
-        "confidence": null,
-        "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:25:36.805Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 44
-      },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 2,
-        "sourceUrls": [
-          "https://www.sportelloboston.com/",
-          "https://www.sportelloboston.com/about/"
-        ],
-        "retrievedAt": "2026-08-14T14:25:36.805Z"
       }
     },
     "uni-boston": {

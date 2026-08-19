@@ -18,6 +18,7 @@
     "pipeline:enrich:slugs": "node scripts/pipeline/enrich.mjs --slugs",
     "pipeline:discover": "node scripts/pipeline/discover.mjs",
     "pipeline:seed": "node scripts/pipeline/seed-listings.mjs",
+    "pipeline:retire": "node scripts/pipeline/retire-closed.mjs",
     "validate:seed": "node scripts/validate-seed.mjs",
     "test": "vitest run"
   },
