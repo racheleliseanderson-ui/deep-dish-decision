@@ -11,7 +11,8 @@
  *   2. Keep useful <noscript> text; drop "enable JavaScript" stubs.
  *   3. Quote og/twitter description and hydration JSON into pageQuotes.
  *   4. Gated Playwright only when HTTP 200 text is still a shell and
- *      JSON-LD / hydration is not already rich. Honest UA — no stealth.
+ *      JSON-LD / hydration is not already rich, *or* when HTTP 403 is a
+ *      Cloudflare/JS challenge interstitial. Honest UA — no stealth.
  *      Wait for innerText >= floor (cap 8s). Reuse one Chromium.
  *
  * Output shape matches what extractFromSite() already expects:
@@ -538,13 +539,38 @@ export async function renderWithPlaywright(url) {
   return task;
 }
 
-export function shouldRenderPlaywright({ status, textLength, jsonLd, hydrationRich }) {
+export function shouldRenderPlaywright({ status, textLength, jsonLd, hydrationRich, html }) {
   if (!playwrightWanted()) return false;
+  if (status === 403 && isChallengePage(html)) return true;
   if (status !== 200) return false;
   if ((textLength ?? 0) >= TEXT_FLOOR) return false;
   if (jsonLdIsRich(jsonLd)) return false;
   if (hydrationRich) return false;
   return true;
+}
+
+/** Cloudflare / WAF JS interstitial — not a venue page. */
+export function isChallengePage(html) {
+  if (!html) return false;
+  const blob = String(html);
+  const challenge =
+    /just a moment|cf-browser-verification|challenge-platform|cdn-cgi\/challenge/i.test(blob);
+  const stub =
+    /enable javascript and cookies to continue|verify you are human|checking your browser/i.test(
+      blob,
+    );
+  return challenge && stub;
+}
+
+export async function closeSharedBrowser() {
+  if (!sharedBrowser) return;
+  const browser = sharedBrowser;
+  sharedBrowser = null;
+  try {
+    await browser.close();
+  } catch {
+    /* ignore */
+  }
 }
 
 async function fetchOnce(url) {
@@ -563,11 +589,21 @@ async function fetchOnce(url) {
     });
     const retryAfter = res.headers.get("retry-after");
     if (!res.ok) {
+      let html = "";
+      if (res.status === 403) {
+        try {
+          html = await res.text();
+        } catch {
+          html = "";
+        }
+      }
       return {
         ok: false,
         status: res.status,
         error: `HTTP ${res.status}`,
         retryAfter,
+        html,
+        challenge: isChallengePage(html),
       };
     }
     const html = await res.text();
@@ -593,6 +629,37 @@ async function fetchOnce(url) {
 export async function fetchPage(url) {
   const raw = await siteLimiter.run(() => fetchOnce(url));
   if (!raw || !raw.ok) {
+    if (
+      shouldRenderPlaywright({
+        status: raw?.status,
+        html: raw?.html,
+        textLength: 0,
+        jsonLd: [],
+      })
+    ) {
+      const rendered = await renderWithPlaywright(url);
+      if (rendered?.html && !isChallengePage(rendered.html)) {
+        const parsed = parseHtmlDocument(rendered.html, url);
+        if ((parsed.text || "").length >= 40) {
+          return {
+            ok: true,
+            markdown: parsed.text,
+            links: parsed.links,
+            jsonLd: parsed.jsonLd,
+            jsonLdQuotes: parsed.jsonLdQuotes,
+            pageQuotes: [...(parsed.pageQuotes ?? []), ...(rendered.xhrQuotes ?? [])],
+            metadata: {
+              finalUrl: url,
+              bytes: rendered.html.length,
+              textLength: parsed.text.length,
+              playwright: true,
+              jsonLdNodes: parsed.jsonLd.length,
+              challenge: true,
+            },
+          };
+        }
+      }
+    }
     return {
       ok: false,
       status: raw?.status ?? 0,

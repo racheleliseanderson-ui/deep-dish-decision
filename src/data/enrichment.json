@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T21:06:32.604Z",
+  "generatedAt": "2026-08-19T12:29:46.023Z",
   "records": {
     "canlis": {
       "google": {
@@ -2172,7 +2172,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T20:29:59.759Z",
+        "lastEnrichedAt": "2026-08-19T12:25:24.524Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -2182,11 +2182,43 @@
         "reservationPlatform": "Tock",
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
+        "groupPolicy": "Skip to content Ariana Restaurant Menu INFO MENU WINE RESERVATIONS GIFT CARDS FILM NEWS AND EVENTS Reservations Reservations are accepted up to 30 days in advance of the calendar date for parties of 1-6.",
+        "groupPolicyLanguage": [
+          "Skip to content Ariana Restaurant Menu INFO MENU WINE RESERVATIONS GIFT CARDS FILM NEWS AND EVENTS Reservations Reservations are accepted up to 30 days in advance of the calendar date for parties of 1-6.",
+          "For parties of six or more please email our reservationists directly info@arianarestaurantbend.com If you prefer to make a reservation over the phone, please call 541-330-5539."
+        ],
         "dressCode": "",
         "cancellationLanguage": [],
-        "jsonLdLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "twitter:description: Visit the post for more.",
+            "sourceUrl": "https://www.arianarestaurantbend.com/"
+          },
+          {
+            "quote": "og:description: Ariana is Co-Owned by (Click below to contact) Ariana Fernandez Chef Andres Fernandez Chef Glenn Asti Beverage Manager Susan Asti Ariana 1304 Northwest Galveston Avenue, Bend, OR (541) 330-5539 Hou…",
+            "sourceUrl": "https://www.arianarestaurantbend.com/info/"
+          },
+          {
+            "quote": "title: Info – Ariana Restaurant",
+            "sourceUrl": "https://www.arianarestaurantbend.com/info/"
+          },
+          {
+            "quote": "og:description: Seasonal à la carte menu as well as six course chef’s tasting menu that changes weekly. We do our best to post our most current offerings.",
+            "sourceUrl": "https://www.arianarestaurantbend.com/menu/"
+          },
+          {
+            "quote": "title: Menu – Ariana Restaurant",
+            "sourceUrl": "https://www.arianarestaurantbend.com/menu/"
+          },
+          {
+            "quote": "og:description: Reservations are accepted up to 30 days in advance of the calendar date for parties of 1-6. For parties of six or more please email our reservationists directly info@arianarestaurantbend.com If you…",
+            "sourceUrl": "https://www.arianarestaurantbend.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations – Ariana Restaurant",
+            "sourceUrl": "https://www.arianarestaurantbend.com/reservations/"
+          }
+        ],
         "pagesRead": 4,
         "sourceUrls": [
           "https://www.arianarestaurantbend.com/",
@@ -2194,8 +2226,8 @@
           "https://www.arianarestaurantbend.com/menu/",
           "https://www.arianarestaurantbend.com/reservations/"
         ],
-        "retrievedAt": "2026-08-18T20:29:59.759Z",
-        "playwrightPages": 3
+        "retrievedAt": "2026-08-19T12:25:24.524Z",
+        "playwrightPages": 0
       }
     },
     "gander-and-ryegrass": {
@@ -3457,7 +3489,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T20:30:09.163Z",
+        "lastEnrichedAt": "2026-08-19T12:25:39.807Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -3467,20 +3499,41 @@
         "reservationPlatform": "OpenTable",
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
-        "groupPolicy": "20% gratuity will be added to parties of 6 or more",
+        "groupPolicy": "Stay in the know Follow us on Instagram to keep up with our latest dishes @eatatroe sample menu 20% gratuity will be added to parties of 6 or more",
         "groupPolicyLanguage": [
-          "20% gratuity will be added to parties of 6 or more"
+          "Stay in the know Follow us on Instagram to keep up with our latest dishes @eatatroe sample menu 20% gratuity will be added to parties of 6 or more"
         ],
         "dressCode": "",
         "cancellationLanguage": [],
-        "jsonLdLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Roe is a new Bellingham restaurant serving up elevated comfort dishes with cozy dinner party vibes. Experience high-low dining with ever-changing menus, American cuisine with European influences, and fresh seafood in our welcoming atmosphere in",
+            "sourceUrl": "https://eatroe.com/"
+          },
+          {
+            "quote": "title: Roe | Elevated Comfort Food & Cozy Vibes | Bellingham Restaurant",
+            "sourceUrl": "https://eatroe.com/"
+          },
+          {
+            "quote": "title: Roe Menu | Seasonal & Ever-Changing Cuisine | Bellingham",
+            "sourceUrl": "https://eatroe.com/menu"
+          },
+          {
+            "quote": "og:description: Learn the story behind Roe, a Bellingham restaurant born from love of community and good food. Discover our approach to high-low dining, our commitment to seasonal ingredients, and what makes our dinner-party atmosphere unique.",
+            "sourceUrl": "https://eatroe.com/about"
+          },
+          {
+            "quote": "title: About Roe | Our Story & Philosophy | Bellingham's Corner Restaurant",
+            "sourceUrl": "https://eatroe.com/about"
+          }
+        ],
         "pagesRead": 3,
         "sourceUrls": [
           "https://eatroe.com/",
           "https://eatroe.com/menu",
           "https://eatroe.com/about"
         ],
-        "retrievedAt": "2026-08-18T20:30:09.163Z",
+        "retrievedAt": "2026-08-19T12:25:39.807Z",
         "playwrightPages": 0
       }
     },
@@ -8523,7 +8576,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T20:29:51.694Z",
+        "lastEnrichedAt": "2026-08-19T12:25:23.469Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -8537,14 +8590,27 @@
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
-        "jsonLdLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: The Smith is a casual American Brasserie with four upbeat locations in New York City and one in Washington D.C., and one in Chicago!",
+            "sourceUrl": "https://thesmithrestaurant.com/location/nomad/"
+          },
+          {
+            "quote": "title: NoMad &laquo; The Smith Restaurant",
+            "sourceUrl": "https://thesmithrestaurant.com/location/nomad/"
+          },
+          {
+            "quote": "title: About Us &laquo; The Smith Restaurant",
+            "sourceUrl": "https://thesmithrestaurant.com/about/"
+          }
+        ],
         "pagesRead": 2,
         "sourceUrls": [
           "https://thesmithrestaurant.com/location/nomad/",
           "https://thesmithrestaurant.com/about/"
         ],
-        "retrievedAt": "2026-08-18T20:29:51.694Z",
-        "playwrightPages": 2
+        "retrievedAt": "2026-08-19T12:25:23.469Z",
+        "playwrightPages": 0
       }
     },
     "buddakan": {
@@ -15319,7 +15385,7 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T20:30:24.099Z",
+        "lastEnrichedAt": "2026-08-19T12:25:29.730Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -15333,13 +15399,22 @@
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
-        "jsonLdLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Welcome to Our Restaurant, We serve Cold Appetizers, Hot Appetizers, Soups, House Specialties, Entrees, Dry Pot Style Entrees, Black Bean Style Entrees, Hot Sauce Style Entrees, Cumin Style Entrees, Garlic Sauce Style Entrees, Scallion Style En",
+            "sourceUrl": "https://www.mala747.com/"
+          },
+          {
+            "quote": "title: Mala Kitchen - Chinese Restaurant | Online Order | New York | NY",
+            "sourceUrl": "https://www.mala747.com/"
+          }
+        ],
         "pagesRead": 2,
         "sourceUrls": [
           "https://www.mala747.com/",
           "https://www.mala747.com/contact-us/"
         ],
-        "retrievedAt": "2026-08-18T20:30:24.099Z",
+        "retrievedAt": "2026-08-19T12:25:29.730Z",
         "playwrightPages": 1
       }
     },
@@ -19812,7 +19887,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T20:30:22.232Z",
+        "lastEnrichedAt": "2026-08-19T12:26:39.508Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20348,7 +20423,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-18T20:30:10.936Z",
+        "lastEnrichedAt": "2026-08-19T12:26:41.369Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -20536,12 +20611,71 @@
     },
     "atlanta-fish-market-atlanta": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:31:01.065Z",
+        "lastEnrichedAt": "2026-08-19T12:25:41.556Z",
         "enrichmentMode": "owned-site",
-        "completeness": 33
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://atlantafishmarket.com/menu/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "read more Advice from our Private Dining Coordinator, Alex Santiago Private Dining How far in advance should people start planning their event?",
+        "groupPolicyLanguage": [
+          "read more Advice from our Private Dining Coordinator, Alex Santiago Private Dining How far in advance should people start planning their event?",
+          "Private Parties at Atlanta Fish Market Let us help you plan your next event in Buckhead Get Started Wow a crowd in the Atlanta Fish Market’s iconic private dining space.",
+          "Combine the Buckhead Life food and service that you know and love with the privacy of our private dining rooms.",
+          "CLICK HERE TO BOOK DIRECTLY Private Event Software powered by Tripleseat"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Atlanta Fish Market has the best selection of fresh fish and seafood in the Southeast. Sushi and fresh fish prepared to your taste!",
+            "sourceUrl": "https://atlantafishmarket.com/"
+          },
+          {
+            "quote": "title: Atlanta Fish Market | Buckhead's Widest Selection of Fresh Fish",
+            "sourceUrl": "https://atlantafishmarket.com/"
+          },
+          {
+            "quote": "og:description: For over 20 years The Atlanta Fish Market has been serving the finest seafood in the Southeast. Our story…",
+            "sourceUrl": "https://atlantafishmarket.com/about/"
+          },
+          {
+            "quote": "title: About the Atlanta Fish Market Seafood Restaurant",
+            "sourceUrl": "https://atlantafishmarket.com/about/"
+          },
+          {
+            "quote": "og:description: Atlanta Fish Market Menus and Specials. Only the best seafood and sushi, fresh and prepared to your taste.",
+            "sourceUrl": "https://atlantafishmarket.com/menu/"
+          },
+          {
+            "quote": "title: Atlanta Fish Market Fresh Seafood Menu",
+            "sourceUrl": "https://atlantafishmarket.com/menu/"
+          },
+          {
+            "quote": "og:description: Let us host your party! We've got dedictated rooms to host your guests while serving the best seafood you can find in the Southeast",
+            "sourceUrl": "https://atlantafishmarket.com/private-parties/"
+          },
+          {
+            "quote": "title: Private Parties and Event Space at The Atlanta Fish Market",
+            "sourceUrl": "https://atlantafishmarket.com/private-parties/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://atlantafishmarket.com/",
+          "https://atlantafishmarket.com/about/",
+          "https://atlantafishmarket.com/menu/",
+          "https://atlantafishmarket.com/private-parties/"
+        ],
+        "retrievedAt": "2026-08-19T12:25:41.556Z",
+        "playwrightPages": 0
       }
     },
     "atlas-atlanta": {
@@ -20661,23 +20795,46 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T21:06:23.275Z",
+        "lastEnrichedAt": "2026-08-19T12:25:27.660Z",
         "enrichmentMode": "owned-site",
-        "completeness": 61
+        "completeness": 56
       },
       "site": {
         "menuUrl": "https://www.boiaderestaurant.com/menus/",
-        "reservationUrl": "https://resy.com/cities/miami-fl/venues/boia-de?date=2024-04-12&amp;seats=2",
+        "reservationUrl": "https://resy.com/cities/miami-fl/venues/boia-de?date=2024-04-12&seats=2",
         "reservationPlatform": "Resy",
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
-        "groupPolicy": "Due to the unique size of our restaurant, parties of 7+ are booked directly with our reservations team.",
-        "groupPolicyLanguage": [
-          "Due to the unique size of our restaurant, parties of 7+ are booked directly with our reservations team."
-        ],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
-        "jsonLdLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Italian Restaurant located in Miami, FL.",
+            "sourceUrl": "https://www.boiaderestaurant.com/"
+          },
+          {
+            "quote": "title: Boia De | Italian Restaurant in Miami, FL",
+            "sourceUrl": "https://www.boiaderestaurant.com/"
+          },
+          {
+            "quote": "og:description: See the menu for Boia De in Miami, FL. Available Wednesday - Monday: 5:30 - 10:30 for outside seating and dine-in!",
+            "sourceUrl": "https://www.boiaderestaurant.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Boia De in Miami, FL",
+            "sourceUrl": "https://www.boiaderestaurant.com/menus/"
+          },
+          {
+            "quote": "title: About | Boia De in Miami, FL",
+            "sourceUrl": "https://www.boiaderestaurant.com/about/"
+          },
+          {
+            "quote": "title: Large Parties | Boia De in Miami, FL",
+            "sourceUrl": "https://www.boiaderestaurant.com/private-events/"
+          }
+        ],
         "pagesRead": 4,
         "sourceUrls": [
           "https://www.boiaderestaurant.com/",
@@ -20685,8 +20842,8 @@
           "https://www.boiaderestaurant.com/about/",
           "https://www.boiaderestaurant.com/private-events/"
         ],
-        "retrievedAt": "2026-08-18T21:06:23.275Z",
-        "playwrightPages": 3
+        "retrievedAt": "2026-08-19T12:25:27.660Z",
+        "playwrightPages": 0
       }
     },
     "carbone-miami-miami": {
@@ -20748,12 +20905,111 @@
     },
     "chet-s-dallas": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:30:29.536Z",
+        "lastEnrichedAt": "2026-08-19T12:26:34.494Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.chetsdallas.com/menu",
+        "reservationUrl": "https://www.chetsdallas.com/reservations",
+        "reservationPlatform": "Direct",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Skip to main content Website Accessibility Assistance Chet's Dallas home Our Menus Order Now Private Events Gallery Parking Info Book A Table BLOG More Chet's Dallas Irish-American Classics & Cocktails in Dallas Seasonal Menus.",
+        "groupPolicyLanguage": [
+          "Skip to main content Website Accessibility Assistance Chet's Dallas home Our Menus Order Now Private Events Gallery Parking Info Book A Table BLOG More Chet's Dallas Irish-American Classics & Cocktails in Dallas Seasonal Menus.",
+          "While we don't offer a completely private room, we have several creative solutions to provide your party with a dedicated space.",
+          "Full buyouts are more accessible than you might think — we're happy to work with your budget to create a completely private, unforgettable experience.",
+          "Explore our private dining options ."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-214-613-6500",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Irish, American, New American, Comfort Food, Bar Food",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 11:00 22:00",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 21:00",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: (214) 613-6500",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American food, cocktails",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday,Monday,Tuesday,Wednesday,Thursday 11:00 22:00",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 11:00 23:00",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: 2146136500",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Irish Restaurant",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 11:00-21:00; Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-23:00; Sa 11:00-23:00",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "title: Home - Chet's Dallas - Elevated Irish-American Restaurant in Dallas, TX",
+            "sourceUrl": "https://www.chetsdallas.com/"
+          },
+          {
+            "quote": "title: Menu | Irish-American Comfort Food & Brunch in Dallas - Chet's Dallas - Elevated Irish-American Restaurant in Dallas, TX",
+            "sourceUrl": "https://www.chetsdallas.com/menu"
+          },
+          {
+            "quote": "og:description: Host private events at Chet",
+            "sourceUrl": "https://www.chetsdallas.com/private-events"
+          },
+          {
+            "quote": "title: Private Dining & Event Venue in Dallas - Chet's Dallas - Elevated Irish-American Restaurant in Dallas, TX",
+            "sourceUrl": "https://www.chetsdallas.com/private-events"
+          },
+          {
+            "quote": "og:description: Reserve your table at Chet",
+            "sourceUrl": "https://www.chetsdallas.com/reservations"
+          },
+          {
+            "quote": "title: Reservations | Book a Table at Chet's Irish-American Restaurant in Dallas - Chet's Dallas - Elevated Irish-American Restaurant in Dallas, TX",
+            "sourceUrl": "https://www.chetsdallas.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.chetsdallas.com/",
+          "https://www.chetsdallas.com/menu",
+          "https://www.chetsdallas.com/private-events",
+          "https://www.chetsdallas.com/reservations"
+        ],
+        "retrievedAt": "2026-08-19T12:26:34.494Z",
+        "playwrightPages": 4
       }
     },
     "christopher-s-phoenix": {
@@ -20950,12 +21206,46 @@
     },
     "dizengoff-philadelphia": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:30:30.370Z",
+        "lastEnrichedAt": "2026-08-19T12:25:57.708Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.dizengoffphilly.com/menu",
+        "reservationUrl": "https://www.toasttab.com/online-dizengoff/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Discover Zahav Foods, where Chef Michael Solomonov",
+            "sourceUrl": "https://www.dizengoffphilly.com/"
+          },
+          {
+            "quote": "title: Reservations &mdash; Dizengoff",
+            "sourceUrl": "https://www.dizengoffphilly.com/reservations"
+          },
+          {
+            "quote": "title: Contact 1 &mdash; Dizengoff",
+            "sourceUrl": "https://www.dizengoffphilly.com/contact-2"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.dizengoffphilly.com/",
+          "https://www.dizengoffphilly.com/reservations",
+          "https://www.dizengoffphilly.com/contact-2",
+          "https://www.dizengoffphilly.com/menu"
+        ],
+        "retrievedAt": "2026-08-19T12:25:57.708Z",
+        "playwrightPages": 0
       }
     },
     "durant-s-phoenix": {
@@ -21360,12 +21650,39 @@
     },
     "hayakawa-atlanta": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:30:41.665Z",
+        "lastEnrichedAt": "2026-08-19T12:25:45.173Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://resy.com/cities/atlanta-ga/venues/hayakawa",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , We 18:00-22:00, Th 18:00-22:00, Fr 18:00-22:00, Sa 18:00-22:00,",
+            "sourceUrl": "https://www.hayakawaatl.com/"
+          },
+          {
+            "quote": "og:description: Hayakawa is an intimate and traditional sushiya in the mold of the finest sushi shops in Japan. Newly location in West Midtown Atlanta, our serenely designed space allows for guests to have a truly unique experience.",
+            "sourceUrl": "https://www.hayakawaatl.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.hayakawaatl.com/"
+        ],
+        "retrievedAt": "2026-08-19T12:25:45.173Z",
+        "playwrightPages": 0
       }
     },
     "her-place-supper-club-philadelphia": {
@@ -21685,12 +22002,55 @@
     },
     "kalaya-philadelphia": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:30:42.478Z",
+        "lastEnrichedAt": "2026-08-19T12:25:59.923Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://kalayaphilly.com/menu",
+        "reservationUrl": "https://www.toasttab.com/kalaya-4-w-palmer-street/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [
+          "Do you have vegan or vegetarian options?"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Do you host private events?",
+        "groupPolicyLanguage": [
+          "Do you host private events?",
+          "For information about a private restaurant buyout, please email hello@kalayaphilly.com Do you accept walk ins?",
+          "It is required for parties of 5 or more everyday during dinner service and for groups of 7 or more during lunch."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Experience vibrant southern Thai cuisine at Kalaya in Philadelphia, inspired by Chef Nok Suntaranon",
+            "sourceUrl": "https://kalayaphilly.com/"
+          },
+          {
+            "quote": "title: Kalaya | Discover Authentic Thai Flavors - Reserve Today",
+            "sourceUrl": "https://kalayaphilly.com/"
+          },
+          {
+            "quote": "og:description: Discover authentic Southern Thai cuisine at Kalaya in Philadelphia. Experience bold flavors, vibrant dishes, and warm hospitality in a celebrated culinary setting.",
+            "sourceUrl": "https://kalayaphilly.com/about"
+          },
+          {
+            "quote": "title: About | Experience Authentic Thai Cuisine - Reserve Today &mdash; Kalaya",
+            "sourceUrl": "https://kalayaphilly.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://kalayaphilly.com/",
+          "https://kalayaphilly.com/menu",
+          "https://kalayaphilly.com/about"
+        ],
+        "retrievedAt": "2026-08-19T12:25:59.923Z",
+        "playwrightPages": 0
       }
     },
     "kenny-s-wood-fired-grill": {
@@ -21780,12 +22140,99 @@
     },
     "ky-miami": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:30:43.313Z",
+        "lastEnrichedAt": "2026-08-19T12:25:46.044Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-786-577-0150",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Asian, Wood-Fired, Korean BBQ, Japanese",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday 17:00 22:00",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 12:00 22:00",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday,Friday,Saturday 12:00 23:00",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 12:00 22:00",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +1-929-566-7224",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday,Wednesday 17:00 21:00",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday,Friday,Saturday 17:00 22:00",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 17:00 21:00",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +1-702-678-7777",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$$",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Sunday 17:00 22:00",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 17:00 23:00",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "og:description: Wood- Fired Asian Inspired restaurant located in Miami • NYC • Las Vegas • LA (Coming Soon)",
+            "sourceUrl": "https://kyurestaurants.com/"
+          },
+          {
+            "quote": "title: KYU Restaurants | Wood-fired • Asian Inspired",
+            "sourceUrl": "https://kyurestaurants.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://kyurestaurants.com/"
+        ],
+        "retrievedAt": "2026-08-19T12:25:46.044Z",
+        "playwrightPages": 0
       }
     },
     "la-carreta-miami": {
@@ -22270,7 +22717,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:30:44.161Z",
+        "lastEnrichedAt": "2026-08-19T12:28:13.880Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -22382,12 +22829,40 @@
     },
     "pa-la-phoenix": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:30:55.458Z",
+        "lastEnrichedAt": "2026-08-19T12:25:47.551Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://palakitchen.com/wp-content/uploads/2026/03/Wine-list-Winter-2025-2026.2.pdf",
+        "reservationUrl": "https://www.exploretock.com/pala24thstreet/event/390494/the-table",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: PA’LA WOOD-FIRED COOKING",
+            "sourceUrl": "https://palakitchen.com/"
+          },
+          {
+            "quote": "title: Events – PA’LA WOOD-FIRED COOKING",
+            "sourceUrl": "https://palakitchen.com/events/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://palakitchen.com/",
+          "https://palakitchen.com/events/"
+        ],
+        "retrievedAt": "2026-08-19T12:25:47.551Z",
+        "playwrightPages": 1
       }
     },
     "palette-tea-house": {
@@ -22693,12 +23168,174 @@
     },
     "the-hampton-social-dallas": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:30:57.144Z",
+        "lastEnrichedAt": "2026-08-19T12:26:19.839Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.thehamptonsocial.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/the-hampton-social-dallas-reservations-dallas?restref=1361992&lang=en-US&ot_source=Restaurant%20website&ot_campaign=reservationss",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Skip to main content Website Accessibility Assistance The Hampton Social home Menus To-Go Reservations Catering Private Events Happenings Parker Rewards More The Hampton Social Dallas Visit Us Dallas, TX 1520 Main St.",
+        "groupPolicyLanguage": [
+          "Skip to main content Website Accessibility Assistance The Hampton Social home Menus To-Go Reservations Catering Private Events Happenings Parker Rewards More The Hampton Social Dallas Visit Us Dallas, TX 1520 Main St.",
+          "Private Events The Perfect Venue There is always cause for celebration at The Hampton Social.",
+          "Our twelve locations that offer a wide variety of private and semi-private event spaces for every occasion."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 6302190009",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Seafood Restaurant",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-21:00; Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 3124640500",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-22:00; Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 11:00-00:00; Sa 10:00-00:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 3124141861",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-21:00; Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-22:00; Fr 11:00-23:00; Sa 10:00-23:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 5614041155",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-22:00; Mo 11:30-23:00; Tu 11:30-23:00; We 11:30-23:00; Th 11:30-23:00; Fr 11:30-00:00; Sa 10:00-00:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 7577023311",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 16:00-22:00; Mo 16:00-23:00; Tu 16:00-23:00; We 16:00-23:00; Th 16:00-23:00; Fr 16:00-00:00; Sa 16:00-00:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 2392022038",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-22:00; Mo 11:30-22:00; Tu 11:30-22:00; We 11:30-22:00; Th 11:30-22:00; Fr 11:30-23:00; Sa 10:00-11:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 6156227772",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 09:00-22:00; Mo 11:00-22:00; Tu 11:00-22:00; We 11:00-22:00; Th 11:00-23:00; Fr 10:00-23:00; Sa 09:00-23:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-22:00; Mo 11:00-22:00; Tu 16:00-22:00; We 11:00-22:00; Th 11:00-23:00; Fr 10:00-23:00; Sa 10:00-23:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 6898006760",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-23:00; Mo 11:30-23:00; Tu 11:30-23:00; We 11:30-23:00; Th 11:30-23:00; Fr 11:30-00:00; Sa 10:00-00:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 8473075207",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 2246335414",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-21:00; Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-09:30; Th 11:00-09:30; Fr 11:00-22:00; Sa 10:00-22:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 4704471748",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-21:00; Mo 11:30-22:00; Tu 11:30-22:00; We 11:30-22:00; Th 11:30-22:00; Fr 11:30-23:00; Sa 10:00-23:00",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 7206777595",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "JSON-LD telephone: 4694989890",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "og:description: Looking for the best Chicago restaurants downtown? Found it! From brunch to dinner, our coastal cuisine will have you begging for more. Click to learn more!",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "title: Dallas - The Hampton Social | Coastal Cuisine | Parker Hospitality",
+            "sourceUrl": "https://www.thehamptonsocial.com/dallas"
+          },
+          {
+            "quote": "og:description: Menu for The Hampton Social. Enjoy our Lunch, Dinner and Brunch Menu.",
+            "sourceUrl": "https://www.thehamptonsocial.com/menu"
+          },
+          {
+            "quote": "title: Menu - The Hampton Social | Coastal Cuisine | Parker Hospitality",
+            "sourceUrl": "https://www.thehamptonsocial.com/menu"
+          },
+          {
+            "quote": "og:description: About The Hampton Social in Burr Ridge, IL. Call us at (630) 219-0009. Explore our history, photos, and latest menu with reviews and ratings.",
+            "sourceUrl": "https://www.thehamptonsocial.com/reservations"
+          },
+          {
+            "quote": "title: Reservations - The Hampton Social | Coastal Cuisine | Parker Hospitality",
+            "sourceUrl": "https://www.thehamptonsocial.com/reservations"
+          },
+          {
+            "quote": "og:description: There is always a cause for celebration at The Hampton Social. Perfect restaurant for your next private event.",
+            "sourceUrl": "https://www.thehamptonsocial.com/private-events"
+          },
+          {
+            "quote": "title: Private Events - The Hampton Social | Coastal Cuisine | Parker Hospitality",
+            "sourceUrl": "https://www.thehamptonsocial.com/private-events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.thehamptonsocial.com/dallas",
+          "https://www.thehamptonsocial.com/menu",
+          "https://www.thehamptonsocial.com/reservations",
+          "https://www.thehamptonsocial.com/private-events"
+        ],
+        "retrievedAt": "2026-08-19T12:26:19.839Z",
+        "playwrightPages": 4
       }
     },
     "the-henry": {
@@ -23433,12 +24070,36 @@
     },
     "welcome-diner-phoenix": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T20:30:58.021Z",
+        "lastEnrichedAt": "2026-08-19T12:26:01.766Z",
         "enrichmentMode": "owned-site",
-        "completeness": 28
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "https://welcomediner.net/menus",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Welcome Diner: Your go-to restaurant for delicious diner menus, catering services, and convenient online ordering. Join us for great food!",
+            "sourceUrl": "https://welcomediner.net/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://welcomediner.net/",
+          "https://welcomediner.net/menus"
+        ],
+        "retrievedAt": "2026-08-19T12:26:01.766Z",
+        "playwrightPages": 2
       }
     },
     "tratto-phoenix": {

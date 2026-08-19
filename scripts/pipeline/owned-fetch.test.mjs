@@ -17,6 +17,7 @@ import {
   extractHydrationBlocks,
   flattenHydration,
   pickContentRegion,
+  isChallengePage,
   TEXT_FLOOR,
 } from "./own-fetch.mjs";
 import { extractFromSite } from "./site.mjs";
@@ -181,8 +182,16 @@ describe("Playwright gate", () => {
     ).toBe(false);
   });
 
-  it("does not render on non-200", () => {
+  it("does not render on non-200 unless it is a challenge interstitial", () => {
     expect(shouldRenderPlaywright({ status: 403, textLength: 10, jsonLd: [] })).toBe(false);
+    expect(shouldRenderPlaywright({ status: 404, textLength: 10, jsonLd: [] })).toBe(false);
+    process.env.RI_PLAYWRIGHT = "1";
+    const cf =
+      "<html><head><title>Just a moment...</title></head><body>Enable JavaScript and cookies to continue<div class='cf-browser-verification'></div></body></html>";
+    expect(isChallengePage(cf)).toBe(true);
+    expect(shouldRenderPlaywright({ status: 403, html: cf, textLength: 10, jsonLd: [] })).toBe(true);
+    process.env.RI_PLAYWRIGHT = "0";
+    expect(shouldRenderPlaywright({ status: 403, html: cf, textLength: 10, jsonLd: [] })).toBe(false);
   });
 
   it("would render a 200 JS shell with no rich JSON-LD", () => {
