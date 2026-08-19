@@ -91,7 +91,13 @@ function slugify(title, city) {
 }
 
 let nextId = Math.max(0, ...dataset.records.map((r) => Number(r.id) || 0)) + 1;
-let seq = dataset.records.filter((r) => String(r.recordId || "").startsWith("RI-EXP-")).length;
+let seq = Math.max(
+  0,
+  ...dataset.records.map((r) => {
+    const m = String(r.recordId || "").match(/^RI-EXP-(\d+)$/);
+    return m ? Number(m[1]) : 0;
+  }),
+);
 
 const UNSTATED = "";
 const unknownList = [
