@@ -2,6 +2,736 @@
   "runs": [
     {
       "kind": "enrich-owned",
+      "startedAt": "2026-08-19T11:39:46.523Z",
+      "finishedAt": "2026-08-19T11:43:44.889Z",
+      "batchSize": 66,
+      "cities": [
+        "Sacramento, California",
+        "Cincinnati, Ohio",
+        "Kansas City, Missouri",
+        "Columbus, Ohio",
+        "Indianapolis, Indiana",
+        "Cleveland, Ohio"
+      ],
+      "resolved": 66,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 62,
+      "corpusEnriched": 406,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 66
+      },
+      "retries": 1,
+      "failures": 0,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T11-39-46-523Z-enrich-owned",
+      "records": [
+        {
+          "slug": "the-kitchen-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "mulvaney-s-b-l-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "localis-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "ella-dining-room-bar-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "allora-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "the-firehouse-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "frank-fat-s-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "mayahuel-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "magpie-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "kru-contemporary-japanese-cuisine-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "canon-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "waterboy-sacramento",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "salazar-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "senate-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "abigail-street-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "boca-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "sotto-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "metropole-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "please-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "jeff-ruby-s-precinct-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 13"
+          ]
+        },
+        {
+          "slug": "maplewood-kitchen-and-bar-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "mita-s-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "zula-cincinnati",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "the-antler-room-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "novel-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "q39-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "joe-s-kansas-city-bar-b-que-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "jack-stack-barbecue-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "the-majestic-restaurant-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "rye-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "extra-virgin-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "stock-hill-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 18"
+          ]
+        },
+        {
+          "slug": "port-fonda-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "aff-re-kansas-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "the-refectory-columbus",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "lindey-s-columbus",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "wolf-s-ridge-brewing-columbus",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "the-guild-house-columbus",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "barcelona-columbus",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "the-pearl-columbus",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "northstar-caf-columbus",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "hubbard-grille-columbus",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 16"
+          ]
+        },
+        {
+          "slug": "cap-city-fine-diner-columbus",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "katzinger-s-delicatessen-columbus",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "bluebeard-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "milktooth-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "st-elmo-steak-house-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "harry-izzy-s-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "beholder-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "late-harvest-kitchen-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "love-handle-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "livery-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "vida-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "the-rathskeller-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "tinker-street-indianapolis",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "mabel-s-bbq-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "fire-food-and-drink-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "l-albatros-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "giovanni-s-ristorante-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "blue-point-grille-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "pier-w-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "sokolowski-s-university-inn-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "lucky-s-cafe-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "edwins-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "marble-room-steaks-and-raw-bar-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "spice-kitchen-bar-cleveland",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 4"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-19T11:38:32.827Z",
+      "finishedAt": "2026-08-19T11:38:32.893Z",
+      "cities": [
+        {
+          "city": "Sacramento, CA",
+          "found": 12,
+          "inserted": 12,
+          "duplicates": 0
+        },
+        {
+          "city": "Cincinnati, OH",
+          "found": 11,
+          "inserted": 11,
+          "duplicates": 0
+        },
+        {
+          "city": "Kansas City, MO",
+          "found": 11,
+          "inserted": 11,
+          "duplicates": 0
+        },
+        {
+          "city": "Columbus, OH",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Indianapolis, IN",
+          "found": 11,
+          "inserted": 11,
+          "duplicates": 0
+        },
+        {
+          "city": "Cleveland, OH",
+          "found": 11,
+          "inserted": 11,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 66,
+      "duplicatesSkipped": 0,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T11-38-32-827Z-seed-listings",
+      "insertedSlugs": [
+        "the-kitchen-sacramento",
+        "mulvaney-s-b-l-sacramento",
+        "localis-sacramento",
+        "ella-dining-room-bar-sacramento",
+        "allora-sacramento",
+        "the-firehouse-sacramento",
+        "frank-fat-s-sacramento",
+        "mayahuel-sacramento",
+        "magpie-sacramento",
+        "kru-contemporary-japanese-cuisine-sacramento",
+        "canon-sacramento",
+        "waterboy-sacramento",
+        "salazar-cincinnati",
+        "senate-cincinnati",
+        "abigail-street-cincinnati",
+        "boca-cincinnati",
+        "sotto-cincinnati",
+        "metropole-cincinnati",
+        "please-cincinnati",
+        "jeff-ruby-s-precinct-cincinnati",
+        "maplewood-kitchen-and-bar-cincinnati",
+        "mita-s-cincinnati",
+        "zula-cincinnati",
+        "the-antler-room-kansas-city",
+        "novel-kansas-city",
+        "q39-kansas-city",
+        "joe-s-kansas-city-bar-b-que-kansas-city",
+        "jack-stack-barbecue-kansas-city",
+        "the-majestic-restaurant-kansas-city",
+        "rye-kansas-city",
+        "extra-virgin-kansas-city",
+        "stock-hill-kansas-city",
+        "port-fonda-kansas-city",
+        "aff-re-kansas-city",
+        "the-refectory-columbus",
+        "lindey-s-columbus",
+        "wolf-s-ridge-brewing-columbus",
+        "the-guild-house-columbus",
+        "barcelona-columbus",
+        "the-pearl-columbus",
+        "northstar-caf-columbus",
+        "hubbard-grille-columbus",
+        "cap-city-fine-diner-columbus",
+        "katzinger-s-delicatessen-columbus",
+        "bluebeard-indianapolis",
+        "milktooth-indianapolis",
+        "st-elmo-steak-house-indianapolis",
+        "harry-izzy-s-indianapolis",
+        "beholder-indianapolis",
+        "late-harvest-kitchen-indianapolis",
+        "love-handle-indianapolis",
+        "livery-indianapolis",
+        "vida-indianapolis",
+        "the-rathskeller-indianapolis",
+        "tinker-street-indianapolis",
+        "mabel-s-bbq-cleveland",
+        "fire-food-and-drink-cleveland",
+        "l-albatros-cleveland",
+        "giovanni-s-ristorante-cleveland",
+        "blue-point-grille-cleveland",
+        "pier-w-cleveland",
+        "sokolowski-s-university-inn-cleveland",
+        "lucky-s-cafe-cleveland",
+        "edwins-cleveland",
+        "marble-room-steaks-and-raw-bar-cleveland",
+        "spice-kitchen-bar-cleveland"
+      ]
+    },
+    {
+      "kind": "enrich-owned",
       "startedAt": "2026-08-19T02:54:21.202Z",
       "finishedAt": "2026-08-19T02:56:31.768Z",
       "batchSize": 60,

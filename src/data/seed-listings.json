@@ -1,6 +1,6 @@
 {
   "note": "Controlled geographic seeds for metros not yet in the corpus. Every entry is a real named establishment with a public listing or official site. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
-  "generatedAt": "2026-08-19T02:50:00.000Z",
+  "generatedAt": "2026-08-19T11:40:00.000Z",
   "batches": [
     {
       "city": "Atlanta",
@@ -1883,6 +1883,589 @@
           "address": "Pittsburgh, PA",
           "cuisineTags": [
             "Belgian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Sacramento",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "The Kitchen",
+          "website": "https://thekitchenrestaurant.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Mulvaney's B&L",
+          "website": "https://www.mulvaneysbl.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Localis",
+          "website": "https://www.localissacramento.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Ella Dining Room & Bar",
+          "website": "https://www.elladiningroomandbar.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Allora",
+          "website": "https://www.allorasacramento.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "The Firehouse",
+          "website": "https://www.thefirehouse.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American",
+            "Steak"
+          ]
+        },
+        {
+          "title": "Frank Fat's",
+          "website": "https://www.frankfats.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Chinese"
+          ]
+        },
+        {
+          "title": "Mayahuel",
+          "website": "https://www.mayahuel.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Magpie",
+          "website": "https://www.magpiecafe.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Kru Contemporary Japanese Cuisine",
+          "website": "https://www.krurestaurant.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Canon",
+          "website": "https://canoneastsac.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Waterboy",
+          "website": "https://www.waterboyrestaurant.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "stateCode": "OH",
+      "listings": [
+        {
+          "title": "Salazar",
+          "website": "https://www.salazarcincinnati.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Senate",
+          "website": "https://www.senatepub.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Abigail Street",
+          "website": "https://www.abigailstreet.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Boca",
+          "website": "https://www.bocacincinnati.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Italian",
+            "French"
+          ]
+        },
+        {
+          "title": "Sotto",
+          "website": "https://www.sottocincinnati.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Metropole",
+          "website": "https://www.metropoleonwalnut.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Please",
+          "website": "https://www.pleasecincinnati.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Jeff Ruby's Precinct",
+          "website": "https://www.jeffruby.com/precinct",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Maplewood Kitchen and Bar",
+          "website": "https://www.maplewoodkitchenandbar.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Mita's",
+          "website": "https://www.mitas.co/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Spanish",
+            "Latin"
+          ]
+        },
+        {
+          "title": "Zula",
+          "website": "https://zularestaurant.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Kansas City",
+      "stateCode": "MO",
+      "listings": [
+        {
+          "title": "The Antler Room",
+          "website": "https://www.theantlerroom.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Novel",
+          "website": "https://www.novelkc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Q39",
+          "website": "https://www.q39kc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Joe's Kansas City Bar-B-Que",
+          "website": "https://www.joeskc.com/",
+          "address": "Kansas City, KS",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Jack Stack Barbecue",
+          "website": "https://www.jackstackbbq.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "The Majestic Restaurant",
+          "website": "https://www.kcmajestic.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Rye",
+          "website": "https://www.ryekc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Extra Virgin",
+          "website": "https://www.extravirginkc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Stock Hill",
+          "website": "https://www.stockhillkc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Port Fonda",
+          "website": "https://www.portfondakc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Aff\u00e4re",
+          "website": "https://affarekc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "German",
+            "European"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Columbus",
+      "stateCode": "OH",
+      "listings": [
+        {
+          "title": "The Refectory",
+          "website": "https://www.therefectoryrestaurant.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Lindey's",
+          "website": "https://www.lindeys.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Wolf's Ridge Brewing",
+          "website": "https://www.wolfsridgebrewing.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "The Guild House",
+          "website": "https://www.theguildhousecolumbus.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Barcelona",
+          "website": "https://www.barcelonacolumbus.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "Spanish"
+          ]
+        },
+        {
+          "title": "The Pearl",
+          "website": "https://www.thepearlcolumbus.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Northstar Caf\u00e9",
+          "website": "https://www.northstarcafe.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Hubbard Grille",
+          "website": "https://www.hubbardgrille.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Cap City Fine Diner",
+          "website": "https://www.capcityfinediner.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Katzinger's Delicatessen",
+          "website": "https://www.katzingers.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "Deli",
+            "Jewish"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Indianapolis",
+      "stateCode": "IN",
+      "listings": [
+        {
+          "title": "Bluebeard",
+          "website": "https://www.bluebeardindy.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Milktooth",
+          "website": "https://www.milktoothindy.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American",
+            "Breakfast"
+          ]
+        },
+        {
+          "title": "St. Elmo Steak House",
+          "website": "https://www.stelmos.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Harry & Izzy's",
+          "website": "https://www.harryandizzys.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Beholder",
+          "website": "https://www.beholderindy.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Late Harvest Kitchen",
+          "website": "https://www.lateharvestkitchen.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Love Handle",
+          "website": "https://www.lovehandleindy.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Livery",
+          "website": "https://www.livery-restaurant.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "Latin"
+          ]
+        },
+        {
+          "title": "Vida",
+          "website": "https://www.vida-restaurant.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "The Rathskeller",
+          "website": "https://www.rathskeller.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "German"
+          ]
+        },
+        {
+          "title": "Tinker Street",
+          "website": "https://tinkerstreetrestaurant.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Cleveland",
+      "stateCode": "OH",
+      "listings": [
+        {
+          "title": "Mabel's BBQ",
+          "website": "https://www.mabelsbbq.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Fire Food and Drink",
+          "website": "https://www.firefoodanddrink.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "L'Albatros",
+          "website": "https://www.albatrosbrasserie.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Giovanni's Ristorante",
+          "website": "https://www.giovanniscleveland.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Blue Point Grille",
+          "website": "https://www.bluepointgrille.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Pier W",
+          "website": "https://www.pierw.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "Sokolowski's University Inn",
+          "website": "https://www.sokolowskis.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Polish",
+            "Eastern European"
+          ]
+        },
+        {
+          "title": "Lucky's Cafe",
+          "website": "https://www.luckyscafe.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Edwins",
+          "website": "https://edwinsrestaurant.org/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Marble Room Steaks and Raw Bar",
+          "website": "https://www.marbleroomcle.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Steak",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Spice Kitchen & Bar",
+          "website": "https://www.spicekitchenandbar.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "American"
           ]
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T02:57:05.494Z",
+  "generatedAt": "2026-08-19T11:44:25.402Z",
   "settings": {
     "tiers": {
       "A": 30,
@@ -11,16 +11,16 @@
     "hygieneBatchSize": 25
   },
   "totals": {
-    "records": 340,
-    "hygiene": 304,
+    "records": 406,
+    "hygiene": 369,
     "neverEnriched": 0,
-    "thin": 291,
+    "thin": 356,
     "siteFailures": 9,
     "reviewDue": 11,
     "staleA": 0,
     "staleB": 0,
     "staleC": 0,
-    "dueNow": 304
+    "dueNow": 369
   },
   "hygiene": [
     "mr-szechuan",
@@ -84,26 +84,37 @@
     "lao-sze-chuan",
     "lao-sze-chuan-downtown",
     "le-bernardin",
+    "love-handle-indianapolis",
+    "mabel-s-bbq-cleveland",
     "mama-ji-s",
+    "mayahuel-sacramento",
     "menton-boston",
     "morcilla-pittsburgh",
     "mountain-house-east-village",
+    "northstar-caf-columbus",
     "pho-binh-heights",
     "pho-saigon",
     "point-brugge-caf-pittsburgh",
+    "port-fonda-kansas-city",
     "restaurant-alma-minneapolis",
     "royal-sushi-izakaya-philadelphia",
     "simply-pho",
+    "sokolowski-s-university-inn-cleveland",
     "sportello-boston",
     "staple-fancy-seattle",
     "superior-motors-pittsburgh",
     "szechwan-north-authentic-sichuan-cuisine-glenview",
     "tai-er-sichuan-cuisine",
+    "the-antler-room-kansas-city",
     "the-bygone-baltimore",
+    "the-kitchen-sacramento",
+    "the-majestic-restaurant-kansas-city",
+    "the-refectory-columbus",
     "the-wolf-s-tailor-denver",
     "vernick-food-drink-philadelphia",
     "virt-honest-craft-phoenix",
     "xiaolong-dumpling",
+    "zula-cincinnati",
     "angelo-s-pizzeria-philadelphia",
     "anima-by-edo-las-vegas",
     "bacchanalia-atlanta",
@@ -117,42 +128,60 @@
     "chubby-cattle-bbq-little-tokyo",
     "cooking-girl",
     "edison-food-drink-lab-tampa",
+    "edwins-cleveland",
+    "fire-food-and-drink-cleveland",
     "good-mong-kok-bakery",
     "guelaguetza-restaurant",
+    "harry-izzy-s-indianapolis",
     "jim-s-original",
+    "joe-s-kansas-city-bar-b-que-kansas-city",
     "kado-no-mise-minneapolis",
+    "l-albatros-cleveland",
+    "livery-indianapolis",
     "madre-oaxacan-restaurant-and-mezcaleria",
     "mala-sichuan-bistro",
+    "milktooth-indianapolis",
     "neptune-oyster-boston",
     "olamaie-austin",
     "owamni-minneapolis",
+    "please-cincinnati",
     "provenance-philadelphia",
     "re-publique",
     "real-de-oaxaca",
+    "senate-cincinnati",
     "sichuan-impression",
     "sichuan-impression-los-angeles",
+    "spice-kitchen-bar-cleveland",
     "szechuan-spice-restaurant",
     "the-best-sichuan-21",
     "the-capital-grille-washington-dc-washington",
+    "tinker-street-indianapolis",
     "trader-vic-s-atlanta-atlanta",
     "tratto-phoenix",
     "triple-pepper-river-oaks",
     "uncle-denver",
     "vida-verde-tequila-bar",
     "wayan-miami-miami",
+    "wolf-s-ridge-brewing-columbus",
     "woodberry-kitchen-baltimore",
     "yume-wo-katare-boston",
+    "abigail-street-cincinnati",
+    "aff-re-kansas-city",
     "animae-san-diego",
     "ariete-miami",
     "baobab-fare-detroit",
+    "barcelona-columbus",
     "barley-swine-austin",
+    "cap-city-fine-diner-columbus",
     "causa-washington",
     "chong-qing-xiao-mian",
     "esther-s-kitchen-las-vegas",
+    "extra-virgin-kansas-city",
     "flo-santos",
     "flowers-of-vietnam-detroit",
     "fnb-phoenix",
     "friday-saturday-sunday-philadelphia",
+    "giovanni-s-ristorante-cleveland",
     "guard-and-grace-denver",
     "gunshow-atlanta",
     "haberdish-charlotte",
@@ -161,17 +190,22 @@
     "hong-kong-lounge",
     "hop-alley-denver",
     "huynh-restaurant",
+    "jack-stack-barbecue-kansas-city",
     "jaleo-washington",
+    "jeff-ruby-s-precinct-cincinnati",
     "joule-seattle",
     "kemuri-tatsu-ya-austin",
     "kimball-house-atlanta",
     "legume-pittsburgh",
     "lenoir-austin",
+    "localis-sacramento",
     "lockeland-table-nashville",
     "lon-s-at-the-hermosa-phoenix",
     "london-chop-house-detroit",
+    "lucky-s-cafe-cleveland",
     "mandolin-aegean-bistro-miami",
     "maple-ash",
+    "maplewood-kitchen-and-bar-cincinnati",
     "mastro-s-city-hall-phoenix",
     "miller-union-atlanta",
     "minibar-by-jos-andr-s-washington",
@@ -186,10 +220,12 @@
     "pizzeria-lola-minneapolis",
     "portillo-s-barnelli-s-chicago",
     "puritan-company-boston",
+    "q39-kansas-city",
     "rococo-steak-tampa",
     "rooster-and-the-till-tampa",
     "rosa-mexicano",
     "row-34-boston",
+    "rye-kansas-city",
     "sabores-oaxaquen-os-restaurant",
     "shewolf-pastificio-bar-detroit",
     "spicy-girl",
@@ -207,8 +243,11 @@
     "the-catbird-seat-nashville",
     "the-dabney-washington",
     "the-dearborn",
+    "the-firehouse-sacramento",
     "the-fishery-san-diego",
     "the-herbfarm-seattle",
+    "the-pearl-columbus",
+    "the-rathskeller-indianapolis",
     "the-walrus-and-the-carpenter-seattle",
     "the-woolworth",
     "tilikum-place-cafe-seattle",
@@ -218,14 +257,19 @@
     "3eleven-kitchen-and-cocktails",
     "5church-atlanta-atlanta",
     "alla-vita",
+    "allora-sacramento",
     "amor-loco",
     "aria-atlanta",
     "au-cheval",
     "bar-la-grassa-minneapolis",
     "bastion-nashville",
+    "beholder-indianapolis",
+    "blue-point-grille-cleveland",
+    "boca-cincinnati",
     "boia-de-miami",
     "butcher-bee-nashville",
     "callie-san-diego",
+    "canon-sacramento",
     "carbone-miami-miami",
     "carmine-s-44th-street-nyc",
     "cesarina-san-diego",
@@ -236,8 +280,10 @@
     "demi-minneapolis",
     "durant-s-phoenix",
     "e-lephante",
+    "ella-dining-room-bar-sacramento",
     "fiorella-philadelphia",
     "folk-nashville",
+    "frank-fat-s-sacramento",
     "grey-ghost-detroit-detroit",
     "hai-hai-minneapolis",
     "hakkasan-miami-miami",
@@ -246,26 +292,38 @@
     "jeffrey-s-austin",
     "joe-s-stone-crab-miami",
     "juniper-ivy-san-diego",
+    "katzinger-s-delicatessen-columbus",
+    "kru-contemporary-japanese-cuisine-sacramento",
     "la-cuchara-baltimore",
+    "late-harvest-kitchen-indianapolis",
     "lazy-betty-atlanta",
+    "lindey-s-columbus",
     "little-donkey-boston",
+    "magpie-sacramento",
+    "marble-room-steaks-and-raw-bar-cleveland",
     "meat-potatoes-pittsburgh",
     "midwood-smokehouse-charlotte",
     "mise-en-place-tampa",
+    "mita-s-cincinnati",
     "moon-rabbit-washington",
+    "mulvaney-s-b-l-sacramento",
+    "novel-kansas-city",
     "partage-las-vegas",
     "perry-s-steakhouse-grille",
     "rasika-washington",
     "river-roast",
     "rolf-and-daughters-nashville",
+    "salazar-cincinnati",
     "sarma-boston",
     "siena-tavern",
     "spoon-and-stable-minneapolis",
+    "st-elmo-steak-house-indianapolis",
     "stk-steakhouse",
     "suraya-philadelphia",
     "tarbell-s-phoenix",
     "tavernetta-denver",
     "the-asbury-charlotte",
+    "the-guild-house-columbus",
     "the-henry",
     "the-purple-pig-restaurant",
     "the-whale-wins-seattle",
@@ -274,6 +332,8 @@
     "ultreia-denver",
     "uni-boston",
     "versailles-restaurant-miami",
+    "vida-indianapolis",
+    "waterboy-sacramento",
     "zahav-philadelphia",
     "zuma-miami-miami",
     "addison-san-diego",
@@ -281,6 +341,7 @@
     "archipelago-seattle",
     "atlas-atlanta",
     "bern-s-steak-house-tampa",
+    "bluebeard-indianapolis",
     "cafe-juanita-seattle",
     "civico-1845-san-diego",
     "columbia-restaurant-tampa",
@@ -295,6 +356,7 @@
     "franklin-barbecue-austin",
     "henrietta-red-nashville",
     "her-place-supper-club-philadelphia",
+    "hubbard-grille-columbus",
     "il-porcellino",
     "joey-dtla",
     "kindred-charlotte",
@@ -303,6 +365,7 @@
     "los-f-lix-miami",
     "lotus-of-siam-las-vegas",
     "mercantile-dining-provision-denver",
+    "metropole-cincinnati",
     "muj-atlanta",
     "musang-seattle",
     "o-ya-boston",
@@ -311,7 +374,9 @@
     "r-g-lounge",
     "rose-s-luxury-washington",
     "selden-standard-detroit",
+    "sotto-cincinnati",
     "sparrow-wolf-las-vegas",
+    "stock-hill-kansas-city",
     "takoi-detroit",
     "the-gladly-phoenix",
     "ulele-tampa",
@@ -1576,6 +1641,46 @@
       "siteFailures": []
     },
     {
+      "slug": "love-handle-indianapolis",
+      "title": "Love Handle",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:11.826Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "mabel-s-bbq-cleveland",
+      "title": "Mabel's BBQ",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:21.603Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "mama-ji-s",
       "title": "Mama Ji's",
       "city": "San Francisco",
@@ -1593,6 +1698,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
+      "siteFailures": []
+    },
+    {
+      "slug": "mayahuel-sacramento",
+      "title": "Mayahuel",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:10.236Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -1656,6 +1781,26 @@
       "siteFailures": []
     },
     {
+      "slug": "northstar-caf-columbus",
+      "title": "Northstar Café",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:42:08.729Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "pho-binh-heights",
       "title": "Pho Binh Heights",
       "city": "Houston",
@@ -1710,6 +1855,26 @@
       "completeness": 44,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T02:56:30.875Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "port-fonda-kansas-city",
+      "title": "Port Fonda",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:24.208Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -1773,6 +1938,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
+      "siteFailures": []
+    },
+    {
+      "slug": "sokolowski-s-university-inn-cleveland",
+      "title": "Sokolowski's University Inn",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:33.394Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -1876,6 +2061,26 @@
       "siteFailures": []
     },
     {
+      "slug": "the-antler-room-kansas-city",
+      "title": "The Antler Room",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:04.770Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "the-bygone-baltimore",
       "title": "The Bygone",
       "city": "Baltimore",
@@ -1893,6 +2098,66 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-17",
       "reviewedAt": "2026-08-18",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-kitchen-sacramento",
+      "title": "The Kitchen",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:39:46.531Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-majestic-restaurant-kansas-city",
+      "title": "The Majestic Restaurant",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:17.112Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-refectory-columbus",
+      "title": "The Refectory",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:27.235Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -1973,6 +2238,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
+      "siteFailures": []
+    },
+    {
+      "slug": "zula-cincinnati",
+      "title": "Zula",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:03.911Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -2236,6 +2521,46 @@
       "siteFailures": []
     },
     {
+      "slug": "edwins-cleveland",
+      "title": "Edwins",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:35.829Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "fire-food-and-drink-cleveland",
+      "title": "Fire Food and Drink",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:22.873Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "good-mong-kok-bakery",
       "title": "Good Mong Kok Bakery",
       "city": "San Francisco",
@@ -2276,6 +2601,26 @@
       "siteFailures": []
     },
     {
+      "slug": "harry-izzy-s-indianapolis",
+      "title": "Harry & Izzy's",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:05.600Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "jim-s-original",
       "title": "Jim's Original",
       "city": "Chicago",
@@ -2296,6 +2641,26 @@
       "siteFailures": []
     },
     {
+      "slug": "joe-s-kansas-city-bar-b-que-kansas-city",
+      "title": "Joe's Kansas City Bar-B-Que",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:13.296Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "kado-no-mise-minneapolis",
       "title": "Kado no Mise",
       "city": "Minneapolis",
@@ -2313,6 +2678,46 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-17",
       "reviewedAt": "2026-08-18",
+      "siteFailures": []
+    },
+    {
+      "slug": "l-albatros-cleveland",
+      "title": "L'Albatros",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:23.756Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "livery-indianapolis",
+      "title": "Livery",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:12.937Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -2353,6 +2758,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
+      "siteFailures": []
+    },
+    {
+      "slug": "milktooth-indianapolis",
+      "title": "Milktooth",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:01.858Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -2416,6 +2841,26 @@
       "siteFailures": []
     },
     {
+      "slug": "please-cincinnati",
+      "title": "Please",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:42.082Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "provenance-philadelphia",
       "title": "Provenance",
       "city": "Philadelphia",
@@ -2476,6 +2921,26 @@
       "siteFailures": []
     },
     {
+      "slug": "senate-cincinnati",
+      "title": "Senate",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:27.760Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "sichuan-impression",
       "title": "Sichuan Impression",
       "city": "Tustin",
@@ -2513,6 +2978,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
+      "siteFailures": []
+    },
+    {
+      "slug": "spice-kitchen-bar-cleveland",
+      "title": "Spice Kitchen & Bar",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:43.314Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -2573,6 +3058,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "tinker-street-indianapolis",
+      "title": "Tinker Street",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:20.739Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -2696,6 +3201,26 @@
       "siteFailures": []
     },
     {
+      "slug": "wolf-s-ridge-brewing-columbus",
+      "title": "Wolf's Ridge Brewing",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:30.903Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "woodberry-kitchen-baltimore",
       "title": "Woodberry Kitchen",
       "city": "Baltimore",
@@ -2733,6 +3258,46 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "abigail-street-cincinnati",
+      "title": "Abigail Street",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:31.666Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "aff-re-kansas-city",
+      "title": "Affäre",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:25.308Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -2796,6 +3361,26 @@
       "siteFailures": []
     },
     {
+      "slug": "barcelona-columbus",
+      "title": "Barcelona",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:37.440Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "barley-swine-austin",
       "title": "Barley Swine",
       "city": "Austin",
@@ -2810,6 +3395,26 @@
       "completeness": 56,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T02:55:34.557Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "cap-city-fine-diner-columbus",
+      "title": "Cap City Fine Diner",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:42:12.612Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -2870,6 +3475,26 @@
       "completeness": 56,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T02:55:53.954Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "extra-virgin-kansas-city",
+      "title": "Extra Virgin",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:19.729Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -2953,6 +3578,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "giovanni-s-ristorante-cleveland",
+      "title": "Giovanni's Ristorante",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:25.576Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -3116,6 +3761,26 @@
       "siteFailures": []
     },
     {
+      "slug": "jack-stack-barbecue-kansas-city",
+      "title": "Jack Stack Barbecue",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:15.353Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "jaleo-washington",
       "title": "Jaleo",
       "city": "Washington",
@@ -3133,6 +3798,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "jeff-ruby-s-precinct-cincinnati",
+      "title": "Jeff Ruby's Precinct",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:57.381Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -3236,6 +3921,26 @@
       "siteFailures": []
     },
     {
+      "slug": "localis-sacramento",
+      "title": "Localis",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:39:51.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "lockeland-table-nashville",
       "title": "Lockeland Table",
       "city": "Nashville",
@@ -3296,6 +4001,26 @@
       "siteFailures": []
     },
     {
+      "slug": "lucky-s-cafe-cleveland",
+      "title": "Lucky's Cafe",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:34.472Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "mandolin-aegean-bistro-miami",
       "title": "Mandolin Aegean Bistro",
       "city": "Miami",
@@ -3333,6 +4058,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-09",
       "reviewedAt": "2026-08-10",
+      "siteFailures": []
+    },
+    {
+      "slug": "maplewood-kitchen-and-bar-cincinnati",
+      "title": "Maplewood Kitchen and Bar",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:59.520Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -3616,6 +4361,26 @@
       "siteFailures": []
     },
     {
+      "slug": "q39-kansas-city",
+      "title": "Q39",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:07.960Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "rococo-steak-tampa",
       "title": "Rococo Steak",
       "city": "Tampa",
@@ -3693,6 +4458,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "rye-kansas-city",
+      "title": "Rye",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:18.026Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -4036,6 +4821,26 @@
       "siteFailures": []
     },
     {
+      "slug": "the-firehouse-sacramento",
+      "title": "The Firehouse",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:01.907Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "the-fishery-san-diego",
       "title": "The Fishery",
       "city": "San Diego",
@@ -4070,6 +4875,46 @@
       "completeness": 56,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T02:54:30.850Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-pearl-columbus",
+      "title": "The Pearl",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:42:05.420Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-rathskeller-indianapolis",
+      "title": "The Rathskeller",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:18.755Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -4256,6 +5101,26 @@
       "siteFailures": []
     },
     {
+      "slug": "allora-sacramento",
+      "title": "Allora",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:39:59.253Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "amor-loco",
       "title": "Amor Loco",
       "city": "New York",
@@ -4356,6 +5221,66 @@
       "siteFailures": []
     },
     {
+      "slug": "beholder-indianapolis",
+      "title": "Beholder",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:07.248Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "blue-point-grille-cleveland",
+      "title": "Blue Point Grille",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:27.239Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "boca-cincinnati",
+      "title": "Boca",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:35.412Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "boia-de-miami",
       "title": "Boia De",
       "city": "Miami",
@@ -4410,6 +5335,26 @@
       "completeness": 61,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T02:55:13.058Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "canon-sacramento",
+      "title": "Canon",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:16.465Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -4616,6 +5561,26 @@
       "siteFailures": []
     },
     {
+      "slug": "ella-dining-room-bar-sacramento",
+      "title": "Ella Dining Room & Bar",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:39:53.290Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "fiorella-philadelphia",
       "title": "Fiorella",
       "city": "Philadelphia",
@@ -4653,6 +5618,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-17",
       "reviewedAt": "2026-08-18",
+      "siteFailures": []
+    },
+    {
+      "slug": "frank-fat-s-sacramento",
+      "title": "Frank Fat's",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:07.620Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -4816,6 +5801,46 @@
       "siteFailures": []
     },
     {
+      "slug": "katzinger-s-delicatessen-columbus",
+      "title": "Katzinger's Delicatessen",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:42:21.042Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "kru-contemporary-japanese-cuisine-sacramento",
+      "title": "Kru Contemporary Japanese Cuisine",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:13.686Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "la-cuchara-baltimore",
       "title": "La Cuchara",
       "city": "Baltimore",
@@ -4833,6 +5858,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-17",
       "reviewedAt": "2026-08-18",
+      "siteFailures": []
+    },
+    {
+      "slug": "late-harvest-kitchen-indianapolis",
+      "title": "Late Harvest Kitchen",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:09.589Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -4856,6 +5901,26 @@
       "siteFailures": []
     },
     {
+      "slug": "lindey-s-columbus",
+      "title": "Lindey's",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:28.667Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "little-donkey-boston",
       "title": "Little Donkey",
       "city": "Boston",
@@ -4873,6 +5938,46 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "magpie-sacramento",
+      "title": "Magpie",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:11.077Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "marble-room-steaks-and-raw-bar-cleveland",
+      "title": "Marble Room Steaks and Raw Bar",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:41.641Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -4936,6 +6041,26 @@
       "siteFailures": []
     },
     {
+      "slug": "mita-s-cincinnati",
+      "title": "Mita's",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:01.322Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "moon-rabbit-washington",
       "title": "Moon Rabbit",
       "city": "Washington",
@@ -4953,6 +6078,46 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "mulvaney-s-b-l-sacramento",
+      "title": "Mulvaney's B&L",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:39:47.855Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "novel-kansas-city",
+      "title": "Novel",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:05.675Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -5056,6 +6221,26 @@
       "siteFailures": []
     },
     {
+      "slug": "salazar-cincinnati",
+      "title": "Salazar",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:25.416Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "sarma-boston",
       "title": "Sarma",
       "city": "Boston",
@@ -5113,6 +6298,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-17",
       "reviewedAt": "2026-08-18",
+      "siteFailures": []
+    },
+    {
+      "slug": "st-elmo-steak-house-indianapolis",
+      "title": "St. Elmo Steak House",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:03.208Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -5213,6 +6418,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-17",
       "reviewedAt": "2026-08-18",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-guild-house-columbus",
+      "title": "The Guild House",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:33.002Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -5376,6 +6601,46 @@
       "siteFailures": []
     },
     {
+      "slug": "vida-indianapolis",
+      "title": "Vida",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:16.011Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "waterboy-sacramento",
+      "title": "Waterboy",
+      "city": "Sacramento",
+      "stateProvince": "California",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:19.221Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "zahav-philadelphia",
       "title": "Zahav",
       "city": "Philadelphia",
@@ -5510,6 +6775,26 @@
       "completeness": 67,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T02:54:42.295Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "bluebeard-indianapolis",
+      "title": "Bluebeard",
+      "city": "Indianapolis",
+      "stateProvince": "Indiana",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:42:24.857Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -5796,6 +7081,26 @@
       "siteFailures": []
     },
     {
+      "slug": "hubbard-grille-columbus",
+      "title": "Hubbard Grille",
+      "city": "Columbus",
+      "stateProvince": "Ohio",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:42:10.017Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "il-porcellino",
       "title": "Il Porcellino",
       "city": "Chicago",
@@ -5953,6 +7258,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-17",
       "reviewedAt": "2026-08-18",
+      "siteFailures": []
+    },
+    {
+      "slug": "metropole-cincinnati",
+      "title": "Metropole",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:39.538Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -6116,6 +7441,26 @@
       "siteFailures": []
     },
     {
+      "slug": "sotto-cincinnati",
+      "title": "Sotto",
+      "city": "Cincinnati",
+      "stateProvince": "Ohio",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:40:37.473Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "sparrow-wolf-las-vegas",
       "title": "Sparrow + Wolf",
       "city": "Las Vegas",
@@ -6130,6 +7475,26 @@
       "completeness": 67,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T02:55:56.039Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "stock-hill-kansas-city",
+      "title": "Stock Hill",
+      "city": "Kansas City",
+      "stateProvince": "Missouri",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:41:22.000Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -6541,6 +7906,24 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "pier-w-cleveland",
+      "title": "Pier W",
+      "city": "Cleveland",
+      "stateProvince": "Ohio",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 72,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T11:43:29.750Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
