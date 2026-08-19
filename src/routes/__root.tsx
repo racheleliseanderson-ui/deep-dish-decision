@@ -117,7 +117,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
-const themeInit = `try{var d=document.documentElement;var m=localStorage.getItem("rih-theme");if(m!=="light"){d.classList.add("dark")}var c=localStorage.getItem("rih-contrast");if(c==="mono"){d.classList.add("mode-mono")}else if(c==="cvd"){d.classList.add("mode-cvd")}var l=localStorage.getItem("rih-locale");if(l==="es"){d.lang="es"}}catch(e){document.documentElement.classList.add("dark")}`;
+const themeInit = `try{var d=document.documentElement;var t=localStorage.getItem("rih-theme");var c=localStorage.getItem("rih-contrast");if(t==="colorblind"||c==="cvd"){d.classList.add("dark");d.classList.add("mode-cvd")}else if(t!=="light"){d.classList.add("dark")}d.lang="en"}catch(e){document.documentElement.classList.add("dark")}`;
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
