@@ -2,6 +2,389 @@
   "runs": [
     {
       "kind": "enrich-owned",
+      "startedAt": "2026-08-19T20:08:31.252Z",
+      "finishedAt": "2026-08-19T20:10:28.823Z",
+      "batchSize": 27,
+      "cities": [
+        "Orlando, Florida",
+        "Portland, Oregon",
+        "San Jose, California",
+        "Virginia Beach, Virginia"
+      ],
+      "resolved": 26,
+      "unresolved": 1,
+      "deferred": 0,
+      "avgCompleteness": 62,
+      "corpusEnriched": 467,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 27
+      },
+      "retries": 0,
+      "failures": 1,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T20-08-31-253Z-enrich-owned",
+      "records": [
+        {
+          "slug": "dovecote-orlando",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "eem-portland",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "coquine-portland",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "nong-s-khao-man-gai-portland",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "ava-gene-s-portland",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "st-jack-portland",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "andina-portland",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 17"
+          ]
+        },
+        {
+          "slug": "adega-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "mezcal-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "the-table-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "original-joe-s-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 8",
+            "playwright 3"
+          ]
+        },
+        {
+          "slug": "poor-house-bistro-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "teske-s-germania-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "henry-s-hi-life-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "la-victoria-taqueria-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "scott-s-seafood-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "habana-cuba-san-jose",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 15",
+            "playwright 3"
+          ]
+        },
+        {
+          "slug": "catch-31-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "tautog-s-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "esoteric-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "terrapin-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "waterman-s-surfside-grille-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "cp-shuckers-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 1",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "bay-local-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "hot-tuna-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "doc-taylor-s-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "isle-of-capri-virginia-beach",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-19T20:02:58.066Z",
+      "finishedAt": "2026-08-19T20:02:58.099Z",
+      "cities": [
+        {
+          "city": "Riverside, CA",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Orlando, FL",
+          "found": 11,
+          "inserted": 11,
+          "duplicates": 0
+        },
+        {
+          "city": "San Antonio, TX",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Portland, OR",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "San Jose, CA",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Virginia Beach, VA",
+          "found": 10,
+          "inserted": 10,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 61,
+      "duplicatesSkipped": 0,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T20-02-58-066Z-seed-listings",
+      "insertedSlugs": [
+        "mario-s-place-riverside",
+        "w-wolfskill-riverside",
+        "simple-simon-s-riverside",
+        "proabition-riverside",
+        "heroes-restaurant-brewery-riverside",
+        "lake-alice-trading-co-riverside",
+        "mandixpress-riverside",
+        "las-campanas-riverside",
+        "tio-s-tacos-riverside",
+        "anchos-southwest-grill-riverside",
+        "knife-spoon-orlando",
+        "kadence-orlando",
+        "soseki-orlando",
+        "kabooki-sushi-orlando",
+        "the-ravenous-pig-orlando",
+        "capa-orlando",
+        "domu-orlando",
+        "prato-orlando",
+        "kaya-orlando",
+        "papa-llama-orlando",
+        "dovecote-orlando",
+        "mixtli-san-antonio",
+        "southerleigh-san-antonio",
+        "bliss-san-antonio",
+        "bohanan-s-san-antonio",
+        "clementine-san-antonio",
+        "boudro-s-san-antonio",
+        "magpie-san-antonio",
+        "paloma-blanca-san-antonio",
+        "dough-pizzeria-napoletana-san-antonio",
+        "la-fonda-on-main-san-antonio",
+        "hat-yai-portland",
+        "gado-gado-portland",
+        "screen-door-portland",
+        "canard-portland",
+        "eem-portland",
+        "coquine-portland",
+        "nong-s-khao-man-gai-portland",
+        "ava-gene-s-portland",
+        "st-jack-portland",
+        "andina-portland",
+        "adega-san-jose",
+        "mezcal-san-jose",
+        "the-table-san-jose",
+        "original-joe-s-san-jose",
+        "poor-house-bistro-san-jose",
+        "teske-s-germania-san-jose",
+        "henry-s-hi-life-san-jose",
+        "la-victoria-taqueria-san-jose",
+        "scott-s-seafood-san-jose",
+        "habana-cuba-san-jose",
+        "catch-31-virginia-beach",
+        "tautog-s-virginia-beach",
+        "esoteric-virginia-beach",
+        "terrapin-virginia-beach",
+        "waterman-s-surfside-grille-virginia-beach",
+        "cp-shuckers-virginia-beach",
+        "bay-local-virginia-beach",
+        "hot-tuna-virginia-beach",
+        "doc-taylor-s-virginia-beach",
+        "isle-of-capri-virginia-beach"
+      ]
+    },
+    {
+      "kind": "enrich-owned",
       "startedAt": "2026-08-19T12:25:23.456Z",
       "finishedAt": "2026-08-19T12:29:46.031Z",
       "batchSize": 17,
