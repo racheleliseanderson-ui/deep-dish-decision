@@ -137,6 +137,8 @@ for (const record of batch) {
 
   entry.meta.completeness = completeness(record, entry).score;
   store.records[record.slug] = entry;
+  store.generatedAt = new Date().toISOString();
+  writeJson(PATHS.enrichment, store);
 
   console.log(
     `${record.slug.padEnd(28)} ${String(entry.meta.matchStatus).padEnd(12)} completeness ${String(entry.meta.completeness).padStart(3)}%${notes.length ? `  (${notes.join(", ")})` : ""}`,
