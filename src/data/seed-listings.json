@@ -1,6 +1,6 @@
 {
   "note": "Controlled geographic seeds for metros not yet in the corpus. Every entry is a real named establishment with a public listing or official site. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
-  "generatedAt": "2026-08-19T11:40:00.000Z",
+  "generatedAt": "2026-08-19T20:00:00.000Z",
   "batches": [
     {
       "city": "Atlanta",
@@ -2466,6 +2466,543 @@
           "address": "Cleveland, OH",
           "cuisineTags": [
             "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Riverside",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Mario's Place",
+          "website": "https://www.mariosplace.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "W. Wolfskill",
+          "website": "https://wwolfskill.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Simple Simon's",
+          "website": "https://www.simplesimonsbakerybistro.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Bakery",
+            "American"
+          ]
+        },
+        {
+          "title": "ProAbition",
+          "website": "https://proabition.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Heroes Restaurant & Brewery",
+          "website": "https://www.heroesriverside.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Lake Alice Trading Co.",
+          "website": "https://www.lakealicetradingco.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "MandiXpress",
+          "website": "https://mandixpress.co/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Yemeni"
+          ]
+        },
+        {
+          "title": "Las Campanas",
+          "website": "https://www.missioninn.com/food-emporium/las-campanas-mexican-cuisine",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Tio's Tacos",
+          "website": "http://www.tiostacos1.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Anchos Southwest Grill",
+          "website": "https://anchos.net/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Mexican",
+            "Southwestern"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Orlando",
+      "stateCode": "FL",
+      "listings": [
+        {
+          "title": "Knife & Spoon",
+          "website": "https://www.knifeandspoonrc.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Steak",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Kadence",
+          "website": "https://kadenceorlando.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Soseki",
+          "website": "https://www.sosekifl.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Kabooki Sushi",
+          "website": "https://www.kabookisushi.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "The Ravenous Pig",
+          "website": "https://theravenouspig.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Capa",
+          "website": "https://www.capasteakhouse.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Domu",
+          "website": "https://domufl.squarespace.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Ramen"
+          ]
+        },
+        {
+          "title": "Prato",
+          "website": "https://www.pratoitalian.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Kaya",
+          "website": "https://www.kayaorlando.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Filipino"
+          ]
+        },
+        {
+          "title": "Papa Llama",
+          "website": "https://www.papallamaorl.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Peruvian"
+          ]
+        },
+        {
+          "title": "DoveCote",
+          "website": "https://www.dovecoteorlando.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "French"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "San Antonio",
+      "stateCode": "TX",
+      "listings": [
+        {
+          "title": "Mixtli",
+          "website": "https://restaurantmixtli.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Southerleigh",
+          "website": "https://www.southerleighatpearl.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Bliss",
+          "website": "https://foodisbliss.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Bohanan's",
+          "website": "https://bohanans.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Steak",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Clementine",
+          "website": "https://www.clementine-sa.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Boudro's",
+          "website": "https://www.boudros.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Magpie",
+          "website": "https://magpie.us/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Paloma Blanca",
+          "website": "https://www.palomablanca.net/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Dough Pizzeria Napoletana",
+          "website": "https://www.doughpizzeria.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Italian",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "La Fonda on Main",
+          "website": "https://www.lafondaonmain.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Portland",
+      "stateCode": "OR",
+      "listings": [
+        {
+          "title": "Hat Yai",
+          "website": "https://www.hatyaipdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Gado Gado",
+          "website": "https://gadogadopdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Indonesian"
+          ]
+        },
+        {
+          "title": "Screen Door",
+          "website": "https://screendoorrestaurant.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Southern"
+          ]
+        },
+        {
+          "title": "Canard",
+          "website": "https://canardrestaurant.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Eem",
+          "website": "https://eempdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Coquine",
+          "website": "https://coquinepdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Nong's Khao Man Gai",
+          "website": "https://khaomangai.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Ava Gene's",
+          "website": "https://avagenes.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "St. Jack",
+          "website": "https://stjackpdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Andina",
+          "website": "https://www.andinarestaurant.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Peruvian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "San Jose",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Adega",
+          "website": "https://adegarest.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Portuguese"
+          ]
+        },
+        {
+          "title": "Mezcal",
+          "website": "https://mezcalsj.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "The Table",
+          "website": "https://thetablesj.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Original Joe's",
+          "website": "https://www.sanjoseoriginaljoes.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Poor House Bistro",
+          "website": "https://poorhousebistro.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Creole"
+          ]
+        },
+        {
+          "title": "Teske's Germania",
+          "website": "https://teskes-germania.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "German"
+          ]
+        },
+        {
+          "title": "Henry's Hi-Life",
+          "website": "https://henryshilife.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Steak",
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "La Victoria Taqueria",
+          "website": "https://www.lavicsj.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Scott's Seafood",
+          "website": "https://scottsseafoodsj.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Habana Cuba",
+          "website": "https://998cuba.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Cuban"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Virginia Beach",
+      "stateCode": "VA",
+      "listings": [
+        {
+          "title": "Catch 31",
+          "website": "https://www.catch31.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Tautog's",
+          "website": "https://www.tautogs.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Esoteric",
+          "website": "https://esotericvb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Terrapin",
+          "website": "https://www.terrapinvb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Waterman's Surfside Grille",
+          "website": "https://www.watermans.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "CP Shuckers",
+          "website": "https://www.cpshuckers.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Bay Local",
+          "website": "https://baylocalvb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "Hot Tuna",
+          "website": "https://www.hottunavb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Doc Taylor's",
+          "website": "https://www.doctaylors.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "American",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Isle of Capri",
+          "website": "https://isleofcaprivb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Italian",
+            "Seafood"
           ]
         }
       ]
