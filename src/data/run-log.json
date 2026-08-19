@@ -1,6 +1,38 @@
 {
   "runs": [
     {
+      "kind": "retire-closed",
+      "startedAt": "2026-08-19T20:41:14.354Z",
+      "finishedAt": "2026-08-19T20:41:14.404Z",
+      "slugs": [
+        "no-9-park-boston",
+        "menton-boston",
+        "sportello-boston"
+      ],
+      "records": [
+        {
+          "slug": "no-9-park-boston",
+          "operator": "Barbara Lynch; Lorraine Tomlinson-Hall, COO, Barbara Lynch Collective",
+          "source": "https://boston.eater.com/2024/10/9/24266084/barbara-lynch-restaurant-closures-no-9-park-the-rudder-b-and-g-oysters",
+          "closedOn": "2024-12-31"
+        },
+        {
+          "slug": "menton-boston",
+          "operator": "Barbara Lynch Collective",
+          "source": "https://boston.eater.com/2024/1/5/24027113/menton-sportello-drink-closures-barbara-lynch",
+          "closedOn": "2024-01-05"
+        },
+        {
+          "slug": "sportello-boston",
+          "operator": "Barbara Lynch Collective",
+          "source": "https://boston.eater.com/2024/1/5/24027113/menton-sportello-drink-closures-barbara-lynch",
+          "closedOn": "2024-01-05"
+        }
+      ],
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T20-41-14-360Z-retire-closed",
+      "successor": ""
+    },
+    {
       "kind": "enrich-owned",
       "startedAt": "2026-08-19T20:08:31.252Z",
       "finishedAt": "2026-08-19T20:10:28.823Z",

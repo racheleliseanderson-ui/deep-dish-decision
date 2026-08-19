@@ -19,6 +19,7 @@ import {
   writeJson,
 } from "./lib.mjs";
 import { STATES } from "./regions.mjs";
+import { isRetiredListing, retiredIndex } from "./retire-closed.mjs";
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -58,7 +59,11 @@ for (const r of dataset.records) {
   byNameCity.add(`${(r.title || "").toLowerCase().trim()}|${(r.city || "").toLowerCase()}`);
 }
 
+const retired = retiredIndex(readJson(PATHS.retired, { records: [] }));
+
 function isDuplicate(listing, city) {
+  const retiredReason = isRetiredListing(listing, city, retired);
+  if (retiredReason) return retiredReason;
   if (listing.phone && byPhone.has(normalizePhone(listing.phone))) return "phone";
   if (listing.website && byHost.has(normalizeHost(listing.website))) return "website";
   const key = `${listing.title.toLowerCase().trim()}|${city.toLowerCase()}`;

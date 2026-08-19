@@ -1,0 +1,48 @@
+{
+  "note": "Restaurants removed after a first-party or named operator source said this specific restaurant is permanently closed. Slug and enrichment are dropped. Never rewritten onto a successor.",
+  "generatedAt": "2026-08-19T20:41:14.354Z",
+  "records": [
+    {
+      "slug": "no-9-park-boston",
+      "title": "No. 9 Park",
+      "city": "Boston",
+      "stateProvince": "Massachusetts",
+      "website": "https://www.no9park.com/",
+      "operator": "Barbara Lynch; Lorraine Tomlinson-Hall, COO, Barbara Lynch Collective",
+      "source": "https://boston.eater.com/2024/10/9/24266084/barbara-lynch-restaurant-closures-no-9-park-the-rudder-b-and-g-oysters",
+      "closedOn": "2024-12-31",
+      "quote": "Lynch said in a statement on the closures that she and her fellow shareholders were not positioned to make the investment required. COO Lorraine Tomlinson-Hall confirmed No. 9 Park would shut down after service on December 31.",
+      "note": "Nine is a different restaurant. Do not rewrite this case file onto ninerg.com or any later occupant of 9 Park Street.",
+      "successor": "",
+      "retiredAt": "2026-08-19T20:41:14.354Z"
+    },
+    {
+      "slug": "menton-boston",
+      "title": "Menton",
+      "city": "Boston",
+      "stateProvince": "Massachusetts",
+      "website": "https://www.mentonboston.com/",
+      "operator": "Barbara Lynch Collective",
+      "source": "https://boston.eater.com/2024/1/5/24027113/menton-sportello-drink-closures-barbara-lynch",
+      "closedOn": "2024-01-05",
+      "quote": "The Barbara Lynch Collective announced in a January 5, 2024 press release that Menton, Sportello, and Drink are closed, effective immediately.",
+      "note": "Fort Point space was offered for sale. Do not rewrite this case file onto a later occupant.",
+      "successor": "",
+      "retiredAt": "2026-08-19T20:41:14.354Z"
+    },
+    {
+      "slug": "sportello-boston",
+      "title": "Sportello",
+      "city": "Boston",
+      "stateProvince": "Massachusetts",
+      "website": "https://www.sportelloboston.com/",
+      "operator": "Barbara Lynch Collective",
+      "source": "https://boston.eater.com/2024/1/5/24027113/menton-sportello-drink-closures-barbara-lynch",
+      "closedOn": "2024-01-05",
+      "quote": "The Barbara Lynch Collective announced in a January 5, 2024 press release that Menton, Sportello, and Drink are closed, effective immediately.",
+      "note": "Fort Point space was offered for sale. Do not rewrite this case file onto a later occupant.",
+      "successor": "",
+      "retiredAt": "2026-08-19T20:41:14.354Z"
+    }
+  ]
+}
