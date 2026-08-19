@@ -1,6 +1,579 @@
 {
   "runs": [
     {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-19T21:03:24.012Z",
+      "finishedAt": "2026-08-19T21:07:18.032Z",
+      "batchSize": 49,
+      "cities": [
+        "Jacksonville, Florida",
+        "Providence, Rhode Island",
+        "Milwaukee, Wisconsin",
+        "Raleigh, North Carolina",
+        "Oklahoma City, Oklahoma",
+        "Louisville, Kentucky"
+      ],
+      "resolved": 49,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 62,
+      "corpusEnriched": 513,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 49
+      },
+      "retries": 3,
+      "failures": 0,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T21-03-24-012Z-enrich-owned",
+      "records": [
+        {
+          "slug": "restaurant-orsay-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 12",
+            "playwright 4"
+          ]
+        },
+        {
+          "slug": "matthew-s-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "cowford-chophouse-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "marker-32-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "river-post-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "aqua-grill-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "ocean-60-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "bb-s-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 6",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "gracie-s-providence",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "al-forno-providence",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "persimmon-providence",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "new-rivers-providence",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "mill-s-tavern-providence",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "nick-s-on-broadway-providence",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "courtland-club-providence",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "pot-au-feu-providence",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "sanford-milwaukee",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "amilinda-milwaukee",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 3",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "morel-milwaukee",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "lake-park-bistro-milwaukee",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "birch-milwaukee",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "carnevor-milwaukee",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "bacchus-milwaukee",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "story-hill-bkc-milwaukee",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 12",
+            "playwright 4"
+          ]
+        },
+        {
+          "slug": "sorella-milwaukee",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "death-taxes-raleigh",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "second-empire-raleigh",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "crawford-son-raleigh",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "jolie-raleigh",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "herons-raleigh",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "hummingbird-raleigh",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "mandolin-raleigh",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "bida-manda-raleigh",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "grey-sweater-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "nonesuch-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "cheever-s-cafe-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "vast-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "ranch-steakhouse-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "red-primesteak-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "cattlemen-s-steakhouse-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "610-magnolia-louisville",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "jack-fry-s-louisville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "proof-on-main-louisville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "repeal-louisville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "seviche-louisville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "le-moo-louisville",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 3",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "decade-louisville",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "buck-s-louisville",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "varanese-louisville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-19T21:02:46.876Z",
+      "finishedAt": "2026-08-19T21:02:46.911Z",
+      "cities": [
+        {
+          "city": "Jacksonville, FL",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Providence, RI",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Milwaukee, WI",
+          "found": 9,
+          "inserted": 9,
+          "duplicates": 0
+        },
+        {
+          "city": "Raleigh, NC",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Oklahoma City, OK",
+          "found": 7,
+          "inserted": 7,
+          "duplicates": 0
+        },
+        {
+          "city": "Louisville, KY",
+          "found": 9,
+          "inserted": 9,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 49,
+      "duplicatesSkipped": 0,
+      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T21-02-46-876Z-seed-listings",
+      "insertedSlugs": [
+        "restaurant-orsay-jacksonville",
+        "matthew-s-jacksonville",
+        "cowford-chophouse-jacksonville",
+        "marker-32-jacksonville",
+        "river-post-jacksonville",
+        "aqua-grill-jacksonville",
+        "ocean-60-jacksonville",
+        "bb-s-jacksonville",
+        "gracie-s-providence",
+        "al-forno-providence",
+        "persimmon-providence",
+        "new-rivers-providence",
+        "mill-s-tavern-providence",
+        "nick-s-on-broadway-providence",
+        "courtland-club-providence",
+        "pot-au-feu-providence",
+        "sanford-milwaukee",
+        "amilinda-milwaukee",
+        "morel-milwaukee",
+        "lake-park-bistro-milwaukee",
+        "birch-milwaukee",
+        "carnevor-milwaukee",
+        "bacchus-milwaukee",
+        "story-hill-bkc-milwaukee",
+        "sorella-milwaukee",
+        "death-taxes-raleigh",
+        "second-empire-raleigh",
+        "crawford-son-raleigh",
+        "jolie-raleigh",
+        "herons-raleigh",
+        "hummingbird-raleigh",
+        "mandolin-raleigh",
+        "bida-manda-raleigh",
+        "grey-sweater-oklahoma-city",
+        "nonesuch-oklahoma-city",
+        "cheever-s-cafe-oklahoma-city",
+        "vast-oklahoma-city",
+        "ranch-steakhouse-oklahoma-city",
+        "red-primesteak-oklahoma-city",
+        "cattlemen-s-steakhouse-oklahoma-city",
+        "610-magnolia-louisville",
+        "jack-fry-s-louisville",
+        "proof-on-main-louisville",
+        "repeal-louisville",
+        "seviche-louisville",
+        "le-moo-louisville",
+        "decade-louisville",
+        "buck-s-louisville",
+        "varanese-louisville"
+      ]
+    },
+    {
       "kind": "retire-closed",
       "startedAt": "2026-08-19T20:41:14.354Z",
       "finishedAt": "2026-08-19T20:41:14.404Z",

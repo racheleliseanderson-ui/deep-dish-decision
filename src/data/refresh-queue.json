@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T20:41:14.472Z",
+  "generatedAt": "2026-08-19T21:07:41.768Z",
   "settings": {
     "tiers": {
       "A": 30,
@@ -11,16 +11,16 @@
     "hygieneBatchSize": 25
   },
   "totals": {
-    "records": 464,
-    "hygiene": 426,
+    "records": 513,
+    "hygiene": 474,
     "neverEnriched": 0,
-    "thin": 413,
+    "thin": 461,
     "siteFailures": 9,
     "reviewDue": 11,
     "staleA": 0,
     "staleB": 0,
     "staleC": 0,
-    "dueNow": 426
+    "dueNow": 474
   },
   "hygiene": [
     "mr-szechuan",
@@ -46,6 +46,7 @@
     "bazaar-meat-las-vegas",
     "bestia",
     "billy-goat-tavern-the-original",
+    "buck-s-louisville",
     "canje-austin",
     "carson-kitchen-las-vegas",
     "chengdu-bistro-west-town",
@@ -81,6 +82,7 @@
     "lao-sze-chuan",
     "lao-sze-chuan-downtown",
     "le-bernardin",
+    "le-moo-louisville",
     "love-handle-indianapolis",
     "mabel-s-bbq-cleveland",
     "mama-ji-s",
@@ -94,6 +96,7 @@
     "port-fonda-kansas-city",
     "restaurant-alma-minneapolis",
     "royal-sushi-izakaya-philadelphia",
+    "sanford-milwaukee",
     "simple-simon-s-riverside",
     "simply-pho",
     "sokolowski-s-university-inn-cleveland",
@@ -112,6 +115,8 @@
     "virt-honest-craft-phoenix",
     "xiaolong-dumpling",
     "zula-cincinnati",
+    "610-magnolia-louisville",
+    "amilinda-milwaukee",
     "anchos-southwest-grill-riverside",
     "angelo-s-pizzeria-philadelphia",
     "anima-by-edo-las-vegas",
@@ -121,12 +126,15 @@
     "buddakan",
     "buddy-s-pizza-detroit",
     "canard-portland",
+    "carnevor-milwaukee",
     "cart-driver-denver",
     "chef-xiong-taste-of-szechuan",
     "chengdu-impression-restaurant",
     "chubby-cattle-bbq-little-tokyo",
     "cooking-girl",
     "coquine-portland",
+    "courtland-club-providence",
+    "decade-louisville",
     "domu-orlando",
     "edison-food-drink-lab-tampa",
     "edwins-cleveland",
@@ -145,7 +153,9 @@
     "madre-oaxacan-restaurant-and-mezcaleria",
     "mala-sichuan-bistro",
     "milktooth-indianapolis",
+    "morel-milwaukee",
     "neptune-oyster-boston",
+    "nonesuch-oklahoma-city",
     "olamaie-austin",
     "original-joe-s-san-jose",
     "owamni-minneapolis",
@@ -176,17 +186,23 @@
     "yume-wo-katare-boston",
     "abigail-street-cincinnati",
     "aff-re-kansas-city",
+    "al-forno-providence",
     "animae-san-diego",
     "ariete-miami",
     "baobab-fare-detroit",
     "barcelona-columbus",
     "barley-swine-austin",
+    "bb-s-jacksonville",
+    "birch-milwaukee",
     "boia-de-miami",
     "boudro-s-san-antonio",
     "cap-city-fine-diner-columbus",
     "capa-orlando",
+    "cattlemen-s-steakhouse-oklahoma-city",
     "causa-washington",
+    "cheever-s-cafe-oklahoma-city",
     "chong-qing-xiao-mian",
+    "death-taxes-raleigh",
     "dizengoff-philadelphia",
     "esther-s-kitchen-las-vegas",
     "extra-virgin-kansas-city",
@@ -195,6 +211,7 @@
     "fnb-phoenix",
     "friday-saturday-sunday-philadelphia",
     "giovanni-s-ristorante-cleveland",
+    "grey-sweater-oklahoma-city",
     "guard-and-grace-denver",
     "gunshow-atlanta",
     "habana-cuba-san-jose",
@@ -223,12 +240,16 @@
     "lucky-s-cafe-cleveland",
     "mandixpress-riverside",
     "mandolin-aegean-bistro-miami",
+    "mandolin-raleigh",
     "maple-ash",
     "maplewood-kitchen-and-bar-cincinnati",
     "mario-s-place-riverside",
+    "marker-32-jacksonville",
     "mastro-s-city-hall-phoenix",
     "miller-union-atlanta",
     "minibar-by-jos-andr-s-washington",
+    "new-rivers-providence",
+    "nick-s-on-broadway-providence",
     "nong-s-khao-man-gai-portland",
     "oak-ola-tampa",
     "odd-duck-austin",
@@ -237,6 +258,7 @@
     "pa-la-phoenix",
     "palette-tea-house",
     "papa-llama-orlando",
+    "persimmon-providence",
     "philippe-the-original",
     "pineapple-and-pearls-washington",
     "pizzeria-bianco-phoenix",
@@ -245,6 +267,10 @@
     "prato-orlando",
     "puritan-company-boston",
     "q39-kansas-city",
+    "ranch-steakhouse-oklahoma-city",
+    "red-primesteak-oklahoma-city",
+    "restaurant-orsay-jacksonville",
+    "river-post-jacksonville",
     "rococo-steak-tampa",
     "rooster-and-the-till-tampa",
     "rosa-mexicano",
@@ -285,14 +311,17 @@
     "alla-vita",
     "allora-sacramento",
     "amor-loco",
+    "aqua-grill-jacksonville",
     "aria-atlanta",
     "atlanta-fish-market-atlanta",
     "au-cheval",
     "ava-gene-s-portland",
+    "bacchus-milwaukee",
     "bar-la-grassa-minneapolis",
     "bastion-nashville",
     "bay-local-virginia-beach",
     "beholder-indianapolis",
+    "bida-manda-raleigh",
     "bliss-san-antonio",
     "blue-point-grille-cleveland",
     "boca-cincinnati",
@@ -307,6 +336,8 @@
     "chet-s-dallas",
     "colita-minneapolis",
     "committee-boston",
+    "cowford-chophouse-jacksonville",
+    "crawford-son-raleigh",
     "customshop-charlotte",
     "demi-minneapolis",
     "durant-s-phoenix",
@@ -319,10 +350,13 @@
     "grey-ghost-detroit-detroit",
     "hai-hai-minneapolis",
     "hakkasan-miami-miami",
+    "herons-raleigh",
     "home-restaurant",
+    "hummingbird-raleigh",
     "husk-nashville-nashville",
     "jeffrey-s-austin",
     "joe-s-stone-crab-miami",
+    "jolie-raleigh",
     "juniper-ivy-san-diego",
     "katzinger-s-delicatessen-columbus",
     "kaya-orlando",
@@ -331,6 +365,7 @@
     "la-cuchara-baltimore",
     "la-fonda-on-main-san-antonio",
     "la-victoria-taqueria-san-jose",
+    "lake-park-bistro-milwaukee",
     "late-harvest-kitchen-indianapolis",
     "lazy-betty-atlanta",
     "lindey-s-columbus",
@@ -340,28 +375,37 @@
     "marble-room-steaks-and-raw-bar-cleveland",
     "meat-potatoes-pittsburgh",
     "midwood-smokehouse-charlotte",
+    "mill-s-tavern-providence",
     "mise-en-place-tampa",
     "mita-s-cincinnati",
     "mixtli-san-antonio",
     "moon-rabbit-washington",
     "mulvaney-s-b-l-sacramento",
     "novel-kansas-city",
+    "ocean-60-jacksonville",
     "paloma-blanca-san-antonio",
     "partage-las-vegas",
     "perry-s-steakhouse-grille",
+    "pot-au-feu-providence",
     "proabition-riverside",
+    "proof-on-main-louisville",
     "rasika-washington",
+    "repeal-louisville",
     "river-roast",
     "rolf-and-daughters-nashville",
     "salazar-cincinnati",
     "sarma-boston",
     "screen-door-portland",
+    "second-empire-raleigh",
+    "seviche-louisville",
     "siena-tavern",
+    "sorella-milwaukee",
     "soseki-orlando",
     "spoon-and-stable-minneapolis",
     "st-elmo-steak-house-indianapolis",
     "st-jack-portland",
     "stk-steakhouse",
+    "story-hill-bkc-milwaukee",
     "suraya-philadelphia",
     "tarbell-s-phoenix",
     "tavernetta-denver",
@@ -378,6 +422,8 @@
     "uchiko-austin",
     "ultreia-denver",
     "uni-boston",
+    "varanese-louisville",
+    "vast-oklahoma-city",
     "versailles-restaurant-miami",
     "vida-indianapolis",
     "waterboy-sacramento",
@@ -405,12 +451,14 @@
     "fork-philadelphia",
     "franklin-barbecue-austin",
     "gado-gado-portland",
+    "gracie-s-providence",
     "henrietta-red-nashville",
     "her-place-supper-club-philadelphia",
     "hot-tuna-virginia-beach",
     "hubbard-grille-columbus",
     "il-porcellino",
     "isle-of-capri-virginia-beach",
+    "jack-fry-s-louisville",
     "joey-dtla",
     "kalaya-philadelphia",
     "kindred-charlotte",
@@ -935,6 +983,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
+      "siteFailures": []
+    },
+    {
+      "slug": "buck-s-louisville",
+      "title": "Buck's",
+      "city": "Louisville",
+      "stateProvince": "Kentucky",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:06:09.103Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -1638,6 +1706,26 @@
       "siteFailures": []
     },
     {
+      "slug": "le-moo-louisville",
+      "title": "Le Moo",
+      "city": "Louisville",
+      "stateProvince": "Kentucky",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:06:04.589Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "love-handle-indianapolis",
       "title": "Love Handle",
       "city": "Indianapolis",
@@ -1895,6 +1983,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "sanford-milwaukee",
+      "title": "Sanford",
+      "city": "Milwaukee",
+      "stateProvince": "Wisconsin",
+      "priority": 426,
+      "reasons": [
+        "thin-44"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:35.125Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -2258,6 +2366,46 @@
       "siteFailures": []
     },
     {
+      "slug": "610-magnolia-louisville",
+      "title": "610 Magnolia",
+      "city": "Louisville",
+      "stateProvince": "Kentucky",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:53.965Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "amilinda-milwaukee",
+      "title": "Amilinda",
+      "city": "Milwaukee",
+      "stateProvince": "Wisconsin",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:36.906Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "anchos-southwest-grill-riverside",
       "title": "Anchos Southwest Grill",
       "city": "Riverside",
@@ -2438,6 +2586,26 @@
       "siteFailures": []
     },
     {
+      "slug": "carnevor-milwaukee",
+      "title": "Carnevor",
+      "city": "Milwaukee",
+      "stateProvince": "Wisconsin",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:56.657Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "cart-driver-denver",
       "title": "Cart-Driver",
       "city": "Denver",
@@ -2552,6 +2720,46 @@
       "completeness": 50,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T20:08:42.714Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "courtland-club-providence",
+      "title": "Courtland Club",
+      "city": "Providence",
+      "stateProvince": "Rhode Island",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:15.237Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "decade-louisville",
+      "title": "Decade",
+      "city": "Louisville",
+      "stateProvince": "Kentucky",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:06:08.214Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -2918,6 +3126,26 @@
       "siteFailures": []
     },
     {
+      "slug": "morel-milwaukee",
+      "title": "Morel",
+      "city": "Milwaukee",
+      "stateProvince": "Wisconsin",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:48.903Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "neptune-oyster-boston",
       "title": "Neptune Oyster",
       "city": "Boston",
@@ -2935,6 +3163,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "nonesuch-oklahoma-city",
+      "title": "Nonesuch",
+      "city": "Oklahoma City",
+      "stateProvince": "Oklahoma",
+      "priority": 420,
+      "reasons": [
+        "thin-50"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 50,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:42.382Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -3538,6 +3786,26 @@
       "siteFailures": []
     },
     {
+      "slug": "al-forno-providence",
+      "title": "Al Forno",
+      "city": "Providence",
+      "stateProvince": "Rhode Island",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:02.732Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "animae-san-diego",
       "title": "Animae",
       "city": "San Diego",
@@ -3638,6 +3906,46 @@
       "siteFailures": []
     },
     {
+      "slug": "bb-s-jacksonville",
+      "title": "bb's",
+      "city": "Jacksonville",
+      "stateProvince": "Florida",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:03:52.975Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "birch-milwaukee",
+      "title": "Birch",
+      "city": "Milwaukee",
+      "stateProvince": "Wisconsin",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:54.463Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "boia-de-miami",
       "title": "Boia De",
       "city": "Miami",
@@ -3718,6 +4026,26 @@
       "siteFailures": []
     },
     {
+      "slug": "cattlemen-s-steakhouse-oklahoma-city",
+      "title": "Cattlemen's Steakhouse",
+      "city": "Oklahoma City",
+      "stateProvince": "Oklahoma",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:52.276Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "causa-washington",
       "title": "Causa",
       "city": "Washington",
@@ -3738,6 +4066,26 @@
       "siteFailures": []
     },
     {
+      "slug": "cheever-s-cafe-oklahoma-city",
+      "title": "Cheever's Cafe",
+      "city": "Oklahoma City",
+      "stateProvince": "Oklahoma",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:43.244Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "chong-qing-xiao-mian",
       "title": "Chong Qing Xiao Mian",
       "city": "San Francisco",
@@ -3755,6 +4103,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
+      "siteFailures": []
+    },
+    {
+      "slug": "death-taxes-raleigh",
+      "title": "Death & Taxes",
+      "city": "Raleigh",
+      "stateProvince": "North Carolina",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:08.796Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -3912,6 +4280,26 @@
       "completeness": 56,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T11:43:25.576Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "grey-sweater-oklahoma-city",
+      "title": "Grey Sweater",
+      "city": "Oklahoma City",
+      "stateProvince": "Oklahoma",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:39.824Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -4478,6 +4866,26 @@
       "siteFailures": []
     },
     {
+      "slug": "mandolin-raleigh",
+      "title": "Mandolin",
+      "city": "Raleigh",
+      "stateProvince": "North Carolina",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:26.707Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "maple-ash",
       "title": "Maple & Ash",
       "city": "Chicago",
@@ -4532,6 +4940,26 @@
       "completeness": 56,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T20:06:11.383Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "marker-32-jacksonville",
+      "title": "Marker 32",
+      "city": "Jacksonville",
+      "stateProvince": "Florida",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:03:37.983Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -4595,6 +5023,46 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "new-rivers-providence",
+      "title": "New Rivers",
+      "city": "Providence",
+      "stateProvince": "Rhode Island",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:06.854Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "nick-s-on-broadway-providence",
+      "title": "Nick's on Broadway",
+      "city": "Providence",
+      "stateProvince": "Rhode Island",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:13.755Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -4758,6 +5226,26 @@
       "siteFailures": []
     },
     {
+      "slug": "persimmon-providence",
+      "title": "Persimmon",
+      "city": "Providence",
+      "stateProvince": "Rhode Island",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:04.468Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "philippe-the-original",
       "title": "Philippe The Original",
       "city": "Los Angeles",
@@ -4912,6 +5400,86 @@
       "completeness": 56,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T11:41:07.960Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "ranch-steakhouse-oklahoma-city",
+      "title": "Ranch Steakhouse",
+      "city": "Oklahoma City",
+      "stateProvince": "Oklahoma",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:48.026Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "red-primesteak-oklahoma-city",
+      "title": "Red PrimeSteak",
+      "city": "Oklahoma City",
+      "stateProvince": "Oklahoma",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:49.841Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "restaurant-orsay-jacksonville",
+      "title": "Restaurant Orsay",
+      "city": "Jacksonville",
+      "stateProvince": "Florida",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:03:24.023Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "river-post-jacksonville",
+      "title": "River & Post",
+      "city": "Jacksonville",
+      "stateProvince": "Florida",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:03:40.955Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -5348,7 +5916,7 @@
       ],
       "hygiene": true,
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "completeness": 56,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-18T21:06:31.696Z",
@@ -5718,6 +6286,26 @@
       "siteFailures": []
     },
     {
+      "slug": "aqua-grill-jacksonville",
+      "title": "Aqua Grill",
+      "city": "Jacksonville",
+      "stateProvince": "Florida",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:03:42.269Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "aria-atlanta",
       "title": "Aria",
       "city": "Atlanta",
@@ -5798,6 +6386,26 @@
       "siteFailures": []
     },
     {
+      "slug": "bacchus-milwaukee",
+      "title": "Bacchus",
+      "city": "Milwaukee",
+      "stateProvince": "Wisconsin",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:59.371Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "bar-la-grassa-minneapolis",
       "title": "Bar La Grassa",
       "city": "Minneapolis",
@@ -5872,6 +6480,26 @@
       "completeness": 61,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T11:43:07.248Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "bida-manda-raleigh",
+      "title": "Bida Manda",
+      "city": "Raleigh",
+      "stateProvince": "North Carolina",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:37.667Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -6158,6 +6786,46 @@
       "siteFailures": []
     },
     {
+      "slug": "cowford-chophouse-jacksonville",
+      "title": "Cowford Chophouse",
+      "city": "Jacksonville",
+      "stateProvince": "Florida",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:03:32.238Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "crawford-son-raleigh",
+      "title": "Crawford & Son",
+      "city": "Raleigh",
+      "stateProvince": "North Carolina",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:16.383Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "customshop-charlotte",
       "title": "Customshop",
       "city": "Charlotte",
@@ -6398,6 +7066,26 @@
       "siteFailures": []
     },
     {
+      "slug": "herons-raleigh",
+      "title": "Herons",
+      "city": "Raleigh",
+      "stateProvince": "North Carolina",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:22.422Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "home-restaurant",
       "title": "Home Restaurant",
       "city": "Los Angeles",
@@ -6415,6 +7103,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-09",
       "reviewedAt": "2026-08-10",
+      "siteFailures": []
+    },
+    {
+      "slug": "hummingbird-raleigh",
+      "title": "Hummingbird",
+      "city": "Raleigh",
+      "stateProvince": "North Carolina",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:24.253Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -6475,6 +7183,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "jolie-raleigh",
+      "title": "Jolie",
+      "city": "Raleigh",
+      "stateProvince": "North Carolina",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:19.128Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -6632,6 +7360,26 @@
       "completeness": 61,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T20:09:20.297Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "lake-park-bistro-milwaukee",
+      "title": "Lake Park Bistro",
+      "city": "Milwaukee",
+      "stateProvince": "Wisconsin",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:49.841Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -6818,6 +7566,26 @@
       "siteFailures": []
     },
     {
+      "slug": "mill-s-tavern-providence",
+      "title": "Mill's Tavern",
+      "city": "Providence",
+      "stateProvince": "Rhode Island",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:08.745Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "mise-en-place-tampa",
       "title": "Mise en Place",
       "city": "Tampa",
@@ -6938,6 +7706,26 @@
       "siteFailures": []
     },
     {
+      "slug": "ocean-60-jacksonville",
+      "title": "Ocean 60",
+      "city": "Jacksonville",
+      "stateProvince": "Florida",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:03:44.363Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "paloma-blanca-san-antonio",
       "title": "Paloma Blanca",
       "city": "San Antonio",
@@ -6998,6 +7786,26 @@
       "siteFailures": []
     },
     {
+      "slug": "pot-au-feu-providence",
+      "title": "Pot au Feu",
+      "city": "Providence",
+      "stateProvince": "Rhode Island",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:04:16.106Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "proabition-riverside",
       "title": "ProAbition",
       "city": "Riverside",
@@ -7012,6 +7820,26 @@
       "completeness": 61,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T20:06:44.049Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "proof-on-main-louisville",
+      "title": "Proof on Main",
+      "city": "Louisville",
+      "stateProvince": "Kentucky",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:56.927Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -7035,6 +7863,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "repeal-louisville",
+      "title": "Repeal",
+      "city": "Louisville",
+      "stateProvince": "Kentucky",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:59.092Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -7138,6 +7986,46 @@
       "siteFailures": []
     },
     {
+      "slug": "second-empire-raleigh",
+      "title": "Second Empire",
+      "city": "Raleigh",
+      "stateProvince": "North Carolina",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:13.332Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "seviche-louisville",
+      "title": "Seviche",
+      "city": "Louisville",
+      "stateProvince": "Kentucky",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:06:01.726Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "siena-tavern",
       "title": "Siena Tavern",
       "city": "Chicago",
@@ -7155,6 +8043,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-09",
       "reviewedAt": "2026-08-10",
+      "siteFailures": []
+    },
+    {
+      "slug": "sorella-milwaukee",
+      "title": "Sorella",
+      "city": "Milwaukee",
+      "stateProvince": "Wisconsin",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:07.037Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -7255,6 +8163,26 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-09",
       "reviewedAt": "2026-08-10",
+      "siteFailures": []
+    },
+    {
+      "slug": "story-hill-bkc-milwaukee",
+      "title": "Story Hill BKC",
+      "city": "Milwaukee",
+      "stateProvince": "Wisconsin",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:01.955Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -7575,6 +8503,46 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-11",
       "reviewedAt": "2026-08-12",
+      "siteFailures": []
+    },
+    {
+      "slug": "varanese-louisville",
+      "title": "Varanese",
+      "city": "Louisville",
+      "stateProvince": "Kentucky",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:06:11.554Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "vast-oklahoma-city",
+      "title": "Vast",
+      "city": "Oklahoma City",
+      "stateProvince": "Oklahoma",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:45.324Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {
@@ -8118,6 +9086,26 @@
       "siteFailures": []
     },
     {
+      "slug": "gracie-s-providence",
+      "title": "Gracie's",
+      "city": "Providence",
+      "stateProvince": "Rhode Island",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:03:56.235Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
       "slug": "henrietta-red-nashville",
       "title": "Henrietta Red",
       "city": "Nashville",
@@ -8232,6 +9220,26 @@
       "completeness": 67,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T20:10:24.015Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "jack-fry-s-louisville",
+      "title": "Jack Fry's",
+      "city": "Louisville",
+      "stateProvince": "Kentucky",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:05:55.063Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
@@ -9103,6 +10111,24 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-17",
       "reviewedAt": "2026-08-18",
+      "siteFailures": []
+    },
+    {
+      "slug": "matthew-s-jacksonville",
+      "title": "Matthew's",
+      "city": "Jacksonville",
+      "stateProvince": "Florida",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 72,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-19T21:03:29.827Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
       "siteFailures": []
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T20:41:14.354Z",
+  "generatedAt": "2026-08-19T21:07:18.019Z",
   "records": {
     "canlis": {
       "google": {
@@ -37132,6 +37132,2630 @@
           "https://isleofcaprivb.com/contact/"
         ],
         "retrievedAt": "2026-08-19T20:10:24.015Z",
+        "playwrightPages": 0
+      }
+    },
+    "restaurant-orsay-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:03:24.023Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.restaurantorsay.com/menu",
+        "reservationUrl": "https://www.restaurantorsay.com/reservations-private-dining",
+        "reservationPlatform": "Direct",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 9043810909",
+            "sourceUrl": "https://www.restaurantorsay.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://www.restaurantorsay.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: French Restaurant",
+            "sourceUrl": "https://www.restaurantorsay.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 11:00-21:00; Tu 16:00-21:00; We 16:00-21:00; Th 16:00-21:00; Fr 16:00-22:00; Sa 11:00-22:00",
+            "sourceUrl": "https://www.restaurantorsay.com/"
+          },
+          {
+            "quote": "og:description: Restaurant Orsay in Jacksonville, FL. We are a French bistro incarnated in the American South and our menus feature a mix of traditional Parisian bistro classics, alongside dishes that feature French technique with southern influences.",
+            "sourceUrl": "https://www.restaurantorsay.com/"
+          },
+          {
+            "quote": "title: Home - Orsay - Restaurant in Jacksonville, FL",
+            "sourceUrl": "https://www.restaurantorsay.com/"
+          },
+          {
+            "quote": "og:description: Menu for Restaurant Orsay in Jacksonville, FL. Explore latest menu with photos and reviews.",
+            "sourceUrl": "https://www.restaurantorsay.com/menu"
+          },
+          {
+            "quote": "title: Menu - Orsay - Restaurant in Jacksonville, FL",
+            "sourceUrl": "https://www.restaurantorsay.com/menu"
+          },
+          {
+            "quote": "og:description: Find your Restaurant Orsay in Jacksonville, FL. Explore our location with directions and photos.",
+            "sourceUrl": "https://www.restaurantorsay.com/reservations-private-dining"
+          },
+          {
+            "quote": "title: Reservations and Private Dining - Orsay - Restaurant in Jacksonville, FL",
+            "sourceUrl": "https://www.restaurantorsay.com/reservations-private-dining"
+          },
+          {
+            "quote": "og:description: Upcoming events for Restaurant Orsay in Jacksonville, FL. Explore our local events with showtimes and tickets.",
+            "sourceUrl": "https://www.restaurantorsay.com/events-2"
+          },
+          {
+            "quote": "title: Events - Orsay - Restaurant in Jacksonville, FL",
+            "sourceUrl": "https://www.restaurantorsay.com/events-2"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.restaurantorsay.com/",
+          "https://www.restaurantorsay.com/menu",
+          "https://www.restaurantorsay.com/reservations-private-dining",
+          "https://www.restaurantorsay.com/events-2"
+        ],
+        "retrievedAt": "2026-08-19T21:03:24.023Z",
+        "playwrightPages": 4
+      }
+    },
+    "matthew-s-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:03:29.827Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 72
+      },
+      "site": {
+        "menuUrl": "https://matthewsrestaurant.com/menu",
+        "reservationUrl": "https://www.toasttab.com/matthews-restaurant-2107-hendricks-ave/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [
+          "a note on our tasting menus To ensure the integrity of the tasting experience, dietary restrictions require 48 hours notice.",
+          "wine pairings WE BELIEVE DINNER SHOULD BE MORE THAN A MEAL IT SHOULD ENLIVEN YOUR SENSES 48 hours notification is preferred for any dietary restrictions/allergens.",
+          "48 hours notification is preferred for any dietary restrictions/allergens."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private dining gift cards M club rewards MENU RESERVATIONS WINE LOUNGE Located in the heart of historic San Marco, Matthew’s Restaurant has been a cornerstone of Jacksonville’s fine dining scene for over 29 years.",
+        "groupPolicyLanguage": [
+          "Private dining gift cards M club rewards MENU RESERVATIONS WINE LOUNGE Located in the heart of historic San Marco, Matthew’s Restaurant has been a cornerstone of Jacksonville’s fine dining scene for over 29 years.",
+          "learn more view menus welcome to matthew's email list RESERVE YOUR TABLE LARGE PARTY RESERVATIONS We are pleased to accommodate parties of up to 10 guests in our main dining room.",
+          "For groups larger than 10, private dining arrangements are required.",
+          "Reservations for parties of 7 or more can be made by calling the restaurant directly."
+        ],
+        "dressCode": "Guests who do not meet our dress code may not be seated in the main dining room but can be accommodated in our lounge, subject to availability.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Matthew’s Restaurant, set in the heart of historic San Marco, celebrates 20 years of elevating the fine dining scene in Jacksonville",
+            "sourceUrl": "https://matthewsrestaurant.com/"
+          },
+          {
+            "quote": "title: Matthew's Restaurant - Homepage",
+            "sourceUrl": "https://matthewsrestaurant.com/"
+          },
+          {
+            "quote": "meta description: Matthew’s offers two private dining spaces for intimate or corporate celebrations.",
+            "sourceUrl": "https://matthewsrestaurant.com/private-dining"
+          },
+          {
+            "quote": "title: Private Dining - Matthew's Restaurant",
+            "sourceUrl": "https://matthewsrestaurant.com/private-dining"
+          },
+          {
+            "quote": "meta description: Enjoy our dinner menu or explore our nightly Chef",
+            "sourceUrl": "https://matthewsrestaurant.com/menu"
+          },
+          {
+            "quote": "title: Menu - Matthew's Restaurant",
+            "sourceUrl": "https://matthewsrestaurant.com/menu"
+          },
+          {
+            "quote": "meta description: Since opening its doors in 1997, Matthew’s Restaurant in San Marco has been one of Northeast Florida’s most distinctive restaurants.",
+            "sourceUrl": "https://matthewsrestaurant.com/about-matthew-s"
+          },
+          {
+            "quote": "title: About Us - Matthew's Restaurant",
+            "sourceUrl": "https://matthewsrestaurant.com/about-matthew-s"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://matthewsrestaurant.com/",
+          "https://matthewsrestaurant.com/private-dining",
+          "https://matthewsrestaurant.com/menu",
+          "https://matthewsrestaurant.com/about-matthew-s"
+        ],
+        "retrievedAt": "2026-08-19T21:03:29.827Z",
+        "playwrightPages": 0
+      }
+    },
+    "cowford-chophouse-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:03:32.238Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/egiftcards/cowford-chophouse-101-e-bay-st",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "If you are attending an event in our private dining room, please refer questions about attire to the event host.",
+        "groupPolicyLanguage": [
+          "If you are attending an event in our private dining room, please refer questions about attire to the event host.",
+          "The Rooftop is a popular destination for private events and does get bought out from time to time.",
+          "All parties larger than six guests are invited to coordinate with our Private Events Coordinator.",
+          "We cannot guarantee dinner service for parties larger than six guests on our Rooftop without prior coordination via our Private Events Coordinator."
+        ],
+        "dressCode": "While our restaurant does not have a formal dress code, we recommend the following guidelines when planning your visit: Business casual attire is recommended (but not required) for guests joining us for dinner.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://cowfordchophouse.com/",
+          "https://cowfordchophouse.com/about/",
+          "https://cowfordchophouse.com/reservations/",
+          "https://cowfordchophouse.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-19T21:03:32.238Z",
+        "playwrightPages": 0
+      }
+    },
+    "marker-32-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:03:37.983Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://marker32.com/menu",
+        "reservationUrl": "https://resy.com/cities/jax/marker-32",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Reservations | Marker 32",
+            "sourceUrl": "https://marker32.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://marker32.com/",
+          "https://marker32.com/reservations",
+          "https://marker32.com/about",
+          "https://marker32.com/menu"
+        ],
+        "retrievedAt": "2026-08-19T21:03:37.983Z",
+        "playwrightPages": 0
+      }
+    },
+    "river-post-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:03:40.955Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/river-post-1000-riverside-ave-suite-100/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "We do not book large private events on Friday and Saturday evenings on the rooftop All private events must be finalized no later than 48 hours prior to the start of the event.",
+        "groupPolicyLanguage": [
+          "We do not book large private events on Friday and Saturday evenings on the rooftop All private events must be finalized no later than 48 hours prior to the start of the event.",
+          "Please visit our FAQs page here for more information on parking, large parties and hours of operation."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: PRIVATE EVENTS &mdash; River & Post",
+            "sourceUrl": "https://www.riverandpostjax.com/private-events"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.riverandpostjax.com/",
+          "https://www.riverandpostjax.com/private-events"
+        ],
+        "retrievedAt": "2026-08-19T21:03:40.955Z",
+        "playwrightPages": 0
+      }
+    },
+    "aqua-grill-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:03:42.269Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.aquagrill.net/menus/",
+        "reservationUrl": "https://order.toasttab.com/online/aqua-grill-395-front-st",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "View Menu Private Dining Our restaurant stands as a testament to our enduring values and relentless pursuit of excellence.",
+        "groupPolicyLanguage": [
+          "View Menu Private Dining Our restaurant stands as a testament to our enduring values and relentless pursuit of excellence.",
+          "Main content starts here, tab to start navigating Private Dining Private Event Options: Aqua Grill offers private dining for a wide range of events.",
+          "For private dining inquiries, please fill out the form below.",
+          "You will receive a prompt reply from our private event coordinator."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Aqua Grill continues to build its brand based on the highest standards of customer service, serving the freshest local food available, prepared to order. Located in Ponte Vedra Beach, FL.",
+            "sourceUrl": "https://www.aquagrill.net/"
+          },
+          {
+            "quote": "title: Aqua Grill | Bar & Grill in Ponte Vedra Beach, FL",
+            "sourceUrl": "https://www.aquagrill.net/"
+          },
+          {
+            "quote": "og:description: See the menus for Aqua Grill in Ponte Vedra Beach, FL. Offering seafood, salads and more for outdoor seating, kerbside pickup, takeaway, and dine-in!",
+            "sourceUrl": "https://www.aquagrill.net/menus/"
+          },
+          {
+            "quote": "title: Menus | Aqua Grill in Ponte Vedra Beach, FL",
+            "sourceUrl": "https://www.aquagrill.net/menus/"
+          },
+          {
+            "quote": "title: Private Dining | Aqua Grill in Ponte Vedra Beach, FL",
+            "sourceUrl": "https://www.aquagrill.net/private-events/"
+          },
+          {
+            "quote": "title: About | Aqua Grill in Ponte Vedra Beach, FL",
+            "sourceUrl": "https://www.aquagrill.net/about/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.aquagrill.net/",
+          "https://www.aquagrill.net/menus/",
+          "https://www.aquagrill.net/private-events/",
+          "https://www.aquagrill.net/about/"
+        ],
+        "retrievedAt": "2026-08-19T21:03:42.269Z",
+        "playwrightPages": 0
+      }
+    },
+    "ocean-60-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:03:44.363Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [
+          "It also offers a gluten-free menu and offers weekly offers."
+        ],
+        "accessibilityLanguage": [
+          "The wait staff is attentive and the restaurant’s location is wheelchair accessible.",
+          "The restaurant also offers a seasonal menu, and is wheelchair accessible."
+        ],
+        "groupPolicy": "A designated private dining area is also on hand for use by guests with dining needs of that nature.",
+        "groupPolicyLanguage": [
+          "A designated private dining area is also on hand for use by guests with dining needs of that nature.",
+          "The restaurant also features a martini bar and a private dining room.",
+          "The restaurant also has a martini bar, an elegant wine list, and a private dining room."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.ocean60.com/"
+        ],
+        "retrievedAt": "2026-08-19T21:03:44.363Z",
+        "playwrightPages": 0
+      }
+    },
+    "bb-s-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:03:52.975Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.bbsrestaurant.com/menu",
+        "reservationUrl": "https://resy.com/cities/jax/bbs-restaurant",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 9043060100",
+            "sourceUrl": "https://www.bbsrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://www.bbsrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American Restaurant",
+            "sourceUrl": "https://www.bbsrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-21:00; Mo 11:00-22:30; Tu 11:00-22:30; We 11:00-22:30; Th 11:00-22:30; Fr 11:00-00:00; Sa 10:00-00:00",
+            "sourceUrl": "https://www.bbsrestaurant.com/"
+          },
+          {
+            "quote": "title: Home - bb's Restaurant and Bar - Serving lunch and dinner, with an award winning wine list and full bar in Jacksonville, FL.",
+            "sourceUrl": "https://www.bbsrestaurant.com/"
+          },
+          {
+            "quote": "title: Menu | All Menus - bb's Restaurant and Bar - Serving lunch and dinner, with an award winning wine list and full bar in Jacksonville, FL.",
+            "sourceUrl": "https://www.bbsrestaurant.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.bbsrestaurant.com/",
+          "https://www.bbsrestaurant.com/menu"
+        ],
+        "retrievedAt": "2026-08-19T21:03:52.975Z",
+        "playwrightPages": 2
+      }
+    },
+    "gracie-s-providence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:03:56.235Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://graciesprov.com/menu-offerings/",
+        "reservationUrl": "https://graciesprov.com/reservations-contact/",
+        "reservationPlatform": "Direct",
+        "dietaryLanguage": [
+          "Do you accommodate allergies and dietary restrictions?",
+          "Our talented kitchen team is happy to customize your dining experience for allergies, dietary preferences, or restrictions."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "reserve your tasting menu Bar & Lounge Enjoy our full menu with Signature Cocktails and Curated Pairings reserve seats at the bar or in the lounge weddings & Private Events Gracie’s provides a beautifully warm and intimate setting for any celebration.",
+        "groupPolicyLanguage": [
+          "reserve your tasting menu Bar & Lounge Enjoy our full menu with Signature Cocktails and Curated Pairings reserve seats at the bar or in the lounge weddings & Private Events Gracie’s provides a beautifully warm and intimate setting for any celebration.",
+          "Private Dining & Special Events Planning a celebration, corporate gathering, or rehearsal dinner?",
+          "For parties of 10 or more, or to inquire about private dining and events, please visit our Private Events page or contact our events team private dining reservations Frequently Asked Questions Do you have parking?",
+          "Can I reserve a private room?"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "What is your cancellation policy?"
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Experience award-winning fine dining in Providence at Gracie’s. Enjoy seasonal menus, curated wine pairings, and elegant private event spaces.",
+            "sourceUrl": "https://graciesprov.com/"
+          },
+          {
+            "quote": "title: Fine Dining in Providence | Gracie’s Restaurant",
+            "sourceUrl": "https://graciesprov.com/"
+          },
+          {
+            "quote": "title: Contact - Gracie's Providence",
+            "sourceUrl": "https://graciesprov.com/reservations-contact/"
+          },
+          {
+            "quote": "JSON-LD telephone: 4012727811",
+            "sourceUrl": "https://graciesprov.com/menu-offerings/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://graciesprov.com/menu-offerings/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Fine Dining | New American",
+            "sourceUrl": "https://graciesprov.com/menu-offerings/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: wednesday,thursday,friday,saturday,sunday 5:00 PM 9:00 PM",
+            "sourceUrl": "https://graciesprov.com/menu-offerings/"
+          },
+          {
+            "quote": "og:description: Experience Gracie's as you've never before - attend a winemaker dinner, wine tasting, cooking demonstration, and so much more",
+            "sourceUrl": "https://graciesprov.com/menu-offerings/"
+          },
+          {
+            "quote": "meta description: Experience seasonal Chef's Tasting Menus, exclusive wine events, and gift cards at Gracie’s. Book your unforgettable dining experience today.",
+            "sourceUrl": "https://graciesprov.com/menu-offerings/"
+          },
+          {
+            "quote": "title: Gracie’s Providence – RI's best Chef’s Tasting Menu, Events, Cooking Classes & Gifts",
+            "sourceUrl": "https://graciesprov.com/menu-offerings/"
+          },
+          {
+            "quote": "og:description: Host your next private event at Gracie’s Providence. Elegant rooms and full-venue options for rehearsal dinners, birthday celebrations, corporate dinners, and more.",
+            "sourceUrl": "https://graciesprov.com/private-dining-events-providence/"
+          },
+          {
+            "quote": "title: Private Dining & Event Venue in Providence RI | Gracie’s",
+            "sourceUrl": "https://graciesprov.com/private-dining-events-providence/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://graciesprov.com/",
+          "https://graciesprov.com/reservations-contact/",
+          "https://graciesprov.com/menu-offerings/",
+          "https://graciesprov.com/private-dining-events-providence/"
+        ],
+        "retrievedAt": "2026-08-19T21:03:56.235Z",
+        "playwrightPages": 0
+      }
+    },
+    "al-forno-providence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:02.732Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://alforno.com/menu",
+        "reservationUrl": "https://www.exploretock.com/alfornorestaurant",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-20:30, We 17:00-20:30, Th 17:00-20:30, Fr 17:00-20:30, Sa 17:00-20:30,",
+            "sourceUrl": "https://alforno.com/"
+          },
+          {
+            "quote": "title: Contact &mdash; Al Forno",
+            "sourceUrl": "https://alforno.com/contact"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://alforno.com/",
+          "https://alforno.com/menu",
+          "https://alforno.com/contact"
+        ],
+        "retrievedAt": "2026-08-19T21:04:02.732Z",
+        "playwrightPages": 0
+      }
+    },
+    "persimmon-providence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:04.468Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.persimmonri.com/menu",
+        "reservationUrl": "https://www.toasttab.com/persimmon/",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,",
+            "sourceUrl": "https://www.persimmonri.com/"
+          },
+          {
+            "quote": "og:description: Modern American food + drink in Providence, Rhode Island",
+            "sourceUrl": "https://www.persimmonri.com/"
+          },
+          {
+            "quote": "title: Reservations &mdash; Persimmon",
+            "sourceUrl": "https://www.persimmonri.com/reservation"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.persimmonri.com/",
+          "https://www.persimmonri.com/reservation",
+          "https://www.persimmonri.com/menu",
+          "https://www.persimmonri.com/faq"
+        ],
+        "retrievedAt": "2026-08-19T21:04:04.468Z",
+        "playwrightPages": 0
+      }
+    },
+    "new-rivers-providence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:06.854Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://newriversrestaurant.com/menu",
+        "reservationUrl": "https://www.toasttab.com/newriversrestaurant/v3",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , We 04:30-09:30, Th 04:30-09:30, Fr 04:30-09:30, Sa 04:30-09:30,",
+            "sourceUrl": "https://newriversrestaurant.com/"
+          },
+          {
+            "quote": "title: About &mdash; new rivers",
+            "sourceUrl": "https://newriversrestaurant.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://newriversrestaurant.com/",
+          "https://newriversrestaurant.com/menu",
+          "https://newriversrestaurant.com/about"
+        ],
+        "retrievedAt": "2026-08-19T21:04:06.854Z",
+        "playwrightPages": 0
+      }
+    },
+    "mill-s-tavern-providence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:08.745Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://millstavernrestaurant.com/wine-list/",
+        "reservationUrl": "https://www.opentable.com/restref/client/?restref=67600",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining Room Create a memorable intimate gathering in our charming private dining room that can accommodate up to 25 guests.",
+        "groupPolicyLanguage": [
+          "Private Dining Room Create a memorable intimate gathering in our charming private dining room that can accommodate up to 25 guests."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Mills is an upscale eatery in a historic building offering seasonal steak, wagyu & seafood dishes, and an extensive award-winning wine list.",
+            "sourceUrl": "https://www.millstavernrestaurant.com/"
+          },
+          {
+            "quote": "noscript: .vp-portfolio__preloader-wrap{display:none}.vp-portfolio__filter-wrap,.vp-portfolio__items-wrap,.vp-portfolio__pagination-wrap,.vp-portfolio__sort-wrap{opacity:1;visibility:visible}.vp-portfolio__item .vp-portfolio__item-img noscript+img,.vp-portfoli",
+            "sourceUrl": "https://www.millstavernrestaurant.com/"
+          },
+          {
+            "quote": "og:description: Wine List Download PDF Wines by the Glass Half Bottles Sparkling White Rose Red Premium: Using Coravin Edit Table Sparkling Edit Table White Edit Table Rose Edit Table Red Edit Table **To maintain the quality of our service and food, a 3% surch",
+            "sourceUrl": "https://millstavernrestaurant.com/wine-list/"
+          },
+          {
+            "quote": "title: Wine List - Mill's Tavern",
+            "sourceUrl": "https://millstavernrestaurant.com/wine-list/"
+          },
+          {
+            "quote": "og:description: Private Events Memorable Celebrations Celebrate your family, friends and business associates with a classic and comfortable atmosphere for Rehearsal Dinners, Corporate Receptions, Holiday Parties and more! Personalized Menus Our inviting space ",
+            "sourceUrl": "https://millstavernrestaurant.com/private-events/"
+          },
+          {
+            "quote": "title: Private Events - Mill's Tavern",
+            "sourceUrl": "https://millstavernrestaurant.com/private-events/"
+          },
+          {
+            "quote": "og:description: Reservations Address 101 North Main StProvidence, RI 02903 Phone: 401-272-3331 Get Directions Book A Table 1 Person2 People3 People4 People5 People6 People7 People8 People9 People10 People11 People12 People13 People14 People15 People16 People17",
+            "sourceUrl": "https://millstavernrestaurant.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations - Mill's Tavern",
+            "sourceUrl": "https://millstavernrestaurant.com/reservations/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.millstavernrestaurant.com/",
+          "https://millstavernrestaurant.com/wine-list/",
+          "https://millstavernrestaurant.com/private-events/",
+          "https://millstavernrestaurant.com/reservations/"
+        ],
+        "retrievedAt": "2026-08-19T21:04:08.745Z",
+        "playwrightPages": 0
+      }
+    },
+    "nick-s-on-broadway-providence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:13.755Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://nicksonbroadway.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "RESERVATIONS CAN BE MADE BY PHONE, EMAIL OR THROUGH THE OPEN TABLE LINK BELOW Call 401.421.0286 or 401.421.0287 // Email info@nicksonbroadway.com Please Note: A deposit is required to secure the reservation for parties of 8 or larger.",
+        "groupPolicyLanguage": [
+          "RESERVATIONS CAN BE MADE BY PHONE, EMAIL OR THROUGH THE OPEN TABLE LINK BELOW Call 401.421.0286 or 401.421.0287 // Email info@nicksonbroadway.com Please Note: A deposit is required to secure the reservation for parties of 8 or larger."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "RESERVATIONS CAN BE MADE BY PHONE, EMAIL OR THROUGH THE OPEN TABLE LINK BELOW Call 401.421.0286 or 401.421.0287 // Email info@nicksonbroadway.com Please Note: A deposit is required to secure the reservation for parties of 8 or larger.",
+          "The deposit is $10 per person and will be applied to the bill at the time of the reservation.",
+          "The deposit is refundable if the reservation is cancelled with at least 48 hours notice."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , We 10:00-21:00, Th 10:00-21:00, Fr 10:00-21:00, Sa 10:00-21:00, Su 10:00-16:00",
+            "sourceUrl": "https://nicksonbroadway.com/"
+          },
+          {
+            "quote": "title: Take Out Menu &mdash; Nicks on Broadway",
+            "sourceUrl": "https://nicksonbroadway.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://nicksonbroadway.com/",
+          "https://nicksonbroadway.com/menu"
+        ],
+        "retrievedAt": "2026-08-19T21:04:13.755Z",
+        "playwrightPages": 0
+      }
+    },
+    "courtland-club-providence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:15.237Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/courtlandclub",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , Th 18:00-00:00, Fr 18:00-00:00, Sa 18:00-00:00, Su 13:00-21:00",
+            "sourceUrl": "https://www.courtlandclub.com/"
+          },
+          {
+            "quote": "og:description: Courtland Club is, for its Members, a home away from home. The building at 51 Courtland Street has been used as a social club going back to at least the 1940s. We are proud to restore it to its historically appropriate use, with a contemporary ",
+            "sourceUrl": "https://www.courtlandclub.com/"
+          },
+          {
+            "quote": "meta description: Courtland Club is, for its Members, a home away from home. The building at 51 Courtland Street has been used as a social club going back to at least the 1940s. We are proud to restore it to its historically appropriate use, with a contemporar",
+            "sourceUrl": "https://www.courtlandclub.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.courtlandclub.com/"
+        ],
+        "retrievedAt": "2026-08-19T21:04:15.237Z",
+        "playwrightPages": 0
+      }
+    },
+    "pot-au-feu-providence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:16.106Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://potaufeuri.com/menu/",
+        "reservationUrl": "https://www.opentable.com/restref/client/?restref=103588&",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [
+          "Vegan & Vegetarian Vegan Pot au Feu – 24 Golden beets, portobello mushroom, onions, leeks, carrots, celery, cabbage, red bliss potatoes, and brussels sprouts braised in a rich vegan stock served with coarse salt, cornichons and extra virgin olive oil.",
+          "Cassoulet Printemps – 26 (Vegan) Vegetarian cassoulet with red kidney and white navy beans, tomato, onion, garlic, red pepper, asparagus, carrots, broccoli, and fresh herbs baked with crispy kale topping.",
+          "Couscous aux Champignons – 28 (Vegan) Couscous with grilled portobello and confetti of garden vegetables baked in terra cotta."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00",
+            "sourceUrl": "https://potaufeuri.com/"
+          },
+          {
+            "quote": "og:description: Valentine Weekend 2025Choose from Friday or Saturday Four Course Aphrodisiac Dinner Wine & Champagne Included.EventsReservationsChampagne",
+            "sourceUrl": "https://potaufeuri.com/"
+          },
+          {
+            "quote": "og:description: This is a sample dinner menu -~",
+            "sourceUrl": "https://potaufeuri.com/menu/"
+          },
+          {
+            "quote": "og:description: Friday & Saturday 5:00 - 9:00 pmReservations Suggested",
+            "sourceUrl": "https://potaufeuri.com/hours/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://potaufeuri.com/",
+          "https://potaufeuri.com/menu/",
+          "https://potaufeuri.com/events/",
+          "https://potaufeuri.com/hours/"
+        ],
+        "retrievedAt": "2026-08-19T21:04:16.106Z",
+        "playwrightPages": 2
+      }
+    },
+    "sanford-milwaukee": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:35.125Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "twitter:description: Visit the post for more.",
+            "sourceUrl": "https://sanfordrestaurant.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://sanfordrestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-19T21:04:35.125Z",
+        "playwrightPages": 0
+      }
+    },
+    "amilinda-milwaukee": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:36.906Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "https://amilinda.com/menu/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: A James Beard-nominated kitchen in downtown Milwaukee, inspired by the flavors of Spain and Portugal. Chef Gregory León's Amilinda blends coastal tradition with Midwest ingredients. Reserve a seat today.",
+            "sourceUrl": "https://amilinda.com/"
+          },
+          {
+            "quote": "title: Amilinda | Spanish & Portuguese Restaurant in Milwaukee",
+            "sourceUrl": "https://amilinda.com/"
+          },
+          {
+            "quote": "title: Menu | Amilinda Milwaukee",
+            "sourceUrl": "https://amilinda.com/menu/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://amilinda.com/",
+          "https://amilinda.com/menu/"
+        ],
+        "retrievedAt": "2026-08-19T21:04:36.906Z",
+        "playwrightPages": 1
+      }
+    },
+    "morel-milwaukee": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:48.903Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/booking/experiences-availability?rid=136669&restref=136669&experienceId=696173&utm_source=external&utm_medium=referral&utm_campaign=shared",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Must-Visit Fine Dining Restaurant in Milwaukee | Morel",
+            "sourceUrl": "https://morelmke.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://morelmke.com/"
+        ],
+        "retrievedAt": "2026-08-19T21:04:48.903Z",
+        "playwrightPages": 0
+      }
+    },
+    "lake-park-bistro-milwaukee": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:49.841Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.bartolottas.com/lake-park-bistro/menu",
+        "reservationUrl": "https://www.opentable.com/bartolottas-lake-park-bistro?corrid=76db7d04-d5c6-4628-9ba0-1ee1717f20ca&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2023-01-23T19%3A00%3A00",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "View our brunch menu and get ready to enjoy a relaxed dining experience with friends&hellip; Learn More Private Event Planning Book your next event with us!",
+        "groupPolicyLanguage": [
+          "View our brunch menu and get ready to enjoy a relaxed dining experience with friends&hellip; Learn More Private Event Planning Book your next event with us!"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +14149626300",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Steak, Seafood, French",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro"
+          },
+          {
+            "quote": "JSON-LD openingHours: mo-th 11:30-14:00, 17:30-21:00; fr 11:30-14:00, 17:30-22:00; sa 17:00-22:00; su 10:00-14:00, 17:00-20:30",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro"
+          },
+          {
+            "quote": "og:description: A historic pavilion, adorned with a warm French kitchen, nestled on a bluff overlooking Lake Michigan. This is Lake Park Bistro in Milwaukee, Wisconsin.",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro"
+          },
+          {
+            "quote": "title: Bartolotta's Lake Park Bistro | French Dining in Milwaukee",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro"
+          },
+          {
+            "quote": "og:description: Neighborhood french bistro in Milwaukee with seasonally changing menu & lake views. View our menu",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro/menu"
+          },
+          {
+            "quote": "title: Lake Park Bistro Menu | French Dining in Milwaukee",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro/menu"
+          },
+          {
+            "quote": "title: About the Lake Park Bistro Team | French Dining in Milwaukee",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro/about"
+          },
+          {
+            "quote": "og:description: See what the Lake Park Bistro has to offer with our regularly updated events",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro/events"
+          },
+          {
+            "quote": "title: Events at Lake Park Bistro | Specialty Wine Dinners Milwaukee",
+            "sourceUrl": "https://www.bartolottas.com/lake-park-bistro/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.bartolottas.com/lake-park-bistro",
+          "https://www.bartolottas.com/lake-park-bistro/menu",
+          "https://www.bartolottas.com/lake-park-bistro/about",
+          "https://www.bartolottas.com/lake-park-bistro/events"
+        ],
+        "retrievedAt": "2026-08-19T21:04:49.841Z",
+        "playwrightPages": 0
+      }
+    },
+    "birch-milwaukee": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:54.463Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.birchonpleasant.com/menus",
+        "reservationUrl": "https://www.opentable.com/r/birch-milwaukee-reservations-milwaukee?restref=1004269&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Menus &mdash; Birch Restaurant",
+            "sourceUrl": "https://www.birchonpleasant.com/menus"
+          },
+          {
+            "quote": "title: Contact &mdash; Birch Restaurant",
+            "sourceUrl": "https://www.birchonpleasant.com/contact"
+          },
+          {
+            "quote": "title: Private Events &mdash; Birch Restaurant",
+            "sourceUrl": "https://www.birchonpleasant.com/private-events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.birchonpleasant.com/",
+          "https://www.birchonpleasant.com/menus",
+          "https://www.birchonpleasant.com/contact",
+          "https://www.birchonpleasant.com/private-events"
+        ],
+        "retrievedAt": "2026-08-19T21:04:54.463Z",
+        "playwrightPages": 0
+      }
+    },
+    "carnevor-milwaukee": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:56.657Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "https://carnevor.com/wine-list/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Milwaukee's Premier Steakhouse | Carnevor Steakhouse Moderne",
+            "sourceUrl": "https://carnevor.com/"
+          },
+          {
+            "quote": "og:description: Carnevor Steakhouse Moderne, a Downtown Milwaukee Restaurant, is located on Milwaukee Street, between Mason Street and Wisconsin Avenue.",
+            "sourceUrl": "https://carnevor.com/contact"
+          },
+          {
+            "quote": "title: Milwaukee Restaurant | Carnevor Steakhouse Moderne | 718 N Milwaukee Street",
+            "sourceUrl": "https://carnevor.com/contact"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://carnevor.com/",
+          "https://carnevor.com/wine-list/",
+          "https://carnevor.com/contact"
+        ],
+        "retrievedAt": "2026-08-19T21:04:56.657Z",
+        "playwrightPages": 0
+      }
+    },
+    "bacchus-milwaukee": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:04:59.371Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.bacchusmke.com/bacchus/menu",
+        "reservationUrl": "https://www.opentable.com/bacchus-a-bartolotta-restaurant-reservations-milwaukee?ref=769",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Learn More Private Event Planning Book your next event with us!",
+        "groupPolicyLanguage": [
+          "Learn More Private Event Planning Book your next event with us!"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-414-765-1166",
+            "sourceUrl": "https://www.bacchusmke.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$$",
+            "sourceUrl": "https://www.bacchusmke.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Modern American, Fine Dining, Steak, Wine",
+            "sourceUrl": "https://www.bacchusmke.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 17:00 21:00",
+            "sourceUrl": "https://www.bacchusmke.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 17:00 22:00",
+            "sourceUrl": "https://www.bacchusmke.com/"
+          },
+          {
+            "quote": "og:description: Located along the Milwaukee Lakefront, Bacchus is a contemporary showcase for fine dining, expansive wine list, and impeccable service.",
+            "sourceUrl": "https://www.bacchusmke.com/"
+          },
+          {
+            "quote": "title: Bacchus - Downtown Milwaukee Fine Dining Restaurants",
+            "sourceUrl": "https://www.bacchusmke.com/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.bacchusmke.com/",
+          "https://www.bacchusmke.com/bacchus/menu",
+          "https://www.bacchusmke.com/bacchus/about",
+          "https://www.bacchusmke.com/bacchus/events"
+        ],
+        "retrievedAt": "2026-08-19T21:04:59.371Z",
+        "playwrightPages": 0
+      }
+    },
+    "story-hill-bkc-milwaukee": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:01.955Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://storyhillbkc.com/wine-club",
+        "reservationUrl": "https://resy.com/cities/milwaukee-wi/venues/story-hill-bkc",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "For parties of 6 or more, kindly call us at (414) 539-4424 to inquire about availability.",
+        "groupPolicyLanguage": [
+          "For parties of 6 or more, kindly call us at (414) 539-4424 to inquire about availability.",
+          "Private Dining in Milwaukee Let Us Host You!",
+          "A top restaurant with a private room in Milwaukee Our private dining room offers a warm, inviting atmosphere perfect for your next memorable gathering, accommodating parties of 8 to 12 guests."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 4145394424",
+            "sourceUrl": "https://storyhillbkc.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://storyhillbkc.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American Restaurant",
+            "sourceUrl": "https://storyhillbkc.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 09:00-14:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-21:00; Sa 09:00-21:00",
+            "sourceUrl": "https://storyhillbkc.com/"
+          },
+          {
+            "quote": "og:description: Discover Story Hill BKC, one of the top Milwaukee restaurants for brunch, lunch, dinner and wine near American Family Field.",
+            "sourceUrl": "https://storyhillbkc.com/"
+          },
+          {
+            "quote": "title: Home - Story Hill BKC | Bottle, Kitchen & Cocktail Restaurant in Milwaukee",
+            "sourceUrl": "https://storyhillbkc.com/"
+          },
+          {
+            "quote": "og:description: About Story Hill BKC in Milwaukee, WI. Call us at (414) 539-4424. Explore our history, photos, and latest menu with reviews and ratings.",
+            "sourceUrl": "https://storyhillbkc.com/reservations"
+          },
+          {
+            "quote": "title: Reservations - Story Hill BKC | Bottle, Kitchen & Cocktail Restaurant in Milwaukee",
+            "sourceUrl": "https://storyhillbkc.com/reservations"
+          },
+          {
+            "quote": "og:description: Host private dining, and private events at Story Hill BKC, just minutes from American Family Field in Milwaukee.",
+            "sourceUrl": "https://storyhillbkc.com/private-events"
+          },
+          {
+            "quote": "title: Private Events - Story Hill BKC | Bottle, Kitchen & Cocktail Restaurant in Milwaukee",
+            "sourceUrl": "https://storyhillbkc.com/private-events"
+          },
+          {
+            "quote": "og:description: Join the Story Hill BKC Wine Club for exclusive wine selections and bottle shop perks.",
+            "sourceUrl": "https://storyhillbkc.com/wine-club"
+          },
+          {
+            "quote": "title: Wine Club - Story Hill BKC | Bottle, Kitchen & Cocktail Restaurant in Milwaukee",
+            "sourceUrl": "https://storyhillbkc.com/wine-club"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://storyhillbkc.com/",
+          "https://storyhillbkc.com/reservations",
+          "https://storyhillbkc.com/private-events",
+          "https://storyhillbkc.com/wine-club"
+        ],
+        "retrievedAt": "2026-08-19T21:05:01.955Z",
+        "playwrightPages": 4
+      }
+    },
+    "sorella-milwaukee": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:07.037Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.sorellamke.com/drink",
+        "reservationUrl": "https://www.toasttab.com/sorella-milwaukee",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "A 20% service charge will be applied to all parties of 6 or greater.",
+        "groupPolicyLanguage": [
+          "A 20% service charge will be applied to all parties of 6 or greater.",
+          "Large Party Policies: 5 or more guests Cancellation Policy : You may change or cancel your reservation up to 24 hours before your reservation time.",
+          "For parties of 5 or more : A credit card is required to hold the table.",
+          "Parties of 16 or more require a pre-set family-style menu and fall under the aforementioned policies."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Large Party Policies: 5 or more guests Cancellation Policy : You may change or cancel your reservation up to 24 hours before your reservation time.",
+          "For parties of 5 or more : A credit card is required to hold the table.",
+          "The cancellation policy applies."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:00-21:00, Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 17:00-22:00, Sa 17:00-22:00, Su 17:00-20:00",
+            "sourceUrl": "https://www.sorellamke.com/"
+          },
+          {
+            "quote": "og:description: Experience Sorella, Milwaukee’s elevated casual Italian restaurant blending New Jersey flavors with a Midwest twist. Enjoy online ordering, exceptional catering, and exclusive private events. Stay informed with our latest updates and seasonal o",
+            "sourceUrl": "https://www.sorellamke.com/"
+          },
+          {
+            "quote": "title: Sorella | Explore, Savor, Enjoy",
+            "sourceUrl": "https://www.sorellamke.com/"
+          },
+          {
+            "quote": "title: Visit | Explore Dining Options &mdash; Sorella",
+            "sourceUrl": "https://www.sorellamke.com/visit"
+          },
+          {
+            "quote": "title: Drink | Explore Our Unique Menu &mdash; Sorella",
+            "sourceUrl": "https://www.sorellamke.com/drink"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.sorellamke.com/",
+          "https://www.sorellamke.com/visit",
+          "https://www.sorellamke.com/drink"
+        ],
+        "retrievedAt": "2026-08-19T21:05:07.037Z",
+        "playwrightPages": 0
+      }
+    },
+    "death-taxes-raleigh": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:08.796Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://ac-restaurants.com/death-taxes/drink",
+        "reservationUrl": "https://www.toasttab.com/death-taxes/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: [984] 242-0218",
+            "sourceUrl": "https://ac-restaurants.com/death-taxes/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: [object Object] 17:00 21:00",
+            "sourceUrl": "https://ac-restaurants.com/death-taxes/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: [object Object] 17:00 22:00",
+            "sourceUrl": "https://ac-restaurants.com/death-taxes/"
+          },
+          {
+            "quote": "og:description: A contemporary restaurant in Downtown Raleigh dedicated to the technique of cooking with wood fire from Chef Ashley Christensen.",
+            "sourceUrl": "https://ac-restaurants.com/death-taxes/"
+          },
+          {
+            "quote": "title: Death & Taxes - Ashley Christensen Restaurants - Raleigh, NC",
+            "sourceUrl": "https://ac-restaurants.com/death-taxes/"
+          },
+          {
+            "quote": "title: Drinks - Ashley Christensen Restaurants",
+            "sourceUrl": "https://ac-restaurants.com/death-taxes/drink"
+          },
+          {
+            "quote": "og:description: Hours, locations & contact Information for all our restaurants in Raleigh, contacts for press inquiries, and more.",
+            "sourceUrl": "https://ac-restaurants.com/contact"
+          },
+          {
+            "quote": "title: Contact Us - Ashley Christensen Restaurants - Raleigh, NC",
+            "sourceUrl": "https://ac-restaurants.com/contact"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://ac-restaurants.com/death-taxes/",
+          "https://ac-restaurants.com/death-taxes/drink",
+          "https://ac-restaurants.com/contact"
+        ],
+        "retrievedAt": "2026-08-19T21:05:08.796Z",
+        "playwrightPages": 0
+      }
+    },
+    "second-empire-raleigh": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:13.332Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.second-empire.com/menus/",
+        "reservationUrl": "https://www.opentable.com/r/second-empire-restaurant-and-tavern-reservations-raleigh?restref=36919&",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Home The Restaurant The Tavern Reservations Menus Private Dining Special Events Weddings Chef’s Table Pictures & Tour History Staff The Race Location & Directions &copy; 2007-2026 Second Empire Restaurant and Tavern.",
+        "groupPolicyLanguage": [
+          "Home The Restaurant The Tavern Reservations Menus Private Dining Special Events Weddings Chef’s Table Pictures & Tour History Staff The Race Location & Directions &copy; 2007-2026 Second Empire Restaurant and Tavern.",
+          "For your private dining needs, be sure to learn more about our private dining and event offerings .",
+          "Second Empire Restaurant and Tavern Private Dining The restaurant can be configured to accommodate any special dining, business and entertaining occasion."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Fine Dining in Raleigh NC,special occasion,special event,romantic,weddings,downtown dining,AAA Four Diamond restaurant,receptions,rehearsal dinners,bridal shower,corporate dinners,corporate presentations",
+            "sourceUrl": "https://www.second-empire.com/"
+          },
+          {
+            "quote": "title: Second Empire Restaurant and Tavern -",
+            "sourceUrl": "https://www.second-empire.com/"
+          },
+          {
+            "quote": "title: Second Empire Restaurant and Tavern - Reservations",
+            "sourceUrl": "https://www.second-empire.com/reservations"
+          },
+          {
+            "quote": "title: Second Empire Restaurant and Tavern - Menus",
+            "sourceUrl": "https://www.second-empire.com/menus/"
+          },
+          {
+            "quote": "title: Second Empire Restaurant and Tavern - Private Dining",
+            "sourceUrl": "https://www.second-empire.com/private-dining/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.second-empire.com/",
+          "https://www.second-empire.com/reservations",
+          "https://www.second-empire.com/menus/",
+          "https://www.second-empire.com/private-dining/"
+        ],
+        "retrievedAt": "2026-08-19T21:05:13.332Z",
+        "playwrightPages": 0
+      }
+    },
+    "crawford-son-raleigh": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:16.383Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://crawfordandsonrestaurant.com/menu",
+        "reservationUrl": "https://www.exploretock.com/crawfordandsonrestaurant",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "For parties of six or more, a 20% gratuity will be added to the final check.",
+        "groupPolicyLanguage": [
+          "For parties of six or more, a 20% gratuity will be added to the final check."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Crawford and Son is a casual neighborhood restaurant located in historic Oakwood. We serve straight forward, honest food that ranges from the familiar to the unexpected.",
+            "sourceUrl": "https://crawfordandsonrestaurant.com/"
+          },
+          {
+            "quote": "title: Crawford & Son - Raleigh, NC",
+            "sourceUrl": "https://crawfordandsonrestaurant.com/"
+          },
+          {
+            "quote": "title: Contact | Crawford & Son | Raleigh, NC",
+            "sourceUrl": "https://crawfordandsonrestaurant.com/contact"
+          },
+          {
+            "quote": "title: Menu | Crawford & Son | Raleigh, NC",
+            "sourceUrl": "https://crawfordandsonrestaurant.com/menu"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://crawfordandsonrestaurant.com/",
+          "https://crawfordandsonrestaurant.com/contact",
+          "https://crawfordandsonrestaurant.com/menu"
+        ],
+        "retrievedAt": "2026-08-19T21:05:16.383Z",
+        "playwrightPages": 0
+      }
+    },
+    "jolie-raleigh": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:19.128Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://restaurantjolie.com/menu",
+        "reservationUrl": "https://www.toasttab.com/jolie-restaurant-620-n-person-st/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "For parties of six or more, a 20% gratuity will be added to the final check.",
+        "groupPolicyLanguage": [
+          "For parties of six or more, a 20% gratuity will be added to the final check."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: French Bistro in Raleigh, NC. Look for classic, time-honored French dishes as well as modern adaptations from Chef Scott Crawford and our talented Chef de Cuisine Madison Tessener.",
+            "sourceUrl": "https://restaurantjolie.com/"
+          },
+          {
+            "quote": "meta description: French Bistro in Downtown Raleigh, NC. Look for classic, time-honored French dishes as well as modern adaptations.",
+            "sourceUrl": "https://restaurantjolie.com/"
+          },
+          {
+            "quote": "title: Jolie - French Bistro - Raleigh, NC",
+            "sourceUrl": "https://restaurantjolie.com/"
+          },
+          {
+            "quote": "title: Menus | Jolie - French Bistro | Raleigh, NC",
+            "sourceUrl": "https://restaurantjolie.com/menu"
+          },
+          {
+            "quote": "title: About | Jolie - French Bistro | Raleigh, NC",
+            "sourceUrl": "https://restaurantjolie.com/about"
+          },
+          {
+            "quote": "title: Event Hosting | Jolie - French Bistro | Raleigh, NC",
+            "sourceUrl": "https://restaurantjolie.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://restaurantjolie.com/",
+          "https://restaurantjolie.com/menu",
+          "https://restaurantjolie.com/about",
+          "https://restaurantjolie.com/events"
+        ],
+        "retrievedAt": "2026-08-19T21:05:19.128Z",
+        "playwrightPages": 0
+      }
+    },
+    "herons-raleigh": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:22.422Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.heronsnc.com/s/Drinks-Menu-Summer-2026-r8jg.pdf",
+        "reservationUrl": "https://www.opentable.com/r/herons-cary",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Included In-Depth Education from our Wine Team Wine Tasting Cheese & Charcuterie Display $$-$$$ Umstead Wine Dinners Our Sommeliers invite guests to experience the art of wine through intimate wine dinners hosted in the Private Dining Room at Herons.",
+        "groupPolicyLanguage": [
+          "Included In-Depth Education from our Wine Team Wine Tasting Cheese & Charcuterie Display $$-$$$ Umstead Wine Dinners Our Sommeliers invite guests to experience the art of wine through intimate wine dinners hosted in the Private Dining Room at Herons."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Discover Herons, a Forbes Five-Star and Michelin recommended restaurant in Cary, North Carolina, featuring seasonal tasting menus, curated wines, and refined dining led by Chef Steven Greene.",
+            "sourceUrl": "https://www.heronsnc.com/"
+          },
+          {
+            "quote": "og:description: Discover Herons, a Michelin-recommended, Forbes Five-Star restaurant at The Umstead Hotel, offering seasonal cuisine, organic farm ingredients, and an immersive dining experience in Cary, NC.",
+            "sourceUrl": "https://www.heronsnc.com/about"
+          },
+          {
+            "quote": "title: Herons Culinary Philosophy &mdash; Herons",
+            "sourceUrl": "https://www.heronsnc.com/about"
+          },
+          {
+            "quote": "og:description: Explore Herons curated wine and spirits collection, expert tastings, and seasonal cocktails, all designed to elevate your dining experience in Cary, North Carolina.",
+            "sourceUrl": "https://www.heronsnc.com/beverage"
+          },
+          {
+            "quote": "title: Wine & Spirits | Discover, Savor, Celebrate &mdash; Herons",
+            "sourceUrl": "https://www.heronsnc.com/beverage"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.heronsnc.com/",
+          "https://www.heronsnc.com/about",
+          "https://www.heronsnc.com/beverage"
+        ],
+        "retrievedAt": "2026-08-19T21:05:22.422Z",
+        "playwrightPages": 0
+      }
+    },
+    "hummingbird-raleigh": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:24.253Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://hummingbirdraleigh.com/menu",
+        "reservationUrl": "https://resy.com/cities/raleigh-nc/venues/hummingbird?",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Note: one check will be issued for parties of 6 or more with the option to split equal ways - 20% gratuity will be included If looking to book a party greater than 10 people, then please consider our private dining options here Dinner Brunch",
+        "groupPolicyLanguage": [
+          "Note: one check will be issued for parties of 6 or more with the option to split equal ways - 20% gratuity will be included If looking to book a party greater than 10 people, then please consider our private dining options here Dinner Brunch",
+          "Private Dining with our Flock Unforgettable Experiences, Perfectly Tailored Exclusivity meets flexibility Your private dining experience should be more than just a meal—it’s an event, thoughtfully curated just for you.",
+          "Adaptable Spaces : Choose from our lovely outdoor patio or our interior warehouse space, or do a full buyout of the Hummingbird space for the perfect backdrop for your event—whether it’s a cozy, intimate atmosphere or an expansive layout.",
+          "Effortless Planning, Memorable Moments Planning your private dining experience shouldn’t feel overwhelming—it should be exciting."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , We 09:00-17:00, Th 09:00-17:00, Fr 09:00-17:00, Sa 09:00-17:00, Su 10:00-15:00",
+            "sourceUrl": "https://hummingbirdraleigh.com/"
+          },
+          {
+            "quote": "title: Menu &mdash; Hummingbird",
+            "sourceUrl": "https://hummingbirdraleigh.com/menu"
+          },
+          {
+            "quote": "og:description: Need to make a reservation over 10 people? Consider our private dining options for a more tailored experience.",
+            "sourceUrl": "https://hummingbirdraleigh.com/private-dinning"
+          },
+          {
+            "quote": "title: Private Dining Packages &mdash; Hummingbird",
+            "sourceUrl": "https://hummingbirdraleigh.com/private-dinning"
+          },
+          {
+            "quote": "title: About &mdash; Hummingbird",
+            "sourceUrl": "https://hummingbirdraleigh.com/about-us"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://hummingbirdraleigh.com/",
+          "https://hummingbirdraleigh.com/menu",
+          "https://hummingbirdraleigh.com/private-dinning",
+          "https://hummingbirdraleigh.com/about-us"
+        ],
+        "retrievedAt": "2026-08-19T21:05:24.253Z",
+        "playwrightPages": 0
+      }
+    },
+    "mandolin-raleigh": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:26.707Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [
+          "Handhelds include ½ lb burgers like Two Pepper Jack, Classic Cheese, Truffle Cheese, BBQ Bacon Cheddar, and vegetarian options like Mediterranean Veggie Burger.",
+          "Are there vegetarian options?",
+          "Absolutely—our menu includes vegetarian-friendly salads, flatbreads, and entrées like Spaghetti Squash & Zucchini.",
+          "Many dishes can also be customized to suit vegetarian preferences."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Yes, Foxcroft hosts monthly wine tastings, pairing dinners, and private events, making it a hub for Raleigh’s wine community.",
+        "groupPolicyLanguage": [
+          "Yes, Foxcroft hosts monthly wine tastings, pairing dinners, and private events, making it a hub for Raleigh’s wine community.",
+          "Does the restaurant offer private event space?",
+          "Yes, private dining rooms and event spaces are available, ideal for celebrations, business dinners, or wine events."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Discover the best restaurants in Raleigh, Durham, and Chapel Hill with Mandolin Raleigh. Explore top dining spots, food events, and the latest restaurant news.",
+            "sourceUrl": "https://www.mandolinraleigh.com/"
+          },
+          {
+            "quote": "title: 2026 Best Restaurants in Raleigh, NC | Mandolin",
+            "sourceUrl": "https://www.mandolinraleigh.com/"
+          },
+          {
+            "quote": "og:description: Explore top food events and festivals in Raleigh, Durham, and Chapel Hill. From food trucks to farm-to-table dinners, discover the Triangle's best culinary happenings.",
+            "sourceUrl": "https://www.mandolinraleigh.com/events/"
+          },
+          {
+            "quote": "title: Food Events & Festivals in Raleigh, Durham & Chapel Hill",
+            "sourceUrl": "https://www.mandolinraleigh.com/events/"
+          },
+          {
+            "quote": "og:description: Get in touch with Mandolin Raleigh to promote your restaurant. Reach Raleigh",
+            "sourceUrl": "https://www.mandolinraleigh.com/contact/"
+          },
+          {
+            "quote": "title: Contact Mandolin Raleigh for Restaurant Marketing & Food Promotions",
+            "sourceUrl": "https://www.mandolinraleigh.com/contact/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.mandolinraleigh.com/",
+          "https://www.mandolinraleigh.com/events/",
+          "https://www.mandolinraleigh.com/contact/"
+        ],
+        "retrievedAt": "2026-08-19T21:05:26.707Z",
+        "playwrightPages": 1
+      }
+    },
+    "bida-manda-raleigh": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:37.667Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.bidamanda.com/menu",
+        "reservationUrl": "https://www.toasttab.com/bidamanda/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "(NC Division of Environmental Health) 20% gratuity will be added to parties of 6 or more.",
+        "groupPolicyLanguage": [
+          "(NC Division of Environmental Health) 20% gratuity will be added to parties of 6 or more.",
+          "RESERVATIONS Large Party Reservations If you would like to make a reservation for 6 guests or more, please fill out the form below and we will be in touch within 48 hours to confirm or coordinate.",
+          "CREDIT CARD REQUIREMENT We ask that a credit card hold is required to secure reservations for parties of 6 and above."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Experience a culinary journey to Laos without having to leave Raleigh! Each dish on our menu is one that you might find on the street corners of Luang Prabang or in any Laotian home. So, come in and let us take you on an adventure to Laos throu",
+            "sourceUrl": "https://www.bidamanda.com/menu"
+          },
+          {
+            "quote": "title: Reservations &mdash; Bida Manda",
+            "sourceUrl": "https://www.bidamanda.com/reservations"
+          },
+          {
+            "quote": "title: Contact 2 &mdash; Bida Manda",
+            "sourceUrl": "https://www.bidamanda.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.bidamanda.com/",
+          "https://www.bidamanda.com/menu",
+          "https://www.bidamanda.com/reservations",
+          "https://www.bidamanda.com/contact"
+        ],
+        "retrievedAt": "2026-08-19T21:05:37.667Z",
+        "playwrightPages": 0
+      }
+    },
+    "grey-sweater-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:39.824Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.greysweaterokc.com/drink-menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [
+          "CANADA Iceberg water is a unique soft water with a super low mineral content."
+        ],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.greysweaterokc.com/"
+          },
+          {
+            "quote": "og:description: Discover the finest dining experience in Oklahoma City at the James Beard Chef",
+            "sourceUrl": "https://www.greysweaterokc.com/"
+          },
+          {
+            "quote": "title: Experience Award-Winning Cuisine at the Best Oklahoma City Fine Dining Restaurant by James Beard Chef Andrew Black - Book Now!",
+            "sourceUrl": "https://www.greysweaterokc.com/"
+          },
+          {
+            "quote": "og:description: James Beard chef restaurant Fine dining Oklahoma City cuisine Gourmet food Local ingredients Seasonal menu Chef",
+            "sourceUrl": "https://www.greysweaterokc.com/policies"
+          },
+          {
+            "quote": "title: Unforgettable Dining Experience in Oklahoma City - James Beard Chef's Fine Dining Restaurant Awaits You!",
+            "sourceUrl": "https://www.greysweaterokc.com/policies"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.greysweaterokc.com/",
+          "https://www.greysweaterokc.com/policies",
+          "https://www.greysweaterokc.com/drink-menu",
+          "https://www.greysweaterokc.com/booking"
+        ],
+        "retrievedAt": "2026-08-19T21:05:39.824Z",
+        "playwrightPages": 0
+      }
+    },
+    "nonesuch-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:42.382Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/nonesuch/giftcards",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Never Before, Forever Again. Nonesuch is without equal. Oklahoma is a mosaic of cultures and ideas and Nonesuch is the embodiment of that spirit. Celebrated as one of the top openings in the country, it’s a dynamic, lively concept that’s deeply",
+            "sourceUrl": "https://www.nonesuchokc.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.nonesuchokc.com/"
+        ],
+        "retrievedAt": "2026-08-19T21:05:42.382Z",
+        "playwrightPages": 0
+      }
+    },
+    "cheever-s-cafe-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:43.244Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.cheeverscafe.com/menus/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "The back portion of the house has been converted to business use--including a private dining area, while the front houses a bar and wine case as well as the original terrazzo floors.",
+        "groupPolicyLanguage": [
+          "The back portion of the house has been converted to business use--including a private dining area, while the front houses a bar and wine case as well as the original terrazzo floors."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Elegant bistro offering upscale Southwestern & Southern cuisine plus cocktails & wines.",
+            "sourceUrl": "https://www.cheeverscafe.com/"
+          },
+          {
+            "quote": "title: Cheever's Cafe | American Restaurant in Oklahoma City, OK",
+            "sourceUrl": "https://www.cheeverscafe.com/"
+          },
+          {
+            "quote": "title: Menus | Cheever's Cafe in Oklahoma City, OK",
+            "sourceUrl": "https://www.cheeverscafe.com/menus/"
+          },
+          {
+            "quote": "title: About | Cheever's Cafe in Oklahoma City, OK",
+            "sourceUrl": "https://www.cheeverscafe.com/about/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.cheeverscafe.com/",
+          "https://www.cheeverscafe.com/menus/",
+          "https://www.cheeverscafe.com/about/"
+        ],
+        "retrievedAt": "2026-08-19T21:05:43.244Z",
+        "playwrightPages": 0
+      }
+    },
+    "vast-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:45.324Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.vastokc.com/menus/",
+        "reservationUrl": "https://www.vastokc.com/reservations/",
+        "reservationPlatform": "Direct",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Locally Inspired, Locally Sourced Previous Next Reservations Reserve your table online or call 405.702.7262 Instagram Facebook Restaurant Menu Celebrations & Events Private Dining At Vast, we believe in Fresh fare & cool cocktails.",
+        "groupPolicyLanguage": [
+          "Locally Inspired, Locally Sourced Previous Next Reservations Reserve your table online or call 405.702.7262 Instagram Facebook Restaurant Menu Celebrations & Events Private Dining At Vast, we believe in Fresh fare & cool cocktails.",
+          "About Us Evening soirées and refined escapes Learn More Previous Next Plan an Event Drink In & Eat Up Meetings & Events Weddings Private Dining Upcoming Events Send a gift card instantly.",
+          "Meet Our Sales Manager Amanda Shannon Private Dining Sales Manager Amanda has been part of the Vast team since its opening in 2012.",
+          "Her unwavering commitment to creating meaningful experiences has helped establish Vast as one of Oklahoma City’s premier destinations for elevated private dining and events."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: 'Looking for the best restaurants with a view in downtown OKC? Vast restaurant in downtown OKC has it all - fresh cuisine, cold cocktails, and an amazing view.",
+            "sourceUrl": "https://www.vastokc.com/"
+          },
+          {
+            "quote": "title: Restaurants With A View | Vast Restaurant Downtown OKC",
+            "sourceUrl": "https://www.vastokc.com/"
+          },
+          {
+            "quote": "og:description: At Vast, we believe in fresh fare & cool cocktails. We believe you should have it all in the heart of downtown Oklahoma City.",
+            "sourceUrl": "https://www.vastokc.com/about-us/"
+          },
+          {
+            "quote": "title: About Us - Oklahoma City Restaurant | Vast",
+            "sourceUrl": "https://www.vastokc.com/about-us/"
+          },
+          {
+            "quote": "og:description: Are you searching for Vast OKC menus? Discover the Vast restaurant in downtown OKC menus here including lunch, dinner, dessert, cocktail, and wine menus.",
+            "sourceUrl": "https://www.vastokc.com/menus/"
+          },
+          {
+            "quote": "title: Vast OKC Menus | Vast Restaurant Downtown OKC",
+            "sourceUrl": "https://www.vastokc.com/menus/"
+          },
+          {
+            "quote": "og:description: Looking for restaurants with private dining rooms OKC? Discover Vast, in downtown OKC, with elevated private dining rooms on the 49th floor, of Devon Tower.",
+            "sourceUrl": "https://www.vastokc.com/private-dining/"
+          },
+          {
+            "quote": "title: Restaurants with Private Dining Rooms OKC | Vast Downtown OKC",
+            "sourceUrl": "https://www.vastokc.com/private-dining/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.vastokc.com/",
+          "https://www.vastokc.com/about-us/",
+          "https://www.vastokc.com/menus/",
+          "https://www.vastokc.com/private-dining/"
+        ],
+        "retrievedAt": "2026-08-19T21:05:45.324Z",
+        "playwrightPages": 0
+      }
+    },
+    "ranch-steakhouse-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:48.026Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/widget/reservation/canvas?rid=1071520%2C5202&",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining We’re proud to offer exclusive fine dining for private parties in an elegant and entertaining atmosphere.",
+        "groupPolicyLanguage": [
+          "Private Dining We’re proud to offer exclusive fine dining for private parties in an elegant and entertaining atmosphere."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: The Ranch Steakhouse is Oklahoma’s premier dining experience, offering guests the finest food and best steak in the Midwest.",
+            "sourceUrl": "https://ranchsteakhouse.com/"
+          },
+          {
+            "quote": "title: Private Dining - Ranch Steakhouse",
+            "sourceUrl": "https://ranchsteakhouse.com/private-dining/"
+          },
+          {
+            "quote": "title: Visit - Ranch Steakhouse",
+            "sourceUrl": "https://ranchsteakhouse.com/visit/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://ranchsteakhouse.com/",
+          "https://ranchsteakhouse.com/private-dining/",
+          "https://ranchsteakhouse.com/visit/"
+        ],
+        "retrievedAt": "2026-08-19T21:05:48.026Z",
+        "playwrightPages": 0
+      }
+    },
+    "red-primesteak-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:49.841Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.redprimesteak.com/menus/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "View Menus Private Events Host your next gathering at Red PrimeSteak.",
+        "groupPolicyLanguage": [
+          "View Menus Private Events Host your next gathering at Red PrimeSteak.",
+          "Main content starts here, tab to start navigating Private Events Book an Event For all inquiries, please fill out the form below, and we&rsquo;ll be in touch soon.",
+          "We have five of these exclusive booths offering a private dining experience right on the restaurant floor.",
+          "The Mezzanine The \"Mezz\" is the ultimate private dining experience."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Red PrimeSteak in Oklahoma City, is a modern fine-dining restaurant situated beyond the traditional steakhouse experience. Superb spice rubs, crackling crusts and other vibrant flavors.",
+            "sourceUrl": "https://www.redprimesteak.com/"
+          },
+          {
+            "quote": "title: Red PrimeSteak | Steakhouse in Oklahoma City",
+            "sourceUrl": "https://www.redprimesteak.com/"
+          },
+          {
+            "quote": "og:description: See menus for the Red PrimeSteak in Oklahoma City, OK. Serving steaks for dine-in!",
+            "sourceUrl": "https://www.redprimesteak.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Red PrimeSteak in Oklahoma City, OK",
+            "sourceUrl": "https://www.redprimesteak.com/menus/"
+          },
+          {
+            "quote": "title: About | Red PrimeSteak in Oklahoma City, OK",
+            "sourceUrl": "https://www.redprimesteak.com/about/"
+          },
+          {
+            "quote": "title: Private Events | Red PrimeSteak in Oklahoma City, OK",
+            "sourceUrl": "https://www.redprimesteak.com/private-events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.redprimesteak.com/",
+          "https://www.redprimesteak.com/menus/",
+          "https://www.redprimesteak.com/about/",
+          "https://www.redprimesteak.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-19T21:05:49.841Z",
+        "playwrightPages": 0
+      }
+    },
+    "cattlemen-s-steakhouse-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:52.276Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://cattlemensrestaurant.com/wine-menu",
+        "reservationUrl": "https://cattlemensrestaurant.com/bookings",
+        "reservationPlatform": "Direct",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +14052360416",
+            "sourceUrl": "https://cattlemensrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://cattlemensrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Steakhouse, American, Breakfast",
+            "sourceUrl": "https://cattlemensrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su-Th 06:00-22:00; Fr-Sa 06:00-23:00",
+            "sourceUrl": "https://cattlemensrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday,Monday,Tuesday,Wednesday,Thursday 06:00 22:00",
+            "sourceUrl": "https://cattlemensrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 06:00 23:00",
+            "sourceUrl": "https://cattlemensrestaurant.com/"
+          },
+          {
+            "quote": "title: Cattlemen's Steakhouse | Oklahoma City Historic Restaurant",
+            "sourceUrl": "https://cattlemensrestaurant.com/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://cattlemensrestaurant.com/",
+          "https://cattlemensrestaurant.com/wine-menu"
+        ],
+        "retrievedAt": "2026-08-19T21:05:52.276Z",
+        "playwrightPages": 0
+      }
+    },
+    "610-magnolia-louisville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:53.965Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/610-magnolia-louisville",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Chef Edward Lee’s restaurant located in the heart of Old Louisville, where the menu is a modern approach to the Southern Table. Reservations are required.",
+            "sourceUrl": "https://610magnolia.com/"
+          },
+          {
+            "quote": "title: 610 Magnolia: A modern approach to the Southern Table",
+            "sourceUrl": "https://610magnolia.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://610magnolia.com/"
+        ],
+        "retrievedAt": "2026-08-19T21:05:53.965Z",
+        "playwrightPages": 0
+      }
+    },
+    "jack-fry-s-louisville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:55.063Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.jackfrys.com/menus",
+        "reservationUrl": "https://www.opentable.com/r/jack-frys-reservations-louisville?restref=284332&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [
+          "$19 Gluten free Spicy Fried Oysters Breaded and seasoned oysters, Weisenberger grits, country ham beurre blanc, and green onions.",
+          "$13 Gluten free Dairy free Vegan Beet & Blue Cheese Roasted red beets, Gorgonzola crumbles, and spring mix greens in a sherry vinegar reduction with spiced candied pecans.",
+          "$13 Gluten free Vegetarian Romaine Salad Creamy Parmesan dressing, bourbon-smoked black pepper, and crushed pine nuts with a garlic pecorino brioche crumble.",
+          "$13 Vegetarian Brie Salad Bibb lettuce in Dijon vinaigrette, topped with melted brie and almonds."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "20% Gratuity added to parties of 5 or more.",
+        "groupPolicyLanguage": [
+          "20% Gratuity added to parties of 5 or more."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 502-452-9244",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 17:30 22:00",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 14:30",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 17:30 22:00",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 14:30",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 17:30 22:00",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 14:30",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 17:30 23:00",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 17:30 23:00",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "og:description: Louisville original & history laden fine dining eatery since 1933 featuring high-end Southern fare & cocktails in an old-world setting.",
+            "sourceUrl": "https://www.jackfrys.com/"
+          },
+          {
+            "quote": "title: Jack Fry's | Louisville Original | 1007 Bardstown Road, Louisville, KY, USA",
+            "sourceUrl": "https://www.jackfrys.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.jackfrys.com/",
+          "https://www.jackfrys.com/menus",
+          "https://www.jackfrys.com/about"
+        ],
+        "retrievedAt": "2026-08-19T21:05:55.063Z",
+        "playwrightPages": 0
+      }
+    },
+    "proof-on-main-louisville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:56.927Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://proofonmain.com/menus/dessert/",
+        "reservationUrl": "https://www.21cmuseumhotels.com/meetings-events/book-an-event/?location=louisville",
+        "reservationPlatform": "Direct",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "View Library Private Dining Whether you’re hosting a romantic rehearsal dinner or an important business luncheon, Proof On Main offers a Private Dining Room for groups of up to 24 guests.",
+        "groupPolicyLanguage": [
+          "View Library Private Dining Whether you’re hosting a romantic rehearsal dinner or an important business luncheon, Proof On Main offers a Private Dining Room for groups of up to 24 guests.",
+          "Private Events Proof on Main is located within 21c Museum Hotel Louisville .",
+          "Book an Event Private Dining Room 300 SQ FT Whether you’re hosting a romantic rehearsal dinner or an important business luncheon, Proof On Main offers a Private Dining Room for groups of up to 24 guests.",
+          "Additional private event spaces are available at 21c Museum Hotel Louisville, including space for private parties of up to 350 people."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: One of Esquire magazine's Best New Restaurants, Proof on Main in downtown Louisville's 21c Museum Hotel is a local favorite.",
+            "sourceUrl": "https://proofonmain.com/"
+          },
+          {
+            "quote": "title: Proof on Main Restaurant + Bar | Downtown Louisville, KY",
+            "sourceUrl": "https://proofonmain.com/"
+          },
+          {
+            "quote": "og:description: DESSERTS PAIRE FINALE $9 Orange Truffle And 1.5 Oz Digestif CHOICE OF: Bourbon Revolver Dessert Amaro OLIVE OIL CAKE $12 VG Meyer Lemon Curd, Spiced Almonds SEASONAL SORBET $10 VG | GF | NF Rotating Accoutrement ‘TIRAMISU’ $13 VG | NF Devil’s F",
+            "sourceUrl": "https://proofonmain.com/menus/dessert/"
+          },
+          {
+            "quote": "title: Dessert Menu - Proof on Main",
+            "sourceUrl": "https://proofonmain.com/menus/dessert/"
+          },
+          {
+            "quote": "og:description: Proof on Main is located within 21c Museum Hotel Louisville. The property houses over 10,500 square feet of art-filled exhibition and event space. The wide range of spaces – many with cutting edge audiovisual technology and large light-filled w",
+            "sourceUrl": "https://proofonmain.com/private-dining/private-dining-room/"
+          },
+          {
+            "quote": "title: Private Events - Proof on Main",
+            "sourceUrl": "https://proofonmain.com/private-dining/private-dining-room/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://proofonmain.com/",
+          "https://proofonmain.com/menus/dessert/",
+          "https://proofonmain.com/private-dining/private-dining-room/"
+        ],
+        "retrievedAt": "2026-08-19T21:05:56.927Z",
+        "playwrightPages": 0
+      }
+    },
+    "repeal-louisville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:05:59.092Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/repeal-oak-fired-steakhouse-reservations-louisville?restref=1052515&lang=en-US&ot_source=Restaurant%20website&ot_campaign=nav-cta",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Does Repeal offer private dining?",
+        "groupPolicyLanguage": [
+          "Does Repeal offer private dining?",
+          "Yes, Repeal offers private dining in the Barrel Room.",
+          "To learn more about private dining opportunities in this unique space, please visit: Private Dining Louisville, Kentucky Repeal Oak Fired Steakhouse"
+        ],
+        "dressCode": "For tables of 5+ guests, please call the restaurant directly at 502-716-7372 Is there a dress code at Repeal?",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Explore Repeal Oak Fired Steakhouse, Whiskey Row",
+            "sourceUrl": "https://www.repeallouisville.com/"
+          },
+          {
+            "quote": "title: Repeal Oak Fired Steakhouse | Official Dining Site",
+            "sourceUrl": "https://www.repeallouisville.com/"
+          },
+          {
+            "quote": "og:description: Experience private dining in Louisville, KY at Repeal Oak Fired Steakhous",
+            "sourceUrl": "https://www.repeallouisville.com/private-dining-louisville-ky"
+          },
+          {
+            "quote": "title: Private Dining Louisville | Repeal Oak Fired Steakhouse KY",
+            "sourceUrl": "https://www.repeallouisville.com/private-dining-louisville-ky"
+          },
+          {
+            "quote": "og:description: Find answers to frequently asked questions about Repeal Oak Fired Steakhouse, covering dining details, reservations, policies, and helpful guest information.",
+            "sourceUrl": "https://www.repeallouisville.com/faq"
+          },
+          {
+            "quote": "title: Frequently Asked Questions | Repeal Oak Fired Steakhouse",
+            "sourceUrl": "https://www.repeallouisville.com/faq"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.repeallouisville.com/",
+          "https://www.repeallouisville.com/private-dining-louisville-ky",
+          "https://www.repeallouisville.com/faq"
+        ],
+        "retrievedAt": "2026-08-19T21:05:59.092Z",
+        "playwrightPages": 0
+      }
+    },
+    "seviche-louisville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:06:01.726Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://sevicherestaurant.com/menu",
+        "reservationUrl": "https://sevicherestaurant.com/reservations",
+        "reservationPlatform": "Direct",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "PRIVATE DINING AT SEVICHE Whether it’s business or pleasure, Seviche makes your event a night to remember.",
+        "groupPolicyLanguage": [
+          "PRIVATE DINING AT SEVICHE Whether it’s business or pleasure, Seviche makes your event a night to remember.",
+          "Escape to our lounge and private dining room with rustic accents that add an alluring warmth to the modern space."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Seviche Restaurant in Louisville offers innovative Latin and Southern fusion cuisine, private dining, and a unique culinary experience. Reserve your table now.",
+            "sourceUrl": "https://sevicherestaurant.com/"
+          },
+          {
+            "quote": "title: Seviche Restaurant | Discover Latin-Inspired Flavors Today",
+            "sourceUrl": "https://sevicherestaurant.com/"
+          },
+          {
+            "quote": "og:description: Explore Seviche Restaurant",
+            "sourceUrl": "https://sevicherestaurant.com/menu"
+          },
+          {
+            "quote": "title: Menu | Discover Flavors Today – Reserve Now &mdash; Seviche Restaurant",
+            "sourceUrl": "https://sevicherestaurant.com/menu"
+          },
+          {
+            "quote": "title: General 5 &mdash; Seviche Restaurant",
+            "sourceUrl": "https://sevicherestaurant.com/private-dining"
+          },
+          {
+            "quote": "og:description: Book your reservation at Seviche Restaurant in Louisville for a memorable dining experience. Contact us at +1 502 473 8560 or jeff@sevicherestaurant.com.",
+            "sourceUrl": "https://sevicherestaurant.com/reservations"
+          },
+          {
+            "quote": "title: Reservations | Reserve Your Table Today &mdash; Seviche Restaurant",
+            "sourceUrl": "https://sevicherestaurant.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://sevicherestaurant.com/",
+          "https://sevicherestaurant.com/menu",
+          "https://sevicherestaurant.com/private-dining",
+          "https://sevicherestaurant.com/reservations"
+        ],
+        "retrievedAt": "2026-08-19T21:06:01.726Z",
+        "playwrightPages": 0
+      }
+    },
+    "le-moo-louisville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:06:04.589Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Lemoo.com is a sleek and memorable domain name ready to take your startup to the next level. With its catchy sound and playful nature, it exudes a sense of freshness and innovation. This 5-letter, 2-syllable gem is perfect for industries li",
+            "sourceUrl": "https://www.lemoo.com/"
+          },
+          {
+            "quote": "meta description: Lemoo.com is a verified premium domain available for purchase. Buy now or pay in installments. Free transaction support, no extra fees.",
+            "sourceUrl": "https://www.lemoo.com/"
+          },
+          {
+            "quote": "title: Lemoo.com — Premium Domain For Sale | Atom",
+            "sourceUrl": "https://www.lemoo.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.lemoo.com/"
+        ],
+        "retrievedAt": "2026-08-19T21:06:04.589Z",
+        "playwrightPages": 1
+      }
+    },
+    "decade-louisville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:06:08.214Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/decade-louisville/?source=pop_up&spot_id=143205&destination=reservations&promotion=reservations",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Established in 2023, Decade is a neighborhood restaurant located in the heart of Butchertown…and a local hub for thoughtful art, music, creations & libations....",
+            "sourceUrl": "https://decaderestaurant.com/"
+          },
+          {
+            "quote": "meta description: Established in 2023, Decade is a neighborhood restaurant located in the heart of Butchertown…and a local hub for thoughtful art, music, creations & libations.",
+            "sourceUrl": "https://decaderestaurant.com/"
+          },
+          {
+            "quote": "title: Best American Restaurant in Louisville, KY | Decade",
+            "sourceUrl": "https://decaderestaurant.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://decaderestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-19T21:06:08.214Z",
+        "playwrightPages": 0
+      }
+    },
+    "buck-s-louisville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:06:09.103Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Home - bucks restaurant and bar",
+            "sourceUrl": "https://www.bucksrestaurantandbar.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.bucksrestaurantandbar.com/"
+        ],
+        "retrievedAt": "2026-08-19T21:06:09.103Z",
+        "playwrightPages": 0
+      }
+    },
+    "varanese-louisville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-19T21:06:11.554Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.varanese.com/menu/",
+        "reservationUrl": "https://www.opentable.com/booking/restref/availability?rid=20470&restRef=20470&partySize=2",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Host Your Next Event At Varanese Private Dining About Private Dining Varanese Restaurant offers private dining rooms in Louisville’s historic Clifton neighborhood.",
+        "groupPolicyLanguage": [
+          "Host Your Next Event At Varanese Private Dining About Private Dining Varanese Restaurant offers private dining rooms in Louisville’s historic Clifton neighborhood.",
+          "Contact us to reserve a private dining room for your next special occasion."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 502-899-9904",
+            "sourceUrl": "https://www.varanese.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$-$$$",
+            "sourceUrl": "https://www.varanese.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: New American",
+            "sourceUrl": "https://www.varanese.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 17:00 22:00",
+            "sourceUrl": "https://www.varanese.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 17:00 23:00",
+            "sourceUrl": "https://www.varanese.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 17:00 22:00",
+            "sourceUrl": "https://www.varanese.com/"
+          },
+          {
+            "quote": "og:description: Award-winning New American cuisine on Louisville's Frankfort Avenue. Open 7 days a week.",
+            "sourceUrl": "https://www.varanese.com/"
+          },
+          {
+            "quote": "meta description: Varanese offers New American cuisine in Louisville's historic Clifton neighborhood. Featuring locally sourced ingredients, bourbon flights, private dining, and an award-winning chef.",
+            "sourceUrl": "https://www.varanese.com/"
+          },
+          {
+            "quote": "title: Varanese - New American Cuisine | Louisville, KY",
+            "sourceUrl": "https://www.varanese.com/"
+          },
+          {
+            "quote": "meta description: Host your next event at Varanese. Private dining rooms in Louisville's Clifton neighborhood for groups of 10 to 80 guests.",
+            "sourceUrl": "https://www.varanese.com/private-dining/"
+          },
+          {
+            "quote": "title: Private Dining | Varanese",
+            "sourceUrl": "https://www.varanese.com/private-dining/"
+          },
+          {
+            "quote": "meta description: Explore the Varanese dinner menu featuring New American cuisine. Starters, soups, salads, entrees, and shareables crafted by Chef John Varanese in Louisville, KY.",
+            "sourceUrl": "https://www.varanese.com/menu/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.varanese.com/",
+          "https://www.varanese.com/private-dining/",
+          "https://www.varanese.com/contact/",
+          "https://www.varanese.com/menu/"
+        ],
+        "retrievedAt": "2026-08-19T21:06:11.554Z",
         "playwrightPages": 0
       }
     }

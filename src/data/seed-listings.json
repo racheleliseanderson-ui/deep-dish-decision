@@ -1,6 +1,6 @@
 {
   "note": "Controlled geographic seeds for metros not yet in the corpus. Every entry is a real named establishment with a public listing or official site. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
-  "generatedAt": "2026-08-19T20:00:00.000Z",
+  "generatedAt": "2026-08-19T21:01:44.000Z",
   "batches": [
     {
       "city": "Atlanta",
@@ -2977,6 +2977,444 @@
           "cuisineTags": [
             "Italian",
             "Seafood"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Jacksonville",
+      "stateCode": "FL",
+      "listings": [
+        {
+          "title": "Restaurant Orsay",
+          "website": "https://www.restaurantorsay.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Matthew's",
+          "website": "https://matthewsrestaurant.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Cowford Chophouse",
+          "website": "https://cowfordchophouse.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Marker 32",
+          "website": "https://marker32.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "River & Post",
+          "website": "https://www.riverandpostjax.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Aqua Grill",
+          "website": "https://www.aquagrill.net/",
+          "address": "Ponte Vedra Beach, FL",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Ocean 60",
+          "website": "https://www.ocean60.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "bb's",
+          "website": "https://www.bbsrestaurant.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Providence",
+      "stateCode": "RI",
+      "listings": [
+        {
+          "title": "Gracie's",
+          "website": "https://graciesprov.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Al Forno",
+          "website": "https://alforno.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Persimmon",
+          "website": "https://www.persimmonri.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "New Rivers",
+          "website": "https://newriversrestaurant.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Mill's Tavern",
+          "website": "https://www.millstavernrestaurant.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Nick's on Broadway",
+          "website": "https://nicksonbroadway.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Courtland Club",
+          "website": "https://www.courtlandclub.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Pot au Feu",
+          "website": "https://potaufeuri.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "French"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Milwaukee",
+      "stateCode": "WI",
+      "listings": [
+        {
+          "title": "Sanford",
+          "website": "https://sanfordrestaurant.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Amilinda",
+          "website": "https://amilinda.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Spanish",
+            "Portuguese"
+          ]
+        },
+        {
+          "title": "Morel",
+          "website": "https://morelmke.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Lake Park Bistro",
+          "website": "https://www.bartolottas.com/lake-park-bistro",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Birch",
+          "website": "https://www.birchonpleasant.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Carnevor",
+          "website": "https://carnevor.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Bacchus",
+          "website": "https://www.bacchusmke.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Story Hill BKC",
+          "website": "https://storyhillbkc.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Sorella",
+          "website": "https://www.sorellamke.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Italian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Raleigh",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "Death & Taxes",
+          "website": "https://ac-restaurants.com/death-taxes/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Second Empire",
+          "website": "https://www.second-empire.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "American",
+            "French"
+          ]
+        },
+        {
+          "title": "Crawford & Son",
+          "website": "https://crawfordandsonrestaurant.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Jolie",
+          "website": "https://restaurantjolie.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Herons",
+          "website": "https://www.heronsnc.com/",
+          "address": "Cary, NC",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Hummingbird",
+          "website": "https://hummingbirdraleigh.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Mandolin",
+          "website": "https://www.mandolinraleigh.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "Southern"
+          ]
+        },
+        {
+          "title": "Bida Manda",
+          "website": "https://www.bidamanda.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "Lao"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Oklahoma City",
+      "stateCode": "OK",
+      "listings": [
+        {
+          "title": "Grey Sweater",
+          "website": "https://www.greysweaterokc.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Nonesuch",
+          "website": "https://www.nonesuchokc.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Cheever's Cafe",
+          "website": "https://www.cheeverscafe.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "American",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Vast",
+          "website": "https://www.vastokc.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Ranch Steakhouse",
+          "website": "https://ranchsteakhouse.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Red PrimeSteak",
+          "website": "https://www.redprimesteak.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Cattlemen's Steakhouse",
+          "website": "https://cattlemensrestaurant.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Steak"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Louisville",
+      "stateCode": "KY",
+      "listings": [
+        {
+          "title": "610 Magnolia",
+          "website": "https://610magnolia.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Southern",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Jack Fry's",
+          "website": "https://www.jackfrys.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Proof on Main",
+          "website": "https://proofonmain.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Repeal",
+          "website": "https://www.repeallouisville.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Seviche",
+          "website": "https://sevicherestaurant.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Latin"
+          ]
+        },
+        {
+          "title": "Le Moo",
+          "website": "https://www.lemoo.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Decade",
+          "website": "https://decaderestaurant.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Buck's",
+          "website": "https://www.bucksrestaurantandbar.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Varanese",
+          "website": "https://www.varanese.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "American"
           ]
         }
       ]
