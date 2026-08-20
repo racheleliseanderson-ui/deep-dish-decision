@@ -3,7 +3,7 @@
  *
  * Priority (highest first):
  *   1. never enriched
- *   2. site scrape failures (408/429/500) from run-log
+ *   2. current owned-site scrape failures (408/429/500) from run-log
  *   3. completeness under 70%
  *   4. first-party review overdue / due soon
  *   5. enrichment age past tier windows (A 30d / B 90d / C 120d)
@@ -58,17 +58,24 @@ export const TIERS = {
   },
 };
 
-/** Collect last known site-failure notes per slug from the run log. */
+/**
+ * Collect the latest owned-site failure state per slug from the run log.
+ *
+ * Runs are newest-first. The first owned enrichment observation for a slug is
+ * authoritative: a later success clears an older 408/429/5xx instead of letting
+ * historical failure notes leak back into the current hygiene queue.
+ */
 export function siteFailureMap(runLog) {
   const map = new Map();
+  const seen = new Set();
   for (const run of runLog?.runs ?? []) {
+    if (!/^(enrich|hygiene)-owned$/.test(String(run?.kind || ""))) continue;
     for (const r of run.records ?? []) {
+      if (!r?.slug || seen.has(r.slug)) continue;
+      seen.add(r.slug);
       const notes = (r.notes ?? []).map(String);
       const fail = notes.filter((n) => /site\s*(408|425|429|5\d\d)|408|429|500/i.test(n));
-      if (fail.length && r.slug) {
-        // keep the first (most recent run, since runs are newest-first)
-        if (!map.has(r.slug)) map.set(r.slug, fail);
-      }
+      if (fail.length) map.set(r.slug, fail);
     }
   }
   return map;
