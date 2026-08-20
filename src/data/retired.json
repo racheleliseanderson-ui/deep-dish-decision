@@ -1,6 +1,6 @@
 {
   "note": "Restaurants removed after a first-party or named operator source said this specific restaurant is permanently closed. Slug and enrichment are dropped. Never rewritten onto a successor.",
-  "generatedAt": "2026-08-20T07:08:00.000Z",
+  "generatedAt": "2026-08-20T07:46:00.000Z",
   "records": [
     {
       "slug": "no-9-park-boston",
@@ -113,6 +113,34 @@
       "note": "The first-party site describes a future new chapter at the same corner. Do not rewrite Bleu's restaurant identity onto the replacement concept.",
       "successor": "",
       "retiredAt": "2026-08-20T07:08:00.000Z"
+    },
+    {
+      "slug": "buffalo-block-prime-steakhouse-billings",
+      "title": "Buffalo Block Prime Steakhouse",
+      "city": "Billings",
+      "stateProvince": "Montana",
+      "website": "https://buffaloblock.com/",
+      "operator": "Larson family / Buffalo Block Prime Steakhouse",
+      "source": "https://www.ktvq.com/news/local-news/buffalo-block-steakhouse-to-close-in-downtown-billings-aug-30",
+      "closedOn": "2025-08-30",
+      "quote": "It has been an absolute privilege to be a part of the Billings community.",
+      "note": "The Larson family announced the August 30 closure; the first-party Buffalo Block site now says Permanently Closed. Do not reseed the former steakhouse identity from stale listings.",
+      "successor": "",
+      "retiredAt": "2026-08-20T07:46:00.000Z"
+    },
+    {
+      "slug": "nami-kaze-honolulu",
+      "title": "Nami Kaze",
+      "city": "Honolulu",
+      "stateProvince": "Hawaii",
+      "website": "https://namikaze.com/",
+      "operator": "Nami Kaze / Chef Jason Peel",
+      "source": "https://namikaze.com/pdr-buyout/",
+      "closedOn": "2025-10",
+      "quote": "We have made the difficult decision to close Nami Kaze at the end of October.",
+      "note": "The first-party site retains older service-hours text below the closure notice. Treat the closure notice as authoritative and do not reseed the restaurant from stale operating copy.",
+      "successor": "",
+      "retiredAt": "2026-08-20T07:46:00.000Z"
     }
   ]
 }
