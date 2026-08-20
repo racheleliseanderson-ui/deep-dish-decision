@@ -2,6 +2,62 @@
   "runs": [
     {
       "kind": "hygiene-owned",
+      "startedAt": "2026-08-20T14:17:32.203Z",
+      "finishedAt": "2026-08-20T14:19:35.063Z",
+      "batchSize": 4,
+      "recovery": true,
+      "resolved": 2,
+      "unresolved": 2,
+      "deferred": 0,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 4
+      },
+      "retries": 0,
+      "failures": 2,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-20T14-17-32-203Z-hygiene-recovery-owned",
+      "records": [
+        {
+          "slug": "delicious-chengdu",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 18",
+            "source corrected  -> https://deliciouschengdutogo.com/"
+          ]
+        },
+        {
+          "slug": "mr-szechuan",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        },
+        {
+          "slug": "spicy-king",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+          ]
+        },
+        {
+          "slug": "dovecote-orlando",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 7",
+            "source corrected https://www.dovecoteorlando.com/ -> https://www.dovecoterestaurant.com/"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "hygiene-owned",
       "startedAt": "2026-08-20T14:09:22.305Z",
       "finishedAt": "2026-08-20T14:10:42.643Z",
       "batchSize": 16,

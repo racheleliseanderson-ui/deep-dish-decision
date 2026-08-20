@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-20T14:10:43.090Z",
+  "generatedAt": "2026-08-20T14:19:35.374Z",
   "totals": {
     "records": 810,
     "enriched": 810,
-    "resolved": 799,
+    "resolved": 801,
     "unresolved": 0,
     "statesCovered": 51,
     "statesTotal": 51,
@@ -28,11 +28,9 @@
     "preferRefreshOverDiscover": true,
     "hygieneBatchSize": 25,
     "hygieneSlugs": [
-      "delicious-chengdu",
       "chengdu-taste",
       "di-an-pho",
       "comp-re-lapin-new-orleans",
-      "dovecote-orlando",
       "jens-restaurant-anchorage",
       "locale-farm-to-table-eatery-bakersfield",
       "mr-szechuan",
@@ -52,30 +50,11 @@
       "billy-goat-tavern-the-original",
       "buck-s-louisville",
       "canje-austin",
-      "carson-kitchen-las-vegas"
+      "carson-kitchen-las-vegas",
+      "chengdu-bistro-west-town",
+      "chengdu-gourmet-pittsburgh"
     ],
     "nextHygiene": [
-      {
-        "slug": "delicious-chengdu",
-        "title": "Delicious Chengdu",
-        "city": "Temple City",
-        "stateProvince": "California",
-        "priority": 1353,
-        "reasons": [
-          "match-no-website",
-          "thin-17"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 17,
-        "matchStatus": "no-website",
-        "lastEnrichedAt": "2026-08-19T20:03:04.465Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
       {
         "slug": "chengdu-taste",
         "title": "Chengdu Taste",
@@ -140,27 +119,6 @@
         "siteFailures": []
       },
       {
-        "slug": "dovecote-orlando",
-        "title": "DoveCote",
-        "city": "Orlando",
-        "stateProvince": "Florida",
-        "priority": 1342,
-        "reasons": [
-          "match-site-failure",
-          "thin-28"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 28,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-19T20:08:31.265Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-18",
-        "reviewedAt": "2026-08-19",
-        "siteFailures": []
-      },
-      {
         "slug": "jens-restaurant-anchorage",
         "title": "Jens' Restaurant",
         "city": "Anchorage",
@@ -218,7 +176,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-19T20:03:05.992Z",
+        "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
@@ -262,7 +220,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-19T20:03:04.477Z",
+        "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
@@ -867,6 +825,46 @@
         "nextReviewAt": "2026-09-18",
         "reviewedAt": "2026-08-19",
         "siteFailures": []
+      },
+      {
+        "slug": "hana-japanese-eatery-phoenix",
+        "title": "Hana Japanese Eatery",
+        "city": "Phoenix",
+        "stateProvince": "Arizona",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 5,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-14T14:22:56.252Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-11",
+        "reviewedAt": "2026-08-12",
+        "siteFailures": []
+      },
+      {
+        "slug": "honey-salt-las-vegas",
+        "title": "Honey Salt",
+        "city": "Las Vegas",
+        "stateProvince": "Nevada",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 1,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-19T02:56:03.094Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-18",
+        "reviewedAt": "2026-08-19",
+        "siteFailures": []
       }
     ],
     "stale": []
@@ -882,11 +880,11 @@
     },
     {
       "label": "50-74",
-      "count": 640
+      "count": 642
     },
     {
       "label": "under 50",
-      "count": 92
+      "count": 90
     }
   ],
   "states": [
@@ -910,7 +908,7 @@
       "code": "FL",
       "count": 44,
       "enriched": 44,
-      "avgCompleteness": 61,
+      "avgCompleteness": 62,
       "population": 22610726,
       "perMillion": 1.95
     },
@@ -5593,6 +5591,31 @@
       "siteFailures": []
     },
     {
+      "slug": "dovecote-orlando",
+      "title": "DoveCote",
+      "stateCode": "FL",
+      "city": "Orlando",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-20T14:19:33.978Z",
+      "addedAt": "2026-08-19T20:02:58.066Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "southerleigh-san-antonio",
       "title": "Southerleigh",
       "stateCode": "TX",
@@ -7390,6 +7413,31 @@
       ],
       "staleTier": null,
       "ageDays": 9,
+      "siteFailures": []
+    },
+    {
+      "slug": "delicious-chengdu",
+      "title": "Delicious Chengdu",
+      "stateCode": "CA",
+      "city": "Temple City",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": 4.7,
+      "reviewCount": 571,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-20T14:17:32.206Z",
+      "addedAt": "2026-08-11T00:03:04.025Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -21077,7 +21125,7 @@
       "rating": 4.2,
       "reviewCount": 1063,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-19T20:03:04.477Z",
+      "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
       "addedAt": "2026-08-11T00:03:05.543Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
@@ -21103,7 +21151,7 @@
       "rating": 4.4,
       "reviewCount": 809,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-19T20:03:05.992Z",
+      "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
       "addedAt": "2026-08-11T00:03:05.543Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
@@ -21121,32 +21169,6 @@
       "siteFailures": [
         "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
       ]
-    },
-    {
-      "slug": "dovecote-orlando",
-      "title": "DoveCote",
-      "stateCode": "FL",
-      "city": "Orlando",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-19T20:08:31.265Z",
-      "addedAt": "2026-08-19T20:02:58.066Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-18",
-      "reviewedAt": "2026-08-19",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1342,
-      "refreshReasons": [
-        "match-site-failure",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
     },
     {
       "slug": "locale-farm-to-table-eatery-bakersfield",
@@ -21303,35 +21325,114 @@
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
+    }
+  ],
+  "recent": [
+    {
+      "slug": "dovecote-orlando",
+      "title": "DoveCote",
+      "stateCode": "FL",
+      "city": "Orlando",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-20T14:19:33.978Z",
+      "addedAt": "2026-08-19T20:02:58.066Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "spicy-king",
+      "title": "Spicy King",
+      "stateCode": "CA",
+      "city": "San Francisco",
+      "completeness": 28,
+      "matchStatus": "site-failure",
+      "rating": 4.2,
+      "reviewCount": 1063,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1342,
+      "refreshReasons": [
+        "match-site-failure",
+        "thin-28"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "mr-szechuan",
+      "title": "Mr Szechuan",
+      "stateCode": "CA",
+      "city": "San Francisco",
+      "completeness": 28,
+      "matchStatus": "site-failure",
+      "rating": 4.4,
+      "reviewCount": 809,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1342,
+      "refreshReasons": [
+        "match-site-failure",
+        "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT",
+        "thin-28"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+      ]
     },
     {
       "slug": "delicious-chengdu",
       "title": "Delicious Chengdu",
       "stateCode": "CA",
       "city": "Temple City",
-      "completeness": 17,
-      "matchStatus": "no-website",
+      "completeness": 61,
+      "matchStatus": "resolved",
       "rating": 4.7,
       "reviewCount": 571,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-19T20:03:04.465Z",
+      "lastEnrichedAt": "2026-08-20T14:17:32.206Z",
       "addedAt": "2026-08-11T00:03:04.025Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 1353,
+      "refreshPriority": 409,
       "refreshReasons": [
-        "match-no-website",
-        "thin-17"
+        "thin-61"
       ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
-    }
-  ],
-  "recent": [
+    },
     {
       "slug": "comp-re-lapin-new-orleans",
       "title": "Compère Lapin",
@@ -21525,106 +21626,6 @@
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
-    },
-    {
-      "slug": "oak-park-des-moines",
-      "title": "Oak Park",
-      "stateCode": "IA",
-      "city": "Des Moines",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:07.583Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1342,
-      "refreshReasons": [
-        "match-site-failure",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "cache-restaurant-little-rock",
-      "title": "Cache Restaurant",
-      "stateCode": "AR",
-      "city": "Little Rock",
-      "completeness": 72,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:04.358Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "black-rooster-columbia",
-      "title": "Black Rooster",
-      "stateCode": "SC",
-      "city": "Columbia",
-      "completeness": 61,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:02.028Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "locale-farm-to-table-eatery-bakersfield",
-      "title": "Locale Farm to Table Eatery",
-      "stateCode": "CA",
-      "city": "Bakersfield",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:01.421Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1342,
-      "refreshReasons": [
-        "match-site-failure",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
     }
   ],
   "queue": {
@@ -21637,6 +21638,24 @@
     "next": []
   },
   "runs": [
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-20T14:17:32.203Z",
+      "batchSize": 4,
+      "inserted": 0,
+      "cities": [],
+      "resolved": 2,
+      "unresolved": 2,
+      "avgCompleteness": 0,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 4
+      },
+      "retries": 0,
+      "failures": 2,
+      "flagged": false
+    },
     {
       "kind": "hygiene-owned",
       "startedAt": "2026-08-20T14:09:22.305Z",
@@ -22396,57 +22415,6 @@
       },
       "retries": 0,
       "failures": 1,
-      "flagged": false
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-19T20:02:58.066Z",
-      "batchSize": 0,
-      "inserted": 61,
-      "cities": [
-        {
-          "city": "Riverside, CA",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        },
-        {
-          "city": "Orlando, FL",
-          "found": 11,
-          "inserted": 11,
-          "duplicates": 0
-        },
-        {
-          "city": "San Antonio, TX",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        },
-        {
-          "city": "Portland, OR",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        },
-        {
-          "city": "San Jose, CA",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        },
-        {
-          "city": "Virginia Beach, VA",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        }
-      ],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
       "flagged": false
     }
   ]

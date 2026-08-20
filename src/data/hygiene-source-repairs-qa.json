@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-08-20T14:19:35.423Z",
+  "branch": "data/hygiene-source-repairs-4",
+  "sourceCommit": "b9b7fb70ed57b5b1e4a4e1b3a6af546bab871937",
+  "passed": true,
+  "repair": {
+    "total": 4,
+    "resolved": 2,
+    "failures": 2,
+    "missing": 0,
+    "datasetSourceCorrections": 2,
+    "unresolvedSlugs": [
+      "mr-szechuan",
+      "spicy-king"
+    ]
+  },
+  "coverageTotals": {
+    "records": 810,
+    "enriched": 810,
+    "resolved": 801,
+    "unresolved": 0,
+    "statesCovered": 51,
+    "statesTotal": 51,
+    "avgCompleteness": 61,
+    "withRating": 111,
+    "withPrice": 108,
+    "hygiene": 690,
+    "neverEnriched": 0,
+    "thin": 679,
+    "siteFailures": 1,
+    "reviewDue": 11,
+    "staleA": 0,
+    "staleB": 0,
+    "staleC": 0
+  },
+  "refreshTotals": {
+    "records": 810,
+    "hygiene": 690,
+    "neverEnriched": 0,
+    "thin": 679,
+    "siteFailures": 1,
+    "reviewDue": 11,
+    "staleA": 0,
+    "staleB": 0,
+    "staleC": 0,
+    "dueNow": 690
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T14:10:43.061Z",
+  "generatedAt": "2026-08-20T14:19:35.353Z",
   "settings": {
     "tiers": {
       "A": 30,
@@ -23,11 +23,9 @@
     "dueNow": 690
   },
   "hygiene": [
-    "delicious-chengdu",
     "chengdu-taste",
     "di-an-pho",
     "comp-re-lapin-new-orleans",
-    "dovecote-orlando",
     "jens-restaurant-anchorage",
     "locale-farm-to-table-eatery-bakersfield",
     "mr-szechuan",
@@ -443,6 +441,7 @@
     "cure-rochester",
     "customshop-charlotte",
     "dakar-nola-new-orleans",
+    "delicious-chengdu",
     "demi-minneapolis",
     "di-vino-rosso-columbia",
     "dooky-chase-s-restaurant-new-orleans",
@@ -621,6 +620,7 @@
     "del-mar-washington",
     "demera-restaurant",
     "dianoia-s-eatery-pittsburgh",
+    "dovecote-orlando",
     "el-five-denver",
     "elements-princeton",
     "elvie-s-jackson",
@@ -717,27 +717,6 @@
   "stale": [],
   "items": [
     {
-      "slug": "delicious-chengdu",
-      "title": "Delicious Chengdu",
-      "city": "Temple City",
-      "stateProvince": "California",
-      "priority": 1353,
-      "reasons": [
-        "match-no-website",
-        "thin-17"
-      ],
-      "hygiene": true,
-      "staleTier": null,
-      "ageDays": 0,
-      "completeness": 17,
-      "matchStatus": "no-website",
-      "lastEnrichedAt": "2026-08-19T20:03:04.465Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-10",
-      "reviewedAt": "2026-08-11",
-      "siteFailures": []
-    },
-    {
       "slug": "chengdu-taste",
       "title": "Chengdu Taste",
       "city": "Alhambra",
@@ -801,27 +780,6 @@
       "siteFailures": []
     },
     {
-      "slug": "dovecote-orlando",
-      "title": "DoveCote",
-      "city": "Orlando",
-      "stateProvince": "Florida",
-      "priority": 1342,
-      "reasons": [
-        "match-site-failure",
-        "thin-28"
-      ],
-      "hygiene": true,
-      "staleTier": null,
-      "ageDays": 0,
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "lastEnrichedAt": "2026-08-19T20:08:31.265Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-18",
-      "reviewedAt": "2026-08-19",
-      "siteFailures": []
-    },
-    {
       "slug": "jens-restaurant-anchorage",
       "title": "Jens' Restaurant",
       "city": "Anchorage",
@@ -879,7 +837,7 @@
       "ageDays": 0,
       "completeness": 28,
       "matchStatus": "site-failure",
-      "lastEnrichedAt": "2026-08-19T20:03:05.992Z",
+      "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
@@ -923,7 +881,7 @@
       "ageDays": 0,
       "completeness": 28,
       "matchStatus": "site-failure",
-      "lastEnrichedAt": "2026-08-19T20:03:04.477Z",
+      "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
       "reviewedAt": "2026-08-11",
@@ -9130,6 +9088,26 @@
       "siteFailures": []
     },
     {
+      "slug": "delicious-chengdu",
+      "title": "Delicious Chengdu",
+      "city": "Temple City",
+      "stateProvince": "California",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-20T14:17:32.206Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
+      "siteFailures": []
+    },
+    {
       "slug": "demi-minneapolis",
       "title": "Demi",
       "city": "Minneapolis",
@@ -12684,6 +12662,26 @@
       "completeness": 67,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-19T02:56:27.366Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-18",
+      "reviewedAt": "2026-08-19",
+      "siteFailures": []
+    },
+    {
+      "slug": "dovecote-orlando",
+      "title": "DoveCote",
+      "city": "Orlando",
+      "stateProvince": "Florida",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-20T14:19:33.978Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-18",
       "reviewedAt": "2026-08-19",
