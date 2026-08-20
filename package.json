@@ -18,6 +18,7 @@
     "pipeline:enrich:slugs": "node scripts/pipeline/enrich.mjs --slugs",
     "pipeline:discover": "node scripts/pipeline/discover.mjs",
     "pipeline:seed": "node scripts/pipeline/seed-listings.mjs",
+    "pipeline:seed:enrich": "node scripts/pipeline/seed-and-enrich.mjs",
     "pipeline:retire": "node scripts/pipeline/retire-closed.mjs",
     "validate:seed": "node scripts/validate-seed.mjs",
     "test": "vitest run"
@@ -88,7 +89,7 @@
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.6",
-    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-hooks": "^6.1.1",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",
     "happy-dom": "^20.11.2",
