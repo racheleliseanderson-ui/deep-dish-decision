@@ -9,7 +9,7 @@
  *   --slug=
  *   --operator=     named person or operating company
  *   --source=       URL of the operator statement, or a report that quotes it
- *   --closed=       YYYY-MM-DD service ended (operator effective date)
+ *   --closed=       YYYY-MM-DD when the exact day is sourced; YYYY-MM when only the month is sourced
  *   --quote=        short operator language
  *
  * Optional:
@@ -27,6 +27,8 @@ import {
   writeJson,
 } from "./lib.mjs";
 
+const CLOSED_ON_RE = /^\d{4}-\d{2}(?:-\d{2})?$/;
+
 export function validateRetirementInput(input) {
   const errors = [];
   if (!String(input.slug || "").trim()) errors.push("slug required");
@@ -34,8 +36,8 @@ export function validateRetirementInput(input) {
   if (!/^https?:\/\/\S+\.\S+/i.test(String(input.source || ""))) {
     errors.push("source URL required");
   }
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(input.closedOn || ""))) {
-    errors.push("closedOn YYYY-MM-DD required");
+  if (!CLOSED_ON_RE.test(String(input.closedOn || ""))) {
+    errors.push("closedOn YYYY-MM or YYYY-MM-DD required");
   }
   if (String(input.quote || "").trim().length < 20) {
     errors.push("operator quote required");
