@@ -1,0 +1,90 @@
+{
+  "note": "Controlled geographic seeds for expansion queue priorities 49-54. Every entry is a real named establishment with a current official restaurant site verified before inclusion. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
+  "generatedAt": "2026-08-20T05:40:00.000Z",
+  "batches": [
+    {
+      "city": "Birmingham",
+      "stateCode": "AL",
+      "listings": [
+        {"title": "Bottega", "website": "https://bottegarestaurant.com/", "address": "Birmingham, AL", "cuisineTags": ["Italian", "Southern"]},
+        {"title": "Chez Fonfon", "website": "https://www.fonfonbham.com/", "address": "Birmingham, AL", "cuisineTags": ["French", "Bistro"]},
+        {"title": "Automatic Seafood and Oysters", "website": "https://www.automaticseafood.com/", "address": "Birmingham, AL", "cuisineTags": ["Seafood"]},
+        {"title": "Helen", "website": "https://www.helenbham.com/", "address": "Birmingham, AL", "cuisineTags": ["Southern", "Grill"]},
+        {"title": "OvenBird", "website": "https://www.ovenbirdrestaurant.com/", "address": "Birmingham, AL", "cuisineTags": ["Southern", "Live fire"]},
+        {"title": "Hot and Hot Fish Club", "website": "https://www.hotandhotfishclub.com/", "address": "Birmingham, AL", "cuisineTags": ["Southern", "Contemporary"]},
+        {"title": "Blueprint on 3rd", "website": "https://blueprinton3rd.com/", "address": "Birmingham, AL", "cuisineTags": ["American", "Southern"]},
+        {"title": "Café Dupont", "website": "https://www.cafedupont.net/", "address": "Birmingham, AL", "cuisineTags": ["American", "Southern"]}
+      ]
+    },
+    {
+      "city": "Grand Rapids",
+      "stateCode": "MI",
+      "listings": [
+        {"title": "MDRD", "website": "https://amwaygrand.com/dining/mdrd", "address": "Grand Rapids, MI", "cuisineTags": ["Spanish"]},
+        {"title": "Grove", "website": "https://groverestaurant.com/", "address": "Grand Rapids, MI", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "The Sovengard", "website": "https://www.sovengard.com/", "address": "Grand Rapids, MI", "cuisineTags": ["New Nordic", "Farm-to-table"]},
+        {"title": "Linear Restaurant", "website": "https://www.linearrestaurant.com/", "address": "Grand Rapids, MI", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Bistro Bella Vita", "website": "https://bistrobellavita.com/", "address": "Grand Rapids, MI", "cuisineTags": ["French", "Italian"]},
+        {"title": "Scholar", "website": "https://www.scholargr.com/", "address": "Grand Rapids, MI", "cuisineTags": ["American"]},
+        {"title": "Butcher's Union", "website": "https://www.butchersuniongr.com/", "address": "Grand Rapids, MI", "cuisineTags": ["American", "Steak"]},
+        {"title": "MeXo", "website": "https://mexogr.com/", "address": "Grand Rapids, MI", "cuisineTags": ["Mexican"]}
+      ]
+    },
+    {
+      "city": "Rochester",
+      "stateCode": "NY",
+      "listings": [
+        {"title": "REDD Rochester", "website": "https://reddrochester.com/", "address": "Rochester, NY", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Good Luck", "website": "https://www.restaurantgoodluck.com/", "address": "Rochester, NY", "cuisineTags": ["American", "Seasonal"]},
+        {"title": "Cure", "website": "https://www.curebar.net/", "address": "Rochester, NY", "cuisineTags": ["French", "Bistro"]},
+        {"title": "Rooney's Restaurant", "website": "https://rooneysrestaurant.com/", "address": "Rochester, NY", "cuisineTags": ["American"]},
+        {"title": "Avvino", "website": "https://www.avvinorochester.com/", "address": "Rochester, NY", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Lento", "website": "https://www.lentorestaurant.com/", "address": "Rochester, NY", "cuisineTags": ["American", "Farm-to-table"]},
+        {"title": "Nosh", "website": "https://www.noshroc.com/", "address": "Rochester, NY", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Pane Vino on the River", "website": "https://panevinoriver.com/", "address": "Rochester, NY", "cuisineTags": ["Italian"]}
+      ]
+    },
+    {
+      "city": "Tucson",
+      "stateCode": "AZ",
+      "listings": [
+        {"title": "Tito & Pep", "website": "https://www.titoandpep.com/", "address": "Tucson, AZ", "cuisineTags": ["Southwestern", "Contemporary"]},
+        {"title": "BATA", "website": "https://www.batatucson.com/", "address": "Tucson, AZ", "cuisineTags": ["Contemporary", "Seasonal"]},
+        {"title": "Vivace Restaurant", "website": "https://www.vivacetucson.com/", "address": "Tucson, AZ", "cuisineTags": ["Italian"]},
+        {"title": "The Coronet", "website": "https://coronettucson.com/", "address": "Tucson, AZ", "cuisineTags": ["American", "Seasonal"]},
+        {"title": "El Charro Café", "website": "https://www.elcharrocafe.com/", "address": "Tucson, AZ", "cuisineTags": ["Mexican", "Sonoran"]},
+        {"title": "Feast", "website": "https://www.eatatfeast.com/", "address": "Tucson, AZ", "cuisineTags": ["American", "Seasonal"]},
+        {"title": "Kingfisher Bar & Grill", "website": "https://www.kingfishertucson.com/", "address": "Tucson, AZ", "cuisineTags": ["Seafood", "American"]},
+        {"title": "Tumerico", "website": "https://www.tumerico.com/", "address": "Tucson, AZ", "cuisineTags": ["Latin American", "Vegan"]}
+      ]
+    },
+    {
+      "city": "Fresno",
+      "stateCode": "CA",
+      "listings": [
+        {"title": "Cracked Pepper Bistro", "website": "https://crackedpepperbistro.com/", "address": "Fresno, CA", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Pismo's Coastal Grill & Fish Market", "website": "https://www.pismos.com/", "address": "Fresno, CA", "cuisineTags": ["Seafood"]},
+        {"title": "Saizon", "website": "https://www.saizon.com/", "address": "Fresno, CA", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Max's Bistro & Bar", "website": "https://maxsbistro.com/", "address": "Fresno, CA", "cuisineTags": ["American", "Bistro"]},
+        {"title": "Campagnia Bistro", "website": "https://campagnia.net/", "address": "Fresno, CA", "cuisineTags": ["California", "Bistro"]},
+        {"title": "FIVE Restaurant", "website": "https://www.5restaurant.com/", "address": "Fresno, CA", "cuisineTags": ["California", "Italian"]},
+        {"title": "The Lime Lite", "website": "https://www.thelimelite.com/", "address": "Fresno, CA", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Heirloom", "website": "https://heirloom-eats.com/", "address": "Fresno, CA", "cuisineTags": ["American", "California"]}
+      ]
+    },
+    {
+      "city": "Tulsa",
+      "stateCode": "OK",
+      "listings": [
+        {"title": "Amelia's", "website": "https://www.amelias.us/", "address": "Tulsa, OK", "cuisineTags": ["American", "South American"]},
+        {"title": "Juniper", "website": "https://www.junipertulsa.com/", "address": "Tulsa, OK", "cuisineTags": ["American", "Seasonal"]},
+        {"title": "PRHYME Downtown Steakhouse", "website": "https://www.prhymetulsa.com/", "address": "Tulsa, OK", "cuisineTags": ["Steak", "American"]},
+        {"title": "Oren", "website": "https://orenrestaurant.com/", "address": "Tulsa, OK", "cuisineTags": ["American", "Mediterranean"]},
+        {"title": "Bull in the Alley", "website": "https://www.bullinthealley.com/", "address": "Tulsa, OK", "cuisineTags": ["Steak", "American"]},
+        {"title": "il seme", "website": "https://ilsemetulsa.com/", "address": "Tulsa, OK", "cuisineTags": ["Italian"]},
+        {"title": "Nola's Creole & Cocktails", "website": "https://www.nolastulsa.com/", "address": "Tulsa, OK", "cuisineTags": ["Creole"]},
+        {"title": "Stonehorse Cafe", "website": "https://www.stonehorsecafe.com/", "address": "Tulsa, OK", "cuisineTags": ["American"]}
+      ]
+    }
+  ]
+}
