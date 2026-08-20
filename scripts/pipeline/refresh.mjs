@@ -3,7 +3,7 @@
  *
  * Priority (highest first):
  *   1. never enriched
- *   2. current owned-site scrape failures (408/429/500) from run-log
+ *   2. current owned-site scrape / match failures
  *   3. completeness under 70%
  *   4. first-party review overdue / due soon
  *   5. enrichment age past tier windows (A 30d / B 90d / C 120d)
@@ -58,6 +58,15 @@ export const TIERS = {
   },
 };
 
+const HYGIENE_MATCH_STATUSES = new Set([
+  "site-failure",
+  "no-website",
+  "empty",
+  "unresolved",
+  "deferred",
+  "error",
+]);
+
 /**
  * Collect the latest owned-site failure state per slug from the run log.
  *
@@ -99,18 +108,20 @@ export function scoreRefreshItem({
   const age = ageDays(last, now);
   const matchStatus = meta.matchStatus ?? (entry ? "unknown" : "none");
 
-  // 1. Never enriched / listing shell
+  // 1. Never enriched / current owned-site match state requiring attention.
   if (!entry || matchStatus === "none") {
     priority += 1000;
     reasons.push("never-enriched");
-  } else if (matchStatus === "unresolved" || matchStatus === "deferred" || matchStatus === "error") {
+  } else if (HYGIENE_MATCH_STATUSES.has(matchStatus)) {
     priority += 900;
     reasons.push(`match-${matchStatus}`);
   }
 
-  // 2. Site scrape failures
+  // 2. Current run-log site scrape failures. Avoid double-prioritizing when
+  // meta.matchStatus already carries the same site-failure state; retain the
+  // detailed reason text for diagnosis either way.
   if (siteFails?.length) {
-    priority += 500;
+    if (matchStatus !== "site-failure") priority += 500;
     reasons.push(`site-failure:${siteFails.join(",")}`);
   }
 
