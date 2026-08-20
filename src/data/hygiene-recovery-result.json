@@ -12,158 +12,112 @@
       "matchStatus": "resolved",
       "completeness": 83,
       "website": "https://mexogr.com/",
-      "notes": [
-        "pages 4",
-        "quotes 17"
-      ]
+      "notes": ["pages 4", "quotes 17"]
     },
     {
       "slug": "cracked-pepper-bistro-fresno",
       "matchStatus": "resolved",
       "completeness": 83,
       "website": "https://crackedpepperbistro.com/",
-      "notes": [
-        "pages 3",
-        "quotes 19"
-      ]
+      "notes": ["pages 3", "quotes 19"]
     },
     {
       "slug": "heirloom-fresno",
       "matchStatus": "resolved",
       "completeness": 56,
       "website": "https://heirloom-eats.com/",
-      "notes": [
-        "pages 2",
-        "quotes 1"
-      ]
+      "notes": ["pages 2", "quotes 1"]
     },
     {
       "slug": "the-artichoke-cafe-albuquerque",
       "matchStatus": "resolved",
       "completeness": 78,
       "website": "https://www.artichokecafe.com/",
-      "notes": [
-        "pages 4",
-        "quotes 12"
-      ]
+      "notes": ["pages 4", "quotes 12"]
     },
     {
       "slug": "locale-farm-to-table-eatery-bakersfield",
       "matchStatus": "site-failure",
       "completeness": 28,
       "website": "https://www.localefarmtotable.com/",
-      "notes": [
-        "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
-      ]
+      "notes": ["site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"]
     },
     {
       "slug": "black-rooster-columbia",
       "matchStatus": "resolved",
       "completeness": 61,
       "website": "https://blackroostersc.com/",
-      "notes": [
-        "pages 2",
-        "quotes 2"
-      ]
+      "notes": ["pages 2", "quotes 2"]
     },
     {
       "slug": "cache-restaurant-little-rock",
       "matchStatus": "resolved",
       "completeness": 72,
       "website": "https://www.cachelittlerock.com/",
-      "notes": [
-        "pages 3",
-        "quotes 7"
-      ]
+      "notes": ["pages 3", "quotes 7"]
     },
     {
       "slug": "oak-park-des-moines",
       "matchStatus": "site-failure",
       "completeness": 28,
       "website": "https://www.oakparkdsm.com/",
-      "notes": [
-        "site 403 HTTP 403"
-      ]
+      "notes": ["site 403 HTTP 403"]
     },
     {
       "slug": "proudfoot-bird-des-moines",
       "matchStatus": "resolved",
       "completeness": 72,
       "website": "https://www.proudfootandbirddsm.com/",
-      "notes": [
-        "pages 4",
-        "browser recovery",
-        "direct 403 HTTP 403",
-        "quotes 12"
-      ]
+      "notes": ["pages 4", "browser recovery", "direct 403 HTTP 403", "quotes 12"]
     },
     {
       "slug": "twelve-restaurant-bar-wichita",
       "matchStatus": "resolved",
       "completeness": 78,
       "website": "https://www.twelvewichita.com/",
-      "notes": [
-        "pages 3",
-        "quotes 9"
-      ]
+      "notes": ["pages 3", "quotes 9"]
     },
     {
       "slug": "bravo-italian-restaurant-bar-jackson",
       "matchStatus": "resolved",
       "completeness": 72,
       "website": "https://www.bravobuzz.com/",
-      "notes": [
-        "pages 3",
-        "quotes 10"
-      ]
+      "notes": ["pages 3", "quotes 10"]
     },
     {
       "slug": "rosewild-fargo",
       "matchStatus": "resolved",
       "completeness": 50,
       "website": "https://jasperfargo.com/",
-      "notes": [
-        "pages 2",
-        "quotes 2"
-      ]
+      "notes": ["pages 2", "quotes 2"]
     },
     {
       "slug": "the-albany-cheyenne",
       "matchStatus": "resolved",
       "completeness": 72,
       "website": "https://www.albanycheyenne.com/",
-      "notes": [
-        "pages 2",
-        "quotes 8"
-      ]
+      "notes": ["pages 2", "quotes 8"]
     },
     {
       "slug": "whisky-ramen-anchorage",
       "matchStatus": "resolved",
       "completeness": 56,
       "website": "https://whiskyandramen.com/",
-      "notes": [
-        "pages 2",
-        "source corrected https://www.whiskyandramen.com/ -> https://whiskyandramen.com/"
-      ]
+      "notes": ["pages 2", "source corrected https://www.whiskyandramen.com/ -> https://whiskyandramen.com/"]
     },
     {
       "slug": "jens-restaurant-anchorage",
       "matchStatus": "site-failure",
       "completeness": 28,
       "website": "https://jensrestaurant.com/",
-      "notes": [
-        "site 0 fetch failed:CERT_HAS_EXPIRED"
-      ]
+      "notes": ["site 0 fetch failed:CERT_HAS_EXPIRED"]
     },
     {
       "slug": "comp-re-lapin-new-orleans",
       "matchStatus": "site-failure",
       "completeness": 28,
       "website": "https://www.comperelapin.com/",
-      "notes": [
-        "site 0 fetch failed:DEPTH_ZERO_SELF_SIGNED_CERT"
-      ]
+      "notes": ["site 0 fetch failed:DEPTH_ZERO_SELF_SIGNED_CERT"]
     }
   ]
 }

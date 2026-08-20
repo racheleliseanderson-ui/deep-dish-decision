@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T14:10:42.609Z",
+  "generatedAt": "2026-08-20T15:38:57.250Z",
   "records": {
     "canlis": {
       "google": {
@@ -14506,11 +14506,11 @@
         "generatedAt": "2026-08-11T00:00:43.245Z"
       },
       "meta": {
-        "matchStatus": "no-website",
+        "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:04.440Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T15:38:57.250Z",
+        "enrichmentMode": "operator-platform-source",
         "completeness": 22
       }
     },
@@ -16496,11 +16496,11 @@
         "generatedAt": "2026-08-11T00:05:52.081Z"
       },
       "meta": {
-        "matchStatus": "no-website",
+        "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:04.455Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T15:38:57.249Z",
+        "enrichmentMode": "operator-platform-source",
         "completeness": 22
       }
     },
@@ -16882,12 +16882,126 @@
         "generatedAt": "2026-08-11T00:06:01.505Z"
       },
       "meta": {
-        "matchStatus": "no-website",
+        "matchStatus": "resolved",
         "confidence": 0.5,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:04.465Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 17
+        "lastEnrichedAt": "2026-08-20T14:17:32.206Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://qmenu.us/#/delicious-chengdu-temple-city",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 6262869996"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Sunday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Monday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Monday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Tuesday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Tuesday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Wednesday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Wednesday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Thursday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Thursday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Friday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Friday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Saturday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Saturday 05:00 PM 09:30 PM"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Chinese"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 6262869996",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Chinese",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "meta description: Temple City, CA 91780 Chinese food for Pickup - Order from Delicious Chengdu（Yao Dian Zi Restaurant） in Temple City, CA 91780, phone: 626-286-9996",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "title: Home | Delicious Chengdu（Yao Dian Zi Restaurant）",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://deliciouschengdutogo.com/"
+        ],
+        "retrievedAt": "2026-08-20T14:17:32.206Z",
+        "playwrightPages": 0
       }
     },
     "chong-qing-special-noodles": {
@@ -19887,8 +20001,8 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:04.477Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
+        "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
     },
@@ -20423,8 +20537,8 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:05.992Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
+        "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
     },
@@ -34943,12 +35057,71 @@
     },
     "dovecote-orlando": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T20:08:31.265Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:19:33.978Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/restaurant/profile/211381/reserve?rid=211381&restref=211381",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 407-930-1700"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Saturday,Sunday 11:30 22:00",
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Sunday 10:30 14:30",
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 10:30 14:30"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $5 - $45"
+        ],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 407-930-1700",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $5 - $45",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday,Sunday 11:30 22:00",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Sunday 10:30 14:30",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 10:30 14:30",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "og:description: Welcome to Downtown Orlando",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "title: Downtown Orlando Restaurant | DoveCote",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.dovecoterestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-20T14:19:33.978Z",
+        "playwrightPages": 0
       }
     },
     "mixtli-san-antonio": {
