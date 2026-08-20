@@ -28,6 +28,11 @@ import {
 } from "./lib.mjs";
 import { STATES } from "./regions.mjs";
 import { isRetiredListing, retiredIndex } from "./retire-closed.mjs";
+import {
+  batchMatchesCityFilter,
+  findQueueTarget,
+  queueCityForBatch,
+} from "./seed-target.mjs";
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -227,10 +232,6 @@ function toRecord(listing, target, retrievedAt) {
   };
 }
 
-function queueCityForBatch(batch) {
-  return String(batch.queueCity || batch.city || "").trim();
-}
-
 // ------------------------------------------------------------------ run
 const startedAt = new Date().toISOString();
 const snapshotDir = DRY ? null : snapshot("seed-listings");
@@ -240,21 +241,13 @@ let skipped = 0;
 const insertedSlugs = [];
 const perCity = [];
 
-const batches = seedBatches.filter((b) => {
-  if (!onlyCities) return true;
-  const names = [b.city, b.queueCity]
-    .filter(Boolean)
-    .map((name) => String(name).trim().toLowerCase());
-  return names.some((name) => onlyCities.includes(name));
-});
+const batches = seedBatches.filter((batch) => batchMatchesCityFilter(batch, onlyCities));
 
 console.log(`Seed sources: ${seedFiles.join(", ")}`);
 
 for (const batch of batches) {
   const queueCity = queueCityForBatch(batch);
-  const target = queue.cities.find(
-    (c) => c.city.toLowerCase() === queueCity.toLowerCase() && c.stateCode === batch.stateCode,
-  );
+  const target = findQueueTarget(queue, batch);
   if (!target) {
     console.warn(
       `  ! ${batch.city}, ${batch.stateCode} (queue target: ${queueCity}) not in expansion queue — skip`,
