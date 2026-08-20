@@ -1,0 +1,95 @@
+name: Targeted first-party source repairs
+
+on:
+  pull_request:
+    branches:
+      - data/hygiene-first-party-failures-16
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: write
+
+jobs:
+  repair-first-party-sources:
+    if: github.head_ref == 'data/hygiene-source-repairs-4' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      RI_PLAYWRIGHT: "1"
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: data/hygiene-source-repairs-4
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install --no-package-lock
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run tests
+        run: npm test
+
+      - name: Validate corpus before repair
+        run: npm run validate:seed
+
+      - name: Execute exact four source repairs
+        run: node scripts/pipeline/recover-owned-sites.mjs --manifest=src/data/hygiene-source-repairs-2026-08-20.json
+
+      - name: Validate corpus after repair
+        run: npm run validate:seed
+
+      - name: Recompute refresh and coverage
+        run: |
+          node scripts/pipeline/refresh.mjs
+          node scripts/pipeline/report.mjs
+
+      - name: Write source-repair QA
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const read = (p, fallback = {}) => {
+            try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return fallback; }
+          };
+          const recovery = read('src/data/hygiene-recovery-result.json');
+          const coverage = read('src/data/coverage.json', { totals: {} });
+          const refresh = read('src/data/refresh-queue.json', { totals: {} });
+          const result = {
+            generatedAt: new Date().toISOString(),
+            branch: 'data/hygiene-source-repairs-4',
+            sourceCommit: process.env.GITHUB_SHA,
+            passed: true,
+            repair: {
+              total: recovery.total ?? null,
+              resolved: recovery.resolved ?? null,
+              failures: recovery.failures ?? null,
+              missing: recovery.missing ?? null,
+              datasetSourceCorrections: recovery.datasetSourceCorrections ?? null,
+              unresolvedSlugs: (recovery.records ?? []).filter((r) => r.matchStatus !== 'resolved').map((r) => r.slug),
+            },
+            coverageTotals: coverage.totals ?? {},
+            refreshTotals: refresh.totals ?? {},
+          };
+          fs.writeFileSync('src/data/hygiene-source-repairs-qa.json', JSON.stringify(result, null, 2) + '\n');
+          NODE
+
+      - name: Commit generated repair artifacts
+        shell: bash
+        run: |
+          git config user.name "Rachel Elise Anderson"
+          git config user.email "Rachel.Elise.Anderson@gmail.com"
+          git add src/data/dataset.json src/data/enrichment.json src/data/coverage.json \
+            src/data/refresh-queue.json src/data/run-log.json \
+            src/data/hygiene-recovery-result.json src/data/hygiene-source-repairs-qa.json
+          if git diff --staged --quiet; then
+            echo "No repair changes to commit"
+          else
+            git commit -m "chore(corpus): execute four first-party source repairs"
+            git push origin HEAD:data/hygiene-source-repairs-4
+          fi
