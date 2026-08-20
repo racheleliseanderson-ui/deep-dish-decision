@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { blockedRenderedPage } from "./recover-owned-sites.mjs";
+import { blockedRenderedPage } from "./recovery-page-guard.mjs";
 
 describe("browser recovery denial guard", () => {
   it("rejects Cloudflare challenge pages", () => {
