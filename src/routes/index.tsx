@@ -9,6 +9,7 @@ import { ScenarioPlaybooks } from "@/components/rih/scenario-playbooks";
 import { SituationConsole } from "@/components/rih/situation-console";
 import { SiteNav } from "@/components/rih/site-nav";
 import heroPass from "@/assets/hero-pass.jpg";
+import figGold from "@/assets/fig-gold.jpg";
 import { dataset, records } from "@/lib/dataset";
 import {
   OPS,
@@ -106,10 +107,10 @@ function Hub() {
       <header className="relative isolate overflow-hidden border-b border-border-strong">
         <img
           src={heroPass}
-          alt="A single plate finished under brass lamplight on a marble pass"
-          width={1920}
-          height={1088}
-          className="absolute inset-0 -z-10 size-full object-cover object-[62%_center] opacity-[0.42]"
+          alt="Industrial dining room under hanging lights — empty tables waiting for service"
+          width={1800}
+          height={1008}
+          className="absolute inset-0 -z-10 size-full object-cover object-center opacity-[0.48]"
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background via-background/92 to-background/30" />
         <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-background to-transparent" />
@@ -161,6 +162,20 @@ function Hub() {
       </header>
 
       <Marquee items={tickerItems} />
+
+      <figure className="relative isolate overflow-hidden border-b border-border-strong">
+        <img
+          src={figGold}
+          alt="Wine glasses and golden light on an elegant dinner table"
+          width={1400}
+          height={933}
+          className="h-44 w-full object-cover object-center sm:h-56"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/20 to-transparent" />
+        <figcaption className="absolute bottom-4 left-4 sm:left-6">
+          <span className="text-eyebrow text-gilt">The room · first-party evidence only</span>
+        </figcaption>
+      </figure>
 
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
         <SituationConsole
