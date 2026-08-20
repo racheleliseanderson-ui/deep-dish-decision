@@ -5,11 +5,6 @@ name: Corpus refresh hygiene
 # verified repository seed files followed by owned-site enrichment.
 
 on:
-  push:
-    branches:
-      - data/enrich-top50-43-48
-    paths:
-      - .github/workflows/corpus-refresh.yml
   schedule:
     # Tuesdays and Fridays 14:00 UTC — adjust once secrets are live
     - cron: "0 14 * * 2,5"
@@ -75,7 +70,7 @@ jobs:
             --allow-with-hygiene
 
       - name: Seed verified listings + owned enrichment
-        if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'seed-listings') }}
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'seed-listings' }}
         run: |
           SEED_CITIES="${{ inputs.seed_cities }}"
           if [ -n "$SEED_CITIES" ]; then
