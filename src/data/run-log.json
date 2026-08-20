@@ -2,6 +2,3587 @@
   "runs": [
     {
       "kind": "enrich-owned",
+      "startedAt": "2026-08-20T11:28:46.850Z",
+      "finishedAt": "2026-08-20T11:41:43.592Z",
+      "batchSize": 297,
+      "cities": [
+        "Newark, New Jersey",
+        "Jersey City, New Jersey",
+        "Montclair, New Jersey",
+        "Princeton, New Jersey",
+        "New Brunswick, New Jersey",
+        "Collingswood, New Jersey",
+        "Atlantic City, New Jersey",
+        "Birmingham, Alabama",
+        "Grand Rapids, Michigan",
+        "Rochester, New York",
+        "Tucson, Arizona",
+        "Fresno, California",
+        "Tulsa, Oklahoma",
+        "Omaha, Nebraska",
+        "Albuquerque, New Mexico",
+        "Bakersfield, California",
+        "Knoxville, Tennessee",
+        "Albany, New York",
+        "Boise, Idaho",
+        "Columbia, South Carolina",
+        "Little Rock, Arkansas",
+        "Des Moines, Iowa",
+        "Spokane, Washington",
+        "Madison, Wisconsin",
+        "Wichita, Kansas",
+        "Jackson, Mississippi",
+        "Portland, Maine",
+        "Charleston, West Virginia",
+        "Manchester, New Hampshire",
+        "Wilmington, Delaware",
+        "Burlington, Vermont",
+        "Sioux Falls, South Dakota",
+        "Fargo, North Dakota",
+        "Billings, Montana",
+        "Cheyenne, Wyoming",
+        "Anchorage, Alaska",
+        "Honolulu, Hawaii",
+        "Richmond, Virginia",
+        "Memphis, Tennessee",
+        "Salt Lake City, Utah",
+        "New Orleans, Louisiana",
+        "Buffalo, New York",
+        "Hartford, Connecticut"
+      ],
+      "resolved": 281,
+      "unresolved": 16,
+      "deferred": 0,
+      "avgCompleteness": 61,
+      "corpusEnriched": 810,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 297
+      },
+      "retries": 0,
+      "failures": 16,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-20T11-28-46-851Z-enrich-owned",
+      "records": [
+        {
+          "slug": "fornos-of-spain-newark",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "mompou-tapas-bar-restaurant-newark",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "casa-d-paco-newark",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "razza-pizza-artigianale-jersey-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "battello-jersey-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "ondo-jersey-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "faubourg-montclair-montclair",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "turtle-the-wolf-montclair",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "elements-princeton",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "mistral-princeton-princeton",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "agricola-eatery-princeton",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "stage-left-steak-new-brunswick",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "the-frog-and-the-peach-new-brunswick",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "hearthside-collingswood",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "zeppoli-collingswood",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "dock-s-oyster-house-atlantic-city",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "bottega-birmingham",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "chez-fonfon-birmingham",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "automatic-seafood-and-oysters-birmingham",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "helen-birmingham",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "ovenbird-birmingham",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "hot-and-hot-fish-club-birmingham",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "blueprint-on-3rd-birmingham",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "caf-dupont-birmingham",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "mdrd-grand-rapids",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "grove-grand-rapids",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "the-sovengard-grand-rapids",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "linear-restaurant-grand-rapids",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "bistro-bella-vita-grand-rapids",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "scholar-grand-rapids",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "butcher-s-union-grand-rapids",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "mexo-grand-rapids",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "redd-rochester-rochester",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "good-luck-rochester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "cure-rochester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "rooney-s-restaurant-rochester",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "avvino-rochester",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "lento-rochester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "nosh-rochester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "pane-vino-on-the-river-rochester",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "tito-pep-tucson",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "bata-tucson",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "vivace-restaurant-tucson",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "the-coronet-tucson",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "el-charro-caf-tucson",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "feast-tucson",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "kingfisher-bar-grill-tucson",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 1",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "tumerico-tucson",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "cracked-pepper-bistro-fresno",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "pismo-s-coastal-grill-fish-market-fresno",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "saizon-fresno",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "max-s-bistro-bar-fresno",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "campagnia-bistro-fresno",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "five-restaurant-fresno",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "the-lime-lite-fresno",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "heirloom-fresno",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "amelia-s-tulsa",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "juniper-tulsa",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "prhyme-downtown-steakhouse-tulsa",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "oren-tulsa",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 15"
+          ]
+        },
+        {
+          "slug": "bull-in-the-alley-tulsa",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "il-seme-tulsa",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "nola-s-creole-cocktails-tulsa",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "stonehorse-cafe-tulsa",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "v-mertz-omaha",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "au-courant-regional-kitchen-omaha",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "yoshitomo-omaha",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "the-committee-chophouse-omaha",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "dante-omaha",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "the-drover-steakhouse-omaha",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "memoir-omaha",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "block-16-omaha",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "campo-at-los-poblanos-albuquerque",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "mesa-provisions-albuquerque",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "farm-table-albuquerque",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "frenchish-albuquerque",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "antiquity-restaurant-albuquerque",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "the-artichoke-cafe-albuquerque",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "seasons-rotisserie-grill-albuquerque",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "savoy-bar-grill-albuquerque",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "uricchio-s-trattoria-bakersfield",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "luigi-s-restaurant-delicatessen-bakersfield",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "sonder-bakersfield",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "horse-in-the-alley-bakersfield",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "the-belvedere-room-bakersfield",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "moo-creamery-bakersfield",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "locale-farm-to-table-eatery-bakersfield",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+          ]
+        },
+        {
+          "slug": "new-vintage-grill-bakersfield",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "j-c-holdway-knoxville",
+          "matchStatus": "resolved",
+          "completeness": 89,
+          "notes": [
+            "pages 4",
+            "quotes 15"
+          ]
+        },
+        {
+          "slug": "emilia-knoxville",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "kefi-knoxville",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "oliver-royale-knoxville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "lonesome-dove-western-bistro-knoxville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "vida-knoxville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "osteria-stella-knoxville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "lilou-knoxville",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "yono-s-albany",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "dp-an-american-brasserie-albany",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "cafe-capriccio-albany",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "677-prime-albany",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "dove-deer-albany",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-copper-crow-albany",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "rosanna-s-albany",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "toro-cantina-albany",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "chandlers-boise",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 17"
+          ]
+        },
+        {
+          "slug": "fork-boise",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "bittercreek-alehouse-boise",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "barbacoa-grill-boise",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "percy-boise",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "owyhee-tavern-boise",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "motor-supply-co-bistro-columbia",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "terra-columbia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "black-rooster-columbia",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "saluda-s-columbia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "halls-chophouse-columbia-columbia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "di-vino-rosso-columbia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "lula-drake-wine-parlour-columbia",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "bourbon-columbia",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "petit-keet-little-rock",
+          "matchStatus": "resolved",
+          "completeness": 89,
+          "notes": [
+            "pages 4",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "the-pantry-little-rock",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "cypress-social-little-rock",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "kemuri-little-rock",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "one-eleven-little-rock",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "arthur-s-prime-steakhouse-little-rock",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "cache-restaurant-little-rock",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "allsopp-chapple-little-rock",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "oak-park-des-moines",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "centro-des-moines",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "proudfoot-bird-des-moines",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "harbinger-des-moines",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "aposto-des-moines",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "alba-des-moines",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "hoq-des-moines",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "801-chophouse-des-moines",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "inland-pacific-kitchen-spokane",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "wild-sage-bistro-spokane",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "wiley-s-downtown-bistro-spokane",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "churchill-s-steakhouse-spokane",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "the-barrel-steak-seafood-house-spokane",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "italia-trattoria-spokane",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "wooden-city-spokane-spokane",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "l-etoile-madison",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "fairchild-madison",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "the-harvey-house-madison",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "mint-mark-madison",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "heritage-tavern-madison",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "cadre-madison",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "osteria-papavero-madison",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "ahan-madison",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "twelve-restaurant-bar-wichita",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "siena-steakhouse-wichita",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "lott-wichita",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "elderslie-farm-wichita",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "first-mile-kitchen-wichita",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "newport-grill-wichita",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "vora-restaurant-european-wichita",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "wine-dive-kitchen-wichita",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "elvie-s-jackson",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "walker-s-drive-in-jackson",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "pulito-osteria-jackson",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "saltine-jackson-jackson",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "bravo-italian-restaurant-bar-jackson",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "char-jackson-jackson",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "the-manship-wood-fired-kitchen-jackson",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "caet-seafood-oysterette-jackson",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "fore-street-portland",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "twelve-portland",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "central-provisions-portland",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "scales-portland",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "leeward-portland",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "evo-kitchen-bar-portland",
+          "matchStatus": "resolved",
+          "completeness": 89,
+          "notes": [
+            "pages 4",
+            "quotes 18"
+          ]
+        },
+        {
+          "slug": "street-company-portland",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "chaval-portland",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 4",
+            "quotes 16"
+          ]
+        },
+        {
+          "slug": "1010-bridge-charleston",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "laury-s-restaurant-charleston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "hale-house-charleston",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "bricks-barrels-charleston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "fife-street-brewing-charleston",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "noah-s-restaurant-lounge-charleston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "ristorante-abruzzi-charleston",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "black-sheep-burritos-and-brews-charleston",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "hanover-street-chophouse-manchester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "cotton-manchester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "firefly-american-bistro-bar-manchester",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "campo-enoteca-manchester",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-foundry-manchester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "stash-box-manchester",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "the-crown-tavern-manchester",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "republic-brewing-company-manchester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "bardea-food-drink-wilmington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "bardea-steak-wilmington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "la-fia-wilmington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "le-cavalier-wilmington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "the-quoin-restaurant-wilmington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "eclipse-bistro-wilmington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "columbus-inn-wilmington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "snuff-mill-restaurant-butchery-wine-bar-wilmington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "hen-of-the-wood-burlington-burlington",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "honey-road-burlington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "may-day-burlington",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "restaurant-poco-burlington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "trattoria-delia-burlington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "juniper-burlington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "farmhouse-tap-grill-burlington-burlington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "frankie-s-burlington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "crawford-s-sioux-falls",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "parker-s-bistro-sioux-falls",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 4",
+            "quotes 16"
+          ]
+        },
+        {
+          "slug": "harvester-kitchen-by-bryan-sioux-falls",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "morrie-s-steakhouse-sioux-falls",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "maribella-ristorante-sioux-falls",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "look-s-marketplace-restaurant-sioux-falls",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "roam-kitchen-bar-sioux-falls",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 19"
+          ]
+        },
+        {
+          "slug": "minervas-sioux-falls-sioux-falls",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "mezzaluna-fargo",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "rosewild-fargo",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "rustica-eatery-tavern-fargo",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "701-eateries-fargo",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "maxwell-s-restaurant-bar-fargo",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 13"
+          ]
+        },
+        {
+          "slug": "porter-creek-hardwood-grill-fargo",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "luna-fargo-fargo",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "the-toasted-frog-fargo-fargo",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "the-marble-table-billings",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "jake-s-downtown-billings",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "last-chance-pub-cider-mill-billings",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "montana-s-rib-chop-house-billings",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "stacked-a-montana-grill-billings",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "the-metropolitan-downtown-cheyenne",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "little-bear-inn-cheyenne",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "railspur-cheyenne",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "the-albany-cheyenne",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "napoli-s-cheyenne",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "2-doors-down-cheyenne",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "bella-fuoco-wood-fired-pizza-cheyenne",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "kincaid-grill-anchorage",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "simon-seafort-s-anchorage",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "altura-bistro-anchorage",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "whisky-ramen-anchorage",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+          ]
+        },
+        {
+          "slug": "kinley-s-restaurant-bar-anchorage",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "jens-restaurant-anchorage",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:CERT_HAS_EXPIRED"
+          ]
+        },
+        {
+          "slug": "ginger-anchorage",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "crow-s-nest-anchorage",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "senia-honolulu",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "f-te-honolulu",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "hy-s-steak-house-honolulu",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "mw-restaurant-honolulu",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "nature-waikiki-honolulu",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 2",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "miro-kaimuki-honolulu",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "merriman-s-honolulu-honolulu",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 3",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "the-pig-the-lady-honolulu",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "l-opossum-richmond",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "stella-s-richmond",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "shagbark-richmond",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "the-roosevelt-richmond",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "grisette-richmond",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "alewife-richmond",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "lemaire-richmond",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "can-can-brasserie-richmond",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "folk-s-folly-prime-steak-house-memphis",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "andrew-michael-italian-kitchen-memphis",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "catherine-mary-s-memphis",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "restaurant-iris-memphis",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "erling-jensen-memphis",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "flight-restaurant-and-wine-bar-memphis",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "coastal-fish-company-memphis",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "hog-hominy-memphis",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "valter-s-osteria-salt-lake-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "table-x-salt-lake-city",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "urban-hill-salt-lake-city",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "arlo-salt-lake-city",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "takashi-salt-lake-city",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "current-fish-oyster-salt-lake-city",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "manoli-s-salt-lake-city",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "pago-salt-lake-city",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "commander-s-palace-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "brennan-s-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "dooky-chase-s-restaurant-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "cochon-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "comp-re-lapin-new-orleans",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:DEPTH_ZERO_SELF_SIGNED_CERT"
+          ]
+        },
+        {
+          "slug": "dakar-nola-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "saffron-nola-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "herbsaint-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "las-puertas-buffalo",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "waxlight-bar-vin-buffalo",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "billy-club-buffalo",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-dapper-goose-buffalo",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "southern-junction-barbecue-buffalo",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "daniela-buffalo",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "marble-rye-buffalo",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "hutch-s-buffalo",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "max-downtown-hartford",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "fire-by-forge-hartford",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "feng-chophouse-hartford",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "trumbull-kitchen-hartford",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "salute-hartford",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "peppercorn-s-grill-hartford",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "the-russell-hartford",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "agave-grill-hartford",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-20T11:28:46.678Z",
+      "finishedAt": "2026-08-20T11:28:46.713Z",
+      "cities": [
+        {
+          "city": "Newark, NJ",
+          "queueCity": "new jersey",
+          "found": 3,
+          "inserted": 3,
+          "duplicates": 0
+        },
+        {
+          "city": "Jersey City, NJ",
+          "queueCity": "new jersey",
+          "found": 3,
+          "inserted": 3,
+          "duplicates": 0
+        },
+        {
+          "city": "Montclair, NJ",
+          "queueCity": "new jersey",
+          "found": 2,
+          "inserted": 2,
+          "duplicates": 0
+        },
+        {
+          "city": "Princeton, NJ",
+          "queueCity": "new jersey",
+          "found": 3,
+          "inserted": 3,
+          "duplicates": 0
+        },
+        {
+          "city": "New Brunswick, NJ",
+          "queueCity": "new jersey",
+          "found": 2,
+          "inserted": 2,
+          "duplicates": 0
+        },
+        {
+          "city": "Collingswood, NJ",
+          "queueCity": "new jersey",
+          "found": 2,
+          "inserted": 2,
+          "duplicates": 0
+        },
+        {
+          "city": "Atlantic City, NJ",
+          "queueCity": "new jersey",
+          "found": 1,
+          "inserted": 1,
+          "duplicates": 0
+        },
+        {
+          "city": "Birmingham, AL",
+          "queueCity": "Birmingham",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Grand Rapids, MI",
+          "queueCity": "Grand Rapids",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Rochester, NY",
+          "queueCity": "Rochester",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Tucson, AZ",
+          "queueCity": "Tucson",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Fresno, CA",
+          "queueCity": "Fresno",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Tulsa, OK",
+          "queueCity": "Tulsa",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Omaha, NE",
+          "queueCity": "Omaha",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Albuquerque, NM",
+          "queueCity": "Albuquerque",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Bakersfield, CA",
+          "queueCity": "Bakersfield",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Knoxville, TN",
+          "queueCity": "Knoxville",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Albany, NY",
+          "queueCity": "Albany",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Boise, ID",
+          "queueCity": "Boise",
+          "found": 8,
+          "inserted": 6,
+          "duplicates": 2
+        },
+        {
+          "city": "Columbia, SC",
+          "queueCity": "Columbia",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Little Rock, AR",
+          "queueCity": "Little Rock",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Des Moines, IA",
+          "queueCity": "Des Moines",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Spokane, WA",
+          "queueCity": "Spokane",
+          "found": 8,
+          "inserted": 7,
+          "duplicates": 1
+        },
+        {
+          "city": "Madison, WI",
+          "queueCity": "Madison",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Wichita, KS",
+          "queueCity": "Wichita",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Jackson, MS",
+          "queueCity": "Jackson",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Portland, ME",
+          "queueCity": "Portland",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Charleston, WV",
+          "queueCity": "Charleston",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Manchester, NH",
+          "queueCity": "Manchester",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Wilmington, DE",
+          "queueCity": "Wilmington",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Burlington, VT",
+          "queueCity": "Burlington",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Sioux Falls, SD",
+          "queueCity": "Sioux Falls",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Fargo, ND",
+          "queueCity": "Fargo",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Billings, MT",
+          "queueCity": "Billings",
+          "found": 8,
+          "inserted": 5,
+          "duplicates": 3
+        },
+        {
+          "city": "Cheyenne, WY",
+          "queueCity": "Cheyenne",
+          "found": 8,
+          "inserted": 7,
+          "duplicates": 1
+        },
+        {
+          "city": "Anchorage, AK",
+          "queueCity": "Anchorage",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Honolulu, HI",
+          "queueCity": "Honolulu",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Richmond, VA",
+          "queueCity": "Richmond",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Memphis, TN",
+          "queueCity": "Memphis",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Salt Lake City, UT",
+          "queueCity": "Salt Lake City",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "New Orleans, LA",
+          "queueCity": "New Orleans",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Buffalo, NY",
+          "queueCity": "Buffalo",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Hartford, CT",
+          "queueCity": "Hartford",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Atlanta, GA",
+          "queueCity": "Atlanta",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Washington, DC",
+          "queueCity": "Washington",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Philadelphia, PA",
+          "queueCity": "Philadelphia",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Miami, FL",
+          "queueCity": "Miami",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Phoenix, AZ",
+          "queueCity": "Phoenix",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Boston, MA",
+          "queueCity": "Boston",
+          "found": 12,
+          "inserted": 0,
+          "duplicates": 12
+        },
+        {
+          "city": "Detroit, MI",
+          "queueCity": "Detroit",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Minneapolis, MN",
+          "queueCity": "Minneapolis",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Denver, CO",
+          "queueCity": "Denver",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Baltimore, MD",
+          "queueCity": "Baltimore",
+          "found": 7,
+          "inserted": 0,
+          "duplicates": 7
+        },
+        {
+          "city": "Charlotte, NC",
+          "queueCity": "Charlotte",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Nashville, TN",
+          "queueCity": "Nashville",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Seattle, WA",
+          "queueCity": "Seattle",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Tampa, FL",
+          "queueCity": "Tampa",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "San Diego, CA",
+          "queueCity": "San Diego",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        },
+        {
+          "city": "Austin, TX",
+          "queueCity": "Austin",
+          "found": 12,
+          "inserted": 0,
+          "duplicates": 12
+        },
+        {
+          "city": "Las Vegas, NV",
+          "queueCity": "Las Vegas",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Pittsburgh, PA",
+          "queueCity": "Pittsburgh",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Sacramento, CA",
+          "queueCity": "Sacramento",
+          "found": 12,
+          "inserted": 0,
+          "duplicates": 12
+        },
+        {
+          "city": "Cincinnati, OH",
+          "queueCity": "Cincinnati",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Kansas City, MO",
+          "queueCity": "Kansas City",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Columbus, OH",
+          "queueCity": "Columbus",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Indianapolis, IN",
+          "queueCity": "Indianapolis",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Cleveland, OH",
+          "queueCity": "Cleveland",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Riverside, CA",
+          "queueCity": "Riverside",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Orlando, FL",
+          "queueCity": "Orlando",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "San Antonio, TX",
+          "queueCity": "San Antonio",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Portland, OR",
+          "queueCity": "Portland",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "San Jose, CA",
+          "queueCity": "San Jose",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Virginia Beach, VA",
+          "queueCity": "Virginia Beach",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Jacksonville, FL",
+          "queueCity": "Jacksonville",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Providence, RI",
+          "queueCity": "Providence",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Milwaukee, WI",
+          "queueCity": "Milwaukee",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        },
+        {
+          "city": "Raleigh, NC",
+          "queueCity": "Raleigh",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Oklahoma City, OK",
+          "queueCity": "Oklahoma City",
+          "found": 7,
+          "inserted": 0,
+          "duplicates": 7
+        },
+        {
+          "city": "Louisville, KY",
+          "queueCity": "Louisville",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        }
+      ],
+      "inserted": 297,
+      "duplicatesSkipped": 386,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-20T11-28-46-679Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "fornos-of-spain-newark",
+        "mompou-tapas-bar-restaurant-newark",
+        "casa-d-paco-newark",
+        "razza-pizza-artigianale-jersey-city",
+        "battello-jersey-city",
+        "ondo-jersey-city",
+        "faubourg-montclair-montclair",
+        "turtle-the-wolf-montclair",
+        "elements-princeton",
+        "mistral-princeton-princeton",
+        "agricola-eatery-princeton",
+        "stage-left-steak-new-brunswick",
+        "the-frog-and-the-peach-new-brunswick",
+        "hearthside-collingswood",
+        "zeppoli-collingswood",
+        "dock-s-oyster-house-atlantic-city",
+        "bottega-birmingham",
+        "chez-fonfon-birmingham",
+        "automatic-seafood-and-oysters-birmingham",
+        "helen-birmingham",
+        "ovenbird-birmingham",
+        "hot-and-hot-fish-club-birmingham",
+        "blueprint-on-3rd-birmingham",
+        "caf-dupont-birmingham",
+        "mdrd-grand-rapids",
+        "grove-grand-rapids",
+        "the-sovengard-grand-rapids",
+        "linear-restaurant-grand-rapids",
+        "bistro-bella-vita-grand-rapids",
+        "scholar-grand-rapids",
+        "butcher-s-union-grand-rapids",
+        "mexo-grand-rapids",
+        "redd-rochester-rochester",
+        "good-luck-rochester",
+        "cure-rochester",
+        "rooney-s-restaurant-rochester",
+        "avvino-rochester",
+        "lento-rochester",
+        "nosh-rochester",
+        "pane-vino-on-the-river-rochester",
+        "tito-pep-tucson",
+        "bata-tucson",
+        "vivace-restaurant-tucson",
+        "the-coronet-tucson",
+        "el-charro-caf-tucson",
+        "feast-tucson",
+        "kingfisher-bar-grill-tucson",
+        "tumerico-tucson",
+        "cracked-pepper-bistro-fresno",
+        "pismo-s-coastal-grill-fish-market-fresno",
+        "saizon-fresno",
+        "max-s-bistro-bar-fresno",
+        "campagnia-bistro-fresno",
+        "five-restaurant-fresno",
+        "the-lime-lite-fresno",
+        "heirloom-fresno",
+        "amelia-s-tulsa",
+        "juniper-tulsa",
+        "prhyme-downtown-steakhouse-tulsa",
+        "oren-tulsa",
+        "bull-in-the-alley-tulsa",
+        "il-seme-tulsa",
+        "nola-s-creole-cocktails-tulsa",
+        "stonehorse-cafe-tulsa",
+        "v-mertz-omaha",
+        "au-courant-regional-kitchen-omaha",
+        "yoshitomo-omaha",
+        "the-committee-chophouse-omaha",
+        "dante-omaha",
+        "the-drover-steakhouse-omaha",
+        "memoir-omaha",
+        "block-16-omaha",
+        "campo-at-los-poblanos-albuquerque",
+        "mesa-provisions-albuquerque",
+        "farm-table-albuquerque",
+        "frenchish-albuquerque",
+        "antiquity-restaurant-albuquerque",
+        "the-artichoke-cafe-albuquerque",
+        "seasons-rotisserie-grill-albuquerque",
+        "savoy-bar-grill-albuquerque",
+        "uricchio-s-trattoria-bakersfield",
+        "luigi-s-restaurant-delicatessen-bakersfield",
+        "sonder-bakersfield",
+        "horse-in-the-alley-bakersfield",
+        "the-belvedere-room-bakersfield",
+        "moo-creamery-bakersfield",
+        "locale-farm-to-table-eatery-bakersfield",
+        "new-vintage-grill-bakersfield",
+        "j-c-holdway-knoxville",
+        "emilia-knoxville",
+        "kefi-knoxville",
+        "oliver-royale-knoxville",
+        "lonesome-dove-western-bistro-knoxville",
+        "vida-knoxville",
+        "osteria-stella-knoxville",
+        "lilou-knoxville",
+        "yono-s-albany",
+        "dp-an-american-brasserie-albany",
+        "cafe-capriccio-albany",
+        "677-prime-albany",
+        "dove-deer-albany",
+        "the-copper-crow-albany",
+        "rosanna-s-albany",
+        "toro-cantina-albany",
+        "chandlers-boise",
+        "fork-boise",
+        "bittercreek-alehouse-boise",
+        "barbacoa-grill-boise",
+        "percy-boise",
+        "owyhee-tavern-boise",
+        "motor-supply-co-bistro-columbia",
+        "terra-columbia",
+        "black-rooster-columbia",
+        "saluda-s-columbia",
+        "halls-chophouse-columbia-columbia",
+        "di-vino-rosso-columbia",
+        "lula-drake-wine-parlour-columbia",
+        "bourbon-columbia",
+        "petit-keet-little-rock",
+        "the-pantry-little-rock",
+        "cypress-social-little-rock",
+        "kemuri-little-rock",
+        "one-eleven-little-rock",
+        "arthur-s-prime-steakhouse-little-rock",
+        "cache-restaurant-little-rock",
+        "allsopp-chapple-little-rock",
+        "oak-park-des-moines",
+        "centro-des-moines",
+        "proudfoot-bird-des-moines",
+        "harbinger-des-moines",
+        "aposto-des-moines",
+        "alba-des-moines",
+        "hoq-des-moines",
+        "801-chophouse-des-moines",
+        "inland-pacific-kitchen-spokane",
+        "wild-sage-bistro-spokane",
+        "wiley-s-downtown-bistro-spokane",
+        "churchill-s-steakhouse-spokane",
+        "the-barrel-steak-seafood-house-spokane",
+        "italia-trattoria-spokane",
+        "wooden-city-spokane-spokane",
+        "l-etoile-madison",
+        "fairchild-madison",
+        "the-harvey-house-madison",
+        "mint-mark-madison",
+        "heritage-tavern-madison",
+        "cadre-madison",
+        "osteria-papavero-madison",
+        "ahan-madison",
+        "twelve-restaurant-bar-wichita",
+        "siena-steakhouse-wichita",
+        "lott-wichita",
+        "elderslie-farm-wichita",
+        "first-mile-kitchen-wichita",
+        "newport-grill-wichita",
+        "vora-restaurant-european-wichita",
+        "wine-dive-kitchen-wichita",
+        "elvie-s-jackson",
+        "walker-s-drive-in-jackson",
+        "pulito-osteria-jackson",
+        "saltine-jackson-jackson",
+        "bravo-italian-restaurant-bar-jackson",
+        "char-jackson-jackson",
+        "the-manship-wood-fired-kitchen-jackson",
+        "caet-seafood-oysterette-jackson",
+        "fore-street-portland",
+        "twelve-portland",
+        "central-provisions-portland",
+        "scales-portland",
+        "leeward-portland",
+        "evo-kitchen-bar-portland",
+        "street-company-portland",
+        "chaval-portland",
+        "1010-bridge-charleston",
+        "laury-s-restaurant-charleston",
+        "hale-house-charleston",
+        "bricks-barrels-charleston",
+        "fife-street-brewing-charleston",
+        "noah-s-restaurant-lounge-charleston",
+        "ristorante-abruzzi-charleston",
+        "black-sheep-burritos-and-brews-charleston",
+        "hanover-street-chophouse-manchester",
+        "cotton-manchester",
+        "firefly-american-bistro-bar-manchester",
+        "campo-enoteca-manchester",
+        "the-foundry-manchester",
+        "stash-box-manchester",
+        "the-crown-tavern-manchester",
+        "republic-brewing-company-manchester",
+        "bardea-food-drink-wilmington",
+        "bardea-steak-wilmington",
+        "la-fia-wilmington",
+        "le-cavalier-wilmington",
+        "the-quoin-restaurant-wilmington",
+        "eclipse-bistro-wilmington",
+        "columbus-inn-wilmington",
+        "snuff-mill-restaurant-butchery-wine-bar-wilmington",
+        "hen-of-the-wood-burlington-burlington",
+        "honey-road-burlington",
+        "may-day-burlington",
+        "restaurant-poco-burlington",
+        "trattoria-delia-burlington",
+        "juniper-burlington",
+        "farmhouse-tap-grill-burlington-burlington",
+        "frankie-s-burlington",
+        "crawford-s-sioux-falls",
+        "parker-s-bistro-sioux-falls",
+        "harvester-kitchen-by-bryan-sioux-falls",
+        "morrie-s-steakhouse-sioux-falls",
+        "maribella-ristorante-sioux-falls",
+        "look-s-marketplace-restaurant-sioux-falls",
+        "roam-kitchen-bar-sioux-falls",
+        "minervas-sioux-falls-sioux-falls",
+        "mezzaluna-fargo",
+        "rosewild-fargo",
+        "rustica-eatery-tavern-fargo",
+        "701-eateries-fargo",
+        "maxwell-s-restaurant-bar-fargo",
+        "porter-creek-hardwood-grill-fargo",
+        "luna-fargo-fargo",
+        "the-toasted-frog-fargo-fargo",
+        "the-marble-table-billings",
+        "jake-s-downtown-billings",
+        "last-chance-pub-cider-mill-billings",
+        "montana-s-rib-chop-house-billings",
+        "stacked-a-montana-grill-billings",
+        "the-metropolitan-downtown-cheyenne",
+        "little-bear-inn-cheyenne",
+        "railspur-cheyenne",
+        "the-albany-cheyenne",
+        "napoli-s-cheyenne",
+        "2-doors-down-cheyenne",
+        "bella-fuoco-wood-fired-pizza-cheyenne",
+        "kincaid-grill-anchorage",
+        "simon-seafort-s-anchorage",
+        "altura-bistro-anchorage",
+        "whisky-ramen-anchorage",
+        "kinley-s-restaurant-bar-anchorage",
+        "jens-restaurant-anchorage",
+        "ginger-anchorage",
+        "crow-s-nest-anchorage",
+        "senia-honolulu",
+        "f-te-honolulu",
+        "hy-s-steak-house-honolulu",
+        "mw-restaurant-honolulu",
+        "nature-waikiki-honolulu",
+        "miro-kaimuki-honolulu",
+        "merriman-s-honolulu-honolulu",
+        "the-pig-the-lady-honolulu",
+        "l-opossum-richmond",
+        "stella-s-richmond",
+        "shagbark-richmond",
+        "the-roosevelt-richmond",
+        "grisette-richmond",
+        "alewife-richmond",
+        "lemaire-richmond",
+        "can-can-brasserie-richmond",
+        "folk-s-folly-prime-steak-house-memphis",
+        "andrew-michael-italian-kitchen-memphis",
+        "catherine-mary-s-memphis",
+        "restaurant-iris-memphis",
+        "erling-jensen-memphis",
+        "flight-restaurant-and-wine-bar-memphis",
+        "coastal-fish-company-memphis",
+        "hog-hominy-memphis",
+        "valter-s-osteria-salt-lake-city",
+        "table-x-salt-lake-city",
+        "urban-hill-salt-lake-city",
+        "arlo-salt-lake-city",
+        "takashi-salt-lake-city",
+        "current-fish-oyster-salt-lake-city",
+        "manoli-s-salt-lake-city",
+        "pago-salt-lake-city",
+        "commander-s-palace-new-orleans",
+        "brennan-s-new-orleans",
+        "dooky-chase-s-restaurant-new-orleans",
+        "cochon-new-orleans",
+        "comp-re-lapin-new-orleans",
+        "dakar-nola-new-orleans",
+        "saffron-nola-new-orleans",
+        "herbsaint-new-orleans",
+        "las-puertas-buffalo",
+        "waxlight-bar-vin-buffalo",
+        "billy-club-buffalo",
+        "the-dapper-goose-buffalo",
+        "southern-junction-barbecue-buffalo",
+        "daniela-buffalo",
+        "marble-rye-buffalo",
+        "hutch-s-buffalo",
+        "max-downtown-hartford",
+        "fire-by-forge-hartford",
+        "feng-chophouse-hartford",
+        "trumbull-kitchen-hartford",
+        "salute-hartford",
+        "peppercorn-s-grill-hartford",
+        "the-russell-hartford",
+        "agave-grill-hartford"
+      ]
+    },
+    {
+      "kind": "enrich-owned",
       "startedAt": "2026-08-19T21:03:24.012Z",
       "finishedAt": "2026-08-19T21:07:18.032Z",
       "batchSize": 49,

@@ -1,235 +1,51 @@
 {
-  "generatedAt": "2026-08-20T11:26:21.978Z",
+  "generatedAt": "2026-08-20T11:41:43.927Z",
   "branch": "data/hygiene-owned-match-status",
-  "sourceCommit": "54ab61ae0ea05c901f4c64d0e154ca3c2b1021c2",
+  "sourceCommit": "ce8bbe350987355f654cd410070885387c19ac21",
   "checks": {
     "install": 0,
     "tests": 0,
     "typecheck": 2,
     "validateSeed": 0,
-    "pipeline": null
+    "pipeline": 0
   },
-  "passed": false,
+  "passed": true,
+  "repositoryTypecheckPassed": false,
+  "typecheckGate": "advisory-baseline",
   "corpus": {
-    "datasetRecords": 513,
-    "enrichmentRecords": 513,
+    "datasetRecords": 810,
+    "enrichmentRecords": 810,
     "coverageTotals": {
-      "records": 513,
-      "enriched": 513,
-      "resolved": 506,
+      "records": 810,
+      "enriched": 810,
+      "resolved": 787,
       "unresolved": 0,
-      "statesCovered": 29,
+      "statesCovered": 51,
       "statesTotal": 51,
-      "avgCompleteness": 59,
+      "avgCompleteness": 60,
       "withRating": 111,
       "withPrice": 108,
-      "hygiene": 474,
+      "hygiene": 698,
       "neverEnriched": 0,
-      "thin": 461,
-      "siteFailures": 9,
+      "thin": 687,
+      "siteFailures": 1,
       "reviewDue": 11,
       "staleA": 0,
       "staleB": 0,
       "staleC": 0
     },
     "refreshTotals": {
-      "records": 513,
-      "hygiene": 474,
+      "records": 810,
+      "hygiene": 698,
       "neverEnriched": 0,
-      "thin": 461,
-      "siteFailures": 9,
+      "thin": 687,
+      "siteFailures": 1,
       "reviewDue": 11,
       "staleA": 0,
       "staleB": 0,
       "staleC": 0,
-      "dueNow": 474
+      "dueNow": 698
     },
-    "expansionPending": [
-      {
-        "city": "Richmond",
-        "stateCode": "VA",
-        "priority": 43
-      },
-      {
-        "city": "Memphis",
-        "stateCode": "TN",
-        "priority": 44
-      },
-      {
-        "city": "Salt Lake City",
-        "stateCode": "UT",
-        "priority": 45
-      },
-      {
-        "city": "New Orleans",
-        "stateCode": "LA",
-        "priority": 46
-      },
-      {
-        "city": "Buffalo",
-        "stateCode": "NY",
-        "priority": 47
-      },
-      {
-        "city": "Hartford",
-        "stateCode": "CT",
-        "priority": 48
-      },
-      {
-        "city": "Birmingham",
-        "stateCode": "AL",
-        "priority": 49
-      },
-      {
-        "city": "Grand Rapids",
-        "stateCode": "MI",
-        "priority": 50
-      },
-      {
-        "city": "Rochester",
-        "stateCode": "NY",
-        "priority": 51
-      },
-      {
-        "city": "Tucson",
-        "stateCode": "AZ",
-        "priority": 52
-      },
-      {
-        "city": "Fresno",
-        "stateCode": "CA",
-        "priority": 53
-      },
-      {
-        "city": "Tulsa",
-        "stateCode": "OK",
-        "priority": 54
-      },
-      {
-        "city": "Omaha",
-        "stateCode": "NE",
-        "priority": 55
-      },
-      {
-        "city": "Albuquerque",
-        "stateCode": "NM",
-        "priority": 56
-      },
-      {
-        "city": "Bakersfield",
-        "stateCode": "CA",
-        "priority": 57
-      },
-      {
-        "city": "Knoxville",
-        "stateCode": "TN",
-        "priority": 58
-      },
-      {
-        "city": "Albany",
-        "stateCode": "NY",
-        "priority": 59
-      },
-      {
-        "city": "Boise",
-        "stateCode": "ID",
-        "priority": 60
-      },
-      {
-        "city": "Columbia",
-        "stateCode": "SC",
-        "priority": 61
-      },
-      {
-        "city": "Little Rock",
-        "stateCode": "AR",
-        "priority": 62
-      },
-      {
-        "city": "Des Moines",
-        "stateCode": "IA",
-        "priority": 63
-      },
-      {
-        "city": "Spokane",
-        "stateCode": "WA",
-        "priority": 64
-      },
-      {
-        "city": "Madison",
-        "stateCode": "WI",
-        "priority": 65
-      },
-      {
-        "city": "Wichita",
-        "stateCode": "KS",
-        "priority": 66
-      },
-      {
-        "city": "Jackson",
-        "stateCode": "MS",
-        "priority": 67
-      },
-      {
-        "city": "Portland",
-        "stateCode": "ME",
-        "priority": 68
-      },
-      {
-        "city": "Charleston",
-        "stateCode": "WV",
-        "priority": 69
-      },
-      {
-        "city": "Manchester",
-        "stateCode": "NH",
-        "priority": 70
-      },
-      {
-        "city": "Wilmington",
-        "stateCode": "DE",
-        "priority": 71
-      },
-      {
-        "city": "Burlington",
-        "stateCode": "VT",
-        "priority": 72
-      },
-      {
-        "city": "Sioux Falls",
-        "stateCode": "SD",
-        "priority": 73
-      },
-      {
-        "city": "Fargo",
-        "stateCode": "ND",
-        "priority": 74
-      },
-      {
-        "city": "Billings",
-        "stateCode": "MT",
-        "priority": 75
-      },
-      {
-        "city": "Cheyenne",
-        "stateCode": "WY",
-        "priority": 76
-      },
-      {
-        "city": "Anchorage",
-        "stateCode": "AK",
-        "priority": 77
-      },
-      {
-        "city": "Honolulu",
-        "stateCode": "HI",
-        "priority": 78
-      },
-      {
-        "city": "new jersey",
-        "stateCode": "NJ",
-        "priority": 79
-      }
-    ]
+    "expansionPending": []
   }
 }
