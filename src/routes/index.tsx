@@ -119,7 +119,7 @@ function Hub() {
 
           <div className="mt-10 grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
             <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">001</span>
-            <span className="text-eyebrow truncate">The window</span>
+            <span className="text-eyebrow truncate">Salty & Clever · Restaurant Intelligence</span>
           </div>
           <GiltRule className="mt-3" />
 

@@ -6,8 +6,8 @@ const SEG =
   "min-h-11 min-w-11 rounded-full px-3 text-[11px] uppercase tracking-[0.14em] transition-colors duration-300 ease-instrument sm:min-h-9";
 
 /**
- * Appearance (dark / light / colorblind) and whether labeled third-party
- * listing signals are shown. Language is English only.
+ * Appearance (Navy / Pearl + independent CVD overlay) and whether labeled
+ * third-party listing signals are shown. Language is English only.
  */
 export function DisplayControls({ className }: { className?: string }) {
   const enrichment = useEnrichmentSignals();

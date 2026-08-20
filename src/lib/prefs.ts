@@ -43,7 +43,9 @@ function store(key: string, value: string) {
 export function applyContrast(mode: ContrastMode) {
   const root = document.documentElement;
   for (const cls of Object.values(CONTRAST_CLASS)) if (cls) root.classList.remove(cls);
+  root.classList.remove("cvd");
   if (CONTRAST_CLASS[mode]) root.classList.add(CONTRAST_CLASS[mode]);
+  if (mode === "cvd") root.classList.add("cvd");
 }
 
 export function useContrastMode() {
