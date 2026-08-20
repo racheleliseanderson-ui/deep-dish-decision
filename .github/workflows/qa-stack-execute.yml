@@ -1,17 +1,17 @@
 name: Stacked corpus execution QA
 
 on:
-  push:
+  pull_request:
     branches:
-      - data/hygiene-owned-match-status
-    paths:
-      - .github/workflows/qa-stack-execute.yml
+      - data/hygiene-latest-site-status
+    types: [opened, reopened, synchronize]
 
 permissions:
   contents: write
 
 jobs:
   validate-and-recompute:
+    if: github.head_ref == 'data/hygiene-owned-match-status' && github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
@@ -109,18 +109,19 @@ jobs:
           const coverage = read('src/data/coverage.json', { totals: {} });
           const refresh = read('src/data/refresh-queue.json', { totals: {} });
           const expansion = read('src/data/expansion-queue.json', { cities: [] });
+          const checks = {
+            install: num(process.env.INSTALL_EXIT),
+            tests: num(process.env.TEST_EXIT),
+            typecheck: num(process.env.TYPECHECK_EXIT),
+            validateSeed: num(process.env.SEED_VALIDATE_EXIT),
+            pipeline: num(process.env.PIPELINE_EXIT),
+          };
           const result = {
             generatedAt: new Date().toISOString(),
-            branch: process.env.GITHUB_REF_NAME,
-            commit: process.env.GITHUB_SHA,
-            checks: {
-              install: num(process.env.INSTALL_EXIT),
-              tests: num(process.env.TEST_EXIT),
-              typecheck: num(process.env.TYPECHECK_EXIT),
-              validateSeed: num(process.env.SEED_VALIDATE_EXIT),
-              pipeline: num(process.env.PIPELINE_EXIT),
-            },
-            passed: [process.env.INSTALL_EXIT, process.env.TEST_EXIT, process.env.TYPECHECK_EXIT, process.env.SEED_VALIDATE_EXIT, process.env.PIPELINE_EXIT].every((v) => v === '0'),
+            branch: 'data/hygiene-owned-match-status',
+            sourceCommit: process.env.GITHUB_SHA,
+            checks,
+            passed: Object.values(checks).every((v) => v === 0),
             corpus: {
               datasetRecords: dataset.records?.length ?? dataset.count ?? null,
               enrichmentRecords: Object.keys(enrichment.records ?? {}).length,
