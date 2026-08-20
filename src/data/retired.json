@@ -1,6 +1,6 @@
 {
   "note": "Restaurants removed after a first-party or named operator source said this specific restaurant is permanently closed. Slug and enrichment are dropped. Never rewritten onto a successor.",
-  "generatedAt": "2026-08-20T06:48:00.000Z",
+  "generatedAt": "2026-08-20T07:08:00.000Z",
   "records": [
     {
       "slug": "no-9-park-boston",
@@ -99,6 +99,20 @@
       "note": "The first-party site marks Django closed. Contemporaneous January 2026 reporting confirms the final service date as March 14, 2026. Do not reseed the former restaurant identity from stale listings.",
       "successor": "",
       "retiredAt": "2026-08-20T06:48:00.000Z"
+    },
+    {
+      "slug": "bleu-northeast-kitchen-burlington",
+      "title": "Bleu Northeast Kitchen",
+      "city": "Burlington",
+      "stateProvince": "Vermont",
+      "website": "https://www.bleuvt.com/",
+      "operator": "Bleu Northeast Kitchen Team",
+      "source": "https://www.bleuvt.com/",
+      "closedOn": "2025-12-31",
+      "quote": "Our last day as Bleu Northeast Kitchen will be December 31, 2025.",
+      "note": "The first-party site describes a future new chapter at the same corner. Do not rewrite Bleu's restaurant identity onto the replacement concept.",
+      "successor": "",
+      "retiredAt": "2026-08-20T07:08:00.000Z"
     }
   ]
 }
