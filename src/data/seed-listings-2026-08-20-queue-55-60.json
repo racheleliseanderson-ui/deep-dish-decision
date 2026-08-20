@@ -1,0 +1,90 @@
+{
+  "note": "Controlled geographic seeds for expansion queue priorities 55-60. Every entry is a real named establishment with a current official restaurant site verified before inclusion. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
+  "generatedAt": "2026-08-20T06:18:00.000Z",
+  "batches": [
+    {
+      "city": "Omaha",
+      "stateCode": "NE",
+      "listings": [
+        {"title": "V. Mertz", "website": "https://www.vmertz.com/", "address": "Omaha, NE", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Au Courant Regional Kitchen", "website": "https://www.aucourantrestaurant.com/", "address": "Omaha, NE", "cuisineTags": ["European", "Tasting menu"]},
+        {"title": "Yoshitomo", "website": "https://www.yoshitomo.com/", "address": "Omaha, NE", "cuisineTags": ["Japanese", "Sushi"]},
+        {"title": "The Committee Chophouse", "website": "https://www.thecommitteechophouse.com/", "address": "Omaha, NE", "cuisineTags": ["Steak", "American"]},
+        {"title": "Dante", "website": "https://www.danteomaha.com/", "address": "Omaha, NE", "cuisineTags": ["Italian", "Neapolitan"]},
+        {"title": "The Drover Steakhouse", "website": "https://droversteakhouse.com/", "address": "Omaha, NE", "cuisineTags": ["Steak", "American"]},
+        {"title": "Memoir", "website": "https://www.ourmemoir.com/", "address": "Omaha, NE", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Block 16", "website": "https://block16omaha.com/", "address": "Omaha, NE", "cuisineTags": ["American", "Casual"]}
+      ]
+    },
+    {
+      "city": "Albuquerque",
+      "stateCode": "NM",
+      "listings": [
+        {"title": "Campo at Los Poblanos", "website": "https://lospoblanos.com/dining/", "address": "Albuquerque, NM", "cuisineTags": ["Southwestern", "Farm-to-table"]},
+        {"title": "Mesa Provisions", "website": "https://www.mesaprovisions.com/", "address": "Albuquerque, NM", "cuisineTags": ["Southwestern", "Contemporary"]},
+        {"title": "Farm & Table", "website": "https://farmandtablenm.com/", "address": "Albuquerque, NM", "cuisineTags": ["American", "Farm-to-table"]},
+        {"title": "Frenchish", "website": "https://frenchish.co/", "address": "Albuquerque, NM", "cuisineTags": ["French", "Contemporary"]},
+        {"title": "Antiquity Restaurant", "website": "https://antiquityrestaurant.com/", "address": "Albuquerque, NM", "cuisineTags": ["Steak", "Seafood"]},
+        {"title": "The Artichoke Cafe", "website": "https://www.artichokecafe.com/", "address": "Albuquerque, NM", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Seasons Rotisserie & Grill", "website": "https://seasonsabq.com/", "address": "Albuquerque, NM", "cuisineTags": ["American", "Steak"]},
+        {"title": "Savoy Bar & Grill", "website": "https://savoyabq.com/", "address": "Albuquerque, NM", "cuisineTags": ["American", "California"]}
+      ]
+    },
+    {
+      "city": "Bakersfield",
+      "stateCode": "CA",
+      "listings": [
+        {"title": "Uricchio's Trattoria", "website": "https://www.uricchios.com/", "address": "Bakersfield, CA", "cuisineTags": ["Italian"]},
+        {"title": "Luigi's Restaurant & Delicatessen", "website": "https://www.shopluigis.com/", "address": "Bakersfield, CA", "cuisineTags": ["Italian", "Deli"]},
+        {"title": "Sonder", "website": "https://sonderbakersfield.com/", "address": "Bakersfield, CA", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Horse in the Alley", "website": "https://www.horseinthealley.com/", "address": "Bakersfield, CA", "cuisineTags": ["American", "Steak"]},
+        {"title": "The Belvedere Room", "website": "https://www.thepadrehotel.com/", "address": "Bakersfield, CA", "cuisineTags": ["California", "American"]},
+        {"title": "Moo Creamery", "website": "https://www.moocreamery.com/", "address": "Bakersfield, CA", "cuisineTags": ["American", "Casual"]},
+        {"title": "Locale Farm to Table Eatery", "website": "https://www.localefarmtotable.com/", "address": "Bakersfield, CA", "cuisineTags": ["American", "Farm-to-table"]},
+        {"title": "New Vintage Grill", "website": "https://newvintagegrill.com/", "address": "Bakersfield, CA", "cuisineTags": ["American", "Casual"]}
+      ]
+    },
+    {
+      "city": "Knoxville",
+      "stateCode": "TN",
+      "listings": [
+        {"title": "J.C. Holdway", "website": "https://www.jcholdway.com/", "address": "Knoxville, TN", "cuisineTags": ["Southern", "American"]},
+        {"title": "Emilia", "website": "https://emiliaknox.com/", "address": "Knoxville, TN", "cuisineTags": ["Italian"]},
+        {"title": "Kefi", "website": "https://kefiknox.com/", "address": "Knoxville, TN", "cuisineTags": ["Greek", "Mediterranean"]},
+        {"title": "Oliver Royale", "website": "https://www.oliverroyale.com/", "address": "Knoxville, TN", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Lonesome Dove Western Bistro", "website": "https://www.lonesomedoveknoxville.com/", "address": "Knoxville, TN", "cuisineTags": ["American", "Western"]},
+        {"title": "Vida", "website": "https://www.vidaknoxville.com/", "address": "Knoxville, TN", "cuisineTags": ["Latin", "Asian fusion"]},
+        {"title": "Osteria Stella", "website": "https://osteriastella.com/", "address": "Knoxville, TN", "cuisineTags": ["Italian"]},
+        {"title": "Lilou", "website": "https://lilouknoxville.com/", "address": "Knoxville, TN", "cuisineTags": ["French", "Brasserie"]}
+      ]
+    },
+    {
+      "city": "Albany",
+      "stateCode": "NY",
+      "listings": [
+        {"title": "Yono's", "website": "https://www.yonos.com/", "address": "Albany, NY", "cuisineTags": ["American", "Indonesian"]},
+        {"title": "dp An American Brasserie", "website": "https://www.dpbrasserie.com/", "address": "Albany, NY", "cuisineTags": ["American", "French"]},
+        {"title": "Cafe Capriccio", "website": "https://www.cafecapriccio.com/", "address": "Albany, NY", "cuisineTags": ["Italian"]},
+        {"title": "677 Prime", "website": "https://www.677prime.com/", "address": "Albany, NY", "cuisineTags": ["Steak", "American"]},
+        {"title": "Dove + Deer", "website": "https://doveanddeer.com/", "address": "Albany, NY", "cuisineTags": ["American", "Pub"]},
+        {"title": "The Copper Crow", "website": "https://www.coppercrowalbany.com/", "address": "Albany, NY", "cuisineTags": ["American", "Fusion"]},
+        {"title": "Rosanna's", "website": "https://www.rosannasondove.com/", "address": "Albany, NY", "cuisineTags": ["Italian", "American"]},
+        {"title": "Toro Cantina", "website": "https://www.torocantina.com/", "address": "Albany, NY", "cuisineTags": ["Mexican", "Latin"]}
+      ]
+    },
+    {
+      "city": "Boise",
+      "stateCode": "ID",
+      "listings": [
+        {"title": "KIN", "website": "https://www.kinboise.com/", "address": "Boise, ID", "cuisineTags": ["Contemporary", "Tasting menu"]},
+        {"title": "Chandlers", "website": "https://www.chandlersboise.com/", "address": "Boise, ID", "cuisineTags": ["Steak", "Seafood"]},
+        {"title": "The Lively", "website": "https://www.thelivelyboise.com/", "address": "Boise, ID", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Fork", "website": "https://boisefork.com/", "address": "Boise, ID", "cuisineTags": ["American", "Northwest"]},
+        {"title": "Bittercreek Alehouse", "website": "https://bittercreekalehouse.com/", "address": "Boise, ID", "cuisineTags": ["American", "Beer hall"]},
+        {"title": "Barbacoa Grill", "website": "https://barbacoa-boise.com/", "address": "Boise, ID", "cuisineTags": ["Latin", "Steak"]},
+        {"title": "Percy", "website": "https://www.percyrestaurant.com/", "address": "Boise, ID", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Owyhee Tavern", "website": "https://www.owyheetavern.com/", "address": "Boise, ID", "cuisineTags": ["Steak", "Seafood"]}
+      ]
+    }
+  ]
+}
