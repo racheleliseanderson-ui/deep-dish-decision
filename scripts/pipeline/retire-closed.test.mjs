@@ -21,9 +21,22 @@ describe("validateRetirementInput", () => {
         "slug required",
         "named operator required",
         "source URL required",
-        "closedOn YYYY-MM-DD required",
+        "closedOn YYYY-MM or YYYY-MM-DD required",
         "operator quote required",
       ]),
+    );
+  });
+
+  it("accepts month precision when the source does not establish an exact day", () => {
+    expect(validateRetirementInput({ ...base, closedOn: "2024-05" })).toEqual([]);
+  });
+
+  it("rejects incomplete or non-ISO closure dates", () => {
+    expect(validateRetirementInput({ ...base, closedOn: "2024" })).toContain(
+      "closedOn YYYY-MM or YYYY-MM-DD required",
+    );
+    expect(validateRetirementInput({ ...base, closedOn: "May 2024" })).toContain(
+      "closedOn YYYY-MM or YYYY-MM-DD required",
     );
   });
 
