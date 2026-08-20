@@ -1,7 +1,8 @@
 name: Corpus refresh hygiene
 
-# Ready when LOVABLE_API_KEY, GOOGLE_MAPS_API_KEY, and FIRECRAWL_API_KEY
-# are set as repository secrets. Prefer hygiene over discovery every run.
+# Scheduled hygiene uses owned-site first-party reads. Discovery modes may still
+# require configured provider keys. The seed-listings mode is keyless and uses
+# verified repository seed files followed by owned-site enrichment.
 
 on:
   schedule:
@@ -10,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "hygiene | discover | seed (hygiene then multi-city discover)"
+        description: "hygiene | discover | seed | seed-listings"
         required: true
         default: "hygiene"
       batch:
@@ -21,6 +22,10 @@ on:
         description: "Cities per discover run (discover/seed modes)"
         required: false
         default: "3"
+      seed_cities:
+        description: "Optional comma-separated city names for seed-listings mode"
+        required: false
+        default: ""
 
 jobs:
   refresh:
@@ -38,7 +43,7 @@ jobs:
           node scripts/pipeline/refresh.mjs
           node scripts/pipeline/report.mjs
 
-      # Hygiene first on schedule, hygiene mode, and seed mode (seed always clears the due list)
+      # Hygiene first on schedule, hygiene mode, and legacy seed/discover mode.
       - name: Hygiene enrich
         if: ${{ github.event_name == 'schedule' || inputs.mode == 'hygiene' || inputs.mode == 'seed' }}
         env:
@@ -47,7 +52,7 @@ jobs:
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: node scripts/pipeline/enrich.mjs --hygiene --batch=${{ inputs.batch || 25 }}
 
-      # Pure discover still allowed, but must clear hygiene gate or allow-with-hygiene
+      # Pure discover still allowed, but must clear hygiene gate or allow-with-hygiene.
       - name: Controlled discover
         if: ${{ github.event_name == 'workflow_dispatch' && (inputs.mode == 'discover' || inputs.mode == 'seed') }}
         env:
@@ -63,6 +68,16 @@ jobs:
             --cities="$CITIES" \
             --limit="$LIMIT" \
             --allow-with-hygiene
+
+      - name: Seed verified listings + owned enrichment
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'seed-listings' }}
+        run: |
+          SEED_CITIES="${{ inputs.seed_cities }}"
+          if [ -n "$SEED_CITIES" ]; then
+            node scripts/pipeline/seed-and-enrich.mjs --cities="$SEED_CITIES"
+          else
+            node scripts/pipeline/seed-and-enrich.mjs
+          fi
 
       - name: Recompute coverage
         run: node scripts/pipeline/report.mjs
