@@ -6,6 +6,7 @@
  * - Tries the normal owned-site reader first.
  * - If normal fetch fails, renders the same public first-party URL in Chromium.
  * - Never disables TLS verification and never uses third-party restaurant content.
+ * - Rejects browser-rendered WAF/challenge/forbidden pages fail-closed.
  * - Applies a corrected host to dataset.json only after that corrected first-party URL
  *   successfully yields owned-site evidence.
  */
@@ -21,6 +22,7 @@ import {
 import {
   closeSharedBrowser,
   fetchSitePages,
+  isChallengePage,
   parseHtmlDocument,
   renderWithPlaywright,
 } from "./own-fetch.mjs";
@@ -54,10 +56,23 @@ function usableParsedPage(parsed) {
   );
 }
 
+/**
+ * Fail closed on browser-rendered denial/challenge pages. A WAF page can have
+ * plenty of text, so text length alone is not evidence of a restaurant page.
+ */
+export function blockedRenderedPage(html, text) {
+  if (isChallengePage(html)) return true;
+  const blob = `${String(html || "")}\n${String(text || "")}`;
+  return /\b(?:access denied|request blocked|forbidden|error\s*403|you don['’]t have permission|verify you are human|verification required|security service|this request has been blocked|captcha)\b/i.test(
+    blob,
+  );
+}
+
 async function renderPage(url) {
   const rendered = await renderWithPlaywright(url);
   if (!rendered?.html) return null;
   const parsed = parseHtmlDocument(rendered.html, url);
+  if (blockedRenderedPage(rendered.html, parsed.text)) return null;
   if (!usableParsedPage(parsed)) return null;
   return {
     url,
