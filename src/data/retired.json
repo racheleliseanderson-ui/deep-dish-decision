@@ -1,6 +1,6 @@
 {
   "note": "Restaurants removed after a first-party or named operator source said this specific restaurant is permanently closed. Slug and enrichment are dropped. Never rewritten onto a successor.",
-  "generatedAt": "2026-08-19T20:41:14.354Z",
+  "generatedAt": "2026-08-20T05:48:00.000Z",
   "records": [
     {
       "slug": "no-9-park-boston",
@@ -43,6 +43,48 @@
       "note": "Fort Point space was offered for sale. Do not rewrite this case file onto a later occupant.",
       "successor": "",
       "retiredAt": "2026-08-19T20:41:14.354Z"
+    },
+    {
+      "slug": "toutant-buffalo",
+      "title": "Toutant",
+      "city": "Buffalo",
+      "stateProvince": "New York",
+      "website": "https://www.toutantbuffalo.com/",
+      "operator": "James and Connie Roberts",
+      "source": "https://www.toutantbuffalo.com/dine-in",
+      "closedOn": "2025-02-15",
+      "quote": "PERMANENTLY CLOSED! Thank you for all the love and support the last 10 years.",
+      "note": "The homepage still exposes historical hours and menu copy. The first-party dine-in and reservations pages explicitly mark the restaurant permanently closed.",
+      "successor": "",
+      "retiredAt": "2026-08-20T05:48:00.000Z"
+    },
+    {
+      "slug": "reserve-wine-food-grand-rapids",
+      "title": "Reserve Wine & Food",
+      "city": "Grand Rapids",
+      "stateProvince": "Michigan",
+      "website": "https://www.reservegr.com/",
+      "operator": "Reserve Wine & Food / AHC Hospitality; Luke VerHulst",
+      "source": "https://www.yahoo.com/lifestyle/concept-replacing-downtown-gr-210252523.html",
+      "closedOn": "2024-05",
+      "quote": "Reserve closed in May 2024 so the team could reinvent the restaurant as a new concept.",
+      "note": "The former Reserve domain now redirects to Allora. Do not rewrite the Reserve identity onto Allora.",
+      "successor": "Allora",
+      "retiredAt": "2026-08-20T05:48:00.000Z"
+    },
+    {
+      "slug": "maynards-tucson",
+      "title": "Maynards Kitchen & Bottle Shop",
+      "city": "Tucson",
+      "stateProvince": "Arizona",
+      "website": "https://www.maynardstucson.com/",
+      "operator": "Richard and Shana Oseran",
+      "source": "https://tucson.com/life-entertainment/local/food-drink/article_15524c19-c159-4282-8154-89dce7014b6d.html",
+      "closedOn": "2025-05-31",
+      "quote": "The depot space has been vacant since Maynards closed; a new Penelope Pizza location is taking over.",
+      "note": "Do not rewrite Maynards onto Penelope Pizza or another later occupant of the depot space.",
+      "successor": "Penelope Pizza (planned)",
+      "retiredAt": "2026-08-20T05:48:00.000Z"
     }
   ]
 }
