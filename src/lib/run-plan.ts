@@ -1,12 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 
 /**
- * A run plan is the operator's instruction to the expansion pipeline. The
- * browser cannot launch a run — the pipeline is a set of workspace scripts over
- * the JSON corpus — so the console composes this object, persists it locally and
- * renders the exact command that executes it. `scripts/pipeline/discover.mjs`
- * reads the same shape through its --plan flag, so what is assembled here is
- * literally what runs.
+ * A run plan is the operator's instruction to the expansion pipeline.
+ * The browser composes this object and renders the exact instructions to execute it.
  */
 export type RunPlan = {
   restaurantsPerRun: number;
@@ -105,10 +101,10 @@ export function useRunPlan() {
   return { plan, update, reset, hydrated };
 }
 
-/** The command that executes this exact plan, byte-for-byte. */
+/** The instruction line that executes this exact plan. */
 export function planCommand(plan: RunPlan) {
   const flags = [
-    "--plan=.lovable/run-plan.json",
+    "--plan=run-plan.json",
     plan.paused ? "--force" : null,
     plan.enrichAfterInsert ? null : "--no-enrich",
   ].filter(Boolean);
