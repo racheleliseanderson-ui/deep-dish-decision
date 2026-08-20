@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-08-20T14:24:00.000Z",
+  "note": "Explicit operator-platform source records for current restaurants where no clearly owned domain is confirmed. Platform pages are retained as identity/contact pathways only; they are not promoted into owned-site policy evidence.",
+  "records": [
+    {
+      "slug": "chengdu-taste",
+      "officialSource": "https://www.facebook.com/pages/Chengdu%20Taste/145064369027117",
+      "additionalSources": ["https://www.fetail.com/storev2/shop?store_id=23"],
+      "sourceAuthority": "Operator-managed platform source; no owned domain confirmed",
+      "reason": "Current Chengdu Taste identity at 828 W Valley Blvd, Alhambra and 626-588-2284 is confirmed by current guide/map sources; discoverable restaurant pathway is platform-hosted rather than a clearly owned domain."
+    },
+    {
+      "slug": "di-an-pho",
+      "officialSource": "https://www.facebook.com/dianphorestaurant/",
+      "additionalSources": ["https://www.toasttab.com/local/order/dianphorestaurant/r-e746c6ba-bd8f-4518-8ad5-04ad8a754df9"],
+      "sourceAuthority": "Operator-managed platform source; no owned domain confirmed",
+      "reason": "Di An Pho at 12934 Bellaire Blvd Suite 108, Houston is current; the operator Facebook identity and direct restaurant Toast storefront are platform-hosted, not an owned domain."
+    }
+  ]
+}
