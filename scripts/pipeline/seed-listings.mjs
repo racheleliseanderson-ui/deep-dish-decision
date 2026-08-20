@@ -5,8 +5,13 @@
  * Source files: src/data/seed-listings*.json (named establishments + public URLs only).
  * Narrative first-party fields stay empty — same honesty contract as discover.mjs.
  *
+ * Batches may set `queueCity` when the expansion queue target is broader than the
+ * actual restaurant city (for example a statewide coverage target). Record geography
+ * always comes from `city`; queue accounting comes from `queueCity ?? city`.
+ *
  *   node scripts/pipeline/seed-listings.mjs
  *   node scripts/pipeline/seed-listings.mjs --cities=Atlanta,Washington
+ *   node scripts/pipeline/seed-listings.mjs --cities="new jersey"
  *   node scripts/pipeline/seed-listings.mjs --dry
  */
 import fs from "node:fs";
@@ -222,6 +227,10 @@ function toRecord(listing, target, retrievedAt) {
   };
 }
 
+function queueCityForBatch(batch) {
+  return String(batch.queueCity || batch.city || "").trim();
+}
+
 // ------------------------------------------------------------------ run
 const startedAt = new Date().toISOString();
 const snapshotDir = DRY ? null : snapshot("seed-listings");
@@ -233,17 +242,23 @@ const perCity = [];
 
 const batches = seedBatches.filter((b) => {
   if (!onlyCities) return true;
-  return onlyCities.includes(b.city.toLowerCase());
+  const names = [b.city, b.queueCity]
+    .filter(Boolean)
+    .map((name) => String(name).trim().toLowerCase());
+  return names.some((name) => onlyCities.includes(name));
 });
 
 console.log(`Seed sources: ${seedFiles.join(", ")}`);
 
 for (const batch of batches) {
+  const queueCity = queueCityForBatch(batch);
   const target = queue.cities.find(
-    (c) => c.city === batch.city && c.stateCode === batch.stateCode,
+    (c) => c.city.toLowerCase() === queueCity.toLowerCase() && c.stateCode === batch.stateCode,
   );
   if (!target) {
-    console.warn(`  ! ${batch.city}, ${batch.stateCode} not in expansion queue — skip`);
+    console.warn(
+      `  ! ${batch.city}, ${batch.stateCode} (queue target: ${queueCity}) not in expansion queue — skip`,
+    );
     continue;
   }
 
@@ -268,12 +283,13 @@ for (const batch of batches) {
 
   perCity.push({
     city: `${batch.city}, ${batch.stateCode}`,
+    queueCity,
     found: batch.listings.length,
     inserted: cityInserted,
     duplicates: cityDupes,
   });
   console.log(
-    `${batch.city}, ${batch.stateCode}: ${batch.listings.length} seeds, ${cityInserted} inserted, ${cityDupes} duplicates`,
+    `${batch.city}, ${batch.stateCode}: ${batch.listings.length} seeds, ${cityInserted} inserted, ${cityDupes} duplicates (queue: ${queueCity})`,
   );
 
   if (!DRY && cityInserted) {
