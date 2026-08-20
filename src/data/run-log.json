@@ -1,6 +1,251 @@
 {
   "runs": [
     {
+      "kind": "source-review",
+      "startedAt": "2026-08-20T15:38:57.213Z",
+      "finishedAt": "2026-08-20T15:38:57.278Z",
+      "batchSize": 2,
+      "sourceLimited": 2,
+      "missing": 0,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-20T15-38-57-213Z-source-limited",
+      "records": [
+        {
+          "slug": "chengdu-taste",
+          "matchStatus": "source-limited",
+          "completeness": 22,
+          "notes": [
+            "operator platform; no owned domain"
+          ]
+        },
+        {
+          "slug": "di-an-pho",
+          "matchStatus": "source-limited",
+          "completeness": 22,
+          "notes": [
+            "operator platform; no owned domain"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-20T14:17:32.203Z",
+      "finishedAt": "2026-08-20T14:19:35.063Z",
+      "batchSize": 4,
+      "recovery": true,
+      "resolved": 2,
+      "unresolved": 2,
+      "deferred": 0,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 4
+      },
+      "retries": 0,
+      "failures": 2,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-20T14-17-32-203Z-hygiene-recovery-owned",
+      "records": [
+        {
+          "slug": "delicious-chengdu",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 18",
+            "source corrected  -> https://deliciouschengdutogo.com/"
+          ]
+        },
+        {
+          "slug": "mr-szechuan",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        },
+        {
+          "slug": "spicy-king",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+          ]
+        },
+        {
+          "slug": "dovecote-orlando",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 7",
+            "source corrected https://www.dovecoteorlando.com/ -> https://www.dovecoterestaurant.com/"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-20T14:09:22.305Z",
+      "finishedAt": "2026-08-20T14:10:42.643Z",
+      "batchSize": 16,
+      "recovery": true,
+      "resolved": 12,
+      "unresolved": 4,
+      "deferred": 0,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 16
+      },
+      "retries": 0,
+      "failures": 4,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-20T14-09-22-306Z-hygiene-recovery-owned",
+      "records": [
+        {
+          "slug": "mexo-grand-rapids",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 4",
+            "quotes 17"
+          ]
+        },
+        {
+          "slug": "cracked-pepper-bistro-fresno",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 3",
+            "quotes 19"
+          ]
+        },
+        {
+          "slug": "heirloom-fresno",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "the-artichoke-cafe-albuquerque",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "locale-farm-to-table-eatery-bakersfield",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+          ]
+        },
+        {
+          "slug": "black-rooster-columbia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "cache-restaurant-little-rock",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "oak-park-des-moines",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "proudfoot-bird-des-moines",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "browser recovery",
+            "direct 403 HTTP 403",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "twelve-restaurant-bar-wichita",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "bravo-italian-restaurant-bar-jackson",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "rosewild-fargo",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "the-albany-cheyenne",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "whisky-ramen-anchorage",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "source corrected https://www.whiskyandramen.com/ -> https://whiskyandramen.com/"
+          ]
+        },
+        {
+          "slug": "jens-restaurant-anchorage",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:CERT_HAS_EXPIRED"
+          ]
+        },
+        {
+          "slug": "comp-re-lapin-new-orleans",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:DEPTH_ZERO_SELF_SIGNED_CERT"
+          ]
+        }
+      ]
+    },
+    {
       "kind": "enrich-owned",
       "startedAt": "2026-08-20T11:28:46.850Z",
       "finishedAt": "2026-08-20T11:41:43.592Z",

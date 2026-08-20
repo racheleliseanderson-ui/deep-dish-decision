@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T11:41:43.520Z",
+  "generatedAt": "2026-08-20T15:38:57.250Z",
   "records": {
     "canlis": {
       "google": {
@@ -14506,11 +14506,11 @@
         "generatedAt": "2026-08-11T00:00:43.245Z"
       },
       "meta": {
-        "matchStatus": "no-website",
+        "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:04.440Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T15:38:57.250Z",
+        "enrichmentMode": "operator-platform-source",
         "completeness": 22
       }
     },
@@ -16496,11 +16496,11 @@
         "generatedAt": "2026-08-11T00:05:52.081Z"
       },
       "meta": {
-        "matchStatus": "no-website",
+        "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:04.455Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T15:38:57.249Z",
+        "enrichmentMode": "operator-platform-source",
         "completeness": 22
       }
     },
@@ -16882,12 +16882,126 @@
         "generatedAt": "2026-08-11T00:06:01.505Z"
       },
       "meta": {
-        "matchStatus": "no-website",
+        "matchStatus": "resolved",
         "confidence": 0.5,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:04.465Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 17
+        "lastEnrichedAt": "2026-08-20T14:17:32.206Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://qmenu.us/#/delicious-chengdu-temple-city",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 6262869996"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Sunday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Monday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Monday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Tuesday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Tuesday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Wednesday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Wednesday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Thursday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Thursday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Friday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Friday 05:00 PM 09:30 PM",
+          "JSON-LD openingHoursSpecification: Saturday 11:00 AM 03:00 PM",
+          "JSON-LD openingHoursSpecification: Saturday 05:00 PM 09:30 PM"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Chinese"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 6262869996",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Chinese",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 11:00 AM 03:00 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 05:00 PM 09:30 PM",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "meta description: Temple City, CA 91780 Chinese food for Pickup - Order from Delicious Chengdu（Yao Dian Zi Restaurant） in Temple City, CA 91780, phone: 626-286-9996",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          },
+          {
+            "quote": "title: Home | Delicious Chengdu（Yao Dian Zi Restaurant）",
+            "sourceUrl": "https://deliciouschengdutogo.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://deliciouschengdutogo.com/"
+        ],
+        "retrievedAt": "2026-08-20T14:17:32.206Z",
+        "playwrightPages": 0
       }
     },
     "chong-qing-special-noodles": {
@@ -19887,8 +20001,8 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:04.477Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
+        "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
     },
@@ -20423,8 +20537,8 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-19T20:03:05.992Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
+        "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
     },
@@ -34943,12 +35057,71 @@
     },
     "dovecote-orlando": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T20:08:31.265Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:19:33.978Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/restaurant/profile/211381/reserve?rid=211381&restref=211381",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 407-930-1700"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Saturday,Sunday 11:30 22:00",
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Sunday 10:30 14:30",
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 10:30 14:30"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $5 - $45"
+        ],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 407-930-1700",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $5 - $45",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday,Sunday 11:30 22:00",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Sunday 10:30 14:30",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 10:30 14:30",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "og:description: Welcome to Downtown Orlando",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          },
+          {
+            "quote": "title: Downtown Orlando Restaurant | DoveCote",
+            "sourceUrl": "https://www.dovecoterestaurant.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.dovecoterestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-20T14:19:33.978Z",
+        "playwrightPages": 0
       }
     },
     "mixtli-san-antonio": {
@@ -41621,12 +41794,128 @@
     },
     "mexo-grand-rapids": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:30:13.600Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:09:22.309Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 83
+      },
+      "site": {
+        "menuUrl": "https://mexogr.com/menu",
+        "reservationUrl": "https://order.toasttab.com/egiftcards/mexo",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (616) 828-4123"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Tuesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 00:00",
+          "JSON-LD openingHoursSpecification: Saturday 11:00 00:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Mexican, Latin-american, Bar, Tacos, Upscale"
+        ],
+        "dietaryLanguage": [
+          "Enjoy happy-hour selections, refreshing drinks, and vegan-friendly choices designed to fit different moods and occasions.",
+          "Vegan Sopes $12.00 Huaraches $14.00 House-made nixtamalized masa stuffed with epazote beans topped with morita chile falda, pickled red onions, salsa cruda, and cotija cheese.",
+          "Vegan Enchiladas Verdes $24.00 King trumpets simmered in guajillo sauce, wrapped in corn tortillas, topped with salsa verde & salsa cruda.",
+          "Vegan Coconut Flan $12.00 Smooth coconut flan with a touch of Veracruz vanilla custard, topped with a maple-citrus caramel."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Order with App Order online Menu Reservations Catering Private Dining MeXo in the News Our Story Gift Cards Hours & Location Contact Us Events Order online Terms of service Accessibility © 2026 118 Fulton Operating LCC.",
+        "groupPolicyLanguage": [
+          "Order with App Order online Menu Reservations Catering Private Dining MeXo in the News Our Story Gift Cards Hours & Location Contact Us Events Order online Terms of service Accessibility © 2026 118 Fulton Operating LCC.",
+          "Private Dining MeXo Tequila & Mezcal Bar and Restaurant Special Events & Private Parties Custom menus, seamless planning, and full service for weddings, meetings, and private celebrations.",
+          "Schedule Now Private Dining Form Please complete the form below to request to host an event at our restaurant."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (616) 828-4123",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Mexican, Latin-american, Bar, Tacos, Upscale",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday 11:00 21:00",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:00 21:00",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 00:00",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 11:00 00:00",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "og:description: MeXo Tequila & Mezcal Bar and Restaurant: the best Mexican Food in Grand Rapids, MI. Order directly online today for takeout or delivery. Save money, support local business!",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "title: Best Mexican Food in Grand Rapids, MI | MeXo Tequila & Mezcal Bar and Restaurant | Mexican Food near me",
+            "sourceUrl": "https://mexogr.com/"
+          },
+          {
+            "quote": "og:description: MeXo Tequila & Mezcal Bar and Restaurant Online Menu. Save Money Ordering Directly Here. Healthy Options. Fast Service. Friendly Team. Top Rated.",
+            "sourceUrl": "https://mexogr.com/menu"
+          },
+          {
+            "quote": "title: MeXo Tequila & Mezcal Bar and Restaurant Online Menu | Best Mexican Food in Grand Rapids",
+            "sourceUrl": "https://mexogr.com/menu"
+          },
+          {
+            "quote": "og:description: Make a reservation at our restaurant",
+            "sourceUrl": "https://mexogr.com/reservations"
+          },
+          {
+            "quote": "title: MeXo Tequila & Mezcal Bar and Restaurant | MeXo Tequila & Mezcal Bar and Restaurant Reservations",
+            "sourceUrl": "https://mexogr.com/reservations"
+          },
+          {
+            "quote": "og:description: Find out more about Private Dining at MeXo Tequila & Mezcal Bar and Restaurant",
+            "sourceUrl": "https://mexogr.com/page/private-dining"
+          },
+          {
+            "quote": "title: Private Dining | MeXo Tequila & Mezcal Bar and Restaurant",
+            "sourceUrl": "https://mexogr.com/page/private-dining"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://mexogr.com/",
+          "https://mexogr.com/menu",
+          "https://mexogr.com/reservations",
+          "https://mexogr.com/page/private-dining"
+        ],
+        "retrievedAt": "2026-08-20T14:09:22.309Z",
+        "playwrightPages": 4
       }
     },
     "redd-rochester-rochester": {
@@ -42501,12 +42790,138 @@
     },
     "cracked-pepper-bistro-fresno": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:30:58.345Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:09:28.746Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 83
+      },
+      "site": {
+        "menuUrl": "https://crackedpepperbistro.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/cracked-pepper-bistro-fresno",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (559) 222-9119"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Tuesday 08:00 13:30",
+          "JSON-LD openingHoursSpecification: Tuesday 16:30 21:30",
+          "JSON-LD openingHoursSpecification: Wednesday 08:00 13:30",
+          "JSON-LD openingHoursSpecification: Wednesday 16:30 21:30",
+          "JSON-LD openingHoursSpecification: Thursday 08:00 13:30",
+          "JSON-LD openingHoursSpecification: Thursday 16:30 21:30",
+          "JSON-LD openingHoursSpecification: Friday 08:00 13:30",
+          "JSON-LD openingHoursSpecification: Friday 16:00 22:30",
+          "JSON-LD openingHoursSpecification: Saturday 08:00 13:30",
+          "JSON-LD openingHoursSpecification: Saturday 16:00 22:30"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Fine-dining, New-american, Steakhouse, Brunch, Wine-bar, Bar, Seafood"
+        ],
+        "dietaryLanguage": [
+          "Allergy - Dairy, Nut, Gluten.",
+          "Allergy: Dairy, shellfish.",
+          "Allergy: gluten (soy sauce), aioli is mayonnaise based.",
+          "Allergy: Gluten, nut allergy, dairy allergy Shrimp Cocktail $22.00 Garlic cocktail sauce with diced vegetables with sliced avocado & cilantro."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Reserve your seat — or let us host your next private event.",
+        "groupPolicyLanguage": [
+          "Reserve your seat — or let us host your next private event.",
+          "View the Menu A Glimpse Inside Image gallery Close Close Private Events, Gifts & More Private dining is available for special occasions and group celebrations."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (559) 222-9119",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Fine-dining, New-american, Steakhouse, Brunch, Wine-bar, Bar, Seafood",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 08:00 13:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 16:30 21:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 08:00 13:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 16:30 21:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 08:00 13:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 16:30 21:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 08:00 13:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 16:00 22:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 08:00 13:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 16:00 22:30",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "og:description: Cracked Pepper Bistro: the best Fine Dining in Fresno, CA. Order directly online today for takeout or delivery. Save money, support local business!",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "title: Best Fine Dining in Fresno, CA | Cracked Pepper Bistro | Fine Dining near me",
+            "sourceUrl": "https://crackedpepperbistro.com/"
+          },
+          {
+            "quote": "og:description: Cracked Pepper Bistro Online Menu. Save Money Ordering Directly Here. Healthy Options. Fast Service. Friendly Team. Top Rated.",
+            "sourceUrl": "https://crackedpepperbistro.com/menu"
+          },
+          {
+            "quote": "title: Cracked Pepper Bistro Online Menu | Best Fine Dining in Fresno",
+            "sourceUrl": "https://crackedpepperbistro.com/menu"
+          },
+          {
+            "quote": "og:description: Find out more about Frequently Asked Questions at Cracked Pepper Bistro",
+            "sourceUrl": "https://crackedpepperbistro.com/page/faq"
+          },
+          {
+            "quote": "title: Frequently Asked Questions | Cracked Pepper Bistro",
+            "sourceUrl": "https://crackedpepperbistro.com/page/faq"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://crackedpepperbistro.com/",
+          "https://crackedpepperbistro.com/menu",
+          "https://crackedpepperbistro.com/page/faq"
+        ],
+        "retrievedAt": "2026-08-20T14:09:28.746Z",
+        "playwrightPages": 3
       }
     },
     "pismo-s-coastal-grill-fish-market-fresno": {
@@ -42883,12 +43298,40 @@
     },
     "heirloom-fresno": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:31:17.500Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:09:32.218Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://heirloom-eats.com/menu",
+        "reservationUrl": "https://www.toasttab.com/heirloom-ch-neew-8398-north-fresno-street/giftcards?utm_source=undefined&utm_content=home&utm_medium=toast_sites&utm_term=nav&utm_campaign=giftcards&utm_source=undefined&utm_content=home&utm_medium=toast_sites&utm_term=cards_section",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Official menu for Heirloom. See the most up-to-date menus with photos and descriptions.",
+            "sourceUrl": "https://heirloom-eats.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://heirloom-eats.com/",
+          "https://heirloom-eats.com/menu"
+        ],
+        "retrievedAt": "2026-08-20T14:09:32.218Z",
+        "playwrightPages": 2
       }
     },
     "amelia-s-tulsa": {
@@ -44041,12 +44484,99 @@
     },
     "the-artichoke-cafe-albuquerque": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:32:23.403Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:09:34.554Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 78
+      },
+      "site": {
+        "menuUrl": "https://www.artichokecafe.com/menu",
+        "reservationUrl": "https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=a01e286a-6291-410e-a9fa-5e03bd6a15a9&restRef=10711&otSource=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 5052430200"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-21:00; Sa 17:00-21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: American Restaurant"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining & Catering We host a wide range of events, from presentations to all-day meetings to weddings (ceremonies to cocktail hours to receptions), and everything in between.",
+        "groupPolicyLanguage": [
+          "Private Dining & Catering We host a wide range of events, from presentations to all-day meetings to weddings (ceremonies to cocktail hours to receptions), and everything in between.",
+          "We offer: — The versatility of 2 private rooms that can separately seat 20 &40 guests, respectively.",
+          "Our two private dining rooms also open up to each other, allowing for a total of 60 guests.",
+          "The smaller private room has a $750 food and beverage minimum and $150 room rental fee."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 5052430200",
+            "sourceUrl": "https://www.artichokecafe.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.artichokecafe.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American Restaurant",
+            "sourceUrl": "https://www.artichokecafe.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-21:00; Sa 17:00-21:00",
+            "sourceUrl": "https://www.artichokecafe.com/"
+          },
+          {
+            "quote": "og:description: The Artichoke Cafe in Albuquerque, NM. One of Albuquerque",
+            "sourceUrl": "https://www.artichokecafe.com/"
+          },
+          {
+            "quote": "title: Home - The Artichoke Cafe- Albuquerque, NM",
+            "sourceUrl": "https://www.artichokecafe.com/"
+          },
+          {
+            "quote": "og:description: Menu for The Artichoke Cafe in Albuquerque, NM. Explore latest menu with photos and reviews.",
+            "sourceUrl": "https://www.artichokecafe.com/menu"
+          },
+          {
+            "quote": "title: Menu - The Artichoke Cafe- Albuquerque, NM",
+            "sourceUrl": "https://www.artichokecafe.com/menu"
+          },
+          {
+            "quote": "og:description: Photo gallery for The Artichoke Cafe in Albuquerque, NM. Explore our featured photos, and latest menu with reviews and ratings.",
+            "sourceUrl": "https://www.artichokecafe.com/private-dining"
+          },
+          {
+            "quote": "title: Private Dining & Catering - The Artichoke Cafe- Albuquerque, NM",
+            "sourceUrl": "https://www.artichokecafe.com/private-dining"
+          },
+          {
+            "quote": "og:description: Find your The Artichoke Cafe in Albuquerque, NM. Explore our location with directions and photos.",
+            "sourceUrl": "https://www.artichokecafe.com/contact"
+          },
+          {
+            "quote": "title: Contact Us - The Artichoke Cafe- Albuquerque, NM",
+            "sourceUrl": "https://www.artichokecafe.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.artichokecafe.com/",
+          "https://www.artichokecafe.com/menu",
+          "https://www.artichokecafe.com/private-dining",
+          "https://www.artichokecafe.com/contact"
+        ],
+        "retrievedAt": "2026-08-20T14:09:34.554Z",
+        "playwrightPages": 4
       }
     },
     "seasons-rotisserie-grill-albuquerque": {
@@ -44533,8 +45063,8 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:32:42.631Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T14:10:01.421Z",
+        "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
     },
@@ -46043,12 +46573,44 @@
     },
     "black-rooster-columbia": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:33:52.500Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:10:02.028Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://blackroostersc.com/menu",
+        "reservationUrl": "https://pos.toasttab.com/privacy",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "Come as you are, and leave with a satisfied heart, a full stomach, and a smile.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Black Rooster is a casual-upscale Italian restaurant with a locally-sourced menu with a rooftop bar overlooking the rivers and cityscape of Columbia",
+            "sourceUrl": "https://blackroostersc.com/"
+          },
+          {
+            "quote": "og:description: Get Italian goodness to enjoy at work, at home, or wherever you",
+            "sourceUrl": "https://blackroostersc.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://blackroostersc.com/",
+          "https://blackroostersc.com/menu"
+        ],
+        "retrievedAt": "2026-08-20T14:10:02.028Z",
+        "playwrightPages": 2
       }
     },
     "saluda-s-columbia": {
@@ -46695,12 +47257,73 @@
     },
     "cache-restaurant-little-rock": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:34:18.793Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:10:04.358Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 72
+      },
+      "site": {
+        "menuUrl": "https://www.cachelittlerock.com/menu",
+        "reservationUrl": "https://tables.toasttab.com/restaurants/9bed8d9c-ec5f-46a4-ba27-295eb9fd8484/findTime",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 5018500265"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-14:00; Mo 17:00-22:00; Tu 11:00-14:00; Tu 17:00-22:00; We 11:00-14:00; We 17:00-22:00; Th 11:00-14:00; Th 17:00-22:00; Fr 11:00-14:00; Fr 17:00-22:00; Sa 17:00-22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: New American restaurant"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 5018500265",
+            "sourceUrl": "https://www.cachelittlerock.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://www.cachelittlerock.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: New American restaurant",
+            "sourceUrl": "https://www.cachelittlerock.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-14:00; Mo 17:00-22:00; Tu 11:00-14:00; Tu 17:00-22:00; We 11:00-14:00; We 17:00-22:00; Th 11:00-14:00; Th 17:00-22:00; Fr 11:00-14:00; Fr 17:00-22:00; Sa 17:00-22:00",
+            "sourceUrl": "https://www.cachelittlerock.com/"
+          },
+          {
+            "quote": "og:description: Cache in Little Rock, AR. Cache Restaurant is a one-of-a-kind fine dining venue set in the heart of downtown Little Rock. It is the perfect location for your next corporate event, private romantic dinner, or for anyone who loves to have memorab",
+            "sourceUrl": "https://www.cachelittlerock.com/"
+          },
+          {
+            "quote": "og:description: Menu for Cache in Little Rock, AR. Explore latest menu with photos and reviews.",
+            "sourceUrl": "https://www.cachelittlerock.com/menu"
+          },
+          {
+            "quote": "title: Reservations - Cache Restaurant",
+            "sourceUrl": "https://www.cachelittlerock.com/reservations"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.cachelittlerock.com/",
+          "https://www.cachelittlerock.com/menu",
+          "https://www.cachelittlerock.com/reservations"
+        ],
+        "retrievedAt": "2026-08-20T14:10:04.358Z",
+        "playwrightPages": 3
       }
     },
     "allsopp-chapple-little-rock": {
@@ -46755,8 +47378,8 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:34:23.835Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T14:10:07.583Z",
+        "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
     },
@@ -46812,12 +47435,97 @@
     },
     "proudfoot-bird-des-moines": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:34:27.163Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:10:08.126Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 72
+      },
+      "site": {
+        "menuUrl": "https://www.proudfootandbirddsm.com/menu",
+        "reservationUrl": "https://www.opentable.com/restref/client/?restref=1191535&lang=en-US&ot_source=Restaurant%20website&corrid=3209ddd3-639f-4e87-ad71-a59f8c4b5a3b",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (515)-957-2400"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday 06:30 22:00",
+          "JSON-LD openingHoursSpecification: Saturday,Sunday 06:30 23:00",
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 14:30 23:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Back to top Private Dining Experience our world-class fare in a private, exclusive setting.",
+        "groupPolicyLanguage": [
+          "Back to top Private Dining Experience our world-class fare in a private, exclusive setting.",
+          "Learn More about Private Dining Learn More - Home Contact Us Your satisfaction is our top priority.",
+          "Savor globally inspired dishes in a setting that whispers of a grander era, and enjoy intimate moments in our semi-private dining spaces.",
+          "Get your exclusive corner in the semi-private dining rooms."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Proudfoot & Bird is the premier fine dining outlet in Des Moines, pairing locally sourced dishes with award-winning wine selections in an uspcale ambiance.",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/"
+          },
+          {
+            "quote": "title: Restaurants Des Moines Iowa | Proudfoot & Bird Des Moines",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: (515)-957-2400",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/about-us"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday 06:30 22:00",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/about-us"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday,Sunday 06:30 23:00",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/about-us"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 14:30 23:00",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/about-us"
+          },
+          {
+            "quote": "og:description: Fresh, locally sourced fare, timeless handcrafted cocktails, and upscale ambiance artfully combine for a culinary experience like no other in Des Moines.",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/about-us"
+          },
+          {
+            "quote": "title: Des Moines Restaurants | Proudfoot & Bird Des Moines",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/about-us"
+          },
+          {
+            "quote": "og:description: Discover vibrant, locally sourced dishes and upscale libations served in an elegant setting for an unforgettable fine dining experience in Des Moines.",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/menu"
+          },
+          {
+            "quote": "title: American Restaurants Des Moines | Proudfoot & Bird Des Moines",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/menu"
+          },
+          {
+            "quote": "og:description: Experience elevated cuisine, award-winning wines, artfully crafted cocktails, in an upscale, private setting for a truly intimate, unforgettable experience.",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/private-dining"
+          },
+          {
+            "quote": "title: Private Dining Des Moines | Proudfoot & Bird Des Moines",
+            "sourceUrl": "https://www.proudfootandbirddsm.com/private-dining"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.proudfootandbirddsm.com/",
+          "https://www.proudfootandbirddsm.com/about-us",
+          "https://www.proudfootandbirddsm.com/menu",
+          "https://www.proudfootandbirddsm.com/private-dining"
+        ],
+        "retrievedAt": "2026-08-20T14:10:08.126Z",
+        "playwrightPages": 4
       }
     },
     "harbinger-des-moines": {
@@ -47944,12 +48652,83 @@
     },
     "twelve-restaurant-bar-wichita": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:35:13.282Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:10:10.455Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 78
+      },
+      "site": {
+        "menuUrl": "https://www.twelvewichita.com/menu",
+        "reservationUrl": "https://www.opentable.com/booking/restref/availability?rid=1147123&lang=en-US&r3uid=s3QLKIvfZ&color=1&dark=true&correlationId=e5c64ac1-d3ce-4fb9-b539-1bdc255519a5&restRef=1147123&partySize=2&dateTime=2024-04-04T19%3A00",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 3164402812"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Su 10:00-14:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-22:00; Fr 11:00-22:00; Sa 11:00-22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: American Restaurant"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Order Catering Celebrate at Twelve Host your next private event in the elegant, inviting atmosphere of Twelve Restaurant & Bar.",
+        "groupPolicyLanguage": [
+          "Order Catering Celebrate at Twelve Host your next private event in the elegant, inviting atmosphere of Twelve Restaurant & Bar."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 3164402812",
+            "sourceUrl": "https://www.twelvewichita.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.twelvewichita.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American Restaurant",
+            "sourceUrl": "https://www.twelvewichita.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 10:00-14:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-22:00; Fr 11:00-22:00; Sa 11:00-22:00",
+            "sourceUrl": "https://www.twelvewichita.com/"
+          },
+          {
+            "quote": "og:description: Twelve Restaurant & Bar in Wichita, KS. A family-owned, upscale‑casual American restaurant in Wichita, offering scratch‑kitchen fare such as hand-cut steaks, seafood, specialty salads, smoked salmon, and seasonal chef creations",
+            "sourceUrl": "https://www.twelvewichita.com/"
+          },
+          {
+            "quote": "title: Home - Twelve Restaurant & Bar - American Restaurant in Wichita, KS",
+            "sourceUrl": "https://www.twelvewichita.com/"
+          },
+          {
+            "quote": "og:description: Menu for Twelve Restaurant & Bar in Wichita, KS. Explore latest menu with photos and reviews.",
+            "sourceUrl": "https://www.twelvewichita.com/menu"
+          },
+          {
+            "quote": "title: Menu - Twelve Restaurant & Bar - American Restaurant in Wichita, KS",
+            "sourceUrl": "https://www.twelvewichita.com/menu"
+          },
+          {
+            "quote": "title: Private Events - Twelve Restaurant & Bar - American Restaurant in Wichita, KS",
+            "sourceUrl": "https://www.twelvewichita.com/private-events"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.twelvewichita.com/",
+          "https://www.twelvewichita.com/menu",
+          "https://www.twelvewichita.com/private-events"
+        ],
+        "retrievedAt": "2026-08-20T14:10:10.455Z",
+        "playwrightPages": 3
       }
     },
     "siena-steakhouse-wichita": {
@@ -48685,12 +49464,87 @@
     },
     "bravo-italian-restaurant-bar-jackson": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:35:42.915Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:10:14.129Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 72
+      },
+      "site": {
+        "menuUrl": "https://www.bravobuzz.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 6019828111"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Su 11:00-21:00; Tu 11:00-21:30; We 11:00-21:30; Th 11:00-21:30; Fr 11:00-22:00; Sa 11:00-22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Italian Restaurant"
+        ],
+        "dietaryLanguage": [
+          "Join for free Show All Items N Contains Nuts S Contains Shellfish GM Gluten-Free Modification GF Gluten-Free Option V Vegan V Vegetarian Starters Load More Content Order Online Opens in a new window Opens an external site Opens an external site in a new window"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 6019828111",
+            "sourceUrl": "https://www.bravobuzz.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://www.bravobuzz.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Italian Restaurant",
+            "sourceUrl": "https://www.bravobuzz.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su 11:00-21:00; Tu 11:00-21:30; We 11:00-21:30; Th 11:00-21:30; Fr 11:00-22:00; Sa 11:00-22:00",
+            "sourceUrl": "https://www.bravobuzz.com/"
+          },
+          {
+            "quote": "og:description: BRAVO! Italian Restaurant & Bar in Jackson, MS. Call us at (601) 982-8111. Check out our location and hours, and latest menu with photos and reviews.",
+            "sourceUrl": "https://www.bravobuzz.com/"
+          },
+          {
+            "quote": "title: Home - BRAVO! Italian Restaurant & Bar - Italian Restaurant in Jackson, MS",
+            "sourceUrl": "https://www.bravobuzz.com/"
+          },
+          {
+            "quote": "og:description: Menu for BRAVO! Italian Restaurant & Bar in Jackson, MS. Explore latest menu with photos and reviews.",
+            "sourceUrl": "https://www.bravobuzz.com/menu"
+          },
+          {
+            "quote": "title: Menu - BRAVO! Italian Restaurant & Bar - Italian Restaurant in Jackson, MS",
+            "sourceUrl": "https://www.bravobuzz.com/menu"
+          },
+          {
+            "quote": "og:description: Upcoming events for BRAVO! Italian Restaurant & Bar in Jackson, MS. Explore our local events with showtimes and tickets.",
+            "sourceUrl": "https://www.bravobuzz.com/events"
+          },
+          {
+            "quote": "title: Events - BRAVO! Italian Restaurant & Bar - Italian Restaurant in Jackson, MS",
+            "sourceUrl": "https://www.bravobuzz.com/events"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.bravobuzz.com/",
+          "https://www.bravobuzz.com/menu",
+          "https://www.bravobuzz.com/events"
+        ],
+        "retrievedAt": "2026-08-20T14:10:14.129Z",
+        "playwrightPages": 3
       }
     },
     "char-jackson-jackson": {
@@ -51908,12 +52762,49 @@
     },
     "rosewild-fargo": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:37:51.142Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:10:17.119Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [
+          "Accordion Item What ADA amenities do you offer?",
+          "Our spaces are designed with ADA amenities to ensure a comfortable stay for all guests."
+        ],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Accordion Item What is your cancellation policy?"
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Experience Jasper Hotel, a boutique stay in downtown Fargo, North Dakota with refined rooms, local dining, and walkable access to the city’s best attractions.",
+            "sourceUrl": "https://jasperfargo.com/"
+          },
+          {
+            "quote": "og:description: Have questions? Review our hotel",
+            "sourceUrl": "https://jasperfargo.com/faq/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://jasperfargo.com/",
+          "https://jasperfargo.com/faq/"
+        ],
+        "retrievedAt": "2026-08-20T14:10:17.119Z",
+        "playwrightPages": 2
       }
     },
     "rustica-eatery-tavern-fargo": {
@@ -52722,12 +53613,76 @@
     },
     "the-albany-cheyenne": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:38:27.297Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:10:21.473Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 72
+      },
+      "site": {
+        "menuUrl": "https://www.albanycheyenne.com/menu",
+        "reservationUrl": "https://www.toasttab.com/the-albany-cheyenne-1506-capitol-avenue/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 3076383507"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 11:00-22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: American Restaurant"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 3076383507",
+            "sourceUrl": "https://www.albanycheyenne.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.albanycheyenne.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American Restaurant",
+            "sourceUrl": "https://www.albanycheyenne.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 11:00-22:00",
+            "sourceUrl": "https://www.albanycheyenne.com/"
+          },
+          {
+            "quote": "og:description: The Albany in Cheyenne, WY. Historic Restaurant and bar in the heart of downtown, known for prime rib, chicken fried steak, and made-from-scratch fare.",
+            "sourceUrl": "https://www.albanycheyenne.com/"
+          },
+          {
+            "quote": "title: Home - The Albany - American Restaurant in Cheyenne, WY",
+            "sourceUrl": "https://www.albanycheyenne.com/"
+          },
+          {
+            "quote": "og:description: Menu for The Albany in Cheyenne, WY. Explore latest menu with photos and reviews.",
+            "sourceUrl": "https://www.albanycheyenne.com/menu"
+          },
+          {
+            "quote": "title: Menu - The Albany - American Restaurant in Cheyenne, WY",
+            "sourceUrl": "https://www.albanycheyenne.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.albanycheyenne.com/",
+          "https://www.albanycheyenne.com/menu"
+        ],
+        "retrievedAt": "2026-08-20T14:10:21.473Z",
+        "playwrightPages": 2
       }
     },
     "napoli-s-cheyenne": {
@@ -53003,12 +53958,35 @@
     },
     "whisky-ramen-anchorage": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:38:40.201Z",
-        "enrichmentMode": "owned-site",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-20T14:10:31.543Z",
+        "enrichmentMode": "owned-site-recovery",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://whiskyandramen.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/whisky-and-ramen-436-w-4th-ave/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://whiskyandramen.com/",
+          "https://whiskyandramen.com/menu/"
+        ],
+        "retrievedAt": "2026-08-20T14:10:31.543Z",
+        "playwrightPages": 1
       }
     },
     "kinley-s-restaurant-bar-anchorage": {
@@ -53077,8 +54055,8 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:38:43.765Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T14:10:41.057Z",
+        "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
     },
@@ -55206,8 +56184,8 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:40:20.350Z",
-        "enrichmentMode": "owned-site",
+        "lastEnrichedAt": "2026-08-20T14:10:41.740Z",
+        "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
     },

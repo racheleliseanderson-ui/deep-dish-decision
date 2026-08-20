@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-08-20T15:38:57.280Z",
+  "manifest": "src/data/source-limited-2026-08-20.json",
+  "total": 2,
+  "sourceLimited": 2,
+  "missing": 0,
+  "records": [
+    {
+      "slug": "chengdu-taste",
+      "status": "source-limited",
+      "officialSource": "https://www.facebook.com/pages/Chengdu%20Taste/145064369027117",
+      "completeness": 22
+    },
+    {
+      "slug": "di-an-pho",
+      "status": "source-limited",
+      "officialSource": "https://www.facebook.com/dianphorestaurant/",
+      "completeness": 22
+    }
+  ]
+}
