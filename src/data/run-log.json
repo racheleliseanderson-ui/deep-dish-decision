@@ -1,6 +1,33 @@
 {
   "runs": [
     {
+      "kind": "source-review",
+      "startedAt": "2026-08-20T15:38:57.213Z",
+      "finishedAt": "2026-08-20T15:38:57.278Z",
+      "batchSize": 2,
+      "sourceLimited": 2,
+      "missing": 0,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-20T15-38-57-213Z-source-limited",
+      "records": [
+        {
+          "slug": "chengdu-taste",
+          "matchStatus": "source-limited",
+          "completeness": 22,
+          "notes": [
+            "operator platform; no owned domain"
+          ]
+        },
+        {
+          "slug": "di-an-pho",
+          "matchStatus": "source-limited",
+          "completeness": 22,
+          "notes": [
+            "operator platform; no owned domain"
+          ]
+        }
+      ]
+    },
+    {
       "kind": "hygiene-owned",
       "startedAt": "2026-08-20T14:17:32.203Z",
       "finishedAt": "2026-08-20T14:19:35.063Z",

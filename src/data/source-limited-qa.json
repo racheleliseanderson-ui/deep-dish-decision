@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-08-20T15:38:57.599Z",
+  "branch": "data/hygiene-source-limited-2",
+  "sourceCommit": "0fdd01cc0468e48fd0a9c7634eebe5cfaa6b3fdd",
+  "passed": true,
+  "sourceLimited": {
+    "total": 2,
+    "marked": 2,
+    "missing": 0,
+    "slugs": [
+      "chengdu-taste",
+      "di-an-pho"
+    ]
+  },
+  "coverageTotals": {
+    "records": 810,
+    "enriched": 810,
+    "resolved": 801,
+    "unresolved": 0,
+    "statesCovered": 51,
+    "statesTotal": 51,
+    "avgCompleteness": 61,
+    "withRating": 111,
+    "withPrice": 108,
+    "hygiene": 690,
+    "neverEnriched": 0,
+    "thin": 679,
+    "siteFailures": 1,
+    "reviewDue": 11,
+    "staleA": 0,
+    "staleB": 0,
+    "staleC": 0
+  },
+  "refreshTotals": {
+    "records": 810,
+    "hygiene": 690,
+    "neverEnriched": 0,
+    "thin": 679,
+    "siteFailures": 1,
+    "sourceLimited": 2,
+    "reviewDue": 11,
+    "staleA": 0,
+    "staleB": 0,
+    "staleC": 0,
+    "dueNow": 690
+  }
+}

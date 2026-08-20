@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T14:19:35.374Z",
+  "generatedAt": "2026-08-20T15:38:57.551Z",
   "totals": {
     "records": 810,
     "enriched": 810,
@@ -28,14 +28,14 @@
     "preferRefreshOverDiscover": true,
     "hygieneBatchSize": 25,
     "hygieneSlugs": [
-      "chengdu-taste",
-      "di-an-pho",
       "comp-re-lapin-new-orleans",
       "jens-restaurant-anchorage",
       "locale-farm-to-table-eatery-bakersfield",
       "mr-szechuan",
       "oak-park-des-moines",
       "spicy-king",
+      "chengdu-taste",
+      "di-an-pho",
       "los-tacos-no-1",
       "pier-17",
       "2-doors-down-cheyenne",
@@ -55,48 +55,6 @@
       "chengdu-gourmet-pittsburgh"
     ],
     "nextHygiene": [
-      {
-        "slug": "chengdu-taste",
-        "title": "Chengdu Taste",
-        "city": "Alhambra",
-        "stateProvince": "California",
-        "priority": 1348,
-        "reasons": [
-          "match-no-website",
-          "thin-22"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 22,
-        "matchStatus": "no-website",
-        "lastEnrichedAt": "2026-08-19T20:03:04.455Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
-      {
-        "slug": "di-an-pho",
-        "title": "Di An Pho",
-        "city": "Houston",
-        "stateProvince": "Texas",
-        "priority": 1348,
-        "reasons": [
-          "match-no-website",
-          "thin-22"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 22,
-        "matchStatus": "no-website",
-        "lastEnrichedAt": "2026-08-19T20:03:04.440Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
-        "siteFailures": []
-      },
       {
         "slug": "comp-re-lapin-new-orleans",
         "title": "Compère Lapin",
@@ -224,6 +182,48 @@
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
+        "siteFailures": []
+      },
+      {
+        "slug": "chengdu-taste",
+        "title": "Chengdu Taste",
+        "city": "Alhambra",
+        "stateProvince": "California",
+        "priority": 698,
+        "reasons": [
+          "source-limited",
+          "thin-22"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 22,
+        "matchStatus": "source-limited",
+        "lastEnrichedAt": "2026-08-20T15:38:57.249Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-19",
+        "reviewedAt": "2026-08-20",
+        "siteFailures": []
+      },
+      {
+        "slug": "di-an-pho",
+        "title": "Di An Pho",
+        "city": "Houston",
+        "stateProvince": "Texas",
+        "priority": 698,
+        "reasons": [
+          "source-limited",
+          "thin-22"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 22,
+        "matchStatus": "source-limited",
+        "lastEnrichedAt": "2026-08-20T15:38:57.250Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-19",
+        "reviewedAt": "2026-08-20",
         "siteFailures": []
       },
       {
@@ -377,7 +377,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 5,
+        "ageDays": 6,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-14T14:22:08.920Z",
@@ -457,7 +457,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 5,
+        "ageDays": 6,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-14T14:22:09.639Z",
@@ -617,7 +617,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 5,
+        "ageDays": 6,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-14T14:22:14.980Z",
@@ -637,7 +637,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 5,
+        "ageDays": 6,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-14T14:22:18.011Z",
@@ -837,7 +837,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 5,
+        "ageDays": 6,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-14T14:22:56.252Z",
@@ -3164,7 +3164,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -3233,7 +3233,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -3256,7 +3256,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -3279,7 +3279,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -3302,7 +3302,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -3325,7 +3325,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4387,7 +4387,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4412,7 +4412,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4437,7 +4437,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4462,7 +4462,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4487,7 +4487,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4512,7 +4512,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4537,7 +4537,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4562,7 +4562,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4587,7 +4587,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4637,7 +4637,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4662,7 +4662,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4687,7 +4687,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4712,7 +4712,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4737,7 +4737,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4762,7 +4762,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4787,7 +4787,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4812,7 +4812,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -4837,7 +4837,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7262,7 +7262,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7287,7 +7287,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7312,7 +7312,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7337,7 +7337,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7362,7 +7362,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7387,7 +7387,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7462,7 +7462,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7512,7 +7512,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7537,7 +7537,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7562,7 +7562,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7587,7 +7587,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7612,7 +7612,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7637,7 +7637,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7662,7 +7662,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7687,7 +7687,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7712,7 +7712,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7737,7 +7737,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7762,7 +7762,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7787,7 +7787,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7837,7 +7837,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7862,7 +7862,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7887,7 +7887,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7912,7 +7912,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7937,7 +7937,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -7962,7 +7962,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12287,7 +12287,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12312,7 +12312,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12337,7 +12337,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12462,7 +12462,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12487,7 +12487,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12562,7 +12562,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12587,7 +12587,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12612,7 +12612,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12662,7 +12662,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12687,7 +12687,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12712,7 +12712,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12737,7 +12737,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12787,7 +12787,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12812,7 +12812,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12837,7 +12837,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12862,7 +12862,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12887,7 +12887,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12912,7 +12912,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12937,7 +12937,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -12962,7 +12962,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -13012,7 +13012,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -13062,7 +13062,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -13087,7 +13087,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -13112,7 +13112,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -13137,7 +13137,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -13162,7 +13162,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -13212,7 +13212,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -13237,7 +13237,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -16662,7 +16662,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -16912,7 +16912,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -16937,7 +16937,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -16962,7 +16962,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -16987,7 +16987,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -17012,7 +17012,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -17037,7 +17037,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -17062,7 +17062,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -17112,7 +17112,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -17137,7 +17137,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -17162,7 +17162,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -19312,7 +19312,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -19337,7 +19337,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19462,7 +19462,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -19862,7 +19862,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -19887,7 +19887,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -19912,7 +19912,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -19937,7 +19937,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -19962,7 +19962,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -19987,7 +19987,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -20012,7 +20012,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -20037,7 +20037,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -20062,7 +20062,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 5,
+      "ageDays": 6,
       "siteFailures": []
     },
     {
@@ -21280,20 +21280,20 @@
       "stateCode": "TX",
       "city": "Houston",
       "completeness": 22,
-      "matchStatus": "no-website",
+      "matchStatus": "source-limited",
       "rating": 4.8,
       "reviewCount": 2559,
       "priceBand": "$",
-      "lastEnrichedAt": "2026-08-19T20:03:04.440Z",
+      "lastEnrichedAt": "2026-08-20T15:38:57.250Z",
       "addedAt": "2026-08-11T00:00:18.927Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-10",
-      "reviewedAt": "2026-08-11",
+      "nextReviewAt": "2026-09-19",
+      "reviewedAt": "2026-08-20",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 1348,
+      "refreshPriority": 698,
       "refreshReasons": [
-        "match-no-website",
+        "source-limited",
         "thin-22"
       ],
       "staleTier": null,
@@ -21306,20 +21306,20 @@
       "stateCode": "CA",
       "city": "Alhambra",
       "completeness": 22,
-      "matchStatus": "no-website",
+      "matchStatus": "source-limited",
       "rating": 4.3,
       "reviewCount": 850,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-19T20:03:04.455Z",
+      "lastEnrichedAt": "2026-08-20T15:38:57.249Z",
       "addedAt": "2026-08-11T00:03:04.024Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-10",
-      "reviewedAt": "2026-08-11",
+      "nextReviewAt": "2026-09-19",
+      "reviewedAt": "2026-08-20",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 1348,
+      "refreshPriority": 698,
       "refreshReasons": [
-        "match-no-website",
+        "source-limited",
         "thin-22"
       ],
       "staleTier": null,
@@ -21328,6 +21328,58 @@
     }
   ],
   "recent": [
+    {
+      "slug": "di-an-pho",
+      "title": "Di An Pho",
+      "stateCode": "TX",
+      "city": "Houston",
+      "completeness": 22,
+      "matchStatus": "source-limited",
+      "rating": 4.8,
+      "reviewCount": 2559,
+      "priceBand": "$",
+      "lastEnrichedAt": "2026-08-20T15:38:57.250Z",
+      "addedAt": "2026-08-11T00:00:18.927Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-19",
+      "reviewedAt": "2026-08-20",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 698,
+      "refreshReasons": [
+        "source-limited",
+        "thin-22"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "chengdu-taste",
+      "title": "Chengdu Taste",
+      "stateCode": "CA",
+      "city": "Alhambra",
+      "completeness": 22,
+      "matchStatus": "source-limited",
+      "rating": 4.3,
+      "reviewCount": 850,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-20T15:38:57.249Z",
+      "addedAt": "2026-08-11T00:03:04.024Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-19",
+      "reviewedAt": "2026-08-20",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 698,
+      "refreshReasons": [
+        "source-limited",
+        "thin-22"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
     {
       "slug": "dovecote-orlando",
       "title": "DoveCote",
@@ -21580,52 +21632,6 @@
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
-    },
-    {
-      "slug": "twelve-restaurant-bar-wichita",
-      "title": "Twelve Restaurant & Bar",
-      "stateCode": "KS",
-      "city": "Wichita",
-      "completeness": 78,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:10.455Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "proudfoot-bird-des-moines",
-      "title": "Proudfoot & Bird",
-      "stateCode": "IA",
-      "city": "Des Moines",
-      "completeness": 72,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:08.126Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
     }
   ],
   "queue": {
@@ -21638,6 +21644,20 @@
     "next": []
   },
   "runs": [
+    {
+      "kind": "source-review",
+      "startedAt": "2026-08-20T15:38:57.213Z",
+      "batchSize": 2,
+      "inserted": 0,
+      "cities": [],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
     {
       "kind": "hygiene-owned",
       "startedAt": "2026-08-20T14:17:32.203Z",
@@ -22392,29 +22412,6 @@
       "apiCalls": {},
       "retries": 0,
       "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-19T20:08:31.252Z",
-      "batchSize": 27,
-      "inserted": 0,
-      "cities": [
-        "Orlando, Florida",
-        "Portland, Oregon",
-        "San Jose, California",
-        "Virginia Beach, Virginia"
-      ],
-      "resolved": 26,
-      "unresolved": 1,
-      "avgCompleteness": 62,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 27
-      },
-      "retries": 0,
-      "failures": 1,
       "flagged": false
     }
   ]
