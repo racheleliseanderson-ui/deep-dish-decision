@@ -4,8 +4,10 @@
  * the dossier can show its working.
  *
  * JSON-LD, og/twitter, noscript, and hydration quotes land in
- * enrichment.site only. amenityFeature is never treated as a verified
- * access route. Nothing here writes dataset.json fields.
+ * enrichment.site only. Safe structured venue facts (telephone, hours,
+ * price range, cuisine) are also exposed as typed evidence arrays. Schema
+ * amenityFeature is never treated as a verified access route. Nothing here
+ * writes dataset.json fields.
  */
 
 const PAGE_HINTS = [
@@ -149,6 +151,12 @@ function collectPageQuotes(pages) {
   return out;
 }
 
+function pageQuotesOfKind(pageQuotes, kind) {
+  return pageQuotes
+    .filter((q) => q.kind === kind && q.quote)
+    .map((q) => ({ quote: q.quote, sourceUrl: q.sourceUrl }));
+}
+
 /** @param pages Array of { url, markdown, links, jsonLdQuotes?, pageQuotes? } already scraped. */
 export function extractFromSite(pages, retrievedAt) {
   const all = [];
@@ -177,11 +185,18 @@ export function extractFromSite(pages, retrievedAt) {
   const dress = matchGroup(all, PHRASE_GROUPS.dressCodeLanguage, 2);
   const cancellation = matchGroup(all, PHRASE_GROUPS.cancellationLanguage, 3);
 
+  const telephone = pageQuotesOfKind(pageQuotes, "telephone");
+  const hours = pageQuotesOfKind(pageQuotes, "hours");
+  const price = pageQuotesOfKind(pageQuotes, "price");
+  const cuisine = pageQuotesOfKind(pageQuotes, "cuisine");
+
   const quotes = (items) => items.map((x) => (typeof x === "string" ? x : x.quote)).filter(Boolean);
 
-  // JSON-LD / og / hydration / noscript stay in jsonLdLanguage — not folded
-  // into accessibilityLanguage, so completeness does not treat schema flags
-  // or marketing copy as a verified access route.
+  // JSON-LD / og / hydration / noscript remain available as source-backed audit
+  // quotes. Structured telephone / hours / price / cuisine are additionally
+  // exposed above as typed evidence. amenityFeature is deliberately *not*
+  // folded into accessibilityLanguage, so schema flags never become a verified
+  // access route.
   const jsonLdLanguage = pageQuotes
     .filter((q) => q.kind !== "menuUrl" && q.kind !== "reservationUrl")
     .map((q) => ({ quote: q.quote, sourceUrl: q.sourceUrl }));
@@ -190,6 +205,10 @@ export function extractFromSite(pages, retrievedAt) {
     menuUrl,
     reservationUrl,
     reservationPlatform: platform,
+    telephoneLanguage: quotes(telephone),
+    hoursLanguage: quotes(hours),
+    priceLanguage: quotes(price),
+    cuisineLanguage: quotes(cuisine),
     dietaryLanguage: quotes(dietary),
     accessibilityLanguage: quotes(accessibility),
     groupPolicy: group.length ? group[0].quote : "",
