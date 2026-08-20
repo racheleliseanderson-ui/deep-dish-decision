@@ -23,6 +23,7 @@ import {
 import { fetchSitePages, siteLimiter, closeSharedBrowser } from "./own-fetch.mjs";
 import { buildRefreshQueue } from "./refresh.mjs";
 import { extractFromSite, pickSitePages } from "./site.mjs";
+import { isSourceLimitedRecord } from "./source-limited.mjs";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const MIN_DELAY_MS = 400;
@@ -108,8 +109,14 @@ for (const record of batch) {
 
   const siteUrl = typeof record.website === "string" ? record.website.trim() : "";
   if (!siteUrl || !/^https?:\/\//i.test(siteUrl)) {
-    notes.push("no website");
-    entry.meta.matchStatus = "no-website";
+    if (isSourceLimitedRecord(record)) {
+      notes.push("operator platform source; no owned website");
+      entry.meta.matchStatus = "source-limited";
+      entry.meta.enrichmentMode = "operator-platform-source";
+    } else {
+      notes.push("no website");
+      entry.meta.matchStatus = "no-website";
+    }
   } else {
     if (pacedCalls > 0) await sleep(MIN_DELAY_MS);
     pacedCalls += 1;
@@ -167,6 +174,7 @@ appendRun({
   cities: [...new Set(batch.map((r) => r.coverageArea || `${r.city || ""}, ${r.stateProvince || ""}`))],
   resolved: log.filter((l) => l.matchStatus === "resolved" || l.matchStatus === "partial").length,
   unresolved: log.filter((l) => l.matchStatus === "site-failure" || l.matchStatus === "no-website").length,
+  sourceLimited: log.filter((l) => l.matchStatus === "source-limited").length,
   deferred: log.filter((l) => l.matchStatus === "empty").length,
   avgCompleteness: avg,
   corpusEnriched: Object.keys(store.records).length,
