@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T15:38:57.250Z",
+  "generatedAt": "2026-08-21T01:22:57.972Z",
   "records": {
     "canlis": {
       "google": {
@@ -19998,12 +19998,12 @@
         "generatedAt": "2026-08-11T00:10:10.225Z"
       },
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "source-limited",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
-        "enrichmentMode": "owned-site-recovery",
-        "completeness": 28
+        "lastEnrichedAt": "2026-08-21T01:14:09.833Z",
+        "enrichmentMode": "operator-platform-source",
+        "completeness": 22
       }
     },
     "house-of-xian-dumpling": {
@@ -20537,7 +20537,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
+        "lastEnrichedAt": "2026-08-21T01:11:48.457Z",
         "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
@@ -45063,7 +45063,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T14:10:01.421Z",
+        "lastEnrichedAt": "2026-08-21T01:11:46.320Z",
         "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
@@ -47378,7 +47378,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T14:10:07.583Z",
+        "lastEnrichedAt": "2026-08-21T01:11:46.865Z",
         "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
@@ -54055,7 +54055,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T14:10:41.057Z",
+        "lastEnrichedAt": "2026-08-21T01:11:47.309Z",
         "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
@@ -56184,7 +56184,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T14:10:41.740Z",
+        "lastEnrichedAt": "2026-08-21T01:11:47.842Z",
         "enrichmentMode": "owned-site-recovery",
         "completeness": 28
       }
@@ -57199,6 +57199,1402 @@
           "https://www.agavehartford.com/private-parties"
         ],
         "retrievedAt": "2026-08-20T11:41:40.974Z",
+        "playwrightPages": 0
+      }
+    },
+    "supperland-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:16:53.883Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://supper.land/about/food-philosophy/",
+        "reservationUrl": "https://www.exploretock.com/supperland-charlotte/",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "noscript: .woocommerce-product-gallery{ opacity: 1 !important; }",
+            "sourceUrl": "https://supper.land/"
+          },
+          {
+            "quote": "title: Food Philosophy - Supperland",
+            "sourceUrl": "https://supper.land/about/food-philosophy/"
+          },
+          {
+            "quote": "title: Events from September 10 – October 29 – Supperland",
+            "sourceUrl": "https://supper.land/events-calendar/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://supper.land/",
+          "https://supper.land/about/people/",
+          "https://supper.land/about/food-philosophy/",
+          "https://supper.land/events-calendar/"
+        ],
+        "retrievedAt": "2026-08-21T01:16:53.883Z",
+        "playwrightPages": 0
+      }
+    },
+    "peppervine-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:17:08.723Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 89
+      },
+      "site": {
+        "menuUrl": "https://peppervine.com/menu/dinner-menu/",
+        "reservationUrl": "https://www.toasttab.com/peppervine-4620-piedmont-row-dr-suite-170b/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 980-283-2333"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 17:00 21:30",
+          "JSON-LD openingHoursSpecification: Sunday 00:00 00:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "I confirm that I have filled in the necessary dietary and allergy restrictions.",
+          "Friday & Saturday Reservations Up to 8 people in each room Book Now Additional Details and Policies Allergy and dietary policies We are happy to accommodate any allergies and food preference given a minimum of 48 hours’ notice."
+        ],
+        "accessibilityLanguage": [
+          "Service animals are welcome."
+        ],
+        "groupPolicy": "Private Events Peppervine provides two elegant spaces for private dining, for both business and personal use.",
+        "groupPolicyLanguage": [
+          "Private Events Peppervine provides two elegant spaces for private dining, for both business and personal use.",
+          "limited to parties of 8 Sunday, closed Reservation Form Start by selecting your desired room Semi-Private Mezzanine Private Dining Room Is this a Pharmaceutical Event?",
+          "Only the Private Dining Room maintains complete privacy.",
+          "I understand there is a minimum food and bevarage spend of $1000 for the Mezzanine and $1500 for the Private Room."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Cancellation within 24 hours of your reservation will result in a cancellation fee.",
+          "I understand there is a $500 cancellation fee if within 72 hours of event."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 980-283-2333",
+            "sourceUrl": "https://peppervine.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://peppervine.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 17:00 21:30",
+            "sourceUrl": "https://peppervine.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 00:00 00:00",
+            "sourceUrl": "https://peppervine.com/"
+          },
+          {
+            "quote": "og:description: Peppervine stands out as one of the few independent eateries in the area offering a menu of locally sourced small plates, wines and cocktails.",
+            "sourceUrl": "https://peppervine.com/"
+          },
+          {
+            "quote": "title: Peppervine Restaurant - in SouthPark Charlotte NC",
+            "sourceUrl": "https://peppervine.com/"
+          },
+          {
+            "quote": "og:description: Explore Peppervine’s dinner menu in Charlotte featuring seasonal small plates, refined entrées, and thoughtfully crafted dishes for sharing.",
+            "sourceUrl": "https://peppervine.com/menu/dinner-menu/"
+          },
+          {
+            "quote": "title: Dinner Menu - Peppervine",
+            "sourceUrl": "https://peppervine.com/menu/dinner-menu/"
+          },
+          {
+            "quote": "og:description: Peppervine is a restaurant in SouthPark Charlotte featuring progressive small plates, an inspired wine list, craft cocktails, and attentive service.",
+            "sourceUrl": "https://peppervine.com/about/"
+          },
+          {
+            "quote": "og:description: Peppervine provides two elegant spaces for private dining in Charlotte, ideal for business and personal gatherings with a chef-driven menu.",
+            "sourceUrl": "https://peppervine.com/private-events/"
+          },
+          {
+            "quote": "title: Private Events - Peppervine",
+            "sourceUrl": "https://peppervine.com/private-events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://peppervine.com/",
+          "https://peppervine.com/menu/dinner-menu/",
+          "https://peppervine.com/about/",
+          "https://peppervine.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-21T01:17:08.723Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-fig-tree-restaurant-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:17:10.842Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://charlottefigtree.com/menu/",
+        "reservationUrl": "https://charlottefigtree.com/reservations/",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [
+          "Please let us know if you need ground-floor accommodations, as we have seating on multiple levels and do not have an elevator."
+        ],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Located in the historic Lucas House, enjoy an exceptional dining experience, featuring a seasonal French and Italian-inspired menu.",
+            "sourceUrl": "https://charlottefigtree.com/"
+          },
+          {
+            "quote": "title: The Fig Tree Restaurant - Charlotte's Premier Fine Dining",
+            "sourceUrl": "https://charlottefigtree.com/"
+          },
+          {
+            "quote": "og:description: Learn about The Fig Tree Restaurant, it's historic venue, unique fare, and unmatched wine list. Book your table today.",
+            "sourceUrl": "https://charlottefigtree.com/about/"
+          },
+          {
+            "quote": "title: About Charlotte Fine Dining at The Fig Tree Restaurant",
+            "sourceUrl": "https://charlottefigtree.com/about/"
+          },
+          {
+            "quote": "og:description: Take a look at the current seasonal menus here at The Fig Tree Restaurant.",
+            "sourceUrl": "https://charlottefigtree.com/menu/"
+          },
+          {
+            "quote": "title: View The Fig Tree Restaurant Menu",
+            "sourceUrl": "https://charlottefigtree.com/menu/"
+          },
+          {
+            "quote": "og:description: Book your table here at The Fig Tree Restaurant in Charlotte, NC.",
+            "sourceUrl": "https://charlottefigtree.com/reservations/"
+          },
+          {
+            "quote": "title: Make a Reservation at The Fig Tree Restaurant",
+            "sourceUrl": "https://charlottefigtree.com/reservations/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://charlottefigtree.com/",
+          "https://charlottefigtree.com/about/",
+          "https://charlottefigtree.com/menu/",
+          "https://charlottefigtree.com/reservations/"
+        ],
+        "retrievedAt": "2026-08-21T01:17:10.842Z",
+        "playwrightPages": 0
+      }
+    },
+    "barrington-s-charlotte": {
+      "meta": {
+        "matchStatus": "site-failure",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:17:14.431Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 28
+      }
+    },
+    "magdalena-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:17:15.300Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/magdalena?DateTime=2015-06-20+19%3A00&Covers=2&OnlyOffers=false&RestaurantIDs=152914&MetroId=18&page=1",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "See Cocktails Menu Magdalena, A Maryland Bistro, offers diverse private dining options across five exquisitely appointed spaces Each space is carefully curated to offer a unique setting for your private dining affair at Magdalena.",
+        "groupPolicyLanguage": [
+          "See Cocktails Menu Magdalena, A Maryland Bistro, offers diverse private dining options across five exquisitely appointed spaces Each space is carefully curated to offer a unique setting for your private dining affair at Magdalena.",
+          "Contact Us Unforgettable Moments Magdalena is an elegant, intimate setting for special private events and weddings."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Magdalena, a Maryland Bistro, offers refined, from-scratch bistro fare inspired by the rich bounty of the Chesapeake Bay.",
+            "sourceUrl": "https://www.theivybaltimore.com/dine/magdalena"
+          },
+          {
+            "quote": "title: Magdalena Restaurant in Downtown Baltimore, MD | The Ivy Hotel",
+            "sourceUrl": "https://www.theivybaltimore.com/dine/magdalena"
+          },
+          {
+            "quote": "og:description: Exciting events happening at The Ivy, Don",
+            "sourceUrl": "https://www.theivybaltimore.com/events-calendar"
+          },
+          {
+            "quote": "title: Events Calendar | The Ivy Hotel | Baltimore, MD",
+            "sourceUrl": "https://www.theivybaltimore.com/events-calendar"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.theivybaltimore.com/dine/magdalena",
+          "https://www.theivybaltimore.com/events-calendar"
+        ],
+        "retrievedAt": "2026-08-21T01:17:15.300Z",
+        "playwrightPages": 0
+      }
+    },
+    "petit-louis-bistro-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:17:16.635Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://petitlouis.foremanwolf.com/hubfs/Petit%20Louis/Menus/PL_Dinner.pdf",
+        "reservationUrl": "https://www.toasttab.com/petit-louis-bistro-baltimore-4800-roland-ave/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Page d’accueil Reservations Menus Menus Petit Louis To-Go Private Events Special Events About Us Gift Certificates Select Page Reservations Book your Petit Louis reservation on Resy Not working for you?",
+        "groupPolicyLanguage": [
+          "Page d’accueil Reservations Menus Menus Petit Louis To-Go Private Events Special Events About Us Gift Certificates Select Page Reservations Book your Petit Louis reservation on Resy Not working for you?",
+          "The Small Dining Room Our semi-private dining room offers a vibrant atmosphere, ideal for gatherings of up to 50 guests."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: It's Fun. It's French. Petit Louis Bistro features classic French bistro cuisine and an extraordinary all-French wine list. Located in Baltimore's Roland Park neighborhood.",
+            "sourceUrl": "https://petitlouis.com/"
+          },
+          {
+            "quote": "title: Petit Louis Bistro - French Restaurant in Baltimore",
+            "sourceUrl": "https://petitlouis.com/"
+          },
+          {
+            "quote": "og:description: Book a reservation for Petit Louis Bistro. The restaurant features classic French bistro cuisine along with an extraordinary all-French wine list.",
+            "sourceUrl": "https://petitlouis.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations - Petit Louis Bistro",
+            "sourceUrl": "https://petitlouis.com/reservations/"
+          },
+          {
+            "quote": "og:description: Petit Louis Bistro is great for your next event! Book our small private dining room or the whole restaurant. It's Fun. It's French.",
+            "sourceUrl": "https://petitlouis.com/group-and-event-dining/"
+          },
+          {
+            "quote": "title: Private Dining in Baltimore - Petit Louis Bistro",
+            "sourceUrl": "https://petitlouis.com/group-and-event-dining/"
+          },
+          {
+            "quote": "og:description: Meet the team at Petit Louis Bistro.",
+            "sourceUrl": "https://petitlouis.com/about-us/"
+          },
+          {
+            "quote": "title: About Us - Petit Louis Bistro",
+            "sourceUrl": "https://petitlouis.com/about-us/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://petitlouis.com/",
+          "https://petitlouis.com/reservations/",
+          "https://petitlouis.com/group-and-event-dining/",
+          "https://petitlouis.com/about-us/"
+        ],
+        "retrievedAt": "2026-08-21T01:17:16.635Z",
+        "playwrightPages": 0
+      }
+    },
+    "foraged-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:18:39.567Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "http://www.exploretock.com/foraged",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Baltimore, MD 21201 hours: Tuesday - wednesday, 5pm - 9pm thursday - saturday, 5pm - 10pm sunday, 5pm - 9pm allergen guide gift cards"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Foraged is a new take on farm-to-table. Each item on the menu is comprised of local and seasonal ingredients. The concept is true to Chef Chris Amendola",
+            "sourceUrl": "https://www.foragedeatery.com/"
+          },
+          {
+            "quote": "title: foraged. Baltimore chef-driven restaurants and sustainable dining Baltimore MD",
+            "sourceUrl": "https://www.foragedeatery.com/contact"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.foragedeatery.com/",
+          "https://www.foragedeatery.com/contact"
+        ],
+        "retrievedAt": "2026-08-21T01:18:39.567Z",
+        "playwrightPages": 0
+      }
+    },
+    "gunther-co-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:18:40.557Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://eatatgunther.com/menus",
+        "reservationUrl": "http://www.opentable.com/single.aspx?restref=212593&rid=212593",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "View Our Cake Offerings Private Event Software powered by Tripleseat",
+        "groupPolicyLanguage": [
+          "View Our Cake Offerings Private Event Software powered by Tripleseat"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: About 1 &mdash; Gunther & Co.",
+            "sourceUrl": "https://eatatgunther.com/menus"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://eatatgunther.com/",
+          "https://eatatgunther.com/menus",
+          "https://eatatgunther.com/about-gco",
+          "https://eatatgunther.com/events"
+        ],
+        "retrievedAt": "2026-08-21T01:18:40.557Z",
+        "playwrightPages": 0
+      }
+    },
+    "alma-cocina-latina-baltimore": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:18:42.825Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.almacocinalatina.com/menu",
+        "reservationUrl": "https://resy.com/cities/bal/alma-cocina-latina?date=2023-12-05&seats=2",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 17:00-20:00, We 17:00-20:00, Th 17:00-20:00, Fr 17:00-21:00, Sa 17:00-21:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Bar seating is offered on a first‑come basis, and our private dining room can be reserved for gatherings of up to 24 guests.",
+        "groupPolicyLanguage": [
+          "Bar seating is offered on a first‑come basis, and our private dining room can be reserved for gatherings of up to 24 guests.",
+          "Alma menus Dinner Drinks Happy Hour Gift Cards OUR EVENTS Reservations Private Dining Press Jobs Location Alma menus Dinner Drinks Happy Hour Gift Cards OUR EVENTS Reservations Private Dining Press Jobs Location OUR EVENTS No upcoming events."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-20:00, We 17:00-20:00, Th 17:00-20:00, Fr 17:00-21:00, Sa 17:00-21:00,",
+            "sourceUrl": "https://www.almacocinalatina.com/"
+          },
+          {
+            "quote": "og:description: Alma Cocina Latina is an award‑winning Venezuelan restaurant in Baltimore’s Station North, offering vibrant Latin American cuisine, creative cocktails, lush plant‑filled surroundings, and warm, intentional hospitality. Enjoy an upscale yet appr",
+            "sourceUrl": "https://www.almacocinalatina.com/"
+          },
+          {
+            "quote": "meta description: Alma Cocina Latina is an award‑winning Venezuelan restaurant in Baltimore’s Station North, offering vibrant Latin American cuisine, creative cocktails, lush plant‑filled surroundings, and warm, intentional hospitality. Enjoy an upscale yet ap",
+            "sourceUrl": "https://www.almacocinalatina.com/"
+          },
+          {
+            "quote": "og:description: Discover Alma Cocina Latina’s dinner menu, where seasonal Venezuelan flavors, fresh ingredients, and thoughtful technique come together in expressive modern dishes.",
+            "sourceUrl": "https://www.almacocinalatina.com/menu"
+          },
+          {
+            "quote": "title: Dinner Menu &mdash; Alma",
+            "sourceUrl": "https://www.almacocinalatina.com/menu"
+          },
+          {
+            "quote": "og:description: Explore weekly events and special ticketed experiences at Alma Cocina Latina. From recurring gatherings to one‑night‑only celebrations, our events bring together food, music, culture, and community. Check back often for new happenings and upcom",
+            "sourceUrl": "https://www.almacocinalatina.com/events"
+          },
+          {
+            "quote": "og:description: Reserve your table at Alma Cocina Latina in Baltimore. Walk‑ins are welcome, but reservations are encouraged.",
+            "sourceUrl": "https://www.almacocinalatina.com/reservations"
+          },
+          {
+            "quote": "title: Reservations &mdash; Alma",
+            "sourceUrl": "https://www.almacocinalatina.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.almacocinalatina.com/",
+          "https://www.almacocinalatina.com/menu",
+          "https://www.almacocinalatina.com/events",
+          "https://www.almacocinalatina.com/reservations"
+        ],
+        "retrievedAt": "2026-08-21T01:18:42.825Z",
+        "playwrightPages": 0
+      }
+    },
+    "mahogany-prime-steakhouse-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:18:45.045Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://mahoganyprimesteakhouse.com/menus/",
+        "reservationUrl": "https://www.opentable.com/booking/experiences-availability?rid=13135&restref=13135&experienceId=781660&utm_source=external&utm_medium=referral&utm_campaign=shared&covers=2&dateTime=2026-08-12T12:00:00",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Main Menu Wine List Gluten Free Menu Get Social Connect with us through any of our social channels.",
+          "145th St., Omaha, NE 68154 (402) 445-4380 More Info Directions Main Menu Wine List Happy Hour Menu Gluten Free Menu Oklahoma Downtown Oklahoma City 145 W.",
+          "61st St., Tulsa, OK 74136 (918) 494-4043 More Info Directions Main Menu Wine List Gluten Free Menu"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Sheridan Ave., Oklahoma City, OK 73102 (405) 208-8800 Executive General Manager Matt Biard Reservations Order Online Private Dining Directions Located in the heart of Oklahoma City, Mahogany Downtown offers fantastic views in a modern, upbeat atmosphere.",
+        "groupPolicyLanguage": [
+          "Sheridan Ave., Oklahoma City, OK 73102 (405) 208-8800 Executive General Manager Matt Biard Reservations Order Online Private Dining Directions Located in the heart of Oklahoma City, Mahogany Downtown offers fantastic views in a modern, upbeat atmosphere.",
+          "To book your next special event with us, please visit our Private Dining page."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Located in the heart of Oklahoma City, Mahogany Downtown offers fantastic views in a modern, upbeat atmosphere. Ask about our weekly food and drink",
+            "sourceUrl": "https://mahoganyprimesteakhouse.com/locations/mahogany-downtown-okc/"
+          },
+          {
+            "quote": "title: Downtown Oklahoma City - Mahogany Prime Steakhouse",
+            "sourceUrl": "https://mahoganyprimesteakhouse.com/locations/mahogany-downtown-okc/"
+          },
+          {
+            "quote": "og:description: \"Spectacular. We were celebrating our 26th anniversary and the staff went to great lengths to acknowledge the event. Our waiter, JP, was",
+            "sourceUrl": "https://mahoganyprimesteakhouse.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations - Mahogany Prime Steakhouse",
+            "sourceUrl": "https://mahoganyprimesteakhouse.com/reservations/"
+          },
+          {
+            "quote": "title: Omaha Tequila Dinner - Mahogany Prime Steakhouse",
+            "sourceUrl": "https://mahoganyprimesteakhouse.com/events/omaha-wine-dinner-2/"
+          },
+          {
+            "quote": "title: Menus - Mahogany Prime Steakhouse",
+            "sourceUrl": "https://mahoganyprimesteakhouse.com/menus/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://mahoganyprimesteakhouse.com/locations/mahogany-downtown-okc/",
+          "https://mahoganyprimesteakhouse.com/reservations/",
+          "https://mahoganyprimesteakhouse.com/events/omaha-wine-dinner-2/",
+          "https://mahoganyprimesteakhouse.com/menus/"
+        ],
+        "retrievedAt": "2026-08-21T01:18:45.045Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-jones-assembly-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:18:47.624Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://resy.com/cities/tul/the-jones-assembly",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [
+          "Our building has ADA accessible viewing for all live music events."
+        ],
+        "groupPolicy": "Food Spirits Music Events Reservations More Gift Cards Merch Private Events Press TJ Apres Oklahoma City’s destination for food spirits music located on the west end of downtown on historic Film Row.",
+        "groupPolicyLanguage": [
+          "Food Spirits Music Events Reservations More Gift Cards Merch Private Events Press TJ Apres Oklahoma City’s destination for food spirits music located on the west end of downtown on historic Film Row.",
+          "Upcoming Private events Upcoming Private Events Keeping Up With The Jones Join our email list and follow us on social media to stay in touch with all things Jones.",
+          "Capacity – Based on Configuration Standing Reception: 400 Seated: 150 The Jones Assembly (FULL BUYOUT) The Jones Assembly is available for full space buyouts on select weekdays and weekends based on availability.",
+          "Private Event Software powered by Tripleseat A Concept Copyright 2026 The Jones Assembly, All Rights Reserved."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: The Jones Assembly is an american restaurant and concert venue located in downtown Oklahoma City. Come for the drinks, or the spirits, or the music, or all of them. It",
+            "sourceUrl": "https://www.thejonesassembly.com/"
+          },
+          {
+            "quote": "title: Food, Spirits, Music | The Jones Assembly",
+            "sourceUrl": "https://www.thejonesassembly.com/"
+          },
+          {
+            "quote": "title: Events at The Jones Assembly",
+            "sourceUrl": "https://www.thejonesassembly.com/events"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.thejonesassembly.com/",
+          "https://www.thejonesassembly.com/events"
+        ],
+        "retrievedAt": "2026-08-21T01:18:47.624Z",
+        "playwrightPages": 0
+      }
+    },
+    "picasso-cafe-oklahoma-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:18:50.063Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://picassosonpaseo.com/menu/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Our daily menu offers New American style cuisine and more than twenty vegan, vegetarian and gluten-free dishes."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Picasso Cafe serves made-from-scratch food and artisan drinks hidden in the heart of Oklahoma City's Paseo Arts District.",
+            "sourceUrl": "https://picassosonpaseo.com/"
+          },
+          {
+            "quote": "title: Picasso Cafe - Artsy Restaurant & Bar | Paseo Arts District",
+            "sourceUrl": "https://picassosonpaseo.com/"
+          },
+          {
+            "quote": "og:description: MENU LUNCH + DINNER BRUNCH SEVEN DAYS A WEEKGET DIRECTIONS",
+            "sourceUrl": "https://picassosonpaseo.com/menu/"
+          },
+          {
+            "quote": "og:description: View Picasso Cafe's Hours and Location, open 7 days a week. We hope to see you soon down in the historic Paseo district of Oklahoma City, OK.",
+            "sourceUrl": "https://picassosonpaseo.com/hours-location/"
+          },
+          {
+            "quote": "title: HOURS & LOCATION - Picasso Cafe",
+            "sourceUrl": "https://picassosonpaseo.com/hours-location/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://picassosonpaseo.com/",
+          "https://picassosonpaseo.com/menu/",
+          "https://picassosonpaseo.com/hours-location/"
+        ],
+        "retrievedAt": "2026-08-21T01:18:50.063Z",
+        "playwrightPages": 0
+      }
+    },
+    "taverna-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:19:02.318Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://taverna.restaurant/wine-by-the-glass.html",
+        "reservationUrl": "https://resy.com/cities/jax/taverna-san-marco",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://taverna.restaurant/",
+          "https://taverna.restaurant/about.html",
+          "https://taverna.restaurant/wine-by-the-glass.html",
+          "https://taverna.restaurant/group-dining.html"
+        ],
+        "retrievedAt": "2026-08-21T01:19:02.318Z",
+        "playwrightPages": 0
+      }
+    },
+    "eleven-south-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:19:04.477Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://elevensouth.com/"
+        ],
+        "retrievedAt": "2026-08-21T01:19:04.477Z",
+        "playwrightPages": 0
+      }
+    },
+    "brick-restaurant-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:19:05.461Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: The Brick Restaurant In Avondale - Creative Cuisine, Weekend Brunch, Live Music, and Full Bar. 3585 St Johns Ave, Jacksonville, Fl, in the Shoppes of Avondale - 904-387-0606",
+            "sourceUrl": "https://www.thebrickofavondale.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.thebrickofavondale.com/"
+        ],
+        "retrievedAt": "2026-08-21T01:19:05.461Z",
+        "playwrightPages": 0
+      }
+    },
+    "mezza-luna-jacksonville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:19:06.353Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://mezzalunajax.com/menu/",
+        "reservationUrl": "https://www.opentable.com/r/mezza-restaurant-and-bar-reservations-neptune-beach/?restref=280969&",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "110 First Street, Neptune Beach, Florida 32266 Menus Dinner Menu Wine List & Signature Cocktails Dietary Restrictions Menus Desserts Nightly Specials Gift Cards Order Online Contact Careers Reservations About Photos Mezza Faces Make a Reservation Today!"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: As a locally owned and operated Italian restaurant, enjoy dinner and a full bar service every evening in three unique environments.",
+            "sourceUrl": "https://mezzalunajax.com/"
+          },
+          {
+            "quote": "title: Mezza Luna - Neptune Beach Restaurant | Jacksonville, FL",
+            "sourceUrl": "https://mezzalunajax.com/"
+          },
+          {
+            "quote": "noscript: .woocommerce-product-gallery{ opacity: 1 !important; }",
+            "sourceUrl": "https://mezzalunajax.com/"
+          },
+          {
+            "quote": "og:description: We offer authentic, handcrafted Italian food made with only the freshest ingredients. Online ordering now available!",
+            "sourceUrl": "https://mezzalunajax.com/menu/"
+          },
+          {
+            "quote": "title: Dinner Menu - Mezza Luna",
+            "sourceUrl": "https://mezzalunajax.com/menu/"
+          },
+          {
+            "quote": "og:description: We’re a neighborhood restaurant offering dinner and full bar service. Have a question? We’ll get back to you asap.",
+            "sourceUrl": "https://mezzalunajax.com/contact/"
+          },
+          {
+            "quote": "og:description: We do our best to make sure that all of our guests get the best service, at the perfect time. We are looking forward to seating you soon!",
+            "sourceUrl": "https://mezzalunajax.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations - Mezza Luna",
+            "sourceUrl": "https://mezzalunajax.com/reservations/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://mezzalunajax.com/",
+          "https://mezzalunajax.com/menu/",
+          "https://mezzalunajax.com/contact/",
+          "https://mezzalunajax.com/reservations/"
+        ],
+        "retrievedAt": "2026-08-21T01:19:06.353Z",
+        "playwrightPages": 0
+      }
+    },
+    "born-raised-san-diego": {
+      "meta": {
+        "matchStatus": "site-failure",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:21:58.504Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 28
+      }
+    },
+    "george-s-at-the-cove-san-diego": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:19:38.571Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.georgesatthecove.com/menu-lunch",
+        "reservationUrl": "https://www.exploretock.com/profile/reservations",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 00:00-00:00, Tu 00:00-00:00, We 00:00-00:00, Th 00:00-00:00, Fr 00:00-00:00, Sa 00:00-00:00, Su 00:00-00:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Occupying the entire first floor of the restaurant, George's offers sweeping ocean views, award-winning dining and service, and private/semi-private rooms that can be configured for intimate groups or parties of up to 138 people.",
+        "groupPolicyLanguage": [
+          "Occupying the entire first floor of the restaurant, George's offers sweeping ocean views, award-winning dining and service, and private/semi-private rooms that can be configured for intimate groups or parties of up to 138 people.",
+          "Reserve the entire floor or select from our fully-private and semi-private rooms to match your preferences.",
+          "Ocean Views Many of our private rooms offer sweeping ocean views of the Pacific.",
+          "Corporate Events For corporate functions, our private rooms and attentive service are ideal for building relationships and celebrating success."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Room Minimums & Deposits Flexible Space Fully configurable to suit your needs, our Lower Level can be arranged to accommodate intimate groups and parties up to 138 people.",
+          "Reservations can be made up to 1 year in advance Request Information Room Minimums & Deposits"
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 00:00-00:00, Tu 00:00-00:00, We 00:00-00:00, Th 00:00-00:00, Fr 00:00-00:00, Sa 00:00-00:00, Su 00:00-00:00",
+            "sourceUrl": "https://www.georgesatthecove.com/"
+          },
+          {
+            "quote": "og:description: Experience award-winning dining with stunning ocean views at George",
+            "sourceUrl": "https://www.georgesatthecove.com/"
+          },
+          {
+            "quote": "title: Lunch &mdash; Georges at the Cove",
+            "sourceUrl": "https://www.georgesatthecove.com/menu-lunch"
+          },
+          {
+            "quote": "title: Group Events &mdash; Georges at the Cove",
+            "sourceUrl": "https://www.georgesatthecove.com/group-events"
+          },
+          {
+            "quote": "title: Contact Us &mdash; Georges at the Cove",
+            "sourceUrl": "https://www.georgesatthecove.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.georgesatthecove.com/",
+          "https://www.georgesatthecove.com/menu-lunch",
+          "https://www.georgesatthecove.com/group-events",
+          "https://www.georgesatthecove.com/contact"
+        ],
+        "retrievedAt": "2026-08-21T01:19:38.571Z",
+        "playwrightPages": 0
+      }
+    },
+    "ironside-fish-oyster-san-diego": {
+      "meta": {
+        "matchStatus": "site-failure",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:22:27.937Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 28
+      }
+    },
+    "the-marine-room-san-diego": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:20:14.057Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.marineroom.com/menus/",
+        "reservationUrl": "https://www.opentable.com/r/the-marine-room-reservations-la-jolla?restref=23464&",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Hours of Operation Wednesday – Sunday 5:00 PM – 9:30 PM The Marine Room is closed for service on Mondays and Tuesdays The Marine Room hosts private events daily.",
+        "groupPolicyLanguage": [
+          "Hours of Operation Wednesday – Sunday 5:00 PM – 9:30 PM The Marine Room is closed for service on Mondays and Tuesdays The Marine Room hosts private events daily.",
+          "Reserve Now Become a Member Learn More Menus menu Private Events Learn More Upcoming Events Explore High Tide Dinner Series Savor an unforgettable culinary experience as the ocean rises to meet your window.",
+          "07:27 PM Beach Cam 858.459.7222 Menus Upcoming Happenings Private Events Stay the Night Reserve Now Beach Cam 858.459.7222 07:27 PM Reserve Now FAQs How often does the menu change?"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Enjoy an elegant fine dining experience at our La Jolla restaurant on the water featuring locally sourced seafood cuisine paired with unrivaled high tide views.",
+            "sourceUrl": "https://www.marineroom.com/"
+          },
+          {
+            "quote": "title: La Jolla Restaurant on the Water | The Marine Room",
+            "sourceUrl": "https://www.marineroom.com/"
+          },
+          {
+            "quote": "og:description: Looking for delicious seafood dishes? Check out our menu featuring a variety of fresh and flavorful options from the coast of La Jolla, California.",
+            "sourceUrl": "https://www.marineroom.com/menus/"
+          },
+          {
+            "quote": "title: Seafood Menu | La Jolla | The Marine Room",
+            "sourceUrl": "https://www.marineroom.com/menus/"
+          },
+          {
+            "quote": "og:description: Since its opening in 1941, The Marine Room has become renowned for its front row seats to spectacular sunsets over the Pacific and coastal, innovative, cuisines.",
+            "sourceUrl": "https://www.marineroom.com/about-us/"
+          },
+          {
+            "quote": "title: About Us | La Jolla | The Marine Room",
+            "sourceUrl": "https://www.marineroom.com/about-us/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.marineroom.com/",
+          "https://www.marineroom.com/menus/",
+          "https://www.marineroom.com/about-us/"
+        ],
+        "retrievedAt": "2026-08-21T01:20:14.057Z",
+        "playwrightPages": 0
+      }
+    },
+    "fort-oak-san-diego": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:20:15.834Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.fortoaksd.com/drinks",
+        "reservationUrl": "https://www.opentable.com/r/fort-oak-reservations-san-diego?restref=1026187&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: An ode to the hearth, Fort Oak offers diners the bold, smoky, wood-fired flavors that have come to define Chef Brad Wise.",
+            "sourceUrl": "https://www.fortoaksd.com/"
+          },
+          {
+            "quote": "og:description: Seasonal craft cocktails that emphasize fresh produce, house-made syrups, smoke, herbs and citrus. Signature drinks are named after classic automobiles, reflecting the restaurant",
+            "sourceUrl": "https://www.fortoaksd.com/drinks"
+          },
+          {
+            "quote": "title: Drink Menu Fort Oak Mission Hills &mdash; Fort Oak",
+            "sourceUrl": "https://www.fortoaksd.com/drinks"
+          },
+          {
+            "quote": "og:description: Fort Oak offers party planners three distinct dining spaces: a Mid-Century-inspired main dining room with retractable windows, two patios with views of the stars and sky, and a U-shaped 23-seat bar built into the circular room that once was the",
+            "sourceUrl": "https://www.fortoaksd.com/private-dining"
+          },
+          {
+            "quote": "meta description: Fort Oak offers party planners three distinct dining spaces: a Mid-Century-inspired main dining room with retractable windows, two patios with views of the stars and sky, and a U-shaped 23-seat bar built into the circular room that once was t",
+            "sourceUrl": "https://www.fortoaksd.com/private-dining"
+          },
+          {
+            "quote": "title: Private Dining at Fort Oak Mission Hills &mdash; Fort Oak",
+            "sourceUrl": "https://www.fortoaksd.com/private-dining"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.fortoaksd.com/",
+          "https://www.fortoaksd.com/drinks",
+          "https://www.fortoaksd.com/private-dining"
+        ],
+        "retrievedAt": "2026-08-21T01:20:15.834Z",
+        "playwrightPages": 0
+      }
+    },
+    "uchi-dallas-dallas": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:20:17.595Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://uchi.uchirestaurants.com/location/sushi-austin/menu/",
+        "reservationUrl": "https://www.sevenrooms.com/explore/uchidallas/reservations/create/search?venues=uchidallas%2Cuchiba%2Cuchikoplano",
+        "reservationPlatform": "SevenRooms",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Please inform us of any allergies or dietary restrictions."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "hours sun - thur 4pm - 10pm fri - sat 4pm - 11pm happy hour every day 4pm - 6pm private dining Uchi Dallas offers a tranquil and refined setting for private events.",
+        "groupPolicyLanguage": [
+          "hours sun - thur 4pm - 10pm fri - sat 4pm - 11pm happy hour every day 4pm - 6pm private dining Uchi Dallas offers a tranquil and refined setting for private events.",
+          "click here to reserve a table For large parties or special requests, please call us at 214-855-5454 .",
+          "For buyout inquiries or if you're not seeing exactly what you need, click here .",
+          "other uchi restaurants in or near dallas visit uchibā events + happenings one‑night‑only RACHO mezcal pairing dinner Join us at Uchi Dallas on Thursday, August 27th for a 10‑course private dining experience featuring RACHO Mezcal."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Uchi Dallas offers a delicate balance of elevated non‑traditional Japanese cuisine and impeccable service from James Beard Award‑winning Chef Tyson Cole.",
+            "sourceUrl": "https://uchi.uchirestaurants.com/location/sushi-dallas/"
+          },
+          {
+            "quote": "title: Sushi Dallas | Uchi Restaurants",
+            "sourceUrl": "https://uchi.uchirestaurants.com/location/sushi-dallas/"
+          },
+          {
+            "quote": "noscript: .rll-youtube-player, [data-lazy-src]{display:none !important;}",
+            "sourceUrl": "https://uchi.uchirestaurants.com/location/sushi-dallas/"
+          },
+          {
+            "quote": "og:description: Private Dining at Uchi offers an ideal space to gather for any occasion such as corporate events, birthdays, and other special gatherings.",
+            "sourceUrl": "https://uchi.uchirestaurants.com/private-rooms/"
+          },
+          {
+            "quote": "title: Private Rooms | Uchi Restaurants",
+            "sourceUrl": "https://uchi.uchirestaurants.com/private-rooms/"
+          },
+          {
+            "quote": "og:description: Explore Uchi Austin online menus featuring Sushi, Omakase, Daily Specials, Vegetarian, Drinks, Dessert, and Happy Hour offerings.",
+            "sourceUrl": "https://uchi.uchirestaurants.com/location/sushi-austin/menu/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://uchi.uchirestaurants.com/location/sushi-dallas/",
+          "https://uchi.uchirestaurants.com/private-rooms/",
+          "https://uchi.uchirestaurants.com/location/sushi-austin/menu/"
+        ],
+        "retrievedAt": "2026-08-21T01:20:17.595Z",
+        "playwrightPages": 0
+      }
+    },
+    "sachet-dallas": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:20:19.393Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.sachetdallas.com/menus/",
+        "reservationUrl": "https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=85ff0743-3e96-4c22-a8f8-f9aff8b622aa&restRef=983926&otSource=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Warm, inviting Dallas restaurant featuring flavors from all around the Mediterranean. Serving dinner and lunch Mon.-Sat.",
+            "sourceUrl": "https://www.sachetdallas.com/"
+          },
+          {
+            "quote": "og:description: Menu for Sachet restaurant in Dallas, TX, recommended by Michelin. Offering Mediterranean meals for dine-in, takeout & delivery; outdoor seating available.",
+            "sourceUrl": "https://www.sachetdallas.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Sachet in Dallas, TX",
+            "sourceUrl": "https://www.sachetdallas.com/menus/"
+          },
+          {
+            "quote": "og:description: Sachet serves Mediterranean-inspired fare with an emphasis on vegetable dishes, plus lamb, beef, chicken, and seafood featuring a bright and airy dining room. Visit us today at the Shops of Highland Park.",
+            "sourceUrl": "https://www.sachetdallas.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations | Sachet in Dallas, TX",
+            "sourceUrl": "https://www.sachetdallas.com/reservations/"
+          },
+          {
+            "quote": "title: Contact | Sachet in Dallas, TX",
+            "sourceUrl": "https://www.sachetdallas.com/contact/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.sachetdallas.com/",
+          "https://www.sachetdallas.com/menus/",
+          "https://www.sachetdallas.com/reservations/",
+          "https://www.sachetdallas.com/contact/"
+        ],
+        "retrievedAt": "2026-08-21T01:20:19.393Z",
+        "playwrightPages": 0
+      }
+    },
+    "tei-an-dallas": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:20:21.743Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.tei-an.com/menu/",
+        "reservationUrl": "https://toasttab.com/tei-an-1722-routh-street/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Dietary restrictions can be accommodated Chef's Premium Soba Kaiseki Sake pairing 150 per person ‎ Per Person $ 250 6-9 courses of seasonal dishes prepared by chef."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Tei-An | Japanese Restaurant in Dallas, TX",
+            "sourceUrl": "https://www.tei-an.com/"
+          },
+          {
+            "quote": "og:description: Tei-An offers an over-the-top experience from the moment you walk in. It is led by experienced professionals committed to providing more than just a meal, a vibe. Visit our Info page for our story.",
+            "sourceUrl": "https://www.tei-an.com/info/"
+          },
+          {
+            "quote": "title: Info | Tei-An in Dallas, TX",
+            "sourceUrl": "https://www.tei-an.com/info/"
+          },
+          {
+            "quote": "og:description: See the menu for Tei-An in Dallas, TX. Offering Japanese cuisine for outdoor seating and dine-in!",
+            "sourceUrl": "https://www.tei-an.com/menu/"
+          },
+          {
+            "quote": "title: Menu | Tei-An in Dallas, TX",
+            "sourceUrl": "https://www.tei-an.com/menu/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.tei-an.com/",
+          "https://www.tei-an.com/info/",
+          "https://www.tei-an.com/menu/"
+        ],
+        "retrievedAt": "2026-08-21T01:20:21.743Z",
+        "playwrightPages": 0
+      }
+    },
+    "monarch-dallas": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:20:32.499Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.monarchrestaurants.com/menu/",
+        "reservationUrl": "https://www.sevenrooms.com/explore/monarchdallas/reservations/create/search/?venues=monarchdallas%2Ckessaku",
+        "reservationPlatform": "SevenRooms",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Menu About Social Events Private Events Gift Cards House of Maple Reservations Call (214) 945-2222 or text us We kindly request that all of our guests dress business casual or better.",
+        "groupPolicyLanguage": [
+          "Menu About Social Events Private Events Gift Cards House of Maple Reservations Call (214) 945-2222 or text us We kindly request that all of our guests dress business casual or better."
+        ],
+        "dressCode": "Call (214) 945-2222 or text us We kindly request that all of our guests dress business casual or better.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Home - Monarch Restaurants",
+            "sourceUrl": "https://www.monarchrestaurants.com/"
+          },
+          {
+            "quote": "title: Menu - Monarch Restaurants",
+            "sourceUrl": "https://www.monarchrestaurants.com/menu/"
+          },
+          {
+            "quote": "title: About - Monarch Restaurants",
+            "sourceUrl": "https://www.monarchrestaurants.com/about/"
+          },
+          {
+            "quote": "title: Reserve - Monarch Restaurants",
+            "sourceUrl": "https://www.monarchrestaurants.com/reserve/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.monarchrestaurants.com/",
+          "https://www.monarchrestaurants.com/menu/",
+          "https://www.monarchrestaurants.com/about/",
+          "https://www.monarchrestaurants.com/reserve/"
+        ],
+        "retrievedAt": "2026-08-21T01:20:32.499Z",
+        "playwrightPages": 0
+      }
+    },
+    "crown-block-dallas": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-21T01:20:35.926Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 78
+      },
+      "site": {
+        "menuUrl": "https://crownblockdallas.com/menus/",
+        "reservationUrl": "https://crownblockdallas.com/reservations/",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 214-321-3149"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 17:00 22:00",
+          "JSON-LD openingHoursSpecification: Friday,Saturday 17:00 23:00",
+          "JSON-LD openingHoursSpecification: Sunday 10:30 21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$$"
+        ],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Located one floor below the MICHELIN-Recommended Crown Block, The Crown Room is Crown Block’s private event space in Dallas featuring a rotating floor, creating a dynamic and memorable experience as the city skyline slowly evolves throughout the event.",
+        "groupPolicyLanguage": [
+          "Located one floor below the MICHELIN-Recommended Crown Block, The Crown Room is Crown Block’s private event space in Dallas featuring a rotating floor, creating a dynamic and memorable experience as the city skyline slowly evolves throughout the event.",
+          "The semi-private event space features a permanent, built-in bar, making it ideal for events that prioritize seamless beverage service and guest interaction.",
+          "Perfect for mid-sized dinners, receptions, and corporate gatherings, The Crown Room North semi-private event space in Dallas combines functionality with the unique experiential element of rotation.",
+          "This semi-private event space utilizes a portable bar setup, allowing for adaptable layouts based on event needs."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 214-321-3149",
+            "sourceUrl": "https://crownblockdallas.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$$",
+            "sourceUrl": "https://crownblockdallas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 17:00 22:00",
+            "sourceUrl": "https://crownblockdallas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 17:00 23:00",
+            "sourceUrl": "https://crownblockdallas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 10:30 21:00",
+            "sourceUrl": "https://crownblockdallas.com/"
+          },
+          {
+            "quote": "og:description: Skyline views at Crown Block in Dallas’ Reunion Tower offer a refined steakhouse experience, where old-fashioned charm meets Texas decadence.",
+            "sourceUrl": "https://crownblockdallas.com/"
+          },
+          {
+            "quote": "og:description: Crown Block menus showcase Prime Beef, Texas Wagyu, Japanese A5 Wagyu, and Gulf seafood, delivering a modern steakhouse experience in Dallas.",
+            "sourceUrl": "https://crownblockdallas.com/menus/"
+          },
+          {
+            "quote": "og:description: Nestled high above the skyline at the iconic Reunion Tower is the Crown Room, Dallas’s newest premier private event space.",
+            "sourceUrl": "https://crownblockdallas.com/private-events/"
+          },
+          {
+            "quote": "title: Private Events - Crown Block | Private Events Space",
+            "sourceUrl": "https://crownblockdallas.com/private-events/"
+          },
+          {
+            "quote": "og:description: Rooftop Steakhouse Dallas, poised atop Reunion Tower. A modern steakhouse experience at the ultimate Dallas restaurant with a view.",
+            "sourceUrl": "https://crownblockdallas.com/about-us/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://crownblockdallas.com/",
+          "https://crownblockdallas.com/menus/",
+          "https://crownblockdallas.com/private-events/",
+          "https://crownblockdallas.com/about-us/"
+        ],
+        "retrievedAt": "2026-08-21T01:20:35.926Z",
         "playwrightPages": 0
       }
     }

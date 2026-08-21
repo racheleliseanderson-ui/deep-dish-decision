@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-08-21T01:13:21.231Z",
+  "manifest": "src/data/hygiene-leftover-retries-2026-08-20.json",
+  "total": 5,
+  "resolved": 0,
+  "failures": 5,
+  "missing": 0,
+  "datasetSourceCorrections": 0,
+  "records": [
+    {
+      "slug": "locale-farm-to-table-eatery-bakersfield",
+      "matchStatus": "site-failure",
+      "completeness": 28,
+      "website": "https://www.localefarmtotable.com/",
+      "notes": [
+        "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+      ]
+    },
+    {
+      "slug": "oak-park-des-moines",
+      "matchStatus": "site-failure",
+      "completeness": 28,
+      "website": "https://www.oakparkdsm.com/",
+      "notes": [
+        "site 403 HTTP 403"
+      ]
+    },
+    {
+      "slug": "jens-restaurant-anchorage",
+      "matchStatus": "site-failure",
+      "completeness": 28,
+      "website": "https://jensrestaurant.com/",
+      "notes": [
+        "site 0 fetch failed:CERT_HAS_EXPIRED"
+      ]
+    },
+    {
+      "slug": "comp-re-lapin-new-orleans",
+      "matchStatus": "site-failure",
+      "completeness": 28,
+      "website": "https://www.comperelapin.com/",
+      "notes": [
+        "site 0 fetch failed:DEPTH_ZERO_SELF_SIGNED_CERT"
+      ]
+    },
+    {
+      "slug": "mr-szechuan",
+      "matchStatus": "site-failure",
+      "completeness": 28,
+      "website": "https://mrszechuan.shop/",
+      "notes": [
+        "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+      ]
+    }
+  ]
+}

@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-20T15:38:57.551Z",
+  "generatedAt": "2026-08-21T01:23:18.115Z",
   "totals": {
-    "records": 810,
-    "enriched": 810,
-    "resolved": 801,
+    "records": 836,
+    "enriched": 836,
+    "resolved": 824,
     "unresolved": 0,
     "statesCovered": 51,
     "statesTotal": 51,
     "avgCompleteness": 61,
     "withRating": 111,
     "withPrice": 108,
-    "hygiene": 690,
+    "hygiene": 714,
     "neverEnriched": 0,
-    "thin": 679,
-    "siteFailures": 1,
+    "thin": 703,
+    "siteFailures": 3,
     "reviewDue": 11,
     "staleA": 0,
     "staleB": 0,
@@ -28,14 +28,17 @@
     "preferRefreshOverDiscover": true,
     "hygieneBatchSize": 25,
     "hygieneSlugs": [
+      "barrington-s-charlotte",
+      "born-raised-san-diego",
       "comp-re-lapin-new-orleans",
+      "ironside-fish-oyster-san-diego",
       "jens-restaurant-anchorage",
       "locale-farm-to-table-eatery-bakersfield",
       "mr-szechuan",
       "oak-park-des-moines",
-      "spicy-king",
       "chengdu-taste",
       "di-an-pho",
+      "spicy-king",
       "los-tacos-no-1",
       "pier-17",
       "2-doors-down-cheyenne",
@@ -48,13 +51,55 @@
       "bella-fuoco-wood-fired-pizza-cheyenne",
       "bestia",
       "billy-goat-tavern-the-original",
-      "buck-s-louisville",
-      "canje-austin",
-      "carson-kitchen-las-vegas",
-      "chengdu-bistro-west-town",
-      "chengdu-gourmet-pittsburgh"
+      "brick-restaurant-jacksonville",
+      "buck-s-louisville"
     ],
     "nextHygiene": [
+      {
+        "slug": "barrington-s-charlotte",
+        "title": "Barrington's",
+        "city": "Charlotte",
+        "stateProvince": "North Carolina",
+        "priority": 1342,
+        "reasons": [
+          "match-site-failure",
+          "thin-28"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 28,
+        "matchStatus": "site-failure",
+        "lastEnrichedAt": "2026-08-21T01:17:14.431Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
+        "siteFailures": []
+      },
+      {
+        "slug": "born-raised-san-diego",
+        "title": "Born & Raised",
+        "city": "San Diego",
+        "stateProvince": "California",
+        "priority": 1342,
+        "reasons": [
+          "match-site-failure",
+          "site-failure:site 429 HTTP 429",
+          "thin-28"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 28,
+        "matchStatus": "site-failure",
+        "lastEnrichedAt": "2026-08-21T01:21:58.504Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
+        "siteFailures": [
+          "site 429 HTTP 429"
+        ]
+      },
       {
         "slug": "comp-re-lapin-new-orleans",
         "title": "Compère Lapin",
@@ -70,11 +115,35 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-20T14:10:41.740Z",
+        "lastEnrichedAt": "2026-08-21T01:11:47.842Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-19",
         "reviewedAt": "2026-08-20",
         "siteFailures": []
+      },
+      {
+        "slug": "ironside-fish-oyster-san-diego",
+        "title": "Ironside Fish & Oyster",
+        "city": "San Diego",
+        "stateProvince": "California",
+        "priority": 1342,
+        "reasons": [
+          "match-site-failure",
+          "site-failure:site 429 HTTP 429",
+          "thin-28"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 28,
+        "matchStatus": "site-failure",
+        "lastEnrichedAt": "2026-08-21T01:22:27.937Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
+        "siteFailures": [
+          "site 429 HTTP 429"
+        ]
       },
       {
         "slug": "jens-restaurant-anchorage",
@@ -91,7 +160,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-20T14:10:41.057Z",
+        "lastEnrichedAt": "2026-08-21T01:11:47.309Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-19",
         "reviewedAt": "2026-08-20",
@@ -112,7 +181,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-20T14:10:01.421Z",
+        "lastEnrichedAt": "2026-08-21T01:11:46.320Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-19",
         "reviewedAt": "2026-08-20",
@@ -134,7 +203,7 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
+        "lastEnrichedAt": "2026-08-21T01:11:48.457Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
@@ -157,31 +226,10 @@
         "ageDays": 0,
         "completeness": 28,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-20T14:10:07.583Z",
+        "lastEnrichedAt": "2026-08-21T01:11:46.865Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-19",
         "reviewedAt": "2026-08-20",
-        "siteFailures": []
-      },
-      {
-        "slug": "spicy-king",
-        "title": "Spicy King",
-        "city": "San Francisco",
-        "stateProvince": "California",
-        "priority": 1342,
-        "reasons": [
-          "match-site-failure",
-          "thin-28"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 0,
-        "completeness": 28,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-10",
-        "reviewedAt": "2026-08-11",
         "siteFailures": []
       },
       {
@@ -227,6 +275,27 @@
         "siteFailures": []
       },
       {
+        "slug": "spicy-king",
+        "title": "Spicy King",
+        "city": "San Francisco",
+        "stateProvince": "California",
+        "priority": 698,
+        "reasons": [
+          "source-limited",
+          "thin-22"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 22,
+        "matchStatus": "source-limited",
+        "lastEnrichedAt": "2026-08-21T01:14:09.833Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
+        "siteFailures": []
+      },
+      {
         "slug": "los-tacos-no-1",
         "title": "LOS TACOS No.1",
         "city": "New York",
@@ -237,7 +306,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 39,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:57:53.313Z",
@@ -257,7 +326,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 39,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:06:02.680Z",
@@ -297,7 +366,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:09:35.877Z",
@@ -337,7 +406,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 2,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-18T22:56:40.606Z",
@@ -357,7 +426,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:06:09.273Z",
@@ -437,7 +506,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:08:21.100Z",
@@ -467,6 +536,26 @@
         "siteFailures": []
       },
       {
+        "slug": "brick-restaurant-jacksonville",
+        "title": "Brick Restaurant",
+        "city": "Jacksonville",
+        "stateProvince": "Florida",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-21T01:19:05.461Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
+        "siteFailures": []
+      },
+      {
         "slug": "buck-s-louisville",
         "title": "Buck's",
         "city": "Louisville",
@@ -477,7 +566,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 0,
+        "ageDays": 1,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-19T21:06:09.103Z",
@@ -537,7 +626,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-11T00:08:59.143Z",
@@ -577,7 +666,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-11T00:04:45.571Z",
@@ -597,7 +686,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-11T00:06:01.506Z",
@@ -657,7 +746,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 0,
+        "ageDays": 1,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-19T20:09:57.712Z",
@@ -677,7 +766,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 0,
+        "ageDays": 1,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-19T20:10:22.322Z",
@@ -697,13 +786,33 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 0,
+        "ageDays": 1,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-19T20:07:56.687Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-18",
         "reviewedAt": "2026-08-19",
+        "siteFailures": []
+      },
+      {
+        "slug": "eleven-south-jacksonville",
+        "title": "Eleven South",
+        "city": "Jacksonville",
+        "stateProvince": "Florida",
+        "priority": 426,
+        "reasons": [
+          "thin-44"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 44,
+        "matchStatus": "resolved",
+        "lastEnrichedAt": "2026-08-21T01:19:04.477Z",
+        "reviewStatus": "listing_only",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
         "siteFailures": []
       },
       {
@@ -717,7 +826,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 0,
+        "ageDays": 1,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-19T20:09:49.931Z",
@@ -737,7 +846,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:59:35.828Z",
@@ -757,113 +866,13 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 9,
+        "ageDays": 10,
         "completeness": 44,
         "matchStatus": "resolved",
         "lastEnrichedAt": "2026-08-10T23:06:24.345Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-09",
         "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "girl-the-goat-los-angeles",
-        "title": "Girl & the Goat Los Angeles",
-        "city": "Los Angeles",
-        "stateProvince": "California",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 9,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:08:29.577Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "gramercy-tavern",
-        "title": "Gramercy Tavern",
-        "city": "New York",
-        "stateProvince": "New York",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 9,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-10T23:07:12.473Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-09",
-        "reviewedAt": "2026-08-10",
-        "siteFailures": []
-      },
-      {
-        "slug": "grit-grace-pittsburgh",
-        "title": "Grit & Grace",
-        "city": "Pittsburgh",
-        "stateProvince": "Pennsylvania",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 1,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-19T02:56:24.409Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-18",
-        "reviewedAt": "2026-08-19",
-        "siteFailures": []
-      },
-      {
-        "slug": "hana-japanese-eatery-phoenix",
-        "title": "Hana Japanese Eatery",
-        "city": "Phoenix",
-        "stateProvince": "Arizona",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 6,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-14T14:22:56.252Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-11",
-        "reviewedAt": "2026-08-12",
-        "siteFailures": []
-      },
-      {
-        "slug": "honey-salt-las-vegas",
-        "title": "Honey Salt",
-        "city": "Las Vegas",
-        "stateProvince": "Nevada",
-        "priority": 426,
-        "reasons": [
-          "thin-44"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 1,
-        "completeness": 44,
-        "matchStatus": "resolved",
-        "lastEnrichedAt": "2026-08-19T02:56:03.094Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-18",
-        "reviewedAt": "2026-08-19",
         "siteFailures": []
       }
     ],
@@ -876,25 +885,41 @@
     },
     {
       "label": "75-89",
-      "count": 37
+      "count": 39
     },
     {
       "label": "50-74",
-      "count": 642
+      "count": 661
     },
     {
       "label": "under 50",
-      "count": 90
+      "count": 95
     }
   ],
   "states": [
     {
       "code": "CA",
-      "count": 89,
-      "enriched": 89,
+      "count": 94,
+      "enriched": 94,
       "avgCompleteness": 56,
       "population": 38965193,
-      "perMillion": 2.28
+      "perMillion": 2.41
+    },
+    {
+      "code": "FL",
+      "count": 48,
+      "enriched": 48,
+      "avgCompleteness": 61,
+      "population": 22610726,
+      "perMillion": 2.12
+    },
+    {
+      "code": "TX",
+      "count": 48,
+      "enriched": 48,
+      "avgCompleteness": 58,
+      "population": 30503301,
+      "perMillion": 1.57
     },
     {
       "code": "NY",
@@ -903,22 +928,6 @@
       "avgCompleteness": 53,
       "population": 19571216,
       "perMillion": 2.3
-    },
-    {
-      "code": "FL",
-      "count": 44,
-      "enriched": 44,
-      "avgCompleteness": 62,
-      "population": 22610726,
-      "perMillion": 1.95
-    },
-    {
-      "code": "TX",
-      "count": 43,
-      "enriched": 43,
-      "avgCompleteness": 57,
-      "population": 30503301,
-      "perMillion": 1.41
     },
     {
       "code": "WA",
@@ -985,6 +994,22 @@
       "perMillion": 4.49
     },
     {
+      "code": "NC",
+      "count": 18,
+      "enriched": 18,
+      "avgCompleteness": 61,
+      "population": 10835491,
+      "perMillion": 1.66
+    },
+    {
+      "code": "OK",
+      "count": 18,
+      "enriched": 18,
+      "avgCompleteness": 60,
+      "population": 4053824,
+      "perMillion": 4.44
+    },
+    {
       "code": "VA",
       "count": 18,
       "enriched": 18,
@@ -1025,28 +1050,20 @@
       "perMillion": 1.36
     },
     {
-      "code": "OK",
-      "count": 15,
-      "enriched": 15,
-      "avgCompleteness": 60,
-      "population": 4053824,
-      "perMillion": 3.7
-    },
-    {
-      "code": "NC",
-      "count": 14,
-      "enriched": 14,
-      "avgCompleteness": 62,
-      "population": 10835491,
-      "perMillion": 1.29
-    },
-    {
       "code": "MA",
       "count": 12,
       "enriched": 12,
       "avgCompleteness": 58,
       "population": 7001399,
       "perMillion": 1.71
+    },
+    {
+      "code": "MD",
+      "count": 12,
+      "enriched": 12,
+      "avgCompleteness": 56,
+      "population": 6180253,
+      "perMillion": 1.94
     },
     {
       "code": "CO",
@@ -1281,14 +1298,6 @@
       "perMillion": 4.52
     },
     {
-      "code": "MD",
-      "count": 7,
-      "enriched": 7,
-      "avgCompleteness": 53,
-      "population": 6180253,
-      "perMillion": 1.13
-    },
-    {
       "code": "WY",
       "count": 7,
       "enriched": 7,
@@ -1327,7 +1336,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1352,7 +1361,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1377,7 +1386,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1402,7 +1411,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1427,7 +1436,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1452,7 +1461,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1477,7 +1486,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1502,7 +1511,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1527,7 +1536,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1552,7 +1561,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1575,7 +1584,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1621,7 +1630,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1644,7 +1653,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1667,7 +1676,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1690,7 +1699,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1713,7 +1722,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1736,7 +1745,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1782,7 +1791,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1805,7 +1814,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1828,7 +1837,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1851,7 +1860,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1874,7 +1883,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1899,7 +1908,7 @@
         "review-due-soon"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1922,7 +1931,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1945,7 +1954,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1968,7 +1977,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -1991,7 +2000,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2014,7 +2023,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2037,7 +2046,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2060,7 +2069,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2083,7 +2092,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2106,7 +2115,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2129,7 +2138,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2152,7 +2161,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2175,7 +2184,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2198,7 +2207,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2221,7 +2230,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2244,7 +2253,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2267,7 +2276,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -2290,7 +2299,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2313,7 +2322,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2377,6 +2386,29 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
       "reviewedAt": "2026-08-20",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "peppervine-charlotte",
+      "title": "Peppervine",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 89,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:17:08.723Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
       "reviewDueSoon": false,
       "hygiene": false,
       "refreshPriority": 0,
@@ -2474,7 +2506,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2612,7 +2644,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2727,7 +2759,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2750,7 +2782,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2773,7 +2805,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2796,7 +2828,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2819,7 +2851,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2842,7 +2874,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2865,7 +2897,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2888,7 +2920,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -2911,7 +2943,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3122,6 +3154,29 @@
       "siteFailures": []
     },
     {
+      "slug": "crown-block-dallas",
+      "title": "Crown Block",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 78,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:35.926Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "perch",
       "title": "Perch",
       "stateCode": "CA",
@@ -3141,7 +3196,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -3348,7 +3403,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -3371,7 +3426,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -3394,7 +3449,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -3417,7 +3472,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -3670,7 +3725,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3693,7 +3748,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3716,7 +3771,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3739,7 +3794,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3762,7 +3817,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3785,7 +3840,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3808,7 +3863,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3831,7 +3886,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -3854,7 +3909,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -4362,7 +4417,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -4862,7 +4917,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -4887,7 +4942,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -4912,7 +4967,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -4937,7 +4992,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -4962,7 +5017,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -4987,7 +5042,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -5012,7 +5067,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -5037,7 +5092,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -5062,7 +5117,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -5562,7 +5617,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5587,7 +5642,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5637,7 +5692,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5662,7 +5717,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5687,7 +5742,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5712,7 +5767,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5737,7 +5792,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5762,7 +5817,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5787,7 +5842,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5812,7 +5867,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5837,7 +5892,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -5862,7 +5917,7 @@
         "thin-67"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -7091,6 +7146,131 @@
       "siteFailures": []
     },
     {
+      "slug": "alma-cocina-latina-baltimore",
+      "title": "Alma Cocina Latina",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:18:42.825Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "mahogany-prime-steakhouse-oklahoma-city",
+      "title": "Mahogany Prime Steakhouse",
+      "stateCode": "OK",
+      "city": "Oklahoma City",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:18:45.045Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "george-s-at-the-cove-san-diego",
+      "title": "George's at the Cove",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:19:38.571Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "uchi-dallas-dallas",
+      "title": "Uchi Dallas",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:17.595Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "monarch-dallas",
+      "title": "Monarch",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:32.499Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "carmine-s-44th-street-nyc",
       "title": "Carmine's - 44th Street - NYC",
       "stateCode": "NY",
@@ -7112,7 +7292,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -7137,7 +7317,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -7162,7 +7342,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -7187,7 +7367,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -7212,7 +7392,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -7237,7 +7417,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -7412,7 +7592,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -7987,7 +8167,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8012,7 +8192,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8037,7 +8217,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8062,7 +8242,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8087,7 +8267,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8112,7 +8292,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8137,7 +8317,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8162,7 +8342,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8187,7 +8367,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8212,7 +8392,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8237,7 +8417,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8262,7 +8442,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8287,7 +8467,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8312,7 +8492,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8337,7 +8517,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8362,7 +8542,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8387,7 +8567,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -8412,7 +8592,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -9162,7 +9342,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9187,7 +9367,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9212,7 +9392,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9237,7 +9417,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9262,7 +9442,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9287,7 +9467,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9312,7 +9492,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9337,7 +9517,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9362,7 +9542,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9387,7 +9567,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9412,7 +9592,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9437,7 +9617,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9462,7 +9642,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9487,7 +9667,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9512,7 +9692,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9537,7 +9717,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9562,7 +9742,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9587,7 +9767,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9612,7 +9792,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9637,7 +9817,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9662,7 +9842,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9687,7 +9867,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9712,7 +9892,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9737,7 +9917,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9762,7 +9942,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9787,7 +9967,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9812,7 +9992,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9837,7 +10017,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9862,7 +10042,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9887,7 +10067,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9912,7 +10092,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9937,7 +10117,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9962,7 +10142,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -9987,7 +10167,7 @@
         "thin-61"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -12216,6 +12396,181 @@
       "siteFailures": []
     },
     {
+      "slug": "the-fig-tree-restaurant-charlotte",
+      "title": "The Fig Tree Restaurant",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:17:10.842Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "petit-louis-bistro-baltimore",
+      "title": "Petit Louis Bistro",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:17:16.635Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "gunther-co-baltimore",
+      "title": "Gunther & Co.",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:18:40.557Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-jones-assembly-oklahoma-city",
+      "title": "The Jones Assembly",
+      "stateCode": "OK",
+      "city": "Oklahoma City",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:18:47.624Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "mezza-luna-jacksonville",
+      "title": "Mezza Luna",
+      "stateCode": "FL",
+      "city": "Jacksonville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:19:06.353Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-marine-room-san-diego",
+      "title": "The Marine Room",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:14.057Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "tei-an-dallas",
+      "title": "Tei-An",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:21.743Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "philippe-the-original",
       "title": "Philippe The Original",
       "stateCode": "CA",
@@ -12237,7 +12592,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -12262,7 +12617,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -12362,7 +12717,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -12387,7 +12742,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -12412,7 +12767,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -12437,7 +12792,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -12512,7 +12867,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -12537,7 +12892,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -12762,7 +13117,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13262,7 +13617,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13287,7 +13642,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13312,7 +13667,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13337,7 +13692,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13362,7 +13717,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13387,7 +13742,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13412,7 +13767,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13437,7 +13792,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13462,7 +13817,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13487,7 +13842,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -13512,7 +13867,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -14262,7 +14617,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14287,7 +14642,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14312,7 +14667,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14337,7 +14692,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14362,7 +14717,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14387,7 +14742,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14412,7 +14767,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14437,7 +14792,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14462,7 +14817,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14487,7 +14842,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14512,7 +14867,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14537,7 +14892,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14562,7 +14917,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14587,7 +14942,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14612,7 +14967,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14637,7 +14992,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14662,7 +15017,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14687,7 +15042,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14712,7 +15067,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14737,7 +15092,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -14762,7 +15117,7 @@
         "thin-56"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -16416,6 +16771,181 @@
       "siteFailures": []
     },
     {
+      "slug": "supperland-charlotte",
+      "title": "Supperland",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:16:53.883Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "magdalena-baltimore",
+      "title": "Magdalena",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:17:15.300Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "foraged-baltimore",
+      "title": "foraged.",
+      "stateCode": "MD",
+      "city": "Baltimore",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:18:39.567Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "picasso-cafe-oklahoma-city",
+      "title": "Picasso Cafe",
+      "stateCode": "OK",
+      "city": "Oklahoma City",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:18:50.063Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "taverna-jacksonville",
+      "title": "Taverna",
+      "stateCode": "FL",
+      "city": "Jacksonville",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:19:02.318Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "fort-oak-san-diego",
+      "title": "Fort Oak",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:15.834Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "sachet-dallas",
+      "title": "Sachet",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:19.393Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "buddakan",
       "title": "Buddakan",
       "stateCode": "NY",
@@ -16437,7 +16967,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16462,7 +16992,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16487,7 +17017,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16512,7 +17042,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16537,7 +17067,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16562,7 +17092,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16587,7 +17117,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16612,7 +17142,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16637,7 +17167,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16687,7 +17217,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16712,7 +17242,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16737,7 +17267,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16762,7 +17292,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16787,7 +17317,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16812,7 +17342,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16837,7 +17367,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16862,7 +17392,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -16887,7 +17417,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -17187,7 +17717,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -17212,7 +17742,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -17237,7 +17767,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -17262,7 +17792,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -17287,7 +17817,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -17312,7 +17842,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -17587,7 +18117,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17612,7 +18142,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17637,7 +18167,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17662,7 +18192,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17687,7 +18217,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17712,7 +18242,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17737,7 +18267,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17762,7 +18292,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17787,7 +18317,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17812,7 +18342,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17837,7 +18367,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17862,7 +18392,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17887,7 +18417,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -17912,7 +18442,7 @@
         "thin-50"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -19087,7 +19617,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19112,7 +19642,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19162,7 +19692,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19187,7 +19717,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19212,7 +19742,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19237,7 +19767,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19262,7 +19792,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19287,7 +19817,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19362,7 +19892,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19387,7 +19917,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19412,7 +19942,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19437,7 +19967,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19487,7 +20017,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19537,7 +20067,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19562,7 +20092,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19587,7 +20117,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19612,7 +20142,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19637,7 +20167,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19662,7 +20192,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19687,7 +20217,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19712,7 +20242,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19737,7 +20267,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19762,7 +20292,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19787,7 +20317,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19812,7 +20342,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -19837,7 +20367,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -20087,7 +20617,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20112,7 +20642,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20137,7 +20667,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20162,7 +20692,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20187,7 +20717,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20762,7 +21292,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -20787,7 +21317,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -20812,7 +21342,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -20837,7 +21367,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -20862,7 +21392,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -20887,7 +21417,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -20912,7 +21442,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -20937,7 +21467,7 @@
         "thin-44"
       ],
       "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 1,
       "siteFailures": []
     },
     {
@@ -21066,6 +21596,56 @@
       "siteFailures": []
     },
     {
+      "slug": "eleven-south-jacksonville",
+      "title": "Eleven South",
+      "stateCode": "FL",
+      "city": "Jacksonville",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:19:04.477Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "brick-restaurant-jacksonville",
+      "title": "Brick Restaurant",
+      "stateCode": "FL",
+      "city": "Jacksonville",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:19:05.461Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "pier-17",
       "title": "Pier 17",
       "stateCode": "NY",
@@ -21087,7 +21667,7 @@
         "thin-39"
       ],
       "staleTier": null,
-      "ageDays": 9,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -21112,33 +21692,7 @@
         "thin-39"
       ],
       "staleTier": null,
-      "ageDays": 9,
-      "siteFailures": []
-    },
-    {
-      "slug": "spicy-king",
-      "title": "Spicy King",
-      "stateCode": "CA",
-      "city": "San Francisco",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": 4.2,
-      "reviewCount": 1063,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
-      "addedAt": "2026-08-11T00:03:05.543Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-10",
-      "reviewedAt": "2026-08-11",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1342,
-      "refreshReasons": [
-        "match-site-failure",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
+      "ageDays": 10,
       "siteFailures": []
     },
     {
@@ -21151,7 +21705,7 @@
       "rating": 4.4,
       "reviewCount": 809,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
+      "lastEnrichedAt": "2026-08-21T01:11:48.457Z",
       "addedAt": "2026-08-11T00:03:05.543Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
@@ -21180,7 +21734,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:01.421Z",
+      "lastEnrichedAt": "2026-08-21T01:11:46.320Z",
       "addedAt": "2026-08-20T11:28:46.678Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
@@ -21206,7 +21760,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:07.583Z",
+      "lastEnrichedAt": "2026-08-21T01:11:46.865Z",
       "addedAt": "2026-08-20T11:28:46.678Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
@@ -21232,7 +21786,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:41.057Z",
+      "lastEnrichedAt": "2026-08-21T01:11:47.309Z",
       "addedAt": "2026-08-20T11:28:46.678Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
@@ -21258,7 +21812,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:41.740Z",
+      "lastEnrichedAt": "2026-08-21T01:11:47.842Z",
       "addedAt": "2026-08-20T11:28:46.678Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
@@ -21273,6 +21827,90 @@
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
+    },
+    {
+      "slug": "barrington-s-charlotte",
+      "title": "Barrington's",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 28,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:17:14.431Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1342,
+      "refreshReasons": [
+        "match-site-failure",
+        "thin-28"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "born-raised-san-diego",
+      "title": "Born & Raised",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 28,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:21:58.504Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1342,
+      "refreshReasons": [
+        "match-site-failure",
+        "site-failure:site 429 HTTP 429",
+        "thin-28"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429 HTTP 429"
+      ]
+    },
+    {
+      "slug": "ironside-fish-oyster-san-diego",
+      "title": "Ironside Fish & Oyster",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 28,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:22:27.937Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1342,
+      "refreshReasons": [
+        "match-site-failure",
+        "site-failure:site 429 HTTP 429",
+        "thin-28"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429 HTTP 429"
+      ]
     },
     {
       "slug": "di-an-pho",
@@ -21315,6 +21953,32 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
       "reviewedAt": "2026-08-20",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 698,
+      "refreshReasons": [
+        "source-limited",
+        "thin-22"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "spicy-king",
+      "title": "Spicy King",
+      "stateCode": "CA",
+      "city": "San Francisco",
+      "completeness": 22,
+      "matchStatus": "source-limited",
+      "rating": 4.2,
+      "reviewCount": 1063,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-08-21T01:14:09.833Z",
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 698,
@@ -21329,72 +21993,101 @@
   ],
   "recent": [
     {
-      "slug": "di-an-pho",
-      "title": "Di An Pho",
-      "stateCode": "TX",
-      "city": "Houston",
-      "completeness": 22,
-      "matchStatus": "source-limited",
-      "rating": 4.8,
-      "reviewCount": 2559,
-      "priceBand": "$",
-      "lastEnrichedAt": "2026-08-20T15:38:57.250Z",
-      "addedAt": "2026-08-11T00:00:18.927Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 698,
-      "refreshReasons": [
-        "source-limited",
-        "thin-22"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "chengdu-taste",
-      "title": "Chengdu Taste",
+      "slug": "ironside-fish-oyster-san-diego",
+      "title": "Ironside Fish & Oyster",
       "stateCode": "CA",
-      "city": "Alhambra",
-      "completeness": 22,
-      "matchStatus": "source-limited",
-      "rating": 4.3,
-      "reviewCount": 850,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-20T15:38:57.249Z",
-      "addedAt": "2026-08-11T00:03:04.024Z",
+      "city": "San Diego",
+      "completeness": 28,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:22:27.937Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 698,
+      "refreshPriority": 1342,
       "refreshReasons": [
-        "source-limited",
-        "thin-22"
+        "match-site-failure",
+        "site-failure:site 429 HTTP 429",
+        "thin-28"
       ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429 HTTP 429"
+      ]
+    },
+    {
+      "slug": "born-raised-san-diego",
+      "title": "Born & Raised",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 28,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:21:58.504Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 1342,
+      "refreshReasons": [
+        "match-site-failure",
+        "site-failure:site 429 HTTP 429",
+        "thin-28"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": [
+        "site 429 HTTP 429"
+      ]
+    },
+    {
+      "slug": "crown-block-dallas",
+      "title": "Crown Block",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 78,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:35.926Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
     },
     {
-      "slug": "dovecote-orlando",
-      "title": "DoveCote",
-      "stateCode": "FL",
-      "city": "Orlando",
+      "slug": "monarch-dallas",
+      "title": "Monarch",
+      "stateCode": "TX",
+      "city": "Dallas",
       "completeness": 67,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:19:33.978Z",
-      "addedAt": "2026-08-19T20:02:58.066Z",
+      "lastEnrichedAt": "2026-08-21T01:20:32.499Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-18",
-      "reviewedAt": "2026-08-19",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 403,
@@ -21406,75 +22099,20 @@
       "siteFailures": []
     },
     {
-      "slug": "spicy-king",
-      "title": "Spicy King",
-      "stateCode": "CA",
-      "city": "San Francisco",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": 4.2,
-      "reviewCount": 1063,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-20T14:19:32.710Z",
-      "addedAt": "2026-08-11T00:03:05.543Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-10",
-      "reviewedAt": "2026-08-11",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1342,
-      "refreshReasons": [
-        "match-site-failure",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "mr-szechuan",
-      "title": "Mr Szechuan",
-      "stateCode": "CA",
-      "city": "San Francisco",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": 4.4,
-      "reviewCount": 809,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-20T14:17:32.999Z",
-      "addedAt": "2026-08-11T00:03:05.543Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-10",
-      "reviewedAt": "2026-08-11",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1342,
-      "refreshReasons": [
-        "match-site-failure",
-        "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": [
-        "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
-      ]
-    },
-    {
-      "slug": "delicious-chengdu",
-      "title": "Delicious Chengdu",
-      "stateCode": "CA",
-      "city": "Temple City",
+      "slug": "tei-an-dallas",
+      "title": "Tei-An",
+      "stateCode": "TX",
+      "city": "Dallas",
       "completeness": 61,
       "matchStatus": "resolved",
-      "rating": 4.7,
-      "reviewCount": 571,
-      "priceBand": "$$",
-      "lastEnrichedAt": "2026-08-20T14:17:32.206Z",
-      "addedAt": "2026-08-11T00:03:04.025Z",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:21.743Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-10",
-      "reviewedAt": "2026-08-11",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 409,
@@ -21486,72 +22124,20 @@
       "siteFailures": []
     },
     {
-      "slug": "comp-re-lapin-new-orleans",
-      "title": "Compère Lapin",
-      "stateCode": "LA",
-      "city": "New Orleans",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:41.740Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1342,
-      "refreshReasons": [
-        "match-site-failure",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "jens-restaurant-anchorage",
-      "title": "Jens' Restaurant",
-      "stateCode": "AK",
-      "city": "Anchorage",
-      "completeness": 28,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:41.057Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1342,
-      "refreshReasons": [
-        "match-site-failure",
-        "thin-28"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "whisky-ramen-anchorage",
-      "title": "Whisky & Ramen",
-      "stateCode": "AK",
-      "city": "Anchorage",
+      "slug": "sachet-dallas",
+      "title": "Sachet",
+      "stateCode": "TX",
+      "city": "Dallas",
       "completeness": 56,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:31.543Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
+      "lastEnrichedAt": "2026-08-21T01:20:19.393Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 414,
@@ -21563,72 +22149,151 @@
       "siteFailures": []
     },
     {
-      "slug": "the-albany-cheyenne",
-      "title": "The Albany",
-      "stateCode": "WY",
-      "city": "Cheyenne",
-      "completeness": 72,
+      "slug": "uchi-dallas-dallas",
+      "title": "Uchi Dallas",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 67,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:21.473Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
+      "lastEnrichedAt": "2026-08-21T01:20:17.595Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "rosewild-fargo",
-      "title": "Rosewild",
-      "stateCode": "ND",
-      "city": "Fargo",
-      "completeness": 50,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:17.119Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 420,
+      "refreshPriority": 403,
       "refreshReasons": [
-        "thin-50"
+        "thin-67"
       ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
     },
     {
-      "slug": "bravo-italian-restaurant-bar-jackson",
-      "title": "BRAVO! Italian Restaurant & Bar",
-      "stateCode": "MS",
-      "city": "Jackson",
-      "completeness": 72,
+      "slug": "fort-oak-san-diego",
+      "title": "Fort Oak",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 56,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-20T14:10:14.129Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
+      "lastEnrichedAt": "2026-08-21T01:20:15.834Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-marine-room-san-diego",
+      "title": "The Marine Room",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:20:14.057Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "george-s-at-the-cove-san-diego",
+      "title": "George's at the Cove",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:19:38.571Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "mezza-luna-jacksonville",
+      "title": "Mezza Luna",
+      "stateCode": "FL",
+      "city": "Jacksonville",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:19:06.353Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "brick-restaurant-jacksonville",
+      "title": "Brick Restaurant",
+      "stateCode": "FL",
+      "city": "Jacksonville",
+      "completeness": 44,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-21T01:19:05.461Z",
+      "addedAt": "2026-08-21T01:14:38.256Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-20",
+      "reviewedAt": "2026-08-21",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 426,
+      "refreshReasons": [
+        "thin-44"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -21645,486 +22310,176 @@
   },
   "runs": [
     {
-      "kind": "source-review",
-      "startedAt": "2026-08-20T15:38:57.213Z",
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:21:58.488Z",
       "batchSize": 2,
       "inserted": 0,
-      "cities": [],
+      "cities": [
+        "San Diego, California"
+      ],
       "resolved": 0,
+      "unresolved": 2,
+      "avgCompleteness": 61,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 2
+      },
+      "retries": 10,
+      "failures": 2,
+      "flagged": false
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:20:32.479Z",
+      "batchSize": 2,
+      "inserted": 0,
+      "cities": [
+        "Dallas, Texas"
+      ],
+      "resolved": 2,
       "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {},
+      "avgCompleteness": 61,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 2
+      },
       "retries": 0,
       "failures": 0,
       "flagged": false
     },
     {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-20T14:17:32.203Z",
-      "batchSize": 4,
-      "inserted": 0,
-      "cities": [],
-      "resolved": 2,
-      "unresolved": 2,
-      "avgCompleteness": 0,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 4
-      },
-      "retries": 0,
-      "failures": 2,
-      "flagged": false
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-20T14:09:22.305Z",
-      "batchSize": 16,
-      "inserted": 0,
-      "cities": [],
-      "resolved": 12,
-      "unresolved": 4,
-      "avgCompleteness": 0,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 16
-      },
-      "retries": 0,
-      "failures": 4,
-      "flagged": false
-    },
-    {
       "kind": "enrich-owned",
-      "startedAt": "2026-08-20T11:28:46.850Z",
-      "batchSize": 297,
+      "startedAt": "2026-08-21T01:19:44.577Z",
+      "batchSize": 6,
       "inserted": 0,
       "cities": [
-        "Newark, New Jersey",
-        "Jersey City, New Jersey",
-        "Montclair, New Jersey",
-        "Princeton, New Jersey",
-        "New Brunswick, New Jersey",
-        "Collingswood, New Jersey",
-        "Atlantic City, New Jersey",
-        "Birmingham, Alabama",
-        "Grand Rapids, Michigan",
-        "Rochester, New York",
-        "Tucson, Arizona",
-        "Fresno, California",
-        "Tulsa, Oklahoma",
-        "Omaha, Nebraska",
-        "Albuquerque, New Mexico",
-        "Bakersfield, California",
-        "Knoxville, Tennessee",
-        "Albany, New York",
-        "Boise, Idaho",
-        "Columbia, South Carolina",
-        "Little Rock, Arkansas",
-        "Des Moines, Iowa",
-        "Spokane, Washington",
-        "Madison, Wisconsin",
-        "Wichita, Kansas",
-        "Jackson, Mississippi",
-        "Portland, Maine",
-        "Charleston, West Virginia",
-        "Manchester, New Hampshire",
-        "Wilmington, Delaware",
-        "Burlington, Vermont",
-        "Sioux Falls, South Dakota",
-        "Fargo, North Dakota",
-        "Billings, Montana",
-        "Cheyenne, Wyoming",
-        "Anchorage, Alaska",
-        "Honolulu, Hawaii",
-        "Richmond, Virginia",
-        "Memphis, Tennessee",
-        "Salt Lake City, Utah",
-        "New Orleans, Louisiana",
-        "Buffalo, New York",
-        "Hartford, Connecticut"
+        "San Diego, California",
+        "Dallas, Texas"
       ],
-      "resolved": 281,
-      "unresolved": 16,
+      "resolved": 5,
+      "unresolved": 1,
       "avgCompleteness": 61,
       "apiCalls": {
         "google": 0,
         "firecrawl": 0,
-        "ownedFetch": 297
+        "ownedFetch": 6
+      },
+      "retries": 5,
+      "failures": 1,
+      "flagged": false
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:19:02.306Z",
+      "batchSize": 6,
+      "inserted": 0,
+      "cities": [
+        "Jacksonville, Florida",
+        "San Diego, California"
+      ],
+      "resolved": 5,
+      "unresolved": 1,
+      "avgCompleteness": 61,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 6
+      },
+      "retries": 5,
+      "failures": 1,
+      "flagged": false
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:18:39.545Z",
+      "batchSize": 6,
+      "inserted": 0,
+      "cities": [
+        "Baltimore, Maryland",
+        "Oklahoma City, Oklahoma"
+      ],
+      "resolved": 6,
+      "unresolved": 0,
+      "avgCompleteness": 61,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 6
       },
       "retries": 0,
-      "failures": 16,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:16:53.865Z",
+      "batchSize": 6,
+      "inserted": 0,
+      "cities": [
+        "Charlotte, North Carolina",
+        "Baltimore, Maryland"
+      ],
+      "resolved": 5,
+      "unresolved": 1,
+      "avgCompleteness": 61,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 6
+      },
+      "retries": 0,
+      "failures": 1,
       "flagged": false
     },
     {
       "kind": "seed-listings",
-      "startedAt": "2026-08-20T11:28:46.678Z",
+      "startedAt": "2026-08-21T01:14:38.256Z",
       "batchSize": 0,
-      "inserted": 297,
+      "inserted": 26,
       "cities": [
         {
-          "city": "Newark, NJ",
-          "queueCity": "new jersey",
-          "found": 3,
-          "inserted": 3,
+          "city": "Charlotte, NC",
+          "queueCity": "Charlotte",
+          "found": 4,
+          "inserted": 4,
           "duplicates": 0
         },
         {
-          "city": "Jersey City, NJ",
-          "queueCity": "new jersey",
-          "found": 3,
-          "inserted": 3,
-          "duplicates": 0
-        },
-        {
-          "city": "Montclair, NJ",
-          "queueCity": "new jersey",
-          "found": 2,
-          "inserted": 2,
-          "duplicates": 0
-        },
-        {
-          "city": "Princeton, NJ",
-          "queueCity": "new jersey",
-          "found": 3,
-          "inserted": 3,
-          "duplicates": 0
-        },
-        {
-          "city": "New Brunswick, NJ",
-          "queueCity": "new jersey",
-          "found": 2,
-          "inserted": 2,
-          "duplicates": 0
-        },
-        {
-          "city": "Collingswood, NJ",
-          "queueCity": "new jersey",
-          "found": 2,
-          "inserted": 2,
-          "duplicates": 0
-        },
-        {
-          "city": "Atlantic City, NJ",
-          "queueCity": "new jersey",
-          "found": 1,
-          "inserted": 1,
-          "duplicates": 0
-        },
-        {
-          "city": "Birmingham, AL",
-          "queueCity": "Birmingham",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Grand Rapids, MI",
-          "queueCity": "Grand Rapids",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Rochester, NY",
-          "queueCity": "Rochester",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Tucson, AZ",
-          "queueCity": "Tucson",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Fresno, CA",
-          "queueCity": "Fresno",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Tulsa, OK",
-          "queueCity": "Tulsa",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Omaha, NE",
-          "queueCity": "Omaha",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Albuquerque, NM",
-          "queueCity": "Albuquerque",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Bakersfield, CA",
-          "queueCity": "Bakersfield",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Knoxville, TN",
-          "queueCity": "Knoxville",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Albany, NY",
-          "queueCity": "Albany",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Boise, ID",
-          "queueCity": "Boise",
-          "found": 8,
-          "inserted": 6,
-          "duplicates": 2
-        },
-        {
-          "city": "Columbia, SC",
-          "queueCity": "Columbia",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Little Rock, AR",
-          "queueCity": "Little Rock",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Des Moines, IA",
-          "queueCity": "Des Moines",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Spokane, WA",
-          "queueCity": "Spokane",
-          "found": 8,
-          "inserted": 7,
-          "duplicates": 1
-        },
-        {
-          "city": "Madison, WI",
-          "queueCity": "Madison",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Wichita, KS",
-          "queueCity": "Wichita",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Jackson, MS",
-          "queueCity": "Jackson",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Portland, ME",
-          "queueCity": "Portland",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Charleston, WV",
-          "queueCity": "Charleston",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Manchester, NH",
-          "queueCity": "Manchester",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Wilmington, DE",
-          "queueCity": "Wilmington",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Burlington, VT",
-          "queueCity": "Burlington",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Sioux Falls, SD",
-          "queueCity": "Sioux Falls",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Fargo, ND",
-          "queueCity": "Fargo",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Billings, MT",
-          "queueCity": "Billings",
-          "found": 8,
+          "city": "Baltimore, MD",
+          "queueCity": "Baltimore",
+          "found": 5,
           "inserted": 5,
-          "duplicates": 3
-        },
-        {
-          "city": "Cheyenne, WY",
-          "queueCity": "Cheyenne",
-          "found": 8,
-          "inserted": 7,
-          "duplicates": 1
-        },
-        {
-          "city": "Anchorage, AK",
-          "queueCity": "Anchorage",
-          "found": 8,
-          "inserted": 8,
           "duplicates": 0
         },
         {
-          "city": "Honolulu, HI",
-          "queueCity": "Honolulu",
-          "found": 8,
-          "inserted": 8,
+          "city": "Oklahoma City, OK",
+          "queueCity": "Oklahoma City",
+          "found": 3,
+          "inserted": 3,
           "duplicates": 0
         },
         {
-          "city": "Richmond, VA",
-          "queueCity": "Richmond",
-          "found": 8,
-          "inserted": 8,
+          "city": "Jacksonville, FL",
+          "queueCity": "Jacksonville",
+          "found": 4,
+          "inserted": 4,
           "duplicates": 0
         },
         {
-          "city": "Memphis, TN",
-          "queueCity": "Memphis",
-          "found": 8,
-          "inserted": 8,
+          "city": "San Diego, CA",
+          "queueCity": "San Diego",
+          "found": 5,
+          "inserted": 5,
           "duplicates": 0
         },
         {
-          "city": "Salt Lake City, UT",
-          "queueCity": "Salt Lake City",
-          "found": 8,
-          "inserted": 8,
+          "city": "Dallas, TX",
+          "queueCity": "Dallas",
+          "found": 5,
+          "inserted": 5,
           "duplicates": 0
-        },
-        {
-          "city": "New Orleans, LA",
-          "queueCity": "New Orleans",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Buffalo, NY",
-          "queueCity": "Buffalo",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Hartford, CT",
-          "queueCity": "Hartford",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Atlanta, GA",
-          "queueCity": "Atlanta",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Washington, DC",
-          "queueCity": "Washington",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Philadelphia, PA",
-          "queueCity": "Philadelphia",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Miami, FL",
-          "queueCity": "Miami",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Phoenix, AZ",
-          "queueCity": "Phoenix",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Boston, MA",
-          "queueCity": "Boston",
-          "found": 12,
-          "inserted": 0,
-          "duplicates": 12
-        },
-        {
-          "city": "Detroit, MI",
-          "queueCity": "Detroit",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Minneapolis, MN",
-          "queueCity": "Minneapolis",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Denver, CO",
-          "queueCity": "Denver",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
         },
         {
           "city": "Baltimore, MD",
@@ -22141,27 +22496,6 @@
           "duplicates": 6
         },
         {
-          "city": "Nashville, TN",
-          "queueCity": "Nashville",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Seattle, WA",
-          "queueCity": "Seattle",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Tampa, FL",
-          "queueCity": "Tampa",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
           "city": "San Diego, CA",
           "queueCity": "San Diego",
           "found": 9,
@@ -22169,134 +22503,8 @@
           "duplicates": 9
         },
         {
-          "city": "Austin, TX",
-          "queueCity": "Austin",
-          "found": 12,
-          "inserted": 0,
-          "duplicates": 12
-        },
-        {
-          "city": "Las Vegas, NV",
-          "queueCity": "Las Vegas",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Pittsburgh, PA",
-          "queueCity": "Pittsburgh",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Sacramento, CA",
-          "queueCity": "Sacramento",
-          "found": 12,
-          "inserted": 0,
-          "duplicates": 12
-        },
-        {
-          "city": "Cincinnati, OH",
-          "queueCity": "Cincinnati",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Kansas City, MO",
-          "queueCity": "Kansas City",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Columbus, OH",
-          "queueCity": "Columbus",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Indianapolis, IN",
-          "queueCity": "Indianapolis",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Cleveland, OH",
-          "queueCity": "Cleveland",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Riverside, CA",
-          "queueCity": "Riverside",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Orlando, FL",
-          "queueCity": "Orlando",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "San Antonio, TX",
-          "queueCity": "San Antonio",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Portland, OR",
-          "queueCity": "Portland",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "San Jose, CA",
-          "queueCity": "San Jose",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Virginia Beach, VA",
-          "queueCity": "Virginia Beach",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
           "city": "Jacksonville, FL",
           "queueCity": "Jacksonville",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Providence, RI",
-          "queueCity": "Providence",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Milwaukee, WI",
-          "queueCity": "Milwaukee",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
-        },
-        {
-          "city": "Raleigh, NC",
-          "queueCity": "Raleigh",
           "found": 8,
           "inserted": 0,
           "duplicates": 8
@@ -22307,13 +22515,6 @@
           "found": 7,
           "inserted": 0,
           "duplicates": 7
-        },
-        {
-          "city": "Louisville, KY",
-          "queueCity": "Louisville",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
         }
       ],
       "resolved": 0,
@@ -22325,85 +22526,9 @@
       "flagged": false
     },
     {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-19T21:03:24.012Z",
-      "batchSize": 49,
-      "inserted": 0,
-      "cities": [
-        "Jacksonville, Florida",
-        "Providence, Rhode Island",
-        "Milwaukee, Wisconsin",
-        "Raleigh, North Carolina",
-        "Oklahoma City, Oklahoma",
-        "Louisville, Kentucky"
-      ],
-      "resolved": 49,
-      "unresolved": 0,
-      "avgCompleteness": 62,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 49
-      },
-      "retries": 3,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-19T21:02:46.876Z",
-      "batchSize": 0,
-      "inserted": 49,
-      "cities": [
-        {
-          "city": "Jacksonville, FL",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Providence, RI",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Milwaukee, WI",
-          "found": 9,
-          "inserted": 9,
-          "duplicates": 0
-        },
-        {
-          "city": "Raleigh, NC",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Oklahoma City, OK",
-          "found": 7,
-          "inserted": 7,
-          "duplicates": 0
-        },
-        {
-          "city": "Louisville, KY",
-          "found": 9,
-          "inserted": 9,
-          "duplicates": 0
-        }
-      ],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "retire-closed",
-      "startedAt": "2026-08-19T20:41:14.354Z",
-      "batchSize": 0,
+      "kind": "source-review",
+      "startedAt": "2026-08-21T01:14:09.812Z",
+      "batchSize": 1,
       "inserted": 0,
       "cities": [],
       "resolved": 0,

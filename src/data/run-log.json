@@ -1,6 +1,616 @@
 {
   "runs": [
     {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:21:58.488Z",
+      "finishedAt": "2026-08-21T01:22:57.993Z",
+      "batchSize": 2,
+      "cities": [
+        "San Diego, California"
+      ],
+      "resolved": 0,
+      "unresolved": 2,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 61,
+      "corpusEnriched": 836,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 2
+      },
+      "retries": 10,
+      "failures": 2,
+      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-21-58-488Z-enrich-owned",
+      "records": [
+        {
+          "slug": "born-raised-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        },
+        {
+          "slug": "ironside-fish-oyster-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:20:32.479Z",
+      "finishedAt": "2026-08-21T01:20:38.235Z",
+      "batchSize": 2,
+      "cities": [
+        "Dallas, Texas"
+      ],
+      "resolved": 2,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 61,
+      "corpusEnriched": 836,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 2
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-20-32-479Z-enrich-owned",
+      "records": [
+        {
+          "slug": "monarch-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "crown-block-dallas",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:19:44.577Z",
+      "finishedAt": "2026-08-21T01:20:23.523Z",
+      "batchSize": 6,
+      "cities": [
+        "San Diego, California",
+        "Dallas, Texas"
+      ],
+      "resolved": 5,
+      "unresolved": 1,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 61,
+      "corpusEnriched": 834,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 6
+      },
+      "retries": 5,
+      "failures": 1,
+      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-19-44-577Z-enrich-owned",
+      "records": [
+        {
+          "slug": "ironside-fish-oyster-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        },
+        {
+          "slug": "the-marine-room-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "fort-oak-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "uchi-dallas-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "sachet-dallas",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "tei-an-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:19:02.306Z",
+      "finishedAt": "2026-08-21T01:19:40.797Z",
+      "batchSize": 6,
+      "cities": [
+        "Jacksonville, Florida",
+        "San Diego, California"
+      ],
+      "resolved": 5,
+      "unresolved": 1,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 61,
+      "corpusEnriched": 832,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 6
+      },
+      "retries": 5,
+      "failures": 1,
+      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-19-02-306Z-enrich-owned",
+      "records": [
+        {
+          "slug": "taverna-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "eleven-south-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "brick-restaurant-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "mezza-luna-jacksonville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "born-raised-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        },
+        {
+          "slug": "george-s-at-the-cove-san-diego",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:18:39.545Z",
+      "finishedAt": "2026-08-21T01:18:52.544Z",
+      "batchSize": 6,
+      "cities": [
+        "Baltimore, Maryland",
+        "Oklahoma City, Oklahoma"
+      ],
+      "resolved": 6,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 61,
+      "corpusEnriched": 832,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 6
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-18-39-545Z-enrich-owned",
+      "records": [
+        {
+          "slug": "foraged-baltimore",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "gunther-co-baltimore",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "alma-cocina-latina-baltimore",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "mahogany-prime-steakhouse-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "the-jones-assembly-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "picasso-cafe-oklahoma-city",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-21T01:16:53.865Z",
+      "finishedAt": "2026-08-21T01:17:18.855Z",
+      "batchSize": 6,
+      "cities": [
+        "Charlotte, North Carolina",
+        "Baltimore, Maryland"
+      ],
+      "resolved": 5,
+      "unresolved": 1,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 61,
+      "corpusEnriched": 832,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 6
+      },
+      "retries": 0,
+      "failures": 1,
+      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-16-53-866Z-enrich-owned",
+      "records": [
+        {
+          "slug": "supperland-charlotte",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "peppervine-charlotte",
+          "matchStatus": "resolved",
+          "completeness": 89,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "the-fig-tree-restaurant-charlotte",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "barrington-s-charlotte",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "magdalena-baltimore",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "petit-louis-bistro-baltimore",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-21T01:14:38.256Z",
+      "finishedAt": "2026-08-21T01:14:38.308Z",
+      "cities": [
+        {
+          "city": "Charlotte, NC",
+          "queueCity": "Charlotte",
+          "found": 4,
+          "inserted": 4,
+          "duplicates": 0
+        },
+        {
+          "city": "Baltimore, MD",
+          "queueCity": "Baltimore",
+          "found": 5,
+          "inserted": 5,
+          "duplicates": 0
+        },
+        {
+          "city": "Oklahoma City, OK",
+          "queueCity": "Oklahoma City",
+          "found": 3,
+          "inserted": 3,
+          "duplicates": 0
+        },
+        {
+          "city": "Jacksonville, FL",
+          "queueCity": "Jacksonville",
+          "found": 4,
+          "inserted": 4,
+          "duplicates": 0
+        },
+        {
+          "city": "San Diego, CA",
+          "queueCity": "San Diego",
+          "found": 5,
+          "inserted": 5,
+          "duplicates": 0
+        },
+        {
+          "city": "Dallas, TX",
+          "queueCity": "Dallas",
+          "found": 5,
+          "inserted": 5,
+          "duplicates": 0
+        },
+        {
+          "city": "Baltimore, MD",
+          "queueCity": "Baltimore",
+          "found": 7,
+          "inserted": 0,
+          "duplicates": 7
+        },
+        {
+          "city": "Charlotte, NC",
+          "queueCity": "Charlotte",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "San Diego, CA",
+          "queueCity": "San Diego",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        },
+        {
+          "city": "Jacksonville, FL",
+          "queueCity": "Jacksonville",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Oklahoma City, OK",
+          "queueCity": "Oklahoma City",
+          "found": 7,
+          "inserted": 0,
+          "duplicates": 7
+        }
+      ],
+      "inserted": 26,
+      "duplicatesSkipped": 37,
+      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-14-38-256Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "supperland-charlotte",
+        "peppervine-charlotte",
+        "the-fig-tree-restaurant-charlotte",
+        "barrington-s-charlotte",
+        "magdalena-baltimore",
+        "petit-louis-bistro-baltimore",
+        "foraged-baltimore",
+        "gunther-co-baltimore",
+        "alma-cocina-latina-baltimore",
+        "mahogany-prime-steakhouse-oklahoma-city",
+        "the-jones-assembly-oklahoma-city",
+        "picasso-cafe-oklahoma-city",
+        "taverna-jacksonville",
+        "eleven-south-jacksonville",
+        "brick-restaurant-jacksonville",
+        "mezza-luna-jacksonville",
+        "born-raised-san-diego",
+        "george-s-at-the-cove-san-diego",
+        "ironside-fish-oyster-san-diego",
+        "the-marine-room-san-diego",
+        "fort-oak-san-diego",
+        "uchi-dallas-dallas",
+        "sachet-dallas",
+        "tei-an-dallas",
+        "monarch-dallas",
+        "crown-block-dallas"
+      ]
+    },
+    {
+      "kind": "source-review",
+      "startedAt": "2026-08-21T01:14:09.812Z",
+      "finishedAt": "2026-08-21T01:14:09.885Z",
+      "batchSize": 1,
+      "sourceLimited": 1,
+      "missing": 0,
+      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-14-09-812Z-source-limited",
+      "records": [
+        {
+          "slug": "spicy-king",
+          "matchStatus": "source-limited",
+          "completeness": 22,
+          "notes": [
+            "operator platform; no owned domain"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-21T01:11:46.286Z",
+      "finishedAt": "2026-08-21T01:13:21.227Z",
+      "batchSize": 5,
+      "recovery": true,
+      "resolved": 0,
+      "unresolved": 5,
+      "deferred": 0,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 5
+      },
+      "retries": 0,
+      "failures": 5,
+      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-11-46-289Z-hygiene-recovery-owned",
+      "records": [
+        {
+          "slug": "locale-farm-to-table-eatery-bakersfield",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+          ]
+        },
+        {
+          "slug": "oak-park-des-moines",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "jens-restaurant-anchorage",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:CERT_HAS_EXPIRED"
+          ]
+        },
+        {
+          "slug": "comp-re-lapin-new-orleans",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:DEPTH_ZERO_SELF_SIGNED_CERT"
+          ]
+        },
+        {
+          "slug": "mr-szechuan",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        }
+      ]
+    },
+    {
       "kind": "source-review",
       "startedAt": "2026-08-20T15:38:57.213Z",
       "finishedAt": "2026-08-20T15:38:57.278Z",
