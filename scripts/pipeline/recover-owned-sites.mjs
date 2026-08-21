@@ -200,7 +200,10 @@ appendRun({
   })),
 });
 
-const resultPath = path.join(process.cwd(), "src/data/hygiene-recovery-result.json");
+const resultPath = path.resolve(
+  process.cwd(),
+  String(args.result || "src/data/hygiene-recovery-result.json"),
+);
 writeJson(resultPath, {
   generatedAt: new Date().toISOString(),
   manifest: path.relative(process.cwd(), manifestPath),
