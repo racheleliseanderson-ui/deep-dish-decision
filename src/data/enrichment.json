@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T01:22:57.972Z",
+  "generatedAt": "2026-08-21T14:32:56.175Z",
   "records": {
     "canlis": {
       "google": {
@@ -7815,23 +7815,6 @@
         "editorialSummary": "",
         "retrievedAt": "2026-08-10T23:06:02.680Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 2,
-        "sourceUrls": [
-          "https://rooftopatpier17.com/",
-          "https://rooftopatpier17.com/events/totally-tubular-festival-2026/"
-        ],
-        "retrievedAt": "2026-08-10T23:06:02.680Z"
-      },
       "summary": {
         "text": "Pier 17 is an event venue located in New York, New York, also categorized as a concert hall, auditorium, live music venue, and restaurant. It has a rating of 4.7 based on 12459 reviews and serves seven days a week. The venue offers restrooms and is wheelchair accessible, including parking, entrance, restroom, and seating.",
         "model": "google/gemini-2.5-flash",
@@ -7853,8 +7836,62 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T23:06:02.680Z",
-        "completeness": 67
+        "lastEnrichedAt": "2026-08-21T14:32:24.929Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 39
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: NYC’s most scenic concert venue with panoramic views of the iconic Lower Manhattan skyline as The Rooftop at Pier 17's backdrop.",
+            "sourceUrl": "https://rooftopatpier17.com/"
+          },
+          {
+            "quote": "meta description: NYC’s most scenic concert venue, The Rooftop at Pier 17, boasts views of the Manhattan skyline as its one-of-a-kind backdrop for live music.",
+            "sourceUrl": "https://rooftopatpier17.com/"
+          },
+          {
+            "quote": "title: The Rooftop at Pier 17 – New York",
+            "sourceUrl": "https://rooftopatpier17.com/"
+          },
+          {
+            "quote": "og:description: The Rooftop at Pier 17 is New York City’s most scenic concert stage. A dynamic open-air entertainment venue, set five stories above the East River, concert goers annually see their favorite artists within an intimate atmosphere, all from a one-",
+            "sourceUrl": "https://rooftopatpier17.com/about-us/"
+          },
+          {
+            "quote": "title: About Us - The Rooftop at Pier 17",
+            "sourceUrl": "https://rooftopatpier17.com/about-us/"
+          },
+          {
+            "quote": "og:description: Acid Bath is coming to The Rooftop at Pier 17, with special guests Obituary & Thou, on August 21, 2026.",
+            "sourceUrl": "https://rooftopatpier17.com/events/acid-bath-2026/"
+          },
+          {
+            "quote": "title: Acid Bath - The Rooftop at Pier 17",
+            "sourceUrl": "https://rooftopatpier17.com/events/acid-bath-2026/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://rooftopatpier17.com/",
+          "https://rooftopatpier17.com/about-us/",
+          "https://rooftopatpier17.com/events/acid-bath-2026/"
+        ],
+        "retrievedAt": "2026-08-21T14:32:24.929Z",
+        "playwrightPages": 0
       }
     },
     "balthazar": {
@@ -7992,22 +8029,6 @@
         "editorialSummary": "Iconic French brasserie with steak frites, brunch & pastries in a classy space with red banquettes.",
         "retrievedAt": "2026-08-10T23:06:09.273Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "http://www.balthazarny.com/"
-        ],
-        "retrievedAt": "2026-08-10T23:06:09.273Z"
-      },
       "summary": {
         "text": "Balthazar is a French restaurant located in New York, New York, with a price band of $$$. It has a rating of 4.4 based on 7875 reviews and is open seven days a week. The restaurant offers amenities such as outdoor seating, reservations, delivery, takeout, and dine-in, and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
@@ -8030,8 +8051,71 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T23:06:09.273Z",
-        "completeness": 75
+        "lastEnrichedAt": "2026-08-21T14:32:32.038Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://balthazarny.com/menus/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Events Balthazar can accommodate over 200 guests and provides endless opportunities for an unforgettable event — day or night.",
+        "groupPolicyLanguage": [
+          "Private Events Balthazar can accommodate over 200 guests and provides endless opportunities for an unforgettable event — day or night.",
+          "Private events should be planned at least 30 days in advance.",
+          "Send Us Your Private Event Inquiry Your Name Your Email Requested Date Telephone Number Company Your Comments"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Balthazar serves traditional French fare from breakfast through supper every day, with brunch served on weekends.",
+            "sourceUrl": "http://www.balthazarny.com/"
+          },
+          {
+            "quote": "title: Balthazar Restaurant New York",
+            "sourceUrl": "http://www.balthazarny.com/"
+          },
+          {
+            "quote": "og:description: Bios for Balthazar New York owner Keith McNally & Chef de Cuisine Shane McBride.",
+            "sourceUrl": "https://balthazarny.com/about-us/bios/"
+          },
+          {
+            "quote": "title: Keith McNally & Shane McBride Bios | Balthazar New York",
+            "sourceUrl": "https://balthazarny.com/about-us/bios/"
+          },
+          {
+            "quote": "og:description: In the heart of Soho in Manhattan, Balthazar Restaurant is open all day seven days a week serving breakfast, lunch, dinner, late supper, and weekend brunch.",
+            "sourceUrl": "https://balthazarny.com/menus/"
+          },
+          {
+            "quote": "title: Balthazar NY Menus | Breakfast, Brunch, Lunch, & Dinner",
+            "sourceUrl": "https://balthazarny.com/menus/"
+          },
+          {
+            "quote": "og:description: Balthazar Restaurant can accommodate over 200 guests for breakfast, lunch, brunch, or dinner private events. Call 212.965.1414 or email us for inquiries.",
+            "sourceUrl": "https://balthazarny.com/private-dining/"
+          },
+          {
+            "quote": "title: Private Events in Soho | Balthazar Restaurant New York",
+            "sourceUrl": "https://balthazarny.com/private-dining/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "http://www.balthazarny.com/",
+          "https://balthazarny.com/about-us/bios/",
+          "https://balthazarny.com/menus/",
+          "https://balthazarny.com/private-dining/"
+        ],
+        "retrievedAt": "2026-08-21T14:32:32.038Z",
+        "playwrightPages": 0
       }
     },
     "au-cheval": {
@@ -10498,22 +10582,6 @@
         "editorialSummary": "Trendy Italian restaurant from an acclaimed husband-and-wife team highlights creative seasonal fare.",
         "retrievedAt": "2026-08-10T23:08:21.100Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "http://www.bestiala.com/"
-        ],
-        "retrievedAt": "2026-08-10T23:08:21.100Z"
-      },
       "summary": {
         "text": "Bestia is an Italian restaurant located in Downtown Los Angeles, California. It has a price band of $$$$ and a rating of 4.5 based on 4063 reviews. The restaurant offers outdoor seating, reservations, delivery, takeout, dine-in, and curbside pickup, and is open seven days a week.",
         "model": "google/gemini-2.5-flash",
@@ -10537,8 +10605,37 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T23:08:21.100Z",
-        "completeness": 75
+        "lastEnrichedAt": "2026-08-21T14:32:44.558Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://bestiala.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/bestia-2121-east-7th-place/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Large parties of 9 – 25 are seated on our covered and heated outdoor terrace, which runs adjacent to the dining room along the south side of the restaurant.",
+        "groupPolicyLanguage": [
+          "Large parties of 9 – 25 are seated on our covered and heated outdoor terrace, which runs adjacent to the dining room along the south side of the restaurant.",
+          "For groups larger than 25, we offer full or partial buyouts, subject to availability."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "http://www.bestiala.com/",
+          "https://bestiala.com/menu/",
+          "https://bestiala.com/about/",
+          "https://bestiala.com/events/"
+        ],
+        "retrievedAt": "2026-08-21T14:32:44.558Z",
+        "playwrightPages": 0
       }
     },
     "chubby-cattle-bbq-little-tokyo": {
@@ -11658,22 +11755,6 @@
         "editorialSummary": "Posh destination for elevated Mediterranean fare and cocktails, plus a lounge-style rooftop patio.",
         "retrievedAt": "2026-08-10T23:09:35.877Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "http://www.abarestaurants.com/"
-        ],
-        "retrievedAt": "2026-08-10T23:09:35.877Z"
-      },
       "summary": {
         "text": "Aba is a Mediterranean Restaurant located in Chicago, Illinois, in the Fulton Market District. It has a rating of 4.8 based on 10928 reviews and a price band of $$$. The restaurant offers outdoor seating, is reservable, and provides delivery, takeout, and dine-in options.",
         "model": "google/gemini-2.5-flash",
@@ -11697,8 +11778,36 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T23:09:35.877Z",
-        "completeness": 75
+        "lastEnrichedAt": "2026-08-21T14:32:28.865Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 44
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Aba, meaning father in Hebrew, is a Mediterranean restaurant with a California influence. The menu features Chef CJ Jacobson’s modern approach to Mediterranean cooking and the beverage program showcases spirits and rare wines from lesser know",
+            "sourceUrl": "http://www.abarestaurants.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "http://www.abarestaurants.com/"
+        ],
+        "retrievedAt": "2026-08-21T14:32:28.865Z",
+        "playwrightPages": 0
       }
     },
     "the-dearborn": {
@@ -12424,22 +12533,6 @@
         "editorialSummary": "Bustling taqueria serving tacos, quesadillas & aguas frescas in a street-style setup (no seating).",
         "retrievedAt": "2026-08-10T23:57:53.313Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "https://www.lostacos1.com/location/los-tacos-times-square/"
-        ],
-        "retrievedAt": "2026-08-10T23:57:53.313Z"
-      },
       "summary": {
         "text": "LOS TACOS No.1 is a taco restaurant located in New York, New York. It has a rating of 4.7 based on 4802 reviews and a price band of $. The restaurant offers delivery, takeout, dine-in, and serves breakfast, lunch, and dinner seven days a week.",
         "model": "google/gemini-2.5-flash",
@@ -12462,8 +12555,72 @@
         "matchStatus": "resolved",
         "confidence": 0.95,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T23:57:53.313Z",
-        "completeness": 71
+        "lastEnrichedAt": "2026-08-21T14:32:23.180Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.lostacos1.com/menus/",
+        "reservationUrl": "https://www.toasttab.com/los-tacos-no-1-catering-gift-cards/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 11:00-23:00; Sa 11:00-23:00; Su 11:00-21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Taco Restaurant"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD priceRange: $",
+            "sourceUrl": "https://www.lostacos1.com/location/los-tacos-times-square/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Taco Restaurant",
+            "sourceUrl": "https://www.lostacos1.com/location/los-tacos-times-square/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-23:00; Tu 11:00-23:00; We 11:00-23:00; Th 11:00-23:00; Fr 11:00-23:00; Sa 11:00-23:00; Su 11:00-21:00",
+            "sourceUrl": "https://www.lostacos1.com/location/los-tacos-times-square/"
+          },
+          {
+            "quote": "og:description: Bustling taqueria serving tacos, quesadillas & aguas frescas in a street-style set-up (no seating). The authentic taste comes from family recipes and from fresh, simple and tasteful ingredients straight from home. In every taco from LOS TACOS N",
+            "sourceUrl": "https://www.lostacos1.com/location/los-tacos-times-square/"
+          },
+          {
+            "quote": "title: Times Square | Hours + Location | Los Tacos No. 1 | Taquerias in New York City",
+            "sourceUrl": "https://www.lostacos1.com/location/los-tacos-times-square/"
+          },
+          {
+            "quote": "og:description: Indulge in our mouthwatering tacos, featuring grilled meats and fresh ingredients. Enjoy your meal with a choice of corn or flour tortillas.",
+            "sourceUrl": "https://www.lostacos1.com/menus/"
+          },
+          {
+            "quote": "title: Menu | Los Tacos No. 1 in New York City",
+            "sourceUrl": "https://www.lostacos1.com/menus/"
+          },
+          {
+            "quote": "title: Contact Us | Los Tacos No. 1 | Taquerias in New York City",
+            "sourceUrl": "https://www.lostacos1.com/contact/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.lostacos1.com/location/los-tacos-times-square/",
+          "https://www.lostacos1.com/menus/",
+          "https://www.lostacos1.com/contact/"
+        ],
+        "retrievedAt": "2026-08-21T14:32:23.180Z",
+        "playwrightPages": 0
       }
     },
     "amor-loco": {
@@ -14509,7 +14666,7 @@
         "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-20T15:38:57.250Z",
+        "lastEnrichedAt": "2026-08-21T14:32:23.156Z",
         "enrichmentMode": "operator-platform-source",
         "completeness": 22
       }
@@ -16499,7 +16656,7 @@
         "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-20T15:38:57.249Z",
+        "lastEnrichedAt": "2026-08-21T14:32:23.146Z",
         "enrichmentMode": "operator-platform-source",
         "completeness": 22
       }
@@ -20001,7 +20158,7 @@
         "matchStatus": "source-limited",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-21T01:14:09.833Z",
+        "lastEnrichedAt": "2026-08-21T14:32:23.169Z",
         "enrichmentMode": "operator-platform-source",
         "completeness": 22
       }
@@ -20537,8 +20694,8 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-21T01:11:48.457Z",
-        "enrichmentMode": "owned-site-recovery",
+        "lastEnrichedAt": "2026-08-21T14:30:49.145Z",
+        "enrichmentMode": "owned-site",
         "completeness": 28
       }
     },
@@ -20855,7 +21012,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:22:08.920Z",
+        "lastEnrichedAt": "2026-08-21T14:32:40.476Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -20863,17 +21020,23 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
+        "jsonLdLanguage": [],
         "pagesRead": 1,
         "sourceUrls": [
           "https://www.barriocafe.com/"
         ],
-        "retrievedAt": "2026-08-14T14:22:08.920Z"
+        "retrievedAt": "2026-08-21T14:32:40.476Z",
+        "playwrightPages": 0
       }
     },
     "billy-goat-tavern-the-original": {
@@ -20881,7 +21044,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-14T14:22:09.639Z",
+        "lastEnrichedAt": "2026-08-21T14:32:48.088Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -20889,19 +21052,42 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Home - The World-Famous Billy Goat Tavern",
+            "sourceUrl": "http://www.billygoattavern.com/"
+          },
+          {
+            "quote": "noscript: .woocommerce-product-gallery{ opacity: 1 !important; }",
+            "sourceUrl": "http://www.billygoattavern.com/"
+          },
+          {
+            "quote": "title: Events - The World-Famous Billy Goat Tavern",
+            "sourceUrl": "https://www.billygoattavern.com/events/"
+          },
+          {
+            "quote": "title: Contact - The World-Famous Billy Goat Tavern",
+            "sourceUrl": "http://www.billygoattavern.com/contact"
+          }
+        ],
         "pagesRead": 3,
         "sourceUrls": [
           "http://www.billygoattavern.com/",
           "https://www.billygoattavern.com/events/",
           "http://www.billygoattavern.com/contact"
         ],
-        "retrievedAt": "2026-08-14T14:22:09.639Z"
+        "retrievedAt": "2026-08-21T14:32:48.088Z",
+        "playwrightPages": 0
       }
     },
     "boia-de-miami": {
@@ -26320,7 +26506,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:40.606Z",
+        "lastEnrichedAt": "2026-08-21T14:32:31.134Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -26328,6 +26514,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -26348,7 +26538,7 @@
         "sourceUrls": [
           "https://azumirestaurant.com/"
         ],
-        "retrievedAt": "2026-08-18T22:56:40.606Z",
+        "retrievedAt": "2026-08-21T14:32:31.134Z",
         "playwrightPages": 0
       }
     },
@@ -29620,7 +29810,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:52.293Z",
+        "lastEnrichedAt": "2026-08-21T14:32:41.764Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -29628,6 +29818,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -29662,7 +29856,7 @@
           "https://www.thebazaar.com/private-events/",
           "https://www.thebazaar.com/contact/"
         ],
-        "retrievedAt": "2026-08-19T02:55:52.293Z",
+        "retrievedAt": "2026-08-21T14:32:41.764Z",
         "playwrightPages": 0
       }
     },
@@ -30158,7 +30352,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:17.719Z",
+        "lastEnrichedAt": "2026-08-21T14:32:30.158Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -30166,6 +30360,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -30177,7 +30375,7 @@
         "sourceUrls": [
           "https://aptekapgh.com/"
         ],
-        "retrievedAt": "2026-08-19T02:56:17.719Z",
+        "retrievedAt": "2026-08-21T14:32:30.158Z",
         "playwrightPages": 0
       }
     },
@@ -39821,7 +40019,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T21:06:09.103Z",
+        "lastEnrichedAt": "2026-08-21T14:32:53.789Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -39829,6 +40027,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -39845,7 +40047,7 @@
         "sourceUrls": [
           "https://www.bucksrestaurantandbar.com/"
         ],
-        "retrievedAt": "2026-08-19T21:06:09.103Z",
+        "retrievedAt": "2026-08-21T14:32:53.789Z",
         "playwrightPages": 0
       }
     },
@@ -45063,8 +45265,8 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T01:11:46.320Z",
-        "enrichmentMode": "owned-site-recovery",
+        "lastEnrichedAt": "2026-08-21T14:30:48.176Z",
+        "enrichmentMode": "owned-site",
         "completeness": 28
       }
     },
@@ -47378,8 +47580,8 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T01:11:46.865Z",
-        "enrichmentMode": "owned-site-recovery",
+        "lastEnrichedAt": "2026-08-21T14:32:22.245Z",
+        "enrichmentMode": "owned-site",
         "completeness": 28
       }
     },
@@ -53722,7 +53924,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:38:29.565Z",
+        "lastEnrichedAt": "2026-08-21T14:32:26.846Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -53745,7 +53947,7 @@
         "sourceUrls": [
           "http://www.2doorsdown.net/"
         ],
-        "retrievedAt": "2026-08-20T11:38:29.565Z",
+        "retrievedAt": "2026-08-21T14:32:26.846Z",
         "playwrightPages": 0
       }
     },
@@ -53754,7 +53956,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-20T11:38:31.219Z",
+        "lastEnrichedAt": "2026-08-21T14:32:43.550Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -53786,7 +53988,7 @@
         "sourceUrls": [
           "https://www.bellafuocopizza.com/"
         ],
-        "retrievedAt": "2026-08-20T11:38:31.219Z",
+        "retrievedAt": "2026-08-21T14:32:43.550Z",
         "playwrightPages": 0
       }
     },
@@ -54055,8 +54257,8 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T01:11:47.309Z",
-        "enrichmentMode": "owned-site-recovery",
+        "lastEnrichedAt": "2026-08-21T14:30:47.013Z",
+        "enrichmentMode": "owned-site",
         "completeness": 28
       }
     },
@@ -56184,8 +56386,8 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T01:11:47.842Z",
-        "enrichmentMode": "owned-site-recovery",
+        "lastEnrichedAt": "2026-08-21T14:30:15.502Z",
+        "enrichmentMode": "owned-site",
         "completeness": 28
       }
     },
@@ -57425,7 +57627,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T01:17:14.431Z",
+        "lastEnrichedAt": "2026-08-21T14:29:44.884Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -57962,7 +58164,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T01:19:05.461Z",
+        "lastEnrichedAt": "2026-08-21T14:32:52.788Z",
         "enrichmentMode": "owned-site",
         "completeness": 44
       },
@@ -57990,7 +58192,7 @@
         "sourceUrls": [
           "https://www.thebrickofavondale.com/"
         ],
-        "retrievedAt": "2026-08-21T01:19:05.461Z",
+        "retrievedAt": "2026-08-21T14:32:52.788Z",
         "playwrightPages": 0
       }
     },
@@ -58069,7 +58271,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T01:21:58.504Z",
+        "lastEnrichedAt": "2026-08-21T14:29:45.490Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
@@ -58145,7 +58347,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T01:22:27.937Z",
+        "lastEnrichedAt": "2026-08-21T14:30:16.676Z",
         "enrichmentMode": "owned-site",
         "completeness": 28
       }
