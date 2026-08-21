@@ -1,0 +1,90 @@
+{
+  "note": "Controlled geographic seeds for expansion queue priorities 73-78. Every entry is a real named establishment with a current official restaurant site verified before inclusion. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
+  "generatedAt": "2026-08-20T07:40:00.000Z",
+  "batches": [
+    {
+      "city": "Sioux Falls",
+      "stateCode": "SD",
+      "listings": [
+        {"title": "Crawford's", "website": "https://www.crawfordssf.com/", "address": "Sioux Falls, SD", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Parker's Bistro", "website": "https://www.parkersbistro.net/", "address": "Sioux Falls, SD", "cuisineTags": ["American", "Bistro"]},
+        {"title": "Harvester Kitchen by Bryan", "website": "https://www.thehksf.com/", "address": "Sioux Falls, SD", "cuisineTags": ["American", "Tasting menu"]},
+        {"title": "Morrie's Steakhouse", "website": "https://www.morriessteakhouse.com/", "address": "Sioux Falls, SD", "cuisineTags": ["Steak", "American"]},
+        {"title": "Maribella Ristorante", "website": "https://www.ciaomaribella.com/", "address": "Sioux Falls, SD", "cuisineTags": ["Italian"]},
+        {"title": "Look's Marketplace Restaurant", "website": "https://www.looksmarket.com/", "address": "Sioux Falls, SD", "cuisineTags": ["American", "Market"]},
+        {"title": "ROAM Kitchen + Bar", "website": "https://www.roamkitchen.com/", "address": "Sioux Falls, SD", "cuisineTags": ["American", "Live fire"]},
+        {"title": "Minervas Sioux Falls", "website": "https://www.minervasrestaurants.com/", "address": "Sioux Falls, SD", "cuisineTags": ["American", "Steak"]}
+      ]
+    },
+    {
+      "city": "Fargo",
+      "stateCode": "ND",
+      "listings": [
+        {"title": "Mezzaluna", "website": "https://www.dinemezzaluna.com/", "address": "Fargo, ND", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Rosewild", "website": "https://jasperfargo.com/", "address": "Fargo, ND", "cuisineTags": ["American", "Seasonal"]},
+        {"title": "Rustica Eatery & Tavern", "website": "https://www.dinerustica.com/", "address": "Moorhead, MN", "cuisineTags": ["American", "European"]},
+        {"title": "701 Eateries", "website": "https://701eateries.com/", "address": "Fargo, ND", "cuisineTags": ["American", "Midwestern"]},
+        {"title": "Maxwell's Restaurant & Bar", "website": "https://www.maxwellsnd.com/", "address": "West Fargo, ND", "cuisineTags": ["American", "Steak"]},
+        {"title": "Porter Creek Hardwood Grill", "website": "https://portercreek.com/", "address": "Fargo, ND", "cuisineTags": ["American", "Live fire"]},
+        {"title": "Luna Fargo", "website": "https://lunafargo.com/", "address": "Fargo, ND", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "The Toasted Frog Fargo", "website": "https://www.thetoastedfrogfargopartdeux.com/", "address": "Fargo, ND", "cuisineTags": ["American", "Contemporary"]}
+      ]
+    },
+    {
+      "city": "Billings",
+      "stateCode": "MT",
+      "listings": [
+        {"title": "Walkers Grill", "website": "https://walkersgrill.com/", "address": "Billings, MT", "cuisineTags": ["American", "Farm-to-table"]},
+        {"title": "The Marble Table", "website": "https://themarbletablemt.com/", "address": "Billings, MT", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "TEN at Northern Hotel", "website": "https://nhten.com/", "address": "Billings, MT", "cuisineTags": ["American", "Fine dining"]},
+        {"title": "Jake's Downtown", "website": "https://www.jakesdt.com/", "address": "Billings, MT", "cuisineTags": ["Steak", "American"]},
+        {"title": "Last Chance Pub & Cider Mill", "website": "https://www.lastchancecider.com/", "address": "Billings, MT", "cuisineTags": ["American", "Pub"]},
+        {"title": "Bistro Enzo", "website": "https://bistroenzo.com/", "address": "Billings, MT", "cuisineTags": ["Mediterranean", "American"]},
+        {"title": "Montana's Rib & Chop House", "website": "https://ribandchophouse.com/billings-montana/", "address": "Billings, MT", "cuisineTags": ["Steak", "American"]},
+        {"title": "Stacked, A Montana Grill", "website": "https://stackedamontanagrill.com/", "address": "Billings, MT", "cuisineTags": ["American", "Contemporary"]}
+      ]
+    },
+    {
+      "city": "Cheyenne",
+      "stateCode": "WY",
+      "listings": [
+        {"title": "Wyoming's Rib & Chop House", "website": "https://ribandchophouse.com/cheyenne-wyoming/", "address": "Cheyenne, WY", "cuisineTags": ["Steak", "American"]},
+        {"title": "The Metropolitan Downtown", "website": "https://themetdowntown.com/", "address": "Cheyenne, WY", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Little Bear Inn", "website": "https://littlebearinn.com/", "address": "Cheyenne, WY", "cuisineTags": ["Steak", "American"]},
+        {"title": "Railspur", "website": "https://therailspur.com/", "address": "Cheyenne, WY", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "The Albany", "website": "https://www.albanycheyenne.com/", "address": "Cheyenne, WY", "cuisineTags": ["American"]},
+        {"title": "Napoli's", "website": "https://napolischeyenne.com/", "address": "Cheyenne, WY", "cuisineTags": ["Italian"]},
+        {"title": "2 Doors Down", "website": "http://www.2doorsdown.net/", "address": "Cheyenne, WY", "cuisineTags": ["American", "Burgers"]},
+        {"title": "Bella Fuoco Wood-fired Pizza", "website": "https://www.bellafuocopizza.com/", "address": "Cheyenne, WY", "cuisineTags": ["Italian", "Pizza"]}
+      ]
+    },
+    {
+      "city": "Anchorage",
+      "stateCode": "AK",
+      "listings": [
+        {"title": "Kincaid Grill", "website": "https://www.kincaidgrill.com/", "address": "Anchorage, AK", "cuisineTags": ["American", "Seafood"]},
+        {"title": "Simon & Seafort's", "website": "https://www.simonandseaforts.com/", "address": "Anchorage, AK", "cuisineTags": ["Seafood", "Steak"]},
+        {"title": "Altura Bistro", "website": "https://alturabistro.com/", "address": "Anchorage, AK", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Whisky & Ramen", "website": "https://www.whiskyandramen.com/", "address": "Anchorage, AK", "cuisineTags": ["Japanese", "Ramen"]},
+        {"title": "Kinley's Restaurant & Bar", "website": "https://www.kinleysrestaurant.com/", "address": "Anchorage, AK", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Jens' Restaurant", "website": "https://jensrestaurant.com/", "address": "Anchorage, AK", "cuisineTags": ["European", "Seafood"]},
+        {"title": "Ginger", "website": "https://www.gingeralaska.com/", "address": "Anchorage, AK", "cuisineTags": ["Pacific Rim", "Asian fusion"]},
+        {"title": "Crow's Nest", "website": "https://captaincook.com/dining/crows-nest/", "address": "Anchorage, AK", "cuisineTags": ["French", "American", "Fine dining"]}
+      ]
+    },
+    {
+      "city": "Honolulu",
+      "stateCode": "HI",
+      "listings": [
+        {"title": "Senia", "website": "https://www.restaurantsenia.com/", "address": "Honolulu, HI", "cuisineTags": ["Contemporary", "Tasting menu"]},
+        {"title": "Fête", "website": "https://www.fetehawaii.com/", "address": "Honolulu, HI", "cuisineTags": ["Hawaii Regional", "American"]},
+        {"title": "Hy's Steak House", "website": "https://hyswaikiki.com/", "address": "Honolulu, HI", "cuisineTags": ["Steak", "American"]},
+        {"title": "MW Restaurant", "website": "https://mwrestaurant.com/", "address": "Honolulu, HI", "cuisineTags": ["Hawaii Regional", "Contemporary"]},
+        {"title": "natuRe waikiki", "website": "https://www.naturewaikiki.com/", "address": "Honolulu, HI", "cuisineTags": ["French", "Hawaii Regional", "Tasting menu"]},
+        {"title": "MIRO Kaimuki", "website": "https://www.mirokaimuki.com/", "address": "Honolulu, HI", "cuisineTags": ["French", "Japanese", "Tasting menu"]},
+        {"title": "Merriman's Honolulu", "website": "https://www.merrimanshawaii.com/location/honolulu/", "address": "Honolulu, HI", "cuisineTags": ["Hawaii Regional", "Farm-to-table"]},
+        {"title": "The Pig & The Lady", "website": "https://thepigandthelady.com/", "address": "Honolulu, HI", "cuisineTags": ["Vietnamese", "Hawaii Regional"]}
+      ]
+    }
+  ]
+}

@@ -867,6 +867,14 @@ export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOption
   // Evidence depth rewards completeness, never invents it
   fit += (r.depthFilled / Math.max(1, r.depthTotal)) * 8;
   fit -= Math.min(6, r.unknownsCount) * 1.2;
+  if (opts.useEnrichment !== false) {
+    const ownedCompleteness = enrichmentJoin.getEnrichment(r.slug)?.meta?.completeness;
+    if (typeof ownedCompleteness === "number") {
+      fit += (ownedCompleteness / 100) * 6;
+      if (ownedCompleteness >= 70) reasons.push("owned-site file is ready");
+      else if (ownedCompleteness < 50) fit -= 4;
+    }
+  }
 
   const blocked = situationalCriticals.some((f) => f.impact >= 90);
 

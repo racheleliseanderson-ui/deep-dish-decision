@@ -3,7 +3,7 @@ import { ListingFace } from "@/components/rih/listing-face";
 import { DecisionBrief } from "@/components/rih/decision-brief";
 import { FindingsStack } from "@/components/rih/findings";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import { enrichmentAudit } from "@/lib/enrichment";
+import { enrichmentAudit, ownedSiteEvidence } from "@/lib/enrichment";
 import type { Scored, Situation } from "@/lib/intelligence";
 import { useState } from "react";
 
@@ -105,20 +105,96 @@ export function CaseFile({
           ) : null}
           {tab === "Findings" ? <FindingsStack findings={sc.findings} /> : null}
           {tab === "Evidence" ? (
-            <dl className="divide-y divide-border">
-              {rows.map(([label, value]) => (
-                <div key={label} className="grid gap-1 py-3 sm:grid-cols-[180px_1fr] sm:gap-6">
-                  <dt className="text-eyebrow pt-0.5">{label}</dt>
-                  <dd className="text-[13px] leading-relaxed text-muted-foreground">
-                    {!value || /^not stated/i.test(value) ? (
-                      <span className="text-unknown">Not stated — held open</span>
-                    ) : (
-                      value
-                    )}
-                  </dd>
-                </div>
-              ))}
-            </dl>
+            <div className="space-y-8">
+              {(() => {
+                const owned = ownedSiteEvidence(r.slug);
+                if (!owned.present) return null;
+                return (
+                  <section>
+                    <Eyebrow>From the restaurant's own pages</Eyebrow>
+                    <p className="mt-2 text-[12px] leading-relaxed text-subtle">
+                      Quoted language from {owned.pagesRead || "the"} owned page
+                      {owned.pagesRead === 1 ? "" : "s"}
+                      {owned.retrievedAt ? ` · read ${owned.retrievedAt.slice(0, 10)}` : ""}. Structured
+                      hours, telephone, price and cuisine count toward completeness. Schema and
+                      hydration quotes stay labeled and are not treated as confirmed policy.
+                    </p>
+                    {owned.menuUrl || owned.reservationUrl ? (
+                      <div className="mt-3 flex flex-wrap gap-1.5">
+                        {owned.menuUrl ? (
+                          <a
+                            href={owned.menuUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="tap rounded-full border border-border px-3 py-1 text-[11px] text-muted-foreground hover:border-gilt hover:text-foreground"
+                          >
+                            Menu path
+                          </a>
+                        ) : null}
+                        {owned.reservationUrl ? (
+                          <a
+                            href={owned.reservationUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="tap rounded-full border border-border px-3 py-1 text-[11px] text-muted-foreground hover:border-gilt hover:text-foreground"
+                          >
+                            {owned.reservationPlatform
+                              ? `Reserve · ${owned.reservationPlatform}`
+                              : "Reservation path"}
+                          </a>
+                        ) : null}
+                      </div>
+                    ) : null}
+                    <div className="mt-4 divide-y divide-border">
+                      {owned.groups.map((group) => (
+                        <div key={group.kind} className="py-3">
+                          <div className="flex flex-wrap items-baseline gap-2">
+                            <p className="text-eyebrow">{group.label}</p>
+                            <Chip tone={group.applied ? "verified" : "unknown"}>
+                              {group.applied ? "Counts toward completeness" : "Quoted, not applied as fact"}
+                            </Chip>
+                          </div>
+                          <ul className="mt-2 space-y-2">
+                            {group.quotes.map((q) => (
+                              <li key={q.quote} className="text-[13px] leading-relaxed text-muted-foreground">
+                                “{q.quote}”
+                                {q.sourceUrl ? (
+                                  <a
+                                    href={q.sourceUrl}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="mt-0.5 block text-[11px] text-subtle hover:text-foreground"
+                                  >
+                                    {q.sourceUrl.replace(/^https?:\/\//, "")}
+                                  </a>
+                                ) : null}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                );
+              })()}
+              <section>
+                <Eyebrow>Recorded fields</Eyebrow>
+                <dl className="mt-3 divide-y divide-border">
+                  {rows.map(([label, value]) => (
+                    <div key={label} className="grid gap-1 py-3 sm:grid-cols-[180px_1fr] sm:gap-6">
+                      <dt className="text-eyebrow pt-0.5">{label}</dt>
+                      <dd className="text-[13px] leading-relaxed text-muted-foreground">
+                        {!value || /^not stated/i.test(value) ? (
+                          <span className="text-unknown">Not stated — held open</span>
+                        ) : (
+                          value
+                        )}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            </div>
           ) : null}
           {tab === "Confirmation" ? (
             <div className="space-y-4 text-[13px] leading-relaxed text-muted-foreground">

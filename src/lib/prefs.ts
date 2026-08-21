@@ -13,6 +13,7 @@ export type Locale = "en";
 export const CONTRAST_KEY = "rih-contrast";
 export const LOCALE_KEY = "rih-locale";
 export const ENRICHMENT_KEY = "rih-enrichment-signals";
+export const HIDE_THIN_KEY = "rih-hide-thin-files";
 
 const EVENT = "rih-prefs";
 
@@ -98,6 +99,33 @@ export function useEnrichmentSignals() {
 
   const set = useCallback((next: boolean) => {
     store(ENRICHMENT_KEY, next ? "1" : "0");
+    setEnabled(next);
+  }, []);
+
+  return { enabled, set };
+}
+
+export function readHideThinEnabled(): boolean {
+  try {
+    return localStorage.getItem(HIDE_THIN_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+/** When on, ranked lists hide files below the 70% first-party completeness floor. */
+export function useHideThinFiles() {
+  const [enabled, setEnabled] = useState(false);
+
+  useEffect(() => {
+    const sync = () => setEnabled(readHideThinEnabled());
+    sync();
+    window.addEventListener(EVENT, sync);
+    return () => window.removeEventListener(EVENT, sync);
+  }, []);
+
+  const set = useCallback((next: boolean) => {
+    store(HIDE_THIN_KEY, next ? "1" : "0");
     setEnabled(next);
   }, []);
 

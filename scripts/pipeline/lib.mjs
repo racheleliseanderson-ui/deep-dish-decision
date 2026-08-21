@@ -219,10 +219,50 @@ export function metersBetween(a, b) {
 
 // ---------------------------------------------------------------- completeness
 
+const STRUCTURED_SITE_PATTERNS = {
+  telephone: /\b(?:JSON-LD|hydration)\s+telephone:/i,
+  hours: /\b(?:JSON-LD|hydration)\s+openingHours(?:Specification)?:/i,
+  price: /\b(?:JSON-LD|hydration)\s+priceRange:/i,
+  cuisine: /\b(?:JSON-LD|hydration)\s+servesCuisine:/i,
+};
+
+const STRUCTURED_SITE_FIELDS = {
+  telephone: "telephoneLanguage",
+  hours: "hoursLanguage",
+  price: "priceLanguage",
+  cuisine: "cuisineLanguage",
+};
+
+function siteQuoteText(value) {
+  if (typeof value === "string") return value;
+  if (value && typeof value === "object") return String(value.quote || "");
+  return "";
+}
+
+/**
+ * Backward-compatible first-party structured evidence detector.
+ * New enrichment writes typed arrays; older entries retain typed JSON-LD /
+ * hydration quote prefixes in jsonLdLanguage, so recomputing coverage can
+ * benefit existing evidence without a mandatory re-fetch.
+ */
+export function hasStructuredSiteEvidence(site, kind) {
+  if (!site || !STRUCTURED_SITE_PATTERNS[kind]) return false;
+  const field = STRUCTURED_SITE_FIELDS[kind];
+  if (field && Array.isArray(site[field]) && site[field].some((v) => siteQuoteText(v).trim())) {
+    return true;
+  }
+  return (site.jsonLdLanguage ?? []).some((value) =>
+    STRUCTURED_SITE_PATTERNS[kind].test(siteQuoteText(value)),
+  );
+}
+
 /**
  * Completeness against first-party record + owned site enrichment.
  * Google directory fields are no longer scored (GPI removed).
- * JSON-LD amenity / hours quotes do not count as access or hours fills.
+ * First-party structured telephone, hours, price range and cuisine count as
+ * evidence. Schema amenityFeature still never counts as a verified access
+ * route; accessibility requires explicit visible access language or a
+ * first-party dataset field.
  */
 export function completeness(record, enrichment) {
   const s = enrichment?.site;
@@ -233,12 +273,12 @@ export function completeness(record, enrichment) {
   };
   const checks = [
     stated(record.address),
-    stated(record.phone),
+    stated(record.phone) || hasStructuredSiteEvidence(s, "telephone"),
     stated(record.website),
     stated(record.coverageArea) || stated(record.city),
-    stated(record.cuisineContext) || !!(record.cuisineTags?.length),
-    stated(record.hoursSummary),
-    stated(record.priceDetails) || !!(record.priceTags?.length),
+    stated(record.cuisineContext) || !!(record.cuisineTags?.length) || hasStructuredSiteEvidence(s, "cuisine"),
+    stated(record.hoursSummary) || hasStructuredSiteEvidence(s, "hours"),
+    stated(record.priceDetails) || !!(record.priceTags?.length) || hasStructuredSiteEvidence(s, "price"),
     stated(record.reservationDetails) || stated(record.reservationUrl) || !!s?.reservationUrl,
     stated(record.menuUrl) || !!s?.menuUrl || stated(record.menuSummary),
     stated(record.dietaryDetails) || !!s?.dietaryLanguage?.length,

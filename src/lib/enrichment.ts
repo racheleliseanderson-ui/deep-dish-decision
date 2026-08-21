@@ -76,6 +76,10 @@ export type EnrichmentSite = {
   menuUrl?: string;
   reservationUrl?: string;
   reservationPlatform?: string;
+  telephoneLanguage?: SiteLanguage[];
+  hoursLanguage?: SiteLanguage[];
+  priceLanguage?: SiteLanguage[];
+  cuisineLanguage?: SiteLanguage[];
   dietaryLanguage?: SiteLanguage[];
   accessibilityLanguage?: SiteLanguage[];
   groupPolicy?: string;
@@ -450,6 +454,118 @@ export function buildEnrichmentFindings(
 }
 
 
+export type OwnedQuote = {
+  quote: string;
+  sourceUrl?: string;
+};
+
+export type OwnedQuoteGroup = {
+  label: string;
+  kind: string;
+  /** Structured first-party language vs page/schema quotes that are not applied as facts. */
+  applied: boolean;
+  quotes: OwnedQuote[];
+};
+
+function toOwnedQuotes(values: SiteLanguage[] | undefined): OwnedQuote[] {
+  if (!values?.length) return [];
+  const out: OwnedQuote[] = [];
+  const seen = new Set<string>();
+  for (const value of values) {
+    const quote = quoteText(value).trim();
+    if (!quote || seen.has(quote)) continue;
+    seen.add(quote);
+    const sourceUrl = typeof value === "object" ? value.sourceUrl : undefined;
+    out.push(sourceUrl ? { quote, sourceUrl } : { quote });
+  }
+  return out;
+}
+
+/**
+ * First-party website language already extracted onto the enrichment record.
+ * Surfaced on the case file as labeled quotes — never copied over dataset fields.
+ */
+export function ownedSiteEvidence(slug: string): {
+  present: boolean;
+  completeness: number | null;
+  matchStatus: string | null;
+  pagesRead: number;
+  retrievedAt: string | null;
+  menuUrl?: string;
+  reservationUrl?: string;
+  reservationPlatform?: string;
+  groups: OwnedQuoteGroup[];
+  sourceUrls: string[];
+} {
+  const enr = getEnrichment(slug);
+  const site = enr?.site;
+  if (!enr || !site) {
+    return {
+      present: false,
+      completeness: enr?.meta?.completeness ?? null,
+      matchStatus: enr?.meta?.matchStatus ?? null,
+      pagesRead: 0,
+      retrievedAt: enr?.meta?.lastEnrichedAt ?? null,
+      groups: [],
+      sourceUrls: [],
+    };
+  }
+
+  const groups: OwnedQuoteGroup[] = [];
+  const push = (
+    label: string,
+    kind: string,
+    values: SiteLanguage[] | undefined,
+    applied: boolean,
+    extra?: string[],
+  ) => {
+    const quotes = [
+      ...toOwnedQuotes(values),
+      ...(extra ?? [])
+        .map((quote) => quote.trim())
+        .filter(Boolean)
+        .map((quote) => ({ quote })),
+    ];
+    const seen = new Set<string>();
+    const unique = quotes.filter((q) => {
+      if (seen.has(q.quote)) return false;
+      seen.add(q.quote);
+      return true;
+    });
+    if (unique.length) groups.push({ label, kind, applied, quotes: unique.slice(0, 8) });
+  };
+
+  push("Hours language", "hours", site.hoursLanguage, true);
+  push("Telephone", "telephone", site.telephoneLanguage, true);
+  push("Price language", "price", site.priceLanguage, true);
+  push("Cuisine language", "cuisine", site.cuisineLanguage, true);
+  push("Dietary language", "dietary", site.dietaryLanguage, true);
+  push("Accessibility language", "access", site.accessibilityLanguage, true);
+  push(
+    "Group policy",
+    "group",
+    site.groupPolicyLanguage,
+    true,
+    site.groupPolicy ? [site.groupPolicy] : [],
+  );
+  push("Dress note", "dress", site.dressCode ? [site.dressCode] : [], true);
+  push("Cancellation language", "cancel", site.cancellationLanguage, true);
+  push("Page / schema quotes", "jsonld", site.jsonLdLanguage, false);
+
+  return {
+    present: groups.length > 0 || Boolean(site.menuUrl || site.reservationUrl || site.pagesRead),
+    completeness: enr.meta?.completeness ?? null,
+    matchStatus: enr.meta?.matchStatus ?? null,
+    pagesRead: site.pagesRead ?? 0,
+    retrievedAt: site.retrievedAt ?? enr.meta?.lastEnrichedAt ?? null,
+    ...(site.menuUrl ? { menuUrl: site.menuUrl } : {}),
+    ...(site.reservationUrl ? { reservationUrl: site.reservationUrl } : {}),
+    ...(site.reservationPlatform ? { reservationPlatform: site.reservationPlatform } : {}),
+    groups,
+    sourceUrls: site.sourceUrls ?? [],
+  };
+}
+
 /** Compact audit panel data for case files. */
 export function enrichmentAudit(slug: string): {
   present: boolean;
@@ -483,6 +599,9 @@ export function enrichmentAudit(slug: string): {
   if (g?.amenities?.outdoorSeating) signals.push("Google outdoor seating");
   if (g?.amenities?.goodForGroups) signals.push("Google goodForGroups");
   if (site?.reservationPlatform) signals.push(`Venue website platform ${site.reservationPlatform}`);
+  if (site?.hoursLanguage?.length) signals.push("Venue website hours language");
+  if (site?.telephoneLanguage?.length) signals.push("Venue website telephone");
+  if (site?.priceLanguage?.length) signals.push("Venue website price language");
   if (site?.dietaryLanguage?.length) signals.push("Venue website dietary language");
   if (site?.accessibilityLanguage?.length) signals.push("Venue website accessibility language");
   if (site?.groupPolicy || site?.groupPolicyLanguage?.length) signals.push("Venue website group policy");

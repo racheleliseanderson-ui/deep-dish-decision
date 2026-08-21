@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-08-20T14:10:43.160Z",
+  "branch": "data/hygiene-first-party-failures-16",
+  "sourceCommit": "71ea1a881ee149ec38d0caa08682edffda127aa4",
+  "passed": true,
+  "recovery": {
+    "total": 16,
+    "resolved": 12,
+    "failures": 4,
+    "missing": 0,
+    "datasetSourceCorrections": 1,
+    "unresolvedSlugs": [
+      "locale-farm-to-table-eatery-bakersfield",
+      "oak-park-des-moines",
+      "jens-restaurant-anchorage",
+      "comp-re-lapin-new-orleans"
+    ]
+  },
+  "coverageTotals": {
+    "records": 810,
+    "enriched": 810,
+    "resolved": 799,
+    "unresolved": 0,
+    "statesCovered": 51,
+    "statesTotal": 51,
+    "avgCompleteness": 61,
+    "withRating": 111,
+    "withPrice": 108,
+    "hygiene": 690,
+    "neverEnriched": 0,
+    "thin": 679,
+    "siteFailures": 1,
+    "reviewDue": 11,
+    "staleA": 0,
+    "staleB": 0,
+    "staleC": 0
+  },
+  "refreshTotals": {
+    "records": 810,
+    "hygiene": 690,
+    "neverEnriched": 0,
+    "thin": 679,
+    "siteFailures": 1,
+    "reviewDue": 11,
+    "staleA": 0,
+    "staleB": 0,
+    "staleC": 0,
+    "dueNow": 690
+  }
+}

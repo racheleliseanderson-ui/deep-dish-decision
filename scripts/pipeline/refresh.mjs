@@ -3,10 +3,11 @@
  *
  * Priority (highest first):
  *   1. never enriched
- *   2. site scrape failures (408/429/500) from run-log
- *   3. completeness under 70%
- *   4. first-party review overdue / due soon
- *   5. enrichment age past tier windows (A 30d / B 90d / C 120d)
+ *   2. current owned-site scrape / match failures
+ *   3. source-limited records with an operator platform but no owned domain
+ *   4. completeness under 70%
+ *   5. first-party review overdue / due soon
+ *   6. enrichment age past tier windows (A 30d / B 90d / C 120d)
  *
  * Usage:
  *   node scripts/pipeline/refresh.mjs              # write queue only
@@ -58,17 +59,34 @@ export const TIERS = {
   },
 };
 
-/** Collect last known site-failure notes per slug from the run log. */
+const HYGIENE_MATCH_STATUSES = new Set([
+  "site-failure",
+  "no-website",
+  "empty",
+  "unresolved",
+  "deferred",
+  "error",
+]);
+const SOURCE_LIMITED_MATCH_STATUS = "source-limited";
+
+/**
+ * Collect the latest owned-site failure state per slug from the run log.
+ *
+ * Runs are newest-first. The first owned enrichment observation for a slug is
+ * authoritative: a later success clears an older 408/429/5xx instead of letting
+ * historical failure notes leak back into the current hygiene queue.
+ */
 export function siteFailureMap(runLog) {
   const map = new Map();
+  const seen = new Set();
   for (const run of runLog?.runs ?? []) {
+    if (!/^(enrich|hygiene)-owned$/.test(String(run?.kind || ""))) continue;
     for (const r of run.records ?? []) {
+      if (!r?.slug || seen.has(r.slug)) continue;
+      seen.add(r.slug);
       const notes = (r.notes ?? []).map(String);
       const fail = notes.filter((n) => /site\s*(408|425|429|5\d\d)|408|429|500/i.test(n));
-      if (fail.length && r.slug) {
-        // keep the first (most recent run, since runs are newest-first)
-        if (!map.has(r.slug)) map.set(r.slug, fail);
-      }
+      if (fail.length) map.set(r.slug, fail);
     }
   }
   return map;
@@ -92,18 +110,26 @@ export function scoreRefreshItem({
   const age = ageDays(last, now);
   const matchStatus = meta.matchStatus ?? (entry ? "unknown" : "none");
 
-  // 1. Never enriched / listing shell
+  // 1. Never enriched / current owned-site match state requiring attention.
   if (!entry || matchStatus === "none") {
     priority += 1000;
     reasons.push("never-enriched");
-  } else if (matchStatus === "unresolved" || matchStatus === "deferred" || matchStatus === "error") {
+  } else if (HYGIENE_MATCH_STATUSES.has(matchStatus)) {
     priority += 900;
     reasons.push(`match-${matchStatus}`);
+  } else if (matchStatus === SOURCE_LIMITED_MATCH_STATUS) {
+    // A current operator-controlled platform source exists, but there is no
+    // owned domain to scrape. Keep it in hygiene, below actual transport/match
+    // failures, without hammering a non-existent website on every batch.
+    priority += 250;
+    reasons.push("source-limited");
   }
 
-  // 2. Site scrape failures
+  // 2. Current run-log site scrape failures. Avoid double-prioritizing when
+  // meta.matchStatus already carries the same site-failure state; retain the
+  // detailed reason text for diagnosis either way.
   if (siteFails?.length) {
-    priority += 500;
+    if (matchStatus !== "site-failure") priority += 500;
     reasons.push(`site-failure:${siteFails.join(",")}`);
   }
 
@@ -152,7 +178,7 @@ export function scoreRefreshItem({
   // Hygiene flag: anything that should run before geographic expansion
   const hygiene =
     reasons.some((r) =>
-      /^(never-enriched|match-|site-failure|thin-|review-overdue|review-due-soon)/.test(r),
+      /^(never-enriched|match-|source-limited|site-failure|thin-|review-overdue|review-due-soon)/.test(r),
     );
 
   return {
@@ -215,6 +241,7 @@ export function buildRefreshQueue({
   const neverEnriched = items.filter((i) => i.reasons.includes("never-enriched"));
   const thin = items.filter((i) => i.reasons.some((r) => r.startsWith("thin-")));
   const siteFail = items.filter((i) => i.reasons.some((r) => r.startsWith("site-failure")));
+  const sourceLimited = items.filter((i) => i.reasons.includes("source-limited"));
   const reviewDue = items.filter((i) =>
     i.reasons.some((r) => r === "review-overdue" || r === "review-due-soon"),
   );
@@ -238,6 +265,7 @@ export function buildRefreshQueue({
       neverEnriched: neverEnriched.length,
       thin: thin.length,
       siteFailures: siteFail.length,
+      sourceLimited: sourceLimited.length,
       reviewDue: reviewDue.length,
       staleA: staleA.length,
       staleB: staleB.length,
@@ -268,6 +296,7 @@ if (isMain) {
       `  never enriched      ${queue.totals.neverEnriched}`,
       `  thin <70%           ${queue.totals.thin}`,
       `  site failures       ${queue.totals.siteFailures}`,
+      `  source limited      ${queue.totals.sourceLimited}`,
       `  review due          ${queue.totals.reviewDue}`,
       `stale A (≥${queue.settings.tiers.A}d)      ${queue.totals.staleA}`,
       `stale B (≥${queue.settings.tiers.B}d)      ${queue.totals.staleB}`,
