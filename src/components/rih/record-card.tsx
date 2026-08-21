@@ -1,6 +1,7 @@
 import { Chip } from "@/components/rih/bits";
 import { FindingRow } from "@/components/rih/findings";
 import { ListingFace } from "@/components/rih/listing-face";
+import { isUnstated } from "@/lib/case-depth";
 import { enrichmentAudit, ownedSiteEvidence } from "@/lib/enrichment";
 import { conditionChips, scenarioChips } from "@/lib/scenario-chips";
 import type { Scored, Situation } from "@/lib/intelligence";
@@ -100,6 +101,9 @@ export function RecordCard({
                   <Chip tone="unknown">No owned-site read</Chip>
                 </p>
               )}
+              <p className="mt-1">
+                <Chip tone={r.isFullCaseFile ? "verified" : "watch"}>{r.depthLabel}</Chip>
+              </p>
             </div>
           </div>
 
@@ -125,7 +129,9 @@ export function RecordCard({
             </p>
           ) : null}
 
-          <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">{r.serviceSummary}</p>
+          <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
+            {isUnstated(r.serviceSummary) ? "Service format unstated on the restaurant's own pages." : r.serviceSummary}
+          </p>
 
           {r.nextAction ? (
             <p className="mt-3 rounded-lg border border-border bg-surface-sunken/40 px-3 py-2 text-[12px] leading-relaxed text-muted-foreground">

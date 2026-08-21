@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
+import { isUnstated } from "@/lib/case-depth";
 import { ownedSiteEvidence, quoteText } from "@/lib/enrichment";
+import { records } from "@/lib/dataset";
 
 describe("ownedSiteEvidence", () => {
   it("returns grouped first-party quotes for a recovered record", () => {
@@ -14,5 +16,24 @@ describe("ownedSiteEvidence", () => {
     const owned = ownedSiteEvidence("not-a-real-restaurant-slug");
     expect(owned.present).toBe(false);
     expect(owned.groups).toEqual([]);
+  });
+});
+
+describe("case-file floor", () => {
+  it("puts every record on a complete 12-field file", () => {
+    expect(records.length).toBeGreaterThan(800);
+    expect(records.every((r) => r.depthTotal === 12)).toBe(true);
+    expect(records.every((r) => r.depthFilled === 12)).toBe(true);
+    expect(records.every((r) => r.isFullCaseFile)).toBe(true);
+  });
+
+  it("keeps unstated language visible instead of inventing facts", () => {
+    const silent = records.find((r) => isUnstated(r.hoursSummary));
+    expect(silent).toBeTruthy();
+    expect(isUnstated(silent?.hoursSummary)).toBe(true);
+    const stated = records.find((r) => r.slug === "canlis");
+    expect(stated).toBeTruthy();
+    expect(isUnstated(stated?.hoursSummary)).toBe(false);
+    expect(stated?.hoursSummary).toMatch(/Tuesday through Saturday/);
   });
 });

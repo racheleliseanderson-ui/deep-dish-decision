@@ -1,6 +1,69 @@
 {
   "runs": [
     {
+      "kind": "level-records",
+      "startedAt": "2026-08-21T01:46:14.335Z",
+      "finishedAt": "2026-08-21T01:46:14.335Z",
+      "records": 836,
+      "promoted": 0,
+      "fullBefore": 836,
+      "fullAfter": 836,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 814,
+        "officialConflicts": 11,
+        "thinRecords": 448,
+        "avgUnknowns": 5.16,
+        "avgThinFields": 7.63,
+        "lastReviewAt": "2026-08-21",
+        "reachableAtLastReview": 194
+      }
+    },
+    {
+      "kind": "level-records",
+      "startedAt": "2026-08-21T01:45:07.858Z",
+      "finishedAt": "2026-08-21T01:45:07.858Z",
+      "records": 836,
+      "promoted": 0,
+      "fullBefore": 836,
+      "fullAfter": 836,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 814,
+        "officialConflicts": 11,
+        "thinRecords": 789,
+        "avgUnknowns": 5.16,
+        "avgThinFields": 7.63,
+        "lastReviewAt": "2026-08-21",
+        "reachableAtLastReview": 194
+      }
+    },
+    {
+      "kind": "level-records",
+      "startedAt": "2026-08-21T01:42:46.127Z",
+      "finishedAt": "2026-08-21T01:42:46.127Z",
+      "records": 836,
+      "promoted": 692,
+      "fullBefore": 41,
+      "fullAfter": 836,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 814,
+        "officialConflicts": 11,
+        "thinRecords": 786,
+        "avgUnknowns": 5.06,
+        "avgThinFields": 7.59,
+        "lastReviewAt": "2026-08-21",
+        "reachableAtLastReview": 194
+      }
+    },
+    {
       "kind": "enrich-owned",
       "startedAt": "2026-08-21T01:21:58.488Z",
       "finishedAt": "2026-08-21T01:22:57.993Z",
@@ -11867,130 +11930,6 @@
         },
         {
           "slug": "saffron-mediterranean-kitchen",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:33:02.215Z",
-      "finishedAt": "2026-08-10T21:34:33.422Z",
-      "batchSize": 10,
-      "cities": [
-        "Seattle, Washington",
-        "Portland, Oregon",
-        "Boise, Idaho",
-        "Bend, Oregon"
-      ],
-      "resolved": 10,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 86,
-      "corpusEnriched": 12,
-      "apiCalls": {
-        "google": 10,
-        "firecrawl": 27
-      },
-      "retries": 8,
-      "failures": 1,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-33-02-213Z-enrich",
-      "records": [
-        {
-          "slug": "nue",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "the-pink-door",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "tusk",
-          "matchStatus": "resolved",
-          "completeness": 96,
-          "notes": []
-        },
-        {
-          "slug": "le-pigeon",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "revel",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "ox",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "langbaan",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "kachka",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "kin",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        },
-        {
-          "slug": "ariana",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": [
-            "site 429"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:32:40.599Z",
-      "finishedAt": "2026-08-10T21:32:50.777Z",
-      "batchSize": 2,
-      "cities": [
-        "Seattle, Washington",
-        "Portland, Oregon"
-      ],
-      "resolved": 2,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 83,
-      "corpusEnriched": 2,
-      "apiCalls": {
-        "google": 2,
-        "firecrawl": 2
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-32-40-597Z-enrich",
-      "records": [
-        {
-          "slug": "canlis",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "kann",
           "matchStatus": "resolved",
           "completeness": 83,
           "notes": []

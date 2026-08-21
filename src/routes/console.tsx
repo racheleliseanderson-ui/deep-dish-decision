@@ -42,7 +42,21 @@ type LedgerFilter = "all" | "hygiene" | "stale" | "thin" | "site" | "review";
 
 function Console() {
   const { totals, states, distribution, records, recent, queue, runs, outsideUs, generatedAt, freshness } =
-    coverage as typeof coverage & {
+    coverage as Omit<typeof coverage, "queue"> & {
+      queue: {
+        paused: boolean;
+        restaurantsPerRun: number;
+        citiesPerRun: number;
+        dailyCap: number;
+        pending: number;
+        done: number;
+        next: Array<{
+          city: string;
+          stateCode: string;
+          priority: number;
+          tier: string;
+        }>;
+      };
       freshness?: {
         tiers: { A: number; B: number; C: number };
         preferRefreshOverDiscover: boolean;
@@ -142,18 +156,17 @@ function Console() {
             <span className="text-primary">how far the corpus reaches.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-            Counted at {dt(generatedAt)} UTC from the enrichment ledger on disk. Completeness is a
-            24-check score over address, hours, contact, booking path, price, rating, amenities,
-            policy language and provenance — a low score means fields are unstated, not wrong.
-            Labeled enrichment signals now join findings on the instrument when first-party fields
-            are thin (toggle off under reading controls for pure first-party).
+            Counted at {dt(generatedAt)} UTC from the owned-site enrichment ledger. Completeness is
+            an 18-check score over address, hours, contact, booking path, price, policy language and
+            provenance — a low score means fields are unstated, not wrong. Every record now uses the
+            same 12-field case file; unstated fields stay visible.
           </p>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <Stat
               label="Records"
               value={totals.records}
-              note={`${totals.enriched} carry third-party enrichment`}
+              note={`${totals.enriched} carry owned-site enrichment`}
             />
             <Stat
               label="Mean completeness"
@@ -188,9 +201,9 @@ function Console() {
             <div className="min-w-0 max-w-2xl">
               <Eyebrow>Refresh & hygiene · operate without the run-log</Eyebrow>
               <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
-                Refresh competes ahead of discovery under the daily cap. Hygiene covers
-                never-enriched shells, completeness under 70%, site scrape failures, and first-party
-                review windows. Calendar tiers: A {freshness?.tiers.A ?? 30}d (hours/price), B{" "}
+                Refresh competes ahead of discovery under the daily cap. After the leveling pass,
+                hygiene is the leftover unread pages: site failures, source-limited listings, and
+                first-party review windows. Calendar tiers: A {freshness?.tiers.A ?? 30}d (hours/price), B{" "}
                 {freshness?.tiers.B ?? 90}d (identity), C {freshness?.tiers.C ?? 120}d (policy scrape).
               </p>
             </div>

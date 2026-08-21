@@ -3,8 +3,8 @@ import { topOccasion } from "@/lib/intelligence";
 
 /**
  * Derived corpus intelligence. Nothing here invents evidence — every number is
- * counted or averaged from fields already recorded on the 41 first-party
- * records. Where a field is unstated it is counted as unstated, never inferred.
+ * counted or averaged from fields already recorded on the case files. Where a
+ * field is unstated it is counted as unstated, never inferred.
  */
 
 export type Facet = {
