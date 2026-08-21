@@ -1,6 +1,7 @@
 import { Chip } from "@/components/rih/bits";
 import { FindingRow } from "@/components/rih/findings";
 import { ListingFace } from "@/components/rih/listing-face";
+import { enrichmentAudit, ownedSiteEvidence } from "@/lib/enrichment";
 import { conditionChips, scenarioChips } from "@/lib/scenario-chips";
 import type { Scored, Situation } from "@/lib/intelligence";
 import { useShortlist } from "@/lib/shortlist";
@@ -28,6 +29,18 @@ export function RecordCard({
   const lead = sc.findings.slice(0, open ? sc.findings.length : 2);
   const sitChips = scenarioChips(situation);
   const condChips = conditionChips(r, situation, sc.blocked);
+  const audit = enrichmentAudit(r.slug);
+  const owned = ownedSiteEvidence(r.slug);
+  const quoteCount = owned.groups.reduce((n, g) => n + g.quotes.length, 0);
+  const completeness = audit.completeness;
+  const completenessTone =
+    completeness == null
+      ? "unknown"
+      : completeness >= 70
+        ? "verified"
+        : completeness >= 50
+          ? "watch"
+          : "unknown";
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -75,6 +88,18 @@ export function RecordCard({
                   {situation.occasion} fit <span className="text-num">{sc.occasionScore}</span>
                 </p>
               ) : null}
+              {completeness != null ? (
+                <p className="mt-1">
+                  <Chip tone={completenessTone}>
+                    First-party {completeness}%
+                    {quoteCount ? ` · ${quoteCount} quote${quoteCount === 1 ? "" : "s"}` : ""}
+                  </Chip>
+                </p>
+              ) : (
+                <p className="mt-1">
+                  <Chip tone="unknown">No owned-site read</Chip>
+                </p>
+              )}
             </div>
           </div>
 

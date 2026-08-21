@@ -47,6 +47,16 @@ function groupBy(key: (r: RestaurantRecord) => string[]): Facet[] {
 
 export const byRegionGroup = groupBy((r) => [r.regionGroup || r.region]);
 export const byStateProvince = groupBy((r) => [r.stateProvince || "Unstated"]);
+export const byCity = groupBy((r) => {
+  const city = (r.city || "").trim();
+  const state = (r.stateProvince || "").trim();
+  if (!city) return ["Unstated city"];
+  return [state ? `${city}, ${state}` : city];
+});
+export const thinnestMetros = [...byCity].sort(
+  (a, b) => a.count - b.count || a.label.localeCompare(b.label),
+);
+export const densestMetros = byCity;
 export const byCuisine = groupBy((r) => r.cuisineTags);
 export const byBookingPath = groupBy((r) => r.bookingPlatforms);
 export const bySpendBand = groupBy((r) => r.spendBands ?? []);

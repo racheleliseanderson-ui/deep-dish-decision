@@ -15,11 +15,13 @@ import {
   byStrongestOccasion,
   conflictRecords,
   corpus,
+  densestMetros,
   depthLeaders,
   dueSoonRecords,
   gapMap,
   overdueRecords,
   thinnest,
+  thinnestMetros,
   unreachable,
   type Facet,
 } from "@/lib/atlas";
@@ -222,6 +224,37 @@ function Atlas() {
               rows={byStateProvince}
               limit={12}
               tone="watch"
+            />
+          </div>
+        </Reveal>
+
+        <Reveal as="section" className="mt-14">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <Eyebrow>Metro density</Eyebrow>
+              <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+                Covered is not the same as useful.
+              </h2>
+            </div>
+            <p className="max-w-md text-[12px] leading-relaxed text-subtle">
+              State-floor coverage can read as complete while a large metro still has too few
+              records to plan a night. Density is counted from named cities on the record.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-10 lg:grid-cols-2">
+            <FacetTable
+              title="Thinnest metros"
+              note="Fewest records. These are the first density-batch targets."
+              rows={thinnestMetros}
+              limit={12}
+              tone="unknown"
+            />
+            <FacetTable
+              title="Densest metros"
+              note="Where the instrument can actually compare rooms."
+              rows={densestMetros}
+              limit={12}
+              tone="verified"
             />
           </div>
         </Reveal>

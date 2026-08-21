@@ -20,7 +20,8 @@ import {
   SITUATION_SLOTS,
   type Situation,
 } from "@/lib/intelligence";
-import { useEnrichmentSignals } from "@/lib/prefs";
+import { useEnrichmentSignals, useHideThinFiles } from "@/lib/prefs";
+import { getEnrichment } from "@/lib/enrichment";
 import { decodeSituation, encodeSituation } from "@/lib/situation-url";
 import { createFileRoute, useRouterState } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
@@ -60,15 +61,20 @@ function Hub() {
   const [compareOpen, setCompareOpen] = useState(false);
   const [limit, setLimit] = useState(8);
   const enrichment = useEnrichmentSignals();
+  const hideThin = useHideThinFiles();
   const scoreOpts = useMemo(
     () => ({ useEnrichment: enrichment.enabled }),
     [enrichment.enabled],
   );
 
-  const ranked = useMemo(
-    () => rank(filterRecords(records, situation), situation, scoreOpts),
-    [situation, scoreOpts],
-  );
+  const ranked = useMemo(() => {
+    const filtered = filterRecords(records, situation).filter((r) => {
+      if (!hideThin.enabled) return true;
+      const completeness = getEnrichment(r.slug)?.meta?.completeness ?? 0;
+      return completeness >= 70;
+    });
+    return rank(filtered, situation, scoreOpts);
+  }, [situation, scoreOpts, hideThin.enabled]);
   const depth = situationDepth(situation);
   const depthPct = Math.round((depth / SITUATION_SLOTS) * 100);
   const lead = ranked[0] ?? null;
@@ -284,11 +290,25 @@ function Hub() {
               </div>
               <GiltRule className="mt-3 max-w-xl" />
               <p className="mt-4 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
-                Order is a function of situation fit, confirm burden and time pressure. Records
-                blocked on a stated constraint are demoted to the end rather than removed, so you
-                can see what was excluded and why. Refine the console above — the list reorders live.
+                Order is a function of situation fit, confirm burden, first-party completeness and
+                time pressure. Records blocked on a stated constraint are demoted to the end rather
+                than removed, so you can see what was excluded and why. Refine the console above —
+                the list reorders live.
               </p>
             </div>
+            <button
+              type="button"
+              onClick={() => hideThin.set(!hideThin.enabled)}
+              aria-pressed={hideThin.enabled}
+              className={
+                "tap shrink-0 rounded-full border px-4 py-2 text-xs transition-colors " +
+                (hideThin.enabled
+                  ? "border-primary/50 bg-primary/12 text-primary"
+                  : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground")
+              }
+            >
+              {hideThin.enabled ? "Showing ready files (≥70%)" : "Hide thin files"}
+            </button>
           </div>
 
           {ranked.length > 0 && depth < 3 ? (
