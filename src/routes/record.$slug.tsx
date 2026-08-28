@@ -3,6 +3,7 @@ import { DecisionBrief } from "@/components/rih/decision-brief";
 import { FindingsStack } from "@/components/rih/findings";
 import { Reveal } from "@/components/rih/reveal";
 import { SiteNav } from "@/components/rih/site-nav";
+import { fieldDisplay, isUnstated } from "@/lib/case-depth";
 import { bySlug, type RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
 import { useEnrichmentSignals } from "@/lib/prefs";
@@ -58,17 +59,17 @@ function RecordNotFound() {
 }
 
 function EvidenceRow({ label, value }: { label: string; value: string }) {
-  const thin = !value || /^not stated/i.test(value);
+  const display = fieldDisplay(value);
   return (
     <div className="grid gap-1 py-3.5 sm:grid-cols-[190px_1fr] sm:gap-6">
       <dt className="text-eyebrow pt-0.5">{label}</dt>
       <dd
         className={cn(
           "text-[13px] leading-relaxed",
-          thin ? "text-unknown" : "text-muted-foreground",
+          display.unstated ? "text-unknown" : "text-muted-foreground",
         )}
       >
-        {thin ? "Not stated — held open" : value}
+        {display.text}
       </dd>
     </div>
   );
@@ -95,7 +96,11 @@ function Dossier() {
             {record.title}
           </h1>
           <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-            {record.cuisineContext}
+            {isUnstated(record.cuisineContext)
+              ? [record.region, record.serviceSummary && !isUnstated(record.serviceSummary) ? record.serviceSummary : null]
+                  .filter(Boolean)
+                  .join(" · ") || "First-party case file — unstated fields held open."
+              : record.cuisineContext}
           </p>
           <div className="mt-6 flex flex-wrap gap-1.5">
             <Chip tone="accent">{record.region}</Chip>

@@ -1,8 +1,9 @@
-import { Chip, Eyebrow, Rule } from "@/components/rih/bits";
+import { Chip, Eyebrow } from "@/components/rih/bits";
 import { ListingFace } from "@/components/rih/listing-face";
 import { DecisionBrief } from "@/components/rih/decision-brief";
 import { FindingsStack } from "@/components/rih/findings";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { CASE_FIELDS, fieldDisplay, isUnstated } from "@/lib/case-depth";
 import { enrichmentAudit, ownedSiteEvidence } from "@/lib/enrichment";
 import type { Scored, Situation } from "@/lib/intelligence";
 import { useState } from "react";
@@ -24,23 +25,7 @@ export function CaseFile({
   const [tab, setTab] = useState<Tab>("Brief");
   if (!sc) return null;
   const r = sc.record;
-
-  const rows: [string, string][] = [
-    ["Service", r.serviceSummary],
-    ["Hours", r.hoursSummary],
-    ["Reservations", r.reservationDetails],
-    ["Price", r.priceDetails],
-    ["Menu", r.menuSummary],
-    ["Beverage", r.beverageDetails],
-    ["Dietary", r.dietaryDetails],
-    ["Access", r.accessibilityState],
-    ["Parking / transit", r.parkingTransit],
-    ["Dress", r.dressCode],
-    ["Group", r.groupDetails],
-    ["Atmosphere", r.atmosphereSummary],
-    ["Meal length", r.typicalMealLength],
-    ["Practical", r.practicalNotes],
-  ];
+  const statedCount = CASE_FIELDS.filter((f) => !isUnstated(String(r[f.key] ?? ""))).length;
 
   return (
     <Dialog open={!!sc} onOpenChange={(v) => !v && onClose()}>
@@ -65,7 +50,10 @@ export function CaseFile({
                 </Chip>
                 {r.hasOfficialConflict ? <Chip tone="critical">Official conflict</Chip> : null}
                 <Chip tone="unknown">{r.unknownsCount} unknowns</Chip>
-                <Chip>{r.depthLabel}</Chip>
+                <Chip tone={r.isFullCaseFile ? "verified" : "watch"}>{r.depthLabel}</Chip>
+                <Chip tone={statedCount >= 8 ? "verified" : "watch"}>
+                  {statedCount}/{CASE_FIELDS.length} stated
+                </Chip>
                 <Chip>Reviewed {r.reviewedAt}</Chip>
                 {(() => {
                   const audit = enrichmentAudit(r.slug);
@@ -115,9 +103,10 @@ export function CaseFile({
                     <p className="mt-2 text-[12px] leading-relaxed text-subtle">
                       Quoted language from {owned.pagesRead || "the"} owned page
                       {owned.pagesRead === 1 ? "" : "s"}
-                      {owned.retrievedAt ? ` · read ${owned.retrievedAt.slice(0, 10)}` : ""}. Structured
-                      hours, telephone, price and cuisine count toward completeness. Schema and
-                      hydration quotes stay labeled and are not treated as confirmed policy.
+                      {owned.retrievedAt ? ` · read ${owned.retrievedAt.slice(0, 10)}` : ""}. Hours,
+                      telephone, price, cuisine, menu and reservation paths are written onto the
+                      case file when those pages state them. Remaining fields stay unstated on
+                      the same floor as every other record.
                     </p>
                     {owned.menuUrl || owned.reservationUrl ? (
                       <div className="mt-3 flex flex-wrap gap-1.5">
@@ -151,7 +140,7 @@ export function CaseFile({
                           <div className="flex flex-wrap items-baseline gap-2">
                             <p className="text-eyebrow">{group.label}</p>
                             <Chip tone={group.applied ? "verified" : "unknown"}>
-                              {group.applied ? "Counts toward completeness" : "Quoted, not applied as fact"}
+                              {group.applied ? "Written onto the case file" : "Quoted, not applied as fact"}
                             </Chip>
                           </div>
                           <ul className="mt-2 space-y-2">
@@ -179,19 +168,33 @@ export function CaseFile({
               })()}
               <section>
                 <Eyebrow>Recorded fields</Eyebrow>
+                <p className="mt-2 text-[12px] leading-relaxed text-subtle">
+                  Every record uses this same field set. Unstated means the restaurant's own
+                  pages were silent — not that the instrument guessed.
+                </p>
                 <dl className="mt-3 divide-y divide-border">
-                  {rows.map(([label, value]) => (
-                    <div key={label} className="grid gap-1 py-3 sm:grid-cols-[180px_1fr] sm:gap-6">
-                      <dt className="text-eyebrow pt-0.5">{label}</dt>
-                      <dd className="text-[13px] leading-relaxed text-muted-foreground">
-                        {!value || /^not stated/i.test(value) ? (
-                          <span className="text-unknown">Not stated — held open</span>
-                        ) : (
-                          value
-                        )}
-                      </dd>
-                    </div>
-                  ))}
+                  {CASE_FIELDS.map((field) => {
+                    const display = fieldDisplay(String(r[field.key] ?? ""));
+                    return (
+                      <div key={field.label} className="grid gap-1 py-3 sm:grid-cols-[180px_1fr] sm:gap-6">
+                        <dt className="text-eyebrow pt-0.5 flex flex-wrap items-center gap-2">
+                          {field.label}
+                          <Chip tone={display.unstated ? "unknown" : "verified"} className="font-normal">
+                            {display.unstated ? "Unstated" : "Stated"}
+                          </Chip>
+                        </dt>
+                        <dd
+                          className={
+                            display.unstated
+                              ? "text-[13px] leading-relaxed text-unknown"
+                              : "text-[13px] leading-relaxed text-muted-foreground"
+                          }
+                        >
+                          {display.text}
+                        </dd>
+                      </div>
+                    );
+                  })}
                 </dl>
               </section>
             </div>

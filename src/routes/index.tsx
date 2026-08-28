@@ -88,10 +88,12 @@ function Hub() {
   const tickerItems = useMemo(
     () => [
       `${dataset.count} records under review`,
+      `${dataset.records.filter((r) => r.isFullCaseFile).length} complete case files`,
       `${dataset.regions} regions`,
       `${OPS.officialConflicts} official conflicts open`,
       `${OPS.avgUnknowns} mean unknowns per record`,
       `${OPS.overdue} reviews overdue`,
+      "same 12-field floor on every record",
       "no sentiment scores",
       "fail-closed on stated constraints",
     ],
@@ -144,7 +146,7 @@ function Hub() {
           </p>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <Stat label="Records under review" value={dataset.count} note={`${dataset.regions} regions`} />
+            <Stat label="Records under review" value={dataset.count} note={`${dataset.regions} regions · same 12-field floor`} />
             <Stat
               label="Official conflicts open"
               value={OPS.officialConflicts}
@@ -307,7 +309,7 @@ function Hub() {
                   : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground")
               }
             >
-              {hideThin.enabled ? "Showing ready files (≥70%)" : "Hide thin files"}
+              {hideThin.enabled ? "Showing ready files (≥70%)" : "Hide files under 70%"}
             </button>
           </div>
 
@@ -410,10 +412,12 @@ function Hub() {
             <dl className="mt-4 divide-y divide-border text-[13px]">
               {[
                 ["Records", String(dataset.count)],
+                ["Complete case files", String(dataset.records.filter((row) => row.isFullCaseFile).length)],
                 ["Regions covered", String(dataset.regions)],
-                ["Thin records", String(OPS.thinRecords)],
-                ["Average thin fields", String(OPS.avgThinFields)],
-                ["Reachable at last review", String(OPS.reachableAtLastReview)],
+                ["Still listing-only", String(dataset.records.filter((row) => row.reviewStatus === "listing_only").length)],
+                ["Open policy gaps", String(OPS.thinRecords)],
+                ["Average unstated fields", String(OPS.avgThinFields)],
+                ["Reachable by phone", String(OPS.reachableAtLastReview)],
                 ["Last review pass", OPS.lastReviewAt],
                 ["Corpus generated", dataset.generatedAt],
               ].map(([k, v]) => (
