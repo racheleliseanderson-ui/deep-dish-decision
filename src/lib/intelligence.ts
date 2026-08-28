@@ -1,0 +1,875 @@
+import { restaurants } from "../data/restaurants.ts";
+import {
+  COMMITMENT_LEVELS,
+  PLANNING_LEVELS,
+  emptySituation,
+  type Brief,
+  type Constraint,
+  type Finding,
+  type FindingLayer,
+  type Occasion,
+  type RestaurantRecord,
+  type Scored,
+  type Situation,
+} from "./types.ts";
+import { addDaysIso } from "./utils.ts";
+
+export { emptySituation };
+export const SITUATION_SLOTS = 9;
+
+export function situationDepth(s: Situation): number {
+  let d = 0;
+  if (s.occasion) d += 2;
+  if (s.constraints.length) d += 2;
+  if (s.partySize !== null) d += 1;
+  if (s.leadDays !== null || s.nightDate) d += 1;
+  if (s.maxCommitment) d += 1;
+  if (s.maxPlanningLoad) d += 1;
+  if (s.daypart) d += 1;
+  if (s.spendBand) d += 1;
+  if (s.regionGroup ?? s.region) d += 1;
+  return Math.min(SITUATION_SLOTS, d);
+}
+
+export function resolvedNightDate(s: Situation): string | null {
+  if (s.nightDate) return s.nightDate;
+  if (s.leadDays !== null) return addDaysIso(s.leadDays);
+  return null;
+}
+
+type Profile = {
+  groupFit?: string[];
+  cuisine?: string[];
+  service?: string[];
+  energy?: string[];
+  noise?: string[];
+  pacing?: string[];
+  commitment?: string[];
+  party?: string[];
+  formality?: string[];
+  daypart?: string[];
+  wine?: string[];
+  privacy?: string[];
+  booking?: string[];
+  avoidEnergy?: string[];
+  avoidCommitment?: string[];
+  keywords?: string[];
+};
+
+const PROFILES: Record<Occasion, Profile> = {
+  "Date night": {
+    groupFit: ["Date night", "Counter dining", "Small group"],
+    energy: ["Calm", "Balanced"],
+    noise: ["Conversation-first"],
+    pacing: ["Leisurely", "Long-form"],
+    formality: ["Elevated", "Smart casual default"],
+    party: ["Small table", "Flexible party"],
+    keywords: ["date", "intimate", "counter"],
+  },
+  "Business dining": {
+    groupFit: ["Business dining", "Private dining", "Small group"],
+    energy: ["Calm", "Balanced"],
+    noise: ["Conversation-first"],
+    formality: ["Elevated", "Structured service", "Smart casual default"],
+    pacing: ["Leisurely", "Quick"],
+    privacy: ["Private-ready", "Some capacity", "Event / buyout"],
+    keywords: ["business", "steak", "private"],
+  },
+  Celebration: {
+    groupFit: ["Celebration", "Special occasion", "Special event", "Private dining"],
+    formality: ["Elevated", "High formality / format lock", "Structured service"],
+    commitment: ["High", "Structured", "Immersive"],
+    pacing: ["Long-form", "Immersive", "Leisurely"],
+    wine: ["Cellar / pairing", "Deep program"],
+    keywords: ["celebration", "anniversary", "special"],
+  },
+  "Group dining": {
+    groupFit: ["Group dining", "Large group", "Flexible group", "Family dining", "Family style"],
+    party: ["Group-ready", "Large-group ready", "Flexible party"],
+    service: ["Family style", "Communal dining", "Small plates"],
+    energy: ["Lively", "Balanced"],
+    keywords: ["group", "shared", "family"],
+  },
+  "Walk-in / spontaneous": {
+    booking: ["Easy"],
+    service: ["Walk-ins", "Bar", "Bar dining", "Happy hour", "Casual dining"],
+    commitment: ["Light", "Moderate"],
+    avoidCommitment: ["Immersive", "Structured"],
+    keywords: ["walk-in", "open seating", "bar"],
+  },
+  "Tasting / immersive": {
+    commitment: ["Immersive", "Structured"],
+    pacing: ["Immersive", "Long-form"],
+    service: ["Tasting menu", "Chef menu", "Chef table", "Prix fixe", "Chef-driven", "Counter dining"],
+    formality: ["High formality / format lock", "Structured service", "Elevated"],
+    keywords: ["tasting", "course", "chef"],
+  },
+  "Wine-forward evening": {
+    wine: ["Cellar / pairing", "Deep program", "Solid list"],
+    cuisine: ["Wine-forward", "Fine dining"],
+    service: ["Wine dinners", "Seasonal"],
+    pacing: ["Leisurely", "Long-form"],
+    keywords: ["wine", "cellar", "sommelier", "pairing"],
+  },
+  "Visitor / one-night-in-town": {
+    groupFit: ["Visitor dining", "Special occasion", "Celebration"],
+    energy: ["Lively", "Balanced"],
+    keywords: ["visitor", "iconic", "view", "waterfront", "destination", "station"],
+  },
+  "Access-sensitive visit": {
+    keywords: ["accessible", "step-free", "elevator", "ground floor"],
+  },
+  "Dietary-sensitive visit": {
+    cuisine: ["Plant-forward"],
+    keywords: ["gluten", "vegan", "vegetarian", "allergen", "celiac"],
+  },
+  "Solo dining": {
+    service: ["Bar", "Bar dining", "Counter dining", "Oyster bar", "Lounge"],
+    party: ["Small table", "Flexible party"],
+    commitment: ["Light", "Moderate"],
+    keywords: ["counter", "bar seat", "solo"],
+  },
+  "Brunch / daytime": {
+    service: ["Brunch", "Breakfast", "Lunch", "Patio", "Outdoor dining"],
+    daypart: ["Brunch/breakfast language", "Lunch language"],
+    commitment: ["Light", "Moderate"],
+    keywords: ["brunch", "breakfast", "daytime", "lunch"],
+  },
+  "Late seating / bar-led": {
+    service: ["Late night", "Bar", "Cocktail bar", "Lounge", "Happy hour"],
+    daypart: ["Late/bar language"],
+    energy: ["Lively", "High-energy"],
+    keywords: ["late", "cocktail", "bar"],
+  },
+  "Local / low-stakes weeknight": {
+    commitment: ["Light", "Moderate"],
+    booking: ["Easy", "Plan ahead"],
+    energy: ["Balanced", "Calm", "Lively"],
+    avoidCommitment: ["Immersive", "Structured"],
+    keywords: ["neighborhood", "casual", "weeknight"],
+  },
+};
+
+function hits(list: string[] | undefined, pool: string[] | undefined): number {
+  if (!list?.length || !pool?.length) return 0;
+  return list.filter((v) => pool.includes(v)).length;
+}
+
+const clamp = (n: number, a: number, b: number) => Math.max(a, Math.min(b, n));
+const levelIndex = (list: readonly string[], v: string | undefined) => (v ? list.indexOf(v) : -1);
+
+export function occasionScore(r: RestaurantRecord, occasion: Occasion): number {
+  const p = PROFILES[occasion];
+  let score = 30;
+  score += Math.min(3, hits(p.groupFit, r.groupFitTags)) * 9;
+  score += Math.min(2, hits(p.cuisine, r.cuisineTags)) * 7;
+  score += Math.min(3, hits(p.service, r.serviceStyles)) * 5;
+  if (p.energy?.includes(r.signals.energy ?? "")) score += 7;
+  if (p.noise?.includes(r.noiseBand ?? "")) score += 7;
+  if (p.pacing?.includes(r.signals.pacing ?? "")) score += 6;
+  if (p.commitment?.includes(r.signals.commitment ?? "")) score += 7;
+  if (p.party?.includes(r.signals.party ?? "")) score += 5;
+  if (p.formality?.includes(r.formalityBand ?? "")) score += 6;
+  if (p.wine?.includes(r.signals.wine ?? "")) score += 8;
+  if (p.privacy?.includes(r.signals.private ?? "")) score += 5;
+  if (p.booking?.includes(r.signals.booking ?? "")) score += 6;
+  if (p.daypart?.some((d) => r.daypartTags?.includes(d))) score += 8;
+  if (p.avoidEnergy?.includes(r.signals.energy ?? "")) score -= 10;
+  if (p.avoidCommitment?.includes(r.signals.commitment ?? "")) score -= 12;
+  const hay = r.searchText;
+  const kw = (p.keywords ?? []).filter((k) => hay.includes(k)).length;
+  score += Math.min(3, kw) * 4;
+  return clamp(Math.round(score), 0, 100);
+}
+
+export function topOccasion(r: RestaurantRecord): { occasion: Occasion; score: number } {
+  let best: { occasion: Occasion; score: number } = { occasion: "Date night", score: -1 };
+  for (const o of Object.keys(PROFILES) as Occasion[]) {
+    const s = occasionScore(r, o);
+    if (s > best.score) best = { occasion: o, score: s };
+  }
+  return best;
+}
+
+const NOT_STATED = ["Not stated", "Direct confirmation required", "Route details unknown"];
+
+function isThin(value: string | undefined): boolean {
+  if (!value) return true;
+  const v = value.toLowerCase();
+  return v.length < 40 || v.includes("not stated") || v.includes("not published") || v.includes("were not");
+}
+
+function capitalize(s: string) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
+  const f: Finding[] = [];
+  const c = (x: Constraint) => s.constraints.includes(x);
+  const push = (x: Finding) => f.push(x);
+
+  const accessThin =
+    r.accessibilityTags.some((t) => NOT_STATED.includes(t) || t.includes("unknown")) ||
+    isThin(r.accessibilityState);
+  const stairs = r.accessibilityTags.some((t) =>
+    ["Stairs required", "Stairs stated", "No elevator", "Uneven terrain"].includes(t),
+  );
+
+  if (c("Mobility / step-free needs")) {
+    if (stairs) {
+      push({
+        id: "access-stairs",
+        layer: "critical",
+        domain: "access",
+        title: "First-party pages state stairs or uneven terrain",
+        detail: r.accessibilityState || r.accessibilityTags.join(" · "),
+        action:
+          "Fail closed: call and confirm a step-free route, restroom access, and which entrance to use before committing this guest.",
+        impact: 98,
+        confidence: "high",
+        situational: true,
+      });
+    } else if (accessThin) {
+      push({
+        id: "access-unstated",
+        layer: "critical",
+        domain: "access",
+        title: "Access route not stated on first-party sources",
+        detail:
+          r.accessibilityState ||
+          "No first-party statement of entrance, route, or restroom configuration was recorded.",
+        action:
+          "Treat as unverified. Confirm entrance, interior route, table height and restroom access live — do not infer from a directory listing.",
+        impact: 92,
+        confidence: "high",
+        situational: true,
+      });
+    } else {
+      push({
+        id: "access-stated",
+        layer: "watch",
+        domain: "access",
+        title: "First-party accessibility statement on record",
+        detail: r.accessibilityState,
+        action: "Still confirm restroom and table configuration for the exact seating you book.",
+        impact: 52,
+        confidence: "moderate",
+        situational: true,
+      });
+    }
+  } else if (accessThin) {
+    push({
+      id: "access-thin",
+      layer: "unknown",
+      domain: "access",
+      title: "Access honesty marker: route unstated",
+      detail: r.accessibilityState || "Physical-access details were not published first-party.",
+      action: "Ask only if a guest needs it; the record does not claim accessibility either way.",
+      impact: 24,
+      confidence: "high",
+      situational: false,
+    });
+  }
+
+  const dietaryHardNo = r.dietaryTags.some((t) =>
+    ["No allergy guarantee", "Restrictions may not be accommodated", "No substitutions"].includes(t),
+  );
+  const dietaryUnstated = r.dietaryTags.some((t) => NOT_STATED.includes(t));
+  const dietaryNotice =
+    r.dietaryAdvanceNoticeDays !== null &&
+    s.leadDays !== null &&
+    s.leadDays < r.dietaryAdvanceNoticeDays;
+
+  if (c("Severe allergy / celiac")) {
+    if (dietaryNotice) {
+      push({
+        id: "diet-notice",
+        layer: "critical",
+        domain: "dietary",
+        title: `Kitchen asks ${r.dietaryAdvanceNoticeDays}-day notice; your lead is ${s.leadDays} days`,
+        detail: r.dietaryDetails,
+        action:
+          "Fail closed on this date unless a named manager waives the notice in writing. Do not treat a booking-form note as kitchen practice.",
+        impact: 96,
+        confidence: "high",
+        situational: true,
+      });
+    }
+    push({
+      id: "diet-severe",
+      layer: "critical",
+      domain: "dietary",
+      title: dietaryHardNo
+        ? "Restaurant declines an allergy guarantee"
+        : dietaryUnstated
+          ? "Allergy handling not stated first-party"
+          : "Allergy handling requires named confirmation",
+      detail:
+        r.dietaryDetails ||
+        "First-party dietary language does not resolve cross-contact for a severe allergy.",
+      action: dietaryHardNo
+        ? "Fail closed: this record cannot carry a severe-allergy guest without a named manager confirming kitchen practice for your date."
+        : "Call, name the allergen, and get cross-contact practice confirmed by kitchen staff — not by a booking form note.",
+      impact: dietaryHardNo ? 99 : 94,
+      confidence: "high",
+      situational: true,
+    });
+  } else if (dietaryUnstated || dietaryHardNo) {
+    push({
+      id: "diet-thin",
+      layer: "unknown",
+      domain: "dietary",
+      title: "Dietary handling requires direct confirmation",
+      detail: r.dietaryDetails || "No first-party dietary policy recorded.",
+      action: "Confirm before inviting anyone with a restriction.",
+      impact: 26,
+      confidence: "high",
+      situational: false,
+    });
+  }
+
+  if (c("Zero-proof / no alcohol")) {
+    const zp = /nonalcohol|non-alcohol|zero-proof|zero proof|na pairing/i.test(
+      `${r.beverageDetails} ${r.dietaryTags.join(" ")}`,
+    );
+    push({
+      id: "zero-proof",
+      layer: zp ? "watch" : "unknown",
+      domain: "beverage",
+      title: zp ? "Zero-proof program referenced first-party" : "Zero-proof program unstated",
+      detail: r.beverageDetails || "Beverage program not detailed first-party.",
+      action: zp
+        ? "Confirm the zero-proof pairing is running on your date and its supplement price."
+        : "Ask what non-alcoholic options exist beyond soft drinks before you seat a zero-proof guest at a pairing table.",
+      impact: zp ? 40 : 55,
+      confidence: "moderate",
+      situational: true,
+    });
+  }
+
+  if (r.hasOfficialConflict) {
+    const path = r.hasPhone
+      ? `Call ${r.phone}`
+      : r.reservationUrl
+        ? "Use the official reservation page"
+        : "Email the restaurant";
+    push({
+      id: "conflict",
+      layer: s.preferNoConflicts || (s.leadDays !== null && s.leadDays <= 2) ? "critical" : "watch",
+      domain: "evidence",
+      title: "Official sources conflict — both claims preserved",
+      detail: r.conflict || "Two first-party statements disagree on a material field.",
+      action: `${path} and ask the conflicted field as a direct question. Keep both recorded claims visible until sources converge.`,
+      impact: 84,
+      confidence: "high",
+      situational: false,
+    });
+  }
+
+  const tightBooking = ["Competitive", "Scarce"].includes(r.signals.booking ?? "");
+  if (s.leadDays !== null) {
+    if (r.bookingLeadDays !== null && s.leadDays > r.bookingLeadDays && tightBooking) {
+      push({
+        id: "lead-window",
+        layer: "watch",
+        domain: "booking",
+        title: `Reservations open ${r.bookingLeadDays} days out; you are ${s.leadDays} days out`,
+        detail: r.reservationDetails,
+        action: "The book may not be open yet. Note the release date rather than refreshing hopelessly.",
+        impact: 48,
+        confidence: "moderate",
+        situational: true,
+      });
+    }
+    if (tightBooking && s.leadDays <= 7) {
+      push({
+        id: "lead-tight",
+        layer: s.leadDays <= 3 ? "critical" : "watch",
+        domain: "booking",
+        title: `Release cadence is ${(r.signals.booking ?? "").toLowerCase()} against ${s.leadDays}-day lead`,
+        detail: r.reservationDetails || "Reservation release windows are constrained.",
+        action: "Check the live inventory now, and hold a fallback record before you send an invitation.",
+        impact: s.leadDays <= 3 ? 90 : 70,
+        confidence: "high",
+        situational: true,
+      });
+    } else if (!tightBooking && s.leadDays <= 2) {
+      push({
+        id: "lead-ok",
+        layer: "watch",
+        domain: "booking",
+        title: "Short lead time is workable on this pathway",
+        detail: r.reservationDetails || r.serviceSummary,
+        action: "Confirm same-day capacity for your party size and arrival window.",
+        impact: 44,
+        confidence: "moderate",
+        situational: true,
+      });
+    }
+  } else if (tightBooking) {
+    push({
+      id: "lead-unknown",
+      layer: "unknown",
+      domain: "booking",
+      title: "Booking is competitive; your lead time is unstated",
+      detail: r.reservationDetails || "Release windows are limited.",
+      action: "Add a date to sharpen this.",
+      impact: 34,
+      confidence: "moderate",
+      situational: false,
+    });
+  }
+
+  if (s.preferWalkIn) {
+    const walkIn = r.bookingPlatforms.includes("Walk-in / open seating");
+    push({
+      id: "walkin",
+      layer: walkIn ? "watch" : "critical",
+      domain: "booking",
+      title: walkIn ? "A walk-in path exists on record" : "No first-party walk-in path recorded",
+      detail: r.reservationDetails || r.serviceSummary,
+      action: walkIn
+        ? "Confirm which room takes walk-ins and at what hour the queue forms."
+        : "Expect to be turned away without a reservation; treat this as a booked-only record.",
+      impact: walkIn ? 48 : 92,
+      confidence: "high",
+      situational: true,
+    });
+  }
+
+  const smallTable = r.signals.party === "Small table";
+  const largeParty = c("Large party (6+)") || (s.partySize ?? 0) >= 6;
+  if (largeParty) {
+    const overOnline =
+      r.maxOnlineParty !== null && s.partySize !== null && s.partySize > r.maxOnlineParty;
+    push({
+      id: "party",
+      layer: smallTable || overOnline ? "critical" : "watch",
+      domain: "party",
+      title: smallTable
+        ? `Small-table constraint against a party of ${s.partySize ?? "6+"}`
+        : overOnline
+          ? `Online book caps at ${r.maxOnlineParty}; you are ${s.partySize}`
+          : `Large-party handling for ${s.partySize ?? "6+"} needs a named confirmation`,
+      detail: r.groupDetails || "Group capacity was not fully described first-party.",
+      action: smallTable || overOnline
+        ? "Do not attempt the public widget; call and ask the maximum single-table seating before proposing this to the group."
+        : "Call for the large-party path — deposits, set menus, and cut-off times usually differ from the public booking flow.",
+      impact: smallTable || overOnline ? 92 : 66,
+      confidence: "moderate",
+      situational: true,
+    });
+  }
+
+  if (c("Private / semi-private required")) {
+    const priv = r.signals.private ?? "Not stated";
+    const weak = ["Not stated", "Limited"].includes(priv);
+    push({
+      id: "private",
+      layer: weak ? "critical" : "watch",
+      domain: "party",
+      title: weak ? "Private path unstated or limited" : `Private capacity: ${priv}`,
+      detail: r.groupDetails || "Private-dining language was not published first-party.",
+      action: weak
+        ? "Treat private seating as unavailable until the restaurant confirms a room, minimum spend, and cut-off date."
+        : "Confirm the room, minimum spend, and whether the main dining noise carries into it.",
+      impact: weak ? 86 : 56,
+      confidence: "moderate",
+      situational: true,
+    });
+  }
+
+  if (c("Hard end time (show, train, childcare)")) {
+    const slow = ["Immersive", "Long-form"].includes(r.signals.pacing ?? "");
+    push({
+      id: "endtime",
+      layer: slow ? "critical" : "watch",
+      domain: "timing",
+      title: slow
+        ? `${r.signals.pacing} pacing against a hard end time`
+        : "Pacing is workable against a hard end time — if they accept it",
+      detail: r.typicalMealLength || r.serviceSummary,
+      action: slow
+        ? "Ask for the actual table time in minutes for your seating; a multi-course format rarely compresses on request."
+        : "State the hard out-time when booking and confirm it is accepted, not just noted.",
+      impact: slow ? 90 : 50,
+      confidence: "moderate",
+      situational: true,
+    });
+  }
+
+  if (c("Hearing / noise sensitivity")) {
+    const loud = ["High stimulus", "Higher stimulus"].includes(r.noiseBand ?? "");
+    push({
+      id: "noise",
+      layer: loud ? "critical" : "watch",
+      domain: "environment",
+      title: loud ? `Noise band reads ${r.noiseBand}` : `Noise band reads ${r.noiseBand ?? "unstated"}`,
+      detail: r.atmosphereSummary || "Room energy was inferred from first-party language only.",
+      action: loud
+        ? "Request an early seating and a perimeter or side-room table, or drop this record for a conversation-first room."
+        : "Request a perimeter table and an early seating to keep the room readable.",
+      impact: loud ? 84 : 44,
+      confidence: "moderate",
+      situational: true,
+    });
+  }
+
+  const conflictedPrice = r.priceTags.includes("Conflicting official price");
+  if (c("Hard budget cap") || s.spendBand) {
+    const premium = r.priceTags.includes("Special occasion") || r.priceTags.includes("$$$$");
+    const mismatch =
+      (c("Hard budget cap") && (premium || conflictedPrice)) ||
+      (s.spendBand ? !(r.spendBands ?? []).includes(s.spendBand) : false);
+    push({
+      id: "spend",
+      layer: conflictedPrice ? "critical" : mismatch ? "watch" : "unknown",
+      domain: "spend",
+      title: conflictedPrice
+        ? "Official price statements conflict"
+        : mismatch
+          ? "Spend band sits outside the stated cap"
+          : "Spend band matches the stated cap",
+      detail: r.priceDetails || "Price was not fully published first-party.",
+      action: conflictedPrice
+        ? "Get the current per-guest price in writing before you invite anyone under a fixed cap."
+        : mismatch
+          ? "Price the full evening — supplements, service charge, and beverage — before treating this as affordable."
+          : "Confirm service charge and supplement handling so the per-guest number holds.",
+      impact: conflictedPrice ? 80 : mismatch ? 62 : 30,
+      confidence: "moderate",
+      situational: true,
+    });
+  }
+
+  const loadIdx = levelIndex(PLANNING_LEVELS, r.planningLoad);
+  const capIdx = levelIndex(PLANNING_LEVELS, s.maxPlanningLoad ?? undefined);
+  if (capIdx >= 0 && loadIdx > capIdx) {
+    push({
+      id: "load",
+      layer: "watch",
+      domain: "operations",
+      title: `Planning load is ${r.planningLoad}, above your ${s.maxPlanningLoad} ceiling`,
+      detail: r.practicalNotes || r.reservationDetails,
+      action: "Either accept the extra coordination or move to a record with a lighter confirm burden.",
+      impact: 64,
+      confidence: "high",
+      situational: true,
+    });
+  }
+  const commIdx = levelIndex(COMMITMENT_LEVELS, r.signals.commitment);
+  const commCap = levelIndex(COMMITMENT_LEVELS, s.maxCommitment ?? undefined);
+  if (commCap >= 0 && commIdx > commCap) {
+    push({
+      id: "commitment",
+      layer: "watch",
+      domain: "operations",
+      title: `Format commitment is ${r.signals.commitment}, above your ${s.maxCommitment} ceiling`,
+      detail: r.reservationDetails || r.serviceSummary,
+      action: "Check whether a bar or lounge path offers the same kitchen at a lower commitment.",
+      impact: 58,
+      confidence: "moderate",
+      situational: true,
+    });
+  }
+
+  if (r.reviewStatus === "overdue") {
+    push({
+      id: "stale",
+      layer: "critical",
+      domain: "evidence",
+      title: "Review window has lapsed",
+      detail: `Last first-party review ${r.reviewedAt}; window closed ${r.nextReviewAt}.`,
+      action: "Re-read the official pages before using this record for a decision.",
+      impact: 78,
+      confidence: "high",
+      situational: false,
+    });
+  } else if (r.reviewDueSoon) {
+    push({
+      id: "due",
+      layer: "watch",
+      domain: "evidence",
+      title: "Review due within the current cycle",
+      detail: `Reviewed ${r.reviewedAt} · next review ${r.nextReviewAt}.`,
+      action: "Volatile fields — hours, availability, price — should be confirmed in the same call.",
+      impact: 46,
+      confidence: "high",
+      situational: false,
+    });
+  }
+
+  if (isThin(r.cancellationPolicy)) {
+    push({
+      id: "cancel-thin",
+      layer: "unknown",
+      domain: "cancellation",
+      title: "Cancellation cost is unstated",
+      detail: r.cancellationPolicy || "No first-party cancellation window or fee was published.",
+      action: "Ask the window, the amount, and whether a reduced party counts as a change. Get the number, not the reassurance.",
+      impact: s.leadDays !== null && s.leadDays <= 3 ? 50 : 28,
+      confidence: "high",
+      situational: false,
+    });
+  }
+
+  if (isThin(r.parkingTransit)) {
+    push({
+      id: "thin-parking",
+      layer: "unknown",
+      domain: "arrival",
+      title: "Parking and transit unstated",
+      detail: r.parkingTransit || "No first-party arrival guidance was published.",
+      action: c("Mobility / step-free needs")
+        ? "Ask where a passenger can be dropped within a step-free distance of the entrance."
+        : c("Hard end time (show, train, childcare)")
+          ? "Ask about valet or the nearest garage — arrival friction is what breaks a hard end time."
+          : "Low stakes here; check a map before you leave.",
+      impact: c("Mobility / step-free needs") ? 60 : c("Hard end time (show, train, childcare)") ? 48 : 18,
+      confidence: "high",
+      situational: s.constraints.length > 0,
+    });
+  }
+  if (isThin(r.dressCode)) {
+    push({
+      id: "thin-dress",
+      layer: "unknown",
+      domain: "arrival",
+      title: "Dress expectation unstated",
+      detail: r.dressCode || "No dress guidance was published first-party.",
+      action:
+        s.occasion === "Business dining" || s.occasion === "Celebration"
+          ? "Ask directly — an unstated code in an elevated room is the most common guest embarrassment."
+          : "Read the room from the atmosphere note; the restaurant has published no rule.",
+      impact: s.occasion === "Business dining" || s.occasion === "Celebration" ? 42 : 14,
+      confidence: "high",
+      situational: false,
+    });
+  }
+  for (const u of r.unknownList.slice(0, 4)) {
+    push({
+      id: `unknown-${u.slice(0, 24)}`,
+      layer: "unknown",
+      domain: "residual",
+      title: capitalize(u),
+      detail: "Recorded as unknown at the last first-party review; not inferred, not filled.",
+      action: "Carry into the confirmation call if it bears on your night.",
+      impact: 20,
+      confidence: "high",
+      situational: false,
+    });
+  }
+
+  const order: Record<FindingLayer, number> = { critical: 0, watch: 1, unknown: 2 };
+  return f
+    .sort((a, b) => order[a.layer] - order[b.layer] || b.impact - a.impact)
+    .filter((v, i, arr) => arr.findIndex((x) => x.id === v.id) === i);
+}
+
+export function confirmBurden(r: RestaurantRecord, findings: Finding[]): number {
+  let b = 12;
+  b += Math.min(6, r.unknownsCount) * 5;
+  b += Math.min(4, r.thinFieldCount) * 4;
+  if (r.hasOfficialConflict) b += 18;
+  if (r.reviewStatus === "overdue") b += 16;
+  else if (r.reviewDueSoon) b += 7;
+  if (["Competitive", "Scarce"].includes(r.signals.booking ?? "")) b += 8;
+  if (r.planningLoad === "Heavy") b += 12;
+  else if (r.planningLoad === "Material") b += 6;
+  if (!r.hasPhone) b += 6;
+  if (isThin(r.cancellationPolicy)) b += 6;
+  b += findings.filter((f) => f.layer === "critical" && f.situational).length * 7;
+  return clamp(Math.round(b), 0, 100);
+}
+
+export function scoreRecord(r: RestaurantRecord, s: Situation): Scored {
+  const findings = buildFindings(r, s);
+  const burden = confirmBurden(r, findings);
+  const reasons: string[] = [];
+
+  const occ = s.occasion ? occasionScore(r, s.occasion) : topOccasion(r).score;
+  let fit = s.occasion ? occ : 50 + (occ - 50) * 0.35;
+  if (s.occasion) reasons.push(`${s.occasion} fit ${occ}`);
+
+  if (s.partySize !== null) {
+    if (s.partySize >= 6) {
+      if (r.signals.party === "Large-group ready") (fit += 10), reasons.push("large-group ready");
+      else if (r.signals.party === "Group-ready") (fit += 6), reasons.push("group-ready");
+      else if (r.signals.party === "Small table") (fit -= 22), reasons.push("small-table constraint");
+    } else if (s.partySize <= 2) {
+      if (["Small table", "Flexible party"].includes(r.signals.party ?? "")) fit += 5;
+    }
+  }
+
+  if (s.daypart) {
+    if (r.daypartTags?.includes(s.daypart)) (fit += 9), reasons.push("daypart language matches");
+    else (fit -= 8), reasons.push("daypart unstated for this service");
+  }
+
+  if (s.spendBand) {
+    if ((r.spendBands ?? []).includes(s.spendBand)) (fit += 8), reasons.push("spend band matches");
+    else fit -= 12;
+  }
+
+  if (s.bookingPath && !r.bookingPlatforms.includes(s.bookingPath)) fit -= 25;
+  if (s.preferWalkIn) {
+    if (r.bookingPlatforms.includes("Walk-in / open seating")) fit += 8;
+    else fit -= 20;
+  }
+  if (s.wineForward) {
+    if (["Cellar / pairing", "Deep program"].includes(r.signals.wine ?? "")) fit += 10;
+    else if (r.signals.wine === "Solid list") fit += 3;
+    else fit -= 8;
+  }
+  if (s.preferNoConflicts && r.hasOfficialConflict) fit -= 18;
+
+  if (s.leadDays !== null) {
+    const tight = ["Competitive", "Scarce"].includes(r.signals.booking ?? "");
+    if (tight && s.leadDays <= 3) (fit -= 26), reasons.push("release cadence beats your lead time");
+    else if (tight && s.leadDays <= 7) fit -= 12;
+    else if (!tight && s.leadDays <= 3) (fit += 6), reasons.push("bookable on short notice");
+    if (s.leadDays >= 21 && tight) (fit += 6), reasons.push("lead time covers the release window");
+  }
+
+  const loadIdx = levelIndex(PLANNING_LEVELS, r.planningLoad);
+  const capIdx = levelIndex(PLANNING_LEVELS, s.maxPlanningLoad ?? undefined);
+  if (capIdx >= 0 && loadIdx > capIdx) fit -= 10 * (loadIdx - capIdx);
+  const commIdx = levelIndex(COMMITMENT_LEVELS, r.signals.commitment);
+  const commCap = levelIndex(COMMITMENT_LEVELS, s.maxCommitment ?? undefined);
+  if (commCap >= 0 && commIdx > commCap) fit -= 8 * (commIdx - commCap);
+
+  const situationalCriticals = findings.filter((f) => f.layer === "critical" && f.situational);
+  fit -= situationalCriticals.reduce((a, f) => a + f.impact * 0.32, 0);
+  for (const finding of situationalCriticals) reasons.push(finding.title.toLowerCase());
+
+  const timePressure = s.leadDays === null ? 0.12 : s.leadDays <= 3 ? 0.3 : s.leadDays <= 10 ? 0.18 : 0.1;
+  fit -= burden * timePressure;
+
+  fit += (r.depthFilled / Math.max(1, r.depthTotal)) * 8;
+  fit -= Math.min(6, r.unknownsCount) * 1.2;
+
+  const blocked = situationalCriticals.some((f) => f.impact >= 90);
+
+  return {
+    record: r,
+    fit: clamp(Math.round(fit), 0, 100),
+    rank: 0,
+    burden,
+    findings,
+    criticals: findings.filter((x) => x.layer === "critical"),
+    watch: findings.filter((x) => x.layer === "watch"),
+    unknowns: findings.filter((x) => x.layer === "unknown"),
+    occasionScore: occ,
+    reasons: reasons.slice(0, 4),
+    blocked,
+  };
+}
+
+export function rank(list: RestaurantRecord[], s: Situation): Scored[] {
+  const scored = list.map((r) => scoreRecord(r, s));
+  scored.sort((a, b) => {
+    if (a.blocked !== b.blocked) return a.blocked ? 1 : -1;
+    if (b.fit !== a.fit) return b.fit - a.fit;
+    if (a.burden !== b.burden) return a.burden - b.burden;
+    return a.record.title.localeCompare(b.record.title);
+  });
+  scored.forEach((x, i) => {
+    x.rank = i + 1;
+  });
+  return scored;
+}
+
+export function filterRecords(list: RestaurantRecord[], s: Situation): RestaurantRecord[] {
+  const q = s.query.trim().toLowerCase();
+  return list.filter((r) => {
+    if (s.regionGroup && r.regionGroup !== s.regionGroup) return false;
+    if (s.region && r.region !== s.region) return false;
+    if (s.cuisine && !r.cuisineTags.includes(s.cuisine)) return false;
+    if (q) {
+      if (!r.searchText.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+export function decisionBrief(sc: Scored, s: Situation): Brief {
+  const r = sc.record;
+  const situationalCriticals = sc.criticals.filter((f) => f.situational);
+  const tone: Brief["verdictTone"] = sc.blocked
+    ? "hold"
+    : situationalCriticals.length || sc.criticals.length
+      ? "conditional"
+      : "clear";
+
+  const depth = situationDepth(s);
+  const verdict = sc.blocked
+    ? "Hold — a stated constraint is unresolved on first-party evidence"
+    : sc.criticals.length
+      ? "Workable, conditional on live confirmation"
+      : depth < 3
+        ? "No blocking evidence found; the situation is still thin"
+        : "Clear on the evidence recorded";
+
+  const fitLine = s.occasion
+    ? `Reads ${sc.fit}/100 for ${s.occasion.toLowerCase()}${s.partySize ? ` at ${s.partySize}` : ""}${
+        s.leadDays !== null ? `, ${s.leadDays} days out` : ""
+      }. ${sc.reasons.length ? sc.reasons.slice(0, 3).join("; ") + "." : ""}`
+    : `Reads ${sc.fit}/100 against a partial situation. Strongest recorded use: ${topOccasion(r).occasion.toLowerCase()}. Add an occasion to sharpen this.`;
+
+  const riskLine = sc.criticals.length
+    ? `${sc.criticals.length} critical risk${sc.criticals.length > 1 ? "s" : ""}: ${sc.criticals
+        .slice(0, 2)
+        .map((f) => f.title.toLowerCase())
+        .join("; ")}. ${sc.watch.length} watch item${sc.watch.length === 1 ? "" : "s"}, ${sc.unknowns.length} residual unknown${sc.unknowns.length === 1 ? "" : "s"} carried forward.`
+    : `No critical risk recorded for this situation. ${sc.watch.length} watch item${sc.watch.length === 1 ? "" : "s"} and ${sc.unknowns.length} residual unknown${sc.unknowns.length === 1 ? "" : "s"} remain visible.`;
+
+  const burdenLine = `Confirm burden ${sc.burden}/100 · planning load ${r.planningLoad ?? "unstated"} · ${
+    r.hasOfficialConflict ? "one official conflict open" : "no official conflict"
+  } · reviewed ${r.reviewedAt}, next ${r.nextReviewAt}.`;
+
+  const path = r.hasPhone
+    ? `Call ${r.phone}`
+    : r.reservationUrl
+      ? "Open the official reservation page"
+      : "Email the restaurant";
+
+  const nextAction = sc.blocked
+    ? `${path} and resolve the blocking constraint before this record re-enters the shortlist. Do not book against inference.`
+    : sc.criticals.length
+      ? `${path} in one pass and clear every critical item; book only after they resolve.`
+      : `${path} to confirm hours, party size, cancellation terms, and the volatile fields, then book on the ${r.bookingPlatforms[0] ?? "official"} pathway.`;
+
+  const confirmCalls = sc.findings
+    .filter((f) => f.layer !== "unknown" || f.impact >= 40)
+    .slice(0, 6)
+    .map((f) => f.action);
+
+  return { verdict, verdictTone: tone, fitLine, riskLine, burdenLine, nextAction, confirmCalls };
+}
+
+export function rankWorkingSet(s: Situation): Scored[] {
+  return rank(filterRecords(restaurants, s), s);
+}
+
+/** What would change this answer? Toggle one constraint / lead / party and re-rank. */
+export function sensitivity(s: Situation, slug: string): {
+  label: string;
+  delta: number;
+  blocked: boolean;
+}[] {
+  const base = scoreRecord(restaurants.find((r) => r.slug === slug)!, s);
+  const trials: { label: string; next: Situation }[] = [
+    { label: "Party of 6", next: { ...s, partySize: 6, constraints: Array.from(new Set([...s.constraints, "Large party (6+)"] as Constraint[])) } },
+    { label: "Tonight", next: { ...s, leadDays: 0 } },
+    { label: "With celiac", next: { ...s, constraints: Array.from(new Set([...s.constraints, "Severe allergy / celiac"] as Constraint[])) } },
+    { label: "Step-free required", next: { ...s, constraints: Array.from(new Set([...s.constraints, "Mobility / step-free needs"] as Constraint[])) } },
+    { label: "Hard end time", next: { ...s, constraints: Array.from(new Set([...s.constraints, "Hard end time (show, train, childcare)"] as Constraint[])) } },
+    { label: "Walk-in only", next: { ...s, preferWalkIn: true } },
+  ];
+  return trials.map((t) => {
+    const sc = scoreRecord(base.record, t.next);
+    return { label: t.label, delta: sc.fit - base.fit, blocked: sc.blocked };
+  });
+}
+
+

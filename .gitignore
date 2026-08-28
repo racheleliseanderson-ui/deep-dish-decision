@@ -1,0 +1,25 @@
+node_modules
+dist
+dist-ssr
+.output
+.vercel
+.vinxi
+.tanstack
+.nitro
+.grok
+artifacts
+screenshots
+*.log
+*.local
+.node_modules.lock
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Editor
+.idea
+.DS_Store
+*.sw?
+AGENTS.md
