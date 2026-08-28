@@ -57,11 +57,11 @@ void ensureDbReady();
  * restart clears both the secret and PGLite together.
  */
 const globalAuthRef = globalThis as typeof globalThis & {
-  __grokAuthPreviewSecret__?: string;
+  __appAuthPreviewSecret__?: string;
 };
 function previewAuthSecret(): string {
-  globalAuthRef.__grokAuthPreviewSecret__ ??= randomBytes(32).toString("hex");
-  return globalAuthRef.__grokAuthPreviewSecret__;
+  globalAuthRef.__appAuthPreviewSecret__ ??= randomBytes(32).toString("hex");
+  return globalAuthRef.__appAuthPreviewSecret__;
 }
 
 /** Read an env var, treating empty/whitespace as unset. */
