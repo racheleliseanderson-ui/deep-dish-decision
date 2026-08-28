@@ -13,7 +13,7 @@ export const Route = createFileRoute("/console")({
       {
         name: "description",
         content:
-          "Live coverage of the restaurant corpus: records by state, completeness scores, recent enrichment, pipeline quota and the cities still queued for discovery.",
+          "Coverage of the restaurant files: records by state, how complete each file is, recent first-party reads, and the cities still queued.",
       },
       { property: "og:title", content: "Coverage Console — where the corpus is thin" },
       {
@@ -156,7 +156,7 @@ function Console() {
             <span className="text-primary">how far the corpus reaches.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-            Counted at {dt(generatedAt)} UTC from the owned-site enrichment ledger. Completeness is
+            Counted at {dt(generatedAt)} UTC from first-party restaurant pages. Completeness is
             an 18-check score over address, hours, contact, booking path, price, policy language and
             provenance — a low score means fields are unstated, not wrong. Every record now uses the
             same 12-field case file; unstated fields stay visible.
@@ -166,7 +166,7 @@ function Console() {
             <Stat
               label="Records"
               value={totals.records}
-              note={`${totals.enriched} carry owned-site enrichment`}
+              note={`${totals.enriched} have a first-party page read`}
             />
             <Stat
               label="Mean completeness"
@@ -214,7 +214,7 @@ function Console() {
                   ["hygiene", "Hygiene due"],
                   ["stale", "Stale view"],
                   ["thin", "Thin <70%"],
-                  ["site", "Site failures"],
+                  ["site", "Unread pages"],
                   ["review", "Review due"],
                 ] as const
               ).map(([id, label]) => (
@@ -256,7 +256,7 @@ function Console() {
               tone={(totals.neverEnriched ?? 0) > 0 ? "critical" : "verified"}
             />
             <Stat
-              label="Thin / site fail"
+              label="Thin / unread"
               value={`${totals.thin ?? 0} / ${totals.siteFailures ?? 0}`}
               note="Completeness & scrape"
               tone={(totals.thin ?? 0) + (totals.siteFailures ?? 0) > 0 ? "watch" : "unknown"}
@@ -299,12 +299,8 @@ function Console() {
                 ))}
               </ul>
               <p className="mt-3 text-[12px] leading-relaxed text-subtle">
-                Command:{" "}
-                <code className="text-num text-[11px] text-foreground">
-                  node scripts/pipeline/enrich.mjs --hygiene --batch=
-                  {freshness.hygieneBatchSize ?? 25}
-                </code>
-                . Run before any metro expansion. Expansion resumes only after this batch clears.
+                Finish this hygiene batch before expanding to more cities. A thin file stays thin until
+                the restaurant's own pages can fill it.
               </p>
             </div>
           ) : (
@@ -573,7 +569,7 @@ function Console() {
         <Reveal as="section">
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
-              <Eyebrow>Recent enrichment</Eyebrow>
+              <Eyebrow>Recent first-party reads</Eyebrow>
               <ul className="mt-4 divide-y divide-border">
                 {recent.map((r) => (
                   <li key={r.slug} className="flex flex-wrap items-baseline justify-between gap-2 py-2.5">

@@ -121,7 +121,7 @@ function RecordStrip({
               <span className="text-[13px] text-foreground transition-colors group-hover:text-primary">
                 {r.title}
               </span>
-              <span className="text-num text-[11px] text-subtle">{r.recordId}</span>
+              <span className="text-num text-[11px] text-subtle">{r.region}</span>
             </Link>
             <p className="mt-0.5 text-[11px] text-subtle">
               {r.region} · {r.detail}
@@ -296,7 +296,7 @@ function Atlas() {
             <div className="grid gap-10 sm:grid-cols-2">
               <FacetTable
                 title="Accessibility recorded"
-                note="Access is fail-closed in the instrument: unrecorded is never read as available."
+                note="Unrecorded access is never treated as available."
                 rows={byAccessibility}
                 limit={8}
                 tone="unknown"

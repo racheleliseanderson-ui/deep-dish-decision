@@ -231,7 +231,7 @@ function Guide() {
                   <span className="text-num text-[11px] text-primary">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="text-num text-[11px] text-subtle">{p.r.recordId}</span>
+                  <span className="text-num text-[11px] text-subtle">{p.r.region}</span>
                 </div>
                 <Link
                   to="/record/$slug"

@@ -83,7 +83,6 @@ export function RecordCard({
               </p>
             </div>
             <div className="shrink-0 text-right">
-              <span className="text-num text-[11px] text-subtle">{r.recordId}</span>
               {situation.occasion ? (
                 <p className="text-[11px] text-subtle">
                   {situation.occasion} fit <span className="text-num">{sc.occasionScore}</span>
@@ -98,7 +97,7 @@ export function RecordCard({
                 </p>
               ) : (
                 <p className="mt-1">
-                  <Chip tone="unknown">No owned-site read</Chip>
+                  <Chip tone="unknown">Not enough first-party evidence yet</Chip>
                 </p>
               )}
               <p className="mt-1">

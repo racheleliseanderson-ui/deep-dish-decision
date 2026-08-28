@@ -118,13 +118,13 @@ function Packet() {
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <span className="text-eyebrow">Salty &amp; Clever</span>
             <span className="h-px w-8 bg-border-strong" />
-            <span className="text-eyebrow">Restaurant decision packet</span>
+            <span className="text-eyebrow">Restaurant decision brief</span>
           </div>
           <h1 className="mt-4 font-display text-4xl leading-[1.02] tracking-[-0.02em]">
             {record.title}
           </h1>
           <p className="mt-2 text-[13px] text-muted-foreground">
-            {record.address || record.region} · {record.recordId}
+            {record.address || record.region}
           </p>
           <p className="text-num mt-1 text-[12px] text-subtle">
             Fit {sc.fit}/100 · confirm burden {sc.burden}/100 · situation {depth}/{SITUATION_SLOTS} ·

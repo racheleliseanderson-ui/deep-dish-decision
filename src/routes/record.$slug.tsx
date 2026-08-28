@@ -91,7 +91,7 @@ function Dossier() {
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-6xl px-4 pb-12 pt-8 sm:px-6">
           <SiteNav />
-          <p className="text-eyebrow mt-10">{record.recordId}</p>
+          <p className="text-eyebrow mt-10">{record.region}</p>
           <h1 className="mt-3 max-w-4xl font-display text-[2.3rem] font-normal leading-[1.02] tracking-[-0.02em] sm:text-5xl">
             {record.title}
           </h1>

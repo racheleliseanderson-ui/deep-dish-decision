@@ -23,7 +23,7 @@ export const PLAYBOOKS: Playbook[] = [
     id: "date-night",
     chapter: "night",
     title: "Date night",
-    lede: "Calm room, two covers, moderate commitment. Fail closed on noise and privacy gaps.",
+    lede: "Calm room, two covers, moderate commitment. Do not recommend when noise or privacy cannot be confirmed.",
     apply: { occasion: "Date night", partySize: 2, maxCommitment: "Moderate" },
   },
   {
@@ -80,7 +80,7 @@ export const PLAYBOOKS: Playbook[] = [
     id: "wine",
     chapter: "format",
     title: "Wine-forward evening",
-    lede: "Beverage program in the evidence; still fail-closed on stated constraints.",
+    lede: "Beverage program in the evidence; still hold the booking when a stated need cannot be confirmed.",
     apply: { occasion: "Wine-forward evening", wineForward: true },
   },
   {
@@ -109,7 +109,7 @@ export const PLAYBOOKS: Playbook[] = [
     id: "allergy",
     chapter: "constraint",
     title: "Severe allergy / celiac",
-    lede: "Fail closed when dietary evidence is thin or conflicts. Confirm live.",
+    lede: "Do not recommend when dietary evidence is thin or conflicts. Confirm live.",
     apply: { occasion: "Dietary-sensitive visit", constraints: ["Severe allergy / celiac"] },
   },
   {
@@ -137,7 +137,7 @@ export const PLAYBOOKS: Playbook[] = [
     id: "private",
     chapter: "constraint",
     title: "Private / semi-private",
-    lede: "Require stated private or semi-private capacity; fail closed otherwise.",
+    lede: "Require stated private or semi-private capacity; do not recommend otherwise.",
     apply: { constraints: ["Private / semi-private required"] },
   },
   {

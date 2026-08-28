@@ -36,7 +36,7 @@ export function CaseFile({
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
             <ListingFace record={r} fit={sc.fit} burden={sc.burden} rank={sc.rank} size={72} showGauges />
             <div className="min-w-0 flex-1">
-              <Eyebrow>Case file · {r.recordId}</Eyebrow>
+              <Eyebrow>Case file</Eyebrow>
               <DialogTitle className="mt-2 font-display text-2xl font-normal leading-tight tracking-tight">
                 {r.title}
               </DialogTitle>
@@ -59,10 +59,10 @@ export function CaseFile({
                   const audit = enrichmentAudit(r.slug);
                   return audit.present ? (
                     <Chip tone="unknown">
-                      Enrichment {audit.completeness ?? "—"}% · {audit.matchStatus ?? "matched"}
+                      First-party file {audit.completeness ?? "—"}%
                     </Chip>
                   ) : (
-                    <Chip tone="neutral">No third-party enrichment</Chip>
+                    <Chip tone="neutral">First-party evidence only</Chip>
                   );
                 })()}
               </div>

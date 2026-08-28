@@ -34,7 +34,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "First-party restaurant evidence, ranked against your actual situation. No star ratings, unknowns stay visible, fail-closed on stated constraints.",
+          "First-party restaurant evidence, ranked against your actual situation. No star ratings, unknowns stay visible, and a stated need the record cannot satisfy holds the booking.",
       },
       { property: "og:title", content: "Restaurant Intelligence Hub" },
       {
@@ -95,7 +95,7 @@ function Hub() {
       `${OPS.overdue} reviews overdue`,
       "same 12-field floor on every record",
       "no sentiment scores",
-      "fail-closed on stated constraints",
+      "a stated need the record cannot satisfy holds the booking",
     ],
     [],
   );
@@ -142,7 +142,7 @@ function Hub() {
             Every line here is read from first-party sources — the restaurant&apos;s own site, menu,
             reservation page, or a direct call. Nothing is scored on sentiment. Where the evidence
             stops, the record says so and stays open. When a constraint you have stated cannot be
-            satisfied on the record, the instrument fails closed and holds the booking.
+            satisfied on the record, the booking is held rather than guessed.
           </p>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -227,7 +227,7 @@ function Hub() {
                     {lead.record.title}
                   </h2>
                   <p className="mt-1.5 text-[13px] text-muted-foreground">
-                    {lead.record.region} · {lead.record.recordId} ·{" "}
+                    {lead.record.region} ·{" "}
                     {depth < 3
                       ? `situation ${depth}/${SITUATION_SLOTS} — this ordering is provisional`
                       : `situation ${depth}/${SITUATION_SLOTS}`}
@@ -320,10 +320,10 @@ function Hub() {
                   <Eyebrow>Provisional ordering</Eyebrow>
                   <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
                     Situation depth {depth}/{SITUATION_SLOTS}. Add an occasion or guest constraint to
-                    reshape fit, findings, and fail-closed holds.
+                    reshape fit, findings, and holds until a stated need is confirmed.
                     {enrichment.enabled
-                      ? " Labeled enrichment signals are on (reading controls)."
-                      : " Pure first-party mode — enrichment signals hidden."}
+                      ? " Listing signals from other sources are on (reading controls)."
+                      : " First-party evidence only."}
                   </p>
                 </div>
                 <div className="w-full max-w-[200px]">
@@ -401,9 +401,7 @@ function Hub() {
                 sources disagree, both remain on the record and the record carries a critical flag.
               </li>
               <li>
-                <span className="text-foreground">Fail closed.</span> A stated allergy, access or
-                private-room requirement that the record cannot satisfy holds the booking rather
-                than downgrading to a hopeful maybe.
+                <span className="text-foreground">A stated allergy, access or private-room need that the record cannot satisfy holds the booking rather than guessing.</span>
               </li>
             </ul>
           </div>

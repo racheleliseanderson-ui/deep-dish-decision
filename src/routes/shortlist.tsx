@@ -106,7 +106,7 @@ function Shortlist() {
                     <div className="flex flex-wrap items-start justify-between gap-4">
                       <div className="min-w-0">
                         <p className="text-eyebrow">
-                          Stop {i + 1} · {record.recordId}
+                          Stop {i + 1}
                         </p>
                         <h2 className="mt-2 font-display text-2xl leading-tight tracking-tight">
                           <Link

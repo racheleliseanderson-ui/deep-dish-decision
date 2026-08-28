@@ -338,7 +338,7 @@ export function buildFindings(
         title: "First-party pages state stairs or no elevator",
         detail: r.accessibilityState || r.accessibilityTags.join(" · "),
         action:
-          "Fail closed: call and confirm a step-free route, restroom access, and which entrance to use before committing this guest.",
+          "Needs confirmation: call and confirm a step-free route, restroom access, and which entrance to use before committing this guest.",
         impact: 98,
         confidence: "high",
         situational: true,
@@ -404,7 +404,7 @@ export function buildFindings(
         r.dietaryDetails ||
         "First-party dietary language does not resolve cross-contact for a severe allergy.",
       action: dietaryHardNo
-        ? "Fail closed: this record cannot carry a severe-allergy guest without a named manager confirming kitchen practice for your date."
+        ? "Cannot recommend until confirmed: this restaurant cannot carry a severe-allergy guest without a named manager confirming kitchen practice for your date."
         : "Call, name the allergen, and get cross-contact practice confirmed by kitchen staff — not by a booking form note.",
       impact: dietaryHardNo ? 99 : 94,
       confidence: "high",

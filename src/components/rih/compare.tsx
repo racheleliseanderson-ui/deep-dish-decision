@@ -195,7 +195,7 @@ export function CompareDialog({
                 >
                   <p className="font-display text-lg tracking-tight">{sc.record.title}</p>
                   <p className="mt-1 text-[12px] text-subtle">
-                    rank {sc.rank} · {sc.record.recordId}
+                    rank {sc.rank}
                   </p>
                   <div className="mt-3 space-y-2.5">
                     <Meter label="Fit" value={sc.fit} />
