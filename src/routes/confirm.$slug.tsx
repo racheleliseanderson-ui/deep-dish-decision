@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { NOINDEX } from "@/lib/seo";
 import { useEffect } from "react";
 import { ConfirmPassView } from "@/components/confirm-pass";
 import { bySlug } from "@/data/restaurants";
@@ -12,6 +13,7 @@ export const Route = createFileRoute("/confirm/$slug")({
   component: ConfirmPage,
   head: () => ({
     meta: [
+      NOINDEX,
       { title: "Confirmation pass — Deep Dish" },
       {
         name: "description",

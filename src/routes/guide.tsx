@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { canonical } from "@/lib/seo";
 import { MobileHowTo } from "@/components/mobile-nav";
 import { Eyebrow } from "@/components/ui";
 import { OPS, restaurants } from "@/data/restaurants";
@@ -14,6 +15,7 @@ export const Route = createFileRoute("/guide")({
           "Occasion first, then commitment, pathway, room, and the honest handling of everything a restaurant has not said.",
       },
     ],
+    links: [canonical("/guide")],
   }),
 });
 

@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { NOINDEX } from "@/lib/seo";
 import { useState } from "react";
 import { PacketView } from "@/components/confirm-pass";
 import { Button } from "@/components/ui";
@@ -12,6 +13,7 @@ export const Route = createFileRoute("/packet/$id")({
   component: PacketPage,
   head: () => ({
     meta: [
+      NOINDEX,
       { title: "Confirmation record — Deep Dish" },
       {
         name: "description",

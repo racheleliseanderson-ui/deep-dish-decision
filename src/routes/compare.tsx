@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { canonical } from "@/lib/seo";
 import { Button, Eyebrow, LayerBadge } from "@/components/ui";
 import { bySlug } from "@/data/restaurants";
 import { scoreRecord } from "@/lib/intelligence";
@@ -7,7 +8,7 @@ import { emptySituation } from "@/lib/types";
 
 export const Route = createFileRoute("/compare")({
   component: ComparePage,
-  head: () => ({ meta: [{ title: "Compare rooms — Deep Dish" }] }),
+  head: () => ({ meta: [{ title: "Compare rooms — Deep Dish" }] , links: [canonical("/compare")] }),
 });
 
 function ComparePage() {

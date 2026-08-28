@@ -1,8 +1,39 @@
 import { useEffect, useRef, useState } from "react";
+import { useRouterState } from "@tanstack/react-router";
 import { Download, RefreshCw, WifiOff } from "lucide-react";
 import { Button } from "@/components/ui";
 
 const INSTALL_DISMISS_KEY = "deep-dish:pwa-install-dismissed";
+/** Once an install card has been shown, the offline notice waits for another
+ *  session. Two cards in the same corner in a row reads as nagging. */
+const INSTALL_SHOWN_KEY = "deep-dish:pwa-install-shown";
+/** The offline notice is information, not a decision. It leaves on its own. */
+const OFFLINE_TOAST_MS = 7000;
+
+/** Storage throws outright in some privacy modes. A prompt is never worth a
+ *  blank page, so every read and write is best-effort. */
+function readFlag(key: string): boolean {
+  try {
+    return localStorage.getItem(key) === "1" || sessionStorage.getItem(key) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function writeFlag(key: string) {
+  // localStorage so "Not now" is remembered next visit, not re-asked every tab.
+  try {
+    localStorage.setItem(key, "1");
+    return;
+  } catch {
+    /* fall through to the session-scoped copy */
+  }
+  try {
+    sessionStorage.setItem(key, "1");
+  } catch {
+    /* nothing persists here; the prompt simply returns next time */
+  }
+}
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -22,10 +53,13 @@ export function PwaRegister() {
   const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null);
   const [dismissed, setDismissed] = useState(true);
   const [installed, setInstalled] = useState(false);
+  const [installShown, setInstallShown] = useState(true);
   const applyUpdate = useRef<(() => void) | null>(null);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   useEffect(() => {
-    setDismissed(sessionStorage.getItem(INSTALL_DISMISS_KEY) === "1");
+    setDismissed(readFlag(INSTALL_DISMISS_KEY));
+    setInstallShown(readFlag(INSTALL_SHOWN_KEY));
     setInstalled(isStandalone());
 
     const onPrompt = (event: Event) => {
@@ -86,14 +120,31 @@ export function PwaRegister() {
     };
   }, []);
 
-  const showInstall = Boolean(installEvent) && !dismissed && !installed && !needRefresh;
-  const showOffline = offlineReady && !needRefresh && !showInstall;
+  // Nobody installs an instrument they have not used yet, and on the landing
+  // page this card lands directly on top of the primary call to action. Wait
+  // until the visitor has moved into the app and has something worth keeping.
+  const engaged = pathname !== "/";
+  const showInstall = engaged && Boolean(installEvent) && !dismissed && !installed && !needRefresh;
+  const showOffline = offlineReady && !needRefresh && !showInstall && !installShown;
+
+  useEffect(() => {
+    if (!showInstall) return;
+    writeFlag(INSTALL_SHOWN_KEY);
+    setInstallShown(true);
+  }, [showInstall]);
+
+  useEffect(() => {
+    if (!showOffline) return;
+    const timer = window.setTimeout(() => setOfflineReady(false), OFFLINE_TOAST_MS);
+    return () => window.clearTimeout(timer);
+  }, [showOffline]);
+
   if (!needRefresh && !showInstall && !showOffline) return null;
 
   return (
     <div className="pointer-events-none fixed bottom-[calc(5.75rem+env(safe-area-inset-bottom,0px))] left-4 right-24 z-50 sm:inset-x-0 sm:bottom-0 sm:p-6">
       <div
-        role={needRefresh ? "alertdialog" : "status"}
+        role="status"
         aria-live="polite"
         aria-labelledby="pwa-toast-title"
         className="plate pointer-events-auto w-full max-w-sm p-4"
@@ -142,7 +193,7 @@ export function PwaRegister() {
                   await installEvent.prompt();
                   const choice = await installEvent.userChoice;
                   if (choice.outcome !== "accepted") {
-                    sessionStorage.setItem(INSTALL_DISMISS_KEY, "1");
+                    writeFlag(INSTALL_DISMISS_KEY);
                     setDismissed(true);
                   }
                   setInstallEvent(null);
@@ -153,7 +204,7 @@ export function PwaRegister() {
               <Button
                 variant="ghost"
                 onClick={() => {
-                  sessionStorage.setItem(INSTALL_DISMISS_KEY, "1");
+                  writeFlag(INSTALL_DISMISS_KEY);
                   setDismissed(true);
                 }}
               >

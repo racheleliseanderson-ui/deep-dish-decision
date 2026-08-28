@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { canonical } from "@/lib/seo";
 import { Button, Eyebrow, LayerBadge } from "@/components/ui";
 import { duplicateNight } from "@/lib/storage";
 import { useNight } from "@/lib/store";
@@ -6,7 +7,7 @@ import { formatHumanDate } from "@/lib/utils";
 
 export const Route = createFileRoute("/nights")({
   component: NightsPage,
-  head: () => ({ meta: [{ title: "Saved records — Deep Dish" }] }),
+  head: () => ({ meta: [{ title: "Saved records — Deep Dish" }] , links: [canonical("/nights")] }),
 });
 
 function NightsPage() {

@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { canonical } from "@/lib/seo";
 import { useState } from "react";
 import { Button, Eyebrow, LayerBadge } from "@/components/ui";
 import { bySlug } from "@/data/restaurants";
@@ -23,6 +24,7 @@ export const Route = createFileRoute("/record/$slug")({
             : "Restaurant evidence file.",
         },
       ],
+      links: [canonical(`/record/${params.slug}`)],
     };
   },
 });

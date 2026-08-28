@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { canonical } from "@/lib/seo";
 import { useMemo } from "react";
 import { MobileHowTo } from "@/components/mobile-nav";
 import { DecisionBrief } from "@/components/results";
 import { Button, Eyebrow, LayerBadge } from "@/components/ui";
 import { OPS, restaurants } from "@/data/restaurants";
-import { rank, situationDepth } from "@/lib/intelligence";
+import { decisionBrief, rank, situationDepth } from "@/lib/intelligence";
 import { DEMO_NIGHT } from "@/lib/playbooks";
 import { track } from "@/lib/storage";
 import { useNight } from "@/lib/store";
@@ -20,6 +21,7 @@ export const Route = createFileRoute("/")({
           "Not a ratings board. Rank rooms against your actual situation, then complete a confirmation pass: hours, cancellation, access, allergy, confirmation number.",
       },
     ],
+    links: [canonical("/")],
   }),
 });
 
@@ -28,11 +30,14 @@ function Home() {
   const demo = useMemo(() => rank(restaurants, DEMO_NIGHT), []);
   const lead = demo[0]!;
   const depth = situationDepth(DEMO_NIGHT);
+  const leadBrief = decisionBrief(lead, DEMO_NIGHT);
 
   return (
     <main>
       <section className="ink-band">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
+          <div className="lg:grid lg:grid-cols-12 lg:items-start lg:gap-12">
+            <div className="lg:col-span-7">
           <p className="text-eyebrow text-gilt">Salty & Clever · Restaurant intelligence</p>
           <div className="gilt-rule mt-3 max-w-md" />
           <h1 className="display-statement mt-7 max-w-[18ch]">
@@ -76,6 +81,47 @@ function Home() {
               </Link>
             </Button>
           </div>
+            </div>
+
+            {/* The strongest thing this instrument can say in the first screen
+                is what one of its answers actually looks like. Scored live from
+                the same demonstration night as the full brief further down, so
+                it can never drift from the product. Desktop only: on a phone
+                the worked demonstration is already the next thing you reach. */}
+            <aside
+              className="hidden lg:col-span-5 lg:mt-1 lg:block"
+              aria-label="What an answer looks like"
+            >
+              <div className="plate p-6">
+                <p className="text-eyebrow text-gilt">What an answer looks like</p>
+                <p className="mt-3 font-display text-2xl leading-tight">{lead.record.title}</p>
+                <p className="mt-1 text-[12px] text-muted-foreground">
+                  {lead.record.city} · date night, two covers, seven days out
+                </p>
+                <p className="mt-4 text-[14px] leading-relaxed">{leadBrief.verdict}</p>
+                <dl className="mt-5 grid grid-cols-3 gap-3 border-t border-border pt-4">
+                  {[
+                    [String(lead.fit), "/100", "Fit"],
+                    [String(lead.burden), "/100", "Confirm"],
+                    [String(lead.unknowns.length), "", "Still open"],
+                  ].map(([v, scale, l]) => (
+                    <div key={l}>
+                      <dt className="text-eyebrow text-gilt">{l}</dt>
+                      <dd className="text-num mt-1 text-2xl">
+                        {v}
+                        {scale ? <span className="text-sm text-subtle">{scale}</span> : null}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+                <p className="mt-4 text-[13px] leading-relaxed text-muted-foreground">
+                  {lead.record.checklist.length} things go on the call before this becomes a
+                  booking. Nothing here is a reservation.
+                </p>
+              </div>
+            </aside>
+          </div>
+
           <dl className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[
               [String(OPS.count), "Rooms in this working set"],

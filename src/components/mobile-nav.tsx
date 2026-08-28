@@ -155,7 +155,7 @@ export function DockCoach() {
       setShow(false);
       return;
     }
-    setShow(pathname === "/");
+    setShow(pathname !== "/");
   }, [pathname]);
 
   if (!show) return null;
@@ -170,9 +170,9 @@ export function DockCoach() {
       role="status"
       aria-live="polite"
       aria-label="How you move on a phone"
-      className="no-print pointer-events-none fixed bottom-[calc(5.75rem+env(safe-area-inset-bottom,0px))] left-4 right-24 z-40 sm:hidden"
+      className="no-print mx-auto mb-4 max-w-6xl px-4 sm:hidden"
     >
-      <div className="plate pointer-events-auto p-3">
+      <div className="plate p-3">
         <p className="font-display text-lg leading-tight tracking-tight">Four stops. Same bar.</p>
         <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
           Start → Night → a room → Records. A room is not a button. Method is the written map.

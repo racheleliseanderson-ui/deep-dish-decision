@@ -14,7 +14,6 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
       { title: APP_NAME },
       { name: "theme-color", content: "#152038" },
-      { property: "og:url", content: "https://deepdish.saltnotes.blog/" },
       {
         name: "description",
         content:
@@ -23,7 +22,6 @@ export const Route = createRootRoute({
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
-      { rel: "canonical", href: "https://deepdish.saltnotes.blog/" },
       { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: "/manifest.webmanifest" },
       { rel: "manifest", href: "/__app/manifest.webmanifest" },

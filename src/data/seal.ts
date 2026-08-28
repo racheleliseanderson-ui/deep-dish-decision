@@ -80,7 +80,6 @@ const DEFAULTS: Partial<RestaurantRecord> = {
   version: "2026.08.20",
   reviewedAt: "2026-08-20",
   nextReviewAt: "2026-09-03",
-  reviewStatus: "current",
   freshnessStatus: "current",
   hoursFreshness: "current",
   priceFreshness: "current",
@@ -100,13 +99,74 @@ const DEFAULTS: Partial<RestaurantRecord> = {
   planningLoad: "Standard",
 };
 
+/**
+ * Review state is derived from the calendar, never asserted.
+ *
+ * A record that publishes "next review 2026-09-03" has to stop calling itself
+ * current on 2026-09-04. Carrying that state as a constant in DEFAULTS made
+ * the one promise this instrument cannot afford to get wrong — that you are
+ * told when the evidence went out of date — the single field it never
+ * checked. It also left the overdue and due-soon branches of buildFindings
+ * unreachable and their confirm-burden weights dead.
+ *
+ * Dates are compared date-only in UTC so a server render and a browser
+ * hydration land on the same calendar day.
+ */
+const DUE_SOON_WINDOW_DAYS = 7;
+const DAY_MS = 86_400_000;
+
+export function todayISO(now: Date = new Date()): string {
+  return now.toISOString().slice(0, 10);
+}
+
+/** Whole days from `today` to `iso`; negative once the date has passed. */
+export function daysUntil(iso: string, today: string): number | null {
+  const target = Date.parse(`${iso}T00:00:00Z`);
+  const from = Date.parse(`${today}T00:00:00Z`);
+  if (Number.isNaN(target) || Number.isNaN(from)) return null;
+  return Math.round((target - from) / DAY_MS);
+}
+
+export function deriveReviewStatus(
+  nextReviewAt: string | undefined,
+  today: string,
+): RestaurantRecord["reviewStatus"] {
+  const left = nextReviewAt ? daysUntil(nextReviewAt, today) : null;
+  // A missing or unreadable review date is not a pass. Fail closed.
+  if (left === null) return "overdue";
+  if (left < 0) return "overdue";
+  if (left <= DUE_SOON_WINDOW_DAYS) return "due-soon";
+  return "current";
+}
+
+/**
+ * A record past its review window is not "current" evidence, whatever the
+ * default said. A freshness state an author set deliberately — conflicting,
+ * incomplete, under-review — is more specific than the clock and is left alone.
+ */
+export function deriveFreshness(
+  authored: Freshness | undefined,
+  reviewStatus: RestaurantRecord["reviewStatus"],
+): Freshness {
+  const base = authored ?? "current";
+  if (base !== "current") return base;
+  if (reviewStatus === "overdue") return "stale";
+  if (reviewStatus === "due-soon") return "review-due";
+  return "current";
+}
+
 export function seal(input: Draft): RestaurantRecord {
   const r = { ...DEFAULTS, ...input };
   const thinFields = DEPTH_FIELDS.filter((k) => isThin(String(r[k] ?? "")));
   const unknownList = r.unknownList ?? [];
   const region = r.region ?? `${r.city}, ${r.stateProvince}`;
   const hasPhone = Boolean(r.phone && r.phone !== "Not stated");
-  const reviewDueSoon = r.reviewStatus === "due-soon";
+  const today = todayISO();
+  // An explicitly authored status still wins: a human who marked a record
+  // "under review" knows something the calendar does not.
+  const reviewStatus = input.reviewStatus ?? deriveReviewStatus(r.nextReviewAt, today);
+  const reviewDueSoon = reviewStatus === "due-soon";
+  const freshnessStatus = deriveFreshness(input.freshnessStatus, reviewStatus);
   const depthTotal = DEPTH_FIELDS.length;
   const depthFilled = depthTotal - thinFields.length;
   const searchText = [
@@ -135,7 +195,9 @@ export function seal(input: Draft): RestaurantRecord {
     ...(r as RestaurantRecord),
     region,
     hasPhone,
+    reviewStatus,
     reviewDueSoon,
+    freshnessStatus,
     unknownList,
     unknownsCount: unknownList.length,
     thinFields: [...thinFields],

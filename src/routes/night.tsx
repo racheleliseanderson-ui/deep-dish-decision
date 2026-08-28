@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { canonical } from "@/lib/seo";
 import { useMemo, useState } from "react";
 import { DecisionBrief, DepthNote, ResultCard, WhatIf } from "@/components/results";
 import { SituationForm } from "@/components/situation-form";
@@ -11,7 +12,7 @@ import { emptySituation } from "@/lib/types";
 
 export const Route = createFileRoute("/night")({
   component: NightPage,
-  head: () => ({ meta: [{ title: "The night — Deep Dish" }] }),
+  head: () => ({ meta: [{ title: "The night — Deep Dish" }] , links: [canonical("/night")] }),
 });
 
 function NightPage() {
