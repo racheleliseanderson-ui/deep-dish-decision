@@ -1,6 +1,27 @@
 {
   "runs": [
     {
+      "kind": "level-records",
+      "startedAt": "2026-08-28T03:27:08.545Z",
+      "finishedAt": "2026-08-28T03:27:08.545Z",
+      "records": 836,
+      "promoted": 3,
+      "fullBefore": 836,
+      "fullAfter": 836,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 814,
+        "officialConflicts": 11,
+        "thinRecords": 446,
+        "avgUnknowns": 5.16,
+        "avgThinFields": 7.62,
+        "lastReviewAt": "2026-08-21",
+        "reachableAtLastReview": 194
+      }
+    },
+    {
       "kind": "hygiene-owned",
       "startedAt": "2026-08-21T14:29:44.881Z",
       "finishedAt": "2026-08-21T14:32:56.188Z",
@@ -372,6 +393,69 @@
             "thin-44"
           ]
         }
+      }
+    },
+    {
+      "kind": "level-records",
+      "startedAt": "2026-08-21T01:46:14.335Z",
+      "finishedAt": "2026-08-21T01:46:14.335Z",
+      "records": 836,
+      "promoted": 0,
+      "fullBefore": 836,
+      "fullAfter": 836,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 814,
+        "officialConflicts": 11,
+        "thinRecords": 448,
+        "avgUnknowns": 5.16,
+        "avgThinFields": 7.63,
+        "lastReviewAt": "2026-08-21",
+        "reachableAtLastReview": 194
+      }
+    },
+    {
+      "kind": "level-records",
+      "startedAt": "2026-08-21T01:45:07.858Z",
+      "finishedAt": "2026-08-21T01:45:07.858Z",
+      "records": 836,
+      "promoted": 0,
+      "fullBefore": 836,
+      "fullAfter": 836,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 814,
+        "officialConflicts": 11,
+        "thinRecords": 789,
+        "avgUnknowns": 5.16,
+        "avgThinFields": 7.63,
+        "lastReviewAt": "2026-08-21",
+        "reachableAtLastReview": 194
+      }
+    },
+    {
+      "kind": "level-records",
+      "startedAt": "2026-08-21T01:42:46.127Z",
+      "finishedAt": "2026-08-21T01:42:46.127Z",
+      "records": 836,
+      "promoted": 692,
+      "fullBefore": 41,
+      "fullAfter": 836,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 814,
+        "officialConflicts": 11,
+        "thinRecords": 786,
+        "avgUnknowns": 5.06,
+        "avgThinFields": 7.59,
+        "lastReviewAt": "2026-08-21",
+        "reachableAtLastReview": 194
       }
     },
     {
@@ -10841,6 +10925,88 @@
     },
     {
       "kind": "enrich",
+      "startedAt": "2026-08-11T00:03:42.419Z",
+      "finishedAt": "2026-08-11T00:04:59.421Z",
+      "batchSize": 5,
+      "cities": [
+        "San Francisco, California"
+      ],
+      "resolved": 5,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 82,
+      "corpusEnriched": 91,
+      "apiCalls": {
+        "google": 5,
+        "firecrawl": 12
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-03-42-417Z-enrich",
+      "records": [
+        {
+          "slug": "r-g-lounge",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "good-mong-kok-bakery",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        },
+        {
+          "slug": "hong-kong-clay-pot-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "hong-kong-lounge",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "palette-tea-house",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "discover",
+      "startedAt": "2026-08-11T00:03:41.686Z",
+      "finishedAt": "2026-08-11T00:03:42.338Z",
+      "batchSize": 5,
+      "cities": [
+        {
+          "city": "San Francisco, CA",
+          "found": 20,
+          "inserted": 5,
+          "duplicates": 2
+        }
+      ],
+      "inserted": 5,
+      "duplicatesSkipped": 2,
+      "apiCalls": {
+        "placesSearchText": 1
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-03-41-686Z-discover",
+      "insertedSlugs": [
+        "r-g-lounge",
+        "good-mong-kok-bakery",
+        "hong-kong-clay-pot-restaurant",
+        "hong-kong-lounge",
+        "palette-tea-house"
+      ]
+    },
+    {
+      "kind": "enrich",
       "startedAt": "2026-08-11T00:03:05.631Z",
       "finishedAt": "2026-08-11T00:11:27.207Z",
       "batchSize": 30,
@@ -11063,141 +11229,6 @@
       ]
     },
     {
-      "kind": "enrich",
-      "startedAt": "2026-08-11T00:03:42.419Z",
-      "finishedAt": "2026-08-11T00:04:59.421Z",
-      "batchSize": 5,
-      "cities": [
-        "San Francisco, California"
-      ],
-      "resolved": 5,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 82,
-      "corpusEnriched": 91,
-      "apiCalls": {
-        "google": 5,
-        "firecrawl": 12
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-03-42-417Z-enrich",
-      "records": [
-        {
-          "slug": "r-g-lounge",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "good-mong-kok-bakery",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "hong-kong-clay-pot-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "hong-kong-lounge",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "palette-tea-house",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "discover",
-      "startedAt": "2026-08-11T00:03:41.686Z",
-      "finishedAt": "2026-08-11T00:03:42.338Z",
-      "batchSize": 5,
-      "cities": [
-        {
-          "city": "San Francisco, CA",
-          "found": 20,
-          "inserted": 5,
-          "duplicates": 2
-        }
-      ],
-      "inserted": 5,
-      "duplicatesSkipped": 2,
-      "apiCalls": {
-        "placesSearchText": 1
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-03-41-686Z-discover",
-      "insertedSlugs": [
-        "r-g-lounge",
-        "good-mong-kok-bakery",
-        "hong-kong-clay-pot-restaurant",
-        "hong-kong-lounge",
-        "palette-tea-house"
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-11T00:01:16.017Z",
-      "finishedAt": "2026-08-11T00:03:41.563Z",
-      "batchSize": 5,
-      "cities": [
-        "Chicago, Illinois"
-      ],
-      "resolved": 5,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 82,
-      "corpusEnriched": 86,
-      "apiCalls": {
-        "google": 5,
-        "firecrawl": 9
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-01-16-015Z-enrich",
-      "records": [
-        {
-          "slug": "portillo-s-barnelli-s-chicago",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "jim-s-original",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "billy-goat-tavern-the-original",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "demera-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "flo-santos",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        }
-      ]
-    },
-    {
       "kind": "discover",
       "startedAt": "2026-08-11T00:03:02.773Z",
       "finishedAt": "2026-08-11T00:03:05.551Z",
@@ -11273,6 +11304,59 @@
         "house-of-xian-dumpling",
         "mama-ji-s",
         "mr-szechuan"
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-11T00:01:16.017Z",
+      "finishedAt": "2026-08-11T00:03:41.563Z",
+      "batchSize": 5,
+      "cities": [
+        "Chicago, Illinois"
+      ],
+      "resolved": 5,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 82,
+      "corpusEnriched": 86,
+      "apiCalls": {
+        "google": 5,
+        "firecrawl": 9
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-01-16-015Z-enrich",
+      "records": [
+        {
+          "slug": "portillo-s-barnelli-s-chicago",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "jim-s-original",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "billy-goat-tavern-the-original",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "demera-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "flo-santos",
+          "matchStatus": "resolved",
+          "completeness": 92,
+          "notes": []
+        }
       ]
     },
     {
@@ -12096,277 +12180,6 @@
           "slug": "part-parcel",
           "matchStatus": "resolved",
           "completeness": 96,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:36:11.896Z",
-      "finishedAt": "2026-08-10T21:36:17.567Z",
-      "batchSize": 3,
-      "cities": [
-        "Vancouver, British Columbia",
-        "Victoria, British Columbia",
-        "Hood Canal, Washington"
-      ],
-      "resolved": 1,
-      "unresolved": 2,
-      "deferred": 0,
-      "avgCompleteness": 81,
-      "corpusEnriched": 22,
-      "apiCalls": {
-        "google": 3,
-        "firecrawl": 1
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-36-11-894Z-enrich",
-      "records": [
-        {
-          "slug": "published-on-main",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "part-parcel",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "hama-hama-oyster-saloon",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:34:37.068Z",
-      "finishedAt": "2026-08-10T21:35:52.340Z",
-      "batchSize": 10,
-      "cities": [
-        "Spokane, Washington",
-        "Vancouver, British Columbia",
-        "Tacoma, Washington",
-        "Olympia, Washington",
-        "Eugene, Oregon",
-        "Vancouver, Washington",
-        "Bellingham, Washington",
-        "Victoria, British Columbia",
-        "Hood Canal, Washington",
-        "Walla Walla, Washington"
-      ],
-      "resolved": 7,
-      "unresolved": 3,
-      "deferred": 0,
-      "avgCompleteness": 78,
-      "corpusEnriched": 22,
-      "apiCalls": {
-        "google": 10,
-        "firecrawl": 22
-      },
-      "retries": 10,
-      "failures": 1,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-34-37-066Z-enrich",
-      "records": [
-        {
-          "slug": "gander-and-ryegrass",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "published-on-main",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "wooden-city-tacoma",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "cynara-restaurant-lounge",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "marche",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "elements-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "roe",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": [
-            "site 429"
-          ]
-        },
-        {
-          "slug": "part-parcel",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "hama-hama-oyster-saloon",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "saffron-mediterranean-kitchen",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:33:02.215Z",
-      "finishedAt": "2026-08-10T21:34:33.422Z",
-      "batchSize": 10,
-      "cities": [
-        "Seattle, Washington",
-        "Portland, Oregon",
-        "Boise, Idaho",
-        "Bend, Oregon"
-      ],
-      "resolved": 10,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 86,
-      "corpusEnriched": 12,
-      "apiCalls": {
-        "google": 10,
-        "firecrawl": 27
-      },
-      "retries": 8,
-      "failures": 1,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-33-02-213Z-enrich",
-      "records": [
-        {
-          "slug": "nue",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "the-pink-door",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "tusk",
-          "matchStatus": "resolved",
-          "completeness": 96,
-          "notes": []
-        },
-        {
-          "slug": "le-pigeon",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "revel",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "ox",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "langbaan",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "kachka",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "kin",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        },
-        {
-          "slug": "ariana",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": [
-            "site 429"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:32:40.599Z",
-      "finishedAt": "2026-08-10T21:32:50.777Z",
-      "batchSize": 2,
-      "cities": [
-        "Seattle, Washington",
-        "Portland, Oregon"
-      ],
-      "resolved": 2,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 83,
-      "corpusEnriched": 2,
-      "apiCalls": {
-        "google": 2,
-        "firecrawl": 2
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-32-40-597Z-enrich",
-      "records": [
-        {
-          "slug": "canlis",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "kann",
-          "matchStatus": "resolved",
-          "completeness": 83,
           "notes": []
         }
       ]

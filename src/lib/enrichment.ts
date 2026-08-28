@@ -483,7 +483,9 @@ function toOwnedQuotes(values: SiteLanguage[] | undefined): OwnedQuote[] {
 
 /**
  * First-party website language already extracted onto the enrichment record.
- * Surfaced on the case file as labeled quotes — never copied over dataset fields.
+ * The leveling pass writes structured hours, telephone, price, cuisine, menu
+ * and reservation paths onto empty dataset fields. Remaining quotes stay
+ * labeled on the case file.
  */
 export function ownedSiteEvidence(slug: string): {
   present: boolean;
