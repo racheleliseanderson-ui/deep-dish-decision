@@ -125,12 +125,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 const themeInit = `(function(){try{var d=document.documentElement;var m=localStorage.getItem("sc-mode")||localStorage.getItem("rih-theme");var cvd=localStorage.getItem("sc-cvd")==="on"||localStorage.getItem("rih-contrast")==="cvd"||m==="colorblind";if(m==="pearl"||m==="light"){d.classList.remove("dark");d.classList.add("light")}else{d.classList.add("dark");d.classList.remove("light")}if(cvd){d.classList.add("cvd");d.classList.add("mode-cvd")}d.lang="en"}catch(e){document.documentElement.classList.add("dark")}})()`;
 
+// PR #23 briefly shipped a PWA at this origin. Its NetworkFirst navigation cache can keep
+// serving that displaced application after rollback. Remove that registration and only the
+// cache names created by that build; reload once when an old worker was controlling the page.
+const stalePwaCleanup = `(function(){try{if(!("serviceWorker" in navigator))return;var reloadKey="rih-stale-pwa-cleanup-2026-08-28";var controlled=!!navigator.serviceWorker.controller;var unregister=navigator.serviceWorker.getRegistrations().then(function(regs){return Promise.all(regs.map(function(reg){return reg.unregister()}))}).catch(function(){});var clearCaches=Promise.resolve();if("caches" in window){clearCaches=caches.keys().then(function(keys){return Promise.all(keys.filter(function(key){return key==="pages"||key==="images"||key.indexOf("workbox-precache")===0}).map(function(key){return caches.delete(key)}))}).catch(function(){})}Promise.all([unregister,clearCaches]).then(function(){if(controlled&&sessionStorage.getItem(reloadKey)!=="1"){sessionStorage.setItem(reloadKey,"1");window.location.reload()}}).catch(function(){})}catch(e){}})()`;
+
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="dark">
       <head>
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+        <script dangerouslySetInnerHTML={{ __html: stalePwaCleanup }} />
       </head>
       <body>
         {children}
