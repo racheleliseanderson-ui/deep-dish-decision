@@ -1,6 +1,330 @@
 {
   "runs": [
     {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-28T23:22:35.282Z",
+      "finishedAt": "2026-08-28T23:25:38.640Z",
+      "batchSize": 22,
+      "cities": [
+        "Charlotte, North Carolina",
+        "San Diego, California",
+        "New Orleans, Louisiana",
+        "Anchorage, Alaska",
+        "Bakersfield, California",
+        "San Francisco, California",
+        "Des Moines, Iowa",
+        "Alhambra, California",
+        "Houston, Texas",
+        "Seattle and greater Puget Sound",
+        "Portland metro and Willamette Valley",
+        "Inland Northwest and Portland",
+        "Inland Northwest and Seattle",
+        "Pacific Northwest"
+      ],
+      "resolved": 12,
+      "unresolved": 7,
+      "sourceLimited": 3,
+      "deferred": 0,
+      "avgCompleteness": 95,
+      "corpusEnriched": 836,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 19
+      },
+      "retries": 15,
+      "failures": 7,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-28T23-22-35-282Z-hygiene-owned",
+      "records": [
+        {
+          "slug": "barrington-s-charlotte",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "born-raised-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        },
+        {
+          "slug": "comp-re-lapin-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "ironside-fish-oyster-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        },
+        {
+          "slug": "jens-restaurant-anchorage",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 0 fetch failed:CERT_HAS_EXPIRED"
+          ]
+        },
+        {
+          "slug": "locale-farm-to-table-eatery-bakersfield",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+          ]
+        },
+        {
+          "slug": "mr-szechuan",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        },
+        {
+          "slug": "oak-park-des-moines",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "chengdu-taste",
+          "matchStatus": "source-limited",
+          "completeness": 72,
+          "notes": [
+            "operator platform source; no owned website"
+          ]
+        },
+        {
+          "slug": "di-an-pho",
+          "matchStatus": "source-limited",
+          "completeness": 72,
+          "notes": [
+            "operator platform source; no owned website"
+          ]
+        },
+        {
+          "slug": "spicy-king",
+          "matchStatus": "source-limited",
+          "completeness": 72,
+          "notes": [
+            "operator platform source; no owned website"
+          ]
+        },
+        {
+          "slug": "canlis",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "kachka",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "kann",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "langbaan",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "le-pigeon",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "nue",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 20"
+          ]
+        },
+        {
+          "slug": "ox",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "revel",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "st-lawrence",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-pink-door",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "tusk",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        }
+      ],
+      "hygiene": {
+        "hygieneDue": 22,
+        "selected": [
+          "barrington-s-charlotte",
+          "born-raised-san-diego",
+          "comp-re-lapin-new-orleans",
+          "ironside-fish-oyster-san-diego",
+          "jens-restaurant-anchorage",
+          "locale-farm-to-table-eatery-bakersfield",
+          "mr-szechuan",
+          "oak-park-des-moines",
+          "chengdu-taste",
+          "di-an-pho",
+          "spicy-king",
+          "canlis",
+          "kachka",
+          "kann",
+          "langbaan",
+          "le-pigeon",
+          "nue",
+          "ox",
+          "revel",
+          "st-lawrence",
+          "the-pink-door",
+          "tusk"
+        ],
+        "reasons": {
+          "barrington-s-charlotte": [
+            "match-site-failure"
+          ],
+          "born-raised-san-diego": [
+            "match-site-failure",
+            "site-failure:site 429 HTTP 429"
+          ],
+          "comp-re-lapin-new-orleans": [
+            "match-site-failure"
+          ],
+          "ironside-fish-oyster-san-diego": [
+            "match-site-failure",
+            "site-failure:site 429 HTTP 429"
+          ],
+          "jens-restaurant-anchorage": [
+            "match-site-failure"
+          ],
+          "locale-farm-to-table-eatery-bakersfield": [
+            "match-site-failure"
+          ],
+          "mr-szechuan": [
+            "match-site-failure",
+            "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ],
+          "oak-park-des-moines": [
+            "match-site-failure"
+          ],
+          "chengdu-taste": [
+            "source-limited"
+          ],
+          "di-an-pho": [
+            "source-limited"
+          ],
+          "spicy-king": [
+            "source-limited"
+          ],
+          "canlis": [
+            "review-due-soon"
+          ],
+          "kachka": [
+            "review-due-soon"
+          ],
+          "kann": [
+            "review-due-soon"
+          ],
+          "langbaan": [
+            "review-due-soon"
+          ],
+          "le-pigeon": [
+            "review-due-soon"
+          ],
+          "nue": [
+            "review-due-soon"
+          ],
+          "ox": [
+            "review-due-soon"
+          ],
+          "revel": [
+            "review-due-soon"
+          ],
+          "st-lawrence": [
+            "review-due-soon"
+          ],
+          "the-pink-door": [
+            "review-due-soon"
+          ],
+          "tusk": [
+            "review-due-soon"
+          ]
+        }
+      }
+    },
+    {
       "kind": "level-records",
       "startedAt": "2026-08-28T03:27:08.545Z",
       "finishedAt": "2026-08-28T03:27:08.545Z",
@@ -12144,42 +12468,6 @@
           "slug": "peerless-restaurant-bar",
           "matchStatus": "resolved",
           "completeness": 88,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:36:33.397Z",
-      "finishedAt": "2026-08-10T21:36:57.332Z",
-      "batchSize": 2,
-      "cities": [
-        "Vancouver, British Columbia",
-        "Victoria, British Columbia"
-      ],
-      "resolved": 2,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 86,
-      "corpusEnriched": 22,
-      "apiCalls": {
-        "google": 2,
-        "firecrawl": 5
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-36-33-396Z-enrich",
-      "records": [
-        {
-          "slug": "published-on-main",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "part-parcel",
-          "matchStatus": "resolved",
-          "completeness": 96,
           "notes": []
         }
       ]

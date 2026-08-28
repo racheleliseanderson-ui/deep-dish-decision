@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T14:32:56.175Z",
+  "generatedAt": "2026-08-28T23:25:38.628Z",
   "records": {
     "canlis": {
       "google": {
@@ -128,22 +128,6 @@
         "editorialSummary": "Landmark fine-dining destination (since 1950s) offering Pacific NW fare in a midcentury-modern home.",
         "retrievedAt": "2026-08-10T21:32:40.599Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "https://www.exploretock.com/canlis",
-        "reservationPlatform": "Tock",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "https://canlis.com/"
-        ],
-        "retrievedAt": "2026-08-10T21:32:40.599Z"
-      },
       "summary": {
         "text": "Canlis is an American restaurant located in the East Queen Anne neighborhood of Seattle, Washington. It offers fine dining with a cocktail/lounge and wine-forward focus, operating five days a week. The restaurant has a 4.6 rating from 2872 reviews and is reservable via Tock.",
         "model": "google/gemini-2.5-flash",
@@ -169,8 +153,50 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:32:40.599Z",
+        "lastEnrichedAt": "2026-08-28T23:25:15.011Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://canlis.com/menu/",
+        "reservationUrl": "https://www.exploretock.com/canlis/",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Reserve on Tock Food Allergies At Canlis, we understand and respect the importance of accommodating guests with food allergies or intolerances.",
+          "We encourage guests with severe food allergies to exercise their discretion and inform our staff of their dietary needs.",
+          "Specific Dietary Requests We are pleased to offer modifications for vegetarian, vegan, dairy-free, and gluten-free diets."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Events We welcome you with a coast-to-coast reputation for creating unforgettable experiences.",
+        "groupPolicyLanguage": [
+          "Private Events We welcome you with a coast-to-coast reputation for creating unforgettable experiences.",
+          "Explore the room Emma Holmgren, Private Events Manager Start planning your event today by emailing our team at events@canlis.com Plan Your Event Download Packet Photography by Bloom & Wander Co., Kevin Scott, Kimberly Person, Jana Early, and Jeremy P."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Cancellations If you need to cancel a reservation for any reason you may do so forty-eight hours in advance and we will issue a full refund of your deposit.",
+          "Reservations changing to a smaller party size do not receive a refunded deposit.",
+          "To recoup the deposit for a reservation decreasing in size you may cancel the reservation outside the 48-hour window and rebook a smaller table if one is available."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Canlis — Seattle’s family-owned fine dining since 1950",
+            "sourceUrl": "https://canlis.com/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://canlis.com/",
+          "https://canlis.com/menu/",
+          "https://canlis.com/private-events/",
+          "https://canlis.com/reservations"
+        ],
+        "retrievedAt": "2026-08-28T23:25:15.011Z",
+        "playwrightPages": 0
       }
     },
     "kann": {
@@ -294,22 +320,6 @@
         "editorialSummary": "",
         "retrievedAt": "2026-08-10T21:32:44.308Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "https://kannrestaurant.com/"
-        ],
-        "retrievedAt": "2026-08-10T21:32:44.308Z"
-      },
       "summary": {
         "text": "Kann is a restaurant located in Southeast Portland, Oregon. It offers Caribbean, Pacific Northwest, Plant-forward, and Small plates cuisine, with a price band of $$$$. The restaurant has a rating of 4.5 based on 1255 reviews and is open five days a week, serving dinner and dessert.",
         "model": "google/gemini-2.5-flash",
@@ -334,8 +344,71 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:32:44.308Z",
+        "lastEnrichedAt": "2026-08-28T23:25:19.881Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://kannrestaurant.com/menu",
+        "reservationUrl": "https://resy.com/cities/pdx/kann",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Back About FAQs Menu Reservations Team Contact Kann Cellar Series Upcoming Events Event Inquiries kann coffee kann chocolate Goldbelly® Gallery Donation Request Private Dining & Event Inquiries Please fill out the form to inquire about events at kann .",
+        "groupPolicyLanguage": [
+          "Back About FAQs Menu Reservations Team Contact Kann Cellar Series Upcoming Events Event Inquiries kann coffee kann chocolate Goldbelly® Gallery Donation Request Private Dining & Event Inquiries Please fill out the form to inquire about events at kann .",
+          "Our private dining room upstairs above kann ’s main restaurant can accommodate groups of up to 36 guests.",
+          "We also offer private events in our bar, sousòl - as well as full restaurant buyouts."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Haitian cuisine meets Pacific Northwest bounty at Kann, a live-fire restaurant from James Beard Award Winning chef Gregory Gourdet. Kann now ships our signature dishes nationwide on Goldbelly, straight from Portland to your door. Guaranteed to ",
+            "sourceUrl": "https://kannrestaurant.com/"
+          },
+          {
+            "quote": "title: kann - A Restaurant by Gregory Gourdet | Nationwide Shipping",
+            "sourceUrl": "https://kannrestaurant.com/"
+          },
+          {
+            "quote": "og:description: kann is dedicated to the pursuit of sustainability, from sourcing and environmental impact to team quality of life.",
+            "sourceUrl": "https://kannrestaurant.com/about"
+          },
+          {
+            "quote": "title: kann Restaurant - Portland, OR &mdash; kann",
+            "sourceUrl": "https://kannrestaurant.com/about"
+          },
+          {
+            "quote": "og:description: The restaurant honors Gregory Gourdet",
+            "sourceUrl": "https://kannrestaurant.com/menu"
+          },
+          {
+            "quote": "title: kann Food Menu - Portland, OR &mdash; kann",
+            "sourceUrl": "https://kannrestaurant.com/menu"
+          },
+          {
+            "quote": "og:description: Looking to host an event in our private dining space? Please use this form to reach out to our team.",
+            "sourceUrl": "https://kannrestaurant.com/events"
+          },
+          {
+            "quote": "title: Event Inquiries at kann Restaurant - Portland, OR &mdash; kann",
+            "sourceUrl": "https://kannrestaurant.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://kannrestaurant.com/",
+          "https://kannrestaurant.com/about",
+          "https://kannrestaurant.com/menu",
+          "https://kannrestaurant.com/events"
+        ],
+        "retrievedAt": "2026-08-28T23:25:19.881Z",
+        "playwrightPages": 0
       }
     },
     "nue": {
@@ -472,28 +545,6 @@
         "editorialSummary": "A memorabilia-packed dining room sets the tone for hip takes on street eats from around the globe.",
         "retrievedAt": "2026-08-10T21:33:02.215Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "https://www.nueseattle.com/reservations",
-        "reservationPlatform": "Direct",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "Learn about large parties, corporate events, and restaurant buyouts on our Private Events page or email us at",
-        "groupPolicyLanguage": [
-          {
-            "quote": "Learn about large parties, corporate events, and restaurant buyouts on our Private Events page or email us at",
-            "sourceUrl": "https://www.nueseattle.com/reservations"
-          }
-        ],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 2,
-        "sourceUrls": [
-          "https://www.nueseattle.com/",
-          "https://www.nueseattle.com/reservations"
-        ],
-        "retrievedAt": "2026-08-10T21:33:02.215Z"
-      },
       "summary": {
         "text": "Nue is a restaurant located in Seattle, Washington's Capitol Hill neighborhood, with a 4.4 rating from 2193 reviews. It offers breakfast/brunch and small plates, with amenities including outdoor seating, delivery, takeout, and serves vegetarian food. The establishment is wheelchair accessible and accepts reservations directly.",
         "model": "google/gemini-2.5-flash",
@@ -520,8 +571,144 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:33:02.215Z",
+        "lastEnrichedAt": "2026-08-28T23:25:25.593Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.nueseattle.com/dinner",
+        "reservationUrl": "https://www.nueseattle.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-206-257-0312",
+          "JSON-LD telephone: 206-257-0312"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-22:00, Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 11:00-23:00, Sa 11:00-23:00, Su 10:00-22:00",
+          "JSON-LD openingHoursSpecification: Monday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday 17:00 22:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 23:00",
+          "JSON-LD openingHoursSpecification: Saturday 10:00 23:00",
+          "JSON-LD openingHoursSpecification: Sunday 10:30 22:00",
+          "JSON-LD openingHoursSpecification: Sunday 10:00 22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Global, Street Food, International, South African, Chengdu Sichuan, French-Algerian, Thai Delicacies, Burmese, Balinese",
+          "JSON-LD servesCuisine: Global Street Food, South African, Burmese, Thai"
+        ],
+        "dietaryLanguage": [
+          "Do You Have Gluten-Free Options?",
+          "Many of our appetizers, entrées, and desserts are gluten-free or can be modified to be gluten-free.",
+          "Please let your server know about any dietary restrictions when ordering.",
+          "Do You Have Vegan and Vegetarian Options?"
+        ],
+        "accessibilityLanguage": [
+          "Is the Restaurant Wheelchair Accessible?",
+          "Our restaurant is wheelchair accessible."
+        ],
+        "groupPolicy": "Learn about large parties, corporate events, and restaurant buyouts on our Private Events page or email us at info@nueseattle.com BACK Featured in CAPITOL HILL, SEATTLE 206-257-0312 INFO@NUESEATTLE.COM Reserve Now",
+        "groupPolicyLanguage": [
+          "Learn about large parties, corporate events, and restaurant buyouts on our Private Events page or email us at info@nueseattle.com BACK Featured in CAPITOL HILL, SEATTLE 206-257-0312 INFO@NUESEATTLE.COM Reserve Now",
+          "PRIVATE EVENTS From intimate global feasts to full restaurant buyouts NO TWO EVENTS ARE EVER THE SAME Some of our favorite memories at Nue have come from private events.",
+          "We can host everything from a group of 12 to a full restaurant buyout.",
+          "THIS IS WHERE WE GET CREATIVE Private events let us do things we'd never put on our everyday menu."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-22:00, Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 11:00-23:00, Sa 11:00-23:00, Su 10:00-22:00",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +1-206-257-0312",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Global, Street Food, International, South African, Chengdu Sichuan, French-Algerian, Thai Delicacies, Burmese, Balinese",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday 11:00 22:00",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday 17:00 22:00",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 23:00",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 10:00 23:00",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 10:30 22:00",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: 206-257-0312",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Global Street Food, South African, Burmese, Thai",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 10:00 22:00",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "og:description: Discover hard-to-find dishes from around the world at Nue Seattle, serving global cuisine, craft cocktails, brunch, dinner and happy hour in Capitol Hill.",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "title: NUE Seattle | Global Cuisine & Craft Cocktails",
+            "sourceUrl": "https://www.nueseattle.com/"
+          },
+          {
+            "quote": "og:description: Book a table at Nue Seattle for adventurous street food from around the world. Located in Capitol Hill. Indoor dining available. Reservations recommended.",
+            "sourceUrl": "https://www.nueseattle.com/reservations"
+          },
+          {
+            "quote": "title: Reservations | Nue Seattle, Capitol Hill &mdash; NUE Seattle",
+            "sourceUrl": "https://www.nueseattle.com/reservations"
+          },
+          {
+            "quote": "og:description: Host your next private party, corporate dinner, or holiday celebration at Nue in Capitol Hill. We offer custom global menus, family-style feasting, and full restaurant buyouts for up to 40 guests.",
+            "sourceUrl": "https://www.nueseattle.com/private-events"
+          },
+          {
+            "quote": "title: Private Events & Restaurant Buyouts | Nue Seattle &mdash; NUE Seattle",
+            "sourceUrl": "https://www.nueseattle.com/private-events"
+          },
+          {
+            "quote": "og:description: Nue Seattle’s vision is simple—connect people through global street food and bold flavors in Capitol Hill.",
+            "sourceUrl": "https://www.nueseattle.com/about"
+          },
+          {
+            "quote": "title: Nue Seattle Vision | Connecting Cultures Through Food &mdash; NUE Seattle",
+            "sourceUrl": "https://www.nueseattle.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.nueseattle.com/",
+          "https://www.nueseattle.com/reservations",
+          "https://www.nueseattle.com/private-events",
+          "https://www.nueseattle.com/about"
+        ],
+        "retrievedAt": "2026-08-28T23:25:25.593Z",
+        "playwrightPages": 0
       }
     },
     "the-pink-door": {
@@ -650,23 +837,6 @@
         "editorialSummary": "Italian restaurant with cabaret shows and trapeze entertainment, plus terrace with Elliott Bay views.",
         "retrievedAt": "2026-08-10T21:33:09.185Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "https://www.opentable.com/r/the-pink-door-reservations-seattle?restref=75022&lang=en-US&ot_source=Restaurant%20website",
-        "reservationPlatform": "OpenTable",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 2,
-        "sourceUrls": [
-          "https://www.thepinkdoor.net/",
-          "https://www.thepinkdoor.net/reservations"
-        ],
-        "retrievedAt": "2026-08-10T21:33:09.185Z"
-      },
       "summary": {
         "text": "The Pink Door is an Italian restaurant located in Downtown Seattle, Washington. It offers dine-in, takeout, and delivery services, with amenities including outdoor seating, reservations, and live music. The restaurant has a rating of 4.6 based on 7265 reviews and is priced in the $$ band.",
         "model": "google/gemini-2.5-flash",
@@ -691,8 +861,66 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:33:09.185Z",
+        "lastEnrichedAt": "2026-08-28T23:25:32.785Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.thepinkdoor.net/menus",
+        "reservationUrl": "https://www.opentable.com/r/the-pink-door-reservations-seattle?restref=75022&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +12064433241"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday,Friday,Saturday 11:30 22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Italian"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +12064433241",
+            "sourceUrl": "https://www.thepinkdoor.net/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$$",
+            "sourceUrl": "https://www.thepinkdoor.net/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Italian",
+            "sourceUrl": "https://www.thepinkdoor.net/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday,Friday,Saturday 11:30 22:00",
+            "sourceUrl": "https://www.thepinkdoor.net/"
+          },
+          {
+            "quote": "og:description: Beloved Seattle Italian restaurant at Pike Place Market since 1981. Fresh local Italian cuisine, seasonal pasta, Elliott Bay views from our dining room and seasonal deck, and nightly live music and aerial performances in the lounge.",
+            "sourceUrl": "https://www.thepinkdoor.net/"
+          },
+          {
+            "quote": "og:description: Reserve a table at The Pink Door in Seattle",
+            "sourceUrl": "https://www.thepinkdoor.net/reservations"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.thepinkdoor.net/",
+          "https://www.thepinkdoor.net/reservations",
+          "https://www.thepinkdoor.net/menus"
+        ],
+        "retrievedAt": "2026-08-28T23:25:32.785Z",
+        "playwrightPages": 0
       }
     },
     "tusk": {
@@ -831,52 +1059,6 @@
         "editorialSummary": "Buzzy, light-filled standout serving creative Middle Eastern fare plus craft cocktails.",
         "retrievedAt": "2026-08-10T21:33:15.661Z"
       },
-      "site": {
-        "menuUrl": "https://tuskpdx.com/menus",
-        "reservationUrl": "https://order.toasttab.com/online/tusk",
-        "reservationPlatform": "Toast",
-        "dietaryLanguage": [
-          {
-            "quote": "Vegetarian (VG), Vegan (V), Contains Gluten (G)",
-            "sourceUrl": "https://tuskpdx.com/menus"
-          },
-          {
-            "quote": "do you offer vegan, vegetarian, or gluten-free dishes?",
-            "sourceUrl": "https://tuskpdx.com/about-us"
-          }
-        ],
-        "accessibilityLanguage": [
-          {
-            "quote": "is the building wheelchair accessible?",
-            "sourceUrl": "https://tuskpdx.com/about-us"
-          }
-        ],
-        "groupPolicy": "Our stunning private event spaces are the perfect setting for intimate celebrations, corporate gatherings, and everything in between.",
-        "groupPolicyLanguage": [
-          {
-            "quote": "Our stunning private event spaces are the perfect setting for intimate celebrations, corporate gatherings, and everything in between.",
-            "sourceUrl": "https://tuskpdx.com/"
-          },
-          {
-            "quote": "Whether you choose our Private Dining Room or Covered Patio, you'll enjoy a blend of modern elegance and warm ambiance, providing a unique backdrop to create cherished memories.",
-            "sourceUrl": "https://tuskpdx.com/"
-          },
-          {
-            "quote": "The private dining room at Tusk can accommodate up to 24 guests for a customized dining experience.",
-            "sourceUrl": "https://tuskpdx.com/events"
-          }
-        ],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 4,
-        "sourceUrls": [
-          "https://tuskpdx.com/",
-          "https://tuskpdx.com/menus",
-          "https://tuskpdx.com/events",
-          "https://tuskpdx.com/about-us"
-        ],
-        "retrievedAt": "2026-08-10T21:33:15.661Z"
-      },
       "summary": {
         "text": "Tusk is a Mediterranean restaurant located in Southeast Portland, Oregon, with a price band of $$. It offers Eastern European, Mediterranean, and Seasonal/market cuisine, and has amenities including outdoor seating, reservations, delivery, and takeout. The restaurant serves vegetarian food, beer, and wine, and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
@@ -904,8 +1086,48 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:33:15.661Z",
+        "lastEnrichedAt": "2026-08-28T23:25:34.901Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://tuskpdx.com/menus",
+        "reservationUrl": "https://resy.com/cities/portland-or/venues/tusk",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "do you offer vegan, vegetarian, or gluten-free dishes?"
+        ],
+        "accessibilityLanguage": [
+          "is the building wheelchair accessible?"
+        ],
+        "groupPolicy": "ORDER ONLINE Private Events Celebrate with us Elevate your next special occasion with an unforgettable experience at Tusk.",
+        "groupPolicyLanguage": [
+          "ORDER ONLINE Private Events Celebrate with us Elevate your next special occasion with an unforgettable experience at Tusk.",
+          "Our stunning private event spaces are the perfect setting for intimate celebrations, corporate gatherings, and everything in between.",
+          "Whether you choose our Private Dining Room or Covered Patio, you'll enjoy a blend of modern elegance and warm ambiance, providing a unique backdrop to create cherished memories.",
+          "Private Events Private Events host a gathering at tusk Get your host on, without the hassle!"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Middle Eastern and Mediterranean-inspired cuisine highlighting seasonal produce of the Pacific Northwest. Open for dinner 5pm–9pm Wednesday–Sunday.",
+            "sourceUrl": "https://tuskpdx.com/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://tuskpdx.com/",
+          "https://tuskpdx.com/menus",
+          "https://tuskpdx.com/events",
+          "https://tuskpdx.com/about-us"
+        ],
+        "retrievedAt": "2026-08-28T23:25:34.901Z",
+        "playwrightPages": 0
       }
     },
     "le-pigeon": {
@@ -1040,27 +1262,6 @@
         "editorialSummary": "Elegant French-inspired fare served with a diverse selection of wines in a lively & intimate room.",
         "retrievedAt": "2026-08-10T21:33:28.015Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [
-          {
-            "quote": "We offer two tasting menus; an omnivore and vegetarian.",
-            "sourceUrl": "https://www.lepigeon.com/"
-          }
-        ],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "https://www.lepigeon.com/"
-        ],
-        "retrievedAt": "2026-08-10T21:33:28.015Z"
-      },
       "summary": {
         "text": "Le Pigeon is a French restaurant located in Southeast Portland, Oregon, with a 4.6 rating from 1149 reviews. This $$$$ establishment offers fine dining and plant-forward options, including omnivore and vegetarian tasting menus. It is open seven days a week, serving breakfast, lunch, and dinner, and is reservable with wheelchair accessible amenities.",
         "model": "google/gemini-2.5-flash",
@@ -1086,8 +1287,40 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:33:28.015Z",
+        "lastEnrichedAt": "2026-08-28T23:25:24.515Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/le-pigeon-reservations-portland?restref=64318&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "We offer two tasting menus; an omnivore and vegetarian."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.lepigeon.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.lepigeon.com/"
+        ],
+        "retrievedAt": "2026-08-28T23:25:24.515Z",
+        "playwrightPages": 0
       }
     },
     "revel": {
@@ -1218,22 +1451,6 @@
         "editorialSummary": "Korean dishes prepared with French technique in a modern industrial-design space with a hopping bar.",
         "retrievedAt": "2026-08-10T21:33:49.195Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "https://www.revelseattle.com/"
-        ],
-        "retrievedAt": "2026-08-10T21:33:49.195Z"
-      },
       "summary": {
         "text": "Revel is a Korean restaurant located in the Fremont neighborhood of Seattle, Washington. It has a price band of $$ and a rating of 4.3 based on 1086 reviews. The restaurant offers outdoor seating, delivery, takeout, and dine-in options, and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
@@ -1258,8 +1475,45 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:33:49.195Z",
+        "lastEnrichedAt": "2026-08-28T23:25:29.342Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.revelseattle.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/revel-seattle",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Large Parties Celebrate with Revel’s five-course preset menu, served family-style and featuring about nine seasonal dishes that highlight our signature bold, playful flavors.",
+        "groupPolicyLanguage": [
+          "Large Parties Celebrate with Revel’s five-course preset menu, served family-style and featuring about nine seasonal dishes that highlight our signature bold, playful flavors.",
+          "For special requests, dietary needs, or parties of 20 or more, please email manager@revelseattle.com ."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Discover Revel in Seattle, a vibrant Korean fusion restaurant offering shareable plates, open kitchen views, and a lively atmosphere since 2010.",
+            "sourceUrl": "https://www.revelseattle.com/"
+          },
+          {
+            "quote": "title: Revel Restaurant Seattle",
+            "sourceUrl": "https://www.revelseattle.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.revelseattle.com/",
+          "https://www.revelseattle.com/menu",
+          "https://www.revelseattle.com/reservation"
+        ],
+        "retrievedAt": "2026-08-28T23:25:29.342Z",
+        "playwrightPages": 0
       }
     },
     "ox": {
@@ -1398,22 +1652,6 @@
         "editorialSummary": "Stylish eatery with a bar where Argentinean-inspired NW fare is cooked on a wood-fired grill.",
         "retrievedAt": "2026-08-10T21:33:52.340Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "https://www.oxpdx.com/"
-        ],
-        "retrievedAt": "2026-08-10T21:33:52.340Z"
-      },
       "summary": {
         "text": "Ox is an Argentinian restaurant located in the Eliot neighborhood of Portland, Oregon. It has a 4.7 rating from 1942 reviews and offers a $$$$ price band. Amenities include outdoor seating, reservations, takeout, and a full bar, with wheelchair accessibility throughout.",
         "model": "google/gemini-2.5-flash",
@@ -1438,8 +1676,43 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:33:52.340Z",
+        "lastEnrichedAt": "2026-08-28T23:25:27.909Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.oxpdx.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Cart 0 Sign In My Account Welcome Menu Private Dining Shop Gallery About Us Sign In My Account Cart 0 Welcome Menu Private Dining Shop Gallery About Us photo Reservations Join Our Newsletter ( 503) 284-3366 hello@oxpdx.com 2225 NE Martin Luther King Jr.",
+        "groupPolicyLanguage": [
+          "Cart 0 Sign In My Account Welcome Menu Private Dining Shop Gallery About Us Sign In My Account Cart 0 Welcome Menu Private Dining Shop Gallery About Us photo Reservations Join Our Newsletter ( 503) 284-3366 hello@oxpdx.com 2225 NE Martin Luther King Jr."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: OX Restaurant finds inspiration in the wood-fired grilling tradition of Argentina, and with it, the culinary heritage of Spain, France and Italy. OX harnesses the culinary talent of Portland chefs Greg Denton and Gabrielle Quiñónez Denton in a ",
+            "sourceUrl": "https://www.oxpdx.com/"
+          },
+          {
+            "quote": "meta description: OX Restaurant finds inspiration in the wood-fired grilling tradition of Argentina, and with it, the culinary heritage of Spain, France and Italy. OX harnesses the culinary talent of Portland chefs Greg Denton and Gabrielle Quiñónez Denton in ",
+            "sourceUrl": "https://www.oxpdx.com/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.oxpdx.com/",
+          "https://www.oxpdx.com/menu"
+        ],
+        "retrievedAt": "2026-08-28T23:25:27.909Z",
+        "playwrightPages": 0
       }
     },
     "langbaan": {
@@ -1562,38 +1835,6 @@
         "editorialSummary": "This tiny Thai restaurant with a rustic vibe offers family-style dinners & daytime cooking classes.",
         "retrievedAt": "2026-08-10T21:33:55.635Z"
       },
-      "site": {
-        "menuUrl": "https://www.langbaanportland.com/menu",
-        "reservationUrl": "https://www.opentable.com/r/langbaan-portland",
-        "reservationPlatform": "OpenTable",
-        "dietaryLanguage": [
-          {
-            "quote": "Please let us know if you have allergies or food sensitivities.",
-            "sourceUrl": "https://www.langbaanportland.com/menu"
-          },
-          {
-            "quote": "It is very important that you inform us of any food allergies or dietary restrictions when making a reservation or when we reach out to confirm your reservation.",
-            "sourceUrl": "https://www.langbaanportland.com/faq"
-          },
-          {
-            "quote": "Due to the traditional Thai culinary emphasis on fresh seafood, vegetables, and regional ingredients, we cannot accommodate vegan or vegetarian requests, or those who cannot eat fish, coconut, capsaicin, or alliums.",
-            "sourceUrl": "https://www.langbaanportland.com/faq"
-          }
-        ],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 4,
-        "sourceUrls": [
-          "https://www.langbaanportland.com/",
-          "https://www.langbaanportland.com/menu",
-          "https://www.langbaanportland.com/reservations",
-          "https://www.langbaanportland.com/faq"
-        ],
-        "retrievedAt": "2026-08-10T21:33:55.635Z"
-      },
       "summary": {
         "text": "Langbaan is a Thai restaurant located in Northwest Portland, Oregon. It has a 4.6 rating from 466 reviews and a price band of $$$$. The restaurant serves dinner five days a week, offers reservations through OpenTable, and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
@@ -1620,8 +1861,74 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:33:55.635Z",
+        "lastEnrichedAt": "2026-08-28T23:25:22.193Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.langbaanportland.com/menu",
+        "reservationUrl": "https://www.opentable.com/restaurant/profile/290272/reserve?rid=290272&restref=290272",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , Fr 00:00-00:00, Sa 00:00-00:00, Su 00:00-00:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Please let us know if you have allergies or food sensitivities.",
+          "DIETARY RESTRICTIONS Our menu is based on seasonal availability of ingredients and our chefs’ creative inspirations.",
+          "It is very important that you inform us of any food allergies or dietary restrictions when making a reservation or when we reach out to confirm your reservation.",
+          "Due to the traditional Thai culinary emphasis on fresh seafood, vegetables, and regional ingredients, we cannot accommodate vegan or vegetarian requests, or those who cannot eat fish, coconut, capsaicin, or alliums."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , Fr 00:00-00:00, Sa 00:00-00:00, Su 00:00-00:00",
+            "sourceUrl": "https://www.langbaanportland.com/"
+          },
+          {
+            "quote": "og:description: At Langbaan, classic Thai food is transformed into a refined five-course tasting menu using the bounty of Pacific Northwest ingredients. The menu changes seasonally, inspired by different regions of Thailand and the cultural history that surrou",
+            "sourceUrl": "https://www.langbaanportland.com/"
+          },
+          {
+            "quote": "meta description: At Langbaan, classic Thai food is transformed into a refined five-course tasting menu using the bounty of Pacific Northwest ingredients. The menu changes seasonally, inspired by different regions of Thailand and the cultural history that surr",
+            "sourceUrl": "https://www.langbaanportland.com/"
+          },
+          {
+            "quote": "title: Menu &mdash; Langbaan | Portland",
+            "sourceUrl": "https://www.langbaanportland.com/menu"
+          },
+          {
+            "quote": "title: Visit Us &mdash; Langbaan | Portland",
+            "sourceUrl": "https://www.langbaanportland.com/faq"
+          },
+          {
+            "quote": "og:description: All reservations are for our indoor dining room. If reservations are not available at your requested time, please note that we have ample walk-in space available in our outdoor train car and at the bar! Day-of reservations are no longer accepte",
+            "sourceUrl": "https://www.langbaanportland.com/reservations"
+          },
+          {
+            "quote": "meta description: All reservations are for our indoor dining room. If reservations are not available at your requested time, please note that we have ample walk-in space available in our outdoor train car and at the bar! Day-of reservations are no longer accep",
+            "sourceUrl": "https://www.langbaanportland.com/reservations"
+          },
+          {
+            "quote": "title: Reservations &mdash; Langbaan | Portland",
+            "sourceUrl": "https://www.langbaanportland.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.langbaanportland.com/",
+          "https://www.langbaanportland.com/menu",
+          "https://www.langbaanportland.com/faq",
+          "https://www.langbaanportland.com/reservations"
+        ],
+        "retrievedAt": "2026-08-28T23:25:22.193Z",
+        "playwrightPages": 0
       }
     },
     "kachka": {
@@ -1789,28 +2096,6 @@
         "editorialSummary": "Lively spot for refined Russian fare & house-infused vodkas in kitschy surroundings",
         "retrievedAt": "2026-08-10T21:34:07.260Z"
       },
-      "site": {
-        "menuUrl": "https://www.koin.com/news/food/opentable-dubs-12-portland-area-restaurants-as-icons-based-on-accolades-reviews/",
-        "reservationUrl": "https://www.opentable.com/r/kachka-portland?avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&corrid=9835edd8-55a7-4b10-b09c-4bbe2118a8be&p=2&sd=2023-06-01T19%3A00%3A00",
-        "reservationPlatform": "OpenTable",
-        "dietaryLanguage": [],
-        "accessibilityLanguage": [],
-        "groupPolicy": "LARGE PARTIES, EVENTS, & CATERING",
-        "groupPolicyLanguage": [
-          {
-            "quote": "LARGE PARTIES, EVENTS, & CATERING",
-            "sourceUrl": "https://www.kachkapdx.com/contact-us"
-          }
-        ],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 2,
-        "sourceUrls": [
-          "https://www.kachkapdx.com/",
-          "https://www.kachkapdx.com/contact-us"
-        ],
-        "retrievedAt": "2026-08-10T21:34:07.260Z"
-      },
       "summary": {
         "text": "Kachka is an Eastern European restaurant located in Southeast Portland, Oregon. It is open seven days a week, offers reservations through OpenTable, and has a price band of $$. The restaurant has a rating of 4.6 based on 2826 reviews and is wheelchair accessible.",
         "model": "google/gemini-2.5-flash",
@@ -1837,8 +2122,63 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:34:07.260Z",
+        "lastEnrichedAt": "2026-08-28T23:25:17.469Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.kachkapdx.com/drink-menu",
+        "reservationUrl": "https://www.opentable.com/r/kachka-portland?avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&corrid=9835edd8-55a7-4b10-b09c-4bbe2118a8be&p=2&sd=2023-06-01T19%3A00%3A00",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "PRIVATE DINING Book our Gallery Room for your next get together.",
+        "groupPolicyLanguage": [
+          "PRIVATE DINING Book our Gallery Room for your next get together.",
+          "Make a Large Party Inquiry MORE DETAILS & FAQ LARGE PARTY POLICIES For parties of 12 or more, we invite you to pick from our selection of curated menu packages.",
+          "We offer private dining options for LUNCH as well, with a minimum of $750.",
+          "BUYOUTS For celebrations with more than 32 guests, the restaurant is available for full and partial buyouts."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "We require a non-refundable booking fee of 5% of the minimum and a 10% deposit at time of booking.",
+          "In the event that you need to cancel with less than 72 hours, kachka will retain the deposit."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Representing dishes from the former Soviet Union through, the Pacific Northwest Lens. Open daily for Lunch, Happy Hour, And Dinner.",
+            "sourceUrl": "https://www.kachkapdx.com/"
+          },
+          {
+            "quote": "title: KACHKA - EAT. CLINK. DRINK. REPEAT.",
+            "sourceUrl": "https://www.kachkapdx.com/"
+          },
+          {
+            "quote": "title: Drink Menu &mdash; KACHKA",
+            "sourceUrl": "https://www.kachkapdx.com/drink-menu"
+          },
+          {
+            "quote": "og:description: Bringing a large party, or planning for a buy-out? We’ve got a Private Dining Room available at Kachka and Kachinka. Get the process started with the Private Party Form! Fill it out and we’ll be in touch soon.",
+            "sourceUrl": "https://www.kachkapdx.com/private-dining"
+          },
+          {
+            "quote": "title: Private Dining &mdash; KACHKA",
+            "sourceUrl": "https://www.kachkapdx.com/private-dining"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.kachkapdx.com/",
+          "https://www.kachkapdx.com/drink-menu",
+          "https://www.kachkapdx.com/private-dining",
+          "https://www.kachkapdx.com/about-us"
+        ],
+        "retrievedAt": "2026-08-28T23:25:17.469Z",
+        "playwrightPages": 0
       }
     },
     "kin": {
@@ -4550,36 +4890,6 @@
         "editorialSummary": "Classic French dishes served for dinner in an intimate, casually elegant setting.",
         "retrievedAt": "2026-08-10T21:37:28.031Z"
       },
-      "site": {
-        "menuUrl": "",
-        "reservationUrl": "https://www.stlawrencerestaurant.com/reserve",
-        "reservationPlatform": "Direct",
-        "dietaryLanguage": [
-          {
-            "quote": "Please contact us in advance of booking with dietary concerns, as there are some food allergies we are not able to accommodate, and many ingredients are not listed on the menu.",
-            "sourceUrl": "https://www.stlawrencerestaurant.com/reserve"
-          },
-          {
-            "quote": "- Can you accommodate dietary restrictions?",
-            "sourceUrl": "https://www.stlawrencerestaurant.com/reserve"
-          },
-          {
-            "quote": "If anyone in your party has serious dietary restrictions, please email us in advance of your reservation, as there are some allergies we are not able to accommodate, and not all ingredients are listed on the menu.",
-            "sourceUrl": "https://www.stlawrencerestaurant.com/reserve"
-          }
-        ],
-        "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
-        "dressCode": "",
-        "cancellationLanguage": [],
-        "pagesRead": 2,
-        "sourceUrls": [
-          "https://www.stlawrencerestaurant.com/",
-          "https://www.stlawrencerestaurant.com/reserve"
-        ],
-        "retrievedAt": "2026-08-10T21:37:28.031Z"
-      },
       "summary": {
         "text": "St. Lawrence is a French restaurant located in Central Vancouver, British Columbia, with a rating of 4.6 from 1508 reviews. This $$$$ establishment offers fine dining, French, seasonal/market, and wine-forward cuisine, serving dinner and dessert six days a week. Amenities include reservations, takeout, dine-in, and a full bar, with wheelchair accessible entrance, restroom, and seating.",
         "model": "google/gemini-2.5-flash",
@@ -4606,8 +4916,53 @@
         "matchStatus": "resolved",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-10T21:37:28.031Z",
+        "lastEnrichedAt": "2026-08-28T23:25:31.286Z",
+        "enrichmentMode": "owned-site",
         "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.stlawrencerestaurant.com/reserve",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Please contact us in advance of booking with dietary concerns, as there are some food allergies we are not able to accommodate, and many ingredients are not listed on the menu.",
+          "Can you accommodate dietary restrictions?",
+          "If anyone in your party has serious dietary restrictions, please email us in advance of your reservation, as there are some allergies we are not able to accommodate, and not all ingredients are listed on the menu."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Large parties We have a very small dining room, and our maximum party size is 6 guests .",
+        "groupPolicyLanguage": [
+          "Large parties We have a very small dining room, and our maximum party size is 6 guests ."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Book Now Making Your Reservation Cancellation policy Rescheduling and cancellations are accepted up to 48 hours prior to your booking."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: St. Lawrence | Michelin-Starred Québécois & French Restaurant",
+            "sourceUrl": "https://www.stlawrencerestaurant.com/"
+          },
+          {
+            "quote": "og:description: Book a table at Vancouver",
+            "sourceUrl": "https://www.stlawrencerestaurant.com/reserve"
+          },
+          {
+            "quote": "title: Dinner Reservations | Michelin-Starred Québécois & French Restaurant",
+            "sourceUrl": "https://www.stlawrencerestaurant.com/reserve"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.stlawrencerestaurant.com/",
+          "https://www.stlawrencerestaurant.com/reserve"
+        ],
+        "retrievedAt": "2026-08-28T23:25:31.286Z",
+        "playwrightPages": 0
       }
     },
     "the-courtney-room": {
@@ -14666,7 +15021,7 @@
         "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-21T14:32:23.156Z",
+        "lastEnrichedAt": "2026-08-28T23:25:14.985Z",
         "enrichmentMode": "operator-platform-source",
         "completeness": 72
       }
@@ -16656,7 +17011,7 @@
         "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-21T14:32:23.146Z",
+        "lastEnrichedAt": "2026-08-28T23:25:14.973Z",
         "enrichmentMode": "operator-platform-source",
         "completeness": 72
       }
@@ -20158,7 +20513,7 @@
         "matchStatus": "source-limited",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-21T14:32:23.169Z",
+        "lastEnrichedAt": "2026-08-28T23:25:15.000Z",
         "enrichmentMode": "operator-platform-source",
         "completeness": 72
       }
@@ -20694,7 +21049,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-21T14:30:49.145Z",
+        "lastEnrichedAt": "2026-08-28T23:23:41.628Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -45265,7 +45620,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T14:30:48.176Z",
+        "lastEnrichedAt": "2026-08-28T23:23:40.602Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -47580,7 +47935,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T14:32:22.245Z",
+        "lastEnrichedAt": "2026-08-28T23:25:13.988Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -54257,7 +54612,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T14:30:47.013Z",
+        "lastEnrichedAt": "2026-08-28T23:23:39.594Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -56383,12 +56738,53 @@
     },
     "comp-re-lapin-new-orleans": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T14:30:15.502Z",
+        "lastEnrichedAt": "2026-08-28T23:23:06.362Z",
         "enrichmentMode": "owned-site",
-        "completeness": 78
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "https://www.comperelapin.com/menus.html",
+        "reservationUrl": "https://order.toasttab.com/egiftcards/compere-lapin-535-tchoupitoulas-st",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "× About Menus Reservations Private Dining Gallery Gift Cards 535 Tchoupitoulas Street New Orleans, LA hello@comperelapin.com Compère Lapin 535 Tchoupitoulas Street · New Orleans, LA 70130 hello@comperelapin.com Gift Cards",
+        "groupPolicyLanguage": [
+          "× About Menus Reservations Private Dining Gallery Gift Cards 535 Tchoupitoulas Street New Orleans, LA hello@comperelapin.com Compère Lapin 535 Tchoupitoulas Street · New Orleans, LA 70130 hello@comperelapin.com Gift Cards",
+          "For parties of 10 or more, please contact lyndie@comperelapin.com ."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Compère Lapin in New Orleans by Chef Nina Compton.",
+            "sourceUrl": "https://www.comperelapin.com/"
+          },
+          {
+            "quote": "meta description: Compère Lapin menus in New Orleans.",
+            "sourceUrl": "https://www.comperelapin.com/menus.html"
+          },
+          {
+            "quote": "title: Reservations | Compère Lapin",
+            "sourceUrl": "https://www.comperelapin.com/reservations.html"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.comperelapin.com/",
+          "https://www.comperelapin.com/about.html",
+          "https://www.comperelapin.com/menus.html",
+          "https://www.comperelapin.com/reservations.html"
+        ],
+        "retrievedAt": "2026-08-28T23:23:06.362Z",
+        "playwrightPages": 0
       }
     },
     "dakar-nola-new-orleans": {
@@ -57627,7 +58023,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T14:29:44.884Z",
+        "lastEnrichedAt": "2026-08-28T23:22:35.286Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -58271,7 +58667,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T14:29:45.490Z",
+        "lastEnrichedAt": "2026-08-28T23:22:35.853Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -58347,7 +58743,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-21T14:30:16.676Z",
+        "lastEnrichedAt": "2026-08-28T23:23:08.919Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
