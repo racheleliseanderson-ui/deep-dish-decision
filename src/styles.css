@@ -1,15 +1,7 @@
-@import "tailwindcss" source(none);
-@source "../src";
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
-/*
- * Restaurant Intelligence · Salty & Clever
- * Design system: luxury editorial meets precision decision instrument.
- * Navy ground, brass (gilt) signal, operational colours for critical / watch /
- * unknown / verified. All colors oklch. Never hardcode colors in components.
- */
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 3px);
@@ -55,76 +47,36 @@
   --color-border-strong: var(--border-strong);
   --color-input: var(--input);
   --color-ring: var(--ring);
-
-  --shadow-plate: var(--plate-shadow);
-  --shadow-lift: var(--lift-shadow);
-  --shadow-vitrine: var(--vitrine-shadow);
-
   --color-gilt: var(--gilt);
   --color-gilt-soft: var(--gilt-soft);
   --color-ink: var(--ink);
   --color-ink-foreground: var(--ink-foreground);
-  --color-marble: var(--marble);
-
+  --shadow-plate: var(--plate-shadow);
   --ease-instrument: cubic-bezier(0.16, 1, 0.3, 1);
-
-  --animate-marquee: marquee 46s linear infinite;
-  --animate-rank-flash: rank-flash 640ms cubic-bezier(0.16, 1, 0.3, 1);
-
-  @keyframes marquee {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-
-  @keyframes rank-flash {
-    0% {
-      box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-primary) 0%, transparent);
-    }
-    35% {
-      box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-primary) 42%, transparent),
-        0 0 28px -8px color-mix(in oklab, var(--color-primary) 35%, transparent);
-    }
-    100% {
-      box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-primary) 0%, transparent);
-    }
-  }
 }
 
-
-/* Pearl — printed-brief paper, navy ink, darker brass signal */
 :root {
   --radius: 0.5rem;
-
   --background: oklch(0.986 0.004 265);
   --foreground: oklch(0.225 0.048 258);
   --surface: oklch(0.995 0.003 265);
   --surface-raised: oklch(0.955 0.007 265);
   --surface-sunken: oklch(0.93 0.008 265);
-
   --card: oklch(0.995 0.003 265);
   --card-foreground: oklch(0.225 0.048 258);
   --popover: oklch(0.995 0.003 265);
   --popover-foreground: oklch(0.225 0.048 258);
-
   --primary: oklch(0.545 0.11 80);
   --primary-foreground: oklch(0.988 0.004 265);
   --secondary: oklch(0.93 0.008 265);
   --secondary-foreground: oklch(0.225 0.048 258);
-
   --muted: oklch(0.94 0.007 265);
   --muted-foreground: oklch(0.44 0.03 262);
   --subtle: oklch(0.55 0.022 258);
-
   --accent: oklch(0.5 0.07 205);
   --accent-foreground: oklch(0.988 0.004 265);
-
   --destructive: oklch(0.52 0.18 25);
   --destructive-foreground: oklch(0.988 0.004 265);
-
   --critical: oklch(0.5 0.17 30);
   --critical-soft: oklch(0.5 0.17 30 / 10%);
   --watch: oklch(0.55 0.12 72);
@@ -133,57 +85,39 @@
   --unknown-soft: oklch(0.48 0.07 250 / 10%);
   --verified: oklch(0.47 0.11 152);
   --verified-soft: oklch(0.47 0.11 152 / 11%);
-
   --border: oklch(0.225 0.048 258 / 13%);
   --border-strong: oklch(0.225 0.048 258 / 26%);
   --input: oklch(0.225 0.048 258 / 18%);
   --ring: oklch(0.545 0.11 80 / 45%);
-
   --plate-shadow: 0 1px 0 0 oklch(1 0 0 / 60%) inset, 0 14px 34px -22px oklch(0.225 0.048 258 / 28%);
-  --lift-shadow: 0 1px 0 0 oklch(1 0 0 / 70%) inset, 0 28px 60px -30px oklch(0.225 0.048 258 / 34%);
-  --vitrine-shadow: 0 1px 0 0 oklch(1 0 0 / 75%) inset,
-    0 0 0 1px color-mix(in oklab, var(--gilt) 22%, transparent),
-    0 40px 90px -46px oklch(0.225 0.048 258 / 42%);
-
-  /* Gilt = brass. Ink band stays navy even on pearl paper. */
   --gilt: oklch(0.545 0.11 80);
   --gilt-soft: oklch(0.545 0.11 80 / 14%);
   --ink: oklch(0.168 0.044 258);
   --ink-foreground: oklch(0.965 0.008 260);
-  --marble: oklch(0.965 0.008 265);
-
   color-scheme: light;
-
 }
 
-/* Navy — default instrument ground, brass gilt, operational signals kept */
 .dark {
   --background: oklch(0.168 0.044 258);
   --foreground: oklch(0.935 0.011 260);
   --surface: oklch(0.256 0.053 258);
   --surface-raised: oklch(0.302 0.056 258);
   --surface-sunken: oklch(0.213 0.05 258);
-
   --card: oklch(0.256 0.053 258);
   --card-foreground: oklch(0.935 0.011 260);
   --popover: oklch(0.302 0.056 258);
   --popover-foreground: oklch(0.935 0.011 260);
-
   --primary: oklch(0.83 0.13 88);
   --primary-foreground: oklch(0.17 0.045 258);
   --secondary: oklch(0.302 0.056 258);
   --secondary-foreground: oklch(0.935 0.011 260);
-
   --muted: oklch(0.256 0.053 258);
   --muted-foreground: oklch(0.775 0.022 262);
   --subtle: oklch(0.68 0.022 262);
-
   --accent: oklch(0.74 0.07 200);
   --accent-foreground: oklch(0.15 0.01 200);
-
   --destructive: oklch(0.64 0.18 25);
   --destructive-foreground: oklch(0.97 0.01 80);
-
   --critical: oklch(0.72 0.16 32);
   --critical-soft: oklch(0.72 0.16 32 / 15%);
   --watch: oklch(0.84 0.135 84);
@@ -192,45 +126,54 @@
   --unknown-soft: oklch(0.74 0.05 235 / 14%);
   --verified: oklch(0.77 0.1 155);
   --verified-soft: oklch(0.77 0.1 155 / 14%);
-
   --border: oklch(0.38 0.05 258);
   --border-strong: oklch(0.48 0.05 258);
   --input: oklch(0.38 0.05 258);
   --ring: oklch(0.83 0.13 88 / 58%);
-
   --plate-shadow: 0 1px 0 0 oklch(1 0 0 / 6%) inset, 0 18px 40px -24px oklch(0 0 0 / 72%);
-  --lift-shadow: 0 1px 0 0 oklch(1 0 0 / 8%) inset, 0 30px 70px -30px oklch(0 0 0 / 82%);
-  --vitrine-shadow: 0 1px 0 0 oklch(1 0 0 / 9%) inset,
-    0 0 0 1px color-mix(in oklab, var(--gilt) 38%, transparent),
-    0 44px 100px -46px oklch(0 0 0 / 85%);
-
-  /* Gilt = brass. Same signal as primary. */
   --gilt: oklch(0.83 0.13 88);
   --gilt-soft: oklch(0.83 0.13 88 / 18%);
   --ink: oklch(0.168 0.044 258);
   --ink-foreground: oklch(0.965 0.008 260);
-  --marble: oklch(0.302 0.056 258);
-
   color-scheme: dark;
-
 }
 
 @layer base {
   * {
     border-color: var(--color-border);
   }
-
   html {
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-padding-top: calc(4.75rem + env(safe-area-inset-top, 0px));
   }
-
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-feature-settings: "ss01", "cv05";
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
   }
-
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  a:focus-visible,
+  summary:focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+  }
   ::selection {
     background: color-mix(in oklab, var(--color-primary) 30%, transparent);
   }
@@ -251,17 +194,6 @@
   letter-spacing: -0.01em;
 }
 
-@utility hairline {
-  background-image: linear-gradient(
-    90deg,
-    transparent,
-    var(--color-border-strong) 12%,
-    var(--color-border-strong) 88%,
-    transparent
-  );
-  height: 1px;
-}
-
 @utility plate {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -269,66 +201,6 @@
   box-shadow: var(--shadow-plate);
 }
 
-@utility grain-veil {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0.35;
-    background-image: radial-gradient(
-        ellipse 70% 55% at 72% 12%,
-        color-mix(in oklab, var(--color-primary) 13%, transparent),
-        transparent 62%
-      ),
-      linear-gradient(
-        180deg,
-        color-mix(in oklab, var(--color-primary) 4%, transparent),
-        transparent 70%
-      );
-  }
-}
-
-@utility scroll-slim {
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-border-strong) transparent;
-}
-
-/* Minimum comfortable touch target on phones, without changing type scale. */
-@utility tap {
-  min-height: 2.75rem;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Range controls: taller hit area on phones without changing visual track scale. */
-@utility range-touch {
-  height: 1.75rem;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Soft gilt pulse when a card keeps position but its rank index changes. */
-@utility rank-flash {
-  animation: var(--animate-rank-flash);
-}
-
-/* Vitrine — a plate-glass display case: gilt hairline, sheen, deep drop. */
-@utility vitrine {
-  position: relative;
-  background-image: linear-gradient(
-    170deg,
-    color-mix(in oklab, var(--color-gilt) 7%, var(--color-surface)),
-    var(--color-surface) 42%,
-    color-mix(in oklab, var(--color-ink) 6%, var(--color-surface))
-  );
-  border: 1px solid color-mix(in oklab, var(--color-gilt) 34%, transparent);
-  border-radius: var(--radius-2xl);
-  box-shadow: var(--shadow-vitrine);
-}
-
-/* Gilt hairline used to open and close sections. */
 @utility gilt-rule {
   height: 1px;
   background-image: linear-gradient(
@@ -340,7 +212,6 @@
   );
 }
 
-/* Lacquered ink band — full-bleed chapters. */
 @utility ink-band {
   background-color: var(--color-ink);
   color: var(--color-ink-foreground);
@@ -352,108 +223,28 @@
     linear-gradient(180deg, color-mix(in oklab, var(--color-gilt) 5%, transparent), transparent 62%);
 }
 
-/* Display statement type — Fifth Avenue window lettering. */
 @utility display-statement {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 7.2vw, 6.5rem);
-  line-height: 0.92;
+  font-size: clamp(2.4rem, 7vw, 5.6rem);
+  line-height: 0.94;
   letter-spacing: -0.03em;
   text-wrap: balance;
 }
 
-@utility display-chapter {
-  font-family: var(--font-display);
-  font-size: clamp(1.9rem, 3.6vw, 3.25rem);
-  line-height: 1.02;
-  letter-spacing: -0.025em;
+@utility tap {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
-@utility marquee-track {
-  display: flex;
-  width: max-content;
-  animation: var(--animate-marquee);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
-  }
-  .rank-flash {
-    animation: none;
-  }
-}
-
-
-/* Black-and-white reading: hue removed from every semantic token, meaning carried
-   by lightness and by the text labels that always accompany a colour. */
-.mode-mono {
-  --primary: oklch(0.62 0 0);
-  --primary-strong: oklch(0.74 0 0);
-  --primary-foreground: oklch(0.14 0 0);
-  --accent: oklch(0.34 0 0);
-  --accent-foreground: oklch(0.96 0 0);
-  --ring: oklch(0.7 0 0 / 60%);
-  --critical: oklch(0.94 0 0);
-  --critical-soft: oklch(1 0 0 / 16%);
-  --watch: oklch(0.78 0 0);
-  --watch-soft: oklch(1 0 0 / 11%);
-  --unknown: oklch(0.6 0 0);
-  --unknown-soft: oklch(1 0 0 / 8%);
-  --verified: oklch(0.86 0 0);
-  --verified-soft: oklch(1 0 0 / 13%);
-}
-
-.mode-mono:not(.dark) {
-  --critical: oklch(0.2 0 0);
-  --critical-soft: oklch(0 0 0 / 12%);
-  --watch: oklch(0.4 0 0);
-  --watch-soft: oklch(0 0 0 / 9%);
-  --unknown: oklch(0.55 0 0);
-  --unknown-soft: oklch(0 0 0 / 7%);
-  --verified: oklch(0.3 0 0);
-  --verified-soft: oklch(0 0 0 / 10%);
-  --primary: oklch(0.28 0 0);
-  --primary-strong: oklch(0.16 0 0);
-  --primary-foreground: oklch(0.99 0 0);
-}
-
-.mode-mono .grain-veil::after {
-  opacity: 0.16;
-}
-
-/* Colour-vision-safe: brass/gilt stay gold ~92; danger becomes cyan/magenta.
-   .cvd is an alias of .mode-cvd so the desk overlay class also applies. */
-.cvd,
-.mode-cvd {
+.cvd {
   --critical: oklch(0.72 0.14 215);
   --critical-soft: oklch(0.72 0.14 215 / 15%);
   --watch: oklch(0.86 0.15 92);
   --watch-soft: oklch(0.86 0.15 92 / 14%);
-  --unknown: oklch(0.72 0.04 250);
-  --unknown-soft: oklch(0.72 0.04 250 / 12%);
   --verified: oklch(0.72 0.13 235);
   --verified-soft: oklch(0.72 0.13 235 / 14%);
-  --primary: oklch(0.86 0.15 92);
-  --primary-foreground: oklch(0.17 0.045 258);
-  --ring: oklch(0.86 0.15 92 / 55%);
-  --destructive: oklch(0.72 0.14 215);
-  --gilt: oklch(0.86 0.15 92);
-  --gilt-soft: oklch(0.86 0.15 92 / 15%);
-}
-
-.cvd:not(.dark),
-.mode-cvd:not(.dark) {
-  --primary: oklch(0.5 0.11 78);
-  --primary-foreground: oklch(0.988 0.004 265);
-  --critical: oklch(0.42 0.13 225);
-  --critical-soft: oklch(0.42 0.13 225 / 12%);
-  --watch: oklch(0.5 0.11 78);
-  --watch-soft: oklch(0.5 0.11 78 / 12%);
-  --verified: oklch(0.44 0.13 240);
-  --unknown: oklch(0.5 0.03 250);
-  --destructive: oklch(0.42 0.13 225);
-  --gilt: oklch(0.5 0.11 78);
-  --gilt-soft: oklch(0.5 0.11 78 / 12%);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -467,23 +258,7 @@
   }
 }
 
-
-
-/* Gilt has to survive the accessibility modes: mono drops the hue. CVD gilt
-   is already gold ~92 in the .cvd / .mode-cvd block above. */
-.mode-mono {
-  --gilt: oklch(0.78 0 0);
-  --gilt-soft: oklch(1 0 0 / 12%);
-  --marble: oklch(0.24 0 0);
-}
-.mode-mono:not(.dark) {
-  --gilt: oklch(0.32 0 0);
-  --gilt-soft: oklch(0 0 0 / 10%);
-  --marble: oklch(0.96 0 0);
-}
-
 @media print {
-
   .no-print {
     display: none !important;
   }
@@ -492,31 +267,18 @@
     --background: oklch(1 0 0);
     --foreground: oklch(0.18 0.01 60);
     --surface: oklch(1 0 0);
-    --surface-raised: oklch(0.98 0.003 80);
-    --surface-sunken: oklch(0.98 0.003 80);
-    --card: oklch(1 0 0);
     --muted-foreground: oklch(0.42 0.01 70);
     --subtle: oklch(0.5 0.01 70);
     --border: oklch(0 0 0 / 16%);
-    --border-strong: oklch(0 0 0 / 30%);
     --primary: oklch(0.45 0.09 70);
     --gilt: oklch(0.35 0.02 80);
-    --gilt-soft: oklch(0 0 0 / 6%);
     --ink: oklch(1 0 0);
     --ink-foreground: oklch(0.18 0.01 60);
-    --marble: oklch(1 0 0);
-  }
-  html {
-    color-scheme: light;
   }
   body {
     background: #fff;
   }
-  .plate,
-  .vitrine {
+  .plate {
     box-shadow: none;
-  }
-  .ink-band {
-    background-image: none;
   }
 }
