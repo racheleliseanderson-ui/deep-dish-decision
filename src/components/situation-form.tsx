@@ -55,11 +55,11 @@ export function SituationForm({
           <div
             className="h-1.5 w-28 overflow-hidden rounded-full bg-surface-sunken"
             role="meter"
-            aria-label="Situation depth"
+            aria-label="How much you have told us about the night"
             aria-valuemin={0}
             aria-valuemax={SITUATION_SLOTS}
             aria-valuenow={depth}
-            aria-valuetext={`${depth} of ${SITUATION_SLOTS} slots filled`}
+            aria-valuetext={`${depth} of ${SITUATION_SLOTS} details given`}
           >
             <div
               className="h-full bg-primary transition-[width] duration-300"
@@ -108,7 +108,8 @@ export function SituationForm({
       <fieldset className="mt-6">
         <legend className="text-[12px] font-medium">Hard constraints</legend>
         <p className="mt-0.5 text-[12px] text-subtle">
-          Fail-closed — never assumed satisfied. If the record cannot show it, the booking is held.
+          Never assumed satisfied. If the restaurant has not published it, the booking stays on hold
+          until someone there confirms it.
         </p>
         <div className="mt-2 flex flex-wrap gap-1.5">
           {CONSTRAINTS.map((c) => (
@@ -281,7 +282,7 @@ export function SituationForm({
               value={situation.regionGroup ?? ""}
               onChange={(e) => set({ regionGroup: e.target.value || null })}
             >
-              <option value="">All regions in this working set</option>
+              <option value="">All regions we cover</option>
               {REGION_GROUPS.map((d) => (
                 <option key={d} value={d}>
                   {d}

@@ -328,9 +328,17 @@ export function callScript(pass: ConfirmationPass, record: RestaurantRecord): st
     lines.push("", "If relevant:");
     rest.forEach((i) => lines.push(`- ${i.question}`));
   }
-  lines.push("", "Then record: confirmation number, who answered, date confirmed, cancellation deadline.");
+  lines.push("", "Then write down: confirmation number, who answered, date confirmed, cancellation deadline.");
   return lines.filter((l, i, a) => l !== "" || a[i - 1] !== "").join("\n");
 }
+
+/** Reader-facing wording for a pass status. The stored values stay as they are. */
+const STATUS_TEXT: Record<PassStatus, string> = {
+  "in-progress": "In progress — not everything is answered yet",
+  hold: "On hold — the restaurant said no to a must-ask question",
+  verified: "Verified — every must-ask answered and the reservation recorded",
+  abandoned: "Set aside",
+};
 
 export function packetPlaintext(pass: ConfirmationPass, record: RestaurantRecord): string {
   const confirmed = pass.items.filter((i) => i.status === "confirmed" || i.status === "not-applicable");
@@ -340,7 +348,7 @@ export function packetPlaintext(pass: ConfirmationPass, record: RestaurantRecord
     `Deep Dish — Confirmation & reservation record`,
     record.title,
     `${record.address} · ${record.phone}`,
-    `Status: ${pass.status}`,
+    `Status: ${STATUS_TEXT[pass.status]}`,
     "",
     "The night",
     `Occasion: ${pass.situation.occasion ?? "not stated"}`,
@@ -359,11 +367,11 @@ export function packetPlaintext(pass: ConfirmationPass, record: RestaurantRecord
   ];
   if (pass.capture.notes) lines.push(`Notes: ${pass.capture.notes}`);
   if (denied.length) {
-    lines.push("", "Denied — booking held");
+    lines.push("", "The restaurant said no — booking on hold");
     denied.forEach((i) => lines.push(`- ${i.question} ${i.answer ? `— ${i.answer}` : ""}`));
   }
   if (confirmed.length) {
-    lines.push("", "We actually verified");
+    lines.push("", "What the restaurant confirmed");
     confirmed.forEach((i) => {
       lines.push(`- ${i.question}`);
       if (i.answer) lines.push(`  ${i.answer}${i.askedOf ? ` (${i.askedOf})` : ""}`);

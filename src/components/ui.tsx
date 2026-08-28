@@ -86,12 +86,28 @@ export function LayerBadge({ layer }: { layer: FindingLayer | PassStatus | Confi
     abandoned: "bg-muted text-muted-foreground",
     "under-review": "bg-watch-soft text-watch",
   };
+  // Badge wording is the whole state model in two words. A room nobody has
+  // asked about yet is "Not asked yet", never a failure; "On hold" is only ever
+  // said once a stated requirement is genuinely unresolved or refused.
   const label: Record<string, string> = {
+    critical: "Must resolve",
+    watch: "Worth asking",
+    unknown: "Not stated",
+    hold: "On hold",
+    denied: "They said no",
+    open: "Not asked yet",
     "in-progress": "In progress",
     "still-unknown": "Still unknown",
     "not-applicable": "Not applicable",
-    "review-due": "Review due",
-    "under-review": "Under review",
+    "review-due": "Review due soon",
+    "under-review": "Being rechecked",
+    incomplete: "Not fully published",
+    conflicting: "Sources disagree",
+    stale: "Past its recheck date",
+    abandoned: "Set aside",
+    confirmed: "Confirmed",
+    verified: "Verified",
+    current: "Current",
   };
   return (
     <span

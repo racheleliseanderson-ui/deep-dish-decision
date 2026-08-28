@@ -51,9 +51,12 @@ export const Route = createRootRoute({
   ),
   notFoundComponent: () => (
     <main className="mx-auto max-w-xl px-6 py-24 text-center">
-      <p className="text-eyebrow">Missing file</p>
-      <h1 className="mt-3 font-display text-4xl">This page is not in the working set.</h1>
-      <p className="mt-3 text-muted-foreground">The instrument will not invent a room to fill the gap.</p>
+      <p className="text-eyebrow">Page not found</p>
+      <h1 className="mt-3 font-display text-4xl">This page is not part of Deep Dish.</h1>
+      <p className="mt-3 text-muted-foreground">
+        Nothing has been invented to fill the gap. Check the address, or start a night from the
+        beginning.
+      </p>
       <a href="/" className="mt-6 inline-flex text-primary">
         Back to start
       </a>

@@ -12,17 +12,30 @@ import {
 } from "@/lib/confirm";
 import { track } from "@/lib/storage";
 import { useNight } from "@/lib/store";
-import type { ConfirmationPass, ConfirmItem, ConfirmStatus, RestaurantRecord } from "@/lib/types";
+import type {
+  ConfirmationPass,
+  ConfirmItem,
+  ConfirmPriority,
+  ConfirmStatus,
+  RestaurantRecord,
+} from "@/lib/types";
 import { copyText, formatHumanDate } from "@/lib/utils";
 import { cn } from "@/lib/utils";
 
 const STATUSES: { id: ConfirmStatus; label: string }[] = [
   { id: "confirmed", label: "Confirmed" },
-  { id: "denied", label: "Denied — cannot do this" },
+  { id: "denied", label: "They cannot do this" },
   { id: "still-unknown", label: "Still unknown" },
   { id: "not-applicable", label: "Not applicable" },
   { id: "open", label: "Not asked yet" },
 ];
+
+/** How hard this question presses — said in the words a caller would use. */
+const PRIORITY_LABEL: Record<ConfirmPriority, string> = {
+  must: "Must ask",
+  should: "Worth asking",
+  "if-relevant": "If it applies",
+};
 
 function ItemCard({
   item,
@@ -38,7 +51,18 @@ function ItemCard({
     <li className="plate break-inside-avoid p-4 sm:p-5">
       <div className="flex flex-wrap items-center gap-2">
         <span className="text-num text-[11px] text-gilt">{String(index + 1).padStart(2, "0")}</span>
-        <LayerBadge layer={item.priority === "must" ? "critical" : item.priority === "should" ? "watch" : "unknown"} />
+        <span
+          className={cn(
+            "inline-flex rounded-full px-2 py-0.5 text-[10px] uppercase tracking-[0.12em]",
+            item.priority === "must"
+              ? "bg-critical-soft text-critical"
+              : item.priority === "should"
+                ? "bg-watch-soft text-watch"
+                : "bg-unknown-soft text-unknown",
+          )}
+        >
+          {PRIORITY_LABEL[item.priority]}
+        </span>
         <span className="text-eyebrow">{item.category.replace("-", " ")}</span>
         <LayerBadge layer={item.status} />
       </div>
@@ -55,7 +79,7 @@ function ItemCard({
           <p>{item.why}</p>
           <p>
             <span className="text-foreground">On the record: </span>
-            {item.evidence || "Nothing useful published."}
+            {item.evidence || "The restaurant has published nothing useful on this."}
           </p>
         </div>
       ) : null}
@@ -152,15 +176,15 @@ export function ConfirmPassView({
           <Eyebrow>Confirmation pass</Eyebrow>
           <h1 className="mt-1 font-display text-4xl tracking-tight">{record.title}</h1>
           <p className="mt-2 max-w-2xl text-[14px] leading-relaxed text-muted-foreground">
-            One call, in this order, before you book. Exact questions. Unresolved restrictions stay
-            unresolved until someone at the restaurant answers them. The packet is the record of
-            what you actually verified — not a rating.
+            One call, in this order, before you book. Exact questions. A restriction stays
+            unresolved until someone at the restaurant answers it. What you keep is a record of what
+            you actually confirmed — not a rating.
           </p>
         </div>
         <div className="text-right">
           <LayerBadge layer={pass.status} />
           <p className="text-num mt-2 text-sm text-subtle">
-            {progress.done}/{progress.total} must-ask cleared · {openMust} still open
+            {progress.done} of {progress.total} must-ask questions answered · {openMust} still open
           </p>
         </div>
       </div>
@@ -215,7 +239,7 @@ export function ConfirmPassView({
       {other.length ? (
         <details className="plate p-4 sm:p-5">
           <summary className="cursor-pointer font-medium">
-            Should-ask and if-relevant ({other.length})
+            Worth asking if it applies to your night ({other.length})
           </summary>
           <ol className="mt-4 space-y-4">
             {other.map((item, i) => (
@@ -231,8 +255,8 @@ export function ConfirmPassView({
           What you actually booked
         </h2>
         <p className="mt-1 text-[13px] text-muted-foreground">
-          Confirmation number, who you spoke to, and the date you confirmed. Without these the
-          packet cannot read “verified.”
+          Confirmation number, who you spoke to, and the date you confirmed. Without these, your
+          saved confirmation cannot read “verified.”
         </p>
         <div className="mt-5 grid gap-4 sm:grid-cols-2">
           <Field label="Confirmation number">
@@ -317,8 +341,8 @@ export function ConfirmPassView({
 
       {pass.status === "hold" ? (
         <p className="rounded-2xl border border-critical/40 bg-critical-soft px-4 py-3 text-[13px] text-critical">
-          Hold. A must-ask was denied. Do not book against inference. The packet will show the
-          denial.
+          On hold. The restaurant said no to a must-ask question. Do not book on an assumption —
+          your saved confirmation records exactly what they said.
         </p>
       ) : null}
       {pass.status === "verified" ? (
@@ -334,7 +358,7 @@ export function ConfirmPassView({
             params={{ id: pass.id }}
             onClick={() => track("export_used", { slug: pass.slug })}
           >
-            {pass.status === "verified" ? "Open verified packet" : "Open working packet"}
+            {pass.status === "verified" ? "Open your verified confirmation" : "Open your confirmation so far"}
           </Link>
         </Button>
         <Button asChild variant="outline">
@@ -342,7 +366,7 @@ export function ConfirmPassView({
             Back to the file
           </Link>
         </Button>
-        <CopyButton label="Copy packet" getText={() => packetPlaintext(pass, record)} event="export_used" />
+        <CopyButton label="Copy this confirmation" getText={() => packetPlaintext(pass, record)} event="export_used" />
       </div>
     </div>
   );
@@ -362,7 +386,7 @@ export function PacketView({ pass, record }: { pass: ConfirmationPass; record: R
         <p className="text-eyebrow text-gilt">Salty & Clever · Confirmation & reservation record</p>
         <h1 className="mt-3 font-display text-4xl tracking-tight">{record.title}</h1>
         <p className="mt-2 text-[13px] text-muted-foreground">
-          {record.address} · {record.recordId} · {record.phone}
+          {record.address} · {record.phone}
         </p>
         <p className="mt-1 flex flex-wrap items-center gap-2 text-[12px]">
           <LayerBadge layer={pass.status} />
@@ -414,12 +438,12 @@ export function PacketView({ pass, record }: { pass: ConfirmationPass; record: R
 
       {denied.length ? (
         <section>
-          <Eyebrow>Denied — booking held</Eyebrow>
+          <Eyebrow>The restaurant said no — booking on hold</Eyebrow>
           <ol className="mt-3 space-y-2">
             {denied.map((i) => (
               <li key={i.id} className="text-[13px]">
                 <p className="font-medium text-critical">{i.question}</p>
-                <p className="text-muted-foreground">{i.answer || "Denied with no note."}</p>
+                <p className="text-muted-foreground">{i.answer || "They said no; nothing further was noted."}</p>
               </li>
             ))}
           </ol>
@@ -427,7 +451,7 @@ export function PacketView({ pass, record }: { pass: ConfirmationPass; record: R
       ) : null}
 
       <section>
-        <Eyebrow>We actually verified</Eyebrow>
+        <Eyebrow>What the restaurant confirmed</Eyebrow>
         <ol className="mt-3 space-y-3">
           {confirmed.map((i) => (
             <li key={i.id} className="break-inside-avoid text-[13px]">
@@ -440,13 +464,16 @@ export function PacketView({ pass, record }: { pass: ConfirmationPass; record: R
           ))}
         </ol>
         {!confirmed.length ? (
-          <p className="mt-2 text-[13px] text-watch">Nothing confirmed yet. This is a working packet.</p>
+          <p className="mt-2 text-[13px] text-watch">
+            Nothing confirmed yet — this is your confirmation in progress. Nothing below has been
+            checked with the restaurant.
+          </p>
         ) : null}
       </section>
 
       {open.length ? (
         <section>
-          <Eyebrow>Still open — carried forward, not resolved</Eyebrow>
+          <Eyebrow>Still open — carried forward, not answered</Eyebrow>
           <ul className="mt-3 space-y-2">
             {open.map((i) => (
               <li key={i.id} className="text-[13px] text-muted-foreground">
@@ -468,8 +495,7 @@ export function PacketView({ pass, record }: { pass: ConfirmationPass; record: R
           ))}
         </ul>
         <p className="mt-3 text-[12px] text-subtle">
-          {record.sourceAuthority} · {record.confidence.replace(/_/g, " ")} · reviewed {record.reviewedAt} ·{" "}
-          {record.disclaimer}
+          {record.sourceAuthority} · reviewed {record.reviewedAt} · {record.disclaimer}
         </p>
       </section>
     </article>

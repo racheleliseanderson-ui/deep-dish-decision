@@ -17,7 +17,7 @@ export const Route = createFileRoute("/packet/$id")({
       { title: "Confirmation record — Deep Dish" },
       {
         name: "description",
-        content: "Printable confirmation and reservation record. What was verified, what remains open.",
+        content: "Your saved confirmation, ready to print or keep: what the restaurant confirmed, and what is still open.",
       },
     ],
   }),
@@ -32,7 +32,7 @@ function PacketPage() {
   if (!pass) {
     return (
       <main className="mx-auto max-w-3xl px-4 py-16">
-        <p className="text-muted-foreground">Loading packet…</p>
+        <p className="text-muted-foreground">Opening your confirmation…</p>
       </main>
     );
   }
@@ -65,7 +65,7 @@ function PacketPage() {
           <Button
             variant="outline"
             onClick={() => {
-              downloadJson(`deep-dish-${record.slug}-packet.json`, pass);
+              downloadJson(`deep-dish-${record.slug}-confirmation.json`, pass);
               track("export_used", { slug: pass.slug, kind: "json" });
             }}
           >
@@ -73,7 +73,7 @@ function PacketPage() {
           </Button>
           <Button asChild variant="ghost">
             <Link to="/confirm/$slug" params={{ slug: pass.slug }}>
-              Edit pass
+              Edit answers
             </Link>
           </Button>
         </div>

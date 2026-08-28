@@ -106,13 +106,13 @@ function GuidePage() {
       <MobileHowTo className="mt-14" full />
 
       <section className="mt-14">
-        <Eyebrow>What this working set still leaves open</Eyebrow>
+        <Eyebrow>What our checked rooms still leave open</Eyebrow>
         <dl className="mt-4 divide-y divide-border text-[14px]">
           {[
             ["Rooms", String(OPS.count)],
             ["Cities", String(OPS.regions)],
             ["Access route unstated", `${unstated.access} / ${OPS.count}`],
-            ["Dietary protocol thin", `${unstated.diet} / ${OPS.count}`],
+            ["Dietary handling not fully stated", `${unstated.diet} / ${OPS.count}`],
             ["Cancellation not fully published", `${unstated.cancel} / ${OPS.count}`],
             ["Questions held open", String(OPS.openQuestions)],
             ["Reachable by phone", String(OPS.reachable)],
@@ -124,8 +124,8 @@ function GuidePage() {
           ))}
         </dl>
         <p className="mt-4 text-[13px] text-subtle">
-          A smaller confirmation-complete set is more useful than hundreds of thin files. Hours,
-          menus, prices and reservation terms remain volatile. Confirm them live.
+          A smaller, fully checked list is more useful than hundreds of thin files. Hours, menus,
+          prices and reservation terms all move. Confirm them live.
         </p>
       </section>
     </main>

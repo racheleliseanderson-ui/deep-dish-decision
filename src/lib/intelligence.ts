@@ -221,10 +221,10 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
         id: "access-stairs",
         layer: "critical",
         domain: "access",
-        title: "First-party pages state stairs or uneven terrain",
+        title: "The restaurant’s own pages state stairs or uneven ground",
         detail: r.accessibilityState || r.accessibilityTags.join(" · "),
         action:
-          "Fail closed: call and confirm a step-free route, restroom access, and which entrance to use before committing this guest.",
+          "As published, this does not meet a step-free requirement. Call and confirm a step-free route, restroom access, and which entrance to use before you commit this guest.",
         impact: 98,
         confidence: "high",
         situational: true,
@@ -234,12 +234,12 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
         id: "access-unstated",
         layer: "critical",
         domain: "access",
-        title: "Access route not stated on first-party sources",
+        title: "Access route not published — more information needed",
         detail:
           r.accessibilityState ||
           "No first-party statement of entrance, route, or restroom configuration was recorded.",
         action:
-          "Treat as unverified. Confirm entrance, interior route, table height and restroom access live — do not infer from a directory listing.",
+          "Not checked yet — and silence is not a step-free route. Confirm entrance, interior route, table height and restroom access live; do not infer it from a directory listing.",
         impact: 92,
         confidence: "high",
         situational: true,
@@ -262,7 +262,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "access-thin",
       layer: "unknown",
       domain: "access",
-      title: "Access honesty marker: route unstated",
+      title: "Access route not stated either way",
       detail: r.accessibilityState || "Physical-access details were not published first-party.",
       action: "Ask only if a guest needs it; the record does not claim accessibility either way.",
       impact: 24,
@@ -286,10 +286,10 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
         id: "diet-notice",
         layer: "critical",
         domain: "dietary",
-        title: `Kitchen asks ${r.dietaryAdvanceNoticeDays}-day notice; your lead is ${s.leadDays} days`,
+        title: `Your date misses the published notice period: ${r.dietaryAdvanceNoticeDays} days asked, ${s.leadDays} days given`,
         detail: r.dietaryDetails,
         action:
-          "Fail closed on this date unless a named manager waives the notice in writing. Do not treat a booking-form note as kitchen practice.",
+          "As it stands, this date does not meet the notice the kitchen asks for. Hold it unless a named manager waives that notice in writing — a booking-form note is not kitchen practice.",
         impact: 96,
         confidence: "high",
         situational: true,
@@ -300,16 +300,16 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       layer: "critical",
       domain: "dietary",
       title: dietaryHardNo
-        ? "Restaurant declines an allergy guarantee"
+        ? "The restaurant declines to guarantee allergy handling"
         : dietaryUnstated
-          ? "Allergy handling not stated first-party"
-          : "Allergy handling requires named confirmation",
+          ? "Allergy handling not published — more information needed"
+          : "Allergy handling needs a named confirmation",
       detail:
         r.dietaryDetails ||
         "First-party dietary language does not resolve cross-contact for a severe allergy.",
       action: dietaryHardNo
-        ? "Fail closed: this record cannot carry a severe-allergy guest without a named manager confirming kitchen practice for your date."
-        : "Call, name the allergen, and get cross-contact practice confirmed by kitchen staff — not by a booking form note.",
+        ? "As published, this kitchen cannot carry a severe-allergy guest. Do not seat one until a named manager confirms kitchen practice for your date."
+        : "Call, name the allergen, and get cross-contact practice confirmed by kitchen staff — not by a booking-form note.",
       impact: dietaryHardNo ? 99 : 94,
       confidence: "high",
       situational: true,
@@ -319,7 +319,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "diet-thin",
       layer: "unknown",
       domain: "dietary",
-      title: "Dietary handling requires direct confirmation",
+      title: "Dietary handling has to be confirmed directly",
       detail: r.dietaryDetails || "No first-party dietary policy recorded.",
       action: "Confirm before inviting anyone with a restriction.",
       impact: 26,
@@ -336,7 +336,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "zero-proof",
       layer: zp ? "watch" : "unknown",
       domain: "beverage",
-      title: zp ? "Zero-proof program referenced first-party" : "Zero-proof program unstated",
+      title: zp ? "A zero-proof program is mentioned on the restaurant’s own pages" : "Zero-proof options not stated",
       detail: r.beverageDetails || "Beverage program not detailed first-party.",
       action: zp
         ? "Confirm the zero-proof pairing is running on your date and its supplement price."
@@ -357,9 +357,9 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "conflict",
       layer: s.preferNoConflicts || (s.leadDays !== null && s.leadDays <= 2) ? "critical" : "watch",
       domain: "evidence",
-      title: "Official sources conflict — both claims preserved",
+      title: "The restaurant’s own sources disagree — both claims kept",
       detail: r.conflict || "Two first-party statements disagree on a material field.",
-      action: `${path} and ask the conflicted field as a direct question. Keep both recorded claims visible until sources converge.`,
+      action: `${path} and ask about it as a direct question. Both versions stay on the file until the restaurant settles which one is right.`,
       impact: 84,
       confidence: "high",
       situational: false,
@@ -426,7 +426,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "walkin",
       layer: walkIn ? "watch" : "critical",
       domain: "booking",
-      title: walkIn ? "A walk-in path exists on record" : "No first-party walk-in path recorded",
+      title: walkIn ? "A walk-in path is on the record" : "No walk-in path published — this does not meet a walk-in requirement",
       detail: r.reservationDetails || r.serviceSummary,
       action: walkIn
         ? "Confirm which room takes walk-ins and at what hour the queue forms."
@@ -449,11 +449,11 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       title: smallTable
         ? `Small-table constraint against a party of ${s.partySize ?? "6+"}`
         : overOnline
-          ? `Online book caps at ${r.maxOnlineParty}; you are ${s.partySize}`
+          ? `Online booking stops at ${r.maxOnlineParty} guests; your party is ${s.partySize}`
           : `Large-party handling for ${s.partySize ?? "6+"} needs a named confirmation`,
       detail: r.groupDetails || "Group capacity was not fully described first-party.",
       action: smallTable || overOnline
-        ? "Do not attempt the public widget; call and ask the maximum single-table seating before proposing this to the group."
+        ? "The public booking form will not take this party. Call and ask the maximum single-table seating before you propose this to the group."
         : "Call for the large-party path — deposits, set menus, and cut-off times usually differ from the public booking flow.",
       impact: smallTable || overOnline ? 92 : 66,
       confidence: "moderate",
@@ -468,10 +468,10 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "private",
       layer: weak ? "critical" : "watch",
       domain: "party",
-      title: weak ? "Private path unstated or limited" : `Private capacity: ${priv}`,
+      title: weak ? "Private seating unstated or limited" : `Private capacity: ${priv}`,
       detail: r.groupDetails || "Private-dining language was not published first-party.",
       action: weak
-        ? "Treat private seating as unavailable until the restaurant confirms a room, minimum spend, and cut-off date."
+        ? "Do not count on private seating until the restaurant confirms a room, a minimum spend, and a cut-off date."
         : "Confirm the room, minimum spend, and whether the main dining noise carries into it.",
       impact: weak ? 86 : 56,
       confidence: "moderate",
@@ -487,11 +487,11 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       domain: "timing",
       title: slow
         ? `${r.signals.pacing} pacing against a hard end time`
-        : "Pacing is workable against a hard end time — if they accept it",
+        : "Pacing can work against a hard end time — if the restaurant agrees to it",
       detail: r.typicalMealLength || r.serviceSummary,
       action: slow
         ? "Ask for the actual table time in minutes for your seating; a multi-course format rarely compresses on request."
-        : "State the hard out-time when booking and confirm it is accepted, not just noted.",
+        : "State the hard out-time when you book, and get someone to agree to it rather than just note it.",
       impact: slow ? 90 : 50,
       confidence: "moderate",
       situational: true,
@@ -526,10 +526,10 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       layer: conflictedPrice ? "critical" : mismatch ? "watch" : "unknown",
       domain: "spend",
       title: conflictedPrice
-        ? "Official price statements conflict"
+        ? "The restaurant’s own price statements disagree"
         : mismatch
-          ? "Spend band sits outside the stated cap"
-          : "Spend band matches the stated cap",
+          ? "Published spend sits outside your stated cap"
+          : "Published spend matches your stated cap",
       detail: r.priceDetails || "Price was not fully published first-party.",
       action: conflictedPrice
         ? "Get the current per-guest price in writing before you invite anyone under a fixed cap."
@@ -551,7 +551,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       domain: "operations",
       title: `Planning load is ${r.planningLoad}, above your ${s.maxPlanningLoad} ceiling`,
       detail: r.practicalNotes || r.reservationDetails,
-      action: "Either accept the extra coordination or move to a record with a lighter confirm burden.",
+      action: "Either take on the extra coordination, or move to a room that needs less confirming.",
       impact: 64,
       confidence: "high",
       situational: true,
@@ -578,9 +578,9 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "stale",
       layer: "critical",
       domain: "evidence",
-      title: "Review window has lapsed",
-      detail: `Last first-party review ${r.reviewedAt}; window closed ${r.nextReviewAt}.`,
-      action: "Re-read the official pages before using this record for a decision.",
+      title: "This file is past its recheck date",
+      detail: `Last checked ${r.reviewedAt}; it was due for a recheck on ${r.nextReviewAt}.`,
+      action: "Read the restaurant’s own pages again before you decide anything on this file.",
       impact: 78,
       confidence: "high",
       situational: false,
@@ -590,8 +590,8 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "due",
       layer: "watch",
       domain: "evidence",
-      title: "Review due within the current cycle",
-      detail: `Reviewed ${r.reviewedAt} · next review ${r.nextReviewAt}.`,
+      title: "Due for a recheck shortly",
+      detail: `Checked ${r.reviewedAt} · due for a recheck ${r.nextReviewAt}.`,
       action: "Volatile fields — hours, availability, price — should be confirmed in the same call.",
       impact: 46,
       confidence: "high",
@@ -652,8 +652,8 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       layer: "unknown",
       domain: "residual",
       title: capitalize(u),
-      detail: "Recorded as unknown at the last first-party review; not inferred, not filled.",
-      action: "Carry into the confirmation call if it bears on your night.",
+      detail: "Left open at the last check — the restaurant has not said, and we have not guessed.",
+      action: "Take it into the confirmation call if it bears on your night.",
       impact: 20,
       confidence: "high",
       situational: false,
@@ -803,29 +803,29 @@ export function decisionBrief(sc: Scored, s: Situation): Brief {
 
   const depth = situationDepth(s);
   const verdict = sc.blocked
-    ? "Hold — a stated constraint is unresolved on first-party evidence"
+    ? "On hold — something you said you need is unresolved on what the restaurant has published"
     : sc.criticals.length
-      ? "Workable, conditional on live confirmation"
+      ? "Workable, once you confirm a few things on the call"
       : depth < 3
-        ? "No blocking evidence found; the situation is still thin"
-        : "Clear on the evidence recorded";
+        ? "Nothing here holds the booking — but you have told us little about the night so far"
+        : "Clear on everything we have checked";
 
   const fitLine = s.occasion
     ? `Reads ${sc.fit}/100 for ${s.occasion.toLowerCase()}${s.partySize ? ` at ${s.partySize}` : ""}${
         s.leadDays !== null ? `, ${s.leadDays} days out` : ""
       }. ${sc.reasons.length ? sc.reasons.slice(0, 3).join("; ") + "." : ""}`
-    : `Reads ${sc.fit}/100 against a partial situation. Strongest recorded use: ${topOccasion(r).occasion.toLowerCase()}. Add an occasion to sharpen this.`;
+    : `Reads ${sc.fit}/100 against a partly described night. Best suited to ${topOccasion(r).occasion.toLowerCase()}. Name an occasion to sharpen this.`;
 
   const riskLine = sc.criticals.length
-    ? `${sc.criticals.length} critical risk${sc.criticals.length > 1 ? "s" : ""}: ${sc.criticals
+    ? `${sc.criticals.length} thing${sc.criticals.length > 1 ? "s" : ""} you must resolve: ${sc.criticals
         .slice(0, 2)
         .map((f) => f.title.toLowerCase())
-        .join("; ")}. ${sc.watch.length} watch item${sc.watch.length === 1 ? "" : "s"}, ${sc.unknowns.length} residual unknown${sc.unknowns.length === 1 ? "" : "s"} carried forward.`
-    : `No critical risk recorded for this situation. ${sc.watch.length} watch item${sc.watch.length === 1 ? "" : "s"} and ${sc.unknowns.length} residual unknown${sc.unknowns.length === 1 ? "" : "s"} remain visible.`;
+        .join("; ")}. ${sc.watch.length} more worth asking about, and ${sc.unknowns.length} question${sc.unknowns.length === 1 ? "" : "s"} the restaurant has left open.`
+    : `Nothing recorded that must be resolved for this night. ${sc.watch.length} thing${sc.watch.length === 1 ? "" : "s"} worth asking about, and ${sc.unknowns.length} question${sc.unknowns.length === 1 ? "" : "s"} the restaurant has left open, stay visible.`;
 
-  const burdenLine = `Confirm burden ${sc.burden}/100 · planning load ${r.planningLoad ?? "unstated"} · ${
-    r.hasOfficialConflict ? "one official conflict open" : "no official conflict"
-  } · reviewed ${r.reviewedAt}, next ${r.nextReviewAt}.`;
+  const burdenLine = `Still to confirm ${sc.burden}/100 · planning effort ${r.planningLoad ?? "not stated"} · ${
+    r.hasOfficialConflict ? "the restaurant’s own sources disagree on one field" : "no disagreement between sources"
+  } · checked ${r.reviewedAt}, due for a recheck ${r.nextReviewAt}.`;
 
   const path = r.hasPhone
     ? `Call ${r.phone}`
@@ -834,9 +834,9 @@ export function decisionBrief(sc: Scored, s: Situation): Brief {
       : "Email the restaurant";
 
   const nextAction = sc.blocked
-    ? `${path} and resolve the blocking constraint before this record re-enters the shortlist. Do not book against inference.`
+    ? `${path} and settle what is holding this room before you shortlist it again. Do not book on an assumption.`
     : sc.criticals.length
-      ? `${path} in one pass and clear every critical item; book only after they resolve.`
+      ? `${path} once and clear every must-resolve item; book only after they are answered.`
       : `${path} to confirm hours, party size, cancellation terms, and the volatile fields, then book on the ${r.bookingPlatforms[0] ?? "official"} pathway.`;
 
   const confirmCalls = sc.findings

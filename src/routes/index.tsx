@@ -83,7 +83,7 @@ function Home() {
           </div>
             </div>
 
-            {/* The strongest thing this instrument can say in the first screen
+            {/* The strongest thing this product can say in the first screen
                 is what one of its answers actually looks like. Scored live from
                 the same demonstration night as the full brief further down, so
                 it can never drift from the product. Desktop only: on a phone
@@ -102,7 +102,7 @@ function Home() {
                 <dl className="mt-5 grid grid-cols-3 gap-3 border-t border-border pt-4">
                   {[
                     [String(lead.fit), "/100", "Fit"],
-                    [String(lead.burden), "/100", "Confirm"],
+                    [String(lead.burden), "/100", "To confirm"],
                     [String(lead.unknowns.length), "", "Still open"],
                   ].map(([v, scale, l]) => (
                     <div key={l}>
@@ -124,7 +124,7 @@ function Home() {
 
           <dl className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[
-              [String(OPS.count), "Rooms in this working set"],
+              [String(OPS.count), "Rooms we have checked"],
               [String(OPS.regions), "Cities"],
               [String(OPS.openQuestions), "Questions left open"],
               [String(OPS.reachable), "Reachable by phone"],
@@ -158,7 +158,7 @@ function Home() {
             {
               n: "03",
               t: "Why it is not a finder",
-              d: "We will not invent certainty. Silence is unknown. A stated constraint the record cannot satisfy holds the booking. The product is the verified packet, not another map of restaurants.",
+              d: "We will not invent certainty. Silence is unknown, never a yes. A requirement the restaurant has not confirmed holds the booking. What you leave with is a confirmation you can keep, not another map of restaurants.",
             },
           ].map((b) => (
             <div key={b.n}>
@@ -177,8 +177,9 @@ function Home() {
             Denver, date night, two covers, a week out.
           </h2>
           <p className="mt-2 max-w-2xl text-[14px] text-muted-foreground">
-            Situation depth {depth}/9. No allergy declared. The lead is scored live against that
-            night — then the next step is the confirmation pass, not a booking widget.
+            Nine details about the night, {depth} of them given, no allergy declared. The lead is
+            scored live against that night — and the next step is the confirmation pass, not a
+            booking widget.
           </p>
           <div className="mt-8 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <DecisionBrief sc={lead} situation={DEMO_NIGHT} />
@@ -191,7 +192,7 @@ function Home() {
                       {sc.record.city} · fit {sc.fit} · confirm {sc.burden}
                     </p>
                   </div>
-                  {sc.blocked ? <LayerBadge layer="hold" /> : <LayerBadge layer="current" />}
+                  {sc.blocked ? <LayerBadge layer="hold" /> : <LayerBadge layer={sc.record.freshnessStatus} />}
                 </div>
               ))}
               <Button asChild variant="ghost" className="px-0">
@@ -206,7 +207,7 @@ function Home() {
 
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <Eyebrow>Proof</Eyebrow>
-        <h2 className="mt-2 font-display text-3xl tracking-tight">What this working set refuses to do.</h2>
+        <h2 className="mt-2 font-display text-3xl tracking-tight">What Deep Dish will not do.</h2>
         <ul className="mt-5 max-w-2xl space-y-3 text-[14px] leading-relaxed text-muted-foreground">
           <li>
             <span className="text-foreground">No star ratings.</span> Fit is situational and shown
@@ -217,17 +218,18 @@ function Home() {
             has not stated it, the field reads unstated.
           </li>
           <li>
-            <span className="text-foreground">Fail closed.</span> Allergy, access, or private-room
-            requirements the record cannot satisfy hold the booking.
+            <span className="text-foreground">Nothing is assumed satisfied.</span> An allergy,
+            access, or private-room requirement the restaurant has not confirmed holds the booking
+            until someone there answers it.
           </li>
           <li>
             <span className="text-foreground">The call is the product.</span> Hours, menu, price,
-            cancellation, and confirmation number belong on a packet you keep.
+            cancellation, and confirmation number belong on a confirmation you keep.
           </li>
         </ul>
         <p className="mt-8 text-[13px] text-subtle">
-          Working set of {OPS.count} confirmation-complete files — Denver metro plus selected
-          destination rooms. Thin coverage is worse than an honest set.
+          {OPS.count} restaurants checked field by field — Denver metro plus selected destination
+          rooms. A short, honest list beats a long, thin one.
         </p>
       </section>
     </main>

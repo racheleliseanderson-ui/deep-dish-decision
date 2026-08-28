@@ -16,12 +16,12 @@ export const Route = createFileRoute("/record/$slug")({
     const record = bySlug.get(params.slug);
     return {
       meta: [
-        { title: record ? `${record.title} — Deep Dish` : "File — Deep Dish" },
+        { title: record ? `${record.title} — Deep Dish` : "Restaurant file — Deep Dish" },
         {
           name: "description",
           content: record
             ? `First-party evidence for ${record.title}: hours, cancellation, access, dietary handling, and what is still unstated.`
-            : "Restaurant evidence file.",
+            : "What this restaurant has actually published, and what it has not.",
         },
       ],
       links: [canonical(`/record/${params.slug}`)],
@@ -68,9 +68,7 @@ function RecordPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
-      <p className="text-eyebrow">
-        {record.region} · {record.recordId}
-      </p>
+      <p className="text-eyebrow">{record.region}</p>
       <h1 className="mt-2 font-display text-4xl tracking-tight">{record.title}</h1>
       <p className="mt-2 text-[14px] text-muted-foreground">{record.cuisineContext}</p>
       <p className="mt-2 text-[13px] text-subtle">
@@ -133,7 +131,7 @@ function RecordPage() {
       </section>
 
       <section className="mt-10">
-        <Eyebrow>Open unknowns</Eyebrow>
+        <Eyebrow>Still unanswered</Eyebrow>
         <ul className="mt-3 list-disc space-y-1 pl-5 text-[14px] text-muted-foreground">
           {record.unknownList.map((u) => (
             <li key={u}>{u}</li>

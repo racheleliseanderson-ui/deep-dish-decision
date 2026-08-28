@@ -23,8 +23,8 @@ function ComparePage() {
 
   const fields: { key: string; label: string; get: (sc: (typeof items)[number]) => string }[] = [
     { key: "fit", label: "Situation fit", get: (sc) => `${sc.fit}/100` },
-    { key: "burden", label: "Confirm burden", get: (sc) => `${sc.burden}/100` },
-    { key: "verdict", label: "Hold?", get: (sc) => (sc.blocked ? "Hold" : sc.criticals.length ? "Conditional" : "Clear") },
+    { key: "burden", label: "Still to confirm", get: (sc) => `${sc.burden}/100` },
+    { key: "verdict", label: "Ready to book?", get: (sc) => (sc.blocked ? "On hold until confirmed" : sc.criticals.length ? "Only after the call" : "Clear on the evidence") },
     { key: "path", label: "Booking path", get: (sc) => sc.record.bookingPlatforms.join(", ") },
     { key: "cancel", label: "Cancellation", get: (sc) => sc.record.cancellationPolicy },
     { key: "diet", label: "Dietary", get: (sc) => sc.record.dietaryDetails },
@@ -33,7 +33,7 @@ function ComparePage() {
     { key: "price", label: "Price", get: (sc) => sc.record.priceDetails },
     { key: "pace", label: "Meal length", get: (sc) => sc.record.typicalMealLength },
     { key: "noise", label: "Noise band", get: (sc) => sc.record.noiseBand },
-    { key: "unknowns", label: "Unknowns", get: (sc) => String(sc.record.unknownsCount) },
+    { key: "unknowns", label: "Open questions", get: (sc) => String(sc.record.unknownsCount) },
   ];
 
   return (
@@ -46,11 +46,11 @@ function ComparePage() {
       </p>
       {!items.length ? (
         <p className="mt-8 text-muted-foreground">
-          Mark rooms to compare from{" "}
+          Nothing to compare yet. Hold up to three rooms on{" "}
           <Link to="/night" className="tap inline-flex items-center text-primary underline underline-offset-2">
             the night
           </Link>
-          .
+          , then come back here.
         </p>
       ) : (
         <div className="mt-8 overflow-x-auto">

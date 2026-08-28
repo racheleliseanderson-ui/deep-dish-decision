@@ -20,11 +20,11 @@ function NightsPage() {
       <h1 className="mt-2 font-display text-4xl tracking-tight">Nights and confirmation records</h1>
       <p className="mt-2 max-w-xl text-[14px] text-muted-foreground">
         Nothing is uploaded. Duplicate a night to try a different constraint without losing the
-        original. Packets are the thing you keep.
+        original. The confirmations you finish are the thing you keep.
       </p>
 
       <section className="mt-10">
-        <h2 className="font-display text-2xl">Confirmation packets</h2>
+        <h2 className="font-display text-2xl">Saved confirmations</h2>
         {store.passes.length ? (
           <ul className="mt-4 space-y-3">
             {store.passes.map((p) => (
@@ -40,7 +40,7 @@ function NightsPage() {
                   <LayerBadge layer={p.status} />
                   <Button asChild variant="outline">
                     <Link to="/packet/$id" params={{ id: p.id }}>
-                      Open packet
+                      Open confirmation
                     </Link>
                   </Button>
                 </div>
@@ -49,7 +49,8 @@ function NightsPage() {
           </ul>
         ) : (
           <p className="mt-3 text-[14px] text-muted-foreground">
-            No packets yet. Rank a night, choose a room, complete the confirmation pass.
+            No confirmations saved yet. Rank a night, open a room, and work through the
+            confirmation pass — it saves here.
           </p>
         )}
       </section>

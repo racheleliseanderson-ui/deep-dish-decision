@@ -45,7 +45,7 @@ function NightPage() {
         <Button
           variant="outline"
           onClick={() => {
-            if (confirm("Clear this night? Saved confirmation packets are kept.")) {
+            if (confirm("Clear this night? Your saved confirmations are kept.")) {
               store.setSituation(emptySituation);
             }
           }}
@@ -54,7 +54,7 @@ function NightPage() {
         </Button>
         {night?.shortlist.length ? (
           <Link to="/compare" className="tap inline-flex items-center text-sm text-primary underline underline-offset-2">
-            Compare {night.shortlist.length} held rooms
+            Compare the {night.shortlist.length} rooms you are holding
           </Link>
         ) : null}
       </div>
@@ -64,15 +64,16 @@ function NightPage() {
           <div>
             <Eyebrow>Ranked against your situation</Eyebrow>
             <h2 className="mt-1 font-display text-3xl tracking-tight">
-              {ranked.length} rooms · {ranked.filter((r) => r.blocked).length} held closed
+              {ranked.length} rooms · {ranked.filter((r) => r.blocked).length} on hold
             </h2>
           </div>
-          <p className="text-num text-xs text-subtle">Depth {depth}/9</p>
+          <p className="text-num text-xs text-subtle">{depth} of 9 details given</p>
         </div>
         <div className="gilt-rule mt-3 max-w-lg" />
         <p className="mt-3 max-w-2xl text-[13px] text-muted-foreground">
-          Order is fit, confirm burden, completeness, and time pressure. Blocked rooms drop to the
-          end so you can see what was excluded and why. Refine the night — the list reorders live.
+          Order is fit, how much you still have to confirm, how complete the file is, and time
+          pressure. Rooms on hold drop to the end, so you can still see what is held and why. Refine
+          the night — the list reorders live.
         </p>
       </section>
 
@@ -87,10 +88,11 @@ function NightPage() {
         </div>
       ) : (
         <div className="plate mt-8 p-8 text-center">
-          <Eyebrow>No matches</Eyebrow>
+          <Eyebrow>Nothing matches yet</Eyebrow>
           <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground">
-            Nothing in the working set matches those filters. The instrument will not widen your
-            constraints to produce a result.
+            No room we have checked matches those filters, and we will not quietly widen your
+            constraints to produce one. Loosen the region, the cuisine, or the search words and the
+            list rebuilds.
           </p>
         </div>
       )}

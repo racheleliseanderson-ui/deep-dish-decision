@@ -78,7 +78,7 @@ export function ResultCard({
             </Link>
           </h3>
           <p className="mt-1 text-[13px] text-muted-foreground">
-            {r.region} · {r.recordId} · {r.cuisineTags.slice(0, 3).join(" · ")}
+            {r.region} · {r.cuisineTags.slice(0, 3).join(" · ")}
           </p>
         </div>
         <div className="flex gap-4 text-right">
@@ -90,7 +90,7 @@ export function ResultCard({
             </p>
           </div>
           <div>
-            <p className="text-eyebrow">Confirm</p>
+            <p className="text-eyebrow">To confirm</p>
             <p className="text-num text-2xl">
               {sc.burden}
               <span className="text-xs text-subtle">/100</span>
@@ -117,18 +117,19 @@ export function ResultCard({
         <p className="mt-3 text-[12px] text-subtle">Why this rank: {sc.reasons.join(" · ")}</p>
       ) : (
         <p className="mt-3 text-[12px] text-subtle">
-          Strongest recorded use: {topOccasion(r).occasion.toLowerCase()}. Add an occasion to sharpen this.
+          Best suited to {topOccasion(r).occasion.toLowerCase()}, on what the restaurant has
+          published. Name an occasion to sharpen this.
         </p>
       )}
 
       <div className="mt-4 flex flex-wrap gap-2">
         <Button asChild>
           <Link to="/confirm/$slug" params={{ slug: r.slug }} onClick={() => ensureNight(situation)}>
-            {sc.blocked ? "Confirm anyway — hold the book" : "Start confirmation pass"}
+            {sc.blocked ? "Confirm anyway — booking stays on hold" : "Start confirmation pass"}
           </Link>
         </Button>
         <Chip active={shortlisted} onClick={onShortlist}>
-          {shortlisted ? "On the night" : "Hold as option"}
+          {shortlisted ? "On the night" : "Keep as an option"}
         </Chip>
         <Chip active={compared} onClick={onCompare}>
           Compare
@@ -160,7 +161,7 @@ export function WhatIf({ slug, situation }: { slug: string; situation: Situation
           <li key={row.label} className="flex items-center justify-between rounded-xl border border-border px-3 py-2 text-[13px]">
             <span>{row.label}</span>
             <span className={cn("text-num", row.blocked ? "text-critical" : row.delta < 0 ? "text-watch" : "text-verified")}>
-              {row.blocked ? "hold" : `${row.delta > 0 ? "+" : ""}${row.delta} fit`}
+              {row.blocked ? "on hold" : `${row.delta > 0 ? "+" : ""}${row.delta} fit`}
             </span>
           </li>
         ))}
@@ -174,8 +175,9 @@ export function DepthNote({ situation }: { situation: Situation }) {
   if (depth >= 3) return null;
   return (
     <p className="rounded-2xl border border-watch/30 bg-watch-soft px-4 py-3 text-[13px] text-watch">
-      Situation depth {depth}/{SITUATION_SLOTS}. This ordering is provisional. Add an occasion or a
-      guest constraint — those two reshape fail-closed holds the most.
+      You have given {depth} of {SITUATION_SLOTS} details about the night, so this ordering is
+      provisional. Add an occasion or a guest constraint — those two change most about which rooms
+      get held for confirmation.
     </p>
   );
 }

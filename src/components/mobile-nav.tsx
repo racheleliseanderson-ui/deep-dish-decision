@@ -17,7 +17,7 @@ export const MOBILE_STEPS = [
     n: "01",
     t: "Start",
     tap: "Tap Start.",
-    d: "Load a demonstration, or begin a blank night from scratch.",
+    d: "Try the worked example, or start a blank night from scratch.",
     next: "Night.",
   },
   {
@@ -31,14 +31,14 @@ export const MOBILE_STEPS = [
     n: "03",
     t: "A room",
     tap: "Not a button on the bar.",
-    d: "Open a record from the ranking. Run the confirmation pass before you book.",
-    next: "Records, once the packet is verified.",
+    d: "Open a room from the ranking. Work through the confirmation pass before you book.",
+    next: "Records, once the confirmation is verified.",
   },
   {
     n: "04",
     t: "Records",
     tap: "Tap Records.",
-    d: "The verified packet stays on this device until you print or copy it.",
+    d: "Your verified confirmation stays on this device until you print or copy it.",
     next: "Print or copy. Nothing is sent.",
   },
 ] as const;
@@ -63,7 +63,7 @@ export function cueFor(pathname: string): {
     return { n: "02", title: "Compare", next: "Return to Night, then open a room.", nextTo: "/night" };
   }
   if (pathname.startsWith("/record/")) {
-    return { n: "03", title: "A room", next: "Run the confirmation pass." };
+    return { n: "03", title: "A room", next: "Work through the confirmation pass." };
   }
   if (pathname.startsWith("/confirm/")) {
     return { n: "03", title: "Confirmation pass", next: "Records, once verified.", nextTo: "/nights" };
@@ -119,7 +119,7 @@ export function MobileDock({ passCount }: { passCount: number }) {
       {PRIMARY_NAV.map((item) => {
         const Icon = item.icon;
         const active = navIsActive(pathname, item.to);
-        const count = item.to === "/nights" && passCount ? `, ${passCount} packets` : "";
+        const count = item.to === "/nights" && passCount ? `, ${passCount} saved confirmations` : "";
         return (
           <Link
             key={item.to}
@@ -235,9 +235,9 @@ export function MobileHowTo({ className, full }: { className?: string; full?: bo
       </p>
       <BarLegend />
       <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
-        The night itself runs Start → Night → a room → Records. A room is not a button. You open it from
-        the ranking, then the confirmation pass writes into Records. Method is the written map, not a
-        stop in the night.
+        The night itself goes Start → Night → a room → Records. A room is not a button. You open it
+        from the ranking, then the confirmation pass writes into Records. Method is the written map,
+        not a stop in the night.
       </p>
       <ol className="mt-6 grid gap-5 sm:grid-cols-2">
         {MOBILE_STEPS.map((step) => (

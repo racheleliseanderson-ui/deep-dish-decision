@@ -16,7 +16,7 @@ export const PLAYBOOKS: Playbook[] = [
     id: "date-night",
     chapter: "night",
     title: "Date night",
-    lede: "Calm room, two covers, moderate commitment. Fail closed on noise and privacy gaps.",
+    lede: "Calm room, two covers, moderate commitment. Noise and privacy gaps stay open until you confirm them.",
     apply: {
       occasion: "Date night",
       partySize: 2,
@@ -93,7 +93,7 @@ export const PLAYBOOKS: Playbook[] = [
     id: "wine",
     chapter: "format",
     title: "Wine-forward evening",
-    lede: "Beverage program in the evidence; still fail-closed on stated constraints.",
+    lede: "A beverage program on the record; your stated needs still have to be confirmed live.",
     apply: { occasion: "Wine-forward evening", wineForward: true, regionGroup: "Denver metro", leadDays: 7 },
   },
   {
@@ -121,14 +121,14 @@ export const PLAYBOOKS: Playbook[] = [
     id: "allergy",
     chapter: "constraint",
     title: "Severe allergy / celiac",
-    lede: "Fail closed when dietary evidence is thin or conflicts. Confirm live.",
+    lede: "Holds the booking whenever dietary evidence is thin or conflicting. Confirm live.",
     apply: { occasion: "Dietary-sensitive visit", constraints: ["Severe allergy / celiac"], regionGroup: "Denver metro", leadDays: 14 },
   },
   {
     id: "access",
     chapter: "constraint",
     title: "Access-sensitive",
-    lede: "Step-free and mobility needs; hold when accessibility is unstated.",
+    lede: "Step-free and mobility needs; holds the booking when access is unstated.",
     apply: { occasion: "Access-sensitive visit", constraints: ["Mobility / step-free needs"], regionGroup: "Denver metro", leadDays: 7 },
   },
   {
@@ -149,7 +149,7 @@ export const PLAYBOOKS: Playbook[] = [
     id: "private",
     chapter: "constraint",
     title: "Private / semi-private",
-    lede: "Require stated private or semi-private capacity; fail closed otherwise.",
+    lede: "Requires stated private or semi-private capacity; otherwise the booking stays on hold.",
     apply: { constraints: ["Private / semi-private required"], regionGroup: "Denver metro", leadDays: 14 },
   },
   {

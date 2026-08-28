@@ -120,7 +120,7 @@ export function PwaRegister() {
     };
   }, []);
 
-  // Nobody installs an instrument they have not used yet, and on the landing
+  // Nobody installs an app they have not used yet, and on the landing
   // page this card lands directly on top of the primary call to action. Wait
   // until the visitor has moved into the app and has something worth keeping.
   const engaged = pathname !== "/";
@@ -157,10 +157,10 @@ export function PwaRegister() {
               </span>
               <div className="min-w-0">
                 <p id="pwa-toast-title" className="font-display text-xl leading-tight">
-                  A new working set is ready
+                  An updated Deep Dish is ready
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Reload to take the updated instrument. Open records stay on this device.
+                  Reload to pick up the update. Your saved records stay on this device.
                 </p>
               </div>
             </div>
@@ -223,7 +223,7 @@ export function PwaRegister() {
                   Ready without a network
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  The instrument will keep working offline. Dismiss whenever you like.
+                  Deep Dish will keep working without a connection. Dismiss whenever you like.
                 </p>
               </div>
             </div>

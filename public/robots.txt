@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-# Working pages (a confirmation pass, a saved packet) carry a person's own
+# Working pages (a confirmation pass, a saved confirmation) carry a person's own
 # reservation details and are marked noindex in the page itself.
 Sitemap: https://deepdish.saltnotes.blog/sitemap.xml
