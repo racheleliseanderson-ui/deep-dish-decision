@@ -1,28 +1,94 @@
-import { restaurants } from "../data/restaurants.ts";
-import {
-  COMMITMENT_LEVELS,
-  PLANNING_LEVELS,
-  emptySituation,
-  type Brief,
-  type Constraint,
-  type Finding,
-  type FindingLayer,
-  type Occasion,
-  type RestaurantRecord,
-  type Scored,
-  type Situation,
-} from "./types.ts";
-import { addDaysIso } from "./utils.ts";
+import { dataset, type RestaurantRecord } from "@/lib/dataset";
+import * as enrichmentJoin from "@/lib/enrichment";
 
-export { emptySituation };
-export const SITUATION_SLOTS = 9;
+/* ------------------------------------------------------------------ *
+ * Situation model
+ * ------------------------------------------------------------------ */
 
+export const OCCASIONS = [
+  "Date night",
+  "Business dining",
+  "Celebration",
+  "Group dining",
+  "Walk-in / spontaneous",
+  "Tasting / immersive",
+  "Wine-forward evening",
+  "Visitor / one-night-in-town",
+  "Access-sensitive visit",
+  "Dietary-sensitive visit",
+  "Solo dining",
+  "Brunch / daytime",
+  "Late seating / bar-led",
+  "Local / low-stakes weeknight",
+] as const;
+export type Occasion = (typeof OCCASIONS)[number];
+
+export const CONSTRAINTS = [
+  "Severe allergy / celiac",
+  "Mobility / step-free needs",
+  "Hearing / noise sensitivity",
+  "Hard end time (show, train, childcare)",
+  "Large party (6+)",
+  "Hard budget cap",
+  "Private / semi-private required",
+  "Zero-proof / no alcohol",
+] as const;
+export type Constraint = (typeof CONSTRAINTS)[number];
+
+export const COMMITMENT_LEVELS = ["Light", "Moderate", "High", "Structured", "Immersive"] as const;
+export const PLANNING_LEVELS = ["Standard", "Material", "Heavy"] as const;
+export const DAYPARTS = dataset.daypartOptions;
+export const SPEND_BANDS = dataset.spendBandOptions;
+
+export type Situation = {
+  occasion: Occasion | null;
+  partySize: number | null;
+  leadDays: number | null;
+  constraints: Constraint[];
+  maxCommitment: string | null;
+  maxPlanningLoad: string | null;
+  daypart: string | null;
+  spendBand: string | null;
+  regionGroup: string | null;
+  region: string | null;
+  cuisine: string | null;
+  bookingPath: string | null;
+  query: string;
+  preferNoConflicts: boolean;
+  preferWalkIn: boolean;
+  wineForward: boolean;
+};
+
+export const emptySituation: Situation = {
+  occasion: null,
+  partySize: null,
+  leadDays: null,
+  constraints: [],
+  maxCommitment: null,
+  maxPlanningLoad: null,
+  daypart: null,
+  spendBand: null,
+  regionGroup: null,
+  region: null,
+  cuisine: null,
+  bookingPath: null,
+  query: "",
+  preferNoConflicts: false,
+  preferWalkIn: false,
+  wineForward: false,
+};
+
+/**
+ * Weighted depth (0–9). Occasion and guest constraints count more heavily
+ * because they reshape fail-closed findings and ranking order the most.
+ * Clamped so the meter stays readable as nine bars.
+ */
 export function situationDepth(s: Situation): number {
   let d = 0;
   if (s.occasion) d += 2;
   if (s.constraints.length) d += 2;
   if (s.partySize !== null) d += 1;
-  if (s.leadDays !== null || s.nightDate) d += 1;
+  if (s.leadDays !== null) d += 1;
   if (s.maxCommitment) d += 1;
   if (s.maxPlanningLoad) d += 1;
   if (s.daypart) d += 1;
@@ -31,11 +97,33 @@ export function situationDepth(s: Situation): number {
   return Math.min(SITUATION_SLOTS, d);
 }
 
-export function resolvedNightDate(s: Situation): string | null {
-  if (s.nightDate) return s.nightDate;
-  if (s.leadDays !== null) return addDaysIso(s.leadDays);
-  return null;
+/** Unweighted slot fill count for diagnostics (nine binary slots). */
+export function situationSlotCount(s: Situation): number {
+  const slots = [
+    s.occasion,
+    s.partySize,
+    s.leadDays,
+    s.constraints.length ? "y" : null,
+    s.maxCommitment,
+    s.maxPlanningLoad,
+    s.daypart,
+    s.spendBand,
+    s.regionGroup ?? s.region,
+  ];
+  return slots.filter(Boolean).length;
 }
+
+export const SITUATION_SLOTS = 9;
+
+/** Ranking / findings options — enrichment is opt-in at call sites via prefs. */
+export type ScoreOptions = {
+  /** When true, labeled third-party signals join as watch/unknown only. Default true. */
+  useEnrichment?: boolean;
+};
+
+/* ------------------------------------------------------------------ *
+ * Occasion profiles — how each occasion reads a record
+ * ------------------------------------------------------------------ */
 
 type Profile = {
   groupFit?: string[];
@@ -100,7 +188,7 @@ const PROFILES: Record<Occasion, Profile> = {
   "Tasting / immersive": {
     commitment: ["Immersive", "Structured"],
     pacing: ["Immersive", "Long-form"],
-    service: ["Tasting menu", "Chef menu", "Chef table", "Prix fixe", "Chef-driven", "Counter dining"],
+    service: ["Tasting menu", "Chef menu", "Chef table", "Prix fixe", "Chef-driven"],
     formality: ["High formality / format lock", "Structured service", "Elevated"],
     keywords: ["tasting", "course", "chef"],
   },
@@ -114,7 +202,7 @@ const PROFILES: Record<Occasion, Profile> = {
   "Visitor / one-night-in-town": {
     groupFit: ["Visitor dining", "Special occasion", "Celebration"],
     energy: ["Lively", "Balanced"],
-    keywords: ["visitor", "iconic", "view", "waterfront", "destination", "station"],
+    keywords: ["visitor", "iconic", "view", "waterfront", "destination"],
   },
   "Access-sensitive visit": {
     keywords: ["accessible", "step-free", "elevator", "ground floor"],
@@ -155,9 +243,6 @@ function hits(list: string[] | undefined, pool: string[] | undefined): number {
   return list.filter((v) => pool.includes(v)).length;
 }
 
-const clamp = (n: number, a: number, b: number) => Math.max(a, Math.min(b, n));
-const levelIndex = (list: readonly string[], v: string | undefined) => (v ? list.indexOf(v) : -1);
-
 export function occasionScore(r: RestaurantRecord, occasion: Occasion): number {
   const p = PROFILES[occasion];
   let score = 30;
@@ -176,55 +261,84 @@ export function occasionScore(r: RestaurantRecord, occasion: Occasion): number {
   if (p.daypart?.some((d) => r.daypartTags?.includes(d))) score += 8;
   if (p.avoidEnergy?.includes(r.signals.energy ?? "")) score -= 10;
   if (p.avoidCommitment?.includes(r.signals.commitment ?? "")) score -= 12;
-  const hay = r.searchText;
+  const hay = (r.searchText ?? `${r.title} ${r.occasionFit} ${r.serviceSummary}`).toLowerCase();
   const kw = (p.keywords ?? []).filter((k) => hay.includes(k)).length;
   score += Math.min(3, kw) * 4;
   return clamp(Math.round(score), 0, 100);
 }
 
 export function topOccasion(r: RestaurantRecord): { occasion: Occasion; score: number } {
-  let best: { occasion: Occasion; score: number } = { occasion: "Date night", score: -1 };
-  for (const o of Object.keys(PROFILES) as Occasion[]) {
+  let best: { occasion: Occasion; score: number } = { occasion: OCCASIONS[0], score: -1 };
+  for (const o of OCCASIONS) {
     const s = occasionScore(r, o);
     if (s > best.score) best = { occasion: o, score: s };
   }
   return best;
 }
 
+/* ------------------------------------------------------------------ *
+ * Findings
+ * ------------------------------------------------------------------ */
+
+export type FindingLayer = "critical" | "watch" | "unknown";
+
+export type Finding = {
+  id: string;
+  layer: FindingLayer;
+  domain: string;
+  title: string;
+  detail: string;
+  action: string;
+  impact: number; // 0-100, decision impact for this situation
+  confidence: "high" | "moderate" | "low";
+  situational: boolean;
+  /** Provenance of the finding. user-photo is for multimodal vision OCR/detection results. */
+  provenance?: "first-party" | "google-places" | "site-scrape" | "enrichment" | "user-photo";
+};
+
 const NOT_STATED = ["Not stated", "Direct confirmation required", "Route details unknown"];
 
 function isThin(value: string | undefined): boolean {
   if (!value) return true;
   const v = value.toLowerCase();
-  return v.length < 40 || v.includes("not stated") || v.includes("not published") || v.includes("were not");
+  return (
+    v.length < 40 ||
+    v.includes("not stated") ||
+    v.includes("not published") ||
+    v.includes("were not")
+  );
 }
 
-function capitalize(s: string) {
-  return s.charAt(0).toUpperCase() + s.slice(1);
-}
+const clamp = (n: number, a: number, b: number) => Math.max(a, Math.min(b, n));
 
-export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
+const levelIndex = (list: readonly string[], v: string | undefined) =>
+  v ? list.indexOf(v) : -1;
+
+export function buildFindings(
+  r: RestaurantRecord,
+  s: Situation,
+  opts: ScoreOptions = {},
+): Finding[] {
   const f: Finding[] = [];
   const c = (x: Constraint) => s.constraints.includes(x);
   const push = (x: Finding) => f.push(x);
 
+  /* --- access ---------------------------------------------------- */
   const accessThin =
-    r.accessibilityTags.some((t) => NOT_STATED.includes(t) || t.includes("unknown")) ||
-    isThin(r.accessibilityState);
+    r.accessibilityTags.some((t) => NOT_STATED.includes(t)) || isThin(r.accessibilityState);
   const stairs = r.accessibilityTags.some((t) =>
     ["Stairs required", "Stairs stated", "No elevator", "Uneven terrain"].includes(t),
   );
-
   if (c("Mobility / step-free needs")) {
     if (stairs) {
       push({
         id: "access-stairs",
         layer: "critical",
         domain: "access",
-        title: "The restaurant’s own pages state stairs or uneven ground",
+        title: "First-party pages state stairs or no elevator",
         detail: r.accessibilityState || r.accessibilityTags.join(" · "),
         action:
-          "As published, this does not meet a step-free requirement. Call and confirm a step-free route, restroom access, and which entrance to use before you commit this guest.",
+          "Needs confirmation: call and confirm a step-free route, restroom access, and which entrance to use before committing this guest.",
         impact: 98,
         confidence: "high",
         situational: true,
@@ -234,12 +348,12 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
         id: "access-unstated",
         layer: "critical",
         domain: "access",
-        title: "Access route not published — more information needed",
+        title: "Access route not stated on first-party sources",
         detail:
           r.accessibilityState ||
           "No first-party statement of entrance, route, or restroom configuration was recorded.",
         action:
-          "Not checked yet — and silence is not a step-free route. Confirm entrance, interior route, table height and restroom access live; do not infer it from a directory listing.",
+          "Treat as unverified. Confirm entrance, interior route, table height and restroom access live — do not infer from a directory listing.",
         impact: 92,
         confidence: "high",
         situational: true,
@@ -262,7 +376,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "access-thin",
       layer: "unknown",
       domain: "access",
-      title: "Access route not stated either way",
+      title: "Access honesty marker: route unstated",
       detail: r.accessibilityState || "Physical-access details were not published first-party.",
       action: "Ask only if a guest needs it; the record does not claim accessibility either way.",
       impact: 24,
@@ -271,55 +385,37 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
     });
   }
 
+  /* --- dietary ---------------------------------------------------- */
   const dietaryHardNo = r.dietaryTags.some((t) =>
     ["No allergy guarantee", "Restrictions may not be accommodated", "No substitutions"].includes(t),
   );
   const dietaryUnstated = r.dietaryTags.some((t) => NOT_STATED.includes(t));
-  const dietaryNotice =
-    r.dietaryAdvanceNoticeDays !== null &&
-    s.leadDays !== null &&
-    s.leadDays < r.dietaryAdvanceNoticeDays;
-
   if (c("Severe allergy / celiac")) {
-    if (dietaryNotice) {
-      push({
-        id: "diet-notice",
-        layer: "critical",
-        domain: "dietary",
-        title: `Your date misses the published notice period: ${r.dietaryAdvanceNoticeDays} days asked, ${s.leadDays} days given`,
-        detail: r.dietaryDetails,
-        action:
-          "As it stands, this date does not meet the notice the kitchen asks for. Hold it unless a named manager waives that notice in writing — a booking-form note is not kitchen practice.",
-        impact: 96,
-        confidence: "high",
-        situational: true,
-      });
-    }
     push({
       id: "diet-severe",
       layer: "critical",
       domain: "dietary",
       title: dietaryHardNo
-        ? "The restaurant declines to guarantee allergy handling"
+        ? "Restaurant declines an allergy guarantee"
         : dietaryUnstated
-          ? "Allergy handling not published — more information needed"
-          : "Allergy handling needs a named confirmation",
+          ? "Allergy handling not stated first-party"
+          : "Allergy handling requires named confirmation",
       detail:
         r.dietaryDetails ||
         "First-party dietary language does not resolve cross-contact for a severe allergy.",
       action: dietaryHardNo
-        ? "As published, this kitchen cannot carry a severe-allergy guest. Do not seat one until a named manager confirms kitchen practice for your date."
-        : "Call, name the allergen, and get cross-contact practice confirmed by kitchen staff — not by a booking-form note.",
+        ? "Cannot recommend until confirmed: this restaurant cannot carry a severe-allergy guest without a named manager confirming kitchen practice for your date."
+        : "Call, name the allergen, and get cross-contact practice confirmed by kitchen staff — not by a booking form note.",
       impact: dietaryHardNo ? 99 : 94,
       confidence: "high",
       situational: true,
     });
-  } else if (dietaryUnstated || dietaryHardNo) {
+  } else if (dietaryUnstated) {
     push({
       id: "diet-thin",
       layer: "unknown",
       domain: "dietary",
-      title: "Dietary handling has to be confirmed directly",
+      title: "Dietary handling requires direct confirmation",
       detail: r.dietaryDetails || "No first-party dietary policy recorded.",
       action: "Confirm before inviting anyone with a restriction.",
       impact: 26,
@@ -327,7 +423,6 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       situational: false,
     });
   }
-
   if (c("Zero-proof / no alcohol")) {
     const zp = /nonalcohol|non-alcohol|zero-proof|zero proof|na pairing/i.test(
       `${r.beverageDetails} ${r.dietaryTags.join(" ")}`,
@@ -336,7 +431,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "zero-proof",
       layer: zp ? "watch" : "unknown",
       domain: "beverage",
-      title: zp ? "A zero-proof program is mentioned on the restaurant’s own pages" : "Zero-proof options not stated",
+      title: zp ? "Zero-proof program referenced first-party" : "Zero-proof program unstated",
       detail: r.beverageDetails || "Beverage program not detailed first-party.",
       action: zp
         ? "Confirm the zero-proof pairing is running on your date and its supplement price."
@@ -347,6 +442,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
     });
   }
 
+  /* --- conflict ---------------------------------------------------- */
   if (r.hasOfficialConflict) {
     const path = r.hasPhone
       ? `Call ${r.phone}`
@@ -357,30 +453,20 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "conflict",
       layer: s.preferNoConflicts || (s.leadDays !== null && s.leadDays <= 2) ? "critical" : "watch",
       domain: "evidence",
-      title: "The restaurant’s own sources disagree — both claims kept",
-      detail: r.conflict || "Two first-party statements disagree on a material field.",
-      action: `${path} and ask about it as a direct question. Both versions stay on the file until the restaurant settles which one is right.`,
+      title: "Official sources conflict — both claims preserved",
+      detail:
+        r.conflict ||
+        "Two first-party statements disagree on a material field. Neither has been collapsed.",
+      action: `${path} and ask the conflicted field as a direct question. Keep both recorded claims visible until sources converge; do not adopt the friendlier one.`,
       impact: 84,
       confidence: "high",
       situational: false,
     });
   }
 
+  /* --- booking / lead time ----------------------------------------- */
   const tightBooking = ["Competitive", "Scarce"].includes(r.signals.booking ?? "");
   if (s.leadDays !== null) {
-    if (r.bookingLeadDays !== null && s.leadDays > r.bookingLeadDays && tightBooking) {
-      push({
-        id: "lead-window",
-        layer: "watch",
-        domain: "booking",
-        title: `Reservations open ${r.bookingLeadDays} days out; you are ${s.leadDays} days out`,
-        detail: r.reservationDetails,
-        action: "The book may not be open yet. Note the release date rather than refreshing hopelessly.",
-        impact: 48,
-        confidence: "moderate",
-        situational: true,
-      });
-    }
     if (tightBooking && s.leadDays <= 7) {
       push({
         id: "lead-tight",
@@ -388,7 +474,8 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
         domain: "booking",
         title: `Release cadence is ${(r.signals.booking ?? "").toLowerCase()} against ${s.leadDays}-day lead`,
         detail: r.reservationDetails || "Reservation release windows are constrained.",
-        action: "Check the live inventory now, and hold a fallback record before you send an invitation.",
+        action:
+          "Check the live inventory now, and hold a fallback record before you send an invitation.",
         impact: s.leadDays <= 3 ? 90 : 70,
         confidence: "high",
         situational: true,
@@ -413,54 +500,49 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       domain: "booking",
       title: "Booking is competitive; your lead time is unstated",
       detail: r.reservationDetails || "Release windows are limited.",
-      action: "Add a date to sharpen this.",
+      action: "Add a date to the situation console to rank this record honestly.",
       impact: 34,
       confidence: "moderate",
       situational: false,
     });
   }
-
   if (s.preferWalkIn) {
     const walkIn = r.bookingPlatforms.includes("Walk-in / open seating");
     push({
       id: "walkin",
       layer: walkIn ? "watch" : "critical",
       domain: "booking",
-      title: walkIn ? "A walk-in path is on the record" : "No walk-in path published — this does not meet a walk-in requirement",
+      title: walkIn ? "A walk-in path exists on record" : "No first-party walk-in path recorded",
       detail: r.reservationDetails || r.serviceSummary,
       action: walkIn
         ? "Confirm which room takes walk-ins and at what hour the queue forms."
         : "Expect to be turned away without a reservation; treat this as a booked-only record.",
-      impact: walkIn ? 48 : 92,
+      impact: walkIn ? 48 : 88,
       confidence: "high",
       situational: true,
     });
   }
 
+  /* --- party size ---------------------------------------------------- */
   const smallTable = r.signals.party === "Small table";
   const largeParty = c("Large party (6+)") || (s.partySize ?? 0) >= 6;
   if (largeParty) {
-    const overOnline =
-      r.maxOnlineParty !== null && s.partySize !== null && s.partySize > r.maxOnlineParty;
     push({
       id: "party",
-      layer: smallTable || overOnline ? "critical" : "watch",
+      layer: smallTable ? "critical" : "watch",
       domain: "party",
       title: smallTable
         ? `Small-table constraint against a party of ${s.partySize ?? "6+"}`
-        : overOnline
-          ? `Online booking stops at ${r.maxOnlineParty} guests; your party is ${s.partySize}`
-          : `Large-party handling for ${s.partySize ?? "6+"} needs a named confirmation`,
+        : `Large-party handling for ${s.partySize ?? "6+"} needs a named confirmation`,
       detail: r.groupDetails || "Group capacity was not fully described first-party.",
-      action: smallTable || overOnline
-        ? "The public booking form will not take this party. Call and ask the maximum single-table seating before you propose this to the group."
+      action: smallTable
+        ? "Do not attempt online; call and ask the maximum single-table seating before proposing this to the group."
         : "Call for the large-party path — deposits, set menus, and cut-off times usually differ from the public booking flow.",
-      impact: smallTable || overOnline ? 92 : 66,
+      impact: smallTable ? 92 : 66,
       confidence: "moderate",
       situational: true,
     });
   }
-
   if (c("Private / semi-private required")) {
     const priv = r.signals.private ?? "Not stated";
     const weak = ["Not stated", "Limited"].includes(priv);
@@ -468,10 +550,10 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "private",
       layer: weak ? "critical" : "watch",
       domain: "party",
-      title: weak ? "Private seating unstated or limited" : `Private capacity: ${priv}`,
+      title: weak ? "Private path unstated or limited" : `Private capacity: ${priv}`,
       detail: r.groupDetails || "Private-dining language was not published first-party.",
       action: weak
-        ? "Do not count on private seating until the restaurant confirms a room, a minimum spend, and a cut-off date."
+        ? "Treat private seating as unavailable until the restaurant confirms a room, minimum spend, and cut-off date."
         : "Confirm the room, minimum spend, and whether the main dining noise carries into it.",
       impact: weak ? 86 : 56,
       confidence: "moderate",
@@ -479,6 +561,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
     });
   }
 
+  /* --- timing / pacing ------------------------------------------------ */
   if (c("Hard end time (show, train, childcare)")) {
     const slow = ["Immersive", "Long-form"].includes(r.signals.pacing ?? "");
     push({
@@ -487,17 +570,16 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       domain: "timing",
       title: slow
         ? `${r.signals.pacing} pacing against a hard end time`
-        : "Pacing can work against a hard end time — if the restaurant agrees to it",
+        : "Pacing is workable against a hard end time",
       detail: r.typicalMealLength || r.serviceSummary,
       action: slow
         ? "Ask for the actual table time in minutes for your seating; a multi-course format rarely compresses on request."
-        : "State the hard out-time when you book, and get someone to agree to it rather than just note it.",
+        : "State the hard out-time when booking and confirm it is accepted, not just noted.",
       impact: slow ? 90 : 50,
       confidence: "moderate",
       situational: true,
     });
   }
-
   if (c("Hearing / noise sensitivity")) {
     const loud = ["High stimulus", "Higher stimulus"].includes(r.noiseBand ?? "");
     push({
@@ -515,9 +597,10 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
     });
   }
 
+  /* --- spend ---------------------------------------------------------- */
   const conflictedPrice = r.priceTags.includes("Conflicting official price");
   if (c("Hard budget cap") || s.spendBand) {
-    const premium = r.priceTags.includes("Special occasion") || r.priceTags.includes("$$$$");
+    const premium = r.priceTags.includes("Special occasion");
     const mismatch =
       (c("Hard budget cap") && (premium || conflictedPrice)) ||
       (s.spendBand ? !(r.spendBands ?? []).includes(s.spendBand) : false);
@@ -526,10 +609,10 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       layer: conflictedPrice ? "critical" : mismatch ? "watch" : "unknown",
       domain: "spend",
       title: conflictedPrice
-        ? "The restaurant’s own price statements disagree"
+        ? "Official price statements conflict"
         : mismatch
-          ? "Published spend sits outside your stated cap"
-          : "Published spend matches your stated cap",
+          ? "Spend band sits outside the stated cap"
+          : "Spend band matches the stated cap",
       detail: r.priceDetails || "Price was not fully published first-party.",
       action: conflictedPrice
         ? "Get the current per-guest price in writing before you invite anyone under a fixed cap."
@@ -542,6 +625,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
     });
   }
 
+  /* --- planning load / commitment -------------------------------------- */
   const loadIdx = levelIndex(PLANNING_LEVELS, r.planningLoad);
   const capIdx = levelIndex(PLANNING_LEVELS, s.maxPlanningLoad ?? undefined);
   if (capIdx >= 0 && loadIdx > capIdx) {
@@ -551,7 +635,8 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       domain: "operations",
       title: `Planning load is ${r.planningLoad}, above your ${s.maxPlanningLoad} ceiling`,
       detail: r.practicalNotes || r.reservationDetails,
-      action: "Either take on the extra coordination, or move to a room that needs less confirming.",
+      action:
+        "Either accept the extra coordination or move to a record with a lighter confirm burden — the ranking below has already demoted this one.",
       impact: 64,
       confidence: "high",
       situational: true,
@@ -573,14 +658,15 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
     });
   }
 
+  /* --- freshness -------------------------------------------------------- */
   if (r.reviewStatus === "overdue") {
     push({
       id: "stale",
       layer: "critical",
       domain: "evidence",
-      title: "This file is past its recheck date",
-      detail: `Last checked ${r.reviewedAt}; it was due for a recheck on ${r.nextReviewAt}.`,
-      action: "Read the restaurant’s own pages again before you decide anything on this file.",
+      title: "Review window has lapsed",
+      detail: `Last first-party review ${r.reviewedAt}; window closed ${r.nextReviewAt}.`,
+      action: "Re-read the official pages before using this record for a decision.",
       impact: 78,
       confidence: "high",
       situational: false,
@@ -590,8 +676,8 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
       id: "due",
       layer: "watch",
       domain: "evidence",
-      title: "Due for a recheck shortly",
-      detail: `Checked ${r.reviewedAt} · due for a recheck ${r.nextReviewAt}.`,
+      title: "Review due within the current cycle",
+      detail: `Reviewed ${r.reviewedAt} · next review ${r.nextReviewAt}.`,
       action: "Volatile fields — hours, availability, price — should be confirmed in the same call.",
       impact: 46,
       confidence: "high",
@@ -599,20 +685,7 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
     });
   }
 
-  if (isThin(r.cancellationPolicy)) {
-    push({
-      id: "cancel-thin",
-      layer: "unknown",
-      domain: "cancellation",
-      title: "Cancellation cost is unstated",
-      detail: r.cancellationPolicy || "No first-party cancellation window or fee was published.",
-      action: "Ask the window, the amount, and whether a reduced party counts as a change. Get the number, not the reassurance.",
-      impact: s.leadDays !== null && s.leadDays <= 3 ? 50 : 28,
-      confidence: "high",
-      situational: false,
-    });
-  }
-
+  /* --- thin fields as residual unknowns ---------------------------------- */
   if (isThin(r.parkingTransit)) {
     push({
       id: "thin-parking",
@@ -648,23 +721,48 @@ export function buildFindings(r: RestaurantRecord, s: Situation): Finding[] {
   }
   for (const u of r.unknownList.slice(0, 4)) {
     push({
-      id: `unknown-${u.slice(0, 24)}`,
+      id: `unknown-${u.slice(0, 18)}`,
       layer: "unknown",
       domain: "residual",
       title: capitalize(u),
-      detail: "Left open at the last check — the restaurant has not said, and we have not guessed.",
-      action: "Take it into the confirmation call if it bears on your night.",
+      detail: "Recorded as unknown at the last first-party review; not inferred, not filled.",
+      action: "Carry into the confirmation call if it bears on your night.",
       impact: 20,
       confidence: "high",
       situational: false,
+      provenance: "first-party",
     });
   }
 
-  const order: Record<FindingLayer, number> = { critical: 0, watch: 1, unknown: 2 };
+  /* --- labeled enrichment join (never critical / never overwrites) ---- */
+  if (opts.useEnrichment !== false) {
+    // Lazy import avoided: static import at top would cycle; call via require-like helper.
+    const { buildEnrichmentFindings } = enrichmentJoin;
+    for (const ef of buildEnrichmentFindings(r, s, c)) {
+      // Force non-critical: third-party must not fail-close.
+      if (ef.layer === "critical") continue;
+      push({
+        ...ef,
+        layer: ef.layer === "watch" ? "watch" : "unknown",
+        provenance: ef.provenance ?? "enrichment",
+      });
+    }
+  }
+
+  const order: Record<FindingLayer, number> = { critical: 0, watch: 1, unknown: 2 } as never;
   return f
     .sort((a, b) => order[a.layer] - order[b.layer] || b.impact - a.impact)
     .filter((v, i, arr) => arr.findIndex((x) => x.id === v.id) === i);
 }
+
+
+function capitalize(s: string) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/* ------------------------------------------------------------------ *
+ * Confirm burden + scoring
+ * ------------------------------------------------------------------ */
 
 export function confirmBurden(r: RestaurantRecord, findings: Finding[]): number {
   let b = 12;
@@ -677,13 +775,26 @@ export function confirmBurden(r: RestaurantRecord, findings: Finding[]): number 
   if (r.planningLoad === "Heavy") b += 12;
   else if (r.planningLoad === "Material") b += 6;
   if (!r.hasPhone) b += 6;
-  if (isThin(r.cancellationPolicy)) b += 6;
   b += findings.filter((f) => f.layer === "critical" && f.situational).length * 7;
   return clamp(Math.round(b), 0, 100);
 }
 
-export function scoreRecord(r: RestaurantRecord, s: Situation): Scored {
-  const findings = buildFindings(r, s);
+export type Scored = {
+  record: RestaurantRecord;
+  fit: number;
+  rank: number;
+  burden: number;
+  findings: Finding[];
+  criticals: Finding[];
+  watch: Finding[];
+  unknowns: Finding[];
+  occasionScore: number;
+  reasons: string[];
+  blocked: boolean;
+};
+
+export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOptions = {}): Scored {
+  const findings = buildFindings(r, s, opts);
   const burden = confirmBurden(r, findings);
   const reasons: string[] = [];
 
@@ -691,26 +802,30 @@ export function scoreRecord(r: RestaurantRecord, s: Situation): Scored {
   let fit = s.occasion ? occ : 50 + (occ - 50) * 0.35;
   if (s.occasion) reasons.push(`${s.occasion} fit ${occ}`);
 
+  // Party composition
   if (s.partySize !== null) {
     if (s.partySize >= 6) {
-      if (r.signals.party === "Large-group ready") (fit += 10), reasons.push("large-group ready");
-      else if (r.signals.party === "Group-ready") (fit += 6), reasons.push("group-ready");
-      else if (r.signals.party === "Small table") (fit -= 22), reasons.push("small-table constraint");
+      if (r.signals.party === "Large-group ready") fit += 10, reasons.push("large-group ready");
+      else if (r.signals.party === "Group-ready") fit += 6, reasons.push("group-ready");
+      else if (r.signals.party === "Small table") fit -= 22, reasons.push("small-table constraint");
     } else if (s.partySize <= 2) {
       if (["Small table", "Flexible party"].includes(r.signals.party ?? "")) fit += 5;
     }
   }
 
+  // Daypart
   if (s.daypart) {
-    if (r.daypartTags?.includes(s.daypart)) (fit += 9), reasons.push("daypart language matches");
-    else (fit -= 8), reasons.push("daypart unstated for this service");
+    if (r.daypartTags?.includes(s.daypart)) fit += 9, reasons.push("daypart language matches");
+    else fit -= 8, reasons.push("daypart unstated for this service");
   }
 
+  // Spend band
   if (s.spendBand) {
-    if ((r.spendBands ?? []).includes(s.spendBand)) (fit += 8), reasons.push("spend band matches");
+    if ((r.spendBands ?? []).includes(s.spendBand)) fit += 8, reasons.push("spend band matches");
     else fit -= 12;
   }
 
+  // Booking path preference
   if (s.bookingPath && !r.bookingPlatforms.includes(s.bookingPath)) fit -= 25;
   if (s.preferWalkIn) {
     if (r.bookingPlatforms.includes("Walk-in / open seating")) fit += 8;
@@ -723,14 +838,16 @@ export function scoreRecord(r: RestaurantRecord, s: Situation): Scored {
   }
   if (s.preferNoConflicts && r.hasOfficialConflict) fit -= 18;
 
+  // Lead time vs booking scarcity
   if (s.leadDays !== null) {
     const tight = ["Competitive", "Scarce"].includes(r.signals.booking ?? "");
-    if (tight && s.leadDays <= 3) (fit -= 26), reasons.push("release cadence beats your lead time");
+    if (tight && s.leadDays <= 3) fit -= 26, reasons.push("release cadence beats your lead time");
     else if (tight && s.leadDays <= 7) fit -= 12;
-    else if (!tight && s.leadDays <= 3) (fit += 6), reasons.push("bookable on short notice");
-    if (s.leadDays >= 21 && tight) (fit += 6), reasons.push("lead time covers the release window");
+    else if (!tight && s.leadDays <= 3) fit += 6, reasons.push("bookable on short notice");
+    if (s.leadDays >= 21 && tight) fit += 6, reasons.push("lead time covers the release window");
   }
 
+  // Ceilings
   const loadIdx = levelIndex(PLANNING_LEVELS, r.planningLoad);
   const capIdx = levelIndex(PLANNING_LEVELS, s.maxPlanningLoad ?? undefined);
   if (capIdx >= 0 && loadIdx > capIdx) fit -= 10 * (loadIdx - capIdx);
@@ -738,15 +855,26 @@ export function scoreRecord(r: RestaurantRecord, s: Situation): Scored {
   const commCap = levelIndex(COMMITMENT_LEVELS, s.maxCommitment ?? undefined);
   if (commCap >= 0 && commIdx > commCap) fit -= 8 * (commIdx - commCap);
 
+  // Constraints — fail closed
   const situationalCriticals = findings.filter((f) => f.layer === "critical" && f.situational);
   fit -= situationalCriticals.reduce((a, f) => a + f.impact * 0.32, 0);
-  for (const finding of situationalCriticals) reasons.push(finding.title.toLowerCase());
+  for (const f of situationalCriticals) reasons.push(f.title.toLowerCase());
 
+  // Confirm burden discount, scaled by how little time the reader has
   const timePressure = s.leadDays === null ? 0.12 : s.leadDays <= 3 ? 0.3 : s.leadDays <= 10 ? 0.18 : 0.1;
   fit -= burden * timePressure;
 
+  // Evidence depth rewards completeness, never invents it
   fit += (r.depthFilled / Math.max(1, r.depthTotal)) * 8;
   fit -= Math.min(6, r.unknownsCount) * 1.2;
+  if (opts.useEnrichment !== false) {
+    const ownedCompleteness = enrichmentJoin.getEnrichment(r.slug)?.meta?.completeness;
+    if (typeof ownedCompleteness === "number") {
+      fit += (ownedCompleteness / 100) * 6;
+      if (ownedCompleteness >= 70) reasons.push("owned-site file is ready");
+      else if (ownedCompleteness < 50) fit -= 4;
+    }
+  }
 
   const blocked = situationalCriticals.some((f) => f.impact >= 90);
 
@@ -756,26 +884,24 @@ export function scoreRecord(r: RestaurantRecord, s: Situation): Scored {
     rank: 0,
     burden,
     findings,
-    criticals: findings.filter((x) => x.layer === "critical"),
-    watch: findings.filter((x) => x.layer === "watch"),
-    unknowns: findings.filter((x) => x.layer === "unknown"),
+    criticals: findings.filter((f) => f.layer === "critical"),
+    watch: findings.filter((f) => f.layer === "watch"),
+    unknowns: findings.filter((f) => f.layer === "unknown"),
     occasionScore: occ,
     reasons: reasons.slice(0, 4),
     blocked,
   };
 }
 
-export function rank(list: RestaurantRecord[], s: Situation): Scored[] {
-  const scored = list.map((r) => scoreRecord(r, s));
+export function rank(list: RestaurantRecord[], s: Situation, opts: ScoreOptions = {}): Scored[] {
+  const scored = list.map((r) => scoreRecord(r, s, opts));
   scored.sort((a, b) => {
     if (a.blocked !== b.blocked) return a.blocked ? 1 : -1;
     if (b.fit !== a.fit) return b.fit - a.fit;
     if (a.burden !== b.burden) return a.burden - b.burden;
     return a.record.title.localeCompare(b.record.title);
   });
-  scored.forEach((x, i) => {
-    x.rank = i + 1;
-  });
+  scored.forEach((x, i) => (x.rank = i + 1));
   return scored;
 }
 
@@ -786,11 +912,26 @@ export function filterRecords(list: RestaurantRecord[], s: Situation): Restauran
     if (s.region && r.region !== s.region) return false;
     if (s.cuisine && !r.cuisineTags.includes(s.cuisine)) return false;
     if (q) {
-      if (!r.searchText.includes(q)) return false;
+      const hay = (r.searchText ?? `${r.title} ${r.region} ${r.cuisineTags.join(" ")}`).toLowerCase();
+      if (!hay.includes(q)) return false;
     }
     return true;
   });
 }
+
+/* ------------------------------------------------------------------ *
+ * Decision brief
+ * ------------------------------------------------------------------ */
+
+export type Brief = {
+  verdict: string;
+  verdictTone: "clear" | "conditional" | "hold";
+  fitLine: string;
+  riskLine: string;
+  burdenLine: string;
+  nextAction: string;
+  confirmCalls: string[];
+};
 
 export function decisionBrief(sc: Scored, s: Situation): Brief {
   const r = sc.record;
@@ -803,29 +944,29 @@ export function decisionBrief(sc: Scored, s: Situation): Brief {
 
   const depth = situationDepth(s);
   const verdict = sc.blocked
-    ? "On hold — something you said you need is unresolved on what the restaurant has published"
+    ? "Hold — a stated constraint is unresolved on first-party evidence"
     : sc.criticals.length
-      ? "Workable, once you confirm a few things on the call"
+      ? "Workable, conditional on live confirmation"
       : depth < 3
-        ? "Nothing here holds the booking — but you have told us little about the night so far"
-        : "Clear on everything we have checked";
+        ? "No blocking evidence found; the situation is still thin"
+        : "Clear on the evidence recorded";
 
   const fitLine = s.occasion
     ? `Reads ${sc.fit}/100 for ${s.occasion.toLowerCase()}${s.partySize ? ` at ${s.partySize}` : ""}${
         s.leadDays !== null ? `, ${s.leadDays} days out` : ""
       }. ${sc.reasons.length ? sc.reasons.slice(0, 3).join("; ") + "." : ""}`
-    : `Reads ${sc.fit}/100 against a partly described night. Best suited to ${topOccasion(r).occasion.toLowerCase()}. Name an occasion to sharpen this.`;
+    : `Reads ${sc.fit}/100 against a partial situation. Strongest recorded use: ${topOccasion(r).occasion.toLowerCase()}. Add an occasion to sharpen this.`;
 
   const riskLine = sc.criticals.length
-    ? `${sc.criticals.length} thing${sc.criticals.length > 1 ? "s" : ""} you must resolve: ${sc.criticals
+    ? `${sc.criticals.length} critical risk${sc.criticals.length > 1 ? "s" : ""}: ${sc.criticals
         .slice(0, 2)
         .map((f) => f.title.toLowerCase())
-        .join("; ")}. ${sc.watch.length} more worth asking about, and ${sc.unknowns.length} question${sc.unknowns.length === 1 ? "" : "s"} the restaurant has left open.`
-    : `Nothing recorded that must be resolved for this night. ${sc.watch.length} thing${sc.watch.length === 1 ? "" : "s"} worth asking about, and ${sc.unknowns.length} question${sc.unknowns.length === 1 ? "" : "s"} the restaurant has left open, stay visible.`;
+        .join("; ")}. ${sc.watch.length} watch item${sc.watch.length === 1 ? "" : "s"}, ${sc.unknowns.length} residual unknown${sc.unknowns.length === 1 ? "" : "s"} carried forward.`
+    : `No critical risk recorded for this situation. ${sc.watch.length} watch item${sc.watch.length === 1 ? "" : "s"} and ${sc.unknowns.length} residual unknown${sc.unknowns.length === 1 ? "" : "s"} remain visible.`;
 
-  const burdenLine = `Still to confirm ${sc.burden}/100 · planning effort ${r.planningLoad ?? "not stated"} · ${
-    r.hasOfficialConflict ? "the restaurant’s own sources disagree on one field" : "no disagreement between sources"
-  } · checked ${r.reviewedAt}, due for a recheck ${r.nextReviewAt}.`;
+  const burdenLine = `Confirm burden ${sc.burden}/100 · planning load ${r.planningLoad ?? "unstated"} · ${
+    r.hasOfficialConflict ? "one official conflict open" : "no official conflict"
+  } · reviewed ${r.reviewedAt}, next ${r.nextReviewAt}.`;
 
   const path = r.hasPhone
     ? `Call ${r.phone}`
@@ -834,10 +975,10 @@ export function decisionBrief(sc: Scored, s: Situation): Brief {
       : "Email the restaurant";
 
   const nextAction = sc.blocked
-    ? `${path} and settle what is holding this room before you shortlist it again. Do not book on an assumption.`
+    ? `${path} and resolve the blocking constraint before this record re-enters the shortlist. Do not book against inference.`
     : sc.criticals.length
-      ? `${path} once and clear every must-resolve item; book only after they are answered.`
-      : `${path} to confirm hours, party size, cancellation terms, and the volatile fields, then book on the ${r.bookingPlatforms[0] ?? "official"} pathway.`;
+      ? `${path} in one pass and clear every critical item below; book only after they resolve.`
+      : `${path} to confirm hours, party size, and the volatile fields, then book on the ${r.bookingPlatforms[0] ?? "official"} pathway.`;
 
   const confirmCalls = sc.findings
     .filter((f) => f.layer !== "unknown" || f.impact >= 40)
@@ -847,29 +988,4 @@ export function decisionBrief(sc: Scored, s: Situation): Brief {
   return { verdict, verdictTone: tone, fitLine, riskLine, burdenLine, nextAction, confirmCalls };
 }
 
-export function rankWorkingSet(s: Situation): Scored[] {
-  return rank(filterRecords(restaurants, s), s);
-}
-
-/** What would change this answer? Toggle one constraint / lead / party and re-rank. */
-export function sensitivity(s: Situation, slug: string): {
-  label: string;
-  delta: number;
-  blocked: boolean;
-}[] {
-  const base = scoreRecord(restaurants.find((r) => r.slug === slug)!, s);
-  const trials: { label: string; next: Situation }[] = [
-    { label: "Party of 6", next: { ...s, partySize: 6, constraints: Array.from(new Set([...s.constraints, "Large party (6+)"] as Constraint[])) } },
-    { label: "Tonight", next: { ...s, leadDays: 0 } },
-    { label: "With celiac", next: { ...s, constraints: Array.from(new Set([...s.constraints, "Severe allergy / celiac"] as Constraint[])) } },
-    { label: "Step-free required", next: { ...s, constraints: Array.from(new Set([...s.constraints, "Mobility / step-free needs"] as Constraint[])) } },
-    { label: "Hard end time", next: { ...s, constraints: Array.from(new Set([...s.constraints, "Hard end time (show, train, childcare)"] as Constraint[])) } },
-    { label: "Walk-in only", next: { ...s, preferWalkIn: true } },
-  ];
-  return trials.map((t) => {
-    const sc = scoreRecord(base.record, t.next);
-    return { label: t.label, delta: sc.fit - base.fit, blocked: sc.blocked };
-  });
-}
-
-
+export const OPS = dataset.ops;
