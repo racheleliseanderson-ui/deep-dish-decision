@@ -14,6 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { HouseBar } from "@/components/rih/house-bar";
 import { LabsFooter } from "@/components/rih/labs-footer";
 import { NightPlanBar } from "@/components/rih/night-plan-bar";
+import { SuiteStrip } from "@/components/rih/suite-strip";
 
 const ADSENSE_CLIENT = "ca-pub-8542391068454821";
 
@@ -159,6 +160,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <HouseBar className="border-b border-border" />
+      <SuiteStrip current="restaurant" />
       <Outlet />
       <NightPlanBar />
       <LabsFooter />

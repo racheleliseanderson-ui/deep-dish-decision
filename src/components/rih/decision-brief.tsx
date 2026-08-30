@@ -1,5 +1,6 @@
 import { Chip, Eyebrow, Meter } from "@/components/rih/bits";
 import { GrowBar } from "@/components/rih/reveal";
+import { ReturnToDesk } from "@/components/rih/return-to-desk";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { buildConsumerSnapshot } from "@/lib/consumer-snapshot";
 import { decisionBrief, type Scored, type Situation } from "@/lib/intelligence";
@@ -75,6 +76,14 @@ export function DecisionBrief({
         <Eyebrow className="text-primary/80">Recommended next action</Eyebrow>
         <p className="mt-1.5 text-sm leading-relaxed text-foreground">{b.nextAction}</p>
       </div>
+
+      <ReturnToDesk
+        room={sc.record.title}
+        status={
+          b.verdictTone === "hold" ? "hold" : b.verdictTone === "conditional" ? "in-progress" : "shortlisted"
+        }
+        unresolved={b.confirmCalls}
+      />
 
       {b.confirmCalls.length ? (
         <div className="mt-4">

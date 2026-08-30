@@ -23,8 +23,16 @@ import { useEnrichmentSignals, useHideThinFiles } from "@/lib/prefs";
 import { getEnrichment } from "@/lib/enrichment";
 import { decodeSituation, encodeSituation } from "@/lib/situation-url";
 import { createFileRoute, useRouterState } from "@tanstack/react-router";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { FadeKey, GrowBar, RankSlot, Reveal } from "@/components/rih/reveal";
+import { ImportedContext } from "@/components/rih/imported-context";
+import { useSaltyImport } from "@/hooks/use-salty-import";
+import {
+  planningDietBanner,
+  situationFromHandoff,
+  situationIsStarted,
+} from "@/lib/salty-handoff/apply";
+import { shouldApply } from "@/lib/salty-handoff/import-session.ts";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -59,6 +67,23 @@ function Hub() {
   const [compareSlugs, setCompareSlugs] = useState<string[]>([]);
   const [compareOpen, setCompareOpen] = useState(false);
   const [limit, setLimit] = useState(8);
+  const [dietNote, setDietNote] = useState<string | null>(null);
+  const appliedRef = useRef(false);
+  const { session, apply, ignore } = useSaltyImport(
+    "restaurant",
+    situationIsStarted(situation),
+    true,
+  );
+
+  useEffect(() => {
+    if (appliedRef.current) return;
+    if (!shouldApply(session) || !session.handoff) return;
+    appliedRef.current = true;
+    const incoming = session.handoff;
+    setSituation((current) => situationFromHandoff(incoming, current));
+    setDietNote(planningDietBanner(incoming));
+    setLimit(8);
+  }, [session]);
   const enrichment = useEnrichmentSignals();
   const hideThin = useHideThinFiles();
   const scoreOpts = useMemo(
@@ -111,6 +136,12 @@ function Hub() {
 
   return (
     <main className="min-h-screen pb-32">
+      <ImportedContext
+        session={session}
+        onApply={apply}
+        onIgnore={ignore}
+        applyLabel="Use this context"
+      />
       <header className="relative isolate flex min-h-[70vh] items-end overflow-hidden border-b border-border-strong sm:min-h-[62vh]">
         <img
           src={heroPass}
@@ -193,6 +224,14 @@ function Hub() {
       </figure>
 
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
+        {dietNote ? (
+          <p
+            role="note"
+            className="mb-6 rounded-xl border border-border bg-surface-raised/60 px-4 py-3 text-[13px] leading-relaxed text-muted-foreground"
+          >
+            {dietNote}
+          </p>
+        ) : null}
         <SituationConsole
           situation={situation}
           onChange={(next) => {
