@@ -6,11 +6,6 @@ export default defineConfig({
   plugins: [tsconfigPaths(), react()],
   test: {
     environment: "happy-dom",
-    include: ["src/**/*.test.ts", "src/**/*.test.tsx"],
-    exclude: [
-      "src/lib/app-data/**",
-      "src/lib/auth/gate-identity.test.ts",
-      "node_modules/**",
-    ],
+    include: ["src/**/*.test.ts", "src/**/*.test.tsx", "scripts/pipeline/**/*.test.mjs"],
   },
 });
