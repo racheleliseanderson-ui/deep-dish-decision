@@ -14,7 +14,6 @@ const PUBLICATION: Item[] = [
   { label: "Salty & Clever", href: "https://saltnotes.blog" },
   { label: "Salty Desk", href: "https://salty.saltnotes.blog" },
   { label: "Kitchen & Bar", href: "https://kitchen.saltnotes.blog" },
-  { label: "Menu Builder", href: "https://occasion.saltnotes.blog/architecture" },
   { label: "Occasion OS", href: "https://occasion.saltnotes.blog" },
   { label: "Restaurant Intelligence", href: "https://deepdish.saltnotes.blog" },
 ];
