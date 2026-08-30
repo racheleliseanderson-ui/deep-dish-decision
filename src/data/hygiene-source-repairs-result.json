@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-08-20T14:19:35.067Z",
+  "manifest": "src/data/hygiene-source-repairs-2026-08-20.json",
+  "total": 4,
+  "resolved": 2,
+  "failures": 2,
+  "missing": 0,
+  "datasetSourceCorrections": 2,
+  "records": [
+    {
+      "slug": "delicious-chengdu",
+      "matchStatus": "resolved",
+      "completeness": 61,
+      "website": "https://deliciouschengdutogo.com/",
+      "notes": [
+        "pages 1",
+        "quotes 18",
+        "source corrected  -> https://deliciouschengdutogo.com/"
+      ]
+    },
+    {
+      "slug": "mr-szechuan",
+      "matchStatus": "site-failure",
+      "completeness": 28,
+      "website": "https://mrszechuan.shop/",
+      "notes": [
+        "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+      ]
+    },
+    {
+      "slug": "spicy-king",
+      "matchStatus": "site-failure",
+      "completeness": 28,
+      "website": "https://www.spicyking-sf.com/",
+      "notes": [
+        "site 0 fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+      ]
+    },
+    {
+      "slug": "dovecote-orlando",
+      "matchStatus": "resolved",
+      "completeness": 67,
+      "website": "https://www.dovecoterestaurant.com/",
+      "notes": [
+        "pages 1",
+        "quotes 7",
+        "source corrected https://www.dovecoteorlando.com/ -> https://www.dovecoterestaurant.com/"
+      ]
+    }
+  ]
+}

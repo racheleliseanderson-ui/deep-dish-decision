@@ -43,21 +43,21 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
 
   return (
     <section
-      aria-label="Situation console"
+      aria-label="What works for tonight"
       className="plate grain-veil overflow-hidden"
       id="situation"
     >
       <div className="relative border-b border-border px-4 py-5 sm:px-7">
         <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
           <div className="min-w-0">
-            <Eyebrow>Situation console</Eyebrow>
+            <Eyebrow>What works for tonight</Eyebrow>
             <h2 className="mt-2 font-display text-[1.35rem] leading-tight tracking-tight sm:text-[27px]">
               Describe the night, not just the cuisine.
             </h2>
             <p className="mt-2 max-w-2xl text-[13px] leading-relaxed text-muted-foreground sm:text-sm">
-              Occasion and guest constraints weigh more heavily on depth and ranking. Party size, lead
-              time, planning tolerance, daypart and spend band further reshape which findings rise
-              first. Partial input is fine — unknowns stay visible rather than being filled in.
+              Occasion and guest needs weigh most. Party size, lead time, spend and neighborhood
+              then reshape the list. Partial input is fine — unanswered fields stay visible rather
+              than being filled in.
             </p>
           </div>
           <div className="flex shrink-0 items-center justify-between gap-3 sm:justify-end">

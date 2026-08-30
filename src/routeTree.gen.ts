@@ -10,12 +10,11 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as CompareRouteImport } from './routes/compare'
+import { Route as AtlasRouteImport } from './routes/atlas'
+import { Route as ConsoleRouteImport } from './routes/console'
 import { Route as GuideRouteImport } from './routes/guide'
-import { Route as NightRouteImport } from './routes/night'
-import { Route as NightsRouteImport } from './routes/nights'
-import { Route as ConfirmSlugRouteImport } from './routes/confirm.$slug'
-import { Route as PacketIdRouteImport } from './routes/packet.$id'
+import { Route as ShortlistRouteImport } from './routes/shortlist'
+import { Route as PacketSlugRouteImport } from './routes/packet.$slug'
 import { Route as RecordSlugRouteImport } from './routes/record.$slug'
 
 const IndexRoute = IndexRouteImport.update({
@@ -23,9 +22,14 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CompareRoute = CompareRouteImport.update({
-  id: '/compare',
-  path: '/compare',
+const AtlasRoute = AtlasRouteImport.update({
+  id: '/atlas',
+  path: '/atlas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConsoleRoute = ConsoleRouteImport.update({
+  id: '/console',
+  path: '/console',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GuideRoute = GuideRouteImport.update({
@@ -33,24 +37,14 @@ const GuideRoute = GuideRouteImport.update({
   path: '/guide',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NightRoute = NightRouteImport.update({
-  id: '/night',
-  path: '/night',
+const ShortlistRoute = ShortlistRouteImport.update({
+  id: '/shortlist',
+  path: '/shortlist',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NightsRoute = NightsRouteImport.update({
-  id: '/nights',
-  path: '/nights',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConfirmSlugRoute = ConfirmSlugRouteImport.update({
-  id: '/confirm/$slug',
-  path: '/confirm/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PacketIdRoute = PacketIdRouteImport.update({
-  id: '/packet/$id',
-  path: '/packet/$id',
+const PacketSlugRoute = PacketSlugRouteImport.update({
+  id: '/packet/$slug',
+  path: '/packet/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RecordSlugRoute = RecordSlugRouteImport.update({
@@ -61,76 +55,69 @@ const RecordSlugRoute = RecordSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/compare': typeof CompareRoute
+  '/atlas': typeof AtlasRoute
+  '/console': typeof ConsoleRoute
   '/guide': typeof GuideRoute
-  '/night': typeof NightRoute
-  '/nights': typeof NightsRoute
-  '/confirm/$slug': typeof ConfirmSlugRoute
-  '/packet/$id': typeof PacketIdRoute
+  '/shortlist': typeof ShortlistRoute
+  '/packet/$slug': typeof PacketSlugRoute
   '/record/$slug': typeof RecordSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/compare': typeof CompareRoute
+  '/atlas': typeof AtlasRoute
+  '/console': typeof ConsoleRoute
   '/guide': typeof GuideRoute
-  '/night': typeof NightRoute
-  '/nights': typeof NightsRoute
-  '/confirm/$slug': typeof ConfirmSlugRoute
-  '/packet/$id': typeof PacketIdRoute
+  '/shortlist': typeof ShortlistRoute
+  '/packet/$slug': typeof PacketSlugRoute
   '/record/$slug': typeof RecordSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/compare': typeof CompareRoute
+  '/atlas': typeof AtlasRoute
+  '/console': typeof ConsoleRoute
   '/guide': typeof GuideRoute
-  '/night': typeof NightRoute
-  '/nights': typeof NightsRoute
-  '/confirm/$slug': typeof ConfirmSlugRoute
-  '/packet/$id': typeof PacketIdRoute
+  '/shortlist': typeof ShortlistRoute
+  '/packet/$slug': typeof PacketSlugRoute
   '/record/$slug': typeof RecordSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/compare'
+    | '/atlas'
+    | '/console'
     | '/guide'
-    | '/night'
-    | '/nights'
-    | '/confirm/$slug'
-    | '/packet/$id'
+    | '/shortlist'
+    | '/packet/$slug'
     | '/record/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/compare'
+    | '/atlas'
+    | '/console'
     | '/guide'
-    | '/night'
-    | '/nights'
-    | '/confirm/$slug'
-    | '/packet/$id'
+    | '/shortlist'
+    | '/packet/$slug'
     | '/record/$slug'
   id:
     | '__root__'
     | '/'
-    | '/compare'
+    | '/atlas'
+    | '/console'
     | '/guide'
-    | '/night'
-    | '/nights'
-    | '/confirm/$slug'
-    | '/packet/$id'
+    | '/shortlist'
+    | '/packet/$slug'
     | '/record/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  CompareRoute: typeof CompareRoute
+  AtlasRoute: typeof AtlasRoute
+  ConsoleRoute: typeof ConsoleRoute
   GuideRoute: typeof GuideRoute
-  NightRoute: typeof NightRoute
-  NightsRoute: typeof NightsRoute
-  ConfirmSlugRoute: typeof ConfirmSlugRoute
-  PacketIdRoute: typeof PacketIdRoute
+  ShortlistRoute: typeof ShortlistRoute
+  PacketSlugRoute: typeof PacketSlugRoute
   RecordSlugRoute: typeof RecordSlugRoute
 }
 
@@ -143,11 +130,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/compare': {
-      id: '/compare'
-      path: '/compare'
-      fullPath: '/compare'
-      preLoaderRoute: typeof CompareRouteImport
+    '/atlas': {
+      id: '/atlas'
+      path: '/atlas'
+      fullPath: '/atlas'
+      preLoaderRoute: typeof AtlasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/console': {
+      id: '/console'
+      path: '/console'
+      fullPath: '/console'
+      preLoaderRoute: typeof ConsoleRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/guide': {
@@ -157,32 +151,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GuideRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/night': {
-      id: '/night'
-      path: '/night'
-      fullPath: '/night'
-      preLoaderRoute: typeof NightRouteImport
+    '/shortlist': {
+      id: '/shortlist'
+      path: '/shortlist'
+      fullPath: '/shortlist'
+      preLoaderRoute: typeof ShortlistRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/nights': {
-      id: '/nights'
-      path: '/nights'
-      fullPath: '/nights'
-      preLoaderRoute: typeof NightsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/confirm/$slug': {
-      id: '/confirm/$slug'
-      path: '/confirm/$slug'
-      fullPath: '/confirm/$slug'
-      preLoaderRoute: typeof ConfirmSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/packet/$id': {
-      id: '/packet/$id'
-      path: '/packet/$id'
-      fullPath: '/packet/$id'
-      preLoaderRoute: typeof PacketIdRouteImport
+    '/packet/$slug': {
+      id: '/packet/$slug'
+      path: '/packet/$slug'
+      fullPath: '/packet/$slug'
+      preLoaderRoute: typeof PacketSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/record/$slug': {
@@ -197,12 +177,11 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  CompareRoute: CompareRoute,
+  AtlasRoute: AtlasRoute,
+  ConsoleRoute: ConsoleRoute,
   GuideRoute: GuideRoute,
-  NightRoute: NightRoute,
-  NightsRoute: NightsRoute,
-  ConfirmSlugRoute: ConfirmSlugRoute,
-  PacketIdRoute: PacketIdRoute,
+  ShortlistRoute: ShortlistRoute,
+  PacketSlugRoute: PacketSlugRoute,
   RecordSlugRoute: RecordSlugRoute,
 }
 export const routeTree = rootRouteImport

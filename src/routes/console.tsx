@@ -1,7 +1,6 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { RunPlanner } from "@/components/rih/run-planner";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
-import { SiteNav } from "@/components/rih/site-nav";
 import coverage from "@/data/coverage.json";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
@@ -149,7 +148,6 @@ function Console() {
     <main className="min-h-dvh pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-7xl px-4 pb-14 pt-8 sm:px-6 sm:pb-20">
-          <SiteNav />
           <h1 className="mt-10 max-w-4xl font-display text-[2.2rem] font-normal leading-[1.02] tracking-[-0.02em] sm:text-5xl lg:text-[3.9rem]">
             Coverage console —
             <br />

@@ -1,0 +1,90 @@
+{
+  "note": "Controlled geographic seeds for expansion queue priorities 61-66. Every entry is a real named establishment with a current official restaurant site verified before inclusion. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
+  "generatedAt": "2026-08-20T06:45:00.000Z",
+  "batches": [
+    {
+      "city": "Columbia",
+      "stateCode": "SC",
+      "listings": [
+        {"title": "Motor Supply Co Bistro", "website": "https://motorsupplycobistro.com/", "address": "Columbia, SC", "cuisineTags": ["American", "Southern"]},
+        {"title": "Terra", "website": "https://www.terrasc.com/", "address": "Columbia, SC", "cuisineTags": ["Southern", "American"]},
+        {"title": "Black Rooster", "website": "https://blackroostersc.com/", "address": "Columbia, SC", "cuisineTags": ["French", "Contemporary"]},
+        {"title": "Saluda's", "website": "https://www.saludas.com/", "address": "Columbia, SC", "cuisineTags": ["American", "Southern"]},
+        {"title": "Halls Chophouse Columbia", "website": "https://hallschophousecolumbia.com/", "address": "Columbia, SC", "cuisineTags": ["Steak", "American"]},
+        {"title": "Di Vino Rosso", "website": "https://www.divinorossosc.com/", "address": "Columbia, SC", "cuisineTags": ["Italian"]},
+        {"title": "Lula Drake Wine Parlour", "website": "https://www.luladrake.com/", "address": "Columbia, SC", "cuisineTags": ["Wine bar", "European"]},
+        {"title": "Bourbon", "website": "https://www.bourboncolumbia.com/", "address": "Columbia, SC", "cuisineTags": ["Cajun", "Creole"]}
+      ]
+    },
+    {
+      "city": "Little Rock",
+      "stateCode": "AR",
+      "listings": [
+        {"title": "Petit & Keet", "website": "https://www.petitandkeet.com/", "address": "Little Rock, AR", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "The Pantry", "website": "https://littlerockpantry.com/", "address": "Little Rock, AR", "cuisineTags": ["Czech", "German"]},
+        {"title": "Cypress Social", "website": "https://cypresssocial.com/", "address": "North Little Rock, AR", "cuisineTags": ["Southern", "Cajun"]},
+        {"title": "Kemuri", "website": "https://kemurirestaurant.com/", "address": "Little Rock, AR", "cuisineTags": ["Japanese", "Sushi"]},
+        {"title": "One Eleven", "website": "https://www.oneelevenlittlerock.com/", "address": "Little Rock, AR", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Arthur's Prime Steakhouse", "website": "https://www.arthursprime.com/", "address": "Little Rock, AR", "cuisineTags": ["Steak", "American"]},
+        {"title": "Cache Restaurant", "website": "https://www.cachelittlerock.com/", "address": "Little Rock, AR", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Allsopp & Chapple", "website": "https://allsoppandchapple.com/", "address": "Little Rock, AR", "cuisineTags": ["American", "Contemporary"]}
+      ]
+    },
+    {
+      "city": "Des Moines",
+      "stateCode": "IA",
+      "listings": [
+        {"title": "Oak Park", "website": "https://www.oakparkdsm.com/", "address": "Des Moines, IA", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Centro", "website": "https://www.centrodesmoines.com/", "address": "Des Moines, IA", "cuisineTags": ["Italian", "American"]},
+        {"title": "Proudfoot & Bird", "website": "https://www.proudfootandbirddsm.com/", "address": "Des Moines, IA", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Harbinger", "website": "https://harbingerdsm.com/", "address": "Des Moines, IA", "cuisineTags": ["American", "Vegetable-forward"]},
+        {"title": "Aposto", "website": "https://www.apostodm.com/", "address": "Des Moines, IA", "cuisineTags": ["Italian", "Contemporary"]},
+        {"title": "Alba", "website": "https://www.albadsm.com/", "address": "Des Moines, IA", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "HoQ", "website": "https://hoqtable.com/", "address": "Des Moines, IA", "cuisineTags": ["American", "Farm-to-table"]},
+        {"title": "801 Chophouse", "website": "https://801chophouse.com/locations/des-moines/", "address": "Des Moines, IA", "cuisineTags": ["Steak", "American"]}
+      ]
+    },
+    {
+      "city": "Spokane",
+      "stateCode": "WA",
+      "listings": [
+        {"title": "Gander & Ryegrass", "website": "https://www.ganderandryegrass.com/", "address": "Spokane, WA", "cuisineTags": ["Italian", "Tasting menu"]},
+        {"title": "Inland Pacific Kitchen", "website": "https://ipkspokane.com/", "address": "Spokane, WA", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Wild Sage Bistro", "website": "https://www.wildsagebistro.com/", "address": "Spokane, WA", "cuisineTags": ["American", "Farm-to-table"]},
+        {"title": "Wiley's Downtown Bistro", "website": "https://www.wileysbistro.com/", "address": "Spokane, WA", "cuisineTags": ["American", "Bistro"]},
+        {"title": "Churchill's Steakhouse", "website": "https://churchillssteakhouse.com/", "address": "Spokane, WA", "cuisineTags": ["Steak", "American"]},
+        {"title": "The Barrel Steak & Seafood House", "website": "https://www.thebarrelspokane.com/", "address": "Spokane, WA", "cuisineTags": ["Steak", "Seafood"]},
+        {"title": "Italia Trattoria", "website": "https://italiatrattoriaspokane.com/", "address": "Spokane, WA", "cuisineTags": ["Italian"]},
+        {"title": "Wooden City Spokane", "website": "https://www.woodencityspokane.com/", "address": "Spokane, WA", "cuisineTags": ["American", "Contemporary"]}
+      ]
+    },
+    {
+      "city": "Madison",
+      "stateCode": "WI",
+      "listings": [
+        {"title": "L'Etoile", "website": "https://www.letoile-restaurant.com/", "address": "Madison, WI", "cuisineTags": ["American", "French", "Tasting menu"]},
+        {"title": "Fairchild", "website": "https://www.fairchildrestaurant.com/", "address": "Madison, WI", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "The Harvey House", "website": "https://www.theharveyhouse.com/", "address": "Madison, WI", "cuisineTags": ["American", "Supper club"]},
+        {"title": "Mint Mark", "website": "https://www.mintmarkmadison.com/", "address": "Madison, WI", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Heritage Tavern", "website": "https://heritagetavern.com/", "address": "Madison, WI", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Cadre", "website": "https://www.cadrerestaurant.com/", "address": "Madison, WI", "cuisineTags": ["French", "Bistro"]},
+        {"title": "Osteria Papavero", "website": "https://osteriapapavero.com/", "address": "Madison, WI", "cuisineTags": ["Italian"]},
+        {"title": "Ahan", "website": "https://ahanmadison.com/", "address": "Madison, WI", "cuisineTags": ["Lao", "Southeast Asian"]}
+      ]
+    },
+    {
+      "city": "Wichita",
+      "stateCode": "KS",
+      "listings": [
+        {"title": "Twelve Restaurant & Bar", "website": "https://www.twelvewichita.com/", "address": "Wichita, KS", "cuisineTags": ["American", "Contemporary"]},
+        {"title": "Siena Steakhouse", "website": "https://www.sienawichita.com/", "address": "Wichita, KS", "cuisineTags": ["Steak", "American"]},
+        {"title": "Lottē", "website": "https://www.lotteict.com/", "address": "Wichita, KS", "cuisineTags": ["American", "Farm-to-table"]},
+        {"title": "Elderslie Farm", "website": "https://eldersliefarm.com/", "address": "Kechi, KS", "cuisineTags": ["American", "Tasting menu", "Farm-to-table"]},
+        {"title": "First Mile Kitchen", "website": "https://www.firstmilekitchen.com/first-mile-kitchen", "address": "Wichita, KS", "cuisineTags": ["American", "Live fire"]},
+        {"title": "Newport Grill", "website": "https://newportgrill.com/", "address": "Wichita, KS", "cuisineTags": ["Seafood", "American"]},
+        {"title": "Vora Restaurant European", "website": "https://www.vorawichita.com/", "address": "Wichita, KS", "cuisineTags": ["European", "Mediterranean"]},
+        {"title": "Wine Dive + Kitchen", "website": "https://www.winediveks.com/", "address": "Wichita, KS", "cuisineTags": ["American", "Wine bar"]}
+      ]
+    }
+  ]
+}

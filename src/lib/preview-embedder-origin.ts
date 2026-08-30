@@ -3,7 +3,7 @@ export function isGrokEmbedderOrigin(origin: string): boolean {
     const url = new URL(origin);
     if (url.protocol !== "https:" && url.protocol !== "http:") return false;
     const host = url.hostname.toLowerCase();
-    // Vendor preview origins are no longer trusted embedders.
+    if (host === "grok.com" || host.endsWith(".grok.com")) return true;
     if (host === "localhost" || host === "127.0.0.1" || host === "[::1]") return true;
     return false;
   } catch {
@@ -11,9 +11,9 @@ export function isGrokEmbedderOrigin(origin: string): boolean {
   }
 }
 
-export function isSandboxPreviewGuestHost(_hostname: string): boolean {
-  // The vendor sandbox preview host class no longer exists for this app.
-  return false;
+export function isSandboxPreviewGuestHost(hostname: string): boolean {
+  const host = hostname.toLowerCase();
+  return host === "grok-sandbox.com" || host.endsWith(".grok-sandbox.com");
 }
 
 function isRemintPreviewPair(guestHost: string, parentHost: string): boolean {

@@ -25,39 +25,37 @@ test("injects before </head>", () => {
   const out = injectGrokPwaHead("<html><head><title>x</title></head><body></body></html>");
   assert.match(out, /rel="manifest"/);
   assert.match(out, /apple-touch-icon/);
-  assert.doesNotMatch(out, /grok-app-builder\/extensions\.js/);
+  assert.match(out, /grok-app-builder\/extensions\.js/);
   assert.ok(out.indexOf("manifest") < out.indexOf("</head>"));
 });
 
-test("never loads the platform banner script", () => {
+test("injects the extensions script without a project id", () => {
   const out = injectGrokPwaHead("<html><head></head></html>", {
     appName: "Demo",
     projectId: "",
   });
-  assert.doesNotMatch(out, /extensions\.js/);
-  assert.doesNotMatch(out, /grok\.com/);
+  assert.match(out, /src="https:\/\/grok\.com\/grok-app-builder\/extensions\.js" defer/);
   assert.doesNotMatch(out, /grok-project-id/);
   assert.doesNotMatch(out, /data-project-id/);
   assert.doesNotMatch(out, /property="grok:app_id"/);
 });
 
-test("a project id no longer leaks into the document", () => {
+test("injects project id on the script and meta when provided", () => {
   const out = injectGrokPwaHead("<html><head></head></html>", {
     appName: "Demo",
     projectId: "proj-123",
   });
-  assert.doesNotMatch(out, /proj-123/);
-  assert.doesNotMatch(out, /grok-project-id/);
-  assert.doesNotMatch(out, /property="grok:app_id"/);
+  assert.match(out, /name="grok-project-id" content="proj-123"/);
+  assert.match(out, /data-project-id="proj-123"/);
+  assert.match(out, /property="grok:app_id" content="proj-123"/);
 });
 
-test("strips the platform banner script out of an upstream shell", () => {
-  const shell =
-    '<html><head><script src="https://grok.com/grok-app-builder/extensions.js" defer></script>' +
-    '<meta name="grok-project-id" content="proj-123"></head></html>';
-  const out = injectGrokPwaHead(shell, { appName: "Demo" });
-  assert.doesNotMatch(out, /extensions\.js/);
-  assert.doesNotMatch(out, /grok-project-id/);
+test("does not duplicate grok:app_id", () => {
+  const ctx = { appName: "Demo", projectId: "proj-123" };
+  const once = injectGrokPwaHead("<html><head></head></html>", ctx);
+  const twice = injectGrokPwaHead(once, ctx);
+  assert.equal(once, twice);
+  assert.equal(twice.split('property="grok:app_id"').length - 1, 1);
 });
 
 test("omits x:creator tags without both creator values", () => {
@@ -150,7 +148,7 @@ test("baked identity does not need a workspace filesystem", () => {
 
 test("a public card file wins over a baked site without card=custom", () => {
   // Deploy middleware always passes a baked `site`. If that snapshot missed
-  // the file, public/og.jpg must still beat a placeholder.
+  // the file, public/og.jpg must still beat the og.grok.me placeholder.
   const root = mkdtempSync(join(tmpdir(), "grok-og-card-"));
   mkdirSync(join(root, "public"));
   writeFileSync(join(root, "public/og.jpg"), "x");
@@ -240,9 +238,9 @@ test("does not emit x:game:image without a public host or banner", () => {
 test("site title Grok App is a real name, not a sentinel", () => {
   const out = injectGrokPwaHead("<html><head></head></html>", {
     host: "wild-race.grok.me",
-    site: { title: "App" },
+    site: { title: "Grok App" },
   });
-  assert.match(out, /property="og:title" content="App"/);
+  assert.match(out, /property="og:title" content="Grok App"/);
 });
 
 test("published grok.me slug is still a title fallback", () => {
@@ -304,43 +302,48 @@ test("vercel Host without a public hostname emits no og:image", () => {
   }
 });
 
-test("emits og:image only from an asset this app owns", () => {
-  // No owned card on disk and no baked custom card: rather than pointing the
-  // share card at a third-party renderer, emit no og:image at all.
-  const none = injectGrokPwaHead("<html><head></head></html>", {
+test("emits og:image for a public host and prefers a custom card", () => {
+  const placeholder = injectGrokPwaHead("<html><head></head></html>", {
     appName: "Wild Race",
-    host: "wild-race.example.com",
+    host: "wild-race.grok.me",
     site: { title: "Wild Race" },
-    cwd: "/nonexistent",
   });
-  assert.doesNotMatch(none, /og\.grok\.me/);
-  assert.doesNotMatch(none, /property="og:image"/);
+  assert.match(
+    placeholder,
+    /property="og:image" content="https:\/\/og\.grok\.me\/v1\/card\.png\?host=wild-race\.grok\.me&amp;title=Wild%20Race"/,
+  );
+  assert.match(placeholder, /property="og:image:width" content="1200"/);
 
   const custom = injectGrokPwaHead("<html><head></head></html>", {
     appName: "Wild Race",
-    host: "wild-race.example.com",
+    host: "wild-race.grok.me",
     site: { title: "Wild Race", card: "custom", type: "x:game" },
-    cwd: "/nonexistent",
   });
-  assert.match(custom, /property="og:image" content="https:\/\/wild-race\.example\.com\/og\.jpg"/);
-  assert.match(custom, /property="og:image:width" content="1200"/);
+  assert.match(custom, /property="og:image" content="https:\/\/wild-race\.grok\.me\/og\.jpg"/);
   assert.match(custom, /property="og:type" content="x:game"/);
 });
 
-test("no share card is ever rendered by a third-party service", () => {
-  for (const site of [
-    { title: "Wild Race" },
-    { title: "Wild Race", color: "#FF4D2E" },
-    { title: "Wild Race", color: "red" },
-  ]) {
-    const out = injectGrokPwaHead("<html><head></head></html>", {
-      host: "wild-race.example.com",
-      site,
-      cwd: "/nonexistent",
-    });
-    assert.doesNotMatch(out, /og\.grok\.me/);
-    assert.doesNotMatch(out, /card\.png/);
-  }
+test("placeholder og:image appends site.color when it is 6-digit hex", () => {
+  const themed = injectGrokPwaHead("<html><head></head></html>", {
+    host: "wild-race.grok.me",
+    site: { title: "Wild Race", color: "#FF4D2E" },
+  });
+  assert.match(
+    themed,
+    /property="og:image" content="https:\/\/og\.grok\.me\/v1\/card\.png\?host=wild-race\.grok\.me&amp;title=Wild%20Race&amp;color=FF4D2E"/,
+  );
+
+  const invalid = injectGrokPwaHead("<html><head></head></html>", {
+    host: "wild-race.grok.me",
+    site: { title: "Wild Race", color: "red" },
+  });
+  assert.doesNotMatch(invalid, /color=/);
+
+  const custom = injectGrokPwaHead("<html><head></head></html>", {
+    host: "wild-race.grok.me",
+    site: { title: "Wild Race", card: "custom", color: "FF4D2E" },
+  });
+  assert.doesNotMatch(custom, /color=/);
 });
 
 test("document title entities are not double-escaped on og:title", () => {
@@ -377,12 +380,12 @@ test("streaming injector matches </HEAD> case-insensitively", () => {
   assert.match(out, /<body>hello<\/body>/);
 });
 
-test("stays idempotent with a project id present", () => {
+test("does not duplicate the extensions script", () => {
   const ctx = { appName: "Demo", projectId: "proj-123" };
   const once = injectGrokPwaHead("<html><head></head></html>", ctx);
   const twice = injectGrokPwaHead(once, ctx);
   assert.equal(once, twice);
-  assert.equal(twice.split("extensions.js").length - 1, 0);
+  assert.equal(twice.split("extensions.js").length - 1, 1);
 });
 
 test("is idempotent", () => {
@@ -436,7 +439,7 @@ test("filters non-document paths", () => {
   assert.equal(isDocumentPath("/"), true);
   assert.equal(isDocumentPath("/app"), true);
   assert.equal(isDocumentPath("/api/thing"), false);
-  assert.equal(isDocumentPath("/__app/install/styles.css"), false);
+  assert.equal(isDocumentPath("/__grok/install/styles.css"), false);
   assert.equal(isDocumentPath("/logo.png"), false);
 });
 
@@ -446,20 +449,20 @@ test("strips install params from the app link", () => {
 });
 
 test("names the install page from host slug", () => {
-  assert.equal(appNameFromHost("localhost:8080"), "App");
-  assert.equal(appNameFromHost("172.17.154.217:8080"), "App");
+  assert.equal(appNameFromHost("localhost:8080"), "Grok App");
+  assert.equal(appNameFromHost("172.17.154.217:8080"), "Grok App");
   assert.equal(appNameFromHost("wild-race.grok.me"), "Wild Race");
 });
 
 test("rejects hosts that are not plain slugs", () => {
-  assert.equal(appNameFromHost("<script>alert(1)</script>"), "App");
-  assert.equal(appNameFromHost('"><img src=x onerror=1>.grok.me'), "App");
+  assert.equal(appNameFromHost("<script>alert(1)</script>"), "Grok App");
+  assert.equal(appNameFromHost('"><img src=x onerror=1>.grok.me'), "Grok App");
 });
 
 test("renders install page markup", () => {
   const html = renderInstallPage("wild-race.grok.me", "/?install=1&platform=ios");
   assert.match(html, /Add Wild Race to your/);
-  assert.match(html, /\/__app\/install\/styles\.css/);
+  assert.match(html, /\/__grok\/install\/styles\.css/);
   assert.match(html, /href="\/"/);
   assert.equal(html.includes("{{APP_NAME}}"), false);
   assert.equal(html.includes("{{APP_URL}}"), false);
@@ -474,7 +477,7 @@ test("renders the manifest with the per-app name", () => {
   const manifest = JSON.parse(renderWebManifest("wild-race.grok.me"));
   assert.equal(manifest.name, "Wild Race");
   assert.equal(manifest.short_name, "Wild Race");
-  assert.equal(manifest.icons[0].src, "/__app/icon-180.png");
+  assert.equal(manifest.icons[0].src, "/__grok/icon-180.png");
 });
 
 // Tripwires: the deployed-app path only works if Nitro scans server/ — an
@@ -491,8 +494,8 @@ test("nitro middleware and its bundled assets exist", () => {
   assert.match(middleware, /install-page\.html\?raw/);
   assert.match(middleware, /virtual:grok-og-identity/);
   readFileSync(join(TEMPLATE_ROOT, "scripts/install-page.html"));
-  readFileSync(join(TEMPLATE_ROOT, "public/__app/icon-180.png"));
-  readFileSync(join(TEMPLATE_ROOT, "public/__app/install/styles.css"));
+  readFileSync(join(TEMPLATE_ROOT, "public/__grok/icon-180.png"));
+  readFileSync(join(TEMPLATE_ROOT, "public/__grok/install/styles.css"));
 });
 
 test("vite plugin bakes og identity as a virtual module", () => {

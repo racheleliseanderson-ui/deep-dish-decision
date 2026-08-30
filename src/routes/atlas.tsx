@@ -1,6 +1,5 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
-import { SiteNav } from "@/components/rih/site-nav";
 import {
   byAccessibility,
   byBookingPath,
@@ -138,7 +137,6 @@ function Atlas() {
     <main className="min-h-screen pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-7xl px-4 pb-14 pt-8 sm:px-6 sm:pb-20">
-          <SiteNav />
           <h1 className="mt-10 max-w-4xl font-display text-[2.4rem] font-normal leading-[1] tracking-[-0.02em] sm:text-5xl lg:text-[4rem]">
             The atlas of what we
             <br />

@@ -1,6 +1,5 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { Reveal } from "@/components/rih/reveal";
-import { SiteNav } from "@/components/rih/site-nav";
 import { bySlug, type RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
 import { useEnrichmentSignals } from "@/lib/prefs";
@@ -49,7 +48,6 @@ function Shortlist() {
     <main className="min-h-screen pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-5xl px-4 pb-12 pt-8 sm:px-6">
-          <SiteNav />
           <h1 className="mt-10 max-w-3xl font-display text-[2.3rem] font-normal leading-[1.02] tracking-[-0.02em] sm:text-5xl">
             The night plan.
           </h1>

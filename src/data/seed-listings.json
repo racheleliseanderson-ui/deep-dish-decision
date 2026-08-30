@@ -1,0 +1,3423 @@
+{
+  "note": "Controlled geographic seeds for metros not yet in the corpus. Every entry is a real named establishment with a public listing or official site. Narrative first-party fields stay empty until enrich.mjs runs. Never invent claims.",
+  "generatedAt": "2026-08-19T21:01:44.000Z",
+  "batches": [
+    {
+      "city": "Atlanta",
+      "stateCode": "GA",
+      "listings": [
+        {
+          "title": "Lazy Betty",
+          "website": "https://www.lazybettyatl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Hayakawa",
+          "website": "https://www.hayakawaatl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Mujō",
+          "website": "https://www.mujoatl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Nan Thai Fine Dining",
+          "website": "https://www.nanfinedining.com/",
+          "phone": "+1-404-870-9933",
+          "address": "1350 Spring Street NW, Atlanta, GA 30309",
+          "cuisineTags": [
+            "Thai",
+            "Fine dining"
+          ]
+        },
+        {
+          "title": "Atlanta Fish Market",
+          "website": "https://atlantafishmarket.com/",
+          "phone": "+1-404-262-3165",
+          "address": "265 Pharr Road NE, Atlanta, GA 30305",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "5Church Atlanta",
+          "website": "https://midtown.5church-atlanta.com/",
+          "phone": "+1-404-400-3669",
+          "address": "1197 Peachtree Street NE, Atlanta, GA 30361",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Establishment Atlanta",
+          "website": "https://establishmentatlanta.com/",
+          "phone": "+1-404-347-5291",
+          "address": "1197 Peachtree Street NE, Atlanta, GA 30308",
+          "cuisineTags": [
+            "American",
+            "Steak"
+          ]
+        },
+        {
+          "title": "Bacchanalia",
+          "website": "https://www.starprovisions.com/bacchanalia",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Miller Union",
+          "website": "https://www.millerunion.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Staplehouse",
+          "website": "https://www.staplehouse.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Gunshow",
+          "website": "https://www.gunshowatl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Kimball House",
+          "website": "https://www.kimball-house.com/",
+          "address": "Decatur, GA",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "Atlas",
+          "website": "https://www.atlasrestaurant.com/",
+          "address": "St. Regis Atlanta, GA",
+          "cuisineTags": [
+            "Contemporary",
+            "Fine dining"
+          ]
+        },
+        {
+          "title": "Aria",
+          "website": "https://www.aria-atl.com/",
+          "address": "Atlanta, GA",
+          "cuisineTags": [
+            "American",
+            "Fine dining"
+          ]
+        },
+        {
+          "title": "Trader Vic's Atlanta",
+          "website": "https://tradervicsatl.com/",
+          "phone": "+1-404-221-6339",
+          "address": "255 Courtland Street NE, Atlanta, GA 30303",
+          "cuisineTags": [
+            "Polynesian",
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Washington",
+      "stateCode": "DC",
+      "listings": [
+        {
+          "title": "The Dabney",
+          "website": "https://thedabney.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "American",
+            "Mid-Atlantic"
+          ]
+        },
+        {
+          "title": "Pineapple and Pearls",
+          "website": "https://www.pineappleandpearls.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Rose's Luxury",
+          "website": "https://www.rosesluxury.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "minibar by José Andrés",
+          "website": "https://www.minibarbyjoseandres.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Creative",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Fiola",
+          "website": "https://www.fioladc.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Rasika",
+          "website": "https://www.rasikarestaurant.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Indian"
+          ]
+        },
+        {
+          "title": "Zaytinya",
+          "website": "https://www.zaytinya.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Mediterranean",
+            "Mezze"
+          ]
+        },
+        {
+          "title": "Oyamel",
+          "website": "https://www.oyamel.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Jaleo",
+          "website": "https://www.jaleo.com/location/washington-dc/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Spanish",
+            "Tapas"
+          ]
+        },
+        {
+          "title": "Moon Rabbit",
+          "website": "https://www.moonrabbitdc.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Vietnamese"
+          ]
+        },
+        {
+          "title": "Succotash Prime Washington DC",
+          "website": "https://www.succotashrestaurant.com/",
+          "phone": "+1-202-849-6933",
+          "address": "915 F Street NW, Washington, DC 20004",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Joe's Seafood Prime Steak & Stone Crab — Washington DC",
+          "website": "https://www.joes.net/washington-dc",
+          "phone": "+1-202-489-0140",
+          "address": "750 15th Street NW, Washington, DC 20005",
+          "cuisineTags": [
+            "Seafood",
+            "Steak"
+          ]
+        },
+        {
+          "title": "The Capital Grille — Washington DC",
+          "website": "https://www.thecapitalgrille.com/locations/dc/washington/washington-dc/8003",
+          "phone": "+1-202-737-6200",
+          "address": "601 Pennsylvania Avenue NW, Washington, DC 20004",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Del Mar",
+          "website": "https://www.delmardc.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Spanish",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Causa",
+          "website": "https://www.causadc.com/",
+          "address": "Washington, DC",
+          "cuisineTags": [
+            "Peruvian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Philadelphia",
+      "stateCode": "PA",
+      "listings": [
+        {
+          "title": "Friday Saturday Sunday",
+          "website": "https://www.fridaysaturdaysunday.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Her Place Supper Club",
+          "website": "https://www.herplacephilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Provenance",
+          "website": "https://provenancephl.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Zahav",
+          "website": "https://www.zahavrestaurant.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Israeli",
+            "Middle Eastern"
+          ]
+        },
+        {
+          "title": "Vetri Cucina",
+          "website": "https://www.vetricucina.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Royal Sushi & Izakaya",
+          "website": "https://www.royalsushiandizakaya.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Fiorella",
+          "website": "https://www.fiorellaphilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Pizzeria Beddia",
+          "website": "https://www.pizzeriabeddia.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Dizengoff",
+          "website": "https://www.dizengoffphilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Israeli",
+            "Hummus"
+          ]
+        },
+        {
+          "title": "Angelo's Pizzeria",
+          "website": "https://angelospizzeriasouthphiladelphia.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "JiangNan Philadelphia",
+          "website": "https://jiangnanny.com/",
+          "phone": "+1-267-534-5276",
+          "address": "927 Arch Street, Philadelphia, PA 19107",
+          "cuisineTags": [
+            "Chinese",
+            "Jiangnan"
+          ]
+        },
+        {
+          "title": "Suraya",
+          "website": "https://www.surayaphilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Lebanese",
+            "Middle Eastern"
+          ]
+        },
+        {
+          "title": "Kalaya",
+          "website": "https://kalayaphilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Vernick Food & Drink",
+          "website": "https://www.vernickphilly.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Fork",
+          "website": "https://www.forkrestaurant.com/",
+          "address": "Philadelphia, PA",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Miami",
+      "stateCode": "FL",
+      "listings": [
+        {
+          "title": "Carbone Miami",
+          "website": "https://carbonemiami.com/",
+          "address": "Miami Beach, FL",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Estiatorio Milos Miami",
+          "website": "https://www.estiatoriomilos.com/location/miami/",
+          "phone": "+1-305-604-6800",
+          "address": "730 1st Street, Miami Beach, FL 33139",
+          "cuisineTags": [
+            "Greek",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Wayan Miami",
+          "website": "https://wayan-miami.com",
+          "phone": "+1-786-691-7681",
+          "address": "50 NW 24th Street, Miami, FL 33127",
+          "cuisineTags": [
+            "Indonesian",
+            "Asian"
+          ]
+        },
+        {
+          "title": "Zuma Miami",
+          "website": "https://www.zumarestaurant.com/en/miami/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Hakkasan Miami",
+          "website": "https://hakkasan.com/miami/",
+          "address": "Miami Beach, FL",
+          "cuisineTags": [
+            "Chinese"
+          ]
+        },
+        {
+          "title": "Cote Miami",
+          "website": "https://www.cotemiami.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Korean",
+            "Steak"
+          ]
+        },
+        {
+          "title": "Joe's Stone Crab",
+          "website": "https://www.joesstonecrab.com/",
+          "address": "Miami Beach, FL",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Versailles Restaurant",
+          "website": "https://versaillesrestaurant.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Cuban"
+          ]
+        },
+        {
+          "title": "Kyū",
+          "website": "https://kyurestaurants.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Robata"
+          ]
+        },
+        {
+          "title": "Los Félix",
+          "website": "https://www.losfelixmiami.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Ariete",
+          "website": "https://www.arietecoconutgrove.com/",
+          "address": "Coconut Grove, FL",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Boia De",
+          "website": "https://www.boiaderestaurant.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Itamae",
+          "website": "https://www.itamaemiami.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Peruvian"
+          ]
+        },
+        {
+          "title": "Mandolin Aegean Bistro",
+          "website": "https://www.mandolinmiami.com/",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Greek",
+            "Turkish"
+          ]
+        },
+        {
+          "title": "La Carreta",
+          "website": "https://lacarreta.com/",
+          "phone": "+1-305-869-3003",
+          "address": "Miami, FL",
+          "cuisineTags": [
+            "Cuban"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Phoenix",
+      "stateCode": "AZ",
+      "listings": [
+        {
+          "title": "Kai Restaurant",
+          "website": "https://www.wildhorsepass.com/dining/kai",
+          "address": "Chandler, AZ",
+          "cuisineTags": [
+            "Native American",
+            "Fine dining"
+          ]
+        },
+        {
+          "title": "FnB",
+          "website": "https://www.fnbrestaurant.com/",
+          "address": "Scottsdale, AZ",
+          "cuisineTags": [
+            "American",
+            "Wine"
+          ]
+        },
+        {
+          "title": "The Gladly",
+          "website": "https://www.thegladly.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Barrio Café",
+          "website": "https://www.barriocafe.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Pizzeria Bianco",
+          "website": "https://www.pizzeriabianco.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Christopher's",
+          "website": "https://www.christophersaz.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "French",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Durant's",
+          "website": "https://www.durantsaz.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Hana Japanese Eatery",
+          "website": "https://www.hanajapanese.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Tarbell's",
+          "website": "https://www.tarbells.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Lon's at the Hermosa",
+          "website": "https://www.lons.com/",
+          "address": "Paradise Valley, AZ",
+          "cuisineTags": [
+            "American",
+            "Southwestern"
+          ]
+        },
+        {
+          "title": "Mastro's City Hall",
+          "website": "https://www.mastrosrestaurants.com/",
+          "address": "Scottsdale, AZ",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Virtù Honest Craft",
+          "website": "https://www.virtuscottsdale.com/",
+          "address": "Scottsdale, AZ",
+          "cuisineTags": [
+            "Italian",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Pa'La",
+          "website": "https://palakitchen.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Plant-based",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Welcome Diner",
+          "website": "https://welcomediner.net/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "American",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Tratto",
+          "website": "https://www.trattophx.com/",
+          "address": "Phoenix, AZ",
+          "cuisineTags": [
+            "Italian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Boston",
+      "stateCode": "MA",
+      "listings": [
+        {
+          "title": "O Ya",
+          "website": "https://www.o-ya.restaurant/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Yume Wo Katare",
+          "website": "https://www.yumewokatare.com/",
+          "address": "Cambridge, MA",
+          "cuisineTags": [
+            "Ramen",
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Oleana",
+          "website": "https://www.oleanarestaurant.com/",
+          "address": "Cambridge, MA",
+          "cuisineTags": [
+            "Eastern Mediterranean"
+          ]
+        },
+        {
+          "title": "Sarma",
+          "website": "https://www.sarmarestaurant.com/",
+          "address": "Somerville, MA",
+          "cuisineTags": [
+            "Eastern Mediterranean"
+          ]
+        },
+        {
+          "title": "Contessa",
+          "website": "https://www.contessaristorante.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Woods Hill Pier 4",
+          "website": "https://www.woodshillpier4.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "American",
+            "Sustainable"
+          ]
+        },
+        {
+          "title": "Committee",
+          "website": "https://www.committeeboston.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Greek",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Neptune Oyster",
+          "website": "https://www.neptuneoyster.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Row 34",
+          "website": "https://www.row34.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Uni",
+          "website": "https://www.uni-boston.com/",
+          "address": "Boston, MA",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Little Donkey",
+          "website": "https://www.littledonkeybos.com/",
+          "address": "Cambridge, MA",
+          "cuisineTags": [
+            "Global",
+            "American"
+          ]
+        },
+        {
+          "title": "Puritan & Company",
+          "website": "https://www.puritancambridge.com/",
+          "address": "Cambridge, MA",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Detroit",
+      "stateCode": "MI",
+      "listings": [
+        {
+          "title": "Selden Standard",
+          "website": "http://www.seldenstandard.com/",
+          "address": "3921 2nd Ave, Detroit, MI 48201",
+          "cuisineTags": [
+            "American",
+            "Seasonal"
+          ]
+        },
+        {
+          "title": "Marrow",
+          "website": "https://marrowinthemarket.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "American",
+            "Nose-to-tail"
+          ]
+        },
+        {
+          "title": "Grey Ghost Detroit",
+          "website": "https://greyghostdetroit.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Takoi",
+          "website": "https://www.takoidetroit.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Thai",
+            "Southeast Asian"
+          ]
+        },
+        {
+          "title": "SheWolf Pastificio & Bar",
+          "website": "https://shewolfdetroit.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "London Chop House",
+          "website": "https://www.thelondonchophouse.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Buddy's Pizza",
+          "website": "https://buddyspizza.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Pizza",
+            "Detroit-style"
+          ]
+        },
+        {
+          "title": "Supino Pizzeria",
+          "website": "https://www.supinopizzeria.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Baobab Fare",
+          "website": "https://baobabfare.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "East African"
+          ]
+        },
+        {
+          "title": "Flowers of Vietnam",
+          "website": "https://www.flowersofvietnam.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "Vietnamese"
+          ]
+        },
+        {
+          "title": "Standby",
+          "website": "https://standbydetroit.com/",
+          "address": "Detroit, MI",
+          "cuisineTags": [
+            "American",
+            "Cocktails"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Minneapolis",
+      "stateCode": "MN",
+      "listings": [
+        {
+          "title": "Spoon and Stable",
+          "website": "https://www.spoonandstable.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Demi",
+          "website": "https://demimpls.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Tasting menu",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Owamni",
+          "website": "https://owamni.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Indigenous",
+            "American"
+          ]
+        },
+        {
+          "title": "112 Eatery",
+          "website": "https://www.112eatery.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Hai Hai",
+          "website": "https://www.haihaimpls.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Southeast Asian"
+          ]
+        },
+        {
+          "title": "Bar La Grassa",
+          "website": "https://www.barlagrassa.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Restaurant Alma",
+          "website": "https://www.restaurantalma.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Kado no Mise",
+          "website": "https://www.kadonomise.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Colita",
+          "website": "https://www.colitampls.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Pizzeria Lola",
+          "website": "https://www.pizzerialola.com/",
+          "address": "Minneapolis, MN",
+          "cuisineTags": [
+            "Pizza"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Denver",
+      "stateCode": "CO",
+      "listings": [
+        {
+          "title": "Tavernetta",
+          "website": "https://www.tavernettadenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Hop Alley",
+          "website": "https://hopalleydenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Chinese"
+          ]
+        },
+        {
+          "title": "Uncle",
+          "website": "https://www.uncleramen.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Ramen",
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Cart-Driver",
+          "website": "https://www.cart-driver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Guard and Grace",
+          "website": "https://www.guardandgrace.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "The Wolf's Tailor",
+          "website": "https://www.thewolfstailor.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Mercantile Dining & Provision",
+          "website": "https://www.mercantiledenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Work & Class",
+          "website": "https://workandclassdenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "American",
+            "Latin"
+          ]
+        },
+        {
+          "title": "Ultreia",
+          "website": "https://ultreiadenver.com/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Spanish",
+            "Portuguese"
+          ]
+        },
+        {
+          "title": "El Five",
+          "website": "https://ediblebeats.com/restaurants/el-five/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Spanish",
+            "Tapas"
+          ]
+        },
+        {
+          "title": "Sushi Den",
+          "website": "https://www.sushiden.net/",
+          "address": "Denver, CO",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Baltimore",
+      "stateCode": "MD",
+      "listings": [
+        {
+          "title": "Charleston",
+          "website": "https://charlestonrestaurant.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "American",
+            "Lowcountry"
+          ]
+        },
+        {
+          "title": "Thames Street Oyster House",
+          "website": "https://thamesstreetoysterhouse.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "La Cuchara",
+          "website": "https://www.lacucharabaltimore.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "Basque",
+            "Spanish"
+          ]
+        },
+        {
+          "title": "Woodberry Kitchen",
+          "website": "https://www.woodberrykitchen.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "American",
+            "Seasonal"
+          ]
+        },
+        {
+          "title": "Azumi",
+          "website": "https://azumirestaurant.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "The Bygone",
+          "website": "https://www.thebygonerestaurant.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "American",
+            "Steak"
+          ]
+        },
+        {
+          "title": "Cinghiale",
+          "website": "https://www.cinghiale.com/",
+          "address": "Baltimore, MD",
+          "cuisineTags": [
+            "Italian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "The Asbury",
+          "website": "https://www.theasbury.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "American",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Kindred",
+          "website": "https://www.kindreddavidson.com/",
+          "address": "Davidson, NC",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Haberdish",
+          "website": "https://haberdish.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "Southern"
+          ]
+        },
+        {
+          "title": "Midwood Smokehouse",
+          "website": "https://midwoodsmokehouse.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Stagioni",
+          "website": "https://www.stagioniclt.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Customshop",
+          "website": "https://customshopfood.com/",
+          "address": "Charlotte, NC",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Nashville",
+      "stateCode": "TN",
+      "listings": [
+        {
+          "title": "The Catbird Seat",
+          "website": "https://www.thecatbirdseatrestaurant.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Tasting menu",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Husk Nashville",
+          "website": "https://husknashville.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Butcher & Bee",
+          "website": "https://www.butcherandbee.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Rolf and Daughters",
+          "website": "https://www.rolfanddaughters.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "American",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Henrietta Red",
+          "website": "https://www.henriettared.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "Bastion",
+          "website": "https://www.bastionnashville.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Contemporary",
+            "American"
+          ]
+        },
+        {
+          "title": "Locust",
+          "website": "https://www.locustnashville.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Lockeland Table",
+          "website": "https://www.lockelandtable.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "American",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Folk",
+          "website": "https://www.goodasfolk.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "Pizza",
+            "American"
+          ]
+        },
+        {
+          "title": "Josephine",
+          "website": "https://josephineon12th.com/",
+          "address": "Nashville, TN",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Seattle",
+      "stateCode": "WA",
+      "listings": [
+        {
+          "title": "The Walrus and the Carpenter",
+          "website": "https://www.thewalrusbar.com/",
+          "address": "Seattle, WA",
+          "cuisineTags": [
+            "Seafood",
+            "Oyster bar"
+          ]
+        },
+        {
+          "title": "Joule",
+          "website": "https://www.joulerestaurant.com/",
+          "address": "Seattle, WA",
+          "cuisineTags": [
+            "Korean",
+            "American"
+          ]
+        },
+        {
+          "title": "Lark",
+          "website": "https://www.larkseattle.com/",
+          "address": "Seattle, WA",
+          "cuisineTags": [
+            "American",
+            "Seasonal"
+          ]
+        },
+        {
+          "title": "Cafe Juanita",
+          "website": "https://cafejuanita.com/",
+          "address": "Kirkland, WA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "The Herbfarm",
+          "website": "https://www.theherbfarm.com/",
+          "address": "Woodinville, WA",
+          "cuisineTags": [
+            "Tasting menu",
+            "American"
+          ]
+        },
+        {
+          "title": "The Whale Wins",
+          "website": "https://www.thewhalewins.com/",
+          "address": "Seattle, WA",
+          "cuisineTags": [
+            "American",
+            "Seasonal"
+          ]
+        },
+        {
+          "title": "Musang",
+          "website": "https://musangseattle.com/",
+          "address": "Seattle, WA",
+          "cuisineTags": [
+            "Filipino"
+          ]
+        },
+        {
+          "title": "Archipelago",
+          "website": "https://www.archipelagoseattle.com/",
+          "address": "Seattle, WA",
+          "cuisineTags": [
+            "Filipino",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Staple & Fancy",
+          "website": "https://www.stapleandfancy.com/",
+          "address": "Seattle, WA",
+          "cuisineTags": [
+            "Italian",
+            "American"
+          ]
+        },
+        {
+          "title": "Tilikum Place Cafe",
+          "website": "https://www.tilikumplacecafe.com/",
+          "address": "Seattle, WA",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Tampa",
+      "stateCode": "FL",
+      "listings": [
+        {
+          "title": "Bern's Steak House",
+          "website": "https://www.bernssteakhouse.com/",
+          "address": "Tampa, FL",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Ulele",
+          "website": "https://ulele.com/",
+          "address": "Tampa, FL",
+          "cuisineTags": [
+            "American",
+            "Florida"
+          ]
+        },
+        {
+          "title": "Columbia Restaurant",
+          "website": "https://www.columbiarestaurant.com/",
+          "address": "Tampa, FL",
+          "cuisineTags": [
+            "Spanish",
+            "Cuban"
+          ]
+        },
+        {
+          "title": "Mise en Place",
+          "website": "https://www.miseonline.com/",
+          "address": "Tampa, FL",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Oxford Exchange",
+          "website": "https://oxfordexchange.com/",
+          "address": "Tampa, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Rooster and the Till",
+          "website": "https://www.roosterandthetill.com/",
+          "address": "Tampa, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Rococo Steak",
+          "website": "https://www.rococosteak.com/",
+          "address": "Tampa, FL",
+          "cuisineTags": [
+            "Steak",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Oak & Ola",
+          "website": "https://www.oakandola.com/",
+          "address": "Tampa, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Stillwaters Tavern",
+          "website": "https://www.stillwaterstavern.com/",
+          "address": "St. Petersburg, FL",
+          "cuisineTags": [
+            "American",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Edison: food+drink lab",
+          "website": "https://edison-tampa.com/",
+          "address": "Tampa, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "San Diego",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Addison",
+          "website": "https://www.addisondelmar.com/",
+          "address": "Del Mar, CA",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Juniper & Ivy",
+          "website": "https://www.juniperandivy.com/",
+          "address": "San Diego, CA",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Herb & Wood",
+          "website": "https://www.herbandwood.com/",
+          "address": "San Diego, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Callie",
+          "website": "https://www.calliesd.com/",
+          "address": "San Diego, CA",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Animae",
+          "website": "https://www.animaesd.com/",
+          "address": "San Diego, CA",
+          "cuisineTags": [
+            "Asian",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "The Fishery",
+          "website": "https://www.thefishery.com/",
+          "address": "San Diego, CA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Jeune et Jolie",
+          "website": "https://www.jeuneetjolie.com/",
+          "address": "Carlsbad, CA",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Cesarina",
+          "website": "https://cesarinarestaurant.com/",
+          "address": "San Diego, CA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Civico 1845",
+          "website": "https://civico1845.com/",
+          "address": "San Diego, CA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Austin",
+      "stateCode": "TX",
+      "listings": [
+        {
+          "title": "Uchi",
+          "website": "https://uchiaustin.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Uchiko",
+          "website": "https://uchikoaustin.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Barley Swine",
+          "website": "https://www.barleyswine.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Odd Duck",
+          "website": "https://oddduckaustin.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Lenoir",
+          "website": "https://www.lenoirrestaurant.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Suerte",
+          "website": "https://www.suerteatx.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "L'Oca d'Oro",
+          "website": "https://www.locadoro.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Franklin Barbecue",
+          "website": "https://franklinbarbecue.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Olamaie",
+          "website": "https://www.olamaieaustin.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Kemuri Tatsu-Ya",
+          "website": "https://www.kemuri-tatsuya.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "Japanese",
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Canje",
+          "website": "https://www.canjeaustin.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "Caribbean"
+          ]
+        },
+        {
+          "title": "Jeffrey's",
+          "website": "https://www.jeffreysofaustin.com/",
+          "address": "Austin, TX",
+          "cuisineTags": [
+            "American",
+            "Steak"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "stateCode": "NV",
+      "listings": [
+        {
+          "title": "Bazaar Meat",
+          "website": "https://www.thebazaar.com/las-vegas/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "Steak",
+            "Spanish"
+          ]
+        },
+        {
+          "title": "Esther's Kitchen",
+          "website": "https://www.estherslv.com/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "Italian",
+            "American"
+          ]
+        },
+        {
+          "title": "Sparrow + Wolf",
+          "website": "https://www.sparrowandwolflv.com/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Carson Kitchen",
+          "website": "https://carsonkitchen.com/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Honey Salt",
+          "website": "https://www.honeysalt.com/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Ferraro's Italian Restaurant & Wine Bar",
+          "website": "https://ferraroslasvegas.com/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Anima by EDO",
+          "website": "https://www.animabyedo.com/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Lotus of Siam",
+          "website": "https://lotusofsiamlv.com/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Partage",
+          "website": "https://partage.vegas/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Vetri Cucina",
+          "website": "https://www.vetricucina.com/",
+          "address": "Las Vegas, NV",
+          "cuisineTags": [
+            "Italian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Pittsburgh",
+      "stateCode": "PA",
+      "listings": [
+        {
+          "title": "Superior Motors",
+          "website": "https://superiormotors.us/",
+          "address": "Braddock, PA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Morcilla",
+          "website": "https://www.morcilla.com/",
+          "address": "Pittsburgh, PA",
+          "cuisineTags": [
+            "Spanish"
+          ]
+        },
+        {
+          "title": "Apteka",
+          "website": "https://aptekapgh.com/",
+          "address": "Pittsburgh, PA",
+          "cuisineTags": [
+            "Eastern European",
+            "Vegan"
+          ]
+        },
+        {
+          "title": "Altius",
+          "website": "https://www.altiuspgh.com/",
+          "address": "Pittsburgh, PA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Meat & Potatoes",
+          "website": "https://www.meatandpotatoespgh.com/",
+          "address": "Pittsburgh, PA",
+          "cuisineTags": [
+            "American",
+            "Steak"
+          ]
+        },
+        {
+          "title": "Legume",
+          "website": "https://www.legumebistro.com/",
+          "address": "Pittsburgh, PA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Grit & Grace",
+          "website": "https://www.gritandgracepgh.com/",
+          "address": "Pittsburgh, PA",
+          "cuisineTags": [
+            "Asian",
+            "American"
+          ]
+        },
+        {
+          "title": "Chengdu Gourmet",
+          "website": "https://chengdugourmet.com/",
+          "address": "Pittsburgh, PA",
+          "cuisineTags": [
+            "Chinese",
+            "Sichuan"
+          ]
+        },
+        {
+          "title": "DiAnoia's Eatery",
+          "website": "https://dianoiaseatery.com/",
+          "address": "Pittsburgh, PA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Point Brugge Café",
+          "website": "https://www.pointbrugge.com/",
+          "address": "Pittsburgh, PA",
+          "cuisineTags": [
+            "Belgian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Sacramento",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "The Kitchen",
+          "website": "https://thekitchenrestaurant.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Mulvaney's B&L",
+          "website": "https://www.mulvaneysbl.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Localis",
+          "website": "https://www.localissacramento.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Ella Dining Room & Bar",
+          "website": "https://www.elladiningroomandbar.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Allora",
+          "website": "https://www.allorasacramento.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "The Firehouse",
+          "website": "https://www.thefirehouse.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American",
+            "Steak"
+          ]
+        },
+        {
+          "title": "Frank Fat's",
+          "website": "https://www.frankfats.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Chinese"
+          ]
+        },
+        {
+          "title": "Mayahuel",
+          "website": "https://www.mayahuel.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Magpie",
+          "website": "https://www.magpiecafe.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Kru Contemporary Japanese Cuisine",
+          "website": "https://www.krurestaurant.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Canon",
+          "website": "https://canoneastsac.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Waterboy",
+          "website": "https://www.waterboyrestaurant.com/",
+          "address": "Sacramento, CA",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "stateCode": "OH",
+      "listings": [
+        {
+          "title": "Salazar",
+          "website": "https://www.salazarcincinnati.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Senate",
+          "website": "https://www.senatepub.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Abigail Street",
+          "website": "https://www.abigailstreet.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Boca",
+          "website": "https://www.bocacincinnati.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Italian",
+            "French"
+          ]
+        },
+        {
+          "title": "Sotto",
+          "website": "https://www.sottocincinnati.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Metropole",
+          "website": "https://www.metropoleonwalnut.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Please",
+          "website": "https://www.pleasecincinnati.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Jeff Ruby's Precinct",
+          "website": "https://www.jeffruby.com/precinct",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Maplewood Kitchen and Bar",
+          "website": "https://www.maplewoodkitchenandbar.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Mita's",
+          "website": "https://www.mitas.co/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Spanish",
+            "Latin"
+          ]
+        },
+        {
+          "title": "Zula",
+          "website": "https://zularestaurant.com/",
+          "address": "Cincinnati, OH",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Kansas City",
+      "stateCode": "MO",
+      "listings": [
+        {
+          "title": "The Antler Room",
+          "website": "https://www.theantlerroom.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Novel",
+          "website": "https://www.novelkc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Q39",
+          "website": "https://www.q39kc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Joe's Kansas City Bar-B-Que",
+          "website": "https://www.joeskc.com/",
+          "address": "Kansas City, KS",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Jack Stack Barbecue",
+          "website": "https://www.jackstackbbq.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "The Majestic Restaurant",
+          "website": "https://www.kcmajestic.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Rye",
+          "website": "https://www.ryekc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Extra Virgin",
+          "website": "https://www.extravirginkc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Stock Hill",
+          "website": "https://www.stockhillkc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Port Fonda",
+          "website": "https://www.portfondakc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Affäre",
+          "website": "https://affarekc.com/",
+          "address": "Kansas City, MO",
+          "cuisineTags": [
+            "German",
+            "European"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Columbus",
+      "stateCode": "OH",
+      "listings": [
+        {
+          "title": "The Refectory",
+          "website": "https://www.therefectoryrestaurant.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Lindey's",
+          "website": "https://www.lindeys.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Wolf's Ridge Brewing",
+          "website": "https://www.wolfsridgebrewing.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "The Guild House",
+          "website": "https://www.theguildhousecolumbus.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Barcelona",
+          "website": "https://www.barcelonacolumbus.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "Spanish"
+          ]
+        },
+        {
+          "title": "The Pearl",
+          "website": "https://www.thepearlcolumbus.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Northstar Café",
+          "website": "https://www.northstarcafe.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Hubbard Grille",
+          "website": "https://www.hubbardgrille.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Cap City Fine Diner",
+          "website": "https://www.capcityfinediner.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Katzinger's Delicatessen",
+          "website": "https://www.katzingers.com/",
+          "address": "Columbus, OH",
+          "cuisineTags": [
+            "Deli",
+            "Jewish"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Indianapolis",
+      "stateCode": "IN",
+      "listings": [
+        {
+          "title": "Bluebeard",
+          "website": "https://www.bluebeardindy.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Milktooth",
+          "website": "https://www.milktoothindy.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American",
+            "Breakfast"
+          ]
+        },
+        {
+          "title": "St. Elmo Steak House",
+          "website": "https://www.stelmos.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Harry & Izzy's",
+          "website": "https://www.harryandizzys.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "Steak",
+            "American"
+          ]
+        },
+        {
+          "title": "Beholder",
+          "website": "https://www.beholderindy.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Late Harvest Kitchen",
+          "website": "https://www.lateharvestkitchen.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Love Handle",
+          "website": "https://www.lovehandleindy.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Livery",
+          "website": "https://www.livery-restaurant.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "Latin"
+          ]
+        },
+        {
+          "title": "Vida",
+          "website": "https://www.vida-restaurant.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "The Rathskeller",
+          "website": "https://www.rathskeller.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "German"
+          ]
+        },
+        {
+          "title": "Tinker Street",
+          "website": "https://tinkerstreetrestaurant.com/",
+          "address": "Indianapolis, IN",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Cleveland",
+      "stateCode": "OH",
+      "listings": [
+        {
+          "title": "Mabel's BBQ",
+          "website": "https://www.mabelsbbq.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Fire Food and Drink",
+          "website": "https://www.firefoodanddrink.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "L'Albatros",
+          "website": "https://www.albatrosbrasserie.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Giovanni's Ristorante",
+          "website": "https://www.giovanniscleveland.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Blue Point Grille",
+          "website": "https://www.bluepointgrille.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Pier W",
+          "website": "https://www.pierw.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "Sokolowski's University Inn",
+          "website": "https://www.sokolowskis.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Polish",
+            "Eastern European"
+          ]
+        },
+        {
+          "title": "Lucky's Cafe",
+          "website": "https://www.luckyscafe.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Edwins",
+          "website": "https://edwinsrestaurant.org/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Marble Room Steaks and Raw Bar",
+          "website": "https://www.marbleroomcle.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "Steak",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Spice Kitchen & Bar",
+          "website": "https://www.spicekitchenandbar.com/",
+          "address": "Cleveland, OH",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Riverside",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Mario's Place",
+          "website": "https://www.mariosplace.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "W. Wolfskill",
+          "website": "https://wwolfskill.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Simple Simon's",
+          "website": "https://www.simplesimonsbakerybistro.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Bakery",
+            "American"
+          ]
+        },
+        {
+          "title": "ProAbition",
+          "website": "https://proabition.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Heroes Restaurant & Brewery",
+          "website": "https://www.heroesriverside.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Lake Alice Trading Co.",
+          "website": "https://www.lakealicetradingco.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "MandiXpress",
+          "website": "https://mandixpress.co/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Yemeni"
+          ]
+        },
+        {
+          "title": "Las Campanas",
+          "website": "https://www.missioninn.com/food-emporium/las-campanas-mexican-cuisine",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Tio's Tacos",
+          "website": "http://www.tiostacos1.com/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Anchos Southwest Grill",
+          "website": "https://anchos.net/",
+          "address": "Riverside, CA",
+          "cuisineTags": [
+            "Mexican",
+            "Southwestern"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Orlando",
+      "stateCode": "FL",
+      "listings": [
+        {
+          "title": "Knife & Spoon",
+          "website": "https://www.knifeandspoonrc.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Steak",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Kadence",
+          "website": "https://kadenceorlando.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Soseki",
+          "website": "https://www.sosekifl.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Kabooki Sushi",
+          "website": "https://www.kabookisushi.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "The Ravenous Pig",
+          "website": "https://theravenouspig.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Capa",
+          "website": "https://www.capasteakhouse.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Domu",
+          "website": "https://domufl.squarespace.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Japanese",
+            "Ramen"
+          ]
+        },
+        {
+          "title": "Prato",
+          "website": "https://www.pratoitalian.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Kaya",
+          "website": "https://www.kayaorlando.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Filipino"
+          ]
+        },
+        {
+          "title": "Papa Llama",
+          "website": "https://www.papallamaorl.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "Peruvian"
+          ]
+        },
+        {
+          "title": "DoveCote",
+          "website": "https://www.dovecoteorlando.com/",
+          "address": "Orlando, FL",
+          "cuisineTags": [
+            "French"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "San Antonio",
+      "stateCode": "TX",
+      "listings": [
+        {
+          "title": "Mixtli",
+          "website": "https://restaurantmixtli.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Southerleigh",
+          "website": "https://www.southerleighatpearl.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Bliss",
+          "website": "https://foodisbliss.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Bohanan's",
+          "website": "https://bohanans.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Steak",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Clementine",
+          "website": "https://www.clementine-sa.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Boudro's",
+          "website": "https://www.boudros.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Magpie",
+          "website": "https://magpie.us/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Paloma Blanca",
+          "website": "https://www.palomablanca.net/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Dough Pizzeria Napoletana",
+          "website": "https://www.doughpizzeria.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Italian",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "La Fonda on Main",
+          "website": "https://www.lafondaonmain.com/",
+          "address": "San Antonio, TX",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Portland",
+      "stateCode": "OR",
+      "listings": [
+        {
+          "title": "Hat Yai",
+          "website": "https://www.hatyaipdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Gado Gado",
+          "website": "https://gadogadopdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Indonesian"
+          ]
+        },
+        {
+          "title": "Screen Door",
+          "website": "https://screendoorrestaurant.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Southern"
+          ]
+        },
+        {
+          "title": "Canard",
+          "website": "https://canardrestaurant.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Eem",
+          "website": "https://eempdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Coquine",
+          "website": "https://coquinepdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Nong's Khao Man Gai",
+          "website": "https://khaomangai.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Ava Gene's",
+          "website": "https://avagenes.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "St. Jack",
+          "website": "https://stjackpdx.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Andina",
+          "website": "https://www.andinarestaurant.com/",
+          "address": "Portland, OR",
+          "cuisineTags": [
+            "Peruvian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "San Jose",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Adega",
+          "website": "https://adegarest.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Portuguese"
+          ]
+        },
+        {
+          "title": "Mezcal",
+          "website": "https://mezcalsj.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "The Table",
+          "website": "https://thetablesj.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Original Joe's",
+          "website": "https://www.sanjoseoriginaljoes.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Poor House Bistro",
+          "website": "https://poorhousebistro.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Creole"
+          ]
+        },
+        {
+          "title": "Teske's Germania",
+          "website": "https://teskes-germania.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "German"
+          ]
+        },
+        {
+          "title": "Henry's Hi-Life",
+          "website": "https://henryshilife.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Steak",
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "La Victoria Taqueria",
+          "website": "https://www.lavicsj.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Scott's Seafood",
+          "website": "https://scottsseafoodsj.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Habana Cuba",
+          "website": "https://998cuba.com/",
+          "address": "San Jose, CA",
+          "cuisineTags": [
+            "Cuban"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Virginia Beach",
+      "stateCode": "VA",
+      "listings": [
+        {
+          "title": "Catch 31",
+          "website": "https://www.catch31.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Tautog's",
+          "website": "https://www.tautogs.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Esoteric",
+          "website": "https://esotericvb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Terrapin",
+          "website": "https://www.terrapinvb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Waterman's Surfside Grille",
+          "website": "https://www.watermans.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "CP Shuckers",
+          "website": "https://www.cpshuckers.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Bay Local",
+          "website": "https://baylocalvb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "Hot Tuna",
+          "website": "https://www.hottunavb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Doc Taylor's",
+          "website": "https://www.doctaylors.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "American",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Isle of Capri",
+          "website": "https://isleofcaprivb.com/",
+          "address": "Virginia Beach, VA",
+          "cuisineTags": [
+            "Italian",
+            "Seafood"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Jacksonville",
+      "stateCode": "FL",
+      "listings": [
+        {
+          "title": "Restaurant Orsay",
+          "website": "https://www.restaurantorsay.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Matthew's",
+          "website": "https://matthewsrestaurant.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Cowford Chophouse",
+          "website": "https://cowfordchophouse.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Marker 32",
+          "website": "https://marker32.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "River & Post",
+          "website": "https://www.riverandpostjax.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Aqua Grill",
+          "website": "https://www.aquagrill.net/",
+          "address": "Ponte Vedra Beach, FL",
+          "cuisineTags": [
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Ocean 60",
+          "website": "https://www.ocean60.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "bb's",
+          "website": "https://www.bbsrestaurant.com/",
+          "address": "Jacksonville, FL",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Providence",
+      "stateCode": "RI",
+      "listings": [
+        {
+          "title": "Gracie's",
+          "website": "https://graciesprov.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Al Forno",
+          "website": "https://alforno.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Persimmon",
+          "website": "https://www.persimmonri.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "New Rivers",
+          "website": "https://newriversrestaurant.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Mill's Tavern",
+          "website": "https://www.millstavernrestaurant.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Nick's on Broadway",
+          "website": "https://nicksonbroadway.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Courtland Club",
+          "website": "https://www.courtlandclub.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Pot au Feu",
+          "website": "https://potaufeuri.com/",
+          "address": "Providence, RI",
+          "cuisineTags": [
+            "French"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Milwaukee",
+      "stateCode": "WI",
+      "listings": [
+        {
+          "title": "Sanford",
+          "website": "https://sanfordrestaurant.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Amilinda",
+          "website": "https://amilinda.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Spanish",
+            "Portuguese"
+          ]
+        },
+        {
+          "title": "Morel",
+          "website": "https://morelmke.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Lake Park Bistro",
+          "website": "https://www.bartolottas.com/lake-park-bistro",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Birch",
+          "website": "https://www.birchonpleasant.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Carnevor",
+          "website": "https://carnevor.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Bacchus",
+          "website": "https://www.bacchusmke.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Story Hill BKC",
+          "website": "https://storyhillbkc.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Sorella",
+          "website": "https://www.sorellamke.com/",
+          "address": "Milwaukee, WI",
+          "cuisineTags": [
+            "Italian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Raleigh",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "Death & Taxes",
+          "website": "https://ac-restaurants.com/death-taxes/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Second Empire",
+          "website": "https://www.second-empire.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "American",
+            "French"
+          ]
+        },
+        {
+          "title": "Crawford & Son",
+          "website": "https://crawfordandsonrestaurant.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Jolie",
+          "website": "https://restaurantjolie.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Herons",
+          "website": "https://www.heronsnc.com/",
+          "address": "Cary, NC",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Hummingbird",
+          "website": "https://hummingbirdraleigh.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Mandolin",
+          "website": "https://www.mandolinraleigh.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "Southern"
+          ]
+        },
+        {
+          "title": "Bida Manda",
+          "website": "https://www.bidamanda.com/",
+          "address": "Raleigh, NC",
+          "cuisineTags": [
+            "Lao"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Oklahoma City",
+      "stateCode": "OK",
+      "listings": [
+        {
+          "title": "Grey Sweater",
+          "website": "https://www.greysweaterokc.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Contemporary",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Nonesuch",
+          "website": "https://www.nonesuchokc.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Cheever's Cafe",
+          "website": "https://www.cheeverscafe.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "American",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Vast",
+          "website": "https://www.vastokc.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Ranch Steakhouse",
+          "website": "https://ranchsteakhouse.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Red PrimeSteak",
+          "website": "https://www.redprimesteak.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Cattlemen's Steakhouse",
+          "website": "https://cattlemensrestaurant.com/",
+          "address": "Oklahoma City, OK",
+          "cuisineTags": [
+            "Steak"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Louisville",
+      "stateCode": "KY",
+      "listings": [
+        {
+          "title": "610 Magnolia",
+          "website": "https://610magnolia.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Southern",
+            "Tasting menu"
+          ]
+        },
+        {
+          "title": "Jack Fry's",
+          "website": "https://www.jackfrys.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Proof on Main",
+          "website": "https://proofonmain.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Repeal",
+          "website": "https://www.repeallouisville.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Seviche",
+          "website": "https://sevicherestaurant.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Latin"
+          ]
+        },
+        {
+          "title": "Le Moo",
+          "website": "https://www.lemoo.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "Steak"
+          ]
+        },
+        {
+          "title": "Decade",
+          "website": "https://decaderestaurant.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Buck's",
+          "website": "https://www.bucksrestaurantandbar.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Varanese",
+          "website": "https://www.varanese.com/",
+          "address": "Louisville, KY",
+          "cuisineTags": [
+            "American"
+          ]
+        }
+      ]
+    }
+  ]
+}

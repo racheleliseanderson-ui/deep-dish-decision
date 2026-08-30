@@ -1,0 +1,3465 @@
+{
+  "generatedAt": "2026-08-10T21:35:52.338Z",
+  "records": {
+    "canlis": {
+      "google": {
+        "placeId": "ChIJRXCfNwUVkFQRxraD8U-dANE",
+        "displayName": "Canlis",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "2576 Aurora Ave N, Seattle, WA 98109, USA",
+        "address": {
+          "streetNumber": "2576",
+          "route": "Aurora Avenue North",
+          "neighborhood": "East Queen Anne",
+          "locality": "Seattle",
+          "county": "King County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "98109",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 47.6430933,
+          "longitude": -122.34675349999999
+        },
+        "phone": "(206) 283-3313",
+        "phoneE164": "+12062833313",
+        "website": "https://canlis.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=15060210120606856902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+        "priceBand": "$$$$",
+        "rating": 4.6,
+        "reviewCount": 2872,
+        "categories": [
+          "fine_dining_restaurant",
+          "american_restaurant",
+          "bar",
+          "restaurant"
+        ],
+        "primaryCategory": "American Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": []
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": false,
+          "reservable": true,
+          "delivery": true,
+          "takeout": true,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForGroups": true,
+          "goodForChildren": false,
+          "liveMusic": true,
+          "restroom": true,
+          "menuForChildren": true,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesBrunch": false,
+          "servesLunch": false,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeParkingLot": true,
+          "paidParkingLot": true,
+          "valetParking": true
+        },
+        "editorialSummary": "Landmark fine-dining destination (since 1950s) offering Pacific NW fare in a midcentury-modern home.",
+        "retrievedAt": "2026-08-10T21:32:40.599Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/canlis",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://canlis.com/"
+        ],
+        "retrievedAt": "2026-08-10T21:32:40.599Z"
+      },
+      "summary": {
+        "text": "Canlis is an American restaurant located in the East Queen Anne neighborhood of Seattle, Washington. It offers fine dining with a cocktail/lounge and wine-forward focus, operating five days a week. The restaurant has a 4.6 rating from 2872 reviews and is reservable via Tock.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform"
+        ],
+        "generatedAt": "2026-08-10T21:32:44.307Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:32:40.599Z",
+        "completeness": 83
+      }
+    },
+    "kann": {
+      "google": {
+        "placeId": "ChIJIUdfuzChlVQRepfM4S5jGUQ",
+        "displayName": "kann",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "548 SE Ash St, Portland, OR 97214, USA",
+        "address": {
+          "streetNumber": "548",
+          "route": "Southeast Ash Street",
+          "neighborhood": "Southeast Portland",
+          "locality": "Portland",
+          "county": "Multnomah County",
+          "state": "Oregon",
+          "stateCode": "OR",
+          "postalCode": "97214",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 45.5212863,
+          "longitude": -122.6598948
+        },
+        "phone": "(971) 489-2202",
+        "phoneE164": "+19714892202",
+        "website": "https://kannrestaurant.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=4907062322004793210&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+        "priceBand": "$$$$",
+        "rating": 4.5,
+        "reviewCount": 1255,
+        "categories": [
+          "restaurant"
+        ],
+        "primaryCategory": "Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "19:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": []
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "19:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "21:30"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "21:30"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "21:30"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": false,
+          "reservable": true,
+          "delivery": false,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForGroups": true,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBrunch": false,
+          "servesLunch": false,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeStreetParking": true,
+          "paidStreetParking": true,
+          "valetParking": false
+        },
+        "editorialSummary": "",
+        "retrievedAt": "2026-08-10T21:32:44.308Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://kannrestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-10T21:32:44.308Z"
+      },
+      "summary": {
+        "text": "Kann is a restaurant located in Southeast Portland, Oregon. It offers Caribbean, Pacific Northwest, Plant-forward, and Small plates cuisine, with a price band of $$$$. The restaurant has a rating of 4.5 based on 1255 reviews and is open five days a week, serving dinner and dessert.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount"
+        ],
+        "generatedAt": "2026-08-10T21:32:50.777Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:32:44.308Z",
+        "completeness": 83
+      }
+    },
+    "nue": {
+      "google": {
+        "placeId": "ChIJz91V-s1qkFQRTaAOUkM_jKo",
+        "displayName": "Nue",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "1519 14th Ave, Seattle, WA 98122, USA",
+        "address": {
+          "streetNumber": "1519",
+          "route": "14th Avenue",
+          "neighborhood": "Capitol Hill",
+          "locality": "Seattle",
+          "county": "King County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "98122",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 47.6147255,
+          "longitude": -122.3144481
+        },
+        "phone": "(206) 257-0312",
+        "phoneE164": "+12062570312",
+        "website": "http://www.nueseattle.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=12289267041559289933&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.4,
+        "reviewCount": 2193,
+        "categories": [
+          "restaurant",
+          "brunch_restaurant",
+          "cocktail_bar",
+          "bar"
+        ],
+        "primaryCategory": "Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "10:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "10:00",
+                "close": "23:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": true,
+          "takeout": true,
+          "dineIn": true,
+          "goodForGroups": true,
+          "goodForChildren": true,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": true,
+          "servesBrunch": true,
+          "servesLunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "paidParkingLot": true,
+          "paidStreetParking": true
+        },
+        "editorialSummary": "A memorabilia-packed dining room sets the tone for hip takes on street eats from around the globe.",
+        "retrievedAt": "2026-08-10T21:33:02.215Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.nueseattle.com/reservations",
+        "reservationPlatform": "Direct",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Learn about large parties, corporate events, and restaurant buyouts on our Private Events page or email us at",
+        "groupPolicyLanguage": [
+          {
+            "quote": "Learn about large parties, corporate events, and restaurant buyouts on our Private Events page or email us at",
+            "sourceUrl": "https://www.nueseattle.com/reservations"
+          }
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.nueseattle.com/",
+          "https://www.nueseattle.com/reservations"
+        ],
+        "retrievedAt": "2026-08-10T21:33:02.215Z"
+      },
+      "summary": {
+        "text": "Nue is a restaurant located in Seattle, Washington's Capitol Hill neighborhood, with a 4.4 rating from 2193 reviews. It offers breakfast/brunch and small plates, with amenities including outdoor seating, delivery, takeout, and serves vegetarian food. The establishment is wheelchair accessible and accepts reservations directly.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform",
+          "groupPolicyQuote"
+        ],
+        "generatedAt": "2026-08-10T21:33:09.184Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:33:02.215Z",
+        "completeness": 88
+      }
+    },
+    "the-pink-door": {
+      "google": {
+        "placeId": "ChIJ91YOzrJqkFQRKmSW0B1qrbo",
+        "displayName": "The Pink Door",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "1919 Post Alley, Seattle, WA 98101, USA",
+        "address": {
+          "streetNumber": "1919",
+          "route": "Post Alley",
+          "neighborhood": "Downtown Seattle",
+          "locality": "Seattle",
+          "county": "King County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "98101",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 47.6103652,
+          "longitude": -122.34256040000001
+        },
+        "phone": "(206) 443-3241",
+        "phoneE164": "+12064433241",
+        "website": "https://www.thepinkdoor.net/",
+        "googleMapsUri": "https://maps.google.com/?cid=13451524338311652394&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.6,
+        "reviewCount": 7265,
+        "categories": [
+          "italian_restaurant",
+          "bar",
+          "european_restaurant",
+          "restaurant"
+        ],
+        "primaryCategory": "Italian Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": []
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "11:30",
+                "close": "23:30"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "11:30",
+                "close": "23:30"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "11:30",
+                "close": "23:30"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "11:30",
+                "close": "23:30"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "11:30",
+                "close": "23:30"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": true,
+          "takeout": true,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForGroups": true,
+          "goodForChildren": false,
+          "liveMusic": true,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesBrunch": false,
+          "servesLunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": false,
+          "wheelchairAccessibleEntrance": false
+        },
+        "parking": {
+          "paidParkingLot": true,
+          "freeStreetParking": true,
+          "paidStreetParking": true,
+          "paidGarageParking": true
+        },
+        "editorialSummary": "Italian restaurant with cabaret shows and trapeze entertainment, plus terrace with Elliott Bay views.",
+        "retrievedAt": "2026-08-10T21:33:09.185Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/the-pink-door-reservations-seattle?restref=75022&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.thepinkdoor.net/",
+          "https://www.thepinkdoor.net/reservations"
+        ],
+        "retrievedAt": "2026-08-10T21:33:09.185Z"
+      },
+      "summary": {
+        "text": "The Pink Door is an Italian restaurant located in Downtown Seattle, Washington. It offers dine-in, takeout, and delivery services, with amenities including outdoor seating, reservations, and live music. The restaurant has a rating of 4.6 based on 7265 reviews and is priced in the $$ band.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "servesDaysCount",
+          "reservationPlatform"
+        ],
+        "generatedAt": "2026-08-10T21:33:15.661Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:33:09.185Z",
+        "completeness": 83
+      }
+    },
+    "tusk": {
+      "google": {
+        "placeId": "ChIJfcK8u76glVQRrGwwsGh_7z0",
+        "displayName": "Tusk",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "2448 E Burnside St, Portland, OR 97214, USA",
+        "address": {
+          "streetNumber": "2448",
+          "route": "East Burnside Street",
+          "neighborhood": "Southeast Portland",
+          "locality": "Portland",
+          "county": "Multnomah County",
+          "state": "Oregon",
+          "stateCode": "OR",
+          "postalCode": "97214",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 45.522636899999995,
+          "longitude": -122.64049360000001
+        },
+        "phone": "(503) 894-8082",
+        "phoneE164": "+15038948082",
+        "website": "https://www.tuskpdx.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=4462925843356740780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.6,
+        "reviewCount": 1213,
+        "categories": [
+          "mediterranean_restaurant",
+          "wine_bar",
+          "cocktail_bar",
+          "bar",
+          "restaurant"
+        ],
+        "primaryCategory": "Mediterranean Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": true,
+          "takeout": true,
+          "dineIn": true,
+          "goodForGroups": true,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesBrunch": false,
+          "servesLunch": false,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeStreetParking": true,
+          "paidStreetParking": true
+        },
+        "editorialSummary": "Buzzy, light-filled standout serving creative Middle Eastern fare plus craft cocktails.",
+        "retrievedAt": "2026-08-10T21:33:15.661Z"
+      },
+      "site": {
+        "menuUrl": "https://tuskpdx.com/menus",
+        "reservationUrl": "https://order.toasttab.com/online/tusk",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [
+          {
+            "quote": "Vegetarian (VG), Vegan (V), Contains Gluten (G)",
+            "sourceUrl": "https://tuskpdx.com/menus"
+          },
+          {
+            "quote": "do you offer vegan, vegetarian, or gluten-free dishes?",
+            "sourceUrl": "https://tuskpdx.com/about-us"
+          }
+        ],
+        "accessibilityLanguage": [
+          {
+            "quote": "is the building wheelchair accessible?",
+            "sourceUrl": "https://tuskpdx.com/about-us"
+          }
+        ],
+        "groupPolicy": "Our stunning private event spaces are the perfect setting for intimate celebrations, corporate gatherings, and everything in between.",
+        "groupPolicyLanguage": [
+          {
+            "quote": "Our stunning private event spaces are the perfect setting for intimate celebrations, corporate gatherings, and everything in between.",
+            "sourceUrl": "https://tuskpdx.com/"
+          },
+          {
+            "quote": "Whether you choose our Private Dining Room or Covered Patio, you'll enjoy a blend of modern elegance and warm ambiance, providing a unique backdrop to create cherished memories.",
+            "sourceUrl": "https://tuskpdx.com/"
+          },
+          {
+            "quote": "The private dining room at Tusk can accommodate up to 24 guests for a customized dining experience.",
+            "sourceUrl": "https://tuskpdx.com/events"
+          }
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://tuskpdx.com/",
+          "https://tuskpdx.com/menus",
+          "https://tuskpdx.com/events",
+          "https://tuskpdx.com/about-us"
+        ],
+        "retrievedAt": "2026-08-10T21:33:15.661Z"
+      },
+      "summary": {
+        "text": "Tusk is a Mediterranean restaurant located in Southeast Portland, Oregon, with a price band of $$. It offers Eastern European, Mediterranean, and Seasonal/market cuisine, and has amenities including outdoor seating, reservations, delivery, and takeout. The restaurant serves vegetarian food, beer, and wine, and is wheelchair accessible.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform",
+          "groupPolicyQuote",
+          "dietaryQuotes"
+        ],
+        "generatedAt": "2026-08-10T21:33:28.015Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:33:15.661Z",
+        "completeness": 96
+      }
+    },
+    "le-pigeon": {
+      "google": {
+        "placeId": "ChIJn_5mjKWglVQR94bKSpAYe4s",
+        "displayName": "Le Pigeon",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "738 E Burnside St, Portland, OR 97214, USA",
+        "address": {
+          "streetNumber": "738",
+          "route": "East Burnside Street",
+          "neighborhood": "Southeast Portland",
+          "locality": "Portland",
+          "county": "Multnomah County",
+          "state": "Oregon",
+          "stateCode": "OR",
+          "postalCode": "97214",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 45.5228349,
+          "longitude": -122.6578121
+        },
+        "phone": "(503) 546-8796",
+        "phoneE164": "+15035468796",
+        "website": "https://www.lepigeon.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=10050654001416537847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+        "priceBand": "$$$$",
+        "rating": 4.6,
+        "reviewCount": 1149,
+        "categories": [
+          "french_restaurant",
+          "family_restaurant",
+          "restaurant"
+        ],
+        "primaryCategory": "French Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": false,
+          "reservable": true,
+          "delivery": false,
+          "takeout": false,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": true,
+          "servesBrunch": false,
+          "servesLunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true
+        },
+        "parking": {
+          "freeStreetParking": true,
+          "paidStreetParking": true
+        },
+        "editorialSummary": "Elegant French-inspired fare served with a diverse selection of wines in a lively & intimate room.",
+        "retrievedAt": "2026-08-10T21:33:28.015Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [
+          {
+            "quote": "We offer two tasting menus; an omnivore and vegetarian.",
+            "sourceUrl": "https://www.lepigeon.com/"
+          }
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.lepigeon.com/"
+        ],
+        "retrievedAt": "2026-08-10T21:33:28.015Z"
+      },
+      "summary": {
+        "text": "Le Pigeon is a French restaurant located in Southeast Portland, Oregon, with a 4.6 rating from 1149 reviews. This $$$$ establishment offers fine dining and plant-forward options, including omnivore and vegetarian tasting menus. It is open seven days a week, serving breakfast, lunch, and dinner, and is reservable with wheelchair accessible amenities.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "dietaryQuotes"
+        ],
+        "generatedAt": "2026-08-10T21:33:49.195Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:33:28.015Z",
+        "completeness": 88
+      }
+    },
+    "revel": {
+      "google": {
+        "placeId": "ChIJBzD0wakVkFQRF64WyAPYktk",
+        "displayName": "Revel",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "401 N 36th St, Seattle, WA 98103, USA",
+        "address": {
+          "streetNumber": "401",
+          "route": "North 36th Street",
+          "neighborhood": "Fremont",
+          "locality": "Seattle",
+          "county": "King County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "98103",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 47.652031699999995,
+          "longitude": -122.3541246
+        },
+        "phone": "(206) 547-2040",
+        "phoneE164": "+12065472040",
+        "website": "http://www.revelseattle.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=15677830763583548951&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.3,
+        "reviewCount": 1086,
+        "categories": [
+          "korean_restaurant",
+          "restaurant"
+        ],
+        "primaryCategory": "Korean Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": true,
+          "takeout": true,
+          "dineIn": true,
+          "goodForGroups": true,
+          "goodForChildren": true,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": true,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesLunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": false,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "paidParkingLot": true,
+          "freeStreetParking": true,
+          "paidStreetParking": true
+        },
+        "editorialSummary": "Korean dishes prepared with French technique in a modern industrial-design space with a hopping bar.",
+        "retrievedAt": "2026-08-10T21:33:49.195Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.revelseattle.com/"
+        ],
+        "retrievedAt": "2026-08-10T21:33:49.195Z"
+      },
+      "summary": {
+        "text": "Revel is a Korean restaurant located in the Fremont neighborhood of Seattle, Washington. It has a price band of $$ and a rating of 4.3 based on 1086 reviews. The restaurant offers outdoor seating, delivery, takeout, and dine-in options, and is wheelchair accessible.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount"
+        ],
+        "generatedAt": "2026-08-10T21:33:52.339Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:33:49.195Z",
+        "completeness": 83
+      }
+    },
+    "ox": {
+      "google": {
+        "placeId": "ChIJe3PKSEmnlVQRYAblCH7fjpA",
+        "displayName": "OX Restaurant",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "2225 NE Martin Luther King Jr Blvd, Portland, OR 97212, USA",
+        "address": {
+          "streetNumber": "2225",
+          "route": "Northeast Martin Luther King Junior Boulevard",
+          "neighborhood": "Eliot",
+          "locality": "Portland",
+          "county": "Multnomah County",
+          "state": "Oregon",
+          "stateCode": "OR",
+          "postalCode": "97212",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 45.5394194,
+          "longitude": -122.6619443
+        },
+        "phone": "(503) 284-3366",
+        "phoneE164": "+15032843366",
+        "website": "https://oxpdx.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=10416508720562636384&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+        "priceBand": "$$$$",
+        "rating": 4.7,
+        "reviewCount": 1942,
+        "categories": [
+          "argentinian_restaurant",
+          "south_american_restaurant",
+          "bar",
+          "restaurant"
+        ],
+        "primaryCategory": "Argentinian Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "22:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": false,
+          "takeout": true,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForGroups": true,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": false,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesBrunch": false,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeParkingLot": true,
+          "paidParkingLot": true,
+          "freeStreetParking": true
+        },
+        "editorialSummary": "Stylish eatery with a bar where Argentinean-inspired NW fare is cooked on a wood-fired grill.",
+        "retrievedAt": "2026-08-10T21:33:52.340Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.oxpdx.com/"
+        ],
+        "retrievedAt": "2026-08-10T21:33:52.340Z"
+      },
+      "summary": {
+        "text": "Ox is an Argentinian restaurant located in the Eliot neighborhood of Portland, Oregon. It has a 4.7 rating from 1942 reviews and offers a $$$$ price band. Amenities include outdoor seating, reservations, takeout, and a full bar, with wheelchair accessibility throughout.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount"
+        ],
+        "generatedAt": "2026-08-10T21:33:55.634Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:33:52.340Z",
+        "completeness": 83
+      }
+    },
+    "langbaan": {
+      "google": {
+        "placeId": "ChIJK6UvA7-glVQRR6PiHnH7ZCw",
+        "displayName": "Langbaan",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "1818 NW 23rd Pl, Portland, OR 97210, USA",
+        "address": {
+          "streetNumber": "1818",
+          "route": "Northwest 23rd Place",
+          "neighborhood": "Northwest Portland",
+          "locality": "Portland",
+          "county": "Multnomah County",
+          "state": "Oregon",
+          "stateCode": "OR",
+          "postalCode": "97210",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 45.5357177,
+          "longitude": -122.699664
+        },
+        "phone": "(971) 344-2564",
+        "phoneE164": "+19713442564",
+        "website": "http://langbaanportland.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=3198958098607940423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+        "priceBand": "$$$$",
+        "rating": 4.6,
+        "reviewCount": 466,
+        "categories": [
+          "thai_restaurant",
+          "restaurant"
+        ],
+        "primaryCategory": "Thai Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "20:15"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": []
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "20:15"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "20:15"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "17:30",
+                "close": "20:15"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "17:30",
+                "close": "20:15"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "reservable": true,
+          "delivery": false,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": false,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesBrunch": false,
+          "servesLunch": false,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeStreetParking": true,
+          "paidStreetParking": true
+        },
+        "editorialSummary": "This tiny Thai restaurant with a rustic vibe offers family-style dinners & daytime cooking classes.",
+        "retrievedAt": "2026-08-10T21:33:55.635Z"
+      },
+      "site": {
+        "menuUrl": "https://www.langbaanportland.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/langbaan-portland",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [
+          {
+            "quote": "Please let us know if you have allergies or food sensitivities.",
+            "sourceUrl": "https://www.langbaanportland.com/menu"
+          },
+          {
+            "quote": "It is very important that you inform us of any food allergies or dietary restrictions when making a reservation or when we reach out to confirm your reservation.",
+            "sourceUrl": "https://www.langbaanportland.com/faq"
+          },
+          {
+            "quote": "Due to the traditional Thai culinary emphasis on fresh seafood, vegetables, and regional ingredients, we cannot accommodate vegan or vegetarian requests, or those who cannot eat fish, coconut, capsaicin, or alliums.",
+            "sourceUrl": "https://www.langbaanportland.com/faq"
+          }
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.langbaanportland.com/",
+          "https://www.langbaanportland.com/menu",
+          "https://www.langbaanportland.com/reservations",
+          "https://www.langbaanportland.com/faq"
+        ],
+        "retrievedAt": "2026-08-10T21:33:55.635Z"
+      },
+      "summary": {
+        "text": "Langbaan is a Thai restaurant located in Northwest Portland, Oregon. It has a 4.6 rating from 466 reviews and a price band of $$$$. The restaurant serves dinner five days a week, offers reservations through OpenTable, and is wheelchair accessible.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform",
+          "dietaryQuotes"
+        ],
+        "generatedAt": "2026-08-10T21:34:07.259Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:33:55.635Z",
+        "completeness": 88
+      }
+    },
+    "kachka": {
+      "google": {
+        "placeId": "ChIJzf1bSKeglVQR65d0nk46moU",
+        "displayName": "Kachka",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "960 SE 11th Ave, Portland, OR 97214, USA",
+        "address": {
+          "streetNumber": "960",
+          "route": "Southeast 11th Avenue",
+          "neighborhood": "Southeast Portland",
+          "locality": "Portland",
+          "county": "Multnomah County",
+          "state": "Oregon",
+          "stateCode": "OR",
+          "postalCode": "97214",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 45.5157393,
+          "longitude": -122.65455679999998
+        },
+        "phone": "(503) 235-0059",
+        "phoneE164": "+15032350059",
+        "website": "http://kachkapdx.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=9627071262798157803&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.6,
+        "reviewCount": 2826,
+        "categories": [
+          "eastern_european_restaurant",
+          "russian_restaurant",
+          "restaurant"
+        ],
+        "primaryCategory": "Eastern European Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "14:00"
+              },
+              {
+                "open": "16:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "14:00"
+              },
+              {
+                "open": "16:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "14:00"
+              },
+              {
+                "open": "16:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "14:00"
+              },
+              {
+                "open": "16:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "14:00"
+              },
+              {
+                "open": "16:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "14:00"
+              },
+              {
+                "open": "16:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "14:00"
+              },
+              {
+                "open": "16:00",
+                "close": "22:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": false,
+          "reservable": true,
+          "takeout": true,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForGroups": true,
+          "goodForChildren": true,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": true,
+          "servesBrunch": true,
+          "servesLunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeParkingLot": true,
+          "paidParkingLot": true,
+          "freeStreetParking": true,
+          "paidStreetParking": true,
+          "freeGarageParking": true
+        },
+        "editorialSummary": "Lively spot for refined Russian fare & house-infused vodkas in kitschy surroundings",
+        "retrievedAt": "2026-08-10T21:34:07.260Z"
+      },
+      "site": {
+        "menuUrl": "https://www.koin.com/news/food/opentable-dubs-12-portland-area-restaurants-as-icons-based-on-accolades-reviews/",
+        "reservationUrl": "https://www.opentable.com/r/kachka-portland?avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&corrid=9835edd8-55a7-4b10-b09c-4bbe2118a8be&p=2&sd=2023-06-01T19%3A00%3A00",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "LARGE PARTIES, EVENTS, & CATERING",
+        "groupPolicyLanguage": [
+          {
+            "quote": "LARGE PARTIES, EVENTS, & CATERING",
+            "sourceUrl": "https://www.kachkapdx.com/contact-us"
+          }
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.kachkapdx.com/",
+          "https://www.kachkapdx.com/contact-us"
+        ],
+        "retrievedAt": "2026-08-10T21:34:07.260Z"
+      },
+      "summary": {
+        "text": "Kachka is an Eastern European restaurant located in Southeast Portland, Oregon. It is open seven days a week, offers reservations through OpenTable, and has a price band of $$. The restaurant has a rating of 4.6 based on 2826 reviews and is wheelchair accessible.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform",
+          "groupPolicyQuote"
+        ],
+        "generatedAt": "2026-08-10T21:34:12.604Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:34:07.260Z",
+        "completeness": 88
+      }
+    },
+    "kin": {
+      "google": {
+        "placeId": "ChIJ3wCQTeT4rlQRr7Nk9PWwtFs",
+        "displayName": "KIN",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "999 W Main St Ste P101, Boise, ID 83702, USA",
+        "address": {
+          "streetNumber": "999",
+          "route": "West Main Street",
+          "neighborhood": "Downtown",
+          "locality": "Boise",
+          "county": "Ada County",
+          "state": "Idaho",
+          "stateCode": "ID",
+          "postalCode": "83702",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 43.616377799999995,
+          "longitude": -116.205451
+        },
+        "phone": "(208) 342-0600",
+        "phoneE164": "+12083420600",
+        "website": "https://www.kinboise.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=6608101123673076655&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+        "priceBand": "$$$$",
+        "rating": 4.5,
+        "reviewCount": 196,
+        "categories": [
+          "restaurant"
+        ],
+        "primaryCategory": "Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": []
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": []
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": false,
+          "takeout": true,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": true,
+          "servesBrunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "paidParkingLot": true,
+          "paidStreetParking": true
+        },
+        "editorialSummary": "",
+        "retrievedAt": "2026-08-10T21:34:12.604Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/kin-reservations-boise?lang=en-US&ot_source=Restaurant%20website&restref=1065754",
+        "reservationPlatform": "OpenTable",
+        "dietaryLanguage": [
+          {
+            "quote": "Whether you are vegan, celiac, sober-curious or require other dietary accommodations, you will find that our team values your connection with the dining experience.",
+            "sourceUrl": "https://www.kinboise.com/prix-fixe-dining"
+          },
+          {
+            "quote": "For all of our seatings, dietary restrictions are accommodated with advance notice, but any substitutions may entail additional charges.",
+            "sourceUrl": "https://www.kinboise.com/prix-fixe-dining"
+          }
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Parties of six or more are subject to a 20% gratuity.",
+        "groupPolicyLanguage": [
+          {
+            "quote": "Parties of six or more are subject to a 20% gratuity.",
+            "sourceUrl": "https://www.kinboise.com/prix-fixe-dining"
+          },
+          {
+            "quote": "KIN is a 28 seat restaurant, due to this, we kindly ask that notice of cancellation or reduction in party size be received at least 60 hours prior for party sizes of 2, 84 hours prior for party sizes 3 & 4, and one week prior for parties of 5 or larger.",
+            "sourceUrl": "https://www.kinboise.com/prix-fixe-dining"
+          },
+          {
+            "quote": "Additionally, parties of 14 or higher and restaurant buyouts require a non-refundable $1000 deposit.",
+            "sourceUrl": "https://www.kinboise.com/prix-fixe-dining"
+          }
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          {
+            "quote": "Additionally, parties of 14 or higher and restaurant buyouts require a non-refundable $1000 deposit.",
+            "sourceUrl": "https://www.kinboise.com/prix-fixe-dining"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.kinboise.com/prix-fixe-dining"
+        ],
+        "retrievedAt": "2026-08-10T21:34:12.604Z"
+      },
+      "summary": {
+        "text": "KIN is a restaurant located in Downtown Boise, Idaho. It has a 4.5 rating from 196 reviews and a price band of $$$$. The restaurant offers outdoor seating, reservations via OpenTable, and accommodates dietary restrictions with advance notice.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform",
+          "groupPolicyQuote",
+          "dietaryQuotes"
+        ],
+        "generatedAt": "2026-08-10T21:34:17.134Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:34:12.604Z",
+        "completeness": 92
+      }
+    },
+    "ariana": {
+      "google": {
+        "placeId": "ChIJY1P1oIDIuFQRwfq1t1PohIk",
+        "displayName": "Ariana Restaurant",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "1304 NW Galveston Ave, Bend, OR 97703, USA",
+        "address": {
+          "streetNumber": "1304",
+          "route": "Northwest Galveston Avenue",
+          "neighborhood": "River West",
+          "locality": "Bend",
+          "county": "Deschutes County",
+          "state": "Oregon",
+          "stateCode": "OR",
+          "postalCode": "97703",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 44.056820599999995,
+          "longitude": -121.33034089999998
+        },
+        "phone": "(541) 330-5539",
+        "phoneE164": "+15413305539",
+        "website": "http://www.arianarestaurantbend.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=9909300526384020161&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+        "priceBand": "$$$$",
+        "rating": 4.8,
+        "reviewCount": 453,
+        "categories": [
+          "fine_dining_restaurant",
+          "bar",
+          "restaurant"
+        ],
+        "primaryCategory": "Fine Dining Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": []
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": []
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "22:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": false,
+          "takeout": true,
+          "dineIn": true,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesLunch": false,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeParkingLot": true,
+          "freeStreetParking": true
+        },
+        "editorialSummary": "Inventive New American cuisine & house cocktails are offered in a cozy Craftsman bungalow.",
+        "retrievedAt": "2026-08-10T21:34:17.135Z"
+      },
+      "site": null,
+      "summary": {
+        "text": "Ariana is a fine dining restaurant located in River West, Bend, Oregon. It offers a plant-forward, seasonal menu with a price band of $$$$ and has a 4.8 rating from 453 reviews. Amenities include outdoor seating, reservations, takeout, and a full bar, with wheelchair accessible parking, entrance, restroom, and seating.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount"
+        ],
+        "generatedAt": "2026-08-10T21:34:33.420Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:34:17.135Z",
+        "completeness": 79
+      }
+    },
+    "gander-and-ryegrass": {
+      "google": {
+        "placeId": "ChIJ1_yMIWAYnlQRjDMc_pRrjW0",
+        "displayName": "Gander and Ryegrass",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "404 W Main Ave, Spokane, WA 99201, USA",
+        "address": {
+          "streetNumber": "404",
+          "route": "West Main Avenue",
+          "neighborhood": "Downtown Spokane",
+          "locality": "Spokane",
+          "county": "Spokane County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "99201",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 47.659232599999996,
+          "longitude": -117.41864260000001
+        },
+        "phone": "(509) 315-4613",
+        "phoneE164": "+15093154613",
+        "website": "https://ganderandryegrass.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=7894084009512940428&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+        "priceBand": "$$$$",
+        "rating": 4.7,
+        "reviewCount": 402,
+        "categories": [
+          "fine_dining_restaurant",
+          "restaurant"
+        ],
+        "primaryCategory": "Fine Dining Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": true,
+          "takeout": true,
+          "dineIn": true,
+          "goodForGroups": true,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesBrunch": true,
+          "servesLunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "paidParkingLot": true,
+          "paidStreetParking": true
+        },
+        "editorialSummary": "Fashionable restaurant & bar offering creative dishes, cocktails & a tasting menu.",
+        "retrievedAt": "2026-08-10T21:34:37.068Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/gander-and-ryegrass-spokane/",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining at Gander and Ryegrass",
+        "groupPolicyLanguage": [
+          {
+            "quote": "Private Dining at Gander and Ryegrass",
+            "sourceUrl": "https://www.ganderandryegrass.com/events-1"
+          },
+          {
+            "quote": "With flexible private and semi-private dining options, we’re here to help you create a memorable event—rooted in the flavors of the Inland Northwest.",
+            "sourceUrl": "https://www.ganderandryegrass.com/events-1"
+          }
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.ganderandryegrass.com/",
+          "https://www.ganderandryegrass.com/events-1"
+        ],
+        "retrievedAt": "2026-08-10T21:34:37.068Z"
+      },
+      "summary": {
+        "text": "Gander and Ryegrass is a fine dining restaurant located in Downtown Spokane, Washington, with a 4.7 rating from 402 reviews. It offers contemporary American, Italian, and Pacific Northwest cuisine, with amenities including outdoor seating, delivery, takeout, and wheelchair accessibility. The restaurant is open seven days a week and reservations can be made via Tock.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform",
+          "groupPolicyQuote"
+        ],
+        "generatedAt": "2026-08-10T21:34:51.080Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:34:37.068Z",
+        "completeness": 88
+      }
+    },
+    "published-on-main": {
+      "google": null,
+      "site": null,
+      "summary": null,
+      "meta": {
+        "matchStatus": "unresolved",
+        "confidence": 0,
+        "lastEnrichedAt": "2026-08-10T21:34:51.081Z",
+        "note": "No Places result cleared the name and location thresholds.",
+        "completeness": 29
+      }
+    },
+    "wooden-city-tacoma": {
+      "google": {
+        "placeId": "ChIJ5YkliQhVkFQRwj4AtgUheqs",
+        "displayName": "Wooden City Tacoma",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "1102 Broadway Ste 102, Tacoma, WA 98402, USA",
+        "address": {
+          "streetNumber": "1102",
+          "route": "Broadway",
+          "neighborhood": "New Tacoma",
+          "locality": "Tacoma",
+          "county": "Pierce County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "98402",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 47.252907,
+          "longitude": -122.440412
+        },
+        "phone": "(253) 503-0762",
+        "phoneE164": "+12535030762",
+        "website": "http://woodencitytacoma.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=12356224836056399554&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.7,
+        "reviewCount": 1316,
+        "categories": [
+          "restaurant",
+          "american_restaurant",
+          "bar"
+        ],
+        "primaryCategory": "Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "23:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": false,
+          "reservable": true,
+          "delivery": false,
+          "takeout": true,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForGroups": true,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": true,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesBrunch": false,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeStreetParking": true,
+          "paidStreetParking": true
+        },
+        "editorialSummary": "Industrial-chic joint serving pizza, sandwiches & sharing plates, plus cocktails.",
+        "retrievedAt": "2026-08-10T21:34:51.733Z"
+      },
+      "site": {
+        "menuUrl": "https://www.woodencitytacoma.com/menus",
+        "reservationUrl": "https://resy.com/cities/tacoma-wa/venues/wooden-city-tacoma",
+        "reservationPlatform": "Resy",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.woodencitytacoma.com/",
+          "https://www.woodencitytacoma.com/menus"
+        ],
+        "retrievedAt": "2026-08-10T21:34:51.733Z"
+      },
+      "summary": {
+        "text": "Wooden City Tacoma is a restaurant located in New Tacoma, Washington, with a 4.7 rating from 1316 reviews. It offers Contemporary American, Seasonal / market, and Small plates cuisine, with a price band of $$. The establishment serves food seven days a week and provides amenities such as reservations via Resy, takeout, dine-in, and serves vegetarian food, beer, wine, and cocktails.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform"
+        ],
+        "generatedAt": "2026-08-10T21:35:00.424Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:34:51.733Z",
+        "completeness": 83
+      }
+    },
+    "cynara-restaurant-lounge": {
+      "google": {
+        "placeId": "ChIJ7ybtNZt1kVQRHNh-VfcbVkY",
+        "displayName": "Cynara Restaurant & Lounge",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "500 Columbia St NW, Olympia, WA 98501, USA",
+        "address": {
+          "streetNumber": "500",
+          "route": "Columbia Street Northwest",
+          "neighborhood": "Downtown",
+          "locality": "Olympia",
+          "county": "Thurston County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "98501",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 47.048674899999995,
+          "longitude": -122.90288399999999
+        },
+        "phone": "(360) 764-7326",
+        "phoneE164": "+13607647326",
+        "website": "http://cynaraolympia.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=5068269179757320220&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.4,
+        "reviewCount": 431,
+        "categories": [
+          "american_restaurant",
+          "lounge_bar",
+          "night_club",
+          "bar",
+          "restaurant"
+        ],
+        "primaryCategory": "American Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "10:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "11:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "10:00",
+                "close": "22:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": true,
+          "takeout": true,
+          "dineIn": true,
+          "curbsidePickup": true,
+          "goodForGroups": true,
+          "goodForChildren": true,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": true,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": false,
+          "servesBrunch": true,
+          "servesLunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeParkingLot": true,
+          "paidParkingLot": true,
+          "freeStreetParking": true,
+          "paidStreetParking": true
+        },
+        "editorialSummary": "Low-key space offering locally sourced, health conscious, handmade dishes, plus a take-out option.",
+        "retrievedAt": "2026-08-10T21:35:00.424Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/cynara-restaurant-lounge-500-columbia-st-nw",
+        "reservationPlatform": "Toast",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "We highly encourage reservations for parties up to 8, reservations are required for parties of 8 or more.",
+        "groupPolicyLanguage": [
+          {
+            "quote": "We highly encourage reservations for parties up to 8, reservations are required for parties of 8 or more.",
+            "sourceUrl": "https://cynaraolympia.com/"
+          }
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://cynaraolympia.com/"
+        ],
+        "retrievedAt": "2026-08-10T21:35:00.424Z"
+      },
+      "summary": {
+        "text": "Cynara Restaurant & Lounge is located in Downtown Olympia, Washington, and is primarily an American restaurant with a price band of $$. It has a rating of 4.4 based on 431 reviews and serves seven days a week. The restaurant offers amenities such as outdoor seating, delivery, takeout, and is wheelchair accessible.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform",
+          "groupPolicyQuote"
+        ],
+        "generatedAt": "2026-08-10T21:35:04.512Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:35:00.424Z",
+        "completeness": 88
+      }
+    },
+    "marche": {
+      "google": {
+        "placeId": "ChIJubhuZBEewVQRaoyl6nchG8I",
+        "displayName": "Marché",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "296 E 5th Ave, Eugene, OR 97401, USA",
+        "address": {
+          "streetNumber": "296",
+          "route": "East 5th Avenue",
+          "neighborhood": "Market District",
+          "locality": "Eugene",
+          "county": "Lane County",
+          "state": "Oregon",
+          "stateCode": "OR",
+          "postalCode": "97401",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 44.0538448,
+          "longitude": -123.0888378
+        },
+        "phone": "(541) 342-3612",
+        "phoneE164": "+15413423612",
+        "website": "https://marcherestaurant.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=13986809866650750058&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.3,
+        "reviewCount": 1065,
+        "categories": [
+          "french_restaurant",
+          "restaurant"
+        ],
+        "primaryCategory": "French Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "10:00",
+                "close": "21:30"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": [
+              {
+                "open": "12:00",
+                "close": "21:30"
+              }
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "12:00",
+                "close": "21:30"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "12:00",
+                "close": "21:30"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "12:00",
+                "close": "21:30"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "12:00",
+                "close": "23:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "10:00",
+                "close": "23:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": false,
+          "takeout": true,
+          "dineIn": true,
+          "curbsidePickup": true,
+          "goodForGroups": true,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": true,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": true,
+          "servesBrunch": true,
+          "servesLunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeParkingLot": true,
+          "freeStreetParking": true
+        },
+        "editorialSummary": "Polished bistro with French-inspired & Northwest farm-to-table eats, a wood-fired oven & a full bar.",
+        "retrievedAt": "2026-08-10T21:35:04.512Z"
+      },
+      "site": {
+        "menuUrl": "https://marcherestaurant.com//menus/",
+        "reservationUrl": "https://marcherestaurant.com//reservations/",
+        "reservationPlatform": "Direct",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "If you are interested in learning more about large parties and private dining click here.",
+        "groupPolicyLanguage": [
+          {
+            "quote": "If you are interested in learning more about large parties and private dining click here.",
+            "sourceUrl": "https://marcherestaurant.com//reservations/"
+          }
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://marcherestaurant.com/",
+          "https://marcherestaurant.com//reservations/",
+          "https://marcherestaurant.com//menus/",
+          "https://marcherestaurant.com//contact/"
+        ],
+        "retrievedAt": "2026-08-10T21:35:04.512Z"
+      },
+      "summary": {
+        "text": "Marché is a French restaurant located in the Market District of Eugene, Oregon, with a 4.3 rating from 1065 reviews. It offers breakfast/brunch, French, and seasonal/market cuisine, with amenities including outdoor seating, reservations, takeout, and options for groups and children. The restaurant is open seven days a week and provides wheelchair accessible parking, entrance, restroom, and seating.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform",
+          "groupPolicyQuote"
+        ],
+        "generatedAt": "2026-08-10T21:35:19.116Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:35:04.512Z",
+        "completeness": 88
+      }
+    },
+    "elements-restaurant": {
+      "google": {
+        "placeId": "ChIJv2T1PLGolVQRE-uPK3G6eZw",
+        "displayName": "Elements Restaurant",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "907 Main St, Vancouver, WA 98660, USA",
+        "address": {
+          "streetNumber": "907",
+          "route": "Main Street",
+          "neighborhood": "Esther Short",
+          "locality": "Vancouver",
+          "county": "Clark County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "98660",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 45.6282912,
+          "longitude": -122.6712893
+        },
+        "phone": "(360) 258-0989",
+        "phoneE164": "+13602580989",
+        "website": "http://elementsvancouver.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=11275248137323670291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+        "priceBand": "$$$",
+        "rating": 4.7,
+        "reviewCount": 863,
+        "categories": [
+          "american_restaurant",
+          "breakfast_restaurant",
+          "brunch_restaurant",
+          "steak_house",
+          "fine_dining_restaurant",
+          "seafood_restaurant",
+          "restaurant"
+        ],
+        "primaryCategory": "American Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "10:00",
+                "close": "14:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "10:00",
+                "close": "14:00"
+              },
+              {
+                "open": "17:00",
+                "close": "21:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": false,
+          "reservable": true,
+          "delivery": false,
+          "takeout": true,
+          "dineIn": true,
+          "curbsidePickup": true,
+          "goodForGroups": true,
+          "goodForChildren": true,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": true,
+          "servesBrunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeParkingLot": true,
+          "paidParkingLot": true,
+          "freeStreetParking": true,
+          "paidStreetParking": false
+        },
+        "editorialSummary": "Elevated American fare made with local ingredients & European techniques, served in a cheery space.",
+        "retrievedAt": "2026-08-10T21:35:19.116Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://elementsvancouver.com/"
+        ],
+        "retrievedAt": "2026-08-10T21:35:19.116Z"
+      },
+      "summary": {
+        "text": "Elements Restaurant is an American restaurant located in the Esther Short neighborhood of Vancouver, Washington. It offers breakfast/brunch, contemporary American, fine dining, and seasonal/market cuisine, with a price band of $$$. The restaurant has a rating of 4.7 based on 863 reviews and is open six days a week.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "neighborhood",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount"
+        ],
+        "generatedAt": "2026-08-10T21:35:23.574Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:35:19.116Z",
+        "completeness": 83
+      }
+    },
+    "roe": {
+      "google": {
+        "placeId": "ChIJp8pCnsCjhVQROk9NlM0mgrU",
+        "displayName": "Roe",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "207 Unity St #101, Bellingham, WA 98225, USA",
+        "address": {
+          "streetNumber": "207",
+          "route": "Unity Street",
+          "neighborhood": "",
+          "locality": "Bellingham",
+          "county": "Whatcom County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "98225",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 48.753205,
+          "longitude": -122.47688219999999
+        },
+        "phone": "(360) 303-0688",
+        "phoneE164": "+13603030688",
+        "website": "http://www.eatroe.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=13079058932235587386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.6,
+        "reviewCount": 211,
+        "categories": [
+          "restaurant"
+        ],
+        "primaryCategory": "Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": []
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "22:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "16:00",
+                "close": "22:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "reservable": true,
+          "delivery": false,
+          "takeout": false,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForChildren": true,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBreakfast": true,
+          "servesBrunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeParkingLot": false,
+          "paidParkingLot": false,
+          "freeStreetParking": true,
+          "paidStreetParking": true,
+          "valetParking": false,
+          "freeGarageParking": false,
+          "paidGarageParking": false
+        },
+        "editorialSummary": "",
+        "retrievedAt": "2026-08-10T21:35:23.576Z"
+      },
+      "site": null,
+      "summary": {
+        "text": "Roe is a restaurant in Bellingham, Washington, with a 4.6 rating from 211 reviews. It offers seasonal and market-focused cocktail/lounge options, serves breakfast and brunch, and is reservable. Amenities include wheelchair accessible features, good for children, and serves vegetarian food, beer, wine, and cocktails.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount"
+        ],
+        "generatedAt": "2026-08-10T21:35:39.722Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:35:23.576Z",
+        "completeness": 79
+      }
+    },
+    "part-parcel": {
+      "google": null,
+      "site": null,
+      "summary": null,
+      "meta": {
+        "matchStatus": "unresolved",
+        "confidence": 0,
+        "lastEnrichedAt": "2026-08-10T21:35:39.722Z",
+        "note": "No Places result cleared the name and location thresholds.",
+        "completeness": 29
+      }
+    },
+    "hama-hama-oyster-saloon": {
+      "google": null,
+      "site": null,
+      "summary": null,
+      "meta": {
+        "matchStatus": "unresolved",
+        "confidence": 0,
+        "lastEnrichedAt": "2026-08-10T21:35:40.220Z",
+        "note": "No Places result cleared the name and location thresholds.",
+        "completeness": 29
+      }
+    },
+    "saffron-mediterranean-kitchen": {
+      "google": {
+        "placeId": "ChIJV3QzsmRqolQRFpwK7Y3wHCw",
+        "displayName": "Saffron Mediterranean Kitchen",
+        "businessStatus": "OPERATIONAL",
+        "formattedAddress": "330 W Main St, Walla Walla, WA 99362, USA",
+        "address": {
+          "streetNumber": "330",
+          "route": "West Main Street",
+          "neighborhood": "",
+          "locality": "Walla Walla",
+          "county": "Walla Walla County",
+          "state": "Washington",
+          "stateCode": "WA",
+          "postalCode": "99362",
+          "country": "US"
+        },
+        "latLng": {
+          "latitude": 46.064903799999996,
+          "longitude": -118.3444691
+        },
+        "phone": "(509) 525-2112",
+        "phoneE164": "+15095252112",
+        "website": "http://www.saffronmediterraneankitchen.com/",
+        "googleMapsUri": "https://maps.google.com/?cid=3178679929374678038&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "priceLevel": "PRICE_LEVEL_MODERATE",
+        "priceBand": "$$",
+        "rating": 4.4,
+        "reviewCount": 737,
+        "categories": [
+          "mediterranean_restaurant",
+          "restaurant"
+        ],
+        "primaryCategory": "Mediterranean Restaurant",
+        "hours": [
+          {
+            "day": "Sunday",
+            "intervals": []
+          },
+          {
+            "day": "Monday",
+            "intervals": []
+          },
+          {
+            "day": "Tuesday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Wednesday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Thursday",
+            "intervals": [
+              {
+                "open": "16:30",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Friday",
+            "intervals": [
+              {
+                "open": "14:00",
+                "close": "21:00"
+              }
+            ]
+          },
+          {
+            "day": "Saturday",
+            "intervals": [
+              {
+                "open": "14:00",
+                "close": "21:00"
+              }
+            ]
+          }
+        ],
+        "amenities": {
+          "outdoorSeating": true,
+          "reservable": true,
+          "delivery": false,
+          "dineIn": true,
+          "curbsidePickup": false,
+          "goodForGroups": true,
+          "goodForChildren": false,
+          "liveMusic": false,
+          "restroom": true,
+          "menuForChildren": false,
+          "servesVegetarianFood": true,
+          "servesBeer": true,
+          "servesWine": true,
+          "servesCocktails": true,
+          "servesBrunch": false,
+          "servesLunch": true,
+          "servesDinner": true,
+          "servesDessert": true
+        },
+        "accessibility": {
+          "wheelchairAccessibleParking": true,
+          "wheelchairAccessibleEntrance": true,
+          "wheelchairAccessibleRestroom": true,
+          "wheelchairAccessibleSeating": true
+        },
+        "parking": {
+          "freeStreetParking": true,
+          "valetParking": false
+        },
+        "editorialSummary": "Romantic restaurant serving imaginative takes on Spanish & Italian tapas, pizza & pasta.",
+        "retrievedAt": "2026-08-10T21:35:40.850Z"
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/saffron",
+        "reservationPlatform": "Tock",
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.saffronmediterraneankitchen.com/"
+        ],
+        "retrievedAt": "2026-08-10T21:35:40.850Z"
+      },
+      "summary": {
+        "text": "Saffron Mediterranean Kitchen is a Mediterranean Restaurant located in Walla Walla, Washington. It offers Mediterranean, Italian, Seafood, Steak / grill, and Cocktail / lounge options, with a price band of $$. The restaurant has a rating of 4.4 based on 737 reviews and provides amenities such as outdoor seating, reservations, and serves lunch, beer, wine, and cocktails.",
+        "model": "google/gemini-2.5-flash",
+        "basedOnFields": [
+          "name",
+          "city",
+          "state",
+          "googleCategories",
+          "primaryCategory",
+          "recordedCuisine",
+          "priceBand",
+          "rating",
+          "reviewCount",
+          "amenities",
+          "accessibility",
+          "servesDaysCount",
+          "reservationPlatform"
+        ],
+        "generatedAt": "2026-08-10T21:35:52.338Z"
+      },
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": 1,
+        "nameScore": 1,
+        "lastEnrichedAt": "2026-08-10T21:35:40.850Z",
+        "completeness": 83
+      }
+    }
+  }
+}

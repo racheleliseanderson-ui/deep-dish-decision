@@ -123,7 +123,7 @@ export async function signIn(
   if (inLivePreview()) {
     if (!popup) throw new Error("Pop-up blocked — allow pop-ups for sign-in");
     const token = await waitForPopupToken(popup);
-    if (!token) throw new Error("Sign-in didn’t complete. Try again.");
+    if (!token) throw new Error("Sign-in was cancelled or failed");
     setBearerToken(token);
     // Refresh the client session store with the bearer attached (onRequest).
     // Avoid a full iframe reload when we're already on the destination — that
@@ -148,7 +148,7 @@ export async function signIn(
     callbackURL,
     errorCallbackURL,
   });
-  if (error) throw new Error(error.message ?? "Couldn’t complete sign-in. Try again.");
+  if (error) throw new Error(error.message ?? "Sign-in failed");
   if (data?.url) window.location.href = data.url;
 }
 
@@ -226,7 +226,7 @@ export async function signOut(redirectTo = "/"): Promise<void> {
     // failed response as a rejection for the sequence to act on.
     requestSignOut: async () => {
       const { error } = await authClient.signOut();
-      if (error) throw new Error(error.message ?? "Couldn’t complete sign-out. Try again.");
+      if (error) throw new Error(error.message ?? "Sign-out failed");
     },
     clearToken: () => setBearerToken(null),
     redirect: () => {

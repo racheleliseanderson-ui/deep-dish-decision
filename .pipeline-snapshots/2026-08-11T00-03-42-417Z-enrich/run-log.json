@@ -1,0 +1,1260 @@
+{
+  "runs": [
+    {
+      "kind": "discover",
+      "startedAt": "2026-08-11T00:03:41.686Z",
+      "finishedAt": "2026-08-11T00:03:42.338Z",
+      "batchSize": 5,
+      "cities": [
+        {
+          "city": "San Francisco, CA",
+          "found": 20,
+          "inserted": 5,
+          "duplicates": 2
+        }
+      ],
+      "inserted": 5,
+      "duplicatesSkipped": 2,
+      "apiCalls": {
+        "placesSearchText": 1
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-03-41-686Z-discover",
+      "insertedSlugs": [
+        "r-g-lounge",
+        "good-mong-kok-bakery",
+        "hong-kong-clay-pot-restaurant",
+        "hong-kong-lounge",
+        "palette-tea-house"
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-11T00:01:16.017Z",
+      "finishedAt": "2026-08-11T00:03:41.563Z",
+      "batchSize": 5,
+      "cities": [
+        "Chicago, Illinois"
+      ],
+      "resolved": 5,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 82,
+      "corpusEnriched": 86,
+      "apiCalls": {
+        "google": 5,
+        "firecrawl": 9
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-01-16-015Z-enrich",
+      "records": [
+        {
+          "slug": "portillo-s-barnelli-s-chicago",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "jim-s-original",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "billy-goat-tavern-the-original",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "demera-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "flo-santos",
+          "matchStatus": "resolved",
+          "completeness": 92,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "discover",
+      "startedAt": "2026-08-11T00:03:02.773Z",
+      "finishedAt": "2026-08-11T00:03:05.551Z",
+      "batchSize": 6,
+      "cities": [
+        {
+          "city": "New York, NY",
+          "found": 19,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Los Angeles, CA",
+          "found": 20,
+          "inserted": 6,
+          "duplicates": 1
+        },
+        {
+          "city": "Houston, TX",
+          "found": 20,
+          "inserted": 6,
+          "duplicates": 4
+        },
+        {
+          "city": "Chicago, IL",
+          "found": 19,
+          "inserted": 6,
+          "duplicates": 2
+        },
+        {
+          "city": "San Francisco, CA",
+          "found": 20,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 30,
+      "duplicatesSkipped": 7,
+      "apiCalls": {
+        "placesSearchText": 5
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-03-02-773Z-discover",
+      "insertedSlugs": [
+        "the-best-sichuan-39",
+        "the-best-sichuan",
+        "the-best-sichuan-21",
+        "chi-restaurant-bar",
+        "mountain-house-east-village",
+        "jiang-nan-nyc",
+        "sichuan-impression",
+        "chengdu-taste",
+        "sichuan-impression-los-angeles",
+        "delicious-chengdu",
+        "chong-qing-special-noodles",
+        "tai-er-sichuan-cuisine",
+        "spicy-girl",
+        "mala-sichuan-bistro",
+        "xiaolong-dumpling",
+        "szechuan-spice-restaurant",
+        "triple-pepper-river-oaks",
+        "cooking-girl",
+        "lao-sze-chuan-downtown",
+        "chengdu-impression-restaurant",
+        "chef-xiong-taste-of-szechuan",
+        "lao-sze-chuan",
+        "szechwan-north-authentic-sichuan-cuisine-glenview",
+        "chengdu-bistro-west-town",
+        "house-of-nanking",
+        "chong-qing-xiao-mian",
+        "spicy-king",
+        "house-of-xian-dumpling",
+        "mama-ji-s",
+        "mr-szechuan"
+      ]
+    },
+    {
+      "kind": "discover",
+      "startedAt": "2026-08-11T00:01:14.796Z",
+      "finishedAt": "2026-08-11T00:01:15.936Z",
+      "batchSize": 5,
+      "cities": [
+        {
+          "city": "Chicago, IL",
+          "found": 27,
+          "inserted": 5,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 5,
+      "duplicatesSkipped": 0,
+      "apiCalls": {
+        "placesSearchText": 2
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-01-14-796Z-discover",
+      "insertedSlugs": [
+        "portillo-s-barnelli-s-chicago",
+        "jim-s-original",
+        "billy-goat-tavern-the-original",
+        "demera-restaurant",
+        "flo-santos"
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-11T00:00:19.014Z",
+      "finishedAt": "2026-08-11T00:01:14.680Z",
+      "batchSize": 5,
+      "cities": [
+        "Houston, Texas"
+      ],
+      "resolved": 5,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 83,
+      "corpusEnriched": 81,
+      "apiCalls": {
+        "google": 5,
+        "firecrawl": 4
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-00-19-011Z-enrich",
+      "records": [
+        {
+          "slug": "huynh-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "di-an-pho",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": []
+        },
+        {
+          "slug": "pho-saigon",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "simply-pho",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "pho-binh-heights",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "discover",
+      "startedAt": "2026-08-11T00:00:18.242Z",
+      "finishedAt": "2026-08-11T00:00:18.936Z",
+      "batchSize": 5,
+      "cities": [
+        {
+          "city": "Houston, TX",
+          "found": 19,
+          "inserted": 5,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 5,
+      "duplicatesSkipped": 0,
+      "apiCalls": {
+        "placesSearchText": 1
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-00-18-242Z-discover",
+      "insertedSlugs": [
+        "huynh-restaurant",
+        "di-an-pho",
+        "pho-saigon",
+        "simply-pho",
+        "pho-binh-heights"
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T23:59:07.611Z",
+      "finishedAt": "2026-08-11T00:00:18.131Z",
+      "batchSize": 5,
+      "cities": [
+        "Los Angeles, California",
+        "Torrance, California",
+        "Lynwood, California"
+      ],
+      "resolved": 5,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 83,
+      "corpusEnriched": 76,
+      "apiCalls": {
+        "google": 5,
+        "firecrawl": 13
+      },
+      "retries": 4,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-59-07-609Z-enrich",
+      "records": [
+        {
+          "slug": "guelaguetza-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        },
+        {
+          "slug": "madre-oaxacan-restaurant-and-mezcaleria",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        },
+        {
+          "slug": "sabores-oaxaquen-os-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "expresion-oaxaquena-restaurante",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "real-de-oaxaca",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "discover",
+      "startedAt": "2026-08-10T23:59:06.586Z",
+      "finishedAt": "2026-08-10T23:59:07.533Z",
+      "batchSize": 5,
+      "cities": [
+        {
+          "city": "Los Angeles, CA",
+          "found": 19,
+          "inserted": 5,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 5,
+      "duplicatesSkipped": 0,
+      "apiCalls": {
+        "placesSearchText": 1
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-59-06-586Z-discover",
+      "insertedSlugs": [
+        "guelaguetza-restaurant",
+        "madre-oaxacan-restaurant-and-mezcaleria",
+        "sabores-oaxaquen-os-restaurant",
+        "expresion-oaxaquena-restaurante",
+        "real-de-oaxaca"
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T23:57:53.313Z",
+      "finishedAt": "2026-08-10T23:59:06.451Z",
+      "batchSize": 5,
+      "cities": [
+        "New York, New York"
+      ],
+      "resolved": 5,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 83,
+      "corpusEnriched": 71,
+      "apiCalls": {
+        "google": 5,
+        "firecrawl": 20
+      },
+      "retries": 6,
+      "failures": 1,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-57-53-311Z-enrich",
+      "records": [
+        {
+          "slug": "los-tacos-no-1",
+          "matchStatus": "resolved",
+          "completeness": 71,
+          "notes": []
+        },
+        {
+          "slug": "amor-loco",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "rosa-mexicano",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "vida-verde-tequila-bar",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        },
+        {
+          "slug": "tacombi",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "discover",
+      "startedAt": "2026-08-10T23:57:52.552Z",
+      "finishedAt": "2026-08-10T23:57:53.240Z",
+      "batchSize": 5,
+      "cities": [
+        {
+          "city": "New York, NY",
+          "found": 20,
+          "inserted": 5,
+          "duplicates": 2
+        }
+      ],
+      "inserted": 5,
+      "duplicatesSkipped": 2,
+      "apiCalls": {
+        "placesSearchText": 1
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-57-52-553Z-discover",
+      "insertedSlugs": [
+        "los-tacos-no-1",
+        "amor-loco",
+        "rosa-mexicano",
+        "vida-verde-tequila-bar",
+        "tacombi"
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T23:05:55.804Z",
+      "finishedAt": "2026-08-10T23:10:22.136Z",
+      "batchSize": 25,
+      "cities": [
+        "New York, New York",
+        "Los Angeles, California",
+        "Santa Monica, California",
+        "Chicago, Illinois"
+      ],
+      "resolved": 25,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 84,
+      "corpusEnriched": 66,
+      "apiCalls": {
+        "google": 25,
+        "firecrawl": 74
+      },
+      "retries": 28,
+      "failures": 4,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-05-55-802Z-enrich",
+      "records": [
+        {
+          "slug": "carmine-s-44th-street-nyc",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "pier-17",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": []
+        },
+        {
+          "slug": "balthazar",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "au-cheval",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "fraunces-tavern",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "the-smith",
+          "matchStatus": "resolved",
+          "completeness": 71,
+          "notes": [
+            "site 429"
+          ]
+        },
+        {
+          "slug": "buddakan",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        },
+        {
+          "slug": "boucherie-union-square",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        },
+        {
+          "slug": "gramercy-tavern",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "le-bernardin",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "philippe-the-original",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "bottega-louie",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        },
+        {
+          "slug": "perch",
+          "matchStatus": "resolved",
+          "completeness": 71,
+          "notes": [
+            "site 429"
+          ]
+        },
+        {
+          "slug": "re-publique",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        },
+        {
+          "slug": "joey-dtla",
+          "matchStatus": "resolved",
+          "completeness": 92,
+          "notes": []
+        },
+        {
+          "slug": "bestia",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "chubby-cattle-bbq-little-tokyo",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": []
+        },
+        {
+          "slug": "girl-the-goat-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "e-lephante",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "home-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "stk-steakhouse",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "aba",
+          "matchStatus": "resolved",
+          "completeness": 75,
+          "notes": []
+        },
+        {
+          "slug": "the-dearborn",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "summer-house-santa-monica",
+          "matchStatus": "resolved",
+          "completeness": 71,
+          "notes": [
+            "site 429"
+          ]
+        },
+        {
+          "slug": "the-purple-pig-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "discover",
+      "startedAt": "2026-08-10T22:54:30.345Z",
+      "finishedAt": "2026-08-10T22:54:35.187Z",
+      "batchSize": 10,
+      "cities": [
+        {
+          "city": "New York, NY",
+          "found": 37,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Los Angeles, CA",
+          "found": 31,
+          "inserted": 10,
+          "duplicates": 0
+        },
+        {
+          "city": "Chicago, IL",
+          "found": 32,
+          "inserted": 10,
+          "duplicates": 2
+        },
+        {
+          "city": "Dallas, TX",
+          "found": 30,
+          "inserted": 10,
+          "duplicates": 1
+        }
+      ],
+      "inserted": 40,
+      "duplicatesSkipped": 3,
+      "apiCalls": {
+        "placesSearchText": 8
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T22-54-30-346Z-discover",
+      "insertedSlugs": [
+        "carmine-s-44th-street-nyc",
+        "pier-17",
+        "balthazar",
+        "au-cheval",
+        "fraunces-tavern",
+        "the-smith",
+        "buddakan",
+        "boucherie-union-square",
+        "gramercy-tavern",
+        "le-bernardin",
+        "philippe-the-original",
+        "bottega-louie",
+        "perch",
+        "re-publique",
+        "joey-dtla",
+        "bestia",
+        "chubby-cattle-bbq-little-tokyo",
+        "girl-the-goat-los-angeles",
+        "e-lephante",
+        "home-restaurant",
+        "stk-steakhouse",
+        "aba",
+        "the-dearborn",
+        "summer-house-santa-monica",
+        "the-purple-pig-restaurant",
+        "river-roast",
+        "il-porcellino",
+        "alla-vita",
+        "siena-tavern",
+        "maple-ash",
+        "kitchen-kocktails",
+        "terry-black-s-barbecue",
+        "y-o-ranch-steakhouse",
+        "the-woolworth",
+        "3eleven-kitchen-and-cocktails",
+        "the-hampton-social-dallas",
+        "kenny-s-wood-fired-grill",
+        "perry-s-steakhouse-grille",
+        "the-henry",
+        "chet-s-dallas"
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:40:48.938Z",
+      "finishedAt": "2026-08-10T21:42:39.440Z",
+      "batchSize": 6,
+      "cities": [
+        "Helena, Montana",
+        "Billings, Montana",
+        "Missoula, Montana",
+        "Bozeman, Montana"
+      ],
+      "resolved": 6,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 86,
+      "corpusEnriched": 41,
+      "apiCalls": {
+        "google": 6,
+        "firecrawl": 15
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-40-48-936Z-enrich",
+      "records": [
+        {
+          "slug": "luccas",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "ten",
+          "matchStatus": "resolved",
+          "completeness": 92,
+          "notes": []
+        },
+        {
+          "slug": "the-keep-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "walkers-grill",
+          "matchStatus": "resolved",
+          "completeness": 92,
+          "notes": []
+        },
+        {
+          "slug": "bistro-enzo",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "blackbird-kitchen",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:39:12.848Z",
+      "finishedAt": "2026-08-10T21:39:36.090Z",
+      "batchSize": 9,
+      "cities": [
+        "Yakima, Washington",
+        "Richland, Washington",
+        "Boise, Idaho",
+        "Helena, Montana",
+        "Billings, Montana",
+        "Missoula, Montana",
+        "Bozeman, Montana"
+      ],
+      "resolved": 3,
+      "unresolved": 6,
+      "deferred": 0,
+      "avgCompleteness": 78,
+      "corpusEnriched": 41,
+      "apiCalls": {
+        "google": 9,
+        "firecrawl": 4
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-39-12-845Z-enrich",
+      "records": [
+        {
+          "slug": "crafted-yakima",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "anthonys-at-columbia-point",
+          "matchStatus": "resolved",
+          "completeness": 92,
+          "notes": []
+        },
+        {
+          "slug": "the-lively",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "luccas",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "ten",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "the-keep-restaurant",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "walkers-grill",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "bistro-enzo",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "blackbird-kitchen",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:37:04.913Z",
+      "finishedAt": "2026-08-10T21:39:09.105Z",
+      "batchSize": 10,
+      "cities": [
+        "Walla Walla, Washington",
+        "Victoria, British Columbia",
+        "Vancouver, British Columbia",
+        "Orcas Island, Washington",
+        "San Juan Island, Washington",
+        "Coeur d’Alene, Idaho",
+        "Whistler, British Columbia",
+        "Sooke, British Columbia",
+        "Ashland, Oregon"
+      ],
+      "resolved": 10,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 86,
+      "corpusEnriched": 32,
+      "apiCalls": {
+        "google": 10,
+        "firecrawl": 29
+      },
+      "retries": 7,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-37-04-911Z-enrich",
+      "records": [
+        {
+          "slug": "passatempo-taverna",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "wind-cries-mary",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "st-lawrence",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "the-courtney-room",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "matia-kitchen",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "duck-soup",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "beverlys",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "araxi-restaurant-oyster-bar",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "wild-mountain-food-drink",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "peerless-restaurant-bar",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:36:33.397Z",
+      "finishedAt": "2026-08-10T21:36:57.332Z",
+      "batchSize": 2,
+      "cities": [
+        "Vancouver, British Columbia",
+        "Victoria, British Columbia"
+      ],
+      "resolved": 2,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 86,
+      "corpusEnriched": 22,
+      "apiCalls": {
+        "google": 2,
+        "firecrawl": 5
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-36-33-396Z-enrich",
+      "records": [
+        {
+          "slug": "published-on-main",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "part-parcel",
+          "matchStatus": "resolved",
+          "completeness": 96,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:36:11.896Z",
+      "finishedAt": "2026-08-10T21:36:17.567Z",
+      "batchSize": 3,
+      "cities": [
+        "Vancouver, British Columbia",
+        "Victoria, British Columbia",
+        "Hood Canal, Washington"
+      ],
+      "resolved": 1,
+      "unresolved": 2,
+      "deferred": 0,
+      "avgCompleteness": 81,
+      "corpusEnriched": 22,
+      "apiCalls": {
+        "google": 3,
+        "firecrawl": 1
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-36-11-894Z-enrich",
+      "records": [
+        {
+          "slug": "published-on-main",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "part-parcel",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "hama-hama-oyster-saloon",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:34:37.068Z",
+      "finishedAt": "2026-08-10T21:35:52.340Z",
+      "batchSize": 10,
+      "cities": [
+        "Spokane, Washington",
+        "Vancouver, British Columbia",
+        "Tacoma, Washington",
+        "Olympia, Washington",
+        "Eugene, Oregon",
+        "Vancouver, Washington",
+        "Bellingham, Washington",
+        "Victoria, British Columbia",
+        "Hood Canal, Washington",
+        "Walla Walla, Washington"
+      ],
+      "resolved": 7,
+      "unresolved": 3,
+      "deferred": 0,
+      "avgCompleteness": 78,
+      "corpusEnriched": 22,
+      "apiCalls": {
+        "google": 10,
+        "firecrawl": 22
+      },
+      "retries": 10,
+      "failures": 1,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-34-37-066Z-enrich",
+      "records": [
+        {
+          "slug": "gander-and-ryegrass",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "published-on-main",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "wooden-city-tacoma",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "cynara-restaurant-lounge",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "marche",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "elements-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "roe",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": [
+            "site 429"
+          ]
+        },
+        {
+          "slug": "part-parcel",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "hama-hama-oyster-saloon",
+          "matchStatus": "unresolved",
+          "completeness": 29,
+          "notes": [
+            "unresolved"
+          ]
+        },
+        {
+          "slug": "saffron-mediterranean-kitchen",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:33:02.215Z",
+      "finishedAt": "2026-08-10T21:34:33.422Z",
+      "batchSize": 10,
+      "cities": [
+        "Seattle, Washington",
+        "Portland, Oregon",
+        "Boise, Idaho",
+        "Bend, Oregon"
+      ],
+      "resolved": 10,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 86,
+      "corpusEnriched": 12,
+      "apiCalls": {
+        "google": 10,
+        "firecrawl": 27
+      },
+      "retries": 8,
+      "failures": 1,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-33-02-213Z-enrich",
+      "records": [
+        {
+          "slug": "nue",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "the-pink-door",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "tusk",
+          "matchStatus": "resolved",
+          "completeness": 96,
+          "notes": []
+        },
+        {
+          "slug": "le-pigeon",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "revel",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "ox",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "langbaan",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "kachka",
+          "matchStatus": "resolved",
+          "completeness": 88,
+          "notes": []
+        },
+        {
+          "slug": "kin",
+          "matchStatus": "resolved",
+          "completeness": 92,
+          "notes": []
+        },
+        {
+          "slug": "ariana",
+          "matchStatus": "resolved",
+          "completeness": 79,
+          "notes": [
+            "site 429"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "enrich",
+      "startedAt": "2026-08-10T21:32:40.599Z",
+      "finishedAt": "2026-08-10T21:32:50.777Z",
+      "batchSize": 2,
+      "cities": [
+        "Seattle, Washington",
+        "Portland, Oregon"
+      ],
+      "resolved": 2,
+      "unresolved": 0,
+      "deferred": 0,
+      "avgCompleteness": 83,
+      "corpusEnriched": 2,
+      "apiCalls": {
+        "google": 2,
+        "firecrawl": 2
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-32-40-597Z-enrich",
+      "records": [
+        {
+          "slug": "canlis",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        },
+        {
+          "slug": "kann",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": []
+        }
+      ]
+    }
+  ]
+}

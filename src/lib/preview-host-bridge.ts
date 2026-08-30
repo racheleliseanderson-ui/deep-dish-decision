@@ -77,7 +77,7 @@ export function installPreviewHostBridge(
   );
   if (parentOrigin === null) return () => {};
 
-  const ROOT_STATE_KEY = "__appPreviewBridgeRoot";
+  const ROOT_STATE_KEY = "__grokPreviewBridgeRoot";
   const originalPushState = window.history.pushState.bind(window.history);
   const originalReplaceState = window.history.replaceState.bind(window.history);
 

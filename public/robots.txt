@@ -1,6 +1,14 @@
-User-agent: *
+User-agent: Googlebot
 Allow: /
 
-# Working pages (a confirmation pass, a saved confirmation) carry a person's own
-# reservation details and are marked noindex in the page itself.
-Sitemap: https://deepdish.saltnotes.blog/sitemap.xml
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /

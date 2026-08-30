@@ -1,4 +1,4 @@
-import { existsSync, readdirSync } from "node:fs";
+import { readdirSync } from "node:fs";
 import { join } from "node:path";
 import type { Plugin } from "vite";
 import { defineConfig } from "vite";
@@ -6,7 +6,6 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import viteReact from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { nitro } from "nitro/vite";
-import { VitePWA } from "vite-plugin-pwa";
 // @ts-expect-error JS plugin alongside the TS vite config
 import { grokPwaPlugin } from "./scripts/grok-pwa-plugin.mjs";
 // @ts-expect-error JS plugin alongside the TS vite config
@@ -143,128 +142,6 @@ function authPopupPlugin(): Plugin {
   };
 }
 
-const PWA_STATIC_DIR = ".vercel/output/static";
-
-function deepDishPwa() {
-  return VitePWA({
-    registerType: "prompt",
-    injectRegister: false,
-    filename: "sw.js",
-    manifestFilename: "manifest.webmanifest",
-    // Nitro's Vercel preset emits the browser bundle here.
-    outDir: PWA_STATIC_DIR,
-    includeAssets: ["favicon.svg", "og.jpg", "icon-192.png", "icon-512.png", "icon-maskable-512.png"],
-    pwaAssets: false,
-    manifest: {
-      id: "/",
-      name: "Deep Dish",
-      short_name: "Deep Dish",
-      description: "Confirm the night. Then book.",
-      start_url: "/",
-      scope: "/",
-      display: "standalone",
-      background_color: "#152038",
-      theme_color: "#152038",
-      lang: "en",
-      categories: ["food", "lifestyle"],
-      icons: [
-        { src: "/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
-        { src: "/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
-        {
-          src: "/icon-maskable-512.png",
-          sizes: "512x512",
-          type: "image/png",
-          purpose: "maskable",
-        },
-      ],
-    },
-    workbox: {
-      globPatterns: ["**/*.{js,css,svg,png,ico,webp,woff,woff2,webmanifest,jpg,jpeg}"],
-      cleanupOutdatedCaches: true,
-      // SSR app — never fall back to a missing SPA index.html.
-      navigateFallback: undefined,
-      runtimeCaching: [
-        {
-          urlPattern: ({ request }) => request.mode === "navigate",
-          handler: "NetworkFirst",
-          options: {
-            cacheName: "pages",
-            networkTimeoutSeconds: 3,
-            expiration: { maxEntries: 32, maxAgeSeconds: 60 * 60 * 24 },
-          },
-        },
-        {
-          urlPattern: ({ request }) => request.destination === "image",
-          handler: "CacheFirst",
-          options: {
-            cacheName: "images",
-            expiration: { maxEntries: 64, maxAgeSeconds: 60 * 60 * 24 * 30 },
-          },
-        },
-      ],
-    },
-    devOptions: {
-      enabled: false,
-    },
-  });
-}
-
-/**
- * After Nitro copies public files into `.vercel/output/static`, generate the
- * service worker there so the deployed app actually precaches the bundle.
- */
-function pwaServiceWorkerFallback(): Plugin {
-  return {
-    name: "deep-dish:pwa-sw-fallback",
-    apply: "build",
-    applyToEnvironment(environment) {
-      return environment.name === "ssr";
-    },
-    closeBundle: {
-      sequential: true,
-      order: "post",
-      async handler() {
-        const root = process.cwd();
-        const staticDir = join(root, PWA_STATIC_DIR);
-        const swDest = join(staticDir, "sw.js");
-        if (!existsSync(staticDir)) return;
-        const { generateSW } = await import("workbox-build");
-        const result = await generateSW({
-          globDirectory: staticDir,
-          globPatterns: ["**/*.{js,css,svg,png,ico,webp,woff,woff2,webmanifest,jpg,jpeg}"],
-          globIgnores: ["**/sw.js", "**/workbox-*.js"],
-          swDest,
-          cleanupOutdatedCaches: true,
-          skipWaiting: false,
-          clientsClaim: true,
-          runtimeCaching: [
-            {
-              urlPattern: ({ request }) => request.mode === "navigate",
-              handler: "NetworkFirst",
-              options: {
-                cacheName: "pages",
-                networkTimeoutSeconds: 3,
-                expiration: { maxEntries: 32, maxAgeSeconds: 60 * 60 * 24 },
-              },
-            },
-            {
-              urlPattern: ({ request }) => request.destination === "image",
-              handler: "CacheFirst",
-              options: {
-                cacheName: "images",
-                expiration: { maxEntries: 64, maxAgeSeconds: 60 * 60 * 24 * 30 },
-              },
-            },
-          ],
-        });
-        console.log(
-          `[pwa] generated sw.js (${result.count} precached, ${(result.size / 1024).toFixed(1)} KiB)`,
-        );
-      },
-    },
-  };
-}
-
 // `0.0.0.0:8080` is the live-preview contract — don't change host/port.
 // The dev server starts once `src/router.tsx` and `src/routes/` exist — see
 // AGENTS.md § "First scaffold".
@@ -298,23 +175,9 @@ export default defineConfig(({ command, isPreview }) => ({
             // manifest + head-tag middleware). Nitro v3 defaults serverDir to
             // false, so removing this silently unwires /?install=1 on deploys.
             serverDir: "./server",
-            routeRules: {
-              "/manifest.webmanifest": {
-                headers: {
-                  "content-type": "application/manifest+json; charset=utf-8",
-                },
-              },
-              "/sw.js": {
-                headers: {
-                  "cache-control": "public, max-age=0, must-revalidate",
-                },
-              },
-            },
           }),
         ]
       : []),
     viteReact(),
-    ...deepDishPwa(),
-    pwaServiceWorkerFallback(),
   ],
 }));

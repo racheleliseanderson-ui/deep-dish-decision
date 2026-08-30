@@ -1,4 +1,4 @@
-import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
+import { Chip, Eyebrow, Rule } from "@/components/rih/bits";
 import { CaseFile } from "@/components/rih/case-file";
 import { CompareDialog, CompareTray } from "@/components/rih/compare";
 import { DecisionBrief } from "@/components/rih/decision-brief";
@@ -7,7 +7,6 @@ import { ListingFace } from "@/components/rih/listing-face";
 import { RecordCard } from "@/components/rih/record-card";
 import { ScenarioPlaybooks } from "@/components/rih/scenario-playbooks";
 import { SituationConsole } from "@/components/rih/situation-console";
-import { SiteNav } from "@/components/rih/site-nav";
 import heroPass from "@/assets/hero-pass.jpg";
 import figGold from "@/assets/fig-gold.jpg";
 import { dataset, records } from "@/lib/dataset";
@@ -30,11 +29,11 @@ import { FadeKey, GrowBar, RankSlot, Reveal } from "@/components/rih/reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Restaurant Intelligence Hub — Situation-Aware Decision Instrument" },
+      { title: "Restaurant Intelligence — why eat here, then confirm it" },
       {
         name: "description",
         content:
-          "First-party restaurant evidence, ranked against your actual situation. No star ratings, unknowns stay visible, and a stated need the record cannot satisfy holds the booking.",
+          "Describe the night. See why a room is worth going to, what it costs, and what you still need to confirm — from first-party evidence, not star ratings.",
       },
       { property: "og:title", content: "Restaurant Intelligence Hub" },
       {
@@ -112,59 +111,67 @@ function Hub() {
 
   return (
     <main className="min-h-screen pb-32">
-      <header className="relative isolate overflow-hidden border-b border-border-strong">
+      <header className="relative isolate flex min-h-[70vh] items-end overflow-hidden border-b border-border-strong sm:min-h-[62vh]">
         <img
           src={heroPass}
-          alt="Industrial dining room under hanging lights — empty tables waiting for service"
-          width={1800}
-          height={1008}
-          className="absolute inset-0 -z-10 size-full object-cover object-center opacity-[0.48]"
+          alt="An industrial dining room at service, plates finishing under low hanging lamps"
+          width={1920}
+          height={1088}
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 -z-10 size-full object-cover object-[62%_center]"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background via-background/92 to-background/30" />
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-background to-transparent" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/70 to-ink/25" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/85 via-ink/35 to-transparent" />
 
-        <div className="mx-auto max-w-7xl px-4 pb-14 pt-10 sm:px-6 sm:pb-20 sm:pt-14">
-          <SiteNav />
-
-          <div className="mt-10 grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
-            <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">001</span>
-            <span className="text-eyebrow truncate">Salty & Clever · Restaurant Intelligence</span>
-          </div>
-          <GiltRule className="mt-3" />
-
-          <h1 className="display-statement mt-7 max-w-[19ch]">
-            A decision instrument,
-            <br />
-            <span className="text-gilt">not a ratings board.</span>
-          </h1>
-
-          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground sm:text-base">
-            Every line here is read from first-party sources — the restaurant&apos;s own site, menu,
-            reservation page, or a direct call. Nothing is scored on sentiment. Where the evidence
-            stops, the record says so and stays open. When a constraint you have stated cannot be
-            satisfied on the record, the booking is held rather than guessed.
+        <div className="mx-auto w-full max-w-7xl px-4 pb-14 pt-24 sm:px-6 sm:pb-20 sm:pt-28">
+          <p className="text-[11px] uppercase tracking-[0.18em] text-ink-foreground/65">
+            Salty & Clever · Restaurant Intelligence
           </p>
-
+          <h1 className="display-statement mt-4 max-w-[20ch] text-ink-foreground">
+            Why eat here —
+            <br />
+            <span className="text-primary">then confirm it.</span>
+          </h1>
+          <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-ink-foreground/80 sm:text-lg">
+            Start with the food, the room, and the night. We rank first-party evidence against
+            your situation and show what you still need to ask before you book.
+          </p>
+          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <a
+              href="#situation"
+              className="tap inline-flex min-h-11 items-center rounded-full bg-primary px-6 py-3 text-xs uppercase tracking-[0.16em] text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              Describe the night
+            </a>
+            <a
+              href="#ranked"
+              className="tap inline-flex min-h-11 items-center text-xs uppercase tracking-[0.16em] text-ink-foreground/75 underline decoration-1 underline-offset-8 transition-colors hover:text-ink-foreground"
+            >
+              See tonight's ranking
+            </a>
+          </div>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <Stat label="Records under review" value={dataset.count} note={`${dataset.regions} regions · same 12-field floor`} />
-            <Stat
-              label="Official conflicts open"
-              value={OPS.officialConflicts}
-              note="Preserved, never collapsed"
-              tone="critical"
-            />
-            <Stat
-              label="Average unknowns per record"
-              value={OPS.avgUnknowns}
-              note="Held visible"
-              tone="unknown"
-            />
-            <Stat
-              label="Review overdue"
-              value={OPS.overdue}
-              note={`${OPS.dueSoon} due soon · last pass ${OPS.lastReviewAt}`}
-              tone={OPS.overdue ? "watch" : "verified"}
-            />
+            <div className="min-w-0">
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Records under review</p>
+              <p className="text-num mt-1 text-2xl font-medium text-ink-foreground">{dataset.count}</p>
+              <p className="mt-1 text-xs text-ink-foreground/50">{dataset.regions} regions · same 12-field floor</p>
+            </div>
+            <div className="min-w-0">
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Official conflicts open</p>
+              <p className="text-num mt-1 text-2xl font-medium text-critical">{OPS.officialConflicts}</p>
+              <p className="mt-1 text-xs text-ink-foreground/50">Preserved, never collapsed</p>
+            </div>
+            <div className="min-w-0">
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Average unknowns</p>
+              <p className="text-num mt-1 text-2xl font-medium text-unknown">{OPS.avgUnknowns}</p>
+              <p className="mt-1 text-xs text-ink-foreground/50">Held visible</p>
+            </div>
+            <div className="min-w-0">
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Review overdue</p>
+              <p className="text-num mt-1 text-2xl font-medium text-watch">{OPS.overdue}</p>
+              <p className="mt-1 text-xs text-ink-foreground/50">{OPS.dueSoon} due soon</p>
+            </div>
           </div>
         </div>
       </header>
@@ -181,7 +188,7 @@ function Hub() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/20 to-transparent" />
         <figcaption className="absolute bottom-4 left-4 sm:left-6">
-          <span className="text-eyebrow text-gilt">The room · first-party evidence only</span>
+          <span className="text-eyebrow text-gilt">The room — start with why you would go</span>
         </figcaption>
       </figure>
 
@@ -288,14 +295,13 @@ function Hub() {
             <div className="min-w-0">
               <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
                 <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">003</span>
-                <span className="text-eyebrow truncate">Ranked against your situation</span>
+                <span className="text-eyebrow truncate">What works for tonight</span>
               </div>
               <GiltRule className="mt-3 max-w-xl" />
               <p className="mt-4 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
-                Order is a function of situation fit, confirm burden, first-party completeness and
-                time pressure. Records blocked on a stated constraint are demoted to the end rather
-                than removed, so you can see what was excluded and why. Refine the console above —
-                the list reorders live.
+                Ordered for this night — fit, what still needs a call, and how complete the file is.
+                Rooms that cannot meet a stated need drop to the bottom with the reason, instead of
+                vanishing. Change the filters above and the list reorders live.
               </p>
             </div>
             <button
@@ -309,7 +315,7 @@ function Hub() {
                   : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground")
               }
             >
-              {hideThin.enabled ? "Showing ready files (≥70%)" : "Hide files under 70%"}
+              {hideThin.enabled ? "Showing ready records" : "Hide thin records"}
             </button>
           </div>
 
@@ -317,10 +323,10 @@ function Hub() {
             <div className="mt-6 rounded-2xl border border-border bg-surface-sunken/55 px-4 py-4 sm:px-5">
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div className="min-w-0 max-w-xl">
-                  <Eyebrow>Provisional ordering</Eyebrow>
+                  <Eyebrow>Still a broad list</Eyebrow>
                   <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
-                    Situation depth {depth}/{SITUATION_SLOTS}. Add an occasion or guest constraint to
-                    reshape fit, findings, and holds until a stated need is confirmed.
+                    Add an occasion or a guest need to sharpen what works for tonight. Records that
+                    cannot meet a stated constraint stay visible at the bottom, with the reason.
                     {enrichment.enabled
                       ? " Listing signals from other sources are on (reading controls)."
                       : " First-party evidence only."}

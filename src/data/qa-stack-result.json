@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-08-20T11:41:43.927Z",
+  "branch": "data/hygiene-owned-match-status",
+  "sourceCommit": "ce8bbe350987355f654cd410070885387c19ac21",
+  "checks": {
+    "install": 0,
+    "tests": 0,
+    "typecheck": 2,
+    "validateSeed": 0,
+    "pipeline": 0
+  },
+  "passed": true,
+  "repositoryTypecheckPassed": false,
+  "typecheckGate": "advisory-baseline",
+  "corpus": {
+    "datasetRecords": 810,
+    "enrichmentRecords": 810,
+    "coverageTotals": {
+      "records": 810,
+      "enriched": 810,
+      "resolved": 787,
+      "unresolved": 0,
+      "statesCovered": 51,
+      "statesTotal": 51,
+      "avgCompleteness": 60,
+      "withRating": 111,
+      "withPrice": 108,
+      "hygiene": 698,
+      "neverEnriched": 0,
+      "thin": 687,
+      "siteFailures": 1,
+      "reviewDue": 11,
+      "staleA": 0,
+      "staleB": 0,
+      "staleC": 0
+    },
+    "refreshTotals": {
+      "records": 810,
+      "hygiene": 698,
+      "neverEnriched": 0,
+      "thin": 687,
+      "siteFailures": 1,
+      "reviewDue": 11,
+      "staleA": 0,
+      "staleB": 0,
+      "staleC": 0,
+      "dueNow": 698
+    },
+    "expansionPending": []
+  }
+}

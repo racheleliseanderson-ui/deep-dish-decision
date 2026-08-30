@@ -1,7 +1,7 @@
 import { Chip, Eyebrow, Meter } from "@/components/rih/bits";
 import { GrowBar } from "@/components/rih/reveal";
-import { isUnstated } from "@/lib/case-depth";
 import type { RestaurantRecord } from "@/lib/dataset";
+import { buildConsumerSnapshot } from "@/lib/consumer-snapshot";
 import { decisionBrief, type Scored, type Situation } from "@/lib/intelligence";
 import { cn } from "@/lib/utils";
 
@@ -60,7 +60,7 @@ export function DecisionBrief({
           <dd className="mt-1 text-[13px] leading-relaxed text-muted-foreground">{b.fitLine}</dd>
         </div>
         <div>
-          <dt className="text-eyebrow">Residual risk</dt>
+          <dt className="text-eyebrow">What you still need to ask</dt>
           <dd className="mt-1 text-[13px] leading-relaxed text-muted-foreground">{b.riskLine}</dd>
         </div>
         <div>
@@ -78,7 +78,7 @@ export function DecisionBrief({
 
       {b.confirmCalls.length ? (
         <div className="mt-4">
-          <Eyebrow>Confirmation pass — in order</Eyebrow>
+          <Eyebrow>What you still need to ask — in order</Eyebrow>
           <ol className="mt-2 space-y-1.5">
             {b.confirmCalls.map((c, i) => (
               <li key={i} className="flex gap-2.5 text-[13px] leading-relaxed text-muted-foreground">
@@ -103,16 +103,7 @@ export function DecisionBrief({
 }
 
 function ConsumerSnapshot({ record }: { record: RestaurantRecord }) {
-  const foodAndMenu = joinStated(record.cuisineContext, record.menuSummary);
-  const convenience = joinStated(record.reservationDetails, record.parkingTransit);
-  const items = [
-    { label: "Food & menu", value: foodAndMenu },
-    { label: "Spend / value evidence", value: stated(record.priceDetails) },
-    { label: "Experience", value: stated(record.atmosphereSummary) },
-    { label: "Best fit", value: stated(record.occasionFit) },
-    { label: "Convenience", value: convenience },
-    { label: "Dietary", value: stated(record.dietaryDetails) },
-  ];
+  const snap = buildConsumerSnapshot(record);
 
   return (
     <div className="mt-5 border-t border-border pt-4">
@@ -120,29 +111,27 @@ function ConsumerSnapshot({ record }: { record: RestaurantRecord }) {
         <div>
           <Eyebrow>Before you choose it</Eyebrow>
           <p className="mt-1 max-w-2xl text-[12px] leading-relaxed text-subtle">
-            A consumer-first read of evidence already on the case file. This describes what the restaurant
-            offers and what the night may require; it does not treat the restaurant's own claims as proof
-            that the food is good or that diners agree.
+            {snap.whyGo} This is a first-party read of what the restaurant offers — not proof the food
+            is good, and not a public-review consensus.
           </p>
         </div>
       </div>
       <dl className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((item) => (
+        {snap.items.map((item) => (
           <div key={item.label} className="rounded-lg border border-border bg-background/35 p-3">
             <dt className="text-eyebrow">{item.label}</dt>
-            <dd className="mt-1.5 text-[12px] leading-relaxed text-muted-foreground">{item.value}</dd>
+            <dd
+              className={
+                item.open
+                  ? "mt-1.5 text-[12px] leading-relaxed text-unknown"
+                  : "mt-1.5 text-[12px] leading-relaxed text-muted-foreground"
+              }
+            >
+              {item.value}
+            </dd>
           </div>
         ))}
       </dl>
     </div>
   );
-}
-
-function stated(value: string | null | undefined): string {
-  return isUnstated(value) ? "Not stated — held open." : String(value).trim();
-}
-
-function joinStated(...values: Array<string | null | undefined>): string {
-  const usable = values.filter((value) => !isUnstated(value)).map((value) => String(value).trim());
-  return usable.length ? usable.join(" ") : "Not stated — held open.";
 }

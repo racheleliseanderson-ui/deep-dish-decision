@@ -1,19 +1,30 @@
-# Deep Dish
+# Restaurant Intelligence Hub
 
-Salty & Clever restaurant confirmation instrument.
+Salty & Clever first-party restaurant decision instrument.
 
-Rank a room against a declared night, keep unknowns open, finish as a confirmation pass you can keep. Not a ratings board.
+This application is part of the Salty & Clever host-and-dine suite.
 
-Live working set in this tree: PWA, four-stop phone map, confirmation packets stored on-device.
+Live: [deepdish.saltnotes.blog](https://deepdish.saltnotes.blog)
+
+## Role
+
+Situation-aware restaurant decision surface. First-party evidence, explicit unknowns, no allergen guarantees.
+
+## Scripts
+
+```bash
+npm run dev
+npm run build
+npm run typecheck
+```
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
+git clone <this-repository-url>
+cd <repository-name>
 npm i
 npm run dev
 ```
-
-```sh
-npm run typecheck
-npm run build
-```
-
-Work stays on this device. Nothing is sent unless you print or copy it.

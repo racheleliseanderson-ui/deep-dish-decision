@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-08-20T20:00:00.000Z",
+  "note": "Second-pass recovery for the six leftover first-party failures after the 16-record recovery and 4-record source-repair batches. Host corrections are same-owner/same-domain only. TLS verification stays on. spicyking-sf.com is omitted: it currently serves a malware-style installer trap, not a restaurant site.",
+  "records": [
+    {
+      "slug": "locale-farm-to-table-eatery-bakersfield",
+      "website": "https://www.localefarmtotable.com/",
+      "correctedWebsite": "https://localefarmtotable.com/",
+      "failure": "ERR_TLS_CERT_ALTNAME_INVALID",
+      "strategy": "correct-host-then-browser"
+    },
+    {
+      "slug": "oak-park-des-moines",
+      "website": "https://www.oakparkdsm.com/",
+      "failure": "HTTP 403",
+      "strategy": "browser"
+    },
+    {
+      "slug": "jens-restaurant-anchorage",
+      "website": "https://jensrestaurant.com/",
+      "correctedWebsite": "https://www.jensrestaurant.com/",
+      "failure": "CERT_HAS_EXPIRED",
+      "strategy": "correct-host-then-browser"
+    },
+    {
+      "slug": "comp-re-lapin-new-orleans",
+      "website": "https://www.comperelapin.com/",
+      "correctedWebsite": "https://comperelapin.com/",
+      "failure": "DEPTH_ZERO_SELF_SIGNED_CERT",
+      "strategy": "correct-host-then-browser"
+    },
+    {
+      "slug": "mr-szechuan",
+      "website": "https://mrszechuan.shop/",
+      "failure": "UND_ERR_CONNECT_TIMEOUT",
+      "strategy": "browser"
+    }
+  ]
+}
