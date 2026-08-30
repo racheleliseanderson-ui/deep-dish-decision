@@ -18,7 +18,7 @@ const VisionSchema = z.object({
         "other",
       ]),
       label: z.string(),
-      attributes: z.record(z.union([z.string(), z.number(), z.boolean()])).optional(),
+      attributes: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional(),
       confidence: z.enum(["high", "moderate", "low"]),
       text: z.string().optional(),
     }),
@@ -53,16 +53,25 @@ export const analyzeRestaurantPhoto = createServerFn({ method: "POST" })
             {
               type: "image",
               image: data.imageBase64,
-              // @ts-expect-error mimeType is accepted by the provider
               mimeType: data.mimeType,
-            },
+            } as { type: "image"; image: string; mimeType: string },
           ],
         },
       ],
     });
 
+    const parsed = object as {
+      items: VisionResult["items"];
+      fullText: string;
+      summary: string;
+      unknowns: string[];
+    };
+
     return {
-      ...object,
+      items: parsed.items,
+      fullText: parsed.fullText,
+      summary: parsed.summary,
+      unknowns: parsed.unknowns,
       model: "gemini-2.0-flash",
       timestamp: new Date().toISOString(),
     };

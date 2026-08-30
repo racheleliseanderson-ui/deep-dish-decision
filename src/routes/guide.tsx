@@ -1,6 +1,5 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
-import { SiteNav } from "@/components/rih/site-nav";
 import { records } from "@/lib/dataset";
 import { OCCASIONS, occasionScore, type Occasion } from "@/lib/intelligence";
 import {
@@ -114,7 +113,6 @@ function Guide() {
     <main className="min-h-dvh pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-7xl px-4 pb-14 pt-8 sm:px-6 sm:pb-20">
-          <SiteNav />
           <p className="mt-10 text-eyebrow">The method</p>
           <h1 className="mt-4 max-w-4xl font-display text-[2.2rem] font-normal leading-[1.02] tracking-[-0.02em] sm:text-5xl lg:text-[4rem]">
             Five decisions settle a

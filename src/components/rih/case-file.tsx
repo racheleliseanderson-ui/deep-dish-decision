@@ -1,14 +1,16 @@
 import { Chip, Eyebrow } from "@/components/rih/bits";
 import { ListingFace } from "@/components/rih/listing-face";
 import { DecisionBrief } from "@/components/rih/decision-brief";
+import { DinerQuestions } from "@/components/rih/diner-questions";
 import { FindingsStack } from "@/components/rih/findings";
+import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { CASE_FIELDS, fieldDisplay, isUnstated } from "@/lib/case-depth";
 import { enrichmentAudit, ownedSiteEvidence } from "@/lib/enrichment";
 import type { Scored, Situation } from "@/lib/intelligence";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const TABS = ["Brief", "Findings", "Evidence", "Confirmation"] as const;
+const TABS = ["Tonight", "Brief", "Findings", "Evidence", "Confirmation"] as const;
 type Tab = (typeof TABS)[number];
 
 export function CaseFile({
@@ -22,7 +24,11 @@ export function CaseFile({
   onClose: () => void;
   packetHref: (slug: string) => string;
 }) {
-  const [tab, setTab] = useState<Tab>("Brief");
+  const [tab, setTab] = useState<Tab>("Tonight");
+  const slug = sc?.record.slug;
+  useEffect(() => {
+    setTab("Tonight");
+  }, [slug]);
   if (!sc) return null;
   const r = sc.record;
   const statedCount = CASE_FIELDS.filter((f) => !isUnstated(String(r[f.key] ?? ""))).length;
@@ -68,14 +74,14 @@ export function CaseFile({
               </div>
             </div>
           </div>
-          <nav className="mt-4 flex gap-1">
+          <nav className="mt-4 flex flex-wrap gap-1">
             {TABS.map((t) => (
               <button
                 key={t}
                 type="button"
                 onClick={() => setTab(t)}
                 className={
-                  "rounded-full px-3.5 py-1.5 text-xs transition-colors " +
+                  "min-h-11 rounded-full px-3.5 py-1.5 text-xs transition-colors sm:min-h-0 " +
                   (tab === t
                     ? "bg-primary/14 text-primary"
                     : "text-muted-foreground hover:text-foreground")
@@ -88,6 +94,12 @@ export function CaseFile({
         </div>
 
         <div className="max-h-[calc(92vh-180px)] overflow-y-auto px-6 py-5">
+          {tab === "Tonight" ? (
+            <div className="space-y-8">
+              <DinerQuestions record={r} />
+              <ReputationPanel slug={r.slug} />
+            </div>
+          ) : null}
           {tab === "Brief" ? (
             <DecisionBrief sc={sc} situation={situation} />
           ) : null}
@@ -212,7 +224,7 @@ export function CaseFile({
               <div className="flex flex-wrap gap-2 pt-2">
                 <a
                   href={packetHref(r.slug)}
-                  className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
+                  className="tap min-h-11 rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
                 >
                   Open decision packet
                 </a>
@@ -221,7 +233,7 @@ export function CaseFile({
                     href={r.reservationUrl || r.website}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-full border border-border px-4 py-2 text-xs"
+                    className="tap min-h-11 rounded-full border border-border px-4 py-2 text-xs"
                   >
                     Booking pathway
                   </a>

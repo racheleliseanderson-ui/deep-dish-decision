@@ -2,6 +2,7 @@ import { Chip } from "@/components/rih/bits";
 import { FindingRow } from "@/components/rih/findings";
 import { ListingFace } from "@/components/rih/listing-face";
 import { isUnstated } from "@/lib/case-depth";
+import { whyGoLine } from "@/lib/consumer-snapshot";
 import { enrichmentAudit, ownedSiteEvidence } from "@/lib/enrichment";
 import { conditionChips, scenarioChips } from "@/lib/scenario-chips";
 import type { Scored, Situation } from "@/lib/intelligence";
@@ -80,6 +81,9 @@ export function RecordCard({
               </h3>
               <p className="mt-1 text-[13px] text-muted-foreground">
                 {r.region} · {r.cuisineTags.slice(0, 3).join(" · ") || "style unstated"}
+              </p>
+              <p className="mt-1.5 max-w-xl text-[12px] leading-relaxed text-subtle">
+                {whyGoLine(r)}
               </p>
             </div>
             <div className="shrink-0 text-right">

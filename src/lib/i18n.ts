@@ -6,7 +6,7 @@
 
 const EN: Record<string, string> = {
   "nav.brand": "Salty & Clever",
-  "nav.instrument": "Instrument",
+  "nav.instrument": "Tonight",
   "nav.atlas": "Atlas",
   "nav.guide": "How to choose",
   "nav.console": "Coverage",

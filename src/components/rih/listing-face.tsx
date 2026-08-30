@@ -1,4 +1,5 @@
 import { PlateMarkSvg } from "@/lib/listing-visual";
+import { primaryVisual, provenanceLabel } from "@/lib/visual-program";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { cn } from "@/lib/utils";
 
@@ -52,8 +53,8 @@ export function FitBurden({
 }
 
 /**
- * Left-column face of a listing: deterministic plate mark + optional gauges.
- * Never uses photographs or stock imagery.
+ * Left-column face of a listing: proven photography when the slug matches,
+ * otherwise the deterministic plate mark. Cross-wired photos cannot render.
  */
 export function ListingFace({
   record,
@@ -72,11 +73,10 @@ export function ListingFace({
   showGauges?: boolean;
   className?: string;
 }) {
+  const visual = primaryVisual(record.slug);
   return (
     <div
       className={cn(
-        // Mobile: plate + gauges side-by-side to save vertical space.
-        // sm+: stacked left column as before.
         "flex shrink-0 flex-row items-center gap-4 sm:flex-col sm:items-center sm:gap-3",
         className,
       )}
@@ -87,9 +87,24 @@ export function ListingFace({
             {String(rank).padStart(2, "0")}
           </span>
         ) : null}
-        <div className="plate flex items-center justify-center p-2 text-muted-foreground">
-          <PlateMarkSvg r={record} size={size} />
-        </div>
+        {visual ? (
+          <figure>
+            <img
+              src={visual.src}
+              alt={visual.alt}
+              width={size}
+              height={size}
+              loading="lazy"
+              className="rounded-full object-cover"
+              style={{ width: size, height: size }}
+            />
+            <figcaption className="sr-only">{provenanceLabel(visual)}</figcaption>
+          </figure>
+        ) : (
+          <div className="plate flex items-center justify-center p-2 text-muted-foreground">
+            <PlateMarkSvg r={record} size={size} />
+          </div>
+        )}
       </div>
       {showGauges && fit != null && burden != null ? (
         <FitBurden fit={fit} burden={burden} className="w-[100px] sm:w-[88px]" />

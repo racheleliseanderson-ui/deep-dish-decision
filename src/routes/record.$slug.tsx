@@ -1,8 +1,9 @@
 import { Chip, Eyebrow, Rule } from "@/components/rih/bits";
 import { DecisionBrief } from "@/components/rih/decision-brief";
+import { DinerQuestions } from "@/components/rih/diner-questions";
 import { FindingsStack } from "@/components/rih/findings";
+import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Reveal } from "@/components/rih/reveal";
-import { SiteNav } from "@/components/rih/site-nav";
 import { fieldDisplay, isUnstated } from "@/lib/case-depth";
 import { bySlug, type RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
@@ -90,7 +91,6 @@ function Dossier() {
     <main className="min-h-screen pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-6xl px-4 pb-12 pt-8 sm:px-6">
-          <SiteNav />
           <p className="text-eyebrow mt-10">{record.region}</p>
           <h1 className="mt-3 max-w-4xl font-display text-[2.3rem] font-normal leading-[1.02] tracking-[-0.02em] sm:text-5xl">
             {record.title}
@@ -157,6 +157,14 @@ function Dossier() {
       </header>
 
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <Reveal as="section" className="mt-10">
+          <DinerQuestions record={record} />
+        </Reveal>
+
+        <Reveal as="section" className="mt-10">
+          <ReputationPanel slug={record.slug} />
+        </Reveal>
+
         <Reveal as="section" className="mt-10">
           <DecisionBrief sc={sc} situation={situation} />
         </Reveal>

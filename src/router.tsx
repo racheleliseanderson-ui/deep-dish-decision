@@ -1,8 +1,9 @@
 import { QueryClient } from "@tanstack/react-query";
 import { createRouter } from "@tanstack/react-router";
+import { AppErrorComponent } from "@/lib/error-component";
 import { routeTree } from "./routeTree.gen";
 
-export const getRouter = () => {
+export function getRouter() {
   const queryClient = new QueryClient();
 
   const router = createRouter({
@@ -10,7 +11,8 @@ export const getRouter = () => {
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
+    defaultErrorComponent: AppErrorComponent,
   });
 
   return router;
-};
+}
