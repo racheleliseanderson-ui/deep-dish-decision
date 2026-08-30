@@ -1,0 +1,17 @@
+name: corpus-invariants
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  invariants:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fail if the 836-record hub or Lovable production stack is replaced
+        run: node scripts/corpus-invariants.mjs

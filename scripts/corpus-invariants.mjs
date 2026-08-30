@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Fail closed if the 836-record hub is replaced by a confirmation-pass demo.
+ * Fail closed if the 836-record hub is replaced by a confirmation-pass demo,
+ * or if the Lovable Vercel production stack is swapped for an incompatible overlay.
  *
  * Override (deliberate migration only):
  *   ALLOW_CORPUS_MIGRATION=1 node scripts/corpus-invariants.mjs
@@ -24,14 +25,52 @@ const requiredFiles = [
   "src/routes/guide.tsx",
   "src/routes/shortlist.tsx",
   "src/lib/intelligence.ts",
+  "src/start.ts",
+  "src/server.ts",
+  "vite.config.ts",
   "scripts/pipeline/report.mjs",
   "scripts/pipeline/enrich.mjs",
+];
+
+const forbiddenFiles = [
+  "server/middleware/grok-pwa.ts",
+  "src/data/restaurants.ts",
 ];
 
 const errors = [];
 
 for (const rel of requiredFiles) {
   if (!existsSync(resolve(root, rel))) errors.push(`missing ${rel}`);
+}
+
+for (const rel of forbiddenFiles) {
+  if (existsSync(resolve(root, rel))) {
+    if (rel === "src/data/restaurants.ts") continue; // handled with floor below
+    errors.push(`${rel} must not ship on canonical main`);
+  }
+}
+
+const vitePath = resolve(root, "vite.config.ts");
+if (existsSync(vitePath)) {
+  const viteCfg = readFileSync(vitePath, "utf8");
+  if (!viteCfg.includes("@lovable.dev/vite-tanstack-config")) {
+    errors.push("vite.config.ts is not the Lovable production stack");
+  }
+  if (viteCfg.includes("grokPwaPlugin")) {
+    errors.push("vite.config.ts includes grokPwaPlugin — that overlay 500s on Vercel");
+  }
+}
+
+const pkgPath = resolve(root, "package.json");
+if (existsSync(pkgPath)) {
+  const pkg = JSON.parse(readFileSync(pkgPath, "utf8"));
+  const build = String(pkg.scripts?.build ?? "");
+  if (build !== "vite build") {
+    errors.push(`package.json build script must be "vite build" (got ${JSON.stringify(build)})`);
+  }
+  if (!pkg.devDependencies?.["@lovable.dev/vite-tanstack-config"]) {
+    errors.push("missing @lovable.dev/vite-tanstack-config — Vercel framework tanstack-start-lovable requires it");
+  }
 }
 
 const demoRestaurants = resolve(root, "src/data/restaurants.ts");
@@ -89,6 +128,7 @@ console.log(
       regions,
       slugs: slugs.length,
       floor: FLOOR,
+      stack: "lovable",
     },
     null,
     2,
