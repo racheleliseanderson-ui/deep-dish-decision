@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T12:54:29.809Z",
+  "generatedAt": "2026-08-31T13:13:46.701Z",
   "records": {
     "canlis": {
       "google": {
@@ -70321,6 +70321,1569 @@
         ],
         "retrievedAt": "2026-08-31T12:54:26.799Z",
         "playwrightPages": 0
+      }
+    },
+    "over-the-moon-cafe-tacoma": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:02:34.040Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://otmcafe.com/menu-4.html",
+        "reservationUrl": "https://www.opentable.com/over-the-moon-cafe",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Reservation Time-Stay: In order for us to accommodate other patrons, our table stay consists of 1:45 hours for parties of 2 guests and 2:00 hours for parties of 3-4 guests.",
+        "groupPolicyLanguage": [
+          "Reservation Time-Stay: In order for us to accommodate other patrons, our table stay consists of 1:45 hours for parties of 2 guests and 2:00 hours for parties of 3-4 guests.",
+          "Large Party Reservations: We are unable to accept parties larger than 4 people online."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Reservation Policies and \"No Show Fees\" To ensure a smooth experience for all our guests, we kindly request cancellations be made at least 1 hour before your reservation time to avoid a $50 per person no-show fee."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Over the Moon - Restaurant & Cafe",
+            "sourceUrl": "https://otmcafe.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://otmcafe.com/",
+          "https://otmcafe.com/menu-4.html",
+          "https://otmcafe.com/reservations-6.html"
+        ],
+        "retrievedAt": "2026-08-31T13:02:34.040Z",
+        "playwrightPages": 0
+      }
+    },
+    "katie-downs-waterfront-tavern-tacoma": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:02:35.645Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://katiedowns.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/katie-downs/v3/?mode=fulfillment",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo,Tu,We,Th,Fr,Sa,Su 11:00-9:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Choose a personal portobello cap for a Gluten Free alternative base."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "We accept reservations for parties of 8 or more, while smaller groups are welcomed on a first-come, first-served basis.",
+        "groupPolicyLanguage": [
+          "We accept reservations for parties of 8 or more, while smaller groups are welcomed on a first-come, first-served basis.",
+          "To reserve for a party of 8 or more, please call the restaurant directly."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo,Tu,We,Th,Fr,Sa,Su 11:00-9:00",
+            "sourceUrl": "https://katiedowns.com/"
+          },
+          {
+            "quote": "og:description: One of Ruston Way's first waterfront restaurants, Katie Downs has been owned and operated by the Hilger family for over forty years.",
+            "sourceUrl": "https://katiedowns.com/"
+          },
+          {
+            "quote": "title: Katie Downs Waterfront Tavern | Tacoma Washington",
+            "sourceUrl": "https://katiedowns.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://katiedowns.com/"
+          },
+          {
+            "quote": "og:description: Our menu includes our famous deep-dish pizza, classic sandwiches, seafood, and exceptional burgers! Enjoy on the Ruston Way waterfront in Tacoma or order to go!",
+            "sourceUrl": "https://katiedowns.com/menu/"
+          },
+          {
+            "quote": "title: Katie Downs Waterfront Tavern | Menu",
+            "sourceUrl": "https://katiedowns.com/menu/"
+          },
+          {
+            "quote": "og:description: A 21 and up establishment, Katie Downs has a lively tavern atmosphere fit for any season. Locally owned and operated in Tacoma, Wa for over 40 years.",
+            "sourceUrl": "https://katiedowns.com/about/"
+          },
+          {
+            "quote": "title: About Katie Downs Waterfront Tavern",
+            "sourceUrl": "https://katiedowns.com/about/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://katiedowns.com/",
+          "https://katiedowns.com/menu/",
+          "https://katiedowns.com/about/"
+        ],
+        "retrievedAt": "2026-08-31T13:02:35.645Z",
+        "playwrightPages": 0
+      }
+    },
+    "cooks-tavern-tacoma": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:02:40.003Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.cookstavern.com/menu",
+        "reservationUrl": "https://www.toasttab.com/cooks-tavern",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1 253 327 1777"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 08:00 21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "For dinner, we’ve got Billy Bob’s Charbroiled Pork Chop, King Salmon, and brief selection of vegetarian items."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1 253 327 1777",
+            "sourceUrl": "https://www.cookstavern.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 08:00 21:00",
+            "sourceUrl": "https://www.cookstavern.com/"
+          },
+          {
+            "quote": "og:description: Cooks Tavern: A vibrant Tacoma tavern offering $15 dinner specials and a welcoming atmosphere for great food and drinks.",
+            "sourceUrl": "https://www.cookstavern.com/"
+          },
+          {
+            "quote": "og:description: Experience creative comfort foods in Tacoma at Cooks Tavern, where global flavors meet local ingredients for an unforgettable dining adventure.",
+            "sourceUrl": "https://www.cookstavern.com/about"
+          },
+          {
+            "quote": "title: Cooks Tavern: Creative Comfort Foods in Tacoma",
+            "sourceUrl": "https://www.cookstavern.com/about"
+          },
+          {
+            "quote": "og:description: Explore Cooks Tavern menu for family-friendly dining with affordable cheap eats and delicious Summer Harvest options!",
+            "sourceUrl": "https://www.cookstavern.com/menu"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.cookstavern.com/",
+          "https://www.cookstavern.com/about",
+          "https://www.cookstavern.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T13:02:40.003Z",
+        "playwrightPages": 0
+      }
+    },
+    "asado-tacoma": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:02:41.812Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/asado-2810-6th-avenue",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 16:00-22:00, Tu 16:00-22:00, We 16:00-22:00, Th 16:00-22:00, Fr 16:00-22:00, Sa 16:00-22:00, Su 16:00-22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 16:00-22:00, Tu 16:00-22:00, We 16:00-22:00, Th 16:00-22:00, Fr 16:00-22:00, Sa 16:00-22:00, Su 16:00-22:00",
+            "sourceUrl": "https://asadotacoma.com/"
+          },
+          {
+            "quote": "og:description: Reservations may be made by clicking on the button below",
+            "sourceUrl": "https://asadotacoma.com/reservations"
+          },
+          {
+            "quote": "title: Reservations & Events &mdash; Asado",
+            "sourceUrl": "https://asadotacoma.com/reservations"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://asadotacoma.com/",
+          "https://asadotacoma.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T13:02:41.812Z",
+        "playwrightPages": 0
+      }
+    },
+    "bar-rosa-tacoma": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:02:43.290Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "https://barrosatacoma.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Please email us to inquire about private events.",
+        "groupPolicyLanguage": [
+          "Please email us to inquire about private events.",
+          "Parties of 6 or more subject to one check and an added 20% gratuity."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://barrosatacoma.com/",
+          "https://barrosatacoma.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T13:02:43.290Z",
+        "playwrightPages": 0
+      }
+    },
+    "frisko-freeze-tacoma": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:02:44.736Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/frisko-freeze-1201-division-ave",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://friskofreeze.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:02:44.736Z",
+        "playwrightPages": 0
+      }
+    },
+    "tinderbox-kitchen-flagstaff": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:02:45.671Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://tinderboxkitchen.com/menus/",
+        "reservationUrl": "https://www.toasttab.com/tinderbox-kitchen-flagstaff/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Main content starts here, tab to start navigating Private Dining Book an Event Tinderbox Kitchen is Flagstaff's crown jewel of modern American fine dining.",
+        "groupPolicyLanguage": [
+          "Main content starts here, tab to start navigating Private Dining Book an Event Tinderbox Kitchen is Flagstaff's crown jewel of modern American fine dining."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Tinderbox Kitchen is fine dining in Armani or jeans. With painstakingly honed entrees, over 100 wine options, and an expert staff to make sure you pair them right, Tinderbox is an experience you won",
+            "sourceUrl": "https://tinderboxkitchen.com/"
+          },
+          {
+            "quote": "title: Tinderbox Kitchen Fine Dining Flagstaff Arizona",
+            "sourceUrl": "https://tinderboxkitchen.com/"
+          },
+          {
+            "quote": "og:description: See the menus for Tinderbox Kitchen in Flagstaff, AZ. Featuring American comfort-food dishes with a twist, plus cocktails.",
+            "sourceUrl": "https://tinderboxkitchen.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Tinderbox Kitchen in Flagstaff, AZ",
+            "sourceUrl": "https://tinderboxkitchen.com/menus/"
+          },
+          {
+            "quote": "og:description: Contemporary locale serving a variety of American comfort-food dishes with a twist, plus cocktails.",
+            "sourceUrl": "https://tinderboxkitchen.com/private-events-and-catering/"
+          },
+          {
+            "quote": "title: Private Dining | Tinderbox Kitchen | American Restaurant in Flagstaff, AZ",
+            "sourceUrl": "https://tinderboxkitchen.com/private-events-and-catering/"
+          },
+          {
+            "quote": "title: Contact | Tinderbox Kitchen in Flagstaff, AZ",
+            "sourceUrl": "https://tinderboxkitchen.com/contact/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://tinderboxkitchen.com/",
+          "https://tinderboxkitchen.com/menus/",
+          "https://tinderboxkitchen.com/private-events-and-catering/",
+          "https://tinderboxkitchen.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T13:02:45.671Z",
+        "playwrightPages": 0
+      }
+    },
+    "martanne-s-flagstaff": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:02:49.116Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "We were just visiting flagstaff and had a vegan in our group.",
+          "We called ahead of time to see if they had vegan options, and sure enough they had several!"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Family-owned kitchen serving house-made Mexican breakfasts and signature chilaquiles with warm, friendly service.",
+            "sourceUrl": "https://www.martannes.com/"
+          },
+          {
+            "quote": "title: Must-Visit Mexican Restaurant in Flagstaff | MartAnne&apos;s",
+            "sourceUrl": "https://www.martannes.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.martannes.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:02:49.116Z",
+        "playwrightPages": 0
+      }
+    },
+    "brewer-s-alley-frederick": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:02:50.596Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://brewers-alley.com/menus/main-menu/",
+        "reservationUrl": "https://www.toasttab.com/brewers-alley-124-n-market-st/rewardsSignup",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "14.69 FRIED PICKLE CHIPS Cajun, Kölsch-battered kosher pickle slices with Sriracha ranch (GFM/V)..."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Main Menu - Brewers Alley",
+            "sourceUrl": "https://brewers-alley.com/menus/main-menu/"
+          },
+          {
+            "quote": "title: Events from August 31 – September 8 – Brewers Alley",
+            "sourceUrl": "https://brewers-alley.com/events/"
+          },
+          {
+            "quote": "title: Our Story - Brewers Alley",
+            "sourceUrl": "https://brewers-alley.com/about/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://brewers-alley.com/",
+          "https://brewers-alley.com/menus/main-menu/",
+          "https://brewers-alley.com/events/",
+          "https://brewers-alley.com/about/"
+        ],
+        "retrievedAt": "2026-08-31T13:02:50.596Z",
+        "playwrightPages": 0
+      }
+    },
+    "jojo-s-restaurant-tap-house-frederick": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:03:01.065Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://jojosrestauranttaphouse.com/menu.php",
+        "reservationUrl": "https://order.toasttab.com/online/jojosrestauranttaphouse",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "We have a semi-private dining room that will appeal to those wanting a nice, casual atmosphere without the noise and bustle of a bar right next to them.",
+        "groupPolicyLanguage": [
+          "We have a semi-private dining room that will appeal to those wanting a nice, casual atmosphere without the noise and bustle of a bar right next to them.",
+          "We have a semi-private dining room that will appeal to those that want a nice, casual atmosphere without the noise and bustle of a bar right next to them.",
+          "The restaurant features a casual dining room set off from the Tap House side, a Tap House with over 26 beers on tap and full bar and a private room perfect for hosting your special event.",
+          "Private Event Space Our semi-private dining room is the perfect space to host your next event."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: JoJos Restauranat and Tap House",
+            "sourceUrl": "https://jojosrestauranttaphouse.com/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://jojosrestauranttaphouse.com/",
+          "https://jojosrestauranttaphouse.com/menu.php",
+          "https://jojosrestauranttaphouse.com/events.php",
+          "https://jojosrestauranttaphouse.com/about.php"
+        ],
+        "retrievedAt": "2026-08-31T13:03:01.065Z",
+        "playwrightPages": 0
+      }
+    },
+    "white-and-wood-greensboro": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:12:50.206Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/white-and-wood-reservations-greensboro?restref=1088923&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "menu Groups and Parties We welcome every type of private event.",
+        "groupPolicyLanguage": [
+          "menu Groups and Parties We welcome every type of private event."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: White and Wood – Best American Restaurant in Greensboro",
+            "sourceUrl": "https://thewhiteandwood.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://thewhiteandwood.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:12:50.206Z",
+        "playwrightPages": 0
+      }
+    },
+    "pangaea-bistro-greensboro": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:12:50.853Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/pangaea-bistro-gso-320-s-elm-st-suite-a/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 3365799962"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Restaurant"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 3365799962",
+            "sourceUrl": "https://pangaeabistro.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Restaurant",
+            "sourceUrl": "https://pangaeabistro.com/"
+          },
+          {
+            "quote": "og:description: Welcome to Pangaea Bistro & Bar, where cultures collide and flavors unite in a symphony of culinary excellence. Immerse yourself in a captivating dining experience in Downtown Greensboro...",
+            "sourceUrl": "https://pangaeabistro.com/"
+          },
+          {
+            "quote": "meta description: Welcome to Pangaea Bistro & Bar, where cultures collide and flavors unite in a symphony of culinary excellence. Immerse yourself in a captivating dining experience in Downtown Greensboro.",
+            "sourceUrl": "https://pangaeabistro.com/"
+          },
+          {
+            "quote": "title: Pangaea Bistro – Must-Visit Restaurant in Greensboro, NC",
+            "sourceUrl": "https://pangaeabistro.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://pangaeabistro.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:12:50.853Z",
+        "playwrightPages": 0
+      }
+    },
+    "blue-denim-greensboro": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:12:51.816Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/blue-denim",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 336-676-5689"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 336-676-5689",
+            "sourceUrl": "https://www.bluedenimgso.com/"
+          },
+          {
+            "quote": "title: BLUE DENIM WEBSITE | mysite",
+            "sourceUrl": "https://www.bluedenimgso.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.bluedenimgso.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:12:51.816Z",
+        "playwrightPages": 0
+      }
+    },
+    "machete-greensboro": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:12:52.802Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://robbreport.com/food-drink/spirits/fat-washing-spirits-creative-cocktail-bars-1234890004/",
+        "reservationUrl": "https://www.exploretock.com/machetegso",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 17:00-22:00, Sa 17:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "I also appreciated the many vegetarian options."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "PRIVATE EVENT INQUIRY We are able to host private events for seated parties at MACHETE ranging from 8 to 80, or up to 120 for standing events.",
+        "groupPolicyLanguage": [
+          "PRIVATE EVENT INQUIRY We are able to host private events for seated parties at MACHETE ranging from 8 to 80, or up to 120 for standing events."
+        ],
+        "dressCode": "Come as you are, relax, and let us take care of the rest.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 17:00-22:00, Sa 17:00-22:00,",
+            "sourceUrl": "https://machetegso.com/"
+          },
+          {
+            "quote": "og:description: Wine Enthusiast Top 50 Wine Restaurant. James Beard nominated. Yelp Top 20 Restaurants in America. Named Best Restaurant, Best New Restaurant, Best Cocktail Menu, Best Wine List, Highest Rated Upscale Dining in Greensboro, NC. MACHETE focuses o",
+            "sourceUrl": "https://machetegso.com/"
+          },
+          {
+            "quote": "title: MACHETE - James Beard Nominated, Top 50 Wine Restaurant US",
+            "sourceUrl": "https://machetegso.com/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://machetegso.com/",
+          "https://machetegso.com/events"
+        ],
+        "retrievedAt": "2026-08-31T13:12:52.802Z",
+        "playwrightPages": 0
+      }
+    },
+    "scrambled-southern-diner-greensboro": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:12:54.311Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.scrambledgreensboro.com/menu",
+        "reservationUrl": "https://www.toasttab.com/scrambled-southern-diner-to-go",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 08:00-14:00, Tu 08:00-14:00, We 08:00-14:00, Th 08:00-14:00, Fr 08:00-14:00, Sa 08:00-15:00, Su 08:00-15:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 08:00-14:00, Tu 08:00-14:00, We 08:00-14:00, Th 08:00-14:00, Fr 08:00-14:00, Sa 08:00-15:00, Su 08:00-15:00",
+            "sourceUrl": "https://www.scrambledgreensboro.com/"
+          },
+          {
+            "quote": "title: Scrambled Southern Diner",
+            "sourceUrl": "https://www.scrambledgreensboro.com/"
+          },
+          {
+            "quote": "og:description: Address, Phone number, google maps",
+            "sourceUrl": "https://www.scrambledgreensboro.com/contact"
+          },
+          {
+            "quote": "title: Contact Us &mdash; Scrambled Southern Diner",
+            "sourceUrl": "https://www.scrambledgreensboro.com/contact"
+          },
+          {
+            "quote": "og:description: Breakfast served all day! Skillets and Omelets, Benedict, House Specialties, Platters, Pancakes, Waffles, French Toast, Gluten Free French Toast",
+            "sourceUrl": "https://www.scrambledgreensboro.com/menu"
+          },
+          {
+            "quote": "title: All Day Menu &mdash; Scrambled Southern Diner",
+            "sourceUrl": "https://www.scrambledgreensboro.com/menu"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.scrambledgreensboro.com/",
+          "https://www.scrambledgreensboro.com/contact",
+          "https://www.scrambledgreensboro.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T13:12:54.311Z",
+        "playwrightPages": 0
+      }
+    },
+    "undercurrent-greensboro": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:12:56.045Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.undercurrentrestaurant.com/menus",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 336-370-1266"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 10:30 13:30",
+          "JSON-LD openingHoursSpecification: Tuesday 11:30 14:00",
+          "JSON-LD openingHoursSpecification: Tuesday 17:00 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 11:30 14:00",
+          "JSON-LD openingHoursSpecification: Wednesday 17:00 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 11:30 14:00",
+          "JSON-LD openingHoursSpecification: Thursday 17:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 11:30 14:00",
+          "JSON-LD openingHoursSpecification: Friday 17:00 21:30",
+          "JSON-LD openingHoursSpecification: Saturday 17:00 21:30"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "​ If you have special dietary restrictions, please let us know as you make your reservation in addition to telling your serve.",
+          "🔹 Vegetarian options can be made available.",
+          "If you have special dietary restrictions, please let us know.",
+          "If you have special dietary restrictions, please let us know as you make your reservation in addition to telling your server."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "We add a service charge of 20% to parties of 5 or more.",
+        "groupPolicyLanguage": [
+          "We add a service charge of 20% to parties of 5 or more."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 336-370-1266",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 10:30 13:30",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:30 14:00",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 17:00 21:00",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:30 14:00",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 17:00 21:00",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:30 14:00",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 17:00 21:00",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:30 14:00",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 17:00 21:30",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 17:00 21:30",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "og:description: Undercurrent Greensboro offers fresh, seasonal cuisine in downtown Greensboro, NC. Visit us for an exceptional dining experience.",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "title: Undercurrent Greensboro | Farm-to-Table Restaurant in Greensboro, NC",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/"
+          },
+          {
+            "quote": "og:description: Our Greensboro, NC culinary team offers you the very best in fresh, locally sourced ingredients and our service team help us deliver quality farm to table service.",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/about"
+          },
+          {
+            "quote": "og:description: Tuesday through Thursday: 5:00 p.m. - 9:00 p.m. || Friday & Saturday: 5:00 p.m. - 9:30 p.m. 🔹 Vegetarian options can be made available. Please let our capable staff accommodate you. If you have special dietary restrictions, please let us know.",
+            "sourceUrl": "https://www.undercurrentrestaurant.com/menus"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.undercurrentrestaurant.com/",
+          "https://www.undercurrentrestaurant.com/about",
+          "https://www.undercurrentrestaurant.com/menus"
+        ],
+        "retrievedAt": "2026-08-31T13:12:56.045Z",
+        "playwrightPages": 0
+      }
+    },
+    "hannon-s-block-toledo": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:00.612Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.hannonsblockrestaurant.com/menus/",
+        "reservationUrl": "https://www.toasttab.com/hannons-block-619-monroe-st",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Hannon's Block | American Food in Toledo, OH",
+            "sourceUrl": "https://www.hannonsblockrestaurant.com/"
+          },
+          {
+            "quote": "title: Menus | Hannon's Block in Toledo, OH",
+            "sourceUrl": "https://www.hannonsblockrestaurant.com/menus/"
+          },
+          {
+            "quote": "title: About | Hannon's Block in Toledo, OH",
+            "sourceUrl": "https://www.hannonsblockrestaurant.com/about/"
+          },
+          {
+            "quote": "title: Reservations | Hannon's Block | American Food in Toledo, OH",
+            "sourceUrl": "https://www.hannonsblockrestaurant.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.hannonsblockrestaurant.com/",
+          "https://www.hannonsblockrestaurant.com/menus/",
+          "https://www.hannonsblockrestaurant.com/about/",
+          "https://www.hannonsblockrestaurant.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T13:13:00.612Z",
+        "playwrightPages": 0
+      }
+    },
+    "georgio-s-cafe-international-toledo": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:02.972Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.georgiostoledo.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-20:00, Tu 11:00-20:00, We 11:00-20:00, Th 11:00-20:00, Fr 11:00-21:00, Sa 17:00-22:30,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Georgio’s has elegant private rooms available for your special event and will work with you to make it memorable beyond words.",
+        "groupPolicyLanguage": [
+          "Georgio’s has elegant private rooms available for your special event and will work with you to make it memorable beyond words.",
+          "Banquet Menus We are experienced and very pleased to help you plan for your private event, whether for business, family or friends."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-20:00, Tu 11:00-20:00, We 11:00-20:00, Th 11:00-20:00, Fr 11:00-21:00, Sa 17:00-22:30,",
+            "sourceUrl": "https://www.georgiostoledo.com/"
+          },
+          {
+            "quote": "og:description: Georgios cafe international. Fine dining restaurant in Toledo, Ohio. Best seafood and steaks.",
+            "sourceUrl": "https://www.georgiostoledo.com/"
+          },
+          {
+            "quote": "title: Georgio’s Café International",
+            "sourceUrl": "https://www.georgiostoledo.com/"
+          },
+          {
+            "quote": "title: Georgio’s Café International &mdash; Menu",
+            "sourceUrl": "https://www.georgiostoledo.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.georgiostoledo.com/",
+          "https://www.georgiostoledo.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T13:13:02.972Z",
+        "playwrightPages": 0
+      }
+    },
+    "registry-bistro-toledo": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:04.293Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.registrybistro.com/menu",
+        "reservationUrl": "https://tables.toasttab.com/restaurants/463b6cb2-d22f-4e56-bd73-b4620344fd0e/reserve",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Beyond the dining room, weddings, rehearsal dinners, and corporate events unfold in the elegant Secor Ballroom, River House Gallery, and intimate private dining room — each space offering its own distinctive character.",
+        "groupPolicyLanguage": [
+          "Beyond the dining room, weddings, rehearsal dinners, and corporate events unfold in the elegant Secor Ballroom, River House Gallery, and intimate private dining room — each space offering its own distinctive character."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.registrybistro.com/"
+          },
+          {
+            "quote": "og:description: Downtown Toledo Elegant Restaurant Drinks Food Fine Dining",
+            "sourceUrl": "https://www.registrybistro.com/"
+          },
+          {
+            "quote": "title: Menu &mdash; Registry Bistro",
+            "sourceUrl": "https://www.registrybistro.com/menu"
+          },
+          {
+            "quote": "title: Cocktail Workshop & Events &mdash; Registry Bistro",
+            "sourceUrl": "https://www.registrybistro.com/events"
+          },
+          {
+            "quote": "title: About &mdash; Registry Bistro",
+            "sourceUrl": "https://www.registrybistro.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.registrybistro.com/",
+          "https://www.registrybistro.com/menu",
+          "https://www.registrybistro.com/events",
+          "https://www.registrybistro.com/about"
+        ],
+        "retrievedAt": "2026-08-31T13:13:04.293Z",
+        "playwrightPages": 0
+      }
+    },
+    "mancy-s-steakhouse-toledo": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:06.692Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Mancy&apos;s Steakhouse - Toledo , OH",
+            "sourceUrl": "https://mancyssteakhouse.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://mancyssteakhouse.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:13:06.692Z",
+        "playwrightPages": 0
+      }
+    },
+    "whiskey-the-wolf-toledo": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:07.613Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.whiskeyandthewolf.com/food",
+        "reservationUrl": "http://toasttab.com/whiskey-the-wolf",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 15:00-22:00, Tu 11:00-22:00, We 11:00-22:00, Th 11:00-22:00, Fr 11:00-00:00, Sa 11:00-00:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "$ 17 Impossible Burger vegan patty so good it's impossible!"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 15:00-22:00, Tu 11:00-22:00, We 11:00-22:00, Th 11:00-22:00, Fr 11:00-00:00, Sa 11:00-00:00,",
+            "sourceUrl": "https://www.whiskeyandthewolf.com/"
+          },
+          {
+            "quote": "og:description: Classic cocktail bar & restaurant located in Toledo, OH. Whiskey, Wine, Beer & Liquor. The Best Roast Beef Sandwiches in Toledo! Open for Lunch, Happy Hour & Dinner.",
+            "sourceUrl": "https://www.whiskeyandthewolf.com/"
+          },
+          {
+            "quote": "title: Whiskey & The Wolf - Menu &mdash; Whiskey & The Wolf",
+            "sourceUrl": "https://www.whiskeyandthewolf.com/food"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.whiskeyandthewolf.com/",
+          "https://www.whiskeyandthewolf.com/food"
+        ],
+        "retrievedAt": "2026-08-31T13:13:07.613Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-adams-street-cafe-toledo": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:09.125Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.theadamsstcafe.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [
+          "608 ADAMS STREET TOLEDO, OHIO 43604 419-214-1819 GO TO TOP CONTACT"
+        ],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: The Adams Street Cafe specializes in unique takes on American classics conveniently located in downtown Toledo, Ohio",
+            "sourceUrl": "https://www.theadamsstcafe.com/"
+          },
+          {
+            "quote": "title: Downtown Toledo restaurant | The Adams Street Cafe | United States",
+            "sourceUrl": "https://www.theadamsstcafe.com/"
+          },
+          {
+            "quote": "og:description: Fresh, unique takes on American lunch classics",
+            "sourceUrl": "https://www.theadamsstcafe.com/menu"
+          },
+          {
+            "quote": "title: MENU | The Adams St Cafe",
+            "sourceUrl": "https://www.theadamsstcafe.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.theadamsstcafe.com/",
+          "https://www.theadamsstcafe.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T13:13:09.125Z",
+        "playwrightPages": 0
+      }
+    },
+    "doc-s-seafood-steaks-corpus-christi": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:10.616Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://docsseafoodandsteaks.com/menu/",
+        "reservationUrl": "https://order.toasttab.com/online/docs-seafood-steaks-13309-s-padre-island-dr",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-361-949-6744"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Tuesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Saturday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Sunday 11:00 21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Seafood, American, Steak House, Gulf Coast Cuisine"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-361-949-6744",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Seafood, American, Steak House, Gulf Coast Cuisine",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday 11:00 21:00",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:00 21:00",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 22:00",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 11:00 22:00",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 21:00",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "title: Doc's Seafood & Steaks | Waterfront Dining in Corpus Christi, TX",
+            "sourceUrl": "https://docsseafoodandsteaks.com/"
+          },
+          {
+            "quote": "og:description: Check out our menu and what delicious dishes we offer at Doc",
+            "sourceUrl": "https://docsseafoodandsteaks.com/menu/"
+          },
+          {
+            "quote": "title: Menu | Doc's Seafood & Steaks | Corpus Christi, TX",
+            "sourceUrl": "https://docsseafoodandsteaks.com/menu/"
+          },
+          {
+            "quote": "title: About | Doc's Seafood & Steaks | Corpus Christi, TX",
+            "sourceUrl": "https://docsseafoodandsteaks.com/about/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://docsseafoodandsteaks.com/",
+          "https://docsseafoodandsteaks.com/menu/",
+          "https://docsseafoodandsteaks.com/about/"
+        ],
+        "retrievedAt": "2026-08-31T13:13:10.616Z",
+        "playwrightPages": 0
+      }
+    },
+    "katz-21-corpus-christi": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:12.498Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://katz21.com/menu/",
+        "reservationUrl": "https://katz21.com/reserve-a-table/",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Specializing in dry-aged prime beef and fresh Gulf Coast Seafood, Katz 21 also offers an award-winning wine list that is sure to please every palate with three elegant private dining rooms, perfect for all occasions for up to 150 guests.",
+        "groupPolicyLanguage": [
+          "Specializing in dry-aged prime beef and fresh Gulf Coast Seafood, Katz 21 also offers an award-winning wine list that is sure to please every palate with three elegant private dining rooms, perfect for all occasions for up to 150 guests.",
+          "For parties of 7 or more, please call (361) 884-1221 to make your reservation.",
+          "KATZ21 STEAK & SPIRIT HOURS: Sun - Mon Closed ( Available for Private Events) Tues -Thurs 5:00pm - 10:00pm Fri & Sat 5:00pm - 11:00pm CLUB 21 HOURS: Tues -Thurs 4:00pm-12:00am Fri & Sat 4:00pm-2:00am \"You Are Worth It!\" Call Us: (361) 884 - 1221 5702 Spohn Dr."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Katz 21: Corpus Christi’s Premier Destination for Fine Dining and Unforgettable Experiences.",
+            "sourceUrl": "https://katz21.com/"
+          },
+          {
+            "quote": "meta description: KATZ 21 STEAK & SPIRITS View Menu Host an Event PLACE YOUR RESERVATION 21 Rollz Sushi Co. Now open Tuesday - Saturday Reserve a table today and treat yourself to our delicious new sushi rolls. CLICK HERE TO VIEW MENU Upcoming Events https://y",
+            "sourceUrl": "https://katz21.com/"
+          },
+          {
+            "quote": "title: Katz 21 – Katz 21: Corpus Christi’s Premier Destination for Fine Dining and Unforgettable Experiences.",
+            "sourceUrl": "https://katz21.com/"
+          },
+          {
+            "quote": "og:description: Dinner Menu Wine Menu Bar, Cigar, Cocktail menu Spirits and beer list Dessert Menu Sushi Menu Family Meals Menu (takeout only)",
+            "sourceUrl": "https://katz21.com/menu/"
+          },
+          {
+            "quote": "og:description: Voted best places to eat and best prime steakhouse in Corpus Christi TX, Katz 21 is ready to please every palate! For parties of 7 or more, please call (361) 884-1221 to make your reservation.Fine …",
+            "sourceUrl": "https://katz21.com/reserve-a-table/"
+          },
+          {
+            "quote": "meta description: Voted best places to eat and best prime steakhouse in Corpus Christi TX, Katz 21 is ready to please every palate! For parties of 7 or more, please call (361) 884-1221 to make your reservation.Fine dining done right, because you are worth it.",
+            "sourceUrl": "https://katz21.com/reserve-a-table/"
+          },
+          {
+            "quote": "title: Reserve a table – Katz 21",
+            "sourceUrl": "https://katz21.com/reserve-a-table/"
+          },
+          {
+            "quote": "og:description: We’d love to hear from you Contact Us If you need to reach out to us for any reason other than event booking please do so here! We’ll reach back out to you as soon as possible! Reach us…",
+            "sourceUrl": "https://katz21.com/hours-contact-us/"
+          },
+          {
+            "quote": "meta description: We'd love to hear from you Contact Us If you need to reach out to us for any reason other than event booking please do so here! We'll reach back out to you as soon as possible! Reach us through 5702 Spohn Dr. | Corpus Christi, TX, 78414 361 8",
+            "sourceUrl": "https://katz21.com/hours-contact-us/"
+          },
+          {
+            "quote": "title: About Us / Contact Us – Katz 21",
+            "sourceUrl": "https://katz21.com/hours-contact-us/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://katz21.com/",
+          "https://katz21.com/menu/",
+          "https://katz21.com/reserve-a-table/",
+          "https://katz21.com/hours-contact-us/"
+        ],
+        "retrievedAt": "2026-08-31T13:13:12.498Z",
+        "playwrightPages": 0
+      }
+    },
+    "executive-surf-club-corpus-christi": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:14.605Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/executive-surf-club",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Located on Chaparral Street in Corpus Christi Texas the Executive Surf Club is the perfect spot to grab a casual meal, listen to the best in live local music, or simply enjoy the Coast!",
+            "sourceUrl": "https://executivesurfclub.com/"
+          },
+          {
+            "quote": "title: Executive Surf Club | Corpus Christi | Since 1990",
+            "sourceUrl": "https://executivesurfclub.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://executivesurfclub.com/",
+          "https://executivesurfclub.com/book-a-gig",
+          "https://executivesurfclub.com/private-parties"
+        ],
+        "retrievedAt": "2026-08-31T13:13:14.605Z",
+        "playwrightPages": 2
+      }
+    },
+    "mozzafiato-corpus-christi": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:34.200Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://mozzafiatocc.com/menu",
+        "reservationUrl": "https://www.toasttab.com/local/order/mozza-fiato-924-s-staples",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1 361 676 4490"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday,Saturday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Sunday 11:00 16:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1 361 676 4490",
+            "sourceUrl": "https://mozzafiatocc.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:00 21:00",
+            "sourceUrl": "https://mozzafiatocc.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 11:00 22:00",
+            "sourceUrl": "https://mozzafiatocc.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 16:00",
+            "sourceUrl": "https://mozzafiatocc.com/"
+          },
+          {
+            "quote": "og:description: Corpus Christi's best brick oven pizza est. 2025",
+            "sourceUrl": "https://mozzafiatocc.com/"
+          },
+          {
+            "quote": "meta description: Mozzafiato is the best oven fired pizza in Corpus Christi Texas. Mozzafiato has the best salads, best wings, best appetizers in Corpus Christi.",
+            "sourceUrl": "https://mozzafiatocc.com/"
+          },
+          {
+            "quote": "title: Mozzafiato: Best Pizza and Italian Restaurant in Corpus Christi",
+            "sourceUrl": "https://mozzafiatocc.com/"
+          },
+          {
+            "quote": "meta description: Mozzafiato is the best Wood Fired Pizza Restaurant in Corpus Christi. Mozzafiato features fresh pastas, wings, pizzas, salads, and fresh made desserts.",
+            "sourceUrl": "https://mozzafiatocc.com/menu"
+          },
+          {
+            "quote": "meta description: Discover Mozzafiato's restaurant hours and location. Visit us for delicious meals or contact us for more information.",
+            "sourceUrl": "https://mozzafiatocc.com/hours-%26-location"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://mozzafiatocc.com/",
+          "https://mozzafiatocc.com/menu",
+          "https://mozzafiatocc.com/hours-%26-location"
+        ],
+        "retrievedAt": "2026-08-31T13:13:34.200Z",
+        "playwrightPages": 0
+      }
+    },
+    "salt-water-grill-corpus-christi": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:36.016Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "My sister can only eat gluten free."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Saltwater Grill is the place for Corpus Christi",
+            "sourceUrl": "https://saltwatergrillcc.com/"
+          },
+          {
+            "quote": "title: Must-Visit Seafood in Corpus Christi | Salt Water Grill",
+            "sourceUrl": "https://saltwatergrillcc.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://saltwatergrillcc.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:13:36.016Z",
+        "playwrightPages": 0
+      }
+    },
+    "andy-s-kitchen-corpus-christi": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:13:36.973Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: ABOUT US | Andy's Kitchen",
+            "sourceUrl": "https://www.andyskitchen.com/about-us"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.andyskitchen.com/",
+          "https://www.andyskitchen.com/about-us"
+        ],
+        "retrievedAt": "2026-08-31T13:13:36.973Z",
+        "playwrightPages": 1
       }
     }
   }

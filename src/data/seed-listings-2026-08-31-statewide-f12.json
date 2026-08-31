@@ -1,0 +1,92 @@
+{
+  "note": "Statewide fill F-12. Tacoma WA (Washington's third city after Seattle/Spokane), Flagstaff AZ (Arizona's third after Phoenix/Tucson), Frederick MD (Maryland's second after Baltimore). Wooden City Tacoma is already in the corpus — not re-seeded. Every new entry has a current official restaurant site verified HTTP 200. Narrative first-party fields stay empty until enrich.mjs runs. Provo, Reno, Oxford, and Fayetteville still deferred. Tacoma: Stanley & Seafort's is Landry's; Matador is a multi-city group; Harmon site expired; Indochine/Pacific Grill/Le Sel have no live official site. Flagstaff: Brix and Coppa Cafe domains hijacked; Pizzicletta lists Dark Sky/Indian Gardens/Sosta on one site; Criollo dead. Frederick: The Wine Kitchen is Frederick+Leesburg; Tasting Room parked; Volt dead. Ogden, Green Bay, Norman, Allentown, Springfield MA, Chattanooga, Evansville, Eugene, Stamford, and Huntington deferred this batch.",
+  "generatedAt": "2026-08-31T14:10:00.000Z",
+  "batches": [
+    {
+      "city": "Tacoma",
+      "stateCode": "WA",
+      "listings": [
+        {
+          "title": "Over the Moon Cafe",
+          "website": "https://otmcafe.com/",
+          "phone": "+1-253-284-3722",
+          "address": "709 Opera Alley, Tacoma, WA 98402",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Katie Downs Waterfront Tavern",
+          "website": "https://katiedowns.com/",
+          "phone": "+1-253-756-0771",
+          "address": "3211 Ruston Way, Tacoma, WA 98402",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Cooks Tavern",
+          "website": "https://www.cookstavern.com/",
+          "phone": "+1-253-327-1777",
+          "address": "3201 N 26th Street, Tacoma, WA 98407",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Asado",
+          "website": "https://asadotacoma.com/",
+          "phone": "+1-253-272-7770",
+          "address": "2810 6th Avenue, Tacoma, WA 98406",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Bar Rosa",
+          "website": "https://barrosatacoma.com/",
+          "address": "1202 S 11th Street, Tacoma, WA 98405",
+          "cuisineTags": ["Italian", "Pizza"]
+        },
+        {
+          "title": "Frisko Freeze",
+          "website": "https://friskofreeze.com/",
+          "address": "1201 Division Avenue, Tacoma, WA 98403",
+          "cuisineTags": ["American"]
+        }
+      ]
+    },
+    {
+      "city": "Flagstaff",
+      "stateCode": "AZ",
+      "listings": [
+        {
+          "title": "Tinderbox Kitchen",
+          "website": "https://tinderboxkitchen.com/",
+          "phone": "+1-928-226-8400",
+          "address": "34 S San Francisco Street, Flagstaff, AZ 86001",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "MartAnne's",
+          "website": "https://www.martannes.com/",
+          "phone": "+1-928-773-4701",
+          "address": "112 E Route 66, Flagstaff, AZ 86001",
+          "cuisineTags": ["Mexican"]
+        }
+      ]
+    },
+    {
+      "city": "Frederick",
+      "stateCode": "MD",
+      "listings": [
+        {
+          "title": "Brewer's Alley",
+          "website": "https://brewers-alley.com/",
+          "phone": "+1-301-631-0089",
+          "address": "124 N Market Street, Frederick, MD 21701",
+          "cuisineTags": ["American", "Brewpub"]
+        },
+        {
+          "title": "JoJo's Restaurant & Tap House",
+          "website": "https://jojosrestauranttaphouse.com/",
+          "phone": "+1-301-732-5197",
+          "address": "16-18 E Patrick Street, Frederick, MD 21701",
+          "cuisineTags": ["American"]
+        }
+      ]
+    }
+  ]
+}

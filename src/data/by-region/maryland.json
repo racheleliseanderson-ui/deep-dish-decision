@@ -1,6 +1,6 @@
 {
   "regionGroup": "Maryland",
-  "count": 12,
+  "count": 14,
   "records": [
     {
       "id": 2296,
@@ -1378,6 +1378,241 @@
       "planningLoad": "Material",
       "bookingPaths": [
         "Resy"
+      ]
+    },
+    {
+      "id": 3080,
+      "slug": "brewer-s-alley-frederick",
+      "title": "Brewer's Alley",
+      "link": "",
+      "recordId": "RI-EXP-1001",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-31T13:02:33.627Z",
+      "address": "124 N Market Street, Frederick, MD 21701",
+      "phone": "+1-301-631-0089",
+      "email": "",
+      "website": "https://brewers-alley.com/",
+      "menuUrl": "https://brewers-alley.com/menus/main-menu/",
+      "reservationUrl": "https://www.toasttab.com/brewers-alley-124-n-market-st/rewardsSignup",
+      "coverageArea": "Frederick, Maryland",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Reservations via Toast.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: 14.69 FRIED PICKLE CHIPS Cajun, Kölsch-battered kosher pickle slices with Sriracha ranch (GFM/V)...",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Live hours for your date; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
+      "unknownList": [
+        "Live hours for your date",
+        "Accessibility route detail",
+        "Private-dining terms",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-31",
+      "nextReviewAt": "2026-09-30",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 12,
+      "depthTotal": 12,
+      "depthLabel": "12 / 12 core fields",
+      "signals": {},
+      "region": "Frederick, MD",
+      "city": "Frederick",
+      "stateProvince": "Maryland",
+      "regionGroup": "Maryland",
+      "priceTags": [],
+      "serviceStyles": [],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": true,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "hoursSummary",
+        "priceDetails",
+        "cuisineContext",
+        "accessibilityState",
+        "groupDetails",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 7,
+      "bookingPlatforms": [
+        "Toast",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "American",
+        "Brewpub",
+        "Contemporary American"
+      ],
+      "officialSource": "https://brewers-alley.com/",
+      "additionalSources": "https://brewers-alley.com/menus/main-menu/ | https://brewers-alley.com/events/ | https://brewers-alley.com/about/ | https://www.toasttab.com/brewers-alley-124-n-market-st/rewardsSignup",
+      "sources": [
+        "https://brewers-alley.com/",
+        "https://brewers-alley.com/menus/main-menu/",
+        "https://brewers-alley.com/events/",
+        "https://brewers-alley.com/about/",
+        "https://www.toasttab.com/brewers-alley-124-n-market-st/rewardsSignup"
+      ],
+      "retrievedAt": "2026-08-31T13:03:13.361Z",
+      "searchText": "brewer's alley frederick maryland frederick, md not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american brewpub contemporary american toast phone 124 n market street, frederick, md 21701",
+      "spendBands": [],
+      "daypartTags": [],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast",
+        "Phone"
+      ]
+    },
+    {
+      "id": 3081,
+      "slug": "jojo-s-restaurant-tap-house-frederick",
+      "title": "JoJo's Restaurant & Tap House",
+      "link": "",
+      "recordId": "RI-EXP-1002",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-31T13:02:33.627Z",
+      "address": "16-18 E Patrick Street, Frederick, MD 21701",
+      "phone": "+1-301-732-5197",
+      "email": "",
+      "website": "https://jojosrestauranttaphouse.com/",
+      "menuUrl": "https://jojosrestauranttaphouse.com/menu.php",
+      "reservationUrl": "https://order.toasttab.com/online/jojosrestauranttaphouse",
+      "coverageArea": "Frederick, Maryland",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Reservations via Toast.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: We have a semi-private dining room that will appeal to those wanting a nice, casual atmosphere without the noise and bustle of a bar right next to them. · We have a semi-private dining room that will appeal to those that want a nice, casual atmosphere without the noise and bustle of a bar right next to them.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
+      "unknownList": [
+        "Live hours for your date",
+        "Dietary cross-contact handling",
+        "Accessibility route detail",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-31",
+      "nextReviewAt": "2026-09-30",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 12,
+      "depthTotal": 12,
+      "depthLabel": "12 / 12 core fields",
+      "signals": {},
+      "region": "Frederick, MD",
+      "city": "Frederick",
+      "stateProvince": "Maryland",
+      "regionGroup": "Maryland",
+      "priceTags": [],
+      "serviceStyles": [],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": true,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "hoursSummary",
+        "priceDetails",
+        "cuisineContext",
+        "dietaryDetails",
+        "accessibilityState",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 7,
+      "bookingPlatforms": [
+        "Toast",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "American",
+        "Contemporary American"
+      ],
+      "officialSource": "https://jojosrestauranttaphouse.com/",
+      "additionalSources": "https://jojosrestauranttaphouse.com/menu.php | https://jojosrestauranttaphouse.com/events.php | https://jojosrestauranttaphouse.com/about.php | https://order.toasttab.com/online/jojosrestauranttaphouse",
+      "sources": [
+        "https://jojosrestauranttaphouse.com/",
+        "https://jojosrestauranttaphouse.com/menu.php",
+        "https://jojosrestauranttaphouse.com/events.php",
+        "https://jojosrestauranttaphouse.com/about.php",
+        "https://order.toasttab.com/online/jojosrestauranttaphouse"
+      ],
+      "retrievedAt": "2026-08-31T13:03:13.361Z",
+      "searchText": "jojo's restaurant & tap house frederick maryland frederick, md not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american toast phone 16-18 e patrick street, frederick, md 21701",
+      "spendBands": [],
+      "daypartTags": [],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast",
+        "Phone"
       ]
     }
   ]

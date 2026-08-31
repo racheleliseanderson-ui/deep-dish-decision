@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T12:54:36.006Z",
-  "builtAt": "2026-08-31T12:54:36Z",
-  "count": 1030,
-  "regions": 155,
+  "generatedAt": "2026-08-31T13:13:54.055Z",
+  "builtAt": "2026-08-31T13:13:54Z",
+  "count": 1058,
+  "regions": 161,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 1009,
+    "current": 1037,
     "officialConflicts": 11,
-    "thinRecords": 545,
+    "thinRecords": 559,
     "avgUnknowns": 5.14,
     "avgThinFields": 7.58,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 377
+    "reachableAtLastReview": 403
   },
-  "fullCaseFiles": 1030,
+  "fullCaseFiles": 1058,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -81,6 +81,7 @@
       "Anchorage, AK"
     ],
     "Arizona": [
+      "Flagstaff, AZ",
       "Phoenix, AZ",
       "Tucson, AZ"
     ],
@@ -178,7 +179,8 @@
       "Portland, ME"
     ],
     "Maryland": [
-      "Baltimore, MD"
+      "Baltimore, MD",
+      "Frederick, MD"
     ],
     "Massachusetts": [
       "Boston, MA",
@@ -243,6 +245,7 @@
       "Asheville, NC",
       "Charlotte, NC",
       "Durham, NC",
+      "Greensboro, NC",
       "Raleigh, NC"
     ],
     "North Dakota": [
@@ -251,7 +254,8 @@
     "Ohio": [
       "Cincinnati, OH",
       "Cleveland, OH",
-      "Columbus, OH"
+      "Columbus, OH",
+      "Toledo, OH"
     ],
     "Oklahoma": [
       "Oklahoma City, OK",
@@ -287,6 +291,7 @@
     ],
     "Texas": [
       "Austin, TX",
+      "Corpus Christi, TX",
       "Dallas, TX",
       "El Paso, TX",
       "Fort Worth, TX",
@@ -316,6 +321,7 @@
       "Seattle, Washington",
       "Spokane, WA",
       "Spokane, Washington",
+      "Tacoma, WA",
       "Tacoma, Washington",
       "Vancouver, Washington",
       "Walla Walla, Washington",
@@ -487,7 +493,13 @@
     "Topeka, KS": "Kansas",
     "Lafayette, LA": "Louisiana",
     "Bozeman, MT": "Montana",
-    "Missoula, MT": "Montana"
+    "Missoula, MT": "Montana",
+    "Tacoma, WA": "Washington",
+    "Flagstaff, AZ": "Arizona",
+    "Frederick, MD": "Maryland",
+    "Greensboro, NC": "North Carolina",
+    "Toledo, OH": "Ohio",
+    "Corpus Christi, TX": "Texas"
   },
   "cuisineTagOptions": [
     "Afghan",
@@ -7910,6 +7922,202 @@
       "region": "Missoula, MT",
       "regionGroup": "Montana",
       "city": "Missoula"
+    },
+    {
+      "slug": "over-the-moon-cafe-tacoma",
+      "title": "Over the Moon Cafe",
+      "region": "Tacoma, WA",
+      "regionGroup": "Washington",
+      "city": "Tacoma"
+    },
+    {
+      "slug": "katie-downs-waterfront-tavern-tacoma",
+      "title": "Katie Downs Waterfront Tavern",
+      "region": "Tacoma, WA",
+      "regionGroup": "Washington",
+      "city": "Tacoma"
+    },
+    {
+      "slug": "cooks-tavern-tacoma",
+      "title": "Cooks Tavern",
+      "region": "Tacoma, WA",
+      "regionGroup": "Washington",
+      "city": "Tacoma"
+    },
+    {
+      "slug": "asado-tacoma",
+      "title": "Asado",
+      "region": "Tacoma, WA",
+      "regionGroup": "Washington",
+      "city": "Tacoma"
+    },
+    {
+      "slug": "bar-rosa-tacoma",
+      "title": "Bar Rosa",
+      "region": "Tacoma, WA",
+      "regionGroup": "Washington",
+      "city": "Tacoma"
+    },
+    {
+      "slug": "frisko-freeze-tacoma",
+      "title": "Frisko Freeze",
+      "region": "Tacoma, WA",
+      "regionGroup": "Washington",
+      "city": "Tacoma"
+    },
+    {
+      "slug": "tinderbox-kitchen-flagstaff",
+      "title": "Tinderbox Kitchen",
+      "region": "Flagstaff, AZ",
+      "regionGroup": "Arizona",
+      "city": "Flagstaff"
+    },
+    {
+      "slug": "martanne-s-flagstaff",
+      "title": "MartAnne's",
+      "region": "Flagstaff, AZ",
+      "regionGroup": "Arizona",
+      "city": "Flagstaff"
+    },
+    {
+      "slug": "brewer-s-alley-frederick",
+      "title": "Brewer's Alley",
+      "region": "Frederick, MD",
+      "regionGroup": "Maryland",
+      "city": "Frederick"
+    },
+    {
+      "slug": "jojo-s-restaurant-tap-house-frederick",
+      "title": "JoJo's Restaurant & Tap House",
+      "region": "Frederick, MD",
+      "regionGroup": "Maryland",
+      "city": "Frederick"
+    },
+    {
+      "slug": "white-and-wood-greensboro",
+      "title": "White and Wood",
+      "region": "Greensboro, NC",
+      "regionGroup": "North Carolina",
+      "city": "Greensboro"
+    },
+    {
+      "slug": "pangaea-bistro-greensboro",
+      "title": "Pangaea Bistro",
+      "region": "Greensboro, NC",
+      "regionGroup": "North Carolina",
+      "city": "Greensboro"
+    },
+    {
+      "slug": "blue-denim-greensboro",
+      "title": "Blue Denim",
+      "region": "Greensboro, NC",
+      "regionGroup": "North Carolina",
+      "city": "Greensboro"
+    },
+    {
+      "slug": "machete-greensboro",
+      "title": "Machete",
+      "region": "Greensboro, NC",
+      "regionGroup": "North Carolina",
+      "city": "Greensboro"
+    },
+    {
+      "slug": "scrambled-southern-diner-greensboro",
+      "title": "Scrambled Southern Diner",
+      "region": "Greensboro, NC",
+      "regionGroup": "North Carolina",
+      "city": "Greensboro"
+    },
+    {
+      "slug": "undercurrent-greensboro",
+      "title": "Undercurrent",
+      "region": "Greensboro, NC",
+      "regionGroup": "North Carolina",
+      "city": "Greensboro"
+    },
+    {
+      "slug": "hannon-s-block-toledo",
+      "title": "Hannon's Block",
+      "region": "Toledo, OH",
+      "regionGroup": "Ohio",
+      "city": "Toledo"
+    },
+    {
+      "slug": "georgio-s-cafe-international-toledo",
+      "title": "Georgio's Café International",
+      "region": "Toledo, OH",
+      "regionGroup": "Ohio",
+      "city": "Toledo"
+    },
+    {
+      "slug": "registry-bistro-toledo",
+      "title": "Registry Bistro",
+      "region": "Toledo, OH",
+      "regionGroup": "Ohio",
+      "city": "Toledo"
+    },
+    {
+      "slug": "mancy-s-steakhouse-toledo",
+      "title": "Mancy's Steakhouse",
+      "region": "Toledo, OH",
+      "regionGroup": "Ohio",
+      "city": "Toledo"
+    },
+    {
+      "slug": "whiskey-the-wolf-toledo",
+      "title": "Whiskey & The Wolf",
+      "region": "Toledo, OH",
+      "regionGroup": "Ohio",
+      "city": "Toledo"
+    },
+    {
+      "slug": "the-adams-street-cafe-toledo",
+      "title": "The Adams Street Cafe",
+      "region": "Toledo, OH",
+      "regionGroup": "Ohio",
+      "city": "Toledo"
+    },
+    {
+      "slug": "doc-s-seafood-steaks-corpus-christi",
+      "title": "Doc's Seafood & Steaks",
+      "region": "Corpus Christi, TX",
+      "regionGroup": "Texas",
+      "city": "Corpus Christi"
+    },
+    {
+      "slug": "katz-21-corpus-christi",
+      "title": "Katz 21",
+      "region": "Corpus Christi, TX",
+      "regionGroup": "Texas",
+      "city": "Corpus Christi"
+    },
+    {
+      "slug": "executive-surf-club-corpus-christi",
+      "title": "Executive Surf Club",
+      "region": "Corpus Christi, TX",
+      "regionGroup": "Texas",
+      "city": "Corpus Christi"
+    },
+    {
+      "slug": "mozzafiato-corpus-christi",
+      "title": "Mozzafiato",
+      "region": "Corpus Christi, TX",
+      "regionGroup": "Texas",
+      "city": "Corpus Christi"
+    },
+    {
+      "slug": "salt-water-grill-corpus-christi",
+      "title": "Salt Water Grill",
+      "region": "Corpus Christi, TX",
+      "regionGroup": "Texas",
+      "city": "Corpus Christi"
+    },
+    {
+      "slug": "andy-s-kitchen-corpus-christi",
+      "title": "Andy's Kitchen",
+      "region": "Corpus Christi, TX",
+      "regionGroup": "Texas",
+      "city": "Corpus Christi"
     }
   ]
 }

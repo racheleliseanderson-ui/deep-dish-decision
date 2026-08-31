@@ -1,0 +1,150 @@
+{
+  "note": "Statewide fill F-13. Greensboro NC (North Carolina's fifth city after Charlotte/Raleigh/Asheville/Durham), Toledo OH (Ohio's fourth after Cincinnati/Cleveland/Columbus), Corpus Christi TX (a Gulf city after the Texas metro floor). Every new entry has a current official restaurant site verified HTTP 200. Narrative first-party fields stay empty until enrich.mjs runs. Provo, Reno, Oxford, and Fayetteville still deferred. Greensboro: Cugino Forno is Greensboro+Winston-Salem+Clemmons; Print Works and 1618 Midtown are Cloudflare challenge; Lucky 32 / Green Valley Grill are Quaintance-Weaver group. Toledo: Balance Grille is Toledo+Cleveland+Perrysburg; Tony Packo's is multi-site; Assembly 403; Ye Olde Durty Bird and Souk 202; Axis is hotel F&B. Mancy's Steakhouse kept on its own site (mancys.com is the group page). Corpus Christi: Water Street Oyster Bar lists sibling Water Street rooms on the same site; Blackbeard's copy refers to more than one location; Hester's is multi; Dragonfly closed; Lisabella's is Port Aransas. Green Bay, Norman, Allentown, Springfield MA, Chattanooga, Evansville, Eugene, Stamford, Huntington, and Ogden deferred this batch.",
+  "generatedAt": "2026-08-31T14:40:00.000Z",
+  "batches": [
+    {
+      "city": "Greensboro",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "White and Wood",
+          "website": "https://thewhiteandwood.com/",
+          "phone": "+1-336-638-1216",
+          "address": "215 South Elm Street, Greensboro, NC 27401",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Pangaea Bistro",
+          "website": "https://pangaeabistro.com/",
+          "phone": "+1-336-579-9962",
+          "address": "230 South Elm Street, Greensboro, NC 27401",
+          "cuisineTags": ["Global", "American"]
+        },
+        {
+          "title": "Blue Denim",
+          "website": "https://www.bluedenimgso.com/",
+          "phone": "+1-336-676-5689",
+          "address": "217 South Elm Street, Greensboro, NC 27401",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Machete",
+          "website": "https://machetegso.com/",
+          "phone": "+1-336-265-8859",
+          "address": "600 C Battleground Avenue, Greensboro, NC 27401",
+          "cuisineTags": ["American", "Contemporary"]
+        },
+        {
+          "title": "Scrambled Southern Diner",
+          "website": "https://www.scrambledgreensboro.com/",
+          "phone": "+1-336-285-6590",
+          "address": "2417 Spring Garden Street, Greensboro, NC 27403",
+          "cuisineTags": ["Breakfast", "Diner", "Southern"]
+        },
+        {
+          "title": "Undercurrent",
+          "website": "https://www.undercurrentrestaurant.com/",
+          "phone": "+1-336-370-1266",
+          "address": "327 Battleground Avenue, Greensboro, NC 27401",
+          "cuisineTags": ["American"]
+        }
+      ]
+    },
+    {
+      "city": "Toledo",
+      "stateCode": "OH",
+      "listings": [
+        {
+          "title": "Hannon's Block",
+          "website": "https://www.hannonsblockrestaurant.com/",
+          "phone": "+1-419-407-5146",
+          "address": "619 Monroe Street, Toledo, OH 43604",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Georgio's Café International",
+          "website": "https://www.georgiostoledo.com/",
+          "phone": "+1-419-242-2424",
+          "address": "426 N Superior Street, Toledo, OH 43604",
+          "cuisineTags": ["European"]
+        },
+        {
+          "title": "Registry Bistro",
+          "website": "https://www.registrybistro.com/",
+          "phone": "+1-419-725-0444",
+          "address": "144 North Superior Street, Toledo, OH 43604",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Mancy's Steakhouse",
+          "website": "https://mancyssteakhouse.com/",
+          "phone": "+1-419-476-4154",
+          "address": "953 Phillips Avenue, Toledo, OH 43612",
+          "cuisineTags": ["Steak"]
+        },
+        {
+          "title": "Whiskey & The Wolf",
+          "website": "https://www.whiskeyandthewolf.com/",
+          "phone": "+1-419-690-4280",
+          "address": "3515 West Alexis Road, Toledo, OH 43623",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "The Adams Street Cafe",
+          "website": "https://www.theadamsstcafe.com/",
+          "phone": "+1-419-214-1819",
+          "address": "608 Adams Street, Toledo, OH 43604",
+          "cuisineTags": ["American", "Cafe"]
+        }
+      ]
+    },
+    {
+      "city": "Corpus Christi",
+      "stateCode": "TX",
+      "listings": [
+        {
+          "title": "Doc's Seafood & Steaks",
+          "website": "https://docsseafoodandsteaks.com/",
+          "phone": "+1-361-949-6744",
+          "address": "13309 S. Padre Island Drive, Corpus Christi, TX 78418",
+          "cuisineTags": ["Seafood"]
+        },
+        {
+          "title": "Katz 21",
+          "website": "https://katz21.com/",
+          "phone": "+1-361-884-1221",
+          "address": "5702 Spohn Drive, Corpus Christi, TX 78414",
+          "cuisineTags": ["Steak"]
+        },
+        {
+          "title": "Executive Surf Club",
+          "website": "https://executivesurfclub.com/",
+          "phone": "+1-361-884-7873",
+          "address": "306 N. Chaparral Street, Corpus Christi, TX 78401",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Mozzafiato",
+          "website": "https://mozzafiatocc.com/",
+          "phone": "+1-361-676-4490",
+          "address": "924 S Staples Street, Corpus Christi, TX 78404",
+          "cuisineTags": ["Italian", "Pizza"]
+        },
+        {
+          "title": "Salt Water Grill",
+          "website": "https://saltwatergrillcc.com/",
+          "phone": "+1-361-993-7258",
+          "address": "2401 Cimarron Boulevard, Corpus Christi, TX 78414",
+          "cuisineTags": ["Seafood"]
+        },
+        {
+          "title": "Andy's Kitchen",
+          "website": "https://www.andyskitchen.com/",
+          "phone": "+1-361-993-0251",
+          "address": "5802 S. Staples Street, Corpus Christi, TX 78413",
+          "cuisineTags": ["American", "Breakfast"]
+        }
+      ]
+    }
+  ]
+}

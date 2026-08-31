@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T12:53:55.205Z",
+  "generatedAt": "2026-08-31T13:12:46.211Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1365,6 +1365,78 @@
       "pinned": false,
       "inserted": 4,
       "lastRunAt": "2026-08-31T12:53:57.486Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Tacoma",
+      "stateCode": "WA",
+      "population": 219346,
+      "priority": 113,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:02:33.627Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Flagstaff",
+      "stateCode": "AZ",
+      "population": 76831,
+      "priority": 114,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 2,
+      "lastRunAt": "2026-08-31T13:02:33.627Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Frederick",
+      "stateCode": "MD",
+      "population": 79588,
+      "priority": 115,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 2,
+      "lastRunAt": "2026-08-31T13:02:33.627Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Greensboro",
+      "stateCode": "NC",
+      "population": 299035,
+      "priority": 116,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:12:49.839Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Toledo",
+      "stateCode": "OH",
+      "population": 266301,
+      "priority": 117,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:12:49.839Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Corpus Christi",
+      "stateCode": "TX",
+      "population": 316239,
+      "priority": 118,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:12:49.839Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]
