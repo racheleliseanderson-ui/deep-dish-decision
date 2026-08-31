@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T12:18:57.906Z",
+  "generatedAt": "2026-08-31T12:27:36.874Z",
   "records": {
     "canlis": {
       "google": {
@@ -67304,6 +67304,1154 @@
           "https://spotoftea.com/"
         ],
         "retrievedAt": "2026-08-31T12:18:57.022Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-farmhouse-at-jessup-farm-fort-collins": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:33.859Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/the-farmhouse-at-jessup-farm/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private event reservations are required for parties of 20 or more, but can be made for parties of any size.",
+        "groupPolicyLanguage": [
+          "Private event reservations are required for parties of 20 or more, but can be made for parties of any size."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: The Farmhouse at Jessup Farm",
+            "sourceUrl": "https://www.farmhousefc.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.farmhousefc.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:26:33.859Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-regional-fort-collins": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:34.498Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://theregionalfood.com/fort-collins-old-town-the-regional-food-menu",
+        "reservationUrl": "https://www.toasttab.com/the-regional/v3/",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (970)-689-3508"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: American, Comfort Food"
+        ],
+        "dietaryLanguage": [
+          "We proudly offer many gluten-free options including our popular Wednesday special: gluten-free fried chicken."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (970)-689-3508",
+            "sourceUrl": "https://theregionalfood.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American, Comfort Food",
+            "sourceUrl": "https://theregionalfood.com/"
+          },
+          {
+            "quote": "meta description: The Regional is a family-owned, from-scratch restaurant in Old Town Fort Collins serving American comfort food, handcrafted cocktails, and fresh oysters.",
+            "sourceUrl": "https://theregionalfood.com/"
+          },
+          {
+            "quote": "title: The Regional | Scratch Kitchen in Old Town Fort Collins",
+            "sourceUrl": "https://theregionalfood.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://theregionalfood.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:26:34.498Z",
+        "playwrightPages": 0
+      }
+    },
+    "silver-grill-cafe-fort-collins": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:35.674Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.silvergrill.com/menu",
+        "reservationUrl": "https://order.toasttab.com/online/silvergrillcafe",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-970-484-4656"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 07:00 13:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Breakfast, Brunch, American"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-970-484-4656",
+            "sourceUrl": "https://www.silvergrill.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.silvergrill.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Breakfast, Brunch, American",
+            "sourceUrl": "https://www.silvergrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 07:00 13:00",
+            "sourceUrl": "https://www.silvergrill.com/"
+          },
+          {
+            "quote": "og:description: Since 1933, Silver Grill Café has been serving homemade breakfasts, legendary cinnamon rolls, and good old-fashioned hospitality in the heart of Old Town Fort Collins.",
+            "sourceUrl": "https://www.silvergrill.com/"
+          },
+          {
+            "quote": "meta description: Serving Fort Collins since 1933, the Silver Grill Café is Northern Colorado’s most historic breakfast spot — famous for cinnamon rolls, hearty meals, and hometown hospitality.",
+            "sourceUrl": "https://www.silvergrill.com/"
+          },
+          {
+            "quote": "title: Silver Grill Café | Fort Collins’ Oldest Restaurant & Breakfast Tradition",
+            "sourceUrl": "https://www.silvergrill.com/"
+          },
+          {
+            "quote": "og:description: Browse our full menu — from classic breakfast favorites to our famous cinnamon rolls, all made fresh daily in the heart of Fort Collins.",
+            "sourceUrl": "https://www.silvergrill.com/menu"
+          },
+          {
+            "quote": "meta description: Explore the Silver Grill Café menu featuring hearty breakfasts, fresh lunches, and our famous cinnamon rolls — all made from scratch right here in Old Town Fort Collins.",
+            "sourceUrl": "https://www.silvergrill.com/menu"
+          },
+          {
+            "quote": "title: Breakfast & Lunch Menu | Silver Grill Café Fort Collins",
+            "sourceUrl": "https://www.silvergrill.com/menu"
+          },
+          {
+            "quote": "og:description: More than a restaurant — we’re a Fort Collins tradition. Discover what makes Silver Grill Café a community favorite for breakfast, comfort, and connection.",
+            "sourceUrl": "https://www.silvergrill.com/about"
+          },
+          {
+            "quote": "meta description: Learn what makes the Silver Grill Café a local favorite. From scratch-made breakfasts to friendly service, we’ve been serving Fort Collins with warmth and flavor for over 90 years.",
+            "sourceUrl": "https://www.silvergrill.com/about"
+          },
+          {
+            "quote": "title: About Silver Grill Café | A Fort Collins Breakfast Tradition Since 1933",
+            "sourceUrl": "https://www.silvergrill.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.silvergrill.com/",
+          "https://www.silvergrill.com/menu",
+          "https://www.silvergrill.com/about"
+        ],
+        "retrievedAt": "2026-08-31T12:26:35.674Z",
+        "playwrightPages": 0
+      }
+    },
+    "cafe-vino-fort-collins": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:37.409Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://cafevino.com/food-menu",
+        "reservationUrl": "https://www.toasttab.com/cafe-vino-1200-s-college-ave/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-970-212-3399"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday 11:30 21:00",
+          "JSON-LD openingHoursSpecification: Friday,Saturday 11:30 22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Wine Bar, Contemporary American, American, Mediterranean, Italian"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Known as a top rehearsal dinner venue and a trusted choice for a Fort Collins private dining and event space for celebrations and gatherings, this setting is designed for connection, shared experiences, and lasting impressions.",
+        "groupPolicyLanguage": [
+          "Known as a top rehearsal dinner venue and a trusted choice for a Fort Collins private dining and event space for celebrations and gatherings, this setting is designed for connection, shared experiences, and lasting impressions.",
+          "This Fort Collins private dining and event space for celebrations and gatherings is ideal for bringing people together in a way that feels natural and unforced.",
+          "Known as a sought-after Private dining Fort Collins&apos; destination and rehearsal dinner venue, it’s also perfect for a graduation dinner in Fort Collins.",
+          "Our Wines Private Events No matter the occasion you can celebrate at our place!"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-970-212-3399",
+            "sourceUrl": "https://cafevino.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Wine Bar, Contemporary American, American, Mediterranean, Italian",
+            "sourceUrl": "https://cafevino.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday 11:30 21:00",
+            "sourceUrl": "https://cafevino.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 11:30 22:00",
+            "sourceUrl": "https://cafevino.com/"
+          },
+          {
+            "quote": "og:description: Built on a love for thoughtful dining and a deep respect for ingredients, Café Vino brings people together over food that feels intentional and personal. Recognized as an Award-winning and ...",
+            "sourceUrl": "https://cafevino.com/"
+          },
+          {
+            "quote": "meta description: Fort Collins wine bar with 200+ wines, locally sourced Contemporary American cuisine made in-house, and intimate dining. Where great wine meets great food.",
+            "sourceUrl": "https://cafevino.com/"
+          },
+          {
+            "quote": "title: Cafe Vino - Fort Collins, CO - Wine Bar & Restaurant",
+            "sourceUrl": "https://cafevino.com/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://cafevino.com/",
+          "https://cafevino.com/food-menu"
+        ],
+        "retrievedAt": "2026-08-31T12:26:37.409Z",
+        "playwrightPages": 0
+      }
+    },
+    "coopersmith-s-brewpub-fort-collins": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:39.132Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://coopersmithspub.com/brewpub/food-menu/",
+        "reservationUrl": "https://tables.toasttab.com/restaurants/7dc7a2e3-7fbf-40ad-a8a1-2adc73765a91/joinWaitlist",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 9704980483",
+          "JSON-LD telephone: +19704980483"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Su-Th: 11:00-21:00; Fr-Sa: 11:00-22:00",
+          "JSON-LD openingHours: Su,Mo,Tu,We,Th 11:00-21:00; Fr,Sa 11:00-22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: English pub meets American standards dining experience offers zesty vegetarian options, regional specialties, and seasonal menu options.",
+          "JSON-LD servesCuisine: CooperSmith’s serves a mix of classic pub fare and American cuisine with options for vegetarians and regional specialties. Popular dishes include burgers, fish and chips, schnitzel, and hearty comfort food favorites."
+        ],
+        "dietaryLanguage": [
+          "Brewpub English pub meets American standards, zesty vegetarian options & regional specialties.",
+          "Black Bean Burger $16 Our house made vegetarian black bean burger made with rice, corn, spices, and bell peppers topped with avocado spread, spicy ranch, and choice of cheese.",
+          "The following food allergens may be used as ingredients: Milk, egg, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy, and sesame."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 9704980483",
+            "sourceUrl": "https://coopersmithspub.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://coopersmithspub.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: English pub meets American standards dining experience offers zesty vegetarian options, regional specialties, and seasonal menu options.",
+            "sourceUrl": "https://coopersmithspub.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su-Th: 11:00-21:00; Fr-Sa: 11:00-22:00",
+            "sourceUrl": "https://coopersmithspub.com/"
+          },
+          {
+            "quote": "JSON-LD telephone: +19704980483",
+            "sourceUrl": "https://coopersmithspub.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: CooperSmith’s serves a mix of classic pub fare and American cuisine with options for vegetarians and regional specialties. Popular dishes include burgers, fish and chips, schnitzel, and hearty comfort food favorites.",
+            "sourceUrl": "https://coopersmithspub.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Su,Mo,Tu,We,Th 11:00-21:00; Fr,Sa 11:00-22:00",
+            "sourceUrl": "https://coopersmithspub.com/"
+          },
+          {
+            "quote": "og:description: Visit CooperSmith’s Pub & Brewing in Old Town Fort Collins for award-winning craft beer, delicious food, and spacious patio dining.",
+            "sourceUrl": "https://coopersmithspub.com/"
+          },
+          {
+            "quote": "title: CooperSmith's BrewPub & Billiards | Fort Collins Dining & Games",
+            "sourceUrl": "https://coopersmithspub.com/"
+          },
+          {
+            "quote": "og:description: Check out CooperSmith's Pub food menu including seasonal items and regionally famous food like our Coops burger and Fish & Chips.",
+            "sourceUrl": "https://coopersmithspub.com/brewpub/food-menu/"
+          },
+          {
+            "quote": "title: Pubside Menu | CooperSmith's Brewpub & Billiards",
+            "sourceUrl": "https://coopersmithspub.com/brewpub/food-menu/"
+          },
+          {
+            "quote": "title: About | CooperSmith's Brewpub & Billiards",
+            "sourceUrl": "https://coopersmithspub.com/about/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://coopersmithspub.com/",
+          "https://coopersmithspub.com/brewpub/food-menu/",
+          "https://coopersmithspub.com/about/"
+        ],
+        "retrievedAt": "2026-08-31T12:26:39.132Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-emporium-fort-collins": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:41.393Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.emporiumftcollins.com/menus/",
+        "reservationUrl": "https://www.opentable.com/restref/client/?rid=992095",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "We do not offer a private dining room at our location; our warm and inviting restaurant space accommodates up to 12 guests.",
+        "groupPolicyLanguage": [
+          "We do not offer a private dining room at our location; our warm and inviting restaurant space accommodates up to 12 guests.",
+          "The restaurant is also available for buyouts pending availability."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: The Emporium is an American Brasserie, offering warm, approachable hospitality in an energetic community space. Our food and beverage menus feature the highest-quality regional ingredients!",
+            "sourceUrl": "https://www.emporiumftcollins.com/"
+          },
+          {
+            "quote": "title: The Emporium | American Brasserie & Coffee Shop in Fort Collins, CO",
+            "sourceUrl": "https://www.emporiumftcollins.com/"
+          },
+          {
+            "quote": "title: Menus | The Emporium in Fort Collins, CO",
+            "sourceUrl": "https://www.emporiumftcollins.com/menus/"
+          },
+          {
+            "quote": "title: About | The Emporium in Fort Collins, CO",
+            "sourceUrl": "https://www.emporiumftcollins.com/about-us/"
+          },
+          {
+            "quote": "title: Events | The Emporium in Fort Collins, CO",
+            "sourceUrl": "https://www.emporiumftcollins.com/private-events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.emporiumftcollins.com/",
+          "https://www.emporiumftcollins.com/menus/",
+          "https://www.emporiumftcollins.com/about-us/",
+          "https://www.emporiumftcollins.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-31T12:26:41.393Z",
+        "playwrightPages": 0
+      }
+    },
+    "cafe-cusco-springfield": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:43.513Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.cafecusco.com/menus",
+        "reservationUrl": "https://www.cafecusco.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (417) 868-8088"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Tuesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Saturday 11:00 20:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (417) 868-8088",
+            "sourceUrl": "https://www.cafecusco.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 21:00",
+            "sourceUrl": "https://www.cafecusco.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:00 21:00",
+            "sourceUrl": "https://www.cafecusco.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+            "sourceUrl": "https://www.cafecusco.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+            "sourceUrl": "https://www.cafecusco.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 21:00",
+            "sourceUrl": "https://www.cafecusco.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 11:00 20:00",
+            "sourceUrl": "https://www.cafecusco.com/"
+          },
+          {
+            "quote": "og:description: Discover the vibrant flavors of Peru at Cafe Cusco, a renowned Peruvian restaurant. Join us for Happy Hour Monday through Friday from 3 PM to 5 PM!",
+            "sourceUrl": "https://www.cafecusco.com/"
+          },
+          {
+            "quote": "title: Home | Cafe Cusco | Peruvian Inspired Springfield MO / Sangria",
+            "sourceUrl": "https://www.cafecusco.com/"
+          },
+          {
+            "quote": "title: Reservations | Cafe Cusco | 234 E. Commercial St.",
+            "sourceUrl": "https://www.cafecusco.com/reservations"
+          },
+          {
+            "quote": "og:description: Discover the rich history behind Cafe Cusco, a vibrant Peruvian restaurant. Learn about our journey and find out how to get in touch with us.",
+            "sourceUrl": "https://www.cafecusco.com/about-1"
+          },
+          {
+            "quote": "title: Discover the Unique Story of Cafe Cusco - About Us",
+            "sourceUrl": "https://www.cafecusco.com/about-1"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.cafecusco.com/",
+          "https://www.cafecusco.com/menus",
+          "https://www.cafecusco.com/reservations",
+          "https://www.cafecusco.com/about-1"
+        ],
+        "retrievedAt": "2026-08-31T12:26:43.513Z",
+        "playwrightPages": 0
+      }
+    },
+    "van-gogh-s-eeterie-springfield": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:45.791Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.vangoghseeterie.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 417-344-0085"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Our Vegan and Gluten Free Mission We strive to create a safe environment for all types of foodies.",
+          "At Van Gogh's we do our very best to create an experiance that anyone and everyone can enjoy and that means we especially try to create a menu that can be enjoyed by those who have issues with gluten or those who simply choose a vegan lifestyle."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 417-344-0085",
+            "sourceUrl": "https://www.vangoghseeterie.com/"
+          },
+          {
+            "quote": "og:description: A locally owned restaurant featuring food from The Netherlands. Van Gogh",
+            "sourceUrl": "https://www.vangoghseeterie.com/"
+          },
+          {
+            "quote": "title: Dutch Restaurant | Gluten Free | Vegan | Vegetarian| Breakfast | Brunch | Lunch | Dinner | Springfield, MO | Van Gogh's Eeterie",
+            "sourceUrl": "https://www.vangoghseeterie.com/"
+          },
+          {
+            "quote": "title: Reservations | Van Gogh's Eeterie",
+            "sourceUrl": "https://www.vangoghseeterie.com/reservations"
+          },
+          {
+            "quote": "og:description: Find out about what makes Van Gogh",
+            "sourceUrl": "https://www.vangoghseeterie.com/about"
+          },
+          {
+            "quote": "title: About | Springfield, MO | Van Gogh's Eeterie",
+            "sourceUrl": "https://www.vangoghseeterie.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.vangoghseeterie.com/",
+          "https://www.vangoghseeterie.com/reservations",
+          "https://www.vangoghseeterie.com/about"
+        ],
+        "retrievedAt": "2026-08-31T12:26:45.791Z",
+        "playwrightPages": 0
+      }
+    },
+    "civil-kitchen-springfield": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:47.636Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.civilkitchen.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/civil-kitchen-107-park-central-square/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 417-501-8456"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Do you have gluten free options?"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Do you have a private room?",
+        "groupPolicyLanguage": [
+          "Do you have a private room?",
+          "Springfield, MO 65806 417-501-8456 [email protected] Follow Us On: Facebook Instagram Quick Links: Home About Us Menu Reservations Catering / Private Parties Gallery E - Gift Card Book Your Private Event Reserve Now © 2026 Civil Kitchen.",
+          "A 20% service charge is added to all parties of 8 or more Business Hours: Sunday: 11am – 9pm Monday: Closed Tuesday - Thursday: 11am – 9pm Friday - Saturday: 11am – 12am 107 Park Central Sq."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 417-501-8456",
+            "sourceUrl": "https://www.civilkitchen.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.civilkitchen.com/"
+          },
+          {
+            "quote": "og:description: Enjoy the finest dining in Springfield, MO. Explore a diverse menu of delectable dishes and handcrafted drinks within a vibrant and inviting atmosphere.",
+            "sourceUrl": "https://www.civilkitchen.com/"
+          },
+          {
+            "quote": "title: Locally Owned Restaurant | Civil Kitchen, Springfield",
+            "sourceUrl": "https://www.civilkitchen.com/"
+          },
+          {
+            "quote": "og:description: Discover a diverse menu filled with mouthwatering appetizers, hearty soups, fresh salads, satisfying sandwiches, and irresistible desserts. Explore more today!",
+            "sourceUrl": "https://www.civilkitchen.com/menu/"
+          },
+          {
+            "quote": "title: Explore Our Diverse Menu | Civil Kitchen, Springfield",
+            "sourceUrl": "https://www.civilkitchen.com/menu/"
+          },
+          {
+            "quote": "og:description: Secure your spot for a memorable dining experience in Springfield, MO. Enjoy delicious food, vibrant atmosphere, and great company. Make your reservation today!",
+            "sourceUrl": "https://www.civilkitchen.com/reservations/"
+          },
+          {
+            "quote": "title: Reserve Your Table | Civil Kitchen, Springfield",
+            "sourceUrl": "https://www.civilkitchen.com/reservations/"
+          },
+          {
+            "quote": "og:description: About Us Home Welcome to Civil Kitchen, your go-to spot for scratch-made comfort food in the heart of Springfield, MO. Since we opened our doors on October 14, 2015, we have been committed to creating a dining experience that feels like home, w",
+            "sourceUrl": "https://www.civilkitchen.com/about-us/"
+          },
+          {
+            "quote": "title: About Us - Civil Kitchen",
+            "sourceUrl": "https://www.civilkitchen.com/about-us/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.civilkitchen.com/",
+          "https://www.civilkitchen.com/menu/",
+          "https://www.civilkitchen.com/reservations/",
+          "https://www.civilkitchen.com/about-us/"
+        ],
+        "retrievedAt": "2026-08-31T12:26:47.636Z",
+        "playwrightPages": 0
+      }
+    },
+    "flame-steakhouse-springfield": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:26:50.154Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.flamesteakhouse.com/menu",
+        "reservationUrl": "https://www.toasttab.com/flame-steakhouse-wine-bar/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "​ Call: 417.823.8383 ​ The Flame Private Room accommodates up to 100 guests - or we can provide full-service catering of any size event.",
+        "groupPolicyLanguage": [
+          "​ Call: 417.823.8383 ​ The Flame Private Room accommodates up to 100 guests - or we can provide full-service catering of any size event."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Reservations | flame-steakhouse",
+            "sourceUrl": "https://www.flamesteakhouse.com/reservations"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.flamesteakhouse.com/",
+          "https://www.flamesteakhouse.com/menu",
+          "https://www.flamesteakhouse.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T12:26:50.154Z",
+        "playwrightPages": 1
+      }
+    },
+    "gailey-s-breakfast-cafe-springfield": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:27:00.712Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.gaileysbreakfast.com/menu",
+        "reservationUrl": "https://www.gaileysbreakfast.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: ABOUT US | gaileysbreakfast",
+            "sourceUrl": "https://www.gaileysbreakfast.com/about-us"
+          },
+          {
+            "quote": "title: PRIVATE PARTIES | gaileysbreakfast",
+            "sourceUrl": "https://www.gaileysbreakfast.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.gaileysbreakfast.com/",
+          "https://www.gaileysbreakfast.com/menu",
+          "https://www.gaileysbreakfast.com/about-us",
+          "https://www.gaileysbreakfast.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T12:27:00.712Z",
+        "playwrightPages": 2
+      }
+    },
+    "lindberg-s-tavern-springfield": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:27:19.752Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.lindbergstavern.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Menu | Lindberg's Tavern",
+            "sourceUrl": "https://www.lindbergstavern.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.lindbergstavern.com/",
+          "https://www.lindbergstavern.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T12:27:19.752Z",
+        "playwrightPages": 0
+      }
+    },
+    "soby-s-greenville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:27:22.011Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://sobys.com/menu-2/",
+        "reservationUrl": "https://www.opentable.com/sobys-reservations-greenville?rid=5523&restref=5523",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Our culinary team at Soby’s is more than happy to work with our guests to meet their dietary needs and allergy restrictions, or to create delicious vegetarian and vegan dishes."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "February 5, 2021 ALL PRESS a unique event space Looking for an impressive, one-of-a-kind experience for your next corporate, social or private event?",
+        "groupPolicyLanguage": [
+          "February 5, 2021 ALL PRESS a unique event space Looking for an impressive, one-of-a-kind experience for your next corporate, social or private event?"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Home - Soby's New South Cuisine",
+            "sourceUrl": "https://sobys.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://sobys.com/"
+          },
+          {
+            "quote": "title: Menu - Soby's New South Cuisine",
+            "sourceUrl": "https://sobys.com/menu-2/"
+          },
+          {
+            "quote": "title: Reservations - Soby's New South Cuisine",
+            "sourceUrl": "https://sobys.com/reservations/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://sobys.com/",
+          "https://sobys.com/menu-2/",
+          "https://sobys.com/reservations/"
+        ],
+        "retrievedAt": "2026-08-31T12:27:22.011Z",
+        "playwrightPages": 0
+      }
+    },
+    "jianna-greenville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:27:24.092Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://jiannagreenville.com/menu/",
+        "reservationUrl": "https://resy.com/cities/grn/jianna",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Home - Jianna | Modern Italian & Oyster Bar",
+            "sourceUrl": "https://jiannagreenville.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://jiannagreenville.com/"
+          },
+          {
+            "quote": "title: Menu - Jianna | Modern Italian & Oyster Bar",
+            "sourceUrl": "https://jiannagreenville.com/menu/"
+          },
+          {
+            "quote": "title: About Jianna - Jianna | Modern Italian & Oyster Bar",
+            "sourceUrl": "https://jiannagreenville.com/about-us/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://jiannagreenville.com/",
+          "https://jiannagreenville.com/menu/",
+          "https://jiannagreenville.com/about-us/"
+        ],
+        "retrievedAt": "2026-08-31T12:27:24.092Z",
+        "playwrightPages": 0
+      }
+    },
+    "fork-and-plough-greenville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:27:26.277Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.forkandplough.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/fork-and-plough",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "If you have allergies, are vegan, vegetarian, gluten-free, or have other dietary restrictions, please see our FAQ page or call the restaurant for options."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Farm-to-table restaurant, butchery, and grocery store sourcing local and regional ingredients to create unique, local cuisine.",
+            "sourceUrl": "https://www.forkandplough.com/"
+          },
+          {
+            "quote": "title: Best Local Restaurant Near Me | Fork and Plough Greenville SC",
+            "sourceUrl": "https://www.forkandplough.com/"
+          },
+          {
+            "quote": "og:description: Our menu changes daily because we serve only the best local and regional ingredients. You'll always eat local at Fork & Plough.",
+            "sourceUrl": "https://www.forkandplough.com/menu/"
+          },
+          {
+            "quote": "title: Menu at Fork and Plough | Local Food in Greenville SC",
+            "sourceUrl": "https://www.forkandplough.com/menu/"
+          },
+          {
+            "quote": "og:description: A farmer and a chef created Fork and Plough, a restaurant in Greenville, SC, to bring unique cuisine that uses all local and regional ingredients.",
+            "sourceUrl": "https://www.forkandplough.com/about/"
+          },
+          {
+            "quote": "title: Restaurant in Greenville SC | Fork and Plough Serving Unique Local Food",
+            "sourceUrl": "https://www.forkandplough.com/about/"
+          },
+          {
+            "quote": "og:description: Make reservations so you can plan your next work lunch, date night, or family dinner without worrying about getting a table.",
+            "sourceUrl": "https://www.forkandplough.com/reservations/"
+          },
+          {
+            "quote": "title: Make Reservations at Fork and Plough | Local Food in Greenville SC",
+            "sourceUrl": "https://www.forkandplough.com/reservations/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.forkandplough.com/",
+          "https://www.forkandplough.com/menu/",
+          "https://www.forkandplough.com/about/",
+          "https://www.forkandplough.com/reservations/"
+        ],
+        "retrievedAt": "2026-08-31T12:27:26.277Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-anchorage-greenville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:27:29.556Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.theanchoragerestaurant.com/menus/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: The Anchorage is an eclectic neighborhood restaurant specializing in small plates, esoteric wines and craft cocktails located in the Village of West Greenville.",
+            "sourceUrl": "https://www.theanchoragerestaurant.com/"
+          },
+          {
+            "quote": "title: The Anchorage Restaurant in Greenville, SC",
+            "sourceUrl": "https://www.theanchoragerestaurant.com/"
+          },
+          {
+            "quote": "og:description: See the menu for The Anchorage Restaurant in Greenville, SC. Open Wednesday through Sunday for meals, takeout and delivery!",
+            "sourceUrl": "https://www.theanchoragerestaurant.com/menus/"
+          },
+          {
+            "quote": "title: Menus | The Anchorage Restaurant in Greenville, SC",
+            "sourceUrl": "https://www.theanchoragerestaurant.com/menus/"
+          },
+          {
+            "quote": "title: About | The Anchorage Restaurant in Greenville, SC",
+            "sourceUrl": "https://www.theanchoragerestaurant.com/about-us/"
+          },
+          {
+            "quote": "title: The Anchorage Restaurant",
+            "sourceUrl": "https://www.theanchoragerestaurant.com/store/events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.theanchoragerestaurant.com/",
+          "https://www.theanchoragerestaurant.com/menus/",
+          "https://www.theanchoragerestaurant.com/about-us/",
+          "https://www.theanchoragerestaurant.com/store/events/"
+        ],
+        "retrievedAt": "2026-08-31T12:27:29.556Z",
+        "playwrightPages": 0
+      }
+    },
+    "aryana-afghan-cuisine-greenville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:27:32.237Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://aryanagreenville.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Vegan/Vegetarian option In our cafeteria style kitchen, we cook each day 3 different dishes, we serve all of the dishes on a plate, you will never get the same combination as the menu changes daily, every day there will be a new combination..."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Discover Aryana Afghan Cuisine, where traditional recipes meet fresh, local ingredients. Enjoy healthy, home-cooked meals crafted by Chef Nelofar Mayar. Dine in or take out for a culinary journey that brings the flavors of Afghanistan to your t",
+            "sourceUrl": "https://aryanagreenville.com/"
+          },
+          {
+            "quote": "title: Authentic Afghan Cuisine - Aryana Restaurant Experience | Aryana Afghan Cuisine",
+            "sourceUrl": "https://aryanagreenville.com/"
+          },
+          {
+            "quote": "og:description: Experience over 20 years of healthy, home-cooked Afghan cuisine. Our chef's mastery of traditional spices creates a culinary journey with every dish. Dine in or take out, we ensure top-notch quality with seasonal and local ingredients.",
+            "sourceUrl": "https://aryanagreenville.com/menu"
+          },
+          {
+            "quote": "title: Authentic Afghan Cuisine - Aryana Restaurant | Aryana Afghan Cuisine",
+            "sourceUrl": "https://aryanagreenville.com/menu"
+          },
+          {
+            "quote": "og:description: Experience over 20 years of healthy, home-cooked Afghan meals. Enjoy traditional spices and flavors at Aryana Afghan Cuisine. Dine in or take out with seasonal, locally sourced ingredients for a top-notch culinary journey.",
+            "sourceUrl": "https://aryanagreenville.com/contact-and-hours"
+          },
+          {
+            "quote": "title: Aryana Afghan Cuisine - Authentic Home Cooked Meals | Aryana Afghan Cuisine",
+            "sourceUrl": "https://aryanagreenville.com/contact-and-hours"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://aryanagreenville.com/",
+          "https://aryanagreenville.com/menu",
+          "https://aryanagreenville.com/contact-and-hours"
+        ],
+        "retrievedAt": "2026-08-31T12:27:32.237Z",
+        "playwrightPages": 0
+      }
+    },
+    "scoundrel-greenville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:27:34.646Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.scoundrelgvl.com/menu",
+        "reservationUrl": "https://www.toasttab.com/scoundrel-18-north-main-street/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Can I make a reservation for a large party?",
+        "groupPolicyLanguage": [
+          "Can I make a reservation for a large party?",
+          "We would love to host your party, for parties of 7 or more please fill out the private dining room form .",
+          "20% gratuity added to parties of 6 or more, as well as any slips that are taken or not signed.",
+          "Private dining Savor the details When you're looking to make a good impression, look no further."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Scoundrel is a French restaurant and full-service bar on Main Street in downtown Greenville, SC. Join us for dinner, Happy Hour, private events, ticketed dinners, and more.",
+            "sourceUrl": "https://www.scoundrelgvl.com/"
+          },
+          {
+            "quote": "og:description: French dining in Greenville SC has never been easier. You don",
+            "sourceUrl": "https://www.scoundrelgvl.com/menu"
+          },
+          {
+            "quote": "og:description: Looking for a small venue for a private event? Located in downtown Greenville, Scoundrel provides a private dining room to host your next event. Whether you",
+            "sourceUrl": "https://www.scoundrelgvl.com/private-dining"
+          },
+          {
+            "quote": "title: Private Dining &mdash; Scoundrel",
+            "sourceUrl": "https://www.scoundrelgvl.com/private-dining"
+          },
+          {
+            "quote": "og:description: Discover Scoundrel, a renowned Greenville restaurant awarded a Michelin star and James Beard semifinalist, blending French cuisine with local ingredients. Reserve today.",
+            "sourceUrl": "https://www.scoundrelgvl.com/about"
+          },
+          {
+            "quote": "title: About | Experience Fine Dining – Book Now &mdash; Scoundrel",
+            "sourceUrl": "https://www.scoundrelgvl.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.scoundrelgvl.com/",
+          "https://www.scoundrelgvl.com/menu",
+          "https://www.scoundrelgvl.com/private-dining",
+          "https://www.scoundrelgvl.com/about"
+        ],
+        "retrievedAt": "2026-08-31T12:27:34.646Z",
         "playwrightPages": 0
       }
     }

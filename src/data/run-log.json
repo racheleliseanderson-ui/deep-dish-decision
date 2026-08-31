@@ -2,6 +2,290 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-08-31T12:27:45.197Z",
+      "finishedAt": "2026-08-31T12:27:45.197Z",
+      "records": 998,
+      "promoted": 18,
+      "fullBefore": 980,
+      "fullAfter": 998,
+      "avgCompleteness": 96,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 977,
+        "officialConflicts": 11,
+        "thinRecords": 525,
+        "avgUnknowns": 5.14,
+        "avgThinFields": 7.58,
+        "lastReviewAt": "2026-08-31",
+        "reachableAtLastReview": 345
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T12:26:33.837Z",
+      "finishedAt": "2026-08-31T12:27:36.896Z",
+      "batchSize": 18,
+      "cities": [
+        "Fort Collins, Colorado",
+        "Springfield, Missouri",
+        "Greenville, South Carolina"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 95,
+      "corpusEnriched": 998,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T12-26-33-837Z-enrich-owned",
+      "records": [
+        {
+          "slug": "the-farmhouse-at-jessup-farm-fort-collins",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "the-regional-fort-collins",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "silver-grill-cafe-fort-collins",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 13"
+          ]
+        },
+        {
+          "slug": "cafe-vino-fort-collins",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "coopersmith-s-brewpub-fort-collins",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "the-emporium-fort-collins",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "cafe-cusco-springfield",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "van-gogh-s-eeterie-springfield",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "civil-kitchen-springfield",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "flame-steakhouse-springfield",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 1",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "gailey-s-breakfast-cafe-springfield",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "lindberg-s-tavern-springfield",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "soby-s-greenville",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "jianna-greenville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "fork-and-plough-greenville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "the-anchorage-greenville",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "aryana-afghan-cuisine-greenville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "scoundrel-greenville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T12:26:33.456Z",
+      "finishedAt": "2026-08-31T12:26:33.561Z",
+      "cities": [
+        {
+          "city": "Fort Collins, CO",
+          "queueCity": "Fort Collins",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Springfield, MO",
+          "queueCity": "Springfield",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Greenville, SC",
+          "queueCity": "Greenville",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 18,
+      "duplicatesSkipped": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T12-26-33-456Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings-2026-08-31-statewide-f02.json",
+        "seed-listings-2026-08-31-statewide-f03.json",
+        "seed-listings-2026-08-31-statewide-f04.json",
+        "seed-listings-2026-08-31-statewide-f05.json",
+        "seed-listings-2026-08-31-statewide-f06.json",
+        "seed-listings-2026-08-31-statewide-f07.json",
+        "seed-listings-2026-08-31-statewide-f08.json",
+        "seed-listings-2026-08-31-statewide-f09.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "the-farmhouse-at-jessup-farm-fort-collins",
+        "the-regional-fort-collins",
+        "silver-grill-cafe-fort-collins",
+        "cafe-vino-fort-collins",
+        "coopersmith-s-brewpub-fort-collins",
+        "the-emporium-fort-collins",
+        "cafe-cusco-springfield",
+        "van-gogh-s-eeterie-springfield",
+        "civil-kitchen-springfield",
+        "flame-steakhouse-springfield",
+        "gailey-s-breakfast-cafe-springfield",
+        "lindberg-s-tavern-springfield",
+        "soby-s-greenville",
+        "jianna-greenville",
+        "fork-and-plough-greenville",
+        "the-anchorage-greenville",
+        "aryana-afghan-cuisine-greenville",
+        "scoundrel-greenville"
+      ]
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-08-31T12:19:11.863Z",
       "finishedAt": "2026-08-31T12:19:11.863Z",
       "records": 980,
@@ -10923,768 +11207,6 @@
         "folk-nashville",
         "josephine-nashville"
       ]
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-18T21:06:23.270Z",
-      "finishedAt": "2026-08-18T21:06:32.612Z",
-      "batchSize": 2,
-      "cities": [
-        "Miami, Florida",
-        "Washington, District Of Columbia"
-      ],
-      "resolved": 2,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 66,
-      "corpusEnriched": 225,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 2
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-18T21-06-23-270Z-enrich-owned",
-      "records": [
-        {
-          "slug": "boia-de-miami",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "playwright 3"
-          ]
-        },
-        {
-          "slug": "the-dabney-washington",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 1"
-          ]
-        }
-      ],
-      "hygiene": null
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-18T20:29:50.673Z",
-      "finishedAt": "2026-08-18T20:31:02.748Z",
-      "batchSize": 21,
-      "cities": [
-        "Chicago, Illinois",
-        "New York, New York",
-        "Los Angeles, California",
-        "Pacific Northwest",
-        "San Francisco, California",
-        "Miami, Florida",
-        "Dallas, Texas",
-        "Philadelphia, Pennsylvania",
-        "Atlanta, Georgia",
-        "Boston, Massachusetts",
-        "Phoenix, Arizona",
-        "Washington, District Of Columbia"
-      ],
-      "resolved": 7,
-      "unresolved": 14,
-      "deferred": 0,
-      "avgCompleteness": 66,
-      "corpusEnriched": 225,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 21
-      },
-      "retries": 0,
-      "failures": 14,
-      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-18T20-29-50-673Z-enrich-owned",
-      "records": [
-        {
-          "slug": "summer-house-santa-monica",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "the-smith",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2",
-            "playwright 2"
-          ]
-        },
-        {
-          "slug": "perch",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 3",
-            "jsonld 1",
-            "relabeled resolved (prior site-failure was inherited)"
-          ]
-        },
-        {
-          "slug": "ariana",
-          "matchStatus": "resolved",
-          "completeness": 100,
-          "notes": [
-            "pages 4",
-            "playwright 3"
-          ]
-        },
-        {
-          "slug": "roe",
-          "matchStatus": "resolved",
-          "completeness": 100,
-          "notes": [
-            "pages 3",
-            "relabeled resolved (prior site-failure was inherited)"
-          ]
-        },
-        {
-          "slug": "mr-szechuan",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "spicy-king",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "the-best-sichuan",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2",
-            "playwright 1",
-            "relabeled resolved (prior site-failure was inherited)"
-          ]
-        },
-        {
-          "slug": "the-best-sichuan-39",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2",
-            "relabeled resolved (prior site-failure was inherited)"
-          ]
-        },
-        {
-          "slug": "boia-de-miami",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "chet-s-dallas",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 403 HTTP 403"
-          ]
-        },
-        {
-          "slug": "dizengoff-philadelphia",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "hayakawa-atlanta",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "kalaya-philadelphia",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "ky-miami",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "no-9-park-boston",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "pa-la-phoenix",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "the-dabney-washington",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "the-hampton-social-dallas",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 403 HTTP 403"
-          ]
-        },
-        {
-          "slug": "welcome-diner-phoenix",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "atlanta-fish-market-atlanta",
-          "matchStatus": "site-failure",
-          "completeness": 33,
-          "notes": [
-            "site 404 HTTP 404"
-          ]
-        }
-      ],
-      "hygiene": null,
-      "diagnosis": {
-        "cohort": "429-and-js-shell-plus-remaining-site-failures",
-        "ladder": "jsonld-before-strip + Retry-After limiter + gated Playwright",
-        "recovered": [
-          {
-            "slug": "summer-house-santa-monica",
-            "was": "429",
-            "now": "resolved",
-            "pages": 1
-          },
-          {
-            "slug": "the-smith",
-            "was": "429",
-            "now": "resolved",
-            "pages": 2,
-            "playwright": 2
-          },
-          {
-            "slug": "perch",
-            "was": "429",
-            "now": "resolved",
-            "pages": 3,
-            "jsonld": 1
-          },
-          {
-            "slug": "ariana",
-            "was": "429",
-            "now": "resolved",
-            "pages": 4,
-            "playwright": 3
-          },
-          {
-            "slug": "roe",
-            "was": "429/js-shell",
-            "now": "resolved",
-            "pages": 3,
-            "note": "OpenTable link on site is /r/roe-seattle — confirm Bellingham vs Seattle live"
-          },
-          {
-            "slug": "the-best-sichuan",
-            "was": "408",
-            "now": "resolved",
-            "pages": 2,
-            "playwright": 1
-          },
-          {
-            "slug": "the-best-sichuan-39",
-            "was": "408",
-            "now": "resolved",
-            "pages": 2
-          }
-        ],
-        "remaining": [
-          {
-            "slug": "chet-s-dallas",
-            "class": "waf-403",
-            "detail": "Cloudflare 'Just a moment' interstitial. Do not stealth-bypass."
-          },
-          {
-            "slug": "the-hampton-social-dallas",
-            "class": "waf-403",
-            "detail": "Cloudflare 'Just a moment' interstitial. Same edge as Chet's. Do not stealth-bypass."
-          },
-          {
-            "slug": "atlanta-fish-market-atlanta",
-            "class": "stale-404",
-            "detail": "buckheadrestaurants.com/atlanta-fish-market returns 404. Parent group site 200. Dataset path is stale; do not invent a venue URL."
-          },
-          {
-            "slug": "boia-de-miami",
-            "class": "listing-url-dead",
-            "detail": "www.boiade.com NXDOMAIN. Apex boiade.com 302s to first-party https://www.boiaderestaurant.com/ (200). Dataset website field needs a human rewrite.",
-            "applied": true,
-            "newWebsite": "https://www.boiaderestaurant.com/"
-          },
-          {
-            "slug": "the-dabney-washington",
-            "class": "tls-name",
-            "detail": "www.thedabney.com cert altname invalid. Apex https://thedabney.com/ is 200. Dataset www host is the blocker.",
-            "applied": true,
-            "newWebsite": "https://thedabney.com/"
-          },
-          {
-            "slug": "welcome-diner-phoenix",
-            "class": "tls-expired",
-            "detail": "CERT_HAS_EXPIRED on welcomediner.com. Host resolves."
-          },
-          {
-            "slug": "spicy-king",
-            "class": "tls-handshake",
-            "detail": "TLSV1_ALERT_INTERNAL_ERROR on spicyking-sf.com. Host resolves."
-          },
-          {
-            "slug": "kalaya-philadelphia",
-            "class": "tls-chain",
-            "detail": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY on kalaya.com. Host resolves."
-          },
-          {
-            "slug": "hayakawa-atlanta",
-            "class": "nxdomain",
-            "detail": "hayakawa-atl.com and www both NXDOMAIN. Listing URL dead. Do not invent a replacement."
-          },
-          {
-            "slug": "ky-miami",
-            "class": "nxdomain",
-            "detail": "kyumiami.com has no address. Listing URL dead. Do not invent a replacement."
-          },
-          {
-            "slug": "pa-la-phoenix",
-            "class": "nxdomain",
-            "detail": "palavegan.com NXDOMAIN. Listing URL dead. Do not invent a replacement."
-          },
-          {
-            "slug": "mr-szechuan",
-            "class": "connect-timeout",
-            "detail": "mrszechuan.shop resolves (167.71.208.19) then UND_ERR_CONNECT_TIMEOUT."
-          },
-          {
-            "slug": "dizengoff-philadelphia",
-            "class": "connect-timeout",
-            "detail": "dizengoffhummus.com resolves then UND_ERR_CONNECT_TIMEOUT."
-          },
-          {
-            "slug": "no-9-park-boston",
-            "class": "connect-timeout",
-            "detail": "no9park.com resolves then UND_ERR_CONNECT_TIMEOUT."
-          }
-        ],
-        "noWebsiteUnchanged": [
-          "delicious-chengdu",
-          "chengdu-taste",
-          "di-an-pho"
-        ],
-        "codeFollowups": [
-          "classifyFetchError now surfaces cause codes; connect timeouts map to 408",
-          "matchStatus no longer inherits prior site-failure as this-run partial"
-        ],
-        "notDone": [
-          "Did not rewrite dataset.json websites",
-          "Did not bypass Cloudflare 403",
-          "Did not invent replacement URLs for NXDOMAIN listings"
-        ],
-        "urlRewritesApplied": [
-          {
-            "slug": "boia-de-miami",
-            "from": "https://www.boiade.com/",
-            "to": "https://www.boiaderestaurant.com/"
-          },
-          {
-            "slug": "the-dabney-washington",
-            "from": "https://www.thedabney.com/",
-            "to": "https://thedabney.com/"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-18T14:28:18.173Z",
-      "finishedAt": "2026-08-18T14:29:58.973Z",
-      "batchSize": 25,
-      "cities": [
-        "San Francisco, California",
-        "Chicago, Illinois",
-        "New York, New York",
-        "Los Angeles, California",
-        "Pacific Northwest",
-        "Temple City, California",
-        "Alhambra, California",
-        "Houston, Texas",
-        "Miami, Florida",
-        "Dallas, Texas",
-        "Philadelphia, Pennsylvania",
-        "Atlanta, Georgia",
-        "Boston, Massachusetts",
-        "Phoenix, Arizona",
-        "Washington, District Of Columbia"
-      ],
-      "resolved": 4,
-      "unresolved": 21,
-      "deferred": 0,
-      "avgCompleteness": 66,
-      "corpusEnriched": 225,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 22
-      },
-      "retries": 0,
-      "failures": 21,
-      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-18T14-28-18-173Z-hygiene-owned",
-      "records": [
-        {
-          "slug": "mr-szechuan",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "spicy-king",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "summer-house-santa-monica",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "the-best-sichuan",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "the-best-sichuan-39",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "the-smith",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "perch",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "ariana",
-          "matchStatus": "resolved",
-          "completeness": 100,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "roe",
-          "matchStatus": "site-failure",
-          "completeness": 83,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "delicious-chengdu",
-          "matchStatus": "no-website",
-          "completeness": 17,
-          "notes": [
-            "no website"
-          ]
-        },
-        {
-          "slug": "chengdu-taste",
-          "matchStatus": "no-website",
-          "completeness": 22,
-          "notes": [
-            "no website"
-          ]
-        },
-        {
-          "slug": "di-an-pho",
-          "matchStatus": "no-website",
-          "completeness": 22,
-          "notes": [
-            "no website"
-          ]
-        },
-        {
-          "slug": "boia-de-miami",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "chet-s-dallas",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 403 HTTP 403"
-          ]
-        },
-        {
-          "slug": "dizengoff-philadelphia",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "hayakawa-atlanta",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "kalaya-philadelphia",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "kenny-s-wood-fired-grill",
-          "matchStatus": "partial",
-          "completeness": 44,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "ky-miami",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "no-9-park-boston",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "pa-la-phoenix",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "the-dabney-washington",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "the-hampton-social-dallas",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 403 HTTP 403"
-          ]
-        },
-        {
-          "slug": "welcome-diner-phoenix",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "atlanta-fish-market-atlanta",
-          "matchStatus": "site-failure",
-          "completeness": 33,
-          "notes": [
-            "site 404 HTTP 404"
-          ]
-        }
-      ],
-      "hygiene": {
-        "hygieneDue": 191,
-        "selected": [
-          "mr-szechuan",
-          "spicy-king",
-          "summer-house-santa-monica",
-          "the-best-sichuan",
-          "the-best-sichuan-39",
-          "the-smith",
-          "perch",
-          "ariana",
-          "roe",
-          "delicious-chengdu",
-          "chengdu-taste",
-          "di-an-pho",
-          "boia-de-miami",
-          "chet-s-dallas",
-          "dizengoff-philadelphia",
-          "hayakawa-atlanta",
-          "kalaya-philadelphia",
-          "kenny-s-wood-fired-grill",
-          "ky-miami",
-          "no-9-park-boston",
-          "pa-la-phoenix",
-          "the-dabney-washington",
-          "the-hampton-social-dallas",
-          "welcome-diner-phoenix",
-          "atlanta-fish-market-atlanta"
-        ],
-        "reasons": {
-          "mr-szechuan": [
-            "site-failure:site 408",
-            "thin-28"
-          ],
-          "spicy-king": [
-            "site-failure:site 500",
-            "thin-28"
-          ],
-          "summer-house-santa-monica": [
-            "site-failure:site 429",
-            "thin-44"
-          ],
-          "the-best-sichuan": [
-            "site-failure:site 408",
-            "thin-44"
-          ],
-          "the-best-sichuan-39": [
-            "site-failure:site 408",
-            "thin-44"
-          ],
-          "the-smith": [
-            "site-failure:site 429",
-            "thin-44"
-          ],
-          "perch": [
-            "site-failure:site 429",
-            "thin-67"
-          ],
-          "ariana": [
-            "site-failure:site 429"
-          ],
-          "roe": [
-            "site-failure:site 429"
-          ],
-          "delicious-chengdu": [
-            "thin-17"
-          ],
-          "chengdu-taste": [
-            "thin-22"
-          ],
-          "di-an-pho": [
-            "thin-22"
-          ],
-          "boia-de-miami": [
-            "thin-28"
-          ],
-          "chet-s-dallas": [
-            "thin-28"
-          ],
-          "dizengoff-philadelphia": [
-            "thin-28"
-          ],
-          "hayakawa-atlanta": [
-            "thin-28"
-          ],
-          "kalaya-philadelphia": [
-            "thin-28"
-          ],
-          "kenny-s-wood-fired-grill": [
-            "thin-28"
-          ],
-          "ky-miami": [
-            "thin-28"
-          ],
-          "no-9-park-boston": [
-            "thin-28"
-          ],
-          "pa-la-phoenix": [
-            "thin-28"
-          ],
-          "the-dabney-washington": [
-            "thin-28"
-          ],
-          "the-hampton-social-dallas": [
-            "thin-28"
-          ],
-          "welcome-diner-phoenix": [
-            "thin-28"
-          ],
-          "atlanta-fish-market-atlanta": [
-            "thin-33"
-          ]
-        }
-      }
     }
   ]
 }

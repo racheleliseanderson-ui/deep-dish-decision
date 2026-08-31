@@ -1,6 +1,6 @@
 {
   "regionGroup": "Colorado",
-  "count": 17,
+  "count": 23,
   "records": [
     {
       "id": 2285,
@@ -1949,6 +1949,713 @@
       "daypartTags": [],
       "planningLoad": "Standard",
       "bookingPaths": []
+    },
+    {
+      "id": 3022,
+      "slug": "the-farmhouse-at-jessup-farm-fort-collins",
+      "title": "The Farmhouse at Jessup Farm",
+      "link": "",
+      "recordId": "RI-EXP-0943",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-31T12:26:33.456Z",
+      "address": "1957 Jessup Drive, Fort Collins, CO 80525",
+      "phone": "+1-970-631-8041",
+      "email": "",
+      "website": "https://www.farmhousefc.com/",
+      "menuUrl": "",
+      "reservationUrl": "https://www.toasttab.com/the-farmhouse-at-jessup-farm/giftcards",
+      "coverageArea": "Fort Collins, Colorado",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Reservations via Toast.",
+      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: Private event reservations are required for parties of 20 or more, but can be made for parties of any size.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
+      "unknownList": [
+        "Live hours for your date",
+        "Dietary cross-contact handling",
+        "Accessibility route detail",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-31",
+      "nextReviewAt": "2026-09-30",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 12,
+      "depthTotal": 12,
+      "depthLabel": "12 / 12 core fields",
+      "signals": {},
+      "region": "Fort Collins, CO",
+      "city": "Fort Collins",
+      "stateProvince": "Colorado",
+      "regionGroup": "Colorado",
+      "priceTags": [],
+      "serviceStyles": [],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": true,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "hoursSummary",
+        "priceDetails",
+        "cuisineContext",
+        "menu",
+        "dietaryDetails",
+        "accessibilityState",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 8,
+      "bookingPlatforms": [
+        "Toast",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "American",
+        "Contemporary American"
+      ],
+      "officialSource": "https://www.farmhousefc.com/",
+      "additionalSources": "https://www.toasttab.com/the-farmhouse-at-jessup-farm/giftcards",
+      "sources": [
+        "https://www.farmhousefc.com/",
+        "https://www.toasttab.com/the-farmhouse-at-jessup-farm/giftcards"
+      ],
+      "retrievedAt": "2026-08-31T12:27:45.067Z",
+      "searchText": "the farmhouse at jessup farm fort collins colorado fort collins, co not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american toast phone 1957 jessup drive, fort collins, co 80525",
+      "spendBands": [],
+      "daypartTags": [],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast",
+        "Phone"
+      ]
+    },
+    {
+      "id": 3023,
+      "slug": "the-regional-fort-collins",
+      "title": "The Regional",
+      "link": "",
+      "recordId": "RI-EXP-0944",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-31T12:26:33.456Z",
+      "address": "130 South Mason Street, Fort Collins, CO 80524",
+      "phone": "+1-970-689-3508",
+      "email": "",
+      "website": "https://theregionalfood.com/",
+      "menuUrl": "https://theregionalfood.com/fort-collins-old-town-the-regional-food-menu",
+      "reservationUrl": "https://www.toasttab.com/the-regional/v3/",
+      "coverageArea": "Fort Collins, Colorado",
+      "cuisineContext": "American, Comfort Food — named on the restaurant's own pages.",
+      "serviceSummary": "American, Comfort Food. Reservations via Toast.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: We proudly offer many gluten-free options including our popular Wednesday special: gluten-free fried chicken.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Live hours for your date; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
+      "unknownList": [
+        "Live hours for your date",
+        "Accessibility route detail",
+        "Private-dining terms",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-31",
+      "nextReviewAt": "2026-09-30",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 12,
+      "depthTotal": 12,
+      "depthLabel": "12 / 12 core fields",
+      "signals": {},
+      "region": "Fort Collins, CO",
+      "city": "Fort Collins",
+      "stateProvince": "Colorado",
+      "regionGroup": "Colorado",
+      "priceTags": [],
+      "serviceStyles": [],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": true,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "hoursSummary",
+        "priceDetails",
+        "accessibilityState",
+        "groupDetails",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 6,
+      "bookingPlatforms": [
+        "Toast",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "American",
+        "Contemporary American"
+      ],
+      "officialSource": "https://theregionalfood.com/",
+      "additionalSources": "https://theregionalfood.com/fort-collins-old-town-the-regional-food-menu | https://www.toasttab.com/the-regional/v3/",
+      "sources": [
+        "https://theregionalfood.com/",
+        "https://theregionalfood.com/fort-collins-old-town-the-regional-food-menu",
+        "https://www.toasttab.com/the-regional/v3/"
+      ],
+      "retrievedAt": "2026-08-31T12:27:45.068Z",
+      "searchText": "the regional fort collins colorado fort collins, co american, comfort food — named on the restaurant's own pages. american contemporary american toast phone 130 south mason street, fort collins, co 80524",
+      "spendBands": [],
+      "daypartTags": [],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast",
+        "Phone"
+      ]
+    },
+    {
+      "id": 3024,
+      "slug": "silver-grill-cafe-fort-collins",
+      "title": "Silver Grill Café",
+      "link": "",
+      "recordId": "RI-EXP-0945",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-31T12:26:33.456Z",
+      "address": "218 Walnut Street, Fort Collins, CO 80524",
+      "phone": "+1-970-484-4656",
+      "email": "",
+      "website": "https://www.silvergrill.com/",
+      "menuUrl": "https://www.silvergrill.com/menu",
+      "reservationUrl": "https://order.toasttab.com/online/silvergrillcafe",
+      "coverageArea": "Fort Collins, Colorado",
+      "cuisineContext": "Breakfast, Brunch, American — named on the restaurant's own pages.",
+      "serviceSummary": "Breakfast, Brunch, American. Hours Sunday–Friday 7:00 AM–1:00 PM. Reservations via Toast.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Friday 7:00 AM–1:00 PM.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknownsCount": 4,
+      "unknownList": [
+        "Dietary cross-contact handling",
+        "Accessibility route detail",
+        "Private-dining terms",
+        "Parking and arrival logistics"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-31",
+      "nextReviewAt": "2026-09-30",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 12,
+      "depthTotal": 12,
+      "depthLabel": "12 / 12 core fields",
+      "signals": {},
+      "region": "Fort Collins, CO",
+      "city": "Fort Collins",
+      "stateProvince": "Colorado",
+      "regionGroup": "Colorado",
+      "priceTags": [
+        "$$"
+      ],
+      "serviceStyles": [],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": true,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "dietaryDetails",
+        "accessibilityState",
+        "groupDetails",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "Toast",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "American",
+        "Diner",
+        "Breakfast / brunch",
+        "Contemporary American"
+      ],
+      "officialSource": "https://www.silvergrill.com/",
+      "additionalSources": "https://www.silvergrill.com/menu | https://www.silvergrill.com/about | https://order.toasttab.com/online/silvergrillcafe",
+      "sources": [
+        "https://www.silvergrill.com/",
+        "https://www.silvergrill.com/menu",
+        "https://www.silvergrill.com/about",
+        "https://order.toasttab.com/online/silvergrillcafe"
+      ],
+      "retrievedAt": "2026-08-31T12:27:45.069Z",
+      "searchText": "silver grill café fort collins colorado fort collins, co breakfast, brunch, american — named on the restaurant's own pages. american diner breakfast / brunch contemporary american toast phone 218 walnut street, fort collins, co 80524",
+      "spendBands": [
+        "$$"
+      ],
+      "daypartTags": [],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast",
+        "Phone"
+      ]
+    },
+    {
+      "id": 3025,
+      "slug": "cafe-vino-fort-collins",
+      "title": "Cafe Vino",
+      "link": "",
+      "recordId": "RI-EXP-0946",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-31T12:26:33.456Z",
+      "address": "1200 South College Avenue, Fort Collins, CO 80524",
+      "phone": "+1-970-212-3399",
+      "email": "",
+      "website": "https://cafevino.com/",
+      "menuUrl": "https://cafevino.com/food-menu",
+      "reservationUrl": "https://www.toasttab.com/cafe-vino-1200-s-college-ave/giftcards",
+      "coverageArea": "Fort Collins, Colorado",
+      "cuisineContext": "Wine Bar, Contemporary American, American, Mediterranean, Italian — named on the restaurant's own pages.",
+      "serviceSummary": "Wine Bar, Contemporary American, American, Mediterranean, Italian. Hours Tuesday–Thursday 11:30 AM–9:00 PM; Friday 11:30 AM–10:00 PM. Reservations via Toast.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Tuesday–Thursday 11:30 AM–9:00 PM; Friday 11:30 AM–10:00 PM.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: Known as a top rehearsal dinner venue and a trusted choice for a Fort Collins private dining and event space for celebrations and gatherings, this setting is designed for connection, shared experiences, and lasting impressions. · This Fort Collins private dining and event space for celebrations and gatherings is ideal for bringing people together in a way that feels natural and unforced.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
+      "unknownList": [
+        "Dietary cross-contact handling",
+        "Accessibility route detail",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-31",
+      "nextReviewAt": "2026-09-30",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 12,
+      "depthTotal": 12,
+      "depthLabel": "12 / 12 core fields",
+      "signals": {},
+      "region": "Fort Collins, CO",
+      "city": "Fort Collins",
+      "stateProvince": "Colorado",
+      "regionGroup": "Colorado",
+      "priceTags": [],
+      "serviceStyles": [
+        "Daytime"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": true,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "priceDetails",
+        "dietaryDetails",
+        "accessibilityState",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "Toast",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "American",
+        "Wine bar",
+        "Wine-forward",
+        "Italian",
+        "Cocktail / lounge",
+        "Mediterranean"
+      ],
+      "officialSource": "https://cafevino.com/",
+      "additionalSources": "https://cafevino.com/food-menu | https://www.toasttab.com/cafe-vino-1200-s-college-ave/giftcards",
+      "sources": [
+        "https://cafevino.com/",
+        "https://cafevino.com/food-menu",
+        "https://www.toasttab.com/cafe-vino-1200-s-college-ave/giftcards"
+      ],
+      "retrievedAt": "2026-08-31T12:27:45.070Z",
+      "searchText": "cafe vino fort collins colorado fort collins, co wine bar, contemporary american, american, mediterranean, italian — named on the restaurant's own pages. american wine bar wine-forward italian cocktail / lounge mediterranean toast phone 1200 south college avenue, fort collins, co 80524",
+      "spendBands": [],
+      "daypartTags": [
+        "Lunch language"
+      ],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast",
+        "Phone"
+      ]
+    },
+    {
+      "id": 3026,
+      "slug": "coopersmith-s-brewpub-fort-collins",
+      "title": "CooperSmith's Brewpub",
+      "link": "",
+      "recordId": "RI-EXP-0947",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-31T12:26:33.456Z",
+      "address": "5 Old Town Square, Fort Collins, CO 80524",
+      "phone": "+1-970-498-0483",
+      "email": "",
+      "website": "https://coopersmithspub.com/",
+      "menuUrl": "https://coopersmithspub.com/brewpub/food-menu/",
+      "reservationUrl": "https://tables.toasttab.com/restaurants/7dc7a2e3-7fbf-40ad-a8a1-2adc73765a91/joinWaitlist",
+      "coverageArea": "Fort Collins, Colorado",
+      "cuisineContext": "Regional Specialties, and Seasonal Menu Options, Fish and Chips, Schnitzel, and Hearty Comfort Food Favorites — named on the restaurant's own pages.",
+      "serviceSummary": "Regional Specialties, and Seasonal Menu Options, Fish and Chips, Schnitzel, and Hearty Comfort Food Favorites. Hours Thursday 11:00 AM–9:00 PM; Saturday 11:00 AM–10:00 PM. Reservations via Toast.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Thursday 11:00 AM–9:00 PM; Saturday 11:00 AM–10:00 PM.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: Brewpub English pub meets American standards, zesty vegetarian options & regional specialties. · Black Bean Burger $16 Our house made vegetarian black bean burger made with rice, corn, spices, and bell peppers topped with avocado spread, spicy ranch, and choice of cheese.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknownsCount": 3,
+      "unknownList": [
+        "Accessibility route detail",
+        "Private-dining terms",
+        "Parking and arrival logistics"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-31",
+      "nextReviewAt": "2026-09-30",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 12,
+      "depthTotal": 12,
+      "depthLabel": "12 / 12 core fields",
+      "signals": {},
+      "region": "Fort Collins, CO",
+      "city": "Fort Collins",
+      "stateProvince": "Colorado",
+      "regionGroup": "Colorado",
+      "priceTags": [
+        "$$"
+      ],
+      "serviceStyles": [
+        "Daytime"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": true,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "accessibilityState",
+        "groupDetails",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 4,
+      "bookingPlatforms": [
+        "Toast",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "American",
+        "Brewpub",
+        "Seafood",
+        "Contemporary American",
+        "Seasonal / market"
+      ],
+      "officialSource": "https://coopersmithspub.com/",
+      "additionalSources": "https://coopersmithspub.com/brewpub/food-menu/ | https://coopersmithspub.com/about/ | https://tables.toasttab.com/restaurants/7dc7a2e3-7fbf-40ad-a8a1-2adc73765a91/joinWaitlist",
+      "sources": [
+        "https://coopersmithspub.com/",
+        "https://coopersmithspub.com/brewpub/food-menu/",
+        "https://coopersmithspub.com/about/",
+        "https://tables.toasttab.com/restaurants/7dc7a2e3-7fbf-40ad-a8a1-2adc73765a91/joinWaitlist"
+      ],
+      "retrievedAt": "2026-08-31T12:27:45.070Z",
+      "searchText": "coopersmith's brewpub fort collins colorado fort collins, co regional specialties, and seasonal menu options, fish and chips, schnitzel, and hearty comfort food favorites — named on the restaurant's own pages. american brewpub seafood contemporary american seasonal / market toast phone 5 old town square, fort collins, co 80524",
+      "spendBands": [
+        "$$"
+      ],
+      "daypartTags": [
+        "Lunch language"
+      ],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast",
+        "Phone"
+      ]
+    },
+    {
+      "id": 3027,
+      "slug": "the-emporium-fort-collins",
+      "title": "The Emporium",
+      "link": "",
+      "recordId": "RI-EXP-0948",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-31T12:26:33.456Z",
+      "address": "378 Walnut Street, Fort Collins, CO 80524",
+      "phone": "+1-970-493-0024",
+      "email": "",
+      "website": "https://www.emporiumftcollins.com/",
+      "menuUrl": "https://www.emporiumftcollins.com/menus/",
+      "reservationUrl": "https://www.opentable.com/restref/client/?rid=992095",
+      "coverageArea": "Fort Collins, Colorado",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Reservations via OpenTable.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: We do not offer a private dining room at our location; our warm and inviting restaurant space accommodates up to 12 guests. · The restaurant is also available for buyouts pending availability.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
+      "unknownList": [
+        "Live hours for your date",
+        "Dietary cross-contact handling",
+        "Accessibility route detail",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-31",
+      "nextReviewAt": "2026-09-30",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 12,
+      "depthTotal": 12,
+      "depthLabel": "12 / 12 core fields",
+      "signals": {},
+      "region": "Fort Collins, CO",
+      "city": "Fort Collins",
+      "stateProvince": "Colorado",
+      "regionGroup": "Colorado",
+      "priceTags": [],
+      "serviceStyles": [],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": true,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "hoursSummary",
+        "priceDetails",
+        "cuisineContext",
+        "dietaryDetails",
+        "accessibilityState",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 7,
+      "bookingPlatforms": [
+        "OpenTable",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "American",
+        "Contemporary American"
+      ],
+      "officialSource": "https://www.emporiumftcollins.com/",
+      "additionalSources": "https://www.emporiumftcollins.com/menus/ | https://www.emporiumftcollins.com/about-us/ | https://www.emporiumftcollins.com/private-events/ | https://www.opentable.com/restref/client/?rid=992095",
+      "sources": [
+        "https://www.emporiumftcollins.com/",
+        "https://www.emporiumftcollins.com/menus/",
+        "https://www.emporiumftcollins.com/about-us/",
+        "https://www.emporiumftcollins.com/private-events/",
+        "https://www.opentable.com/restref/client/?rid=992095"
+      ],
+      "retrievedAt": "2026-08-31T12:27:45.071Z",
+      "searchText": "the emporium fort collins colorado fort collins, co not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american opentable phone 378 walnut street, fort collins, co 80524",
+      "spendBands": [],
+      "daypartTags": [],
+      "planningLoad": "Material",
+      "bookingPaths": [
+        "OpenTable",
+        "Phone"
+      ]
     }
   ]
 }

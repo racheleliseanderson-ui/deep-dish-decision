@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T12:19:11.746Z",
-  "builtAt": "2026-08-31T12:19:34Z",
-  "count": 980,
-  "regions": 146,
+  "generatedAt": "2026-08-31T12:27:45.081Z",
+  "builtAt": "2026-08-31T12:27:45Z",
+  "count": 998,
+  "regions": 149,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 959,
+    "current": 977,
     "officialConflicts": 11,
-    "thinRecords": 517,
+    "thinRecords": 525,
     "avgUnknowns": 5.14,
     "avgThinFields": 7.58,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 327
+    "reachableAtLastReview": 345
   },
-  "fullCaseFiles": 980,
+  "fullCaseFiles": 998,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -114,7 +114,8 @@
     ],
     "Colorado": [
       "Colorado Springs, CO",
-      "Denver, CO"
+      "Denver, CO",
+      "Fort Collins, CO"
     ],
     "Connecticut": [
       "Hartford, CT",
@@ -194,6 +195,7 @@
     ],
     "Missouri": [
       "Kansas City, MO",
+      "Springfield, MO",
       "St. Louis, MO"
     ],
     "Montana": [
@@ -265,7 +267,8 @@
     ],
     "South Carolina": [
       "Charleston, SC",
-      "Columbia, SC"
+      "Columbia, SC",
+      "Greenville, SC"
     ],
     "South Dakota": [
       "Rapid City, SD",
@@ -469,9 +472,13 @@
     "Athens, GA": "Georgia",
     "Cedar Rapids, IA": "Iowa",
     "Rapid City, SD": "South Dakota",
-    "Mobile, AL": "Alabama"
+    "Mobile, AL": "Alabama",
+    "Fort Collins, CO": "Colorado",
+    "Springfield, MO": "Missouri",
+    "Greenville, SC": "South Carolina"
   },
   "cuisineTagOptions": [
+    "Afghan",
     "American",
     "Appalachian",
     "Asian",
@@ -505,6 +512,7 @@
     "Deli",
     "Detroit-style",
     "Diner",
+    "Dutch",
     "East African",
     "Eastern European",
     "Eastern Mediterranean",
@@ -7540,6 +7548,132 @@
       "region": "Mobile, AL",
       "regionGroup": "Alabama",
       "city": "Mobile"
+    },
+    {
+      "slug": "the-farmhouse-at-jessup-farm-fort-collins",
+      "title": "The Farmhouse at Jessup Farm",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "the-regional-fort-collins",
+      "title": "The Regional",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "silver-grill-cafe-fort-collins",
+      "title": "Silver Grill Café",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "cafe-vino-fort-collins",
+      "title": "Cafe Vino",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "coopersmith-s-brewpub-fort-collins",
+      "title": "CooperSmith's Brewpub",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "the-emporium-fort-collins",
+      "title": "The Emporium",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "cafe-cusco-springfield",
+      "title": "Cafe Cusco",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "van-gogh-s-eeterie-springfield",
+      "title": "Van Gogh's Eeterie",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "civil-kitchen-springfield",
+      "title": "Civil Kitchen",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "flame-steakhouse-springfield",
+      "title": "Flame Steakhouse",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "gailey-s-breakfast-cafe-springfield",
+      "title": "Gailey's Breakfast Cafe",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "lindberg-s-tavern-springfield",
+      "title": "Lindberg's Tavern",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "soby-s-greenville",
+      "title": "Soby's",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "jianna-greenville",
+      "title": "Jianna",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "fork-and-plough-greenville",
+      "title": "Fork and Plough",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "the-anchorage-greenville",
+      "title": "The Anchorage",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "aryana-afghan-cuisine-greenville",
+      "title": "Aryana Afghan Cuisine",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "scoundrel-greenville",
+      "title": "Scoundrel",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
     }
   ]
 }

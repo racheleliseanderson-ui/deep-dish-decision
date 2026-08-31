@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T12:17:05.483Z",
+  "generatedAt": "2026-08-31T12:26:31.488Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1257,6 +1257,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T12:17:20.197Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Fort Collins",
+      "stateCode": "CO",
+      "population": 169810,
+      "priority": 104,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:26:33.456Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Springfield",
+      "stateCode": "MO",
+      "population": 169176,
+      "priority": 105,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:26:33.456Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Greenville",
+      "stateCode": "SC",
+      "population": 72095,
+      "priority": 106,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:26:33.456Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]
