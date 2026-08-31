@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T03:40:29.868Z",
+  "generatedAt": "2026-08-31T11:58:03.795Z",
   "records": {
     "canlis": {
       "google": {
@@ -64219,6 +64219,1062 @@
         ],
         "retrievedAt": "2026-08-31T03:40:18.606Z",
         "playwrightPages": 1
+      }
+    },
+    "cotton-row-huntsville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:56:48.321Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.cottonrowrestaurant.com/menus/",
+        "reservationUrl": "https://www.toasttab.com/cottonrowrestaurant/giftcards?utmCampaign=onlineOrdering",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Main content starts here, tab to start navigating Private Dining Spaces Located on the historic downtown's square, Cotton Row's elegant interiors welcome guests of many sizes with warm hospitality.",
+        "groupPolicyLanguage": [
+          "Main content starts here, tab to start navigating Private Dining Spaces Located on the historic downtown's square, Cotton Row's elegant interiors welcome guests of many sizes with warm hospitality.",
+          "We offer several options for a memorable intimate private dining experience.",
+          "If you are interested in a private dining room for 8 or more guests, kindly complete the form below so that we may better assist you with your inquiry."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Cotton Row offers modern American Cuisine in an elegant downtown setting. Led by Chef James Boyce, Cotton Row features seasonally inspired dishes, Gulf seafood, prime meats and an award winning wines.",
+            "sourceUrl": "https://www.cottonrowrestaurant.com/"
+          },
+          {
+            "quote": "title: Cotton Row Restaurant | American Restaurant in Huntsville, AL",
+            "sourceUrl": "https://www.cottonrowrestaurant.com/"
+          },
+          {
+            "quote": "title: About | Cotton Row Restaurant in Huntsville, AL",
+            "sourceUrl": "https://www.cottonrowrestaurant.com/about/"
+          },
+          {
+            "quote": "og:description: See the menus for Cotton Row Restaurant in Huntsville, AL Serving authentic American food.",
+            "sourceUrl": "https://www.cottonrowrestaurant.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Cotton Row Restaurant in Huntsville, AL",
+            "sourceUrl": "https://www.cottonrowrestaurant.com/menus/"
+          },
+          {
+            "quote": "title: Private Dining | Cotton Row Restaurant in Huntsville, AL",
+            "sourceUrl": "https://www.cottonrowrestaurant.com/private-dining/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.cottonrowrestaurant.com/",
+          "https://www.cottonrowrestaurant.com/about/",
+          "https://www.cottonrowrestaurant.com/menus/",
+          "https://www.cottonrowrestaurant.com/private-dining/"
+        ],
+        "retrievedAt": "2026-08-31T11:56:48.321Z",
+        "playwrightPages": 0
+      }
+    },
+    "commerce-kitchen-huntsville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:56:50.335Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.thecommercekitchen.com/menus/",
+        "reservationUrl": "https://www.toasttab.com/commerce-kitchen/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Kindly notify our staff if you or anyone in your party suffers from a food allergy."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: For over 15 years Commerce Kitchen in Huntsville has offered redefined Southern Charm under Chef James Boyce.",
+            "sourceUrl": "https://www.thecommercekitchen.com/"
+          },
+          {
+            "quote": "title: Commerce Kitchen | Uniquely Southern",
+            "sourceUrl": "https://www.thecommercekitchen.com/"
+          },
+          {
+            "quote": "og:description: Commerce Kitchen in downtown Huntsville, led by Chef James Boyce, is a neighborhood gem serving redefined Southern cuisine, seasonal dishes, handcrafted cocktails, and weekend brunch.",
+            "sourceUrl": "https://www.thecommercekitchen.com/about/"
+          },
+          {
+            "quote": "title: About | Commerce Kitchen in Huntsville, AL",
+            "sourceUrl": "https://www.thecommercekitchen.com/about/"
+          },
+          {
+            "quote": "og:description: See menus for Commerce Kitchen in Huntsville, AL. Serving Fine American dishes for outdoor seating, delivery, takeaway, dine-in!",
+            "sourceUrl": "https://www.thecommercekitchen.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Commerce Kitchen in Huntsville, AL",
+            "sourceUrl": "https://www.thecommercekitchen.com/menus/"
+          },
+          {
+            "quote": "title: Private Events | The Commerce Kitchen | Fine American, Italian, and Southern Restaurant in Huntsville, AL",
+            "sourceUrl": "https://www.thecommercekitchen.com/private-events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.thecommercekitchen.com/",
+          "https://www.thecommercekitchen.com/about/",
+          "https://www.thecommercekitchen.com/menus/",
+          "https://www.thecommercekitchen.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-31T11:56:50.335Z",
+        "playwrightPages": 0
+      }
+    },
+    "domaine-south-huntsville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:56:52.836Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.domainesouth.com/menu",
+        "reservationUrl": "https://order.toasttab.com/online/domaine-south-200-westside-square-suite-60",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-21:00, Tu 11:00-21:00, We 11:00-21:00, Th 11:00-21:00, Fr 11:00-22:00, Sa 11:00-22:00, Su 15:00-20:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Larger groups will have the entree menu abbreviated, but to include a vegetarian, fish, steak, and chicken options.",
+          "Specific requests may be able to be accomodated given enough lead time, you may note special requests or allergies in your inquiry.",
+          "Can you accommodate dietary restrictions/food allergies?",
+          "-yes, we offer several menu items which are vegetarian or gluten free, and many items can be customized when catering to special requests or restrictions."
+        ],
+        "accessibilityLanguage": [
+          "There are handicapped spaces on the lobby level and you can take the elevator down from the lobby level to the terrace level."
+        ],
+        "groupPolicy": "Private Dining Room Photos We would love to talk about your event!",
+        "groupPolicyLanguage": [
+          "Private Dining Room Photos We would love to talk about your event!",
+          "Below is a list of frequently asked questions regarding private events at Domaine.",
+          "FAQ: Are there spending minimums when reserving the private room?",
+          "-There are no spending minimums required in reserving the private room."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Is a deposit required when reserving the private room?",
+          "-no deposit is required for a private room reservation, only the room rental fee.",
+          "A 20% of the minimum deposit is required for a whole restaurant buy-out."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-21:00, Tu 11:00-21:00, We 11:00-21:00, Th 11:00-21:00, Fr 11:00-22:00, Sa 11:00-22:00, Su 15:00-20:00",
+            "sourceUrl": "https://www.domainesouth.com/"
+          },
+          {
+            "quote": "og:description: Wine Bar and Restaurant in Huntsville, Alabama",
+            "sourceUrl": "https://www.domainesouth.com/"
+          },
+          {
+            "quote": "title: Private Parties &mdash; Domaine South",
+            "sourceUrl": "https://www.domainesouth.com/private-parties"
+          },
+          {
+            "quote": "title: Menu &mdash; Domaine South",
+            "sourceUrl": "https://www.domainesouth.com/menu"
+          },
+          {
+            "quote": "og:description: Wine Bar and Restaurant featuring Natural Wines, Casual Dining, Charcuterie",
+            "sourceUrl": "https://www.domainesouth.com/visit"
+          },
+          {
+            "quote": "title: Visit &mdash; Domaine South",
+            "sourceUrl": "https://www.domainesouth.com/visit"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.domainesouth.com/",
+          "https://www.domainesouth.com/private-parties",
+          "https://www.domainesouth.com/menu",
+          "https://www.domainesouth.com/visit"
+        ],
+        "retrievedAt": "2026-08-31T11:56:52.836Z",
+        "playwrightPages": 0
+      }
+    },
+    "revivalist-huntsville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:56:55.283Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.revivalisthuntsville.com/menus",
+        "reservationUrl": "https://www.opentable.com/booking/experiences-availability?rid=1196899&restref=1196899&experienceId=533741&utm_source=external&utm_medium=referral&utm_campaign=shared&dateTime=2025-09-16T18%3A00%3A00&partySize=2",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-256-288-0128"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday 06:30 22:00",
+          "JSON-LD openingHoursSpecification: Saturday,Sunday 07:00 22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Menu & Dietary Options Menu & Dietary Options Does Revivalist offer vegetarian options?",
+          "The menu includes a variety of dishes, including vegetarian-friendly options."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining & Events Private Dining & Events Does Revivalist offer private dining?",
+        "groupPolicyLanguage": [
+          "Private Dining & Events Private Dining & Events Does Revivalist offer private dining?",
+          "The restaurant offers private dining options and space for group events.",
+          "Revivalist can accommodate private events, celebrations, and group dining experiences."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-256-288-0128",
+            "sourceUrl": "https://www.revivalisthuntsville.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday 06:30 22:00",
+            "sourceUrl": "https://www.revivalisthuntsville.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday,Sunday 07:00 22:00",
+            "sourceUrl": "https://www.revivalisthuntsville.com/"
+          },
+          {
+            "quote": "og:description: Revivalist is more than another place to eat in downtown Huntsville, AL. It's an embodiment of parlor culture.",
+            "sourceUrl": "https://www.revivalisthuntsville.com/"
+          },
+          {
+            "quote": "title: Restaurant in Huntsville, AL | Revivalist",
+            "sourceUrl": "https://www.revivalisthuntsville.com/"
+          },
+          {
+            "quote": "og:description: Our menu tells a story — opening up your palate to a new world of southern food flavors in the best new restaurant in Huntsville, AL.",
+            "sourceUrl": "https://www.revivalisthuntsville.com/menus"
+          },
+          {
+            "quote": "title: Breakfast, Lunch & Dinner in Huntsville, AL | Revivalist",
+            "sourceUrl": "https://www.revivalisthuntsville.com/menus"
+          },
+          {
+            "quote": "og:description: Gather and celebrate at our restaurant with private event space in Huntsville, AL.",
+            "sourceUrl": "https://www.revivalisthuntsville.com/events-group-dining"
+          },
+          {
+            "quote": "title: Private Event Space in Huntsville, AL | Revivalist",
+            "sourceUrl": "https://www.revivalisthuntsville.com/events-group-dining"
+          },
+          {
+            "quote": "og:description: View frequently asked questions about our menu, dietary options, hours, reservations, and more. Contact us at (256) 288-0128 for details.",
+            "sourceUrl": "https://www.revivalisthuntsville.com/faq"
+          },
+          {
+            "quote": "title: Frequently Asked Questions | Revivalist",
+            "sourceUrl": "https://www.revivalisthuntsville.com/faq"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.revivalisthuntsville.com/",
+          "https://www.revivalisthuntsville.com/menus",
+          "https://www.revivalisthuntsville.com/events-group-dining",
+          "https://www.revivalisthuntsville.com/faq"
+        ],
+        "retrievedAt": "2026-08-31T11:56:55.283Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-poppy-and-parliament-huntsville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:56:57.446Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.thepoppyandparliament.com/drink",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.thepoppyandparliament.com/"
+          },
+          {
+            "quote": "title: The Poppy and Parliament",
+            "sourceUrl": "https://www.thepoppyandparliament.com/"
+          },
+          {
+            "quote": "title: Visit &mdash; The Poppy and Parliament",
+            "sourceUrl": "https://www.thepoppyandparliament.com/visit"
+          },
+          {
+            "quote": "title: Drink &mdash; The Poppy and Parliament",
+            "sourceUrl": "https://www.thepoppyandparliament.com/drink"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.thepoppyandparliament.com/",
+          "https://www.thepoppyandparliament.com/visit",
+          "https://www.thepoppyandparliament.com/drink"
+        ],
+        "retrievedAt": "2026-08-31T11:56:57.446Z",
+        "playwrightPages": 0
+      }
+    },
+    "phat-sammy-s-huntsville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:56:59.656Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://phatsammyshuntsville.com/menu/",
+        "reservationUrl": "https://resy.com/cities/hsv/phat-sammys",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 256-489-0232"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Monday,Tuesday,Wednesday,Thursday 15:00-23:00; Friday,Saturday 11:00-01:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "(GF + Vegan Available) Poke nachos – $17 Ahi Tuna, Candied Red Hot Pepper, Kimchi, Avocado, Roasted Garlic Cilantro Crema on Wonton Chips."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 256-489-0232",
+            "sourceUrl": "https://phatsammyshuntsville.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Monday,Tuesday,Wednesday,Thursday 15:00-23:00; Friday,Saturday 11:00-01:00",
+            "sourceUrl": "https://phatsammyshuntsville.com/"
+          },
+          {
+            "quote": "og:description: Phat Sammy's is an Eclectic Eatery and Tiki Bar located in the heart of Downtown Huntsville. Enjoy some creative dishes and handcrafted cocktails!",
+            "sourceUrl": "https://phatsammyshuntsville.com/"
+          },
+          {
+            "quote": "title: Phat Sammy's | Eclectic Eatery and Tiki Bar",
+            "sourceUrl": "https://phatsammyshuntsville.com/"
+          },
+          {
+            "quote": "og:description: Explore our diverse food and drink menu, showcasing an array of innovative dishes and tropical libations that transport your taste buds to paradise.",
+            "sourceUrl": "https://phatsammyshuntsville.com/menu/"
+          },
+          {
+            "quote": "title: Foods & Dranks Menu | Phat Sammy's",
+            "sourceUrl": "https://phatsammyshuntsville.com/menu/"
+          },
+          {
+            "quote": "og:description: Contact Phat Sammy's, the ultimate tiki bar destination in Huntsville, AL. Let us know if you have questions, comments, or concerns!",
+            "sourceUrl": "https://phatsammyshuntsville.com/contact/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://phatsammyshuntsville.com/",
+          "https://phatsammyshuntsville.com/menu/",
+          "https://phatsammyshuntsville.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T11:56:59.656Z",
+        "playwrightPages": 0
+      }
+    },
+    "rune-fort-wayne": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:01.597Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Home Private Dining Contact Reservations Home Private Dining Contact Reservations",
+        "groupPolicyLanguage": [
+          "Home Private Dining Contact Reservations Home Private Dining Contact Reservations"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Rune Restaurant | Neighborhood Fine Dining",
+            "sourceUrl": "https://runerestaurant.com/"
+          },
+          {
+            "quote": "title: Private Dining | Rune Restaurant",
+            "sourceUrl": "https://runerestaurant.com/private-dining/"
+          },
+          {
+            "quote": "title: Contact | Rune Restaurant",
+            "sourceUrl": "https://runerestaurant.com/contact/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://runerestaurant.com/",
+          "https://runerestaurant.com/private-dining/",
+          "https://runerestaurant.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T11:57:01.597Z",
+        "playwrightPages": 2
+      }
+    },
+    "the-oyster-bar-fort-wayne": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:22.715Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.fwoysterbar.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-22:00, Tu 11:00-15:00, Tu 17:00-22:00, We 11:00-15:00, We 17:00-22:00, Th 11:00-15:00, Th 17:00-22:00, Fr 11:00-15:00, Fr 17:00-22:00, Sa 17:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:00-22:00, Tu 11:00-15:00, Tu 17:00-22:00, We 11:00-15:00, We 17:00-22:00, Th 11:00-15:00, Th 17:00-22:00, Fr 11:00-15:00, Fr 17:00-22:00, Sa 17:00-22:00,",
+            "sourceUrl": "https://www.fwoysterbar.com/"
+          },
+          {
+            "quote": "title: Menu 1 &mdash; The Oyster Bar",
+            "sourceUrl": "https://www.fwoysterbar.com/menu"
+          },
+          {
+            "quote": "title: About &mdash; The Oyster Bar",
+            "sourceUrl": "https://www.fwoysterbar.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.fwoysterbar.com/",
+          "https://www.fwoysterbar.com/menu",
+          "https://www.fwoysterbar.com/about"
+        ],
+        "retrievedAt": "2026-08-31T11:57:22.715Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-hoppy-gnome-fort-wayne": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:24.520Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.hoppygnome.com/menu",
+        "reservationUrl": "https://order.toasttab.com/online/hoppygnome",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-21:00, Tu 11:00-21:00, We 11:00-21:00, Th 11:00-21:00, Fr 11:00-22:30, Sa 10:00-22:30, Su 10:00-21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "ONCE YOU GO GNOME YOU NEVER GO HOME Private Dining We offer a variety of options when it comes to your event and we’re confident we can exceed your expectations ensuring you and your guests have the best time possible!",
+        "groupPolicyLanguage": [
+          "ONCE YOU GO GNOME YOU NEVER GO HOME Private Dining We offer a variety of options when it comes to your event and we’re confident we can exceed your expectations ensuring you and your guests have the best time possible!",
+          "Private Event Software powered by Tripleseat"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-21:00, Tu 11:00-21:00, We 11:00-21:00, Th 11:00-21:00, Fr 11:00-22:30, Sa 10:00-22:30, Su 10:00-21:00",
+            "sourceUrl": "https://www.hoppygnome.com/"
+          },
+          {
+            "quote": "title: Menu 1 &mdash; The Hoppy Gnome",
+            "sourceUrl": "https://www.hoppygnome.com/menu"
+          },
+          {
+            "quote": "title: Private Dining &mdash; The Hoppy Gnome",
+            "sourceUrl": "https://www.hoppygnome.com/private-dining"
+          },
+          {
+            "quote": "title: Reservation &mdash; The Hoppy Gnome",
+            "sourceUrl": "https://www.hoppygnome.com/reservation"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.hoppygnome.com/",
+          "https://www.hoppygnome.com/menu",
+          "https://www.hoppygnome.com/private-dining",
+          "https://www.hoppygnome.com/reservation"
+        ],
+        "retrievedAt": "2026-08-31T11:57:24.520Z",
+        "playwrightPages": 0
+      }
+    },
+    "copper-spoon-fort-wayne": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:27.109Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.copperspoonfw.com/menu",
+        "reservationUrl": "https://www.toasttab.com/copperspoonfw/marketing-signup",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 2603889283"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Follow PRIVATE EVENTS We have spaces available for private event bookings!",
+        "groupPolicyLanguage": [
+          "Follow PRIVATE EVENTS We have spaces available for private event bookings!",
+          "Multiple areas including our bar, private room with TV, upper deck dining, outdoor space, & the entire restaurant are available to book!"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 2603889283",
+            "sourceUrl": "https://www.copperspoonfw.com/"
+          },
+          {
+            "quote": "og:description: Locally sourced food, unique cocktails, huge spirits list. Copper Spoon has an intimate dining atmosphere located in Downtown Fort Wayne.",
+            "sourceUrl": "https://www.copperspoonfw.com/"
+          },
+          {
+            "quote": "title: Copper Spoon I Fort Wayne I Restaurant",
+            "sourceUrl": "https://www.copperspoonfw.com/"
+          },
+          {
+            "quote": "og:description: Discover the current drink & food menus from our cocktail & culinary teams!",
+            "sourceUrl": "https://www.copperspoonfw.com/menu"
+          },
+          {
+            "quote": "og:description: Schedule of upcoming events at Copper Spoon & Sidecar",
+            "sourceUrl": "https://www.copperspoonfw.com/events"
+          },
+          {
+            "quote": "og:description: Contact information for the management team, events, & more at Copper Spoon!",
+            "sourceUrl": "https://www.copperspoonfw.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.copperspoonfw.com/",
+          "https://www.copperspoonfw.com/menu",
+          "https://www.copperspoonfw.com/events",
+          "https://www.copperspoonfw.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T11:57:27.109Z",
+        "playwrightPages": 0
+      }
+    },
+    "proximo-fort-wayne": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:30.293Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.proximofw.com/menu",
+        "reservationUrl": "https://order.toasttab.com/online/proximofw",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining We have a beautiful separate room to give you the private ambiance you are looking for.",
+        "groupPolicyLanguage": [
+          "Private Dining We have a beautiful separate room to give you the private ambiance you are looking for."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Our Menu &mdash; Proximo",
+            "sourceUrl": "https://www.proximofw.com/menu"
+          },
+          {
+            "quote": "title: Reservations &mdash; Proximo",
+            "sourceUrl": "https://www.proximofw.com/reservations"
+          },
+          {
+            "quote": "title: About Us &mdash; Proximo",
+            "sourceUrl": "https://www.proximofw.com/about-us"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.proximofw.com/",
+          "https://www.proximofw.com/menu",
+          "https://www.proximofw.com/reservations",
+          "https://www.proximofw.com/about-us"
+        ],
+        "retrievedAt": "2026-08-31T11:57:30.293Z",
+        "playwrightPages": 0
+      }
+    },
+    "spoke-ivy-fort-wayne": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:32.581Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "https://www.spokeandivy.com/menus",
+        "reservationUrl": "https://www.toasttab.com/local/order/spoke-and-ivy-new-1402-w-main-st",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Menus — 1402 W. Main St.",
+            "sourceUrl": "https://www.spokeandivy.com/menus"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.spokeandivy.com/",
+          "https://www.spokeandivy.com/menus"
+        ],
+        "retrievedAt": "2026-08-31T11:57:32.581Z",
+        "playwrightPages": 2
+      }
+    },
+    "zinc-new-haven": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:51.270Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://zincnewhaven.com/menu",
+        "reservationUrl": "https://zincnewhaven.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 17:00-21:00, We 17:00-21:00, Th 12:00-14:30, Th 17:00-21:00, Fr 12:00-14:30, Fr 17:00-22:00, Sa 12:00-14:30, Sa 17:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Founded 1999 Menu Reservations Garden Lounge Private Events Happy Hour Reservations Join ZINC Newsletter Sign up with your email address to receive news and updates.",
+        "groupPolicyLanguage": [
+          "Founded 1999 Menu Reservations Garden Lounge Private Events Happy Hour Reservations Join ZINC Newsletter Sign up with your email address to receive news and updates.",
+          "Private Events ZINC New Haven beckons you and your circle-be it colleagues, staff, friends, or family- to an exquisite dining affair.",
+          "ZINC Private Dining Room Our private dining room can be reserved for the larger party that wants a bit more privacy.",
+          "All private events can include ZINC Specialty Cocktails, wine, beer, and soft drinks."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-21:00, We 17:00-21:00, Th 12:00-14:30, Th 17:00-21:00, Fr 12:00-14:30, Fr 17:00-22:00, Sa 12:00-14:30, Sa 17:00-22:00,",
+            "sourceUrl": "https://zincnewhaven.com/"
+          },
+          {
+            "quote": "og:description: Across from the historic New Haven Green, ZINC offers an innovative seed-to-plate menu that celebrates the surrounding community. Sustainable food has been the focus of ZINC since opening its doors in 1999 and has helped earn our place as a fix",
+            "sourceUrl": "https://zincnewhaven.com/"
+          },
+          {
+            "quote": "title: Menu &mdash; ZINC New Haven",
+            "sourceUrl": "https://zincnewhaven.com/menu"
+          },
+          {
+            "quote": "title: Reservations &mdash; ZINC New Haven",
+            "sourceUrl": "https://zincnewhaven.com/reservations"
+          },
+          {
+            "quote": "title: Private Events &mdash; ZINC New Haven",
+            "sourceUrl": "https://zincnewhaven.com/private-events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://zincnewhaven.com/",
+          "https://zincnewhaven.com/menu",
+          "https://zincnewhaven.com/reservations",
+          "https://zincnewhaven.com/private-events"
+        ],
+        "retrievedAt": "2026-08-31T11:57:51.270Z",
+        "playwrightPages": 0
+      }
+    },
+    "olea-new-haven": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:53.464Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "http://www.opentable.com/single.aspx?rid=151186&restref=151186",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Olea can accommodate up to 35 guests for private events in part of the restaurant enclosed by a shimmering curtain, and larger parties can include up to 80 guests throughout Olea.",
+        "groupPolicyLanguage": [
+          "Olea can accommodate up to 35 guests for private events in part of the restaurant enclosed by a shimmering curtain, and larger parties can include up to 80 guests throughout Olea."
+        ],
+        "dressCode": "more information is available here attire Business casual attire is recommended.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,",
+            "sourceUrl": "http://www.oleanewhaven.com/"
+          },
+          {
+            "quote": "og:description: Located in downtown New Haven, Connecticut, Olea offers an innovative interpretation of Spanish and Mediterranean cuisine.",
+            "sourceUrl": "http://www.oleanewhaven.com/"
+          },
+          {
+            "quote": "title: info &mdash; olea new haven",
+            "sourceUrl": "http://www.oleanewhaven.com/info"
+          },
+          {
+            "quote": "title: private parties &mdash; olea new haven",
+            "sourceUrl": "http://www.oleanewhaven.com/private-parties"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "http://www.oleanewhaven.com/",
+          "http://www.oleanewhaven.com/info",
+          "http://www.oleanewhaven.com/private-parties"
+        ],
+        "retrievedAt": "2026-08-31T11:57:53.464Z",
+        "playwrightPages": 0
+      }
+    },
+    "gioia-new-haven": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:55.578Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.gioianewhaven.com/menus-1",
+        "reservationUrl": "https://www.toasttab.com/gioia-150-wooster-street/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private dining, weddings, full buyouts, and more at a premier New Haven event venue.",
+        "groupPolicyLanguage": [
+          "Private dining, weddings, full buyouts, and more at a premier New Haven event venue.",
+          "From intimate dinners in our cozy Market to vibrant rooftop celebrations and full restaurant buyouts, Gioia offers versatile, thoughtfully designed spaces to match the mood and scale of your event.",
+          "START PLANNING Market Events The Gioia Market, located on the first floor of the restaurant with its own dedicated entrance, is beautifully transformed into an intimate setting for private events.",
+          "Rooftop Events Our rooftop is open year-round, accommodating up to 44 guests for a seated experience in the upper section, or up to 100 guests for a full rooftop buyout featuring a cocktail-style reception."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Reserve &mdash; Gioia Cafe & Bar",
+            "sourceUrl": "https://www.gioianewhaven.com/reserve"
+          },
+          {
+            "quote": "title: Book an Event &mdash; Gioia Cafe & Bar",
+            "sourceUrl": "https://www.gioianewhaven.com/events"
+          },
+          {
+            "quote": "title: Contact &mdash; Gioia Cafe & Bar",
+            "sourceUrl": "https://www.gioianewhaven.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.gioianewhaven.com/",
+          "https://www.gioianewhaven.com/reserve",
+          "https://www.gioianewhaven.com/events",
+          "https://www.gioianewhaven.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T11:57:55.578Z",
+        "playwrightPages": 0
+      }
+    },
+    "modern-apizza-new-haven": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:57.752Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.modernapizza.com/menus",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Modern Apizza, located in New Haven, Connecticut, is a legendary pizzeria known for its delicious, brick-oven pizza. Established in 1934, it has become a staple in the New Haven pizza scene.",
+            "sourceUrl": "https://www.modernapizza.com/"
+          },
+          {
+            "quote": "title: Modern Apizza | local pizza shop | 874 State Street, New Haven, CT, USA",
+            "sourceUrl": "https://www.modernapizza.com/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.modernapizza.com/",
+          "https://www.modernapizza.com/menus"
+        ],
+        "retrievedAt": "2026-08-31T11:57:57.752Z",
+        "playwrightPages": 0
+      }
+    },
+    "lalibela-new-haven": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:57:59.182Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://lalibelact.com/menu/",
+        "reservationUrl": "https://order.toasttab.com/online/lalibela-ethiopian-restaurant-176-temple-street",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Do you offer vegetarian or vegan options?",
+          "Yes, we offer a variety of vegetarian and vegan dishes on our menu."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Lalibela Ethiopian Restaurant – Serving New Haven Since 1999",
+            "sourceUrl": "https://lalibelact.com/"
+          },
+          {
+            "quote": "title: Menu – Lalibela Ethiopian Restaurant",
+            "sourceUrl": "https://lalibelact.com/menu/"
+          },
+          {
+            "quote": "title: About Us – Lalibela Ethiopian Restaurant",
+            "sourceUrl": "https://lalibelact.com/about-us/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://lalibelact.com/",
+          "https://lalibelact.com/menu/",
+          "https://lalibelact.com/about-us/"
+        ],
+        "retrievedAt": "2026-08-31T11:57:59.182Z",
+        "playwrightPages": 0
+      }
+    },
+    "roli-new-haven": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T11:58:01.997Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.rolinewhaven.com/book",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: ROLi is a locally owned, free-spirited modern European restaurant in New Haven Connecticut, where Chef Roland Olah (ROLi) creates soulful, authentic dishes in a relaxed, open-kitchen setting. Our menus, inspired by our European roots and extens",
+            "sourceUrl": "https://www.rolinewhaven.com/"
+          },
+          {
+            "quote": "meta description: ROLi is a locally owned, free-spirited modern European restaurant in New Haven Connecticut, where Chef Roland Olah (ROLi) creates soulful, authentic dishes in a relaxed, open-kitchen setting. Our menus, inspired by our European roots and exte",
+            "sourceUrl": "https://www.rolinewhaven.com/"
+          },
+          {
+            "quote": "title: ROLi : Modern European Restaurant & Bar New Haven",
+            "sourceUrl": "https://www.rolinewhaven.com/"
+          },
+          {
+            "quote": "og:description: ROLi is the debut concept from two passionate Europeans (and New Haven locals!) Angela Grogan and Chef Roland Olah, blending the rustic soul of traditional European cooking with modern creativity and a dash of New Haven spirit. Originally from ",
+            "sourceUrl": "https://www.rolinewhaven.com/about"
+          },
+          {
+            "quote": "meta description: ROLi is the debut concept from two passionate Europeans (and New Haven locals!) Angela Grogan and Chef Roland Olah, blending the rustic soul of traditional European cooking with modern creativity and a dash of New Haven spirit. Originally fro",
+            "sourceUrl": "https://www.rolinewhaven.com/about"
+          },
+          {
+            "quote": "og:description: Book your table easily at ROLi restaurant and bar in New Haven using our booking form or give us a call instead. Reservations are encouraged for dining but walk-ins are welcome at the bar!",
+            "sourceUrl": "https://www.rolinewhaven.com/book"
+          },
+          {
+            "quote": "title: Booking page for ROLi Restaurant",
+            "sourceUrl": "https://www.rolinewhaven.com/book"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.rolinewhaven.com/",
+          "https://www.rolinewhaven.com/about",
+          "https://www.rolinewhaven.com/book"
+        ],
+        "retrievedAt": "2026-08-31T11:58:01.997Z",
+        "playwrightPages": 0
       }
     }
   }

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-31T03:40:33.589Z",
+  "generatedAt": "2026-08-31T11:58:13.162Z",
   "totals": {
-    "records": 926,
-    "enriched": 926,
-    "resolved": 915,
+    "records": 944,
+    "enriched": 944,
+    "resolved": 933,
     "unresolved": 0,
     "statesCovered": 51,
     "statesTotal": 51,
@@ -486,7 +486,7 @@
   "distribution": [
     {
       "label": "90-100",
-      "count": 915
+      "count": 933
     },
     {
       "label": "75-89",
@@ -647,6 +647,14 @@
       "perMillion": 2.89
     },
     {
+      "code": "IN",
+      "count": 17,
+      "enriched": 17,
+      "avgCompleteness": 96,
+      "population": 6862199,
+      "perMillion": 2.48
+    },
+    {
       "code": "MO",
       "count": 17,
       "enriched": 17,
@@ -687,6 +695,22 @@
       "perMillion": 3.31
     },
     {
+      "code": "AL",
+      "count": 14,
+      "enriched": 14,
+      "avgCompleteness": 97,
+      "population": 5108468,
+      "perMillion": 2.74
+    },
+    {
+      "code": "CT",
+      "count": 14,
+      "enriched": 14,
+      "avgCompleteness": 97,
+      "population": 3617176,
+      "perMillion": 3.87
+    },
+    {
       "code": "LA",
       "count": 14,
       "enriched": 14,
@@ -717,14 +741,6 @@
       "avgCompleteness": 95,
       "population": 6180253,
       "perMillion": 1.94
-    },
-    {
-      "code": "IN",
-      "count": 11,
-      "enriched": 11,
-      "avgCompleteness": 95,
-      "population": 6862199,
-      "perMillion": 1.6
     },
     {
       "code": "MT",
@@ -767,28 +783,12 @@
       "perMillion": 10.91
     },
     {
-      "code": "AL",
-      "count": 8,
-      "enriched": 8,
-      "avgCompleteness": 94,
-      "population": 5108468,
-      "perMillion": 1.57
-    },
-    {
       "code": "AR",
       "count": 8,
       "enriched": 8,
       "avgCompleteness": 96,
       "population": 3067732,
       "perMillion": 2.61
-    },
-    {
-      "code": "CT",
-      "count": 8,
-      "enriched": 8,
-      "avgCompleteness": 95,
-      "population": 3617176,
-      "perMillion": 2.21
     },
     {
       "code": "DE",
@@ -2410,7 +2410,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2433,7 +2433,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2456,7 +2456,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2479,7 +2479,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2502,7 +2502,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2525,7 +2525,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2548,7 +2548,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2571,7 +2571,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2594,7 +2594,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2617,7 +2617,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2640,7 +2640,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2663,7 +2663,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2686,7 +2686,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -3238,7 +3238,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3261,7 +3261,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3284,7 +3284,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3307,7 +3307,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3330,7 +3330,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3353,7 +3353,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3399,7 +3399,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3445,7 +3445,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3468,7 +3468,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3491,7 +3491,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3514,7 +3514,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3537,7 +3537,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3583,7 +3583,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3606,7 +3606,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3629,7 +3629,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3652,7 +3652,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3675,7 +3675,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3698,7 +3698,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3767,7 +3767,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3813,7 +3813,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3836,7 +3836,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3859,7 +3859,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3882,7 +3882,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3928,7 +3928,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3951,7 +3951,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3974,7 +3974,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -3997,7 +3997,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4020,7 +4020,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4043,7 +4043,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4066,7 +4066,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4089,7 +4089,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4112,7 +4112,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4135,7 +4135,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4181,7 +4181,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4204,7 +4204,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4227,7 +4227,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4250,7 +4250,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -4273,7 +4273,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -5795,16 +5795,200 @@
       "siteFailures": []
     },
     {
-      "slug": "magnolias-charleston",
-      "title": "Magnolias",
-      "stateCode": "SC",
-      "city": "Charleston",
+      "slug": "freemason-abbey-norfolk",
+      "title": "Freemason Abbey",
+      "stateCode": "VA",
+      "city": "Norfolk",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:40:18.606Z",
+      "lastEnrichedAt": "2026-08-31T03:39:25.494Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "todd-jurich-s-bistro-norfolk",
+      "title": "Todd Jurich's Bistro",
+      "stateCode": "VA",
+      "city": "Norfolk",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:39:26.132Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "press-626-norfolk",
+      "title": "Press 626",
+      "stateCode": "VA",
+      "city": "Norfolk",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:39:27.127Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "ilo-bistro-norfolk",
+      "title": "Ilo Bistro",
+      "stateCode": "VA",
+      "city": "Norfolk",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:39:37.885Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-ten-top-norfolk",
+      "title": "The Ten Top",
+      "stateCode": "VA",
+      "city": "Norfolk",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:39:38.795Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "blanca-food-wine-norfolk",
+      "title": "Blanca Food + Wine",
+      "stateCode": "VA",
+      "city": "Norfolk",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:39:39.676Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "dish-lincoln",
+      "title": "Dish",
+      "stateCode": "NE",
+      "city": "Lincoln",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:39:40.577Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-green-gateau-lincoln",
+      "title": "The Green Gateau",
+      "stateCode": "NE",
+      "city": "Lincoln",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:39:42.682Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "l-s-kitchen-lincoln",
+      "title": "L's Kitchen",
+      "stateCode": "NE",
+      "city": "Lincoln",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:39:44.799Z",
       "addedAt": "2026-08-31T03:39:25.097Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
@@ -5841,281 +6025,6 @@
       "siteFailures": []
     },
     {
-      "slug": "the-ten-top-norfolk",
-      "title": "The Ten Top",
-      "stateCode": "VA",
-      "city": "Norfolk",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:38.795Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 403,
-      "refreshReasons": [
-        "thin-67"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "blanca-food-wine-norfolk",
-      "title": "Blanca Food + Wine",
-      "stateCode": "VA",
-      "city": "Norfolk",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:39.676Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 403,
-      "refreshReasons": [
-        "thin-67"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "dish-lincoln",
-      "title": "Dish",
-      "stateCode": "NE",
-      "city": "Lincoln",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:40.577Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 403,
-      "refreshReasons": [
-        "thin-67"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "poogan-s-porch-charleston",
-      "title": "Poogan's Porch",
-      "stateCode": "SC",
-      "city": "Charleston",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:40:16.346Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 403,
-      "refreshReasons": [
-        "thin-67"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "todd-jurich-s-bistro-norfolk",
-      "title": "Todd Jurich's Bistro",
-      "stateCode": "VA",
-      "city": "Norfolk",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:26.132Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "ilo-bistro-norfolk",
-      "title": "Ilo Bistro",
-      "stateCode": "VA",
-      "city": "Norfolk",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:37.885Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "the-green-gateau-lincoln",
-      "title": "The Green Gateau",
-      "stateCode": "NE",
-      "city": "Lincoln",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:42.682Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "l-s-kitchen-lincoln",
-      "title": "L's Kitchen",
-      "stateCode": "NE",
-      "city": "Lincoln",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:44.799Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "vern-s-charleston",
-      "title": "Vern's",
-      "stateCode": "SC",
-      "city": "Charleston",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:40:15.004Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "freemason-abbey-norfolk",
-      "title": "Freemason Abbey",
-      "stateCode": "VA",
-      "city": "Norfolk",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:25.494Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "press-626-norfolk",
-      "title": "Press 626",
-      "stateCode": "VA",
-      "city": "Norfolk",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:27.127Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
       "slug": "lila-mae-s-southern-kitchen-lincoln",
       "title": "Lila Mae's Southern Kitchen",
       "stateCode": "NE",
@@ -6131,11 +6040,9 @@
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
       "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -6156,11 +6063,9 @@
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
       "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -6181,11 +6086,9 @@
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
       "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -6202,6 +6105,486 @@
       "priceBand": "",
       "lastEnrichedAt": "2026-08-31T03:40:13.252Z",
       "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "vern-s-charleston",
+      "title": "Vern's",
+      "stateCode": "SC",
+      "city": "Charleston",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:40:15.004Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "poogan-s-porch-charleston",
+      "title": "Poogan's Porch",
+      "stateCode": "SC",
+      "city": "Charleston",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:40:16.346Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "magnolias-charleston",
+      "title": "Magnolias",
+      "stateCode": "SC",
+      "city": "Charleston",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:40:18.606Z",
+      "addedAt": "2026-08-31T03:39:25.097Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "domaine-south-huntsville",
+      "title": "Domaine South",
+      "stateCode": "AL",
+      "city": "Huntsville",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:56:52.836Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "revivalist-huntsville",
+      "title": "Revivalist",
+      "stateCode": "AL",
+      "city": "Huntsville",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:56:55.283Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "phat-sammy-s-huntsville",
+      "title": "Phat Sammy's",
+      "stateCode": "AL",
+      "city": "Huntsville",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:56:59.656Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-hoppy-gnome-fort-wayne",
+      "title": "The Hoppy Gnome",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:24.520Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "zinc-new-haven",
+      "title": "Zinc",
+      "stateCode": "CT",
+      "city": "New Haven",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:51.270Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "olea-new-haven",
+      "title": "Olea",
+      "stateCode": "CT",
+      "city": "New Haven",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:53.464Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "cotton-row-huntsville",
+      "title": "Cotton Row",
+      "stateCode": "AL",
+      "city": "Huntsville",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:56:48.321Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "commerce-kitchen-huntsville",
+      "title": "Commerce Kitchen",
+      "stateCode": "AL",
+      "city": "Huntsville",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:56:50.335Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "copper-spoon-fort-wayne",
+      "title": "Copper Spoon",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:27.109Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "proximo-fort-wayne",
+      "title": "Proximo",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:30.293Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "gioia-new-haven",
+      "title": "Gioia",
+      "stateCode": "CT",
+      "city": "New Haven",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:55.578Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "lalibela-new-haven",
+      "title": "Lalibela",
+      "stateCode": "CT",
+      "city": "New Haven",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:59.182Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-poppy-and-parliament-huntsville",
+      "title": "The Poppy and Parliament",
+      "stateCode": "AL",
+      "city": "Huntsville",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:56:57.446Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-oyster-bar-fort-wayne",
+      "title": "The Oyster Bar",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:22.715Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "rune-fort-wayne",
+      "title": "Rune",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:01.597Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "modern-apizza-new-haven",
+      "title": "Modern Apizza",
+      "stateCode": "CT",
+      "city": "New Haven",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:57.752Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "roli-new-haven",
+      "title": "ROLi",
+      "stateCode": "CT",
+      "city": "New Haven",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:58:01.997Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -12422,7 +12805,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12445,7 +12828,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12468,7 +12851,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12491,7 +12874,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12514,7 +12897,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12537,7 +12920,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12560,7 +12943,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12583,7 +12966,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12606,7 +12989,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12629,7 +13012,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12652,7 +13035,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12675,7 +13058,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12698,7 +13081,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12721,7 +13104,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12744,7 +13127,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12767,7 +13150,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12790,7 +13173,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12813,7 +13196,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12836,7 +13219,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12859,7 +13242,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12882,7 +13265,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12905,7 +13288,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12928,7 +13311,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12951,7 +13334,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12974,7 +13357,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -12997,7 +13380,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13020,7 +13403,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13043,7 +13426,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13066,7 +13449,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13089,7 +13472,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13112,7 +13495,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13135,7 +13518,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13158,7 +13541,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13181,7 +13564,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13204,7 +13587,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13227,7 +13610,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13250,7 +13633,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13273,7 +13656,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13296,7 +13679,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13319,7 +13702,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13342,7 +13725,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13365,7 +13748,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13388,7 +13771,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13411,7 +13794,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13434,7 +13817,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13457,7 +13840,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13480,7 +13863,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13503,7 +13886,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13526,7 +13909,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13549,7 +13932,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13572,7 +13955,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13595,7 +13978,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -13618,7 +14001,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -15642,7 +16025,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15665,7 +16048,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15688,7 +16071,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15711,7 +16094,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15734,7 +16117,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15757,7 +16140,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15780,7 +16163,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15803,7 +16186,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15826,7 +16209,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15849,7 +16232,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15872,7 +16255,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15895,7 +16278,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15918,7 +16301,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15941,7 +16324,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15964,7 +16347,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -15987,7 +16370,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16010,7 +16393,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16033,7 +16416,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16056,7 +16439,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16079,7 +16462,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16102,7 +16485,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16125,7 +16508,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16148,7 +16531,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16171,7 +16554,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16194,7 +16577,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16217,7 +16600,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16240,7 +16623,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16263,7 +16646,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16286,7 +16669,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16309,7 +16692,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16332,7 +16715,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16355,7 +16738,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16378,7 +16761,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16401,7 +16784,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16424,7 +16807,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16447,7 +16830,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16470,7 +16853,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16493,7 +16876,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16516,7 +16899,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16539,7 +16922,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16562,7 +16945,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16585,7 +16968,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16608,7 +16991,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16654,7 +17037,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16677,7 +17060,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16700,7 +17083,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16723,7 +17106,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16746,7 +17129,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16769,7 +17152,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16792,7 +17175,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16815,7 +17198,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16838,7 +17221,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16861,7 +17244,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16884,7 +17267,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16907,7 +17290,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16930,7 +17313,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16953,7 +17336,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16976,7 +17359,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -16999,7 +17382,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17022,7 +17405,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17045,7 +17428,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17068,7 +17451,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17091,7 +17474,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17114,7 +17497,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17137,7 +17520,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17160,7 +17543,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17183,7 +17566,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17206,7 +17589,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17229,7 +17612,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17252,7 +17635,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17275,7 +17658,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17298,7 +17681,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17321,7 +17704,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17344,7 +17727,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17367,7 +17750,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17390,7 +17773,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17413,7 +17796,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17436,7 +17819,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17459,7 +17842,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17482,7 +17865,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17505,7 +17888,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17528,7 +17911,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17551,7 +17934,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17574,7 +17957,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17597,7 +17980,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17620,7 +18003,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17643,7 +18026,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17666,7 +18049,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17689,7 +18072,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17712,7 +18095,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17758,7 +18141,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17781,7 +18164,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17804,7 +18187,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17827,7 +18210,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17850,7 +18233,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17873,7 +18256,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17896,7 +18279,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17919,7 +18302,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17942,7 +18325,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17965,7 +18348,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -17988,7 +18371,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18011,7 +18394,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18034,7 +18417,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18057,7 +18440,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18080,7 +18463,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18103,7 +18486,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18126,7 +18509,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18149,7 +18532,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18172,7 +18555,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18195,7 +18578,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18218,7 +18601,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18241,7 +18624,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18264,7 +18647,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18287,7 +18670,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18310,7 +18693,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18333,7 +18716,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18356,7 +18739,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18379,7 +18762,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18402,7 +18785,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18425,7 +18808,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18448,7 +18831,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18471,7 +18854,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18494,7 +18877,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18517,7 +18900,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18540,7 +18923,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18563,7 +18946,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18586,7 +18969,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18609,7 +18992,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18632,7 +19015,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18655,7 +19038,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18678,7 +19061,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18701,7 +19084,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18724,7 +19107,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18747,7 +19130,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18770,7 +19153,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18793,7 +19176,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18816,7 +19199,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18839,7 +19222,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18862,7 +19245,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18885,7 +19268,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18908,7 +19291,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18931,7 +19314,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18954,7 +19337,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -18977,7 +19360,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19000,7 +19383,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19023,7 +19406,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19046,7 +19429,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19069,7 +19452,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19092,7 +19475,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19115,7 +19498,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19138,7 +19521,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19161,7 +19544,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19184,7 +19567,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19207,7 +19590,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19230,7 +19613,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19253,7 +19636,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19276,7 +19659,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19299,7 +19682,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19322,7 +19705,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19345,7 +19728,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19368,7 +19751,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19391,7 +19774,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19414,7 +19797,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19437,7 +19820,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19460,7 +19843,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19483,7 +19866,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19506,7 +19889,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19529,7 +19912,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19552,7 +19935,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19575,7 +19958,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19598,7 +19981,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19621,7 +20004,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19667,7 +20050,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19690,7 +20073,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19713,7 +20096,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19736,7 +20119,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19759,7 +20142,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19782,7 +20165,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19805,7 +20188,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19828,7 +20211,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19851,7 +20234,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19874,7 +20257,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19897,7 +20280,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19920,7 +20303,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -19943,7 +20326,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20012,7 +20395,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20035,7 +20418,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20058,7 +20441,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20104,7 +20487,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20127,7 +20510,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20150,7 +20533,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20173,7 +20556,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20196,7 +20579,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20219,7 +20602,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20242,7 +20625,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20265,7 +20648,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20288,7 +20671,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20311,7 +20694,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20334,7 +20717,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20357,7 +20740,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20380,7 +20763,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20403,7 +20786,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20426,7 +20809,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20449,7 +20832,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20472,7 +20855,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20495,7 +20878,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20518,7 +20901,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20541,7 +20924,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20564,7 +20947,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20587,7 +20970,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20610,7 +20993,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20633,7 +21016,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20656,7 +21039,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20679,7 +21062,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20702,7 +21085,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20725,7 +21108,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20748,7 +21131,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20771,7 +21154,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20794,7 +21177,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20817,7 +21200,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20840,7 +21223,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20863,7 +21246,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20886,7 +21269,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20932,7 +21315,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20955,7 +21338,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -20978,7 +21361,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21001,7 +21384,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21024,7 +21407,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21047,7 +21430,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21070,7 +21453,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21093,7 +21476,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21116,7 +21499,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21139,7 +21522,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21162,7 +21545,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21185,7 +21568,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21208,7 +21591,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21231,7 +21614,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21254,7 +21637,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21277,7 +21660,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21300,7 +21683,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -21323,7 +21706,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 10,
+      "ageDays": 11,
       "siteFailures": []
     },
     {
@@ -22009,6 +22392,29 @@
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
       "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "spoke-ivy-fort-wayne",
+      "title": "Spoke + Ivy",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 94,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:32.581Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 414,
       "refreshReasons": [
@@ -22303,40 +22709,42 @@
   ],
   "recent": [
     {
-      "slug": "magnolias-charleston",
-      "title": "Magnolias",
-      "stateCode": "SC",
-      "city": "Charleston",
-      "completeness": 78,
+      "slug": "roli-new-haven",
+      "title": "ROLi",
+      "stateCode": "CT",
+      "city": "New Haven",
+      "completeness": 56,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:40:18.606Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
+      "lastEnrichedAt": "2026-08-31T11:58:01.997Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
     },
     {
-      "slug": "poogan-s-porch-charleston",
-      "title": "Poogan's Porch",
-      "stateCode": "SC",
-      "city": "Charleston",
+      "slug": "lalibela-new-haven",
+      "title": "Lalibela",
+      "stateCode": "CT",
+      "city": "New Haven",
       "completeness": 67,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:40:16.346Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
+      "lastEnrichedAt": "2026-08-31T11:57:59.182Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -22351,42 +22759,17 @@
       "siteFailures": []
     },
     {
-      "slug": "vern-s-charleston",
-      "title": "Vern's",
-      "stateCode": "SC",
-      "city": "Charleston",
-      "completeness": 61,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:40:15.004Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "chubby-fish-charleston",
-      "title": "Chubby Fish",
-      "stateCode": "SC",
-      "city": "Charleston",
+      "slug": "modern-apizza-new-haven",
+      "title": "Modern Apizza",
+      "stateCode": "CT",
+      "city": "New Haven",
       "completeness": 56,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:40:13.252Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
+      "lastEnrichedAt": "2026-08-31T11:57:57.752Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -22401,117 +22784,42 @@
       "siteFailures": []
     },
     {
-      "slug": "the-ordinary-charleston",
-      "title": "The Ordinary",
-      "stateCode": "SC",
-      "city": "Charleston",
-      "completeness": 56,
+      "slug": "gioia-new-haven",
+      "title": "Gioia",
+      "stateCode": "CT",
+      "city": "New Haven",
+      "completeness": 67,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:40:11.845Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
+      "lastEnrichedAt": "2026-08-31T11:57:55.578Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 414,
+      "refreshPriority": 403,
       "refreshReasons": [
-        "thin-56"
+        "thin-67"
       ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
     },
     {
-      "slug": "fig-charleston",
-      "title": "FIG",
-      "stateCode": "SC",
-      "city": "Charleston",
-      "completeness": 56,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:40:10.517Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "well-good-lincoln",
-      "title": "Well & Good",
-      "stateCode": "NE",
-      "city": "Lincoln",
-      "completeness": 56,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:57.906Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "lila-mae-s-southern-kitchen-lincoln",
-      "title": "Lila Mae's Southern Kitchen",
-      "stateCode": "NE",
-      "city": "Lincoln",
-      "completeness": 56,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:56.952Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "casa-bovina-lincoln",
-      "title": "Casa Bovina",
-      "stateCode": "NE",
-      "city": "Lincoln",
+      "slug": "olea-new-haven",
+      "title": "Olea",
+      "stateCode": "CT",
+      "city": "New Haven",
       "completeness": 72,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:55.632Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
+      "lastEnrichedAt": "2026-08-31T11:57:53.464Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -22524,67 +22832,65 @@
       "siteFailures": []
     },
     {
-      "slug": "l-s-kitchen-lincoln",
-      "title": "L's Kitchen",
-      "stateCode": "NE",
-      "city": "Lincoln",
-      "completeness": 61,
+      "slug": "zinc-new-haven",
+      "title": "Zinc",
+      "stateCode": "CT",
+      "city": "New Haven",
+      "completeness": 72,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:44.799Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
+      "lastEnrichedAt": "2026-08-31T11:57:51.270Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "spoke-ivy-fort-wayne",
+      "title": "Spoke + Ivy",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:32.581Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
       "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 409,
+      "refreshPriority": 414,
       "refreshReasons": [
-        "thin-61"
+        "thin-56"
       ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
     },
     {
-      "slug": "the-green-gateau-lincoln",
-      "title": "The Green Gateau",
-      "stateCode": "NE",
-      "city": "Lincoln",
-      "completeness": 61,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:42.682Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-30",
-      "reviewedAt": "2026-08-31",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 409,
-      "refreshReasons": [
-        "thin-61"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "dish-lincoln",
-      "title": "Dish",
-      "stateCode": "NE",
-      "city": "Lincoln",
+      "slug": "proximo-fort-wayne",
+      "title": "Proximo",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
       "completeness": 67,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T03:39:40.577Z",
-      "addedAt": "2026-08-31T03:39:25.097Z",
+      "lastEnrichedAt": "2026-08-31T11:57:30.293Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -22593,6 +22899,104 @@
       "refreshPriority": 403,
       "refreshReasons": [
         "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "copper-spoon-fort-wayne",
+      "title": "Copper Spoon",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:27.109Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 403,
+      "refreshReasons": [
+        "thin-67"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-hoppy-gnome-fort-wayne",
+      "title": "The Hoppy Gnome",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 72,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:24.520Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-oyster-bar-fort-wayne",
+      "title": "The Oyster Bar",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:22.715Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 409,
+      "refreshReasons": [
+        "thin-61"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "rune-fort-wayne",
+      "title": "Rune",
+      "stateCode": "IN",
+      "city": "Fort Wayne",
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T11:57:01.597Z",
+      "addedAt": "2026-08-31T11:56:47.697Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
       ],
       "staleTier": null,
       "ageDays": 0,
@@ -22605,10 +23009,82 @@
     "citiesPerRun": 3,
     "dailyCap": 200,
     "pending": 0,
-    "done": 94,
+    "done": 97,
     "next": []
   },
   "runs": [
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T11:56:48.294Z",
+      "batchSize": 18,
+      "inserted": 0,
+      "cities": [
+        "Huntsville, Alabama",
+        "Fort Wayne, Indiana",
+        "New Haven, Connecticut"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "avgCompleteness": 95,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T11:56:47.697Z",
+      "batchSize": 0,
+      "inserted": 18,
+      "cities": [
+        {
+          "city": "Huntsville, AL",
+          "queueCity": "Huntsville",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Fort Wayne, IN",
+          "queueCity": "Fort Wayne",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "New Haven, CT",
+          "queueCity": "New Haven",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "level-records",
+      "startedAt": "2026-08-31T03:40:33.742Z",
+      "batchSize": 0,
+      "inserted": 0,
+      "cities": [],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 95,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
     {
       "kind": "enrich-owned",
       "startedAt": "2026-08-31T03:39:25.471Z",
@@ -22733,78 +23209,6 @@
         {
           "city": "Ann Arbor, MI",
           "queueCity": "Ann Arbor",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        }
-      ],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "level-records",
-      "startedAt": "2026-08-31T03:21:11.087Z",
-      "batchSize": 0,
-      "inserted": 0,
-      "cities": [],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 95,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-31T03:20:12.677Z",
-      "batchSize": 18,
-      "inserted": 0,
-      "cities": [
-        "St. Louis, Missouri",
-        "Worcester, Massachusetts",
-        "Baton Rouge, Louisiana"
-      ],
-      "resolved": 18,
-      "unresolved": 0,
-      "avgCompleteness": 94,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 18
-      },
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-31T03:20:12.315Z",
-      "batchSize": 0,
-      "inserted": 18,
-      "cities": [
-        {
-          "city": "St. Louis, MO",
-          "queueCity": "St. Louis",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        },
-        {
-          "city": "Worcester, MA",
-          "queueCity": "Worcester",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        },
-        {
-          "city": "Baton Rouge, LA",
-          "queueCity": "Baton Rouge",
           "found": 6,
           "inserted": 6,
           "duplicates": 0

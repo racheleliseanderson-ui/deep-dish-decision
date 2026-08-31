@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T03:40:33.579Z",
-  "builtAt": "2026-08-31T03:40:33Z",
-  "count": 926,
-  "regions": 137,
+  "generatedAt": "2026-08-31T11:58:13.152Z",
+  "builtAt": "2026-08-31T11:58:13Z",
+  "count": 944,
+  "regions": 140,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 905,
+    "current": 923,
     "officialConflicts": 11,
-    "thinRecords": 491,
-    "avgUnknowns": 5.15,
-    "avgThinFields": 7.6,
+    "thinRecords": 497,
+    "avgUnknowns": 5.14,
+    "avgThinFields": 7.59,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 275
+    "reachableAtLastReview": 292
   },
-  "fullCaseFiles": 926,
+  "fullCaseFiles": 944,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -73,7 +73,8 @@
   ],
   "regionsByGroup": {
     "Alabama": [
-      "Birmingham, AL"
+      "Birmingham, AL",
+      "Huntsville, AL"
     ],
     "Alaska": [
       "Anchorage, AK"
@@ -115,7 +116,8 @@
       "Denver, CO"
     ],
     "Connecticut": [
-      "Hartford, CT"
+      "Hartford, CT",
+      "New Haven, CT"
     ],
     "Delaware": [
       "Wilmington, DE"
@@ -148,6 +150,7 @@
       "Glenview, IL"
     ],
     "Indiana": [
+      "Fort Wayne, IN",
       "Indianapolis, IN"
     ],
     "Iowa": [
@@ -451,7 +454,10 @@
     "Ann Arbor, MI": "Michigan",
     "Norfolk, VA": "Virginia",
     "Lincoln, NE": "Nebraska",
-    "Charleston, SC": "South Carolina"
+    "Charleston, SC": "South Carolina",
+    "Huntsville, AL": "Alabama",
+    "Fort Wayne, IN": "Indiana",
+    "New Haven, CT": "Connecticut"
   },
   "cuisineTagOptions": [
     "American",
@@ -489,6 +495,7 @@
     "East African",
     "Eastern European",
     "Eastern Mediterranean",
+    "Ethiopian",
     "European",
     "Farm-to-table",
     "Filipino",
@@ -580,9 +587,11 @@
     "Tapas",
     "Tasting menu",
     "Tavern",
+    "Tea",
     "Tex-Mex",
     "Texas",
     "Thai",
+    "Tiki",
     "Turkish",
     "Tuscan",
     "Vegan",
@@ -7137,6 +7146,132 @@
       "region": "Charleston, SC",
       "regionGroup": "South Carolina",
       "city": "Charleston"
+    },
+    {
+      "slug": "cotton-row-huntsville",
+      "title": "Cotton Row",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "commerce-kitchen-huntsville",
+      "title": "Commerce Kitchen",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "domaine-south-huntsville",
+      "title": "Domaine South",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "revivalist-huntsville",
+      "title": "Revivalist",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "the-poppy-and-parliament-huntsville",
+      "title": "The Poppy and Parliament",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "phat-sammy-s-huntsville",
+      "title": "Phat Sammy's",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "rune-fort-wayne",
+      "title": "Rune",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "the-oyster-bar-fort-wayne",
+      "title": "The Oyster Bar",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "the-hoppy-gnome-fort-wayne",
+      "title": "The Hoppy Gnome",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "copper-spoon-fort-wayne",
+      "title": "Copper Spoon",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "proximo-fort-wayne",
+      "title": "Proximo",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "spoke-ivy-fort-wayne",
+      "title": "Spoke + Ivy",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "zinc-new-haven",
+      "title": "Zinc",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "olea-new-haven",
+      "title": "Olea",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "gioia-new-haven",
+      "title": "Gioia",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "modern-apizza-new-haven",
+      "title": "Modern Apizza",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "lalibela-new-haven",
+      "title": "Lalibela",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "roli-new-haven",
+      "title": "ROLi",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
     }
   ]
 }

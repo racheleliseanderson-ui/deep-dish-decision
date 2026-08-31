@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T03:39:21.172Z",
+  "generatedAt": "2026-08-31T11:56:45.557Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1149,6 +1149,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T03:39:25.097Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Huntsville",
+      "stateCode": "AL",
+      "population": 221933,
+      "priority": 95,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T11:56:47.697Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Fort Wayne",
+      "stateCode": "IN",
+      "population": 269994,
+      "priority": 96,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T11:56:47.697Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "New Haven",
+      "stateCode": "CT",
+      "population": 135081,
+      "priority": 97,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T11:56:47.697Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

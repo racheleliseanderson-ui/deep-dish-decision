@@ -2,6 +2,287 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-08-31T11:58:13.253Z",
+      "finishedAt": "2026-08-31T11:58:13.253Z",
+      "records": 944,
+      "promoted": 18,
+      "fullBefore": 926,
+      "fullAfter": 944,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 923,
+        "officialConflicts": 11,
+        "thinRecords": 497,
+        "avgUnknowns": 5.14,
+        "avgThinFields": 7.59,
+        "lastReviewAt": "2026-08-31",
+        "reachableAtLastReview": 292
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T11:56:48.294Z",
+      "finishedAt": "2026-08-31T11:58:03.820Z",
+      "batchSize": 18,
+      "cities": [
+        "Huntsville, Alabama",
+        "Fort Wayne, Indiana",
+        "New Haven, Connecticut"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 95,
+      "corpusEnriched": 944,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T11-56-48-295Z-enrich-owned",
+      "records": [
+        {
+          "slug": "cotton-row-huntsville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "commerce-kitchen-huntsville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "domaine-south-huntsville",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "revivalist-huntsville",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "the-poppy-and-parliament-huntsville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "phat-sammy-s-huntsville",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "rune-fort-wayne",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "the-oyster-bar-fort-wayne",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-hoppy-gnome-fort-wayne",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "copper-spoon-fort-wayne",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "proximo-fort-wayne",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "spoke-ivy-fort-wayne",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "zinc-new-haven",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "olea-new-haven",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "gioia-new-haven",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "modern-apizza-new-haven",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "lalibela-new-haven",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "roli-new-haven",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T11:56:47.697Z",
+      "finishedAt": "2026-08-31T11:56:47.864Z",
+      "cities": [
+        {
+          "city": "Huntsville, AL",
+          "queueCity": "Huntsville",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Fort Wayne, IN",
+          "queueCity": "Fort Wayne",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "New Haven, CT",
+          "queueCity": "New Haven",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 18,
+      "duplicatesSkipped": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T11-56-47-697Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings-2026-08-31-statewide-f02.json",
+        "seed-listings-2026-08-31-statewide-f03.json",
+        "seed-listings-2026-08-31-statewide-f04.json",
+        "seed-listings-2026-08-31-statewide-f05.json",
+        "seed-listings-2026-08-31-statewide-f06.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "cotton-row-huntsville",
+        "commerce-kitchen-huntsville",
+        "domaine-south-huntsville",
+        "revivalist-huntsville",
+        "the-poppy-and-parliament-huntsville",
+        "phat-sammy-s-huntsville",
+        "rune-fort-wayne",
+        "the-oyster-bar-fort-wayne",
+        "the-hoppy-gnome-fort-wayne",
+        "copper-spoon-fort-wayne",
+        "proximo-fort-wayne",
+        "spoke-ivy-fort-wayne",
+        "zinc-new-haven",
+        "olea-new-haven",
+        "gioia-new-haven",
+        "modern-apizza-new-haven",
+        "lalibela-new-haven",
+        "roli-new-haven"
+      ]
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-08-31T03:40:33.742Z",
       "finishedAt": "2026-08-31T03:40:33.742Z",
       "records": 926,
@@ -12652,208 +12933,6 @@
           ]
         }
       }
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-12T06:45:34.941Z",
-      "finishedAt": "2026-08-12T06:45:34.962Z",
-      "cities": [
-        {
-          "city": "Miami, FL",
-          "found": 15,
-          "inserted": 15,
-          "duplicates": 0
-        },
-        {
-          "city": "Phoenix, AZ",
-          "found": 15,
-          "inserted": 15,
-          "duplicates": 0
-        },
-        {
-          "city": "Boston, MA",
-          "found": 15,
-          "inserted": 15,
-          "duplicates": 0
-        }
-      ],
-      "inserted": 45,
-      "duplicatesSkipped": 0,
-      "snapshot": "/workspace/deep-dish-decision/.pipeline-snapshots/2026-08-12T06-45-34-941Z-seed-listings",
-      "insertedSlugs": [
-        "carbone-miami-miami",
-        "estiatorio-milos-miami-miami",
-        "wayan-miami-miami",
-        "zuma-miami-miami",
-        "hakkasan-miami-miami",
-        "cote-miami-miami",
-        "joe-s-stone-crab-miami",
-        "versailles-restaurant-miami",
-        "ky-miami",
-        "los-f-lix-miami",
-        "ariete-miami",
-        "boia-de-miami",
-        "itamae-miami",
-        "mandolin-aegean-bistro-miami",
-        "la-carreta-miami",
-        "kai-restaurant-phoenix",
-        "fnb-phoenix",
-        "the-gladly-phoenix",
-        "barrio-caf-phoenix",
-        "pizzeria-bianco-phoenix",
-        "christopher-s-phoenix",
-        "durant-s-phoenix",
-        "hana-japanese-eatery-phoenix",
-        "tarbell-s-phoenix",
-        "lon-s-at-the-hermosa-phoenix",
-        "mastro-s-city-hall-phoenix",
-        "virt-honest-craft-phoenix",
-        "pa-la-phoenix",
-        "welcome-diner-phoenix",
-        "tratto-phoenix",
-        "menton-boston",
-        "o-ya-boston",
-        "yume-wo-katare-boston",
-        "oleana-boston",
-        "sarma-boston",
-        "contessa-boston",
-        "woods-hill-pier-4-boston",
-        "committee-boston",
-        "neptune-oyster-boston",
-        "row-34-boston",
-        "sportello-boston",
-        "no-9-park-boston",
-        "uni-boston",
-        "little-donkey-boston",
-        "puritan-company-boston"
-      ]
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-12T06:45:02.762Z",
-      "finishedAt": "2026-08-12T06:45:02.781Z",
-      "cities": [
-        {
-          "city": "Atlanta, GA",
-          "found": 15,
-          "inserted": 15,
-          "duplicates": 0
-        },
-        {
-          "city": "Washington, DC",
-          "found": 15,
-          "inserted": 15,
-          "duplicates": 0
-        },
-        {
-          "city": "Philadelphia, PA",
-          "found": 15,
-          "inserted": 14,
-          "duplicates": 1
-        }
-      ],
-      "inserted": 44,
-      "duplicatesSkipped": 1,
-      "snapshot": "/workspace/deep-dish-decision/.pipeline-snapshots/2026-08-12T06-45-02-762Z-seed-listings",
-      "insertedSlugs": [
-        "lazy-betty-atlanta",
-        "hayakawa-atlanta",
-        "muj-atlanta",
-        "nan-thai-fine-dining-atlanta",
-        "atlanta-fish-market-atlanta",
-        "5church-atlanta-atlanta",
-        "establishment-atlanta-atlanta",
-        "bacchanalia-atlanta",
-        "miller-union-atlanta",
-        "staplehouse-atlanta",
-        "gunshow-atlanta",
-        "kimball-house-atlanta",
-        "atlas-atlanta",
-        "aria-atlanta",
-        "trader-vic-s-atlanta-atlanta",
-        "the-dabney-washington",
-        "pineapple-and-pearls-washington",
-        "rose-s-luxury-washington",
-        "minibar-by-jos-andr-s-washington",
-        "fiola-washington",
-        "rasika-washington",
-        "zaytinya-washington",
-        "oyamel-washington",
-        "jaleo-washington",
-        "moon-rabbit-washington",
-        "succotash-prime-washington-dc-washington",
-        "joe-s-seafood-prime-steak-stone-crab-washington-dc-washington",
-        "the-capital-grille-washington-dc-washington",
-        "del-mar-washington",
-        "causa-washington",
-        "friday-saturday-sunday-philadelphia",
-        "her-place-supper-club-philadelphia",
-        "provenance-philadelphia",
-        "zahav-philadelphia",
-        "vetri-cucina-philadelphia",
-        "royal-sushi-izakaya-philadelphia",
-        "fiorella-philadelphia",
-        "pizzeria-beddia-philadelphia",
-        "dizengoff-philadelphia",
-        "angelo-s-pizzeria-philadelphia",
-        "suraya-philadelphia",
-        "kalaya-philadelphia",
-        "vernick-food-drink-philadelphia",
-        "fork-philadelphia"
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-11T00:03:42.419Z",
-      "finishedAt": "2026-08-11T00:04:59.421Z",
-      "batchSize": 5,
-      "cities": [
-        "San Francisco, California"
-      ],
-      "resolved": 5,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 82,
-      "corpusEnriched": 91,
-      "apiCalls": {
-        "google": 5,
-        "firecrawl": 12
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-03-42-417Z-enrich",
-      "records": [
-        {
-          "slug": "r-g-lounge",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "good-mong-kok-bakery",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "hong-kong-clay-pot-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "hong-kong-lounge",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "palette-tea-house",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        }
-      ]
     }
   ]
 }
