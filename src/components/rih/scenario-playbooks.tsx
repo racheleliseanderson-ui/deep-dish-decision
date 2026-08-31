@@ -89,7 +89,7 @@ export function ScenarioPlaybooks({
                   key={p.id}
                   p={p}
                   active={playbookMatches(p, situation)}
-                  onApply={(pb) => onApply(applyPlaybook(pb))}
+                  onApply={(pb) => onApply(applyPlaybook(pb, situation))}
                 />
               ))}
             </div>

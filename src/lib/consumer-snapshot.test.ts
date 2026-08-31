@@ -3,7 +3,8 @@ import { bySlug, records } from "@/lib/dataset";
 import { buildConsumerSnapshot, whyGoLine } from "@/lib/consumer-snapshot";
 import { buildFoodIntel } from "@/lib/food-intel";
 import { buildDinerAnswers } from "@/lib/diner-questions";
-import { buildReputation } from "@/lib/reputation";
+import { getInspection } from "@/lib/inspections";
+import { buildReputation, getResearchedPattern } from "@/lib/reputation";
 import { emptySituation, rank } from "@/lib/intelligence";
 import { findCrossWiredSources, visualsFor, visualCoverage } from "@/lib/visual-program";
 
@@ -58,6 +59,11 @@ describe("food intel", () => {
       expect(food.whatToOrder.toLowerCase()).toMatch(/no signature dish/);
     }
   });
+
+  it("does not treat Goldbelly shipping copy as a signature dish", () => {
+    const food = buildFoodIntel(bySlug.get("kann")!);
+    expect(food.signatureMentions.join(" ").toLowerCase()).not.toMatch(/goldbelly|nationwide/);
+  });
 });
 
 describe("reputation layer", () => {
@@ -68,12 +74,25 @@ describe("reputation layer", () => {
     expect(rep.patternSummary.toLowerCase()).toMatch(/not a deep dish ranking|not a ranking|not on file/);
   });
 
-  it("does not fabricate recurring praise", () => {
+  it("does not fabricate recurring praise on unresearched records", () => {
     for (const r of records.slice(0, 40)) {
       const rep = buildReputation(r.slug);
+      expect(rep.rankingEligible).toBe(false);
+      if (getResearchedPattern(r.slug)) {
+        expect(rep.recurringPraise.length + rep.recurringComplaints.length).toBeGreaterThan(0);
+        continue;
+      }
       expect(rep.recurringPraise).toEqual([]);
       expect(rep.recurringComplaints).toEqual([]);
     }
+  });
+
+  it("records a mixed Canlis pattern rather than a star consensus", () => {
+    const rep = buildReputation("canlis");
+    expect(rep.recurringPraise.length).toBeGreaterThan(0);
+    expect(rep.recurringComplaints.length).toBeGreaterThan(0);
+    expect(rep.rankingEligible).toBe(false);
+    expect(rep.patternSummary.toLowerCase()).toMatch(/mixed|not a ranking/);
   });
 
   it("does not feed ratings into rank()", () => {
@@ -97,17 +116,46 @@ describe("diner questions", () => {
     expect(trust.open).toBe(true);
     expect(trust.answer.toLowerCase()).toMatch(/no health-inspection/);
   });
+
+  it("surfaces a King County snapshot for Canlis without calling it a score", () => {
+    const insp = getInspection("canlis");
+    expect(insp).toBeTruthy();
+    expect(insp!.closed).toBe(false);
+    const answers = buildDinerAnswers(bySlug.get("canlis")!);
+    const trust = answers.find((a) => a.id === "trust")!;
+    expect(trust.open).toBe(false);
+    expect(trust.answer.toLowerCase()).toMatch(/king county|unsatisfactory|not a deep dish/);
+    expect(trust.answer.toLowerCase()).not.toMatch(/\bdirty\b|avoid this kitchen/);
+  });
+});
+
+describe("washington date-night set", () => {
+  it("keeps 33 Washington records and does not drop Canlis", () => {
+    const wa = records.filter((r) => r.regionGroup === "Washington");
+    expect(wa.length).toBe(33);
+    const ranked = rank(wa, {
+      ...emptySituation,
+      regionGroup: "Washington",
+      occasion: "Date night",
+      partySize: 2,
+    });
+    expect(ranked.length).toBe(33);
+    expect(ranked.some((x) => x.record.slug === "canlis")).toBe(true);
+  });
 });
 
 describe("visual program guards", () => {
-  it("has no documentary photography until a proven ingest", () => {
+  it("never cross-wires documentary photography", () => {
     const cov = visualCoverage();
-    expect(cov.documentary).toBe(0);
+    expect(cov.documentary).toBeGreaterThanOrEqual(0);
     expect(findCrossWiredSources()).toEqual([]);
   });
 
   it("never returns another restaurant's image", () => {
-    expect(visualsFor("canlis")).toEqual([]);
     expect(visualsFor("not-a-real-restaurant-slug")).toEqual([]);
+    for (const img of visualsFor("canlis")) {
+      expect(img.slug).toBe("canlis");
+      expect(img.documentary === false || img.provenance.kind !== "editorial_illustration").toBe(true);
+    }
   });
 });

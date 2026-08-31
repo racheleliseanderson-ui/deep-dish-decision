@@ -155,8 +155,14 @@ export function playbooksByChapter(): Record<PlaybookChapter, Playbook[]> {
   return chapters;
 }
 
-export function applyPlaybook(p: Playbook): Situation {
-  return { ...emptySituation, ...p.apply, constraints: p.apply.constraints ?? [] };
+export function applyPlaybook(p: Playbook, current: Situation = emptySituation): Situation {
+  return {
+    ...emptySituation,
+    regionGroup: current.regionGroup,
+    region: current.region,
+    ...p.apply,
+    constraints: p.apply.constraints ?? [],
+  };
 }
 
 /** Whether a playbook's core fields already match the current situation. */

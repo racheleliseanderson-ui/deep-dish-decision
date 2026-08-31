@@ -1,5 +1,78 @@
 {
-  "generatedAt": "2026-08-30T21:00:00.000Z",
+  "generatedAt": "2026-08-31T00:26:00.000Z",
   "note": "Documentary photography is stored only when the image is proven to belong to this exact slug. Identity marks are deterministic SVGs from first-party signals and are not photographs of the restaurant. Generated or editorial illustrations must set documentary to false and must never be labeled as a photo of a real room or dish.",
-  "images": []
+  "images": [
+    {
+      "slug": "the-pink-door",
+      "kind": "dining_room",
+      "src": "/visuals/the-pink-door.jpg",
+      "alt": "Restaurant-owned photograph of The Pink Door dining room and cabaret, published on thepinkdoor.net — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.thepinkdoor.net/",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "archipelago-seattle",
+      "kind": "dining_room",
+      "src": "/visuals/archipelago-seattle.webp",
+      "alt": "Restaurant-owned photograph of Archipelago's counter kitchen, published on archipelagoseattle.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.archipelagoseattle.com/",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "uchi-austin",
+      "kind": "dining_room",
+      "src": "/visuals/uchi-austin.jpg",
+      "alt": "Restaurant-owned photograph of Uchi Austin's sushi counter, published on uchiaustin.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://uchiaustin.com/",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "le-bernardin",
+      "kind": "dining_room",
+      "src": "/visuals/le-bernardin.jpg",
+      "alt": "Restaurant-owned photograph of Le Bernardin's dining room, published on le-bernardin.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.le-bernardin.com/home",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "dooky-chase-s-restaurant-new-orleans",
+      "kind": "dining_room",
+      "src": "/visuals/dooky-chase-s-restaurant-new-orleans.jpg",
+      "alt": "Restaurant-owned photograph of Dooky Chase's dining room, published on dookychaserestaurants.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.dookychaserestaurants.com/",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "nue",
+      "kind": "dining_room",
+      "src": "/visuals/nue.webp",
+      "alt": "Restaurant-owned photograph of Nue's dining room, published on nueseattle.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.nueseattle.com/",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": true
+    }
+  ]
 }

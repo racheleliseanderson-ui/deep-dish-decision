@@ -22,6 +22,12 @@ function ReputationBody({ rep }: { rep: PublicReputationEvidence }) {
 
       <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">{rep.patternSummary}</p>
 
+      {rep.operationalNote ? (
+        <p className="mt-3 rounded-lg border border-critical/30 bg-critical/8 px-3 py-2 text-[13px] leading-relaxed text-foreground">
+          {rep.operationalNote}
+        </p>
+      ) : null}
+
       <dl className="mt-4 grid gap-3 sm:grid-cols-3">
         <Meta
           label="Sample size"
@@ -36,7 +42,9 @@ function ReputationBody({ rep }: { rep: PublicReputationEvidence }) {
 
       {rep.directoryBlurb ? (
         <p className="mt-4 text-[12px] leading-relaxed text-muted-foreground">
-          <span className="text-eyebrow block">Google listing editorial — not a review consensus</span>
+          <span className="text-eyebrow block">
+            {rep.listingSource ?? "Directory"} editorial — not a review consensus
+          </span>
           <span className="mt-1 block">{rep.directoryBlurb}</span>
         </p>
       ) : null}
@@ -46,6 +54,10 @@ function ReputationBody({ rep }: { rep: PublicReputationEvidence }) {
       ) : null}
       {rep.recurringComplaints.length ? (
         <PatternList title="Recurring complaint" items={rep.recurringComplaints} />
+      ) : null}
+
+      {rep.dishesRecommended.length ? (
+        <PatternList title="Dishes named in public reviews" items={rep.dishesRecommended} />
       ) : null}
 
       <p className="mt-4 text-[11px] leading-relaxed text-subtle">

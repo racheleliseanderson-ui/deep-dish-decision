@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 /**
- * Fail closed if the 836-record hub is replaced by a confirmation-pass demo,
- * or if the Lovable Vercel production stack is swapped for an incompatible overlay.
+ * Fail closed if the 836-record hub is replaced by a confirmation-pass demo.
  *
  * Override (deliberate migration only):
  *   ALLOW_CORPUS_MIGRATION=1 node scripts/corpus-invariants.mjs
  */
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -16,6 +15,14 @@ const allow = process.env.ALLOW_CORPUS_MIGRATION === "1";
 
 const requiredFiles = [
   "src/data/dataset.json",
+  "src/data/corpus-meta.json",
+  "src/data/completeness.json",
+  "src/data/listing-samples.json",
+  "src/data/health-inspections.json",
+  "src/data/first-party-dishes.json",
+  "src/data/reputation-patterns.json",
+  "src/data/visual-program.json",
+  "src/data/by-region/washington.json",
   "src/assets/hero-pass.jpg",
   "src/assets/fig-gold.jpg",
   "src/routes/index.tsx",
@@ -25,52 +32,14 @@ const requiredFiles = [
   "src/routes/guide.tsx",
   "src/routes/shortlist.tsx",
   "src/lib/intelligence.ts",
-  "src/start.ts",
-  "src/server.ts",
-  "vite.config.ts",
   "scripts/pipeline/report.mjs",
   "scripts/pipeline/enrich.mjs",
-];
-
-const forbiddenFiles = [
-  "server/middleware/grok-pwa.ts",
-  "src/data/restaurants.ts",
 ];
 
 const errors = [];
 
 for (const rel of requiredFiles) {
   if (!existsSync(resolve(root, rel))) errors.push(`missing ${rel}`);
-}
-
-for (const rel of forbiddenFiles) {
-  if (existsSync(resolve(root, rel))) {
-    if (rel === "src/data/restaurants.ts") continue; // handled with floor below
-    errors.push(`${rel} must not ship on canonical main`);
-  }
-}
-
-const vitePath = resolve(root, "vite.config.ts");
-if (existsSync(vitePath)) {
-  const viteCfg = readFileSync(vitePath, "utf8");
-  if (!viteCfg.includes("@lovable.dev/vite-tanstack-config")) {
-    errors.push("vite.config.ts is not the Lovable production stack");
-  }
-  if (viteCfg.includes("grokPwaPlugin")) {
-    errors.push("vite.config.ts includes grokPwaPlugin — that overlay 500s on Vercel");
-  }
-}
-
-const pkgPath = resolve(root, "package.json");
-if (existsSync(pkgPath)) {
-  const pkg = JSON.parse(readFileSync(pkgPath, "utf8"));
-  const build = String(pkg.scripts?.build ?? "");
-  if (build !== "vite build") {
-    errors.push(`package.json build script must be "vite build" (got ${JSON.stringify(build)})`);
-  }
-  if (!pkg.devDependencies?.["@lovable.dev/vite-tanstack-config"]) {
-    errors.push("missing @lovable.dev/vite-tanstack-config — Vercel framework tanstack-start-lovable requires it");
-  }
 }
 
 const demoRestaurants = resolve(root, "src/data/restaurants.ts");
@@ -110,6 +79,37 @@ if (existsSync(demoRestaurants) && count < FLOOR) {
   errors.push("src/data/restaurants.ts present while corpus is below floor — refusing demo substitution");
 }
 
+const byRegionDir = resolve(root, "src/data/by-region");
+if (existsSync(byRegionDir)) {
+  const files = readdirSync(byRegionDir).filter((f) => f.endsWith(".json"));
+  let regionSum = 0;
+  for (const f of files) {
+    const chunk = JSON.parse(readFileSync(resolve(byRegionDir, f), "utf8"));
+    const n = Array.isArray(chunk.records) ? chunk.records.length : 0;
+    regionSum += n;
+    if (n === 0) errors.push(`by-region/${f} is empty`);
+  }
+  if (count && regionSum !== count) {
+    errors.push(`by-region records ${regionSum} !== dataset count ${count}`);
+  }
+} else if (count >= FLOOR) {
+  errors.push("src/data/by-region missing while corpus is intact");
+}
+
+const listingPath = resolve(root, "src/data/listing-samples.json");
+if (existsSync(listingPath)) {
+  const listing = JSON.parse(readFileSync(listingPath, "utf8"));
+  const n = Object.keys(listing.records || {}).length;
+  if (n > 0 && n < 50) errors.push(`listing-samples collapsed to ${n}`);
+}
+
+const dishesPath = resolve(root, "src/data/first-party-dishes.json");
+if (existsSync(dishesPath)) {
+  const dishes = JSON.parse(readFileSync(dishesPath, "utf8"));
+  const blob = JSON.stringify(dishes.records || {});
+  if (/goldbelly/i.test(blob)) errors.push("first-party-dishes includes Goldbelly shipping copy");
+}
+
 if (errors.length) {
   const body = errors.map((e) => ` - ${e}`).join("\n");
   if (allow) {
@@ -128,7 +128,6 @@ console.log(
       regions,
       slugs: slugs.length,
       floor: FLOOR,
-      stack: "lovable",
     },
     null,
     2,

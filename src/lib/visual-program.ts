@@ -8,7 +8,7 @@
  */
 import visualRaw from "@/data/visual-program.json";
 import type { RestaurantRecord } from "@/lib/dataset";
-import { bySlug } from "@/lib/dataset";
+import { slugExists } from "@/lib/corpus-meta";
 import { markFamily, type MarkFamily } from "@/lib/listing-visual";
 
 export type VisualKind =
@@ -60,7 +60,7 @@ export function allVisuals(): RestaurantVisual[] {
 /** Reject cross-wired photography — slug must match an existing record. */
 export function assertVisualSafe(visual: RestaurantVisual, slug: string): boolean {
   if (visual.slug !== slug) return false;
-  if (!bySlug.has(slug)) return false;
+  if (!slugExists(slug)) return false;
   if (visual.documentary && visual.provenance.kind === "editorial_illustration") return false;
   if (visual.documentary && visual.kind === "identity_mark") return false;
   if (visual.documentary && visual.kind === "editorial_illustration") return false;
