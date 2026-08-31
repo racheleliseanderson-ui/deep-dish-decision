@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T12:40:06.752Z",
-  "builtAt": "2026-08-31T12:40:06Z",
-  "count": 1014,
-  "regions": 152,
+  "generatedAt": "2026-08-31T12:54:36.006Z",
+  "builtAt": "2026-08-31T12:54:36Z",
+  "count": 1030,
+  "regions": 155,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 993,
+    "current": 1009,
     "officialConflicts": 11,
-    "thinRecords": 537,
+    "thinRecords": 545,
     "avgUnknowns": 5.14,
     "avgThinFields": 7.58,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 361
+    "reachableAtLastReview": 377
   },
-  "fullCaseFiles": 1014,
+  "fullCaseFiles": 1030,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -171,6 +171,7 @@
     ],
     "Louisiana": [
       "Baton Rouge, LA",
+      "Lafayette, LA",
       "New Orleans, LA"
     ],
     "Maine": [
@@ -203,8 +204,10 @@
     "Montana": [
       "Billings, MT",
       "Billings, Montana",
+      "Bozeman, MT",
       "Bozeman, Montana",
       "Helena, Montana",
+      "Missoula, MT",
       "Missoula, Montana"
     ],
     "Nebraska": [
@@ -481,7 +484,10 @@
     "Greenville, SC": "South Carolina",
     "Rochester, MN": "Minnesota",
     "Durham, NC": "North Carolina",
-    "Topeka, KS": "Kansas"
+    "Topeka, KS": "Kansas",
+    "Lafayette, LA": "Louisiana",
+    "Bozeman, MT": "Montana",
+    "Missoula, MT": "Montana"
   },
   "cuisineTagOptions": [
     "Afghan",
@@ -7792,6 +7798,118 @@
       "region": "Topeka, KS",
       "regionGroup": "Kansas",
       "city": "Topeka"
+    },
+    {
+      "slug": "johnson-s-boucaniere-lafayette",
+      "title": "Johnson's Boucanière",
+      "region": "Lafayette, LA",
+      "regionGroup": "Louisiana",
+      "city": "Lafayette"
+    },
+    {
+      "slug": "social-southern-table-bar-lafayette",
+      "title": "Social Southern Table & Bar",
+      "region": "Lafayette, LA",
+      "regionGroup": "Louisiana",
+      "city": "Lafayette"
+    },
+    {
+      "slug": "vestal-lafayette",
+      "title": "Vestal",
+      "region": "Lafayette, LA",
+      "regionGroup": "Louisiana",
+      "city": "Lafayette"
+    },
+    {
+      "slug": "spoonbill-watering-hole-restaurant-lafayette",
+      "title": "Spoonbill Watering Hole & Restaurant",
+      "region": "Lafayette, LA",
+      "regionGroup": "Louisiana",
+      "city": "Lafayette"
+    },
+    {
+      "slug": "hideaway-on-lee-lafayette",
+      "title": "Hideaway on Lee",
+      "region": "Lafayette, LA",
+      "regionGroup": "Louisiana",
+      "city": "Lafayette"
+    },
+    {
+      "slug": "charley-g-s-lafayette",
+      "title": "Charley G's",
+      "region": "Lafayette, LA",
+      "regionGroup": "Louisiana",
+      "city": "Lafayette"
+    },
+    {
+      "slug": "dave-s-sushi-bozeman",
+      "title": "Dave's Sushi",
+      "region": "Bozeman, MT",
+      "regionGroup": "Montana",
+      "city": "Bozeman"
+    },
+    {
+      "slug": "montana-ale-works-bozeman",
+      "title": "Montana Ale Works",
+      "region": "Bozeman, MT",
+      "regionGroup": "Montana",
+      "city": "Bozeman"
+    },
+    {
+      "slug": "copper-bozeman",
+      "title": "Copper",
+      "region": "Bozeman, MT",
+      "regionGroup": "Montana",
+      "city": "Bozeman"
+    },
+    {
+      "slug": "little-star-diner-bozeman",
+      "title": "Little Star Diner",
+      "region": "Bozeman, MT",
+      "regionGroup": "Montana",
+      "city": "Bozeman"
+    },
+    {
+      "slug": "feed-cafe-bozeman",
+      "title": "Feed Cafe",
+      "region": "Bozeman, MT",
+      "regionGroup": "Montana",
+      "city": "Bozeman"
+    },
+    {
+      "slug": "mountains-walking-bozeman",
+      "title": "Mountains Walking",
+      "region": "Bozeman, MT",
+      "regionGroup": "Montana",
+      "city": "Bozeman"
+    },
+    {
+      "slug": "the-old-post-missoula",
+      "title": "The Old Post",
+      "region": "Missoula, MT",
+      "regionGroup": "Montana",
+      "city": "Missoula"
+    },
+    {
+      "slug": "the-stables-missoula",
+      "title": "The Stables",
+      "region": "Missoula, MT",
+      "regionGroup": "Montana",
+      "city": "Missoula"
+    },
+    {
+      "slug": "biga-pizza-missoula",
+      "title": "Biga Pizza",
+      "region": "Missoula, MT",
+      "regionGroup": "Montana",
+      "city": "Missoula"
+    },
+    {
+      "slug": "top-hat-lounge-missoula",
+      "title": "Top Hat Lounge",
+      "region": "Missoula, MT",
+      "regionGroup": "Montana",
+      "city": "Missoula"
     }
   ]
 }

@@ -67,6 +67,9 @@ const STATEWIDE_FILL = [
   ["Rochester", "MN", 121395],
   ["Durham", "NC", 283506],
   ["Topeka", "KS", 126587],
+  ["Lafayette", "LA", 121374],
+  ["Bozeman", "MT", 54539],
+  ["Missoula", "MT", 75516],
 ];
 
 const existing = readJson(PATHS.queue, null);

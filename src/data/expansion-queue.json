@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T12:38:54.506Z",
+  "generatedAt": "2026-08-31T12:53:55.205Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1329,6 +1329,42 @@
       "pinned": false,
       "inserted": 4,
       "lastRunAt": "2026-08-31T12:39:15.148Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Lafayette",
+      "stateCode": "LA",
+      "population": 121374,
+      "priority": 110,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:53:57.486Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Bozeman",
+      "stateCode": "MT",
+      "population": 54539,
+      "priority": 111,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:53:57.486Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Missoula",
+      "stateCode": "MT",
+      "population": 75516,
+      "priority": 112,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 4,
+      "lastRunAt": "2026-08-31T12:53:57.486Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]
