@@ -2,6 +2,295 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-08-31T13:31:21.488Z",
+      "finishedAt": "2026-08-31T13:31:21.488Z",
+      "records": 1094,
+      "promoted": 16,
+      "fullBefore": 1076,
+      "fullAfter": 1094,
+      "avgCompleteness": 96,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 1073,
+        "officialConflicts": 11,
+        "thinRecords": 579,
+        "avgUnknowns": 5.14,
+        "avgThinFields": 7.58,
+        "lastReviewAt": "2026-08-31",
+        "reachableAtLastReview": 436
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T13:30:44.730Z",
+      "finishedAt": "2026-08-31T13:31:20.951Z",
+      "batchSize": 18,
+      "cities": [
+        "Dayton, Ohio",
+        "Allentown, Pennsylvania",
+        "Winston-Salem, North Carolina"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 95,
+      "corpusEnriched": 1094,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T13-30-44-730Z-enrich-owned",
+      "records": [
+        {
+          "slug": "taqueria-mixteca-dayton",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "sueno-dayton",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "table-33-dayton",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "lily-s-dayton",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "grist-dayton",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 1",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "thai-9-dayton",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "grille-3501-allentown",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "westside-grill-allentown",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "union-finch-allentown",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "simpatico-allentown",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "pennsylvania-rye-company-allentown",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "the-aladdin-restaurant-allentown",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 4",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "mojito-latin-soul-food-winston-salem",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "mission-pizza-napoletana-winston-salem",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "heff-s-burger-club-winston-salem",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "sage-salt-winston-salem",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "sweet-potatoes-winston-salem",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "forsyth-seafood-market-cafe-winston-salem",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T13:30:44.325Z",
+      "finishedAt": "2026-08-31T13:30:44.438Z",
+      "cities": [
+        {
+          "city": "Dayton, OH",
+          "queueCity": "Dayton",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Allentown, PA",
+          "queueCity": "Allentown",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Winston-Salem, NC",
+          "queueCity": "Winston-Salem",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 18,
+      "duplicatesSkipped": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T13-30-44-325Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings-2026-08-31-statewide-f02.json",
+        "seed-listings-2026-08-31-statewide-f03.json",
+        "seed-listings-2026-08-31-statewide-f04.json",
+        "seed-listings-2026-08-31-statewide-f05.json",
+        "seed-listings-2026-08-31-statewide-f06.json",
+        "seed-listings-2026-08-31-statewide-f07.json",
+        "seed-listings-2026-08-31-statewide-f08.json",
+        "seed-listings-2026-08-31-statewide-f09.json",
+        "seed-listings-2026-08-31-statewide-f10.json",
+        "seed-listings-2026-08-31-statewide-f11.json",
+        "seed-listings-2026-08-31-statewide-f12.json",
+        "seed-listings-2026-08-31-statewide-f13.json",
+        "seed-listings-2026-08-31-statewide-f14.json",
+        "seed-listings-2026-08-31-statewide-f15.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "taqueria-mixteca-dayton",
+        "sueno-dayton",
+        "table-33-dayton",
+        "lily-s-dayton",
+        "grist-dayton",
+        "thai-9-dayton",
+        "grille-3501-allentown",
+        "westside-grill-allentown",
+        "union-finch-allentown",
+        "simpatico-allentown",
+        "pennsylvania-rye-company-allentown",
+        "the-aladdin-restaurant-allentown",
+        "mojito-latin-soul-food-winston-salem",
+        "mission-pizza-napoletana-winston-salem",
+        "heff-s-burger-club-winston-salem",
+        "sage-salt-winston-salem",
+        "sweet-potatoes-winston-salem",
+        "forsyth-seafood-market-cafe-winston-salem"
+      ]
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-08-31T13:22:31.962Z",
       "finishedAt": "2026-08-31T13:22:31.962Z",
       "records": 1076,
@@ -5331,149 +5620,6 @@
           "completeness": 22,
           "notes": [
             "operator platform; no owned domain"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-21T01:11:46.286Z",
-      "finishedAt": "2026-08-21T01:13:21.227Z",
-      "batchSize": 5,
-      "recovery": true,
-      "resolved": 0,
-      "unresolved": 5,
-      "deferred": 0,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 5
-      },
-      "retries": 0,
-      "failures": 5,
-      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-11-46-289Z-hygiene-recovery-owned",
-      "records": [
-        {
-          "slug": "locale-farm-to-table-eatery-bakersfield",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
-          ]
-        },
-        {
-          "slug": "oak-park-des-moines",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 403 HTTP 403"
-          ]
-        },
-        {
-          "slug": "jens-restaurant-anchorage",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 0 fetch failed:CERT_HAS_EXPIRED"
-          ]
-        },
-        {
-          "slug": "comp-re-lapin-new-orleans",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 0 fetch failed:DEPTH_ZERO_SELF_SIGNED_CERT"
-          ]
-        },
-        {
-          "slug": "mr-szechuan",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "source-review",
-      "startedAt": "2026-08-20T15:38:57.213Z",
-      "finishedAt": "2026-08-20T15:38:57.278Z",
-      "batchSize": 2,
-      "sourceLimited": 2,
-      "missing": 0,
-      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-20T15-38-57-213Z-source-limited",
-      "records": [
-        {
-          "slug": "chengdu-taste",
-          "matchStatus": "source-limited",
-          "completeness": 22,
-          "notes": [
-            "operator platform; no owned domain"
-          ]
-        },
-        {
-          "slug": "di-an-pho",
-          "matchStatus": "source-limited",
-          "completeness": 22,
-          "notes": [
-            "operator platform; no owned domain"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-20T14:17:32.203Z",
-      "finishedAt": "2026-08-20T14:19:35.063Z",
-      "batchSize": 4,
-      "recovery": true,
-      "resolved": 2,
-      "unresolved": 2,
-      "deferred": 0,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 4
-      },
-      "retries": 0,
-      "failures": 2,
-      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-20T14-17-32-203Z-hygiene-recovery-owned",
-      "records": [
-        {
-          "slug": "delicious-chengdu",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 1",
-            "quotes 18",
-            "source corrected  -> https://deliciouschengdutogo.com/"
-          ]
-        },
-        {
-          "slug": "mr-szechuan",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
-          ]
-        },
-        {
-          "slug": "spicy-king",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 0 fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
-          ]
-        },
-        {
-          "slug": "dovecote-orlando",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 1",
-            "quotes 7",
-            "source corrected https://www.dovecoteorlando.com/ -> https://www.dovecoterestaurant.com/"
           ]
         }
       ]

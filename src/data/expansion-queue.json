@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T13:21:30.749Z",
+  "generatedAt": "2026-08-31T13:30:36.263Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1473,6 +1473,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T13:21:34.570Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Dayton",
+      "stateCode": "OH",
+      "population": 137644,
+      "priority": 122,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:30:44.325Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Allentown",
+      "stateCode": "PA",
+      "population": 125845,
+      "priority": 123,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:30:44.325Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Winston-Salem",
+      "stateCode": "NC",
+      "population": 249545,
+      "priority": 124,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:30:44.325Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

@@ -79,6 +79,9 @@ const STATEWIDE_FILL = [
   ["Reno", "NV", 264738],
   ["Chattanooga", "TN", 181099],
   ["Wilmington", "NC", 117643],
+  ["Dayton", "OH", 137644],
+  ["Allentown", "PA", 125845],
+  ["Winston-Salem", "NC", 249545],
 ];
 
 const existing = readJson(PATHS.queue, null);

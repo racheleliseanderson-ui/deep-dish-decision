@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T13:22:29.214Z",
+  "generatedAt": "2026-08-31T13:31:20.928Z",
   "records": {
     "canlis": {
       "google": {
@@ -73007,6 +73007,924 @@
           "https://www.pilothouserest.com/menu"
         ],
         "retrievedAt": "2026-08-31T13:22:27.308Z",
+        "playwrightPages": 0
+      }
+    },
+    "taqueria-mixteca-dayton": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:44.752Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://taqueriamixteca.net/food-pics",
+        "reservationUrl": "https://www.toasttab.com/taqueria-mixteca/rewardsSignup",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00 17:30"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00 17:30",
+            "sourceUrl": "https://taqueriamixteca.net/"
+          },
+          {
+            "quote": "og:description: Fresh & Tastiest Tacos, Burritos, Quesadillas & More",
+            "sourceUrl": "https://taqueriamixteca.net/"
+          },
+          {
+            "quote": "twitter:description: Order Dayton's Best Mexican!",
+            "sourceUrl": "https://taqueriamixteca.net/"
+          },
+          {
+            "quote": "meta description: Taqueria Mixteca is a family-owned Mexican restaurant in Dayton, Ohio. We are in business for the past 14 years, offering authentic and delicious Mexican food. We offer extraordinary Mexican flavors, an exciting range of menus, flawless servi",
+            "sourceUrl": "https://taqueriamixteca.net/"
+          },
+          {
+            "quote": "title: Mexican Restaurant in Ohio | Taqueria Mixteca",
+            "sourceUrl": "https://taqueriamixteca.net/"
+          },
+          {
+            "quote": "title: Contact Information | Taqueria Mixteca",
+            "sourceUrl": "https://taqueriamixteca.net/contact"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://taqueriamixteca.net/",
+          "https://taqueriamixteca.net/food-pics",
+          "https://taqueriamixteca.net/contact"
+        ],
+        "retrievedAt": "2026-08-31T13:30:44.752Z",
+        "playwrightPages": 0
+      }
+    },
+    "sueno-dayton": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:46.286Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.suenodyt.com/menu",
+        "reservationUrl": "https://www.toasttab.com/sueno-607-e-3rd-st",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Experience one of Dayton, Ohio’s premier restaurants and culinary delights. Sueño is inspired by the traditions and culture of Mexico’s burgeoning culinary scene. Check it out.",
+            "sourceUrl": "https://www.suenodyt.com/"
+          },
+          {
+            "quote": "title: Authentic Mexican Cuisine in Downtown Dayton, OH | Sueño Restaurant",
+            "sourceUrl": "https://www.suenodyt.com/"
+          },
+          {
+            "quote": "og:description: We couldn’t ask for a better team and familia! Everything starts with great leadership, and we are grateful to have an incredible award winning team of culinary and restaurant experience leaders.",
+            "sourceUrl": "https://www.suenodyt.com/about-us"
+          },
+          {
+            "quote": "title: About Our Award Winning Restaurant Team | Sueño Restaurant &mdash; Sueño DYT",
+            "sourceUrl": "https://www.suenodyt.com/about-us"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.suenodyt.com/",
+          "https://www.suenodyt.com/menu",
+          "https://www.suenodyt.com/about-us"
+        ],
+        "retrievedAt": "2026-08-31T13:30:46.286Z",
+        "playwrightPages": 0
+      }
+    },
+    "table-33-dayton": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:48.362Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/egiftcards/table%2033%20dayton",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , We 09:00-15:00, Th 09:00-15:00, Fr 09:00-15:00, Sa 09:00-15:00, Su 09:00-15:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , We 09:00-15:00, Th 09:00-15:00, Fr 09:00-15:00, Sa 09:00-15:00, Su 09:00-15:00",
+            "sourceUrl": "https://table33dayton.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://table33dayton.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:30:48.362Z",
+        "playwrightPages": 0
+      }
+    },
+    "lily-s-dayton": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:49.353Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/lilysdayton",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Restaurant | Lily's Dayton | United States",
+            "sourceUrl": "https://www.lilysdayton.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.lilysdayton.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:30:49.353Z",
+        "playwrightPages": 0
+      }
+    },
+    "grist-dayton": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:50.289Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.gristprovisions.com/menu",
+        "reservationUrl": "https://www.toasttab.com/gristprovisions/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +19378024544"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday,Friday,Saturday 11:00 15:00",
+          "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday,Friday,Saturday 17:00 21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: American"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Menus About Contact Menu About Contact Private Dining & Events Classes Reserve Provisions with Intention Stop in for lunch or dinner, browse our fresh pasta, bread, sauces, and pastries, or join us for a hands-on cooking class.",
+        "groupPolicyLanguage": [
+          "Menus About Contact Menu About Contact Private Dining & Events Classes Reserve Provisions with Intention Stop in for lunch or dinner, browse our fresh pasta, bread, sauces, and pastries, or join us for a hands-on cooking class."
+        ],
+        "dressCode": "Reserve Get in touch (937) 802-4544 46 W 5th St, Dayton, OH 45402 Tuesday - Saturday lunch: 11am-3pm Dinner: 5pm-9pm Contact FAQs Frequently Asked Questions Is there a dress code for dining at Grist?",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +19378024544",
+            "sourceUrl": "https://www.gristprovisions.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.gristprovisions.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American",
+            "sourceUrl": "https://www.gristprovisions.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday,Friday,Saturday 11:00 15:00",
+            "sourceUrl": "https://www.gristprovisions.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday,Friday,Saturday 17:00 21:00",
+            "sourceUrl": "https://www.gristprovisions.com/"
+          },
+          {
+            "quote": "og:description: No dress code, no servers, just great food and a welcoming atmosphere. Where casual meets gourmet.",
+            "sourceUrl": "https://www.gristprovisions.com/"
+          },
+          {
+            "quote": "title: Grist | Provisions with Intention | Casual Dining",
+            "sourceUrl": "https://www.gristprovisions.com/"
+          },
+          {
+            "quote": "noscript: [data-wf-bgvideo-fallback-img] { display: none; } @media (prefers-reduced-motion: reduce) { [data-wf-bgvideo-fallback-img] { position: absolute; z-index: -100; display: inline-block; height: 100%; width: 100%; object-fit: cover; } }",
+            "sourceUrl": "https://www.gristprovisions.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.gristprovisions.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:30:50.289Z",
+        "playwrightPages": 0
+      }
+    },
+    "thai-9-dayton": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:52.771Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/thai-9-reservations-dayton?restref=287299&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "We have a business casual dress code, jeans and t-shirts are accepted but no tank tops please.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Visit Thai 9 Cuisine of Thailand located on Brown St in Dayton, Ohio. Order Online to carry your favorites out",
+            "sourceUrl": "https://thai9restaurant.com/"
+          },
+          {
+            "quote": "title: Thai 9 Cuisine of Thailand in Dayton, OH - Home",
+            "sourceUrl": "https://thai9restaurant.com/"
+          },
+          {
+            "quote": "og:description: \"Get in touch with us at Thai 9 Cuisine of Thailand & Sushi Restaurant, located in Dayton",
+            "sourceUrl": "https://thai9restaurant.com/contact-us"
+          },
+          {
+            "quote": "title: Thai 9 Cuisine of Thailand in Dayton - Contact Us",
+            "sourceUrl": "https://thai9restaurant.com/contact-us"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://thai9restaurant.com/",
+          "https://thai9restaurant.com/contact-us"
+        ],
+        "retrievedAt": "2026-08-31T13:30:52.771Z",
+        "playwrightPages": 0
+      }
+    },
+    "grille-3501-allentown": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:54.403Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.grille3501.com/menu",
+        "reservationUrl": "https://www.opentable.com/restref/client/?restref=77182&lang=en-US&ot_source=Restaurant%20website&corrid=df59cb67-f3bb-449c-a10d-3a08a367f2a6",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 6107060100"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Tuesday 11:30 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 11:30 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 11:30 21:00",
+          "JSON-LD openingHoursSpecification: Friday 11:30 22:00",
+          "JSON-LD openingHoursSpecification: Saturday 16:00 22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Events PRIVATE EVENTS BOOK YOUR NEXT EVENT WITH US Grille 3501 offers private event spaces for any occasion.",
+        "groupPolicyLanguage": [
+          "Events PRIVATE EVENTS BOOK YOUR NEXT EVENT WITH US Grille 3501 offers private event spaces for any occasion."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 6107060100",
+            "sourceUrl": "https://www.grille3501.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:30 21:00",
+            "sourceUrl": "https://www.grille3501.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:30 21:00",
+            "sourceUrl": "https://www.grille3501.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:30 21:00",
+            "sourceUrl": "https://www.grille3501.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:30 22:00",
+            "sourceUrl": "https://www.grille3501.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 16:00 22:00",
+            "sourceUrl": "https://www.grille3501.com/"
+          },
+          {
+            "quote": "og:description: Grille 3501 literally stands alone with its \"sophisticated yet unpretentious\" atmosphere and New American cuisine.",
+            "sourceUrl": "https://www.grille3501.com/"
+          },
+          {
+            "quote": "title: Grille 3501 | Allentown, PA | Upscale Casual",
+            "sourceUrl": "https://www.grille3501.com/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.grille3501.com/",
+          "https://www.grille3501.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T13:30:54.403Z",
+        "playwrightPages": 0
+      }
+    },
+    "westside-grill-allentown": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:55.769Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.westsidegrillpa.com/menus",
+        "reservationUrl": "https://www.opentable.com/restref/client/?restref=1211842&lang=en-US&ot_source=Restaurant%20website&corrid=46ca5b24-c8bf-43e3-86ee-ab5905d23b45",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "33 mashed potatoes, seasonal vegetables, chili pepper jus Locally Sourced: Jaindl Farms of Orefield, PA Bell & Evans of Fredericksburg, PA Please notify us if you have any food allergies and/or medical conditions that may be of concern.",
+          "29 pan-fried, mashed potatoes, green beans, signature tomato & vegetable sauce chef’s vegan feature .",
+          "33 potatoes, carrots, onion, celery, peas GF gluten-free.",
+          "Please notify us if you have any food allergies and/or medical conditions that may be of concern."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: About Us | Westside Grill",
+            "sourceUrl": "https://www.westsidegrillpa.com/about-us"
+          },
+          {
+            "quote": "og:description: Begin planning your next event at Westside Grill. Share your details through our inquiry form and our team will craft a memorable experience tailored to you.",
+            "sourceUrl": "https://www.westsidegrillpa.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.westsidegrillpa.com/",
+          "https://www.westsidegrillpa.com/menus",
+          "https://www.westsidegrillpa.com/about-us",
+          "https://www.westsidegrillpa.com/events"
+        ],
+        "retrievedAt": "2026-08-31T13:30:55.769Z",
+        "playwrightPages": 0
+      }
+    },
+    "union-finch-allentown": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:58.211Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/union-finch-restaurant-1528-w-union-st",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 11:00-11:00, We 11:00-23:00, Th 11:00-23:00, Fr 11:00-00:00, Sa 10:00-00:00, Su 10:00-22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "$ 16.5 $ 19 Tahini Fettuccine (Vegan) Fettuccine in a tahini and maple syrup sauce with shallots, onions, cherry tomatoes, mushrooms and spinach."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 11:00-11:00, We 11:00-23:00, Th 11:00-23:00, Fr 11:00-00:00, Sa 10:00-00:00, Su 10:00-22:00",
+            "sourceUrl": "https://www.unionandfinch.com/"
+          },
+          {
+            "quote": "og:description: Union & Finch is an American style bistro located at 1528 West Union Street in Allentown offering lunch and dinner 6 days a week. The menu consists of casual fare that will include \"comfort\" foods along with familiar favorites with a twist.",
+            "sourceUrl": "https://www.unionandfinch.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.unionandfinch.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:30:58.211Z",
+        "playwrightPages": 0
+      }
+    },
+    "simpatico-allentown": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:30:59.124Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.simpaticopasta.com/menu",
+        "reservationUrl": "https://order.toasttab.com/online/simpatico-27-north-7th-street",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Events From small to large groups we have the space for your next private event.",
+        "groupPolicyLanguage": [
+          "Private Events From small to large groups we have the space for your next private event."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Simpatico serves organic Italian cuisine downtown Allentown. Serving lunch and dinner Monday-Friday and dinner on Saturdays.",
+            "sourceUrl": "https://www.simpaticopasta.com/"
+          },
+          {
+            "quote": "title: Simpatico | italian restaurant | 27 North 7th Street, Allentown, PA, USA",
+            "sourceUrl": "https://www.simpaticopasta.com/"
+          },
+          {
+            "quote": "title: Private events | Simpatico",
+            "sourceUrl": "https://www.simpaticopasta.com/private-events"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.simpaticopasta.com/",
+          "https://www.simpaticopasta.com/menu",
+          "https://www.simpaticopasta.com/private-events"
+        ],
+        "retrievedAt": "2026-08-31T13:30:59.124Z",
+        "playwrightPages": 0
+      }
+    },
+    "pennsylvania-rye-company-allentown": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:31:00.917Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.paryeco.com/food",
+        "reservationUrl": "https://www.toasttab.com/pennsylvaniaryeco/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 2255054835"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "top of page Pennsylvania Rye Company Home Food Bar Wine List Upcoming Events Private Events Social Gift Cards Shop Reservation More Use tab to navigate through the menu items.",
+        "groupPolicyLanguage": [
+          "top of page Pennsylvania Rye Company Home Food Bar Wine List Upcoming Events Private Events Social Gift Cards Shop Reservation More Use tab to navigate through the menu items.",
+          "private Events Unique spaces for a unique experiance Inquire the loft Experience the ultra seasonal offerings of Chef Eduardo Aburto in an open industrial chic space capable of hosting thirty five guests seated or forty five guests for cocktail events."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 2255054835",
+            "sourceUrl": "https://www.paryeco.com/"
+          },
+          {
+            "quote": "og:description: Pennsylvania Rye Company is Downtown Allentown",
+            "sourceUrl": "https://www.paryeco.com/"
+          },
+          {
+            "quote": "title: Pennsylvania Rye Company | Whiskey bar | 536 Hamilton Street, Allentown, PA, USA",
+            "sourceUrl": "https://www.paryeco.com/"
+          },
+          {
+            "quote": "title: Menu | Pennsylvania Rye Company",
+            "sourceUrl": "https://www.paryeco.com/food"
+          },
+          {
+            "quote": "og:description: Small plates, craft cocktails and seasonal fare. One block form center city.",
+            "sourceUrl": "https://www.paryeco.com/contact-us"
+          },
+          {
+            "quote": "title: Contact Us | Pennsylvania Rye Company",
+            "sourceUrl": "https://www.paryeco.com/contact-us"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.paryeco.com/",
+          "https://www.paryeco.com/food",
+          "https://www.paryeco.com/contact-us"
+        ],
+        "retrievedAt": "2026-08-31T13:31:00.917Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-aladdin-restaurant-allentown": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:31:02.729Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Explore the Aladdin Restaurant in Allentown featuring diverse menu options, a welcoming atmosphere, and convenient hours. Discover your next favorite meal today.",
+            "sourceUrl": "https://www.aladdinlv.com/"
+          },
+          {
+            "quote": "title: The Aladdin Restaurant | Visit for Flavor & Hospitality",
+            "sourceUrl": "https://www.aladdinlv.com/"
+          },
+          {
+            "quote": "og:description: Discover The Aladdin Restaurant in Allentown, PA for exceptional dining, catering, and reservations. Experience flavorful cuisine in a warm, welcoming environment.",
+            "sourceUrl": "https://www.aladdinlv.com/visit"
+          },
+          {
+            "quote": "title: Visit | Reserve Your Table Now &mdash; The Aladdin Restaurant",
+            "sourceUrl": "https://www.aladdinlv.com/visit"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.aladdinlv.com/",
+          "https://www.aladdinlv.com/visit"
+        ],
+        "retrievedAt": "2026-08-31T13:31:02.729Z",
+        "playwrightPages": 1
+      }
+    },
+    "mojito-latin-soul-food-winston-salem": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:31:13.644Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://tmt.spotapps.co/reservations?spot_id=94343&callback_url=http://mojitolatinsoulfood.com/",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "20% gratuity for parties of 7 or more people Order online Pick up your favorite food Don&apos;t feel like cooking today?",
+        "groupPolicyLanguage": [
+          "20% gratuity for parties of 7 or more people Order online Pick up your favorite food Don&apos;t feel like cooking today?"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: MOJITO LATIN SOUL FOOD - DTWS, Winston-Salem, NC",
+            "sourceUrl": "https://www.mojitolatinsoulfood.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.mojitolatinsoulfood.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:31:13.644Z",
+        "playwrightPages": 0
+      }
+    },
+    "mission-pizza-napoletana-winston-salem": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:31:15.357Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/mpnws",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "For large group inquires, buyouts, private pizza catering, private pizza making classes, or other questions, email us at missionpizzaws@gmail.com.",
+        "groupPolicyLanguage": [
+          "For large group inquires, buyouts, private pizza catering, private pizza making classes, or other questions, email us at missionpizzaws@gmail.com."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Mission Pizza Napoletana. Lauded osteria, first in NC for neapolitan pizza. Home of Pizzakase. Italian-inspired fare, Italian wine, local NC beer. Small, not quiet dining room.",
+            "sourceUrl": "https://www.missionpizzanapoletana.com/"
+          },
+          {
+            "quote": "title: Mission Pizza Napoletana",
+            "sourceUrl": "https://www.missionpizzanapoletana.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.missionpizzanapoletana.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:31:15.357Z",
+        "playwrightPages": 0
+      }
+    },
+    "heff-s-burger-club-winston-salem": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:31:16.785Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/heffs-burger-club/v3/?mode=fulfillment",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Locally owned burger kitchen serving made-from-scratch burgers with high-end local ingredients and friendly service.",
+            "sourceUrl": "https://www.heffsburgerclub.com/"
+          },
+          {
+            "quote": "title: Best Burgers in Winston-Salem, NC | Heff&apos;s Burger Club",
+            "sourceUrl": "https://www.heffsburgerclub.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.heffsburgerclub.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:31:16.785Z",
+        "playwrightPages": 0
+      }
+    },
+    "sage-salt-winston-salem": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:31:17.669Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/sage-and-salt-300-north-liberty-st/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Created by Chef Will Kingery and Norbert Cooper in late 2009, Willow�s Bistro strives for perfection in every sense.",
+            "sourceUrl": "https://sageandsaltbistro.com/"
+          },
+          {
+            "quote": "meta description: Created by Chef Will Kingery and Norbert Cooper in late 2009, Sage & Salt Bistro strives for perfection in every sense.",
+            "sourceUrl": "https://sageandsaltbistro.com/"
+          },
+          {
+            "quote": "title: Best American Restaurant in Winston-Salem | Sage & Salt",
+            "sourceUrl": "https://sageandsaltbistro.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://sageandsaltbistro.com/"
+        ],
+        "retrievedAt": "2026-08-31T13:31:17.669Z",
+        "playwrightPages": 0
+      }
+    },
+    "sweet-potatoes-winston-salem": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:31:18.569Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (336) 727-4844"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (336) 727-4844",
+            "sourceUrl": "https://www.sweetpotatoes.ws/"
+          },
+          {
+            "quote": "og:description: AWARD WINNING Sweet Potatoes Restaurant in the Downtown Arts District of Winston Salem, where they serve unique, southern inspired uptown, down-home cooking.",
+            "sourceUrl": "https://www.sweetpotatoes.ws/"
+          },
+          {
+            "quote": "title: Sweet Potatoes Restaurant | Southern Food | Winston Salem, NC",
+            "sourceUrl": "https://www.sweetpotatoes.ws/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.sweetpotatoes.ws/"
+        ],
+        "retrievedAt": "2026-08-31T13:31:18.569Z",
+        "playwrightPages": 0
+      }
+    },
+    "forsyth-seafood-market-cafe-winston-salem": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T13:31:19.514Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "http://forsythseafood.com/menu-1",
+        "reservationUrl": "https://www.toasttab.com/forsyth-seafood-market-cafe-108-n-martin-luther-king-jr-dr",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-20:00, Tu 11:00-20:00, We 11:00-20:00, Th 11:00-20:00, Fr 11:00-21:00, Sa 11:00-20:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-20:00, Tu 11:00-20:00, We 11:00-20:00, Th 11:00-20:00, Fr 11:00-21:00, Sa 11:00-20:00,",
+            "sourceUrl": "http://forsythseafood.com/"
+          },
+          {
+            "quote": "og:description: Since 1984, Winston-Salem-based community staple Forsyth Seafood has been serving up deliciously fresh meals in their restaurant and serving over 28 varieties of wild-caught seafood.",
+            "sourceUrl": "http://forsythseafood.com/"
+          },
+          {
+            "quote": "title: Forsyth Seafood Market & Café",
+            "sourceUrl": "http://forsythseafood.com/"
+          },
+          {
+            "quote": "og:description: Four times per week our trucks deliver up to 28 varieties of wild caught fish and mollusk which hit our fryers and your plates! Sandwiches, boats, dinner platters, hushpuppies and shrimp! You name it, we serve it!",
+            "sourceUrl": "http://forsythseafood.com/menu-1"
+          },
+          {
+            "quote": "title: Cafe &mdash; Forsyth Seafood Market & Café",
+            "sourceUrl": "http://forsythseafood.com/menu-1"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "http://forsythseafood.com/",
+          "http://forsythseafood.com/menu-1"
+        ],
+        "retrievedAt": "2026-08-31T13:31:19.514Z",
         "playwrightPages": 0
       }
     }

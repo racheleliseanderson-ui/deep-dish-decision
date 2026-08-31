@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T13:22:31.828Z",
-  "builtAt": "2026-08-31T13:22:32Z",
-  "count": 1076,
-  "regions": 164,
+  "generatedAt": "2026-08-31T13:31:21.379Z",
+  "builtAt": "2026-08-31T13:31:21Z",
+  "count": 1094,
+  "regions": 167,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 1055,
+    "current": 1073,
     "officialConflicts": 11,
-    "thinRecords": 569,
+    "thinRecords": 579,
     "avgUnknowns": 5.14,
-    "avgThinFields": 7.57,
+    "avgThinFields": 7.58,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 420
+    "reachableAtLastReview": 436
   },
-  "fullCaseFiles": 1076,
+  "fullCaseFiles": 1094,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -248,7 +248,8 @@
       "Durham, NC",
       "Greensboro, NC",
       "Raleigh, NC",
-      "Wilmington, NC"
+      "Wilmington, NC",
+      "Winston-Salem, NC"
     ],
     "North Dakota": [
       "Fargo, ND"
@@ -257,6 +258,7 @@
       "Cincinnati, OH",
       "Cleveland, OH",
       "Columbus, OH",
+      "Dayton, OH",
       "Toledo, OH"
     ],
     "Oklahoma": [
@@ -271,6 +273,7 @@
       "Portland, Oregon"
     ],
     "Pennsylvania": [
+      "Allentown, PA",
       "Philadelphia, PA",
       "Pittsburgh, PA"
     ],
@@ -505,7 +508,10 @@
     "Corpus Christi, TX": "Texas",
     "Reno, NV": "Nevada",
     "Chattanooga, TN": "Tennessee",
-    "Wilmington, NC": "North Carolina"
+    "Wilmington, NC": "North Carolina",
+    "Dayton, OH": "Ohio",
+    "Allentown, PA": "Pennsylvania",
+    "Winston-Salem, NC": "North Carolina"
   },
   "cuisineTagOptions": [
     "Afghan",
@@ -8250,6 +8256,132 @@
       "region": "Wilmington, NC",
       "regionGroup": "North Carolina",
       "city": "Wilmington"
+    },
+    {
+      "slug": "taqueria-mixteca-dayton",
+      "title": "Taqueria Mixteca",
+      "region": "Dayton, OH",
+      "regionGroup": "Ohio",
+      "city": "Dayton"
+    },
+    {
+      "slug": "sueno-dayton",
+      "title": "Sueño",
+      "region": "Dayton, OH",
+      "regionGroup": "Ohio",
+      "city": "Dayton"
+    },
+    {
+      "slug": "table-33-dayton",
+      "title": "Table 33",
+      "region": "Dayton, OH",
+      "regionGroup": "Ohio",
+      "city": "Dayton"
+    },
+    {
+      "slug": "lily-s-dayton",
+      "title": "Lily's",
+      "region": "Dayton, OH",
+      "regionGroup": "Ohio",
+      "city": "Dayton"
+    },
+    {
+      "slug": "grist-dayton",
+      "title": "Grist",
+      "region": "Dayton, OH",
+      "regionGroup": "Ohio",
+      "city": "Dayton"
+    },
+    {
+      "slug": "thai-9-dayton",
+      "title": "Thai 9",
+      "region": "Dayton, OH",
+      "regionGroup": "Ohio",
+      "city": "Dayton"
+    },
+    {
+      "slug": "grille-3501-allentown",
+      "title": "Grille 3501",
+      "region": "Allentown, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Allentown"
+    },
+    {
+      "slug": "westside-grill-allentown",
+      "title": "Westside Grill",
+      "region": "Allentown, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Allentown"
+    },
+    {
+      "slug": "union-finch-allentown",
+      "title": "Union & Finch",
+      "region": "Allentown, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Allentown"
+    },
+    {
+      "slug": "simpatico-allentown",
+      "title": "Simpatico",
+      "region": "Allentown, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Allentown"
+    },
+    {
+      "slug": "pennsylvania-rye-company-allentown",
+      "title": "Pennsylvania Rye Company",
+      "region": "Allentown, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Allentown"
+    },
+    {
+      "slug": "the-aladdin-restaurant-allentown",
+      "title": "The Aladdin Restaurant",
+      "region": "Allentown, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Allentown"
+    },
+    {
+      "slug": "mojito-latin-soul-food-winston-salem",
+      "title": "Mojito Latin Soul Food",
+      "region": "Winston-Salem, NC",
+      "regionGroup": "North Carolina",
+      "city": "Winston-Salem"
+    },
+    {
+      "slug": "mission-pizza-napoletana-winston-salem",
+      "title": "Mission Pizza Napoletana",
+      "region": "Winston-Salem, NC",
+      "regionGroup": "North Carolina",
+      "city": "Winston-Salem"
+    },
+    {
+      "slug": "heff-s-burger-club-winston-salem",
+      "title": "Heff's Burger Club",
+      "region": "Winston-Salem, NC",
+      "regionGroup": "North Carolina",
+      "city": "Winston-Salem"
+    },
+    {
+      "slug": "sage-salt-winston-salem",
+      "title": "Sage & Salt",
+      "region": "Winston-Salem, NC",
+      "regionGroup": "North Carolina",
+      "city": "Winston-Salem"
+    },
+    {
+      "slug": "sweet-potatoes-winston-salem",
+      "title": "Sweet Potatoes",
+      "region": "Winston-Salem, NC",
+      "regionGroup": "North Carolina",
+      "city": "Winston-Salem"
+    },
+    {
+      "slug": "forsyth-seafood-market-cafe-winston-salem",
+      "title": "Forsyth Seafood Market & Café",
+      "region": "Winston-Salem, NC",
+      "regionGroup": "North Carolina",
+      "city": "Winston-Salem"
     }
   ]
 }
