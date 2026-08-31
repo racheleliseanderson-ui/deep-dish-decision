@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T01:50:12.072Z",
-  "builtAt": "2026-08-31T01:51:06Z",
-  "count": 854,
-  "regions": 125,
+  "generatedAt": "2026-08-31T02:43:40.626Z",
+  "builtAt": "2026-08-31T02:43:40Z",
+  "count": 872,
+  "regions": 128,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 833,
+    "current": 851,
     "officialConflicts": 11,
-    "thinRecords": 453,
-    "avgUnknowns": 5.15,
-    "avgThinFields": 7.61,
+    "thinRecords": 459,
+    "avgUnknowns": 5.14,
+    "avgThinFields": 7.6,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 207
+    "reachableAtLastReview": 225
   },
-  "fullCaseFiles": 854,
+  "fullCaseFiles": 872,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -98,6 +98,7 @@
       "Fresno, CA",
       "Los Angeles, CA",
       "Lynwood, CA",
+      "Oakland, CA",
       "Riverside, CA",
       "Sacramento, CA",
       "San Diego, CA",
@@ -123,6 +124,7 @@
       "Washington, DC"
     ],
     "Florida": [
+      "Fort Lauderdale, FL",
       "Jacksonville, FL",
       "Miami, FL",
       "Orlando, FL",
@@ -217,6 +219,7 @@
       "Rochester, NY"
     ],
     "North Carolina": [
+      "Asheville, NC",
       "Charlotte, NC",
       "Raleigh, NC"
     ],
@@ -427,7 +430,10 @@
     "Hartford, CT": "Connecticut",
     "Fort Worth, TX": "Texas",
     "Savannah, GA": "Georgia",
-    "Colorado Springs, CO": "Colorado"
+    "Colorado Springs, CO": "Colorado",
+    "Oakland, CA": "California",
+    "Fort Lauderdale, FL": "Florida",
+    "Asheville, NC": "North Carolina"
   },
   "cuisineTagOptions": [
     "American",
@@ -461,6 +467,7 @@
     "Czech",
     "Deli",
     "Detroit-style",
+    "Diner",
     "East African",
     "Eastern European",
     "Eastern Mediterranean",
@@ -485,6 +492,7 @@
     "Indonesian",
     "Israeli",
     "Italian",
+    "Italian American",
     "Jamaican",
     "Japanese",
     "Jewish",
@@ -504,6 +512,7 @@
     "Mid-Atlantic",
     "Middle Eastern",
     "Midwestern",
+    "Modern",
     "Native American",
     "Neapolitan",
     "New American",
@@ -536,6 +545,7 @@
     "Small plates",
     "Soba",
     "Sonoran",
+    "Soul food",
     "South American",
     "South Asian",
     "Southeast Asian",
@@ -560,6 +570,7 @@
     "Venezuelan",
     "Vermont",
     "Vietnamese",
+    "Waterfront",
     "West African",
     "Western",
     "Wild game",
@@ -6602,6 +6613,132 @@
       "region": "Colorado Springs, CO",
       "regionGroup": "Colorado",
       "city": "Colorado Springs"
+    },
+    {
+      "slug": "mago-oakland",
+      "title": "Mägo",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "millennium-restaurant-oakland",
+      "title": "Millennium Restaurant",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "soba-ichi-oakland",
+      "title": "Soba Ichi",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "burdell-oakland",
+      "title": "Burdell",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "bombera-oakland",
+      "title": "Bombera",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "wahpepah-s-kitchen-oakland",
+      "title": "Wahpepah's Kitchen",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "the-floridian-fort-lauderdale",
+      "title": "The Floridian",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "catch-cut-fort-lauderdale",
+      "title": "Catch & Cut",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "shooters-waterfront-fort-lauderdale",
+      "title": "Shooters Waterfront",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "anthony-s-runway-84-fort-lauderdale",
+      "title": "Anthony's Runway 84",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "timbr-fort-lauderdale",
+      "title": "TIMBR",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "calusso-fort-lauderdale",
+      "title": "Calusso",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "curate-asheville",
+      "title": "Cúrate",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "rhubarb-asheville",
+      "title": "Rhubarb",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "the-admiral-asheville",
+      "title": "The Admiral",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "limones-asheville",
+      "title": "Limones",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "the-market-place-asheville",
+      "title": "The Market Place",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "jargon-asheville",
+      "title": "Jargon",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
     }
   ]
 }

@@ -40,6 +40,9 @@ const STATEWIDE_FILL = [
   ["Fort Worth", "TX", 978234],
   ["Savannah", "GA", 147780],
   ["Colorado Springs", "CO", 488694],
+  ["Oakland", "CA", 440646],
+  ["Fort Lauderdale", "FL", 182760],
+  ["Asheville", "NC", 94589],
 ];
 
 const existing = readJson(PATHS.queue, null);

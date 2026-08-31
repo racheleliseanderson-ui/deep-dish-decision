@@ -2,6 +2,281 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-08-31T02:43:40.727Z",
+      "finishedAt": "2026-08-31T02:43:40.727Z",
+      "records": 872,
+      "promoted": 15,
+      "fullBefore": 854,
+      "fullAfter": 872,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 851,
+        "officialConflicts": 11,
+        "thinRecords": 459,
+        "avgUnknowns": 5.14,
+        "avgThinFields": 7.6,
+        "lastReviewAt": "2026-08-31",
+        "reachableAtLastReview": 225
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T02:41:58.390Z",
+      "finishedAt": "2026-08-31T02:43:10.350Z",
+      "batchSize": 18,
+      "cities": [
+        "Oakland, California",
+        "Fort Lauderdale, Florida",
+        "Asheville, North Carolina"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 94,
+      "corpusEnriched": 872,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T02-41-58-391Z-enrich-owned",
+      "records": [
+        {
+          "slug": "m-go-oakland",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "millennium-restaurant-oakland",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "soba-ichi-oakland",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "burdell-oakland",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "bombera-oakland",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "wahpepah-s-kitchen-oakland",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-floridian-fort-lauderdale",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "catch-cut-fort-lauderdale",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "shooters-waterfront-fort-lauderdale",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "anthony-s-runway-84-fort-lauderdale",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "timbr-fort-lauderdale",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "calusso-fort-lauderdale",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "c-rate-asheville",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "rhubarb-asheville",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 8",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "the-admiral-asheville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "limones-asheville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-market-place-asheville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "jargon-asheville",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T02:41:57.736Z",
+      "finishedAt": "2026-08-31T02:41:57.930Z",
+      "cities": [
+        {
+          "city": "Oakland, CA",
+          "queueCity": "Oakland",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Fort Lauderdale, FL",
+          "queueCity": "Fort Lauderdale",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Asheville, NC",
+          "queueCity": "Asheville",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 18,
+      "duplicatesSkipped": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T02-41-57-736Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings-2026-08-31-statewide-f02.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "m-go-oakland",
+        "millennium-restaurant-oakland",
+        "soba-ichi-oakland",
+        "burdell-oakland",
+        "bombera-oakland",
+        "wahpepah-s-kitchen-oakland",
+        "the-floridian-fort-lauderdale",
+        "catch-cut-fort-lauderdale",
+        "shooters-waterfront-fort-lauderdale",
+        "anthony-s-runway-84-fort-lauderdale",
+        "timbr-fort-lauderdale",
+        "calusso-fort-lauderdale",
+        "c-rate-asheville",
+        "rhubarb-asheville",
+        "the-admiral-asheville",
+        "limones-asheville",
+        "the-market-place-asheville",
+        "jargon-asheville"
+      ]
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-08-31T01:50:12.167Z",
       "finishedAt": "2026-08-31T01:50:12.167Z",
       "records": 854,
@@ -12313,270 +12588,6 @@
         "sabores-oaxaquen-os-restaurant",
         "expresion-oaxaquena-restaurante",
         "real-de-oaxaca"
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T23:57:53.313Z",
-      "finishedAt": "2026-08-10T23:59:06.451Z",
-      "batchSize": 5,
-      "cities": [
-        "New York, New York"
-      ],
-      "resolved": 5,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 83,
-      "corpusEnriched": 71,
-      "apiCalls": {
-        "google": 5,
-        "firecrawl": 20
-      },
-      "retries": 6,
-      "failures": 1,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-57-53-311Z-enrich",
-      "records": [
-        {
-          "slug": "los-tacos-no-1",
-          "matchStatus": "resolved",
-          "completeness": 71,
-          "notes": []
-        },
-        {
-          "slug": "amor-loco",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "rosa-mexicano",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "vida-verde-tequila-bar",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "tacombi",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "discover",
-      "startedAt": "2026-08-10T23:57:52.552Z",
-      "finishedAt": "2026-08-10T23:57:53.240Z",
-      "batchSize": 5,
-      "cities": [
-        {
-          "city": "New York, NY",
-          "found": 20,
-          "inserted": 5,
-          "duplicates": 2
-        }
-      ],
-      "inserted": 5,
-      "duplicatesSkipped": 2,
-      "apiCalls": {
-        "placesSearchText": 1
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-57-52-553Z-discover",
-      "insertedSlugs": [
-        "los-tacos-no-1",
-        "amor-loco",
-        "rosa-mexicano",
-        "vida-verde-tequila-bar",
-        "tacombi"
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T23:05:55.804Z",
-      "finishedAt": "2026-08-10T23:10:22.136Z",
-      "batchSize": 25,
-      "cities": [
-        "New York, New York",
-        "Los Angeles, California",
-        "Santa Monica, California",
-        "Chicago, Illinois"
-      ],
-      "resolved": 25,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 84,
-      "corpusEnriched": 66,
-      "apiCalls": {
-        "google": 25,
-        "firecrawl": 74
-      },
-      "retries": 28,
-      "failures": 4,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-05-55-802Z-enrich",
-      "records": [
-        {
-          "slug": "carmine-s-44th-street-nyc",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "pier-17",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": []
-        },
-        {
-          "slug": "balthazar",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "au-cheval",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "fraunces-tavern",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "the-smith",
-          "matchStatus": "resolved",
-          "completeness": 71,
-          "notes": [
-            "site 429"
-          ]
-        },
-        {
-          "slug": "buddakan",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "boucherie-union-square",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "gramercy-tavern",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "le-bernardin",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "philippe-the-original",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "bottega-louie",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "perch",
-          "matchStatus": "resolved",
-          "completeness": 71,
-          "notes": [
-            "site 429"
-          ]
-        },
-        {
-          "slug": "re-publique",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "joey-dtla",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        },
-        {
-          "slug": "bestia",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "chubby-cattle-bbq-little-tokyo",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "girl-the-goat-los-angeles",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "e-lephante",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "home-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "stk-steakhouse",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "aba",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "the-dearborn",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "summer-house-santa-monica",
-          "matchStatus": "resolved",
-          "completeness": 71,
-          "notes": [
-            "site 429"
-          ]
-        },
-        {
-          "slug": "the-purple-pig-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        }
       ]
     }
   ]

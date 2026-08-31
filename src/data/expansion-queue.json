@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T01:48:46.371Z",
+  "generatedAt": "2026-08-31T02:41:50.777Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1005,6 +1005,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T01:48:49.022Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Oakland",
+      "stateCode": "CA",
+      "population": 440646,
+      "priority": 83,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T02:41:57.736Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Fort Lauderdale",
+      "stateCode": "FL",
+      "population": 182760,
+      "priority": 84,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T02:41:57.736Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Asheville",
+      "stateCode": "NC",
+      "population": 94589,
+      "priority": 85,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T02:41:57.736Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T01:50:00.276Z",
+  "generatedAt": "2026-08-31T02:43:10.323Z",
   "records": {
     "canlis": {
       "google": {
@@ -60196,6 +60196,1058 @@
           "https://pizzeriarustica.com/"
         ],
         "retrievedAt": "2026-08-31T01:49:59.140Z",
+        "playwrightPages": 0
+      }
+    },
+    "millennium-restaurant-oakland": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:00.439Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.millenniumrestaurant.com/menu",
+        "reservationUrl": "https://www.toasttab.com/millennium-5912-college-ave-oakland-ca-94618/",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:30-21:30, Tu 17:30-21:30, We 17:30-21:30, Th 17:30-21:30, Fr 17:30-22:00, Sa 17:30-22:00, Su 10:30-14:00, Su 17:30-21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Millennium Award-Winning, Innovative Vegan Cuisine.",
+          "ORDER PICK UP Make a reservation ORDER DELIVERY SUPPER CLUB Gift Card Since 1994 Millennium Restaurant has been committed to providing fresh, innovative vegan cuisine.",
+          "With cocktails that pop, an eclectic wine list and a huge beer and liquor selection - including Fernet Branca - Millennium’s food and drink will inspire omnivores and vegetarians alike.",
+          "” &mdash; SF Gate “ Tucker’s touch with vegan dishes is nothing short of miraculous."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:30-21:30, Tu 17:30-21:30, We 17:30-21:30, Th 17:30-21:30, Fr 17:30-22:00, Sa 17:30-22:00, Su 10:30-14:00, Su 17:30-21:00",
+            "sourceUrl": "https://www.millenniumrestaurant.com/"
+          },
+          {
+            "quote": "og:description: Millennium Restaurant - Award-winning vegan cuisine. A gourmet dining experience created from vegan, healthy, and environmentally friendly foods.",
+            "sourceUrl": "https://www.millenniumrestaurant.com/"
+          },
+          {
+            "quote": "title: Menu &mdash; Millennium Restaurant",
+            "sourceUrl": "https://www.millenniumrestaurant.com/menu"
+          },
+          {
+            "quote": "title: Reservations &mdash; Millennium Restaurant",
+            "sourceUrl": "https://www.millenniumrestaurant.com/reserve"
+          },
+          {
+            "quote": "title: Contact &mdash; Millennium Restaurant",
+            "sourceUrl": "https://www.millenniumrestaurant.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.millenniumrestaurant.com/",
+          "https://www.millenniumrestaurant.com/menu",
+          "https://www.millenniumrestaurant.com/reserve",
+          "https://www.millenniumrestaurant.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T02:42:00.439Z",
+        "playwrightPages": 0
+      }
+    },
+    "soba-ichi-oakland": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:02.814Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://sobaichioakland.com/"
+        ],
+        "retrievedAt": "2026-08-31T02:42:02.814Z",
+        "playwrightPages": 1
+      }
+    },
+    "burdell-oakland": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:13.179Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.burdelloakland.com/menus",
+        "reservationUrl": "https://www.opentable.com/r/burdell-reservations-oakland?restref=1277533&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [
+          "Click here to access ADA accessible menus."
+        ],
+        "groupPolicy": "top of page Home Reservations Menus People Private Events Gift Cards Gallery & Press Info & FAQs More Use tab to navigate through the menu items.",
+        "groupPolicyLanguage": [
+          "top of page Home Reservations Menus People Private Events Gift Cards Gallery & Press Info & FAQs More Use tab to navigate through the menu items."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Burdell: A Nostalgic Soul Food Restaurant in The Temescal neighborhood of Oakland, CA",
+            "sourceUrl": "https://www.burdelloakland.com/"
+          },
+          {
+            "quote": "og:description: Our menus feature southern and soul food. We source the best ingredients from around us. Some items or dishes may be subject to change.",
+            "sourceUrl": "https://www.burdelloakland.com/menus"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.burdelloakland.com/",
+          "https://www.burdelloakland.com/menus"
+        ],
+        "retrievedAt": "2026-08-31T02:42:13.179Z",
+        "playwrightPages": 0
+      }
+    },
+    "bombera-oakland": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:15.732Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.bomberaoakland.com/s/Menu-New-Design-Pg1.docx",
+        "reservationUrl": "https://resy.com/cities/oakland-ca/venues/bombera?date=2024-04-24&seats=2",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Events Host your next event at Bombera A vibrant space for family, friends, and community.",
+        "groupPolicyLanguage": [
+          "Private Events Host your next event at Bombera A vibrant space for family, friends, and community.",
+          "General Information Bombera is available for private events, celebrations, weddings, and special occasions of all types.",
+          "At this time we are only accepting full buyout events.",
+          "Full restaurant buyouts are available on a limited basis."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "Inquire by filling out form below and email it to: events@bomberaoakland.com Bookings will not be considered final until the receipt of venue rental deposit.",
+          "Reservations for a full buyout must be received at least 8 weeks in advance and require a 50% deposit.",
+          "A 50% deposit is required for a full venue rental."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.bomberaoakland.com/"
+          },
+          {
+            "quote": "title: About &mdash; Bombera Oakland",
+            "sourceUrl": "https://www.bomberaoakland.com/about"
+          },
+          {
+            "quote": "title: Events &mdash; Bombera Oakland",
+            "sourceUrl": "https://www.bomberaoakland.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.bomberaoakland.com/",
+          "https://www.bomberaoakland.com/about",
+          "https://www.bomberaoakland.com/s/Menu-New-Design-Pg1.docx",
+          "https://www.bomberaoakland.com/events"
+        ],
+        "retrievedAt": "2026-08-31T02:42:15.732Z",
+        "playwrightPages": 0
+      }
+    },
+    "wahpepah-s-kitchen-oakland": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:17.936Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://wahpepahskitchen.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , We 11:00-18:00, Th 11:00-18:00, Fr 11:00-18:00, Sa 11:00-18:00, Su 11:00-14:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [
+          "Service animals are always allowed, but please be aware that emotional support animals are not considered service animals under California law and will not be permitted on the premises."
+        ],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , We 11:00-18:00, Th 11:00-18:00, Fr 11:00-18:00, Sa 11:00-18:00, Su 11:00-14:00",
+            "sourceUrl": "https://wahpepahskitchen.com/"
+          },
+          {
+            "quote": "title: Book Your Reservation &mdash; Wahpepah's Kitchen",
+            "sourceUrl": "https://wahpepahskitchen.com/reservations"
+          },
+          {
+            "quote": "title: Restaurant Questions &mdash; Wahpepah's Kitchen",
+            "sourceUrl": "https://wahpepahskitchen.com/contact-restaurant"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://wahpepahskitchen.com/",
+          "https://wahpepahskitchen.com/reservations",
+          "https://wahpepahskitchen.com/contact-restaurant"
+        ],
+        "retrievedAt": "2026-08-31T02:42:17.936Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-floridian-fort-lauderdale": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:19.736Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://thefloridiandiner.com/food-menu",
+        "reservationUrl": "https://thefloridiandiner.com/reservations?source=pop_up&spot_id=85629&destination=reservations&promotion=reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (954) 463-4041"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 00:00 00:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Breakfast / Brunch"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Book a table Party and Group Reservations Celebrate Together, Dine Together Host your next party or group event with us and create lasting memories.",
+        "groupPolicyLanguage": [
+          "Book a table Party and Group Reservations Celebrate Together, Dine Together Host your next party or group event with us and create lasting memories."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (954) 463-4041",
+            "sourceUrl": "https://thefloridiandiner.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Breakfast / Brunch",
+            "sourceUrl": "https://thefloridiandiner.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 00:00 00:00",
+            "sourceUrl": "https://thefloridiandiner.com/"
+          },
+          {
+            "quote": "og:description: Welcome to The Floridian, a cherished landmark nestled along the bustling Las Olas Boulevard in Fort Lauderdale. With a rich history spanning over 80 years, our diner has become a beloved de...",
+            "sourceUrl": "https://thefloridiandiner.com/"
+          },
+          {
+            "quote": "meta description: Welcome to The Floridian, a cherished landmark nestled along the bustling Las Olas Boulevard in Fort Lauderdale. With a rich history spanning over 80 years, our diner has become a beloved destination for locals and tourists alike.",
+            "sourceUrl": "https://thefloridiandiner.com/"
+          },
+          {
+            "quote": "title: Best Breakfast & Brunch in Ft. Lauderdale | The Floridian",
+            "sourceUrl": "https://thefloridiandiner.com/"
+          },
+          {
+            "quote": "title: Floridian Restaurant - Reservations",
+            "sourceUrl": "https://thefloridiandiner.com/reservations"
+          },
+          {
+            "quote": "title: Floridian Restaurant - Food Menu",
+            "sourceUrl": "https://thefloridiandiner.com/food-menu"
+          },
+          {
+            "quote": "title: Floridian Restaurant - Events",
+            "sourceUrl": "https://thefloridiandiner.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://thefloridiandiner.com/",
+          "https://thefloridiandiner.com/reservations",
+          "https://thefloridiandiner.com/food-menu",
+          "https://thefloridiandiner.com/events"
+        ],
+        "retrievedAt": "2026-08-31T02:42:19.736Z",
+        "playwrightPages": 0
+      }
+    },
+    "catch-cut-fort-lauderdale": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:21.925Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://catchandcut.com/menu",
+        "reservationUrl": "https://www.toasttab.com/catch-cut-las-olas-1309-e-las-olas-blvd/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 16:00-22:00, Tu 16:00-22:00, We 16:00-22:00, Th 16:00-22:00, Fr 12:00-23:00, Sa 16:00-23:00, Su 12:00-21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "VIEW WINE MENU View fullsize parties & events Elevate your next celebration at Catch & Cut, where exceptional cuisine, personalized service, and elegant surroundings create unforgettable private events.",
+        "groupPolicyLanguage": [
+          "VIEW WINE MENU View fullsize parties & events Elevate your next celebration at Catch & Cut, where exceptional cuisine, personalized service, and elegant surroundings create unforgettable private events.",
+          "For parties of 14 or more, please call us directly at 954.533.1838 ."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 16:00-22:00, Tu 16:00-22:00, We 16:00-22:00, Th 16:00-22:00, Fr 12:00-23:00, Sa 16:00-23:00, Su 12:00-21:00",
+            "sourceUrl": "https://catchandcut.com/"
+          },
+          {
+            "quote": "og:description: Catch & Cut is your modern neighborhood seafood, steak, and sushi restaurant on Las Olas Boulevard in Fort Lauderdale. Join us for brunch, lunch, dinner, happy hour, private dining, and rooftop cocktails.",
+            "sourceUrl": "https://catchandcut.com/"
+          },
+          {
+            "quote": "title: Seafood, Steak & Sushi on Las Olas | Catch & Cut Fort Lauderdale",
+            "sourceUrl": "https://catchandcut.com/"
+          },
+          {
+            "quote": "title: Menu | Discover Culinary Excellence &mdash; Catch & Cut",
+            "sourceUrl": "https://catchandcut.com/menu"
+          },
+          {
+            "quote": "og:description: Reserve your table at Catch & Cut Las Olas for a remarkable dining experience featuring fresh seafood, prime cuts, and sushi in a vibrant setting. Call 954.533.1838 for parties of 7+.",
+            "sourceUrl": "https://catchandcut.com/reservations"
+          },
+          {
+            "quote": "title: Reservations | Book Your Table Now &mdash; Catch & Cut",
+            "sourceUrl": "https://catchandcut.com/reservations"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://catchandcut.com/",
+          "https://catchandcut.com/menu",
+          "https://catchandcut.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T02:42:21.925Z",
+        "playwrightPages": 0
+      }
+    },
+    "shooters-waterfront-fort-lauderdale": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:23.665Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/shooters-waterfront-reservations-fort-lauderdale?restref=128056&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (954) 566-2855"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: 11:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Seafood & Raw Bar, American Staples, Brunch Favorites"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (954) 566-2855",
+            "sourceUrl": "https://www.shooterswaterfront.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://www.shooterswaterfront.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Seafood & Raw Bar, American Staples, Brunch Favorites",
+            "sourceUrl": "https://www.shooterswaterfront.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: 11:00",
+            "sourceUrl": "https://www.shooterswaterfront.com/"
+          },
+          {
+            "quote": "og:description: Shooters Waterfront restaurant is on the beautiful Fort Lauderdale Intracoastal at Oakland Park Blvd and accessible by Ft Lauderdale Water Taxi stop number 9.",
+            "sourceUrl": "https://www.shooterswaterfront.com/"
+          },
+          {
+            "quote": "title: Shooters Waterfront Restaurant on Intracoastal Fort Lauderdale",
+            "sourceUrl": "https://www.shooterswaterfront.com/"
+          },
+          {
+            "quote": "og:description: Click here to learn more on any upcoming Fort Lauderdale Events including happy hour, weekend brunch buffets, holiday and special events.",
+            "sourceUrl": "https://www.shooterswaterfront.com/events-fort-lauderdale"
+          },
+          {
+            "quote": "title: Upcoming Fort Lauderdale Events | Shooters Waterfront",
+            "sourceUrl": "https://www.shooterswaterfront.com/events-fort-lauderdale"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.shooterswaterfront.com/",
+          "https://www.shooterswaterfront.com/events-fort-lauderdale"
+        ],
+        "retrievedAt": "2026-08-31T02:42:23.665Z",
+        "playwrightPages": 0
+      }
+    },
+    "anthony-s-runway-84-fort-lauderdale": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:25.468Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.runway84.com/"
+        ],
+        "retrievedAt": "2026-08-31T02:42:25.468Z",
+        "playwrightPages": 0
+      }
+    },
+    "timbr-fort-lauderdale": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:34.459Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.timbr-restaurant.com/menu/",
+        "reservationUrl": "https://www.opentable.com/booking/restref/availability?rid=1252912&lang=en-US&color=8&r3uid=cfe&dark=false&font=arial&ot_logo=standard&primary_color=120202&primary_font_color=ffffff&button_color=da3743&button_font_color=ffffff&correlationId=ef2b80e9-1681-4580-999c-9b5d447f032a&restRef=1252912&partySize=2&dateTime=2025-03-25T19%3A00&otSource=Restaurant%20website&logoPid=75069402&backgroundPid=75070627",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "The menu blends refined American staples with European classics, featuring premium steaks, fresh seafood, daily house-made pastas, and inspired vegetarian dishes, all thoughtfully paired with exceptional wines, champagne, and craft cocktails."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "For daytime gatherings or full-venue buyouts, share your dream with us.",
+        "groupPolicyLanguage": [
+          "For daytime gatherings or full-venue buyouts, share your dream with us.",
+          "For Parties of 7 people or more, please use the \"Events\" tab above."
+        ],
+        "dressCode": "There is a dress code; so please no shorts, casual caps, or flip-flops.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: TIMBR is a new modern American dining concept where rustic charm meets contemporary sophistication. Located in Fort Lauderdale, FL.",
+            "sourceUrl": "https://www.timbr-restaurant.com/"
+          },
+          {
+            "quote": "title: TIMBR | Restaurant, Bar & Lounge in Fort Lauderdale, FL",
+            "sourceUrl": "https://www.timbr-restaurant.com/"
+          },
+          {
+            "quote": "og:description: See the menus for TIMBR in Fort Lauderdale, FL. Serving New American dishes for dine-in!",
+            "sourceUrl": "https://www.timbr-restaurant.com/menu/"
+          },
+          {
+            "quote": "title: Menu | TIMBR in Fort Lauderdale, FL",
+            "sourceUrl": "https://www.timbr-restaurant.com/menu/"
+          },
+          {
+            "quote": "title: Private Events | TIMBR in Fort Lauderdale, FL",
+            "sourceUrl": "https://www.timbr-restaurant.com/private-events/"
+          },
+          {
+            "quote": "title: Contact | TIMBR in Fort Lauderdale, FL",
+            "sourceUrl": "https://www.timbr-restaurant.com/contact/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.timbr-restaurant.com/",
+          "https://www.timbr-restaurant.com/menu/",
+          "https://www.timbr-restaurant.com/private-events/",
+          "https://www.timbr-restaurant.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T02:42:34.459Z",
+        "playwrightPages": 0
+      }
+    },
+    "calusso-fort-lauderdale": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:36.567Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.calussorestaurant.com/wine-restaurant-fort-lauderdale",
+        "reservationUrl": "https://www.opentable.com/restref/client/?lang=en-US&ot_source=Restaurant%20website&restref=1393588&corrid=05af2ff1-b3e4-4d18-9a32-de985103b04b",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 754.318.6997"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: 17:30"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: italian, french, coastal"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "LEARN MORE Private Dining Have It All To Yourself Elevate your special event to noteworthy status in our exclusive private dining room, which offers unparalleled seclusion, as well as stunning marina views.",
+        "groupPolicyLanguage": [
+          "LEARN MORE Private Dining Have It All To Yourself Elevate your special event to noteworthy status in our exclusive private dining room, which offers unparalleled seclusion, as well as stunning marina views."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 754.318.6997",
+            "sourceUrl": "https://www.calussorestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$$",
+            "sourceUrl": "https://www.calussorestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: italian, french, coastal",
+            "sourceUrl": "https://www.calussorestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: 17:30",
+            "sourceUrl": "https://www.calussorestaurant.com/"
+          },
+          {
+            "quote": "title: Calusso Restaurant | Official Site",
+            "sourceUrl": "https://www.calussorestaurant.com/"
+          },
+          {
+            "quote": "title: wine restaurant fort lauderdale - Calusso Restaurant",
+            "sourceUrl": "https://www.calussorestaurant.com/wine-restaurant-fort-lauderdale"
+          },
+          {
+            "quote": "og:description: Have questions or need to book a table? Contact Calusso for reservations, private dining inquiries, or general assistance. Reserve a Table with us",
+            "sourceUrl": "https://www.calussorestaurant.com/contact-us"
+          },
+          {
+            "quote": "title: Contact Us | Calusso Restaurant",
+            "sourceUrl": "https://www.calussorestaurant.com/contact-us"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.calussorestaurant.com/",
+          "https://www.calussorestaurant.com/wine-restaurant-fort-lauderdale",
+          "https://www.calussorestaurant.com/contact-us"
+        ],
+        "retrievedAt": "2026-08-31T02:42:36.567Z",
+        "playwrightPages": 0
+      }
+    },
+    "rhubarb-asheville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:40.591Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.rhubarbasheville.com/food-menu",
+        "reservationUrl": "https://resy.com/cities/asheville-nc/venues/rhubarb",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 8287851503"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: American Restaurant / Bar"
+        ],
+        "dietaryLanguage": [
+          "Our Menu Dinner Brunch Please make the server aware of all allergies and dietary restrictions."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Rhubarb Asheville - Downtown, Asheville, NC Skip Photo Gallery Private events for special moments Impress Your Guests Celebrate your special occasions with us in a unique and vibrant setting.",
+        "groupPolicyLanguage": [
+          "Rhubarb Asheville - Downtown, Asheville, NC Skip Photo Gallery Private events for special moments Impress Your Guests Celebrate your special occasions with us in a unique and vibrant setting.",
+          "In late 2015, Fleer added a private event space to the Rhubarb family, providing an opportunity to host workshops, cooking classes, and private events."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 8287851503",
+            "sourceUrl": "https://www.rhubarbasheville.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American Restaurant / Bar",
+            "sourceUrl": "https://www.rhubarbasheville.com/"
+          },
+          {
+            "quote": "og:description: Rhubarb is a place where you can simply lean in and enjoy the company. A place where food and drink are at their uncomplicated best - creating personal memories and shared experiences....",
+            "sourceUrl": "https://www.rhubarbasheville.com/"
+          },
+          {
+            "quote": "meta description: Rhubarb is a place where you can simply lean in and enjoy the company. A place where food and drink are at their uncomplicated best - creating personal memories and shared experiences.",
+            "sourceUrl": "https://www.rhubarbasheville.com/"
+          },
+          {
+            "quote": "title: Best American Restaurant in Asheville | Rhubarb Asheville",
+            "sourceUrl": "https://www.rhubarbasheville.com/"
+          },
+          {
+            "quote": "title: Rhubarb Asheville - Events",
+            "sourceUrl": "https://rhubarbasheville.com/events"
+          },
+          {
+            "quote": "title: Rhubarb Asheville - Food Menu",
+            "sourceUrl": "https://www.rhubarbasheville.com/food-menu"
+          },
+          {
+            "quote": "title: Rhubarb Asheville - About",
+            "sourceUrl": "https://www.rhubarbasheville.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.rhubarbasheville.com/",
+          "https://rhubarbasheville.com/events",
+          "https://www.rhubarbasheville.com/food-menu",
+          "https://www.rhubarbasheville.com/about"
+        ],
+        "retrievedAt": "2026-08-31T02:42:40.591Z",
+        "playwrightPages": 1
+      }
+    },
+    "the-admiral-asheville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:51.250Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://resy.com/cities/avl/the-admiral",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-21:00, , We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00, Su 17:00-21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:00-21:00, , We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00, Su 17:00-21:00",
+            "sourceUrl": "https://www.theadmiralasheville.com/"
+          },
+          {
+            "quote": "title: RESERVATIONS & Dining info</p> &mdash; The Admiral",
+            "sourceUrl": "https://www.theadmiralasheville.com/reservations"
+          },
+          {
+            "quote": "title: Contact &mdash; The Admiral",
+            "sourceUrl": "https://www.theadmiralasheville.com/contact"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.theadmiralasheville.com/",
+          "https://www.theadmiralasheville.com/reservations",
+          "https://www.theadmiralasheville.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T02:42:51.250Z",
+        "playwrightPages": 0
+      }
+    },
+    "limones-asheville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:52.983Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.limonesavl.com/menu",
+        "reservationUrl": "https://resy.com/cities/asheville-nc/venues/limones",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 17:00-21:00, Sa 17:00-21:00, Su 17:00-21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 17:00-21:00, Sa 17:00-21:00, Su 17:00-21:00",
+            "sourceUrl": "https://www.limonesavl.com/"
+          },
+          {
+            "quote": "og:description: Experience seasonal Mexican- and Californian-inspired cuisine at Limones, named one of the best restaurants in Asheville for twenty years. Enjoy a cozy ambiance, fresh ingredients, and modern culinary twists.",
+            "sourceUrl": "https://www.limonesavl.com/"
+          },
+          {
+            "quote": "title: Limones | Discover Authentic Mexican Flavors",
+            "sourceUrl": "https://www.limonesavl.com/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.limonesavl.com/",
+          "https://www.limonesavl.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T02:42:52.983Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-market-place-asheville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:54.320Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://marketplace-restaurant.com/food",
+        "reservationUrl": "https://marketplace-restaurant.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining About Contact Reservations Reservations .",
+        "groupPolicyLanguage": [
+          "Private Dining About Contact Reservations Reservations .",
+          "For parties of 9 or more, we do require you to guarantee your reservation with a credit card to secure your group.",
+          "Private Dining Private Dining When planning your special event, we invite you to join us at The Market Place."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Specializing in American farm-to-table cuisine, Chef William Dissen presents a menu that is equally healthy, locally sourced, unique, and delicious.",
+            "sourceUrl": "https://marketplace-restaurant.com/"
+          },
+          {
+            "quote": "title: The Market Place in Asheville, North Carolina",
+            "sourceUrl": "https://marketplace-restaurant.com/"
+          },
+          {
+            "quote": "title: Food Menu - The Market Place Restaurant",
+            "sourceUrl": "https://marketplace-restaurant.com/food"
+          },
+          {
+            "quote": "title: Reservations - The Market Place Restaurant",
+            "sourceUrl": "https://marketplace-restaurant.com/reservations"
+          },
+          {
+            "quote": "title: Private Dining - The Market Place Restaurant",
+            "sourceUrl": "https://marketplace-restaurant.com/private-dining"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://marketplace-restaurant.com/",
+          "https://marketplace-restaurant.com/food",
+          "https://marketplace-restaurant.com/reservations",
+          "https://marketplace-restaurant.com/private-dining"
+        ],
+        "retrievedAt": "2026-08-31T02:42:54.320Z",
+        "playwrightPages": 0
+      }
+    },
+    "jargon-asheville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:43:09.395Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Asheville, NC Restaurant | JARGON",
+            "sourceUrl": "https://www.jargonrestaurant.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.jargonrestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-31T02:43:09.395Z",
+        "playwrightPages": 0
+      }
+    },
+    "mago-oakland": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:41:58.406Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.magorestaurant.com/menus/",
+        "reservationUrl": "https://www.opentable.com/r/mago-reservations-oakland?restref=1150960&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "For an overview of Private Dining, please click Here For more information, please contact us below.",
+        "groupPolicyLanguage": [
+          "For an overview of Private Dining, please click Here For more information, please contact us below."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Latin American restaurant from Chef Mark Liberman, nightly changing tasting menu.",
+            "sourceUrl": "https://www.magorestaurant.com/"
+          },
+          {
+            "quote": "title: Mago Restaurant | Latin American Fine Dining in Oakland, CA",
+            "sourceUrl": "https://www.magorestaurant.com/"
+          },
+          {
+            "quote": "title: About | Mago Restaurant in Oakland, CA",
+            "sourceUrl": "https://www.magorestaurant.com/about/"
+          },
+          {
+            "quote": "og:description: See the menu for Mago Restaurant in Oakland, CA. Open Wednesday - Saturday: 5:00pm - 9:00pm for dine-in, outdoor seating, delivery and takeaway!",
+            "sourceUrl": "https://www.magorestaurant.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Mago Restaurant in Oakland, CA",
+            "sourceUrl": "https://www.magorestaurant.com/menus/"
+          },
+          {
+            "quote": "title: Private Events | Mago Restaurant in Oakland, CA",
+            "sourceUrl": "https://www.magorestaurant.com/private-events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.magorestaurant.com/",
+          "https://www.magorestaurant.com/about/",
+          "https://www.magorestaurant.com/menus/",
+          "https://www.magorestaurant.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-31T02:41:58.406Z",
+        "playwrightPages": 0
+      }
+    },
+    "curate-asheville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T02:42:38.497Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.curatetapasbar.com/menus/",
+        "reservationUrl": "https://www.opentable.com/r/curate-reservations-asheville?restref=59827&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "From the menu to the service to the accommodations for our friends that had dietary restrictions, you truly knocked it out of the park.",
+          "We aim to prevent cross-contact, but cannot guarantee the absence of allergens or cross-contamination."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Wine List Host Your Next Gathering Private Dining and Events in the Heart of Downtown Asheville Offering two distinctive spaces: the intimate Wine Cellar and La Bodega, our full-scale event venue.",
+        "groupPolicyLanguage": [
+          "Wine List Host Your Next Gathering Private Dining and Events in the Heart of Downtown Asheville Offering two distinctive spaces: the intimate Wine Cellar and La Bodega, our full-scale event venue.",
+          "Submit an Event Inquiry Our Event Spaces Two Unique Venues to Suit Your Event Needs La Bodega Make your larger celebrations a night to remember with a buyout of La Bodega Event Venue .",
+          "Our private dining menu features seasonal offerings, served tapas-style, that highlight the regional specialties of Spain.",
+          "General Inquiry Careers Questions regarding a reservation Private Dining PR/Marketing Donation Requests Please, enter a valid your message Your Message - Required Send Please check errors in the form above Thank you for your inquiry."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Lively modern spanish tapas restaurant located in downtown Asheville, North Carolina in the Blue Ridge Mountains",
+            "sourceUrl": "https://www.curatetapasbar.com/"
+          },
+          {
+            "quote": "title: Cúrate Bar De Tapas | Spanish Restaurant in Asheville, NC",
+            "sourceUrl": "https://www.curatetapasbar.com/"
+          },
+          {
+            "quote": "og:description: See the menus for Cúrate Bar De Tapas in Asheville, NC. Offering tapas, paella, charcuterie board and more for on-site services and dine-in!",
+            "sourceUrl": "https://www.curatetapasbar.com/menus/"
+          },
+          {
+            "quote": "title: Menu | Cúrate Bar De Tapas in Asheville, NC",
+            "sourceUrl": "https://www.curatetapasbar.com/menus/"
+          },
+          {
+            "quote": "og:description: Let Cúrate Bar De Tapas provide the ideal setting for rehearsal dinners, bridesmaid luncheons, formal receptions and small or large business meetings.",
+            "sourceUrl": "https://www.curatetapasbar.com/private-events/"
+          },
+          {
+            "quote": "title: Private Events | Cúrate Bar De Tapas in Asheville, NC",
+            "sourceUrl": "https://www.curatetapasbar.com/private-events/"
+          },
+          {
+            "quote": "og:description: If you have any questions, concerns, or issues we",
+            "sourceUrl": "https://www.curatetapasbar.com/contact/"
+          },
+          {
+            "quote": "title: Contact | Cúrate Bar De Tapas in Asheville, NC",
+            "sourceUrl": "https://www.curatetapasbar.com/contact/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.curatetapasbar.com/",
+          "https://www.curatetapasbar.com/menus/",
+          "https://www.curatetapasbar.com/private-events/",
+          "https://www.curatetapasbar.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T02:42:38.497Z",
         "playwrightPages": 0
       }
     }
