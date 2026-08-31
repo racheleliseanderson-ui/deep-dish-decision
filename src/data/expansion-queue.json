@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T12:05:42.020Z",
+  "generatedAt": "2026-08-31T12:17:05.483Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1221,6 +1221,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T12:05:47.796Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Cedar Rapids",
+      "stateCode": "IA",
+      "population": 137710,
+      "priority": 101,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:17:20.197Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Rapid City",
+      "stateCode": "SD",
+      "population": 78000,
+      "priority": 102,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:17:20.197Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Mobile",
+      "stateCode": "AL",
+      "population": 187041,
+      "priority": 103,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:17:20.197Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

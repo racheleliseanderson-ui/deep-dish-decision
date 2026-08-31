@@ -85,7 +85,8 @@ def extract_named(record: dict, site: dict) -> list[str]:
         r"deep respect|exceptional asian|italian tradition|"
         r"prime steaks, seafood|sourced from local|dishes that takes|"
         r"crafted cocktails|brunch, and dinner|\bstop$|made-from-scratch fare|"
-        r"classic kentucky cuisine|sunday brunch",
+        r"classic kentucky cuisine|sunday brunch|"
+        r"namesake|intelligently crafted|crafted beers",
         re.I,
     )
     for pat in patterns:

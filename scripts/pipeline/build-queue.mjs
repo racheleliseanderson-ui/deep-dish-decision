@@ -58,6 +58,9 @@ const STATEWIDE_FILL = [
   ["Santa Fe", "NM", 89088],
   ["Lawrence", "KS", 95394],
   ["Athens", "GA", 127315],
+  ["Cedar Rapids", "IA", 137710],
+  ["Rapid City", "SD", 78000],
+  ["Mobile", "AL", 187041],
 ];
 
 const existing = readJson(PATHS.queue, null);

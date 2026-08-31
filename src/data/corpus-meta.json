@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T12:07:16.336Z",
-  "builtAt": "2026-08-31T12:07:16Z",
-  "count": 962,
-  "regions": 143,
+  "generatedAt": "2026-08-31T12:19:11.746Z",
+  "builtAt": "2026-08-31T12:19:34Z",
+  "count": 980,
+  "regions": 146,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 941,
+    "current": 959,
     "officialConflicts": 11,
-    "thinRecords": 507,
+    "thinRecords": 517,
     "avgUnknowns": 5.14,
-    "avgThinFields": 7.59,
+    "avgThinFields": 7.58,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 309
+    "reachableAtLastReview": 327
   },
-  "fullCaseFiles": 962,
+  "fullCaseFiles": 980,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -74,7 +74,8 @@
   "regionsByGroup": {
     "Alabama": [
       "Birmingham, AL",
-      "Huntsville, AL"
+      "Huntsville, AL",
+      "Mobile, AL"
     ],
     "Alaska": [
       "Anchorage, AK"
@@ -155,6 +156,7 @@
       "Indianapolis, IN"
     ],
     "Iowa": [
+      "Cedar Rapids, IA",
       "Des Moines, IA"
     ],
     "Kansas": [
@@ -266,6 +268,7 @@
       "Columbia, SC"
     ],
     "South Dakota": [
+      "Rapid City, SD",
       "Sioux Falls, SD"
     ],
     "Tennessee": [
@@ -463,7 +466,10 @@
     "New Haven, CT": "Connecticut",
     "Santa Fe, NM": "New Mexico",
     "Lawrence, KS": "Kansas",
-    "Athens, GA": "Georgia"
+    "Athens, GA": "Georgia",
+    "Cedar Rapids, IA": "Iowa",
+    "Rapid City, SD": "South Dakota",
+    "Mobile, AL": "Alabama"
   },
   "cuisineTagOptions": [
     "American",
@@ -481,6 +487,7 @@
     "Breakfast / brunch",
     "Brewpub",
     "Burgers",
+    "Cafe",
     "Cajun",
     "California",
     "Caribbean",
@@ -548,6 +555,7 @@
     "Native American",
     "Neapolitan",
     "Neighborhood",
+    "Nepalese",
     "New American",
     "New Mexican",
     "New Nordic",
@@ -588,6 +596,7 @@
     "Spanish",
     "Steak",
     "Steak / grill",
+    "Steakhouse",
     "Supper club",
     "Sushi",
     "Sustainable",
@@ -7405,6 +7414,132 @@
       "region": "Athens, GA",
       "regionGroup": "Georgia",
       "city": "Athens"
+    },
+    {
+      "slug": "the-map-room-cedar-rapids",
+      "title": "The Map Room",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "zeppelins-cedar-rapids",
+      "title": "Zeppelins",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "cobble-hill-cedar-rapids",
+      "title": "Cobble Hill",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "need-pizzeria-cedar-rapids",
+      "title": "Need Pizzeria",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "the-blind-pig-cedar-rapids",
+      "title": "The Blind Pig",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "emil-s-hideaway-cedar-rapids",
+      "title": "Emil's Hideaway",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "tally-s-silver-spoon-rapid-city",
+      "title": "Tally's Silver Spoon",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "independent-ale-house-rapid-city",
+      "title": "Independent Ale House",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "delmonico-grill-rapid-city",
+      "title": "Delmonico Grill",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "kathmandu-bistro-rapid-city",
+      "title": "Kathmandu Bistro",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "everest-cuisine-rapid-city",
+      "title": "Everest Cuisine",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "sabatino-s-rapid-city",
+      "title": "Sabatino's",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "the-noble-south-mobile",
+      "title": "The Noble South",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "dauphin-s-mobile",
+      "title": "Dauphin's",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "noja-mobile",
+      "title": "NoJa",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "le-moyne-s-chophouse-mobile",
+      "title": "Le Moyne's Chophouse",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "callaghan-s-irish-social-club-mobile",
+      "title": "Callaghan's Irish Social Club",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "spot-of-tea-mobile",
+      "title": "Spot of Tea",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
     }
   ]
 }

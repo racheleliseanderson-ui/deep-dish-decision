@@ -2,6 +2,290 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-08-31T12:19:11.863Z",
+      "finishedAt": "2026-08-31T12:19:11.863Z",
+      "records": 980,
+      "promoted": 16,
+      "fullBefore": 962,
+      "fullAfter": 980,
+      "avgCompleteness": 96,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 959,
+        "officialConflicts": 11,
+        "thinRecords": 517,
+        "avgUnknowns": 5.14,
+        "avgThinFields": 7.58,
+        "lastReviewAt": "2026-08-31",
+        "reachableAtLastReview": 327
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T12:17:20.647Z",
+      "finishedAt": "2026-08-31T12:18:57.931Z",
+      "batchSize": 18,
+      "cities": [
+        "Cedar Rapids, Iowa",
+        "Rapid City, South Dakota",
+        "Mobile, Alabama"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 95,
+      "corpusEnriched": 980,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 5,
+      "failures": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T12-17-20-648Z-enrich-owned",
+      "records": [
+        {
+          "slug": "the-map-room-cedar-rapids",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "zeppelins-cedar-rapids",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "cobble-hill-cedar-rapids",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "need-pizzeria-cedar-rapids",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "the-blind-pig-cedar-rapids",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "emil-s-hideaway-cedar-rapids",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "tally-s-silver-spoon-rapid-city",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "independent-ale-house-rapid-city",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "delmonico-grill-rapid-city",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 21"
+          ]
+        },
+        {
+          "slug": "kathmandu-bistro-rapid-city",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "everest-cuisine-rapid-city",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "sabatino-s-rapid-city",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "the-noble-south-mobile",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "dauphin-s-mobile",
+          "matchStatus": "resolved",
+          "completeness": 89,
+          "notes": [
+            "pages 3",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "noja-mobile",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "le-moyne-s-chophouse-mobile",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "callaghan-s-irish-social-club-mobile",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "spot-of-tea-mobile",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T12:17:20.197Z",
+      "finishedAt": "2026-08-31T12:17:20.303Z",
+      "cities": [
+        {
+          "city": "Cedar Rapids, IA",
+          "queueCity": "Cedar Rapids",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Rapid City, SD",
+          "queueCity": "Rapid City",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Mobile, AL",
+          "queueCity": "Mobile",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 18,
+      "duplicatesSkipped": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T12-17-20-197Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings-2026-08-31-statewide-f02.json",
+        "seed-listings-2026-08-31-statewide-f03.json",
+        "seed-listings-2026-08-31-statewide-f04.json",
+        "seed-listings-2026-08-31-statewide-f05.json",
+        "seed-listings-2026-08-31-statewide-f06.json",
+        "seed-listings-2026-08-31-statewide-f07.json",
+        "seed-listings-2026-08-31-statewide-f08.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "the-map-room-cedar-rapids",
+        "zeppelins-cedar-rapids",
+        "cobble-hill-cedar-rapids",
+        "need-pizzeria-cedar-rapids",
+        "the-blind-pig-cedar-rapids",
+        "emil-s-hideaway-cedar-rapids",
+        "tally-s-silver-spoon-rapid-city",
+        "independent-ale-house-rapid-city",
+        "delmonico-grill-rapid-city",
+        "kathmandu-bistro-rapid-city",
+        "everest-cuisine-rapid-city",
+        "sabatino-s-rapid-city",
+        "the-noble-south-mobile",
+        "dauphin-s-mobile",
+        "noja-mobile",
+        "le-moyne-s-chophouse-mobile",
+        "callaghan-s-irish-social-club-mobile",
+        "spot-of-tea-mobile"
+      ]
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-08-31T12:07:16.471Z",
       "finishedAt": "2026-08-31T12:07:16.471Z",
       "records": 962,
@@ -11401,728 +11685,6 @@
           ]
         }
       }
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-14T14:46:48.180Z",
-      "finishedAt": "2026-08-14T14:47:46.018Z",
-      "batchSize": 25,
-      "cities": [
-        "San Francisco, California",
-        "Los Angeles, California",
-        "Chicago, Illinois",
-        "New York, New York",
-        "Pacific Northwest",
-        "Temple City, California",
-        "Miami, Florida",
-        "Alhambra, California",
-        "Dallas, Texas",
-        "Houston, Texas",
-        "Philadelphia, Pennsylvania",
-        "Atlanta, Georgia",
-        "Boston, Massachusetts",
-        "Phoenix, Arizona",
-        "Washington, District Of Columbia"
-      ],
-      "resolved": 7,
-      "unresolved": 18,
-      "deferred": 0,
-      "avgCompleteness": 66,
-      "corpusEnriched": 225,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 22
-      },
-      "retries": 0,
-      "failures": 18,
-      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-08-14T14-46-48-180Z-hygiene-owned",
-      "records": [
-        {
-          "slug": "mr-szechuan",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "perch",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 3"
-          ]
-        },
-        {
-          "slug": "spicy-king",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "summer-house-santa-monica",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "the-best-sichuan",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "the-best-sichuan-39",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "the-smith",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "ariana",
-          "matchStatus": "resolved",
-          "completeness": 100,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "roe",
-          "matchStatus": "resolved",
-          "completeness": 100,
-          "notes": [
-            "pages 3"
-          ]
-        },
-        {
-          "slug": "delicious-chengdu",
-          "matchStatus": "no-website",
-          "completeness": 17,
-          "notes": [
-            "no website"
-          ]
-        },
-        {
-          "slug": "boia-de-miami",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "chengdu-taste",
-          "matchStatus": "no-website",
-          "completeness": 22,
-          "notes": [
-            "no website"
-          ]
-        },
-        {
-          "slug": "chet-s-dallas",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 403 HTTP 403"
-          ]
-        },
-        {
-          "slug": "di-an-pho",
-          "matchStatus": "no-website",
-          "completeness": 22,
-          "notes": [
-            "no website"
-          ]
-        },
-        {
-          "slug": "dizengoff-philadelphia",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "hayakawa-atlanta",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "kalaya-philadelphia",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "kenny-s-wood-fired-grill",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "ky-miami",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "no-9-park-boston",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "pa-la-phoenix",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "the-dabney-washington",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "the-hampton-social-dallas",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 403 HTTP 403"
-          ]
-        },
-        {
-          "slug": "welcome-diner-phoenix",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "atlanta-fish-market-atlanta",
-          "matchStatus": "site-failure",
-          "completeness": 33,
-          "notes": [
-            "site 404 HTTP 404"
-          ]
-        }
-      ],
-      "hygiene": {
-        "hygieneDue": 191,
-        "selected": [
-          "mr-szechuan",
-          "perch",
-          "spicy-king",
-          "summer-house-santa-monica",
-          "the-best-sichuan",
-          "the-best-sichuan-39",
-          "the-smith",
-          "ariana",
-          "roe",
-          "delicious-chengdu",
-          "boia-de-miami",
-          "chengdu-taste",
-          "chet-s-dallas",
-          "di-an-pho",
-          "dizengoff-philadelphia",
-          "hayakawa-atlanta",
-          "kalaya-philadelphia",
-          "kenny-s-wood-fired-grill",
-          "ky-miami",
-          "no-9-park-boston",
-          "pa-la-phoenix",
-          "the-dabney-washington",
-          "the-hampton-social-dallas",
-          "welcome-diner-phoenix",
-          "atlanta-fish-market-atlanta"
-        ],
-        "reasons": {
-          "mr-szechuan": [
-            "site-failure:site 408",
-            "thin-33"
-          ],
-          "perch": [
-            "site-failure:site 429",
-            "thin-33"
-          ],
-          "spicy-king": [
-            "site-failure:site 500",
-            "thin-33"
-          ],
-          "summer-house-santa-monica": [
-            "site-failure:site 429",
-            "thin-33"
-          ],
-          "the-best-sichuan": [
-            "site-failure:site 408",
-            "thin-33"
-          ],
-          "the-best-sichuan-39": [
-            "site-failure:site 408",
-            "thin-33"
-          ],
-          "the-smith": [
-            "site-failure:site 429",
-            "thin-33"
-          ],
-          "ariana": [
-            "site-failure:site 429"
-          ],
-          "roe": [
-            "site-failure:site 429"
-          ],
-          "delicious-chengdu": [
-            "thin-22"
-          ],
-          "boia-de-miami": [
-            "thin-28"
-          ],
-          "chengdu-taste": [
-            "thin-28"
-          ],
-          "chet-s-dallas": [
-            "thin-28"
-          ],
-          "di-an-pho": [
-            "thin-28"
-          ],
-          "dizengoff-philadelphia": [
-            "thin-28"
-          ],
-          "hayakawa-atlanta": [
-            "thin-28"
-          ],
-          "kalaya-philadelphia": [
-            "thin-28"
-          ],
-          "kenny-s-wood-fired-grill": [
-            "thin-28"
-          ],
-          "ky-miami": [
-            "thin-28"
-          ],
-          "no-9-park-boston": [
-            "thin-28"
-          ],
-          "pa-la-phoenix": [
-            "thin-28"
-          ],
-          "the-dabney-washington": [
-            "thin-28"
-          ],
-          "the-hampton-social-dallas": [
-            "thin-28"
-          ],
-          "welcome-diner-phoenix": [
-            "thin-28"
-          ],
-          "atlanta-fish-market-atlanta": [
-            "thin-33"
-          ]
-        }
-      }
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-14T14:25:20.034Z",
-      "finishedAt": "2026-08-14T14:25:39.424Z",
-      "batchSize": 19,
-      "cities": [
-        "Philadelphia, Pennsylvania",
-        "Miami, Florida",
-        "Phoenix, Arizona",
-        "Boston, Massachusetts"
-      ],
-      "resolved": 18,
-      "unresolved": 1,
-      "deferred": 0,
-      "avgCompleteness": 67,
-      "corpusEnriched": 225,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 19
-      },
-      "retries": 0,
-      "failures": 1,
-      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-14T14-25-20-034Z-enrich-owned",
-      "records": [
-        {
-          "slug": "royal-sushi-izakaya-philadelphia",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "suraya-philadelphia",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "vernick-food-drink-philadelphia",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "wayan-miami-miami",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "zuma-miami-miami",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "versailles-restaurant-miami",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "the-gladly-phoenix",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 3"
-          ]
-        },
-        {
-          "slug": "pizzeria-bianco-phoenix",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3"
-          ]
-        },
-        {
-          "slug": "tarbell-s-phoenix",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "virt-honest-craft-phoenix",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "welcome-diner-phoenix",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "tratto-phoenix",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "yume-wo-katare-boston",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "sarma-boston",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3"
-          ]
-        },
-        {
-          "slug": "woods-hill-pier-4-boston",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "row-34-boston",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3"
-          ]
-        },
-        {
-          "slug": "sportello-boston",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "uni-boston",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "puritan-company-boston",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3"
-          ]
-        }
-      ],
-      "hygiene": null
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-14T14:24:52.171Z",
-      "finishedAt": "2026-08-14T14:25:05.542Z",
-      "batchSize": 20,
-      "cities": [
-        "Chicago, Illinois",
-        "Dallas, Texas",
-        "San Francisco, California",
-        "Atlanta, Georgia",
-        "Washington, District Of Columbia",
-        "Philadelphia, Pennsylvania"
-      ],
-      "resolved": 18,
-      "unresolved": 2,
-      "deferred": 0,
-      "avgCompleteness": 69,
-      "corpusEnriched": 206,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 20
-      },
-      "retries": 0,
-      "failures": 2,
-      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-14T14-24-52-172Z-enrich-owned",
-      "records": [
-        {
-          "slug": "river-roast",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3"
-          ]
-        },
-        {
-          "slug": "siena-tavern",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "terry-black-s-barbecue",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "y-o-ranch-steakhouse",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "the-woolworth",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "the-hampton-social-dallas",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 403 HTTP 403"
-          ]
-        },
-        {
-          "slug": "the-henry",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "portillo-s-barnelli-s-chicago",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3"
-          ]
-        },
-        {
-          "slug": "r-g-lounge",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "staplehouse-atlanta",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 2"
-          ]
-        },
-        {
-          "slug": "trader-vic-s-atlanta-atlanta",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "the-dabney-washington",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site err fetch failed"
-          ]
-        },
-        {
-          "slug": "rose-s-luxury-washington",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "rasika-washington",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "zaytinya-washington",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3"
-          ]
-        },
-        {
-          "slug": "succotash-prime-washington-dc-washington",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "the-capital-grille-washington-dc-washington",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "provenance-philadelphia",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "zahav-philadelphia",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "vetri-cucina-philadelphia",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 4"
-          ]
-        }
-      ],
-      "hygiene": null
     }
   ]
 }

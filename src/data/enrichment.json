@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T12:07:03.794Z",
+  "generatedAt": "2026-08-31T12:18:57.906Z",
   "records": {
     "canlis": {
       "google": {
@@ -66137,6 +66137,1173 @@
           "https://www.southkitchenbar.com/private-events/"
         ],
         "retrievedAt": "2026-08-31T12:07:01.699Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-map-room-cedar-rapids": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:20.688Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.maproomcr.com/menu",
+        "reservationUrl": "https://order.toasttab.com/online/the-map-room",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Choose your bread: bun, sourdough-rye, sourdough, gluten-free bun 2.",
+          "Q: Do you have vegan or gluten-free options?",
+          "Our house-made veggie burger is vegan and gluten-free.",
+          "Our fryer is gluten-free so our fries are too."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Q: Do you do private events?",
+        "groupPolicyLanguage": [
+          "Q: Do you do private events?",
+          "We do not typically do private events on Fridays or Saturdays, however."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Food Menu &mdash; The Map Room",
+            "sourceUrl": "https://www.maproomcr.com/menu"
+          },
+          {
+            "quote": "title: FAQ &mdash; The Map Room",
+            "sourceUrl": "https://www.maproomcr.com/faq"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.maproomcr.com/",
+          "https://www.maproomcr.com/menu",
+          "https://www.maproomcr.com/faq"
+        ],
+        "retrievedAt": "2026-08-31T12:17:20.688Z",
+        "playwrightPages": 0
+      }
+    },
+    "zeppelins-cedar-rapids": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:22.361Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.zeppelinscr.com/food",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-22:00, Tu 11:00-22:00, We 11:00-22:00, Th 11:00-22:00, Fr 11:00-23:00, Sa 11:00-23:00, Su 11:00-22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-22:00, Tu 11:00-22:00, We 11:00-22:00, Th 11:00-22:00, Fr 11:00-23:00, Sa 11:00-23:00, Su 11:00-22:00",
+            "sourceUrl": "https://www.zeppelinscr.com/"
+          },
+          {
+            "quote": "og:description: Visit Zeppelins in Cedar Rapids for great food, drinks, happy hour, and a welcoming atmosphere. Open daily at 11 AM with dine-in or carry-out options.",
+            "sourceUrl": "https://www.zeppelinscr.com/"
+          },
+          {
+            "quote": "title: Zeppelins | Enjoy Great Food & Drinks&mdash;Visit Today",
+            "sourceUrl": "https://www.zeppelinscr.com/"
+          },
+          {
+            "quote": "og:description: Explore a diverse menu of appetizers, salads, sandwiches, and entrees at Zeppelins, your go-to spot for delicious dining. Visit us for an enjoyable food experience.",
+            "sourceUrl": "https://www.zeppelinscr.com/food"
+          },
+          {
+            "quote": "title: Food | Discover Flavorful Meals – Visit Today &mdash; Zeppelins",
+            "sourceUrl": "https://www.zeppelinscr.com/food"
+          },
+          {
+            "quote": "og:description: Get in touch with Zeppelins in Cedar Rapids for menu info, reservations, and inquiries. Contact our team via phone or email today.",
+            "sourceUrl": "https://www.zeppelinscr.com/contact-us"
+          },
+          {
+            "quote": "title: Contact Us | Reach Out Now – Contact Zeppelins &mdash; Zeppelins",
+            "sourceUrl": "https://www.zeppelinscr.com/contact-us"
+          },
+          {
+            "quote": "title: Private Dining &mdash; Zeppelins",
+            "sourceUrl": "https://www.zeppelinscr.com/private-dining"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.zeppelinscr.com/",
+          "https://www.zeppelinscr.com/food",
+          "https://www.zeppelinscr.com/contact-us",
+          "https://www.zeppelinscr.com/private-dining"
+        ],
+        "retrievedAt": "2026-08-31T12:17:22.361Z",
+        "playwrightPages": 0
+      }
+    },
+    "cobble-hill-cedar-rapids": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:25.210Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.cobblehillrestaurant.com/menus",
+        "reservationUrl": "https://www.exploretock.com/cobblehill",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 3193663177"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 3193663177",
+            "sourceUrl": "https://www.cobblehillrestaurant.com/"
+          },
+          {
+            "quote": "og:description: Cobble Hill Locally owned & operated restaurant and bar, focusing on locally sourced produce, craft cocktails and extensive wine selections.",
+            "sourceUrl": "https://www.cobblehillrestaurant.com/"
+          },
+          {
+            "quote": "title: Local | Cobble Hill Restaurant",
+            "sourceUrl": "https://www.cobblehillrestaurant.com/"
+          },
+          {
+            "quote": "og:description: Make a reservation on TOCK or call us for large party requests.",
+            "sourceUrl": "https://www.cobblehillrestaurant.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.cobblehillrestaurant.com/",
+          "https://www.cobblehillrestaurant.com/menus",
+          "https://www.cobblehillrestaurant.com/reservations",
+          "https://www.cobblehillrestaurant.com/about-us"
+        ],
+        "retrievedAt": "2026-08-31T12:17:25.210Z",
+        "playwrightPages": 1
+      }
+    },
+    "need-pizzeria-cedar-rapids": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:36.197Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://toasttab.com/need-pizza-207-2nd-ave-se",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Our crust is vegan friendly."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Occasionally we are able to accomodate a large party reservation during the week.",
+        "groupPolicyLanguage": [
+          "Occasionally we are able to accomodate a large party reservation during the week."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Need Pizza Cedar Rapids, Iowa – You Need Pizza",
+            "sourceUrl": "https://www.needcr.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://www.needcr.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.needcr.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:17:36.197Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-blind-pig-cedar-rapids": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:37.089Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1 319 200 4127"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:00 00:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 02:00",
+          "JSON-LD openingHoursSpecification: Saturday,Sunday 11:00 undefined"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1 319 200 4127",
+            "sourceUrl": "https://blindpigcr.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:00 00:00",
+            "sourceUrl": "https://blindpigcr.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 02:00",
+            "sourceUrl": "https://blindpigcr.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday,Sunday 11:00 undefined",
+            "sourceUrl": "https://blindpigcr.com/"
+          },
+          {
+            "quote": "og:description: Food • Drinks • Fun 3325 Center Point Rd NE, Cedar Rapids, IA 52402 319-200-4127",
+            "sourceUrl": "https://blindpigcr.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://blindpigcr.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:17:37.089Z",
+        "playwrightPages": 0
+      }
+    },
+    "emil-s-hideaway-cedar-rapids": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:37.992Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://emilshideaway.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/emils-hideaway",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Emil's Hideaway | Cedar Rapids, IA | American Restaurant & Catering Service",
+            "sourceUrl": "https://emilshideaway.com/"
+          },
+          {
+            "quote": "title: About Us | Emil's Hideaway",
+            "sourceUrl": "https://emilshideaway.com/about-us/"
+          },
+          {
+            "quote": "title: Burgers, Fries, American Food | Cedar Rapids, IA | Emil's Hideaway",
+            "sourceUrl": "https://emilshideaway.com/menu/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://emilshideaway.com/",
+          "https://emilshideaway.com/about-us/",
+          "https://emilshideaway.com/menu/"
+        ],
+        "retrievedAt": "2026-08-31T12:17:37.992Z",
+        "playwrightPages": 1
+      }
+    },
+    "tally-s-silver-spoon-rapid-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:48.218Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.tallyssilverspoon.com/dinner",
+        "reservationUrl": "https://www.toasttab.com/tallys-silver-spoon",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +16053427621"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 07:00 21:00",
+          "JSON-LD openingHoursSpecification: Tuesday 07:00 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 07:00 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 07:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 07:00 21:00",
+          "JSON-LD openingHoursSpecification: Saturday 07:00 21:00",
+          "JSON-LD openingHours: Mo, Tu, We, Th, Fr, Sa, Su 07:00-21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $5-$40"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: American Modern Upscale Diner"
+        ],
+        "dietaryLanguage": [
+          "It was loaded with bison tenderloin and mushrooms!\" ~ Matt C Tally's is a place that caters to dietary restrictions.",
+          "Ask a server about Gluten Free, Celiac, Vegetarian, or Vegan options ABOUT"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +16053427621",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 07:00 21:00",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 07:00 21:00",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 07:00 21:00",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 07:00 21:00",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 07:00 21:00",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 07:00 21:00",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $5-$40",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American Modern Upscale Diner",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "JSON-LD openingHours: Mo, Tu, We, Th, Fr, Sa, Su 07:00-21:00",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "title: Tally's Silver Spoon | restaurant | Rapid City, SD, United States",
+            "sourceUrl": "https://www.tallyssilverspoon.com/"
+          },
+          {
+            "quote": "og:description: Make reservations with Tally",
+            "sourceUrl": "https://www.tallyssilverspoon.com/reservations"
+          },
+          {
+            "quote": "title: RESERVATIONS | tallyssilverspoon",
+            "sourceUrl": "https://www.tallyssilverspoon.com/reservations"
+          },
+          {
+            "quote": "title: Contact | tallyssilverspoon",
+            "sourceUrl": "https://www.tallyssilverspoon.com/contact-5"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.tallyssilverspoon.com/",
+          "https://www.tallyssilverspoon.com/reservations",
+          "https://www.tallyssilverspoon.com/contact-5"
+        ],
+        "retrievedAt": "2026-08-31T12:17:48.218Z",
+        "playwrightPages": 0
+      }
+    },
+    "independent-ale-house-rapid-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:50.113Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "http://www.independentalehouse.com/wine-list",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "http://www.independentalehouse.com/"
+          },
+          {
+            "quote": "og:description: The Independent Ale House might be known for its namesake—independently, intelligently crafted beers—but that doesn’t mean we think any less of its fermented friends. We love wine, and we love to see it shared across the table. We also offer a ",
+            "sourceUrl": "http://www.independentalehouse.com/wine-list"
+          },
+          {
+            "quote": "meta description: The Independent Ale House might be known for its namesake—independently, intelligently crafted beers—but that doesn’t mean we think any less of its fermented friends. We love wine, and we love to see it shared across the table. We also offer ",
+            "sourceUrl": "http://www.independentalehouse.com/wine-list"
+          },
+          {
+            "quote": "title: Wine List &mdash; Independent Ale House",
+            "sourceUrl": "http://www.independentalehouse.com/wine-list"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "http://www.independentalehouse.com/",
+          "http://www.independentalehouse.com/wine-list"
+        ],
+        "retrievedAt": "2026-08-31T12:17:50.113Z",
+        "playwrightPages": 0
+      }
+    },
+    "delmonico-grill-rapid-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:51.421Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.delmonicogrill.com/menu",
+        "reservationUrl": "https://www.toasttab.com/invoice/lead?rx=f7d0be8c-02eb-4cb7-a9ed-8c98139ed1f6&ot=4c46ee3c-7043-4804-b199-cc5cf8392e49",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +16057911664"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 11:00 15:00",
+          "JSON-LD openingHoursSpecification: Sunday 17:00 22:00",
+          "JSON-LD openingHoursSpecification: Tuesday 11:00 15:00",
+          "JSON-LD openingHoursSpecification: Tuesday 17:00 22:00",
+          "JSON-LD openingHoursSpecification: Wednesday 11:00 15:00",
+          "JSON-LD openingHoursSpecification: Wednesday 17:00 22:00",
+          "JSON-LD openingHoursSpecification: Thursday 11:00 15:00",
+          "JSON-LD openingHoursSpecification: Thursday 17:00 22:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 15:00",
+          "JSON-LD openingHoursSpecification: Friday 17:00 22:00",
+          "JSON-LD openingHoursSpecification: Saturday 11:00 15:00",
+          "JSON-LD openingHoursSpecification: Saturday 17:00 22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $15-$70"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Fine Dining Steakhouse"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "​ For information regarding reservations or private events please call 605-791-1664 find us on Toast Reserve Now reserve box",
+        "groupPolicyLanguage": [
+          "​ For information regarding reservations or private events please call 605-791-1664 find us on Toast Reserve Now reserve box"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +16057911664",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $15-$70",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Fine Dining Steakhouse",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 15:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 17:00 22:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:00 15:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 17:00 22:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 15:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 17:00 22:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 15:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 17:00 22:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 15:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 17:00 22:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 11:00 15:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 17:00 22:00",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "og:description: Delmonico Grill in Rapid City, SD is a fine dining steakhouse with locally sourced ingredients and a seasonally evolving menu and wine list. We offer some of the best food in Rapid City and all of South Dakota.",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "title: Delmonico Grill | Fine Dining Steakhouse Restaurant | Rapid City, SD",
+            "sourceUrl": "https://www.delmonicogrill.com/"
+          },
+          {
+            "quote": "og:description: Delmonico Grill Menu. We rotate our menus seasonally to offer the best food at a Rapid City restaurant. Be sure to check back to find out what new creations our chefs have devised for you.",
+            "sourceUrl": "https://www.delmonicogrill.com/menu"
+          },
+          {
+            "quote": "title: Delmonico Grill Menu | Fine Dining Steakhouse | Rapid City, SD",
+            "sourceUrl": "https://www.delmonicogrill.com/menu"
+          },
+          {
+            "quote": "og:description: Make your reservations online through OpenTable.com at Delmonico Grill, Rapid City",
+            "sourceUrl": "https://www.delmonicogrill.com/reservation"
+          },
+          {
+            "quote": "title: Reservations | Delmonico Grill | Rapid City, SD",
+            "sourceUrl": "https://www.delmonicogrill.com/reservation"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.delmonicogrill.com/",
+          "https://www.delmonicogrill.com/menu",
+          "https://www.delmonicogrill.com/reservation"
+        ],
+        "retrievedAt": "2026-08-31T12:17:51.421Z",
+        "playwrightPages": 0
+      }
+    },
+    "kathmandu-bistro-rapid-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:17:53.251Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.kathmandubistro.com/site/menu",
+        "reservationUrl": "http://www.opentable.com/kathmandu-bistro",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "The restaurant's focus is Nepalese, Indian and Tibetan food offering a wide range of dishes including vegetarian,chicken, lamb, fish, goat, buffalo, lobster and scallops and lots of fun appetizers, salads, delicious soup and house made desserts."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Kathmandu Bistro is a small, intimate bistro in a historic 1886 building in downtown Rapid City. The decor includes a copper bar with food service available, an original brick wall, hardwood floors and linen. The restaurant",
+            "sourceUrl": "https://www.kathmandubistro.com/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.kathmandubistro.com/",
+          "https://www.kathmandubistro.com/site/menu"
+        ],
+        "retrievedAt": "2026-08-31T12:17:53.251Z",
+        "playwrightPages": 0
+      }
+    },
+    "everest-cuisine-rapid-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:18:30.402Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://theeverestcuisine.com/menu/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Vegetarian and vegan options as well as mild/med/spicy offerings for each dish.",
+          "8oz Vegetarian Entree All entrees served with a 16 oz.",
+          "A delicious vegetarian twist on the classic momo, served fresh and hot!"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Everest Cuisine | Best Restaurant in Rapid City",
+            "sourceUrl": "https://theeverestcuisine.com/"
+          },
+          {
+            "quote": "title: Menu – Everest Cuisine | Best Restaurant in Rapid City",
+            "sourceUrl": "https://theeverestcuisine.com/menu/"
+          },
+          {
+            "quote": "title: Contact – Everest Cuisine | Best Restaurant in Rapid City",
+            "sourceUrl": "https://theeverestcuisine.com/contact/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://theeverestcuisine.com/",
+          "https://theeverestcuisine.com/menu/",
+          "https://theeverestcuisine.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T12:18:30.402Z",
+        "playwrightPages": 1
+      }
+    },
+    "sabatino-s-rapid-city": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:18:44.261Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Sabatinos Italian restaurant and pizza Rapid City – The Best Italian Restaurant and Pizza in Rapid City",
+            "sourceUrl": "https://sabatinosrapidcity.com/"
+          },
+          {
+            "quote": "title: About – Sabatinos Italian restaurant and pizza Rapid City",
+            "sourceUrl": "https://sabatinosrapidcity.com/about/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://sabatinosrapidcity.com/",
+          "https://sabatinosrapidcity.com/about/"
+        ],
+        "retrievedAt": "2026-08-31T12:18:44.261Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-noble-south-mobile": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:18:46.493Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://thenoblesouthrestaurant.com/menu/",
+        "reservationUrl": "https://resy.com/cities/mobile-al/venues/the-noble-south",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Learn More PRIVATE EVENTS The Noble South offers full catering services for groups of up to 200 and in-home private chef experiences.",
+        "groupPolicyLanguage": [
+          "Learn More PRIVATE EVENTS The Noble South offers full catering services for groups of up to 200 and in-home private chef experiences.",
+          "Private Events thenoblesouth 2024-01-15T16:47:42+00:00 PRIVATE EVENTS The Noble South offers full catering services for groups of up to 200 and in-home private chef experiences."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: A Southern Farm to Table Kitchen The Farm. The Table. The Noble South. The trio bringing Mobile, Alabama an ever changing menu while always offering the freshest local and seasonal ingredients available. View Menu ABOUT The Noble South",
+            "sourceUrl": "https://thenoblesouthrestaurant.com/"
+          },
+          {
+            "quote": "og:description: MENUS Lunch Monday-Friday 11am-2pm SNACKS Deviled Eggs bacon & roe 8 Pickled Shrimp saltine crackers 8 Chicken Liver Mousse apple cider gelée, pickles, housemade sourdough 11 Sandwich, Soups & Salads Double Cheeseburger wagyu beef patties,",
+            "sourceUrl": "https://thenoblesouthrestaurant.com/menu/"
+          },
+          {
+            "quote": "og:description: ABOUT OUR STORY In May of 2014 The Noble South opened its doors and began crafting a restaurant based on a fresh farm-to-table approach. With a clear vision of incorporating the highest quality seasonal ingredients with style, The Noble South l",
+            "sourceUrl": "https://thenoblesouthrestaurant.com/about/"
+          },
+          {
+            "quote": "og:description: PRIVATE EVENTS The Noble South offers full catering services for groups of up to 200 and in-home private chef experiences. The full restaurant can be booked for parties up to 80. The Sidecar can be booked for parties of up to 20. Private partie",
+            "sourceUrl": "https://thenoblesouthrestaurant.com/private-events/"
+          },
+          {
+            "quote": "title: Private Events - The Noble South",
+            "sourceUrl": "https://thenoblesouthrestaurant.com/private-events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://thenoblesouthrestaurant.com/",
+          "https://thenoblesouthrestaurant.com/menu/",
+          "https://thenoblesouthrestaurant.com/about/",
+          "https://thenoblesouthrestaurant.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-31T12:18:46.493Z",
+        "playwrightPages": 0
+      }
+    },
+    "dauphin-s-mobile": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:18:49.163Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.godauphins.com/menu",
+        "reservationUrl": "https://resy.com/cities/mbl/dauphins?date=2022-09-27&seats=2",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 251-444-0200"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 11:00 15:00",
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Saturday 16:00 22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $8-70"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Southern Creole cuisine"
+        ],
+        "dietaryLanguage": [
+          "- MARKET - Gluten free Soups MOBILE BAY SEAFOOD GUMBO A true representation of Mobile Bay - local fish, oysters, shrimp, crab, okra and the holy trinity of vegetables.",
+          "11 Gluten free BALDWIN Fresh baby spinach, macerated strawberries, sweet and spicy local pecans, goat cheese, balsamic vinaigrette.",
+          "12 Gluten free Entrée Salads DEVILED CAESAR Broiled mojo chicken breast, romaine lettuce, croutons, shredded parmesan cheese, house deviled eggs, crostini, house made Caesar dressing.",
+          "26 Vegetarian Fish of the Day DAUPHIN'S Your choice of Day Boat broiled Gulf Fish, with Dauphins citrus garlic Beurre Blanc, Yukon gold garlic mashed potatoes, and sautéed asparagus."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "46 Gluten free STEAK ADDITIONS Sautéed mushrooms 5 Sautéed onions 5 Bleu cheese melt 5 Steak au poivre 10 Oscar style 13 For parties of 8 or more, an 18% gratuity will automatically be added to your bill.",
+        "groupPolicyLanguage": [
+          "46 Gluten free STEAK ADDITIONS Sautéed mushrooms 5 Sautéed onions 5 Bleu cheese melt 5 Steak au poivre 10 Oscar style 13 For parties of 8 or more, an 18% gratuity will automatically be added to your bill."
+        ],
+        "dressCode": "No shorts, flip-flops, t-shirts, sweatshirts, ball caps or sweat pants allowed Jeans are discouraged; ripped jeans are not allowed ​ Dauphin's reserves the right to refuse service or entry to any guest not in compliance with the stated dress code.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 251-444-0200",
+            "sourceUrl": "https://www.godauphins.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $8-70",
+            "sourceUrl": "https://www.godauphins.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Southern Creole cuisine",
+            "sourceUrl": "https://www.godauphins.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 15:00",
+            "sourceUrl": "https://www.godauphins.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:00 21:00",
+            "sourceUrl": "https://www.godauphins.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 22:00",
+            "sourceUrl": "https://www.godauphins.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 16:00 22:00",
+            "sourceUrl": "https://www.godauphins.com/"
+          },
+          {
+            "quote": "title: Dauphin's | Casual Fine Dining | Mobile, Alabama",
+            "sourceUrl": "https://www.godauphins.com/"
+          },
+          {
+            "quote": "og:description: Dramatic view meets distinctive dining! Our menu spans every flavor of French Creole, but it",
+            "sourceUrl": "https://www.godauphins.com/about-us"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.godauphins.com/",
+          "https://www.godauphins.com/about-us",
+          "https://www.godauphins.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T12:18:49.163Z",
+        "playwrightPages": 0
+      }
+    },
+    "noja-mobile": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:18:50.965Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://nojamobile.com/drink-menu/",
+        "reservationUrl": "https://www.opentable.com/restref/client/?rid=173266",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-251-433-0377"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday,Friday,Saturday 17:00 21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Mediterrasian, Mediterranean, Asian"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-251-433-0377",
+            "sourceUrl": "https://nojamobile.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Mediterrasian, Mediterranean, Asian",
+            "sourceUrl": "https://nojamobile.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday,Friday,Saturday 17:00 21:00",
+            "sourceUrl": "https://nojamobile.com/"
+          },
+          {
+            "quote": "JSON-LD amenityFeature (first-party statement, not a verified access route): Enclosed courtyard seating",
+            "sourceUrl": "https://nojamobile.com/"
+          },
+          {
+            "quote": "JSON-LD amenityFeature (first-party statement, not a verified access route): Takeout",
+            "sourceUrl": "https://nojamobile.com/"
+          },
+          {
+            "quote": "og:description: Mediterrasian fine dining in downtown Mobile since 2005. Seasonal menus, a curated wine list and a courtyard draped in lights. Open Tue to Sat, 5 to 9.",
+            "sourceUrl": "https://nojamobile.com/"
+          },
+          {
+            "quote": "title: NoJa: Fine Dining in Mobile, AL | Mediterrasian Cuisine",
+            "sourceUrl": "https://nojamobile.com/"
+          },
+          {
+            "quote": "og:description: Need a cocktail for you dinner? Here is our drink menu with cocktails to enjoy with any meal!",
+            "sourceUrl": "https://nojamobile.com/drink-menu/"
+          },
+          {
+            "quote": "title: Sip and Savor: Explore NoJa's Drink Menu in Mobile, AL",
+            "sourceUrl": "https://nojamobile.com/drink-menu/"
+          },
+          {
+            "quote": "og:description: Get in touch with NoJa today. Call, email, or send a message through our contact form and our team will respond quickly to assist you.",
+            "sourceUrl": "https://nojamobile.com/contact-us/"
+          },
+          {
+            "quote": "title: Contact NoJa - Fine Dining Restaurant in Mobile, AL",
+            "sourceUrl": "https://nojamobile.com/contact-us/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://nojamobile.com/",
+          "https://nojamobile.com/drink-menu/",
+          "https://nojamobile.com/contact-us/"
+        ],
+        "retrievedAt": "2026-08-31T12:18:50.965Z",
+        "playwrightPages": 0
+      }
+    },
+    "le-moyne-s-chophouse-mobile": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:18:52.798Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.lemoynes.com/menu/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining Gatherings In Mobile Elevate your gatherings at Le Moyne&rsquo;s Chophouse.",
+        "groupPolicyLanguage": [
+          "Private Dining Gatherings In Mobile Elevate your gatherings at Le Moyne&rsquo;s Chophouse.",
+          "Our private dining room offers an intimate and sophisticated setting for special occasions, corporate dinners, or simply an exclusive dining experience.",
+          "Our private dining events require a food & beverage minimum spend, space rental fee, tax and gratuity.",
+          "leave this field blank Contact Us About Your Private Dining Event Inquiry Received Please note: To reserve the private dining room at LeMoyne&rsquo;s, a $250 room rental fee applies."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Where quality cuts, the Gulf",
+            "sourceUrl": "https://www.lemoynes.com/"
+          },
+          {
+            "quote": "title: Hours and Location | Le Moyne's Chophouse in Mobile, AL",
+            "sourceUrl": "https://www.lemoynes.com/hours-and-location/"
+          },
+          {
+            "quote": "og:description: See the menus for Le Moyne",
+            "sourceUrl": "https://www.lemoynes.com/menu/"
+          },
+          {
+            "quote": "title: Menu | Le Moyne's Chophouse in Mobile, AL",
+            "sourceUrl": "https://www.lemoynes.com/menu/"
+          },
+          {
+            "quote": "og:description: Inquire about private dining and events at Le Moyne",
+            "sourceUrl": "https://www.lemoynes.com/private-events/"
+          },
+          {
+            "quote": "title: Private Dining | Le Moyne's Chophouse in Mobile, AL",
+            "sourceUrl": "https://www.lemoynes.com/private-events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.lemoynes.com/",
+          "https://www.lemoynes.com/hours-and-location/",
+          "https://www.lemoynes.com/menu/",
+          "https://www.lemoynes.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-31T12:18:52.798Z",
+        "playwrightPages": 0
+      }
+    },
+    "callaghan-s-irish-social-club-mobile": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:18:54.892Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.callaghansirishsocialclub.com/menus/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Bringing folks together since 1946, we like to celebrate the traditional Irish community pub atmosphere with great music, food, and drink!",
+            "sourceUrl": "https://www.callaghansirishsocialclub.com/"
+          },
+          {
+            "quote": "title: Callaghan's Irish Social Club | Live Music & Great Food | Mobile, AL",
+            "sourceUrl": "https://www.callaghansirishsocialclub.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://www.callaghansirishsocialclub.com/"
+          },
+          {
+            "quote": "og:description: Callaghan's is a hidden gem that's anything but secret: Receiving numerous accolades, like being voted The Best Bar in America by Esquire Magazine.",
+            "sourceUrl": "https://www.callaghansirishsocialclub.com/about-us/history/"
+          },
+          {
+            "quote": "title: History | Since 1946 | Callaghan's Irish Social Club | Mobile, AL",
+            "sourceUrl": "https://www.callaghansirishsocialclub.com/about-us/history/"
+          },
+          {
+            "quote": "og:description: At Callaghan's, we don't just serve food; we serve legends on a plate. Our Best Burger wins are so numerous, even we lost count.",
+            "sourceUrl": "https://www.callaghansirishsocialclub.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Award Winning Burgers | Callaghan's Irish Social Club | Mobile, AL",
+            "sourceUrl": "https://www.callaghansirishsocialclub.com/menus/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.callaghansirishsocialclub.com/",
+          "https://www.callaghansirishsocialclub.com/about-us/history/",
+          "https://www.callaghansirishsocialclub.com/menus/"
+        ],
+        "retrievedAt": "2026-08-31T12:18:54.892Z",
+        "playwrightPages": 0
+      }
+    },
+    "spot-of-tea-mobile": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:18:57.022Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1 251 433 9009"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1 251 433 9009",
+            "sourceUrl": "https://spotoftea.com/"
+          },
+          {
+            "quote": "og:description: Spot Of Tea is the flagship Restaurant Cafe' in Mobile Alabama. Located in beautiful Downtown Mobile across from Cathedral Square. Serving Brunch every day. Pet Friendly!",
+            "sourceUrl": "https://spotoftea.com/"
+          },
+          {
+            "quote": "title: Spot Of Tea - Restaurant Cafe', Downtown Mobile",
+            "sourceUrl": "https://spotoftea.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://spotoftea.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:18:57.022Z",
         "playwrightPages": 0
       }
     }
