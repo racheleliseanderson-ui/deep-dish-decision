@@ -125,6 +125,10 @@ for (const record of batch) {
     if (homeError) {
       notes.push(`site ${homeError}`);
       entry.meta.matchStatus = "site-failure";
+      if (prior.site) {
+        entry.site = prior.site;
+        notes.push("kept prior owned-site evidence");
+      }
     }
     if (pages.length) {
       entry.site = extractFromSite(pages, retrievedAt);
@@ -139,6 +143,10 @@ for (const record of batch) {
     } else if (!homeError) {
       notes.push("no pages extracted");
       entry.meta.matchStatus = "empty";
+      if (prior.site) {
+        entry.site = prior.site;
+        notes.push("kept prior owned-site evidence");
+      }
     }
   }
 
