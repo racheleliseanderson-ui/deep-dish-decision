@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T11:58:03.795Z",
+  "generatedAt": "2026-08-31T12:07:03.794Z",
   "records": {
     "canlis": {
       "google": {
@@ -65274,6 +65274,869 @@
           "https://www.rolinewhaven.com/book"
         ],
         "retrievedAt": "2026-08-31T11:58:01.997Z",
+        "playwrightPages": 0
+      }
+    },
+    "geronimo-santa-fe": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:05:48.195Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.geronimorestaurant.com/menu",
+        "reservationUrl": "https://www.geronimorestaurant.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 505-982-1500"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "We are unable to accommodate dietary restrictions at this time.",
+          "There is no Vegan option but Vegetarian tasting menu is available."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "​ Private dining rooms are available and we are equipped to accommodate your group of up to 100 people.",
+        "groupPolicyLanguage": [
+          "​ Private dining rooms are available and we are equipped to accommodate your group of up to 100 people."
+        ],
+        "dressCode": "​ Dress code is business casual.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 505-982-1500",
+            "sourceUrl": "https://www.geronimorestaurant.com/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.geronimorestaurant.com/",
+          "https://www.geronimorestaurant.com/menu",
+          "https://www.geronimorestaurant.com/reservations",
+          "https://www.geronimorestaurant.com/contact-us"
+        ],
+        "retrievedAt": "2026-08-31T12:05:48.195Z",
+        "playwrightPages": 2
+      }
+    },
+    "cafe-pasqual-s-santa-fe": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:07.823Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://pasquals.com/pages/wine-list",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [
+          "follow the yellow bricks to elevator/2nd floor ~ PLAZA ENTRANCE!",
+          "up the stairs right of Haägen-Dazs CLICK TO VIEW IRENE AGUILAR'S COLLECTION YOU'RE INVITED ~ SEAN HUDSON ~ NEW EXHIBIT~ WILD LIGHT ~ WATERCOLOR~ Cafe Pasqual's Gallery~ Follow yellow bricks East of restaurant to outdoor elevator/2nd floor."
+        ],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Cafe Pasqual's and Art Gallery in the heart of down town Santa Fe.",
+            "sourceUrl": "https://pasquals.com/"
+          },
+          {
+            "quote": "title: Cafe Pasqual's & Art Gallery &ndash; Cafe Pasqual's & Art Gallery",
+            "sourceUrl": "https://pasquals.com/"
+          },
+          {
+            "quote": "og:description: Sparkling & ChampagneRoederer Estate Brut Anderson Valley California NV 17. / 59.Gruet Rosé ‘Sauvage’ New Mexico USA 16. / 55.Vouvray Brut Catherine & Pierre Breton ’La Dilettante’ Loire France NV 63.Champagne Gaston Chiquet Brut 'Tradition Pre",
+            "sourceUrl": "https://pasquals.com/pages/wine-list"
+          },
+          {
+            "quote": "title: Wine & Beer List &ndash; Cafe Pasqual's & Art Gallery",
+            "sourceUrl": "https://pasquals.com/pages/wine-list"
+          },
+          {
+            "quote": "title: Contact &ndash; Cafe Pasqual's & Art Gallery",
+            "sourceUrl": "https://pasquals.com/pages/contact"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://pasquals.com/",
+          "https://pasquals.com/pages/wine-list",
+          "https://pasquals.com/pages/contact"
+        ],
+        "retrievedAt": "2026-08-31T12:06:07.823Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-shed-santa-fe": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:10.104Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://sfshed.com/pages/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Does The Shed offer gluten-free menu items?",
+          "Absolutely, though we do not have a designated gluten free kitchen, we do offer a variety of gluten free items on our lunch, dinner and dessert menus."
+        ],
+        "accessibilityLanguage": [
+          "Certified service animals are welcome both indoors and outdoors, in accordance with ADA regulations."
+        ],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Creative New Mexican Cooking on the Santa Fe Plaza. Family Owned & Operated Since 1953. Has won the renowned James Beard Award and is a local's favorite. World Famous Green Chile and Red Chile.",
+            "sourceUrl": "https://sfshed.com/"
+          },
+          {
+            "quote": "title: The Shed Restaurant. Best Burrito best Red Chile on the Santa Fe Plaza",
+            "sourceUrl": "https://sfshed.com/"
+          },
+          {
+            "quote": "title: Menus &ndash; The Shed Restaurant",
+            "sourceUrl": "https://sfshed.com/pages/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://sfshed.com/",
+          "https://sfshed.com/pages/menu"
+        ],
+        "retrievedAt": "2026-08-31T12:06:10.104Z",
+        "playwrightPages": 0
+      }
+    },
+    "sazon-santa-fe": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:11.829Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://sazonsantafe.com/menus/",
+        "reservationUrl": "https://www.opentable.com/sazon-reservations-santa-fe?rtype=ism&",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Sazon | An adventure in flavors.",
+            "sourceUrl": "https://sazonsantafe.com/"
+          },
+          {
+            "quote": "noscript: .woocommerce-product-gallery{ opacity: 1 !important; }",
+            "sourceUrl": "https://sazonsantafe.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://sazonsantafe.com/",
+          "https://sazonsantafe.com/menus/",
+          "https://sazonsantafe.com/about/"
+        ],
+        "retrievedAt": "2026-08-31T12:06:11.829Z",
+        "playwrightPages": 0
+      }
+    },
+    "restaurant-martin-santa-fe": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:14.011Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.restaurantmartin.com/menus",
+        "reservationUrl": "https://www.opentable.com/restaurant-martin",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "If you are interested in booking a group event or receiving information about private dining at Restaurant Martin, please call 505.820.0919 or click here and provide some details about your event.",
+        "groupPolicyLanguage": [
+          "If you are interested in booking a group event or receiving information about private dining at Restaurant Martin, please call 505.820.0919 or click here and provide some details about your event."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Restaurant Martin in downtown Santa Fe, New Mexico, offers Progressive-American Cuisine from Chef Martín Rios, a ten-time James Beard award nominee. Chef Martín",
+            "sourceUrl": "https://www.restaurantmartin.com/"
+          },
+          {
+            "quote": "title: Restaurant Martin | Santa Fe Fine Dining | 526 Galisteo Street, Santa Fe, NM",
+            "sourceUrl": "https://www.restaurantmartin.com/"
+          },
+          {
+            "quote": "title: ABOUT | Restaurant Martin",
+            "sourceUrl": "https://www.restaurantmartin.com/about-1"
+          },
+          {
+            "quote": "title: MENUS | Restaurant Martin",
+            "sourceUrl": "https://www.restaurantmartin.com/menus"
+          },
+          {
+            "quote": "title: RESERVATIONS | Restaurant Martin",
+            "sourceUrl": "https://www.restaurantmartin.com/reservations-1"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.restaurantmartin.com/",
+          "https://www.restaurantmartin.com/about-1",
+          "https://www.restaurantmartin.com/menus",
+          "https://www.restaurantmartin.com/reservations-1"
+        ],
+        "retrievedAt": "2026-08-31T12:06:14.011Z",
+        "playwrightPages": 2
+      }
+    },
+    "paloma-santa-fe": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:34.087Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "https://palomasantafe.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/paloma-reservations-santa-fe?restref=1076467&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 17:00-22:00, Sa 17:00-22:00, Su 17:00-21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "LARGE PARTIES Paloma is a small restaurant.",
+        "groupPolicyLanguage": [
+          "LARGE PARTIES Paloma is a small restaurant.",
+          "We have limited options for large parties.",
+          "Please note that an automatic 25% gratuity will be added for parties of six or more."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 17:00-22:00, Sa 17:00-22:00, Su 17:00-21:00",
+            "sourceUrl": "https://palomasantafe.com/"
+          },
+          {
+            "quote": "og:description: Your table at Paloma is waiting! We accept reservations via Resy up to one month in advance for parties of up to ten guests. Make a reservation today.",
+            "sourceUrl": "https://palomasantafe.com/reservations"
+          },
+          {
+            "quote": "title: Make a Reservation &mdash; Paloma",
+            "sourceUrl": "https://palomasantafe.com/reservations"
+          },
+          {
+            "quote": "og:description: Paloma is made possible by the people who work here. We are a team of passionate individuals committed to our crafts, striving for full sustainability in our business practices and how we approach food.",
+            "sourceUrl": "https://palomasantafe.com/about"
+          },
+          {
+            "quote": "title: Who We Are &mdash; Paloma",
+            "sourceUrl": "https://palomasantafe.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://palomasantafe.com/",
+          "https://palomasantafe.com/menu",
+          "https://palomasantafe.com/reservations",
+          "https://palomasantafe.com/about"
+        ],
+        "retrievedAt": "2026-08-31T12:06:34.087Z",
+        "playwrightPages": 0
+      }
+    },
+    "715-lawrence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:36.553Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://715mass.com/s/wine-list-only-aug-11-2026.pdf",
+        "reservationUrl": "https://www.exploretock.com/715",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://715mass.com/",
+          "https://715mass.com/menus"
+        ],
+        "retrievedAt": "2026-08-31T12:06:36.553Z",
+        "playwrightPages": 0
+      }
+    },
+    "merchants-pub-plate-lawrence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:38.057Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.merchantsonmass.com/menus/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "We designed our menu to be responsive to dietary restrictions including gluten-free, celiac, vegetarian, dairy free and vegan."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Skip to main content Order Online Menus Gift Cards Large Parties & Catering Events & Specials Reservations Toggle Navigation Order Online Menus Gift Cards Large Parties & Catering Events & Specials ACCESSIBILITY 8th & Mass.",
+        "groupPolicyLanguage": [
+          "Skip to main content Order Online Menus Gift Cards Large Parties & Catering Events & Specials Reservations Toggle Navigation Order Online Menus Gift Cards Large Parties & Catering Events & Specials ACCESSIBILITY 8th & Mass.",
+          "​ Private Event Software powered by Tripleseat Call (785) 843-4111 Reservations Facebook Twitter Instagram ACCESSIBILITY 8th & Mass."
+        ],
+        "dressCode": "This isn't just a dress code, it's our philosophy for food and hospitality.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: With skill, creativity and a rich Midwestern harvest, we create comforting yet surprising cuisine for all who wish to eat and drink well.",
+            "sourceUrl": "https://www.merchantsonmass.com/"
+          },
+          {
+            "quote": "title: Menus | Merchants Pub & Plate",
+            "sourceUrl": "https://www.merchantsonmass.com/menus/"
+          },
+          {
+            "quote": "title: Large Parties & Catering | Merchants Pub & Plate",
+            "sourceUrl": "https://www.merchantsonmass.com/events-catering/"
+          },
+          {
+            "quote": "title: Contact | Merchants Pub & Plate",
+            "sourceUrl": "https://www.merchantsonmass.com/contact/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.merchantsonmass.com/",
+          "https://www.merchantsonmass.com/menus/",
+          "https://www.merchantsonmass.com/events-catering/",
+          "https://www.merchantsonmass.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T12:06:38.057Z",
+        "playwrightPages": 0
+      }
+    },
+    "ladybird-diner-lawrence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:40.173Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Serving comfort and freshly baked pie since 2014. Breakfast, lunch, and cocktails at 721 Massachusetts, Lawrence, KS 66049.",
+            "sourceUrl": "https://ladybirddiner.com/"
+          },
+          {
+            "quote": "title: Ladybird Diner - Lawrence, KS",
+            "sourceUrl": "https://ladybirddiner.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://ladybirddiner.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:06:40.173Z",
+        "playwrightPages": 1
+      }
+    },
+    "free-state-brewing-company-lawrence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:49.261Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.freestatebrewing.com/brewpub/menu/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "We book our private rooms up to several months in advance, so don’t wait – contact us about your reservation now!",
+        "groupPolicyLanguage": [
+          "We book our private rooms up to several months in advance, so don’t wait – contact us about your reservation now!",
+          "Large parties in the Beer Hall will be required to sign a reservation contract."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "There is a $15 deposit for the Meeting Room (don’t worry, it’s totally refundable)."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Free State Brewery has been serving up great handcrafted beers in their local brewery in Lawrence, Kansas since 1989. These pioneers in the craft beer movement have won multiple awards over the years for their microbrews, and now distribute the",
+            "sourceUrl": "https://www.freestatebrewing.com/"
+          },
+          {
+            "quote": "title: Free State Brewing Company | \"Because without beer, things do not seem to go as well\"",
+            "sourceUrl": "https://www.freestatebrewing.com/"
+          },
+          {
+            "quote": "og:description: Brewpub dining that defies the ordinary.",
+            "sourceUrl": "https://www.freestatebrewing.com/brewpub/menu/"
+          },
+          {
+            "quote": "title: Full Restaurant Menus | Free State Brewing Company",
+            "sourceUrl": "https://www.freestatebrewing.com/brewpub/menu/"
+          },
+          {
+            "quote": "og:description: Our Meeting Room and Beer Hall are perfect for parties, meetings or receptions. You can choose from our full food and beer menus, and our staff is experienced at serving large groups.",
+            "sourceUrl": "https://www.freestatebrewing.com/brewpub/private-parties/"
+          },
+          {
+            "quote": "title: Private Parties - Free State Brewing Company",
+            "sourceUrl": "https://www.freestatebrewing.com/brewpub/private-parties/"
+          },
+          {
+            "quote": "og:description: Questions? Comments? Concerns? Gripping narratives? Free State is here to listen. Hit us up on the platform of your choice.",
+            "sourceUrl": "https://www.freestatebrewing.com/contact/"
+          },
+          {
+            "quote": "title: Contact - Free State Brewing Company",
+            "sourceUrl": "https://www.freestatebrewing.com/contact/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.freestatebrewing.com/",
+          "https://www.freestatebrewing.com/brewpub/menu/",
+          "https://www.freestatebrewing.com/brewpub/private-parties/",
+          "https://www.freestatebrewing.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T12:06:49.261Z",
+        "playwrightPages": 0
+      }
+    },
+    "culinaria-lawrence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:51.644Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/culinaria",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.culinariafoodandwine.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:06:51.644Z",
+        "playwrightPages": 0
+      }
+    },
+    "encore-asian-bistro-lawrence": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:52.543Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Authentic Asian dishes made with care in a relaxed bistro setting, with friendly service and a varied menu.",
+            "sourceUrl": "https://encoreasianbistro.com/"
+          },
+          {
+            "quote": "title: Must-Visit Asian in Lawrence, KS | Encore Asian Bistro",
+            "sourceUrl": "https://encoreasianbistro.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://encoreasianbistro.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:06:52.543Z",
+        "playwrightPages": 0
+      }
+    },
+    "five-ten-athens": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:53.491Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.fiveandten.com/menu",
+        "reservationUrl": "https://resy.com/cities/ny/5and10",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-21:00, Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 17:00-21:00, Sa 17:00-21:00, Su 11:00-14:00, Su 17:00-20:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 17:00-21:00, Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 17:00-21:00, Sa 17:00-21:00, Su 11:00-14:00, Su 17:00-20:00",
+            "sourceUrl": "https://www.fiveandten.com/"
+          },
+          {
+            "quote": "og:description: 1073 S. Milledge Avenue — Athens, GA — (706)-546-7300",
+            "sourceUrl": "https://www.fiveandten.com/"
+          },
+          {
+            "quote": "title: Private Dining Rooms &mdash; Five & Ten",
+            "sourceUrl": "https://fiveandten.com/events"
+          },
+          {
+            "quote": "title: Reservations &mdash; Five & Ten",
+            "sourceUrl": "https://www.fiveandten.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.fiveandten.com/",
+          "https://www.fiveandten.com/menu",
+          "https://fiveandten.com/events",
+          "https://www.fiveandten.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T12:06:53.491Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-national-athens": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:55.713Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://resy.com/cities/ahn/the-national",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Our restaurant is small with just one dining room, so parties of 8 or less are typical.",
+        "groupPolicyLanguage": [
+          "Our restaurant is small with just one dining room, so parties of 8 or less are typical."
+        ],
+        "dressCode": "Do you have a dress code?",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: FAQ &mdash; The National",
+            "sourceUrl": "http://www.thenationalrestaurant.com/faq"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "http://www.thenationalrestaurant.com/",
+          "http://www.thenationalrestaurant.com/faq"
+        ],
+        "retrievedAt": "2026-08-31T12:06:55.713Z",
+        "playwrightPages": 0
+      }
+    },
+    "seabear-oyster-bar-athens": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:57.188Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "http://seabearoysterbar.com/wp-content/uploads/2026/07/food-menu-2026-copy-July-Update.pdf",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: About – Seabear Oyster Bar",
+            "sourceUrl": "https://seabearoysterbar.com/about/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://seabearoysterbar.com/",
+          "https://seabearoysterbar.com/about/"
+        ],
+        "retrievedAt": "2026-08-31T12:06:57.188Z",
+        "playwrightPages": 0
+      }
+    },
+    "last-resort-grill-athens": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:58.641Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.lastresortgrill.com/menu",
+        "reservationUrl": "https://tables.toasttab.com/restaurants/fdf63368-75e5-41f7-96cf-b1f5dc6ec4e2/findTime",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Menu &mdash; Last Resort Grill",
+            "sourceUrl": "https://www.lastresortgrill.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.lastresortgrill.com/",
+          "https://www.lastresortgrill.com/menu"
+        ],
+        "retrievedAt": "2026-08-31T12:06:58.641Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-place-athens": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:06:59.964Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.theplaceathens.com/menus",
+        "reservationUrl": "https://www.toasttab.com/the-place-athens/v3/?mode=fulfillment",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.theplaceathens.com/",
+          "https://www.theplaceathens.com/about",
+          "https://www.theplaceathens.com/menus"
+        ],
+        "retrievedAt": "2026-08-31T12:06:59.964Z",
+        "playwrightPages": 0
+      }
+    },
+    "south-kitchen-and-bar-athens": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:07:01.699Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.southkitchenbar.com/menus/",
+        "reservationUrl": "https://www.toasttab.com/south-kitchen-bar/giftcards?utmCampaign=onlineOrdering",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Dinner offerings include dishes such as low country shrimp and grits, bourbon glazed salmon, and pork belly, along with vegetarian options."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Reserve Private Events Schedule your next event with us.",
+        "groupPolicyLanguage": [
+          "Reserve Private Events Schedule your next event with us.",
+          "This is a great spot for any occasion - a private dining space is available for rehearsal dinners, parties, meet & greets, or any other social gathering.",
+          "Main content starts here, tab to start navigating Private Dining + Events The Arch Room at South Kitchen + Bar is an elegant, intimate private dining space in the heart of downtown Athens, Georgia.",
+          "Designed for small to medium gatherings and special occasions, it offers the perfect setting for celebrations, business dinners, and private events."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: South Kitchen and Bar offers an intensely unique and flavorful experience coupled with an ambiance that offers a little glimpse into the history of this quaint Southern town.",
+            "sourceUrl": "https://www.southkitchenbar.com/"
+          },
+          {
+            "quote": "title: South Kitchen and Bar | American Restaurant in Athens, GA",
+            "sourceUrl": "https://www.southkitchenbar.com/"
+          },
+          {
+            "quote": "title: About | South Kitchen and Bar in Athens, GA",
+            "sourceUrl": "https://www.southkitchenbar.com/about/"
+          },
+          {
+            "quote": "title: Menus | South Kitchen and Bar in Athens, GA",
+            "sourceUrl": "https://www.southkitchenbar.com/menus/"
+          },
+          {
+            "quote": "title: Private Events | South Kitchen and Bar in Athens, GA",
+            "sourceUrl": "https://www.southkitchenbar.com/private-events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.southkitchenbar.com/",
+          "https://www.southkitchenbar.com/about/",
+          "https://www.southkitchenbar.com/menus/",
+          "https://www.southkitchenbar.com/private-events/"
+        ],
+        "retrievedAt": "2026-08-31T12:07:01.699Z",
         "playwrightPages": 0
       }
     }

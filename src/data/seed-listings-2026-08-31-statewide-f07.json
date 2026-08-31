@@ -1,0 +1,149 @@
+{
+  "note": "Statewide fill F-07. Mid-size cities after the state floor: Santa Fe, Lawrence, Athens. Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. Oxford deferred (Currence rooms share one site; Ajax challenge). Fayetteville AR deferred (Hugo's / Feed & Folly challenge; Hammontree / Atlas dead). Reno still deferred. Santa Fe: La Choza (sister of The Shed), Coyote Cafe (sister venues) skipped. Paloma lists Esquina next door on a separate site — kept. Athens: Seabear is a National sibling on its own site — kept.",
+  "generatedAt": "2026-08-31T12:15:00.000Z",
+  "batches": [
+    {
+      "city": "Santa Fe",
+      "stateCode": "NM",
+      "listings": [
+        {
+          "title": "Geronimo",
+          "website": "https://www.geronimorestaurant.com/",
+          "phone": "+1-505-982-1500",
+          "address": "724 Canyon Road, Santa Fe, NM 87501",
+          "cuisineTags": ["American", "Fine dining"]
+        },
+        {
+          "title": "Cafe Pasqual's",
+          "website": "https://pasquals.com/",
+          "phone": "+1-505-983-9340",
+          "address": "121 Don Gaspar Avenue, Santa Fe, NM 87501",
+          "cuisineTags": ["New Mexican", "American"]
+        },
+        {
+          "title": "The Shed",
+          "website": "https://sfshed.com/",
+          "phone": "+1-505-982-9030",
+          "address": "113 1/2 East Palace Avenue, Santa Fe, NM 87501",
+          "cuisineTags": ["New Mexican"]
+        },
+        {
+          "title": "Sazón",
+          "website": "https://sazonsantafe.com/",
+          "phone": "+1-505-983-8604",
+          "address": "221 Shelby Street, Santa Fe, NM 87501",
+          "cuisineTags": ["Mexican"]
+        },
+        {
+          "title": "Restaurant Martin",
+          "website": "https://www.restaurantmartin.com/",
+          "phone": "+1-505-820-0919",
+          "address": "526 Galisteo Street, Santa Fe, NM 87501",
+          "cuisineTags": ["American", "Fine dining"]
+        },
+        {
+          "title": "Paloma",
+          "website": "https://palomasantafe.com/",
+          "address": "401 South Guadalupe Street, Santa Fe, NM 87501",
+          "cuisineTags": ["Mexican"]
+        }
+      ]
+    },
+    {
+      "city": "Lawrence",
+      "stateCode": "KS",
+      "listings": [
+        {
+          "title": "715",
+          "website": "https://715mass.com/",
+          "phone": "+1-785-856-7150",
+          "address": "715 Massachusetts Street, Lawrence, KS 66044",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Merchants Pub & Plate",
+          "website": "https://www.merchantsonmass.com/",
+          "phone": "+1-785-843-4111",
+          "address": "746 Massachusetts Street, Lawrence, KS 66044",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Ladybird Diner",
+          "website": "https://ladybirddiner.com/",
+          "phone": "+1-785-856-5239",
+          "address": "721 Massachusetts Street, Lawrence, KS 66044",
+          "cuisineTags": ["American", "Diner"]
+        },
+        {
+          "title": "Free State Brewing Company",
+          "website": "https://www.freestatebrewing.com/",
+          "phone": "+1-785-843-4555",
+          "address": "636 Massachusetts Street, Lawrence, KS 66044",
+          "cuisineTags": ["American", "Brewpub"]
+        },
+        {
+          "title": "Culinaria",
+          "website": "https://www.culinariafoodandwine.com/",
+          "phone": "+1-785-766-8591",
+          "address": "512 East 9th Street, Lawrence, KS 66044",
+          "cuisineTags": ["Mediterranean"]
+        },
+        {
+          "title": "Encore Asian Bistro",
+          "website": "https://encoreasianbistro.com/",
+          "phone": "+1-785-856-3682",
+          "address": "1007 Massachusetts Street, Lawrence, KS 66044",
+          "cuisineTags": ["Asian"]
+        }
+      ]
+    },
+    {
+      "city": "Athens",
+      "stateCode": "GA",
+      "listings": [
+        {
+          "title": "Five & Ten",
+          "website": "https://www.fiveandten.com/",
+          "phone": "+1-706-546-7300",
+          "address": "1073 South Milledge Avenue, Athens, GA 30605",
+          "cuisineTags": ["American", "Southern"]
+        },
+        {
+          "title": "The National",
+          "website": "http://www.thenationalrestaurant.com/",
+          "phone": "+1-706-549-3450",
+          "address": "232 W Hancock Avenue, Athens, GA 30601",
+          "cuisineTags": ["Mediterranean", "American"]
+        },
+        {
+          "title": "Seabear Oyster Bar",
+          "website": "https://seabearoysterbar.com/",
+          "phone": "+1-706-850-4367",
+          "address": "297 Prince Avenue Suite 10, Athens, GA 30601",
+          "cuisineTags": ["Seafood"]
+        },
+        {
+          "title": "Last Resort Grill",
+          "website": "https://www.lastresortgrill.com/",
+          "phone": "+1-706-549-0810",
+          "address": "184 W Clayton Street, Athens, GA 30601",
+          "cuisineTags": ["Southern", "American"]
+        },
+        {
+          "title": "The Place",
+          "website": "https://www.theplaceathens.com/",
+          "phone": "+1-706-850-2988",
+          "address": "229 East Broad Street, Athens, GA 30601",
+          "cuisineTags": ["Southern"]
+        },
+        {
+          "title": "South Kitchen and Bar",
+          "website": "https://www.southkitchenbar.com/",
+          "phone": "+1-706-620-3753",
+          "address": "247 E Washington Street Suite 101, Athens, GA 30601",
+          "cuisineTags": ["American", "Southern"]
+        }
+      ]
+    }
+  ]
+}

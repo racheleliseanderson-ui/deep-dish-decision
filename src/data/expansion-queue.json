@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T11:56:45.557Z",
+  "generatedAt": "2026-08-31T12:05:42.020Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1185,6 +1185,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T11:56:47.697Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Santa Fe",
+      "stateCode": "NM",
+      "population": 89088,
+      "priority": 98,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:05:47.796Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Lawrence",
+      "stateCode": "KS",
+      "population": 95394,
+      "priority": 99,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:05:47.796Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Athens",
+      "stateCode": "GA",
+      "population": 127315,
+      "priority": 100,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:05:47.796Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

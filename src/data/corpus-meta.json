@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T11:58:13.152Z",
-  "builtAt": "2026-08-31T11:58:13Z",
-  "count": 944,
-  "regions": 140,
+  "generatedAt": "2026-08-31T12:07:16.336Z",
+  "builtAt": "2026-08-31T12:07:16Z",
+  "count": 962,
+  "regions": 143,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 923,
+    "current": 941,
     "officialConflicts": 11,
-    "thinRecords": 497,
+    "thinRecords": 507,
     "avgUnknowns": 5.14,
     "avgThinFields": 7.59,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 292
+    "reachableAtLastReview": 309
   },
-  "fullCaseFiles": 944,
+  "fullCaseFiles": 962,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -133,6 +133,7 @@
       "Tampa, FL"
     ],
     "Georgia": [
+      "Athens, GA",
       "Atlanta, GA",
       "Savannah, GA"
     ],
@@ -157,6 +158,7 @@
       "Des Moines, IA"
     ],
     "Kansas": [
+      "Lawrence, KS",
       "Wichita, KS"
     ],
     "Kentucky": [
@@ -219,7 +221,8 @@
       "Princeton, NJ"
     ],
     "New Mexico": [
-      "Albuquerque, NM"
+      "Albuquerque, NM",
+      "Santa Fe, NM"
     ],
     "New York": [
       "Albany, NY",
@@ -457,7 +460,10 @@
     "Charleston, SC": "South Carolina",
     "Huntsville, AL": "Alabama",
     "Fort Wayne, IN": "Indiana",
-    "New Haven, CT": "Connecticut"
+    "New Haven, CT": "Connecticut",
+    "Santa Fe, NM": "New Mexico",
+    "Lawrence, KS": "Kansas",
+    "Athens, GA": "Georgia"
   },
   "cuisineTagOptions": [
     "American",
@@ -543,6 +549,7 @@
     "Neapolitan",
     "Neighborhood",
     "New American",
+    "New Mexican",
     "New Nordic",
     "Northwest",
     "Nose-to-tail",
@@ -7272,6 +7279,132 @@
       "region": "New Haven, CT",
       "regionGroup": "Connecticut",
       "city": "New Haven"
+    },
+    {
+      "slug": "geronimo-santa-fe",
+      "title": "Geronimo",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "cafe-pasqual-s-santa-fe",
+      "title": "Cafe Pasqual's",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "the-shed-santa-fe",
+      "title": "The Shed",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "sazon-santa-fe",
+      "title": "Sazón",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "restaurant-martin-santa-fe",
+      "title": "Restaurant Martin",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "paloma-santa-fe",
+      "title": "Paloma",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "715-lawrence",
+      "title": "715",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "merchants-pub-plate-lawrence",
+      "title": "Merchants Pub & Plate",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "ladybird-diner-lawrence",
+      "title": "Ladybird Diner",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "free-state-brewing-company-lawrence",
+      "title": "Free State Brewing Company",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "culinaria-lawrence",
+      "title": "Culinaria",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "encore-asian-bistro-lawrence",
+      "title": "Encore Asian Bistro",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "five-ten-athens",
+      "title": "Five & Ten",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "the-national-athens",
+      "title": "The National",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "seabear-oyster-bar-athens",
+      "title": "Seabear Oyster Bar",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "last-resort-grill-athens",
+      "title": "Last Resort Grill",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "the-place-athens",
+      "title": "The Place",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "south-kitchen-and-bar-athens",
+      "title": "South Kitchen and Bar",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
     }
   ]
 }

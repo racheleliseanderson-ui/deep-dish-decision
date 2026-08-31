@@ -55,6 +55,9 @@ const STATEWIDE_FILL = [
   ["Huntsville", "AL", 221933],
   ["Fort Wayne", "IN", 269994],
   ["New Haven", "CT", 135081],
+  ["Santa Fe", "NM", 89088],
+  ["Lawrence", "KS", 95394],
+  ["Athens", "GA", 127315],
 ];
 
 const existing = readJson(PATHS.queue, null);
