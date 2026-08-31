@@ -1,5 +1,4 @@
 import { Chip, Eyebrow, Rule } from "@/components/rih/bits";
-import { CaseFile } from "@/components/rih/case-file";
 import { CompareDialog, CompareTray } from "@/components/rih/compare";
 import { DecisionBrief } from "@/components/rih/decision-brief";
 import { Figure, GiltRule, Marquee, Vitrine } from "@/components/rih/gilt";
@@ -9,7 +8,9 @@ import { ScenarioPlaybooks } from "@/components/rih/scenario-playbooks";
 import { SituationConsole } from "@/components/rih/situation-console";
 import heroPass from "@/assets/hero-pass.jpg";
 import figGold from "@/assets/fig-gold.jpg";
-import { dataset, records } from "@/lib/dataset";
+import { isReadyRecord } from "@/lib/completeness";
+import { corpusMeta, groupForRegion } from "@/lib/corpus-meta";
+import type { RestaurantRecord } from "@/lib/dataset";
 import {
   OPS,
   emptySituation,
@@ -19,11 +20,11 @@ import {
   SITUATION_SLOTS,
   type Situation,
 } from "@/lib/intelligence";
-import { useEnrichmentSignals, useHideThinFiles } from "@/lib/prefs";
-import { getEnrichment } from "@/lib/enrichment";
+import { useHideThinFiles } from "@/lib/prefs";
+import { loadRegionGroup } from "@/lib/region-load";
 import { decodeSituation, encodeSituation } from "@/lib/situation-url";
 import { createFileRoute, useRouterState } from "@tanstack/react-router";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { FadeKey, GrowBar, RankSlot, Reveal } from "@/components/rih/reveal";
 import { ImportedContext } from "@/components/rih/imported-context";
 import { useSaltyImport } from "@/hooks/use-salty-import";
@@ -33,6 +34,10 @@ import {
   situationIsStarted,
 } from "@/lib/salty-handoff/apply";
 import { shouldApply } from "@/lib/salty-handoff/import-session.ts";
+
+const CaseFile = lazy(() =>
+  import("@/components/rih/case-file").then((m) => ({ default: m.CaseFile })),
+);
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -84,21 +89,40 @@ function Hub() {
     setDietNote(planningDietBanner(incoming));
     setLimit(8);
   }, [session]);
-  const enrichment = useEnrichmentSignals();
   const hideThin = useHideThinFiles();
-  const scoreOpts = useMemo(
-    () => ({ useEnrichment: enrichment.enabled }),
-    [enrichment.enabled],
-  );
+  const [regionRecords, setRegionRecords] = useState<RestaurantRecord[] | null>(null);
+  const [regionLoading, setRegionLoading] = useState(false);
+
+  const activeGroup =
+    situation.regionGroup ?? (situation.region ? groupForRegion(situation.region) : null);
+  const regionReady = Boolean(activeGroup);
+
+  useEffect(() => {
+    if (!activeGroup) {
+      setRegionRecords(null);
+      setRegionLoading(false);
+      return;
+    }
+    let cancelled = false;
+    setRegionLoading(true);
+    loadRegionGroup(activeGroup).then((rows) => {
+      if (cancelled) return;
+      setRegionRecords(rows);
+      setRegionLoading(false);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [activeGroup]);
 
   const ranked = useMemo(() => {
-    const filtered = filterRecords(records, situation).filter((r) => {
+    if (!regionReady || !regionRecords) return [];
+    const filtered = filterRecords(regionRecords, situation).filter((r) => {
       if (!hideThin.enabled) return true;
-      const completeness = getEnrichment(r.slug)?.meta?.completeness ?? 0;
-      return completeness >= 70;
+      return isReadyRecord(r.slug);
     });
-    return rank(filtered, situation, scoreOpts);
-  }, [situation, scoreOpts, hideThin.enabled]);
+    return rank(filtered, situation);
+  }, [situation, hideThin.enabled, regionReady, regionRecords]);
   const depth = situationDepth(situation);
   const depthPct = Math.round((depth / SITUATION_SLOTS) * 100);
   const lead = ranked[0] ?? null;
@@ -111,9 +135,9 @@ function Hub() {
 
   const tickerItems = useMemo(
     () => [
-      `${dataset.count} records under review`,
-      `${dataset.records.filter((r) => r.isFullCaseFile).length} complete case files`,
-      `${dataset.regions} regions`,
+      `${corpusMeta.count} records under review`,
+      `${corpusMeta.fullCaseFiles ?? corpusMeta.count} complete case files`,
+      `${corpusMeta.regions} regions`,
       `${OPS.officialConflicts} official conflicts open`,
       `${OPS.avgUnknowns} mean unknowns per record`,
       `${OPS.overdue} reviews overdue`,
@@ -185,8 +209,8 @@ function Hub() {
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <div className="min-w-0">
               <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Records under review</p>
-              <p className="text-num mt-1 text-2xl font-medium text-ink-foreground">{dataset.count}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">{dataset.regions} regions · same 12-field floor</p>
+              <p className="text-num mt-1 text-2xl font-medium text-ink-foreground">{corpusMeta.count}</p>
+              <p className="mt-1 text-xs text-ink-foreground/50">{corpusMeta.regions} regions · same 12-field floor</p>
             </div>
             <div className="min-w-0">
               <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Official conflicts open</p>
@@ -239,7 +263,7 @@ function Hub() {
             setLimit(8);
           }}
           inViewCount={ranked.length}
-          totalCount={records.length}
+          totalCount={regionRecords?.length ?? corpusMeta.count}
         />
 
         <ScenarioPlaybooks
@@ -366,9 +390,7 @@ function Hub() {
                   <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
                     Add an occasion or a guest need to sharpen what works for tonight. Records that
                     cannot meet a stated constraint stay visible at the bottom, with the reason.
-                    {enrichment.enabled
-                      ? " Listing signals from other sources are on (reading controls)."
-                      : " First-party evidence only."}
+                    Directory listings never rank these rooms.
                   </p>
                 </div>
                 <div className="w-full max-w-[200px]">
@@ -400,13 +422,31 @@ function Hub() {
             ))}
           </div>
 
-          {!ranked.length ? (
+          {!regionReady ? (
+            <Vitrine className="mt-6 p-8 text-center sm:p-10">
+              <Eyebrow>Choose a region first</Eyebrow>
+              <GiltRule className="mx-auto mt-3 max-w-xs" />
+              <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
+                The ranked list loads one region at a time so the home file stays light. Atlas still
+                holds all {corpusMeta.count} records across {corpusMeta.regions} regions. Nothing is
+                auto-selected — including Denver.
+              </p>
+            </Vitrine>
+          ) : regionLoading ? (
+            <Vitrine className="mt-6 p-8 text-center sm:p-10">
+              <Eyebrow>Loading {activeGroup}</Eyebrow>
+              <GiltRule className="mx-auto mt-3 max-w-xs" />
+              <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
+                Pulling the first-party files for this region. Ranking starts as soon as they land.
+              </p>
+            </Vitrine>
+          ) : !ranked.length ? (
             <Vitrine className="mt-6 p-8 text-center sm:p-10">
               <Eyebrow>No matches</Eyebrow>
               <GiltRule className="mx-auto mt-3 max-w-xs" />
               <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
-                Nothing in the corpus matches those filters. The instrument will not widen your
-                constraints to produce a result — loosen geography, cuisine, or search above.
+                Nothing in this region matches those filters. The instrument will not widen your
+                constraints to produce a result — loosen cuisine or search, or pick another city.
               </p>
             </Vitrine>
           ) : null}
@@ -454,15 +494,15 @@ function Hub() {
             <Eyebrow>Corpus condition</Eyebrow>
             <dl className="mt-4 divide-y divide-border text-[13px]">
               {[
-                ["Records", String(dataset.count)],
-                ["Complete case files", String(dataset.records.filter((row) => row.isFullCaseFile).length)],
-                ["Regions covered", String(dataset.regions)],
-                ["Still listing-only", String(dataset.records.filter((row) => row.reviewStatus === "listing_only").length)],
+                ["Records", String(corpusMeta.count)],
+                ["Complete case files", String(corpusMeta.fullCaseFiles ?? corpusMeta.count)],
+                ["Regions covered", String(corpusMeta.regions)],
+                ["Still listing-only", String(corpusMeta.listingOnly ?? 0)],
                 ["Open policy gaps", String(OPS.thinRecords)],
                 ["Average unstated fields", String(OPS.avgThinFields)],
                 ["Reachable by phone", String(OPS.reachableAtLastReview)],
                 ["Last review pass", OPS.lastReviewAt],
-                ["Corpus generated", dataset.generatedAt],
+                ["Corpus generated", corpusMeta.generatedAt],
               ].map(([k, v]) => (
                 <div key={k} className="flex items-baseline justify-between gap-4 py-2.5">
                   <dt className="text-muted-foreground">{k}</dt>
@@ -478,12 +518,16 @@ function Hub() {
         </Reveal>
       </div>
 
-      <CaseFile
-        sc={openSc}
-        situation={situation}
-        onClose={() => setOpenSlug(null)}
-        packetHref={packetHref}
-      />
+      {openSc ? (
+        <Suspense fallback={null}>
+          <CaseFile
+            sc={openSc}
+            situation={situation}
+            onClose={() => setOpenSlug(null)}
+            packetHref={packetHref}
+          />
+        </Suspense>
+      ) : null}
       <CompareTray
         items={compared}
         onRemove={(slug) => toggleCompare(slug)}

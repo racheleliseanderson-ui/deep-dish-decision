@@ -44,6 +44,8 @@ describe("corpus invariants", () => {
 
   it("keeps hero assets and the canonical dataset file", () => {
     expect(existsSync(resolve(ROOT, "src/data/dataset.json"))).toBe(true);
+    expect(existsSync(resolve(ROOT, "src/data/by-region/washington.json"))).toBe(true);
+    expect(existsSync(resolve(ROOT, "src/data/corpus-meta.json"))).toBe(true);
     expect(existsSync(resolve(ROOT, "src/assets/hero-pass.jpg"))).toBe(true);
     expect(existsSync(resolve(ROOT, "src/assets/fig-gold.jpg"))).toBe(true);
     expect(existsSync(resolve(ROOT, "src/routes/index.tsx"))).toBe(true);

@@ -3,6 +3,7 @@ import { ListingFace } from "@/components/rih/listing-face";
 import { DecisionBrief } from "@/components/rih/decision-brief";
 import { DinerQuestions } from "@/components/rih/diner-questions";
 import { FindingsStack } from "@/components/rih/findings";
+import { InspectionPanel } from "@/components/rih/inspection-panel";
 import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { CASE_FIELDS, fieldDisplay, isUnstated } from "@/lib/case-depth";
@@ -98,6 +99,7 @@ export function CaseFile({
             <div className="space-y-8">
               <DinerQuestions record={r} />
               <ReputationPanel slug={r.slug} />
+              <InspectionPanel slug={r.slug} />
             </div>
           ) : null}
           {tab === "Brief" ? (

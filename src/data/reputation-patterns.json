@@ -1,5 +1,886 @@
 {
-  "generatedAt": "2026-08-30T21:00:00.000Z",
-  "note": "Recurring praise and complaint patterns are stored only after a research pass across a meaningful body of recent reviews. An empty record means not on file. Never infer a consensus from a directory star rating.",
-  "records": {}
+  "generatedAt": "2026-08-31T01:18:40Z",
+  "note": "Recurring praise and complaint patterns are stored only after a research pass across a meaningful body of recent reviews. An empty record means not on file. Never infer a consensus from a directory star rating. Directory ratings never rank.",
+  "records": {
+    "canlis": {
+      "sampleSize": 2872,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp recent reviews",
+        "Tripadvisor (incl. Jul 2026)",
+        "Reddit r/AskSeattle 2024–2025"
+      ],
+      "recency": "2024–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Lake Union / Cascade views and the midcentury room are the most repeated reason people book",
+        "Service is widely described as polished, formal, and the strongest part of the night",
+        "Several diners prefer the lounge path (Irish coffee, a smaller spend) over the dining-room tasting"
+      ],
+      "recurringComplaints": [
+        "Food quality called average or inconsistent at a destination ticket — especially versus SF/NYC peers",
+        "Portions read as too small once the 20% service charge is in the total",
+        "A vocal minority would not return; others treat it as a view-and-service night rather than a cooking night"
+      ],
+      "consistencySignal": "Strong agreement on room and service; split on whether the cooking matches the price.",
+      "servicePattern": "Attentive, formal, often cited as justifying the included gratuity — not the usual complaint.",
+      "portionValuePattern": "Small plates at a high ticket is the dominant value complaint.",
+      "foodQualityPattern": "Mixed: some courses land (steak, sunchoke); others are called fishy, gristly, or unremarkable.",
+      "dishesRecommended": [
+        "Canlis salad (historic signature)",
+        "steak / steak Pierre in older menus",
+        "lounge drinks and dessert"
+      ],
+      "dishesCriticized": [
+        "sashimi called fishy in recent Tripadvisor notes",
+        "pork described as gristly on at least one 2026 report"
+      ],
+      "waitPattern": "Reservations required; not a walk-in room.",
+      "localsVisitorPattern": "Visitors book for the view; locals are more split on whether a repeat is worth it.",
+      "patternSummary": "Public-review pattern is mixed, not a star consensus: the room and service are the repeated praise; cooking quality and portion-to-price are the repeated complaints. Directory ratings do not rank this record."
+    },
+    "the-pink-door": {
+      "sampleSize": 7265,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "OpenTable",
+        "The Infatuation Seattle",
+        "Reddit r/Seattle"
+      ],
+      "recency": "2024–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Cabaret / aerialists and the Pike Place terrace are the identity of the night, not a side show",
+        "Italian-American pastas (lasagna, squid-ink, pappardelle) are the dishes people name",
+        "Warm, theatrical service matches the room"
+      ],
+      "recurringComplaints": [
+        "Reservations open 30 days out and vanish; late lunch leftovers are what remains if you wait",
+        "Walk-in waits of an hour are common on Friday; a texted table is held only briefly",
+        "Food can read as good-not-great once the wait and Pike Place logistics are in the total"
+      ],
+      "consistencySignal": "Strong agreement that the night is entertainment-plus-pasta; split on whether the cooking alone is the reason to go.",
+      "servicePattern": "Busy but generally well-regarded; the bottleneck is getting a table, not inattentive service.",
+      "waitPattern": "30-day booking window; 16 barstools and some tables held for walk-ins; expect a wait if you show up at 6pm Friday.",
+      "dishesRecommended": [
+        "lasagna",
+        "squid ink pasta",
+        "pappardelle ragu",
+        "Negroni"
+      ],
+      "dishesCriticized": [],
+      "localsVisitorPattern": "A Seattle special-occasion and visitor room; locals warn about the booking game.",
+      "patternSummary": "Public-review pattern: go for cabaret, terrace, and pasta; plan the reservation 30 days out or accept a walk-in wait. Cooking praise is real but secondary to the room. Not a ranking."
+    },
+    "the-walrus-and-the-carpenter-seattle": {
+      "sampleSize": 404,
+      "sourceMix": [
+        "OpenTable listing (third-party directory)",
+        "Yelp",
+        "Tripadvisor",
+        "Eater Seattle (Nov 2025)",
+        "Reddit r/Seattle"
+      ],
+      "recency": "2024–2025",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Oysters — raw and fried — are the dish people name, with servers walking newbies through brine vs sweet",
+        "Bartenders and the Ballard bar energy are a repeated plus",
+        "Seasonal small plates around the oyster program"
+      ],
+      "recurringComplaints": [
+        "No reservations; waits are the planning fact, especially for four or more",
+        "Line forms before open; groups are told to put a name down and wander",
+        "A packed, small room — not a quiet date if you arrive at peak"
+      ],
+      "consistencySignal": "Agreement on oysters; agreement on the wait. Little debate about what the night is.",
+      "waitPattern": "Does not take reservations. Arrive at open or expect a queue.",
+      "dishesRecommended": [
+        "raw oysters by variety",
+        "fried oysters with cilantro aioli"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: an oyster bar you wait for. The food conversation is the shellfish; the complaint is the no-res wait, not the shuck. OpenTable stars are a listing sample, not a rank."
+    },
+    "the-herbfarm-seattle": {
+      "sampleSize": 283,
+      "sourceMix": [
+        "Tripadvisor listing (third-party directory)",
+        "Yelp",
+        "Google listing (third-party directory)"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Garden, themed tasting, and long-form service are the reason people book Woodinville",
+        "Staff knowledge of the farm and pairing is the repeated service praise"
+      ],
+      "recurringComplaints": [
+        "Price and length of the night versus portion size is the recurring value complaint",
+        "A destination ticket — not a flexible à-la-carte out if someone at the table wants an exit"
+      ],
+      "consistencySignal": "Praise clusters on garden and service; complaints cluster on ticket and duration.",
+      "servicePattern": "Formal, explanatory, generally the strength of the file.",
+      "portionValuePattern": "High ticket, prix-fixe only; value complaints are about length and price, not about being cheated on a listed steak.",
+      "dishesRecommended": [
+        "themed tasting (changes; do not treat a past menu as live)"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a garden tasting people praise for service and setting, and second-guess for price and duration. Tripadvisor stars are context only."
+    },
+    "kann": {
+      "sampleSize": 1255,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "Tripadvisor (incl. Jul 2026)",
+        "Reddit r/Portland (Dec 2025)",
+        "restaurant FAQ / Resy"
+      ],
+      "recency": "2025–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Live-fire Haitian cooking — griyo (twice-cooked pork), plantain brioche, peanut creamed greens, whole snapper — is what diners name",
+        "Celebration energy and shared plates match the restaurant's own framing"
+      ],
+      "recurringComplaints": [
+        "Noise is the dominant complaint: second-loudest recorded room in some Portland tallies; diners report headaches and missed conversation",
+        "Hard Resy drop (month-ahead) and limited walk-in",
+        "Price and portion size called high; griyo sometimes described as dry"
+      ],
+      "consistencySignal": "Food praise is consistent; noise complaints are consistent. That is a mixed night, not a split on whether the kitchen can cook.",
+      "servicePattern": "Service generally fine; the room volume can drown the table explanation.",
+      "waitPattern": "Resy releases a month at a time; walk-in seats are limited; dine-in only.",
+      "dishesRecommended": [
+        "griyo / twice-cooked pork",
+        "plantain brioche",
+        "peanut creamed greens",
+        "whole snapper"
+      ],
+      "dishesCriticized": [
+        "griyo called dry in a subset of Yelp notes"
+      ],
+      "patternSummary": "Public-review pattern: live-fire Haitian food people name and a room people warn is painfully loud. Book on the Resy drop. Directory stars are not a rank."
+    },
+    "le-pigeon": {
+      "sampleSize": 1149,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "restaurant-owned tasting format"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Fixed tasting (omnivore and vegetarian) in a small Division Street room is the identity",
+        "Pigeon and offal-curious cooking is what regulars still name"
+      ],
+      "recurringComplaints": [
+        "No à-la-carte exit — the format is the night, which is a complaint when someone at the table wanted flexibility",
+        "Price of the tasting versus a looser Portland bistro night"
+      ],
+      "consistencySignal": "Agreement on format lock; praise for the cooking among people who wanted that format.",
+      "dishesRecommended": [
+        "tasting menu (rotates)",
+        "pigeon when it is on"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a Portland tasting people book knowing there is no à-la-carte menu. Complaints are format and ticket, not a claim the kitchen cannot cook. Not a ranking."
+    },
+    "archipelago-seattle": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Restaurant-owned site (July 11, 2026 announcement)",
+        "Seattle Times (Jul 17, 2026)",
+        "The Infatuation Seattle (prior coverage)"
+      ],
+      "recency": "2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Filipino-American counter tasting through Pacific Northwest producers is the culinary identity diners and critics named before the pause",
+        "Tiny room and personal service were the draw, not a backup of tables"
+      ],
+      "recurringComplaints": [
+        "Hard to book even when open; 12 seats",
+        "Temporarily closed as of August 3, 2026 for renovation — restaurant-owned pages say no reopen date is posted"
+      ],
+      "operationalNote": "Restaurant-owned announcement (July 11, 2026): doors closed starting August 3, 2026 for a major renovation. FAQ: temporarily closed, no reopen date. Seattle Times: goal is winter, dates unconfirmed. Do not treat this record as a live table.",
+      "consistencySignal": "Prior praise is real; the live fact on this pass is the pause.",
+      "waitPattern": "When open, month-ahead releases. Currently not seating.",
+      "dishesRecommended": [],
+      "dishesCriticized": [],
+      "patternSummary": "Held for a live table: Archipelago announced a temporary closure from August 3, 2026 for renovation, with no reopen date on its own FAQ. Prior review identity is a 12-seat Filipino-American tasting. Not a ranking, and not a suggestion to walk up."
+    },
+    "uchi-austin": {
+      "sampleSize": 3200,
+      "sourceMix": [
+        "Yelp listing (third-party directory)",
+        "Google listing (third-party directory)"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Non-traditional sushi and the omakase / chef's-choice path are what Austin diners still treat as the house standard",
+        "Service at the bar/sushi counter is the repeated plus versus a packed dining room"
+      ],
+      "recurringComplaints": [
+        "Waits and booking friction at peak",
+        "Price of a full sushi night; debate continues over whether Uchi is still the city's gold standard or a brand with locations"
+      ],
+      "consistencySignal": "Still a reference sushi room in Austin public reviews; the debate is 'still the best' versus 'very good and expensive,' not 'avoid.'",
+      "dishesRecommended": [
+        "omakase / chef's choice",
+        "signature non-traditional nigiri and cuts"
+      ],
+      "dishesCriticized": [],
+      "waitPattern": "Plan ahead; walk-up at peak is a wait.",
+      "patternSummary": "Public-review pattern: Austin sushi people still name, with a live debate about whether the original still outruns its own legend and ticket. Yelp stars are a listing sample, not a rank."
+    },
+    "mixtli-san-antonio": {
+      "sampleSize": 161,
+      "sourceMix": [
+        "Yelp listing (third-party directory)"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Ticketed Mexican tasting in a tiny room is the whole product — diners who wanted that format praise the research and pacing"
+      ],
+      "recurringComplaints": [
+        "Tickets sell out; this is not a walk-in or a flexible à-la-carte night",
+        "Sample of public reviews is smaller than big-city peers — treat patterns as thinner evidence"
+      ],
+      "consistencySignal": "Thin but consistent: people who buy the ticket tend to describe the night they bought.",
+      "dishesRecommended": [
+        "the tasting (rotates; do not freeze a past menu)"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern, thin sample: a ticketed San Antonio tasting, not a casual Mexican dinner. Yelp n≈161 is context only and is not used to rank."
+    },
+    "le-bernardin": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "Google listing (third-party directory)",
+        "NYC DOHMH inspection file (separate layer)"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Seafood precision and the tasting / prix-fixe fish cookery are the identity diners still name",
+        "Formal service and the room's quiet relative to other Midtown destination rooms"
+      ],
+      "recurringComplaints": [
+        "Lunch or rushed seatings can read as impersonal",
+        "Ticket vs. a more personal downtown tasting; some diners call it technically perfect and emotionally cool"
+      ],
+      "consistencySignal": "Agreement on seafood craft; split on warmth and whether lunch is the same restaurant as dinner.",
+      "servicePattern": "Formal and expert; the complaint is distance, not incompetence.",
+      "dishesRecommended": [
+        "seafood tasting",
+        "cooked fish courses over generic 'get the steak' advice — there isn't one"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a seafood temple people praise for craft and sometimes find impersonal, especially at lunch. Not a star ranking."
+    },
+    "gramercy-tavern": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "Google listing (third-party directory)"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Staff warmth and the tavern-room vs tasting-room split let people pick a night",
+        "Consistent, seasonal American cooking — the 'safe special occasion' in Flatiron"
+      ],
+      "recurringComplaints": [
+        "Tasting can read as safe rather than thrilling next to more personal NYC rooms",
+        "Tavern wait / walk-in uncertainty at peak"
+      ],
+      "consistencySignal": "Praise for hospitality is more consistent than praise for surprise.",
+      "servicePattern": "Among the more frequently praised service rooms in this set.",
+      "dishesRecommended": [
+        "tavern à la carte when you want flexibility",
+        "tasting room when you want the format"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: hospitality and consistency over fireworks. Tavern vs tasting is the live choice. Not a ranking."
+    },
+    "balthazar": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "Google listing (third-party directory)"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "SoHo brasserie energy, breakfast/brunch, steak frites and oysters are what people name",
+        "The room still delivers the scene diners booked"
+      ],
+      "recurringComplaints": [
+        "Noise and tourist-trap debate — especially brunch",
+        "Service can feel rushed or indifferent when the room is slammed",
+        "Food called good-for-the-scene rather than a culinary destination"
+      ],
+      "consistencySignal": "Agreement that it is a scene; split on whether that is the point or the problem.",
+      "waitPattern": "Walk-in and waitlist culture; peak brunch is a wait.",
+      "dishesRecommended": [
+        "steak frites",
+        "oysters",
+        "brunch pastries / breakfast"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a noisy SoHo brasserie people still book for the room, with a durable tourist-trap argument attached. Not a ranking."
+    },
+    "commander-s-palace-new-orleans": {
+      "sampleSize": 6300,
+      "sourceMix": [
+        "Yelp listing (third-party directory)",
+        "Tripadvisor",
+        "Garden & Gun (signature dessert reporting)"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Turtle soup, shrimp Henican, and bread pudding soufflé (order ahead, whiskey cream) are the dishes named across decades of reviews",
+        "Jazz brunch and Garden District pageantry are as much the night as the plate"
+      ],
+      "recurringComplaints": [
+        "Tourist-institution debate — some locals treat it as a visitor room",
+        "Formality and ticket; brunch waits and the soufflé timing"
+      ],
+      "consistencySignal": "Dish names are unusually stable. The argument is 'whose New Orleans' more than 'what to order.'",
+      "dishesRecommended": [
+        "turtle soup",
+        "shrimp Henican",
+        "bread pudding soufflé with whiskey cream"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: three named dishes and a jazz-brunch institution. Yelp n≈6,300 is a listing sample and does not rank this record."
+    },
+    "cochon-new-orleans": {
+      "sampleSize": 5500,
+      "sourceMix": [
+        "Yelp listing (third-party directory)"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Pork — whole-animal Cajun/Creole plates — is the reason people book Cochon rather than a generic French Quarter dinner"
+      ],
+      "recurringComplaints": [
+        "Noise and a slammed Warehouse District room at peak",
+        "Portions and richness can outrun a table that wanted a lighter night"
+      ],
+      "consistencySignal": "Pork identity is stable; comfort vs. noise is the live tradeoff.",
+      "dishesRecommended": [
+        "pork dishes (house identity)",
+        "Cajun sides"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a pork house people still name, in a loud room. Yelp stars are context only."
+    },
+    "dooky-chase-s-restaurant-new-orleans": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "Tripadvisor",
+        "long-running public coverage of the Treme dining room"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Gumbo and fried chicken are the dishes people name; the room's civil-rights and community history is part of why they go",
+        "Lunch remains the practical path many reviews describe"
+      ],
+      "recurringComplaints": [
+        "Waits; limited hours versus visitor schedules",
+        "A destination institution — not a secret, and not a late-night walk-in"
+      ],
+      "consistencySignal": "Dish names and the institution story are stable. Confirm live hours before you treat lunch as a given.",
+      "waitPattern": "Expect a wait at peak lunch; this is not a reservation-first steakhouse pattern.",
+      "dishesRecommended": [
+        "gumbo",
+        "fried chicken"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: gumbo, fried chicken, and an institution people wait for. Hours and wait are the planning facts. No directory rating was captured as a listing sample this pass."
+    },
+    "nue": {
+      "sampleSize": 2193,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "OpenTable",
+        "The Infatuation Seattle"
+      ],
+      "recency": "2018–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Global street-food small plates that actually land — reviewers keep naming Sichuan wing towers, tocino, and brunch shareables",
+        "Capitol Hill group night: variety without a tasting lock-in"
+      ],
+      "recurringComplaints": [
+        "A huge map of cuisines means some tables hit a dud dish next to a great one",
+        "The room reads as a busy neighborhood spot, not a quiet date"
+      ],
+      "consistencySignal": "Identity (global street food, shareable) is stable. Execution is plate-by-plate, not a single house dish.",
+      "dishesRecommended": [
+        "Sichuan chicken wing tower",
+        "Filipino tocino brunch plates",
+        "shareable brunch"
+      ],
+      "dishesCriticized": [],
+      "waitPattern": "Walk-in friendly relative to tasting rooms; still busy at brunch.",
+      "patternSummary": "Public-review pattern: a Capitol Hill graze where the range is the point. Some plates miss. Directory stars do not rank this record."
+    },
+    "revel": {
+      "sampleSize": 1086,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "Tripadvisor",
+        "The Infatuation Seattle"
+      ],
+      "recency": "2022–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Short-rib dumplings are the dish people name, often as the reason to return",
+        "Korean-fusion plates at a Fremont counter/open kitchen, not a tasting lock"
+      ],
+      "recurringComplaints": [
+        "Louder and more harried when the room fills — dumplings can lag",
+        "A service surcharge shows up in recent notes; confirm the live check math"
+      ],
+      "consistencySignal": "Dumplings are the stable praise. Noise and pace are the stable tradeoff.",
+      "servicePattern": "Fine when the room is moderate; reviews call it harried at peak.",
+      "dishesRecommended": [
+        "short-rib dumplings",
+        "Korean-fusion noodles / rice plates"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: dumplings first, volume second. A listing rating is not a ranking."
+    },
+    "joule-seattle": {
+      "sampleSize": 1577,
+      "sourceMix": [
+        "OpenTable listing (third-party directory)",
+        "Yelp",
+        "Tripadvisor",
+        "Eater Seattle"
+      ],
+      "recency": "2024–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Korean steakhouse plates — short rib / kalbi and mackerel — are the dishes people name",
+        "Service is often called the equal of the cooking on a special-occasion night"
+      ],
+      "recurringComplaints": [
+        "Portions read small once you are paying steakhouse money; sharing entrees is a common warning",
+        "A surprise surcharge (reviewers have flagged 4%) shows up on the check"
+      ],
+      "consistencySignal": "Cooking identity is stable. Value and surcharge are the recurring friction.",
+      "portionValuePattern": "Small-plate steakhouse: order more than you think, and read the check for added fees.",
+      "dishesRecommended": [
+        "short rib / kalbi steak",
+        "mackerel",
+        "Korean rice cakes / scallion noodles"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a Korean steakhouse people return to, with small portions and check fees as the complaint. OpenTable stars are context only."
+    },
+    "lark-seattle": {
+      "sampleSize": 1557,
+      "sourceMix": [
+        "OpenTable",
+        "Yelp",
+        "Tripadvisor",
+        "Food & Wine"
+      ],
+      "recency": "2024–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Seasonal Northwest cooking (salmon, foraged mushrooms, generous tasting) and unhurried service",
+        "The four-course path is described as substantial, not precious tweezer food"
+      ],
+      "recurringComplaints": [
+        "A recurring minority call the cooking underwhelming at the ticket — beautiful, not memorable",
+        "Corkage and the overall spend are called out as planning facts, not surprises only at the end"
+      ],
+      "consistencySignal": "Room and service are the safer praise. Cooking-to-price is mixed.",
+      "dishesRecommended": [
+        "four-course tasting",
+        "wild King salmon when listed",
+        "foraged mushroom plates"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a Capitol Hill Northwest house with strong service and a split on whether the cooking matches the price. Not a star ranking."
+    },
+    "the-whale-wins-seattle": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "Tripadvisor",
+        "Eater (historical)",
+        "restaurant-owned about page"
+      ],
+      "recency": "2021–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Wood-oven vegetables and a slower, reservation-friendly sister to the Walrus oyster bar",
+        "A table that wants produce and fire more than a raw bar"
+      ],
+      "recurringComplaints": [
+        "Recent notes that some vegetable plates read less interesting than the house's reputation",
+        "Not a last-minute walk-in the way the oyster bar can be — a slower night, by design"
+      ],
+      "consistencySignal": "Wood oven + vegetables is the identity. Recent execution notes are thinner and mixed.",
+      "dishesRecommended": [
+        "wood-oven vegetables",
+        "wood-fired fish / meat when listed"
+      ],
+      "dishesCriticized": [
+        "pickled vegetable plates called dull in at least one recent Yelp note"
+      ],
+      "patternSummary": "Public-review pattern: Renee Erickson's wood-oven vegetable room, slower than the oyster bar. Recent vegetable plates are not uniformly praised. No ranking from stars."
+    },
+    "musang-seattle": {
+      "sampleSize": 673,
+      "sourceMix": [
+        "Yelp",
+        "Tripadvisor",
+        "The Infatuation Seattle (9.4)",
+        "Food & Wine",
+        "Reddit r/Seattle"
+      ],
+      "recency": "2024–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Beacon Hill Filipino cooking people name specifically — sinigang, adobo, pancit — in a converted Craftsman",
+        "Infatuation's 9.4 is a critic score, not a Deep Dish rank; diners still call it a destination"
+      ],
+      "recurringComplaints": [
+        "Loud room; small portions at a high ticket on Tripadvisor",
+        "A local minority calls the 'elevated' framing overrated — do not treat critic scores as consensus"
+      ],
+      "consistencySignal": "Filipino identity is stable. Volume and value are the live complaints.",
+      "dishesRecommended": [
+        "sinigang / sour broths",
+        "adobo and pancit plates"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a Beacon Hill Filipino room with loud praise and a loud room. Critic scores are not a ranking here."
+    },
+    "cafe-juanita-seattle": {
+      "sampleSize": 350,
+      "sourceMix": [
+        "Yelp",
+        "Tripadvisor",
+        "OpenTable",
+        "Reddit r/finedining",
+        "restaurant-owned pages"
+      ],
+      "recency": "2024–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Northern Italian tasting (risotto, scallops, pasta, a vegetarian/vegan path) with recovery-level service",
+        "Kirkland destination for a milestone night, not a Seattle walk-in"
+      ],
+      "recurringComplaints": [
+        "The live total (tasting + wine + service fee) is the shock: diners report $600–$1000 for two",
+        "Small tasting portions at that ticket are noted even by people who loved the risotto"
+      ],
+      "consistencySignal": "Cooking and service are the praise. The all-in number is the planning fact.",
+      "portionValuePattern": "Prix-fixe tasting: confirm the live ticket, wine, and service fee before you treat $205 as the night.",
+      "dishesRecommended": [
+        "risotto",
+        "pescatarian tasting",
+        "house pasta"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a Kirkland Italian tasting people dress up for, with a bill that routinely doubles the printed prix fixe. Stars do not rank it."
+    },
+    "staple-fancy-seattle": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "Tripadvisor",
+        "OpenTable",
+        "Food & Wine",
+        "Ethan Stowell owned pages"
+      ],
+      "recency": "2022–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Ballard family-style four-course pasta tasting — gnocchi/ragu when it lands, fried oysters as a bar path",
+        "Friendly service in an open room; the chef's menu is the default, not a secret"
+      ],
+      "recurringComplaints": [
+        "Pasta seasoning is the split: salty, lemon-heavy, or flavorless depending on the night",
+        "Pacing of the family-style barrage can feel like too much, too fast"
+      ],
+      "consistencySignal": "Format (family-style tasting, pasta) is stable. Execution of the pasta course is mixed.",
+      "dishesRecommended": [
+        "chef's four-course tasting",
+        "pasta / gnocchi when listed",
+        "fried oysters"
+      ],
+      "dishesCriticized": [
+        "pasta called under-seasoned or over-lemoned on recent Yelp/Tripadvisor notes"
+      ],
+      "patternSummary": "Public-review pattern: Ballard pasta tasting that people still book, with a live split on whether the pasta is actually seasoned. Not a ranking."
+    },
+    "tilikum-place-cafe-seattle": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "OpenTable",
+        "Reddit",
+        "restaurant-owned hours page"
+      ],
+      "recency": "2024–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Dutch babies and European brunch are the dishes people wait for",
+        "Dinner is repeatedly described as the quieter path"
+      ],
+      "recurringComplaints": [
+        "Brunch reservations book out; walk-in waits of an hour-plus are normal",
+        "Peak brunch service can drop a drink or a candle request — the food is the reason people still wait"
+      ],
+      "consistencySignal": "Dutch baby / brunch identity is stable. The wait is the planning fact.",
+      "waitPattern": "Treat brunch as a reserved or long-wait service. Dinner is the easier walk.",
+      "dishesRecommended": [
+        "Dutch baby",
+        "brunch plates",
+        "baked oysters when listed"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a Belltown brunch people plan weeks ahead. The wait is not a rumor. Stars do not rank it."
+    },
+    "hama-hama-oyster-saloon": {
+      "sampleSize": 1391,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "Tripadvisor",
+        "Eater Seattle",
+        "restaurant-owned saloon page (wait and weather language)"
+      ],
+      "recency": "2025–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Tide-to-table oysters on Hood Canal — raw and grilled — are the reason for the drive",
+        "The A-frame outdoor room and the farm view are part of the night, not a backdrop"
+      ],
+      "recurringComplaints": [
+        "It is outdoors with heaters, not an indoor dining room — dress for rain and wind",
+        "Summer waits over an hour are published on the restaurant's own page; the drive from Seattle is real"
+      ],
+      "consistencySignal": "Oysters and the outdoor farm are the stable praise. Weather and wait are first-party planning facts.",
+      "waitPattern": "Restaurant-owned: summer waits can run over an hour. Stump Bar / food truck is the overflow path they publish.",
+      "dishesRecommended": [
+        "raw oysters grown on the farm",
+        "grilled oysters"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern plus owned-page planning: a Hood Canal oyster farm you dress for. Google stars do not rank it."
+    },
+    "tusk": {
+      "sampleSize": 1213,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "Tripadvisor",
+        "New York Times (historical)"
+      ],
+      "recency": "2017–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Middle Eastern / Mediterranean plates through Pacific Northwest produce; patio is the calmer path",
+        "A polished East Burnside group room, not a tasting lock"
+      ],
+      "recurringComplaints": [
+        "Inside gets loud; this is not a whispered-date default",
+        "A small room that books — treat walk-in as a maybe, not a plan"
+      ],
+      "consistencySignal": "Produce-forward Middle Eastern identity is stable. Volume is the tradeoff.",
+      "dishesRecommended": [
+        "seasonal vegetable-forward mezze",
+        "patio when weather allows"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a bright East Burnside mezze room. Patio for conversation; inside for energy. Stars do not rank it."
+    },
+    "ox": {
+      "sampleSize": 1942,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "Tripadvisor",
+        "OpenTable"
+      ],
+      "recency": "2024–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Wood-fired steak and chimichurri — skirt steak and pork chops are the dishes people name",
+        "Attentive service in a classy-but-not-stiff NE Portland room"
+      ],
+      "recurringComplaints": [
+        "Tripadvisor's recurring pushback: loud, and overhyped once the steakhouse ticket is on the table",
+        "A fire-and-meat night, not a quiet conversation default"
+      ],
+      "consistencySignal": "Steak identity is stable. Noise and value are the split.",
+      "dishesRecommended": [
+        "skirt steak with chimichurri",
+        "pork chop",
+        "wood-fired meat"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: Portland's wood-fired steakhouse, loud on purpose. Directory stars are context only."
+    },
+    "langbaan": {
+      "sampleSize": 466,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "Tripadvisor",
+        "OpenTable",
+        "Oregonian / local coverage of the hidden-room format"
+      ],
+      "recency": "2019–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Thai tasting at a hidden counter — rotating monthly themes, live-fire, pairings people remember",
+        "Service at the chef's counter is the usual praise"
+      ],
+      "recurringComplaints": [
+        "Courses read as bite-sized flavor tasters to some diners who wanted a fuller plate",
+        "A small room that books; weekend reservations are a planning load, not a same-day hope"
+      ],
+      "consistencySignal": "Format (hidden Thai tasting, rotating theme) is stable. Portion vs. ticket is mixed.",
+      "waitPattern": "Hard reservation. Do not plan this as a walk-in.",
+      "dishesRecommended": [
+        "monthly themed tasting",
+        "wine / pairing path"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a hidden Thai tasting people still chase. Small bites and a hard book are the live facts. Stars do not rank it."
+    },
+    "kachka": {
+      "sampleSize": 2826,
+      "sourceMix": [
+        "Google listing (third-party directory)",
+        "Yelp",
+        "OpenTable"
+      ],
+      "recency": "2023–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Zakuski, pelmeni, and a Soviet-inspired room that works for counter lunch, happy hour, and a full dinner",
+        "Dumplings are the dish people reorder"
+      ],
+      "recurringComplaints": [
+        "Music and AC in the back room show up as comfort complaints",
+        "Isolated undercooked-chicken reports — a watch, not a file-wide warning"
+      ],
+      "consistencySignal": "Pelmeni / zakuski identity is stable. Room comfort is mixed.",
+      "dishesRecommended": [
+        "pelmeni",
+        "vareniki",
+        "zakuski spread",
+        "happy-hour dumplings"
+      ],
+      "dishesCriticized": [
+        "chicken called undercooked in at least one OpenTable note"
+      ],
+      "patternSummary": "Public-review pattern: Portland's Soviet dumpling house. Order pelmeni; confirm the room if you need quiet. Stars do not rank it."
+    },
+    "screen-door-portland": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "Tripadvisor",
+        "OpenTable",
+        "Reddit r/Portland",
+        "restaurant-owned pages"
+      ],
+      "recency": "2024–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Fried chicken and chicken-and-waffles are the dishes the restaurant itself names, and diners still wait for them",
+        "Southern brunch that works as a tourist and local default"
+      ],
+      "recurringComplaints": [
+        "Waits of an hour or two at peak; the house is primarily walk-in with limited reservations",
+        "A minority call the breading soggy or the wait not worth it — not a consensus, but not empty"
+      ],
+      "consistencySignal": "Fried chicken identity is first-party and public. The wait is the planning fact.",
+      "waitPattern": "Restaurant-owned: primarily walk-in, limited reservations. Plan for a waitlist.",
+      "dishesRecommended": [
+        "fried chicken",
+        "chicken and waffles",
+        "hush puppies"
+      ],
+      "dishesCriticized": [
+        "breading called soggy on at least one Reddit round-up"
+      ],
+      "patternSummary": "Public-review pattern: Portland fried chicken people queue for. The wait is on the restaurant's own page. Stars do not rank it."
+    },
+    "hat-yai-portland": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "Tripadvisor",
+        "Eater Portland"
+      ],
+      "recency": "2022–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Southern Thai fried chicken with rice-flour crust, curry, and roti — the combo locals tell visitors to get",
+        "Casual, not a tasting lock"
+      ],
+      "recurringComplaints": [
+        "Waits and order-timing friction at a casual fried-chicken counter",
+        "Spice and richness can outrun a table that wanted a light lunch"
+      ],
+      "consistencySignal": "Fried chicken + roti/curry combo is the stable praise. Pace is casual-busy.",
+      "dishesRecommended": [
+        "Thai fried chicken combo with curry and roti",
+        "ground pork when listed"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: Portland's Southern Thai fried-chicken counter. Casual, busy, not a white-tablecloth night. Stars do not rank it."
+    },
+    "eem-portland": {
+      "sampleSize": null,
+      "sourceMix": [
+        "Yelp",
+        "Tripadvisor",
+        "OpenTable",
+        "restaurant press page"
+      ],
+      "recency": "2022–2026",
+      "researchedAt": "2026-08-31",
+      "recurringPraise": [
+        "Thai-BBQ mashup — smoked meats, jungle-plant room, a live-fire energy reviewers still name",
+        "Walk-ins welcome is part of the house pitch"
+      ],
+      "recurringComplaints": [
+        "Loud on purpose; conversation is not the product",
+        "Menu-language misses (BBQ fried rice flagged as not actually gluten-free) — confirm dietary live, do not infer from the mashup"
+      ],
+      "consistencySignal": "Smoke + Thai is the identity. Volume and dietary precision are the watches.",
+      "dishesRecommended": [
+        "smoked Thai-BBQ plates",
+        "fried rice (confirm gluten live)"
+      ],
+      "dishesCriticized": [],
+      "patternSummary": "Public-review pattern: a loud Thai-BBQ room. Walk-in is the path; allergy safety is not. Stars do not rank it."
+    }
+  }
 }

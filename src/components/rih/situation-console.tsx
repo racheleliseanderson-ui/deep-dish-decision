@@ -1,6 +1,6 @@
 import { Chip, Eyebrow, Field, Toggle } from "@/components/rih/bits";
 import { CopyNightLink } from "@/components/rih/copy-night-link";
-import { dataset, records } from "@/lib/dataset";
+import { corpusMeta, groupForRegion } from "@/lib/corpus-meta";
 import {
   COMMITMENT_LEVELS,
   CONSTRAINTS,
@@ -32,14 +32,9 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
       s.constraints.includes(c) ? s.constraints.filter((x) => x !== c) : [...s.constraints, c],
     );
   const depth = situationDepth(s);
-  const regionChoices = Array.from(
-    new Set(
-      records
-        .filter((r) => !s.regionGroup || r.regionGroup === s.regionGroup)
-        .map((r) => r.region)
-        .filter(Boolean),
-    ),
-  ).sort();
+  const regionChoices = s.regionGroup
+    ? (corpusMeta.regionsByGroup[s.regionGroup] ?? []).slice().sort()
+    : Object.keys(corpusMeta.regionToGroup).sort();
 
   return (
     <section
@@ -209,7 +204,7 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
         </div>
 
         <div className="space-y-6 sm:space-y-7">
-          <Field label="Region group">
+          <Field label="Region group" hint="required to rank — Atlas still holds every record">
             <select
               value={s.regionGroup ?? ""}
               onChange={(e) =>
@@ -221,8 +216,8 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
               }
               className="w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm"
             >
-              <option value="">Any region group</option>
-              {dataset.regionGroups.map((g) => (
+              <option value="">Choose a region group</option>
+              {corpusMeta.regionGroups.map((g) => (
                 <option key={g} value={g}>
                   {g}
                 </option>
@@ -233,10 +228,18 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
           <Field label="Region">
             <select
               value={s.region ?? ""}
-              onChange={(e) => set("region", e.target.value || null)}
+              onChange={(e) => {
+                const value = e.target.value || null;
+                const group = value ? groupForRegion(value) : s.regionGroup;
+                onChange({
+                  ...s,
+                  region: value,
+                  regionGroup: group ?? s.regionGroup,
+                });
+              }}
               className="w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm"
             >
-              <option value="">Any region</option>
+              <option value="">Any city in this group</option>
               {regionChoices.map((name) => (
                 <option key={name} value={name}>
                   {name}
@@ -281,8 +284,9 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
           </div>
 
           <div className="shrink-0 sm:ml-auto sm:self-end sm:pb-0.5">
-            <Chip tone={inViewCount === totalCount ? "neutral" : "accent"}>
-              <span className="text-num">{inViewCount}</span> of {totalCount} records ranked live
+            <Chip tone={inViewCount === 0 ? "watch" : inViewCount === totalCount ? "neutral" : "accent"}>
+              <span className="text-num">{inViewCount}</span> of {totalCount}{" "}
+              {s.regionGroup || s.region ? "in this region" : "waiting on a region"}
             </Chip>
           </div>
         </div>

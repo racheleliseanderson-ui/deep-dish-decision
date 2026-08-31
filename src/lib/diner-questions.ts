@@ -7,8 +7,8 @@ import { isUnstated } from "@/lib/case-depth";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { firstPoint, statedText } from "@/lib/consumer-snapshot";
 import { buildFoodIntel } from "@/lib/food-intel";
-import { buildReputation } from "@/lib/reputation";
-import { getEnrichment } from "@/lib/enrichment";
+import { getInspection } from "@/lib/inspections";
+import { buildReputation, getListingSample, getResearchedPattern } from "@/lib/reputation";
 
 export type AnswerSource =
   | "firstPartyEvidence"
@@ -29,18 +29,18 @@ export type DinerAnswer = {
 export function buildDinerAnswers(record: RestaurantRecord): DinerAnswer[] {
   const food = buildFoodIntel(record);
   const rep = buildReputation(record.slug);
-  const google = getEnrichment(record.slug)?.google;
+  const listing = getListingSample(record.slug);
 
   return [
     foodGood(record, food, rep),
     worthMoney(record),
-    overallExperience(record),
+    overallExperience(record, rep),
     whatPeopleThink(rep),
     service(record, rep),
-    convenience(record, google),
+    convenience(record, listing, rep),
     dietary(record),
-    menuLike(record, food),
-    cleanTrustworthy(rep),
+    menuLike(record, food, rep),
+    cleanTrustworthy(record.slug),
     whatMakesDifferent(record, food),
   ];
 }
@@ -116,10 +116,13 @@ function worthMoney(record: RestaurantRecord): DinerAnswer {
   return q("spend", 2, "Is it worth the money?", bits.join(" "), "firstPartyEvidence", "Restaurant-owned pricing", false);
 }
 
-function overallExperience(record: RestaurantRecord): DinerAnswer {
+function overallExperience(
+  record: RestaurantRecord,
+  rep: ReturnType<typeof buildReputation>,
+): DinerAnswer {
   const atmo = firstPoint(record.atmosphereSummary, 180);
   const tags = experienceTags(record);
-  if (!atmo && !tags.length) {
+  if (!atmo && !tags.length && !rep.operationalNote) {
     return q(
       "experience",
       3,
@@ -131,11 +134,12 @@ function overallExperience(record: RestaurantRecord): DinerAnswer {
     );
   }
   const tagLine = tags.length ? ` Diner-facing tags on file: ${tags.join(", ")}.` : "";
+  const pause = rep.operationalNote ? ` ${rep.operationalNote}` : "";
   return q(
     "experience",
     3,
     "What is the overall experience?",
-    `${atmo ?? "Atmosphere is thinly stated."}${tagLine}`,
+    `${atmo ?? "Atmosphere is thinly stated."}${tagLine}${pause}`,
     "firstPartyEvidence",
     "Restaurant-owned atmosphere + recorded bands",
     false,
@@ -149,6 +153,7 @@ function whatPeopleThink(rep: ReturnType<typeof buildReputation>): DinerAnswer {
     if (rep.recurringComplaints.length)
       bits.push(`Recurring complaint: ${rep.recurringComplaints.join("; ")}.`);
     if (rep.sampleSize) bits.push(`Sample ${rep.sampleSize.toLocaleString()} · ${rep.recency ?? "recency unstated"}.`);
+    bits.push("This pattern does not rank the record.");
     return q(
       "people",
       4,
@@ -175,7 +180,9 @@ function service(
   rep: ReturnType<typeof buildReputation>,
 ): DinerAnswer {
   const stated = firstPoint(record.serviceSummary, 180);
-  const researched = getResearchedService(rep);
+  const researched =
+    rep.servicePattern ??
+    (rep.consistencySignal ? `Public-review pattern: ${rep.consistencySignal}` : null);
   const bits: string[] = [];
   bits.push(
     stated
@@ -183,8 +190,11 @@ function service(
       : "Service format is not stated on the restaurant's own pages.",
   );
   bits.push(
-    researched ??
-      "Repeated diner service experience (attentive, rushed, recovery) is not on file as a public-review pattern.",
+    researched
+      ? researched.endsWith(".")
+        ? researched
+        : `${researched}.`
+      : "Repeated diner service experience (attentive, rushed, recovery) is not on file as a public-review pattern.",
   );
   return q(
     "service",
@@ -197,7 +207,11 @@ function service(
   );
 }
 
-function convenience(record: RestaurantRecord, google: { amenities?: Record<string, boolean | undefined> } | undefined): DinerAnswer {
+function convenience(
+  record: RestaurantRecord,
+  listing: ReturnType<typeof getListingSample>,
+  rep: ReturnType<typeof buildReputation>,
+): DinerAnswer {
   const parts: string[] = [];
   const res = firstPoint(record.reservationDetails, 120);
   if (res) parts.push(res);
@@ -206,16 +220,9 @@ function convenience(record: RestaurantRecord, google: { amenities?: Record<stri
   if (!isUnstated(record.parkingTransit)) parts.push(firstPoint(record.parkingTransit, 90) ?? "");
   if (!isUnstated(record.typicalMealLength)) parts.push(firstPoint(record.typicalMealLength, 80) ?? "");
   if (!isUnstated(record.accessibilityState)) parts.push(firstPoint(record.accessibilityState, 90) ?? "");
-  const g = google?.amenities;
-  if (g) {
-    const extras: string[] = [];
-    if (g.takeout) extras.push("takeout listed");
-    if (g.delivery) extras.push("delivery listed");
-    if (extras.length)
-      parts.push(
-        `Google listing also flags ${extras.join(" and ")} — third-party directory signal, not a first-party promise.`,
-      );
-  }
+  if (rep.waitPattern) parts.push(`Public-review wait pattern: ${uncap(rep.waitPattern)}`);
+  if (rep.operationalNote) parts.push(rep.operationalNote);
+  void listing;
   const text = parts.filter(Boolean).join(" ");
   return q(
     "convenience",
@@ -256,11 +263,17 @@ function dietary(record: RestaurantRecord): DinerAnswer {
 function menuLike(
   record: RestaurantRecord,
   food: ReturnType<typeof buildFoodIntel>,
+  rep: ReturnType<typeof buildReputation>,
 ): DinerAnswer {
   const bits: string[] = [];
   if (food.menuFormat) bits.push(`Format: ${food.menuFormat}.`);
   if (food.whatToOrder) bits.push(food.whatToOrder);
   if (food.beverageProgram) bits.push(`Drinks: ${uncap(food.beverageProgram)}`);
+  if (rep.dishesRecommended.length) {
+    bits.push(
+      `Public-review pattern names: ${rep.dishesRecommended.slice(0, 3).join("; ")} — not a first-party menu, confirm live.`,
+    );
+  }
   if (!bits.length) {
     return q(
       "menu",
@@ -275,15 +288,38 @@ function menuLike(
   return q("menu", 8, "What is the menu like?", bits.join(" "), "firstPartyEvidence", "Restaurant-owned menu language", false);
 }
 
-function cleanTrustworthy(rep: ReturnType<typeof buildReputation>): DinerAnswer {
+function cleanTrustworthy(slug: string): DinerAnswer {
+  const insp = getInspection(slug);
+  const researched = getResearchedPattern(slug);
+  if (!insp) {
+    const extra = researched?.cleanlinessPattern
+      ? ` Public-review cleanliness commentary on file: ${researched.cleanlinessPattern}`
+      : " Public-review cleanliness commentary is shown only as a labeled pattern, and none is on file.";
+    return q(
+      "trust",
+      9,
+      "Is it clean and trustworthy?",
+      `No health-inspection record is on this file.${extra} A single angry review would never become a warning here.`,
+      "notOnFile",
+      "Conservative — inspections not in corpus",
+      true,
+    );
+  }
+  const closed = insp.closed ? " The inspection record flags a closure on that visit." : " Not recorded as closed.";
+  const red = insp.redViolations.length
+    ? ` Red / critical items on that visit: ${insp.redViolations.slice(0, 3).join("; ")}.`
+    : " No red / critical items listed on that visit.";
+  const grade = insp.grade ? ` Posted grade: ${insp.grade}.` : "";
+  const result = insp.latestResult ? ` Latest result: ${insp.latestResult}.` : "";
+  const answer = `${insp.jurisdiction} snapshot dated ${insp.latestInspectionDate ?? "unstated"}.${result}${grade}${red}${closed} ${insp.note} This is not a Deep Dish cleanliness score.`;
   return q(
     "trust",
     9,
     "Is it clean and trustworthy?",
-    "No health-inspection record is on this file. Public-review cleanliness commentary is shown only as a labeled pattern, and none is on file. A single angry review would never become a warning here.",
-    "notOnFile",
-    "Conservative — inspections not in corpus",
-    true,
+    answer,
+    "publicReputationEvidence",
+    `${insp.jurisdiction} · public record, not a ranking`,
+    false,
   );
 }
 
@@ -328,11 +364,6 @@ function experienceTags(record: RestaurantRecord): string[] {
   push(/view|lake|skyline|cascade/, "view");
   push(/lounge/, "lounge path");
   return [...new Set(tags)].slice(0, 6);
-}
-
-function getResearchedService(rep: ReturnType<typeof buildReputation>): string | null {
-  if (rep.consistencySignal) return `Public-review pattern: ${rep.consistencySignal}.`;
-  return null;
 }
 
 function q(

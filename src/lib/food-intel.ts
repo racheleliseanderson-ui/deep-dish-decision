@@ -4,6 +4,7 @@
  * Derived only from restaurant-owned fields already on the case file.
  * Never claims the food is "good". Never mixes review sentiment.
  */
+import dishesRaw from "@/data/first-party-dishes.json";
 import { isUnstated } from "@/lib/case-depth";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { firstPoint, statedText } from "@/lib/consumer-snapshot";
@@ -31,6 +32,12 @@ const FORMAT_PATTERNS: Array<[RegExp, string]> = [
   [/counter/i, "counter service"],
 ];
 
+const namedFile = dishesRaw as { records: Record<string, string[]> };
+
+export function namedDishesFor(slug: string): string[] {
+  return (namedFile.records[slug] ?? []).filter(isDishLike);
+}
+
 export function buildFoodIntel(record: RestaurantRecord): FirstPartyFoodIntel {
   const menu = statedText(record.menuSummary) ?? "";
   const cuisine = statedText(record.cuisineContext) ?? "";
@@ -40,7 +47,10 @@ export function buildFoodIntel(record: RestaurantRecord): FirstPartyFoodIntel {
   const formats = FORMAT_PATTERNS.filter(([re]) => re.test(blob)).map(([, label]) => label);
   const menuFormat = formats.length ? unique(formats).join("; ") : firstPoint(record.menuSummary, 120);
 
-  const signatureMentions = extractSignatures(`${cuisine} ${menu}`);
+  const signatureMentions = unique([
+    ...extractSignatures(`${cuisine} ${menu}`),
+    ...namedDishesFor(record.slug),
+  ]).slice(0, 5);
   const strongestCategories = (record.cuisineTags ?? []).filter((t) => t && !isUnstated(t)).slice(0, 5);
   const chefOrPov = extractChef(cuisine) ?? extractChef(menu);
   const sourcingClaims = extractSourcing(blob);
@@ -72,13 +82,26 @@ export function buildFoodIntel(record: RestaurantRecord): FirstPartyFoodIntel {
   };
 }
 
+function isDishLike(s: string): boolean {
+  const t = s.trim();
+  if (t.length < 3 || t.length > 70) return false;
+  if (
+    /goldbelly|nationwide|farms|hospitality|cuisine rooted|modern approach|wine program|globally inspired|seasonal menu sourced|private dining|welcoming|deep respect|exceptional asian|italian tradition|crafted cocktails|brunch, and dinner|\bstop$|made-from-scratch fare|prime steaks, seafood/i.test(
+      t,
+    )
+  ) {
+    return false;
+  }
+  return true;
+}
+
 function extractSignatures(text: string): string[] {
   const out: string[] = [];
   const re =
     /(?:signature|known for|famous for|house[- ]made|house specialty(?: is)?)\s+([^.;:]{4,80})/gi;
   for (const m of text.matchAll(re)) {
     const bit = (m[1] ?? "").trim().replace(/\s+/g, " ");
-    if (bit && !/not stated/i.test(bit)) out.push(bit.replace(/[,.]$/, ""));
+    if (bit && !/not stated/i.test(bit) && isDishLike(bit)) out.push(bit.replace(/[,.]$/, ""));
   }
   return unique(out).slice(0, 4);
 }

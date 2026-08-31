@@ -1,5 +1,6 @@
-import { dataset, type RestaurantRecord } from "@/lib/dataset";
-import * as enrichmentJoin from "@/lib/enrichment";
+import type { RestaurantRecord } from "@/lib/dataset";
+import { corpusMeta } from "@/lib/corpus-meta";
+import { getCompleteness } from "@/lib/completeness";
 
 /* ------------------------------------------------------------------ *
  * Situation model
@@ -37,8 +38,8 @@ export type Constraint = (typeof CONSTRAINTS)[number];
 
 export const COMMITMENT_LEVELS = ["Light", "Moderate", "High", "Structured", "Immersive"] as const;
 export const PLANNING_LEVELS = ["Standard", "Material", "Heavy"] as const;
-export const DAYPARTS = dataset.daypartOptions;
-export const SPEND_BANDS = dataset.spendBandOptions;
+export const DAYPARTS = corpusMeta.daypartOptions;
+export const SPEND_BANDS = corpusMeta.spendBandOptions;
 
 export type Situation = {
   occasion: Occasion | null;
@@ -734,20 +735,10 @@ export function buildFindings(
     });
   }
 
-  /* --- labeled enrichment join (never critical / never overwrites) ---- */
-  if (opts.useEnrichment !== false) {
-    // Lazy import avoided: static import at top would cycle; call via require-like helper.
-    const { buildEnrichmentFindings } = enrichmentJoin;
-    for (const ef of buildEnrichmentFindings(r, s, c)) {
-      // Force non-critical: third-party must not fail-close.
-      if (ef.layer === "critical") continue;
-      push({
-        ...ef,
-        layer: ef.layer === "watch" ? "watch" : "unknown",
-        provenance: ef.provenance ?? "enrichment",
-      });
-    }
-  }
+  /* Directory listing samples and review patterns never join ranking.
+     They live on the public-reputation layer. useEnrichment is accepted
+     for call-site compatibility and is a no-op here. */
+  void opts;
 
   const order: Record<FindingLayer, number> = { critical: 0, watch: 1, unknown: 2 } as never;
   return f
@@ -867,13 +858,11 @@ export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOption
   // Evidence depth rewards completeness, never invents it
   fit += (r.depthFilled / Math.max(1, r.depthTotal)) * 8;
   fit -= Math.min(6, r.unknownsCount) * 1.2;
-  if (opts.useEnrichment !== false) {
-    const ownedCompleteness = enrichmentJoin.getEnrichment(r.slug)?.meta?.completeness;
-    if (typeof ownedCompleteness === "number") {
-      fit += (ownedCompleteness / 100) * 6;
-      if (ownedCompleteness >= 70) reasons.push("owned-site file is ready");
-      else if (ownedCompleteness < 50) fit -= 4;
-    }
+  const ownedCompleteness = getCompleteness(r.slug)?.completeness;
+  if (typeof ownedCompleteness === "number") {
+    fit += (ownedCompleteness / 100) * 6;
+    if (ownedCompleteness >= 70) reasons.push("owned-site file is ready");
+    else if (ownedCompleteness < 50) fit -= 4;
   }
 
   const blocked = situationalCriticals.some((f) => f.impact >= 90);
@@ -988,4 +977,4 @@ export function decisionBrief(sc: Scored, s: Situation): Brief {
   return { verdict, verdictTone: tone, fitLine, riskLine, burdenLine, nextAction, confirmCalls };
 }
 
-export const OPS = dataset.ops;
+export const OPS = corpusMeta.ops;

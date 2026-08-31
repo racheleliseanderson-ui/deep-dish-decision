@@ -1,5 +1,5 @@
 import { useShortlist } from "@/lib/shortlist";
-import { bySlug } from "@/lib/dataset";
+import { titleForSlug } from "@/lib/corpus-meta";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
@@ -14,7 +14,7 @@ export function NightPlanBar() {
   const shortlist = useShortlist();
   const count = shortlist.slugs.length;
   const titles = shortlist.slugs
-    .map((s) => bySlug.get(s)?.title)
+    .map((s) => titleForSlug(s))
     .filter(Boolean)
     .slice(0, 3) as string[];
   const [copied, setCopied] = useState(false);

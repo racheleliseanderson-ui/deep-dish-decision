@@ -3,7 +3,7 @@ import { FindingRow } from "@/components/rih/findings";
 import { ListingFace } from "@/components/rih/listing-face";
 import { isUnstated } from "@/lib/case-depth";
 import { whyGoLine } from "@/lib/consumer-snapshot";
-import { enrichmentAudit, ownedSiteEvidence } from "@/lib/enrichment";
+import { getCompleteness } from "@/lib/completeness";
 import { conditionChips, scenarioChips } from "@/lib/scenario-chips";
 import type { Scored, Situation } from "@/lib/intelligence";
 import { useShortlist } from "@/lib/shortlist";
@@ -31,10 +31,9 @@ export function RecordCard({
   const lead = sc.findings.slice(0, open ? sc.findings.length : 2);
   const sitChips = scenarioChips(situation);
   const condChips = conditionChips(r, situation, sc.blocked);
-  const audit = enrichmentAudit(r.slug);
-  const owned = ownedSiteEvidence(r.slug);
-  const quoteCount = owned.groups.reduce((n, g) => n + g.quotes.length, 0);
-  const completeness = audit.completeness;
+  const completenessRow = getCompleteness(r.slug);
+  const quoteCount = completenessRow?.quoteCount ?? 0;
+  const completeness = completenessRow?.completeness ?? null;
   const completenessTone =
     completeness == null
       ? "unknown"
