@@ -1,6 +1,443 @@
 {
   "runs": [
     {
+      "kind": "level-records",
+      "startedAt": "2026-08-31T01:50:12.167Z",
+      "finishedAt": "2026-08-31T01:50:12.167Z",
+      "records": 854,
+      "promoted": 17,
+      "fullBefore": 836,
+      "fullAfter": 854,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 833,
+        "officialConflicts": 11,
+        "thinRecords": 453,
+        "avgUnknowns": 5.15,
+        "avgThinFields": 7.61,
+        "lastReviewAt": "2026-08-31",
+        "reachableAtLastReview": 207
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T01:48:49.381Z",
+      "finishedAt": "2026-08-31T01:50:00.297Z",
+      "batchSize": 18,
+      "cities": [
+        "Fort Worth, Texas",
+        "Savannah, Georgia",
+        "Colorado Springs, Colorado"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 94,
+      "corpusEnriched": 854,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T01-48-49-381Z-enrich-owned",
+      "records": [
+        {
+          "slug": "bonnell-s-fine-texas-cuisine-fort-worth",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "ellerbe-fine-foods-fort-worth",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "grace-fort-worth",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "joe-t-garcia-s-fort-worth",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "saint-emilion-restaurant-fort-worth",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 3",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "clay-pigeon-food-drink-fort-worth",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "the-olde-pink-house-savannah",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "elizabeth-on-37th-savannah",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "local-11ten-savannah",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "brochu-s-family-tradition-savannah",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "alligator-soul-savannah",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "circa-1875-savannah",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "four-by-brother-luck-colorado-springs",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "the-rabbit-hole-colorado-springs",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "ephemera-colorado-springs",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "paravicini-s-italian-bistro-colorado-springs",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "shuga-s-colorado-springs",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 4",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "pizzeria-rustica-colorado-springs",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T01:48:49.022Z",
+      "finishedAt": "2026-08-31T01:48:49.108Z",
+      "cities": [
+        {
+          "city": "Fort Worth, TX",
+          "queueCity": "Fort Worth",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Savannah, GA",
+          "queueCity": "Savannah",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Colorado Springs, CO",
+          "queueCity": "Colorado Springs",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 18,
+      "duplicatesSkipped": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T01-48-49-022Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "bonnell-s-fine-texas-cuisine-fort-worth",
+        "ellerbe-fine-foods-fort-worth",
+        "grace-fort-worth",
+        "joe-t-garcia-s-fort-worth",
+        "saint-emilion-restaurant-fort-worth",
+        "clay-pigeon-food-drink-fort-worth",
+        "the-olde-pink-house-savannah",
+        "elizabeth-on-37th-savannah",
+        "local-11ten-savannah",
+        "brochu-s-family-tradition-savannah",
+        "alligator-soul-savannah",
+        "circa-1875-savannah",
+        "four-by-brother-luck-colorado-springs",
+        "the-rabbit-hole-colorado-springs",
+        "ephemera-colorado-springs",
+        "paravicini-s-italian-bistro-colorado-springs",
+        "shuga-s-colorado-springs",
+        "pizzeria-rustica-colorado-springs"
+      ]
+    },
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-08-31T01:41:36.325Z",
+      "finishedAt": "2026-08-31T01:44:21.173Z",
+      "batchSize": 10,
+      "cities": [
+        "Charlotte, North Carolina",
+        "San Diego, California",
+        "Anchorage, Alaska",
+        "Bakersfield, California",
+        "San Francisco, California",
+        "Des Moines, Iowa",
+        "Alhambra, California",
+        "Houston, Texas"
+      ],
+      "resolved": 0,
+      "unresolved": 7,
+      "sourceLimited": 3,
+      "deferred": 0,
+      "avgCompleteness": 95,
+      "corpusEnriched": 836,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 7
+      },
+      "retries": 15,
+      "failures": 7,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T01-41-36-325Z-hygiene-owned",
+      "records": [
+        {
+          "slug": "barrington-s-charlotte",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "born-raised-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        },
+        {
+          "slug": "ironside-fish-oyster-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        },
+        {
+          "slug": "jens-restaurant-anchorage",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 0 fetch failed:CERT_HAS_EXPIRED"
+          ]
+        },
+        {
+          "slug": "locale-farm-to-table-eatery-bakersfield",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+          ]
+        },
+        {
+          "slug": "mr-szechuan",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        },
+        {
+          "slug": "oak-park-des-moines",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "chengdu-taste",
+          "matchStatus": "source-limited",
+          "completeness": 72,
+          "notes": [
+            "operator platform source; no owned website"
+          ]
+        },
+        {
+          "slug": "di-an-pho",
+          "matchStatus": "source-limited",
+          "completeness": 72,
+          "notes": [
+            "operator platform source; no owned website"
+          ]
+        },
+        {
+          "slug": "spicy-king",
+          "matchStatus": "source-limited",
+          "completeness": 72,
+          "notes": [
+            "operator platform source; no owned website"
+          ]
+        }
+      ],
+      "hygiene": {
+        "hygieneDue": 21,
+        "selected": [
+          "barrington-s-charlotte",
+          "born-raised-san-diego",
+          "ironside-fish-oyster-san-diego",
+          "jens-restaurant-anchorage",
+          "locale-farm-to-table-eatery-bakersfield",
+          "mr-szechuan",
+          "oak-park-des-moines",
+          "chengdu-taste",
+          "di-an-pho",
+          "spicy-king"
+        ],
+        "reasons": {
+          "barrington-s-charlotte": [
+            "match-site-failure"
+          ],
+          "born-raised-san-diego": [
+            "match-site-failure",
+            "site-failure:site 429 HTTP 429"
+          ],
+          "ironside-fish-oyster-san-diego": [
+            "match-site-failure",
+            "site-failure:site 429 HTTP 429"
+          ],
+          "jens-restaurant-anchorage": [
+            "match-site-failure"
+          ],
+          "locale-farm-to-table-eatery-bakersfield": [
+            "match-site-failure"
+          ],
+          "mr-szechuan": [
+            "match-site-failure",
+            "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ],
+          "oak-park-des-moines": [
+            "match-site-failure"
+          ],
+          "chengdu-taste": [
+            "source-limited"
+          ],
+          "di-an-pho": [
+            "source-limited"
+          ],
+          "spicy-king": [
+            "source-limited"
+          ]
+        }
+      }
+    },
+    {
       "kind": "hygiene-owned",
       "startedAt": "2026-08-28T23:22:35.282Z",
       "finishedAt": "2026-08-28T23:25:38.640Z",
@@ -12136,336 +12573,6 @@
         },
         {
           "slug": "the-purple-pig-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "discover",
-      "startedAt": "2026-08-10T22:54:30.345Z",
-      "finishedAt": "2026-08-10T22:54:35.187Z",
-      "batchSize": 10,
-      "cities": [
-        {
-          "city": "New York, NY",
-          "found": 37,
-          "inserted": 10,
-          "duplicates": 0
-        },
-        {
-          "city": "Los Angeles, CA",
-          "found": 31,
-          "inserted": 10,
-          "duplicates": 0
-        },
-        {
-          "city": "Chicago, IL",
-          "found": 32,
-          "inserted": 10,
-          "duplicates": 2
-        },
-        {
-          "city": "Dallas, TX",
-          "found": 30,
-          "inserted": 10,
-          "duplicates": 1
-        }
-      ],
-      "inserted": 40,
-      "duplicatesSkipped": 3,
-      "apiCalls": {
-        "placesSearchText": 8
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T22-54-30-346Z-discover",
-      "insertedSlugs": [
-        "carmine-s-44th-street-nyc",
-        "pier-17",
-        "balthazar",
-        "au-cheval",
-        "fraunces-tavern",
-        "the-smith",
-        "buddakan",
-        "boucherie-union-square",
-        "gramercy-tavern",
-        "le-bernardin",
-        "philippe-the-original",
-        "bottega-louie",
-        "perch",
-        "re-publique",
-        "joey-dtla",
-        "bestia",
-        "chubby-cattle-bbq-little-tokyo",
-        "girl-the-goat-los-angeles",
-        "e-lephante",
-        "home-restaurant",
-        "stk-steakhouse",
-        "aba",
-        "the-dearborn",
-        "summer-house-santa-monica",
-        "the-purple-pig-restaurant",
-        "river-roast",
-        "il-porcellino",
-        "alla-vita",
-        "siena-tavern",
-        "maple-ash",
-        "kitchen-kocktails",
-        "terry-black-s-barbecue",
-        "y-o-ranch-steakhouse",
-        "the-woolworth",
-        "3eleven-kitchen-and-cocktails",
-        "the-hampton-social-dallas",
-        "kenny-s-wood-fired-grill",
-        "perry-s-steakhouse-grille",
-        "the-henry",
-        "chet-s-dallas"
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:40:48.938Z",
-      "finishedAt": "2026-08-10T21:42:39.440Z",
-      "batchSize": 6,
-      "cities": [
-        "Helena, Montana",
-        "Billings, Montana",
-        "Missoula, Montana",
-        "Bozeman, Montana"
-      ],
-      "resolved": 6,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 86,
-      "corpusEnriched": 41,
-      "apiCalls": {
-        "google": 6,
-        "firecrawl": 15
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-40-48-936Z-enrich",
-      "records": [
-        {
-          "slug": "luccas",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "ten",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        },
-        {
-          "slug": "the-keep-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "walkers-grill",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        },
-        {
-          "slug": "bistro-enzo",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "blackbird-kitchen",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:39:12.848Z",
-      "finishedAt": "2026-08-10T21:39:36.090Z",
-      "batchSize": 9,
-      "cities": [
-        "Yakima, Washington",
-        "Richland, Washington",
-        "Boise, Idaho",
-        "Helena, Montana",
-        "Billings, Montana",
-        "Missoula, Montana",
-        "Bozeman, Montana"
-      ],
-      "resolved": 3,
-      "unresolved": 6,
-      "deferred": 0,
-      "avgCompleteness": 78,
-      "corpusEnriched": 41,
-      "apiCalls": {
-        "google": 9,
-        "firecrawl": 4
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-39-12-845Z-enrich",
-      "records": [
-        {
-          "slug": "crafted-yakima",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "anthonys-at-columbia-point",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        },
-        {
-          "slug": "the-lively",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "luccas",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "ten",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "the-keep-restaurant",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "walkers-grill",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "bistro-enzo",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        },
-        {
-          "slug": "blackbird-kitchen",
-          "matchStatus": "unresolved",
-          "completeness": 29,
-          "notes": [
-            "unresolved"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T21:37:04.913Z",
-      "finishedAt": "2026-08-10T21:39:09.105Z",
-      "batchSize": 10,
-      "cities": [
-        "Walla Walla, Washington",
-        "Victoria, British Columbia",
-        "Vancouver, British Columbia",
-        "Orcas Island, Washington",
-        "San Juan Island, Washington",
-        "Coeur d’Alene, Idaho",
-        "Whistler, British Columbia",
-        "Sooke, British Columbia",
-        "Ashland, Oregon"
-      ],
-      "resolved": 10,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 86,
-      "corpusEnriched": 32,
-      "apiCalls": {
-        "google": 10,
-        "firecrawl": 29
-      },
-      "retries": 7,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T21-37-04-911Z-enrich",
-      "records": [
-        {
-          "slug": "passatempo-taverna",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "wind-cries-mary",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "st-lawrence",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "the-courtney-room",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "matia-kitchen",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "duck-soup",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "beverlys",
-          "matchStatus": "resolved",
-          "completeness": 88,
-          "notes": []
-        },
-        {
-          "slug": "araxi-restaurant-oyster-bar",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "wild-mountain-food-drink",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "peerless-restaurant-bar",
           "matchStatus": "resolved",
           "completeness": 88,
           "notes": []

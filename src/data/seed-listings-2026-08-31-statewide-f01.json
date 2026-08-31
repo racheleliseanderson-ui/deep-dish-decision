@@ -1,0 +1,145 @@
+{
+  "note": "Statewide fill F-01. Mid-size cities after the state floor: Fort Worth, Savannah, Colorado Springs. Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. Reata (403), The Grey (timeout), Edelweiss (timeout), and Café Modern (domain-for-sale) were excluded.",
+  "generatedAt": "2026-08-31T01:45:00.000Z",
+  "batches": [
+    {
+      "city": "Fort Worth",
+      "stateCode": "TX",
+      "listings": [
+        {
+          "title": "Bonnell's Fine Texas Cuisine",
+          "website": "https://bonnellstexas.com/",
+          "phone": "+1-817-738-5489",
+          "address": "4259 Bryant Irvin Road, Fort Worth, TX 76109",
+          "cuisineTags": ["Texas", "Steak", "Seafood"]
+        },
+        {
+          "title": "Ellerbe Fine Foods",
+          "website": "https://ellerbefinefoods.com/",
+          "phone": "+1-817-926-3663",
+          "address": "1501 Magnolia Avenue, Fort Worth, TX 76104",
+          "cuisineTags": ["Farm-to-table", "American"]
+        },
+        {
+          "title": "Grace",
+          "website": "https://gracefortworth.com/",
+          "phone": "+1-817-877-3388",
+          "address": "777 Main Street, Fort Worth, TX 76102",
+          "cuisineTags": ["American", "Contemporary"]
+        },
+        {
+          "title": "Joe T. Garcia's",
+          "website": "https://www.joetgarcias.com/",
+          "phone": "+1-817-626-4356",
+          "address": "2201 N Commerce St, Fort Worth, TX 76164",
+          "cuisineTags": ["Mexican", "Tex-Mex"]
+        },
+        {
+          "title": "Saint-Emilion Restaurant",
+          "website": "https://www.saint-emilionrestaurant.com/",
+          "phone": "+1-817-737-2781",
+          "address": "3617 W 7th St, Fort Worth, TX 76107",
+          "cuisineTags": ["French", "Bistro"]
+        },
+        {
+          "title": "Clay Pigeon Food & Drink",
+          "website": "https://www.claypigeonfd.com/",
+          "phone": "+1-817-882-8065",
+          "address": "2731 White Settlement Road, Fort Worth, TX 76107",
+          "cuisineTags": ["American", "Seasonal"]
+        }
+      ]
+    },
+    {
+      "city": "Savannah",
+      "stateCode": "GA",
+      "listings": [
+        {
+          "title": "The Olde Pink House",
+          "website": "https://www.theoldepinkhouserestaurant.com/",
+          "phone": "+1-912-232-4286",
+          "address": "23 Abercorn Street, Savannah, GA 31401",
+          "cuisineTags": ["Southern", "Seafood"]
+        },
+        {
+          "title": "Elizabeth on 37th",
+          "website": "https://www.elizabethon37threstaurant.com/",
+          "phone": "+1-912-236-5547",
+          "address": "Savannah, GA",
+          "cuisineTags": ["Southern", "Coastal"]
+        },
+        {
+          "title": "Local 11ten",
+          "website": "https://www.local11ten.com/",
+          "phone": "+1-912-790-9000",
+          "address": "1110 Bull St, Savannah, GA 31401",
+          "cuisineTags": ["Farm-to-table", "American"]
+        },
+        {
+          "title": "Brochu's Family Tradition",
+          "website": "https://www.brochusfamilytradition.com/",
+          "address": "2400 Bull Street Suite 8, Savannah, GA 31401",
+          "cuisineTags": ["Southern", "Fried chicken"]
+        },
+        {
+          "title": "Alligator Soul",
+          "website": "https://alligatorsoul.com/",
+          "phone": "+1-912-232-7899",
+          "address": "114 Barnard Street, Savannah, GA 31401",
+          "cuisineTags": ["Southern", "Wild game"]
+        },
+        {
+          "title": "Circa 1875",
+          "website": "https://www.circa1875.com/",
+          "address": "48 Whitaker Street, Savannah, GA 31401",
+          "cuisineTags": ["French", "Bistro"]
+        }
+      ]
+    },
+    {
+      "city": "Colorado Springs",
+      "stateCode": "CO",
+      "listings": [
+        {
+          "title": "Four by Brother Luck",
+          "website": "https://www.fourbybrotherluck.com/",
+          "phone": "+1-719-434-2741",
+          "address": "321 N Tejon St, Colorado Springs, CO 80903",
+          "cuisineTags": ["Southwestern", "Tasting menu"]
+        },
+        {
+          "title": "The Rabbit Hole",
+          "website": "https://www.rabbitholedinner.com/",
+          "address": "101 N Tejon St, Colorado Springs, CO 80903",
+          "cuisineTags": ["New American", "Cocktails"]
+        },
+        {
+          "title": "Ephemera",
+          "website": "https://www.ephemeradinners.com/",
+          "phone": "+1-719-559-2600",
+          "address": "514 S Tejon St, Colorado Springs, CO 80903",
+          "cuisineTags": ["Tasting menu", "New American"]
+        },
+        {
+          "title": "Paravicini's Italian Bistro",
+          "website": "https://www.paravicinis.com/",
+          "phone": "+1-719-471-8200",
+          "address": "2802 West Colorado Ave, Colorado Springs, CO 80904",
+          "cuisineTags": ["Italian"]
+        },
+        {
+          "title": "Shuga's",
+          "website": "https://www.shugas.com/",
+          "address": "702 S Cascade Ave, Colorado Springs, CO 80903",
+          "cuisineTags": ["American", "Cocktails"]
+        },
+        {
+          "title": "Pizzeria Rustica",
+          "website": "https://pizzeriarustica.com/",
+          "address": "2527 West Colorado Avenue, Colorado Springs, CO 80904",
+          "cuisineTags": ["Pizza", "Italian"]
+        }
+      ]
+    }
+  ]
+}

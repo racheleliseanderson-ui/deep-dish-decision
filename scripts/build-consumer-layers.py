@@ -91,6 +91,7 @@ def extract_named(record: dict, site: dict) -> list[str]:
         for m in re.finditer(pat, blob, re.I):
             bit = (m.group(1) if m.lastindex else m.group(0)).strip()
             bit = re.sub(r"\s+", " ", bit).strip(" ,.;")
+            bit = re.sub(r"^like\s+", "", bit, flags=re.I)
             if skip.search(bit):
                 continue
             if 3 < len(bit) < 80 and not re.search(r"not stated", bit, re.I):

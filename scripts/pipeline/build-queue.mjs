@@ -36,6 +36,12 @@ const METROS = [
   ["Cheyenne", "WY", 100512], ["Anchorage", "AK", 396317], ["Honolulu", "HI", 1016508],
 ];
 
+const STATEWIDE_FILL = [
+  ["Fort Worth", "TX", 978234],
+  ["Savannah", "GA", 147780],
+  ["Colorado Springs", "CO", 488694],
+];
+
 const existing = readJson(PATHS.queue, null);
 const prior = new Map((existing?.cities ?? []).map((c) => [`${c.city}|${c.stateCode}`, c]));
 
@@ -78,6 +84,25 @@ for (const [name, meta] of missing) {
     inserted: before?.inserted ?? 0,
     lastRunAt: before?.lastRunAt ?? null,
     note: "Statewide seed — no metro in the top list covers this state.",
+  });
+}
+
+for (const [city, stateCode, population] of STATEWIDE_FILL) {
+  const key = `${city}|${stateCode}`;
+  if (cities.some((c) => `${c.city}|${c.stateCode}` === key)) continue;
+  const before = prior.get(key);
+  priority += 1;
+  cities.push({
+    city,
+    stateCode,
+    population,
+    priority,
+    tier: "statewide-fill",
+    status: before?.status ?? "pending",
+    pinned: before?.pinned ?? false,
+    inserted: before?.inserted ?? 0,
+    lastRunAt: before?.lastRunAt ?? null,
+    note: before?.note ?? "Statewide fill of a mid-size city after the state floor.",
   });
 }
 

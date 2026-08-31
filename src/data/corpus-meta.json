@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-08-28T03:27:08.444Z",
-  "builtAt": "2026-08-31T01:18:40Z",
-  "count": 836,
-  "regions": 122,
+  "generatedAt": "2026-08-31T01:50:12.072Z",
+  "builtAt": "2026-08-31T01:51:06Z",
+  "count": 854,
+  "regions": 125,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 814,
+    "current": 833,
     "officialConflicts": 11,
-    "thinRecords": 446,
-    "avgUnknowns": 5.16,
-    "avgThinFields": 7.62,
-    "lastReviewAt": "2026-08-21",
-    "reachableAtLastReview": 194
+    "thinRecords": 453,
+    "avgUnknowns": 5.15,
+    "avgThinFields": 7.61,
+    "lastReviewAt": "2026-08-31",
+    "reachableAtLastReview": 207
   },
-  "fullCaseFiles": 836,
-  "listingOnly": 11,
+  "fullCaseFiles": 854,
+  "listingOnly": 10,
   "regionGroups": [
     "Alabama",
     "Alaska",
@@ -110,6 +110,7 @@
       "Tustin, CA"
     ],
     "Colorado": [
+      "Colorado Springs, CO",
       "Denver, CO"
     ],
     "Connecticut": [
@@ -128,7 +129,8 @@
       "Tampa, FL"
     ],
     "Georgia": [
-      "Atlanta, GA"
+      "Atlanta, GA",
+      "Savannah, GA"
     ],
     "Hawaii": [
       "Honolulu, HI"
@@ -258,6 +260,7 @@
     "Texas": [
       "Austin, TX",
       "Dallas, TX",
+      "Fort Worth, TX",
       "Houston, TX",
       "Pearland, TX",
       "San Antonio, TX"
@@ -421,7 +424,10 @@
     "Salt Lake City, UT": "Utah",
     "New Orleans, LA": "Louisiana",
     "Buffalo, NY": "New York",
-    "Hartford, CT": "Connecticut"
+    "Hartford, CT": "Connecticut",
+    "Fort Worth, TX": "Texas",
+    "Savannah, GA": "Georgia",
+    "Colorado Springs, CO": "Colorado"
   },
   "cuisineTagOptions": [
     "American",
@@ -444,6 +450,7 @@
     "Caribbean",
     "Casual",
     "Chinese",
+    "Coastal",
     "Cocktail / lounge",
     "Cocktails",
     "Contemporary",
@@ -463,6 +470,7 @@
     "Fine dining",
     "Florida",
     "French",
+    "Fried chicken",
     "Fusion",
     "Galician",
     "Gastropub",
@@ -498,6 +506,7 @@
     "Midwestern",
     "Native American",
     "Neapolitan",
+    "New American",
     "New Nordic",
     "Northwest",
     "Nose-to-tail",
@@ -541,6 +550,8 @@
     "Tapas",
     "Tasting menu",
     "Tavern",
+    "Tex-Mex",
+    "Texas",
     "Thai",
     "Turkish",
     "Tuscan",
@@ -551,6 +562,7 @@
     "Vietnamese",
     "West African",
     "Western",
+    "Wild game",
     "Wine",
     "Wine bar",
     "Wine-forward",
@@ -6464,6 +6476,132 @@
       "region": "Dallas, TX",
       "regionGroup": "Texas",
       "city": "Dallas"
+    },
+    {
+      "slug": "bonnell-s-fine-texas-cuisine-fort-worth",
+      "title": "Bonnell's Fine Texas Cuisine",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "ellerbe-fine-foods-fort-worth",
+      "title": "Ellerbe Fine Foods",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "grace-fort-worth",
+      "title": "Grace",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "joe-t-garcia-s-fort-worth",
+      "title": "Joe T. Garcia's",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "saint-emilion-restaurant-fort-worth",
+      "title": "Saint-Emilion Restaurant",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "clay-pigeon-food-drink-fort-worth",
+      "title": "Clay Pigeon Food & Drink",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "the-olde-pink-house-savannah",
+      "title": "The Olde Pink House",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "elizabeth-on-37th-savannah",
+      "title": "Elizabeth on 37th",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "local-11ten-savannah",
+      "title": "Local 11ten",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "brochu-s-family-tradition-savannah",
+      "title": "Brochu's Family Tradition",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "alligator-soul-savannah",
+      "title": "Alligator Soul",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "circa-1875-savannah",
+      "title": "Circa 1875",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "four-by-brother-luck-colorado-springs",
+      "title": "Four by Brother Luck",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "the-rabbit-hole-colorado-springs",
+      "title": "The Rabbit Hole",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "ephemera-colorado-springs",
+      "title": "Ephemera",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "paravicini-s-italian-bistro-colorado-springs",
+      "title": "Paravicini's Italian Bistro",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "shuga-s-colorado-springs",
+      "title": "Shuga's",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "pizzeria-rustica-colorado-springs",
+      "title": "Pizzeria Rustica",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
     }
   ]
 }

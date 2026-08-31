@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T00:15:32.424Z",
+  "generatedAt": "2026-08-31T01:48:46.371Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -970,6 +970,42 @@
       "inserted": 16,
       "lastRunAt": "2026-08-20T11:28:46.678Z",
       "note": "Statewide seed — no metro in the top list covers this state."
+    },
+    {
+      "city": "Fort Worth",
+      "stateCode": "TX",
+      "population": 978234,
+      "priority": 80,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T01:48:49.022Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Savannah",
+      "stateCode": "GA",
+      "population": 147780,
+      "priority": 81,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T01:48:49.022Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Colorado Springs",
+      "stateCode": "CO",
+      "population": 488694,
+      "priority": 82,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T01:48:49.022Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]
 }

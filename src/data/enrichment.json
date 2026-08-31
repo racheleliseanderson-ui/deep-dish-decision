@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T23:25:38.628Z",
+  "generatedAt": "2026-08-31T01:50:00.276Z",
   "records": {
     "canlis": {
       "google": {
@@ -15021,7 +15021,7 @@
         "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-28T23:25:14.985Z",
+        "lastEnrichedAt": "2026-08-31T01:44:21.107Z",
         "enrichmentMode": "operator-platform-source",
         "completeness": 72
       }
@@ -17011,7 +17011,7 @@
         "matchStatus": "source-limited",
         "confidence": 0.85,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-28T23:25:14.973Z",
+        "lastEnrichedAt": "2026-08-31T01:44:21.072Z",
         "enrichmentMode": "operator-platform-source",
         "completeness": 72
       }
@@ -20513,7 +20513,7 @@
         "matchStatus": "source-limited",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-28T23:25:15.000Z",
+        "lastEnrichedAt": "2026-08-31T01:44:21.126Z",
         "enrichmentMode": "operator-platform-source",
         "completeness": 72
       }
@@ -21049,7 +21049,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-08-28T23:23:41.628Z",
+        "lastEnrichedAt": "2026-08-31T01:42:47.558Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -45620,7 +45620,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-28T23:23:40.602Z",
+        "lastEnrichedAt": "2026-08-31T01:42:46.695Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -47935,7 +47935,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-28T23:25:13.988Z",
+        "lastEnrichedAt": "2026-08-31T01:44:20.204Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -54612,7 +54612,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-28T23:23:39.594Z",
+        "lastEnrichedAt": "2026-08-31T01:42:45.773Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -58023,7 +58023,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-28T23:22:35.286Z",
+        "lastEnrichedAt": "2026-08-31T01:41:36.353Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -58667,7 +58667,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-28T23:22:35.853Z",
+        "lastEnrichedAt": "2026-08-31T01:41:45.506Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -58743,7 +58743,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-28T23:23:08.919Z",
+        "lastEnrichedAt": "2026-08-31T01:42:15.843Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -59193,6 +59193,1009 @@
           "https://crownblockdallas.com/about-us/"
         ],
         "retrievedAt": "2026-08-21T01:20:35.926Z",
+        "playwrightPages": 0
+      }
+    },
+    "bonnell-s-fine-texas-cuisine-fort-worth": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:48:49.399Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://bonnellstexas.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/bonnells-restaurant-4259-bryant-irvin-rd/giftcards?",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-817-738-5489"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Tuesday 17:00 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 17:00 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 17:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 17:00 21:00",
+          "JSON-LD openingHoursSpecification: Saturday 17:00 21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: American, Steak House, Seafood, Texan"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Book a Private Event Custom Catering A refined & delectable menu is sure to impress your guests!",
+        "groupPolicyLanguage": [
+          "Book a Private Event Custom Catering A refined & delectable menu is sure to impress your guests!",
+          "private dining Consider hosting your next business or elegant dinner in Fort Worth at Bonnell’s private dining room.",
+          "Offering fine Texas cuisine in a relaxed upscale setting, our classically trained chefs and professional staff are equipped to accommodate all of your private dining needs.",
+          "Bonnell’s private dining room is completely self-contained and is the ideal venue for corporate entertaining, rehearsal dinners, cocktail receptions, charity functions, or family celebrations."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-817-738-5489",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: American, Steak House, Seafood, Texan",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 17:00 21:00",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 17:00 21:00",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 17:00 21:00",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 17:00 21:00",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 17:00 21:00",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "meta description: Bonnell’s Fine Texas Cuisine in Fort Worth offers Texas organic beef, wild game & Gulf seafood with a farm-to-table Southwest dining experience.",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "title: Fort Worth Steakhouse & Seafood | Bonnell’s Fine Texas Cuisine",
+            "sourceUrl": "https://bonnellstexas.com/"
+          },
+          {
+            "quote": "og:description: Check out our menu and what delicious dishes we offer at Bonnell",
+            "sourceUrl": "https://bonnellstexas.com/menu/"
+          },
+          {
+            "quote": "title: Menu | Bonnell's Fine Texas Cuisine | Fort Worth, TX",
+            "sourceUrl": "https://bonnellstexas.com/menu/"
+          },
+          {
+            "quote": "title: Bonnell's Fine Texas Cuisine | Fort Worth, TX",
+            "sourceUrl": "https://bonnellstexas.com/reserve/"
+          },
+          {
+            "quote": "title: Private Dining | Bonnell's Fine Texas Cuisine | Fort Worth, TX",
+            "sourceUrl": "https://bonnellstexas.com/private-dining/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://bonnellstexas.com/",
+          "https://bonnellstexas.com/menu/",
+          "https://bonnellstexas.com/reserve/",
+          "https://bonnellstexas.com/private-dining/"
+        ],
+        "retrievedAt": "2026-08-31T01:48:49.399Z",
+        "playwrightPages": 0
+      }
+    },
+    "ellerbe-fine-foods-fort-worth": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:48:51.468Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://ellerbefinefoods.com/"
+        ],
+        "retrievedAt": "2026-08-31T01:48:51.468Z",
+        "playwrightPages": 0
+      }
+    },
+    "grace-fort-worth": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:48:52.456Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://gracefortworth.com/menu-wine-list/",
+        "reservationUrl": "https://resy.com/cities/dfw/grace-fort-worth",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [
+          "About DAIN “ADAM” JONES Owner GRACE is the culmination of Adam’s lifelong experience in the restaurant industry."
+        ],
+        "groupPolicy": "PRIVATE DINING For private events, four private dining rooms with multimedia capabilities seat 10 to 48 guests.",
+        "groupPolicyLanguage": [
+          "PRIVATE DINING For private events, four private dining rooms with multimedia capabilities seat 10 to 48 guests.",
+          "Private Dining Plan your next dinner meeting or family gathering at Grace.",
+          "Shelby Bowden, our Private Dining Manager, will guide you through the process of planning the perfect dinner.",
+          "Please call or email Shelby Bowden, Private Dining Manager to reserve your private room."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "We do not have food/beverage minimums for any of the rooms, nor is there a deposit required to reserve one of our rooms."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: 817.877.3388 777 MAIN STREET FORT WORTH, TEXAS, 76102 817.877.3388 777 MAIN STREET FORT WORTH, TX A dining experience like no other in Fort Worth LEARN MORE OUR STORY GRACE delivers a dining experience like no other in Fort Worth. Adam Jones, k",
+            "sourceUrl": "https://gracefortworth.com/"
+          },
+          {
+            "quote": "og:description: Executive Chef Blaine Staniford takes a modern approach to American classics, creating sophisticated dishes that emphasize purity, simplicity and seasonal flavors. Chef Staniford's menu is complemented by an outstanding wine list by sommeliers,",
+            "sourceUrl": "https://gracefortworth.com/menu-wine-list/"
+          },
+          {
+            "quote": "title: Menu & Wine List - Grace",
+            "sourceUrl": "https://gracefortworth.com/menu-wine-list/"
+          },
+          {
+            "quote": "og:description: Plan your next dinner meeting or family gathering at Grace. Shelby Bowden, our Private Dining Manager, will guide you through the process of planning the perfect dinner. From our unique and comprehensive menus created by our Chef team to our aw",
+            "sourceUrl": "https://gracefortworth.com/private-dining/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://gracefortworth.com/",
+          "https://gracefortworth.com/menu-wine-list/",
+          "https://gracefortworth.com/private-dining/",
+          "https://gracefortworth.com/about/"
+        ],
+        "retrievedAt": "2026-08-31T01:48:52.456Z",
+        "playwrightPages": 0
+      }
+    },
+    "joe-t-garcia-s-fort-worth": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:48:56.022Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.joetgarcias.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-14:30, Mo 17:00-22:00, Tu 11:00-14:30, Tu 17:00-22:00, We 11:00-14:30, We 17:00-22:00, Th 11:00-14:30, Th 17:00-22:00, Fr 11:00-23:00, Sa 11:00-23:00, Su 11:00-22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Booking a Private Dining experience means reserving a dedicated private space within Joe T.’s for your group to enjoy exclusively.",
+        "groupPolicyLanguage": [
+          "Booking a Private Dining experience means reserving a dedicated private space within Joe T.’s for your group to enjoy exclusively.",
+          "Private Dining reservations include: Exclusive use of a designated room or patio area for a specified period of time.",
+          "These reservations are for parties of 20 or more guests.",
+          "Separate checks are not offered for group reservations."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-14:30, Mo 17:00-22:00, Tu 11:00-14:30, Tu 17:00-22:00, We 11:00-14:30, We 17:00-22:00, Th 11:00-14:30, Th 17:00-22:00, Fr 11:00-23:00, Sa 11:00-23:00, Su 11:00-22:00",
+            "sourceUrl": "https://www.joetgarcias.com/"
+          },
+          {
+            "quote": "og:description: Learn more about the Joe T. Garcia",
+            "sourceUrl": "https://www.joetgarcias.com/about"
+          },
+          {
+            "quote": "title: About &mdash; Joe T. Garcia's",
+            "sourceUrl": "https://www.joetgarcias.com/about"
+          },
+          {
+            "quote": "og:description: Take a look at the famous Joe T. Garcia",
+            "sourceUrl": "https://www.joetgarcias.com/menu"
+          },
+          {
+            "quote": "title: Menu &mdash; Joe T. Garcia's",
+            "sourceUrl": "https://www.joetgarcias.com/menu"
+          },
+          {
+            "quote": "title: Private Parties &mdash; Joe T. Garcia's",
+            "sourceUrl": "https://www.joetgarcias.com/private-parties"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.joetgarcias.com/",
+          "https://www.joetgarcias.com/about",
+          "https://www.joetgarcias.com/menu",
+          "https://www.joetgarcias.com/private-parties"
+        ],
+        "retrievedAt": "2026-08-31T01:48:56.022Z",
+        "playwrightPages": 0
+      }
+    },
+    "saint-emilion-restaurant-fort-worth": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:48:58.253Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.saint-emilionrestaurant.com/wine-dinner-blog",
+        "reservationUrl": "https://resy.com/cities/dallas-fort-worth-tx/venues/saint-emilion?date=2026-01-26&seats=2",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: online ordering menu for saint-emilion restaurant",
+            "sourceUrl": "https://www.saint-emilionrestaurant.com/"
+          },
+          {
+            "quote": "title: Home | Saint-Emilion Restaurant",
+            "sourceUrl": "https://www.saint-emilionrestaurant.com/"
+          },
+          {
+            "quote": "title: Wine Dinner Blog | Saint-Emilion Restaurant",
+            "sourceUrl": "https://www.saint-emilionrestaurant.com/wine-dinner-blog"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.saint-emilionrestaurant.com/",
+          "https://www.saint-emilionrestaurant.com/wine-dinner-blog"
+        ],
+        "retrievedAt": "2026-08-31T01:48:58.253Z",
+        "playwrightPages": 2
+      }
+    },
+    "clay-pigeon-food-drink-fort-worth": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:12.194Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.claypigeonfd.com/menu",
+        "reservationUrl": "https://resy.com/cities/dallas-fort-worth-tx/venues/clay-pigeon?date=2025-06-10&seats=2",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Located minutes from Downtown in Fort Worth’s vibrant Foundry District, Clay Pigeon is the perfect destination for unforgettable private dining experiences, whether you’re hosting a business dinner or celebrating a special event.",
+        "groupPolicyLanguage": [
+          "Located minutes from Downtown in Fort Worth’s vibrant Foundry District, Clay Pigeon is the perfect destination for unforgettable private dining experiences, whether you’re hosting a business dinner or celebrating a special event.",
+          "We offer two elegant private dining rooms, accommodating groups from 12 to 100, where you can enjoy a custom menu crafted for your occasion along with impeccable service.",
+          "Ready to book your private dining experience?",
+          "Our top private dining restaurant offers personalized menus, intimate settings, and exceptional service for memorable gatherings and special events."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.claypigeonfd.com/",
+          "https://www.claypigeonfd.com/menu",
+          "https://www.claypigeonfd.com/book-a-party",
+          "https://www.claypigeonfd.com/about"
+        ],
+        "retrievedAt": "2026-08-31T01:49:12.194Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-olde-pink-house-savannah": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:14.623Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.theoldepinkhouserestaurant.com/menus",
+        "reservationUrl": "https://www.opentable.com/the-olde-pink-house-restaurant",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "23 Abercorn Street, Savannah, Georgia Home The Olde Pink House 23 Abercorn Street, Savannah, Georgia Home Menus Private Dining Gift Shop Signature Spirits EVENTS Press Contact",
+        "groupPolicyLanguage": [
+          "23 Abercorn Street, Savannah, Georgia Home The Olde Pink House 23 Abercorn Street, Savannah, Georgia Home Menus Private Dining Gift Shop Signature Spirits EVENTS Press Contact",
+          "Please view our rooms available for private dining below.",
+          "This private dining room can accommodate up to 14 guests."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.theoldepinkhouserestaurant.com/"
+          },
+          {
+            "quote": "og:description: The Olde Pink House, located at 23 Abercorn Street in Savannah",
+            "sourceUrl": "https://www.theoldepinkhouserestaurant.com/"
+          },
+          {
+            "quote": "title: The Olde Pink House The Olde Pink House",
+            "sourceUrl": "https://www.theoldepinkhouserestaurant.com/"
+          },
+          {
+            "quote": "title: Menus &mdash; The Olde Pink House",
+            "sourceUrl": "https://www.theoldepinkhouserestaurant.com/menus"
+          },
+          {
+            "quote": "og:description: Delight your guests with Savannah",
+            "sourceUrl": "https://www.theoldepinkhouserestaurant.com/private-dining"
+          },
+          {
+            "quote": "title: Private Dining &mdash; The Olde Pink House",
+            "sourceUrl": "https://www.theoldepinkhouserestaurant.com/private-dining"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.theoldepinkhouserestaurant.com/",
+          "https://www.theoldepinkhouserestaurant.com/menus",
+          "https://www.theoldepinkhouserestaurant.com/private-dining"
+        ],
+        "retrievedAt": "2026-08-31T01:49:14.623Z",
+        "playwrightPages": 0
+      }
+    },
+    "elizabeth-on-37th-savannah": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:16.352Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.elizabethon37threstaurant.com/menus",
+        "reservationUrl": "https://www.opentable.com/restref/client/?restref=5290&lang=en-US&ot_source=Restaurant%20website&corrid=798a1b7b-c123-4998-9b96-a955dcea9b73",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Modifications can be made for food allergies and dietary restrictions.",
+          "We can also accommodate vegetarian, gluten-free and non-seafood options."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Parties & Events Our historic home features several elegant dining rooms, many of which are available for private events.",
+        "groupPolicyLanguage": [
+          "Private Parties & Events Our historic home features several elegant dining rooms, many of which are available for private events.",
+          "Private Dining A unique private experience Gatherings Any kind of event that you want to host with you and your loved ones."
+        ],
+        "dressCode": "Your five senses blaze and you know you have come to the right place.” — From Acclaimed Writer and Georgia Native, Pat Conroy Hours Monday - Thursday 5:30 Friday- Saturday 5:00 Dress Code Business Casual (Recommended) Follow Us Online",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Discover Elizabeth on 37th, a historic Savannah restaurant offering Southern hospitality, coastal cuisine, and exceptional wine in a refined setting.",
+            "sourceUrl": "https://www.elizabethon37threstaurant.com/"
+          },
+          {
+            "quote": "title: Elizabeth on 37th | Experience Savannah Dining Today",
+            "sourceUrl": "https://www.elizabethon37threstaurant.com/"
+          },
+          {
+            "quote": "og:description: Discover diverse seasonal menus at Elizabeth on 37th, including fine dining options for events like weddings, private dinners, and corporate gatherings.",
+            "sourceUrl": "https://www.elizabethon37threstaurant.com/menus"
+          },
+          {
+            "quote": "title: Menus | Explore Our Menus Today &mdash; Elizabeth on 37th",
+            "sourceUrl": "https://www.elizabethon37threstaurant.com/menus"
+          },
+          {
+            "quote": "og:description: Discover elegant private dining and event spaces at Elizabeth on 37th in Savannah, perfect for weddings, corporate events, and social gatherings.",
+            "sourceUrl": "https://www.elizabethon37threstaurant.com/events"
+          },
+          {
+            "quote": "title: Info | Explore Event Spaces Today &mdash; Elizabeth on 37th",
+            "sourceUrl": "https://www.elizabethon37threstaurant.com/events"
+          },
+          {
+            "quote": "og:description: Learn about Elizabeth on 37th, a historic Savannah restaurant renowned for coastal cuisine, Southern hospitality, and an extensive wine selection since 1981.",
+            "sourceUrl": "https://www.elizabethon37threstaurant.com/about"
+          },
+          {
+            "quote": "title: About | Discover Southern Elegance Today &mdash; Elizabeth on 37th",
+            "sourceUrl": "https://www.elizabethon37threstaurant.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.elizabethon37threstaurant.com/",
+          "https://www.elizabethon37threstaurant.com/menus",
+          "https://www.elizabethon37threstaurant.com/events",
+          "https://www.elizabethon37threstaurant.com/about"
+        ],
+        "retrievedAt": "2026-08-31T01:49:16.352Z",
+        "playwrightPages": 0
+      }
+    },
+    "local-11ten-savannah": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:18.593Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.local11ten.com/menu",
+        "reservationUrl": "https://www.opentable.com/local-11ten-food-and-wine-reservations-savannah?restref=7910&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "top of page 2/66 MENU PERCH GALLERY PRIVATE DINING PRESS RESERVATIONS THE TEAM THE RESTAURANT CONTACT GIFT CARDS 1110 Bull St.",
+        "groupPolicyLanguage": [
+          "top of page 2/66 MENU PERCH GALLERY PRIVATE DINING PRESS RESERVATIONS THE TEAM THE RESTAURANT CONTACT GIFT CARDS 1110 Bull St.",
+          "top of page Local 11 Ten Food 12 2/18 VIEW MENU PDF VIEW WINE LIST PDF MENU PERCH GALLERY PRIVATE DINING PRESS RESERVATIONS THE TEAM THE RESTAURANT CONTACT GIFT CARDS 1110 Bull St.",
+          "Plan your next event with us Private dining program ​ ​ Our private dining program allows Local 11ten Food Wine to serve you and your guests beyond your regular dining experience.",
+          "You may wish to expand utilizing our private dining room to seat up to 110 guests."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Local 11ten creates a nightly farm-to-table dining experience complete with intelligent local cuisine, a welcoming personality and modern design. Check out Perch Rooftop Bar | Lounge. Let us host your wedding reception! Explore our private dini",
+            "sourceUrl": "https://www.local11ten.com/"
+          },
+          {
+            "quote": "title: Local 11ten | Food | Wine | Rooftop | United States",
+            "sourceUrl": "https://www.local11ten.com/"
+          },
+          {
+            "quote": "title: PRIVATE DINING | local11ten",
+            "sourceUrl": "https://www.local11ten.com/private-dining"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.local11ten.com/",
+          "https://www.local11ten.com/menu",
+          "https://www.local11ten.com/private-dining",
+          "https://www.local11ten.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T01:49:18.593Z",
+        "playwrightPages": 2
+      }
+    },
+    "brochu-s-family-tradition-savannah": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:37.415Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/brochusfamilytradition",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "If you’d like to book a buyout or inquire about a large party booking (9+ guests), please fill out our large party form .",
+        "groupPolicyLanguage": [
+          "If you’d like to book a buyout or inquire about a large party booking (9+ guests), please fill out our large party form ."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Fried chicken & fancy seafood in Savannah, Georgia.",
+            "sourceUrl": "https://www.brochusfamilytradition.com/"
+          },
+          {
+            "quote": "title: Brochu's Family Tradition",
+            "sourceUrl": "https://www.brochusfamilytradition.com/"
+          },
+          {
+            "quote": "og:description: Book a reservation or join the waitlist. Walk-ins are always welcome at Brochu",
+            "sourceUrl": "https://www.brochusfamilytradition.com/reservations"
+          },
+          {
+            "quote": "title: reservations | book a table today &mdash; Brochu's Family Tradition",
+            "sourceUrl": "https://www.brochusfamilytradition.com/reservations"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.brochusfamilytradition.com/",
+          "https://www.brochusfamilytradition.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T01:49:37.415Z",
+        "playwrightPages": 0
+      }
+    },
+    "alligator-soul-savannah": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:38.731Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/alligator-soul",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Alligator Soul offers a truly unique dining experience. An elegant blend of wild game, the freshest seasonal ingredients, and a modern presentation that elevates each dish, with a solid das...",
+            "sourceUrl": "https://alligatorsoul.com/"
+          },
+          {
+            "quote": "meta description: Alligator Soul offers a truly unique dining experience. An elegant blend of wild game, the freshest seasonal ingredients, and a modern presentation that elevates each dish, with a solid dash of Southern sensibilities that brings warmth, comfo",
+            "sourceUrl": "https://alligatorsoul.com/"
+          },
+          {
+            "quote": "title: Alligator Soul – Must-Visit Fine Dining in Savannah",
+            "sourceUrl": "https://alligatorsoul.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://alligatorsoul.com/"
+        ],
+        "retrievedAt": "2026-08-31T01:49:38.731Z",
+        "playwrightPages": 0
+      }
+    },
+    "circa-1875-savannah": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:39.623Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/invoice/lead?rx=71b764e6-35e8-49fc-81cd-057b008d0d6e&ot=efd99ae8-87f3-42d2-8e20-acd1365cc410",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Read More about us Groups and Parties Circa 1875 would be delighted to host your next private event.",
+        "groupPolicyLanguage": [
+          "Read More about us Groups and Parties Circa 1875 would be delighted to host your next private event.",
+          "Our Menu We Welcome Every Type Of Private Event."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Unlike any other, we offer the finest in dining, service and spirits to satisfy the most discerning palette. Circa 1875 is savannah",
+            "sourceUrl": "https://www.circa1875.com/"
+          },
+          {
+            "quote": "twitter:description: Set within one of Savannah’s historic 19th-century spaces, Circa 1875 is a timeless destination for exceptional food, classic cocktails, and genuine hospitality.Our menu celebrates thought...",
+            "sourceUrl": "https://www.circa1875.com/"
+          },
+          {
+            "quote": "title: French Bistro & Bar in Downtown Savannah GA | Circa 1875",
+            "sourceUrl": "https://www.circa1875.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.circa1875.com/"
+        ],
+        "retrievedAt": "2026-08-31T01:49:39.623Z",
+        "playwrightPages": 0
+      }
+    },
+    "four-by-brother-luck-colorado-springs": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:40.624Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.fourbybrotherluck.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/four-by-brother-luck-reservations-colorado-springs?lang=en-US&ot_source=Restaurant%20website&restref=349867",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 15:00-22:00, We 15:00-22:00, Th 15:00-22:00, Fr 15:00-22:00, Sa 15:00-22:00, Su 15:00-22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 15:00-22:00, We 15:00-22:00, Th 15:00-22:00, Fr 15:00-22:00, Sa 15:00-22:00, Su 15:00-22:00",
+            "sourceUrl": "https://www.fourbybrotherluck.com/"
+          },
+          {
+            "quote": "og:description: Experience innovative Southwestern cuisine at Four by Brother Luck, featuring seasonal tasting menus, craft cocktails, and local ingredients in downtown Colorado Springs.",
+            "sourceUrl": "https://www.fourbybrotherluck.com/"
+          },
+          {
+            "quote": "title: Four by Brother Luck | Discover and Dine Today",
+            "sourceUrl": "https://www.fourbybrotherluck.com/"
+          },
+          {
+            "quote": "og:description: Explore Four by Brother Luck",
+            "sourceUrl": "https://www.fourbybrotherluck.com/menu"
+          },
+          {
+            "quote": "title: Menu | Discover Our Menu Today &mdash; Four by Brother Luck",
+            "sourceUrl": "https://www.fourbybrotherluck.com/menu"
+          },
+          {
+            "quote": "og:description: Reserve your table at Four by Brother Luck for a casual yet elegant dining experience in Colorado Springs. Book online or call for the best seating options.",
+            "sourceUrl": "https://www.fourbybrotherluck.com/reservations"
+          },
+          {
+            "quote": "title: Reservations | Reserve Your Table Today &mdash; Four by Brother Luck",
+            "sourceUrl": "https://www.fourbybrotherluck.com/reservations"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.fourbybrotherluck.com/",
+          "https://www.fourbybrotherluck.com/menu",
+          "https://www.fourbybrotherluck.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T01:49:40.624Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-rabbit-hole-colorado-springs": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:42.365Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "https://www.rabbitholedinner.com/menu",
+        "reservationUrl": "https://www.rabbitholedinner.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 16:00-01:30, Tu 16:00-01:30, We 16:00-01:30, Th 16:00-01:30, Fr 16:00-01:30, Sa 16:00-01:30, Su 16:00-01:30"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "Step into the sleek, subterranean space, and you won’t be greeted by strict dress codes or other five-star stereotypes.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 16:00-01:30, Tu 16:00-01:30, We 16:00-01:30, Th 16:00-01:30, Fr 16:00-01:30, Sa 16:00-01:30, Su 16:00-01:30",
+            "sourceUrl": "https://www.rabbitholedinner.com/"
+          },
+          {
+            "quote": "title: Menu &mdash; Rabbit Hole",
+            "sourceUrl": "https://www.rabbitholedinner.com/menu"
+          },
+          {
+            "quote": "title: Our Story &mdash; Rabbit Hole",
+            "sourceUrl": "https://www.rabbitholedinner.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.rabbitholedinner.com/",
+          "https://www.rabbitholedinner.com/menu",
+          "https://www.rabbitholedinner.com/reservations",
+          "https://www.rabbitholedinner.com/about"
+        ],
+        "retrievedAt": "2026-08-31T01:49:42.365Z",
+        "playwrightPages": 0
+      }
+    },
+    "ephemera-colorado-springs": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:44.680Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/ephemeradinners",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Located in Downtown Colorado Springs",
+            "sourceUrl": "https://www.ephemeradinners.com/"
+          },
+          {
+            "quote": "title: Ephemera Dinners | Colorado Springs",
+            "sourceUrl": "https://www.ephemeradinners.com/"
+          },
+          {
+            "quote": "og:description: Ephemera began as a series of multi-sensory Pop-Up Dinners in early 2018 by Chef Ian Dedrickson, Chef Adam Ridens, and Creative Director, Jasmine Dillavou. Their passion project quickly evolved into a regular series of themed dinners held in lo",
+            "sourceUrl": "https://www.ephemeradinners.com/about-1"
+          },
+          {
+            "quote": "title: About | Ephemera Dinners",
+            "sourceUrl": "https://www.ephemeradinners.com/about-1"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.ephemeradinners.com/",
+          "https://www.ephemeradinners.com/about-1"
+        ],
+        "retrievedAt": "2026-08-31T01:49:44.680Z",
+        "playwrightPages": 0
+      }
+    },
+    "paravicini-s-italian-bistro-colorado-springs": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:46.003Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.paravicinis.com/wine-list",
+        "reservationUrl": "https://www.toasttab.com/paravicinis-italian-bistro-2802-west-colorado-avenue/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Order Takeout Meet Our Executive Chef Chef Franco Pisani About Chef Franco Introducing Catering by Andiamo Bring the experience of Paravicini’s dining to your private events with our catering company, aptly named Andiamo.",
+        "groupPolicyLanguage": [
+          "Order Takeout Meet Our Executive Chef Chef Franco Pisani About Chef Franco Introducing Catering by Andiamo Bring the experience of Paravicini’s dining to your private events with our catering company, aptly named Andiamo.",
+          "Whether you are hosting a small gathering or a large party, personal or professional event, or just want an amazing meal for your family get together, Andiamo Catering is hands down one of the best options in Colorado Springs."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Wine List &mdash; Paravicini's",
+            "sourceUrl": "https://www.paravicinis.com/wine-list"
+          },
+          {
+            "quote": "title: About Paravicini's &mdash; Paravicini's",
+            "sourceUrl": "https://www.paravicinis.com/about-paravicinis"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.paravicinis.com/",
+          "https://www.paravicinis.com/wine-list",
+          "https://www.paravicinis.com/about-paravicinis"
+        ],
+        "retrievedAt": "2026-08-31T01:49:46.003Z",
+        "playwrightPages": 0
+      }
+    },
+    "shuga-s-colorado-springs": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:48.154Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "https://www.shugas.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "does shuga's have gluten-free options?",
+          "sadly, we have never found that perfect gluten-free bread that we’re willing to stand behind, so we do not carry gluten-free bread allergies beware: gluten is in the air!"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Shuga's Restaurant | Bar",
+            "sourceUrl": "https://www.shugas.com/"
+          },
+          {
+            "quote": "title: our menu — Shuga's Restaurant | Bar",
+            "sourceUrl": "https://www.shugas.com/menu"
+          },
+          {
+            "quote": "title: microevents &mdash; Shuga's Restaurant | Bar",
+            "sourceUrl": "https://www.shugas.com/events"
+          },
+          {
+            "quote": "title: faq &mdash; Shuga's Restaurant | Bar",
+            "sourceUrl": "https://www.shugas.com/faq"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.shugas.com/",
+          "https://www.shugas.com/menu",
+          "https://www.shugas.com/events",
+          "https://www.shugas.com/faq"
+        ],
+        "retrievedAt": "2026-08-31T01:49:48.154Z",
+        "playwrightPages": 1
+      }
+    },
+    "pizzeria-rustica-colorado-springs": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T01:49:59.140Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Walk through our doors and embark on a unique dining experience. Feel as if you are in a generations-old neighborhood trattoria in Italy while you take in the rustic yet refined pizza in our...",
+            "sourceUrl": "https://pizzeriarustica.com/"
+          },
+          {
+            "quote": "meta description: Walk through our doors and embark on a unique dining experience. Feel as if you are in a generations-old neighborhood trattoria in Italy while you take in the rustic yet refined pizza in our historic 1889 building and patio in Old Colorado Ci",
+            "sourceUrl": "https://pizzeriarustica.com/"
+          },
+          {
+            "quote": "title: Must-Try Pizza in Colorado Springs, CO | Pizzeria Rustica",
+            "sourceUrl": "https://pizzeriarustica.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://pizzeriarustica.com/"
+        ],
+        "retrievedAt": "2026-08-31T01:49:59.140Z",
         "playwrightPages": 0
       }
     }

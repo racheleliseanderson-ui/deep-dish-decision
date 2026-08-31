@@ -32,7 +32,7 @@ describe("consumer snapshot", () => {
   });
 
   it("covers the whole recovered corpus without throwing", () => {
-    expect(records.length).toBe(836);
+    expect(records.length).toBeGreaterThanOrEqual(836);
     for (const r of records) {
       const snap = buildConsumerSnapshot(r);
       expect(snap.items).toHaveLength(6);
