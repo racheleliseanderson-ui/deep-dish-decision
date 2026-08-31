@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T12:26:31.488Z",
+  "generatedAt": "2026-08-31T12:38:54.506Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1293,6 +1293,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T12:26:33.456Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Rochester",
+      "stateCode": "MN",
+      "population": 121395,
+      "priority": 107,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:39:15.148Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Durham",
+      "stateCode": "NC",
+      "population": 283506,
+      "priority": 108,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T12:39:15.148Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Topeka",
+      "stateCode": "KS",
+      "population": 126587,
+      "priority": 109,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 4,
+      "lastRunAt": "2026-08-31T12:39:15.148Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

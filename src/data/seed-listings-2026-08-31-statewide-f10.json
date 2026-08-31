@@ -1,0 +1,136 @@
+{
+  "note": "Statewide fill F-10. Rochester MN (Minnesota's second city after Minneapolis), Durham NC (fourth city after Charlotte/Raleigh/Asheville), Topeka KS (third city after Wichita/Lawrence). Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. Provo, Reno, Oxford, and Fayetteville still deferred. Rochester: Newt's four locations; Tap House multi; Redwood Room Cloudflare; Pescara closed. Durham: Watts Grocery closed; Guglhupf restaurant/bakery/bake shop on one site; Ponysaurus Durham/Wilmington/Raleigh; Fullsteam moving plus Boxyard RTP; Piedmont 403. Topeka: Monsoon lists two FoodEstablishment nodes; The Pennant empty/202; Chef's Kiss and Bobo's Drive-In have no live official site. Lafayette, Springfield MA, Chattanooga, Evansville, and Eugene deferred this batch (challenge walls, multi-location groups, or fewer than six unique official sites).",
+  "generatedAt": "2026-08-31T13:55:00.000Z",
+  "batches": [
+    {
+      "city": "Rochester",
+      "stateCode": "MN",
+      "listings": [
+        {
+          "title": "Bleu Duck Kitchen",
+          "website": "https://www.bleuduckkitchen.com/",
+          "phone": "+1-507-258-4663",
+          "address": "14 4th Street SW, Rochester, MN 55902",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Forager Brewery",
+          "website": "https://www.foragerbrewery.com/",
+          "phone": "+1-507-258-7490",
+          "address": "1005 6th Street NW, Rochester, MN 55901",
+          "cuisineTags": ["American", "Brewpub"]
+        },
+        {
+          "title": "Terza Ristorante",
+          "website": "https://terza3.com/",
+          "phone": "+1-507-216-9590",
+          "address": "30 3rd Street SE, Rochester, MN 55904",
+          "cuisineTags": ["Italian"]
+        },
+        {
+          "title": "Victoria's",
+          "website": "https://www.victoriasmn.com/",
+          "phone": "+1-507-280-6232",
+          "address": "7 1st Avenue SW, Rochester, MN 55902",
+          "cuisineTags": ["Italian"]
+        },
+        {
+          "title": "ThaiPop",
+          "website": "https://www.thaipopmn.com/",
+          "phone": "+1-507-226-8146",
+          "address": "4 3rd Street SW, Rochester, MN 55902",
+          "cuisineTags": ["Thai"]
+        },
+        {
+          "title": "Chester's Kitchen and Bar",
+          "website": "https://chesterskb.com/",
+          "phone": "+1-507-424-1211",
+          "address": "111 S Broadway, Rochester, MN 55904",
+          "cuisineTags": ["American"]
+        }
+      ]
+    },
+    {
+      "city": "Durham",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "Saltbox Seafood Joint",
+          "website": "https://www.saltboxseafoodjoint.com/",
+          "phone": "+1-919-237-3499",
+          "address": "2637 Durham-Chapel Hill Boulevard, Durham, NC 27707",
+          "cuisineTags": ["Seafood"]
+        },
+        {
+          "title": "Geer Street Garden",
+          "website": "https://geerstreetgarden.com/",
+          "phone": "+1-919-688-2900",
+          "address": "644 Foster Street, Durham, NC 27701",
+          "cuisineTags": ["American", "Southern"]
+        },
+        {
+          "title": "Alley Twenty Six",
+          "website": "https://www.alleytwentysix.com/",
+          "phone": "+1-984-439-2278",
+          "address": "320 East Chapel Hill Street, Durham, NC 27701",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Bull City Burger and Brewery",
+          "website": "https://bullcityburgerandbrewery.com/",
+          "phone": "+1-919-680-2333",
+          "address": "107 E Parrish Street #105, Durham, NC 27701",
+          "cuisineTags": ["American", "Brewpub"]
+        },
+        {
+          "title": "Dashi",
+          "website": "https://dashiramen.com/",
+          "phone": "+1-919-251-9335",
+          "address": "415 East Chapel Hill Street, Durham, NC 27701",
+          "cuisineTags": ["Japanese"]
+        },
+        {
+          "title": "Toast",
+          "website": "https://toast-fivepoints.com/",
+          "phone": "+1-919-683-2183",
+          "address": "345 W Main Street, Durham, NC 27701",
+          "cuisineTags": ["American", "Cafe"]
+        }
+      ]
+    },
+    {
+      "city": "Topeka",
+      "stateCode": "KS",
+      "listings": [
+        {
+          "title": "Blind Tiger Brewery & Restaurant",
+          "website": "https://www.blindtiger.com/",
+          "phone": "+1-785-267-2739",
+          "address": "417 SW 37th Street, Topeka, KS 66605",
+          "cuisineTags": ["American", "Brewpub"]
+        },
+        {
+          "title": "Chez Yasu",
+          "website": "https://www.chezyasufrenchrestaurant.com/",
+          "phone": "+1-785-357-1003",
+          "address": "2701 SW 17th Street, Topeka, KS 66604",
+          "cuisineTags": ["French"]
+        },
+        {
+          "title": "Jong's Thai Kitchen",
+          "website": "https://jongsthaikitchen.com/",
+          "phone": "+1-785-329-6465",
+          "address": "800 SW 12th Street, Topeka, KS 66612",
+          "cuisineTags": ["Thai"]
+        },
+        {
+          "title": "The Wheel Barrel",
+          "website": "https://www.thewheelbarrel.com/",
+          "phone": "+1-785-408-1278",
+          "address": "925 N Kansas Avenue, Topeka, KS 66608",
+          "cuisineTags": ["American"]
+        }
+      ]
+    }
+  ]
+}

@@ -64,6 +64,9 @@ const STATEWIDE_FILL = [
   ["Fort Collins", "CO", 169810],
   ["Springfield", "MO", 169176],
   ["Greenville", "SC", 72095],
+  ["Rochester", "MN", 121395],
+  ["Durham", "NC", 283506],
+  ["Topeka", "KS", 126587],
 ];
 
 const existing = readJson(PATHS.queue, null);

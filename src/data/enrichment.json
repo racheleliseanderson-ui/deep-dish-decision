@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T12:27:36.874Z",
+  "generatedAt": "2026-08-31T12:39:57.456Z",
   "records": {
     "canlis": {
       "google": {
@@ -68452,6 +68452,944 @@
           "https://www.scoundrelgvl.com/about"
         ],
         "retrievedAt": "2026-08-31T12:27:34.646Z",
+        "playwrightPages": 0
+      }
+    },
+    "bleu-duck-kitchen-rochester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:15.558Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/bleu-duck-kitchen-rochester",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 5072584663"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 5072584663",
+            "sourceUrl": "https://www.bleuduckkitchen.com/"
+          },
+          {
+            "quote": "og:description: Innovative Local Food. Craft Cocktails. Boutique Wine List. Rochester",
+            "sourceUrl": "https://www.bleuduckkitchen.com/"
+          },
+          {
+            "quote": "title: HOME | Bleu Duck Kitchen",
+            "sourceUrl": "https://www.bleuduckkitchen.com/"
+          },
+          {
+            "quote": "title: ABOUT | Bleu Duck Kitchen",
+            "sourceUrl": "https://www.bleuduckkitchen.com/about"
+          },
+          {
+            "quote": "title: RENTALS & CATERING | Bleu Duck Kitchen",
+            "sourceUrl": "https://www.bleuduckkitchen.com/event-space-catering"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.bleuduckkitchen.com/",
+          "https://www.bleuduckkitchen.com/about",
+          "https://www.bleuduckkitchen.com/event-space-catering"
+        ],
+        "retrievedAt": "2026-08-31T12:39:15.558Z",
+        "playwrightPages": 0
+      }
+    },
+    "forager-brewery-rochester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:17.229Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.foragerbrewery.com/food-menu",
+        "reservationUrl": "https://order.toasttab.com/online/forager-brewery-1005-6th-st-nw",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (507) 258-7490"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Tuesday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Wednesday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Thursday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Saturday 11:00 22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Vegan patties available upon request."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "TAP LIST 1/1 private events for life's happiest moments ​ Looking to host a special event?",
+        "groupPolicyLanguage": [
+          "TAP LIST 1/1 private events for life's happiest moments ​ Looking to host a special event?",
+          "​ Explore our private event spaces available at Forager Brewery here.",
+          "PRIVATE EVENTS & CATERING: If you are inquiring about a Private Event or Catering, please fill out this form."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (507) 258-7490",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 22:00",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:00 22:00",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 22:00",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 22:00",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 22:00",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 11:00 22:00",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "og:description: Indulge in the perfect blend of craft beer mastery and culinary artistry at Forager Brewery. Explore our diverse tap list featuring meticulously crafted brews, paired seamlessly with a scratch kitchen offering culinary delights. Immerse yoursel",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "meta description: Forager was voted Rochester",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "title: Craft Beer | Scratch Kitchen | Forager Brewery | Rochester, MN",
+            "sourceUrl": "https://www.foragerbrewery.com/"
+          },
+          {
+            "quote": "og:description: Available for dine-in at Forager from 11am to 10pm.",
+            "sourceUrl": "https://www.foragerbrewery.com/food-menu"
+          },
+          {
+            "quote": "title: Taproom Food Menu | Forager Brewery",
+            "sourceUrl": "https://www.foragerbrewery.com/food-menu"
+          },
+          {
+            "quote": "og:description: Stay in the loop with Forager Brewery",
+            "sourceUrl": "https://www.foragerbrewery.com/event-calendar"
+          },
+          {
+            "quote": "title: Rochester Event Calendar | Forager Brewery",
+            "sourceUrl": "https://www.foragerbrewery.com/event-calendar"
+          },
+          {
+            "quote": "og:description: Connect with Forager Brewery easily through our contact page. Whether you have inquiries about our craft beers, want to plan an event, or just share your thoughts, we",
+            "sourceUrl": "https://www.foragerbrewery.com/contact"
+          },
+          {
+            "quote": "title: Contact Us | Forager Brewery",
+            "sourceUrl": "https://www.foragerbrewery.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.foragerbrewery.com/",
+          "https://www.foragerbrewery.com/food-menu",
+          "https://www.foragerbrewery.com/event-calendar",
+          "https://www.foragerbrewery.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T12:39:17.229Z",
+        "playwrightPages": 0
+      }
+    },
+    "terza-ristorante-rochester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:19.539Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://terza3.com/menu/",
+        "reservationUrl": "https://terza3.com/reservations/",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "By Phone: 507.216.9590 Reservations recommended for parties of 6 or more.",
+        "groupPolicyLanguage": [
+          "By Phone: 507.216.9590 Reservations recommended for parties of 6 or more.",
+          "Parties of 5 or more are required to be fully checked in before seating and are booked in 2-hour time slots."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Terza was created in the spirit of Dell’ Anima which means “soul of the pasta” and celebrating the bountiful flavors of Italy with friends & family.",
+            "sourceUrl": "https://terza3.com/"
+          },
+          {
+            "quote": "title: Terza Ristorante - Downtown Rochester MN - 507.216.9590",
+            "sourceUrl": "https://terza3.com/"
+          },
+          {
+            "quote": "og:description: Located on Broadway in Downtown Rochester, Minnesota",
+            "sourceUrl": "https://terza3.com/hours-location/"
+          },
+          {
+            "quote": "title: Hours + Location - Terza Ristorante",
+            "sourceUrl": "https://terza3.com/hours-location/"
+          },
+          {
+            "quote": "og:description: By Phone: Reservations recommended for parties of 6 or more. We encourage that reservations arrive as complete parties, and arrival is no earlier than 5 minutes prior to reservation time. Parties of 5 or more are required to be fully checked in",
+            "sourceUrl": "https://terza3.com/reservations/"
+          },
+          {
+            "quote": "title: Reservations - Terza Ristorante",
+            "sourceUrl": "https://terza3.com/reservations/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://terza3.com/",
+          "https://terza3.com/menu/",
+          "https://terza3.com/hours-location/",
+          "https://terza3.com/reservations/"
+        ],
+        "retrievedAt": "2026-08-31T12:39:19.539Z",
+        "playwrightPages": 0
+      }
+    },
+    "victoria-s-rochester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:32.958Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.victoriasmn.com/menus/",
+        "reservationUrl": "https://www.toasttab.com/victoriasmn/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Informal Italian restaurant & bar serving large portions of pasta & meat dishes for lunch or dinner.",
+            "sourceUrl": "https://www.victoriasmn.com/"
+          },
+          {
+            "quote": "title: Victoria's | Italian Restaurant in Rochester, MN",
+            "sourceUrl": "https://www.victoriasmn.com/"
+          },
+          {
+            "quote": "og:description: See the menus for Victoria",
+            "sourceUrl": "https://www.victoriasmn.com/menus/"
+          },
+          {
+            "quote": "title: Menus | Victoria's in Rochester, MN",
+            "sourceUrl": "https://www.victoriasmn.com/menus/"
+          },
+          {
+            "quote": "title: About | Victoria's in Rochester, MN",
+            "sourceUrl": "https://www.victoriasmn.com/about-us/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.victoriasmn.com/",
+          "https://www.victoriasmn.com/menus/",
+          "https://www.victoriasmn.com/about-us/"
+        ],
+        "retrievedAt": "2026-08-31T12:39:32.958Z",
+        "playwrightPages": 0
+      }
+    },
+    "thaipop-rochester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:34.666Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.thaipopmn.com/menus",
+        "reservationUrl": "https://www.toasttab.com/thaipop/v3/",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Can you accommodate Vegetarian and Vegan?",
+          "We have many vegan and vegetarian options on the menu, check it out here .",
+          "Can you accommodate dietary restrictions like food allergies?",
+          "We can’t always accommodate food allergies."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.thaipopmn.com/"
+          },
+          {
+            "quote": "og:description: Discover Thaipop – a locally award-winning Thai restaurant in Rochester, Minnesota serving bold flavors, craft cocktails, and voted best mocktails in the US.",
+            "sourceUrl": "https://www.thaipopmn.com/"
+          },
+          {
+            "quote": "og:description: Reserve your table at Thaipop – a vibrant spot for cocktails and Thai-inspired cuisine.",
+            "sourceUrl": "https://www.thaipopmn.com/reservations"
+          },
+          {
+            "quote": "title: Make a Reservation | Thaipop Cocktails & Cuisine &mdash; ThaiPop | Rochester, MN",
+            "sourceUrl": "https://www.thaipopmn.com/reservations"
+          },
+          {
+            "quote": "og:description: Explore Thaipop’s menus – from award-winning Thai cuisine to craft cocktails and mocktails. Discover bold flavors, fresh ingredients, and signature drinks that make us one of Minnesota’s best Thai restaurants.",
+            "sourceUrl": "https://www.thaipopmn.com/menus"
+          },
+          {
+            "quote": "title: Menus | Thaipop Cocktails + Thai Cuisine | Minnesota &mdash; ThaiPop | Rochester, MN",
+            "sourceUrl": "https://www.thaipopmn.com/menus"
+          },
+          {
+            "quote": "title: ThaiPop Contact &mdash; ThaiPop | Rochester, MN",
+            "sourceUrl": "https://www.thaipopmn.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.thaipopmn.com/",
+          "https://www.thaipopmn.com/reservations",
+          "https://www.thaipopmn.com/menus",
+          "https://www.thaipopmn.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T12:39:34.666Z",
+        "playwrightPages": 0
+      }
+    },
+    "chester-s-kitchen-and-bar-rochester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:36.963Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://chesterskb.com/menus/",
+        "reservationUrl": "https://chesterskb.com/reservations/",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Settle in with Private Dining Private Dining Room Our private dining room is available for any occasion, with seating capacity for up to 40 guests .",
+        "groupPolicyLanguage": [
+          "Settle in with Private Dining Private Dining Room Our private dining room is available for any occasion, with seating capacity for up to 40 guests ."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Dine-in & Curbside Pick-up Monday – Thursday10:30am – 10pm Bar open until 10pm Friday10:30 am – 10 pm Bar open until 11 pm Saturday11 am – 10 pm Bar open until 11 pm Sunday10 am – 10 pm Brunch, 10 am – 2 pm Bar open until 10 pm Holiday Hours Th",
+            "sourceUrl": "https://chesterskb.com/"
+          },
+          {
+            "quote": "title: Home - Chester's Kitchen and Bar",
+            "sourceUrl": "https://chesterskb.com/"
+          },
+          {
+            "quote": "title: Menus - Chester's Kitchen and Bar",
+            "sourceUrl": "https://chesterskb.com/menus/"
+          },
+          {
+            "quote": "og:description: Located in the Galleria in University Square Dine-in & Curbside Pick-up Monday – Thursday10:30am – 10pm Bar open until 10pm Friday10:30am – 10pm Bar open until 11pm Saturday11am – 10pm Bar open until 11pm Sunday10am – 10pm Bar open until 10pm H",
+            "sourceUrl": "https://chesterskb.com/hours-location/"
+          },
+          {
+            "quote": "title: Location + Hours - Chester's Kitchen and Bar",
+            "sourceUrl": "https://chesterskb.com/hours-location/"
+          },
+          {
+            "quote": "og:description: Private Dining Room Our private dining room is available for any occasion, with seating capacity for up to 40 guests. It is an ideal space for business meetings, rehearsal dinners, graduations, birthday parties and more! We are happy to arrange",
+            "sourceUrl": "https://chesterskb.com/private-dining/"
+          },
+          {
+            "quote": "title: Private Dining - Chester's Kitchen and Bar",
+            "sourceUrl": "https://chesterskb.com/private-dining/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://chesterskb.com/",
+          "https://chesterskb.com/menus/",
+          "https://chesterskb.com/hours-location/",
+          "https://chesterskb.com/private-dining/"
+        ],
+        "retrievedAt": "2026-08-31T12:39:36.963Z",
+        "playwrightPages": 0
+      }
+    },
+    "saltbox-seafood-joint-durham": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:40.180Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.newsobserver.com/living/food-drink/article270208327.html",
+        "reservationUrl": "https://goldenfigbooks.com/book/9781469698861",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.saltboxseafoodjoint.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:39:40.180Z",
+        "playwrightPages": 0
+      }
+    },
+    "geer-street-garden-durham": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:41.176Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/geerstgarden",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Geer Street Garden serves simple, down home food and drinks in Downtown Durham. Everyday food should be wholesome and delicious.",
+            "sourceUrl": "https://geerstreetgarden.com/"
+          },
+          {
+            "quote": "title: Geer Street Garden - Simple, Down Home Food and Drinks, Durham NC",
+            "sourceUrl": "https://geerstreetgarden.com/"
+          },
+          {
+            "quote": "og:description: Cozy inside space and outdoor heated patio seating featuring old faves and delicious daily specials",
+            "sourceUrl": "https://geerstreetgarden.com/about"
+          },
+          {
+            "quote": "title: About - Geer Street Garden",
+            "sourceUrl": "https://geerstreetgarden.com/about"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://geerstreetgarden.com/",
+          "https://geerstreetgarden.com/about"
+        ],
+        "retrievedAt": "2026-08-31T12:39:41.176Z",
+        "playwrightPages": 0
+      }
+    },
+    "alley-twenty-six-durham": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:42.497Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://resy.com/cities/durham-nc/venues/alley-twenty-six?seats=2&date=2025-11-28",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 16:00-02:00, Tu 16:00-02:00, We 16:00-02:00, Th 16:00-02:00, Fr 16:00-02:00, Sa 16:00-02:00, Su 16:00-02:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 16:00-02:00, Tu 16:00-02:00, We 16:00-02:00, Th 16:00-02:00, Fr 16:00-02:00, Sa 16:00-02:00, Su 16:00-02:00",
+            "sourceUrl": "https://www.alleytwentysix.com/"
+          },
+          {
+            "quote": "og:description: Upscale cocktails and food in Durham, N.C. Find out more about our food and drink menu, cocktail retail store, and our cocktail classes.",
+            "sourceUrl": "https://www.alleytwentysix.com/"
+          },
+          {
+            "quote": "title: Upscale Cocktails and Food | Alley Twenty Six",
+            "sourceUrl": "https://www.alleytwentysix.com/"
+          },
+          {
+            "quote": "og:description: Contact us at Alley Twenty Six and find out how to learn more about how to dine with us plus our private event space and virtual cocktail classes.",
+            "sourceUrl": "https://www.alleytwentysix.com/contact"
+          },
+          {
+            "quote": "title: Cocktails, Food & Store | Alley Twenty Six",
+            "sourceUrl": "https://www.alleytwentysix.com/contact"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.alleytwentysix.com/",
+          "https://www.alleytwentysix.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T12:39:42.497Z",
+        "playwrightPages": 0
+      }
+    },
+    "bull-city-burger-and-brewery-durham": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:43.821Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://bullcityburgerandbrewery.com/menu.html",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "(can be vegan) Brewer&rsquo;s Grain Soft Rye Pretzels 6.5 v When the red light is on we have fresh house-made pretzels, two per order.",
+          "Fries and Sides Dirty Fries 4 Quart of Fries 10 Skin-on Russet potato French fries cooked to crispy perfection, finished with Kosher salt.",
+          "(can be vegan) Today&rsquo;s Vegan Plant-Based Burger 11 See our specials menu for today&rsquo;s burger selection.",
+          "Always vegan, always delicious."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Bull City Burger and Brewery Home Page",
+            "sourceUrl": "https://bullcityburgerandbrewery.com/"
+          },
+          {
+            "quote": "title: BULL CITY BURGER AND BREWERY - Home",
+            "sourceUrl": "https://bullcityburgerandbrewery.com/"
+          },
+          {
+            "quote": "og:description: Legendary Fried Pickle Chips 6.5 We pickle cucumbers, bread them with our secret pretzel crust and cook them up crisp. Served with our signature BCBB tarragon mayo. The best pickle chips on...",
+            "sourceUrl": "https://bullcityburgerandbrewery.com/menu.html"
+          },
+          {
+            "quote": "title: Our Menu - BULL CITY BURGER AND BREWERY",
+            "sourceUrl": "https://bullcityburgerandbrewery.com/menu.html"
+          },
+          {
+            "quote": "og:description: The BCBB Mission Statement and About Us",
+            "sourceUrl": "https://bullcityburgerandbrewery.com/contact.html"
+          },
+          {
+            "quote": "title: Contact Us - BULL CITY BURGER AND BREWERY",
+            "sourceUrl": "https://bullcityburgerandbrewery.com/contact.html"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://bullcityburgerandbrewery.com/",
+          "https://bullcityburgerandbrewery.com/menu.html",
+          "https://bullcityburgerandbrewery.com/contact.html"
+        ],
+        "retrievedAt": "2026-08-31T12:39:43.821Z",
+        "playwrightPages": 0
+      }
+    },
+    "dashi-durham": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:46.167Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://dashiramen.com/menus",
+        "reservationUrl": "https://reservations.getwisely.com/dashi",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "DIETARY RESTRICTIONS Rice noodles are available for gluten intolerant guests!",
+          "Gluten free noodles are not cooked in the same ramen noodle water bath, but please keep in mind that all dishes are prepared in a kitchen that contains gluten.",
+          "Please let our knowledgable staff aware of any allergies you may have!",
+          "Vegan noodle lovers: we have a vegan ramen bowl!"
+        ],
+        "accessibilityLanguage": [
+          "The izakaya does not have an elevator."
+        ],
+        "groupPolicy": "DO YOU HAVE A PRIVATE ROOM TO RENT FOR A SPECIAL EVENT?",
+        "groupPolicyLanguage": [
+          "DO YOU HAVE A PRIVATE ROOM TO RENT FOR A SPECIAL EVENT?",
+          "We rent our izakaya for a myriad of private dining and cocktail-style events."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Dine with us in Downtown Durham! Open every day of the week, 11:30am-10pm. Our downstairs ramen shop is open all day. The upstairs izakaya opens at 4pm! 🖤",
+            "sourceUrl": "https://dashiramen.com/"
+          },
+          {
+            "quote": "og:description: Click on the menu images to enlarge each menu.",
+            "sourceUrl": "https://dashiramen.com/menus"
+          },
+          {
+            "quote": "og:description: Have a personalized private omakase with us in Downtown Durham!",
+            "sourceUrl": "https://dashiramen.com/private-omakase"
+          },
+          {
+            "quote": "title: PRIVATE OMAKASE &mdash; Dashi",
+            "sourceUrl": "https://dashiramen.com/private-omakase"
+          },
+          {
+            "quote": "og:description: Open daily, 11:30am-10pm. Our downstairs ramen shop is open all day, while our upstairs izakaya opens at 4pm! 🖤",
+            "sourceUrl": "https://dashiramen.com/contact"
+          },
+          {
+            "quote": "title: CONTACT & LOCATION &mdash; Dashi",
+            "sourceUrl": "https://dashiramen.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://dashiramen.com/",
+          "https://dashiramen.com/menus",
+          "https://dashiramen.com/private-omakase",
+          "https://dashiramen.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T12:39:46.167Z",
+        "playwrightPages": 0
+      }
+    },
+    "toast-durham": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:48.496Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://toast-fivepoints.com/menu",
+        "reservationUrl": "https://www.toasttab.com/toast-at-five-points/v3/",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Order Online MENU We always have our homemade soups (at least one will be vegetarian) and lots of daily specials posted on social media (almost) every day."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Craving a satisfying lunch in downtown Durham? Toast offers a variety of delicious sandwiches and soups crafted with love. Dine in or order online!",
+            "sourceUrl": "https://toast-fivepoints.com/"
+          },
+          {
+            "quote": "title: Downtown Durham's Best Sandwiches & Soups | Toast",
+            "sourceUrl": "https://toast-fivepoints.com/"
+          },
+          {
+            "quote": "title: Toast Sandwiches & Soups in Downtown Durham &mdash; Menu",
+            "sourceUrl": "https://toast-fivepoints.com/menu"
+          },
+          {
+            "quote": "title: Toast Sandwiches & Soups in Downtown Durham &mdash; Contact",
+            "sourceUrl": "https://toast-fivepoints.com/contact"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://toast-fivepoints.com/",
+          "https://toast-fivepoints.com/menu",
+          "https://toast-fivepoints.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T12:39:48.496Z",
+        "playwrightPages": 0
+      }
+    },
+    "blind-tiger-brewery-restaurant-topeka": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:50.568Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 785-267-2739"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Read More Banquets Have an event or large party planned?",
+        "groupPolicyLanguage": [
+          "Read More Banquets Have an event or large party planned?"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 785-267-2739",
+            "sourceUrl": "https://www.blindtiger.com/"
+          },
+          {
+            "quote": "og:description: Fresh brewed craft beer with steak, barbecue, pasta and seafood. The Blind Tiger Brewery & Restaurant",
+            "sourceUrl": "https://www.blindtiger.com/"
+          },
+          {
+            "quote": "title: Craft beer | United States | The Blind Tiger Brewery & Restaurant",
+            "sourceUrl": "https://www.blindtiger.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.blindtiger.com/"
+        ],
+        "retrievedAt": "2026-08-31T12:39:50.568Z",
+        "playwrightPages": 0
+      }
+    },
+    "chez-yasu-topeka": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:51.498Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.chezyasufrenchrestaurant.com/drink",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Private Party Agreement &mdash; Chez Yasu",
+            "sourceUrl": "https://www.chezyasufrenchrestaurant.com/visit"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.chezyasufrenchrestaurant.com/",
+          "https://www.chezyasufrenchrestaurant.com/visit",
+          "https://www.chezyasufrenchrestaurant.com/drink"
+        ],
+        "retrievedAt": "2026-08-31T12:39:51.498Z",
+        "playwrightPages": 0
+      }
+    },
+    "jong-s-thai-kitchen-topeka": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:53.518Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://jongsthaikitchen.com/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: The best Thai food in Topeka!",
+            "sourceUrl": "https://jongsthaikitchen.com/"
+          },
+          {
+            "quote": "twitter:description: Fresh, made from scratch, Thai food.",
+            "sourceUrl": "https://jongsthaikitchen.com/"
+          },
+          {
+            "quote": "meta description: Thai Food Restaurant. Fresh, authentic, great tasting Thai food restaurant located in Topeka, KS.",
+            "sourceUrl": "https://jongsthaikitchen.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://jongsthaikitchen.com/",
+          "https://jongsthaikitchen.com/menu",
+          "https://jongsthaikitchen.com/about-us"
+        ],
+        "retrievedAt": "2026-08-31T12:39:53.518Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-wheel-barrel-topeka": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T12:39:55.227Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.thewheelbarrel.com/food",
+        "reservationUrl": "https://order.toasttab.com/online/the-wheel-barrel-925-n-kansas-ave",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: The Wheel Barrel | Topeka Kansas",
+            "sourceUrl": "https://www.thewheelbarrel.com/"
+          },
+          {
+            "quote": "title: About &mdash; The Wheel Barrel | Topeka Kansas",
+            "sourceUrl": "https://www.thewheelbarrel.com/about"
+          },
+          {
+            "quote": "og:description: Explore the many tastes and creations of The Wheel Barrel! Try one of our award-winning grilled cheese sandwiches or enjoy another delicious item from our revolving menu.",
+            "sourceUrl": "https://www.thewheelbarrel.com/food"
+          },
+          {
+            "quote": "title: Our Food &mdash; The Wheel Barrel | Topeka Kansas",
+            "sourceUrl": "https://www.thewheelbarrel.com/food"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.thewheelbarrel.com/",
+          "https://www.thewheelbarrel.com/about",
+          "https://www.thewheelbarrel.com/food"
+        ],
+        "retrievedAt": "2026-08-31T12:39:55.227Z",
         "playwrightPages": 0
       }
     }

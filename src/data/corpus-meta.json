@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T12:27:45.081Z",
-  "builtAt": "2026-08-31T12:27:45Z",
-  "count": 998,
-  "regions": 149,
+  "generatedAt": "2026-08-31T12:40:06.752Z",
+  "builtAt": "2026-08-31T12:40:06Z",
+  "count": 1014,
+  "regions": 152,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 977,
+    "current": 993,
     "officialConflicts": 11,
-    "thinRecords": 525,
+    "thinRecords": 537,
     "avgUnknowns": 5.14,
     "avgThinFields": 7.58,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 345
+    "reachableAtLastReview": 361
   },
-  "fullCaseFiles": 998,
+  "fullCaseFiles": 1014,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -162,6 +162,7 @@
     ],
     "Kansas": [
       "Lawrence, KS",
+      "Topeka, KS",
       "Wichita, KS"
     ],
     "Kentucky": [
@@ -188,7 +189,8 @@
       "Grand Rapids, MI"
     ],
     "Minnesota": [
-      "Minneapolis, MN"
+      "Minneapolis, MN",
+      "Rochester, MN"
     ],
     "Mississippi": [
       "Jackson, MS"
@@ -237,6 +239,7 @@
     "North Carolina": [
       "Asheville, NC",
       "Charlotte, NC",
+      "Durham, NC",
       "Raleigh, NC"
     ],
     "North Dakota": [
@@ -475,7 +478,10 @@
     "Mobile, AL": "Alabama",
     "Fort Collins, CO": "Colorado",
     "Springfield, MO": "Missouri",
-    "Greenville, SC": "South Carolina"
+    "Greenville, SC": "South Carolina",
+    "Rochester, MN": "Minnesota",
+    "Durham, NC": "North Carolina",
+    "Topeka, KS": "Kansas"
   },
   "cuisineTagOptions": [
     "Afghan",
@@ -7674,6 +7680,118 @@
       "region": "Greenville, SC",
       "regionGroup": "South Carolina",
       "city": "Greenville"
+    },
+    {
+      "slug": "bleu-duck-kitchen-rochester",
+      "title": "Bleu Duck Kitchen",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "forager-brewery-rochester",
+      "title": "Forager Brewery",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "terza-ristorante-rochester",
+      "title": "Terza Ristorante",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "victoria-s-rochester",
+      "title": "Victoria's",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "thaipop-rochester",
+      "title": "ThaiPop",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "chester-s-kitchen-and-bar-rochester",
+      "title": "Chester's Kitchen and Bar",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "saltbox-seafood-joint-durham",
+      "title": "Saltbox Seafood Joint",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "geer-street-garden-durham",
+      "title": "Geer Street Garden",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "alley-twenty-six-durham",
+      "title": "Alley Twenty Six",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "bull-city-burger-and-brewery-durham",
+      "title": "Bull City Burger and Brewery",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "dashi-durham",
+      "title": "Dashi",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "toast-durham",
+      "title": "Toast",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "blind-tiger-brewery-restaurant-topeka",
+      "title": "Blind Tiger Brewery & Restaurant",
+      "region": "Topeka, KS",
+      "regionGroup": "Kansas",
+      "city": "Topeka"
+    },
+    {
+      "slug": "chez-yasu-topeka",
+      "title": "Chez Yasu",
+      "region": "Topeka, KS",
+      "regionGroup": "Kansas",
+      "city": "Topeka"
+    },
+    {
+      "slug": "jong-s-thai-kitchen-topeka",
+      "title": "Jong's Thai Kitchen",
+      "region": "Topeka, KS",
+      "regionGroup": "Kansas",
+      "city": "Topeka"
+    },
+    {
+      "slug": "the-wheel-barrel-topeka",
+      "title": "The Wheel Barrel",
+      "region": "Topeka, KS",
+      "regionGroup": "Kansas",
+      "city": "Topeka"
     }
   ]
 }

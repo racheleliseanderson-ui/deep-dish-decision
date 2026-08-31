@@ -2,6 +2,275 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-08-31T12:40:06.866Z",
+      "finishedAt": "2026-08-31T12:40:06.866Z",
+      "records": 1014,
+      "promoted": 15,
+      "fullBefore": 998,
+      "fullAfter": 1014,
+      "avgCompleteness": 96,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 993,
+        "officialConflicts": 11,
+        "thinRecords": 537,
+        "avgUnknowns": 5.14,
+        "avgThinFields": 7.58,
+        "lastReviewAt": "2026-08-31",
+        "reachableAtLastReview": 361
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T12:39:15.541Z",
+      "finishedAt": "2026-08-31T12:39:57.481Z",
+      "batchSize": 16,
+      "cities": [
+        "Rochester, Minnesota",
+        "Durham, North Carolina",
+        "Topeka, Kansas"
+      ],
+      "resolved": 16,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 95,
+      "corpusEnriched": 1014,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 16
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T12-39-15-541Z-enrich-owned",
+      "records": [
+        {
+          "slug": "bleu-duck-kitchen-rochester",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "forager-brewery-rochester",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 16"
+          ]
+        },
+        {
+          "slug": "terza-ristorante-rochester",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "victoria-s-rochester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "thaipop-rochester",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "chester-s-kitchen-and-bar-rochester",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "saltbox-seafood-joint-durham",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "geer-street-garden-durham",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "alley-twenty-six-durham",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "bull-city-burger-and-brewery-durham",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "dashi-durham",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "toast-durham",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "blind-tiger-brewery-restaurant-topeka",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "chez-yasu-topeka",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "jong-s-thai-kitchen-topeka",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-wheel-barrel-topeka",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T12:39:15.148Z",
+      "finishedAt": "2026-08-31T12:39:15.245Z",
+      "cities": [
+        {
+          "city": "Rochester, NY",
+          "queueCity": "Rochester",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Rochester, MN",
+          "queueCity": "Rochester",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Durham, NC",
+          "queueCity": "Durham",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Topeka, KS",
+          "queueCity": "Topeka",
+          "found": 4,
+          "inserted": 4,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 16,
+      "duplicatesSkipped": 8,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T12-39-15-149Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings-2026-08-31-statewide-f02.json",
+        "seed-listings-2026-08-31-statewide-f03.json",
+        "seed-listings-2026-08-31-statewide-f04.json",
+        "seed-listings-2026-08-31-statewide-f05.json",
+        "seed-listings-2026-08-31-statewide-f06.json",
+        "seed-listings-2026-08-31-statewide-f07.json",
+        "seed-listings-2026-08-31-statewide-f08.json",
+        "seed-listings-2026-08-31-statewide-f09.json",
+        "seed-listings-2026-08-31-statewide-f10.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "bleu-duck-kitchen-rochester",
+        "forager-brewery-rochester",
+        "terza-ristorante-rochester",
+        "victoria-s-rochester",
+        "thaipop-rochester",
+        "chester-s-kitchen-and-bar-rochester",
+        "saltbox-seafood-joint-durham",
+        "geer-street-garden-durham",
+        "alley-twenty-six-durham",
+        "bull-city-burger-and-brewery-durham",
+        "dashi-durham",
+        "toast-durham",
+        "blind-tiger-brewery-restaurant-topeka",
+        "chez-yasu-topeka",
+        "jong-s-thai-kitchen-topeka",
+        "the-wheel-barrel-topeka"
+      ]
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-08-31T12:27:45.197Z",
       "finishedAt": "2026-08-31T12:27:45.197Z",
       "records": 998,
@@ -10471,742 +10740,6 @@
         }
       ],
       "hygiene": null
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-19T02:53:28.994Z",
-      "finishedAt": "2026-08-19T02:53:29.068Z",
-      "cities": [
-        {
-          "city": "Seattle, WA",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        },
-        {
-          "city": "Tampa, FL",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        },
-        {
-          "city": "San Diego, CA",
-          "found": 9,
-          "inserted": 9,
-          "duplicates": 0
-        },
-        {
-          "city": "Austin, TX",
-          "found": 12,
-          "inserted": 12,
-          "duplicates": 0
-        },
-        {
-          "city": "Las Vegas, NV",
-          "found": 10,
-          "inserted": 9,
-          "duplicates": 1
-        },
-        {
-          "city": "Pittsburgh, PA",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        }
-      ],
-      "inserted": 60,
-      "duplicatesSkipped": 1,
-      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-19T02-53-28-994Z-seed-listings",
-      "insertedSlugs": [
-        "the-walrus-and-the-carpenter-seattle",
-        "joule-seattle",
-        "lark-seattle",
-        "cafe-juanita-seattle",
-        "the-herbfarm-seattle",
-        "the-whale-wins-seattle",
-        "musang-seattle",
-        "archipelago-seattle",
-        "staple-fancy-seattle",
-        "tilikum-place-cafe-seattle",
-        "bern-s-steak-house-tampa",
-        "ulele-tampa",
-        "columbia-restaurant-tampa",
-        "mise-en-place-tampa",
-        "oxford-exchange-tampa",
-        "rooster-and-the-till-tampa",
-        "rococo-steak-tampa",
-        "oak-ola-tampa",
-        "stillwaters-tavern-tampa",
-        "edison-food-drink-lab-tampa",
-        "addison-san-diego",
-        "juniper-ivy-san-diego",
-        "herb-wood-san-diego",
-        "callie-san-diego",
-        "animae-san-diego",
-        "the-fishery-san-diego",
-        "jeune-et-jolie-san-diego",
-        "cesarina-san-diego",
-        "civico-1845-san-diego",
-        "uchi-austin",
-        "uchiko-austin",
-        "barley-swine-austin",
-        "odd-duck-austin",
-        "lenoir-austin",
-        "suerte-austin",
-        "l-oca-d-oro-austin",
-        "franklin-barbecue-austin",
-        "olamaie-austin",
-        "kemuri-tatsu-ya-austin",
-        "canje-austin",
-        "jeffrey-s-austin",
-        "bazaar-meat-las-vegas",
-        "esther-s-kitchen-las-vegas",
-        "sparrow-wolf-las-vegas",
-        "carson-kitchen-las-vegas",
-        "honey-salt-las-vegas",
-        "ferraro-s-italian-restaurant-wine-bar-las-vegas",
-        "anima-by-edo-las-vegas",
-        "lotus-of-siam-las-vegas",
-        "partage-las-vegas",
-        "superior-motors-pittsburgh",
-        "morcilla-pittsburgh",
-        "apteka-pittsburgh",
-        "altius-pittsburgh",
-        "meat-potatoes-pittsburgh",
-        "legume-pittsburgh",
-        "grit-grace-pittsburgh",
-        "chengdu-gourmet-pittsburgh",
-        "dianoia-s-eatery-pittsburgh",
-        "point-brugge-caf-pittsburgh"
-      ]
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-18T22:55:25.109Z",
-      "finishedAt": "2026-08-18T22:57:25.423Z",
-      "batchSize": 55,
-      "cities": [
-        "Detroit, Michigan",
-        "Minneapolis, Minnesota",
-        "Denver, Colorado",
-        "Baltimore, Maryland",
-        "Charlotte, North Carolina",
-        "Nashville, Tennessee"
-      ],
-      "resolved": 55,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 65,
-      "corpusEnriched": 280,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 55
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-18T22-55-25-109Z-enrich-owned",
-      "records": [
-        {
-          "slug": "selden-standard-detroit",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "marrow-detroit",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 4",
-            "quotes 21"
-          ]
-        },
-        {
-          "slug": "grey-ghost-detroit-detroit",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 4"
-          ]
-        },
-        {
-          "slug": "takoi-detroit",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4",
-            "quotes 2"
-          ]
-        },
-        {
-          "slug": "shewolf-pastificio-bar-detroit",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 4",
-            "quotes 2"
-          ]
-        },
-        {
-          "slug": "london-chop-house-detroit",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "buddy-s-pizza-detroit",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 3",
-            "quotes 2"
-          ]
-        },
-        {
-          "slug": "supino-pizzeria-detroit",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "baobab-fare-detroit",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "flowers-of-vietnam-detroit",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "standby-detroit",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3",
-            "quotes 12"
-          ]
-        },
-        {
-          "slug": "spoon-and-stable-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 9"
-          ]
-        },
-        {
-          "slug": "demi-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "owamni-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 3",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "112-eatery-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "hai-hai-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "bar-la-grassa-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "restaurant-alma-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 2",
-            "quotes 2"
-          ]
-        },
-        {
-          "slug": "kado-no-mise-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 2",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "colita-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 12"
-          ]
-        },
-        {
-          "slug": "pizzeria-lola-minneapolis",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 4",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "tavernetta-denver",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "hop-alley-denver",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 1",
-            "quotes 2"
-          ]
-        },
-        {
-          "slug": "uncle-denver",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 1",
-            "quotes 2"
-          ]
-        },
-        {
-          "slug": "cart-driver-denver",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 2",
-            "quotes 1"
-          ]
-        },
-        {
-          "slug": "guard-and-grace-denver",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 4",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "the-wolf-s-tailor-denver",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1",
-            "quotes 1"
-          ]
-        },
-        {
-          "slug": "mercantile-dining-provision-denver",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4",
-            "quotes 8"
-          ]
-        },
-        {
-          "slug": "work-class-denver",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 4",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "ultreia-denver",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 2"
-          ]
-        },
-        {
-          "slug": "el-five-denver",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "sushi-den-denver",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 2",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "charleston-baltimore",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 8"
-          ]
-        },
-        {
-          "slug": "thames-street-oyster-house-baltimore",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 2",
-            "quotes 1"
-          ]
-        },
-        {
-          "slug": "la-cuchara-baltimore",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "woodberry-kitchen-baltimore",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 2",
-            "quotes 1"
-          ]
-        },
-        {
-          "slug": "azumi-baltimore",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1",
-            "quotes 2"
-          ]
-        },
-        {
-          "slug": "the-bygone-baltimore",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1",
-            "quotes 1"
-          ]
-        },
-        {
-          "slug": "cinghiale-baltimore",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 3",
-            "quotes 4"
-          ]
-        },
-        {
-          "slug": "the-asbury-charlotte",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 8"
-          ]
-        },
-        {
-          "slug": "kindred-charlotte",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 3",
-            "quotes 8"
-          ]
-        },
-        {
-          "slug": "haberdish-charlotte",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3",
-            "quotes 1"
-          ]
-        },
-        {
-          "slug": "midwood-smokehouse-charlotte",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 16"
-          ]
-        },
-        {
-          "slug": "stagioni-charlotte",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 4",
-            "quotes 1"
-          ]
-        },
-        {
-          "slug": "customshop-charlotte",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "the-catbird-seat-nashville",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 1",
-            "quotes 1"
-          ]
-        },
-        {
-          "slug": "husk-nashville-nashville",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 8"
-          ]
-        },
-        {
-          "slug": "butcher-bee-nashville",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "rolf-and-daughters-nashville",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "henrietta-red-nashville",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 3",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "bastion-nashville",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "locust-nashville",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 3",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "lockeland-table-nashville",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "folk-nashville",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 7"
-          ]
-        },
-        {
-          "slug": "josephine-nashville",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1",
-            "quotes 3"
-          ]
-        }
-      ],
-      "hygiene": null
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-18T22:55:05.661Z",
-      "finishedAt": "2026-08-18T22:55:05.689Z",
-      "cities": [
-        {
-          "city": "Detroit, MI",
-          "found": 11,
-          "inserted": 11,
-          "duplicates": 0
-        },
-        {
-          "city": "Minneapolis, MN",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        },
-        {
-          "city": "Denver, CO",
-          "found": 11,
-          "inserted": 11,
-          "duplicates": 0
-        },
-        {
-          "city": "Baltimore, MD",
-          "found": 7,
-          "inserted": 7,
-          "duplicates": 0
-        },
-        {
-          "city": "Charlotte, NC",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        },
-        {
-          "city": "Nashville, TN",
-          "found": 10,
-          "inserted": 10,
-          "duplicates": 0
-        }
-      ],
-      "inserted": 55,
-      "duplicatesSkipped": 0,
-      "snapshot": "/tmp/deep-dish-decision/.pipeline-snapshots/2026-08-18T22-55-05-661Z-seed-listings",
-      "insertedSlugs": [
-        "selden-standard-detroit",
-        "marrow-detroit",
-        "grey-ghost-detroit-detroit",
-        "takoi-detroit",
-        "shewolf-pastificio-bar-detroit",
-        "london-chop-house-detroit",
-        "buddy-s-pizza-detroit",
-        "supino-pizzeria-detroit",
-        "baobab-fare-detroit",
-        "flowers-of-vietnam-detroit",
-        "standby-detroit",
-        "spoon-and-stable-minneapolis",
-        "demi-minneapolis",
-        "owamni-minneapolis",
-        "112-eatery-minneapolis",
-        "hai-hai-minneapolis",
-        "bar-la-grassa-minneapolis",
-        "restaurant-alma-minneapolis",
-        "kado-no-mise-minneapolis",
-        "colita-minneapolis",
-        "pizzeria-lola-minneapolis",
-        "tavernetta-denver",
-        "hop-alley-denver",
-        "uncle-denver",
-        "cart-driver-denver",
-        "guard-and-grace-denver",
-        "the-wolf-s-tailor-denver",
-        "mercantile-dining-provision-denver",
-        "work-class-denver",
-        "ultreia-denver",
-        "el-five-denver",
-        "sushi-den-denver",
-        "charleston-baltimore",
-        "thames-street-oyster-house-baltimore",
-        "la-cuchara-baltimore",
-        "woodberry-kitchen-baltimore",
-        "azumi-baltimore",
-        "the-bygone-baltimore",
-        "cinghiale-baltimore",
-        "the-asbury-charlotte",
-        "kindred-charlotte",
-        "haberdish-charlotte",
-        "midwood-smokehouse-charlotte",
-        "stagioni-charlotte",
-        "customshop-charlotte",
-        "the-catbird-seat-nashville",
-        "husk-nashville-nashville",
-        "butcher-bee-nashville",
-        "rolf-and-daughters-nashville",
-        "henrietta-red-nashville",
-        "bastion-nashville",
-        "locust-nashville",
-        "lockeland-table-nashville",
-        "folk-nashville",
-        "josephine-nashville"
-      ]
     }
   ]
 }
