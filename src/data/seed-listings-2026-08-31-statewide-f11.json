@@ -1,0 +1,136 @@
+{
+  "note": "Statewide fill F-11. Lafayette LA (Louisiana's third city after New Orleans/Baton Rouge), Bozeman MT and Missoula MT (Montana's second and third cities after Billings). Blackbird Kitchen (Bozeman) and The Keep (Missoula) already in the corpus — not re-seeded. Every new entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. Provo, Reno, Oxford, and Fayetteville still deferred. Lafayette: Pamplona Cloudflare; Central Pizza Lafayette+Broussard; Pop's shares the site with Doc's Pop-In; Zeus Lafayette+Lake Charles; T-Coon's official site has no address/phone. Bozeman: I-Ho's Cloudflare; Revelry empty. Missoula: Plonk Missoula+Bozeman; Five on Black multi; Ciao Mambo statewide; Camino official page has no street; Scotty's Table closed. Green Bay, Norman, Allentown, Springfield MA, Chattanooga, Evansville, and Eugene deferred this batch.",
+  "generatedAt": "2026-08-31T13:15:00.000Z",
+  "batches": [
+    {
+      "city": "Lafayette",
+      "stateCode": "LA",
+      "listings": [
+        {
+          "title": "Johnson's Boucanière",
+          "website": "https://www.johnsonsboucaniere.com/",
+          "phone": "+1-337-269-8878",
+          "address": "1111 Saint John Street, Lafayette, LA 70501",
+          "cuisineTags": ["Cajun", "Barbecue"]
+        },
+        {
+          "title": "Social Southern Table & Bar",
+          "website": "https://www.socialsouthern.com/",
+          "phone": "+1-337-456-3274",
+          "address": "3901 Johnston Street, Lafayette, LA 70503",
+          "cuisineTags": ["Southern", "American"]
+        },
+        {
+          "title": "Vestal",
+          "website": "https://vestalrestaurant.com/",
+          "phone": "+1-337-534-0682",
+          "address": "555 Jefferson Street, Lafayette, LA 70501",
+          "cuisineTags": ["Southern", "American"]
+        },
+        {
+          "title": "Spoonbill Watering Hole & Restaurant",
+          "website": "https://www.spoonbillrestaurant.com/",
+          "phone": "+1-337-534-0585",
+          "address": "900 Jefferson Street, Lafayette, LA 70501",
+          "cuisineTags": ["Southern", "Seafood"]
+        },
+        {
+          "title": "Hideaway on Lee",
+          "website": "https://www.hideawayonlee.com/",
+          "phone": "+1-337-484-1141",
+          "address": "407 Lee Avenue, Lafayette, LA 70501",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Charley G's",
+          "website": "https://www.charleygs.com/",
+          "phone": "+1-337-981-0108",
+          "address": "3809 Ambassador Caffery Parkway #120c, Lafayette, LA 70503",
+          "cuisineTags": ["Cajun", "Seafood"]
+        }
+      ]
+    },
+    {
+      "city": "Bozeman",
+      "stateCode": "MT",
+      "listings": [
+        {
+          "title": "Dave's Sushi",
+          "website": "https://www.daves-sushi.com/",
+          "phone": "+1-406-556-1351",
+          "address": "115 N Bozeman Avenue, Bozeman, MT 59715",
+          "cuisineTags": ["Japanese", "Sushi"]
+        },
+        {
+          "title": "Montana Ale Works",
+          "website": "https://www.montanaaleworks.com/",
+          "phone": "+1-406-587-7700",
+          "address": "611 E Main Street, Bozeman, MT 59715",
+          "cuisineTags": ["American", "Brewpub"]
+        },
+        {
+          "title": "Copper",
+          "website": "https://coppermontana.com/",
+          "phone": "+1-406-404-1700",
+          "address": "101 E Main Street, Bozeman, MT 59715",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Little Star Diner",
+          "website": "https://www.littlestardiner.com/",
+          "phone": "+1-406-624-6463",
+          "address": "548 East Babcock Street, Bozeman, MT 59715",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Feed Cafe",
+          "website": "https://www.feedcafebozeman.com/",
+          "phone": "+1-406-219-2630",
+          "address": "1530 W Main Street, Bozeman, MT 59715",
+          "cuisineTags": ["American", "Cafe"]
+        },
+        {
+          "title": "Mountains Walking",
+          "website": "https://mountainswalking.com/",
+          "phone": "+1-406-219-3480",
+          "address": "422 North Plum Avenue, Bozeman, MT 59715",
+          "cuisineTags": ["American", "Brewpub"]
+        }
+      ]
+    },
+    {
+      "city": "Missoula",
+      "stateCode": "MT",
+      "listings": [
+        {
+          "title": "The Old Post",
+          "website": "https://www.oldpostmissoula.com/",
+          "phone": "+1-406-540-4433",
+          "address": "103 W Spruce Street, Missoula, MT 59802",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "The Stables",
+          "website": "https://www.thestablesmissoula.com/",
+          "phone": "+1-406-493-0789",
+          "address": "227 Main Street, Missoula, MT 59802",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Biga Pizza",
+          "website": "https://www.bigapizza.com/",
+          "phone": "+1-406-728-2579",
+          "address": "241 West Main Street, Missoula, MT 59802",
+          "cuisineTags": ["Italian", "Pizza"]
+        },
+        {
+          "title": "Top Hat Lounge",
+          "website": "https://tophatlounge.com/",
+          "phone": "+1-406-728-9865",
+          "address": "134 West Front Street, Missoula, MT 59802",
+          "cuisineTags": ["American"]
+        }
+      ]
+    }
+  ]
+}

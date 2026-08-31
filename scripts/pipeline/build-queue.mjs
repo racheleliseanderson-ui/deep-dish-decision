@@ -67,6 +67,21 @@ const STATEWIDE_FILL = [
   ["Rochester", "MN", 121395],
   ["Durham", "NC", 283506],
   ["Topeka", "KS", 126587],
+  ["Lafayette", "LA", 121374],
+  ["Bozeman", "MT", 54539],
+  ["Missoula", "MT", 75516],
+  ["Tacoma", "WA", 219346],
+  ["Flagstaff", "AZ", 76831],
+  ["Frederick", "MD", 79588],
+  ["Greensboro", "NC", 299035],
+  ["Toledo", "OH", 266301],
+  ["Corpus Christi", "TX", 316239],
+  ["Reno", "NV", 264738],
+  ["Chattanooga", "TN", 181099],
+  ["Wilmington", "NC", 117643],
+  ["Dayton", "OH", 137644],
+  ["Allentown", "PA", 125845],
+  ["Winston-Salem", "NC", 249545],
 ];
 
 const existing = readJson(PATHS.queue, null);

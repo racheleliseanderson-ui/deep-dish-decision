@@ -1,0 +1,148 @@
+{
+  "note": "Statewide fill F-15. Dayton OH (Ohio's fifth city after Cincinnati/Cleveland/Columbus/Toledo), Allentown PA (Pennsylvania's third after Philadelphia/Pittsburgh), Winston-Salem NC (North Carolina's seventh after Charlotte/Raleigh/Asheville/Durham/Greensboro/Wilmington). Every new entry has a current official restaurant site verified HTTP 200. Narrative first-party fields stay empty until enrich.mjs runs. Green Bay deferred: Republic Chophouse lists sister Mangiare on the same site; Cedar & Sage is hotel F&B; Chefusion closed; Plae 403; Hinterland challenge; Cafe on Broadway for sale. Springfield MA deferred: Red Rose Cloudflare; 1636 North hijacked; Theodore's and Max's official sites did not resolve. Dayton: Three Birds title lists Dayton/Kettering/Patterson Park; Old Scratch is multi-city; Pine Club flagged locations/challenge; Wheat Penny nav-links Meadowlark. Allentown: Henry's and Wert's are challenge walls; Okatshe city-subdomain group. Winston-Salem: Bernardin's lists a Charlotte phone; Mozelle's names sister Betty on Burke; 6th and Vine HTTP 202; Katharine and Kasturi Cloudflare; Cugino Forno already flagged multi in F-13. Provo, Oxford, Fayetteville, Green Bay, Norman, Evansville, Eugene, Stamford, Huntington, and Ogden still deferred.",
+  "generatedAt": "2026-08-31T15:50:00.000Z",
+  "batches": [
+    {
+      "city": "Dayton",
+      "stateCode": "OH",
+      "listings": [
+        {
+          "title": "Taqueria Mixteca",
+          "website": "https://taqueriamixteca.net/",
+          "phone": "+1-937-258-2654",
+          "address": "1609 E 3rd Street, Dayton, OH 45403",
+          "cuisineTags": ["Mexican"]
+        },
+        {
+          "title": "Sueño",
+          "website": "https://www.suenodyt.com/",
+          "phone": "+1-937-453-0008",
+          "address": "607 East 3rd Street, Dayton, OH 45402",
+          "cuisineTags": ["Mexican"]
+        },
+        {
+          "title": "Table 33",
+          "website": "https://table33dayton.com/",
+          "phone": "+1-937-999-3070",
+          "address": "45 W 4th Street, Dayton, OH 45402",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Lily's",
+          "website": "https://www.lilysdayton.com/",
+          "phone": "+1-937-723-7637",
+          "address": "329 E 5th Street, Dayton, OH 45402",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Grist",
+          "website": "https://www.gristprovisions.com/",
+          "phone": "+1-937-802-4544",
+          "address": "46 W 5th Street, Dayton, OH 45402",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Thai 9",
+          "website": "https://thai9restaurant.com/",
+          "phone": "+1-937-222-3227",
+          "address": "11 Brown Street, Dayton, OH 45402",
+          "cuisineTags": ["Thai"]
+        }
+      ]
+    },
+    {
+      "city": "Allentown",
+      "stateCode": "PA",
+      "listings": [
+        {
+          "title": "Grille 3501",
+          "website": "https://www.grille3501.com/",
+          "phone": "+1-610-706-0100",
+          "address": "3501 Broadway, Allentown, PA 18104",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Westside Grill",
+          "website": "https://www.westsidegrillpa.com/",
+          "phone": "+1-610-508-4500",
+          "address": "621 Grange Road, Allentown, PA 18106",
+          "cuisineTags": ["American", "Steak"]
+        },
+        {
+          "title": "Union & Finch",
+          "website": "https://www.unionandfinch.com/",
+          "phone": "+1-610-432-1522",
+          "address": "1528 W Union Street, Allentown, PA 18102",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Simpatico",
+          "website": "https://www.simpaticopasta.com/",
+          "phone": "+1-484-274-6095",
+          "address": "27 North 7th Street, Allentown, PA 18101",
+          "cuisineTags": ["Italian"]
+        },
+        {
+          "title": "Pennsylvania Rye Company",
+          "website": "https://www.paryeco.com/",
+          "phone": "+1-484-929-2729",
+          "address": "536 Hamilton Street, Allentown, PA 18101",
+          "cuisineTags": ["American", "Cocktails"]
+        },
+        {
+          "title": "The Aladdin Restaurant",
+          "website": "https://www.aladdinlv.com/",
+          "phone": "+1-610-437-4023",
+          "address": "651 Union Boulevard, Allentown, PA 18103",
+          "cuisineTags": ["Middle Eastern"]
+        }
+      ]
+    },
+    {
+      "city": "Winston-Salem",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "Mojito Latin Soul Food",
+          "website": "https://www.mojitolatinsoulfood.com/",
+          "phone": "+1-336-723-7239",
+          "address": "723 N Trade Street NW, Winston-Salem, NC 27101",
+          "cuisineTags": ["Latin", "Caribbean"]
+        },
+        {
+          "title": "Mission Pizza Napoletana",
+          "website": "https://www.missionpizzanapoletana.com/",
+          "address": "707 N Trade Street, Winston-Salem, NC 27101",
+          "cuisineTags": ["Pizza", "Italian"]
+        },
+        {
+          "title": "Heff's Burger Club",
+          "website": "https://www.heffsburgerclub.com/",
+          "address": "285 West 4th Street, Winston-Salem, NC 27101",
+          "cuisineTags": ["Burgers", "American"]
+        },
+        {
+          "title": "Sage & Salt",
+          "website": "https://sageandsaltbistro.com/",
+          "phone": "+1-336-829-5007",
+          "address": "300 S Liberty Street, Winston-Salem, NC 27101",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Sweet Potatoes",
+          "website": "https://www.sweetpotatoes.ws/",
+          "phone": "+1-336-727-4844",
+          "address": "607 Trade Street Northwest, Winston-Salem, NC 27101",
+          "cuisineTags": ["Southern"]
+        },
+        {
+          "title": "Forsyth Seafood Market & Café",
+          "website": "http://forsythseafood.com/",
+          "phone": "+1-336-748-0795",
+          "address": "108 North Martin Luther King Junior Drive, Winston-Salem, NC 27101",
+          "cuisineTags": ["Seafood"]
+        }
+      ]
+    }
+  ]
+}

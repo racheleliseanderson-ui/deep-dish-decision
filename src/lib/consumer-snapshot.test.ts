@@ -171,17 +171,18 @@ describe("diner questions", () => {
 });
 
 describe("washington date-night set", () => {
-  it("keeps 33 Washington records and does not drop Canlis", () => {
+  it("keeps the Washington date-night set including Canlis", () => {
     const wa = records.filter((r) => r.regionGroup === "Washington");
-    expect(wa.length).toBe(33);
+    expect(wa.length).toBeGreaterThanOrEqual(33);
     const ranked = rank(wa, {
       ...emptySituation,
       regionGroup: "Washington",
       occasion: "Date night",
       partySize: 2,
     });
-    expect(ranked.length).toBe(33);
+    expect(ranked.length).toBe(wa.length);
     expect(ranked.some((x) => x.record.slug === "canlis")).toBe(true);
+    expect(records.filter((r) => r.region === "Seattle, WA").length).toBe(10);
   });
 });
 
