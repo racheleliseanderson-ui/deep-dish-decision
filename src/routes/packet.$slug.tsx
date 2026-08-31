@@ -1,6 +1,6 @@
 import { Eyebrow } from "@/components/rih/bits";
 import { ThemeToggle } from "@/components/rih/theme-toggle";
-import { bySlug } from "@/lib/dataset";
+import type { RestaurantRecord } from "@/lib/dataset";
 import { decisionBrief, scoreRecord, situationDepth, SITUATION_SLOTS } from "@/lib/intelligence";
 import { downloadPacketPdf } from "@/lib/packet-pdf";
 import { useEnrichmentSignals } from "@/lib/prefs";
@@ -9,6 +9,12 @@ import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react
 
 
 export const Route = createFileRoute("/packet/$slug")({
+  loader: async ({ params }): Promise<{ record: RestaurantRecord }> => {
+    const { bySlug } = await import("@/lib/dataset");
+    const record = bySlug.get(params.slug);
+    if (!record) throw notFound();
+    return { record };
+  },
   head: () => ({
     meta: [
       { title: "Restaurant Decision Packet — Restaurant Intelligence Hub" },
@@ -40,9 +46,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 function Packet() {
-  const { slug } = Route.useParams();
-  const record = bySlug.get(slug);
-  if (!record) throw notFound();
+  const { record } = Route.useLoaderData();
 
   const search = useRouterState({ select: (s) => s.location.searchStr });
   const situation = decodeSituation(search ?? "");

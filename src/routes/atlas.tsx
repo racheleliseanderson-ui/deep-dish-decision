@@ -1,32 +1,19 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
-import {
-  byAccessibility,
-  byBookingPath,
-  byCuisine,
-  byDaypart,
-  byDietary,
-  byPlanningLoad,
-  byRegionGroup,
-  byServiceStyle,
-  bySpendBand,
-  byStateProvince,
-  byStrongestOccasion,
-  conflictRecords,
-  corpus,
-  densestMetros,
-  depthLeaders,
-  dueSoonRecords,
-  gapMap,
-  overdueRecords,
-  thinnest,
-  thinnestMetros,
-  unreachable,
-  type Facet,
-} from "@/lib/atlas";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
+type Facet = {
+  label: string;
+  count: number;
+  share: number;
+  thin: number;
+  conflicts: number;
+  avgUnknowns: number;
+  reachable: number;
+};
+
 export const Route = createFileRoute("/atlas")({
+  loader: () => import("@/lib/atlas"),
   head: () => ({
     meta: [
       { title: "Corpus Atlas — Restaurant Intelligence Hub" },
@@ -133,6 +120,29 @@ function RecordStrip({
 }
 
 function Atlas() {
+  const {
+    byAccessibility,
+    byBookingPath,
+    byCuisine,
+    byDaypart,
+    byDietary,
+    byPlanningLoad,
+    byRegionGroup,
+    byServiceStyle,
+    bySpendBand,
+    byStateProvince,
+    byStrongestOccasion,
+    conflictRecords,
+    corpus,
+    densestMetros,
+    depthLeaders,
+    dueSoonRecords,
+    gapMap,
+    overdueRecords,
+    thinnest,
+    thinnestMetros,
+    unreachable,
+  } = Route.useLoaderData();
   return (
     <main className="min-h-screen pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">

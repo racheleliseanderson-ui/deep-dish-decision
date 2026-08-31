@@ -5,7 +5,7 @@ import { FindingsStack } from "@/components/rih/findings";
 import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Reveal } from "@/components/rih/reveal";
 import { fieldDisplay, isUnstated } from "@/lib/case-depth";
-import { bySlug, type RestaurantRecord } from "@/lib/dataset";
+import type { RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
 import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
@@ -15,7 +15,8 @@ import { cn } from "@/lib/utils";
 import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/record/$slug")({
-  loader: ({ params }): { record: RestaurantRecord } => {
+  loader: async ({ params }): Promise<{ record: RestaurantRecord }> => {
+    const { bySlug } = await import("@/lib/dataset");
     const record = bySlug.get(params.slug);
     if (!record) throw notFound();
     return { record };
