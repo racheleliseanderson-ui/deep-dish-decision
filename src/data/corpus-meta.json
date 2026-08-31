@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T13:13:54.055Z",
-  "builtAt": "2026-08-31T13:13:54Z",
-  "count": 1058,
-  "regions": 161,
+  "generatedAt": "2026-08-31T13:22:31.828Z",
+  "builtAt": "2026-08-31T13:22:32Z",
+  "count": 1076,
+  "regions": 164,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 1037,
+    "current": 1055,
     "officialConflicts": 11,
-    "thinRecords": 559,
+    "thinRecords": 569,
     "avgUnknowns": 5.14,
-    "avgThinFields": 7.58,
+    "avgThinFields": 7.57,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 403
+    "reachableAtLastReview": 420
   },
-  "fullCaseFiles": 1058,
+  "fullCaseFiles": 1076,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -217,7 +217,8 @@
       "Omaha, NE"
     ],
     "Nevada": [
-      "Las Vegas, NV"
+      "Las Vegas, NV",
+      "Reno, NV"
     ],
     "New Hampshire": [
       "Manchester, NH"
@@ -246,7 +247,8 @@
       "Charlotte, NC",
       "Durham, NC",
       "Greensboro, NC",
-      "Raleigh, NC"
+      "Raleigh, NC",
+      "Wilmington, NC"
     ],
     "North Dakota": [
       "Fargo, ND"
@@ -285,6 +287,7 @@
       "Sioux Falls, SD"
     ],
     "Tennessee": [
+      "Chattanooga, TN",
       "Knoxville, TN",
       "Memphis, TN",
       "Nashville, TN"
@@ -499,7 +502,10 @@
     "Frederick, MD": "Maryland",
     "Greensboro, NC": "North Carolina",
     "Toledo, OH": "Ohio",
-    "Corpus Christi, TX": "Texas"
+    "Corpus Christi, TX": "Texas",
+    "Reno, NV": "Nevada",
+    "Chattanooga, TN": "Tennessee",
+    "Wilmington, NC": "North Carolina"
   },
   "cuisineTagOptions": [
     "Afghan",
@@ -8118,6 +8124,132 @@
       "region": "Corpus Christi, TX",
       "regionGroup": "Texas",
       "city": "Corpus Christi"
+    },
+    {
+      "slug": "washoe-public-house-reno",
+      "title": "Washoe Public House",
+      "region": "Reno, NV",
+      "regionGroup": "Nevada",
+      "city": "Reno"
+    },
+    {
+      "slug": "arario-midtown-reno",
+      "title": "Arario Midtown",
+      "region": "Reno, NV",
+      "regionGroup": "Nevada",
+      "city": "Reno"
+    },
+    {
+      "slug": "the-twisted-fork-reno",
+      "title": "The Twisted Fork",
+      "region": "Reno, NV",
+      "regionGroup": "Nevada",
+      "city": "Reno"
+    },
+    {
+      "slug": "sage-leaf-reno",
+      "title": "Sage Leaf",
+      "region": "Reno, NV",
+      "regionGroup": "Nevada",
+      "city": "Reno"
+    },
+    {
+      "slug": "dolce-caffe-reno",
+      "title": "Dolce Caffé",
+      "region": "Reno, NV",
+      "regionGroup": "Nevada",
+      "city": "Reno"
+    },
+    {
+      "slug": "palais-de-jade-reno",
+      "title": "Palais De Jade",
+      "region": "Reno, NV",
+      "regionGroup": "Nevada",
+      "city": "Reno"
+    },
+    {
+      "slug": "stir-chattanooga",
+      "title": "STIR",
+      "region": "Chattanooga, TN",
+      "regionGroup": "Tennessee",
+      "city": "Chattanooga"
+    },
+    {
+      "slug": "hello-monty-chattanooga",
+      "title": "Hello Monty",
+      "region": "Chattanooga, TN",
+      "regionGroup": "Tennessee",
+      "city": "Chattanooga"
+    },
+    {
+      "slug": "whitebird-chattanooga",
+      "title": "Whitebird",
+      "region": "Chattanooga, TN",
+      "regionGroup": "Tennessee",
+      "city": "Chattanooga"
+    },
+    {
+      "slug": "boathouse-chattanooga",
+      "title": "Boathouse",
+      "region": "Chattanooga, TN",
+      "regionGroup": "Tennessee",
+      "city": "Chattanooga"
+    },
+    {
+      "slug": "bluegrass-grill-chattanooga",
+      "title": "Bluegrass Grill",
+      "region": "Chattanooga, TN",
+      "regionGroup": "Tennessee",
+      "city": "Chattanooga"
+    },
+    {
+      "slug": "urban-stack-chattanooga",
+      "title": "Urban Stack",
+      "region": "Chattanooga, TN",
+      "regionGroup": "Tennessee",
+      "city": "Chattanooga"
+    },
+    {
+      "slug": "manna-wilmington",
+      "title": "manna",
+      "region": "Wilmington, NC",
+      "regionGroup": "North Carolina",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "caprice-bistro-wilmington",
+      "title": "Caprice Bistro",
+      "region": "Wilmington, NC",
+      "regionGroup": "North Carolina",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "olivero-wilmington",
+      "title": "Olivero",
+      "region": "Wilmington, NC",
+      "regionGroup": "North Carolina",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "dram-yard-wilmington",
+      "title": "Dram Yard",
+      "region": "Wilmington, NC",
+      "regionGroup": "North Carolina",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "seabird-wilmington",
+      "title": "Seabird",
+      "region": "Wilmington, NC",
+      "regionGroup": "North Carolina",
+      "city": "Wilmington"
+    },
+    {
+      "slug": "the-pilot-house-wilmington",
+      "title": "The Pilot House",
+      "region": "Wilmington, NC",
+      "regionGroup": "North Carolina",
+      "city": "Wilmington"
     }
   ]
 }

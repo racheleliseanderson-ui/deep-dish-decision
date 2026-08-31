@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T13:12:46.211Z",
+  "generatedAt": "2026-08-31T13:21:30.749Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1437,6 +1437,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T13:12:49.839Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Reno",
+      "stateCode": "NV",
+      "population": 264738,
+      "priority": 119,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:21:34.570Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Chattanooga",
+      "stateCode": "TN",
+      "population": 181099,
+      "priority": 120,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:21:34.570Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Wilmington",
+      "stateCode": "NC",
+      "population": 117643,
+      "priority": 121,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T13:21:34.570Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

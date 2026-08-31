@@ -1,0 +1,149 @@
+{
+  "note": "Statewide fill F-14. Reno NV (Nevada's second city after Las Vegas), Chattanooga TN (Tennessee's fourth after Nashville/Memphis/Knoxville), Wilmington NC (North Carolina's sixth after Charlotte/Raleigh/Asheville/Durham/Greensboro). Every new entry has a current official restaurant site verified HTTP 200. Narrative first-party fields stay empty until enrich.mjs runs. Provo, Oxford, and Fayetteville still deferred. Reno: Wild River Grille timed out; Beaujolais and Louis' Basque Corner are challenge walls; Casale's Halfway Club flagged challenge; Liberty Food & Wine 403; 4th St. Bistro is a Wayback snapshot not a live site; LuLou's closed 2026; The Depot ended restaurant service; Cluckers official copy still says Sunday Coming Soon. Chattanooga: Alleia HTTP 202; Easy Bistro, Public House, Main Street Meats, and St. John's are challenge walls; 1885 Grill lists St. Elmo + Ooltewah + Georgia rooms; FEED's schema points at an Atlanta events office. Wilmington: Brasserie du Soleil Cloudflare 403; Catch and Three10 are challenge walls; Ceviche's timed out. Green Bay, Norman, Allentown, Springfield MA, Evansville, Eugene, Stamford, Huntington, and Ogden deferred this batch.",
+  "generatedAt": "2026-08-31T15:20:00.000Z",
+  "batches": [
+    {
+      "city": "Reno",
+      "stateCode": "NV",
+      "listings": [
+        {
+          "title": "Washoe Public House",
+          "website": "https://washoepublichouse.com/",
+          "phone": "+1-775-322-2710",
+          "address": "275 Hill Street Ste 100, Reno, NV 89501",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Arario Midtown",
+          "website": "https://www.arariomidtown.com/",
+          "phone": "+1-775-870-8202",
+          "address": "777 S Center Street Suite 200, Reno, NV 89501",
+          "cuisineTags": ["Korean"]
+        },
+        {
+          "title": "The Twisted Fork",
+          "website": "https://www.twistedforkreno.com/",
+          "phone": "+1-775-853-6033",
+          "address": "1191 Steamboat Parkway #1400, Reno, NV 89521",
+          "cuisineTags": ["American", "Latin"]
+        },
+        {
+          "title": "Sage Leaf",
+          "website": "https://www.sageleafreno.com/",
+          "phone": "+1-775-384-2249",
+          "address": "650 Tahoe Street, Reno, NV 89509",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Dolce Caffé",
+          "website": "https://www.dolcecaffereno.com/",
+          "phone": "+1-775-624-2921",
+          "address": "3886 Mayberry Drive, Reno, NV 89502",
+          "cuisineTags": ["Italian", "Bakery"]
+        },
+        {
+          "title": "Palais De Jade",
+          "website": "https://palaisdejadereno.net/",
+          "phone": "+1-775-827-5233",
+          "address": "960 West Moana Lane, Reno, NV 89509",
+          "cuisineTags": ["Chinese"]
+        }
+      ]
+    },
+    {
+      "city": "Chattanooga",
+      "stateCode": "TN",
+      "listings": [
+        {
+          "title": "STIR",
+          "website": "https://stirchattanooga.com/",
+          "phone": "+1-423-531-7847",
+          "address": "1444 Market Street, Chattanooga, TN 37402",
+          "cuisineTags": ["American", "Seafood"]
+        },
+        {
+          "title": "Hello Monty",
+          "website": "https://www.hellomontyonmain.com/",
+          "phone": "+1-423-206-9242",
+          "address": "306 W Main Street, Chattanooga, TN 37408",
+          "cuisineTags": ["American", "Wood-fired"]
+        },
+        {
+          "title": "Whitebird",
+          "website": "https://www.whitebirdchattanooga.com/",
+          "phone": "+1-423-401-9575",
+          "address": "102 Walnut Street, Chattanooga, TN 37403",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Boathouse",
+          "website": "https://www.boathousechattanooga.com/",
+          "phone": "+1-423-622-0122",
+          "address": "1459 Riverside Drive, Chattanooga, TN 37406",
+          "cuisineTags": ["American", "Seafood"]
+        },
+        {
+          "title": "Bluegrass Grill",
+          "website": "https://www.bluegrassgrillchattanooga.com/",
+          "phone": "+1-423-752-4020",
+          "address": "55 East Main Street, Chattanooga, TN 37408",
+          "cuisineTags": ["Breakfast", "American"]
+        },
+        {
+          "title": "Urban Stack",
+          "website": "https://www.urbanstack.com/",
+          "phone": "+1-423-475-5350",
+          "address": "12 W 13th Street, Chattanooga, TN 37402",
+          "cuisineTags": ["Burgers", "American"]
+        }
+      ]
+    },
+    {
+      "city": "Wilmington",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "manna",
+          "website": "https://mannaavenue.com/",
+          "phone": "+1-910-763-5252",
+          "address": "123 Princess Street, Wilmington, NC 28401",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Caprice Bistro",
+          "website": "https://www.capricebistro.com/",
+          "phone": "+1-910-815-0810",
+          "address": "10 Market Street, Wilmington, NC 28401",
+          "cuisineTags": ["French"]
+        },
+        {
+          "title": "Olivero",
+          "website": "https://www.oliveroilm.com/",
+          "phone": "+1-910-399-2961",
+          "address": "522 S 3rd Street, Wilmington, NC 28401",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Dram Yard",
+          "website": "https://www.dramyard.com/",
+          "address": "101 S 2nd Street, Wilmington, NC 28401",
+          "cuisineTags": ["Southern", "Coastal"]
+        },
+        {
+          "title": "Seabird",
+          "website": "https://www.seabirdnc.com/",
+          "phone": "+1-910-769-5996",
+          "address": "1 South Front Street, Wilmington, NC 28401",
+          "cuisineTags": ["Seafood"]
+        },
+        {
+          "title": "The Pilot House",
+          "website": "https://www.pilothouserest.com/",
+          "phone": "+1-910-343-0200",
+          "address": "2 Ann Street, Wilmington, NC 28401",
+          "cuisineTags": ["Seafood", "American"]
+        }
+      ]
+    }
+  ]
+}
