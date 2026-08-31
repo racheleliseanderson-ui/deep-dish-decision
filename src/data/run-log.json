@@ -2,6 +2,285 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-08-31T03:30:21.998Z",
+      "finishedAt": "2026-08-31T03:30:21.998Z",
+      "records": 908,
+      "promoted": 16,
+      "fullBefore": 890,
+      "fullAfter": 908,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 887,
+        "officialConflicts": 11,
+        "thinRecords": 479,
+        "avgUnknowns": 5.14,
+        "avgThinFields": 7.59,
+        "lastReviewAt": "2026-08-31",
+        "reachableAtLastReview": 258
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T03:29:14.808Z",
+      "finishedAt": "2026-08-31T03:30:19.447Z",
+      "batchSize": 18,
+      "cities": [
+        "El Paso, Texas",
+        "Lexington, Kentucky",
+        "Ann Arbor, Michigan"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 94,
+      "corpusEnriched": 908,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T03-29-14-809Z-enrich-owned",
+      "records": [
+        {
+          "slug": "cafe-central-el-paso",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "anson-11-el-paso",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "l-j-cafe-el-paso",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "park-tavern-el-paso",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "kiki-s-restaurant-el-paso",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "delicious-mexican-eatery-el-paso",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "coles-735-main-lexington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "dudley-s-on-short-lexington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "bella-notte-lexington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "county-club-lexington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1",
+            "playwright 1"
+          ]
+        },
+        {
+          "slug": "mileta-lexington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "merrick-inn-lexington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "sava-s-ann-arbor",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "aventura-ann-arbor",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "mani-osteria-ann-arbor",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-earle-ann-arbor",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "spencer-ann-arbor",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "jerusalem-garden-ann-arbor",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 12"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T03:29:14.459Z",
+      "finishedAt": "2026-08-31T03:29:14.550Z",
+      "cities": [
+        {
+          "city": "El Paso, TX",
+          "queueCity": "El Paso",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Lexington, KY",
+          "queueCity": "Lexington",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Ann Arbor, MI",
+          "queueCity": "Ann Arbor",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 18,
+      "duplicatesSkipped": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T03-29-14-459Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings-2026-08-31-statewide-f02.json",
+        "seed-listings-2026-08-31-statewide-f03.json",
+        "seed-listings-2026-08-31-statewide-f04.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "cafe-central-el-paso",
+        "anson-11-el-paso",
+        "l-j-cafe-el-paso",
+        "park-tavern-el-paso",
+        "kiki-s-restaurant-el-paso",
+        "delicious-mexican-eatery-el-paso",
+        "coles-735-main-lexington",
+        "dudley-s-on-short-lexington",
+        "bella-notte-lexington",
+        "county-club-lexington",
+        "mileta-lexington",
+        "merrick-inn-lexington",
+        "sava-s-ann-arbor",
+        "aventura-ann-arbor",
+        "mani-osteria-ann-arbor",
+        "the-earle-ann-arbor",
+        "spencer-ann-arbor",
+        "jerusalem-garden-ann-arbor"
+      ]
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-08-31T03:21:11.087Z",
       "finishedAt": "2026-08-31T03:21:11.087Z",
       "records": 890,
@@ -12616,141 +12895,6 @@
         "house-of-xian-dumpling",
         "mama-ji-s",
         "mr-szechuan"
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-11T00:01:16.017Z",
-      "finishedAt": "2026-08-11T00:03:41.563Z",
-      "batchSize": 5,
-      "cities": [
-        "Chicago, Illinois"
-      ],
-      "resolved": 5,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 82,
-      "corpusEnriched": 86,
-      "apiCalls": {
-        "google": 5,
-        "firecrawl": 9
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-01-16-015Z-enrich",
-      "records": [
-        {
-          "slug": "portillo-s-barnelli-s-chicago",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "jim-s-original",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "billy-goat-tavern-the-original",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "demera-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "flo-santos",
-          "matchStatus": "resolved",
-          "completeness": 92,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "discover",
-      "startedAt": "2026-08-11T00:01:14.796Z",
-      "finishedAt": "2026-08-11T00:01:15.936Z",
-      "batchSize": 5,
-      "cities": [
-        {
-          "city": "Chicago, IL",
-          "found": 27,
-          "inserted": 5,
-          "duplicates": 0
-        }
-      ],
-      "inserted": 5,
-      "duplicatesSkipped": 0,
-      "apiCalls": {
-        "placesSearchText": 2
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-01-14-796Z-discover",
-      "insertedSlugs": [
-        "portillo-s-barnelli-s-chicago",
-        "jim-s-original",
-        "billy-goat-tavern-the-original",
-        "demera-restaurant",
-        "flo-santos"
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-11T00:00:19.014Z",
-      "finishedAt": "2026-08-11T00:01:14.680Z",
-      "batchSize": 5,
-      "cities": [
-        "Houston, Texas"
-      ],
-      "resolved": 5,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 83,
-      "corpusEnriched": 81,
-      "apiCalls": {
-        "google": 5,
-        "firecrawl": 4
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-00-19-011Z-enrich",
-      "records": [
-        {
-          "slug": "huynh-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "di-an-pho",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": []
-        },
-        {
-          "slug": "pho-saigon",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "simply-pho",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "pho-binh-heights",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        }
       ]
     }
   ]

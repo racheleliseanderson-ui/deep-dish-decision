@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T03:20:10.286Z",
+  "generatedAt": "2026-08-31T03:29:12.478Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1077,6 +1077,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T03:20:12.315Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "El Paso",
+      "stateCode": "TX",
+      "population": 678815,
+      "priority": 89,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T03:29:14.459Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Lexington",
+      "stateCode": "KY",
+      "population": 322570,
+      "priority": 90,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T03:29:14.459Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Ann Arbor",
+      "stateCode": "MI",
+      "population": 123851,
+      "priority": 91,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T03:29:14.459Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

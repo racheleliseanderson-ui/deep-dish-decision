@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T03:21:10.977Z",
-  "builtAt": "2026-08-31T03:21:11Z",
-  "count": 890,
-  "regions": 131,
+  "generatedAt": "2026-08-31T03:30:21.900Z",
+  "builtAt": "2026-08-31T03:30:59Z",
+  "count": 908,
+  "regions": 134,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 869,
+    "current": 887,
     "officialConflicts": 11,
-    "thinRecords": 471,
+    "thinRecords": 479,
     "avgUnknowns": 5.14,
-    "avgThinFields": 7.6,
+    "avgThinFields": 7.59,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 241
+    "reachableAtLastReview": 258
   },
-  "fullCaseFiles": 890,
+  "fullCaseFiles": 908,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -157,6 +157,7 @@
       "Wichita, KS"
     ],
     "Kentucky": [
+      "Lexington, KY",
       "Louisville, KY"
     ],
     "Louisiana": [
@@ -174,6 +175,7 @@
       "Worcester, MA"
     ],
     "Michigan": [
+      "Ann Arbor, MI",
       "Detroit, MI",
       "Grand Rapids, MI"
     ],
@@ -266,6 +268,7 @@
     "Texas": [
       "Austin, TX",
       "Dallas, TX",
+      "El Paso, TX",
       "Fort Worth, TX",
       "Houston, TX",
       "Pearland, TX",
@@ -439,7 +442,10 @@
     "Asheville, NC": "North Carolina",
     "St. Louis, MO": "Missouri",
     "Worcester, MA": "Massachusetts",
-    "Baton Rouge, LA": "Louisiana"
+    "Baton Rouge, LA": "Louisiana",
+    "El Paso, TX": "Texas",
+    "Lexington, KY": "Kentucky",
+    "Ann Arbor, MI": "Michigan"
   },
   "cuisineTagOptions": [
     "American",
@@ -502,6 +508,7 @@
     "Jamaican",
     "Japanese",
     "Jewish",
+    "Kentucky",
     "Korean",
     "Lao",
     "Latin",
@@ -6872,6 +6879,132 @@
       "region": "Baton Rouge, LA",
       "regionGroup": "Louisiana",
       "city": "Baton Rouge"
+    },
+    {
+      "slug": "cafe-central-el-paso",
+      "title": "Cafe Central",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "anson-11-el-paso",
+      "title": "Anson 11",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "l-j-cafe-el-paso",
+      "title": "L&J Cafe",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "park-tavern-el-paso",
+      "title": "Park Tavern",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "kiki-s-restaurant-el-paso",
+      "title": "Kiki's Restaurant",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "delicious-mexican-eatery-el-paso",
+      "title": "Delicious Mexican Eatery",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "coles-735-main-lexington",
+      "title": "Coles 735 Main",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "dudley-s-on-short-lexington",
+      "title": "Dudley's on Short",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "bella-notte-lexington",
+      "title": "Bella Notte",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "county-club-lexington",
+      "title": "County Club",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "mileta-lexington",
+      "title": "Mileta",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "merrick-inn-lexington",
+      "title": "Merrick Inn",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "sava-s-ann-arbor",
+      "title": "Sava's",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "aventura-ann-arbor",
+      "title": "Aventura",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "mani-osteria-ann-arbor",
+      "title": "Mani Osteria",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "the-earle-ann-arbor",
+      "title": "The Earle",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "spencer-ann-arbor",
+      "title": "Spencer",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "jerusalem-garden-ann-arbor",
+      "title": "Jerusalem Garden",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
     }
   ]
 }

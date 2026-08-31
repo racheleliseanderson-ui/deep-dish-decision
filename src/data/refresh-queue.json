@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T03:21:11.561Z",
+  "generatedAt": "2026-08-31T03:30:22.470Z",
   "settings": {
     "tiers": {
       "A": 30,
@@ -11,7 +11,7 @@
     "hygieneBatchSize": 25
   },
   "totals": {
-    "records": 890,
+    "records": 908,
     "hygiene": 21,
     "neverEnriched": 0,
     "thin": 0,
@@ -10252,6 +10252,24 @@
       "siteFailures": []
     },
     {
+      "slug": "spencer-ann-arbor",
+      "title": "Spencer",
+      "city": "Ann Arbor",
+      "stateProvince": "Michigan",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 94,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:30:15.620Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "spicy-girl",
       "title": "Spicy Girl",
       "city": "Houston",
@@ -12970,6 +12988,24 @@
       "siteFailures": []
     },
     {
+      "slug": "anson-11-el-paso",
+      "title": "Anson 11",
+      "city": "El Paso",
+      "stateProvince": "Texas",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:21.069Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "anthony-s-runway-84-fort-lauderdale",
       "title": "Anthony's Runway 84",
       "city": "Fort Lauderdale",
@@ -13078,6 +13114,24 @@
       "siteFailures": []
     },
     {
+      "slug": "aventura-ann-arbor",
+      "title": "Aventura",
+      "city": "Ann Arbor",
+      "stateProvince": "Michigan",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:30:09.179Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "bacchus-milwaukee",
       "title": "Bacchus",
       "city": "Milwaukee",
@@ -13147,6 +13201,24 @@
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-20",
       "reviewedAt": "2026-08-21",
+      "siteFailures": []
+    },
+    {
+      "slug": "bella-notte-lexington",
+      "title": "Bella Notte",
+      "city": "Lexington",
+      "stateProvince": "Kentucky",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:41.527Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
       "siteFailures": []
     },
     {
@@ -13312,6 +13384,24 @@
       "siteFailures": []
     },
     {
+      "slug": "cafe-central-el-paso",
+      "title": "Cafe Central",
+      "city": "El Paso",
+      "stateProvince": "Texas",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:14.829Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "calusso-fort-lauderdale",
       "title": "Calusso",
       "city": "Fort Lauderdale",
@@ -13456,6 +13546,24 @@
       "siteFailures": []
     },
     {
+      "slug": "coles-735-main-lexington",
+      "title": "Coles 735 Main",
+      "city": "Lexington",
+      "stateProvince": "Kentucky",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:38.186Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "colita-minneapolis",
       "title": "Colita",
       "city": "Minneapolis",
@@ -13489,6 +13597,24 @@
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-20",
       "reviewedAt": "2026-08-21",
+      "siteFailures": []
+    },
+    {
+      "slug": "county-club-lexington",
+      "title": "County Club",
+      "city": "Lexington",
+      "stateProvince": "Kentucky",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:52.353Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
       "siteFailures": []
     },
     {
@@ -13636,6 +13762,24 @@
       "siteFailures": []
     },
     {
+      "slug": "delicious-mexican-eatery-el-paso",
+      "title": "Delicious Mexican Eatery",
+      "city": "El Paso",
+      "stateProvince": "Texas",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:37.236Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "dock-s-oyster-house-atlantic-city",
       "title": "Dock's Oyster House",
       "city": "Atlantic City",
@@ -13705,6 +13849,24 @@
       "reviewStatus": "current",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
+      "siteFailures": []
+    },
+    {
+      "slug": "dudley-s-on-short-lexington",
+      "title": "Dudley's on Short",
+      "city": "Lexington",
+      "stateProvince": "Kentucky",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:39.281Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
       "siteFailures": []
     },
     {
@@ -14230,6 +14392,24 @@
       "siteFailures": []
     },
     {
+      "slug": "jerusalem-garden-ann-arbor",
+      "title": "Jerusalem Garden",
+      "city": "Ann Arbor",
+      "stateProvince": "Michigan",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:30:17.501Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "joe-s-kansas-city-bar-b-que-kansas-city",
       "title": "Joe's Kansas City Bar-B-Que",
       "city": "Kansas City",
@@ -14284,6 +14464,24 @@
       "siteFailures": []
     },
     {
+      "slug": "kiki-s-restaurant-el-paso",
+      "title": "Kiki's Restaurant",
+      "city": "El Paso",
+      "stateProvince": "Texas",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:36.357Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "kin",
       "title": "KIN",
       "city": "Boise",
@@ -14317,6 +14515,24 @@
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-20",
       "reviewedAt": "2026-08-21",
+      "siteFailures": []
+    },
+    {
+      "slug": "l-j-cafe-el-paso",
+      "title": "L&J Cafe",
+      "city": "El Paso",
+      "stateProvince": "Texas",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:32.939Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
       "siteFailures": []
     },
     {
@@ -14572,6 +14788,24 @@
       "siteFailures": []
     },
     {
+      "slug": "mani-osteria-ann-arbor",
+      "title": "Mani Osteria",
+      "city": "Ann Arbor",
+      "stateProvince": "Michigan",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:30:11.397Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "mansurs-on-the-boulevard-baton-rouge",
       "title": "Mansurs on the Boulevard",
       "city": "Baton Rouge",
@@ -14716,6 +14950,24 @@
       "siteFailures": []
     },
     {
+      "slug": "merrick-inn-lexington",
+      "title": "Merrick Inn",
+      "city": "Lexington",
+      "stateProvince": "Kentucky",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:30:04.650Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
       "slug": "merriman-s-honolulu-honolulu",
       "title": "Merriman's Honolulu",
       "city": "Honolulu",
@@ -14803,6 +15055,24 @@
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-20",
       "reviewedAt": "2026-08-21",
+      "siteFailures": []
+    },
+    {
+      "slug": "mileta-lexington",
+      "title": "Mileta",
+      "city": "Lexington",
+      "stateProvince": "Kentucky",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:30:02.219Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
       "siteFailures": []
     },
     {
@@ -14944,6 +15214,24 @@
       "completeness": 100,
       "matchStatus": "resolved",
       "lastEnrichedAt": "2026-08-31T01:49:46.003Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "park-tavern-el-paso",
+      "title": "Park Tavern",
+      "city": "El Paso",
+      "stateProvince": "Texas",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:29:34.048Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -15289,6 +15577,24 @@
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-20",
       "reviewedAt": "2026-08-21",
+      "siteFailures": []
+    },
+    {
+      "slug": "sava-s-ann-arbor",
+      "title": "Sava's",
+      "city": "Ann Arbor",
+      "stateProvince": "Michigan",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:30:06.986Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
       "siteFailures": []
     },
     {
@@ -15667,6 +15973,24 @@
       "reviewStatus": "current",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-earle-ann-arbor",
+      "title": "The Earle",
+      "city": "Ann Arbor",
+      "stateProvince": "Michigan",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:30:13.695Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
       "siteFailures": []
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T03:21:07.862Z",
+  "generatedAt": "2026-08-31T03:30:19.425Z",
   "records": {
     "canlis": {
       "google": {
@@ -62247,6 +62247,1004 @@
           "https://parrains.com/menu.html"
         ],
         "retrievedAt": "2026-08-31T03:21:06.129Z",
+        "playwrightPages": 0
+      }
+    },
+    "cafe-central-el-paso": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:14.829Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/cafe-central/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Subscribe Home Brunch Menu Lunch Menu Dinner Menu Reservations Private Dining Gift Cards Careers Contact Us Location 109 N.",
+        "groupPolicyLanguage": [
+          "Subscribe Home Brunch Menu Lunch Menu Dinner Menu Reservations Private Dining Gift Cards Careers Contact Us Location 109 N.",
+          "Private Dining From business meetings to engagement parties and weddings, our private dining & event specialists anticipate your every need to ensure you enjoy the event as much as your guests."
+        ],
+        "dressCode": "Friday: Kitchen: 11:00 AM – 11:00 PM Bar: 11:00 AM – 2:00 AM Saturday: Kitchen 10:30 AM – 11:00 PM Bar 11:00 AM – 2:00 AM Sun: Closed Dress Code Business Casual Reserve × 0",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Cafe Central combines innovative taste & 100-year-old traditions, providing an outstanding fine dining experience, fine cuisine, & a great customer service.",
+            "sourceUrl": "https://cafecentral.com/"
+          },
+          {
+            "quote": "title: Cafe Central | The best fine dining experience in El Paso, TX",
+            "sourceUrl": "https://cafecentral.com/"
+          },
+          {
+            "quote": "noscript: .woocommerce-product-gallery{ opacity: 1 !important; }",
+            "sourceUrl": "https://cafecentral.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://cafecentral.com/"
+          },
+          {
+            "quote": "title: Reservations | Cafe Central",
+            "sourceUrl": "https://cafecentral.com/reservations/"
+          },
+          {
+            "quote": "og:description: Give your guests an unforgetable experience with Cafe Central Private Dining & Events services. We'll work with you to create the perfect event.",
+            "sourceUrl": "https://cafecentral.com/private-dining-events/"
+          },
+          {
+            "quote": "title: Private Dining & Events | Host your event at Cafe Central",
+            "sourceUrl": "https://cafecentral.com/private-dining-events/"
+          },
+          {
+            "quote": "title: Contact Us | Cafe Central",
+            "sourceUrl": "https://cafecentral.com/contact-us/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://cafecentral.com/",
+          "https://cafecentral.com/reservations/",
+          "https://cafecentral.com/private-dining-events/",
+          "https://cafecentral.com/contact-us/"
+        ],
+        "retrievedAt": "2026-08-31T03:29:14.829Z",
+        "playwrightPages": 0
+      }
+    },
+    "anson-11-el-paso": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:21.069Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "http://anson11.com/menus.html",
+        "reservationUrl": "https://order.toasttab.com/online/anson-11",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Bistro Upstairs Private Events Reservations OnlinE Orders Gift Cards Menu Two Unique Dining Experiences in One Place Our Story Bistro A casual, friendly & inviting atmosphere located on the first floor.",
+        "groupPolicyLanguage": [
+          "Bistro Upstairs Private Events Reservations OnlinE Orders Gift Cards Menu Two Unique Dining Experiences in One Place Our Story Bistro A casual, friendly & inviting atmosphere located on the first floor.",
+          "Make a reservation Private Events Breathtaking private event space for dining, meetings, luncheons, and parties for groups 8 to 120.",
+          "Join Now Bistro Upstairs Reservations Private Events Downtown El Paso 303 N Oregon Street El Paso, TX 79901 915 504 6400 © Anson 11.",
+          "Bistro Upstairs Private Events Reservations Menu Details Below Private Events With event space accommodating anywhere from 2 to 120 guests, our banquet rooms are beautifully sized and appointed for your next event."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Experience two exceptional dining experiences at Anson 11. Located in Downtown El Paso at 303 N Oregon Street. Contact us to make a reservation Today!",
+            "sourceUrl": "http://anson11.com/"
+          },
+          {
+            "quote": "og:description: With event space accommodating anywhere from 2 to 120 guests, our banquet rooms are beautifully sized and appointed for your next event. Call us to make a reservation.",
+            "sourceUrl": "http://anson11.com/events.html"
+          },
+          {
+            "quote": "title: Anson 11 - Private Events",
+            "sourceUrl": "http://anson11.com/events.html"
+          },
+          {
+            "quote": "og:description: You can make a reservation for the the best Bistro, Upstairs, and Event experiences in El Paso by calling (915) 504-6401. Make your reservation now.",
+            "sourceUrl": "http://anson11.com/reservations.html"
+          },
+          {
+            "quote": "og:description: Anson 11 is here to provide you with excellent and unique dining experiences. View our menus to plan your visit.",
+            "sourceUrl": "http://anson11.com/menus.html"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "http://anson11.com/",
+          "http://anson11.com/events.html",
+          "http://anson11.com/reservations.html",
+          "http://anson11.com/menus.html"
+        ],
+        "retrievedAt": "2026-08-31T03:29:21.069Z",
+        "playwrightPages": 1
+      }
+    },
+    "l-j-cafe-el-paso": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:32.939Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: The L & J Cafe is a uniquely flavorful link between El Paso’s past and present. Originally known as “Tony’s Place”, the restaurant opened on the outskirts of El Paso in 1927, pro...",
+            "sourceUrl": "https://ljcafe.com/"
+          },
+          {
+            "quote": "meta description: The L & J Cafe is a uniquely flavorful link between El Paso’s past and present. Originally known as “Tony’s Place”, the restaurant opened on the outskirts of El Paso in 1927, providing home cooking, home brew and slot machines through Prohibi",
+            "sourceUrl": "https://ljcafe.com/"
+          },
+          {
+            "quote": "title: Traditional Mexican Restaurant in El Paso, TX | L & J Cafe",
+            "sourceUrl": "https://ljcafe.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://ljcafe.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:29:32.939Z",
+        "playwrightPages": 0
+      }
+    },
+    "park-tavern-el-paso": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:34.048Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://parktavernelpaso.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/park-tavern-el-paso",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Does Park Tavern have private dining?",
+        "groupPolicyLanguage": [
+          "Does Park Tavern have private dining?",
+          "Park Tavern offers private dining options for special occasions, business gatherings, and celebrations.",
+          "What kind of food and drinks are offered for private events?"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Park Tavern in downtown El Paso offers upscale dining, craft cocktails, steaks, seafood, burgers, and a vibrant bar in a restored historic building.",
+            "sourceUrl": "https://parktavernelpaso.com/"
+          },
+          {
+            "quote": "title: Park Tavern – Upscale Restaurant & Bar in Downtown El Paso",
+            "sourceUrl": "https://parktavernelpaso.com/"
+          },
+          {
+            "quote": "og:description: Explore Park Tavern’s menu featuring premium steaks, seafood, gourmet burgers, fresh salads, and creative cocktails in downtown El Paso.",
+            "sourceUrl": "https://parktavernelpaso.com/menu"
+          },
+          {
+            "quote": "title: Menu | Park Tavern El Paso",
+            "sourceUrl": "https://parktavernelpaso.com/menu"
+          },
+          {
+            "quote": "og:description: Contact Park Tavern in downtown El Paso for reservations, private dining inquiries, or general questions. Find our phone, email, and location details here.",
+            "sourceUrl": "https://parktavernelpaso.com/contact-us"
+          },
+          {
+            "quote": "title: Contact | Park Tavern El Paso",
+            "sourceUrl": "https://parktavernelpaso.com/contact-us"
+          },
+          {
+            "quote": "og:description: Host your next celebration or business gathering at Park Tavern. Our private dining options in downtown El Paso combine elegance, custom menus, and exceptional service.",
+            "sourceUrl": "https://parktavernelpaso.com/contact-us/private-parties"
+          },
+          {
+            "quote": "title: Private Parties | Park Tavern El Paso",
+            "sourceUrl": "https://parktavernelpaso.com/contact-us/private-parties"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://parktavernelpaso.com/",
+          "https://parktavernelpaso.com/menu",
+          "https://parktavernelpaso.com/contact-us",
+          "https://parktavernelpaso.com/contact-us/private-parties"
+        ],
+        "retrievedAt": "2026-08-31T03:29:34.048Z",
+        "playwrightPages": 0
+      }
+    },
+    "kiki-s-restaurant-el-paso": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:36.357Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1 915 565 6713"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Wednesday,Thursday,Friday,Saturday,Sunday 10:30 21:00",
+          "JSON-LD openingHoursSpecification: Tuesday 00:00 00:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "A visual taste of Kiki's: savor our delicious dishes 1/6 FOOD ALLERGY NOTICE PLEASE BE ADVISED THAT FOOD PREPARED HERE MAY CONTAIN THESE INGREDIENTS: MILK, EGGS, WHEAT, SESAME SEEDS, SOYBEAN, PEANUTS, TREE NUTS, FISH AND SHELLFISH.",
+          "Due to shared equipment and preparation, we cannot guarantee any item to be allergen free."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1 915 565 6713",
+            "sourceUrl": "https://kikisrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Wednesday,Thursday,Friday,Saturday,Sunday 10:30 21:00",
+            "sourceUrl": "https://kikisrestaurant.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 00:00 00:00",
+            "sourceUrl": "https://kikisrestaurant.com/"
+          },
+          {
+            "quote": "og:description: Experience the taste of home with every bite.",
+            "sourceUrl": "https://kikisrestaurant.com/"
+          },
+          {
+            "quote": "twitter:description: Delicious Dishes Inspired by Local Flavors",
+            "sourceUrl": "https://kikisrestaurant.com/"
+          },
+          {
+            "quote": "meta description: Savor authentic Mexican flavors at Kiki's Restaurant in El Paso, a place where every dish tells a story.",
+            "sourceUrl": "https://kikisrestaurant.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://kikisrestaurant.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:29:36.357Z",
+        "playwrightPages": 0
+      }
+    },
+    "delicious-mexican-eatery-el-paso": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:37.236Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Our family created all of our recipes, which we",
+            "sourceUrl": "https://deliciousmexicaneatery.com/"
+          },
+          {
+            "quote": "title: Authentic Mexican in El Paso | Delicious Mexican Eatery",
+            "sourceUrl": "https://deliciousmexicaneatery.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://deliciousmexicaneatery.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:29:37.236Z",
+        "playwrightPages": 0
+      }
+    },
+    "coles-735-main-lexington": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:38.186Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://coles735main.hrpos.heartland.us/menu",
+        "reservationUrl": "https://www.opentable.com/r/coles-735-main-lexington",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://coles735main.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:29:38.186Z",
+        "playwrightPages": 0
+      }
+    },
+    "dudley-s-on-short-lexington": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:39.281Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "http://dudleysonshort.com/menus",
+        "reservationUrl": "https://www.opentable.com/booking/experiences-availability?rid=42208&restref=42208&experienceId=762458&utm_source=external&utm_medium=referral&utm_campaign=shared",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Scroll Dudley’s on Short CELEBRATING 45 YEARS Menus NIGHTLY SPECIALS LISTED BELOW PRIVATE DINING & GIFT CARD INQUIRIES AVAILABLE AT BOTTOM OF PAGE 45 YEAR ANNIVERSARY \"NIGHT OF NOSTALGIA\" Rooftop Garden Seating Now Available Wednesday-Sunday, starting at 5PM.",
+        "groupPolicyLanguage": [
+          "Scroll Dudley’s on Short CELEBRATING 45 YEARS Menus NIGHTLY SPECIALS LISTED BELOW PRIVATE DINING & GIFT CARD INQUIRIES AVAILABLE AT BOTTOM OF PAGE 45 YEAR ANNIVERSARY \"NIGHT OF NOSTALGIA\" Rooftop Garden Seating Now Available Wednesday-Sunday, starting at 5PM."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "http://dudleysonshort.com/"
+          },
+          {
+            "quote": "title: About &mdash; Dudley's on Short",
+            "sourceUrl": "http://dudleysonshort.com/about-press"
+          },
+          {
+            "quote": "og:description: Take a look at our options on the Lunch, Dinner, Brunch, Bar, Dessert, and Beverage menus.",
+            "sourceUrl": "http://dudleysonshort.com/menus"
+          },
+          {
+            "quote": "title: Menus &mdash; Dudley's on Short",
+            "sourceUrl": "http://dudleysonshort.com/menus"
+          },
+          {
+            "quote": "title: Events &mdash; Dudley's on Short",
+            "sourceUrl": "http://dudleysonshort.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "http://dudleysonshort.com/",
+          "http://dudleysonshort.com/about-press",
+          "http://dudleysonshort.com/menus",
+          "http://dudleysonshort.com/events"
+        ],
+        "retrievedAt": "2026-08-31T03:29:39.281Z",
+        "playwrightPages": 0
+      }
+    },
+    "bella-notte-lexington": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:41.527Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://bellalexington.com/menus/",
+        "reservationUrl": "https://order.toasttab.com/online/bellanotte",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Bella Notte offers a fresh. local. seasonal. menu that focuses on quality, fresh ingredients, and preparation that enhances natural flavor.",
+            "sourceUrl": "https://bellalexington.com/"
+          },
+          {
+            "quote": "title: Bella Notte | Fresh. Local. Seasonal. | Lexington, KY",
+            "sourceUrl": "https://bellalexington.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://bellalexington.com/",
+          "https://bellalexington.com/menus/",
+          "https://bellalexington.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T03:29:41.527Z",
+        "playwrightPages": 1
+      }
+    },
+    "county-club-lexington": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:29:52.353Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/county-club-lexington",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: About &mdash; COUNTY CLUB",
+            "sourceUrl": "https://countyclubrestaurant.com/about"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://countyclubrestaurant.com/",
+          "https://countyclubrestaurant.com/about"
+        ],
+        "retrievedAt": "2026-08-31T03:29:52.353Z",
+        "playwrightPages": 1
+      }
+    },
+    "mileta-lexington": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:30:02.219Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.miletarestaurant.com/menus",
+        "reservationUrl": "https://order.toasttab.com/egiftcards/mileta-italian-3545-nicholasville-road-suite-i-932",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "The bar at Mileta Aged Berry beef MILETA BURGER with crispy american cheese, angel hair lettuce & mustard relish Family photos located in the Room Room Little gem CAESAR SALAD with vegan dressing, parmesan frico & toasted focaccia pangrattato.",
+          "Come hungry, we’ll take care of the rest Book a Table Cocktails Lunch Dinner Happy Hour Dessert Gluten Free Dinner"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining Let’s Celebrate together.",
+        "groupPolicyLanguage": [
+          "Private Dining Let’s Celebrate together.",
+          "Book a Dinner Reservation Book a Private Dining Reservation"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Discover Mileta in Lexington, KY, a modern scratch kitchen serving handmade pastas, seasonal dishes, craft cocktails, and wine in a warm, inviting atmosphere.",
+            "sourceUrl": "https://www.miletarestaurant.com/"
+          },
+          {
+            "quote": "title: Mileta | Experience Fine Dining Today",
+            "sourceUrl": "https://www.miletarestaurant.com/"
+          },
+          {
+            "quote": "og:description: Reserve your table at Mileta in Lexington, KY. Enjoy a fine dining experience with various rooms and private event options. Book online or call today.",
+            "sourceUrl": "https://www.miletarestaurant.com/reservations"
+          },
+          {
+            "quote": "title: Book a Table | Make Your Reservation Today &mdash; Mileta",
+            "sourceUrl": "https://www.miletarestaurant.com/reservations"
+          },
+          {
+            "quote": "title: MENUS | Discover and Dine Today &mdash; Mileta",
+            "sourceUrl": "https://www.miletarestaurant.com/menus"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.miletarestaurant.com/",
+          "https://www.miletarestaurant.com/reservations",
+          "https://www.miletarestaurant.com/menus",
+          "https://www.miletarestaurant.com/faq"
+        ],
+        "retrievedAt": "2026-08-31T03:30:02.219Z",
+        "playwrightPages": 0
+      }
+    },
+    "merrick-inn-lexington": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:30:04.650Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.themerrickinn.com/menus",
+        "reservationUrl": "https://www.opentable.com/merrick-inn-reservations-lexington?rid=104194&restref=104194",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 859.269.5417"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Dining & Events Elegant spaces, customized menus, and thoughtful beverage options for every occasion Private dining at Merrick Inn Restaurant offers an elevated yet welcoming experience for celebrations of all kinds.",
+        "groupPolicyLanguage": [
+          "Private Dining & Events Elegant spaces, customized menus, and thoughtful beverage options for every occasion Private dining at Merrick Inn Restaurant offers an elevated yet welcoming experience for celebrations of all kinds.",
+          "With elegant dining rooms, the option to incorporate our Bourbon Bar, and a setting that feels both polished and comfortable, Merrick Inn remains a trusted destination for private dining and events in Lexington.",
+          "Private Dining & Celebrations Merrick Inn provides refined private spaces for intimate gatherings and larger celebrations alike, paired with attentive service and classic Kentucky hospitality in a timeless Lexington setting.",
+          "Private Dining at Merrick Inn Elegant private event spaces in Lexington, KY Our Private Dining Rooms The Bourbon Room Our newest event space, The Bourbon Room is ideal for cocktail receptions or seated dinners."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 859.269.5417",
+            "sourceUrl": "https://www.themerrickinn.com/"
+          },
+          {
+            "quote": "og:description: Merrick Inn Restaurant is a Lexington dining tradition offering classic Kentucky cuisine, Sunday brunch, private dining, patio seating, and award-winning fried chicken.",
+            "sourceUrl": "https://www.themerrickinn.com/"
+          },
+          {
+            "quote": "title: Lexington Fine Dining & Weekend Brunch | Merrick Inn Restaurant",
+            "sourceUrl": "https://www.themerrickinn.com/"
+          },
+          {
+            "quote": "og:description: Learn the story behind Merrick Inn Restaurant, a Lexington dining tradition known for classic Kentucky cuisine, Sunday brunch, and warm hospitality.",
+            "sourceUrl": "https://www.themerrickinn.com/about"
+          },
+          {
+            "quote": "title: About Merrick Inn Restaurant | A Lexington Dining Tradition",
+            "sourceUrl": "https://www.themerrickinn.com/about"
+          },
+          {
+            "quote": "og:description: Explore the menus at Merrick Inn Restaurant in Lexington, KY including dinner, Sunday brunch, dessert, wine, bourbon, patio dining, and seasonal specials.",
+            "sourceUrl": "https://www.themerrickinn.com/menus"
+          },
+          {
+            "quote": "title: Merrick Inn Menus | Lexington KY Dinner, Brunch & Bourbon",
+            "sourceUrl": "https://www.themerrickinn.com/menus"
+          },
+          {
+            "quote": "og:description: Host your next celebration at Merrick Inn in Lexington, KY. Elegant private dining rooms, customized event menus, and classic Kentucky hospitality.",
+            "sourceUrl": "https://www.themerrickinn.com/private-events"
+          },
+          {
+            "quote": "title: Private Dining & Events | Merrick Inn Restaurant Lexington, KY",
+            "sourceUrl": "https://www.themerrickinn.com/private-events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.themerrickinn.com/",
+          "https://www.themerrickinn.com/about",
+          "https://www.themerrickinn.com/menus",
+          "https://www.themerrickinn.com/private-events"
+        ],
+        "retrievedAt": "2026-08-31T03:30:04.650Z",
+        "playwrightPages": 0
+      }
+    },
+    "sava-s-ann-arbor": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:30:06.986Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.savasannarbor.com/menu",
+        "reservationUrl": "https://order.toasttab.com/online/savas-216-s-state-street",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Private Events Sava's offers a spirited and vibrant Private Event experience!",
+        "groupPolicyLanguage": [
+          "Private Events Sava's offers a spirited and vibrant Private Event experience!",
+          "Whether you're planning a large group dining experience, a full restaurant buyout, or an event for lunch, brunch, or dinner, we offer a variety of options including buffet-style, seated dinners, or mix-and-mingle setups."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: About &mdash; Sava's Ann Arbor",
+            "sourceUrl": "https://www.savasannarbor.com/about"
+          },
+          {
+            "quote": "title: Menu &mdash; Sava's Ann Arbor",
+            "sourceUrl": "https://www.savasannarbor.com/menu"
+          },
+          {
+            "quote": "title: Private Events &mdash; Sava's Ann Arbor",
+            "sourceUrl": "https://www.savasannarbor.com/private-events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.savasannarbor.com/",
+          "https://www.savasannarbor.com/about",
+          "https://www.savasannarbor.com/menu",
+          "https://www.savasannarbor.com/private-events"
+        ],
+        "retrievedAt": "2026-08-31T03:30:06.986Z",
+        "playwrightPages": 0
+      }
+    },
+    "aventura-ann-arbor": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:30:09.179Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.aventuraannarbor.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/aventura-reservations-ann-arbor?restref=111745&lang=en-US&ot_source=Restaurant%20website&ot_campaign=Aventura%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "PRIVATE EVENTS Party like a Spaniard, something your guests will never forget.",
+        "groupPolicyLanguage": [
+          "PRIVATE EVENTS Party like a Spaniard, something your guests will never forget.",
+          "Our private event spaces are perfect for accommodating anywhere from 14 to 150 guests.",
+          "Private events at Aventura are a uniquely intimate way to experience the culture and atmosphere of modern tapas and authentic Spanish paella right here in Ann Arbor.",
+          "CAPACITY: 10 - 14 guests Food & Beverage Minimums starting as low as $1,500 reina room Introducing the Reina Room, an refined private dining suite tucked away on our mezzanine level."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: PRIVATE EVENTS &mdash; Aventura",
+            "sourceUrl": "https://www.aventuraannarbor.com/private-events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.aventuraannarbor.com/",
+          "https://www.aventuraannarbor.com/menu",
+          "https://www.aventuraannarbor.com/about",
+          "https://www.aventuraannarbor.com/private-events"
+        ],
+        "retrievedAt": "2026-08-31T03:30:09.179Z",
+        "playwrightPages": 0
+      }
+    },
+    "mani-osteria-ann-arbor": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:30:11.397Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/mani-osteria-bar/v3",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "RESERVATIONS We take reservations for parties of 6–12, up to 30 days in advance.",
+        "groupPolicyLanguage": [
+          "RESERVATIONS We take reservations for parties of 6–12, up to 30 days in advance.",
+          "Private Event Software powered by Tripleseat mark your calendar PARENTS WEEKEND 2026 Reservation requests for University of Michigan Parents Weekend 2026 (Friday, October 23rd – Saturday, October 24th) will be accepted ONLY via our Reservation Request form.",
+          "click below LET'S EAT LOOKING FOR INFORMATION ABOUT PRIVATE EVENTS?"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Family-friendly Italian restaurant serving wood-fired pizzas, handmade pastas, and signature antipasti in downtown Ann Arbor since 2011.",
+            "sourceUrl": "https://www.maniosteria.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://www.maniosteria.com/"
+          },
+          {
+            "quote": "title: Private Events – Mani Osteria",
+            "sourceUrl": "https://maniosteria.com/events/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.maniosteria.com/",
+          "https://maniosteria.com/events/",
+          "https://maniosteria.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T03:30:11.397Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-earle-ann-arbor": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:30:13.695Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.theearle.com/wine",
+        "reservationUrl": "https://www.theearle.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "NEED TO KNOW There is no dress code required for dining with us at the Earle.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: RESERVATIONS | The Earle",
+            "sourceUrl": "https://www.theearle.com/reservations"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://theearle.com/",
+          "https://www.theearle.com/wine",
+          "https://www.theearle.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T03:30:13.695Z",
+        "playwrightPages": 0
+      }
+    },
+    "spencer-ann-arbor": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:30:15.620Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "https://spencerannarbor.com/menu",
+        "reservationUrl": "https://www.exploretock.com/spencerrestaurantannarbor",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 16:00-20:00, , , Th 16:00-20:00, Fr 16:00-20:00, Sa 16:00-20:00, Su 16:00-20:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "dinner is a monthly rotating set menu, price/allergens vary."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 16:00-20:00, , , Th 16:00-20:00, Fr 16:00-20:00, Sa 16:00-20:00, Su 16:00-20:00",
+            "sourceUrl": "https://spencerannarbor.com/"
+          },
+          {
+            "quote": "title: reservations &mdash; SPENCER",
+            "sourceUrl": "https://spencerannarbor.com/reservations"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://spencerannarbor.com/",
+          "https://spencerannarbor.com/menu",
+          "https://spencerannarbor.com/reservations"
+        ],
+        "retrievedAt": "2026-08-31T03:30:15.620Z",
+        "playwrightPages": 0
+      }
+    },
+    "jerusalem-garden-ann-arbor": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:30:17.501Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://jerusalemgarden.net/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-734-995-5060"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 11:00 20:30"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Mediterranean"
+        ],
+        "dietaryLanguage": [
+          "Vegetarian, vegan, and halal friendly, with something for everyone at the table.",
+          "They also offer a variety of vegetarian and pescatarian options.",
+          "They are accommodating of our son's food allergies and so nice.",
+          "Privacy Policy Terms of Use Website created by Web Lagoon Menu Ingredients & Allergens Vegan Gluten Free Halal Contains Soy Contains Tree Nuts Our falafel is made from scratch using fresh, high-quality ingredients."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-734-995-5060",
+            "sourceUrl": "https://jerusalemgarden.net/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://jerusalemgarden.net/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Mediterranean",
+            "sourceUrl": "https://jerusalemgarden.net/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday 11:00 20:30",
+            "sourceUrl": "https://jerusalemgarden.net/"
+          },
+          {
+            "quote": "og:description: Fresh Mediterranean food made daily in downtown Ann Arbor. Dine in, carry out, or order catering for meetings, events, and special occasions.",
+            "sourceUrl": "https://jerusalemgarden.net/"
+          },
+          {
+            "quote": "title: Jerusalem Garden | Mediterranean Restaurant & Catering in Ann Arbor",
+            "sourceUrl": "https://jerusalemgarden.net/"
+          },
+          {
+            "quote": "og:description: Explore our menu of Mediterranean favorites made fresh daily, from falafel and shawarma to hummus, salads, desserts, and more.",
+            "sourceUrl": "https://jerusalemgarden.net/menu"
+          },
+          {
+            "quote": "meta description: Explore our menu of Mediterranean favorites, including falafel, shawarma, kabobs, hummus, fresh salads, soups, desserts, and more.",
+            "sourceUrl": "https://jerusalemgarden.net/menu"
+          },
+          {
+            "quote": "title: Menu | Jerusalem Garden Mediterranean Restaurant Ann Arbor",
+            "sourceUrl": "https://jerusalemgarden.net/menu"
+          },
+          {
+            "quote": "og:description: Discover the story behind Jerusalem Garden and our commitment to fresh Mediterranean food and warm hospitality.",
+            "sourceUrl": "https://jerusalemgarden.net/about"
+          },
+          {
+            "quote": "meta description: Learn about Jerusalem Garden, a family-owned Mediterranean restaurant serving fresh, authentic cuisine in downtown Ann Arbor since 1987.",
+            "sourceUrl": "https://jerusalemgarden.net/about"
+          },
+          {
+            "quote": "title: About Jerusalem Garden | Serving Ann Arbor Since 1987",
+            "sourceUrl": "https://jerusalemgarden.net/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://jerusalemgarden.net/",
+          "https://jerusalemgarden.net/menu",
+          "https://jerusalemgarden.net/about"
+        ],
+        "retrievedAt": "2026-08-31T03:30:17.501Z",
         "playwrightPages": 0
       }
     }
