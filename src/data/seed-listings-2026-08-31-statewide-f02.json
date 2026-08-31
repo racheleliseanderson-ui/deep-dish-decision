@@ -1,0 +1,150 @@
+{
+  "note": "Statewide fill F-02. Mid-size cities after the state floor: Oakland, Fort Lauderdale, Asheville. Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. Excluded Oakland: Commis (SSL issuer fail), Snail Bar (timeout), Grand Lake Kitchen (Lake Merritt + Dimond), Belotti (two Oakland addresses), Homestead / Nyum Bai / Calavera / Miss Ollie's (closed), Shakewell (became The Well), Wood Tavern (Southie / The Wolf sibling restaurants on the same site). Excluded Fort Lauderdale: Cafe Martorano (two locations), Louie Bossi (Fort Lauderdale + Boca), Casa D'Angelo (Fort Lauderdale / Boca / Aventura), Tropical Acres (403), Casa Sensei (403), Canyon (sold), Coconuts (be nice Restaurant Group). Excluded Asheville: Benne on Eagle / Cucina 24 (closed), Chai Pani (multi-city).",
+  "generatedAt": "2026-08-31T02:45:00.000Z",
+  "batches": [
+    {
+      "city": "Oakland",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Mägo",
+          "website": "https://www.magorestaurant.com/",
+          "phone": "+1-510-344-7214",
+          "address": "3762 Piedmont Ave., Oakland, CA 94611",
+          "cuisineTags": ["Latin American", "Fine dining"]
+        },
+        {
+          "title": "Millennium Restaurant",
+          "website": "https://www.millenniumrestaurant.com/",
+          "phone": "+1-510-735-9459",
+          "address": "5912 College Ave, Oakland, CA 94618",
+          "cuisineTags": ["Vegan", "Plant-based"]
+        },
+        {
+          "title": "Soba Ichi",
+          "website": "https://sobaichioakland.com/",
+          "phone": "+1-510-465-1969",
+          "address": "2311A Magnolia St., Oakland, CA 94607",
+          "cuisineTags": ["Japanese", "Soba"]
+        },
+        {
+          "title": "Burdell",
+          "website": "https://www.burdelloakland.com/",
+          "phone": "+1-510-239-9287",
+          "address": "4640 Telegraph Ave., Oakland, CA 94609",
+          "cuisineTags": ["Soul food", "Southern"]
+        },
+        {
+          "title": "Bombera",
+          "website": "https://www.bomberaoakland.com/",
+          "phone": "+1-510-452-5900",
+          "address": "3459 Champion St., Oakland, CA 94602",
+          "cuisineTags": ["Mexican"]
+        },
+        {
+          "title": "Wahpepah's Kitchen",
+          "website": "https://wahpepahskitchen.com/",
+          "phone": "+1-510-698-4067",
+          "address": "3301 E 12th St #133, Oakland, CA 94601",
+          "cuisineTags": ["Native American", "Indigenous"]
+        }
+      ]
+    },
+    {
+      "city": "Fort Lauderdale",
+      "stateCode": "FL",
+      "listings": [
+        {
+          "title": "The Floridian",
+          "website": "https://thefloridiandiner.com/",
+          "phone": "+1-954-463-4041",
+          "address": "1492 East Las Olas Boulevard, Fort Lauderdale, FL 33301",
+          "cuisineTags": ["Diner", "American", "Breakfast"]
+        },
+        {
+          "title": "Catch & Cut",
+          "website": "https://catchandcut.com/",
+          "phone": "+1-954-533-1838",
+          "address": "1309 East Las Olas Boulevard, Fort Lauderdale, FL 33301",
+          "cuisineTags": ["Seafood", "Steak", "Sushi"]
+        },
+        {
+          "title": "Shooters Waterfront",
+          "website": "https://www.shooterswaterfront.com/",
+          "phone": "+1-954-566-2855",
+          "address": "3033 NE 32nd Ave, Fort Lauderdale, FL 33308",
+          "cuisineTags": ["Seafood", "Waterfront"]
+        },
+        {
+          "title": "Anthony's Runway 84",
+          "website": "https://www.runway84.com/",
+          "phone": "+1-954-467-8484",
+          "address": "330 W State Road 84, Fort Lauderdale, FL 33315",
+          "cuisineTags": ["Italian American"]
+        },
+        {
+          "title": "TIMBR",
+          "website": "https://www.timbr-restaurant.com/",
+          "phone": "+1-954-787-5449",
+          "address": "15 W Las Olas Blvd, Fort Lauderdale, FL 33301",
+          "cuisineTags": ["American", "Modern"]
+        },
+        {
+          "title": "Calusso",
+          "website": "https://www.calussorestaurant.com/",
+          "phone": "+1-754-318-6997",
+          "address": "2301 SE 17th Street, Fort Lauderdale, FL 33316",
+          "cuisineTags": ["Seafood", "Coastal"]
+        }
+      ]
+    },
+    {
+      "city": "Asheville",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "Cúrate",
+          "website": "https://www.curatetapasbar.com/",
+          "phone": "+1-828-239-2946",
+          "address": "13 Biltmore Avenue, Asheville, NC 28801",
+          "cuisineTags": ["Spanish", "Tapas"]
+        },
+        {
+          "title": "Rhubarb",
+          "website": "https://www.rhubarbasheville.com/",
+          "phone": "+1-828-785-1503",
+          "address": "7 SW Pack Square, Asheville, NC 28801",
+          "cuisineTags": ["American", "Farm-to-table"]
+        },
+        {
+          "title": "The Admiral",
+          "website": "https://www.theadmiralasheville.com/",
+          "phone": "+1-828-252-2541",
+          "address": "400 Haywood Road, Asheville, NC 28806",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Limones",
+          "website": "https://www.limonesavl.com/",
+          "phone": "+1-828-252-2327",
+          "address": "15 Eagle Street, Asheville, NC 28801",
+          "cuisineTags": ["Mexican"]
+        },
+        {
+          "title": "The Market Place",
+          "website": "https://marketplace-restaurant.com/",
+          "phone": "+1-828-252-4162",
+          "address": "20 Wall Street, Asheville, NC 28801",
+          "cuisineTags": ["Farm-to-table", "American"]
+        },
+        {
+          "title": "Jargon",
+          "website": "https://www.jargonrestaurant.com/",
+          "phone": "+1-828-785-1761",
+          "address": "715 Haywood Rd, Asheville, NC 28806",
+          "cuisineTags": ["American", "Modern"]
+        }
+      ]
+    }
+  ]
+}

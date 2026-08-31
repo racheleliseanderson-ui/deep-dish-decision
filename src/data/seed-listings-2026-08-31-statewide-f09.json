@@ -1,0 +1,150 @@
+{
+  "note": "Statewide fill F-09. Mid-size cities after the state floor: Fort Collins, Springfield, Greenville. Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. Provo, Reno, Oxford, and Fayetteville still deferred. Fort Collins: Choice City challenge; Colorado Room Cloudflare; Ginger and Baker siblings on one site; Canino's closed; Rio Grande multi-city. Springfield: Black Sheep two addresses; Springfield Brewing Company lists multiple taprooms; The Order shares the Vandivort hotel site; Farmers Gastropub spam-injected. Greenville: Trappe Door Cloudflare; Nose Dive and Lazy Goat (Table 301) left out to avoid group concentration — Soby's kept on its own site.",
+  "generatedAt": "2026-08-31T13:30:00.000Z",
+  "batches": [
+    {
+      "city": "Fort Collins",
+      "stateCode": "CO",
+      "listings": [
+        {
+          "title": "The Farmhouse at Jessup Farm",
+          "website": "https://www.farmhousefc.com/",
+          "phone": "+1-970-631-8041",
+          "address": "1957 Jessup Drive, Fort Collins, CO 80525",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "The Regional",
+          "website": "https://theregionalfood.com/",
+          "phone": "+1-970-689-3508",
+          "address": "130 South Mason Street, Fort Collins, CO 80524",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Silver Grill Café",
+          "website": "https://www.silvergrill.com/",
+          "phone": "+1-970-484-4656",
+          "address": "218 Walnut Street, Fort Collins, CO 80524",
+          "cuisineTags": ["American", "Diner"]
+        },
+        {
+          "title": "Cafe Vino",
+          "website": "https://cafevino.com/",
+          "phone": "+1-970-212-3399",
+          "address": "1200 South College Avenue, Fort Collins, CO 80524",
+          "cuisineTags": ["American", "Wine bar"]
+        },
+        {
+          "title": "CooperSmith's Brewpub",
+          "website": "https://coopersmithspub.com/",
+          "phone": "+1-970-498-0483",
+          "address": "5 Old Town Square, Fort Collins, CO 80524",
+          "cuisineTags": ["American", "Brewpub"]
+        },
+        {
+          "title": "The Emporium",
+          "website": "https://www.emporiumftcollins.com/",
+          "phone": "+1-970-493-0024",
+          "address": "378 Walnut Street, Fort Collins, CO 80524",
+          "cuisineTags": ["American"]
+        }
+      ]
+    },
+    {
+      "city": "Springfield",
+      "stateCode": "MO",
+      "listings": [
+        {
+          "title": "Cafe Cusco",
+          "website": "https://www.cafecusco.com/",
+          "phone": "+1-417-868-8088",
+          "address": "234 E Commercial Street, Springfield, MO 65803",
+          "cuisineTags": ["Peruvian"]
+        },
+        {
+          "title": "Van Gogh's Eeterie",
+          "website": "https://www.vangoghseeterie.com/",
+          "phone": "+1-417-344-0085",
+          "address": "334 East Commercial Street, Springfield, MO 65803",
+          "cuisineTags": ["Dutch"]
+        },
+        {
+          "title": "Civil Kitchen",
+          "website": "https://www.civilkitchen.com/",
+          "phone": "+1-417-501-8456",
+          "address": "107 Park Central Square, Springfield, MO 65806",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Flame Steakhouse",
+          "website": "https://www.flamesteakhouse.com/",
+          "phone": "+1-417-862-4444",
+          "address": "314 W Walnut Street, Springfield, MO 65806",
+          "cuisineTags": ["Steakhouse"]
+        },
+        {
+          "title": "Gailey's Breakfast Cafe",
+          "website": "https://www.gaileysbreakfast.com/",
+          "phone": "+1-417-866-5500",
+          "address": "220 E Walnut Street, Springfield, MO 65806",
+          "cuisineTags": ["American", "Cafe"]
+        },
+        {
+          "title": "Lindberg's Tavern",
+          "website": "https://www.lindbergstavern.com/",
+          "phone": "+1-417-868-8900",
+          "address": "318 W Commercial Street, Springfield, MO 65803",
+          "cuisineTags": ["American"]
+        }
+      ]
+    },
+    {
+      "city": "Greenville",
+      "stateCode": "SC",
+      "listings": [
+        {
+          "title": "Soby's",
+          "website": "https://sobys.com/",
+          "phone": "+1-864-232-7007",
+          "address": "207 South Main Street, Greenville, SC 29601",
+          "cuisineTags": ["Southern"]
+        },
+        {
+          "title": "Jianna",
+          "website": "https://jiannagreenville.com/",
+          "phone": "+1-864-720-2200",
+          "address": "600 South Main Street, Greenville, SC 29601",
+          "cuisineTags": ["Italian"]
+        },
+        {
+          "title": "Fork and Plough",
+          "website": "https://www.forkandplough.com/",
+          "phone": "+1-864-732-6802",
+          "address": "1629 East North Street, Greenville, SC 29607",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "The Anchorage",
+          "website": "https://www.theanchoragerestaurant.com/",
+          "phone": "+1-864-219-3082",
+          "address": "586 Perry Avenue, Greenville, SC 29611",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Aryana Afghan Cuisine",
+          "website": "https://aryanagreenville.com/",
+          "phone": "+1-864-236-7410",
+          "address": "210 E Coffee Street, Greenville, SC 29601",
+          "cuisineTags": ["Afghan"]
+        },
+        {
+          "title": "Scoundrel",
+          "website": "https://www.scoundrelgvl.com/",
+          "phone": "+1-864-283-0095",
+          "address": "18 North Main Street, Greenville, SC 29601",
+          "cuisineTags": ["French"]
+        }
+      ]
+    }
+  ]
+}

@@ -80,17 +80,20 @@ def extract_named(record: dict, site: dict) -> list[str]:
         r"six-course|from field|globally informed|creative cuisine with|entrees of|"
         r"available for breakfast|send bbq online|farms,?|foragers|winemakers|"
         r"preservation|accents og|title$|fresh title|"
-        r"wine program|seasonal menu sourced|hospitality|cuisine rooted|"
+        r"wine program|seasonal menu sourced|hospitalit|cuisine rooted|"
         r"modern approach|globally inspired|private dining|welcoming|"
         r"deep respect|exceptional asian|italian tradition|"
         r"prime steaks, seafood|sourced from local|dishes that takes|"
-        r"crafted cocktails|brunch, and dinner|\bstop$|made-from-scratch fare",
+        r"crafted cocktails|brunch, and dinner|\bstop$|made-from-scratch fare|"
+        r"classic kentucky cuisine|sunday brunch|"
+        r"namesake|intelligently crafted|crafted beers",
         re.I,
     )
     for pat in patterns:
         for m in re.finditer(pat, blob, re.I):
             bit = (m.group(1) if m.lastindex else m.group(0)).strip()
             bit = re.sub(r"\s+", " ", bit).strip(" ,.;")
+            bit = re.sub(r"^like\s+", "", bit, flags=re.I)
             if skip.search(bit):
                 continue
             if 3 < len(bit) < 80 and not re.search(r"not stated", bit, re.I):

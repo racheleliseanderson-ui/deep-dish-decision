@@ -1,0 +1,149 @@
+{
+  "note": "Statewide fill F-04. Mid-size cities after the state floor: El Paso, Lexington, Ann Arbor. Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. El Paso: Elemi / Crave (multi-location), Forti's (closed), Cattleman's (outside city), Ardovino's (NM) excluded. Lexington: Holly Hill Inn (Midway + restaurant group), Blue Heron (202), Carson's / Epping's (challenge pages) excluded. Ann Arbor chosen over Reno after Louis' Basque Corner timeout, Beaujolais / Liberty 403-challenge, and group/hijacked Reno domains. Knight's (two Ann Arbor addresses) skipped.",
+  "generatedAt": "2026-08-31T03:35:00.000Z",
+  "batches": [
+    {
+      "city": "El Paso",
+      "stateCode": "TX",
+      "listings": [
+        {
+          "title": "Cafe Central",
+          "website": "https://cafecentral.com/",
+          "phone": "+1-915-545-2233",
+          "address": "109 N. Oregon, El Paso, TX 79901",
+          "cuisineTags": ["Southwestern", "Fine dining"]
+        },
+        {
+          "title": "Anson 11",
+          "website": "http://anson11.com/",
+          "phone": "+1-915-504-6400",
+          "address": "303 N Oregon Street, El Paso, TX 79901",
+          "cuisineTags": ["American", "Bistro"]
+        },
+        {
+          "title": "L&J Cafe",
+          "website": "https://ljcafe.com/",
+          "phone": "+1-915-566-8418",
+          "address": "3622 East Missouri Avenue, El Paso, TX 79903",
+          "cuisineTags": ["Mexican"]
+        },
+        {
+          "title": "Park Tavern",
+          "website": "https://parktavernelpaso.com/",
+          "phone": "+1-915-228-9050",
+          "address": "204 East Mills Avenue, El Paso, TX 79901",
+          "cuisineTags": ["American", "Steak"]
+        },
+        {
+          "title": "Kiki's Restaurant",
+          "website": "https://kikisrestaurant.com/",
+          "phone": "+1-915-565-6713",
+          "address": "2719 North Piedras Street, El Paso, TX 79930",
+          "cuisineTags": ["Mexican"]
+        },
+        {
+          "title": "Delicious Mexican Eatery",
+          "website": "https://deliciousmexicaneatery.com/",
+          "phone": "+1-915-566-1396",
+          "address": "3314 Fort Boulevard, El Paso, TX 79930",
+          "cuisineTags": ["Mexican"]
+        }
+      ]
+    },
+    {
+      "city": "Lexington",
+      "stateCode": "KY",
+      "listings": [
+        {
+          "title": "Coles 735 Main",
+          "website": "https://coles735main.com/",
+          "phone": "+1-859-266-9000",
+          "address": "735 East Main Street, Lexington, KY 40502",
+          "cuisineTags": ["American", "Southern"]
+        },
+        {
+          "title": "Dudley's on Short",
+          "website": "http://dudleysonshort.com/",
+          "phone": "+1-859-252-1010",
+          "address": "259 West Short Street, Lexington, KY 40507",
+          "cuisineTags": ["American", "Fine dining"]
+        },
+        {
+          "title": "Bella Notte",
+          "website": "https://bellalexington.com/",
+          "phone": "+1-859-245-1789",
+          "address": "3715 Nicholasville Road, Lexington, KY 40503",
+          "cuisineTags": ["Italian"]
+        },
+        {
+          "title": "County Club",
+          "website": "https://countyclubrestaurant.com/",
+          "phone": "+1-859-367-0263",
+          "address": "555 North Jefferson St, Lexington, KY 40508",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Mileta",
+          "website": "https://www.miletarestaurant.com/",
+          "phone": "+1-859-303-8855",
+          "address": "3565 Nicholasville Road, Suite 932, Lexington, KY 40503",
+          "cuisineTags": ["American", "Pasta"]
+        },
+        {
+          "title": "Merrick Inn",
+          "website": "https://www.themerrickinn.com/",
+          "phone": "+1-859-269-5417",
+          "address": "1074 Merrick Drive, Lexington, KY 40502",
+          "cuisineTags": ["Kentucky", "Southern"]
+        }
+      ]
+    },
+    {
+      "city": "Ann Arbor",
+      "stateCode": "MI",
+      "listings": [
+        {
+          "title": "Sava's",
+          "website": "https://www.savasannarbor.com/",
+          "phone": "+1-734-623-2233",
+          "address": "216 South State Street, Ann Arbor, MI 48104",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Aventura",
+          "website": "https://www.aventuraannarbor.com/",
+          "phone": "+1-734-369-3153",
+          "address": "216 E Washington St, Ann Arbor, MI 48104",
+          "cuisineTags": ["Spanish", "Tapas"]
+        },
+        {
+          "title": "Mani Osteria",
+          "website": "https://www.maniosteria.com/",
+          "phone": "+1-734-769-6700",
+          "address": "341 E. Liberty St., Ann Arbor, MI 48104",
+          "cuisineTags": ["Italian", "Pizza"]
+        },
+        {
+          "title": "The Earle",
+          "website": "https://theearle.com/",
+          "phone": "+1-734-994-0211",
+          "address": "121 W. Washington, Ann Arbor, MI 48104",
+          "cuisineTags": ["French", "Italian"]
+        },
+        {
+          "title": "Spencer",
+          "website": "https://spencerannarbor.com/",
+          "address": "113 East Liberty Street, Ann Arbor, MI 48104",
+          "cuisineTags": ["American", "Wine"]
+        },
+        {
+          "title": "Jerusalem Garden",
+          "website": "https://jerusalemgarden.net/",
+          "phone": "+1-734-995-5060",
+          "address": "314 E. Liberty Street, Ann Arbor, MI 48104",
+          "cuisineTags": ["Mediterranean", "Middle Eastern"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "note": "Statewide fill F-06. Mid-size cities after the state floor: Huntsville, Fort Wayne, New Haven. Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. Huntsville: Odette (Florence + Orion satellite), The Curry (closing), CO/OP (403), Church Street Family shared-site rooms excluded. Fort Wayne: Cork 'N Cleaver (South Bend number), Marquee (Cunningham group), Conner's Rooftop (multiple addresses), Club Soda / Bistro Nota / Tolon / Black Canyon (202-challenge) excluded. New Haven: 116 Crown (sister stores on same site), Shell & Bones / Camacho (shared address schema), Union League (lists Zinc) excluded. Reno still deferred.",
+  "generatedAt": "2026-08-31T12:00:00.000Z",
+  "batches": [
+    {
+      "city": "Huntsville",
+      "stateCode": "AL",
+      "listings": [
+        {
+          "title": "Cotton Row",
+          "website": "https://www.cottonrowrestaurant.com/",
+          "phone": "+1-256-382-9500",
+          "address": "100 South Side Square, Huntsville, AL 35801",
+          "cuisineTags": ["American", "Fine dining"]
+        },
+        {
+          "title": "Commerce Kitchen",
+          "website": "https://www.thecommercekitchen.com/",
+          "phone": "+1-256-382-6622",
+          "address": "300 Franklin Street Southeast, Huntsville, AL 35801",
+          "cuisineTags": ["Southern", "American"]
+        },
+        {
+          "title": "Domaine South",
+          "website": "https://www.domainesouth.com/",
+          "phone": "+1-256-759-9952",
+          "address": "200 West Side Square, Huntsville, AL 35801",
+          "cuisineTags": ["American", "Wine"]
+        },
+        {
+          "title": "Revivalist",
+          "website": "https://www.revivalisthuntsville.com/",
+          "phone": "+1-256-288-0128",
+          "address": "106 Jefferson Street S, Huntsville, AL 35801",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "The Poppy and Parliament",
+          "website": "https://www.thepoppyandparliament.com/",
+          "phone": "+1-256-715-7152",
+          "address": "117 North Side Square, Huntsville, AL 35801",
+          "cuisineTags": ["American", "Tea"]
+        },
+        {
+          "title": "Phat Sammy's",
+          "website": "https://phatsammyshuntsville.com/",
+          "phone": "+1-256-489-0232",
+          "address": "104 Jefferson Street S, Huntsville, AL 35801",
+          "cuisineTags": ["American", "Tiki"]
+        }
+      ]
+    },
+    {
+      "city": "Fort Wayne",
+      "stateCode": "IN",
+      "listings": [
+        {
+          "title": "Rune",
+          "website": "https://runerestaurant.com/",
+          "phone": "+1-260-278-0674",
+          "address": "2725 Broadway, Fort Wayne, IN 46807",
+          "cuisineTags": ["American", "Fine dining"]
+        },
+        {
+          "title": "The Oyster Bar",
+          "website": "https://www.fwoysterbar.com/",
+          "phone": "+1-260-744-9490",
+          "address": "1830 S Calhoun Street, Fort Wayne, IN 46802",
+          "cuisineTags": ["Seafood", "Steak"]
+        },
+        {
+          "title": "The Hoppy Gnome",
+          "website": "https://www.hoppygnome.com/",
+          "phone": "+1-260-422-0080",
+          "address": "203 E Berry Street, Fort Wayne, IN 46802",
+          "cuisineTags": ["American", "Brewpub"]
+        },
+        {
+          "title": "Copper Spoon",
+          "website": "https://www.copperspoonfw.com/",
+          "phone": "+1-260-755-1019",
+          "address": "301 W Jefferson Boulevard, Fort Wayne, IN 46802",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Proximo",
+          "website": "https://www.proximofw.com/",
+          "phone": "+1-260-459-6150",
+          "address": "898 S Harrison Street, Fort Wayne, IN 46802",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Spoke + Ivy",
+          "website": "https://www.spokeandivy.com/",
+          "address": "1402 W Main Street, Fort Wayne, IN 46808",
+          "cuisineTags": ["American"]
+        }
+      ]
+    },
+    {
+      "city": "New Haven",
+      "stateCode": "CT",
+      "listings": [
+        {
+          "title": "Zinc",
+          "website": "https://zincnewhaven.com/",
+          "phone": "+1-203-624-0507",
+          "address": "964 Chapel Street, New Haven, CT 06510",
+          "cuisineTags": ["American", "Contemporary"]
+        },
+        {
+          "title": "Olea",
+          "website": "http://www.oleanewhaven.com/",
+          "phone": "+1-203-780-8925",
+          "address": "39 High Street, New Haven, CT 06510",
+          "cuisineTags": ["Mediterranean", "Spanish"]
+        },
+        {
+          "title": "Gioia",
+          "website": "https://www.gioianewhaven.com/",
+          "phone": "+1-475-250-3451",
+          "address": "150 Wooster Street, New Haven, CT 06511",
+          "cuisineTags": ["Italian"]
+        },
+        {
+          "title": "Modern Apizza",
+          "website": "https://www.modernapizza.com/",
+          "phone": "+1-203-776-5306",
+          "address": "874 State Street, New Haven, CT 06511",
+          "cuisineTags": ["Pizza"]
+        },
+        {
+          "title": "Lalibela",
+          "website": "https://lalibelact.com/",
+          "phone": "+1-203-789-1232",
+          "address": "176 Temple Street, New Haven, CT 06510",
+          "cuisineTags": ["Ethiopian"]
+        },
+        {
+          "title": "ROLi",
+          "website": "https://www.rolinewhaven.com/",
+          "phone": "+1-475-254-8492",
+          "address": "673 Chapel Street, New Haven, CT 06510",
+          "cuisineTags": ["European"]
+        }
+      ]
+    }
+  ]
+}

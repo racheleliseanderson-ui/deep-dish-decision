@@ -11,7 +11,7 @@ describe("corpus invariants", () => {
   it("keeps the recovered 836-record hub above the floor", () => {
     expect(dataset.count).toBe(records.length);
     expect(records.length).toBeGreaterThanOrEqual(FLOOR);
-    expect(records.length).toBe(836);
+    expect(records.length).toBeGreaterThanOrEqual(836);
     expect(dataset.regions).toBeGreaterThanOrEqual(50);
     expect(dataset.generatedAt).toBeTruthy();
   });

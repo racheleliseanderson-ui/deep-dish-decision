@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-08-28T03:27:08.444Z",
-  "builtAt": "2026-08-31T01:18:40Z",
-  "count": 836,
-  "regions": 122,
+  "generatedAt": "2026-08-31T12:40:06.752Z",
+  "builtAt": "2026-08-31T12:40:06Z",
+  "count": 1014,
+  "regions": 152,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 814,
+    "current": 993,
     "officialConflicts": 11,
-    "thinRecords": 446,
-    "avgUnknowns": 5.16,
-    "avgThinFields": 7.62,
-    "lastReviewAt": "2026-08-21",
-    "reachableAtLastReview": 194
+    "thinRecords": 537,
+    "avgUnknowns": 5.14,
+    "avgThinFields": 7.58,
+    "lastReviewAt": "2026-08-31",
+    "reachableAtLastReview": 361
   },
-  "fullCaseFiles": 836,
-  "listingOnly": 11,
+  "fullCaseFiles": 1014,
+  "listingOnly": 10,
   "regionGroups": [
     "Alabama",
     "Alaska",
@@ -73,7 +73,9 @@
   ],
   "regionsByGroup": {
     "Alabama": [
-      "Birmingham, AL"
+      "Birmingham, AL",
+      "Huntsville, AL",
+      "Mobile, AL"
     ],
     "Alaska": [
       "Anchorage, AK"
@@ -98,6 +100,7 @@
       "Fresno, CA",
       "Los Angeles, CA",
       "Lynwood, CA",
+      "Oakland, CA",
       "Riverside, CA",
       "Sacramento, CA",
       "San Diego, CA",
@@ -110,10 +113,13 @@
       "Tustin, CA"
     ],
     "Colorado": [
-      "Denver, CO"
+      "Colorado Springs, CO",
+      "Denver, CO",
+      "Fort Collins, CO"
     ],
     "Connecticut": [
-      "Hartford, CT"
+      "Hartford, CT",
+      "New Haven, CT"
     ],
     "Delaware": [
       "Wilmington, DE"
@@ -122,13 +128,16 @@
       "Washington, DC"
     ],
     "Florida": [
+      "Fort Lauderdale, FL",
       "Jacksonville, FL",
       "Miami, FL",
       "Orlando, FL",
       "Tampa, FL"
     ],
     "Georgia": [
-      "Atlanta, GA"
+      "Athens, GA",
+      "Atlanta, GA",
+      "Savannah, GA"
     ],
     "Hawaii": [
       "Honolulu, HI"
@@ -144,18 +153,24 @@
       "Glenview, IL"
     ],
     "Indiana": [
+      "Fort Wayne, IN",
       "Indianapolis, IN"
     ],
     "Iowa": [
+      "Cedar Rapids, IA",
       "Des Moines, IA"
     ],
     "Kansas": [
+      "Lawrence, KS",
+      "Topeka, KS",
       "Wichita, KS"
     ],
     "Kentucky": [
+      "Lexington, KY",
       "Louisville, KY"
     ],
     "Louisiana": [
+      "Baton Rouge, LA",
       "New Orleans, LA"
     ],
     "Maine": [
@@ -165,20 +180,25 @@
       "Baltimore, MD"
     ],
     "Massachusetts": [
-      "Boston, MA"
+      "Boston, MA",
+      "Worcester, MA"
     ],
     "Michigan": [
+      "Ann Arbor, MI",
       "Detroit, MI",
       "Grand Rapids, MI"
     ],
     "Minnesota": [
-      "Minneapolis, MN"
+      "Minneapolis, MN",
+      "Rochester, MN"
     ],
     "Mississippi": [
       "Jackson, MS"
     ],
     "Missouri": [
-      "Kansas City, MO"
+      "Kansas City, MO",
+      "Springfield, MO",
+      "St. Louis, MO"
     ],
     "Montana": [
       "Billings, MT",
@@ -188,6 +208,7 @@
       "Missoula, Montana"
     ],
     "Nebraska": [
+      "Lincoln, NE",
       "Omaha, NE"
     ],
     "Nevada": [
@@ -206,7 +227,8 @@
       "Princeton, NJ"
     ],
     "New Mexico": [
-      "Albuquerque, NM"
+      "Albuquerque, NM",
+      "Santa Fe, NM"
     ],
     "New York": [
       "Albany, NY",
@@ -215,7 +237,9 @@
       "Rochester, NY"
     ],
     "North Carolina": [
+      "Asheville, NC",
       "Charlotte, NC",
+      "Durham, NC",
       "Raleigh, NC"
     ],
     "North Dakota": [
@@ -245,9 +269,12 @@
       "Providence, RI"
     ],
     "South Carolina": [
-      "Columbia, SC"
+      "Charleston, SC",
+      "Columbia, SC",
+      "Greenville, SC"
     ],
     "South Dakota": [
+      "Rapid City, SD",
       "Sioux Falls, SD"
     ],
     "Tennessee": [
@@ -258,6 +285,8 @@
     "Texas": [
       "Austin, TX",
       "Dallas, TX",
+      "El Paso, TX",
+      "Fort Worth, TX",
       "Houston, TX",
       "Pearland, TX",
       "San Antonio, TX"
@@ -269,6 +298,7 @@
       "Burlington, VT"
     ],
     "Virginia": [
+      "Norfolk, VA",
       "Richmond, VA",
       "Virginia Beach, VA"
     ],
@@ -421,9 +451,40 @@
     "Salt Lake City, UT": "Utah",
     "New Orleans, LA": "Louisiana",
     "Buffalo, NY": "New York",
-    "Hartford, CT": "Connecticut"
+    "Hartford, CT": "Connecticut",
+    "Fort Worth, TX": "Texas",
+    "Savannah, GA": "Georgia",
+    "Colorado Springs, CO": "Colorado",
+    "Oakland, CA": "California",
+    "Fort Lauderdale, FL": "Florida",
+    "Asheville, NC": "North Carolina",
+    "St. Louis, MO": "Missouri",
+    "Worcester, MA": "Massachusetts",
+    "Baton Rouge, LA": "Louisiana",
+    "El Paso, TX": "Texas",
+    "Lexington, KY": "Kentucky",
+    "Ann Arbor, MI": "Michigan",
+    "Norfolk, VA": "Virginia",
+    "Lincoln, NE": "Nebraska",
+    "Charleston, SC": "South Carolina",
+    "Huntsville, AL": "Alabama",
+    "Fort Wayne, IN": "Indiana",
+    "New Haven, CT": "Connecticut",
+    "Santa Fe, NM": "New Mexico",
+    "Lawrence, KS": "Kansas",
+    "Athens, GA": "Georgia",
+    "Cedar Rapids, IA": "Iowa",
+    "Rapid City, SD": "South Dakota",
+    "Mobile, AL": "Alabama",
+    "Fort Collins, CO": "Colorado",
+    "Springfield, MO": "Missouri",
+    "Greenville, SC": "South Carolina",
+    "Rochester, MN": "Minnesota",
+    "Durham, NC": "North Carolina",
+    "Topeka, KS": "Kansas"
   },
   "cuisineTagOptions": [
+    "Afghan",
     "American",
     "Appalachian",
     "Asian",
@@ -439,11 +500,13 @@
     "Breakfast / brunch",
     "Brewpub",
     "Burgers",
+    "Cafe",
     "Cajun",
     "California",
     "Caribbean",
     "Casual",
     "Chinese",
+    "Coastal",
     "Cocktail / lounge",
     "Cocktails",
     "Contemporary",
@@ -454,15 +517,19 @@
     "Czech",
     "Deli",
     "Detroit-style",
+    "Diner",
+    "Dutch",
     "East African",
     "Eastern European",
     "Eastern Mediterranean",
+    "Ethiopian",
     "European",
     "Farm-to-table",
     "Filipino",
     "Fine dining",
     "Florida",
     "French",
+    "Fried chicken",
     "Fusion",
     "Galician",
     "Gastropub",
@@ -477,9 +544,11 @@
     "Indonesian",
     "Israeli",
     "Italian",
+    "Italian American",
     "Jamaican",
     "Japanese",
     "Jewish",
+    "Kentucky",
     "Korean",
     "Lao",
     "Latin",
@@ -496,8 +565,13 @@
     "Mid-Atlantic",
     "Middle Eastern",
     "Midwestern",
+    "Modern",
     "Native American",
     "Neapolitan",
+    "Neighborhood",
+    "Nepalese",
+    "New American",
+    "New Mexican",
     "New Nordic",
     "Northwest",
     "Nose-to-tail",
@@ -527,6 +601,7 @@
     "Small plates",
     "Soba",
     "Sonoran",
+    "Soul food",
     "South American",
     "South Asian",
     "Southeast Asian",
@@ -535,13 +610,18 @@
     "Spanish",
     "Steak",
     "Steak / grill",
+    "Steakhouse",
     "Supper club",
     "Sushi",
     "Sustainable",
     "Tapas",
     "Tasting menu",
     "Tavern",
+    "Tea",
+    "Tex-Mex",
+    "Texas",
     "Thai",
+    "Tiki",
     "Turkish",
     "Tuscan",
     "Vegan",
@@ -549,8 +629,10 @@
     "Venezuelan",
     "Vermont",
     "Vietnamese",
+    "Waterfront",
     "West African",
     "Western",
+    "Wild game",
     "Wine",
     "Wine bar",
     "Wine-forward",
@@ -6464,6 +6546,1252 @@
       "region": "Dallas, TX",
       "regionGroup": "Texas",
       "city": "Dallas"
+    },
+    {
+      "slug": "bonnell-s-fine-texas-cuisine-fort-worth",
+      "title": "Bonnell's Fine Texas Cuisine",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "ellerbe-fine-foods-fort-worth",
+      "title": "Ellerbe Fine Foods",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "grace-fort-worth",
+      "title": "Grace",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "joe-t-garcia-s-fort-worth",
+      "title": "Joe T. Garcia's",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "saint-emilion-restaurant-fort-worth",
+      "title": "Saint-Emilion Restaurant",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "clay-pigeon-food-drink-fort-worth",
+      "title": "Clay Pigeon Food & Drink",
+      "region": "Fort Worth, TX",
+      "regionGroup": "Texas",
+      "city": "Fort Worth"
+    },
+    {
+      "slug": "the-olde-pink-house-savannah",
+      "title": "The Olde Pink House",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "elizabeth-on-37th-savannah",
+      "title": "Elizabeth on 37th",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "local-11ten-savannah",
+      "title": "Local 11ten",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "brochu-s-family-tradition-savannah",
+      "title": "Brochu's Family Tradition",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "alligator-soul-savannah",
+      "title": "Alligator Soul",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "circa-1875-savannah",
+      "title": "Circa 1875",
+      "region": "Savannah, GA",
+      "regionGroup": "Georgia",
+      "city": "Savannah"
+    },
+    {
+      "slug": "four-by-brother-luck-colorado-springs",
+      "title": "Four by Brother Luck",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "the-rabbit-hole-colorado-springs",
+      "title": "The Rabbit Hole",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "ephemera-colorado-springs",
+      "title": "Ephemera",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "paravicini-s-italian-bistro-colorado-springs",
+      "title": "Paravicini's Italian Bistro",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "shuga-s-colorado-springs",
+      "title": "Shuga's",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "pizzeria-rustica-colorado-springs",
+      "title": "Pizzeria Rustica",
+      "region": "Colorado Springs, CO",
+      "regionGroup": "Colorado",
+      "city": "Colorado Springs"
+    },
+    {
+      "slug": "mago-oakland",
+      "title": "Mägo",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "millennium-restaurant-oakland",
+      "title": "Millennium Restaurant",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "soba-ichi-oakland",
+      "title": "Soba Ichi",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "burdell-oakland",
+      "title": "Burdell",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "bombera-oakland",
+      "title": "Bombera",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "wahpepah-s-kitchen-oakland",
+      "title": "Wahpepah's Kitchen",
+      "region": "Oakland, CA",
+      "regionGroup": "California",
+      "city": "Oakland"
+    },
+    {
+      "slug": "the-floridian-fort-lauderdale",
+      "title": "The Floridian",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "catch-cut-fort-lauderdale",
+      "title": "Catch & Cut",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "shooters-waterfront-fort-lauderdale",
+      "title": "Shooters Waterfront",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "anthony-s-runway-84-fort-lauderdale",
+      "title": "Anthony's Runway 84",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "timbr-fort-lauderdale",
+      "title": "TIMBR",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "calusso-fort-lauderdale",
+      "title": "Calusso",
+      "region": "Fort Lauderdale, FL",
+      "regionGroup": "Florida",
+      "city": "Fort Lauderdale"
+    },
+    {
+      "slug": "curate-asheville",
+      "title": "Cúrate",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "rhubarb-asheville",
+      "title": "Rhubarb",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "the-admiral-asheville",
+      "title": "The Admiral",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "limones-asheville",
+      "title": "Limones",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "the-market-place-asheville",
+      "title": "The Market Place",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "jargon-asheville",
+      "title": "Jargon",
+      "region": "Asheville, NC",
+      "regionGroup": "North Carolina",
+      "city": "Asheville"
+    },
+    {
+      "slug": "farmhaus-st-louis",
+      "title": "Farmhaus",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "indo-st-louis",
+      "title": "Indo",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "little-fox-st-louis",
+      "title": "Little Fox",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "mainlander-st-louis",
+      "title": "Mainlander",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "cunetto-house-of-pasta-st-louis",
+      "title": "Cunetto House of Pasta",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "broadway-oyster-bar-st-louis",
+      "title": "Broadway Oyster Bar",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "deadhorse-hill-worcester",
+      "title": "Deadhorse Hill",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "volturno-worcester",
+      "title": "Volturno",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "the-mercantile-worcester",
+      "title": "The Mercantile",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "miss-worcester-diner-worcester",
+      "title": "Miss Worcester Diner",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "basil-n-spice-worcester",
+      "title": "Basil n' Spice",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "meze-estiatorio-worcester",
+      "title": "Meze Estiatorio",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "mansurs-on-the-boulevard-baton-rouge",
+      "title": "Mansurs on the Boulevard",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "cecelia-creole-bistro-baton-rouge",
+      "title": "Cecelia Creole Bistro",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "elsie-s-plate-pie-baton-rouge",
+      "title": "Elsie's Plate & Pie",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "the-gregory-baton-rouge",
+      "title": "The Gregory",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "french-market-bistro-baton-rouge",
+      "title": "French Market Bistro",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "parrain-s-seafood-restaurant-baton-rouge",
+      "title": "Parrain's Seafood Restaurant",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "cafe-central-el-paso",
+      "title": "Cafe Central",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "anson-11-el-paso",
+      "title": "Anson 11",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "l-j-cafe-el-paso",
+      "title": "L&J Cafe",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "park-tavern-el-paso",
+      "title": "Park Tavern",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "kiki-s-restaurant-el-paso",
+      "title": "Kiki's Restaurant",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "delicious-mexican-eatery-el-paso",
+      "title": "Delicious Mexican Eatery",
+      "region": "El Paso, TX",
+      "regionGroup": "Texas",
+      "city": "El Paso"
+    },
+    {
+      "slug": "coles-735-main-lexington",
+      "title": "Coles 735 Main",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "dudley-s-on-short-lexington",
+      "title": "Dudley's on Short",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "bella-notte-lexington",
+      "title": "Bella Notte",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "county-club-lexington",
+      "title": "County Club",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "mileta-lexington",
+      "title": "Mileta",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "merrick-inn-lexington",
+      "title": "Merrick Inn",
+      "region": "Lexington, KY",
+      "regionGroup": "Kentucky",
+      "city": "Lexington"
+    },
+    {
+      "slug": "sava-s-ann-arbor",
+      "title": "Sava's",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "aventura-ann-arbor",
+      "title": "Aventura",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "mani-osteria-ann-arbor",
+      "title": "Mani Osteria",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "the-earle-ann-arbor",
+      "title": "The Earle",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "spencer-ann-arbor",
+      "title": "Spencer",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "jerusalem-garden-ann-arbor",
+      "title": "Jerusalem Garden",
+      "region": "Ann Arbor, MI",
+      "regionGroup": "Michigan",
+      "city": "Ann Arbor"
+    },
+    {
+      "slug": "freemason-abbey-norfolk",
+      "title": "Freemason Abbey",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "todd-jurich-s-bistro-norfolk",
+      "title": "Todd Jurich's Bistro",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "press-626-norfolk",
+      "title": "Press 626",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "ilo-bistro-norfolk",
+      "title": "Ilo Bistro",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "the-ten-top-norfolk",
+      "title": "The Ten Top",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "blanca-food-wine-norfolk",
+      "title": "Blanca Food + Wine",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "dish-lincoln",
+      "title": "Dish",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "the-green-gateau-lincoln",
+      "title": "The Green Gateau",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "l-s-kitchen-lincoln",
+      "title": "L's Kitchen",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "casa-bovina-lincoln",
+      "title": "Casa Bovina",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "lila-mae-s-southern-kitchen-lincoln",
+      "title": "Lila Mae's Southern Kitchen",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "well-good-lincoln",
+      "title": "Well & Good",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "fig-charleston",
+      "title": "FIG",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "the-ordinary-charleston",
+      "title": "The Ordinary",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "chubby-fish-charleston",
+      "title": "Chubby Fish",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "vern-s-charleston",
+      "title": "Vern's",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "poogan-s-porch-charleston",
+      "title": "Poogan's Porch",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "magnolias-charleston",
+      "title": "Magnolias",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "cotton-row-huntsville",
+      "title": "Cotton Row",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "commerce-kitchen-huntsville",
+      "title": "Commerce Kitchen",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "domaine-south-huntsville",
+      "title": "Domaine South",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "revivalist-huntsville",
+      "title": "Revivalist",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "the-poppy-and-parliament-huntsville",
+      "title": "The Poppy and Parliament",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "phat-sammy-s-huntsville",
+      "title": "Phat Sammy's",
+      "region": "Huntsville, AL",
+      "regionGroup": "Alabama",
+      "city": "Huntsville"
+    },
+    {
+      "slug": "rune-fort-wayne",
+      "title": "Rune",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "the-oyster-bar-fort-wayne",
+      "title": "The Oyster Bar",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "the-hoppy-gnome-fort-wayne",
+      "title": "The Hoppy Gnome",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "copper-spoon-fort-wayne",
+      "title": "Copper Spoon",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "proximo-fort-wayne",
+      "title": "Proximo",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "spoke-ivy-fort-wayne",
+      "title": "Spoke + Ivy",
+      "region": "Fort Wayne, IN",
+      "regionGroup": "Indiana",
+      "city": "Fort Wayne"
+    },
+    {
+      "slug": "zinc-new-haven",
+      "title": "Zinc",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "olea-new-haven",
+      "title": "Olea",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "gioia-new-haven",
+      "title": "Gioia",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "modern-apizza-new-haven",
+      "title": "Modern Apizza",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "lalibela-new-haven",
+      "title": "Lalibela",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "roli-new-haven",
+      "title": "ROLi",
+      "region": "New Haven, CT",
+      "regionGroup": "Connecticut",
+      "city": "New Haven"
+    },
+    {
+      "slug": "geronimo-santa-fe",
+      "title": "Geronimo",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "cafe-pasqual-s-santa-fe",
+      "title": "Cafe Pasqual's",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "the-shed-santa-fe",
+      "title": "The Shed",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "sazon-santa-fe",
+      "title": "Sazón",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "restaurant-martin-santa-fe",
+      "title": "Restaurant Martin",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "paloma-santa-fe",
+      "title": "Paloma",
+      "region": "Santa Fe, NM",
+      "regionGroup": "New Mexico",
+      "city": "Santa Fe"
+    },
+    {
+      "slug": "715-lawrence",
+      "title": "715",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "merchants-pub-plate-lawrence",
+      "title": "Merchants Pub & Plate",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "ladybird-diner-lawrence",
+      "title": "Ladybird Diner",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "free-state-brewing-company-lawrence",
+      "title": "Free State Brewing Company",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "culinaria-lawrence",
+      "title": "Culinaria",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "encore-asian-bistro-lawrence",
+      "title": "Encore Asian Bistro",
+      "region": "Lawrence, KS",
+      "regionGroup": "Kansas",
+      "city": "Lawrence"
+    },
+    {
+      "slug": "five-ten-athens",
+      "title": "Five & Ten",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "the-national-athens",
+      "title": "The National",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "seabear-oyster-bar-athens",
+      "title": "Seabear Oyster Bar",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "last-resort-grill-athens",
+      "title": "Last Resort Grill",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "the-place-athens",
+      "title": "The Place",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "south-kitchen-and-bar-athens",
+      "title": "South Kitchen and Bar",
+      "region": "Athens, GA",
+      "regionGroup": "Georgia",
+      "city": "Athens"
+    },
+    {
+      "slug": "the-map-room-cedar-rapids",
+      "title": "The Map Room",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "zeppelins-cedar-rapids",
+      "title": "Zeppelins",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "cobble-hill-cedar-rapids",
+      "title": "Cobble Hill",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "need-pizzeria-cedar-rapids",
+      "title": "Need Pizzeria",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "the-blind-pig-cedar-rapids",
+      "title": "The Blind Pig",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "emil-s-hideaway-cedar-rapids",
+      "title": "Emil's Hideaway",
+      "region": "Cedar Rapids, IA",
+      "regionGroup": "Iowa",
+      "city": "Cedar Rapids"
+    },
+    {
+      "slug": "tally-s-silver-spoon-rapid-city",
+      "title": "Tally's Silver Spoon",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "independent-ale-house-rapid-city",
+      "title": "Independent Ale House",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "delmonico-grill-rapid-city",
+      "title": "Delmonico Grill",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "kathmandu-bistro-rapid-city",
+      "title": "Kathmandu Bistro",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "everest-cuisine-rapid-city",
+      "title": "Everest Cuisine",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "sabatino-s-rapid-city",
+      "title": "Sabatino's",
+      "region": "Rapid City, SD",
+      "regionGroup": "South Dakota",
+      "city": "Rapid City"
+    },
+    {
+      "slug": "the-noble-south-mobile",
+      "title": "The Noble South",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "dauphin-s-mobile",
+      "title": "Dauphin's",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "noja-mobile",
+      "title": "NoJa",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "le-moyne-s-chophouse-mobile",
+      "title": "Le Moyne's Chophouse",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "callaghan-s-irish-social-club-mobile",
+      "title": "Callaghan's Irish Social Club",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "spot-of-tea-mobile",
+      "title": "Spot of Tea",
+      "region": "Mobile, AL",
+      "regionGroup": "Alabama",
+      "city": "Mobile"
+    },
+    {
+      "slug": "the-farmhouse-at-jessup-farm-fort-collins",
+      "title": "The Farmhouse at Jessup Farm",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "the-regional-fort-collins",
+      "title": "The Regional",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "silver-grill-cafe-fort-collins",
+      "title": "Silver Grill Café",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "cafe-vino-fort-collins",
+      "title": "Cafe Vino",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "coopersmith-s-brewpub-fort-collins",
+      "title": "CooperSmith's Brewpub",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "the-emporium-fort-collins",
+      "title": "The Emporium",
+      "region": "Fort Collins, CO",
+      "regionGroup": "Colorado",
+      "city": "Fort Collins"
+    },
+    {
+      "slug": "cafe-cusco-springfield",
+      "title": "Cafe Cusco",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "van-gogh-s-eeterie-springfield",
+      "title": "Van Gogh's Eeterie",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "civil-kitchen-springfield",
+      "title": "Civil Kitchen",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "flame-steakhouse-springfield",
+      "title": "Flame Steakhouse",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "gailey-s-breakfast-cafe-springfield",
+      "title": "Gailey's Breakfast Cafe",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "lindberg-s-tavern-springfield",
+      "title": "Lindberg's Tavern",
+      "region": "Springfield, MO",
+      "regionGroup": "Missouri",
+      "city": "Springfield"
+    },
+    {
+      "slug": "soby-s-greenville",
+      "title": "Soby's",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "jianna-greenville",
+      "title": "Jianna",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "fork-and-plough-greenville",
+      "title": "Fork and Plough",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "the-anchorage-greenville",
+      "title": "The Anchorage",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "aryana-afghan-cuisine-greenville",
+      "title": "Aryana Afghan Cuisine",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "scoundrel-greenville",
+      "title": "Scoundrel",
+      "region": "Greenville, SC",
+      "regionGroup": "South Carolina",
+      "city": "Greenville"
+    },
+    {
+      "slug": "bleu-duck-kitchen-rochester",
+      "title": "Bleu Duck Kitchen",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "forager-brewery-rochester",
+      "title": "Forager Brewery",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "terza-ristorante-rochester",
+      "title": "Terza Ristorante",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "victoria-s-rochester",
+      "title": "Victoria's",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "thaipop-rochester",
+      "title": "ThaiPop",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "chester-s-kitchen-and-bar-rochester",
+      "title": "Chester's Kitchen and Bar",
+      "region": "Rochester, MN",
+      "regionGroup": "Minnesota",
+      "city": "Rochester"
+    },
+    {
+      "slug": "saltbox-seafood-joint-durham",
+      "title": "Saltbox Seafood Joint",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "geer-street-garden-durham",
+      "title": "Geer Street Garden",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "alley-twenty-six-durham",
+      "title": "Alley Twenty Six",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "bull-city-burger-and-brewery-durham",
+      "title": "Bull City Burger and Brewery",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "dashi-durham",
+      "title": "Dashi",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "toast-durham",
+      "title": "Toast",
+      "region": "Durham, NC",
+      "regionGroup": "North Carolina",
+      "city": "Durham"
+    },
+    {
+      "slug": "blind-tiger-brewery-restaurant-topeka",
+      "title": "Blind Tiger Brewery & Restaurant",
+      "region": "Topeka, KS",
+      "regionGroup": "Kansas",
+      "city": "Topeka"
+    },
+    {
+      "slug": "chez-yasu-topeka",
+      "title": "Chez Yasu",
+      "region": "Topeka, KS",
+      "regionGroup": "Kansas",
+      "city": "Topeka"
+    },
+    {
+      "slug": "jong-s-thai-kitchen-topeka",
+      "title": "Jong's Thai Kitchen",
+      "region": "Topeka, KS",
+      "regionGroup": "Kansas",
+      "city": "Topeka"
+    },
+    {
+      "slug": "the-wheel-barrel-topeka",
+      "title": "The Wheel Barrel",
+      "region": "Topeka, KS",
+      "regionGroup": "Kansas",
+      "city": "Topeka"
     }
   ]
 }

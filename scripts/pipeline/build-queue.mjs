@@ -36,6 +36,39 @@ const METROS = [
   ["Cheyenne", "WY", 100512], ["Anchorage", "AK", 396317], ["Honolulu", "HI", 1016508],
 ];
 
+const STATEWIDE_FILL = [
+  ["Fort Worth", "TX", 978234],
+  ["Savannah", "GA", 147780],
+  ["Colorado Springs", "CO", 488694],
+  ["Oakland", "CA", 440646],
+  ["Fort Lauderdale", "FL", 182760],
+  ["Asheville", "NC", 94589],
+  ["St. Louis", "MO", 281754],
+  ["Worcester", "MA", 206518],
+  ["Baton Rouge", "LA", 222185],
+  ["El Paso", "TX", 678815],
+  ["Lexington", "KY", 322570],
+  ["Ann Arbor", "MI", 123851],
+  ["Norfolk", "VA", 238005],
+  ["Lincoln", "NE", 291082],
+  ["Charleston", "SC", 150227],
+  ["Huntsville", "AL", 221933],
+  ["Fort Wayne", "IN", 269994],
+  ["New Haven", "CT", 135081],
+  ["Santa Fe", "NM", 89088],
+  ["Lawrence", "KS", 95394],
+  ["Athens", "GA", 127315],
+  ["Cedar Rapids", "IA", 137710],
+  ["Rapid City", "SD", 78000],
+  ["Mobile", "AL", 187041],
+  ["Fort Collins", "CO", 169810],
+  ["Springfield", "MO", 169176],
+  ["Greenville", "SC", 72095],
+  ["Rochester", "MN", 121395],
+  ["Durham", "NC", 283506],
+  ["Topeka", "KS", 126587],
+];
+
 const existing = readJson(PATHS.queue, null);
 const prior = new Map((existing?.cities ?? []).map((c) => [`${c.city}|${c.stateCode}`, c]));
 
@@ -78,6 +111,25 @@ for (const [name, meta] of missing) {
     inserted: before?.inserted ?? 0,
     lastRunAt: before?.lastRunAt ?? null,
     note: "Statewide seed — no metro in the top list covers this state.",
+  });
+}
+
+for (const [city, stateCode, population] of STATEWIDE_FILL) {
+  const key = `${city}|${stateCode}`;
+  if (cities.some((c) => `${c.city}|${c.stateCode}` === key)) continue;
+  const before = prior.get(key);
+  priority += 1;
+  cities.push({
+    city,
+    stateCode,
+    population,
+    priority,
+    tier: "statewide-fill",
+    status: before?.status ?? "pending",
+    pinned: before?.pinned ?? false,
+    inserted: before?.inserted ?? 0,
+    lastRunAt: before?.lastRunAt ?? null,
+    note: before?.note ?? "Statewide fill of a mid-size city after the state floor.",
   });
 }
 

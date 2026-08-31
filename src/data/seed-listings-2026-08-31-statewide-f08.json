@@ -1,0 +1,150 @@
+{
+  "note": "Statewide fill F-08. Mid-size cities after the state floor: Cedar Rapids, Rapid City, Mobile. Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. Provo deferred (Station 22 / Black Sheep Cafe / Communal / Bombay House Cloudflare 403). Reno, Oxford, and Fayetteville still deferred. Cedar Rapids: CityWalk challenge; Black Sheep Social Club lists Cone Restaurant Group siblings on the same site — skipped. Rapid City: Murphy's shares a site with Blind Lion — skipped. Mobile: Wintzell's multi-location; Royal Scam empty page; Hummingbird Way domain-for-sale — skipped.",
+  "generatedAt": "2026-08-31T13:00:00.000Z",
+  "batches": [
+    {
+      "city": "Cedar Rapids",
+      "stateCode": "IA",
+      "listings": [
+        {
+          "title": "The Map Room",
+          "website": "https://www.maproomcr.com/",
+          "phone": "+1-319-362-0417",
+          "address": "416 3rd Street SE, Cedar Rapids, IA 52401",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Zeppelins",
+          "website": "https://www.zeppelinscr.com/",
+          "phone": "+1-319-393-3047",
+          "address": "5300 Edgewood Road NE, Cedar Rapids, IA 52411",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Cobble Hill",
+          "website": "https://www.cobblehillrestaurant.com/",
+          "phone": "+1-319-366-3177",
+          "address": "219 2nd Street SE, Cedar Rapids, IA 52401",
+          "cuisineTags": ["American", "Fine dining"]
+        },
+        {
+          "title": "Need Pizzeria",
+          "website": "https://www.needcr.com/",
+          "phone": "+1-319-362-6333",
+          "address": "207 2nd Avenue SE, Cedar Rapids, IA 52401",
+          "cuisineTags": ["Pizza"]
+        },
+        {
+          "title": "The Blind Pig",
+          "website": "https://blindpigcr.com/",
+          "phone": "+1-319-200-4127",
+          "address": "3325 Center Point Road NE, Cedar Rapids, IA 52402",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Emil's Hideaway",
+          "website": "https://emilshideaway.com/",
+          "phone": "+1-319-743-3123",
+          "address": "222 Glenbrook Drive SE, Cedar Rapids, IA 52403",
+          "cuisineTags": ["American"]
+        }
+      ]
+    },
+    {
+      "city": "Rapid City",
+      "stateCode": "SD",
+      "listings": [
+        {
+          "title": "Tally's Silver Spoon",
+          "website": "https://www.tallyssilverspoon.com/",
+          "phone": "+1-605-342-7621",
+          "address": "530 6th Street, Rapid City, SD 57701",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Independent Ale House",
+          "website": "http://www.independentalehouse.com/",
+          "phone": "+1-605-718-9492",
+          "address": "625 Saint Joseph Street, Rapid City, SD 57701",
+          "cuisineTags": ["Pizza", "American"]
+        },
+        {
+          "title": "Delmonico Grill",
+          "website": "https://www.delmonicogrill.com/",
+          "phone": "+1-605-791-1664",
+          "address": "609 Main Street, Rapid City, SD 57701",
+          "cuisineTags": ["Steakhouse"]
+        },
+        {
+          "title": "Kathmandu Bistro",
+          "website": "https://www.kathmandubistro.com/",
+          "phone": "+1-605-343-5070",
+          "address": "727 Main Street, Rapid City, SD 57701",
+          "cuisineTags": ["Nepalese", "Indian"]
+        },
+        {
+          "title": "Everest Cuisine",
+          "website": "https://theeverestcuisine.com/",
+          "phone": "+1-605-343-4444",
+          "address": "2328 West Main Street, Rapid City, SD 57702",
+          "cuisineTags": ["Indian", "Nepalese"]
+        },
+        {
+          "title": "Sabatino's",
+          "website": "https://sabatinosrapidcity.com/",
+          "phone": "+1-605-342-1502",
+          "address": "617 Main Street, Rapid City, SD 57701",
+          "cuisineTags": ["Italian"]
+        }
+      ]
+    },
+    {
+      "city": "Mobile",
+      "stateCode": "AL",
+      "listings": [
+        {
+          "title": "The Noble South",
+          "website": "https://thenoblesouthrestaurant.com/",
+          "phone": "+1-251-690-6824",
+          "address": "203 Dauphin Street, Mobile, AL 36602",
+          "cuisineTags": ["Southern", "American"]
+        },
+        {
+          "title": "Dauphin's",
+          "website": "https://www.godauphins.com/",
+          "phone": "+1-251-444-0200",
+          "address": "107 St. Francis Street, Mobile, AL 36602",
+          "cuisineTags": ["Southern", "Creole"]
+        },
+        {
+          "title": "NoJa",
+          "website": "https://nojamobile.com/",
+          "phone": "+1-251-433-0377",
+          "address": "6 N Jackson Street, Mobile, AL 36602",
+          "cuisineTags": ["Mediterranean", "Asian"]
+        },
+        {
+          "title": "Le Moyne's Chophouse",
+          "website": "https://www.lemoynes.com/",
+          "phone": "+1-251-706-8019",
+          "address": "251 Government Street, Mobile, AL 36602",
+          "cuisineTags": ["Steakhouse"]
+        },
+        {
+          "title": "Callaghan's Irish Social Club",
+          "website": "https://www.callaghansirishsocialclub.com/",
+          "phone": "+1-251-433-9374",
+          "address": "916 Charleston Street, Mobile, AL 36604",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Spot of Tea",
+          "website": "https://spotoftea.com/",
+          "phone": "+1-251-433-9009",
+          "address": "310 Dauphin Street, Mobile, AL 36602",
+          "cuisineTags": ["American", "Cafe"]
+        }
+      ]
+    }
+  ]
+}
