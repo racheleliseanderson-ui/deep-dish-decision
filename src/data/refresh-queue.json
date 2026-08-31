@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T03:30:22.470Z",
+  "generatedAt": "2026-08-31T03:40:30.046Z",
   "settings": {
     "tiers": {
       "A": 30,
@@ -11,17 +11,17 @@
     "hygieneBatchSize": 25
   },
   "totals": {
-    "records": 908,
-    "hygiene": 21,
+    "records": 926,
+    "hygiene": 37,
     "neverEnriched": 0,
-    "thin": 0,
+    "thin": 16,
     "siteFailures": 3,
     "sourceLimited": 3,
     "reviewDue": 11,
     "staleA": 0,
     "staleB": 0,
     "staleC": 0,
-    "dueNow": 21
+    "dueNow": 37
   },
   "hygiene": [
     "barrington-s-charlotte",
@@ -31,6 +31,22 @@
     "locale-farm-to-table-eatery-bakersfield",
     "mr-szechuan",
     "oak-park-des-moines",
+    "chubby-fish-charleston",
+    "fig-charleston",
+    "freemason-abbey-norfolk",
+    "lila-mae-s-southern-kitchen-lincoln",
+    "press-626-norfolk",
+    "the-ordinary-charleston",
+    "well-good-lincoln",
+    "ilo-bistro-norfolk",
+    "l-s-kitchen-lincoln",
+    "the-green-gateau-lincoln",
+    "todd-jurich-s-bistro-norfolk",
+    "vern-s-charleston",
+    "blanca-food-wine-norfolk",
+    "dish-lincoln",
+    "poogan-s-porch-charleston",
+    "the-ten-top-norfolk",
     "chengdu-taste",
     "di-an-pho",
     "spicy-king",
@@ -195,6 +211,326 @@
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
       "reviewedAt": "2026-08-20",
+      "siteFailures": []
+    },
+    {
+      "slug": "chubby-fish-charleston",
+      "title": "Chubby Fish",
+      "city": "Charleston",
+      "stateProvince": "South Carolina",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:40:13.252Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "fig-charleston",
+      "title": "FIG",
+      "city": "Charleston",
+      "stateProvince": "South Carolina",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:40:10.517Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "freemason-abbey-norfolk",
+      "title": "Freemason Abbey",
+      "city": "Norfolk",
+      "stateProvince": "Virginia",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:25.494Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "lila-mae-s-southern-kitchen-lincoln",
+      "title": "Lila Mae's Southern Kitchen",
+      "city": "Lincoln",
+      "stateProvince": "Nebraska",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:56.952Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "press-626-norfolk",
+      "title": "Press 626",
+      "city": "Norfolk",
+      "stateProvince": "Virginia",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:27.127Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-ordinary-charleston",
+      "title": "The Ordinary",
+      "city": "Charleston",
+      "stateProvince": "South Carolina",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:40:11.845Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "well-good-lincoln",
+      "title": "Well & Good",
+      "city": "Lincoln",
+      "stateProvince": "Nebraska",
+      "priority": 414,
+      "reasons": [
+        "thin-56"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 56,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:57.906Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "ilo-bistro-norfolk",
+      "title": "Ilo Bistro",
+      "city": "Norfolk",
+      "stateProvince": "Virginia",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:37.885Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "l-s-kitchen-lincoln",
+      "title": "L's Kitchen",
+      "city": "Lincoln",
+      "stateProvince": "Nebraska",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:44.799Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-green-gateau-lincoln",
+      "title": "The Green Gateau",
+      "city": "Lincoln",
+      "stateProvince": "Nebraska",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:42.682Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "todd-jurich-s-bistro-norfolk",
+      "title": "Todd Jurich's Bistro",
+      "city": "Norfolk",
+      "stateProvince": "Virginia",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:26.132Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "vern-s-charleston",
+      "title": "Vern's",
+      "city": "Charleston",
+      "stateProvince": "South Carolina",
+      "priority": 409,
+      "reasons": [
+        "thin-61"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 61,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:40:15.004Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "blanca-food-wine-norfolk",
+      "title": "Blanca Food + Wine",
+      "city": "Norfolk",
+      "stateProvince": "Virginia",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:39.676Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "dish-lincoln",
+      "title": "Dish",
+      "city": "Lincoln",
+      "stateProvince": "Nebraska",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:40.577Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "poogan-s-porch-charleston",
+      "title": "Poogan's Porch",
+      "city": "Charleston",
+      "stateProvince": "South Carolina",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:40:16.346Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "the-ten-top-norfolk",
+      "title": "The Ten Top",
+      "city": "Norfolk",
+      "stateProvince": "Virginia",
+      "priority": 403,
+      "reasons": [
+        "thin-67"
+      ],
+      "hygiene": true,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 67,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:38.795Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
       "siteFailures": []
     },
     {
@@ -475,6 +811,42 @@
       "reviewStatus": "due_soon",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
+      "siteFailures": []
+    },
+    {
+      "slug": "casa-bovina-lincoln",
+      "title": "Casa Bovina",
+      "city": "Lincoln",
+      "stateProvince": "Nebraska",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 72,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:39:55.632Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "siteFailures": []
+    },
+    {
+      "slug": "magnolias-charleston",
+      "title": "Magnolias",
+      "city": "Charleston",
+      "stateProvince": "South Carolina",
+      "priority": 0,
+      "reasons": [],
+      "hygiene": false,
+      "staleTier": null,
+      "ageDays": 0,
+      "completeness": 78,
+      "matchStatus": "resolved",
+      "lastEnrichedAt": "2026-08-31T03:40:18.606Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
       "siteFailures": []
     },
     {

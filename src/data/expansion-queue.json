@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T03:29:12.478Z",
+  "generatedAt": "2026-08-31T03:39:21.172Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1113,6 +1113,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T03:29:14.459Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Norfolk",
+      "stateCode": "VA",
+      "population": 238005,
+      "priority": 92,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T03:39:25.097Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Lincoln",
+      "stateCode": "NE",
+      "population": 291082,
+      "priority": 93,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T03:39:25.097Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Charleston",
+      "stateCode": "SC",
+      "population": 150227,
+      "priority": 94,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T03:39:25.097Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

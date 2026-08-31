@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T03:30:21.900Z",
-  "builtAt": "2026-08-31T03:30:59Z",
-  "count": 908,
-  "regions": 134,
+  "generatedAt": "2026-08-31T03:40:33.579Z",
+  "builtAt": "2026-08-31T03:40:33Z",
+  "count": 926,
+  "regions": 137,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 887,
+    "current": 905,
     "officialConflicts": 11,
-    "thinRecords": 479,
-    "avgUnknowns": 5.14,
-    "avgThinFields": 7.59,
+    "thinRecords": 491,
+    "avgUnknowns": 5.15,
+    "avgThinFields": 7.6,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 258
+    "reachableAtLastReview": 275
   },
-  "fullCaseFiles": 908,
+  "fullCaseFiles": 926,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -197,6 +197,7 @@
       "Missoula, Montana"
     ],
     "Nebraska": [
+      "Lincoln, NE",
       "Omaha, NE"
     ],
     "Nevada": [
@@ -255,6 +256,7 @@
       "Providence, RI"
     ],
     "South Carolina": [
+      "Charleston, SC",
       "Columbia, SC"
     ],
     "South Dakota": [
@@ -281,6 +283,7 @@
       "Burlington, VT"
     ],
     "Virginia": [
+      "Norfolk, VA",
       "Richmond, VA",
       "Virginia Beach, VA"
     ],
@@ -445,7 +448,10 @@
     "Baton Rouge, LA": "Louisiana",
     "El Paso, TX": "Texas",
     "Lexington, KY": "Kentucky",
-    "Ann Arbor, MI": "Michigan"
+    "Ann Arbor, MI": "Michigan",
+    "Norfolk, VA": "Virginia",
+    "Lincoln, NE": "Nebraska",
+    "Charleston, SC": "South Carolina"
   },
   "cuisineTagOptions": [
     "American",
@@ -7005,6 +7011,132 @@
       "region": "Ann Arbor, MI",
       "regionGroup": "Michigan",
       "city": "Ann Arbor"
+    },
+    {
+      "slug": "freemason-abbey-norfolk",
+      "title": "Freemason Abbey",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "todd-jurich-s-bistro-norfolk",
+      "title": "Todd Jurich's Bistro",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "press-626-norfolk",
+      "title": "Press 626",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "ilo-bistro-norfolk",
+      "title": "Ilo Bistro",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "the-ten-top-norfolk",
+      "title": "The Ten Top",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "blanca-food-wine-norfolk",
+      "title": "Blanca Food + Wine",
+      "region": "Norfolk, VA",
+      "regionGroup": "Virginia",
+      "city": "Norfolk"
+    },
+    {
+      "slug": "dish-lincoln",
+      "title": "Dish",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "the-green-gateau-lincoln",
+      "title": "The Green Gateau",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "l-s-kitchen-lincoln",
+      "title": "L's Kitchen",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "casa-bovina-lincoln",
+      "title": "Casa Bovina",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "lila-mae-s-southern-kitchen-lincoln",
+      "title": "Lila Mae's Southern Kitchen",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "well-good-lincoln",
+      "title": "Well & Good",
+      "region": "Lincoln, NE",
+      "regionGroup": "Nebraska",
+      "city": "Lincoln"
+    },
+    {
+      "slug": "fig-charleston",
+      "title": "FIG",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "the-ordinary-charleston",
+      "title": "The Ordinary",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "chubby-fish-charleston",
+      "title": "Chubby Fish",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "vern-s-charleston",
+      "title": "Vern's",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "poogan-s-porch-charleston",
+      "title": "Poogan's Porch",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
+    },
+    {
+      "slug": "magnolias-charleston",
+      "title": "Magnolias",
+      "region": "Charleston, SC",
+      "regionGroup": "South Carolina",
+      "city": "Charleston"
     }
   ]
 }

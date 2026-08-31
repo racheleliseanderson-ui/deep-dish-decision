@@ -49,6 +49,9 @@ const STATEWIDE_FILL = [
   ["El Paso", "TX", 678815],
   ["Lexington", "KY", 322570],
   ["Ann Arbor", "MI", 123851],
+  ["Norfolk", "VA", 238005],
+  ["Lincoln", "NE", 291082],
+  ["Charleston", "SC", 150227],
 ];
 
 const existing = readJson(PATHS.queue, null);

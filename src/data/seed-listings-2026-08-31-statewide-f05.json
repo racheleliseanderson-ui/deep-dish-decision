@@ -1,0 +1,149 @@
+{
+  "note": "Statewide fill F-05. Mid-size cities after the state floor: Norfolk, Lincoln, Charleston SC. Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. Norfolk: Saltine / Grain / Varia (Gold Key group, 202 challenge) skipped; LeGrand dual Granby/Colley addresses skipped; Vintage Kitchen empty page skipped. Lincoln: LeadBelly 403-challenge, Venue / Lazlo's 202, Vincenzo's (Lincoln+Omaha), Bierhaus (Lincoln+Kearney) skipped. Charleston: Hank's (Charleston+Columbus), Husk multi-city, Halls rooms, Xiao Bao Nashville flag, Fleet Landing timeout skipped. Reno still deferred. FIG and The Ordinary kept as separately named rooms on their own sites.",
+  "generatedAt": "2026-08-31T04:15:00.000Z",
+  "batches": [
+    {
+      "city": "Norfolk",
+      "stateCode": "VA",
+      "listings": [
+        {
+          "title": "Freemason Abbey",
+          "website": "https://freemasonabbey.com/",
+          "phone": "+1-757-622-3966",
+          "address": "209 West Freemason Street, Norfolk, VA 23510",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Todd Jurich's Bistro",
+          "website": "https://www.toddjurichsbistro.com/",
+          "phone": "+1-757-622-3210",
+          "address": "150 West Main Street, Suite 100, Norfolk, VA 23510",
+          "cuisineTags": ["American", "Fine dining"]
+        },
+        {
+          "title": "Press 626",
+          "website": "https://www.press626.com/",
+          "phone": "+1-757-282-6234",
+          "address": "626 West Olney Road, Norfolk, VA 23507",
+          "cuisineTags": ["American", "Wine bar"]
+        },
+        {
+          "title": "Ilo Bistro",
+          "website": "https://ilobistro.com/",
+          "phone": "+1-757-937-0984",
+          "address": "509 Botetourt Street, Norfolk, VA 23510",
+          "cuisineTags": ["European", "Seafood"]
+        },
+        {
+          "title": "The Ten Top",
+          "website": "https://thetentop.com/",
+          "phone": "+1-757-622-5422",
+          "address": "748 Shirley Avenue, Norfolk, VA 23517",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Blanca Food + Wine",
+          "website": "https://www.blancava.com/",
+          "phone": "+1-757-390-2405",
+          "address": "4117 Granby Street, Norfolk, VA 23504",
+          "cuisineTags": ["European", "Wine"]
+        }
+      ]
+    },
+    {
+      "city": "Lincoln",
+      "stateCode": "NE",
+      "listings": [
+        {
+          "title": "Dish",
+          "website": "https://www.dishdowntown.com/",
+          "phone": "+1-402-475-9475",
+          "address": "1100 O Street, Lincoln, NE 68508",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "The Green Gateau",
+          "website": "https://www.greengateau.com/",
+          "phone": "+1-402-477-0330",
+          "address": "330 S. 10th Street, Lincoln, NE 68508",
+          "cuisineTags": ["French", "American"]
+        },
+        {
+          "title": "L's Kitchen",
+          "website": "https://lskitchenlincoln.com/",
+          "phone": "+1-402-904-4044",
+          "address": "2785 South 17th Street, Lincoln, NE 68502",
+          "cuisineTags": ["French", "European"]
+        },
+        {
+          "title": "Casa Bovina",
+          "website": "https://www.casabovina.com/",
+          "phone": "+1-402-480-1246",
+          "address": "4841 North 84th Street, Lincoln, NE 68507",
+          "cuisineTags": ["Italian"]
+        },
+        {
+          "title": "Lila Mae's Southern Kitchen",
+          "website": "https://lilamaessouthernkitchen.com/",
+          "phone": "+1-531-510-0890",
+          "address": "2110 Winthrop Road, Lincoln, NE 68502",
+          "cuisineTags": ["Southern"]
+        },
+        {
+          "title": "Well & Good",
+          "website": "https://www.wellandgoodnebraska.com/",
+          "address": "2101 Transformation Drive, Lincoln, NE 68508",
+          "cuisineTags": ["American", "Midwestern"]
+        }
+      ]
+    },
+    {
+      "city": "Charleston",
+      "stateCode": "SC",
+      "listings": [
+        {
+          "title": "FIG",
+          "website": "https://eatatfig.com/",
+          "phone": "+1-843-805-5900",
+          "address": "232 Meeting Street, Charleston, SC 29401",
+          "cuisineTags": ["Southern", "American"]
+        },
+        {
+          "title": "The Ordinary",
+          "website": "https://eattheordinary.com/",
+          "phone": "+1-843-414-7060",
+          "address": "544 King Street, Charleston, SC 29403",
+          "cuisineTags": ["Seafood"]
+        },
+        {
+          "title": "Chubby Fish",
+          "website": "https://www.chubbyfishcharleston.com/",
+          "phone": "+1-854-222-3949",
+          "address": "252 Coming Street, Charleston, SC 29403",
+          "cuisineTags": ["Seafood"]
+        },
+        {
+          "title": "Vern's",
+          "website": "https://www.vernschs.com/",
+          "phone": "+1-843-509-4104",
+          "address": "41 Bogard Street, Charleston, SC 29403",
+          "cuisineTags": ["American"]
+        },
+        {
+          "title": "Poogan's Porch",
+          "website": "https://www.poogansporch.com/",
+          "phone": "+1-843-829-4332",
+          "address": "72 Queen Street, Charleston, SC 29401",
+          "cuisineTags": ["Southern"]
+        },
+        {
+          "title": "Magnolias",
+          "website": "https://magnoliascharleston.com/",
+          "phone": "+1-843-577-7771",
+          "address": "185 East Bay Street, Charleston, SC 29401",
+          "cuisineTags": ["Southern"]
+        }
+      ]
+    }
+  ]
+}
