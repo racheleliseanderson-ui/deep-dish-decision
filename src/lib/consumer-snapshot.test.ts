@@ -64,6 +64,14 @@ describe("food intel", () => {
     const food = buildFoodIntel(bySlug.get("kann")!);
     expect(food.signatureMentions.join(" ").toLowerCase()).not.toMatch(/goldbelly|nationwide/);
   });
+
+  it("does not keep sourcing essays as named dishes", () => {
+    const blob = records
+      .map((r) => buildFoodIntel(r).signatureMentions.join(" "))
+      .join(" | ")
+      .toLowerCase();
+    expect(blob).not.toMatch(/wine program|seasonal menu sourced|welcoming hospitalit|globally inspired/);
+  });
 });
 
 describe("reputation layer", () => {
@@ -72,6 +80,14 @@ describe("reputation layer", () => {
     expect(rep.rankingEligible).toBe(false);
     expect(rep.layer).toBe("publicReputationEvidence");
     expect(rep.patternSummary.toLowerCase()).toMatch(/not a deep dish ranking|not a ranking|not on file/);
+  });
+
+  it("records a mixed Nue pattern rather than a star consensus", () => {
+    const rep = buildReputation("nue");
+    expect(rep.recurringPraise.length).toBeGreaterThan(0);
+    expect(rep.recurringComplaints.length).toBeGreaterThan(0);
+    expect(rep.rankingEligible).toBe(false);
+    expect(rep.patternSummary.toLowerCase()).toMatch(/not a ranking|directory stars do not rank/);
   });
 
   it("does not fabricate recurring praise on unresearched records", () => {
@@ -102,6 +118,14 @@ describe("reputation layer", () => {
     expect(src).not.toMatch(/listingRating|reviewCount|buildReputation/);
     expect(ranked.length).toBeGreaterThan(0);
   });
+
+  it("leaves unresearched rooms empty even when a listing sample exists", () => {
+    const rep = buildReputation("gander-and-ryegrass");
+    expect(getResearchedPattern("gander-and-ryegrass")).toBeNull();
+    expect(rep.recurringPraise).toEqual([]);
+    expect(rep.recurringComplaints).toEqual([]);
+    expect(rep.rankingEligible).toBe(false);
+  });
 });
 
 describe("diner questions", () => {
@@ -126,6 +150,23 @@ describe("diner questions", () => {
     expect(trust.open).toBe(false);
     expect(trust.answer.toLowerCase()).toMatch(/king county|unsatisfactory|not a deep dish/);
     expect(trust.answer.toLowerCase()).not.toMatch(/\bdirty\b|avoid this kitchen/);
+  });
+
+  it("surfaces NYC letter grades as public snapshots, never as Deep Dish scores", () => {
+    for (const slug of ["carmine-s-44th-street-nyc", "buddakan", "the-smith", "fraunces-tavern"] as const) {
+      const insp = getInspection(slug);
+      expect(insp).toBeTruthy();
+      expect(insp!.jurisdiction.toLowerCase()).toMatch(/nyc/);
+      expect(insp!.note.toLowerCase()).toMatch(/not a deep dish/);
+      const answers = buildDinerAnswers(bySlug.get(slug)!);
+      const trust = answers.find((a) => a.id === "trust")!;
+      expect(trust.answer.toLowerCase()).toMatch(/not a deep dish cleanliness score/);
+      expect(trust.answer.toLowerCase()).not.toMatch(/\bdirty\b|avoid this kitchen/);
+    }
+  });
+
+  it("does not invent an inspection for Au Cheval after the address mismatch", () => {
+    expect(getInspection("au-cheval")).toBeNull();
   });
 });
 
@@ -156,6 +197,10 @@ describe("visual program guards", () => {
     for (const img of visualsFor("canlis")) {
       expect(img.slug).toBe("canlis");
       expect(img.documentary === false || img.provenance.kind !== "editorial_illustration").toBe(true);
+    }
+    for (const img of visualsFor("nue")) {
+      expect(img.slug).toBe("nue");
+      expect(img.documentary).toBe(true);
     }
   });
 });

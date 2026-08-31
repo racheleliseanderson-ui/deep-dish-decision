@@ -86,7 +86,7 @@ function isDishLike(s: string): boolean {
   const t = s.trim();
   if (t.length < 3 || t.length > 70) return false;
   if (
-    /goldbelly|nationwide|farms|hospitality|cuisine rooted|modern approach|wine program|globally inspired|seasonal menu sourced|private dining|welcoming|deep respect|exceptional asian|italian tradition/i.test(
+    /goldbelly|nationwide|farms|hospitality|cuisine rooted|modern approach|wine program|globally inspired|seasonal menu sourced|private dining|welcoming|deep respect|exceptional asian|italian tradition|crafted cocktails|brunch, and dinner|\bstop$|made-from-scratch fare|prime steaks, seafood/i.test(
       t,
     )
   ) {

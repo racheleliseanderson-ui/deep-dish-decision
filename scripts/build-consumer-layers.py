@@ -70,13 +70,21 @@ def extract_named(record: dict, site: dict) -> list[str]:
         r"\bcanlis salad\b",
         r"\bz-man sandwich\b",
         r"\bburnt ends\b",
+        r"\bfried chicken\b",
+        r"\bchicken and waffles\b",
+        r"\bhush puppies\b",
     ]
     skip = re.compile(
         r"goldbelly|nationwide|og:|located in|all our locations|forests|fisheries|"
         r"storytelling|rotating five-week|dining experience|tasting menu|five-course|"
         r"six-course|from field|globally informed|creative cuisine with|entrees of|"
-        r"available for breakfast|send bbq online|farms,|foragers|winemakers|"
-        r"preservation|accents og|title$|fresh title",
+        r"available for breakfast|send bbq online|farms,?|foragers|winemakers|"
+        r"preservation|accents og|title$|fresh title|"
+        r"wine program|seasonal menu sourced|hospitality|cuisine rooted|"
+        r"modern approach|globally inspired|private dining|welcoming|"
+        r"deep respect|exceptional asian|italian tradition|"
+        r"prime steaks, seafood|sourced from local|dishes that takes|"
+        r"crafted cocktails|brunch, and dinner|\bstop$|made-from-scratch fare",
         re.I,
     )
     for pat in patterns:
@@ -341,6 +349,70 @@ def main() -> None:
             "editorialSummary": None,
             "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g58835-d433220-Reviews-The_Herbfarm_Restaurant-Woodinville_Washington.html",
         },
+        "joule-seattle": {
+            "source": "OpenTable listing (third-party directory)",
+            "rating": 4.9,
+            "reviewCount": 1577,
+            "retrievedAt": NOW,
+            "editorialSummary": None,
+            "sourceUrl": "https://www.opentable.com/joule",
+        },
+        "lark-seattle": {
+            "source": "OpenTable listing (third-party directory)",
+            "rating": 4.4,
+            "reviewCount": 1557,
+            "retrievedAt": NOW,
+            "editorialSummary": None,
+            "sourceUrl": "https://www.opentable.com/lark-seattle",
+        },
+        "cafe-juanita-seattle": {
+            "source": "Tripadvisor listing (third-party directory)",
+            "rating": 4.6,
+            "reviewCount": 350,
+            "retrievedAt": NOW,
+            "editorialSummary": None,
+            "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g58541-d433224-Reviews-Cafe_Juanita-Kirkland_Washington.html",
+        },
+        "musang-seattle": {
+            "source": "OpenTable listing (third-party directory)",
+            "rating": 4.8,
+            "reviewCount": 449,
+            "retrievedAt": NOW,
+            "editorialSummary": None,
+            "sourceUrl": "https://www.opentable.com/r/musang-seattle",
+        },
+        "staple-fancy-seattle": {
+            "source": "OpenTable listing (third-party directory)",
+            "rating": 4.5,
+            "reviewCount": 1135,
+            "retrievedAt": NOW,
+            "editorialSummary": None,
+            "sourceUrl": "https://www.opentable.com/staple-and-fancy-mercantile",
+        },
+        "tilikum-place-cafe-seattle": {
+            "source": "OpenTable listing (third-party directory)",
+            "rating": 4.9,
+            "reviewCount": 2506,
+            "retrievedAt": NOW,
+            "editorialSummary": None,
+            "sourceUrl": "https://www.opentable.com/tilikum-place-cafe",
+        },
+        "the-whale-wins-seattle": {
+            "source": "Tripadvisor listing (third-party directory)",
+            "rating": 4.2,
+            "reviewCount": 163,
+            "retrievedAt": NOW,
+            "editorialSummary": None,
+            "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g60878-d3751319-Reviews-The_Whale_Wins-Seattle_Washington.html",
+        },
+        "eem-portland": {
+            "source": "Tripadvisor listing (third-party directory)",
+            "rating": 4.3,
+            "reviewCount": 53,
+            "retrievedAt": NOW,
+            "editorialSummary": None,
+            "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g52024-d16667246-Reviews-Eem-Portland_Oregon.html",
+        },
     }
     for slug, row in extras.items():
         if slug not in listing:
@@ -389,6 +461,21 @@ def main() -> None:
         "le-bernardin": "nyc-lb2.json",
         "gramercy-tavern": "nyc-gt2.json",
         "balthazar": "nyc-bal2.json",
+        "carmine-s-44th-street-nyc": "nyc-carmine.json",
+        "buddakan": "nyc-buddakan.json",
+        "the-smith": "nyc-smith.json",
+        "fraunces-tavern": "nyc-fraunces.json",
+        "boucherie-union-square": "nyc-boucherie.json",
+        "amor-loco": "nyc-amorloco.json",
+        "rosa-mexicano": "nyc-rosa.json",
+        "vida-verde-tequila-bar": "nyc-vidaverde.json",
+        "tacombi": "nyc-tacombi.json",
+        "chi-restaurant-bar": "nyc-chi.json",
+        "mountain-house-east-village": "nyc-mthouse.json",
+        "jiang-nan-nyc": "nyc-jiangnan.json",
+        "the-best-sichuan-39": "nyc-sichuan39.json",
+        "the-best-sichuan": "nyc-sichuan47.json",
+        "the-best-sichuan-21": "nyc-sichuan21.json",
     }
     for slug, fname in nyc_map.items():
         path = INTEL / fname

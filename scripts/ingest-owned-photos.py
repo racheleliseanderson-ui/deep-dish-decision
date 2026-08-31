@@ -39,6 +39,25 @@ PRIORITY = [
     "dooky-chase-s-restaurant-new-orleans",
     "nue",
     "revel",
+    "joule-seattle",
+    "lark-seattle",
+    "the-whale-wins-seattle",
+    "musang-seattle",
+    "cafe-juanita-seattle",
+    "staple-fancy-seattle",
+    "tilikum-place-cafe-seattle",
+    "hama-hama-oyster-saloon",
+    "tusk",
+    "ox",
+    "langbaan",
+    "kachka",
+    "screen-door-portland",
+    "hat-yai-portland",
+    "eem-portland",
+    "carmine-s-44th-street-nyc",
+    "buddakan",
+    "the-smith",
+    "fraunces-tavern",
 ]
 
 
@@ -67,10 +86,14 @@ def abs_url(base: str, maybe: str) -> str:
 
 def og_image(html: str, page: str) -> str | None:
     patterns = [
+        r'<meta[^>]+property=["\']og:image:secure_url["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+property=["\']og:image:url["\'][^>]+content=["\']([^"\']+)["\']',
         r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image:secure_url["\']',
         r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
         r'<meta[^>]+name=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
-        r'<meta[^>]+property=["\']og:image:url["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']twitter:image(?::src)?["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+property=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
         r'<link[^>]+rel=["\']image_src["\'][^>]+href=["\']([^"\']+)["\']',
     ]
     for pat in patterns:
@@ -82,7 +105,7 @@ def og_image(html: str, page: str) -> str | None:
 
 def looks_like_logo(url: str, payload: bytes) -> bool:
     u = url.lower()
-    if any(k in u for k in ("logo", "favicon", "icon", "sprite", "placeholder")):
+    if any(k in u for k in ("logo", "favicon", "icon", "sprite", "placeholder", "wordmark", "crest", "seal")):
         return True
     if len(payload) < 20_000:
         return True
@@ -124,11 +147,25 @@ def main() -> None:
     hashes: dict[str, str] = {}
     kept = []
     report = []
+    already_doc = {
+        img["slug"]
+        for img in visual.get("images") or []
+        if img.get("documentary") and (img.get("provenance") or {}).get("kind") == "restaurant_owned"
+    }
+    for img in visual.get("images") or []:
+        if not img.get("documentary"):
+            continue
+        src = ROOT / "public" / str(img.get("src") or "").lstrip("/")
+        if src.exists():
+            hashes[hashlib.sha256(src.read_bytes()).hexdigest()] = img["slug"]
 
     for slug in PRIORITY:
         rec = by.get(slug)
         if not rec:
             report.append({"slug": slug, "status": "missing-record"})
+            continue
+        if slug in already_doc:
+            report.append({"slug": slug, "status": "skipped-existing-documentary"})
             continue
         site = (rec.get("website") or "").strip()
         if not site or site.lower().startswith("not stated"):

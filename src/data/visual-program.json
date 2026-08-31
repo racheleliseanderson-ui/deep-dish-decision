@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T00:26:00.000Z",
+  "generatedAt": "2026-08-31T01:20:11Z",
   "note": "Documentary photography is stored only when the image is proven to belong to this exact slug. Identity marks are deterministic SVGs from first-party signals and are not photographs of the restaurant. Generated or editorial illustrations must set documentary to false and must never be labeled as a photo of a real room or dish.",
   "images": [
     {
@@ -71,6 +71,90 @@
         "kind": "restaurant_owned",
         "url": "https://www.nueseattle.com/",
         "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "musang-seattle",
+      "kind": "dining_room",
+      "src": "/visuals/musang-seattle.webp",
+      "alt": "Restaurant-owned photograph of Musang's dining room, published on musangseattle.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://musangseattle.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "staple-fancy-seattle",
+      "kind": "representative_food",
+      "src": "/visuals/staple-fancy-seattle.webp",
+      "alt": "Restaurant-owned photograph of a Staple & Fancy pasta plate, published on stapleandfancy.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.stapleandfancy.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "ox",
+      "kind": "representative_food",
+      "src": "/visuals/ox.webp",
+      "alt": "Restaurant-owned photograph of wood-fired steak at Ox, published on oxpdx.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.oxpdx.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "langbaan",
+      "kind": "representative_food",
+      "src": "/visuals/langbaan.webp",
+      "alt": "Restaurant-owned photograph of Langbaan tasting plates, published on langbaanportland.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.langbaanportland.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "kachka",
+      "kind": "representative_food",
+      "src": "/visuals/kachka.webp",
+      "alt": "Restaurant-owned photograph of Kachka pelmeni, published on kachkapdx.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.kachkapdx.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "eem-portland",
+      "kind": "dining_room",
+      "src": "/visuals/eem-portland.webp",
+      "alt": "Restaurant-owned photograph of Eem's dining room, published on eempdx.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://eempdx.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "carmine-s-44th-street-nyc",
+      "kind": "dining_room",
+      "src": "/visuals/carmine-s-44th-street-nyc.jpg",
+      "alt": "Restaurant-owned photograph of Carmine's Times Square dining room, published on carminesnyc.com — not a diner snapshot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://carminesnyc.com/locations/times-square",
+        "retrievedAt": "2026-08-31T01:18:41Z"
       },
       "documentary": true
     }
