@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T02:43:10.323Z",
+  "generatedAt": "2026-08-31T03:21:07.862Z",
   "records": {
     "canlis": {
       "google": {
@@ -61248,6 +61248,1005 @@
           "https://www.curatetapasbar.com/contact/"
         ],
         "retrievedAt": "2026-08-31T02:42:38.497Z",
+        "playwrightPages": 0
+      }
+    },
+    "farmhaus-st-louis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:12.685Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Full restaurant buyouts along with semi-private experiences are available.",
+        "groupPolicyLanguage": [
+          "Full restaurant buyouts along with semi-private experiences are available.",
+          "The team at Farmhaus will work with you to plan an exceptional private dining experience."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , , , , ,",
+            "sourceUrl": "https://www.farmhausrestaurant.com/"
+          },
+          {
+            "quote": "og:description: Farmhaus is a farm to table restaurant in St. Louis utilizing seasonal, fresh, local ingredients. Featuring fresh seafood, locally raised beef. A combination of classic & contemporary with a Southern twist.",
+            "sourceUrl": "https://www.farmhausrestaurant.com/"
+          },
+          {
+            "quote": "title: Farmhaus Restaurant | Farm to Table | St. Louis, MOFarmhaus Restaurant | Farm to Table | St. Louis, MO",
+            "sourceUrl": "https://www.farmhausrestaurant.com/"
+          },
+          {
+            "quote": "title: Our Story &mdash; Farmhaus Restaurant | Farm to Table | St. Louis, MO",
+            "sourceUrl": "https://www.farmhausrestaurant.com/about"
+          },
+          {
+            "quote": "title: Private Event Inquiries &mdash; Farmhaus Restaurant | Farm to Table | St. Louis, MO",
+            "sourceUrl": "https://www.farmhausrestaurant.com/private-event-inquiries"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.farmhausrestaurant.com/",
+          "https://www.farmhausrestaurant.com/about",
+          "https://www.farmhausrestaurant.com/private-event-inquiries"
+        ],
+        "retrievedAt": "2026-08-31T03:20:12.685Z",
+        "playwrightPages": 0
+      }
+    },
+    "indo-st-louis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:14.448Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "https://www.esquire.com/food-drink/restaurants/a34648683/best-new-restaurants-in-america-2020/",
+        "reservationUrl": "https://resy.com/cities/st-louis-mo/venues/indo",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.indo-stl.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:14.448Z",
+        "playwrightPages": 0
+      }
+    },
+    "little-fox-st-louis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:15.461Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.littlefoxstl.com/menu",
+        "reservationUrl": "https://resy.com/cities/stl/little-fox",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Please notify your server of any known food allergies.",
+          "No gluten-free dedicated fryer."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "EVENTS If you are interested in renting out Little Fox for a private event please reach out to info@littlefoxstl.com for options and pricing.",
+        "groupPolicyLanguage": [
+          "EVENTS If you are interested in renting out Little Fox for a private event please reach out to info@littlefoxstl.com for options and pricing."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Little Fox is a modern neighborhood restaurant in St. Louis, Missouri built to complement its surroundings and add meaning to any meal. Locally sourced ingredients inform a menu curated from experience around the world.",
+            "sourceUrl": "https://www.littlefoxstl.com/"
+          },
+          {
+            "quote": "title: Little Fox | Modern Neighborhood Dining | St. Louis",
+            "sourceUrl": "https://www.littlefoxstl.com/"
+          },
+          {
+            "quote": "title: Menu | Little Fox Restaurant | St. Louis, MO",
+            "sourceUrl": "https://www.littlefoxstl.com/menu"
+          },
+          {
+            "quote": "og:description: An award-winning, intimate neighborhood restaurant located in the heart of Fox Park St. Louis.",
+            "sourceUrl": "https://www.littlefoxstl.com/about"
+          },
+          {
+            "quote": "title: About | Little Fox Restaurant | St. Louis, MO",
+            "sourceUrl": "https://www.littlefoxstl.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.littlefoxstl.com/",
+          "https://www.littlefoxstl.com/menu",
+          "https://www.littlefoxstl.com/about"
+        ],
+        "retrievedAt": "2026-08-31T03:20:15.461Z",
+        "playwrightPages": 0
+      }
+    },
+    "mainlander-st-louis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:17.256Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://resy.com/cities/stl/mainlander",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "▶ Supper is served family style with an option to choose a vegetarian meal when you make your reservation.",
+          "What if I have a Food Allergy?",
+          "▶ When you make your reservation, you will have an opportunity to notify us of any allergies.",
+          "This is also when you can request that your meal be vegetarian."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Here at Mainlander, we offer you epicurean excellence, distinctive flair, and tempting favorites of the mainland along with libations to foster harmony and pleasantry.",
+            "sourceUrl": "https://www.mainlanderstl.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.mainlanderstl.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:17.256Z",
+        "playwrightPages": 0
+      }
+    },
+    "cunetto-house-of-pasta-st-louis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:18.125Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , We 11:00-14:00, We 16:45-21:30, Th 11:00-14:00, Th 16:45-21:30, Fr 11:00-14:00, Fr 16:45-22:30, Sa 16:45-22:30, Su 16:00-20:30"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , , We 11:00-14:00, We 16:45-21:30, Th 11:00-14:00, Th 16:45-21:30, Fr 11:00-14:00, Fr 16:45-22:30, Sa 16:45-22:30, Su 16:00-20:30",
+            "sourceUrl": "https://www.cunetto.com/"
+          },
+          {
+            "quote": "og:description: Cunetto House of Pasta tops Best Italian Restaurants polls year after year. Anyone who is visiting St. Louis, Missouri must try \"Cunetto",
+            "sourceUrl": "https://www.cunetto.com/"
+          },
+          {
+            "quote": "title: Cunetto House of Pasta | Italian Food is Family Tradition",
+            "sourceUrl": "https://www.cunetto.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.cunetto.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:18.125Z",
+        "playwrightPages": 0
+      }
+    },
+    "broadway-oyster-bar-st-louis": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:19.023Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://broadwayoysterbar.hrpos.heartland.us/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "These items can be made gluten free.",
+          "PLEASE LET YOUR SERVER KNOW OF ANY DIETARY RESTRICTIONS OR FOOD ALLERGIES PRIOR TO ORDERING."
+        ],
+        "accessibilityLanguage": [
+          "$21.75 CRAWFISH ENCHILADAS Crawfish stuffed flour tortillas bathed in a spicy cheese sauce and topped with our Chipotle Sour Cream."
+        ],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Broadway Oyster Bar: The premier New Orleans-style restaurant, bar and music venue in St. Louis, Missouri. 314-621-8811",
+            "sourceUrl": "https://www.broadwayoysterbar.com/"
+          },
+          {
+            "quote": "title: Broadway Oyster Bar // St. Louis, Missouri / Cajun Cuisine and Live Music Bar / 314-621-8811",
+            "sourceUrl": "https://www.broadwayoysterbar.com/"
+          },
+          {
+            "quote": "title: Special Events at Broadway Oyster Bar // St. Louis, Missouri / Cajun Cuisine and Live Music Bar / 314-621-8811",
+            "sourceUrl": "https://www.broadwayoysterbar.com/events.html"
+          },
+          {
+            "quote": "title: Food Menu / Dining / Broadway Oyster Bar // St. Louis, Missouri / Cajun Cuisine and Live Music Bar / 314-621-8811",
+            "sourceUrl": "https://www.broadwayoysterbar.com/menu.html"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.broadwayoysterbar.com/",
+          "https://www.broadwayoysterbar.com/events.html",
+          "https://www.broadwayoysterbar.com/menu.html"
+        ],
+        "retrievedAt": "2026-08-31T03:20:19.023Z",
+        "playwrightPages": 0
+      }
+    },
+    "deadhorse-hill-worcester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:20.870Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.deadhorsehill.com/menu/",
+        "reservationUrl": "https://www.toasttab.com/dead-horse-hill/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Slide 1 of 6 Slide 2 of 6 Slide 3 of 6 Slide 4 of 6 Slide 5 of 6 Slide 6 of 6 Menu dinner menu sunday brunch Select a tab to display dinner menu sunday brunch Private Events deadhorse hill is available for full buyouts.",
+        "groupPolicyLanguage": [
+          "Slide 1 of 6 Slide 2 of 6 Slide 3 of 6 Slide 4 of 6 Slide 5 of 6 Slide 6 of 6 Menu dinner menu sunday brunch Select a tab to display dinner menu sunday brunch Private Events deadhorse hill is available for full buyouts.",
+          "for large group dining, parties of 6 or more, please call us directly."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "reservation cancellations with less than 24 hours notice will be subject to a cancellation fee."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: A seasonal American restaurant in downtown Worcester, housed in an old 1800",
+            "sourceUrl": "https://www.deadhorsehill.com/"
+          },
+          {
+            "quote": "title: private events | deadhorse hill",
+            "sourceUrl": "https://www.deadhorsehill.com/private-events/"
+          },
+          {
+            "quote": "title: contact | deadhorse hill",
+            "sourceUrl": "https://www.deadhorsehill.com/contact/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.deadhorsehill.com/",
+          "https://www.deadhorsehill.com/menu/",
+          "https://www.deadhorsehill.com/private-events/",
+          "https://www.deadhorsehill.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:20.870Z",
+        "playwrightPages": 0
+      }
+    },
+    "volturno-worcester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:23.372Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.volturnopizza.com/menu/cocktails-beer-wine",
+        "reservationUrl": "https://order.toasttab.com/online/volturno-72-shrewsbury-street",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: authentic italian restaurant specializing in regional handmade pasta, a.p.n certified pizza napoletana, local craft beer, and specialty cocktails in ma.",
+            "sourceUrl": "https://www.volturnopizza.com/"
+          },
+          {
+            "quote": "title: volturno - the art of pizza - located in worcester",
+            "sourceUrl": "https://www.volturnopizza.com/"
+          },
+          {
+            "quote": "title: cocktails, mocktails, & beer | volturno - the art of pizza - located in worcester",
+            "sourceUrl": "https://www.volturnopizza.com/menu/cocktails-beer-wine"
+          },
+          {
+            "quote": "title: events | volturno in massachusetts",
+            "sourceUrl": "https://www.volturnopizza.com/store/events/"
+          },
+          {
+            "quote": "title: Contact | Volturno in Massachusetts",
+            "sourceUrl": "https://www.volturnopizza.com/contact/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.volturnopizza.com/",
+          "https://www.volturnopizza.com/menu/cocktails-beer-wine",
+          "https://www.volturnopizza.com/store/events/",
+          "https://www.volturnopizza.com/contact/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:23.372Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-mercantile-worcester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:25.961Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://taverninthesquare.orderexperience.net/67abb62ef74b5c8769054973/menu/67abba61d1552615030a130e",
+        "reservationUrl": "https://www.opentable.com/r/the-mercantile-worcester",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Located in the heart of downtown Worcester, The Mercantile is a two-floor rooftop deck bar and restaurant serving up New American Tavern Cuisine.",
+            "sourceUrl": "https://www.themercantileworcester.com/"
+          },
+          {
+            "quote": "title: The Mercantile Worcester | Rooftop Bar & Restaurant",
+            "sourceUrl": "https://www.themercantileworcester.com/"
+          },
+          {
+            "quote": "title: Reservations | The Mercantile",
+            "sourceUrl": "https://www.themercantileworcester.com/reservations"
+          },
+          {
+            "quote": "title: Contact | The Mercantile",
+            "sourceUrl": "https://www.themercantileworcester.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.themercantileworcester.com/",
+          "https://www.themercantileworcester.com/menus",
+          "https://www.themercantileworcester.com/reservations",
+          "https://www.themercantileworcester.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T03:20:25.961Z",
+        "playwrightPages": 2
+      }
+    },
+    "miss-worcester-diner-worcester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:46.361Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Online ordering menu for Miss Worcester Diner.",
+            "sourceUrl": "https://www.missworcesterdinerorder.com/"
+          },
+          {
+            "quote": "title: Home - Miss Worcester Diner",
+            "sourceUrl": "https://www.missworcesterdinerorder.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.missworcesterdinerorder.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:46.361Z",
+        "playwrightPages": 0
+      }
+    },
+    "basil-n-spice-worcester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:47.281Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.basilnspice.com/menus-overview/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Rustic-chic, storefront nook providing creative Thai recipes, cocktails & live jazz in a warm space. Located in Worcester, MA.",
+            "sourceUrl": "https://www.basilnspice.com/"
+          },
+          {
+            "quote": "title: Home | Basil n' Spice in Worcester, MA",
+            "sourceUrl": "https://www.basilnspice.com/"
+          },
+          {
+            "quote": "og:description: Read more information about Basil n",
+            "sourceUrl": "https://www.basilnspice.com/about/"
+          },
+          {
+            "quote": "title: About | Basil n' Spice in Worcester, MA",
+            "sourceUrl": "https://www.basilnspice.com/about/"
+          },
+          {
+            "quote": "og:description: See menus for the Basil n",
+            "sourceUrl": "https://www.basilnspice.com/menus-overview/"
+          },
+          {
+            "quote": "title: Overview | Basil n' Spice in Worcester, MA",
+            "sourceUrl": "https://www.basilnspice.com/menus-overview/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.basilnspice.com/",
+          "https://www.basilnspice.com/about/",
+          "https://www.basilnspice.com/menus-overview/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:47.281Z",
+        "playwrightPages": 0
+      }
+    },
+    "meze-estiatorio-worcester": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:48.952Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://reservations.shift4payments.com/",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Meze Estiatorio. Authentic Greek cuisine, exclusive Greek wines and spirits. Enjoy the atmosphere of being in Greece without the long flight.",
+            "sourceUrl": "https://www.mezeestiatorio.com/"
+          },
+          {
+            "quote": "title: Meze Estiatorio | Worcester, MA | Authentic Greek cuisine",
+            "sourceUrl": "https://www.mezeestiatorio.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.mezeestiatorio.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:48.952Z",
+        "playwrightPages": 0
+      }
+    },
+    "mansurs-on-the-boulevard-baton-rouge": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:49.835Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.mansursontheboulevard.com/menu",
+        "reservationUrl": "https://order.toasttab.com/egiftcards/mansurs-on-the-boulevard-5720-corporate-blvd-ste-a",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (225) 923-3366"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday 17:00 21:00",
+          "JSON-LD openingHoursSpecification: Tuesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Saturday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Sunday 11:00 21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Creole, Contemporary Creole, Louisiana",
+          "JSON-LD servesCuisine: Creole, American, Seafood"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Learn more about us Private Rooms and Off-Site Catering Available Host business dinners, family celebrations, and special occasions with the same quality and hospitality you expect in our dining room.",
+        "groupPolicyLanguage": [
+          "Learn more about us Private Rooms and Off-Site Catering Available Host business dinners, family celebrations, and special occasions with the same quality and hospitality you expect in our dining room.",
+          "Choose from private room options on-site, or let us bring Mansurs to you with off-site catering tailored to your event.",
+          "Private Rooms and Off-Site Catering Available Host business dinners, family celebrations, and special occasions with the same quality and hospitality you expect in our dining room."
+        ],
+        "dressCode": "This includes wearing appropriate \"smart casual\" or business casual dining attire and forgoing excessive perfumes.",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (225) 923-3366",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Creole, Contemporary Creole, Louisiana",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday 17:00 21:00",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 11:00 21:00",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:00 22:00",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 11:00 22:00",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 11:00 21:00",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "og:description: A Baton Rouge tradition since 1989. Contemporary Creole cuisine, curated wines, and exceptional service for lunch, brunch, and dinner. Reserve your table today.",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "title: Baton Rouge Fine Dining | Mansurs on the Boulevard",
+            "sourceUrl": "https://www.mansursontheboulevard.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Creole, American, Seafood",
+            "sourceUrl": "https://www.mansursontheboulevard.com/menu"
+          },
+          {
+            "quote": "og:description: Browse The Full Mansurs On The Boulevard Menu. From Charbroiled Oysters To Filet Mignon And Weekend Brunch — Fine Dining Baton Rouge Locals Have Loved Since 1989.",
+            "sourceUrl": "https://www.mansursontheboulevard.com/menu"
+          },
+          {
+            "quote": "title: Creole Menu - Dinner Lunch Brunch | Mansurs On The Boulevard",
+            "sourceUrl": "https://www.mansursontheboulevard.com/menu"
+          },
+          {
+            "quote": "og:description: Join us for wine dinners, special events, and private dining. Reserve your spot for curated multi-course dinners or book a private room for celebrations.",
+            "sourceUrl": "https://www.mansursontheboulevard.com/events"
+          },
+          {
+            "quote": "title: Events & Private Dinners | Mansurs on the Boulevard",
+            "sourceUrl": "https://www.mansursontheboulevard.com/events"
+          },
+          {
+            "quote": "og:description: Discover the Story Behind Mansurs on the Boulevard, Baton Rouge's Iconic Upscale Steakhouse. Fine Dining, Rich History, and Unmatched Hospitality Await.",
+            "sourceUrl": "https://www.mansursontheboulevard.com/about"
+          },
+          {
+            "quote": "title: About our Restaurant | Mansurs on the Boulevard",
+            "sourceUrl": "https://www.mansursontheboulevard.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.mansursontheboulevard.com/",
+          "https://www.mansursontheboulevard.com/menu",
+          "https://www.mansursontheboulevard.com/events",
+          "https://www.mansursontheboulevard.com/about"
+        ],
+        "retrievedAt": "2026-08-31T03:20:49.835Z",
+        "playwrightPages": 0
+      }
+    },
+    "cecelia-creole-bistro-baton-rouge": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:52.614Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.ceceliabr.com/menus",
+        "reservationUrl": "https://www.opentable.com/restaurant/profile/1024066/reserve?rid=1024066&restref=1024066",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-21:00, Tu 11:00-21:00, We 11:00-21:00, Th 11:00-21:00, Fr 11:00-21:00, Sa 16:00-21:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "wagyu flat iron steak topped with herbed compound butter and served with housecut fries & garlic aioli $ 27 gluten-free items gluten-free without sauce Any to-go order over $100 will have 10% GRATITUTY applied."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "The Catahoula Room at Cecelia is our bar & private dining room on the 1st Floor.",
+        "groupPolicyLanguage": [
+          "The Catahoula Room at Cecelia is our bar & private dining room on the 1st Floor.",
+          "PLEASE NOTE: WE REQUIRE AT LEAST A ONE WEEK NOTICE FOR ANY LARGE PARTY/BOOKING.",
+          "Please note: We require at least a one week notice for any large party/booking/catering order."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "This dining room can accommodate up to 25 guests & available for a $150 deposit."
+        ],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-21:00, Tu 11:00-21:00, We 11:00-21:00, Th 11:00-21:00, Fr 11:00-21:00, Sa 16:00-21:00,",
+            "sourceUrl": "https://www.ceceliabr.com/"
+          },
+          {
+            "quote": "title: Food &mdash; Cecelia Creole Bistro",
+            "sourceUrl": "https://www.ceceliabr.com/menus"
+          },
+          {
+            "quote": "title: Make A Reservation &mdash; Cecelia Creole Bistro",
+            "sourceUrl": "https://www.ceceliabr.com/reservations"
+          },
+          {
+            "quote": "title: Contact Us &mdash; Cecelia Creole Bistro",
+            "sourceUrl": "https://www.ceceliabr.com/contact"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.ceceliabr.com/",
+          "https://www.ceceliabr.com/menus",
+          "https://www.ceceliabr.com/reservations",
+          "https://www.ceceliabr.com/contact"
+        ],
+        "retrievedAt": "2026-08-31T03:20:52.614Z",
+        "playwrightPages": 0
+      }
+    },
+    "elsie-s-plate-pie-baton-rouge": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:54.876Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/elsies/v3/?mode=fulfillment&source=pop_up&spot_id=91069&destination=order&promotion=order_online",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Family-inspired Southern cooking and pies baked fresh daily, led by a chef-owner honoring regional recipes.",
+            "sourceUrl": "https://elsiespies.com/"
+          },
+          {
+            "quote": "title: Must-Visit Southern Restaurant in Mid City | Elsie&apos;s Pies",
+            "sourceUrl": "https://elsiespies.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://elsiespies.com/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:54.876Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-gregory-baton-rouge": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:20:55.867Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.thegregorybr.com/menus/reservations/",
+        "reservationUrl": "https://www.opentable.com/restaurant/profile/270010/reserve?rid=270010&restref=270010",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "To enjoy dining in our upscale atmosphere, reserve a table or book a private event today!",
+        "groupPolicyLanguage": [
+          "To enjoy dining in our upscale atmosphere, reserve a table or book a private event today!",
+          "Make a reservation or book a private event today!",
+          "We provide an opportunity to explore creative dishes during private dining events such as birthday parties, holiday celebrations, or gatherings with friends and family.",
+          "Or book your group event or special event with our private dining options."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: The Gregory offers an unforgettable dining experience located inside The Watermark Hotel in Downtown Baton Rouge. Reserve your table online today!",
+            "sourceUrl": "https://www.thegregorybr.com/"
+          },
+          {
+            "quote": "title: The Gregory | Dine Downtown in Baton Rouge",
+            "sourceUrl": "https://www.thegregorybr.com/"
+          },
+          {
+            "quote": "og:description: Interested in experiencing a unique dining experience and Southern-style dishes with a twist? Book a reservation at The Gregory in Baton Rouge today.",
+            "sourceUrl": "https://www.thegregorybr.com/menus/reservations/"
+          },
+          {
+            "quote": "title: Book a Reservation Online at the The Gregory in Baton Rouge",
+            "sourceUrl": "https://www.thegregorybr.com/menus/reservations/"
+          },
+          {
+            "quote": "og:description: As an Open Table Diner's Choice recipient, The Gregory offers an unmatched dining experience with inspired twists on southern classics. Learn more today.",
+            "sourceUrl": "https://www.thegregorybr.com/about/"
+          },
+          {
+            "quote": "title: About Us | The Gregory Downtown Baton Rouge",
+            "sourceUrl": "https://www.thegregorybr.com/about/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.thegregorybr.com/",
+          "https://www.thegregorybr.com/menus/reservations/",
+          "https://www.thegregorybr.com/menus/reservations/",
+          "https://www.thegregorybr.com/about/"
+        ],
+        "retrievedAt": "2026-08-31T03:20:55.867Z",
+        "playwrightPages": 0
+      }
+    },
+    "french-market-bistro-baton-rouge": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:21:03.362Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.frenchmarketbistro.com/menu",
+        "reservationUrl": "https://www.frenchmarketbistro.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Learn more about us Private Dining & Catering Call us at 225-753-3500 For Information contact the restaurant today for menus and availabilities.",
+        "groupPolicyLanguage": [
+          "Learn more about us Private Dining & Catering Call us at 225-753-3500 For Information contact the restaurant today for menus and availabilities."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Offering fine dining in Baton Rouge, Lousiiana since 1996. We offer private dining and catering and a nationally recognized wine list.",
+            "sourceUrl": "https://www.frenchmarketbistro.com/"
+          },
+          {
+            "quote": "title: French Market Bistro | Baton Rouge Fine Dining | Upscale Restaurant",
+            "sourceUrl": "https://www.frenchmarketbistro.com/"
+          },
+          {
+            "quote": "title: Reservations - French Market Bistro | Baton Rouge Fine Dining | Upscale Restaurant",
+            "sourceUrl": "https://www.frenchmarketbistro.com/reservations"
+          },
+          {
+            "quote": "title: Menu - French Market Bistro | Baton Rouge Fine Dining | Upscale Restaurant",
+            "sourceUrl": "https://www.frenchmarketbistro.com/menu"
+          },
+          {
+            "quote": "title: About - French Market Bistro | Baton Rouge Fine Dining | Upscale Restaurant",
+            "sourceUrl": "https://www.frenchmarketbistro.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.frenchmarketbistro.com/",
+          "https://www.frenchmarketbistro.com/reservations",
+          "https://www.frenchmarketbistro.com/menu",
+          "https://www.frenchmarketbistro.com/about"
+        ],
+        "retrievedAt": "2026-08-31T03:21:03.362Z",
+        "playwrightPages": 0
+      }
+    },
+    "parrain-s-seafood-restaurant-baton-rouge": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-08-31T03:21:06.129Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://parrains.com/menu.html",
+        "reservationUrl": "https://www.toasttab.com/parrains-seafood/v3",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Parrains Seafood - Baton Rouge, LA",
+            "sourceUrl": "https://parrains.com/"
+          },
+          {
+            "quote": "title: About - Parrains Seafood",
+            "sourceUrl": "https://parrains.com/about.html"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://parrains.com/",
+          "https://parrains.com/about.html",
+          "https://parrains.com/menu.html"
+        ],
+        "retrievedAt": "2026-08-31T03:21:06.129Z",
         "playwrightPages": 0
       }
     }

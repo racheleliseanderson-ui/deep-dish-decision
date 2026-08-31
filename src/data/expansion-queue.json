@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T02:41:50.777Z",
+  "generatedAt": "2026-08-31T03:20:10.286Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -1041,6 +1041,42 @@
       "pinned": false,
       "inserted": 6,
       "lastRunAt": "2026-08-31T02:41:57.736Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "St. Louis",
+      "stateCode": "MO",
+      "population": 281754,
+      "priority": 86,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T03:20:12.315Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Worcester",
+      "stateCode": "MA",
+      "population": 206518,
+      "priority": 87,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T03:20:12.315Z",
+      "note": "Statewide fill of a mid-size city after the state floor."
+    },
+    {
+      "city": "Baton Rouge",
+      "stateCode": "LA",
+      "population": 222185,
+      "priority": 88,
+      "tier": "statewide-fill",
+      "status": "done",
+      "pinned": false,
+      "inserted": 6,
+      "lastRunAt": "2026-08-31T03:20:12.315Z",
       "note": "Statewide fill of a mid-size city after the state floor."
     }
   ]

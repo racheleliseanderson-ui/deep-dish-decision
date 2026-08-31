@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-31T02:43:41.249Z",
+  "generatedAt": "2026-08-31T03:21:11.592Z",
   "totals": {
-    "records": 872,
-    "enriched": 872,
-    "resolved": 861,
+    "records": 890,
+    "enriched": 890,
+    "resolved": 879,
     "unresolved": 0,
     "statesCovered": 51,
     "statesTotal": 51,
@@ -486,7 +486,7 @@
   "distribution": [
     {
       "label": "90-100",
-      "count": 861
+      "count": 879
     },
     {
       "label": "75-89",
@@ -615,6 +615,14 @@
       "perMillion": 4.49
     },
     {
+      "code": "MA",
+      "count": 18,
+      "enriched": 18,
+      "avgCompleteness": 96,
+      "population": 7001399,
+      "perMillion": 2.57
+    },
+    {
       "code": "OK",
       "count": 18,
       "enriched": 18,
@@ -637,6 +645,14 @@
       "avgCompleteness": 95,
       "population": 5877610,
       "perMillion": 2.89
+    },
+    {
+      "code": "MO",
+      "count": 17,
+      "enriched": 17,
+      "avgCompleteness": 96,
+      "population": 6196156,
+      "perMillion": 2.74
     },
     {
       "code": "WI",
@@ -663,12 +679,12 @@
       "perMillion": 22.09
     },
     {
-      "code": "MA",
-      "count": 12,
-      "enriched": 12,
-      "avgCompleteness": 94,
-      "population": 7001399,
-      "perMillion": 1.71
+      "code": "LA",
+      "count": 14,
+      "enriched": 14,
+      "avgCompleteness": 97,
+      "population": 4573749,
+      "perMillion": 3.06
     },
     {
       "code": "MD",
@@ -685,14 +701,6 @@
       "avgCompleteness": 95,
       "population": 6862199,
       "perMillion": 1.6
-    },
-    {
-      "code": "MO",
-      "count": 11,
-      "enriched": 11,
-      "avgCompleteness": 96,
-      "population": 6196156,
-      "perMillion": 1.78
     },
     {
       "code": "MT",
@@ -797,14 +805,6 @@
       "avgCompleteness": 97,
       "population": 2940546,
       "perMillion": 2.72
-    },
-    {
-      "code": "LA",
-      "count": 8,
-      "enriched": 8,
-      "avgCompleteness": 95,
-      "population": 4573749,
-      "perMillion": 1.75
     },
     {
       "code": "ME",
@@ -2272,7 +2272,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2295,7 +2295,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2318,7 +2318,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2341,7 +2341,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2364,7 +2364,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -2387,7 +2387,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -5024,6 +5024,374 @@
       "priceBand": "",
       "lastEnrichedAt": "2026-08-31T02:43:09.395Z",
       "addedAt": "2026-08-31T02:41:57.736Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "farmhaus-st-louis",
+      "title": "Farmhaus",
+      "stateCode": "MO",
+      "city": "St. Louis",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:12.685Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "little-fox-st-louis",
+      "title": "Little Fox",
+      "stateCode": "MO",
+      "city": "St. Louis",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:15.461Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "cunetto-house-of-pasta-st-louis",
+      "title": "Cunetto House of Pasta",
+      "stateCode": "MO",
+      "city": "St. Louis",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:18.125Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "broadway-oyster-bar-st-louis",
+      "title": "Broadway Oyster Bar",
+      "stateCode": "MO",
+      "city": "St. Louis",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:19.023Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "deadhorse-hill-worcester",
+      "title": "Deadhorse Hill",
+      "stateCode": "MA",
+      "city": "Worcester",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:20.870Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "volturno-worcester",
+      "title": "Volturno",
+      "stateCode": "MA",
+      "city": "Worcester",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:23.372Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-mercantile-worcester",
+      "title": "The Mercantile",
+      "stateCode": "MA",
+      "city": "Worcester",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:25.961Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "miss-worcester-diner-worcester",
+      "title": "Miss Worcester Diner",
+      "stateCode": "MA",
+      "city": "Worcester",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:46.361Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "basil-n-spice-worcester",
+      "title": "Basil n' Spice",
+      "stateCode": "MA",
+      "city": "Worcester",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:47.281Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "meze-estiatorio-worcester",
+      "title": "Meze Estiatorio",
+      "stateCode": "MA",
+      "city": "Worcester",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:48.952Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "mansurs-on-the-boulevard-baton-rouge",
+      "title": "Mansurs on the Boulevard",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:49.835Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "cecelia-creole-bistro-baton-rouge",
+      "title": "Cecelia Creole Bistro",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:52.614Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "elsie-s-plate-pie-baton-rouge",
+      "title": "Elsie's Plate & Pie",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:54.876Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "the-gregory-baton-rouge",
+      "title": "The Gregory",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:55.867Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "french-market-bistro-baton-rouge",
+      "title": "French Market Bistro",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:21:03.362Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "parrain-s-seafood-restaurant-baton-rouge",
+      "title": "Parrain's Seafood Restaurant",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:21:06.129Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -10000,7 +10368,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10023,7 +10391,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10046,7 +10414,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10069,7 +10437,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10092,7 +10460,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10115,7 +10483,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10138,7 +10506,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10161,7 +10529,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10184,7 +10552,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10207,7 +10575,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10230,7 +10598,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10253,7 +10621,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10276,7 +10644,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10299,7 +10667,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10322,7 +10690,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10345,7 +10713,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10368,7 +10736,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10391,7 +10759,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10414,7 +10782,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10437,7 +10805,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10460,7 +10828,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10483,7 +10851,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10506,7 +10874,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10529,7 +10897,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10552,7 +10920,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10575,7 +10943,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10598,7 +10966,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10621,7 +10989,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10644,7 +11012,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10667,7 +11035,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10690,7 +11058,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10713,7 +11081,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10736,7 +11104,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10759,7 +11127,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10782,7 +11150,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10805,7 +11173,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10851,7 +11219,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10874,7 +11242,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10897,7 +11265,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10920,7 +11288,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10943,7 +11311,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10966,7 +11334,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -10989,7 +11357,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -11012,7 +11380,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -11035,7 +11403,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -11081,7 +11449,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -11104,7 +11472,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -11127,7 +11495,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -11150,7 +11518,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -11173,7 +11541,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -11196,7 +11564,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -11219,7 +11587,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 11,
+      "ageDays": 12,
       "siteFailures": []
     },
     {
@@ -20745,6 +21113,52 @@
       "siteFailures": []
     },
     {
+      "slug": "indo-st-louis",
+      "title": "Indo",
+      "stateCode": "MO",
+      "city": "St. Louis",
+      "completeness": 94,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:14.448Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "mainlander-st-louis",
+      "title": "Mainlander",
+      "stateCode": "MO",
+      "city": "St. Louis",
+      "completeness": 94,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-08-31T03:20:17.256Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-09-30",
+      "reviewedAt": "2026-08-31",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "los-tacos-no-1",
       "title": "LOS TACOS No.1",
       "stateCode": "NY",
@@ -21029,17 +21443,17 @@
   ],
   "recent": [
     {
-      "slug": "jargon-asheville",
-      "title": "Jargon",
-      "stateCode": "NC",
-      "city": "Asheville",
+      "slug": "parrain-s-seafood-restaurant-baton-rouge",
+      "title": "Parrain's Seafood Restaurant",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:43:09.395Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:21:06.129Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21052,17 +21466,17 @@
       "siteFailures": []
     },
     {
-      "slug": "the-market-place-asheville",
-      "title": "The Market Place",
-      "stateCode": "NC",
-      "city": "Asheville",
+      "slug": "french-market-bistro-baton-rouge",
+      "title": "French Market Bistro",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:54.320Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:21:03.362Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21075,17 +21489,17 @@
       "siteFailures": []
     },
     {
-      "slug": "limones-asheville",
-      "title": "Limones",
-      "stateCode": "NC",
-      "city": "Asheville",
+      "slug": "the-gregory-baton-rouge",
+      "title": "The Gregory",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:52.983Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:55.867Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21098,17 +21512,17 @@
       "siteFailures": []
     },
     {
-      "slug": "the-admiral-asheville",
-      "title": "The Admiral",
-      "stateCode": "NC",
-      "city": "Asheville",
+      "slug": "elsie-s-plate-pie-baton-rouge",
+      "title": "Elsie's Plate & Pie",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:51.250Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:54.876Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21121,17 +21535,17 @@
       "siteFailures": []
     },
     {
-      "slug": "rhubarb-asheville",
-      "title": "Rhubarb",
-      "stateCode": "NC",
-      "city": "Asheville",
+      "slug": "cecelia-creole-bistro-baton-rouge",
+      "title": "Cecelia Creole Bistro",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:40.591Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:52.614Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21144,17 +21558,17 @@
       "siteFailures": []
     },
     {
-      "slug": "curate-asheville",
-      "title": "Cúrate",
-      "stateCode": "NC",
-      "city": "Asheville",
+      "slug": "mansurs-on-the-boulevard-baton-rouge",
+      "title": "Mansurs on the Boulevard",
+      "stateCode": "LA",
+      "city": "Baton Rouge",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:38.497Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:49.835Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21167,17 +21581,17 @@
       "siteFailures": []
     },
     {
-      "slug": "calusso-fort-lauderdale",
-      "title": "Calusso",
-      "stateCode": "FL",
-      "city": "Fort Lauderdale",
+      "slug": "meze-estiatorio-worcester",
+      "title": "Meze Estiatorio",
+      "stateCode": "MA",
+      "city": "Worcester",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:36.567Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:48.952Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21190,17 +21604,17 @@
       "siteFailures": []
     },
     {
-      "slug": "timbr-fort-lauderdale",
-      "title": "TIMBR",
-      "stateCode": "FL",
-      "city": "Fort Lauderdale",
+      "slug": "basil-n-spice-worcester",
+      "title": "Basil n' Spice",
+      "stateCode": "MA",
+      "city": "Worcester",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:34.459Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:47.281Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21213,17 +21627,17 @@
       "siteFailures": []
     },
     {
-      "slug": "anthony-s-runway-84-fort-lauderdale",
-      "title": "Anthony's Runway 84",
-      "stateCode": "FL",
-      "city": "Fort Lauderdale",
+      "slug": "miss-worcester-diner-worcester",
+      "title": "Miss Worcester Diner",
+      "stateCode": "MA",
+      "city": "Worcester",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:25.468Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:46.361Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21236,17 +21650,17 @@
       "siteFailures": []
     },
     {
-      "slug": "shooters-waterfront-fort-lauderdale",
-      "title": "Shooters Waterfront",
-      "stateCode": "FL",
-      "city": "Fort Lauderdale",
+      "slug": "the-mercantile-worcester",
+      "title": "The Mercantile",
+      "stateCode": "MA",
+      "city": "Worcester",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:23.665Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:25.961Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21259,17 +21673,17 @@
       "siteFailures": []
     },
     {
-      "slug": "catch-cut-fort-lauderdale",
-      "title": "Catch & Cut",
-      "stateCode": "FL",
-      "city": "Fort Lauderdale",
+      "slug": "volturno-worcester",
+      "title": "Volturno",
+      "stateCode": "MA",
+      "city": "Worcester",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:21.925Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:23.372Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21282,17 +21696,17 @@
       "siteFailures": []
     },
     {
-      "slug": "the-floridian-fort-lauderdale",
-      "title": "The Floridian",
-      "stateCode": "FL",
-      "city": "Fort Lauderdale",
+      "slug": "deadhorse-hill-worcester",
+      "title": "Deadhorse Hill",
+      "stateCode": "MA",
+      "city": "Worcester",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-08-31T02:42:19.736Z",
-      "addedAt": "2026-08-31T02:41:57.736Z",
+      "lastEnrichedAt": "2026-08-31T03:20:20.870Z",
+      "addedAt": "2026-08-31T03:20:12.315Z",
       "reviewStatus": "current",
       "nextReviewAt": "2026-09-30",
       "reviewedAt": "2026-08-31",
@@ -21311,10 +21725,82 @@
     "citiesPerRun": 3,
     "dailyCap": 200,
     "pending": 0,
-    "done": 85,
+    "done": 88,
     "next": []
   },
   "runs": [
+    {
+      "kind": "level-records",
+      "startedAt": "2026-08-31T03:21:11.087Z",
+      "batchSize": 0,
+      "inserted": 0,
+      "cities": [],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 95,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T03:20:12.677Z",
+      "batchSize": 18,
+      "inserted": 0,
+      "cities": [
+        "St. Louis, Missouri",
+        "Worcester, Massachusetts",
+        "Baton Rouge, Louisiana"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "avgCompleteness": 94,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T03:20:12.315Z",
+      "batchSize": 0,
+      "inserted": 18,
+      "cities": [
+        {
+          "city": "St. Louis, MO",
+          "queueCity": "St. Louis",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Worcester, MA",
+          "queueCity": "Worcester",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Baton Rouge, LA",
+          "queueCity": "Baton Rouge",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
     {
       "kind": "level-records",
       "startedAt": "2026-08-31T02:43:40.727Z",
@@ -21421,102 +21907,6 @@
       },
       "retries": 0,
       "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-31T01:48:49.022Z",
-      "batchSize": 0,
-      "inserted": 18,
-      "cities": [
-        {
-          "city": "Fort Worth, TX",
-          "queueCity": "Fort Worth",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        },
-        {
-          "city": "Savannah, GA",
-          "queueCity": "Savannah",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        },
-        {
-          "city": "Colorado Springs, CO",
-          "queueCity": "Colorado Springs",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        }
-      ],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-31T01:41:36.325Z",
-      "batchSize": 10,
-      "inserted": 0,
-      "cities": [
-        "Charlotte, North Carolina",
-        "San Diego, California",
-        "Anchorage, Alaska",
-        "Bakersfield, California",
-        "San Francisco, California",
-        "Des Moines, Iowa",
-        "Alhambra, California",
-        "Houston, Texas"
-      ],
-      "resolved": 0,
-      "unresolved": 7,
-      "avgCompleteness": 95,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 7
-      },
-      "retries": 15,
-      "failures": 7,
-      "flagged": false
-    },
-    {
-      "kind": "hygiene-owned",
-      "startedAt": "2026-08-28T23:22:35.282Z",
-      "batchSize": 22,
-      "inserted": 0,
-      "cities": [
-        "Charlotte, North Carolina",
-        "San Diego, California",
-        "New Orleans, Louisiana",
-        "Anchorage, Alaska",
-        "Bakersfield, California",
-        "San Francisco, California",
-        "Des Moines, Iowa",
-        "Alhambra, California",
-        "Houston, Texas",
-        "Seattle and greater Puget Sound",
-        "Portland metro and Willamette Valley",
-        "Inland Northwest and Portland",
-        "Inland Northwest and Seattle",
-        "Pacific Northwest"
-      ],
-      "resolved": 12,
-      "unresolved": 7,
-      "avgCompleteness": 95,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 19
-      },
-      "retries": 15,
-      "failures": 7,
       "flagged": false
     }
   ]

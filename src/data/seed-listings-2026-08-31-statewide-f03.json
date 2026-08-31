@@ -1,0 +1,148 @@
+{
+  "note": "Statewide fill F-03. Mid-size cities after the state floor: St. Louis, Worcester, Baton Rouge. Every entry is a named independent establishment with a current official restaurant site verified before inclusion (HTTP 200). Narrative first-party fields stay empty until enrich.mjs runs. St. Louis: Tony's (domain now a gambling site), Sidney Street Cafe (202 challenge), Pappy's / Bogart's / Union Loafers (multi-location) excluded. Worcester: Armsby Abbey sibling concepts, VIA/Sole Proprietor/111 Chop House group, Bocado Wellesley, Mezcal two Worcester addresses, The Fix multi-city, Altea's second location, Lock 50 empty, Leo's 403 excluded. Baton Rouge: Beausoleil 403 excluded.",
+  "generatedAt": "2026-08-31T03:20:00.000Z",
+  "batches": [
+    {
+      "city": "St. Louis",
+      "stateCode": "MO",
+      "listings": [
+        {
+          "title": "Farmhaus",
+          "website": "https://www.farmhausrestaurant.com/",
+          "phone": "+1-314-647-3800",
+          "address": "3257 Ivanhoe Ave, St. Louis, MO 63139",
+          "cuisineTags": ["Farm-to-table", "American"]
+        },
+        {
+          "title": "Indo",
+          "website": "https://www.indo-stl.com/",
+          "address": "1641D Tower Grove Ave, St. Louis, MO 63110",
+          "cuisineTags": ["Thai", "Japanese"]
+        },
+        {
+          "title": "Little Fox",
+          "website": "https://www.littlefoxstl.com/",
+          "phone": "+1-314-553-9456",
+          "address": "2800 Shenandoah Ave, St. Louis, MO 63104",
+          "cuisineTags": ["American", "Neighborhood"]
+        },
+        {
+          "title": "Mainlander",
+          "website": "https://www.mainlanderstl.com/",
+          "address": "392 North Euclid Avenue, St. Louis, MO 63108",
+          "cuisineTags": ["American", "Tasting menu"]
+        },
+        {
+          "title": "Cunetto House of Pasta",
+          "website": "https://www.cunetto.com/",
+          "phone": "+1-314-781-1135",
+          "address": "5453 Magnolia Avenue, St. Louis, MO 63139",
+          "cuisineTags": ["Italian"]
+        },
+        {
+          "title": "Broadway Oyster Bar",
+          "website": "https://www.broadwayoysterbar.com/",
+          "phone": "+1-314-621-8811",
+          "address": "736 S. Broadway, St. Louis, MO 63102",
+          "cuisineTags": ["Cajun", "Seafood"]
+        }
+      ]
+    },
+    {
+      "city": "Worcester",
+      "stateCode": "MA",
+      "listings": [
+        {
+          "title": "Deadhorse Hill",
+          "website": "https://www.deadhorsehill.com/",
+          "phone": "+1-774-420-7107",
+          "address": "281 Main St, Worcester, MA 01608",
+          "cuisineTags": ["American", "Farm-to-table"]
+        },
+        {
+          "title": "Volturno",
+          "website": "https://www.volturnopizza.com/",
+          "phone": "+1-508-756-8658",
+          "address": "72 Shrewsbury St, Worcester, MA 01604",
+          "cuisineTags": ["Pizza", "Italian"]
+        },
+        {
+          "title": "The Mercantile",
+          "website": "https://www.themercantileworcester.com/",
+          "phone": "+1-774-389-5180",
+          "address": "2 Mercantile Street, Worcester, MA 01608",
+          "cuisineTags": ["American", "Tavern"]
+        },
+        {
+          "title": "Miss Worcester Diner",
+          "website": "https://www.missworcesterdinerorder.com/",
+          "phone": "+1-508-753-5600",
+          "address": "300 Southbridge Street, Worcester, MA 01608",
+          "cuisineTags": ["Diner", "American"]
+        },
+        {
+          "title": "Basil n' Spice",
+          "website": "https://www.basilnspice.com/",
+          "phone": "+1-774-317-9986",
+          "address": "299 Shrewsbury St, Worcester, MA 01604",
+          "cuisineTags": ["Thai"]
+        },
+        {
+          "title": "Meze Estiatorio",
+          "website": "https://www.mezeestiatorio.com/",
+          "phone": "+1-508-688-5563",
+          "address": "166 Shrewsbury St, Worcester, MA 01604",
+          "cuisineTags": ["Greek"]
+        }
+      ]
+    },
+    {
+      "city": "Baton Rouge",
+      "stateCode": "LA",
+      "listings": [
+        {
+          "title": "Mansurs on the Boulevard",
+          "website": "https://www.mansursontheboulevard.com/",
+          "phone": "+1-225-923-3366",
+          "address": "5720 Corporate Blvd A, Baton Rouge, LA 70808",
+          "cuisineTags": ["Creole", "Fine dining"]
+        },
+        {
+          "title": "Cecelia Creole Bistro",
+          "website": "https://www.ceceliabr.com/",
+          "phone": "+1-225-615-7833",
+          "address": "421 North 3rd Street, Baton Rouge, LA 70802",
+          "cuisineTags": ["Creole", "Cajun"]
+        },
+        {
+          "title": "Elsie's Plate & Pie",
+          "website": "https://elsiespies.com/",
+          "phone": "+1-225-636-5157",
+          "address": "3145 Government Street, Baton Rouge, LA 70806",
+          "cuisineTags": ["Southern", "Cajun"]
+        },
+        {
+          "title": "The Gregory",
+          "website": "https://www.thegregorybr.com/",
+          "phone": "+1-225-408-1800",
+          "address": "150 Third Street, Baton Rouge, LA 70801",
+          "cuisineTags": ["Southern"]
+        },
+        {
+          "title": "French Market Bistro",
+          "website": "https://www.frenchmarketbistro.com/",
+          "phone": "+1-225-753-3500",
+          "address": "16645 Highland Rd, Baton Rouge, LA 70810",
+          "cuisineTags": ["Creole", "French"]
+        },
+        {
+          "title": "Parrain's Seafood Restaurant",
+          "website": "https://parrains.com/",
+          "phone": "+1-225-381-9922",
+          "address": "3225 Perkins Road, Baton Rouge, LA 70808",
+          "cuisineTags": ["Seafood", "Cajun"]
+        }
+      ]
+    }
+  ]
+}

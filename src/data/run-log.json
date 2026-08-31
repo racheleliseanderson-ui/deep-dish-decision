@@ -2,6 +2,282 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-08-31T03:21:11.087Z",
+      "finishedAt": "2026-08-31T03:21:11.087Z",
+      "records": 890,
+      "promoted": 17,
+      "fullBefore": 872,
+      "fullAfter": 890,
+      "avgCompleteness": 95,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 869,
+        "officialConflicts": 11,
+        "thinRecords": 471,
+        "avgUnknowns": 5.14,
+        "avgThinFields": 7.6,
+        "lastReviewAt": "2026-08-31",
+        "reachableAtLastReview": 241
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-08-31T03:20:12.677Z",
+      "finishedAt": "2026-08-31T03:21:07.880Z",
+      "batchSize": 18,
+      "cities": [
+        "St. Louis, Missouri",
+        "Worcester, Massachusetts",
+        "Baton Rouge, Louisiana"
+      ],
+      "resolved": 18,
+      "unresolved": 0,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 94,
+      "corpusEnriched": 890,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 18
+      },
+      "retries": 0,
+      "failures": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T03-20-12-678Z-enrich-owned",
+      "records": [
+        {
+          "slug": "farmhaus-st-louis",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "indo-st-louis",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "little-fox-st-louis",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "mainlander-st-louis",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "cunetto-house-of-pasta-st-louis",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "broadway-oyster-bar-st-louis",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "deadhorse-hill-worcester",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "volturno-worcester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "the-mercantile-worcester",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4",
+            "playwright 2"
+          ]
+        },
+        {
+          "slug": "miss-worcester-diner-worcester",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "basil-n-spice-worcester",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "meze-estiatorio-worcester",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "mansurs-on-the-boulevard-baton-rouge",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 4",
+            "quotes 19"
+          ]
+        },
+        {
+          "slug": "cecelia-creole-bistro-baton-rouge",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "elsie-s-plate-pie-baton-rouge",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "the-gregory-baton-rouge",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "french-market-bistro-baton-rouge",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "parrain-s-seafood-restaurant-baton-rouge",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-08-31T03:20:12.315Z",
+      "finishedAt": "2026-08-31T03:20:12.399Z",
+      "cities": [
+        {
+          "city": "St. Louis, MO",
+          "queueCity": "St. Louis",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Worcester, MA",
+          "queueCity": "Worcester",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        },
+        {
+          "city": "Baton Rouge, LA",
+          "queueCity": "Baton Rouge",
+          "found": 6,
+          "inserted": 6,
+          "duplicates": 0
+        }
+      ],
+      "inserted": 18,
+      "duplicatesSkipped": 0,
+      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T03-20-12-315Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings-2026-08-31-statewide-f02.json",
+        "seed-listings-2026-08-31-statewide-f03.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "farmhaus-st-louis",
+        "indo-st-louis",
+        "little-fox-st-louis",
+        "mainlander-st-louis",
+        "cunetto-house-of-pasta-st-louis",
+        "broadway-oyster-bar-st-louis",
+        "deadhorse-hill-worcester",
+        "volturno-worcester",
+        "the-mercantile-worcester",
+        "miss-worcester-diner-worcester",
+        "basil-n-spice-worcester",
+        "meze-estiatorio-worcester",
+        "mansurs-on-the-boulevard-baton-rouge",
+        "cecelia-creole-bistro-baton-rouge",
+        "elsie-s-plate-pie-baton-rouge",
+        "the-gregory-baton-rouge",
+        "french-market-bistro-baton-rouge",
+        "parrain-s-seafood-restaurant-baton-rouge"
+      ]
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-08-31T02:43:40.727Z",
       "finishedAt": "2026-08-31T02:43:40.727Z",
       "records": 872,
@@ -12475,119 +12751,6 @@
           "completeness": 75,
           "notes": []
         }
-      ]
-    },
-    {
-      "kind": "discover",
-      "startedAt": "2026-08-11T00:00:18.242Z",
-      "finishedAt": "2026-08-11T00:00:18.936Z",
-      "batchSize": 5,
-      "cities": [
-        {
-          "city": "Houston, TX",
-          "found": 19,
-          "inserted": 5,
-          "duplicates": 0
-        }
-      ],
-      "inserted": 5,
-      "duplicatesSkipped": 0,
-      "apiCalls": {
-        "placesSearchText": 1
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-11T00-00-18-242Z-discover",
-      "insertedSlugs": [
-        "huynh-restaurant",
-        "di-an-pho",
-        "pho-saigon",
-        "simply-pho",
-        "pho-binh-heights"
-      ]
-    },
-    {
-      "kind": "enrich",
-      "startedAt": "2026-08-10T23:59:07.611Z",
-      "finishedAt": "2026-08-11T00:00:18.131Z",
-      "batchSize": 5,
-      "cities": [
-        "Los Angeles, California",
-        "Torrance, California",
-        "Lynwood, California"
-      ],
-      "resolved": 5,
-      "unresolved": 0,
-      "deferred": 0,
-      "avgCompleteness": 83,
-      "corpusEnriched": 76,
-      "apiCalls": {
-        "google": 5,
-        "firecrawl": 13
-      },
-      "retries": 4,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-59-07-609Z-enrich",
-      "records": [
-        {
-          "slug": "guelaguetza-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "madre-oaxacan-restaurant-and-mezcaleria",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        },
-        {
-          "slug": "sabores-oaxaquen-os-restaurant",
-          "matchStatus": "resolved",
-          "completeness": 83,
-          "notes": []
-        },
-        {
-          "slug": "expresion-oaxaquena-restaurante",
-          "matchStatus": "resolved",
-          "completeness": 75,
-          "notes": []
-        },
-        {
-          "slug": "real-de-oaxaca",
-          "matchStatus": "resolved",
-          "completeness": 79,
-          "notes": []
-        }
-      ]
-    },
-    {
-      "kind": "discover",
-      "startedAt": "2026-08-10T23:59:06.586Z",
-      "finishedAt": "2026-08-10T23:59:07.533Z",
-      "batchSize": 5,
-      "cities": [
-        {
-          "city": "Los Angeles, CA",
-          "found": 19,
-          "inserted": 5,
-          "duplicates": 0
-        }
-      ],
-      "inserted": 5,
-      "duplicatesSkipped": 0,
-      "apiCalls": {
-        "placesSearchText": 1
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/dev-server/.pipeline-snapshots/2026-08-10T23-59-06-586Z-discover",
-      "insertedSlugs": [
-        "guelaguetza-restaurant",
-        "madre-oaxacan-restaurant-and-mezcaleria",
-        "sabores-oaxaquen-os-restaurant",
-        "expresion-oaxaquena-restaurante",
-        "real-de-oaxaca"
       ]
     }
   ]

@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-31T02:43:40.626Z",
-  "builtAt": "2026-08-31T02:43:40Z",
-  "count": 872,
-  "regions": 128,
+  "generatedAt": "2026-08-31T03:21:10.977Z",
+  "builtAt": "2026-08-31T03:21:11Z",
+  "count": 890,
+  "regions": 131,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 0,
     "dueSoon": 11,
-    "current": 851,
+    "current": 869,
     "officialConflicts": 11,
-    "thinRecords": 459,
+    "thinRecords": 471,
     "avgUnknowns": 5.14,
     "avgThinFields": 7.6,
     "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 225
+    "reachableAtLastReview": 241
   },
-  "fullCaseFiles": 872,
+  "fullCaseFiles": 890,
   "listingOnly": 10,
   "regionGroups": [
     "Alabama",
@@ -160,6 +160,7 @@
       "Louisville, KY"
     ],
     "Louisiana": [
+      "Baton Rouge, LA",
       "New Orleans, LA"
     ],
     "Maine": [
@@ -169,7 +170,8 @@
       "Baltimore, MD"
     ],
     "Massachusetts": [
-      "Boston, MA"
+      "Boston, MA",
+      "Worcester, MA"
     ],
     "Michigan": [
       "Detroit, MI",
@@ -182,7 +184,8 @@
       "Jackson, MS"
     ],
     "Missouri": [
-      "Kansas City, MO"
+      "Kansas City, MO",
+      "St. Louis, MO"
     ],
     "Montana": [
       "Billings, MT",
@@ -433,7 +436,10 @@
     "Colorado Springs, CO": "Colorado",
     "Oakland, CA": "California",
     "Fort Lauderdale, FL": "Florida",
-    "Asheville, NC": "North Carolina"
+    "Asheville, NC": "North Carolina",
+    "St. Louis, MO": "Missouri",
+    "Worcester, MA": "Massachusetts",
+    "Baton Rouge, LA": "Louisiana"
   },
   "cuisineTagOptions": [
     "American",
@@ -515,6 +521,7 @@
     "Modern",
     "Native American",
     "Neapolitan",
+    "Neighborhood",
     "New American",
     "New Nordic",
     "Northwest",
@@ -6739,6 +6746,132 @@
       "region": "Asheville, NC",
       "regionGroup": "North Carolina",
       "city": "Asheville"
+    },
+    {
+      "slug": "farmhaus-st-louis",
+      "title": "Farmhaus",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "indo-st-louis",
+      "title": "Indo",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "little-fox-st-louis",
+      "title": "Little Fox",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "mainlander-st-louis",
+      "title": "Mainlander",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "cunetto-house-of-pasta-st-louis",
+      "title": "Cunetto House of Pasta",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "broadway-oyster-bar-st-louis",
+      "title": "Broadway Oyster Bar",
+      "region": "St. Louis, MO",
+      "regionGroup": "Missouri",
+      "city": "St. Louis"
+    },
+    {
+      "slug": "deadhorse-hill-worcester",
+      "title": "Deadhorse Hill",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "volturno-worcester",
+      "title": "Volturno",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "the-mercantile-worcester",
+      "title": "The Mercantile",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "miss-worcester-diner-worcester",
+      "title": "Miss Worcester Diner",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "basil-n-spice-worcester",
+      "title": "Basil n' Spice",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "meze-estiatorio-worcester",
+      "title": "Meze Estiatorio",
+      "region": "Worcester, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Worcester"
+    },
+    {
+      "slug": "mansurs-on-the-boulevard-baton-rouge",
+      "title": "Mansurs on the Boulevard",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "cecelia-creole-bistro-baton-rouge",
+      "title": "Cecelia Creole Bistro",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "elsie-s-plate-pie-baton-rouge",
+      "title": "Elsie's Plate & Pie",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "the-gregory-baton-rouge",
+      "title": "The Gregory",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "french-market-bistro-baton-rouge",
+      "title": "French Market Bistro",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
+    },
+    {
+      "slug": "parrain-s-seafood-restaurant-baton-rouge",
+      "title": "Parrain's Seafood Restaurant",
+      "region": "Baton Rouge, LA",
+      "regionGroup": "Louisiana",
+      "city": "Baton Rouge"
     }
   ]
 }
