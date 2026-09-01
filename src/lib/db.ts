@@ -75,6 +75,38 @@ async function rest<T>(path: string, init: RequestInit & RestOpts = {}): Promise
   }
 }
 
+/**
+ * A write whose only interesting answer is "did it land".
+ *
+ * night_plans has no SELECT policy — the id is the capability — so a save
+ * cannot ask PostgREST to hand the row back. It returns the id it minted, and
+ * needs to know whether the insert was accepted.
+ */
+async function restOk(path: string, init: RequestInit & RestOpts = {}): Promise<boolean> {
+  if (!env) return false;
+  const { timeoutMs = 6000, signal, ...rest } = init;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  signal?.addEventListener("abort", () => controller.abort(), { once: true });
+  try {
+    const res = await fetch(`${env.url}/rest/v1/${path}`, {
+      ...rest,
+      signal: controller.signal,
+      headers: {
+        apikey: env.key,
+        Authorization: `Bearer ${env.key}`,
+        "Content-Type": "application/json",
+        ...(rest.headers ?? {}),
+      },
+    });
+    return res.ok;
+  } catch {
+    return false;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 /* ── search ───────────────────────────────────────────────────────────────
  * The one thing JSON genuinely cannot do: look across all 1094 records
  * without loading them. Falls back to the loaded region when unavailable.
@@ -144,9 +176,12 @@ export async function savePlan(input: {
 
   const { origin: _drop, ...situation } = input.situation as Record<string, unknown>;
   const id = newPlanId();
-  const created = await rest<SavedPlan[]>("night_plans", {
+  // return=minimal, not representation: the table is write-only to the
+  // publishable key, so asking for the row back would fail the very insert
+  // that succeeded. We minted the id; we do not need to be told it.
+  const ok = await restOk("night_plans", {
     method: "POST",
-    headers: { Prefer: "return=representation" },
+    headers: { Prefer: "return=minimal" },
     body: JSON.stringify({
       id,
       slugs: input.slugs,
@@ -156,14 +191,23 @@ export async function savePlan(input: {
       note: input.note ?? null,
     }),
   });
-  return created?.[0]?.id ?? null;
+  return ok ? id : null;
 }
 
+/**
+ * Fetch a plan by its id.
+ *
+ * Through the `get_night_plan` function rather than the table: night_plans
+ * carries no SELECT policy, so there is no query — no bare select, no LIKE, no
+ * prefix walk — that returns a plan to someone who does not already hold its
+ * full id. That is what makes the id a capability rather than a courtesy.
+ */
 export async function loadPlan(id: string, signal?: AbortSignal): Promise<SavedPlan | null> {
   if (!/^[0-9A-Za-z]{16,40}$/.test(id)) return null;
-  const rows = await rest<SavedPlan[]>(
-    `night_plans?id=eq.${encodeURIComponent(id)}&select=*&limit=1`,
-    signal ? { signal } : {},
-  );
+  const rows = await rest<SavedPlan[]>("rpc/get_night_plan", {
+    method: "POST",
+    body: JSON.stringify({ plan_id: id }),
+    ...(signal ? { signal } : {}),
+  });
   return rows?.[0] ?? null;
 }
