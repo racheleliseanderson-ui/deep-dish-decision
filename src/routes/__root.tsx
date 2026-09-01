@@ -15,6 +15,7 @@ import { HouseBar } from "@/components/rih/house-bar";
 import { LabsFooter } from "@/components/rih/labs-footer";
 import { NightPlanBar } from "@/components/rih/night-plan-bar";
 import { SuiteStrip } from "@/components/rih/suite-strip";
+import { SupportFooter } from "@/components/SupportFooter";
 
 const ADSENSE_CLIENT = "ca-pub-8542391068454821";
 
@@ -148,6 +149,7 @@ function RootShell({ children }: { children: ReactNode }) {
       </head>
       <body>
         {children}
+        <SupportFooter />
         <Scripts />
       </body>
     </html>
