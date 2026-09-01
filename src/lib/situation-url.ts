@@ -30,6 +30,12 @@ export function encodeSituation(s: Situation): string {
   if (s.preferNoConflicts) p.set("nc", "1");
   if (s.preferWalkIn) p.set("wi", "1");
   if (s.wineForward) p.set("wf", "1");
+  if (s.radiusMi !== null) p.set("rad", String(s.radiusMi));
+  if (s.openOnly) p.set("open", "1");
+  if (s.arriveAt) p.set("at", s.arriveAt);
+  // The origin travels as a label only. A shared link never carries a
+  // recipient-readable home coordinate.
+  if (s.originLabel && s.origin) p.set("from", s.originLabel);
   return p.toString();
 }
 
@@ -64,5 +70,20 @@ export function decodeSituation(search: string): Situation {
     preferNoConflicts: p.get("nc") === "1",
     preferWalkIn: p.get("wi") === "1",
     wineForward: p.get("wf") === "1",
+    radiusMi: (() => {
+      const v = num("rad");
+      return v !== null && v > 0 && v <= 500 ? v : null;
+    })(),
+    openOnly: p.get("open") === "1",
+    arriveAt: (() => {
+      const v = p.get("at") ?? "";
+      const m = /^(\d{1,2}):(\d{2})$/.exec(v);
+      if (!m) return null;
+      const h = Number(m[1]);
+      const min = Number(m[2]);
+      return h <= 23 && min <= 59 ? v : null;
+    })(),
+    origin: null,
+    originLabel: p.get("from"),
   };
 }

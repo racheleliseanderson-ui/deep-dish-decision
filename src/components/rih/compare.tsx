@@ -1,3 +1,4 @@
+import { formatDistance, openLabel, partyTotal, spendLine } from "@/lib/live";
 import { Chip, Eyebrow, Meter } from "@/components/rih/bits";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import type { RestaurantRecord } from "@/lib/dataset";
@@ -59,7 +60,7 @@ export function CompareTray({
 }) {
   if (!items.length) return null;
   return (
-    <div className="no-print fixed inset-x-0 bottom-0 z-50 border-t border-border-strong bg-surface/95 backdrop-blur-xl">
+    <div className="no-print fixed inset-x-0 bottom-[var(--night-bar-h,0px)] z-50 border-t border-border-strong bg-surface/95 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 px-4 py-3 sm:px-6">
         <Eyebrow>Comparison ({items.length}/3)</Eyebrow>
         <div className="flex flex-wrap gap-1.5">
@@ -112,6 +113,56 @@ export function CompareDialog({
   const privateNeed = situation.constraints.includes("Private / semi-private required");
 
   const rows: Row[] = [
+    {
+      label: "Distance",
+      get: (s) =>
+        s.distanceMi !== null
+          ? formatDistance(s.distanceMi, s.distanceExact) + (s.distanceExact ? "" : " (city-level)")
+          : "no origin set",
+    },
+    {
+      label: situation.arriveAt ? "At your time" : "Right now",
+      get: (s) => openLabel(s.open).text,
+      held: (s) => s.open.state === "closed" || s.open.state === "closed-today",
+    },
+    {
+      label: "Per guest",
+      get: (s) => {
+        const line = spendLine(s.live);
+        if (!line) return s.live?.band ?? "unstated";
+        const total = partyTotal(s.live, situation.partySize);
+        return `${line.text.replace(/^About /, "")}${total ? ` · ${total}` : ""}`;
+      },
+    },
+    {
+      label: "Known for",
+      get: (s) =>
+        s.live?.dishes
+          ?.map((d) => d.name)
+          .slice(0, 3)
+          .join(", ") || "no dish named",
+    },
+    {
+      label: "Neighbourhood",
+      get: (s) => s.live?.hood ?? s.record.city ?? "unstated",
+    },
+    {
+      label: "Step-free",
+      get: (s) => {
+        const a = s.live?.a11y;
+        if (!a) return s.record.accessibilityState || "not stated";
+        const parts = [
+          a.entrance && "entrance",
+          a.restroom && "restroom",
+          a.seating && "seating",
+        ].filter(Boolean);
+        return parts.length ? `reported: ${parts.join(", ")}` : "not stated";
+      },
+    },
+    {
+      label: "The complaint",
+      get: (s) => s.live?.rep?.complaints?.[0] ?? "no pattern researched",
+    },
     {
       label: "Spend band",
       get: (s) => (s.record.spendBands ?? []).join(", ") || "unstated",
@@ -183,8 +234,8 @@ export function CompareDialog({
         </div>
         <div className="scroll-slim max-h-[74vh] overflow-y-auto px-5 py-5 sm:px-6">
           <div
-            className="grid gap-4"
-            style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0,1fr))` }}
+            className="grid gap-4 sm:[grid-template-columns:repeat(var(--cmp-cols),minmax(0,1fr))]"
+            style={{ "--cmp-cols": items.length } as React.CSSProperties}
           >
             {items.map((sc) => {
               const b = decisionBrief(sc, situation);
@@ -194,13 +245,11 @@ export function CompareDialog({
                   className="rounded-xl border border-border bg-surface-raised/50 p-4"
                 >
                   <p className="font-display text-lg tracking-tight">{sc.record.title}</p>
-                  <p className="mt-1 text-[12px] text-subtle">
-                    rank {sc.rank}
-                  </p>
+                  <p className="mt-1 text-[12px] text-subtle">rank {sc.rank}</p>
                   <div className="mt-3 space-y-2.5">
                     <Meter label="Fit" value={sc.fit} />
                     <Meter
-                      label="Burden"
+                      label="To confirm"
                       value={sc.burden}
                       tone={sc.burden >= 70 ? "critical" : sc.burden >= 45 ? "watch" : "primary"}
                     />
@@ -231,7 +280,30 @@ export function CompareDialog({
             })}
           </div>
 
-          <table className="mt-6 w-full border-collapse text-left">
+          <p className="mt-6 text-[12px] text-subtle">
+            A <span className="text-primary">·</span> marks a row where the rooms actually differ —
+            those are the rows worth reading.
+          </p>
+
+          {/* Wide: a true comparison matrix. */}
+          <table className="mt-2 hidden w-full border-collapse text-left sm:table">
+            <caption className="sr-only">
+              {items.map((i) => i.record.title).join(", ")} compared across {rows.length} dimensions
+            </caption>
+            <thead>
+              <tr>
+                <td />
+                {items.map((sc) => (
+                  <th
+                    key={sc.record.slug}
+                    scope="col"
+                    className="pb-2 pr-4 text-left text-[12px] font-medium text-foreground"
+                  >
+                    {sc.record.title}
+                  </th>
+                ))}
+              </tr>
+            </thead>
             <tbody>
               {rows.map((row) => {
                 const values = items.map(row.get);
@@ -253,7 +325,9 @@ export function CompareDialog({
                             "py-3 pr-4 text-[13px] leading-relaxed",
                             held && "bg-critical-soft px-2 text-critical",
                             open && "bg-unknown-soft px-2 text-unknown",
-                            !held && !open && (diverges ? "text-foreground" : "text-muted-foreground"),
+                            !held &&
+                              !open &&
+                              (diverges ? "text-foreground" : "text-muted-foreground"),
                           )}
                         >
                           {v || "not stated"}
@@ -265,6 +339,52 @@ export function CompareDialog({
               })}
             </tbody>
           </table>
+
+          {/* Phone: one block per dimension, rooms stacked and labelled. */}
+          <dl className="mt-2 sm:hidden">
+            {rows.map((row) => {
+              const values = items.map(row.get);
+              const holds = items.map((sc) => Boolean(row.held?.(sc)));
+              const diverges = new Set(values).size > 1;
+              return (
+                <div key={row.label} className="border-t border-border py-3">
+                  <dt className="text-eyebrow">
+                    {row.label}
+                    {diverges ? <span className="ml-1.5 text-primary">·</span> : null}
+                  </dt>
+                  <dd className="mt-1.5 space-y-1.5">
+                    {items.map((sc, i) => {
+                      const v = values[i] ?? "";
+                      const held = holds[i];
+                      const open = !held && isOpenValue(v);
+                      return (
+                        <div
+                          key={sc.record.slug}
+                          className="grid grid-cols-[minmax(0,7rem)_minmax(0,1fr)] gap-3"
+                        >
+                          <span className="truncate text-[12px] text-subtle">
+                            {sc.record.title}
+                          </span>
+                          <span
+                            className={cn(
+                              "text-[13px] leading-relaxed",
+                              held && "text-critical",
+                              open && "text-unknown",
+                              !held &&
+                                !open &&
+                                (diverges ? "text-foreground" : "text-muted-foreground"),
+                            )}
+                          >
+                            {v || "not stated"}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </dd>
+                </div>
+              );
+            })}
+          </dl>
         </div>
       </DialogContent>
     </Dialog>

@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * Fail closed if the 836-record hub is replaced by a confirmation-pass demo.
+ * Fail closed if the canonical hub is replaced by a confirmation-pass demo.
  *
  * Override (deliberate migration only):
  *   ALLOW_CORPUS_MIGRATION=1 node scripts/corpus-invariants.mjs
  */
-import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -23,6 +23,12 @@ const requiredFiles = [
   "src/data/reputation-patterns.json",
   "src/data/visual-program.json",
   "src/data/by-region/washington.json",
+  "src/data/live/index.json",
+  "src/data/live/washington.json",
+  "src/lib/live.ts",
+  "scripts/pipeline/build-live-index.mjs",
+  "scripts/pipeline/parse-hours.mjs",
+  "scripts/data/city-centroids.json",
   "src/assets/hero-pass.jpg",
   "src/assets/fig-gold.jpg",
   "src/routes/index.tsx",
@@ -54,7 +60,8 @@ if (existsSync(datasetPath)) {
   const data = JSON.parse(readFileSync(datasetPath, "utf8"));
   count = Number(data.count ?? data.records?.length ?? 0);
   const recs = Array.isArray(data.records) ? data.records : [];
-  if (recs.length !== count) errors.push(`dataset.count ${count} !== records.length ${recs.length}`);
+  if (recs.length !== count)
+    errors.push(`dataset.count ${count} !== records.length ${recs.length}`);
   regions = Number(data.regions ?? 0);
   slugs = recs.map((r) => r.slug).filter(Boolean);
   const uniq = new Set(slugs);
@@ -75,8 +82,60 @@ if (existsSync(datasetPath)) {
   errors.push("canonical dataset.json disappeared");
 }
 
+/* The dynamic layer must cover the corpus: every record needs a coordinate,
+   or the ranked list silently loses distance, radius and the map. */
+{
+  const liveIndex = JSON.parse(readFileSync(resolve(root, "src/data/live/index.json"), "utf8"));
+  let covered = 0;
+  let withHours = 0;
+  for (const file of new Set(Object.values(liveIndex.groups ?? {}))) {
+    const rows =
+      JSON.parse(readFileSync(resolve(root, `src/data/live/${file}.json`), "utf8")).records ?? {};
+    for (const row of Object.values(rows)) {
+      if (Array.isArray(row.ll) && row.ll.length === 2) covered++;
+      if (row.hours) withHours++;
+    }
+  }
+  if (covered < count) {
+    errors.push(`live layer covers ${covered} of ${count} records with coordinates`);
+  }
+  if (withHours < 240) {
+    errors.push(
+      `live layer holds structured hours for only ${withHours} records (expected >= 240)`,
+    );
+  }
+}
+
+/* Every image must be classified honestly: only a photographic kind may claim
+   to be documentary, and every image needs responsive derivatives. */
+{
+  const vp = JSON.parse(readFileSync(resolve(root, "src/data/visual-program.json"), "utf8"));
+  const PHOTOGRAPHIC = new Set([
+    "dining_room",
+    "exterior",
+    "portrait",
+    "signature_dish",
+    "representative_food",
+    "bar_lounge",
+    "patio_view",
+  ]);
+  for (const img of vp.images ?? []) {
+    const photographic = PHOTOGRAPHIC.has(img.kind);
+    if (Boolean(img.documentary) !== photographic) {
+      errors.push(`${img.slug}: kind "${img.kind}" but documentary=${img.documentary}`);
+    }
+    if (!img.sources?.length) {
+      errors.push(
+        `${img.slug}: no responsive derivatives — run scripts/build-image-derivatives.mjs`,
+      );
+    }
+  }
+}
+
 if (existsSync(demoRestaurants) && count < FLOOR) {
-  errors.push("src/data/restaurants.ts present while corpus is below floor — refusing demo substitution");
+  errors.push(
+    "src/data/restaurants.ts present while corpus is below floor — refusing demo substitution",
+  );
 }
 
 const byRegionDir = resolve(root, "src/data/by-region");
@@ -104,11 +163,74 @@ if (existsSync(listingPath)) {
 }
 
 const dishesPath = resolve(root, "src/data/first-party-dishes.json");
+let dishCoverage = 0;
 if (existsSync(dishesPath)) {
   const dishes = JSON.parse(readFileSync(dishesPath, "utf8"));
   const blob = JSON.stringify(dishes.records || {});
   if (/goldbelly/i.test(blob)) errors.push("first-party-dishes includes Goldbelly shipping copy");
+  dishCoverage = Object.keys(dishes.records || {}).length;
 }
+
+let listingCoverage = 0;
+if (existsSync(listingPath)) {
+  listingCoverage = Object.keys(JSON.parse(readFileSync(listingPath, "utf8")).records || {}).length;
+}
+
+const visPath = resolve(root, "src/data/visual-program.json");
+let imageCoverage = { totalImages: 0, documentary: 0, slugsWithPhoto: 0 };
+if (existsSync(visPath)) {
+  const vis = JSON.parse(readFileSync(visPath, "utf8"));
+  const images = vis.images || [];
+  const bySrc = new Map();
+  const photoSlugs = new Set();
+  for (const img of images) {
+    if (img.documentary && img.slug && !slugs.includes(img.slug)) {
+      errors.push(`visual ${img.src} slug ${img.slug} is not in the corpus`);
+    }
+    if (img.documentary) {
+      imageCoverage.documentary += 1;
+      photoSlugs.add(img.slug);
+      const set = bySrc.get(img.src) ?? new Set();
+      set.add(img.slug);
+      bySrc.set(img.src, set);
+    }
+  }
+  imageCoverage.totalImages = images.length;
+  imageCoverage.slugsWithPhoto = photoSlugs.size;
+  for (const [src, set] of bySrc) {
+    if (set.size > 1) errors.push(`cross-wired photo ${src} → ${[...set].join(",")}`);
+  }
+}
+
+const repPath = resolve(root, "src/data/reputation-patterns.json");
+let reputationCoverage = 0;
+if (existsSync(repPath)) {
+  reputationCoverage = Object.keys(JSON.parse(readFileSync(repPath, "utf8")).records || {}).length;
+}
+
+const inspPath = resolve(root, "src/data/health-inspections.json");
+let inspectionCoverage = 0;
+if (existsSync(inspPath)) {
+  inspectionCoverage = Object.keys(JSON.parse(readFileSync(inspPath, "utf8")).records || {}).length;
+}
+
+const report = {
+  generatedAt: new Date().toISOString(),
+  ok: errors.length === 0,
+  corpusRecordCount: count,
+  geographicRegions: regions,
+  floor: FLOOR,
+  enrichmentCount: listingCoverage,
+  listingSampleCoverage: listingCoverage,
+  imageCoverage,
+  reputationCoverage,
+  signatureDishCoverage: dishCoverage,
+  inspectionCoverage,
+};
+
+const reportDir = resolve(root, "reports");
+mkdirSync(reportDir, { recursive: true });
+writeFileSync(resolve(reportDir, "qa-coverage.json"), JSON.stringify(report, null, 2) + "\n");
 
 if (errors.length) {
   const body = errors.map((e) => ` - ${e}`).join("\n");
@@ -120,16 +242,5 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(
-  JSON.stringify(
-    {
-      ok: true,
-      count,
-      regions,
-      slugs: slugs.length,
-      floor: FLOOR,
-    },
-    null,
-    2,
-  ),
-);
+console.log(JSON.stringify({ ...report, slugs: slugs.length }, null, 2));
+

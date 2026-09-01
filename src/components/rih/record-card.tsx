@@ -1,3 +1,4 @@
+import { DecisionStrip } from "@/components/rih/decision-strip";
 import { Chip } from "@/components/rih/bits";
 import { FindingRow } from "@/components/rih/findings";
 import { ListingFace } from "@/components/rih/listing-face";
@@ -124,6 +125,8 @@ export function RecordCard({
             </div>
           )}
 
+          <DecisionStrip sc={sc} situation={situation} />
+
           {sc.reasons.length ? (
             <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
               <span className="text-eyebrow mr-2 align-middle">Why here</span>
@@ -132,7 +135,9 @@ export function RecordCard({
           ) : null}
 
           <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
-            {isUnstated(r.serviceSummary) ? "Service format unstated on the restaurant's own pages." : r.serviceSummary}
+            {isUnstated(r.serviceSummary)
+              ? "Service format unstated on the restaurant's own pages."
+              : r.serviceSummary}
           </p>
 
           {r.nextAction ? (
@@ -179,6 +184,7 @@ export function RecordCard({
             <button
               type="button"
               onClick={() => shortlist.toggle(r.slug)}
+              aria-pressed={shortlist.has(r.slug)}
               className={cn(
                 "tap rounded-full border px-4 py-2 text-xs transition-colors",
                 shortlist.has(r.slug)
@@ -191,6 +197,7 @@ export function RecordCard({
             <button
               type="button"
               onClick={onCompare}
+              aria-pressed={compared}
               className={cn(
                 "tap rounded-full border px-4 py-2 text-xs transition-colors",
                 compared

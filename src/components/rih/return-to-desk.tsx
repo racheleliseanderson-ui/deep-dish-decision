@@ -1,6 +1,16 @@
 import { outgoingRestaurantToDesk } from "@/lib/salty-handoff/apply";
-import type { DecisionStatus } from "@/lib/salty-handoff/contract.ts";
+import { APP_ORIGINS, type DecisionStatus } from "@/lib/salty-handoff/contract.ts";
 
+/**
+ * Hand this decision back to the Desk.
+ *
+ * The handoff payload is stamped with the moment it was created, so building
+ * it during render made the server's href and the client's href disagree and
+ * broke hydration for the whole route. The link now carries a stable, plain
+ * Desk URL — which still works with JavaScript disabled — and mints the
+ * timestamped handoff at the moment of the click, which is also when the
+ * timestamp is actually true.
+ */
 export function ReturnToDesk({
   room,
   status = "shortlisted",
@@ -10,7 +20,15 @@ export function ReturnToDesk({
   status?: DecisionStatus;
   unresolved?: string[];
 }) {
-  const { url } = outgoingRestaurantToDesk({ room, status, unresolved });
+  const fallbackUrl = `${APP_ORIGINS.desk}/`;
+
+  const handoffNow = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Let the browser handle modified clicks (new tab, download, etc.).
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+    e.preventDefault();
+    const { url } = outgoingRestaurantToDesk({ room, status, unresolved });
+    window.location.href = url;
+  };
 
   return (
     <div className="mt-4 rounded-lg border border-border bg-background/40 p-3.5">
@@ -20,8 +38,9 @@ export function ReturnToDesk({
         stay here.
       </p>
       <a
-        href={url}
-        className="tap mt-3 inline-flex min-h-11 items-center bg-primary px-4 text-sm text-primary-foreground"
+        href={fallbackUrl}
+        onClick={handoffNow}
+        className="tap mt-3 inline-flex min-h-11 items-center rounded-full bg-primary px-4 text-sm text-primary-foreground transition-opacity hover:opacity-90"
       >
         Return this decision to the Desk
       </a>

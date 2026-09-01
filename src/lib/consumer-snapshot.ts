@@ -7,6 +7,7 @@
  */
 import { isUnstated } from "@/lib/case-depth";
 import type { RestaurantRecord } from "@/lib/dataset";
+import dishesRaw from "@/data/first-party-dishes.json";
 
 export const FIRST_PARTY = "firstPartyEvidence" as const;
 
@@ -23,6 +24,7 @@ export type ConsumerSnapshot = {
 };
 
 const OPEN = "Not stated — held open.";
+const namedFile = dishesRaw as { records: Record<string, string[]> };
 
 export function statedText(value: string | null | undefined): string | null {
   if (isUnstated(value)) return null;
@@ -35,9 +37,13 @@ export function firstPoint(value: string | null | undefined, max = 168): string 
   const t = statedText(value);
   if (!t) return null;
   const sentence = t.match(/^(.+?[.!?])(?:\s|$)/);
-  let s = (sentence ? sentence[1] : t).trim();
+  let s = (sentence?.[1] ?? t).trim();
   if (s.length > max) {
-    s = s.slice(0, max - 1).replace(/\s+\S*$/, "").replace(/[,;:–-]\s*$/, "") + "…";
+    s =
+      s
+        .slice(0, max - 1)
+        .replace(/\s+\S*$/, "")
+        .replace(/[,;:–-]\s*$/, "") + "…";
   }
   return s;
 }
@@ -54,18 +60,24 @@ export function whyGoLine(record: RestaurantRecord): string {
 function foodAndMenu(record: RestaurantRecord): SnapshotItem {
   const identity = firstPoint(record.cuisineContext, 140);
   const menu = firstPoint(record.menuSummary, 120);
-  if (!identity && !menu) return { label: "Food & menu", value: OPEN, open: true };
+  const named = (namedFile.records[record.slug] ?? []).filter((s) => s.trim().length >= 3).slice(0, 2);
+  if (!identity && !menu && !named.length) return { label: "Food & menu", value: OPEN, open: true };
+  const namedLine = named.length ? `Pages name: ${named.join("; ")}.` : "";
   if (identity && menu && !overlaps(identity, menu)) {
-    return { label: "Food & menu", value: `${identity} ${menu}`, open: false };
+    return { label: "Food & menu", value: [identity, menu, namedLine].filter(Boolean).join(" "), open: false };
   }
-  return { label: "Food & menu", value: identity ?? menu ?? OPEN, open: false };
+  return {
+    label: "Food & menu",
+    value: [identity ?? menu, namedLine].filter(Boolean).join(" ") || OPEN,
+    open: false,
+  };
 }
 
 function spend(record: RestaurantRecord): SnapshotItem {
   const raw = statedText(record.priceDetails);
   if (!raw) return { label: "Spend / value", value: OPEN, open: true };
   const dollars = [...raw.matchAll(/\$([0-9][0-9,]*(?:\.[0-9]{2})?)/g)].map((m) =>
-    Number(m[1].replace(/,/g, "")),
+    Number((m[1] ?? "0").replace(/,/g, "")),
   );
   const service = raw.match(/(\d{1,2}(?:\.\d+)?)\s*%\s*(?:service|auto[\s-]?grat|gratuity)/i);
   const corkage = raw.match(/\$([0-9][0-9,]*)\s*corkage/i);

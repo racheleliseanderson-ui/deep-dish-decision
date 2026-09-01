@@ -1,20 +1,15 @@
+import { DecisionFlow } from "@/components/rih/decision-flow";
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
-import { records } from "@/lib/dataset";
 import { OCCASIONS, occasionScore, type Occasion } from "@/lib/intelligence";
-import {
-  byBookingPath,
-  byPlanningLoad,
-  bySpendBand,
-  conflictRecords,
-  corpus,
-  gapMap,
-  unreachable,
-} from "@/lib/atlas";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 
 export const Route = createFileRoute("/guide")({
+  loader: async () => {
+    const [ds, atlas] = await Promise.all([import("@/lib/dataset"), import("@/lib/atlas")]);
+    return { records: ds.records, atlas };
+  },
   head: () => ({
     meta: [
       { title: "How to Choose a Restaurant — Restaurant Intelligence Hub" },
@@ -89,13 +84,28 @@ const CALL = [
 ] as const;
 
 const PITFALLS = [
-  ["Choosing on rating alone", "A high average tells you the mean night went well. It says nothing about noise, pacing, access or whether your party fits."],
-  ["Assuming a website is current", "Menus and hours are the fastest-moving fields on any restaurant site. Treat anything undated as unverified."],
-  ["Reading absence as reassurance", "No stated dress code is not casual. No stated deposit is not free cancellation."],
-  ["Booking the room you liked last time", "The same room under a different service style — a tasting menu night, a private buyout — is a different evening entirely."],
+  [
+    "Choosing on rating alone",
+    "A high average tells you the mean night went well. It says nothing about noise, pacing, access or whether your party fits.",
+  ],
+  [
+    "Assuming a website is current",
+    "Menus and hours are the fastest-moving fields on any restaurant site. Treat anything undated as unverified.",
+  ],
+  [
+    "Reading absence as reassurance",
+    "No stated dress code is not casual. No stated deposit is not free cancellation.",
+  ],
+  [
+    "Booking the room you liked last time",
+    "The same room under a different service style — a tasting menu night, a private buyout — is a different evening entirely.",
+  ],
 ] as const;
 
 function Guide() {
+  const { records, atlas } = Route.useLoaderData();
+  const { byBookingPath, byPlanningLoad, bySpendBand, conflictRecords, corpus, gapMap, unreachable } =
+    atlas;
   const [occasion, setOccasion] = useState<Occasion>(OCCASIONS[0]);
 
   const picks = useMemo(
@@ -104,7 +114,7 @@ function Guide() {
         .map((r) => ({ r, score: occasionScore(r, occasion) }))
         .sort((a, b) => b.score - a.score || a.r.unknownsCount - b.r.unknownsCount)
         .slice(0, 5),
-    [occasion],
+    [occasion, records],
   );
 
   const topGaps = gapMap.slice(0, 5);
@@ -126,7 +136,11 @@ function Guide() {
             the published evidence usually runs out.
           </p>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <Stat label="Records under review" value={corpus.count} note={`${corpus.regions} regions`} />
+            <Stat
+              label="Records under review"
+              value={corpus.count}
+              note={`${corpus.regions} regions`}
+            />
             <Stat
               label="Mean evidence depth"
               value={`${corpus.avgDepth}%`}
@@ -150,6 +164,20 @@ function Guide() {
       </header>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        {/* How the ordering actually works */}
+        <Reveal as="section" className="mt-14">
+          <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
+            <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">000</span>
+            <h2 className="text-eyebrow truncate">How a night becomes a shortlist</h2>
+          </div>
+          <p className="mt-4 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
+            Before the five decisions, the mechanism. Three things remove a room from your list, one
+            thing reorders what is left, and a stated guest need can only hold a room when the room
+            itself says it cannot meet it.
+          </p>
+          <DecisionFlow />
+        </Reveal>
+
         {/* The five decisions */}
         <section className="mt-14">
           <ul className="grid gap-6 lg:grid-cols-2">
@@ -158,11 +186,7 @@ function Guide() {
                 as="li"
                 key={d.n}
                 delay={i * 70}
-                className={
-                  i === 0
-                    ? "plate p-6 sm:p-9 lg:col-span-2 lg:p-12"
-                    : "plate p-6 sm:p-8"
-                }
+                className={i === 0 ? "plate p-6 sm:p-9 lg:col-span-2 lg:p-12" : "plate p-6 sm:p-8"}
               >
                 <div className="flex items-baseline gap-4">
                   <span className="text-num text-[13px] text-primary">{d.n}</span>
@@ -259,9 +283,24 @@ function Guide() {
         <Reveal as="section">
           <div className="grid gap-10 lg:grid-cols-3">
             {[
-              { title: "Planning load", rows: byPlanningLoad, note: "How much work the booking itself will take.", tone: "watch" as const },
-              { title: "Booking pathway", rows: byBookingPath, note: "Whether the room can absorb a change of party.", tone: "primary" as const },
-              { title: "Spend band", rows: bySpendBand, note: "Published price language, not an estimate.", tone: "verified" as const },
+              {
+                title: "Planning load",
+                rows: byPlanningLoad,
+                note: "How much work the booking itself will take.",
+                tone: "watch" as const,
+              },
+              {
+                title: "Booking pathway",
+                rows: byBookingPath,
+                note: "Whether the room can absorb a change of party.",
+                tone: "primary" as const,
+              },
+              {
+                title: "Spend band",
+                rows: bySpendBand,
+                note: "Published price language, not an estimate.",
+                tone: "verified" as const,
+              },
             ].map((block) => {
               const max = Math.max(...block.rows.map((r) => r.count), 1);
               return (
@@ -362,7 +401,9 @@ function Guide() {
                 {PITFALLS.map(([title, body]) => (
                   <li key={title} className="py-4">
                     <h3 className="text-[14px] font-medium text-foreground">{title}</h3>
-                    <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">{body}</p>
+                    <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
+                      {body}
+                    </p>
                   </li>
                 ))}
               </ul>

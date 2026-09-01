@@ -1,32 +1,19 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
-import {
-  byAccessibility,
-  byBookingPath,
-  byCuisine,
-  byDaypart,
-  byDietary,
-  byPlanningLoad,
-  byRegionGroup,
-  byServiceStyle,
-  bySpendBand,
-  byStateProvince,
-  byStrongestOccasion,
-  conflictRecords,
-  corpus,
-  densestMetros,
-  depthLeaders,
-  dueSoonRecords,
-  gapMap,
-  overdueRecords,
-  thinnest,
-  thinnestMetros,
-  unreachable,
-  type Facet,
-} from "@/lib/atlas";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
+type Facet = {
+  label: string;
+  count: number;
+  share: number;
+  thin: number;
+  conflicts: number;
+  avgUnknowns: number;
+  reachable: number;
+};
+
 export const Route = createFileRoute("/atlas")({
+  loader: () => import("@/lib/atlas"),
   head: () => ({
     meta: [
       { title: "Corpus Atlas — Restaurant Intelligence Hub" },
@@ -65,7 +52,7 @@ function FacetTable({
   return (
     <div className="min-w-0">
       <div className="flex items-baseline justify-between gap-3">
-        <Eyebrow>{title}</Eyebrow>
+        <Eyebrow as="h2">{title}</Eyebrow>
         <span className="text-num text-[11px] text-subtle">{rows.length} values</span>
       </div>
       {note ? <p className="mt-2 text-[12px] leading-relaxed text-subtle">{note}</p> : null}
@@ -105,7 +92,7 @@ function RecordStrip({
   return (
     <div>
       <div className="flex items-baseline justify-between gap-3">
-        <Eyebrow>{title}</Eyebrow>
+        <Eyebrow as="h2">{title}</Eyebrow>
         <Chip tone={tone}>{rows.length}</Chip>
       </div>
       <p className="mt-2 text-[12px] leading-relaxed text-subtle">{note}</p>
@@ -133,6 +120,29 @@ function RecordStrip({
 }
 
 function Atlas() {
+  const {
+    byAccessibility,
+    byBookingPath,
+    byCuisine,
+    byDaypart,
+    byDietary,
+    byPlanningLoad,
+    byRegionGroup,
+    byServiceStyle,
+    bySpendBand,
+    byStateProvince,
+    byStrongestOccasion,
+    conflictRecords,
+    corpus,
+    densestMetros,
+    depthLeaders,
+    dueSoonRecords,
+    gapMap,
+    overdueRecords,
+    thinnest,
+    thinnestMetros,
+    unreachable,
+  } = Route.useLoaderData();
   return (
     <main className="min-h-screen pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
@@ -145,8 +155,8 @@ function Atlas() {
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
             Coverage is not quality and quantity is not confidence. This page counts the corpus
             against itself — where the evidence is dense, where it thins out, which fields go
-            unstated most often, and which records are carrying an unresolved conflict. Every
-            number below is counted from recorded fields. Nothing is modelled or estimated.
+            unstated most often, and which records are carrying an unresolved conflict. Every number
+            below is counted from recorded fields. Nothing is modelled or estimated.
           </p>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -179,7 +189,7 @@ function Atlas() {
           <div className="plate p-6 sm:p-8">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
-                <Eyebrow>Gap map</Eyebrow>
+                <Eyebrow as="h2">Gap map</Eyebrow>
                 <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
                   The fields the restaurants have not stated.
                 </h2>
@@ -229,7 +239,7 @@ function Atlas() {
         <Reveal as="section" className="mt-14">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <Eyebrow>Metro density</Eyebrow>
+              <Eyebrow as="h2">Metro density</Eyebrow>
               <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
                 Covered is not the same as useful.
               </h2>
@@ -263,7 +273,7 @@ function Atlas() {
         <Reveal as="section">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <Eyebrow>Character of the corpus</Eyebrow>
+              <Eyebrow as="h2">Character of the corpus</Eyebrow>
               <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
                 What these rooms are for.
               </h2>
@@ -314,7 +324,7 @@ function Atlas() {
 
         {/* Condition */}
         <Reveal as="section">
-          <Eyebrow>Corpus condition</Eyebrow>
+          <Eyebrow as="h2">Corpus condition</Eyebrow>
           <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
             Records that need a human before they need a reader.
           </h2>

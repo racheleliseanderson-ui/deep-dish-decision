@@ -13,6 +13,6 @@ describe("corpus-invariants script", () => {
     assert.equal(r.status, 0, r.stderr || r.stdout);
     const json = JSON.parse(r.stdout);
     assert.equal(json.ok, true);
-    assert.ok(json.count >= 800);
+    assert.ok(json.corpusRecordCount >= 800);
   });
 });

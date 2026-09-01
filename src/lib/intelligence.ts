@@ -1,6 +1,17 @@
 import type { RestaurantRecord } from "@/lib/dataset";
 import { corpusMeta } from "@/lib/corpus-meta";
 import { getCompleteness } from "@/lib/completeness";
+import {
+  haversineMi,
+  openStateAt,
+  openStateAtMoment,
+  servesAt,
+  localNow,
+  minutesToClock,
+  type LatLng,
+  type LiveRow,
+  type OpenState,
+} from "@/lib/live";
 
 /* ------------------------------------------------------------------ *
  * Situation model
@@ -58,6 +69,15 @@ export type Situation = {
   preferNoConflicts: boolean;
   preferWalkIn: boolean;
   wineForward: boolean;
+  /** Where you are asking from. Enables distance, radius and "near me" order. */
+  origin: LatLng | null;
+  originLabel: string | null;
+  /** Hard travel radius in miles. Null means distance informs but never excludes. */
+  radiusMi: number | null;
+  /** Only rooms serving at the arrival moment. */
+  openOnly: boolean;
+  /** Arrival time as "HH:MM" in the room's own timezone. Null means "now". */
+  arriveAt: string | null;
 };
 
 export const emptySituation: Situation = {
@@ -77,6 +97,11 @@ export const emptySituation: Situation = {
   preferNoConflicts: false,
   preferWalkIn: false,
   wineForward: false,
+  origin: null,
+  originLabel: null,
+  radiusMi: null,
+  openOnly: false,
+  arriveAt: null,
 };
 
 /**
@@ -95,6 +120,8 @@ export function situationDepth(s: Situation): number {
   if (s.daypart) d += 1;
   if (s.spendBand) d += 1;
   if (s.regionGroup ?? s.region) d += 1;
+  if (s.origin) d += 1;
+  if (s.arriveAt || s.openOnly) d += 1;
   return Math.min(SITUATION_SLOTS, d);
 }
 
@@ -114,13 +141,34 @@ export function situationSlotCount(s: Situation): number {
   return slots.filter(Boolean).length;
 }
 
-export const SITUATION_SLOTS = 9;
+export const SITUATION_SLOTS = 11;
 
 /** Ranking / findings options — enrichment is opt-in at call sites via prefs. */
 export type ScoreOptions = {
   /** When true, labeled third-party signals join as watch/unknown only. Default true. */
-  useEnrichment?: boolean;
+  useEnrichment?: boolean | undefined;
+  /** The dynamic layer for this region group, keyed by slug. */
+  live?: Record<string, LiveRow> | undefined;
+  /** Fixed clock for deterministic tests. Defaults to the real now. */
+  now?: Date | undefined;
 };
+
+/** Resolve the arrival moment in the room's own timezone. */
+export function arrivalMoment(
+  row: LiveRow | undefined,
+  s: Situation,
+  now: Date,
+): { day: number; minute: number } | null {
+  const here = localNow(row?.tz, now);
+  if (!here) return null;
+  if (!s.arriveAt) return here;
+  const m = /^(\d{1,2}):(\d{2})$/.exec(s.arriveAt);
+  if (!m) return here;
+  const minute = Number(m[1]) * 60 + Number(m[2]);
+  // An arrival earlier than the current hour means tomorrow night.
+  const day = minute < here.minute ? (here.day + 1) % 7 : here.day;
+  return { day, minute };
+}
 
 /* ------------------------------------------------------------------ *
  * Occasion profiles — how each occasion reads a record
@@ -312,8 +360,7 @@ function isThin(value: string | undefined): boolean {
 
 const clamp = (n: number, a: number, b: number) => Math.max(a, Math.min(b, n));
 
-const levelIndex = (list: readonly string[], v: string | undefined) =>
-  v ? list.indexOf(v) : -1;
+const levelIndex = (list: readonly string[], v: string | undefined) => (v ? list.indexOf(v) : -1);
 
 export function buildFindings(
   r: RestaurantRecord,
@@ -323,6 +370,8 @@ export function buildFindings(
   const f: Finding[] = [];
   const c = (x: Constraint) => s.constraints.includes(x);
   const push = (x: Finding) => f.push(x);
+  const live = opts.live?.[r.slug];
+  const now = opts.now ?? new Date();
 
   /* --- access ---------------------------------------------------- */
   const accessThin =
@@ -330,6 +379,11 @@ export function buildFindings(
   const stairs = r.accessibilityTags.some((t) =>
     ["Stairs required", "Stairs stated", "No elevator", "Uneven terrain"].includes(t),
   );
+  /* Directory-confirmed step-free evidence outranks first-party silence. */
+  const a11y = live?.a11y;
+  const a11yConfirmed = Boolean(a11y?.entrance);
+  const a11yFull = Boolean(a11y?.entrance && a11y?.restroom && a11y?.seating);
+
   if (c("Mobility / step-free needs")) {
     if (stairs) {
       push({
@@ -344,18 +398,40 @@ export function buildFindings(
         confidence: "high",
         situational: true,
       });
+    } else if (a11yConfirmed) {
+      const parts = [
+        a11y?.entrance && "step-free entrance",
+        a11y?.restroom && "accessible restroom",
+        a11y?.seating && "accessible seating",
+        a11y?.parking && "accessible parking",
+      ].filter(Boolean) as string[];
+      push({
+        id: "access-directory",
+        layer: a11yFull ? "watch" : "critical",
+        domain: "access",
+        title: a11yFull
+          ? "Step-free entrance, restroom and seating reported"
+          : "Step-free entrance reported — restroom or seating unconfirmed",
+        detail: `Directory listing reports ${parts.join(", ")}. The restaurant's own pages do not state a route.`,
+        action: a11yFull
+          ? "Confirm the route on arrival day and reserve a table that matches the reported seating."
+          : "Confirm restroom and table height directly — only the entrance is reported.",
+        impact: a11yFull ? 46 : 74,
+        confidence: "moderate",
+        situational: true,
+      });
     } else if (accessThin) {
       push({
         id: "access-unstated",
         layer: "critical",
         domain: "access",
-        title: "Access route not stated on first-party sources",
+        title: "Access route not stated on any source",
         detail:
           r.accessibilityState ||
           "No first-party statement of entrance, route, or restroom configuration was recorded.",
         action:
           "Treat as unverified. Confirm entrance, interior route, table height and restroom access live — do not infer from a directory listing.",
-        impact: 92,
+        impact: 78,
         confidence: "high",
         situational: true,
       });
@@ -388,7 +464,9 @@ export function buildFindings(
 
   /* --- dietary ---------------------------------------------------- */
   const dietaryHardNo = r.dietaryTags.some((t) =>
-    ["No allergy guarantee", "Restrictions may not be accommodated", "No substitutions"].includes(t),
+    ["No allergy guarantee", "Restrictions may not be accommodated", "No substitutions"].includes(
+      t,
+    ),
   );
   const dietaryUnstated = r.dietaryTags.some((t) => NOT_STATED.includes(t));
   if (c("Severe allergy / celiac")) {
@@ -407,7 +485,7 @@ export function buildFindings(
       action: dietaryHardNo
         ? "Cannot recommend until confirmed: this restaurant cannot carry a severe-allergy guest without a named manager confirming kitchen practice for your date."
         : "Call, name the allergen, and get cross-contact practice confirmed by kitchen staff — not by a booking form note.",
-      impact: dietaryHardNo ? 99 : 94,
+      impact: dietaryHardNo ? 99 : 76,
       confidence: "high",
       situational: true,
     });
@@ -441,6 +519,137 @@ export function buildFindings(
       confidence: "moderate",
       situational: true,
     });
+  }
+
+  /* --- serving hours at the arrival moment -------------------------- */
+  if (live?.hours) {
+    const at = arrivalMoment(live, s, now);
+    const serving = at ? servesAt(live, at.day, at.minute) : null;
+    const state = openStateAt(live, now);
+    if (at && serving === false) {
+      const when = s.arriveAt ? `at ${minutesToClock(at.minute)}` : "right now";
+      push({
+        id: "hours-closed",
+        layer: "critical",
+        domain: "hours",
+        title: `Not serving ${when}`,
+        detail:
+          state.state === "opens-later"
+            ? `Published hours open at ${state.opensAt} local time.`
+            : "Published hours show no service in that window.",
+        action:
+          state.state === "opens-later"
+            ? `Move your arrival to ${state.opensAt} or later, or choose another room.`
+            : "Pick a different night, or confirm a private booking outside published hours.",
+        impact: 88,
+        confidence: "high",
+        situational: true,
+      });
+    } else if (state.state === "closing-soon" && !s.arriveAt) {
+      push({
+        id: "hours-closing",
+        layer: "watch",
+        domain: "hours",
+        title: `Kitchen closes in ${state.closesInMin} minutes`,
+        detail: `Published service ends at ${state.closesAt} local time.`,
+        action: "Call before you travel — last seating is usually earlier than the closing time.",
+        impact: 62,
+        confidence: "moderate",
+        situational: true,
+      });
+    } else if (at && serving === true) {
+      push({
+        id: "hours-open",
+        layer: "watch",
+        domain: "hours",
+        title: s.arriveAt ? `Serving at ${minutesToClock(at.minute)}` : "Serving now",
+        detail: `Published hours cover your arrival window${state.state === "open" ? ` and run to ${state.closesAt}` : ""}.`,
+        action: "Published hours change with holidays and private events — reconfirm on the day.",
+        impact: 20,
+        confidence: "moderate",
+        situational: false,
+      });
+    }
+  } else if (s.openOnly || s.arriveAt) {
+    push({
+      id: "hours-unheld",
+      layer: "unknown",
+      domain: "hours",
+      title: "Structured hours not held for this room",
+      detail: r.hoursSummary || "Only prose hours are on file; no machine-readable schedule.",
+      action: "Read the hours line and confirm the closing time for your night by phone.",
+      impact: 34,
+      confidence: "high",
+      situational: true,
+    });
+  }
+
+  /* --- distance from where you are asking ---------------------------- */
+  if (s.origin && live?.ll) {
+    const mi = haversineMi(s.origin, live.ll);
+    const exact = live.llSource === "exact";
+    if (s.radiusMi !== null && mi > s.radiusMi) {
+      push({
+        id: "distance-out",
+        layer: "critical",
+        domain: "location",
+        title: `Outside your ${s.radiusMi}-mile radius`,
+        detail: `${exact ? "" : "City-level estimate: "}about ${Math.round(mi)} miles from ${s.originLabel ?? "your origin"}.`,
+        action: "Widen the radius or accept the travel time.",
+        impact: 86,
+        confidence: exact ? "high" : "moderate",
+        situational: true,
+      });
+    } else if (mi <= 1.5 && exact) {
+      push({
+        id: "distance-walk",
+        layer: "watch",
+        domain: "location",
+        title: "Walkable from where you are",
+        detail: `About ${mi < 0.1 ? "under 0.1" : Math.round(mi * 10) / 10} miles${live.hood ? ` — ${live.hood}` : ""}.`,
+        action: "No parking question to resolve.",
+        impact: 14,
+        confidence: "high",
+        situational: false,
+      });
+    }
+  }
+
+  /* --- budget ceiling ------------------------------------------------ */
+  if (c("Hard budget cap")) {
+    if (live?.pp) {
+      const [lo, hi] = live.pp;
+      const published = live.ppSource === "published";
+      push({
+        id: "budget",
+        layer: lo >= 90 ? "critical" : "watch",
+        domain: "spend",
+        title:
+          lo === hi ? `About $${lo} per guest before drinks` : `Roughly $${lo}–$${hi} per guest`,
+        detail: published
+          ? `Published by the restaurant${live.ppService ? `, including the ${live.ppService}% service charge` : ""}.`
+          : "Estimated from the price band, not published per-guest pricing.",
+        action:
+          lo >= 90
+            ? "Confirm the current per-guest total, supplements and service charge before you commit a capped budget."
+            : "Ask what the total looks like with drinks and service before booking.",
+        impact: lo >= 90 ? 70 : 38,
+        confidence: published ? "high" : "low",
+        situational: true,
+      });
+    } else {
+      push({
+        id: "budget-unknown",
+        layer: "unknown",
+        domain: "spend",
+        title: "No per-guest figure on file",
+        detail: r.priceDetails || "Pricing was not published on the reviewed pages.",
+        action: "Ask for a current per-guest total before you seat a capped budget.",
+        impact: 44,
+        confidence: "high",
+        situational: true,
+      });
+    }
   }
 
   /* --- conflict ---------------------------------------------------- */
@@ -587,7 +796,9 @@ export function buildFindings(
       id: "noise",
       layer: loud ? "critical" : "watch",
       domain: "environment",
-      title: loud ? `Noise band reads ${r.noiseBand}` : `Noise band reads ${r.noiseBand ?? "unstated"}`,
+      title: loud
+        ? `Noise band reads ${r.noiseBand}`
+        : `Noise band reads ${r.noiseBand ?? "unstated"}`,
       detail: r.atmosphereSummary || "Room energy was inferred from first-party language only.",
       action: loud
         ? "Request an early seating and a perimeter or side-room table, or drop this record for a conversation-first room."
@@ -679,7 +890,8 @@ export function buildFindings(
       domain: "evidence",
       title: "Review due within the current cycle",
       detail: `Reviewed ${r.reviewedAt} · next review ${r.nextReviewAt}.`,
-      action: "Volatile fields — hours, availability, price — should be confirmed in the same call.",
+      action:
+        "Volatile fields — hours, availability, price — should be confirmed in the same call.",
       impact: 46,
       confidence: "high",
       situational: false,
@@ -699,7 +911,11 @@ export function buildFindings(
         : c("Hard end time (show, train, childcare)")
           ? "Ask about valet or the nearest garage — arrival friction is what breaks a hard end time."
           : "Low stakes here; check a map before you leave.",
-      impact: c("Mobility / step-free needs") ? 60 : c("Hard end time (show, train, childcare)") ? 48 : 18,
+      impact: c("Mobility / step-free needs")
+        ? 60
+        : c("Hard end time (show, train, childcare)")
+          ? 48
+          : 18,
       confidence: "high",
       situational: s.constraints.length > 0,
     });
@@ -746,7 +962,6 @@ export function buildFindings(
     .filter((v, i, arr) => arr.findIndex((x) => x.id === v.id) === i);
 }
 
-
 function capitalize(s: string) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
@@ -770,6 +985,15 @@ export function confirmBurden(r: RestaurantRecord, findings: Finding[]): number 
   return clamp(Math.round(b), 0, 100);
 }
 
+/** One term in the fit calculation, kept so the ranking can explain itself. */
+export type Contribution = {
+  label: string;
+  /** Points added (positive) or removed (negative) from fit. */
+  delta: number;
+  group:
+    "occasion" | "location" | "timing" | "party" | "spend" | "booking" | "constraint" | "evidence";
+};
+
 export type Scored = {
   record: RestaurantRecord;
   fit: number;
@@ -781,95 +1005,227 @@ export type Scored = {
   unknowns: Finding[];
   occasionScore: number;
   reasons: string[];
+  /** Every term that moved fit, largest magnitude first. */
+  contributions: Contribution[];
+  /**
+   * The score before the 0-100 display clamp. Ordering uses this: on a
+   * demanding situation dozens of records clamp to 0 and the clamped value
+   * cannot tell them apart.
+   */
+  fitRaw: number;
+  /** Where fit started before any term was applied. */
+  fitBase: number;
   blocked: boolean;
+  /** Dynamic layer for this room, when the region's live file is loaded. */
+  live?: LiveRow | undefined;
+  /** Miles from the situation origin. Null when either point is missing. */
+  distanceMi: number | null;
+  /** Whether the distance came from an exact point or a city centroid. */
+  distanceExact: boolean;
+  /** Serving state at the arrival moment. */
+  open: OpenState;
 };
 
 export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOptions = {}): Scored {
   const findings = buildFindings(r, s, opts);
   const burden = confirmBurden(r, findings);
   const reasons: string[] = [];
+  const live = opts.live?.[r.slug];
+  const now = opts.now ?? new Date();
+  const distanceMi = s.origin && live?.ll ? haversineMi(s.origin, live.ll) : null;
+  const distanceExact = live?.llSource === "exact";
+  // The reader's arrival moment, not "now" — otherwise the card can print
+  // "Serving at 7pm" beside a strip reading "Closed today" and charge the
+  // penalty for a room that is open when they mean to go.
+  const arrival = arrivalMoment(live, s, now);
+  const open = arrival
+    ? openStateAtMoment(live, arrival.day, arrival.minute)
+    : openStateAt(live, now);
 
   const occ = s.occasion ? occasionScore(r, s.occasion) : topOccasion(r).score;
   let fit = s.occasion ? occ : 50 + (occ - 50) * 0.35;
+  const fitBase = fit;
+  const contributions: Contribution[] = [];
+  /** Apply a term and record it. */
+  const add = (label: string, delta: number, group: Contribution["group"]) => {
+    if (Math.abs(delta) < 0.5) return;
+    fit += delta;
+    contributions.push({ label, delta, group });
+  };
   if (s.occasion) reasons.push(`${s.occasion} fit ${occ}`);
 
   // Party composition
   if (s.partySize !== null) {
     if (s.partySize >= 6) {
-      if (r.signals.party === "Large-group ready") fit += 10, reasons.push("large-group ready");
-      else if (r.signals.party === "Group-ready") fit += 6, reasons.push("group-ready");
-      else if (r.signals.party === "Small table") fit -= 22, reasons.push("small-table constraint");
+      if (r.signals.party === "Large-group ready") {
+        add("Large-group ready", 10, "party");
+        reasons.push("large-group ready");
+      } else if (r.signals.party === "Group-ready") {
+        add("Group-ready", 6, "party");
+        reasons.push("group-ready");
+      } else if (r.signals.party === "Small table") {
+        add("Small tables only", -22, "party");
+        reasons.push("small-table constraint");
+      }
     } else if (s.partySize <= 2) {
-      if (["Small table", "Flexible party"].includes(r.signals.party ?? "")) fit += 5;
+      if (["Small table", "Flexible party"].includes(r.signals.party ?? ""))
+        add("Suits two", 5, "party");
     }
   }
 
   // Daypart
   if (s.daypart) {
-    if (r.daypartTags?.includes(s.daypart)) fit += 9, reasons.push("daypart language matches");
-    else fit -= 8, reasons.push("daypart unstated for this service");
+    if (r.daypartTags?.includes(s.daypart)) {
+      add("Daypart matches", 9, "timing");
+      reasons.push("daypart language matches");
+    } else {
+      add("Daypart unstated for this service", -8, "timing");
+      reasons.push("daypart unstated for this service");
+    }
   }
 
   // Spend band
   if (s.spendBand) {
-    if ((r.spendBands ?? []).includes(s.spendBand)) fit += 8, reasons.push("spend band matches");
-    else fit -= 12;
+    if ((r.spendBands ?? []).includes(s.spendBand)) {
+      add("Spend band matches", 8, "spend");
+      reasons.push("spend band matches");
+    } else add("Outside your spend band", -12, "spend");
   }
 
   // Booking path preference
-  if (s.bookingPath && !r.bookingPlatforms.includes(s.bookingPath)) fit -= 25;
+  if (s.bookingPath && !r.bookingPlatforms.includes(s.bookingPath))
+    add(`No ${s.bookingPath} pathway`, -25, "booking");
   if (s.preferWalkIn) {
-    if (r.bookingPlatforms.includes("Walk-in / open seating")) fit += 8;
-    else fit -= 20;
+    if (r.bookingPlatforms.includes("Walk-in / open seating")) add("Takes walk-ins", 8, "booking");
+    else add("No walk-in path", -20, "booking");
   }
   if (s.wineForward) {
-    if (["Cellar / pairing", "Deep program"].includes(r.signals.wine ?? "")) fit += 10;
-    else if (r.signals.wine === "Solid list") fit += 3;
-    else fit -= 8;
+    if (["Cellar / pairing", "Deep program"].includes(r.signals.wine ?? ""))
+      add("Deep wine programme", 10, "evidence");
+    else if (r.signals.wine === "Solid list") add("Solid wine list", 3, "evidence");
+    else add("Wine programme unstated", -8, "evidence");
   }
-  if (s.preferNoConflicts && r.hasOfficialConflict) fit -= 18;
+  if (s.preferNoConflicts && r.hasOfficialConflict)
+    add("Official sources conflict", -18, "evidence");
 
   // Lead time vs booking scarcity
   if (s.leadDays !== null) {
     const tight = ["Competitive", "Scarce"].includes(r.signals.booking ?? "");
-    if (tight && s.leadDays <= 3) fit -= 26, reasons.push("release cadence beats your lead time");
-    else if (tight && s.leadDays <= 7) fit -= 12;
-    else if (!tight && s.leadDays <= 3) fit += 6, reasons.push("bookable on short notice");
-    if (s.leadDays >= 21 && tight) fit += 6, reasons.push("lead time covers the release window");
+    if (tight && s.leadDays <= 3) {
+      add("Release cadence beats your lead time", -26, "booking");
+      reasons.push("release cadence beats your lead time");
+    } else if (tight && s.leadDays <= 7) add("Tight booking for this lead time", -12, "booking");
+    else if (!tight && s.leadDays <= 3) {
+      add("Bookable on short notice", 6, "booking");
+      reasons.push("bookable on short notice");
+    }
+    if (s.leadDays >= 21 && tight) {
+      add("Lead time covers the release window", 6, "booking");
+      reasons.push("lead time covers the release window");
+    }
   }
 
   // Ceilings
   const loadIdx = levelIndex(PLANNING_LEVELS, r.planningLoad);
   const capIdx = levelIndex(PLANNING_LEVELS, s.maxPlanningLoad ?? undefined);
-  if (capIdx >= 0 && loadIdx > capIdx) fit -= 10 * (loadIdx - capIdx);
+  if (capIdx >= 0 && loadIdx > capIdx)
+    add(
+      `Planning load above your ${s.maxPlanningLoad} cap`,
+      -10 * (loadIdx - capIdx),
+      "constraint",
+    );
   const commIdx = levelIndex(COMMITMENT_LEVELS, r.signals.commitment);
   const commCap = levelIndex(COMMITMENT_LEVELS, s.maxCommitment ?? undefined);
-  if (commCap >= 0 && commIdx > commCap) fit -= 8 * (commIdx - commCap);
+  if (commCap >= 0 && commIdx > commCap)
+    add(`Commitment above your ${s.maxCommitment} cap`, -8 * (commIdx - commCap), "constraint");
 
   // Constraints — fail closed
   const situationalCriticals = findings.filter((f) => f.layer === "critical" && f.situational);
-  fit -= situationalCriticals.reduce((a, f) => a + f.impact * 0.32, 0);
-  for (const f of situationalCriticals) reasons.push(f.title.toLowerCase());
+  for (const f of situationalCriticals) {
+    add(f.title, -f.impact * 0.32, "constraint");
+    reasons.push(f.title.toLowerCase());
+  }
 
   // Confirm burden discount, scaled by how little time the reader has
-  const timePressure = s.leadDays === null ? 0.12 : s.leadDays <= 3 ? 0.3 : s.leadDays <= 10 ? 0.18 : 0.1;
-  fit -= burden * timePressure;
+  const timePressure =
+    s.leadDays === null ? 0.12 : s.leadDays <= 3 ? 0.3 : s.leadDays <= 10 ? 0.18 : 0.1;
+  add("Still to confirm yourself", -burden * timePressure, "evidence");
 
   // Evidence depth rewards completeness, never invents it
-  fit += (r.depthFilled / Math.max(1, r.depthTotal)) * 8;
-  fit -= Math.min(6, r.unknownsCount) * 1.2;
+  add("Evidence depth", (r.depthFilled / Math.max(1, r.depthTotal)) * 8, "evidence");
+  add(
+    `${r.unknownsCount} open unknown${r.unknownsCount === 1 ? "" : "s"}`,
+    -Math.min(6, r.unknownsCount) * 1.2,
+    "evidence",
+  );
   const ownedCompleteness = getCompleteness(r.slug)?.completeness;
   if (typeof ownedCompleteness === "number") {
-    fit += (ownedCompleteness / 100) * 6;
-    if (ownedCompleteness >= 70) reasons.push("owned-site file is ready");
-    else if (ownedCompleteness < 50) fit -= 4;
+    add("Owned-site completeness", (ownedCompleteness / 100) * 6, "evidence");
+    if (ownedCompleteness < 50) add("Thin owned-site file", -4, "evidence");
+  }
+
+  /* --- dynamic terms: proximity, serving hours, spend, evidence depth --- */
+
+  // Proximity. Closer is better, but only when the point is real; a city
+  // centroid earns a much smaller nudge because every room in that city shares it.
+  if (distanceMi !== null) {
+    const weight = distanceExact ? 1 : 0.3;
+    const near = `${Math.round(distanceMi * 10) / 10} mi away`;
+    if (distanceMi <= 1) {
+      add("Walkable from you", 12 * weight, "location");
+      reasons.push("walkable from you");
+    } else if (distanceMi <= 3) {
+      add(near, 8 * weight, "location");
+      reasons.push(near);
+    } else if (distanceMi <= 8) add(near, 3 * weight, "location");
+    else if (distanceMi <= 20) add(near, -3 * weight, "location");
+    else
+      add(
+        `${Math.round(distanceMi)} mi away`,
+        -Math.min(18, distanceMi * 0.25) * weight,
+        "location",
+      );
+  }
+
+  // Serving at the moment you actually want to arrive.
+  if (open.state === "open") {
+    add(`Open until ${open.closesAt}`, 7, "timing");
+    reasons.push(`open until ${open.closesAt}`);
+  } else if (open.state === "closing-soon") add("Closing within the hour", -6, "timing");
+  else if (open.state === "closed" || open.state === "closed-today") {
+    // `hours-closed` already charges this through the situational-critical
+    // term; charging again here would count one fact twice.
+    const alreadyCharged = findings.some((f) => f.id === "hours-closed" && f.layer === "critical");
+    if (!alreadyCharged) add("Not serving then", -14, "timing");
+  }
+
+  // A named dish is a real reason to choose a room.
+  const leadDish = live?.dishes?.[0];
+  if (leadDish) {
+    add(`Known for ${leadDish.name}`, 4, "evidence");
+    reasons.push(`known for ${leadDish.name}`);
+  }
+
+  // Recurring-praise evidence is context, never a rating.
+  if (live?.rep?.praise?.length) add("Researched review patterns on file", 3, "evidence");
+
+  // Spend fit against a stated band. Only when the record carried no spend
+  // band of its own — otherwise this is the same evidence charged twice, and
+  // when `bandSource` is "planning-band" it is literally derived from it.
+  if (s.spendBand && live?.band === s.spendBand && !(r.spendBands ?? []).length) {
+    add("Price band matches", 6, "spend");
+    reasons.push("price band matches");
   }
 
   const blocked = situationalCriticals.some((f) => f.impact >= 90);
 
+  // A malformed coordinate must not poison the comparator with NaN.
+  if (!Number.isFinite(fit)) fit = 0;
+
   return {
     record: r,
     fit: clamp(Math.round(fit), 0, 100),
+    fitRaw: Math.round(fit),
     rank: 0,
     burden,
     findings,
@@ -878,7 +1234,13 @@ export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOption
     unknowns: findings.filter((f) => f.layer === "unknown"),
     occasionScore: occ,
     reasons: reasons.slice(0, 4),
+    contributions: [...contributions].sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta)),
+    fitBase,
     blocked,
+    live,
+    distanceMi,
+    distanceExact,
+    open,
   };
 }
 
@@ -886,7 +1248,10 @@ export function rank(list: RestaurantRecord[], s: Situation, opts: ScoreOptions 
   const scored = list.map((r) => scoreRecord(r, s, opts));
   scored.sort((a, b) => {
     if (a.blocked !== b.blocked) return a.blocked ? 1 : -1;
-    if (b.fit !== a.fit) return b.fit - a.fit;
+    if (b.fitRaw !== a.fitRaw) return b.fitRaw - a.fitRaw;
+    if (a.distanceMi !== null && b.distanceMi !== null && a.distanceMi !== b.distanceMi) {
+      return a.distanceMi - b.distanceMi;
+    }
     if (a.burden !== b.burden) return a.burden - b.burden;
     return a.record.title.localeCompare(b.record.title);
   });
@@ -894,14 +1259,39 @@ export function rank(list: RestaurantRecord[], s: Situation, opts: ScoreOptions 
   return scored;
 }
 
-export function filterRecords(list: RestaurantRecord[], s: Situation): RestaurantRecord[] {
+export function filterRecords(
+  list: RestaurantRecord[],
+  s: Situation,
+  live?: Record<string, LiveRow>,
+): RestaurantRecord[] {
   const q = s.query.trim().toLowerCase();
+  const now = new Date();
   return list.filter((r) => {
+    const row = live?.[r.slug];
+    if (s.radiusMi !== null && s.radiusMi > 0 && s.origin && row) {
+      const ll = row.ll;
+      if (
+        ll &&
+        Number.isFinite(haversineMi(s.origin, ll)) &&
+        haversineMi(s.origin, ll) > s.radiusMi
+      ) {
+        return false;
+      }
+    }
+    // "Only rooms serving then" is a filter, as the control says it is. A room
+    // whose schedule is not held is kept — silence is not evidence of closure —
+    // but the card says the schedule is missing.
+    if (s.openOnly && row?.hours) {
+      const at = arrivalMoment(row, s, now);
+      if (at && servesAt(row, at.day, at.minute) === false) return false;
+    }
     if (s.regionGroup && r.regionGroup !== s.regionGroup) return false;
     if (s.region && r.region !== s.region) return false;
     if (s.cuisine && !r.cuisineTags.includes(s.cuisine)) return false;
     if (q) {
-      const hay = (r.searchText ?? `${r.title} ${r.region} ${r.cuisineTags.join(" ")}`).toLowerCase();
+      const hay = (
+        r.searchText ?? `${r.title} ${r.region} ${r.cuisineTags.join(" ")}`
+      ).toLowerCase();
       if (!hay.includes(q)) return false;
     }
     return true;
@@ -950,7 +1340,9 @@ export function decisionBrief(sc: Scored, s: Situation): Brief {
     ? `${sc.criticals.length} critical risk${sc.criticals.length > 1 ? "s" : ""}: ${sc.criticals
         .slice(0, 2)
         .map((f) => f.title.toLowerCase())
-        .join("; ")}. ${sc.watch.length} watch item${sc.watch.length === 1 ? "" : "s"}, ${sc.unknowns.length} residual unknown${sc.unknowns.length === 1 ? "" : "s"} carried forward.`
+        .join(
+          "; ",
+        )}. ${sc.watch.length} watch item${sc.watch.length === 1 ? "" : "s"}, ${sc.unknowns.length} residual unknown${sc.unknowns.length === 1 ? "" : "s"} carried forward.`
     : `No critical risk recorded for this situation. ${sc.watch.length} watch item${sc.watch.length === 1 ? "" : "s"} and ${sc.unknowns.length} residual unknown${sc.unknowns.length === 1 ? "" : "s"} remain visible.`;
 
   const burdenLine = `Confirm burden ${sc.burden}/100 · planning load ${r.planningLoad ?? "unstated"} · ${

@@ -32,7 +32,7 @@ export function EvidenceFromPhoto({ onFindings, className }: Props) {
       const bytes = new Uint8Array(buffer);
       let binary = "";
       for (let i = 0; i < bytes.length; i++) {
-        binary += String.fromCharCode(bytes[i]);
+        binary += String.fromCharCode(bytes[i] ?? 0);
       }
       const base64 = btoa(binary);
 
@@ -51,10 +51,7 @@ export function EvidenceFromPhoto({ onFindings, className }: Props) {
 
   return (
     <section
-      className={cn(
-        "rounded-lg border border-border bg-surface/40 p-4 space-y-3",
-        className,
-      )}
+      className={cn("rounded-lg border border-border bg-surface/40 p-4 space-y-3", className)}
       aria-label="Evidence from photo"
     >
       <div>
@@ -81,7 +78,9 @@ export function EvidenceFromPhoto({ onFindings, className }: Props) {
       </label>
 
       {loading && (
-        <p className="text-xs text-muted-foreground animate-pulse">Analyzing with multimodal vision…</p>
+        <p className="text-xs text-muted-foreground animate-pulse">
+          Analyzing with multimodal vision…
+        </p>
       )}
       {error && <p className="text-xs text-destructive">{error}</p>}
 

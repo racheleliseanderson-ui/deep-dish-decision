@@ -2,8 +2,30 @@ import { cn } from "@/lib/utils";
 import type { FindingLayer } from "@/lib/intelligence";
 import type { ReactNode } from "react";
 
-export function Eyebrow({ children, className }: { children: ReactNode; className?: string }) {
-  return <p className={cn("text-eyebrow", className)}>{children}</p>;
+/**
+ * The small letterspaced label that titles most sections in this app.
+ *
+ * It defaulted to a <p>, which left `/atlas`, `/console` and `/packet` with an
+ * <h1> and then no headings at all — every data table on those pages was
+ * titled by a paragraph, so there was no structure to navigate by. Pass `as`
+ * to give a section title its real level.
+ */
+export function Eyebrow({
+  children,
+  className,
+  as: As = "p",
+  id,
+}: {
+  children: ReactNode;
+  className?: string;
+  as?: "p" | "h2" | "h3" | "h4";
+  id?: string;
+}) {
+  return (
+    <As id={id} className={cn("text-eyebrow", className)}>
+      {children}
+    </As>
+  );
 }
 
 export function Chip({
@@ -56,8 +78,7 @@ export function Meter({
   tone?: "primary" | "critical" | "watch";
   invert?: boolean;
 }) {
-  const bar =
-    tone === "critical" ? "bg-critical" : tone === "watch" ? "bg-watch" : "bg-primary";
+  const bar = tone === "critical" ? "bg-critical" : tone === "watch" ? "bg-watch" : "bg-primary";
   return (
     <div className="w-full">
       <div className="flex items-baseline justify-between gap-2">

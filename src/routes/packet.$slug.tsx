@@ -1,14 +1,28 @@
 import { Eyebrow } from "@/components/rih/bits";
 import { ThemeToggle } from "@/components/rih/theme-toggle";
-import { bySlug } from "@/lib/dataset";
+import type { RestaurantRecord } from "@/lib/dataset";
 import { decisionBrief, scoreRecord, situationDepth, SITUATION_SLOTS } from "@/lib/intelligence";
 import { downloadPacketPdf } from "@/lib/packet-pdf";
 import { useEnrichmentSignals } from "@/lib/prefs";
 import { decodeSituation } from "@/lib/situation-url";
+import { useEffect, useState } from "react";
+import {
+  bookingRiskLine,
+  loadLiveGroup,
+  minutesToClock,
+  partyTotal,
+  spendLine,
+  type LiveRow,
+} from "@/lib/live";
 import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
 
-
 export const Route = createFileRoute("/packet/$slug")({
+  loader: async ({ params }): Promise<{ record: RestaurantRecord }> => {
+    const { bySlug } = await import("@/lib/dataset");
+    const record = bySlug.get(params.slug);
+    if (!record) throw notFound();
+    return { record };
+  },
   head: () => ({
     meta: [
       { title: "Restaurant Decision Packet — Restaurant Intelligence Hub" },
@@ -33,16 +47,25 @@ export const Route = createFileRoute("/packet/$slug")({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="break-inside-avoid border-t border-border pt-5">
-      <Eyebrow>{title}</Eyebrow>
+      <Eyebrow as="h2">{title}</Eyebrow>
       <div className="mt-3">{children}</div>
     </section>
   );
 }
 
 function Packet() {
-  const { slug } = Route.useParams();
-  const record = bySlug.get(slug);
-  if (!record) throw notFound();
+  const { record } = Route.useLoaderData();
+
+  const [live, setLive] = useState<LiveRow | undefined>(undefined);
+  useEffect(() => {
+    let cancelled = false;
+    loadLiveGroup(record.regionGroup || record.region).then((rows) => {
+      if (!cancelled) setLive(rows[record.slug]);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [record]);
 
   const search = useRouterState({ select: (s) => s.location.searchStr });
   const situation = decodeSituation(search ?? "");
@@ -60,7 +83,10 @@ function Packet() {
     ["Spend band", situation.spendBand ?? "not stated"],
     ["Planning tolerance", situation.maxPlanningLoad ?? "not stated"],
     ["Commitment ceiling", situation.maxCommitment ?? "not stated"],
-    ["Constraints", situation.constraints.length ? situation.constraints.join("; ") : "none stated"],
+    [
+      "Constraints",
+      situation.constraints.length ? situation.constraints.join("; ") : "none stated",
+    ],
   ];
 
   const evidence: [string, string][] = [
@@ -77,7 +103,7 @@ function Packet() {
   ];
 
   return (
-    <main className="mx-auto max-w-[880px] px-5 py-8 print:px-0 print:py-0">
+    <main className="mx-auto max-w-[880px] px-5 py-8 pb-28 print:px-0 print:py-0">
       <div className="no-print mb-6 flex flex-wrap items-center justify-between gap-3">
         <Link
           to="/"
@@ -127,16 +153,22 @@ function Packet() {
             {record.address || record.region}
           </p>
           <p className="text-num mt-1 text-[12px] text-subtle">
-            Fit {sc.fit}/100 · confirm burden {sc.burden}/100 · situation {depth}/{SITUATION_SLOTS} ·
-            reviewed {record.reviewedAt} · next review {record.nextReviewAt}
+            Fit {sc.fit}/100 · confirm burden {sc.burden}/100 · situation {depth}/{SITUATION_SLOTS}{" "}
+            · reviewed {record.reviewedAt} · next review {record.nextReviewAt}
           </p>
         </header>
 
         <Section title="Verdict">
           <p className="font-display text-xl leading-snug tracking-tight">{brief.verdict}</p>
-          <p className="mt-2.5 text-[13px] leading-relaxed text-muted-foreground">{brief.fitLine}</p>
-          <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">{brief.riskLine}</p>
-          <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">{brief.burdenLine}</p>
+          <p className="mt-2.5 text-[13px] leading-relaxed text-muted-foreground">
+            {brief.fitLine}
+          </p>
+          <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
+            {brief.riskLine}
+          </p>
+          <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
+            {brief.burdenLine}
+          </p>
           <p className="mt-3 border-l-2 border-primary pl-3 text-[13px] leading-relaxed">
             {brief.nextAction}
           </p>
@@ -145,7 +177,10 @@ function Packet() {
         <Section title="Situation of record">
           <dl className="grid gap-x-6 gap-y-2 sm:grid-cols-2">
             {situationLines.map(([k, v]) => (
-              <div key={k} className="flex items-baseline justify-between gap-3 border-b border-border pb-1.5">
+              <div
+                key={k}
+                className="flex items-baseline justify-between gap-3 border-b border-border pb-1.5"
+              >
                 <dt className="text-[12px] uppercase tracking-[0.12em] text-subtle">{k}</dt>
                 <dd className="text-right text-[13px]">{v}</dd>
               </div>
@@ -188,6 +223,64 @@ function Packet() {
             </Section>
           );
         })}
+
+        <Section title="At the table">
+          <dl className="grid gap-x-6 gap-y-3 sm:grid-cols-2">
+            <div>
+              <dt className="text-[11px] uppercase tracking-[0.14em] text-subtle">What to order</dt>
+              <dd className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
+                {live?.dishes?.length
+                  ? live.dishes
+                      .map((d) => `${d.name} (${d.source === "first-party" ? "house" : "reviews"})`)
+                      .join(", ")
+                  : "No dish is named on the restaurant's own pages, and nothing repeats across reviews. Ask what the kitchen is known for."}
+              </dd>
+            </div>
+            <div>
+              <dt className="text-[11px] uppercase tracking-[0.14em] text-subtle">What it costs</dt>
+              <dd className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
+                {(() => {
+                  const spend = spendLine(live);
+                  if (!spend) return "No per-guest figure on file.";
+                  const total = partyTotal(live, situation.partySize);
+                  return `${spend.text}${total ? ` \u00b7 ${total}` : ""} \u2014 ${spend.source.toLowerCase()}.`;
+                })()}
+              </dd>
+            </div>
+            <div>
+              <dt className="text-[11px] uppercase tracking-[0.14em] text-subtle">If you cancel</dt>
+              <dd className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
+                {bookingRiskLine(live)
+                  ? `${bookingRiskLine(live)} \u2014 money lost without eating, separate from the meal.`
+                  : "No deposit or cancellation fee is stated."}
+              </dd>
+            </div>
+            <div>
+              <dt className="text-[11px] uppercase tracking-[0.14em] text-subtle">
+                Published hours
+              </dt>
+              <dd className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
+                {live?.hours
+                  ? ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+                      .map((d, i) => {
+                        const iv = live.hours?.[i] ?? [];
+                        return iv.length
+                          ? `${d} ${iv.map(([a, b]) => `${minutesToClock(a)}\u2013${minutesToClock(b)}`).join(", ")}`
+                          : `${d} closed`;
+                      })
+                      .join(" \u00b7 ")
+                  : record.hoursSummary || "Hours were not published on the reviewed pages."}
+                {live?.hoursSource ? (
+                  <span className="mt-1 block text-[11px] text-subtle">
+                    {live.hoursSource === "google"
+                      ? "Published schedule. Holidays and private events are not in it."
+                      : "Read from the restaurant's own hours line. Reconfirm on the day."}
+                  </span>
+                ) : null}
+              </dd>
+            </div>
+          </dl>
+        </Section>
 
         <Section title="Confirmation script">
           <ol className="space-y-2">

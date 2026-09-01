@@ -6,7 +6,15 @@ import { buildDinerAnswers } from "@/lib/diner-questions";
 import { getInspection } from "@/lib/inspections";
 import { buildReputation, getResearchedPattern } from "@/lib/reputation";
 import { emptySituation, rank } from "@/lib/intelligence";
-import { findCrossWiredSources, visualsFor, visualCoverage } from "@/lib/visual-program";
+import {
+  PHOTOGRAPHIC_KINDS,
+  allVisuals,
+  findCrossWiredSources,
+  isArtwork,
+  provenanceLabel,
+  visualCoverage,
+  visualsFor,
+} from "@/lib/visual-program";
 
 describe("consumer snapshot", () => {
   it("extracts a decision point for Canlis instead of dumping two fields", () => {
@@ -52,9 +60,11 @@ describe("food intel", () => {
 
   it("does not invent signature dishes", () => {
     const food = buildFoodIntel(bySlug.get("nue")!);
-    expect(food.signatureMentions.every((s) => /signature|known for|famous for|house/i.test(s) || s.length > 0)).toBe(
-      true,
-    );
+    expect(
+      food.signatureMentions.every(
+        (s) => /signature|known for|famous for|house/i.test(s) || s.length > 0,
+      ),
+    ).toBe(true);
     if (!food.signatureMentions.length) {
       expect(food.whatToOrder.toLowerCase()).toMatch(/no signature dish/);
     }
@@ -70,7 +80,14 @@ describe("food intel", () => {
       .map((r) => buildFoodIntel(r).signatureMentions.join(" "))
       .join(" | ")
       .toLowerCase();
-    expect(blob).not.toMatch(/wine program|seasonal menu sourced|welcoming hospitalit|globally inspired/);
+    expect(blob).not.toMatch(
+      /wine program|seasonal menu sourced|welcoming hospitalit|globally inspired/,
+    );
+  });
+
+  it("names house-made pasta only where first-party language already says so", () => {
+    const food = buildFoodIntel(bySlug.get("luccas")!);
+    expect(food.signatureMentions.join(" ").toLowerCase()).toMatch(/house-made pasta/);
   });
 });
 
@@ -79,7 +96,9 @@ describe("reputation layer", () => {
     const rep = buildReputation("carmine-s-44th-street-nyc");
     expect(rep.rankingEligible).toBe(false);
     expect(rep.layer).toBe("publicReputationEvidence");
-    expect(rep.patternSummary.toLowerCase()).toMatch(/not a deep dish ranking|not a ranking|not on file/);
+    expect(rep.patternSummary.toLowerCase()).toMatch(
+      /not a deep dish ranking|not a ranking|not on file/,
+    );
   });
 
   it("records a mixed Nue pattern rather than a star consensus", () => {
@@ -153,7 +172,12 @@ describe("diner questions", () => {
   });
 
   it("surfaces NYC letter grades as public snapshots, never as Deep Dish scores", () => {
-    for (const slug of ["carmine-s-44th-street-nyc", "buddakan", "the-smith", "fraunces-tavern"] as const) {
+    for (const slug of [
+      "carmine-s-44th-street-nyc",
+      "buddakan",
+      "the-smith",
+      "fraunces-tavern",
+    ] as const) {
       const insp = getInspection(slug);
       expect(insp).toBeTruthy();
       expect(insp!.jurisdiction.toLowerCase()).toMatch(/nyc/);
@@ -197,11 +221,49 @@ describe("visual program guards", () => {
     expect(visualsFor("not-a-real-restaurant-slug")).toEqual([]);
     for (const img of visualsFor("canlis")) {
       expect(img.slug).toBe("canlis");
-      expect(img.documentary === false || img.provenance.kind !== "editorial_illustration").toBe(true);
+      expect(img.documentary === false || img.provenance.kind !== "editorial_illustration").toBe(
+        true,
+      );
     }
     for (const img of visualsFor("nue")) {
       expect(img.slug).toBe("nue");
-      expect(img.documentary).toBe(true);
     }
+  });
+
+  it("only a photographic kind may claim to be documentary", () => {
+    for (const img of allVisuals()) {
+      const photographic = PHOTOGRAPHIC_KINDS.includes(img.kind);
+      expect(
+        img.documentary,
+        `${img.slug} is kind "${img.kind}" but documentary=${img.documentary}`,
+      ).toBe(photographic);
+    }
+  });
+
+  it("describes artwork as artwork in its provenance label", () => {
+    for (const img of allVisuals()) {
+      const label = provenanceLabel(img);
+      if (isArtwork(img.kind)) {
+        expect(label, `${img.slug}`).not.toMatch(/photograph/i);
+      }
+    }
+  });
+
+  it("carries responsive derivatives and intrinsic dimensions", () => {
+    for (const img of allVisuals()) {
+      expect(img.width, `${img.slug} width`).toBeGreaterThan(0);
+      expect(img.height, `${img.slug} height`).toBeGreaterThan(0);
+      expect(img.sources?.length, `${img.slug} sources`).toBeGreaterThan(0);
+      // narrowest first, so srcset is well ordered
+      const widths = (img.sources ?? []).map((x) => x.w);
+      expect(widths).toEqual([...widths].sort((a, b) => a - b));
+    }
+  });
+
+  it("attaches Canlis photography only to Canlis", () => {
+    const set = visualsFor("canlis");
+    expect(set.length).toBeGreaterThan(0);
+    expect(set.every((v) => v.slug === "canlis" && v.documentary)).toBe(true);
+    expect(visualsFor("nue").some((v) => v.src === set[0]!.src)).toBe(false);
   });
 });

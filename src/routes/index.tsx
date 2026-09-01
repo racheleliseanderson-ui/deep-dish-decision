@@ -7,7 +7,6 @@ import { RecordCard } from "@/components/rih/record-card";
 import { ScenarioPlaybooks } from "@/components/rih/scenario-playbooks";
 import { SituationConsole } from "@/components/rih/situation-console";
 import heroPass from "@/assets/hero-pass.jpg";
-import figGold from "@/assets/fig-gold.jpg";
 import { isReadyRecord } from "@/lib/completeness";
 import { corpusMeta, groupForRegion } from "@/lib/corpus-meta";
 import type { RestaurantRecord } from "@/lib/dataset";
@@ -22,6 +21,11 @@ import {
 } from "@/lib/intelligence";
 import { useHideThinFiles } from "@/lib/prefs";
 import { loadRegionGroup } from "@/lib/region-load";
+import { haversineMi, loadLiveGroup, type LiveRow } from "@/lib/live";
+import { useOrigin } from "@/lib/origin";
+import { WhereAndWhen } from "@/components/rih/where-and-when";
+import { ResultsMap } from "@/components/rih/results-map";
+import { EvidenceBand } from "@/components/rih/evidence-band";
 import { decodeSituation, encodeSituation } from "@/lib/situation-url";
 import { createFileRoute, useRouterState } from "@tanstack/react-router";
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
@@ -91,7 +95,20 @@ function Hub() {
   }, [session]);
   const hideThin = useHideThinFiles();
   const [regionRecords, setRegionRecords] = useState<RestaurantRecord[] | null>(null);
+  const [liveRows, setLiveRows] = useState<Record<string, LiveRow> | null>(null);
+  /** The group the loaded records actually belong to — not the one requested. */
+  const [loadedGroup, setLoadedGroup] = useState<string | null>(null);
   const [regionLoading, setRegionLoading] = useState(false);
+  const [now, setNow] = useState(() => new Date());
+  const [showMap, setShowMap] = useState(false);
+  const [mapHover, setMapHover] = useState<string | null>(null);
+  const originState = useOrigin();
+
+  /** Merge a partial change into the situation and reset paging. */
+  const patch = (next: Partial<Situation>) => {
+    setSituation((cur) => ({ ...cur, ...next }));
+    setLimit(8);
+  };
 
   const activeGroup =
     situation.regionGroup ?? (situation.region ? groupForRegion(situation.region) : null);
@@ -100,14 +117,18 @@ function Hub() {
   useEffect(() => {
     if (!activeGroup) {
       setRegionRecords(null);
+      setLiveRows(null);
+      setLoadedGroup(null);
       setRegionLoading(false);
       return;
     }
     let cancelled = false;
     setRegionLoading(true);
-    loadRegionGroup(activeGroup).then((rows) => {
+    Promise.all([loadRegionGroup(activeGroup), loadLiveGroup(activeGroup)]).then(([rows, live]) => {
       if (cancelled) return;
       setRegionRecords(rows);
+      setLiveRows(live);
+      setLoadedGroup(activeGroup);
       setRegionLoading(false);
     });
     return () => {
@@ -115,14 +136,55 @@ function Hub() {
     };
   }, [activeGroup]);
 
+  /* A remembered origin re-enters the situation once, on mount. */
+  useEffect(() => {
+    const o = originState.origin;
+    if (!o) return;
+    setSituation((cur) =>
+      cur.origin && cur.origin[0] === o.ll[0] && cur.origin[1] === o.ll[1]
+        ? cur
+        : { ...cur, origin: o.ll, originLabel: o.label },
+    );
+  }, [originState.origin]);
+
+  /* The clock ticks so "open now" and "closing in 20 minutes" stay true while
+     the page is open, without re-ranking on every frame. */
+  useEffect(() => {
+    const id = window.setInterval(() => setNow(new Date()), 60_000);
+    return () => window.clearInterval(id);
+  }, []);
+
+  const scoreOpts = useMemo(() => ({ live: liveRows ?? undefined, now }), [liveRows, now]);
+
   const ranked = useMemo(() => {
     if (!regionReady || !regionRecords) return [];
-    const filtered = filterRecords(regionRecords, situation).filter((r) => {
+    const filtered = filterRecords(regionRecords, situation, liveRows ?? undefined).filter((r) => {
       if (!hideThin.enabled) return true;
       return isReadyRecord(r.slug);
     });
-    return rank(filtered, situation);
-  }, [situation, hideThin.enabled, regionReady, regionRecords]);
+    return rank(filtered, situation, scoreOpts);
+  }, [situation, hideThin.enabled, regionReady, regionRecords, liveRows, scoreOpts]);
+
+  /* Cities in the loaded region, offered as a manual origin. */
+  const cityOptions = useMemo(() => {
+    if (!regionRecords || !liveRows) return [];
+    const seen = new Map<string, [number, number]>();
+    for (const r of regionRecords) {
+      const ll = liveRows[r.slug]?.ll;
+      if (!ll) continue;
+      const label = r.city ? `${r.city}, ${r.stateProvince}` : r.region;
+      if (!seen.has(label)) seen.set(label, ll);
+    }
+    return [...seen.entries()]
+      .map(([label, ll]) => ({ label, ll }))
+      .sort((a, b) => a.label.localeCompare(b.label));
+  }, [regionRecords, liveRows]);
+
+  /* How many rooms survive the radius, for the control's own readout. */
+  const inRadius = useMemo(() => {
+    if (!situation.origin || situation.radiusMi === null || !regionRecords) return null;
+    return ranked.length;
+  }, [situation.origin, situation.radiusMi, regionRecords, ranked.length]);
   const depth = situationDepth(situation);
   const depthPct = Math.round((depth / SITUATION_SLOTS) * 100);
   const lead = ranked[0] ?? null;
@@ -135,15 +197,15 @@ function Hub() {
 
   const tickerItems = useMemo(
     () => [
-      `${corpusMeta.count} records under review`,
+      `${corpusMeta.count} rooms on file`,
       `${corpusMeta.fullCaseFiles ?? corpusMeta.count} complete case files`,
       `${corpusMeta.regions} regions`,
-      `${OPS.officialConflicts} official conflicts open`,
-      `${OPS.avgUnknowns} mean unknowns per record`,
-      `${OPS.overdue} reviews overdue`,
-      "same 12-field floor on every record",
-      "no sentiment scores",
-      "a stated need the record cannot satisfy holds the booking",
+      `${OPS.officialConflicts} open conflicts — never hidden`,
+      `${OPS.avgUnknowns} typical gaps still held open`,
+      `${OPS.overdue} files due for a fresh look`,
+      "same evidence floor on every record",
+      "no star-rating ranking",
+      "a stated need the room cannot meet holds the booking",
     ],
     [],
   );
@@ -155,7 +217,11 @@ function Hub() {
 
   const toggleCompare = (slug: string) =>
     setCompareSlugs((prev) =>
-      prev.includes(slug) ? prev.filter((s) => s !== slug) : prev.length >= 3 ? prev : [...prev, slug],
+      prev.includes(slug)
+        ? prev.filter((s) => s !== slug)
+        : prev.length >= 3
+          ? prev
+          : [...prev, slug],
     );
 
   return (
@@ -169,7 +235,7 @@ function Hub() {
       <header className="relative isolate flex min-h-[70vh] items-end overflow-hidden border-b border-border-strong sm:min-h-[62vh]">
         <img
           src={heroPass}
-          alt="An industrial dining room at service, plates finishing under low hanging lamps"
+          alt="Rows of bare filament bulbs hanging low over long empty wooden tables in a warehouse dining room, before service."
           width={1920}
           height={1088}
           fetchPriority="high"
@@ -189,8 +255,8 @@ function Hub() {
             <span className="text-primary">then confirm it.</span>
           </h1>
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-ink-foreground/80 sm:text-lg">
-            Start with the food, the room, and the night. We rank first-party evidence against
-            your situation and show what you still need to ask before you book.
+            Start with the food, the room, and the night. We rank first-party evidence against your
+            situation and show what you still need to ask before you book.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3">
             <a
@@ -208,24 +274,38 @@ function Hub() {
           </div>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Records under review</p>
-              <p className="text-num mt-1 text-2xl font-medium text-ink-foreground">{corpusMeta.count}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">{corpusMeta.regions} regions · same 12-field floor</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/85">
+                Rooms on file
+              </p>
+              <p className="text-num mt-1 text-2xl font-medium text-ink-foreground">
+                {corpusMeta.count}
+              </p>
+              <p className="mt-1 text-xs text-ink-foreground/80">
+                {corpusMeta.regions} regions · same evidence floor
+              </p>
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Official conflicts open</p>
-              <p className="text-num mt-1 text-2xl font-medium text-critical">{OPS.officialConflicts}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">Preserved, never collapsed</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/85">
+                Open conflicts
+              </p>
+              <p className="text-num mt-1 text-2xl font-medium text-critical">
+                {OPS.officialConflicts}
+              </p>
+              <p className="mt-1 text-xs text-ink-foreground/80">Preserved, never hidden</p>
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Average unknowns</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/85">
+                Gaps still held open
+              </p>
               <p className="text-num mt-1 text-2xl font-medium text-unknown">{OPS.avgUnknowns}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">Held visible</p>
+              <p className="mt-1 text-xs text-ink-foreground/80">Not filled in, not ranked away</p>
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Review overdue</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/85">
+                Files due a fresh look
+              </p>
               <p className="text-num mt-1 text-2xl font-medium text-watch">{OPS.overdue}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">{OPS.dueSoon} due soon</p>
+              <p className="mt-1 text-xs text-ink-foreground/80">{OPS.dueSoon} due soon</p>
             </div>
           </div>
         </div>
@@ -233,19 +313,12 @@ function Hub() {
 
       <Marquee items={tickerItems} />
 
-      <figure className="relative isolate overflow-hidden border-b border-border-strong">
-        <img
-          src={figGold}
-          alt="Wine glasses and golden light on an elegant dinner table"
-          width={1400}
-          height={933}
-          className="h-44 w-full object-cover object-center sm:h-56"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/20 to-transparent" />
-        <figcaption className="absolute bottom-4 left-4 sm:left-6">
-          <span className="text-eyebrow text-gilt">The room — start with why you would go</span>
-        </figcaption>
-      </figure>
+      <EvidenceBand
+        records={regionRecords}
+        live={liveRows}
+        regionLabel={loadedGroup}
+        corpusCount={corpusMeta.count}
+      />
 
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
         {dietNote ? (
@@ -278,7 +351,7 @@ function Hub() {
           <Reveal as="section" className="mt-12">
             <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
               <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">002</span>
-              <span className="text-eyebrow truncate">Lead reading</span>
+              <span className="text-eyebrow truncate">Tonight's lead</span>
             </div>
             <GiltRule className="mt-3" />
 
@@ -353,12 +426,34 @@ function Hub() {
           </Reveal>
         ) : null}
 
+        <section aria-labelledby="where-when-heading" className="mt-14">
+          <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
+            <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">003</span>
+            <h2 id="where-when-heading" className="text-eyebrow truncate">
+              Where you are, and when
+            </h2>
+          </div>
+          <GiltRule className="mt-3 max-w-xl" />
+          <div className="mt-5 rounded-2xl border border-border bg-surface-sunken/55 p-4 sm:p-5">
+            <WhereAndWhen
+              situation={situation}
+              patch={patch}
+              originState={originState}
+              cityOptions={cityOptions}
+              inRadius={inRadius}
+              total={regionRecords?.length ?? 0}
+            />
+          </div>
+        </section>
+
         <section id="ranked" className="mt-14 scroll-mt-24">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div className="min-w-0">
               <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
-                <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">003</span>
-                <span className="text-eyebrow truncate">What works for tonight</span>
+                <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">
+                  004
+                </span>
+                <h2 className="text-eyebrow truncate">What works for tonight</h2>
               </div>
               <GiltRule className="mt-3 max-w-xl" />
               <p className="mt-4 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
@@ -367,20 +462,47 @@ function Hub() {
                 vanishing. Change the filters above and the list reorders live.
               </p>
             </div>
-            <button
-              type="button"
-              onClick={() => hideThin.set(!hideThin.enabled)}
-              aria-pressed={hideThin.enabled}
-              className={
-                "tap shrink-0 rounded-full border px-4 py-2 text-xs transition-colors " +
-                (hideThin.enabled
-                  ? "border-primary/50 bg-primary/12 text-primary"
-                  : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground")
-              }
-            >
-              {hideThin.enabled ? "Showing ready records" : "Hide thin records"}
-            </button>
+            <div className="flex shrink-0 flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setShowMap((v) => !v)}
+                aria-pressed={showMap}
+                disabled={ranked.length < 2}
+                className={
+                  "tap shrink-0 rounded-full border px-4 py-2 text-xs transition-colors disabled:opacity-40 " +
+                  (showMap
+                    ? "border-primary/50 bg-primary/12 text-primary"
+                    : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground")
+                }
+              >
+                {showMap ? "Hide map" : "Show map"}
+              </button>
+              <button
+                type="button"
+                onClick={() => hideThin.set(!hideThin.enabled)}
+                aria-pressed={hideThin.enabled}
+                className={
+                  "tap shrink-0 rounded-full border px-4 py-2 text-xs transition-colors " +
+                  (hideThin.enabled
+                    ? "border-primary/50 bg-primary/12 text-primary"
+                    : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground")
+                }
+              >
+                {hideThin.enabled ? "Showing ready records" : "Hide thin records"}
+              </button>
+            </div>
           </div>
+
+          {showMap && ranked.length > 1 ? (
+            <ResultsMap
+              scored={ranked.slice(0, Math.max(limit, 12))}
+              origin={situation.origin}
+              originLabel={situation.originLabel}
+              radiusMi={situation.radiusMi}
+              activeSlug={mapHover}
+              onHover={setMapHover}
+            />
+          ) : null}
 
           {ranked.length > 0 && depth < 3 ? (
             <div className="mt-6 rounded-2xl border border-border bg-surface-sunken/55 px-4 py-4 sm:px-5">
@@ -486,7 +608,10 @@ function Hub() {
                 sources disagree, both remain on the record and the record carries a critical flag.
               </li>
               <li>
-                <span className="text-foreground">A stated allergy, access or private-room need that the record cannot satisfy holds the booking rather than guessing.</span>
+                <span className="text-foreground">
+                  A stated allergy, access or private-room need that the record cannot satisfy holds
+                  the booking rather than guessing.
+                </span>
               </li>
             </ul>
           </div>

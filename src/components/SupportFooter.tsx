@@ -4,6 +4,12 @@ const SUPPORT_URL =
 /**
  * First-party support link for Northern Lantern House applications.
  * No Buy Me a Coffee JavaScript is loaded and nothing floats over app controls.
+ *
+ * This sits at the end of <body>, below every route, while the night-plan bar
+ * is `position: fixed; bottom: 0` — so without the clearance below it the link
+ * renders entirely underneath that bar and is never visible. `--night-bar-h`
+ * is published by the bar itself as it resizes; the fallback keeps the
+ * clearance sane on any route that does not mount one.
  */
 export function SupportFooter() {
   return (
@@ -15,6 +21,7 @@ export function SupportFooter() {
       style={{
         borderTop: "1px solid rgba(128, 128, 128, 0.22)",
         padding: "0.8rem 1rem max(0.9rem, env(safe-area-inset-bottom))",
+        marginBottom: "var(--night-bar-h, 0px)",
         textAlign: "center",
       }}
     >

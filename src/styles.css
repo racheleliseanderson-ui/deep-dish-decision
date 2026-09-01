@@ -86,7 +86,8 @@
       box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-primary) 0%, transparent);
     }
     35% {
-      box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-primary) 42%, transparent),
+      box-shadow:
+        0 0 0 1px color-mix(in oklab, var(--color-primary) 42%, transparent),
         0 0 28px -8px color-mix(in oklab, var(--color-primary) 35%, transparent);
     }
     100% {
@@ -94,7 +95,6 @@
     }
   }
 }
-
 
 /* Pearl — printed-brief paper, navy ink, darker brass signal */
 :root {
@@ -140,10 +140,11 @@
   --input: oklch(0.225 0.048 258 / 18%);
   --ring: oklch(0.545 0.11 80 / 45%);
 
-  --plate-shadow: 0 1px 0 0 oklch(1 0 0 / 60%) inset, 0 14px 34px -22px oklch(0.225 0.048 258 / 28%);
+  --plate-shadow:
+    0 1px 0 0 oklch(1 0 0 / 60%) inset, 0 14px 34px -22px oklch(0.225 0.048 258 / 28%);
   --lift-shadow: 0 1px 0 0 oklch(1 0 0 / 70%) inset, 0 28px 60px -30px oklch(0.225 0.048 258 / 34%);
-  --vitrine-shadow: 0 1px 0 0 oklch(1 0 0 / 75%) inset,
-    0 0 0 1px color-mix(in oklab, var(--gilt) 22%, transparent),
+  --vitrine-shadow:
+    0 1px 0 0 oklch(1 0 0 / 75%) inset, 0 0 0 1px color-mix(in oklab, var(--gilt) 22%, transparent),
     0 40px 90px -46px oklch(0.225 0.048 258 / 42%);
 
   /* Gilt = brass. Ink band stays navy even on pearl paper. */
@@ -155,7 +156,6 @@
   --marble: oklch(0.965 0.008 265);
 
   color-scheme: light;
-
 }
 
 /* Navy — default instrument ground, brass gilt, operational signals kept */
@@ -202,8 +202,8 @@
 
   --plate-shadow: 0 1px 0 0 oklch(1 0 0 / 6%) inset, 0 18px 40px -24px oklch(0 0 0 / 72%);
   --lift-shadow: 0 1px 0 0 oklch(1 0 0 / 8%) inset, 0 30px 70px -30px oklch(0 0 0 / 82%);
-  --vitrine-shadow: 0 1px 0 0 oklch(1 0 0 / 9%) inset,
-    0 0 0 1px color-mix(in oklab, var(--gilt) 38%, transparent),
+  --vitrine-shadow:
+    0 1px 0 0 oklch(1 0 0 / 9%) inset, 0 0 0 1px color-mix(in oklab, var(--gilt) 38%, transparent),
     0 44px 100px -46px oklch(0 0 0 / 85%);
 
   /* Gilt = brass. Same signal as primary. */
@@ -215,7 +215,6 @@
   --marble: oklch(0.302 0.056 258);
 
   color-scheme: dark;
-
 }
 
 @layer base {
@@ -289,7 +288,8 @@
     inset: 0;
     pointer-events: none;
     opacity: 0.35;
-    background-image: radial-gradient(
+    background-image:
+      radial-gradient(
         ellipse 70% 55% at 72% 12%,
         color-mix(in oklab, var(--color-primary) 13%, transparent),
         transparent 62%
@@ -308,6 +308,19 @@
 }
 
 /* Minimum comfortable touch target on phones, without changing type scale. */
+@layer base {
+  html,
+  body {
+    overflow-x: clip;
+  }
+  /* A visible focus ring everywhere, on the navy ground as well as the pearl. */
+  :where(a, button, [role="button"], summary, input, select, textarea):focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
 @utility tap {
   min-height: 2.75rem;
   touch-action: manipulation;
@@ -356,7 +369,8 @@
 @utility ink-band {
   background-color: var(--color-ink);
   color: var(--color-ink-foreground);
-  background-image: radial-gradient(
+  background-image:
+    radial-gradient(
       ellipse 60% 60% at 78% 6%,
       color-mix(in oklab, var(--color-gilt) 18%, transparent),
       transparent 68%
@@ -394,7 +408,6 @@
     animation: none;
   }
 }
-
 
 /* Black-and-white reading: hue removed from every semantic token, meaning carried
    by lightness and by the text labels that always accompany a colour. */
@@ -479,8 +492,6 @@
   }
 }
 
-
-
 /* Gilt has to survive the accessibility modes: mono drops the hue. CVD gilt
    is already gold ~92 in the .cvd / .mode-cvd block above. */
 .mode-mono {
@@ -495,7 +506,6 @@
 }
 
 @media print {
-
   .no-print {
     display: none !important;
   }

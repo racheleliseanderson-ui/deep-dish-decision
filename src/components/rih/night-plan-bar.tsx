@@ -2,7 +2,7 @@ import { useShortlist } from "@/lib/shortlist";
 import { titleForSlug } from "@/lib/corpus-meta";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * Always-visible slim bar for the night plan (browser-local shortlist).
@@ -35,8 +35,25 @@ export function NightPlanBar() {
     }
   };
 
+  /* Publish our height so the compare tray can sit above us rather than on top. */
+  const barRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = barRef.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const publish = () =>
+      document.documentElement.style.setProperty("--night-bar-h", `${el.offsetHeight}px`);
+    publish();
+    const ro = new ResizeObserver(publish);
+    ro.observe(el);
+    return () => {
+      ro.disconnect();
+      document.documentElement.style.removeProperty("--night-bar-h");
+    };
+  }, []);
+
   return (
     <div
+      ref={barRef}
       className={cn(
         "no-print fixed inset-x-0 bottom-0 z-40 border-t border-border bg-surface/95 backdrop-blur-md",
         "px-4 py-2.5 sm:px-6",
@@ -51,9 +68,7 @@ export function NightPlanBar() {
           ) : (
             <p className="truncate text-[12px] text-muted-foreground">
               <span className="text-num text-foreground">{count}</span> on the night plan
-              {titles.length ? (
-                <span className="text-subtle"> · {titles.join(" · ")}</span>
-              ) : null}
+              {titles.length ? <span className="text-subtle"> · {titles.join(" · ")}</span> : null}
             </p>
           )}
         </div>
@@ -72,12 +87,13 @@ export function NightPlanBar() {
               {copied ? "Copied" : "Copy link"}
             </button>
           ) : null}
-          <a
-            href="/#ranked"
+          <Link
+            to="/"
+            hash="ranked"
             className="tap rounded-full border border-border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-muted-foreground hover:border-border-strong hover:text-foreground"
           >
             Rooms
-          </a>
+          </Link>
           <Link
             to="/shortlist"
             className={cn(

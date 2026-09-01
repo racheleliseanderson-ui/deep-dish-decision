@@ -8,18 +8,41 @@ import {
 } from "react";
 import { cn } from "@/lib/utils";
 
-/** Scroll-driven reveal. Respects reduced motion by resolving immediately. */
+/**
+ * Scroll-driven reveal.
+ *
+ * Content is visible by default. The hidden state is only ever applied on the
+ * client, and only to elements that are already below the fold — so the server
+ * renders a complete, readable page, a reader with JavaScript disabled sees
+ * everything, and nothing above the fold flickers on hydration.
+ *
+ * Reduced motion resolves immediately and never arms the observer.
+ */
 export function useReveal<T extends HTMLElement>() {
   const ref = useRef<T | null>(null);
+  // `armed` means: the client took over and this element starts hidden.
+  const [armed, setArmed] = useState(false);
   const [shown, setShown] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (
+      typeof IntersectionObserver === "undefined" ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
       setShown(true);
       return;
     }
+
+    // Already on screen (or nearly): show it now rather than animating it in.
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.92) {
+      setShown(true);
+      return;
+    }
+
+    setArmed(true);
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) {
@@ -29,13 +52,19 @@ export function useReveal<T extends HTMLElement>() {
           }
         }
       },
-      { rootMargin: "0px 0px -12% 0px", threshold: 0.05 },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.03 },
     );
     io.observe(el);
-    return () => io.disconnect();
+
+    // Safety net: never leave content hidden because an observer misfired.
+    const failsafe = window.setTimeout(() => setShown(true), 4000);
+    return () => {
+      io.disconnect();
+      window.clearTimeout(failsafe);
+    };
   }, []);
 
-  return { ref, shown };
+  return { ref, shown: shown || !armed, hidden: armed && !shown };
 }
 
 export function Reveal({
@@ -49,14 +78,14 @@ export function Reveal({
   delay?: number;
   as?: "div" | "section" | "li" | "article";
 }) {
-  const { ref, shown } = useReveal<HTMLDivElement>();
+  const { ref, hidden } = useReveal<HTMLDivElement>();
   return (
     <As
       ref={ref as never}
       style={{ transitionDelay: `${delay}ms` }}
       className={cn(
-        "transition-all duration-[900ms] ease-instrument will-change-transform",
-        shown ? "translate-y-0 opacity-100 blur-0" : "translate-y-6 opacity-0 blur-[2px]",
+        "transition-all duration-[640ms] ease-instrument",
+        hidden ? "translate-y-4 opacity-0" : "translate-y-0 opacity-100",
         className,
       )}
     >
@@ -78,7 +107,8 @@ export function GrowBar({
   className?: string;
   live?: boolean;
 }) {
-  const { ref, shown } = useReveal<HTMLDivElement>();
+  const { ref, shown, hidden } = useReveal<HTMLDivElement>();
+  void shown;
   const bg =
     tone === "critical"
       ? "bg-critical"
@@ -89,7 +119,7 @@ export function GrowBar({
           : tone === "verified"
             ? "bg-verified"
             : "bg-primary";
-  const ready = live || shown;
+  const ready = live || !hidden;
   return (
     <div
       ref={ref}

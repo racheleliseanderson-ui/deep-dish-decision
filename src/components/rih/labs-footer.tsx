@@ -23,7 +23,7 @@ export function LabsFooter() {
         </p>
 
         <nav aria-label="In this site" className="mt-10">
-          <p className="text-eyebrow text-ink-foreground/50">In this site</p>
+          <p className="text-eyebrow text-ink-foreground/78">In this site</p>
           <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-[13px]">
             {NAV_LINKS.map((item) => (
               <li key={item.to}>
@@ -38,7 +38,7 @@ export function LabsFooter() {
           </ul>
         </nav>
 
-        <p className="mt-12 border-t border-ink-foreground/15 pt-6 text-[12px] text-ink-foreground/55">
+        <p className="mt-12 border-t border-ink-foreground/15 pt-6 text-[12px] text-ink-foreground/80">
           © 2026 Salty & Clever
         </p>
       </div>

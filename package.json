@@ -22,7 +22,7 @@
     "pipeline:seed:enrich": "node scripts/pipeline/seed-and-enrich.mjs",
     "pipeline:retire": "node scripts/pipeline/retire-closed.mjs",
     "validate:seed": "node scripts/validate-seed.mjs",
-    "test": "vitest run && node --test scripts/corpus-invariants.test.mjs && node scripts/corpus-invariants.mjs && node --experimental-strip-types --test tests/salty-handoff.test.ts"
+    "test": "vitest run && node --test scripts/corpus-invariants.test.mjs scripts/pipeline/level-records.test.mjs scripts/pipeline/parse-hours.test.mjs && node scripts/corpus-invariants.mjs && node --experimental-strip-types --test tests/salty-handoff.test.ts"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.22",

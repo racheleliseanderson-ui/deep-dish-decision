@@ -40,52 +40,62 @@ function scoreTone(score: number) {
 type LedgerFilter = "all" | "hygiene" | "stale" | "thin" | "site" | "review";
 
 function Console() {
-  const { totals, states, distribution, records, recent, queue, runs, outsideUs, generatedAt, freshness } =
-    coverage as Omit<typeof coverage, "queue"> & {
-      queue: {
-        paused: boolean;
-        restaurantsPerRun: number;
-        citiesPerRun: number;
-        dailyCap: number;
-        pending: number;
-        done: number;
-        next: Array<{
-          city: string;
-          stateCode: string;
-          priority: number;
-          tier: string;
-        }>;
-      };
-      freshness?: {
-        tiers: { A: number; B: number; C: number };
-        preferRefreshOverDiscover: boolean;
-        hygieneBatchSize: number;
-        hygieneSlugs: string[];
-        nextHygiene: Array<{
-          slug: string;
-          title: string;
-          priority: number;
-          reasons: string[];
-          completeness: number;
-          ageDays: number | null;
-          lastEnrichedAt: string | null;
-          reviewStatus: string | null;
-          siteFailures: string[];
-          hygiene: boolean;
-          staleTier: string | null;
-        }>;
-        stale: Array<{
-          slug: string;
-          title: string;
-          priority: number;
-          reasons: string[];
-          completeness: number;
-          ageDays: number | null;
-          lastEnrichedAt: string | null;
-          staleTier: string | null;
-        }>;
-      };
+  const {
+    totals,
+    states,
+    distribution,
+    records,
+    recent,
+    queue,
+    runs,
+    outsideUs,
+    generatedAt,
+    freshness,
+  } = coverage as Omit<typeof coverage, "queue"> & {
+    queue: {
+      paused: boolean;
+      restaurantsPerRun: number;
+      citiesPerRun: number;
+      dailyCap: number;
+      pending: number;
+      done: number;
+      next: Array<{
+        city: string;
+        stateCode: string;
+        priority: number;
+        tier: string;
+      }>;
     };
+    freshness?: {
+      tiers: { A: number; B: number; C: number };
+      preferRefreshOverDiscover: boolean;
+      hygieneBatchSize: number;
+      hygieneSlugs: string[];
+      nextHygiene: Array<{
+        slug: string;
+        title: string;
+        priority: number;
+        reasons: string[];
+        completeness: number;
+        ageDays: number | null;
+        lastEnrichedAt: string | null;
+        reviewStatus: string | null;
+        siteFailures: string[];
+        hygiene: boolean;
+        staleTier: string | null;
+      }>;
+      stale: Array<{
+        slug: string;
+        title: string;
+        priority: number;
+        reasons: string[];
+        completeness: number;
+        ageDays: number | null;
+        lastEnrichedAt: string | null;
+        staleTier: string | null;
+      }>;
+    };
+  };
   const [query, setQuery] = useState("");
   const [minScore, setMinScore] = useState(0);
   const [maxScore, setMaxScore] = useState(100);
@@ -101,8 +111,12 @@ function Console() {
         q &&
         !(
           r.title.toLowerCase().includes(q) ||
-          String(r.city ?? "").toLowerCase().includes(q) ||
-          String(r.stateCode ?? "").toLowerCase().includes(q) ||
+          String(r.city ?? "")
+            .toLowerCase()
+            .includes(q) ||
+          String(r.stateCode ?? "")
+            .toLowerCase()
+            .includes(q) ||
           r.slug.includes(q)
         )
       ) {
@@ -113,7 +127,8 @@ function Console() {
       const age = (r as { ageDays?: number | null }).ageDays;
       if (ledgerFilter === "hygiene" && !hygiene) return false;
       if (ledgerFilter === "thin" && !reasons.some((x) => x.startsWith("thin-"))) return false;
-      if (ledgerFilter === "site" && !reasons.some((x) => x.startsWith("site-failure"))) return false;
+      if (ledgerFilter === "site" && !reasons.some((x) => x.startsWith("site-failure")))
+        return false;
       if (
         ledgerFilter === "review" &&
         !reasons.some((x) => x === "review-overdue" || x === "review-due-soon")
@@ -137,7 +152,9 @@ function Console() {
             a.completeness - b.completeness,
         );
     }
-    return list.slice().sort((a, b) => a.completeness - b.completeness || a.title.localeCompare(b.title));
+    return list
+      .slice()
+      .sort((a, b) => a.completeness - b.completeness || a.title.localeCompare(b.title));
   }, [query, minScore, maxScore, state, records, ledgerFilter, freshness?.tiers.A]);
 
   const maxStateCount = Math.max(...states.map((s) => s.count), 1);
@@ -154,8 +171,8 @@ function Console() {
             <span className="text-primary">how far the corpus reaches.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-            Counted at {dt(generatedAt)} UTC from first-party restaurant pages. Completeness is
-            an 18-check score over address, hours, contact, booking path, price, policy language and
+            Counted at {dt(generatedAt)} UTC from first-party restaurant pages. Completeness is an
+            18-check score over address, hours, contact, booking path, price, policy language and
             provenance — a low score means fields are unstated, not wrong. Every record now uses the
             same 12-field case file; unstated fields stay visible.
           </p>
@@ -197,12 +214,13 @@ function Console() {
         <div className="plate grain-veil space-y-5 p-5 sm:p-6">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="min-w-0 max-w-2xl">
-              <Eyebrow>Refresh & hygiene · operate without the run-log</Eyebrow>
+              <Eyebrow as="h2">Refresh & hygiene · operate without the run-log</Eyebrow>
               <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
                 Refresh competes ahead of discovery under the daily cap. After the leveling pass,
                 hygiene is the leftover unread pages: site failures, source-limited listings, and
-                first-party review windows. Calendar tiers: A {freshness?.tiers.A ?? 30}d (hours/price), B{" "}
-                {freshness?.tiers.B ?? 90}d (identity), C {freshness?.tiers.C ?? 120}d (policy scrape).
+                first-party review windows. Calendar tiers: A {freshness?.tiers.A ?? 30}d
+                (hours/price), B {freshness?.tiers.B ?? 90}d (identity), C{" "}
+                {freshness?.tiers.C ?? 120}d (policy scrape).
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -258,7 +276,6 @@ function Console() {
               value={`${totals.thin ?? 0} / ${totals.siteFailures ?? 0}`}
               note="Completeness & scrape"
               tone={(totals.thin ?? 0) + (totals.siteFailures ?? 0) > 0 ? "watch" : "unknown"}
-
             />
             <Stat
               label="Review due"
@@ -276,7 +293,7 @@ function Console() {
 
           {freshness?.nextHygiene?.length ? (
             <div>
-              <Eyebrow>Next hygiene batch (priority order)</Eyebrow>
+              <Eyebrow as="h2">Next hygiene batch (priority order)</Eyebrow>
               <ul className="mt-3 divide-y divide-border rounded-xl border border-border">
                 {freshness.nextHygiene.slice(0, freshness.hygieneBatchSize ?? 25).map((item) => (
                   <li
@@ -290,15 +307,16 @@ function Console() {
                     >
                       {item.title}
                     </Link>
-                    <span className="text-num shrink-0 text-[11px] text-subtle">
-                      p{item.priority} · {item.completeness}% · {item.reasons.slice(0, 3).join(" · ")}
+                    <span className="text-num min-w-0 max-w-full truncate text-[11px] text-subtle sm:shrink-0">
+                      p{item.priority} · {item.completeness}% ·{" "}
+                      {item.reasons.slice(0, 3).join(" · ")}
                     </span>
                   </li>
                 ))}
               </ul>
               <p className="mt-3 text-[12px] leading-relaxed text-subtle">
-                Finish this hygiene batch before expanding to more cities. A thin file stays thin until
-                the restaurant's own pages can fill it.
+                Finish this hygiene batch before expanding to more cities. A thin file stays thin
+                until the restaurant's own pages can fill it.
               </p>
             </div>
           ) : (
@@ -309,14 +327,13 @@ function Console() {
         </div>
       </div>
 
-
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Completeness distribution */}
         <Reveal as="section" className="mt-12">
           <div className="plate p-6 sm:p-8">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
-                <Eyebrow>Completeness distribution</Eyebrow>
+                <Eyebrow as="h2">Completeness distribution</Eyebrow>
                 <h2 className="mt-2 font-display text-2xl leading-tight tracking-tight sm:text-3xl">
                   Where the depth actually sits.
                 </h2>
@@ -357,8 +374,10 @@ function Console() {
           <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
             <div className="min-w-0">
               <div className="flex items-baseline justify-between gap-3">
-                <Eyebrow>Records by US state</Eyebrow>
-                <span className="text-num text-[11px] text-subtle">{covered.length} with records</span>
+                <Eyebrow as="h2">Records by US state</Eyebrow>
+                <span className="text-num text-[11px] text-subtle">
+                  {covered.length} with records
+                </span>
               </div>
               <ul className="mt-4 divide-y divide-border">
                 {covered.map((s) => (
@@ -384,7 +403,7 @@ function Console() {
             </div>
 
             <div className="min-w-0">
-              <Eyebrow>Not yet represented</Eyebrow>
+              <Eyebrow as="h2">Not yet represented</Eyebrow>
               <p className="mt-2 text-[12px] leading-relaxed text-subtle">
                 These states hold no record yet. They are queued by population, not filled to make a
                 map look complete.
@@ -419,7 +438,10 @@ function Console() {
               <Eyebrow className="mt-8">Next cities queued</Eyebrow>
               <ul className="mt-3 divide-y divide-border">
                 {queue.next.map((c) => (
-                  <li key={`${c.city}-${c.stateCode}`} className="flex items-baseline justify-between gap-3 py-2">
+                  <li
+                    key={`${c.city}-${c.stateCode}`}
+                    className="flex items-baseline justify-between gap-3 py-2"
+                  >
                     <span className="truncate text-[12px] text-foreground">
                       {c.city}, {c.stateCode}
                     </span>
@@ -439,7 +461,7 @@ function Console() {
         <Reveal as="section">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <Eyebrow>Record ledger</Eyebrow>
+              <Eyebrow as="h2">Record ledger</Eyebrow>
               <h2 className="mt-2 font-display text-2xl leading-tight tracking-tight sm:text-3xl">
                 Search the corpus by name, city or state.
               </h2>
@@ -497,7 +519,9 @@ function Console() {
                   onClick={() => setMinScore(v)}
                   aria-pressed={minScore === v}
                   className={`tap min-w-11 rounded-md px-2.5 text-[11px] uppercase tracking-[0.12em] transition-colors ${
-                    minScore === v ? "bg-primary/15 text-primary" : "text-subtle hover:text-foreground"
+                    minScore === v
+                      ? "bg-primary/15 text-primary"
+                      : "text-subtle hover:text-foreground"
                   }`}
                 >
                   {v === 0 ? "All" : `${v}+`}
@@ -536,9 +560,7 @@ function Console() {
                     <span>rating unstated</span>
                   )}
                   <span>enriched {dt(r.lastEnrichedAt)}</span>
-                  {(r as { hygiene?: boolean }).hygiene ? (
-                    <Chip tone="watch">hygiene</Chip>
-                  ) : null}
+                  {(r as { hygiene?: boolean }).hygiene ? <Chip tone="watch">hygiene</Chip> : null}
                   {(r as { refreshReasons?: string[] }).refreshReasons?.length ? (
                     <span className="truncate">
                       {(r as { refreshReasons?: string[] }).refreshReasons!.slice(0, 3).join(" · ")}
@@ -567,10 +589,13 @@ function Console() {
         <Reveal as="section">
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
-              <Eyebrow>Recent first-party reads</Eyebrow>
+              <Eyebrow as="h2">Recent first-party reads</Eyebrow>
               <ul className="mt-4 divide-y divide-border">
                 {recent.map((r) => (
-                  <li key={r.slug} className="flex flex-wrap items-baseline justify-between gap-2 py-2.5">
+                  <li
+                    key={r.slug}
+                    className="flex flex-wrap items-baseline justify-between gap-2 py-2.5"
+                  >
                     <Link
                       to="/record/$slug"
                       params={{ slug: r.slug }}
@@ -586,7 +611,7 @@ function Console() {
               </ul>
             </div>
             <div>
-              <Eyebrow>Pipeline runs</Eyebrow>
+              <Eyebrow as="h2">Pipeline runs</Eyebrow>
               <p className="mt-2 text-[12px] leading-relaxed text-subtle">
                 Batch size, quota and pinned cities are steered from the queue file, so growth
                 continues on a controlled schedule rather than a national sprint.
@@ -616,7 +641,6 @@ function Console() {
         <Reveal as="section">
           <RunPlanner />
         </Reveal>
-
       </div>
     </main>
   );

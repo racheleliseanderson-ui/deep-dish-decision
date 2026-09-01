@@ -5,7 +5,7 @@ import { FindingsStack } from "@/components/rih/findings";
 import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Reveal } from "@/components/rih/reveal";
 import { fieldDisplay, isUnstated } from "@/lib/case-depth";
-import { bySlug, type RestaurantRecord } from "@/lib/dataset";
+import type { RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
 import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
@@ -13,9 +13,14 @@ import { enrichmentAudit } from "@/lib/enrichment";
 import { decodeSituation, encodeSituation } from "@/lib/situation-url";
 import { cn } from "@/lib/utils";
 import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
+import { loadLiveGroup, type LiveRow } from "@/lib/live";
+import { TableIntelligence, TableIntelligenceHeading } from "@/components/rih/table-intelligence";
+import { WhyThisRank } from "@/components/rih/why-this-rank";
 
 export const Route = createFileRoute("/record/$slug")({
-  loader: ({ params }): { record: RestaurantRecord } => {
+  loader: async ({ params }): Promise<{ record: RestaurantRecord }> => {
+    const { bySlug } = await import("@/lib/dataset");
     const record = bySlug.get(params.slug);
     if (!record) throw notFound();
     return { record };
@@ -81,7 +86,29 @@ function Dossier() {
   const search = useRouterState({ select: (s) => s.location.searchStr });
   const situation = search ? decodeSituation(search) : emptySituation;
   const enrichment = useEnrichmentSignals();
-  const sc = scoreRecord(record, situation, { useEnrichment: enrichment.enabled });
+  const [live, setLive] = useState<LiveRow | undefined>(undefined);
+  const [now, setNow] = useState(() => new Date());
+
+  useEffect(() => {
+    let cancelled = false;
+    loadLiveGroup(record.regionGroup || record.region).then((rows) => {
+      if (!cancelled) setLive(rows[record.slug]);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [record.regionGroup, record.region, record.slug]);
+
+  useEffect(() => {
+    const id = window.setInterval(() => setNow(new Date()), 60_000);
+    return () => window.clearInterval(id);
+  }, []);
+
+  const sc = scoreRecord(record, situation, {
+    useEnrichment: enrichment.enabled,
+    ...(live ? { live: { [record.slug]: live } } : {}),
+    now,
+  });
   const shortlist = useShortlist();
   const audit = enrichmentAudit(record.slug);
   const q = encodeSituation(situation);
@@ -97,7 +124,12 @@ function Dossier() {
           </h1>
           <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
             {isUnstated(record.cuisineContext)
-              ? [record.region, record.serviceSummary && !isUnstated(record.serviceSummary) ? record.serviceSummary : null]
+              ? [
+                  record.region,
+                  record.serviceSummary && !isUnstated(record.serviceSummary)
+                    ? record.serviceSummary
+                    : null,
+                ]
                   .filter(Boolean)
                   .join(" · ") || "First-party case file — unstated fields held open."
               : record.cuisineContext}
@@ -125,6 +157,7 @@ function Dossier() {
             <button
               type="button"
               onClick={() => shortlist.toggle(record.slug)}
+              aria-pressed={shortlist.has(record.slug)}
               className={cn(
                 "rounded-full border px-4 py-2 text-xs transition-colors",
                 shortlist.has(record.slug)
@@ -161,12 +194,28 @@ function Dossier() {
           <DinerQuestions record={record} />
         </Reveal>
 
+        <Reveal as="section" className="mt-12">
+          <TableIntelligenceHeading />
+          <div className="mt-5">
+            <TableIntelligence
+              record={record}
+              live={live}
+              partySize={situation.partySize}
+              now={now}
+            />
+          </div>
+        </Reveal>
+
         <Reveal as="section" className="mt-10">
           <ReputationPanel slug={record.slug} />
         </Reveal>
 
         <Reveal as="section" className="mt-10">
           <DecisionBrief sc={sc} situation={situation} />
+        </Reveal>
+
+        <Reveal as="section" className="mt-10">
+          <WhyThisRank sc={sc} />
         </Reveal>
 
         <Reveal as="section" className="mt-12">

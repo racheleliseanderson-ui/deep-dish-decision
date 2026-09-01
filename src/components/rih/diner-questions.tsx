@@ -1,4 +1,5 @@
 import { Chip, Eyebrow } from "@/components/rih/bits";
+import { VisualTile } from "@/components/rih/visual-tile";
 import { PlateMarkSvg } from "@/lib/listing-visual";
 import { buildDinerAnswers, type DinerAnswer } from "@/lib/diner-questions";
 import { buildFoodIntel } from "@/lib/food-intel";
@@ -16,19 +17,17 @@ export function DinerQuestions({ record }: { record: RestaurantRecord }) {
       <section className="grid gap-5 sm:grid-cols-[auto_minmax(0,1fr)]">
         <div className="flex justify-center sm:block">
           {visual ? (
-            <figure className="overflow-hidden rounded-2xl border border-border bg-surface-sunken">
-              <img
-                src={visual.src}
-                alt={visual.alt}
-                width={220}
-                height={220}
-                className="size-[160px] object-cover sm:size-[200px]"
-                loading="lazy"
+            <div className="overflow-hidden rounded-2xl border border-border bg-surface-sunken">
+              <VisualTile
+                visual={visual}
+                size={200}
+                rounded="xl"
+                className="!size-[160px] sm:!size-[200px]"
               />
-              <figcaption className="max-w-[200px] px-2 py-2 text-[10px] leading-relaxed text-subtle">
+              <p className="max-w-[200px] px-2 py-2 text-[10px] leading-relaxed text-subtle">
                 {provenanceLabel(visual)}
-              </figcaption>
-            </figure>
+              </p>
+            </div>
           ) : (
             <figure className="flex flex-col items-center">
               <div className="plate flex items-center justify-center p-3 text-muted-foreground">
@@ -42,14 +41,20 @@ export function DinerQuestions({ record }: { record: RestaurantRecord }) {
         </div>
         <div className="min-w-0">
           <Eyebrow>Why go</Eyebrow>
-          <p className="mt-2 font-display text-2xl leading-tight tracking-tight">{food.culinaryIdentity ?? record.title}</p>
-          <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">{food.whatToOrder}</p>
+          <p className="mt-2 font-display text-2xl leading-tight tracking-tight">
+            {food.culinaryIdentity ?? record.title}
+          </p>
+          <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
+            {food.whatToOrder}
+          </p>
           {food.differentiator ? (
-            <p className="mt-3 text-[13px] leading-relaxed text-foreground">{food.differentiator}</p>
+            <p className="mt-3 text-[13px] leading-relaxed text-foreground">
+              {food.differentiator}
+            </p>
           ) : null}
           <p className="mt-3 text-[11px] leading-relaxed text-subtle">
-            First-party evidence only on this block. Public-review patterns sit in their own layer and
-            never rewrite these lines.
+            First-party evidence only on this block. Public-review patterns sit in their own layer
+            and never rewrite these lines.
           </p>
         </div>
       </section>
@@ -85,7 +90,9 @@ function QuestionCard({ answer }: { answer: DinerAnswer }) {
         </Chip>
       </div>
       <p className="mt-2 text-[12px] leading-relaxed text-muted-foreground">{answer.answer}</p>
-      <p className="mt-2 text-[10px] uppercase tracking-[0.14em] text-subtle">{answer.sourceLabel}</p>
+      <p className="mt-2 text-[10px] uppercase tracking-[0.14em] text-subtle">
+        {answer.sourceLabel}
+      </p>
     </li>
   );
 }
@@ -96,7 +103,13 @@ function sourceTone(a: DinerAnswer): "verified" | "watch" | "unknown" {
   return "unknown";
 }
 
-export function QuestionStrip({ answers, className }: { answers: DinerAnswer[]; className?: string }) {
+export function QuestionStrip({
+  answers,
+  className,
+}: {
+  answers: DinerAnswer[];
+  className?: string;
+}) {
   const lead = answers.filter((a) => !a.open).slice(0, 3);
   if (!lead.length) return null;
   return (

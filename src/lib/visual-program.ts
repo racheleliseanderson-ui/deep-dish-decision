@@ -18,8 +18,31 @@ export type VisualKind =
   | "representative_food"
   | "bar_lounge"
   | "patio_view"
+  | "portrait"
+  /** The restaurant's own logo, wordmark or crest. Not a photograph. */
+  | "identity_logo"
+  /** A composite of photography and logotype, published as brand artwork. */
+  | "branded_graphic"
   | "editorial_illustration"
   | "identity_mark";
+
+/** Kinds that depict the real place, as opposed to its branding. */
+export const PHOTOGRAPHIC_KINDS: readonly VisualKind[] = [
+  "dining_room",
+  "exterior",
+  "portrait",
+  "signature_dish",
+  "representative_food",
+  "bar_lounge",
+  "patio_view",
+];
+
+/** Artwork is letterboxed on a neutral tile; a photograph is cropped to fill. */
+export function isArtwork(kind: VisualKind): boolean {
+  return (
+    kind === "identity_logo" || kind === "branded_graphic" || kind === "editorial_illustration"
+  );
+}
 
 export type VisualProvenance =
   | { kind: "restaurant_owned"; url: string; retrievedAt: string }
@@ -34,6 +57,11 @@ export type RestaurantVisual = {
   alt: string;
   provenance: VisualProvenance;
   documentary: boolean;
+  /** Intrinsic pixel size of the source, for reserving the box. */
+  width?: number;
+  height?: number;
+  /** Responsive derivatives, narrowest first. */
+  sources?: { w: number; src: string; bytes: number }[];
 };
 
 type VisualFile = {
@@ -44,6 +72,7 @@ type VisualFile = {
 
 const file = visualRaw as VisualFile;
 
+/* A photograph of the room always beats brand artwork; artwork beats nothing. */
 const PRIORITY: VisualKind[] = [
   "signature_dish",
   "dining_room",
@@ -51,6 +80,10 @@ const PRIORITY: VisualKind[] = [
   "representative_food",
   "bar_lounge",
   "patio_view",
+  "portrait",
+  "branded_graphic",
+  "identity_logo",
+  "editorial_illustration",
 ];
 
 export function allVisuals(): RestaurantVisual[] {
@@ -61,14 +94,28 @@ export function allVisuals(): RestaurantVisual[] {
 export function assertVisualSafe(visual: RestaurantVisual, slug: string): boolean {
   if (visual.slug !== slug) return false;
   if (!slugExists(slug)) return false;
-  if (visual.documentary && visual.provenance.kind === "editorial_illustration") return false;
-  if (visual.documentary && visual.kind === "identity_mark") return false;
-  if (visual.documentary && visual.kind === "editorial_illustration") return false;
+  if (visual.provenance.kind === "editorial_illustration" && visual.documentary) return false;
+  // Only a photographic kind may claim to document the place.
+  if (visual.documentary && !PHOTOGRAPHIC_KINDS.includes(visual.kind)) return false;
+  // ...and a photographic kind that denies being documentary is mislabelled.
+  if (!visual.documentary && PHOTOGRAPHIC_KINDS.includes(visual.kind)) return false;
   return true;
 }
 
+/* Indexed once rather than scanned per card — this runs on every paint. */
+const bySlug: Map<string, RestaurantVisual[]> = (() => {
+  const map = new Map<string, RestaurantVisual[]>();
+  for (const img of file.images) {
+    if (!assertVisualSafe(img, img.slug)) continue;
+    const list = map.get(img.slug) ?? [];
+    list.push(img);
+    map.set(img.slug, list);
+  }
+  return map;
+})();
+
 export function visualsFor(slug: string): RestaurantVisual[] {
-  return file.images.filter((img) => assertVisualSafe(img, slug));
+  return bySlug.get(slug) ?? [];
 }
 
 export function primaryVisual(slug: string): RestaurantVisual | null {
@@ -87,7 +134,15 @@ export function identityCaption(record: RestaurantRecord): string {
 
 export function provenanceLabel(visual: RestaurantVisual): string {
   const p = visual.provenance;
-  if (p.kind === "restaurant_owned") return `Restaurant-owned photography · ${p.retrievedAt.slice(0, 10)}`;
+  if (p.kind === "restaurant_owned") {
+    const what =
+      visual.kind === "identity_logo"
+        ? "Restaurant's own logo"
+        : visual.kind === "branded_graphic"
+          ? "Restaurant-published brand artwork"
+          : "Restaurant-owned photograph";
+    return `${what} · ${p.retrievedAt.slice(0, 10)}`;
+  }
   if (p.kind === "licensed_media") return `Licensed media · ${p.credit}`;
   if (p.kind === "editorial_illustration")
     return `Editorial illustration — not a documentary photo. ${p.note}`;

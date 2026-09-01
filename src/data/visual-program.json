@@ -1,162 +1,1047 @@
 {
-  "generatedAt": "2026-08-31T01:20:11Z",
-  "note": "Documentary photography is stored only when the image is proven to belong to this exact slug. Identity marks are deterministic SVGs from first-party signals and are not photographs of the restaurant. Generated or editorial illustrations must set documentary to false and must never be labeled as a photo of a real room or dish.",
+  "generatedAt": "2026-08-31T22:33:39Z",
+  "note": "Every image was inspected before classification. `documentary: true` means a photograph of the real place; logos, wordmarks and brand composites are recorded as identity_logo / branded_graphic and are never described as photographs. Alt text describes what is visible in the frame, not what the file is named or where it was published.",
   "images": [
     {
       "slug": "the-pink-door",
       "kind": "dining_room",
       "src": "/visuals/the-pink-door.jpg",
-      "alt": "Restaurant-owned photograph of The Pink Door dining room and cabaret, published on thepinkdoor.net — not a diner snapshot.",
+      "alt": "The Pink Door's dining room: white-clothed tables under a beamed ceiling, string lights and hanging greenery.",
       "provenance": {
         "kind": "restaurant_owned",
         "url": "https://www.thepinkdoor.net/",
         "retrievedAt": "2026-08-31T00:24:34Z"
       },
-      "documentary": true
-    },
-    {
-      "slug": "archipelago-seattle",
-      "kind": "dining_room",
-      "src": "/visuals/archipelago-seattle.webp",
-      "alt": "Restaurant-owned photograph of Archipelago's counter kitchen, published on archipelagoseattle.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://www.archipelagoseattle.com/",
-        "retrievedAt": "2026-08-31T00:24:34Z"
-      },
-      "documentary": true
-    },
-    {
-      "slug": "uchi-austin",
-      "kind": "dining_room",
-      "src": "/visuals/uchi-austin.jpg",
-      "alt": "Restaurant-owned photograph of Uchi Austin's sushi counter, published on uchiaustin.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://uchiaustin.com/",
-        "retrievedAt": "2026-08-31T00:24:34Z"
-      },
-      "documentary": true
+      "documentary": true,
+      "width": 2048,
+      "height": 1365,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/the-pink-door-96.webp",
+          "bytes": 2338
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/the-pink-door-192.webp",
+          "bytes": 7864
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/the-pink-door-384.webp",
+          "bytes": 25854
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/the-pink-door-768.webp",
+          "bytes": 83560
+        }
+      ]
     },
     {
       "slug": "le-bernardin",
       "kind": "dining_room",
       "src": "/visuals/le-bernardin.jpg",
-      "alt": "Restaurant-owned photograph of Le Bernardin's dining room, published on le-bernardin.com — not a diner snapshot.",
+      "alt": "Le Bernardin's dining room: widely spaced tables, tall floral arrangements and a large landscape painting on a wood-panelled wall.",
       "provenance": {
         "kind": "restaurant_owned",
         "url": "https://www.le-bernardin.com/home",
         "retrievedAt": "2026-08-31T00:24:34Z"
       },
-      "documentary": true
-    },
-    {
-      "slug": "dooky-chase-s-restaurant-new-orleans",
-      "kind": "dining_room",
-      "src": "/visuals/dooky-chase-s-restaurant-new-orleans.jpg",
-      "alt": "Restaurant-owned photograph of Dooky Chase's dining room, published on dookychaserestaurants.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://www.dookychaserestaurants.com/",
-        "retrievedAt": "2026-08-31T00:24:34Z"
-      },
-      "documentary": true
-    },
-    {
-      "slug": "nue",
-      "kind": "dining_room",
-      "src": "/visuals/nue.webp",
-      "alt": "Restaurant-owned photograph of Nue's dining room, published on nueseattle.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://www.nueseattle.com/",
-        "retrievedAt": "2026-08-31T00:24:34Z"
-      },
-      "documentary": true
-    },
-    {
-      "slug": "musang-seattle",
-      "kind": "dining_room",
-      "src": "/visuals/musang-seattle.webp",
-      "alt": "Restaurant-owned photograph of Musang's dining room, published on musangseattle.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://musangseattle.com/",
-        "retrievedAt": "2026-08-31T01:18:41Z"
-      },
-      "documentary": true
-    },
-    {
-      "slug": "staple-fancy-seattle",
-      "kind": "representative_food",
-      "src": "/visuals/staple-fancy-seattle.webp",
-      "alt": "Restaurant-owned photograph of a Staple & Fancy pasta plate, published on stapleandfancy.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://www.stapleandfancy.com/",
-        "retrievedAt": "2026-08-31T01:18:41Z"
-      },
-      "documentary": true
-    },
-    {
-      "slug": "ox",
-      "kind": "representative_food",
-      "src": "/visuals/ox.webp",
-      "alt": "Restaurant-owned photograph of wood-fired steak at Ox, published on oxpdx.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://www.oxpdx.com/",
-        "retrievedAt": "2026-08-31T01:18:41Z"
-      },
-      "documentary": true
-    },
-    {
-      "slug": "langbaan",
-      "kind": "representative_food",
-      "src": "/visuals/langbaan.webp",
-      "alt": "Restaurant-owned photograph of Langbaan tasting plates, published on langbaanportland.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://www.langbaanportland.com/",
-        "retrievedAt": "2026-08-31T01:18:41Z"
-      },
-      "documentary": true
-    },
-    {
-      "slug": "kachka",
-      "kind": "representative_food",
-      "src": "/visuals/kachka.webp",
-      "alt": "Restaurant-owned photograph of Kachka pelmeni, published on kachkapdx.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://www.kachkapdx.com/",
-        "retrievedAt": "2026-08-31T01:18:41Z"
-      },
-      "documentary": true
-    },
-    {
-      "slug": "eem-portland",
-      "kind": "dining_room",
-      "src": "/visuals/eem-portland.webp",
-      "alt": "Restaurant-owned photograph of Eem's dining room, published on eempdx.com — not a diner snapshot.",
-      "provenance": {
-        "kind": "restaurant_owned",
-        "url": "https://eempdx.com/",
-        "retrievedAt": "2026-08-31T01:18:41Z"
-      },
-      "documentary": true
+      "documentary": true,
+      "width": 1200,
+      "height": 630,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/le-bernardin-96.webp",
+          "bytes": 1794
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/le-bernardin-192.webp",
+          "bytes": 5536
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/le-bernardin-384.webp",
+          "bytes": 17196
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/le-bernardin-768.webp",
+          "bytes": 54976
+        }
+      ]
     },
     {
       "slug": "carmine-s-44th-street-nyc",
       "kind": "dining_room",
       "src": "/visuals/carmine-s-44th-street-nyc.jpg",
-      "alt": "Restaurant-owned photograph of Carmine's Times Square dining room, published on carminesnyc.com — not a diner snapshot.",
+      "alt": "Carmine's Times Square dining room: round banquet tables under chandeliers in a high-ceilinged room hung with framed pictures.",
       "provenance": {
         "kind": "restaurant_owned",
         "url": "https://carminesnyc.com/locations/times-square",
         "retrievedAt": "2026-08-31T01:18:41Z"
       },
-      "documentary": true
+      "documentary": true,
+      "width": 900,
+      "height": 450,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/carmine-s-44th-street-nyc-96.webp",
+          "bytes": 1868
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/carmine-s-44th-street-nyc-192.webp",
+          "bytes": 6168
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/carmine-s-44th-street-nyc-384.webp",
+          "bytes": 20230
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/carmine-s-44th-street-nyc-768.webp",
+          "bytes": 60498
+        }
+      ]
+    },
+    {
+      "slug": "uchi-austin",
+      "kind": "exterior",
+      "src": "/visuals/uchi-austin.jpg",
+      "alt": "Uchi Austin from the street at dusk: a converted single-storey bungalow with lit windows, a patio and mature trees.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://uchiaustin.com/",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": true,
+      "width": 1024,
+      "height": 811,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/uchi-austin-96.webp",
+          "bytes": 2358
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/uchi-austin-192.webp",
+          "bytes": 7646
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/uchi-austin-384.webp",
+          "bytes": 26396
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/uchi-austin-768.webp",
+          "bytes": 83526
+        }
+      ]
+    },
+    {
+      "slug": "dooky-chase-s-restaurant-new-orleans",
+      "kind": "portrait",
+      "src": "/visuals/dooky-chase-s-restaurant-new-orleans.jpg",
+      "alt": "Chef Leah Chase in Dooky Chase's kitchen, in a red chef's coat, stirring a large red pot.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.dookychaserestaurants.com/",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": true,
+      "width": 1200,
+      "height": 630,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/dooky-chase-s-restaurant-new-orleans-96.webp",
+          "bytes": 1580
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/dooky-chase-s-restaurant-new-orleans-192.webp",
+          "bytes": 4282
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/dooky-chase-s-restaurant-new-orleans-384.webp",
+          "bytes": 10936
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/dooky-chase-s-restaurant-new-orleans-768.webp",
+          "bytes": 27170
+        }
+      ]
+    },
+    {
+      "slug": "eem-portland",
+      "kind": "branded_graphic",
+      "src": "/visuals/eem-portland.webp",
+      "alt": "Eem's brand graphic: an overhead bowl of fried rice on a patterned plate against magenta, with the Eem logotype set over it.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://eempdx.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": false,
+      "width": 1200,
+      "height": 1200,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/eem-portland-96.webp",
+          "bytes": 2140
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/eem-portland-192.webp",
+          "bytes": 6840
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/eem-portland-384.webp",
+          "bytes": 21992
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/eem-portland-768.webp",
+          "bytes": 60020
+        }
+      ]
+    },
+    {
+      "slug": "langbaan",
+      "kind": "branded_graphic",
+      "src": "/visuals/langbaan.webp",
+      "alt": "Langbaan's brand graphic: two photographs of shared Thai plates above and below a green band carrying the Lang Baan logotype.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.langbaanportland.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": false,
+      "width": 1500,
+      "height": 1500,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/langbaan-96.webp",
+          "bytes": 2716
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/langbaan-192.webp",
+          "bytes": 7824
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/langbaan-384.webp",
+          "bytes": 21840
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/langbaan-768.webp",
+          "bytes": 61134
+        }
+      ]
+    },
+    {
+      "slug": "archipelago-seattle",
+      "kind": "identity_logo",
+      "src": "/visuals/archipelago-seattle.webp",
+      "alt": "Archipelago's logo: an illustrated crest of Pacific Northwest ferns, berries and mushrooms above the word archipelago, on deep teal.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.archipelagoseattle.com/",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": false,
+      "width": 1080,
+      "height": 1080,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/archipelago-seattle-96.webp",
+          "bytes": 996
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/archipelago-seattle-192.webp",
+          "bytes": 2982
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/archipelago-seattle-384.webp",
+          "bytes": 9834
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/archipelago-seattle-768.webp",
+          "bytes": 34748
+        }
+      ]
+    },
+    {
+      "slug": "nue",
+      "kind": "identity_logo",
+      "src": "/visuals/nue.webp",
+      "alt": "Nue's logo: the word NUE in white on a red circle.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.nueseattle.com/",
+        "retrievedAt": "2026-08-31T00:24:34Z"
+      },
+      "documentary": false,
+      "width": 769,
+      "height": 770,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/nue-96.webp",
+          "bytes": 3324
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/nue-192.webp",
+          "bytes": 7488
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/nue-384.webp",
+          "bytes": 16128
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/nue-768.webp",
+          "bytes": 34144
+        }
+      ]
+    },
+    {
+      "slug": "musang-seattle",
+      "kind": "identity_logo",
+      "src": "/visuals/musang-seattle.webp",
+      "alt": "Musang's wordmark: MUSANG in green capitals on cream.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://musangseattle.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": false,
+      "width": 1500,
+      "height": 367,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/musang-seattle-96.webp",
+          "bytes": 1650
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/musang-seattle-192.webp",
+          "bytes": 3770
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/musang-seattle-384.webp",
+          "bytes": 8392
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/musang-seattle-768.webp",
+          "bytes": 18844
+        }
+      ]
+    },
+    {
+      "slug": "ox",
+      "kind": "identity_logo",
+      "src": "/visuals/ox.webp",
+      "alt": "Ox Restaurant's logo: the letters OX in distressed white type above a stylised ox skull.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.oxpdx.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": false,
+      "width": 1500,
+      "height": 1452,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/ox-96.webp",
+          "bytes": 3688
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/ox-192.webp",
+          "bytes": 12212
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/ox-384.webp",
+          "bytes": 43036
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/ox-768.webp",
+          "bytes": 143856
+        }
+      ]
+    },
+    {
+      "slug": "staple-fancy-seattle",
+      "kind": "identity_logo",
+      "src": "/visuals/staple-fancy-seattle.webp",
+      "alt": "Staple & Fancy's wordmark: STAPLE & FANCY in white letterspaced capitals above HOMETOWN GROCERIES, on olive green.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.stapleandfancy.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": false,
+      "width": 2500,
+      "height": 1406,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/staple-fancy-seattle-96.webp",
+          "bytes": 458
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/staple-fancy-seattle-192.webp",
+          "bytes": 1050
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/staple-fancy-seattle-384.webp",
+          "bytes": 2724
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/staple-fancy-seattle-768.webp",
+          "bytes": 5660
+        }
+      ]
+    },
+    {
+      "slug": "kachka",
+      "kind": "identity_logo",
+      "src": "/visuals/kachka.webp",
+      "alt": "Kachka's logo: a stylised orange and blue bird facing left, on black.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.kachkapdx.com/",
+        "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": false,
+      "width": 932,
+      "height": 1379,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/kachka-96.webp",
+          "bytes": 4848
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/kachka-192.webp",
+          "bytes": 10820
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/kachka-384.webp",
+          "bytes": 23096
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/kachka-768.webp",
+          "bytes": 48732
+        }
+      ]
+    },
+    {
+      "slug": "canlis",
+      "kind": "exterior",
+      "src": "/visuals/canlis.jpg",
+      "alt": "Canlis at dusk: the midcentury glass-walled dining room lit from within, seen from outside through evergreens.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://canlis.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true,
+      "width": 1600,
+      "height": 1131,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/canlis-96.webp",
+          "bytes": 1652
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/canlis-192.webp",
+          "bytes": 5226
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/canlis-384.webp",
+          "bytes": 16630
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/canlis-768.webp",
+          "bytes": 51664
+        }
+      ]
+    },
+    {
+      "slug": "fraunces-tavern",
+      "kind": "dining_room",
+      "src": "/visuals/fraunces-tavern.jpg",
+      "alt": "Fraunces Tavern's dining room: red leather banquettes, dark panelling hung with framed prints, and an upright piano.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "http://www.frauncestavern.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true,
+      "width": 814,
+      "height": 565,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/fraunces-tavern-96.webp",
+          "bytes": 1674
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/fraunces-tavern-192.webp",
+          "bytes": 4332
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/fraunces-tavern-384.webp",
+          "bytes": 11218
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/fraunces-tavern-768.webp",
+          "bytes": 28404
+        }
+      ]
+    },
+    {
+      "slug": "neptune-oyster-boston",
+      "kind": "identity_logo",
+      "src": "/visuals/neptune-oyster-boston.webp",
+      "alt": "Neptune Oyster's logo: a navy trident above the words NEPTUNE OYSTER on white.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.neptuneoyster.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": false,
+      "width": 732,
+      "height": 370,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/neptune-oyster-boston-96.webp",
+          "bytes": 864
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/neptune-oyster-boston-192.webp",
+          "bytes": 1988
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/neptune-oyster-boston-384.webp",
+          "bytes": 4676
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/neptune-oyster-boston-768.webp",
+          "bytes": 10300
+        }
+      ]
+    },
+    {
+      "slug": "franklin-barbecue-austin",
+      "kind": "representative_food",
+      "src": "/visuals/franklin-barbecue-austin.webp",
+      "alt": "A Franklin Barbecue tray: sliced brisket, sausage and ribs on butcher paper with white bread, pickles and onion.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://franklinbarbecue.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true,
+      "width": 1500,
+      "height": 709,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/franklin-barbecue-austin-96.webp",
+          "bytes": 1508
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/franklin-barbecue-austin-192.webp",
+          "bytes": 4542
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/franklin-barbecue-austin-384.webp",
+          "bytes": 15266
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/franklin-barbecue-austin-768.webp",
+          "bytes": 50270
+        }
+      ]
+    },
+    {
+      "slug": "uchiko-austin",
+      "kind": "dining_room",
+      "src": "/visuals/uchiko-austin.jpg",
+      "alt": "Uchiko's dining room: a lit bar counter under pendant lamps, with menu boards and stools.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://uchikoaustin.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true,
+      "width": 1024,
+      "height": 811,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/uchiko-austin-96.webp",
+          "bytes": 1854
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/uchiko-austin-192.webp",
+          "bytes": 5660
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/uchiko-austin-384.webp",
+          "bytes": 17138
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/uchiko-austin-768.webp",
+          "bytes": 45536
+        }
+      ]
+    },
+    {
+      "slug": "au-cheval",
+      "kind": "identity_logo",
+      "src": "/visuals/au-cheval.webp",
+      "alt": "Au Cheval's wordmark: the name in white script above CHICAGO · NEW YORK, on a dark ground.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.auchevaldiner.com/nyc/home",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": false,
+      "width": 1500,
+      "height": 788,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/au-cheval-96.webp",
+          "bytes": 1056
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/au-cheval-192.webp",
+          "bytes": 3196
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/au-cheval-384.webp",
+          "bytes": 9804
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/au-cheval-768.webp",
+          "bytes": 28246
+        }
+      ]
+    },
+    {
+      "slug": "los-tacos-no-1",
+      "kind": "dining_room",
+      "src": "/visuals/los-tacos-no-1.jpg",
+      "alt": "The counter at Los Tacos No.1: staff working the griddle beneath a menu board reading ASADA, POLLO, ADOBADA, NOPAL.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.lostacos1.com/location/los-tacos-times-square/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true,
+      "width": 1200,
+      "height": 600,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/los-tacos-no-1-96.webp",
+          "bytes": 1778
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/los-tacos-no-1-192.webp",
+          "bytes": 4854
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/los-tacos-no-1-384.webp",
+          "bytes": 12814
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/los-tacos-no-1-768.webp",
+          "bytes": 30826
+        }
+      ]
+    },
+    {
+      "slug": "nong-s-khao-man-gai-portland",
+      "kind": "representative_food",
+      "src": "/visuals/nong-s-khao-man-gai-portland.jpg",
+      "alt": "Nong's ingredients and sauce bottles arranged on a table: rice, ginger, garlic, chillies, tofu and mushrooms.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://khaomangai.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true,
+      "width": 1200,
+      "height": 1021,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/nong-s-khao-man-gai-portland-96.webp",
+          "bytes": 3174
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/nong-s-khao-man-gai-portland-192.webp",
+          "bytes": 10432
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/nong-s-khao-man-gai-portland-384.webp",
+          "bytes": 33822
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/nong-s-khao-man-gai-portland-768.webp",
+          "bytes": 115164
+        }
+      ]
+    },
+    {
+      "slug": "r-g-lounge",
+      "kind": "identity_logo",
+      "src": "/visuals/r-g-lounge.png",
+      "alt": "R&G Lounge's logo: a red circular seal with Chinese characters above the words R&G Lounge.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.rnglounge.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": false,
+      "width": 2400,
+      "height": 1260,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/r-g-lounge-96.webp",
+          "bytes": 476
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/r-g-lounge-192.webp",
+          "bytes": 1488
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/r-g-lounge-384.webp",
+          "bytes": 4004
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/r-g-lounge-768.webp",
+          "bytes": 10134
+        }
+      ]
+    },
+    {
+      "slug": "palette-tea-house",
+      "kind": "representative_food",
+      "src": "/visuals/palette-tea-house.jpg",
+      "alt": "Two plates from Palette Tea House: crisp battered strips and a mixed vegetable dish, on a wooden table.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://paletteteahouse.com/?utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true,
+      "width": 1200,
+      "height": 800,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/palette-tea-house-96.webp",
+          "bytes": 1990
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/palette-tea-house-192.webp",
+          "bytes": 6370
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/palette-tea-house-384.webp",
+          "bytes": 21814
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/palette-tea-house-768.webp",
+          "bytes": 75836
+        }
+      ]
+    },
+    {
+      "slug": "guelaguetza-restaurant",
+      "kind": "representative_food",
+      "src": "/visuals/guelaguetza-restaurant.jpg",
+      "alt": "Packets of Guelaguetza mole — rojo, coloradito and negro — on a shop shelf, with a hand reaching for one.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "http://www.ilovemole.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true,
+      "width": 1366,
+      "height": 1093,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/guelaguetza-restaurant-96.webp",
+          "bytes": 2328
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/guelaguetza-restaurant-192.webp",
+          "bytes": 6718
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/guelaguetza-restaurant-384.webp",
+          "bytes": 19278
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/guelaguetza-restaurant-768.webp",
+          "bytes": 53608
+        }
+      ]
+    },
+    {
+      "slug": "philippe-the-original",
+      "kind": "portrait",
+      "src": "/visuals/philippe-the-original.jpg",
+      "alt": "An archival black-and-white photograph of a cook in shirtsleeves and braces working the counter at Philippe the Original.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.philippes.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true,
+      "width": 302,
+      "height": 378,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/philippe-the-original-96.webp",
+          "bytes": 2456
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/philippe-the-original-192.webp",
+          "bytes": 6608
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/philippe-the-original-384.webp",
+          "bytes": 12832
+        }
+      ]
+    },
+    {
+      "slug": "uchi-dallas-dallas",
+      "kind": "dining_room",
+      "src": "/visuals/uchi-dallas-dallas.jpg",
+      "alt": "Uchi Dallas's dining room: a pale wood counter with place settings, seen past a shelf of glass bottles.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://uchi.uchirestaurants.com/location/sushi-dallas/",
+        "retrievedAt": "2026-08-31T22:33:39Z"
+      },
+      "documentary": true,
+      "width": 1440,
+      "height": 751,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/uchi-dallas-dallas-96.webp",
+          "bytes": 1434
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/uchi-dallas-dallas-192.webp",
+          "bytes": 4192
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/uchi-dallas-dallas-384.webp",
+          "bytes": 12094
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/uchi-dallas-dallas-768.webp",
+          "bytes": 31976
+        }
+      ]
+    },
+    {
+      "slug": "carbone-miami-miami",
+      "kind": "identity_logo",
+      "src": "/visuals/carbone-miami-miami.jpg",
+      "alt": "Carbone Miami's signage: the word CARBONE on a vertical fluted panel, shadowed by palm fronds.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://carbonemiami.com/",
+        "retrievedAt": "2026-08-31T22:33:39Z"
+      },
+      "documentary": false,
+      "width": 720,
+      "height": 720,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/carbone-miami-miami-96.webp",
+          "bytes": 2368
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/carbone-miami-miami-192.webp",
+          "bytes": 5612
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/carbone-miami-miami-384.webp",
+          "bytes": 11476
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/carbone-miami-miami-768.webp",
+          "bytes": 22302
+        }
+      ]
+    },
+    {
+      "slug": "sanford-milwaukee",
+      "kind": "representative_food",
+      "src": "/visuals/sanford-milwaukee.jpg",
+      "alt": "A plated dish at Sanford: sliced pink duck breast over a puree with cherries and dressed leaves.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://sanfordrestaurant.com/",
+        "retrievedAt": "2026-08-31T22:33:39Z"
+      },
+      "documentary": true,
+      "width": 1080,
+      "height": 1224,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/sanford-milwaukee-96.webp",
+          "bytes": 2882
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/sanford-milwaukee-192.webp",
+          "bytes": 7996
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/sanford-milwaukee-384.webp",
+          "bytes": 23238
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/sanford-milwaukee-768.webp",
+          "bytes": 67022
+        }
+      ]
+    },
+    {
+      "slug": "sorella-milwaukee",
+      "kind": "representative_food",
+      "src": "/visuals/sorella-milwaukee.webp",
+      "alt": "A bowl of pasta at Sorella: rigatoni in tomato sauce with basil and a spoonful of ricotta.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.sorellamke.com/",
+        "retrievedAt": "2026-08-31T22:33:39Z"
+      },
+      "documentary": true,
+      "width": 1500,
+      "height": 1000,
+      "sources": [
+        {
+          "w": 96,
+          "src": "/visuals/r/sorella-milwaukee-96.webp",
+          "bytes": 1672
+        },
+        {
+          "w": 192,
+          "src": "/visuals/r/sorella-milwaukee-192.webp",
+          "bytes": 4716
+        },
+        {
+          "w": 384,
+          "src": "/visuals/r/sorella-milwaukee-384.webp",
+          "bytes": 14362
+        },
+        {
+          "w": 768,
+          "src": "/visuals/r/sorella-milwaukee-768.webp",
+          "bytes": 39174
+        }
+      ]
     }
-  ]
+  ],
+  "reclassifiedAt": "2026-09-01",
+  "derivativesAt": "2026-09-01T17:35:06.096Z"
 }

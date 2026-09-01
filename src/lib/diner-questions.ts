@@ -11,10 +11,7 @@ import { getInspection } from "@/lib/inspections";
 import { buildReputation, getListingSample, getResearchedPattern } from "@/lib/reputation";
 
 export type AnswerSource =
-  | "firstPartyEvidence"
-  | "publicReputationEvidence"
-  | "editorialAnalysis"
-  | "notOnFile";
+  "firstPartyEvidence" | "publicReputationEvidence" | "editorialAnalysis" | "notOnFile";
 
 export type DinerAnswer = {
   id: string;
@@ -75,9 +72,7 @@ function foodGood(
     question: "Is the food actually good?",
     answer: parts.join(" "),
     source: identity ? "firstPartyEvidence" : "notOnFile",
-    sourceLabel: identity
-      ? "Restaurant-owned description · not a quality verdict"
-      : "Not on file",
+    sourceLabel: identity ? "Restaurant-owned description · not a quality verdict" : "Not on file",
     open: !identity,
   };
 }
@@ -96,7 +91,7 @@ function worthMoney(record: RestaurantRecord): DinerAnswer {
     );
   }
   const dollars = [...raw.matchAll(/\$([0-9][0-9,]*(?:\.[0-9]{2})?)/g)].map((m) =>
-    Number(m[1].replace(/,/g, "")),
+    Number((m[1] ?? "0").replace(/,/g, "")),
   );
   const service = raw.match(/(\d{1,2}(?:\.\d+)?)\s*%\s*(?:service|auto[\s-]?grat|gratuity)/i);
   const tasting = /tasting|six-course|multi-course|prix[\s-]?fixe/i.test(
@@ -113,7 +108,15 @@ function worthMoney(record: RestaurantRecord): DinerAnswer {
     bits.push(firstPoint(raw, 200) ?? raw);
   }
   bits.push("That is the restaurant's published figure, not a value verdict.");
-  return q("spend", 2, "Is it worth the money?", bits.join(" "), "firstPartyEvidence", "Restaurant-owned pricing", false);
+  return q(
+    "spend",
+    2,
+    "Is it worth the money?",
+    bits.join(" "),
+    "firstPartyEvidence",
+    "Restaurant-owned pricing",
+    false,
+  );
 }
 
 function overallExperience(
@@ -149,10 +152,14 @@ function overallExperience(
 function whatPeopleThink(rep: ReturnType<typeof buildReputation>): DinerAnswer {
   if (rep.recurringPraise.length || rep.recurringComplaints.length) {
     const bits = [rep.patternSummary];
-    if (rep.recurringPraise.length) bits.push(`Repeated recent praise: ${rep.recurringPraise.join("; ")}.`);
+    if (rep.recurringPraise.length)
+      bits.push(`Repeated recent praise: ${rep.recurringPraise.join("; ")}.`);
     if (rep.recurringComplaints.length)
       bits.push(`Recurring complaint: ${rep.recurringComplaints.join("; ")}.`);
-    if (rep.sampleSize) bits.push(`Sample ${rep.sampleSize.toLocaleString()} · ${rep.recency ?? "recency unstated"}.`);
+    if (rep.sampleSize)
+      bits.push(
+        `Sample ${rep.sampleSize.toLocaleString()} · ${rep.recency ?? "recency unstated"}.`,
+      );
     bits.push("This pattern does not rank the record.");
     return q(
       "people",
@@ -175,10 +182,7 @@ function whatPeopleThink(rep: ReturnType<typeof buildReputation>): DinerAnswer {
   );
 }
 
-function service(
-  record: RestaurantRecord,
-  rep: ReturnType<typeof buildReputation>,
-): DinerAnswer {
+function service(record: RestaurantRecord, rep: ReturnType<typeof buildReputation>): DinerAnswer {
   const stated = firstPoint(record.serviceSummary, 180);
   const researched =
     rep.servicePattern ??
@@ -215,11 +219,14 @@ function convenience(
   const parts: string[] = [];
   const res = firstPoint(record.reservationDetails, 120);
   if (res) parts.push(res);
-  else if (record.reservationUrl) parts.push("A reservation path is on file; confirm platform and lead time live.");
+  else if (record.reservationUrl)
+    parts.push("A reservation path is on file; confirm platform and lead time live.");
   else parts.push("No booking path is stated.");
   if (!isUnstated(record.parkingTransit)) parts.push(firstPoint(record.parkingTransit, 90) ?? "");
-  if (!isUnstated(record.typicalMealLength)) parts.push(firstPoint(record.typicalMealLength, 80) ?? "");
-  if (!isUnstated(record.accessibilityState)) parts.push(firstPoint(record.accessibilityState, 90) ?? "");
+  if (!isUnstated(record.typicalMealLength))
+    parts.push(firstPoint(record.typicalMealLength, 80) ?? "");
+  if (!isUnstated(record.accessibilityState))
+    parts.push(firstPoint(record.accessibilityState, 90) ?? "");
   if (rep.waitPattern) parts.push(`Public-review wait pattern: ${uncap(rep.waitPattern)}`);
   if (rep.operationalNote) parts.push(rep.operationalNote);
   void listing;
@@ -257,7 +264,15 @@ function dietary(record: RestaurantRecord): DinerAnswer {
   } else if (allergy) {
     answer += " Confirm the live kitchen rule before a celiac or severe-allergy visit.";
   }
-  return q("dietary", 7, "Does it fit dietary needs?", answer, "firstPartyEvidence", "Restaurant-owned dietary language", false);
+  return q(
+    "dietary",
+    7,
+    "Does it fit dietary needs?",
+    answer,
+    "firstPartyEvidence",
+    "Restaurant-owned dietary language",
+    false,
+  );
 }
 
 function menuLike(
@@ -285,7 +300,15 @@ function menuLike(
       true,
     );
   }
-  return q("menu", 8, "What is the menu like?", bits.join(" "), "firstPartyEvidence", "Restaurant-owned menu language", false);
+  return q(
+    "menu",
+    8,
+    "What is the menu like?",
+    bits.join(" "),
+    "firstPartyEvidence",
+    "Restaurant-owned menu language",
+    false,
+  );
 }
 
 function cleanTrustworthy(slug: string): DinerAnswer {
@@ -305,7 +328,9 @@ function cleanTrustworthy(slug: string): DinerAnswer {
       true,
     );
   }
-  const closed = insp.closed ? " The inspection record flags a closure on that visit." : " Not recorded as closed.";
+  const closed = insp.closed
+    ? " The inspection record flags a closure on that visit."
+    : " Not recorded as closed.";
   const red = insp.redViolations.length
     ? ` Red / critical items on that visit: ${insp.redViolations.slice(0, 3).join("; ")}.`
     : " No red / critical items listed on that visit.";
@@ -350,7 +375,8 @@ function whatMakesDifferent(
 }
 
 function experienceTags(record: RestaurantRecord): string[] {
-  const blob = `${record.atmosphereSummary ?? ""} ${record.formalityBand ?? ""} ${record.noiseBand ?? ""} ${record.occasionFit ?? ""} ${record.signals?.energy ?? ""}`.toLowerCase();
+  const blob =
+    `${record.atmosphereSummary ?? ""} ${record.formalityBand ?? ""} ${record.noiseBand ?? ""} ${record.occasionFit ?? ""} ${record.signals?.energy ?? ""}`.toLowerCase();
   const tags: string[] = [];
   const push = (re: RegExp, label: string) => {
     if (re.test(blob)) tags.push(label);

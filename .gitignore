@@ -40,3 +40,7 @@ dist-ssr
 
 .vercel/
 .node_modules.lock
+
+# Git bundles used to hand work between machines — never part of the tree
+*.bundle
+*.patch
