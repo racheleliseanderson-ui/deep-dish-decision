@@ -274,23 +274,36 @@ function Hub() {
           </div>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Rooms on file</p>
-              <p className="text-num mt-1 text-2xl font-medium text-ink-foreground">{corpusMeta.count}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">{corpusMeta.regions} regions · same evidence floor</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/85">
+                Rooms on file
+              </p>
+              <p className="text-num mt-1 text-2xl font-medium text-ink-foreground">
+                {corpusMeta.count}
+              </p>
+              <p className="mt-1 text-xs text-ink-foreground/80">
+                {corpusMeta.regions} regions · same evidence floor
+              </p>
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Open conflicts</p>
-              <p className="text-num mt-1 text-2xl font-medium text-critical">{OPS.officialConflicts}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">Preserved, never hidden</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/85">
+                Open conflicts
+              </p>
+              <p className="text-num mt-1 text-2xl font-medium text-critical">
+                {OPS.officialConflicts}
+              </p>
+              <p className="mt-1 text-xs text-ink-foreground/80">Preserved, never hidden</p>
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Gaps still held open</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/85">
+                Gaps still held open
+              </p>
               <p className="text-num mt-1 text-2xl font-medium text-unknown">{OPS.avgUnknowns}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">Not filled in, not ranked away</p>
+              <p className="mt-1 text-xs text-ink-foreground/80">Not filled in, not ranked away</p>
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Files due a fresh look</p>
-
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/85">
+                Files due a fresh look
+              </p>
               <p className="text-num mt-1 text-2xl font-medium text-watch">{OPS.overdue}</p>
               <p className="mt-1 text-xs text-ink-foreground/80">{OPS.dueSoon} due soon</p>
             </div>
