@@ -55,6 +55,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function Packet() {
   const { record } = Route.useLoaderData();
+
   const [live, setLive] = useState<LiveRow | undefined>(undefined);
   useEffect(() => {
     let cancelled = false;
@@ -65,7 +66,6 @@ function Packet() {
       cancelled = true;
     };
   }, [record]);
-
 
   const search = useRouterState({ select: (s) => s.location.searchStr });
   const situation = decodeSituation(search ?? "");
