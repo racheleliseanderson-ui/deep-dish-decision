@@ -1,6 +1,6 @@
 /**
  * Region-first record loader.
- * Home ranks only after a region group is chosen; Atlas still holds 836.
+ * Home ranks only after a region group is chosen; Atlas still holds the full corpus.
  */
 import type { RestaurantRecord } from "@/lib/dataset";
 import { regionGroupFileName } from "@/lib/corpus-meta";

@@ -135,15 +135,15 @@ function Hub() {
 
   const tickerItems = useMemo(
     () => [
-      `${corpusMeta.count} records under review`,
+      `${corpusMeta.count} rooms on file`,
       `${corpusMeta.fullCaseFiles ?? corpusMeta.count} complete case files`,
       `${corpusMeta.regions} regions`,
-      `${OPS.officialConflicts} official conflicts open`,
-      `${OPS.avgUnknowns} mean unknowns per record`,
-      `${OPS.overdue} reviews overdue`,
-      "same 12-field floor on every record",
-      "no sentiment scores",
-      "a stated need the record cannot satisfy holds the booking",
+      `${OPS.officialConflicts} open conflicts — never hidden`,
+      `${OPS.avgUnknowns} typical gaps still held open`,
+      `${OPS.overdue} files due for a fresh look`,
+      "same evidence floor on every record",
+      "no star-rating ranking",
+      "a stated need the room cannot meet holds the booking",
     ],
     [],
   );
@@ -208,22 +208,22 @@ function Hub() {
           </div>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Records under review</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Rooms on file</p>
               <p className="text-num mt-1 text-2xl font-medium text-ink-foreground">{corpusMeta.count}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">{corpusMeta.regions} regions · same 12-field floor</p>
+              <p className="mt-1 text-xs text-ink-foreground/50">{corpusMeta.regions} regions · same evidence floor</p>
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Official conflicts open</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Open conflicts</p>
               <p className="text-num mt-1 text-2xl font-medium text-critical">{OPS.officialConflicts}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">Preserved, never collapsed</p>
+              <p className="mt-1 text-xs text-ink-foreground/50">Preserved, never hidden</p>
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Average unknowns</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Gaps still held open</p>
               <p className="text-num mt-1 text-2xl font-medium text-unknown">{OPS.avgUnknowns}</p>
-              <p className="mt-1 text-xs text-ink-foreground/50">Held visible</p>
+              <p className="mt-1 text-xs text-ink-foreground/50">Not filled in, not ranked away</p>
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Review overdue</p>
+              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-foreground/55">Files due a fresh look</p>
               <p className="text-num mt-1 text-2xl font-medium text-watch">{OPS.overdue}</p>
               <p className="mt-1 text-xs text-ink-foreground/50">{OPS.dueSoon} due soon</p>
             </div>
@@ -278,7 +278,7 @@ function Hub() {
           <Reveal as="section" className="mt-12">
             <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
               <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">002</span>
-              <span className="text-eyebrow truncate">Lead reading</span>
+              <span className="text-eyebrow truncate">Tonight's lead</span>
             </div>
             <GiltRule className="mt-3" />
 

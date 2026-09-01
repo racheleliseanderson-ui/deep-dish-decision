@@ -72,6 +72,11 @@ describe("food intel", () => {
       .toLowerCase();
     expect(blob).not.toMatch(/wine program|seasonal menu sourced|welcoming hospitalit|globally inspired/);
   });
+
+  it("names house-made pasta only where first-party language already says so", () => {
+    const food = buildFoodIntel(bySlug.get("luccas")!);
+    expect(food.signatureMentions.join(" ").toLowerCase()).toMatch(/house-made pasta/);
+  });
 });
 
 describe("reputation layer", () => {
@@ -203,5 +208,12 @@ describe("visual program guards", () => {
       expect(img.slug).toBe("nue");
       expect(img.documentary).toBe(true);
     }
+  });
+
+  it("attaches Canlis photography only to Canlis", () => {
+    const set = visualsFor("canlis");
+    expect(set.length).toBeGreaterThan(0);
+    expect(set.every((v) => v.slug === "canlis" && v.documentary)).toBe(true);
+    expect(visualsFor("nue").some((v) => v.src === set[0]!.src)).toBe(false);
   });
 });

@@ -1,12 +1,13 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { Reveal } from "@/components/rih/reveal";
-import { bySlug, type RestaurantRecord } from "@/lib/dataset";
+import type { RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
 import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/shortlist")({
+  loader: () => import("@/lib/dataset"),
   head: () => ({
     meta: [
       { title: "Night Plan — your shortlisted restaurant records" },
@@ -29,6 +30,7 @@ export const Route = createFileRoute("/shortlist")({
 });
 
 function Shortlist() {
+  const { bySlug } = Route.useLoaderData();
   const { slugs, remove, clear, move } = useShortlist();
   const enrichment = useEnrichmentSignals();
   const rows = slugs

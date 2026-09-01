@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T01:20:11Z",
+  "generatedAt": "2026-08-31T22:33:39Z",
   "note": "Documentary photography is stored only when the image is proven to belong to this exact slug. Identity marks are deterministic SVGs from first-party signals and are not photographs of the restaurant. Generated or editorial illustrations must set documentary to false and must never be labeled as a photo of a real room or dish.",
   "images": [
     {
@@ -155,6 +155,198 @@
         "kind": "restaurant_owned",
         "url": "https://carminesnyc.com/locations/times-square",
         "retrievedAt": "2026-08-31T01:18:41Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "canlis",
+      "kind": "exterior",
+      "src": "/visuals/canlis.jpg",
+      "alt": "Restaurant-owned photograph published on https://canlis.com/ — not a diner snapshot of Canlis.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://canlis.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "fraunces-tavern",
+      "kind": "exterior",
+      "src": "/visuals/fraunces-tavern.jpg",
+      "alt": "Restaurant-owned photograph published on http://www.frauncestavern.com/ — not a diner snapshot of Fraunces Tavern.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "http://www.frauncestavern.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "neptune-oyster-boston",
+      "kind": "exterior",
+      "src": "/visuals/neptune-oyster-boston.webp",
+      "alt": "Restaurant-owned photograph published on https://www.neptuneoyster.com/ — not a diner snapshot of Neptune Oyster.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.neptuneoyster.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "franklin-barbecue-austin",
+      "kind": "representative_food",
+      "src": "/visuals/franklin-barbecue-austin.webp",
+      "alt": "Restaurant-owned photograph published on https://franklinbarbecue.com/ — not a diner snapshot of Franklin Barbecue.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://franklinbarbecue.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "uchiko-austin",
+      "kind": "exterior",
+      "src": "/visuals/uchiko-austin.jpg",
+      "alt": "Restaurant-owned photograph published on https://uchikoaustin.com/ — not a diner snapshot of Uchiko.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://uchikoaustin.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "au-cheval",
+      "kind": "exterior",
+      "src": "/visuals/au-cheval.webp",
+      "alt": "Restaurant-owned photograph published on https://www.auchevaldiner.com/nyc/home — not a diner snapshot of Au Cheval.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.auchevaldiner.com/nyc/home",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "los-tacos-no-1",
+      "kind": "exterior",
+      "src": "/visuals/los-tacos-no-1.jpg",
+      "alt": "Restaurant-owned photograph published on https://www.lostacos1.com/location/los-tacos-times-square/ — not a diner snapshot of LOS TACOS No.1.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.lostacos1.com/location/los-tacos-times-square/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "nong-s-khao-man-gai-portland",
+      "kind": "exterior",
+      "src": "/visuals/nong-s-khao-man-gai-portland.jpg",
+      "alt": "Restaurant-owned photograph published on https://khaomangai.com/ — not a diner snapshot of Nong's Khao Man Gai.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://khaomangai.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "r-g-lounge",
+      "kind": "exterior",
+      "src": "/visuals/r-g-lounge.png",
+      "alt": "Restaurant-owned photograph published on https://www.rnglounge.com/ — not a diner snapshot of R & G Lounge.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.rnglounge.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "palette-tea-house",
+      "kind": "exterior",
+      "src": "/visuals/palette-tea-house.jpg",
+      "alt": "Restaurant-owned photograph published on https://paletteteahouse.com/?utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps — not a diner snapshot of Palette Tea House.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://paletteteahouse.com/?utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "guelaguetza-restaurant",
+      "kind": "exterior",
+      "src": "/visuals/guelaguetza-restaurant.jpg",
+      "alt": "Restaurant-owned photograph published on http://www.ilovemole.com/ — not a diner snapshot of Guelaguetza Restaurant.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "http://www.ilovemole.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "philippe-the-original",
+      "kind": "exterior",
+      "src": "/visuals/philippe-the-original.jpg",
+      "alt": "Restaurant-owned photograph published on https://www.philippes.com/ — not a diner snapshot of Philippe The Original.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.philippes.com/",
+        "retrievedAt": "2026-08-31T22:24:42Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "uchi-dallas-dallas",
+      "kind": "exterior",
+      "src": "/visuals/uchi-dallas-dallas.jpg",
+      "alt": "Restaurant-owned photograph published on https://uchi.uchirestaurants.com/location/sushi-dallas/ — not a diner snapshot of Uchi Dallas.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://uchi.uchirestaurants.com/location/sushi-dallas/",
+        "retrievedAt": "2026-08-31T22:33:39Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "carbone-miami-miami",
+      "kind": "exterior",
+      "src": "/visuals/carbone-miami-miami.jpg",
+      "alt": "Restaurant-owned photograph published on https://carbonemiami.com/ — not a diner snapshot of Carbone Miami.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://carbonemiami.com/",
+        "retrievedAt": "2026-08-31T22:33:39Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "sanford-milwaukee",
+      "kind": "exterior",
+      "src": "/visuals/sanford-milwaukee.jpg",
+      "alt": "Restaurant-owned photograph published on https://sanfordrestaurant.com/ — not a diner snapshot of Sanford.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://sanfordrestaurant.com/",
+        "retrievedAt": "2026-08-31T22:33:39Z"
+      },
+      "documentary": true
+    },
+    {
+      "slug": "sorella-milwaukee",
+      "kind": "exterior",
+      "src": "/visuals/sorella-milwaukee.webp",
+      "alt": "Restaurant-owned photograph published on https://www.sorellamke.com/ — not a diner snapshot of Sorella.",
+      "provenance": {
+        "kind": "restaurant_owned",
+        "url": "https://www.sorellamke.com/",
+        "retrievedAt": "2026-08-31T22:33:39Z"
       },
       "documentary": true
     }

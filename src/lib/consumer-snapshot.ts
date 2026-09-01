@@ -7,6 +7,7 @@
  */
 import { isUnstated } from "@/lib/case-depth";
 import type { RestaurantRecord } from "@/lib/dataset";
+import dishesRaw from "@/data/first-party-dishes.json";
 
 export const FIRST_PARTY = "firstPartyEvidence" as const;
 
@@ -23,6 +24,7 @@ export type ConsumerSnapshot = {
 };
 
 const OPEN = "Not stated — held open.";
+const namedFile = dishesRaw as { records: Record<string, string[]> };
 
 export function statedText(value: string | null | undefined): string | null {
   if (isUnstated(value)) return null;
@@ -54,11 +56,17 @@ export function whyGoLine(record: RestaurantRecord): string {
 function foodAndMenu(record: RestaurantRecord): SnapshotItem {
   const identity = firstPoint(record.cuisineContext, 140);
   const menu = firstPoint(record.menuSummary, 120);
-  if (!identity && !menu) return { label: "Food & menu", value: OPEN, open: true };
+  const named = (namedFile.records[record.slug] ?? []).filter((s) => s.trim().length >= 3).slice(0, 2);
+  if (!identity && !menu && !named.length) return { label: "Food & menu", value: OPEN, open: true };
+  const namedLine = named.length ? `Pages name: ${named.join("; ")}.` : "";
   if (identity && menu && !overlaps(identity, menu)) {
-    return { label: "Food & menu", value: `${identity} ${menu}`, open: false };
+    return { label: "Food & menu", value: [identity, menu, namedLine].filter(Boolean).join(" "), open: false };
   }
-  return { label: "Food & menu", value: identity ?? menu ?? OPEN, open: false };
+  return {
+    label: "Food & menu",
+    value: [identity ?? menu, namedLine].filter(Boolean).join(" ") || OPEN,
+    open: false,
+  };
 }
 
 function spend(record: RestaurantRecord): SnapshotItem {

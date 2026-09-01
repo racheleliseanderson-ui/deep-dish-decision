@@ -1,20 +1,14 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
-import { records } from "@/lib/dataset";
 import { OCCASIONS, occasionScore, type Occasion } from "@/lib/intelligence";
-import {
-  byBookingPath,
-  byPlanningLoad,
-  bySpendBand,
-  conflictRecords,
-  corpus,
-  gapMap,
-  unreachable,
-} from "@/lib/atlas";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 
 export const Route = createFileRoute("/guide")({
+  loader: async () => {
+    const [ds, atlas] = await Promise.all([import("@/lib/dataset"), import("@/lib/atlas")]);
+    return { records: ds.records, atlas };
+  },
   head: () => ({
     meta: [
       { title: "How to Choose a Restaurant — Restaurant Intelligence Hub" },
@@ -96,6 +90,9 @@ const PITFALLS = [
 ] as const;
 
 function Guide() {
+  const { records, atlas } = Route.useLoaderData();
+  const { byBookingPath, byPlanningLoad, bySpendBand, conflictRecords, corpus, gapMap, unreachable } =
+    atlas;
   const [occasion, setOccasion] = useState<Occasion>(OCCASIONS[0]);
 
   const picks = useMemo(
@@ -104,7 +101,7 @@ function Guide() {
         .map((r) => ({ r, score: occasionScore(r, occasion) }))
         .sort((a, b) => b.score - a.score || a.r.unknownsCount - b.r.unknownsCount)
         .slice(0, 5),
-    [occasion],
+    [occasion, records],
   );
 
   const topGaps = gapMap.slice(0, 5);

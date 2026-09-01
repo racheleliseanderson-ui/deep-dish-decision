@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * Fail closed if the 836-record hub is replaced by a confirmation-pass demo.
+ * Fail closed if the canonical hub is replaced by a confirmation-pass demo.
  *
  * Override (deliberate migration only):
  *   ALLOW_CORPUS_MIGRATION=1 node scripts/corpus-invariants.mjs
  */
-import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -104,11 +104,74 @@ if (existsSync(listingPath)) {
 }
 
 const dishesPath = resolve(root, "src/data/first-party-dishes.json");
+let dishCoverage = 0;
 if (existsSync(dishesPath)) {
   const dishes = JSON.parse(readFileSync(dishesPath, "utf8"));
   const blob = JSON.stringify(dishes.records || {});
   if (/goldbelly/i.test(blob)) errors.push("first-party-dishes includes Goldbelly shipping copy");
+  dishCoverage = Object.keys(dishes.records || {}).length;
 }
+
+let listingCoverage = 0;
+if (existsSync(listingPath)) {
+  listingCoverage = Object.keys(JSON.parse(readFileSync(listingPath, "utf8")).records || {}).length;
+}
+
+const visPath = resolve(root, "src/data/visual-program.json");
+let imageCoverage = { totalImages: 0, documentary: 0, slugsWithPhoto: 0 };
+if (existsSync(visPath)) {
+  const vis = JSON.parse(readFileSync(visPath, "utf8"));
+  const images = vis.images || [];
+  const bySrc = new Map();
+  const photoSlugs = new Set();
+  for (const img of images) {
+    if (img.documentary && img.slug && !slugs.includes(img.slug)) {
+      errors.push(`visual ${img.src} slug ${img.slug} is not in the corpus`);
+    }
+    if (img.documentary) {
+      imageCoverage.documentary += 1;
+      photoSlugs.add(img.slug);
+      const set = bySrc.get(img.src) ?? new Set();
+      set.add(img.slug);
+      bySrc.set(img.src, set);
+    }
+  }
+  imageCoverage.totalImages = images.length;
+  imageCoverage.slugsWithPhoto = photoSlugs.size;
+  for (const [src, set] of bySrc) {
+    if (set.size > 1) errors.push(`cross-wired photo ${src} → ${[...set].join(",")}`);
+  }
+}
+
+const repPath = resolve(root, "src/data/reputation-patterns.json");
+let reputationCoverage = 0;
+if (existsSync(repPath)) {
+  reputationCoverage = Object.keys(JSON.parse(readFileSync(repPath, "utf8")).records || {}).length;
+}
+
+const inspPath = resolve(root, "src/data/health-inspections.json");
+let inspectionCoverage = 0;
+if (existsSync(inspPath)) {
+  inspectionCoverage = Object.keys(JSON.parse(readFileSync(inspPath, "utf8")).records || {}).length;
+}
+
+const report = {
+  generatedAt: new Date().toISOString(),
+  ok: errors.length === 0,
+  corpusRecordCount: count,
+  geographicRegions: regions,
+  floor: FLOOR,
+  enrichmentCount: listingCoverage,
+  listingSampleCoverage: listingCoverage,
+  imageCoverage,
+  reputationCoverage,
+  signatureDishCoverage: dishCoverage,
+  inspectionCoverage,
+};
+
+const reportDir = resolve(root, "reports");
+mkdirSync(reportDir, { recursive: true });
+writeFileSync(resolve(reportDir, "qa-coverage.json"), JSON.stringify(report, null, 2) + "\n");
 
 if (errors.length) {
   const body = errors.map((e) => ` - ${e}`).join("\n");
@@ -120,16 +183,5 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(
-  JSON.stringify(
-    {
-      ok: true,
-      count,
-      regions,
-      slugs: slugs.length,
-      floor: FLOOR,
-    },
-    null,
-    2,
-  ),
-);
+console.log(JSON.stringify({ ...report, slugs: slugs.length }, null, 2));
+
