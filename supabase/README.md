@@ -28,34 +28,81 @@ psql "$SUPABASE_DB_URL" -f supabase/migrations/0002_night_plans.sql
 psql "$SUPABASE_DB_URL" -f supabase/migrations/0003_enrichment.sql
 psql "$SUPABASE_DB_URL" -f supabase/migrations/0004_plan_id_is_the_capability.sql
 psql "$SUPABASE_DB_URL" -f supabase/migrations/0005_lock_down_maintenance.sql
+psql "$SUPABASE_DB_URL" -f supabase/migrations/0006_corpus_coverage.sql
 
 # then load the corpus (idempotent — safe to re-run after any pipeline pass)
 npm run db:seed:dry      # parse and report, write nothing
 SUPABASE_URL=... SUPABASE_SERVICE_KEY=... npm run db:seed
 ```
 
-All five migrations are applied to `pqbqvrmhbxowpqzcenod` and were exercised
+All six migrations are applied to `pqbqvrmhbxowpqzcenod` and were exercised
 against PostgreSQL 16 with the full 1,094-record corpus before being committed.
+
+## There is no sign-in
+
+Nobody makes an account. Nobody logs in. Every visitor talks to Postgres as the
+same anonymous role, and row-level security decides what that role may do:
+read the corpus, save a night plan, fetch one plan by its full id. Nothing else.
+That is the entire authorisation model, and it is the reason RLS had to be
+right — see the second bug below.
+
+Because of that, the connection details are checked into `src/lib/db-config.ts`
+rather than configured per-deploy. The publishable key is public by design and
+a Vite client ships it to every visitor in plain JavaScript no matter where it
+came from; putting it in a dashboard setting would not make it secret, it would
+only mean the app silently runs with no database whenever someone forgets —
+which is precisely what happened. Environment variables still override it, so a
+fork or a local stack can point elsewhere.
+
+The **service key** is the opposite in every respect: it bypasses RLS entirely,
+it belongs to the pipeline, and it must never be committed or given a `VITE_`
+prefix.
 
 ## Keys
 
 | variable | where | notes |
 |---|---|---|
-| `VITE_SUPABASE_URL` | client | publishable — `https://pqbqvrmhbxowpqzcenod.supabase.co` |
-| `VITE_SUPABASE_ANON_KEY` | client | publishable, guarded by RLS |
+| _(none required)_ | client | defaults live in `src/lib/db-config.ts` |
+| `VITE_SUPABASE_URL` | client | optional override — must be a `*.supabase.co` host or it is refused outright |
+| `VITE_SUPABASE_ANON_KEY` | client | optional override |
 | `SUPABASE_URL` | server / pipeline | |
 | `SUPABASE_SERVICE_KEY` | server / pipeline | **bypasses RLS.** Never in a `VITE_` variable, never committed. |
 
-**Vercel needs these set by hand.** The Supabase integration injects
-`SUPABASE_URL` and `SUPABASE_ANON_KEY`, but Vite only exposes variables
-prefixed `VITE_` to the browser, so the client sees nothing until
-`VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` exist as their own Vercel
-environment variables. This is the failure mode where everything looks
-configured and search silently returns the loaded region forever.
+Vercel needs nothing set. That is the point of checking the defaults in: the
+Supabase integration injects `SUPABASE_URL` / `SUPABASE_ANON_KEY`, Vite only
+exposes `VITE_`-prefixed variables to the browser, and the gap between those
+two facts is a deploy that looks configured and quietly has no database.
 
-With no keys set the app behaves exactly as it does today: `dbConfigured` is
+With the database unreachable the app behaves exactly as it does today: `dbConfigured` is
 false and every call returns an empty result without touching the network.
 `src/lib/db.test.ts` asserts that.
+
+## Seeding, and why coverage is reported
+
+The JSON is the source of truth and holds all 1,094 records. Postgres holds
+however many have been pushed to it — currently **258 across 57 regions**,
+loaded through the MCP connection because the sandbox has no route to
+`supabase.co`.
+
+A half-seeded database is more dangerous than an empty one. Search returns
+*something*, so a restaurant that simply has not been loaded yet reads as one
+Deep Dish has never heard of. `corpus_coverage` (0006) exposes the real number
+and `coverageIsComplete()` refuses to call a partial index complete — including
+when the check itself fails, because unknown must never resolve to "complete".
+
+To load the rest, from a machine that can reach Supabase:
+
+```powershell
+$env:SUPABASE_URL="https://pqbqvrmhbxowpqzcenod.supabase.co"
+$env:SUPABASE_SERVICE_KEY="<Settings -> API -> service_role>"
+npm run db:seed:dry    # parses and reports, writes nothing
+npm run db:seed        # idempotent
+```
+
+That path is better than the one used here, not just faster: it carries the
+corpus prose into `search_text`, so search matches descriptions and not only
+names, places and cuisine tags. The reconstruction used for the 258 never
+overwrites prose that is already there.
 
 ## Row-level security
 

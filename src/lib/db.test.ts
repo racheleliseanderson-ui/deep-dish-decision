@@ -1,63 +1,95 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { dbConfigured, loadPlan, newPlanId, savePlan, searchCorpus } from "@/lib/db";
+import { DEFAULT_SUPABASE_PUBLISHABLE_KEY, DEFAULT_SUPABASE_URL } from "@/lib/db-config";
 
 /**
- * The database is optional. These tests assert the thing that actually
- * matters: with no credentials configured — the state this repo ships in — the
- * module is inert, makes no network calls, and hands every caller a value they
- * can render without a branch for "the database is down".
+ * Two guarantees, and they are not the same one.
+ *
+ * The app now ships pointed at a database, because a publishable key is public
+ * wherever you put it and making it a deploy setting only produced a build that
+ * silently ran without one. So "configured" is the shipped state.
+ *
+ * "Reachable" is a separate question, and the answer must never be an error the
+ * UI has to branch on. Down, blocked, slow, rate-limited, misconfigured — every
+ * one of those returns an empty result, because the corpus ships as JSON and
+ * the ranked list does not need Postgres to be correct.
  */
 
 afterEach(() => vi.unstubAllGlobals());
 
-describe("a missing database is the normal state", () => {
-  it("reports itself unconfigured rather than throwing", () => {
-    expect(dbConfigured).toBe(false);
+describe("the shipped configuration", () => {
+  it("points at a database with no environment set", () => {
+    expect(dbConfigured).toBe(true);
+    expect(DEFAULT_SUPABASE_URL).toMatch(/^https:\/\/[a-z0-9-]+\.supabase\.co$/);
   });
 
-  it("never reaches the network when unconfigured", async () => {
-    const fetchSpy = vi.fn();
-    vi.stubGlobal("fetch", fetchSpy);
-
-    await searchCorpus("canlis");
-    await loadPlan("aaaaaaaaaaaaaaaaaa");
-    await savePlan({ slugs: ["canlis"], situation: {} });
-
-    expect(fetchSpy).not.toHaveBeenCalled();
+  it("ships a publishable key and nothing that bypasses row-level security", () => {
+    const source = readFileSync(resolve(process.cwd(), "src/lib/db-config.ts"), "utf8");
+    // Publishable keys are `sb_publishable_...`; the old anon key is a JWT
+    // whose payload declares its role. Either is fine. A service key is not.
+    expect(DEFAULT_SUPABASE_PUBLISHABLE_KEY).toMatch(/^sb_publishable_|^eyJ/);
+    expect(source).not.toMatch(/service_role|sb_secret_|SERVICE_KEY\s*=/);
+    expect(DEFAULT_SUPABASE_PUBLISHABLE_KEY).not.toContain("service");
   });
 
-  it("returns empty results, not errors", async () => {
+  it("asks for nothing from the person using it", () => {
+    // No sign-in, no account, no identity. If a token, session or user ever
+    // appears in this module, that assumption has quietly changed.
+    const source = readFileSync(resolve(process.cwd(), "src/lib/db.ts"), "utf8");
+    expect(source).not.toMatch(/signIn|signUp|getSession|auth\.|currentUser/);
+  });
+});
+
+describe("an unreachable database is a normal state, not an error", () => {
+  const down = () => {
+    const spy = vi.fn(() => Promise.reject(new Error("network down")));
+    vi.stubGlobal("fetch", spy);
+    return spy;
+  };
+
+  it("returns empty results rather than throwing", async () => {
+    down();
     await expect(searchCorpus("canlis")).resolves.toEqual([]);
     await expect(loadPlan("aaaaaaaaaaaaaaaaaa")).resolves.toBeNull();
     await expect(savePlan({ slugs: ["canlis"], situation: {} })).resolves.toBeNull();
   });
 
-  it("refuses a query too short to be meaningful", async () => {
+  it("survives a server error as calmly as an outage", async () => {
+    vi.stubGlobal("fetch", () => Promise.resolve(new Response("boom", { status: 500 })));
+    await expect(searchCorpus("canlis")).resolves.toEqual([]);
+    await expect(savePlan({ slugs: ["canlis"], situation: {} })).resolves.toBeNull();
+  });
+
+  it("refuses a query too short to be meaningful, without calling out", async () => {
+    const spy = down();
     await expect(searchCorpus("a")).resolves.toEqual([]);
     await expect(searchCorpus("   ")).resolves.toEqual([]);
+    expect(spy).not.toHaveBeenCalled();
   });
 
   it("refuses a malformed plan id without calling out", async () => {
-    const fetchSpy = vi.fn();
-    vi.stubGlobal("fetch", fetchSpy);
+    const spy = down();
     for (const bad of ["", "short", "../../etc/passwd", "a".repeat(80), "has spaces"]) {
       await expect(loadPlan(bad)).resolves.toBeNull();
     }
-    expect(fetchSpy).not.toHaveBeenCalled();
+    expect(spy).not.toHaveBeenCalled();
   });
 
-  it("refuses a plan that is empty or larger than a night", async () => {
+  it("refuses a plan that is empty or larger than a night, without calling out", async () => {
+    const spy = down();
     await expect(savePlan({ slugs: [], situation: {} })).resolves.toBeNull();
     await expect(
       savePlan({ slugs: Array.from({ length: 13 }, (_, i) => `r${i}`), situation: {} }),
     ).resolves.toBeNull();
+    expect(spy).not.toHaveBeenCalled();
   });
 });
 
 describe("plan ids", () => {
   it("are long and unguessable", () => {
-    const id = newPlanId();
-    expect(id).toMatch(/^[0-9A-Za-z]{22}$/);
+    expect(newPlanId()).toMatch(/^[0-9A-Za-z]{22}$/);
   });
 
   it("do not repeat", () => {
@@ -72,13 +104,6 @@ describe("plan ids", () => {
   });
 });
 
-/**
- * With credentials present, the shape of the request matters as much as the
- * result. night_plans has no SELECT policy — the id is the capability — so a
- * read must go through get_night_plan and a save must not ask for the row back.
- * These assert the wire, because a regression here is a privacy leak, not a bug
- * anyone would see on screen.
- */
 describe("when a database is configured", () => {
   const URL = "https://pqbqvrmhbxowpqzcenod.supabase.co";
 
@@ -158,15 +183,58 @@ describe("when a database is configured", () => {
     await expect(down.mod.searchCorpus("pink door")).resolves.toEqual([]);
   });
 
-  it("refuses a hostile url instead of trusting it", async () => {
+  it("refuses a hostile url outright rather than falling back to the default", async () => {
     vi.resetModules();
     vi.stubEnv("VITE_SUPABASE_URL", "https://evil.example.com");
     vi.stubEnv("VITE_SUPABASE_ANON_KEY", "test-anon-key");
     const fetchSpy = vi.fn();
     vi.stubGlobal("fetch", fetchSpy);
     const mod = await import("@/lib/db");
+    // An override that is not a supabase.co host is a misconfiguration, and the
+    // safe response is no database at all. Quietly reverting to the built-in
+    // project would send someone's plan somewhere they did not choose.
     expect(mod.dbConfigured).toBe(false);
     await mod.searchCorpus("canlis");
+    await mod.savePlan({ slugs: ["canlis"], situation: {} });
     expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe("coverage is reported, not assumed", () => {
+  const URL = "https://pqbqvrmhbxowpqzcenod.supabase.co";
+
+  async function withDb(handler: () => Response) {
+    vi.resetModules();
+    vi.stubEnv("VITE_SUPABASE_URL", URL);
+    vi.stubEnv("VITE_SUPABASE_ANON_KEY", "test-anon-key");
+    vi.stubGlobal("fetch", () => Promise.resolve(handler()));
+    return import("@/lib/db");
+  }
+
+  afterEach(() => {
+    vi.unstubAllEnvs();
+    vi.resetModules();
+  });
+
+  it("does not call a partial index complete", async () => {
+    const mod = await withDb(
+      () =>
+        new Response(JSON.stringify([{ seeded: 258, regions: 57, with_prose: 17, last_seeded_at: null }]), {
+          status: 200,
+          headers: { "Content-Type": "application/json" },
+        }),
+    );
+    const c = await mod.corpusCoverage();
+    expect(c?.seeded).toBe(258);
+    // 258 of 1094 is a partial index. Treating it as the corpus would turn
+    // "not seeded yet" into "no such restaurant".
+    expect(mod.coverageIsComplete(c)).toBe(false);
+  });
+
+  it("treats an unreachable coverage check as unknown, never as complete", async () => {
+    const mod = await withDb(() => new Response("boom", { status: 500 }));
+    const c = await mod.corpusCoverage();
+    expect(c).toBeNull();
+    expect(mod.coverageIsComplete(c)).toBe(false);
   });
 });

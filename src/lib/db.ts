@@ -12,10 +12,14 @@
  *   - night plans that survive the browser they were made in
  *   - enrichment history the pipeline can accumulate and query
  *
- * Credentials come from the environment. The anon key is publishable by
- * design and is guarded by row-level security; the service key is never
- * imported here and never reaches the client.
+ * No sign-in, ever. Every visitor is the same anonymous role, and row-level
+ * security decides what that role may do. Connection details come from
+ * src/lib/db-config.ts, overridable by environment; see that file for why a
+ * publishable key is checked in rather than configured. The service key
+ * bypasses RLS, is never imported here, and never reaches the client.
  */
+
+import { DEFAULT_SUPABASE_PUBLISHABLE_KEY, DEFAULT_SUPABASE_URL } from "@/lib/db-config";
 
 const URL_KEY = "VITE_SUPABASE_URL";
 const ANON_KEY = "VITE_SUPABASE_ANON_KEY";
@@ -26,8 +30,10 @@ function readEnv(): { url: string; key: string } | null {
   // import.meta.env in the browser and in Vite's SSR; process.env in node.
   const meta = (import.meta as unknown as { env?: Env }).env ?? {};
   const proc = typeof process !== "undefined" && process.env ? (process.env as Env) : ({} as Env);
-  const url = meta[URL_KEY] ?? proc[URL_KEY];
-  const key = meta[ANON_KEY] ?? proc[ANON_KEY];
+  // Environment first so a fork or a local stack can redirect it, then the
+  // checked-in default so the shipped app needs no configuration at all.
+  const url = meta[URL_KEY] || proc[URL_KEY] || DEFAULT_SUPABASE_URL;
+  const key = meta[ANON_KEY] || proc[ANON_KEY] || DEFAULT_SUPABASE_PUBLISHABLE_KEY;
   if (!url || !key) return null;
   if (!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(url)) return null;
   return { url: url.replace(/\/$/, ""), key };
@@ -210,4 +216,43 @@ export async function loadPlan(id: string, signal?: AbortSignal): Promise<SavedP
     ...(signal ? { signal } : {}),
   });
   return rows?.[0] ?? null;
+}
+
+/* ── coverage ─────────────────────────────────────────────────────────────
+ * Seeding is incremental, so the database usually holds less than the JSON.
+ * A half-seeded corpus is worse than an empty one if nobody says so: search
+ * returns results, and a restaurant that simply has not been pushed yet reads
+ * as one Deep Dish has never heard of. Anything rendering database-backed
+ * search should say what that search covers.
+ */
+
+export type CorpusCoverage = {
+  seeded: number;
+  regions: number;
+  with_prose: number;
+  last_seeded_at: string | null;
+};
+
+/** Total records in the shipped JSON corpus — the denominator for coverage. */
+export const CORPUS_TOTAL = 1094;
+
+export async function corpusCoverage(signal?: AbortSignal): Promise<CorpusCoverage | null> {
+  const rows = await rest<CorpusCoverage[]>(
+    "corpus_coverage?select=*&limit=1",
+    signal ? { signal } : {},
+  );
+  const row = rows?.[0];
+  if (!row || typeof row.seeded !== "number") return null;
+  return row;
+}
+
+/**
+ * Whether database search can stand in for the whole corpus.
+ *
+ * Below the threshold the caller should present it as a partial index and keep
+ * the local region as the authority, rather than letting an empty result mean
+ * "no such restaurant".
+ */
+export function coverageIsComplete(c: CorpusCoverage | null): boolean {
+  return c !== null && c.seeded >= CORPUS_TOTAL;
 }
