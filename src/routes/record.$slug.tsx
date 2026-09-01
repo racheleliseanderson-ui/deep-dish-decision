@@ -10,6 +10,7 @@ import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
 import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
 import { enrichmentAudit } from "@/lib/enrichment";
+import { useEnrichmentGroup } from "@/hooks/use-enrichment";
 import { decodeSituation, encodeSituation } from "@/lib/situation-url";
 import { cn } from "@/lib/utils";
 import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
@@ -110,7 +111,12 @@ function Dossier() {
     now,
   });
   const shortlist = useShortlist();
-  const audit = enrichmentAudit(record.slug);
+  // Only this record's region is fetched. Before it arrives the audit reads as
+  // absent, which is what the panel already shows for an unenriched record.
+  const enrichmentReady = useEnrichmentGroup(record.regionGroup);
+  const audit = enrichmentReady
+    ? enrichmentAudit(record.slug)
+    : { present: false as const, completeness: null, fields: [] };
   const q = encodeSituation(situation);
   const strongest = topOccasion(record);
 

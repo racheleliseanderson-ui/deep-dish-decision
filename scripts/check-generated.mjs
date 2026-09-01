@@ -11,6 +11,9 @@
  *
  *   src/data/live/    pure Node, offline, deterministic. If it is missing we
  *                     can just build it, so we do.
+ *   src/data/enrichment/  same — a split of enrichment.json. If it is missing,
+ *                     every restaurant page silently loses its evidence panel,
+ *                     and the old 2.9 MB blob is not there to fall back on.
  *   public/visuals/r/ needs ImageMagick, which is not on the deploy machine.
  *                     It cannot be rebuilt here, so its absence is a hard stop
  *                     and the fix is to commit the files.
@@ -25,6 +28,7 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const liveDir = join(root, "src/data/live");
+const enrichmentDir = join(root, "src/data/enrichment");
 const visualDir = join(root, "public/visuals/r");
 const count = (d) => (existsSync(d) ? readdirSync(d).filter((f) => !f.startsWith(".")).length : 0);
 
@@ -38,6 +42,19 @@ if (live === 0) {
 }
 if (live === 0) {
   console.error("live index is still empty after a rebuild. The dynamic layer would be dark.");
+  process.exit(1);
+}
+
+let enriched = count(enrichmentDir);
+if (enriched === 0) {
+  console.warn("enrichment split missing — rebuilding it (offline, deterministic)");
+  execFileSync(process.execPath, [join(root, "scripts/pipeline/split-enrichment.mjs")], {
+    stdio: "inherit",
+  });
+  enriched = count(enrichmentDir);
+}
+if (enriched === 0) {
+  console.error("enrichment split is still empty. Every evidence panel would be blank.");
   process.exit(1);
 }
 
@@ -61,4 +78,6 @@ if (visuals === 0) {
   process.exit(1);
 }
 
-console.log(`generated assets ok — live index ${live} regions, ${visuals} image derivatives`);
+console.log(
+  `generated assets ok — live index ${live} regions, enrichment ${enriched} regions, ${visuals} image derivatives`,
+);

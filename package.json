@@ -9,6 +9,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "build:live": "node scripts/pipeline/build-live-index.mjs",
+    "build:enrichment": "node scripts/pipeline/split-enrichment.mjs",
     "build:visuals": "node scripts/build-image-derivatives.mjs",
     "check:generated": "node scripts/check-generated.mjs",
     "preview": "vite preview --host 0.0.0.0 --port 8080",

@@ -8,6 +8,7 @@ import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { CASE_FIELDS, fieldDisplay, isUnstated } from "@/lib/case-depth";
 import { enrichmentAudit, ownedSiteEvidence } from "@/lib/enrichment";
+import { useEnrichmentGroup } from "@/hooks/use-enrichment";
 import type { Scored, Situation } from "@/lib/intelligence";
 import { useEffect, useState } from "react";
 
@@ -27,6 +28,9 @@ export function CaseFile({
 }) {
   const [tab, setTab] = useState<Tab>("Tonight");
   const slug = sc?.record.slug;
+  // The open record's region only. Until it lands both lookups read as absent,
+  // which is the same thing they show for a record that was never enriched.
+  const enrichmentReady = useEnrichmentGroup(sc?.record.regionGroup);
   useEffect(() => {
     setTab("Tonight");
   }, [slug]);
@@ -63,7 +67,9 @@ export function CaseFile({
                 </Chip>
                 <Chip>Reviewed {r.reviewedAt}</Chip>
                 {(() => {
-                  const audit = enrichmentAudit(r.slug);
+                  const audit = enrichmentReady
+                    ? enrichmentAudit(r.slug)
+                    : { present: false as const, completeness: null, fields: [] };
                   return audit.present ? (
                     <Chip tone="unknown">
                       First-party file {audit.completeness ?? "—"}%
@@ -109,8 +115,10 @@ export function CaseFile({
           {tab === "Evidence" ? (
             <div className="space-y-8">
               {(() => {
-                const owned = ownedSiteEvidence(r.slug);
-                if (!owned.present) return null;
+                const owned = enrichmentReady
+                  ? ownedSiteEvidence(r.slug)
+                  : null;
+                if (!owned?.present) return null;
                 return (
                   <section>
                     <Eyebrow>From the restaurant's own pages</Eyebrow>

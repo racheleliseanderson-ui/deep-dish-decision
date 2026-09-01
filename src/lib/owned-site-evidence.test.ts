@@ -1,9 +1,14 @@
-import { describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it } from "vitest";
 import { isUnstated } from "@/lib/case-depth";
-import { ownedSiteEvidence, quoteText } from "@/lib/enrichment";
+import { loadEnrichmentGroup, ownedSiteEvidence, quoteText } from "@/lib/enrichment";
 import { records } from "@/lib/dataset";
 
 describe("ownedSiteEvidence", () => {
+  // Enrichment is loaded per region group now, not imported whole. Reading
+  // before the group lands returns null by design — see the contract tests in
+  // enrichment-loading.test.ts.
+  beforeAll(() => loadEnrichmentGroup("Michigan"));
+
   it("returns grouped first-party quotes for a recovered record", () => {
     const owned = ownedSiteEvidence("mexo-grand-rapids");
     expect(owned.present).toBe(true);

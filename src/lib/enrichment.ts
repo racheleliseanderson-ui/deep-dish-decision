@@ -6,9 +6,9 @@
  * never as facts, never into critical/fail-closed paths, never overwriting
  * first-party values.
  */
-import raw from "@/data/enrichment.json";
 import type { Constraint, Finding, Situation } from "@/lib/intelligence";
 import type { RestaurantRecord } from "@/lib/dataset";
+import { regionGroupFileName } from "@/lib/corpus-meta";
 
 export type GoogleAmenities = {
   outdoorSeating?: boolean;
@@ -121,10 +121,77 @@ type EnrichmentFile = {
   records: Record<string, EnrichmentRecord>;
 };
 
-const data = raw as EnrichmentFile;
+/* ── loading ───────────────────────────────────────────────────────────────
+ * This used to be `import raw from "@/data/enrichment.json"` — a single static
+ * import of the whole 2.9 MB file. Vite turned that into a 2.2 MB client chunk
+ * that every /record/<slug> page downloaded: the enrichment for all 1,094
+ * restaurants, in order to render the audit for one. Nothing threw, so it never
+ * read as a bug. It just made the most-visited page in the product slow.
+ *
+ * The file is split per region group now (scripts/pipeline/split-enrichment.mjs)
+ * and pulled in on demand, exactly as the live layer is. A page loads its own
+ * region and nothing else.
+ *
+ * The lookups below stay synchronous, because every caller is a render path and
+ * async rendering is a much larger change than this warrants. The contract is
+ * therefore: await loadEnrichmentGroup(group) before reading. Until it resolves
+ * a lookup returns null, which every caller already handles — it is the same
+ * answer they get for a restaurant that was never enriched.
+ */
+
+const loaders = import.meta.glob<EnrichmentFile | { default: EnrichmentFile }>(
+  "../data/enrichment/*.json",
+);
+const registry = new Map<string, EnrichmentRecord>();
+const loaded = new Map<string, Promise<void>>();
+
+function unpack(mod: EnrichmentFile | { default: EnrichmentFile }): EnrichmentFile["records"] {
+  const file = "records" in mod ? mod : mod.default;
+  return file?.records ?? {};
+}
+
+/**
+ * Load one region group's enrichment into the registry.
+ *
+ * Idempotent and concurrency-safe: the in-flight promise is cached, so ten
+ * components asking at once produce one fetch. A group with no file resolves
+ * rather than rejecting — plenty of regions have no enrichment at all, and that
+ * is not an error.
+ */
+export function loadEnrichmentGroup(group: string): Promise<void> {
+  const key = regionGroupFileName(group);
+  const existing = loaded.get(key);
+  if (existing) return existing;
+
+  const loader = loaders[`../data/enrichment/${key}.json`];
+  const task = loader
+    ? loader().then((mod) => {
+        for (const [slug, entry] of Object.entries(unpack(mod))) registry.set(slug, entry);
+      })
+    : Promise.resolve();
+
+  loaded.set(key, task);
+  return task;
+}
+
+/** Whether a group's file has finished loading. */
+export function enrichmentGroupReady(group: string): boolean {
+  return loaded.has(regionGroupFileName(group));
+}
 
 export function getEnrichment(slug: string): EnrichmentRecord | null {
-  return data.records[slug] ?? null;
+  return registry.get(slug) ?? null;
+}
+
+/**
+ * Load every group at once.
+ *
+ * For node scripts and tests, which have no region context and want the whole
+ * corpus. Never call this from the browser — it is the 2.2 MB import this
+ * change exists to remove.
+ */
+export async function loadAllEnrichment(): Promise<void> {
+  await Promise.all(Object.keys(loaders).map((k) => loadEnrichmentGroup(k.replace(/^.*\/(.+)\.json$/, "$1"))));
 }
 
 const NOT_STATED = [
