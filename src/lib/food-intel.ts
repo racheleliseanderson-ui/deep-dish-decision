@@ -86,7 +86,7 @@ function isDishLike(s: string): boolean {
   const t = s.trim();
   if (t.length < 3 || t.length > 70) return false;
   if (
-    /goldbelly|nationwide|farms|hospitality|cuisine rooted|modern approach|wine program|globally inspired|seasonal menu sourced|private dining|welcoming|deep respect|exceptional asian|italian tradition|crafted cocktails|brunch, and dinner|\bstop$|made-from-scratch fare|prime steaks, seafood/i.test(
+    /goldbelly|nationwide|farms|hospitality|cuisine rooted|modern approach|wine program|globally inspired|seasonal menu sourced|private dining|welcoming|deep respect|exceptional asian|italian tradition|crafted cocktails|brunch, and dinner|\bstop$|made-from-scratch fare|prime steaks, seafood|delicious/i.test(
       t,
     )
   ) {
@@ -98,11 +98,14 @@ function isDishLike(s: string): boolean {
 function extractSignatures(text: string): string[] {
   const out: string[] = [];
   const re =
-    /(?:signature|known for|famous for|house[- ]made|house specialty(?: is)?)\s+([^.;:]{4,80})/gi;
+    /(?:signature dishes?(?: include| is| are)?|known for|famous for|house[- ]made|house specialty(?: is)?)\s+([^.;:]{4,80})/gi;
   for (const m of text.matchAll(re)) {
     const bit = (m[1] ?? "").trim().replace(/\s+/g, " ");
     if (bit && !/not stated/i.test(bit) && isDishLike(bit)) out.push(bit.replace(/[,.]$/, ""));
   }
+  if (/\bhouse-made pasta\b/i.test(text)) out.push("house-made pasta");
+  if (/\bhand-made pasta\b/i.test(text)) out.push("hand-made pasta");
+  if (/\bbrick-oven pizza\b/i.test(text)) out.push("brick-oven pizza");
   return unique(out).slice(0, 4);
 }
 

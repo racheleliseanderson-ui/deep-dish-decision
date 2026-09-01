@@ -63,6 +63,7 @@ def extract_named(record: dict, site: dict) -> list[str]:
         r"\bturtle soup\b",
         r"\bbread pudding souffl[eé]\b",
         r"\bhand-made pasta\b",
+        r"\bhouse-made pasta\b",
         r"\bhouse-made breads and pastas\b",
         r"oysters grown and harvested by hama hama",
         r"\bgriyo\b",
@@ -73,6 +74,8 @@ def extract_named(record: dict, site: dict) -> list[str]:
         r"\bfried chicken\b",
         r"\bchicken and waffles\b",
         r"\bhush puppies\b",
+        r"\bbrick-oven pizza\b",
+        r"signature dishes include\s+([^.;]{8,100})",
     ]
     skip = re.compile(
         r"goldbelly|nationwide|og:|located in|all our locations|forests|fisheries|"

@@ -89,6 +89,11 @@ describe("food intel", () => {
     const food = buildFoodIntel(bySlug.get("luccas")!);
     expect(food.signatureMentions.join(" ").toLowerCase()).toMatch(/house-made pasta/);
   });
+
+  it("names house-made pasta only where first-party language already says so", () => {
+    const food = buildFoodIntel(bySlug.get("luccas")!);
+    expect(food.signatureMentions.join(" ").toLowerCase()).toMatch(/house-made pasta/);
+  });
 });
 
 describe("reputation layer", () => {
@@ -259,6 +264,7 @@ describe("visual program guards", () => {
       expect(widths).toEqual([...widths].sort((a, b) => a - b));
     }
   });
+
 
   it("attaches Canlis photography only to Canlis", () => {
     const set = visualsFor("canlis");
