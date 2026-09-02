@@ -17,6 +17,7 @@ import { NightPlanBar } from "@/components/rih/night-plan-bar";
 import { SuiteStrip } from "@/components/rih/suite-strip";
 import { SupportFooter } from "@/components/SupportFooter";
 
+import { canonicalFor } from "../lib/site";
 const ADSENSE_CLIENT = "ca-pub-8542391068454821";
 
 function NotFoundComponent() {
@@ -80,52 +81,59 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "google-adsense-account", content: ADSENSE_CLIENT },
-      { title: "Restaurant Intelligence — evidence-led restaurant decisions" },
-      {
-        name: "description",
-        content:
-          "First-party restaurant evidence, ranked against this night: fit, unknowns, official sources, live confirmations and the decision you return to Salty Desk.",
-      },
-      { property: "og:title", content: "Restaurant Intelligence" },
-      {
-        property: "og:description",
-        content: "Is this restaurant right for this night — and what still needs confirming?",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Dining room — Restaurant Intelligence" },
-      { property: "og:url", content: "https://deepdish.saltnotes.blog/" },
-      { name: "twitter:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
-      { name: "theme-color", content: "#0c1220" },
-    ],
-    links: [
-      { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap",
-      },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
-    ],
-    scripts: import.meta.env.PROD
-      ? [
-          {
-            async: true,
-            src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`,
-            crossOrigin: "anonymous",
-          },
-        ]
-      : [],
-  }),
+  head: ({ matches }) => {
+    // `matches` is the whole chain, so its last entry is the route actually
+    // being rendered. The root match's own pathname is always "/", which is
+    // how every page here came to declare itself a duplicate of the home page.
+    const canonical = canonicalFor(matches[matches.length - 1]?.pathname ?? "/");
+    return {
+      meta: [
+        { charSet: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "google-adsense-account", content: ADSENSE_CLIENT },
+        { title: "Restaurant Intelligence — evidence-led restaurant decisions" },
+        {
+          name: "description",
+          content:
+            "First-party restaurant evidence, ranked against this night: fit, unknowns, official sources, live confirmations and the decision you return to Salty Desk.",
+        },
+        { property: "og:title", content: "Restaurant Intelligence" },
+        {
+          property: "og:description",
+          content: "Is this restaurant right for this night — and what still needs confirming?",
+        },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { property: "og:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { property: "og:image:alt", content: "Dining room — Restaurant Intelligence" },
+        { property: "og:url", content: canonical },
+        { name: "twitter:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
+        { name: "theme-color", content: "#0c1220" },
+      ],
+      links: [
+        { rel: "canonical", href: canonical },
+        { rel: "stylesheet", href: appCss },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap",
+        },
+        { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      ],
+      scripts: import.meta.env.PROD
+        ? [
+            {
+              async: true,
+              src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`,
+              crossOrigin: "anonymous",
+            },
+          ]
+        : [],
+    };
+  },
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
