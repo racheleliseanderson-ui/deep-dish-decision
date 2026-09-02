@@ -1,8 +1,6 @@
-/** Single source of truth for the app nav — max six items per the shell standard. */
+/** Primary diner navigation. Research/admin surfaces stay reachable from contextual links. */
 export const NAV_LINKS = [
   { to: "/", key: "nav.instrument" },
-  { to: "/guide", key: "nav.guide" },
-  { to: "/atlas", key: "nav.atlas" },
-  { to: "/console", key: "nav.console" },
   { to: "/shortlist", key: "nav.shortlist" },
+  { to: "/guide", key: "nav.guide" },
 ] as const;
