@@ -85,23 +85,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "google-adsense-account", content: ADSENSE_CLIENT },
-      { title: "Restaurant Intelligence Hub — evidence-led restaurant decisions" },
+      { title: "Restaurant Intelligence — evidence-led restaurant decisions" },
       {
         name: "description",
         content:
-          "First-party restaurant evidence, ranked against your situation: why go, what to order, what it costs, and what you still need to confirm.",
+          "First-party restaurant evidence, ranked against this night: fit, unknowns, official sources, live confirmations and the decision you return to Salty Desk.",
       },
-      { property: "og:title", content: "Restaurant Intelligence Hub" },
+      { property: "og:title", content: "Restaurant Intelligence" },
       {
         property: "og:description",
-        content: "Why eat here — then confirm it. Evidence-led restaurant decisions.",
+        content: "Is this restaurant right for this night — and what still needs confirming?",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Dining room — Restaurant Intelligence Hub" },
+      { property: "og:image:alt", content: "Dining room — Restaurant Intelligence" },
       { property: "og:url", content: "https://deepdish.saltnotes.blog/" },
       { name: "twitter:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
       { name: "theme-color", content: "#0c1220" },
@@ -134,9 +134,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 const themeInit = `(function(){try{var d=document.documentElement;var m=localStorage.getItem("sc-mode")||localStorage.getItem("rih-theme");var cvd=localStorage.getItem("sc-cvd")==="on"||localStorage.getItem("rih-contrast")==="cvd"||m==="colorblind";if(m==="pearl"||m==="light"){d.classList.remove("dark");d.classList.add("light")}else{d.classList.add("dark");d.classList.remove("light")}if(cvd){d.classList.add("cvd");d.classList.add("mode-cvd")}d.lang="en"}catch(e){document.documentElement.classList.add("dark")}})()`;
 
-// PR #23 briefly shipped a PWA at this origin. Its NetworkFirst navigation cache can keep
-// serving that displaced application after rollback. Remove that registration and only the
-// cache names created by that build; reload once when an old worker was controlling the page.
 const stalePwaCleanup = `(function(){try{if(!("serviceWorker" in navigator))return;var reloadKey="rih-stale-pwa-cleanup-2026-08-28";var controlled=!!navigator.serviceWorker.controller;var unregister=navigator.serviceWorker.getRegistrations().then(function(regs){return Promise.all(regs.map(function(reg){return reg.unregister()}))}).catch(function(){});var clearCaches=Promise.resolve();if("caches" in window){clearCaches=caches.keys().then(function(keys){return Promise.all(keys.filter(function(key){return key==="pages"||key==="images"||key.indexOf("workbox-precache")===0}).map(function(key){return caches.delete(key)}))}).catch(function(){})}Promise.all([unregister,clearCaches]).then(function(){if(controlled&&sessionStorage.getItem(reloadKey)!=="1"){sessionStorage.setItem(reloadKey,"1");window.location.reload()}}).catch(function(){})}catch(e){}})()`;
 
 function RootShell({ children }: { children: ReactNode }) {
