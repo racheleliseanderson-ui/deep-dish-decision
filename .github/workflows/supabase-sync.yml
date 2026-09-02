@@ -1,0 +1,39 @@
+name: Deep Dish Supabase sync
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: deep-dish-supabase-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      SUPABASE_URL: "https://pqbqvrmhbxowpqzcenod.supabase.co"
+      SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Require service-role secret
+        shell: bash
+        run: |
+          if [ -z "$SUPABASE_SERVICE_KEY" ]; then
+            echo "::error::Add repository Actions secret SUPABASE_SERVICE_KEY before running this workflow. Never commit or print the service-role key."
+            exit 1
+          fi
+
+      - name: Validate repository corpus
+        run: node scripts/corpus-invariants.mjs
+
+      - name: Upsert full corpus into Supabase
+        run: node scripts/db/seed-corpus.mjs
