@@ -1,1 +1,190 @@
-{"regionGroup":"Utah","generatedAt":"2026-09-01T20:03:04.285Z","records":{"valter-s-osteria-salt-lake-city":{"ll":[40.7608,-111.891],"llSource":"city","tz":"America/Denver"},"table-x-salt-lake-city":{"ll":[40.7608,-111.891],"llSource":"city","tz":"America/Denver","hours":[[[1020,1320]],[],[],[[1020,1320]],[[1020,1320]],[[1020,1320]],[[1020,1320]]],"hoursSource":"first-party-prose"},"urban-hill-salt-lake-city":{"ll":[40.7608,-111.891],"llSource":"city","tz":"America/Denver"},"arlo-salt-lake-city":{"ll":[40.7608,-111.891],"llSource":"city","tz":"America/Denver","hours":[[[600,780],[1050,1260]],[],[],[[1050,1260]],[[1050,1260]],[[1050,1260]],[[1050,1260]]],"hoursSource":"first-party-prose"},"takashi-salt-lake-city":{"ll":[40.7608,-111.891],"llSource":"city","tz":"America/Denver"},"current-fish-oyster-salt-lake-city":{"ll":[40.7608,-111.891],"llSource":"city","tz":"America/Denver"},"manoli-s-salt-lake-city":{"ll":[40.7608,-111.891],"llSource":"city","tz":"America/Denver","hours":[[[1020,1320]],[],[[1020,1320]],[[1020,1320]],[[1020,1320]],[[1020,1380]],[[1020,1380]]],"hoursSource":"first-party-prose"},"pago-salt-lake-city":{"ll":[40.7608,-111.891],"llSource":"city","tz":"America/Denver"}}}
+{
+  "regionGroup": "Utah",
+  "generatedAt": "2026-09-02T17:02:12.107Z",
+  "records": {
+    "valter-s-osteria-salt-lake-city": {
+      "ll": [
+        40.7608,
+        -111.891
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "table-x-salt-lake-city": {
+      "ll": [
+        40.7608,
+        -111.891
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "hours": [
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [],
+        [],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
+    },
+    "urban-hill-salt-lake-city": {
+      "ll": [
+        40.7608,
+        -111.891
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "arlo-salt-lake-city": {
+      "ll": [
+        40.7608,
+        -111.891
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "hours": [
+        [
+          [
+            600,
+            780
+          ],
+          [
+            1050,
+            1260
+          ]
+        ],
+        [],
+        [],
+        [
+          [
+            1050,
+            1260
+          ]
+        ],
+        [
+          [
+            1050,
+            1260
+          ]
+        ],
+        [
+          [
+            1050,
+            1260
+          ]
+        ],
+        [
+          [
+            1050,
+            1260
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
+    },
+    "takashi-salt-lake-city": {
+      "ll": [
+        40.7608,
+        -111.891
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "current-fish-oyster-salt-lake-city": {
+      "ll": [
+        40.7608,
+        -111.891
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "dishes": [
+        {
+          "name": "it title",
+          "source": "first-party"
+        }
+      ]
+    },
+    "manoli-s-salt-lake-city": {
+      "ll": [
+        40.7608,
+        -111.891
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "hours": [
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1380
+          ]
+        ],
+        [
+          [
+            1020,
+            1380
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
+    },
+    "pago-salt-lake-city": {
+      "ll": [
+        40.7608,
+        -111.891
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    }
+  }
+}

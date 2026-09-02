@@ -1,6 +1,952 @@
 {
   "runs": [
     {
+      "kind": "enrich-owned",
+      "startedAt": "2026-09-02T16:57:50.635Z",
+      "finishedAt": "2026-09-02T17:02:11.840Z",
+      "batchSize": 100,
+      "cities": [
+        "Pacific Northwest",
+        "Inland Northwest and Montana",
+        "New York, New York",
+        "Los Angeles, California",
+        "Santa Monica, California",
+        "Chicago, Illinois",
+        "Torrance, California",
+        "Lynwood, California",
+        "Houston, Texas",
+        "Tustin, California",
+        "San Gabriel, California",
+        "Arcadia, California",
+        "Pearland, Texas",
+        "Downers Grove, Illinois",
+        "Glenview, Illinois",
+        "San Francisco, California",
+        "Dallas, Texas",
+        "Atlanta, Georgia",
+        "Philadelphia, Pennsylvania",
+        "Miami, Florida",
+        "Washington, District Of Columbia",
+        "Phoenix, Arizona",
+        "Boston, Massachusetts"
+      ],
+      "resolved": 92,
+      "unresolved": 8,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 96,
+      "corpusEnriched": 1094,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 100
+      },
+      "retries": 5,
+      "failures": 8,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-09-02T16-57-50-636Z-enrich-owned",
+      "records": [
+        {
+          "slug": "kin",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "gander-and-ryegrass",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "wooden-city-tacoma",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "cynara-restaurant-lounge",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "marche",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "elements-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "saffron-mediterranean-kitchen",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "hama-hama-oyster-saloon",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "published-on-main",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "part-parcel",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 13"
+          ]
+        },
+        {
+          "slug": "passatempo-taverna",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "wind-cries-mary",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "the-courtney-room",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "matia-kitchen",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "duck-soup",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "beverlys",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "araxi-restaurant-oyster-bar",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "wild-mountain-food-drink",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "peerless-restaurant-bar",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "crafted-yakima",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "anthonys-at-columbia-point",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "the-lively",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "luccas",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "ten",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "the-keep-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "walkers-grill",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "bistro-enzo",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "blackbird-kitchen",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "carmine-s-44th-street-nyc",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 16"
+          ]
+        },
+        {
+          "slug": "au-cheval",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "fraunces-tavern",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "buddakan",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "boucherie-union-square",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "gramercy-tavern",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "le-bernardin",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "philippe-the-original",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "bottega-louie",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 403 HTTP 403",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "re-publique",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "joey-dtla",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "chubby-cattle-bbq-little-tokyo",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "girl-the-goat-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "e-lephante",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "home-restaurant",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 403 HTTP 403",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "stk-steakhouse",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "the-dearborn",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "the-purple-pig-restaurant",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 403 HTTP 403",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "amor-loco",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "rosa-mexicano",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "vida-verde-tequila-bar",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "tacombi",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "guelaguetza-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "madre-oaxacan-restaurant-and-mezcaleria",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "sabores-oaxaquen-os-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "expresion-oaxaquena-restaurante",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "real-de-oaxaca",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "huynh-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "pho-saigon",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "simply-pho",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 403 HTTP 403",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "pho-binh-heights",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "the-best-sichuan-21",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "chi-restaurant-bar",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "mountain-house-east-village",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "jiang-nan-nyc",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "sichuan-impression",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "sichuan-impression-los-angeles",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 403 HTTP 403",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "chong-qing-special-noodles",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "tai-er-sichuan-cuisine",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "spicy-girl",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "mala-sichuan-bistro",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "xiaolong-dumpling",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "szechuan-spice-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "triple-pepper-river-oaks",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 403 HTTP 403",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "cooking-girl",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 408 timeout:ETIMEDOUT",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "lao-sze-chuan-downtown",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "chengdu-impression-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "chef-xiong-taste-of-szechuan",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "lao-sze-chuan",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "szechwan-north-authentic-sichuan-cuisine-glenview",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "chengdu-bistro-west-town",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "house-of-nanking",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 403 HTTP 403",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "chong-qing-xiao-mian",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "house-of-xian-dumpling",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "mama-ji-s",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "3eleven-kitchen-and-cocktails",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "5church-atlanta-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "alla-vita",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "angelo-s-pizzeria-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "aria-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "ariete-miami",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "atlas-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 13"
+          ]
+        },
+        {
+          "slug": "bacchanalia-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "carbone-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "causa-washington",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "christopher-s-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "committee-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "contessa-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "cote-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "del-mar-washington",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 16"
+          ]
+        },
+        {
+          "slug": "demera-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "durant-s-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 13"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
       "kind": "hygiene-owned",
       "startedAt": "2026-09-01T17:38:53.148Z",
       "finishedAt": "2026-09-01T17:42:07.799Z",
@@ -5788,132 +6734,6 @@
         }
       ],
       "hygiene": null
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-21T01:14:38.256Z",
-      "finishedAt": "2026-08-21T01:14:38.308Z",
-      "cities": [
-        {
-          "city": "Charlotte, NC",
-          "queueCity": "Charlotte",
-          "found": 4,
-          "inserted": 4,
-          "duplicates": 0
-        },
-        {
-          "city": "Baltimore, MD",
-          "queueCity": "Baltimore",
-          "found": 5,
-          "inserted": 5,
-          "duplicates": 0
-        },
-        {
-          "city": "Oklahoma City, OK",
-          "queueCity": "Oklahoma City",
-          "found": 3,
-          "inserted": 3,
-          "duplicates": 0
-        },
-        {
-          "city": "Jacksonville, FL",
-          "queueCity": "Jacksonville",
-          "found": 4,
-          "inserted": 4,
-          "duplicates": 0
-        },
-        {
-          "city": "San Diego, CA",
-          "queueCity": "San Diego",
-          "found": 5,
-          "inserted": 5,
-          "duplicates": 0
-        },
-        {
-          "city": "Dallas, TX",
-          "queueCity": "Dallas",
-          "found": 5,
-          "inserted": 5,
-          "duplicates": 0
-        },
-        {
-          "city": "Baltimore, MD",
-          "queueCity": "Baltimore",
-          "found": 7,
-          "inserted": 0,
-          "duplicates": 7
-        },
-        {
-          "city": "Charlotte, NC",
-          "queueCity": "Charlotte",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "San Diego, CA",
-          "queueCity": "San Diego",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
-        },
-        {
-          "city": "Jacksonville, FL",
-          "queueCity": "Jacksonville",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Oklahoma City, OK",
-          "queueCity": "Oklahoma City",
-          "found": 7,
-          "inserted": 0,
-          "duplicates": 7
-        }
-      ],
-      "inserted": 26,
-      "duplicatesSkipped": 37,
-      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-14-38-256Z-seed-listings",
-      "seedFiles": [
-        "seed-listings-2026-08-20-density-d01.json",
-        "seed-listings-2026-08-20-new-jersey-state-floor.json",
-        "seed-listings-2026-08-20-queue-49-54.json",
-        "seed-listings-2026-08-20-queue-55-60.json",
-        "seed-listings-2026-08-20-queue-61-66.json",
-        "seed-listings-2026-08-20-queue-67-72.json",
-        "seed-listings-2026-08-20-queue-73-78.json",
-        "seed-listings-2026-08-20-top50-43-48.json",
-        "seed-listings.json"
-      ],
-      "insertedSlugs": [
-        "supperland-charlotte",
-        "peppervine-charlotte",
-        "the-fig-tree-restaurant-charlotte",
-        "barrington-s-charlotte",
-        "magdalena-baltimore",
-        "petit-louis-bistro-baltimore",
-        "foraged-baltimore",
-        "gunther-co-baltimore",
-        "alma-cocina-latina-baltimore",
-        "mahogany-prime-steakhouse-oklahoma-city",
-        "the-jones-assembly-oklahoma-city",
-        "picasso-cafe-oklahoma-city",
-        "taverna-jacksonville",
-        "eleven-south-jacksonville",
-        "brick-restaurant-jacksonville",
-        "mezza-luna-jacksonville",
-        "born-raised-san-diego",
-        "george-s-at-the-cove-san-diego",
-        "ironside-fish-oyster-san-diego",
-        "the-marine-room-san-diego",
-        "fort-oak-san-diego",
-        "uchi-dallas-dallas",
-        "sachet-dallas",
-        "tei-an-dallas",
-        "monarch-dallas",
-        "crown-block-dallas"
-      ]
     }
   ]
 }

@@ -1,1 +1,208 @@
-{"regionGroup":"New Hampshire","generatedAt":"2026-09-01T20:03:04.285Z","records":{"hanover-street-chophouse-manchester":{"ll":[42.9956,-71.4548],"llSource":"city","tz":"America/New_York"},"cotton-manchester":{"ll":[42.9956,-71.4548],"llSource":"city","tz":"America/New_York"},"firefly-american-bistro-bar-manchester":{"ll":[42.9956,-71.4548],"llSource":"city","tz":"America/New_York","hours":[[[540,1020]],[],[],[],[],[],[]],"hoursSource":"first-party-prose"},"campo-enoteca-manchester":{"ll":[42.9956,-71.4548],"llSource":"city","tz":"America/New_York"},"the-foundry-manchester":{"ll":[42.9956,-71.4548],"llSource":"city","tz":"America/New_York","hours":[[[540,720]],[[960,1260]],[[960,1260]],[[960,1260]],[[960,1260]],[[960,1320]],[[960,1320]]],"hoursSource":"first-party-prose"},"stash-box-manchester":{"ll":[42.9956,-71.4548],"llSource":"city","tz":"America/New_York","hours":[[[780,1200]],[[1020,1320]],[],[[1020,1320]],[[1020,1320]],[[1020,1320]],[]],"hoursSource":"first-party-prose"},"the-crown-tavern-manchester":{"ll":[42.9956,-71.4548],"llSource":"city","tz":"America/New_York"},"republic-brewing-company-manchester":{"ll":[42.9956,-71.4548],"llSource":"city","tz":"America/New_York","hours":[[[720,1200]],[],[],[[900,1260]],[[900,1260]],[[720,1290]],[]],"hoursSource":"first-party-prose","band":"$$","bandSource":"planning-band","pp":[25,50],"ppSource":"planning-band"}}}
+{
+  "regionGroup": "New Hampshire",
+  "generatedAt": "2026-09-02T17:02:12.107Z",
+  "records": {
+    "hanover-street-chophouse-manchester": {
+      "ll": [
+        42.9956,
+        -71.4548
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "cotton-manchester": {
+      "ll": [
+        42.9956,
+        -71.4548
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "firefly-american-bistro-bar-manchester": {
+      "ll": [
+        42.9956,
+        -71.4548
+      ],
+      "llSource": "city",
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            540,
+            1020
+          ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "hoursSource": "first-party-prose"
+    },
+    "campo-enoteca-manchester": {
+      "ll": [
+        42.9956,
+        -71.4548
+      ],
+      "llSource": "city",
+      "tz": "America/New_York",
+      "dishes": [
+        {
+          "name": "house-made pasta",
+          "source": "first-party"
+        }
+      ]
+    },
+    "the-foundry-manchester": {
+      "ll": [
+        42.9956,
+        -71.4548
+      ],
+      "llSource": "city",
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            540,
+            720
+          ]
+        ],
+        [
+          [
+            960,
+            1260
+          ]
+        ],
+        [
+          [
+            960,
+            1260
+          ]
+        ],
+        [
+          [
+            960,
+            1260
+          ]
+        ],
+        [
+          [
+            960,
+            1260
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
+    },
+    "stash-box-manchester": {
+      "ll": [
+        42.9956,
+        -71.4548
+      ],
+      "llSource": "city",
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            780,
+            1200
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose"
+    },
+    "the-crown-tavern-manchester": {
+      "ll": [
+        42.9956,
+        -71.4548
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "republic-brewing-company-manchester": {
+      "ll": [
+        42.9956,
+        -71.4548
+      ],
+      "llSource": "city",
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [],
+        [],
+        [
+          [
+            900,
+            1260
+          ]
+        ],
+        [
+          [
+            900,
+            1260
+          ]
+        ],
+        [
+          [
+            720,
+            1290
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
+    }
+  }
+}
