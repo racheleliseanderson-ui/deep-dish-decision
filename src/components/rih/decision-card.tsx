@@ -1,10 +1,19 @@
 import { Chip } from "@/components/rih/bits";
 import { ListingFace } from "@/components/rih/listing-face";
+import {
+  CONFIRMATION_EVENT,
+  confirmationSummary,
+  readConfirmationEvidence,
+  type ConfirmationMap,
+} from "@/lib/confirmation-evidence";
 import { whyGoLine } from "@/lib/consumer-snapshot";
 import type { Finding, Scored, Situation } from "@/lib/intelligence";
+import type { NightDetails } from "@/lib/night-context";
+import { saveNightContext } from "@/lib/night-context";
 import { useShortlist } from "@/lib/shortlist";
 import { cn } from "@/lib/utils";
 import { Link } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 
 export type DecisionState = "good" | "verify" | "hold";
 
@@ -34,7 +43,7 @@ const STATE_COPY: Record<DecisionState, { label: string; line: string; tone: "ve
   },
   hold: {
     label: "HOLD",
-    line: "A hard constraint cannot be supported on the evidence currently held.",
+    line: "A hard requirement does not clear yet.",
     tone: "critical",
   },
 };
@@ -42,19 +51,38 @@ const STATE_COPY: Record<DecisionState, { label: string; line: string; tone: "ve
 export function DecisionCard({
   sc,
   situation,
+  details,
   onOpen,
 }: {
   sc: Scored;
   situation: Situation;
+  details: NightDetails;
   onOpen: () => void;
 }) {
   const r = sc.record;
   const shortlist = useShortlist();
-  const state = decisionState(sc);
-  const stateCopy = STATE_COPY[state];
   const material = materialFindings(sc);
-  const why = sc.reasons.length ? sc.reasons.slice(0, 3).join(" · ") : whyGoLine(r);
+  const [evidence, setEvidence] = useState<ConfirmationMap>({});
+
+  useEffect(() => {
+    const sync = () => setEvidence(readConfirmationEvidence(r.slug, situation, details));
+    sync();
+    window.addEventListener(CONFIRMATION_EVENT, sync);
+    window.addEventListener("storage", sync);
+    return () => {
+      window.removeEventListener(CONFIRMATION_EVENT, sync);
+      window.removeEventListener("storage", sync);
+    };
+  }, [r.slug, situation, details]);
+
+  const summary = confirmationSummary(decisionState(sc), material, evidence);
+  const state = summary.state;
+  const stateCopy = STATE_COPY[state];
+  const why = sc.reasons[0] ?? whyGoLine(r);
   const fitLabel = sc.fit >= 78 ? "Strong fit" : sc.fit >= 62 ? "Promising fit" : "Possible fit";
+  const openItems = state === "hold"
+    ? [...summary.cannot, ...summary.unanswered.filter((finding) => finding.layer === "critical")]
+    : summary.unresolved;
 
   return (
     <article
@@ -89,15 +117,15 @@ export function DecisionCard({
           </p>
           <p className="mt-2 text-[12px] leading-relaxed text-subtle">{stateCopy.line}</p>
 
-          {material.length ? (
+          {openItems.length ? (
             <div className="mt-4 rounded-xl border border-border bg-surface-sunken/45 p-4">
               <p className="text-eyebrow">
-                {material.length} thing{material.length === 1 ? "" : "s"} still need{material.length === 1 ? "s" : ""} confirming
+                {openItems.length} thing{openItems.length === 1 ? "" : "s"} to resolve
               </p>
               <ul className="mt-2 space-y-1.5 text-[13px] leading-relaxed text-muted-foreground">
-                {material.slice(0, 3).map((finding) => (
+                {openItems.slice(0, 2).map((finding) => (
                   <li key={finding.id} className="flex gap-2">
-                    <span aria-hidden className="text-watch">•</span>
+                    <span aria-hidden className={state === "hold" ? "text-critical" : "text-watch"}>•</span>
                     <span>{finding.title}</span>
                   </li>
                 ))}
@@ -111,11 +139,14 @@ export function DecisionCard({
               onClick={onOpen}
               className="tap rounded-full bg-primary px-4 py-2.5 text-xs font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
-              {state === "hold" ? "See what is blocking it" : "Check this restaurant"}
+              {state === "hold" ? "See what is blocking it" : state === "verify" ? "Verify this restaurant" : "Check and book"}
             </button>
             <button
               type="button"
-              onClick={() => shortlist.toggle(r.slug)}
+              onClick={() => {
+                saveNightContext(situation, details);
+                shortlist.toggle(r.slug);
+              }}
               aria-pressed={shortlist.has(r.slug)}
               className={cn(
                 "tap rounded-full border px-4 py-2.5 text-xs transition-colors",
@@ -126,14 +157,15 @@ export function DecisionCard({
             >
               {shortlist.has(r.slug) ? "Saved to night plan" : "Save to night plan"}
             </button>
-            <Link
-              to="/record/$slug"
-              params={{ slug: r.slug }}
-              className="tap px-2 py-2.5 text-xs text-subtle underline underline-offset-4 hover:text-foreground"
-            >
-              Full dossier
-            </Link>
           </div>
+
+          <Link
+            to="/record/$slug"
+            params={{ slug: r.slug }}
+            className="tap mt-3 inline-block text-[11px] text-subtle underline underline-offset-4 hover:text-foreground"
+          >
+            Research details
+          </Link>
         </div>
       </div>
     </article>

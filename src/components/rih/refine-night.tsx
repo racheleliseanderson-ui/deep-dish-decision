@@ -1,5 +1,5 @@
-import { COMMITMENT_LEVELS, PLANNING_LEVELS, SPEND_BANDS, type Situation } from "@/lib/intelligence";
 import { corpusMeta } from "@/lib/corpus-meta";
+import { COMMITMENT_LEVELS, PLANNING_LEVELS, SPEND_BANDS, type Situation } from "@/lib/intelligence";
 import { cn } from "@/lib/utils";
 
 function Toggle({
@@ -35,13 +35,41 @@ export function RefineNight({
   situation: Situation;
   patch: (next: Partial<Situation>) => void;
 }) {
+  const largeGroupIsHard = situation.constraints.includes("Large party (6+)");
+  const budgetIsHard = situation.constraints.includes("Hard budget cap");
+  const activeCount = [
+    !largeGroupIsHard && situation.partySize !== null,
+    !budgetIsHard && Boolean(situation.spendBand),
+    Boolean(situation.cuisine),
+    situation.radiusMi !== null,
+    Boolean(situation.maxPlanningLoad),
+    Boolean(situation.maxCommitment),
+    situation.wineForward,
+    situation.openOnly,
+  ].filter(Boolean).length;
+
+  const clearRefinements = () => {
+    patch({
+      partySize: largeGroupIsHard ? situation.partySize : null,
+      spendBand: budgetIsHard ? situation.spendBand : null,
+      cuisine: null,
+      radiusMi: null,
+      maxPlanningLoad: null,
+      maxCommitment: null,
+      wineForward: false,
+      openOnly: false,
+    });
+  };
+
   return (
     <details className="mt-6 rounded-2xl border border-border bg-surface-sunken/45">
       <summary className="tap cursor-pointer list-none px-5 py-4 text-sm font-medium text-foreground marker:hidden sm:px-6">
         <span className="flex items-center justify-between gap-4">
           <span>
             Refine this night
-            <span className="ml-2 font-normal text-muted-foreground">Party · budget · cuisine · distance · planning · commitment · wine</span>
+            <span className="ml-2 font-normal text-muted-foreground">
+              {activeCount ? `${activeCount} refinement${activeCount === 1 ? "" : "s"} active` : "Optional"}
+            </span>
           </span>
           <span aria-hidden className="text-primary">+</span>
         </span>
@@ -61,6 +89,7 @@ export function RefineNight({
               </Toggle>
             ))}
           </div>
+          {largeGroupIsHard ? <p className="mt-2 text-xs text-subtle">This count is also part of your hard group requirement.</p> : null}
         </div>
 
         <div>
@@ -76,6 +105,7 @@ export function RefineNight({
               </Toggle>
             ))}
           </div>
+          {budgetIsHard ? <p className="mt-2 text-xs text-subtle">This ceiling is also part of your hard budget requirement.</p> : null}
         </div>
 
         <label>
@@ -112,7 +142,7 @@ export function RefineNight({
               </Toggle>
             </div>
           ) : (
-            <p className="mt-2 text-xs leading-relaxed text-subtle">Use “Near me” in the four-question start to make distance a hard filter.</p>
+            <p className="mt-2 text-xs leading-relaxed text-subtle">Use “Near me” in the first question if distance needs to affect the decision.</p>
           )}
         </div>
 
@@ -149,17 +179,26 @@ export function RefineNight({
         <div className="lg:col-span-2">
           <p className="text-eyebrow">Preferences</p>
           <div className="mt-2 flex flex-wrap gap-2">
-            <Toggle active={situation.preferWalkIn} onClick={() => patch({ preferWalkIn: !situation.preferWalkIn })}>
-              Walk-in preferred
-            </Toggle>
             <Toggle active={situation.wineForward} onClick={() => patch({ wineForward: !situation.wineForward })}>
               Wine-forward
             </Toggle>
             <Toggle active={situation.openOnly} onClick={() => patch({ openOnly: !situation.openOnly })}>
-              Only rooms serving then
+              Only places serving then
             </Toggle>
           </div>
         </div>
+
+        {activeCount ? (
+          <div className="border-t border-border pt-4 lg:col-span-2">
+            <button
+              type="button"
+              onClick={clearRefinements}
+              className="tap text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
+            >
+              Clear refinements
+            </button>
+          </div>
+        ) : null}
       </div>
     </details>
   );

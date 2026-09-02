@@ -1,38 +1,61 @@
-import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
-import { Reveal } from "@/components/rih/reveal";
-import type { RestaurantRecord } from "@/lib/dataset";
-import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
+import { Chip, Eyebrow } from "@/components/rih/bits";
+import { decisionState, materialFindings } from "@/components/rih/decision-card";
+import { DecisionWorkflow } from "@/components/rih/decision-workflow";
+import {
+  CONFIRMATION_EVENT,
+  confirmationSummary,
+  readConfirmationEvidence,
+  type ConfirmationMap,
+  type DecisionState,
+} from "@/lib/confirmation-evidence";
+import { emptySituation, scoreRecord, type Scored, type Situation } from "@/lib/intelligence";
+import { openLabel, spendLine } from "@/lib/live";
+import {
+  clearNightContext,
+  emptyNightDetails,
+  readNightContext,
+  type NightDetails,
+  type StoredNightContext,
+} from "@/lib/night-context";
 import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
-import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
-import { useLiveRows, useMinuteClock } from "@/hooks/use-live-rows";
-import { NightSummary } from "@/components/rih/night-summary";
-import { ResultsMap } from "@/components/rih/results-map";
-import {
-  bookingRiskLine,
-  formatDistance,
-  haversineMi,
-  openLabel,
-  partyTotal,
-  spendLine,
-} from "@/lib/live";
-import { decodeSituation } from "@/lib/situation-url";
 import { useRecordsBySlug } from "@/hooks/use-records-by-slug";
+import { useLiveRows, useMinuteClock } from "@/hooks/use-live-rows";
+import { decodeSituation } from "@/lib/situation-url";
+import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
+import { useEffect, useMemo, useState } from "react";
+
+const STATE_COPY: Record<DecisionState, { label: string; tone: "verified" | "watch" | "critical" }> = {
+  good: { label: "GOOD FIT", tone: "verified" },
+  verify: { label: "VERIFY FIRST", tone: "watch" },
+  hold: { label: "HOLD", tone: "critical" },
+};
+
+const CONSTRAINT_LABELS: Record<string, string> = {
+  "Severe allergy / celiac": "Allergy / celiac",
+  "Mobility / step-free needs": "Accessibility",
+  "Hearing / noise sensitivity": "Need quiet",
+  "Hard end time (show, train, childcare)": "Hard end time",
+  "Large party (6+)": "Large group",
+  "Hard budget cap": "Hard budget",
+  "Private / semi-private required": "Private room",
+  "Zero-proof / no alcohol": "Zero-proof",
+};
 
 export const Route = createFileRoute("/shortlist")({
   head: () => ({
     meta: [
-      { title: "Night Plan — your shortlisted restaurant records" },
+      { title: "Night Plan — your restaurant decision" },
       {
         name: "description",
         content:
-          "Order your shortlisted restaurants into one night, see the combined confirmation burden, and take every unresolved line with you before you call.",
+          "Keep the restaurant you are leaning toward, your backup choices, what has been confirmed, what remains, and the booking path in one place.",
       },
-      { property: "og:title", content: "Night Plan — one night, one confirmation pass" },
+      { property: "og:title", content: "Night Plan — keep the restaurant decision together" },
       {
         property: "og:description",
         content:
-          "The shortlist becomes a plan: sequence, open unknowns, and the calls left to make.",
+          "Your first choice, backup choices, confirmations, remaining questions, and booking path.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -41,319 +64,281 @@ export const Route = createFileRoute("/shortlist")({
   component: Shortlist,
 });
 
+function dateLabel(leadDays: number | null) {
+  if (leadDays === null) return "Date not set";
+  if (leadDays === 0) return "Tonight";
+  const date = new Date();
+  date.setDate(date.getDate() + leadDays);
+  return date.toLocaleDateString([], { weekday: "short", month: "short", day: "numeric" });
+}
+
+function timeLabel(value: string | null) {
+  if (!value) return "Time flexible";
+  const [hourRaw, minuteRaw] = value.split(":");
+  const hour = Number(hourRaw);
+  const minute = Number(minuteRaw);
+  if (!Number.isFinite(hour) || !Number.isFinite(minute)) return value;
+  return new Date(2000, 0, 1, hour, minute).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+}
+
+function checkedLabel(value: string | null) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  return date.toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+}
+
+function NightDecisionCard({
+  sc,
+  situation,
+  details,
+  index,
+  onOpen,
+  onMakePrimary,
+  onRemove,
+}: {
+  sc: Scored;
+  situation: Situation;
+  details: NightDetails;
+  index: number;
+  onOpen: () => void;
+  onMakePrimary: () => void;
+  onRemove: () => void;
+}) {
+  const [evidence, setEvidence] = useState<ConfirmationMap>({});
+  const material = materialFindings(sc);
+
+  useEffect(() => {
+    const sync = () => setEvidence(readConfirmationEvidence(sc.record.slug, situation, details));
+    sync();
+    window.addEventListener(CONFIRMATION_EVENT, sync);
+    window.addEventListener("storage", sync);
+    return () => {
+      window.removeEventListener(CONFIRMATION_EVENT, sync);
+      window.removeEventListener("storage", sync);
+    };
+  }, [sc.record.slug, situation, details]);
+
+  const summary = confirmationSummary(decisionState(sc), material, evidence);
+  const stateCopy = STATE_COPY[summary.state];
+  const open = openLabel(sc.open, Boolean(situation.arriveAt));
+  const spend = spendLine(sc.live);
+  const why = sc.reasons[0] ?? sc.record.serviceSummary;
+
+  return (
+    <article className={index === 0 ? "rounded-2xl border border-primary/35 bg-surface p-5 shadow-lift sm:p-6" : "rounded-2xl border border-border bg-surface p-5 sm:p-6"}>
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <p className="text-eyebrow text-gilt">{index === 0 ? "Chosen restaurant" : `Backup choice ${index}`}</p>
+          <h2 className="mt-2 font-display text-2xl leading-tight tracking-tight sm:text-3xl">{sc.record.title}</h2>
+          <p className="mt-1 text-sm text-muted-foreground">{sc.record.region}</p>
+        </div>
+        <Chip tone={stateCopy.tone}>{stateCopy.label}</Chip>
+      </div>
+
+      <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+        <span className="text-foreground">Why it fits:</span> {why}
+      </p>
+
+      <div className="mt-4 flex flex-wrap gap-2 text-xs text-muted-foreground">
+        <span className="rounded-full border border-border px-3 py-1.5">{open.text}</span>
+        {spend ? <span className="rounded-full border border-border px-3 py-1.5">{spend.text}</span> : null}
+        {sc.distanceMi !== null ? <span className="rounded-full border border-border px-3 py-1.5">{Math.round(sc.distanceMi * 10) / 10} mi away</span> : null}
+      </div>
+
+      {summary.confirmed.length ? (
+        <div className="mt-5 rounded-xl border border-verified/25 bg-verified/5 p-4">
+          <p className="text-eyebrow text-verified">Confirmed</p>
+          <ul className="mt-2 space-y-2 text-[13px] leading-relaxed text-muted-foreground">
+            {summary.confirmed.map((finding) => {
+              const item = evidence[finding.id];
+              const checked = checkedLabel(item?.checkedAt ?? null);
+              return (
+                <li key={finding.id}>
+                  <span className="font-medium text-foreground">✓ {finding.title}</span>
+                  {item?.method || checked || item?.note ? (
+                    <span className="block text-xs text-subtle">
+                      {[item?.method ? `via ${item.method}` : null, checked, item?.note || null].filter(Boolean).join(" · ")}
+                    </span>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ) : null}
+
+      {summary.cannot.length ? (
+        <div className="mt-5 rounded-xl border border-critical/30 bg-critical/7 p-4">
+          <p className="text-eyebrow text-critical">Cannot accommodate</p>
+          <ul className="mt-2 space-y-1.5 text-[13px] text-muted-foreground">
+            {summary.cannot.map((finding) => <li key={finding.id}>✕ {finding.title}</li>)}
+          </ul>
+        </div>
+      ) : null}
+
+      {summary.unresolved.length ? (
+        <div className="mt-5 rounded-xl border border-watch/30 bg-watch/7 p-4">
+          <p className="text-eyebrow text-watch">Still to confirm</p>
+          <ul className="mt-2 space-y-1.5 text-[13px] text-muted-foreground">
+            {summary.unresolved.slice(0, 4).map((finding) => <li key={finding.id}>• {finding.title}</li>)}
+          </ul>
+        </div>
+      ) : null}
+
+      <div className="mt-5 flex flex-wrap gap-2">
+        <button type="button" onClick={onOpen} className="tap rounded-full bg-primary px-4 py-2.5 text-xs font-medium text-primary-foreground">
+          {summary.state === "good" ? "Review and book" : summary.state === "hold" ? "Review the blocker" : "Continue the decision"}
+        </button>
+        {summary.state === "good" && (sc.record.reservationUrl || sc.record.website) ? (
+          <a href={sc.record.reservationUrl || sc.record.website} target="_blank" rel="noreferrer" className="tap rounded-full border border-border px-4 py-2.5 text-xs text-muted-foreground hover:text-foreground">
+            Book
+          </a>
+        ) : null}
+        {index > 0 ? (
+          <button type="button" onClick={onMakePrimary} className="tap rounded-full border border-border px-4 py-2.5 text-xs text-muted-foreground hover:text-foreground">
+            Use as first choice
+          </button>
+        ) : null}
+        <button type="button" onClick={onRemove} className="tap px-2 py-2.5 text-xs text-subtle hover:text-critical">
+          Remove
+        </button>
+      </div>
+    </article>
+  );
+}
+
 function Shortlist() {
-  const { slugs, remove, clear, move } = useShortlist();
+  const shortlist = useShortlist();
   const enrichment = useEnrichmentSignals();
-  // A night plan reached from a shared situation link keeps that situation, so
-  // party size and arrival time carry across instead of resetting to nothing.
   const search = useRouterState({ select: (st) => st.location.searchStr });
-  const situation = search ? decodeSituation(search) : emptySituation;
+  const urlSituation = useMemo(() => (search ? decodeSituation(search) : null), [search]);
+  const [stored, setStored] = useState<StoredNightContext>({
+    situation: { ...emptySituation },
+    details: { ...emptyNightDetails },
+  });
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const now = useMinuteClock();
 
-  const { records } = useRecordsBySlug(slugs);
+  useEffect(() => {
+    setStored(readNightContext());
+  }, []);
+
+  const situation = urlSituation ?? stored.situation;
+  const details = stored.details;
+  const { records } = useRecordsBySlug(shortlist.slugs);
   const { rows: live } = useLiveRows(records);
 
-  const rows = records.map((r) => ({
-    record: r,
-    live: live[r.slug],
-    sc: scoreRecord(r, situation, {
+  const rows = records.map((record) => ({
+    record,
+    sc: scoreRecord(record, situation, {
       useEnrichment: enrichment.enabled,
       live,
       now,
     }),
   }));
 
-  /* How far each stop is from the one before it — the practical question when
-     you are working a list in order. */
-  const legs = rows.map((row, i) => {
-    if (i === 0) return null;
-    const a = rows[i - 1]?.live?.ll;
-    const b = row.live?.ll;
-    if (!a || !b) return null;
-    const d = haversineMi(a, b);
-    if (!Number.isFinite(d)) return null;
-    const exact = rows[i - 1]?.live?.llSource === "exact" && row.live?.llSource === "exact";
-    return { mi: d, exact };
-  });
+  const selected = selectedSlug
+    ? rows.find((row) => row.record.slug === selectedSlug)?.sc ?? null
+    : null;
 
-  const criticals = rows.reduce((a, r) => a + r.sc.criticals.length, 0);
-  const unknowns = rows.reduce((a, r) => a + r.record.unknownsCount, 0);
-  const calls = rows.filter((r) => r.record.hasPhone).length;
-  const conflicts = rows.filter((r) => r.record.hasOfficialConflict).length;
+  const nextBest = () => {
+    const current = selectedSlug ? rows.findIndex((row) => row.record.slug === selectedSlug) : -1;
+    const next = rows[current + 1] ?? rows[0];
+    setSelectedSlug(next?.record.slug ?? null);
+  };
+
+  const area = situation.region ?? situation.originLabel ?? "Area not set";
+  const night = situation.occasion ?? "Any kind of night";
+  const constraints = situation.constraints.map((value) => CONSTRAINT_LABELS[value] ?? value);
 
   return (
     <main className="min-h-screen pb-28">
-      <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
-        <div className="mx-auto max-w-5xl px-4 pb-12 pt-8 sm:px-6">
-          <h1 className="mt-10 max-w-3xl font-display text-[2.3rem] font-normal leading-[1.02] tracking-[-0.02em] sm:text-5xl">
-            The night plan.
+      <header className="border-b border-border-strong bg-surface-sunken">
+        <div className="mx-auto max-w-5xl px-4 pb-9 pt-8 sm:px-6">
+          <p className="text-eyebrow text-gilt">Night Plan</p>
+          <h1 className="mt-3 max-w-3xl font-display text-[2.3rem] font-normal leading-[1.02] tracking-[-0.02em] sm:text-5xl">
+            Keep the restaurant decision together.
           </h1>
-          <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-            Shortlisted rooms in the order you would work them. This list lives only in this browser
-            — nothing is sent anywhere, and nothing here is a booking. What it does give you is one
-            combined confirmation pass instead of four separate ones.
+          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            Your first choice, backups, live confirmations, and the booking path stay here in this browser.
           </p>
-          {rows.length ? (
-            <div className="mt-9 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              <Stat label="Rooms on the plan" value={rows.length} />
-              <Stat label="Critical lines" value={criticals} tone="critical" note="Read first" />
-              <Stat label="Unknowns held open" value={unknowns} tone="unknown" />
-              <Stat
-                label="Reachable by phone"
-                value={`${calls}/${rows.length}`}
-                tone="verified"
-                note={conflicts ? `${conflicts} with an official conflict` : "No open conflicts"}
-              />
-            </div>
-          ) : null}
         </div>
       </header>
 
-      <div className="mx-auto max-w-5xl px-4 sm:px-6">
-        {!rows.length ? (
-          <div className="plate mt-12 p-8 text-center">
-            <Eyebrow>Empty plan</Eyebrow>
-            <p className="mx-auto mt-4 max-w-md text-[14px] leading-relaxed text-muted-foreground">
-              Nothing shortlisted yet. Add rooms from the instrument or from any record dossier, and
-              they will collect here in the order you added them.
+      <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
+        <section className="rounded-2xl border border-border bg-surface p-5 sm:p-6">
+          <Eyebrow>{situation.leadDays === 0 ? "Tonight" : "This night"}</Eyebrow>
+          <div className="mt-3 flex flex-wrap gap-2 text-sm">
+            <span className="rounded-full border border-border px-3 py-1.5">{area}</span>
+            <span className="rounded-full border border-border px-3 py-1.5">{night}</span>
+            <span className="rounded-full border border-border px-3 py-1.5">{dateLabel(situation.leadDays)}</span>
+            <span className="rounded-full border border-border px-3 py-1.5">{timeLabel(situation.arriveAt)}</span>
+            {details.hardEndAt ? <span className="rounded-full border border-border px-3 py-1.5">Done by {timeLabel(details.hardEndAt)}</span> : null}
+            {situation.partySize ? <span className="rounded-full border border-border px-3 py-1.5">{situation.partySize} people</span> : null}
+            {situation.spendBand ? <span className="rounded-full border border-border px-3 py-1.5">Budget {situation.spendBand}</span> : null}
+          </div>
+          {constraints.length ? (
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              <span className="text-foreground">Cannot go wrong:</span> {constraints.join(" · ")}
             </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-2">
-              <Link
-                to="/"
-                className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
-              >
-                Open the instrument
-              </Link>
-              <Link
-                to="/atlas"
-                className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:text-foreground"
-              >
-                Browse the atlas
-              </Link>
-            </div>
+          ) : null}
+          <Link to="/" hash="situation" className="mt-4 inline-block text-xs text-primary underline underline-offset-4">
+            Change the night
+          </Link>
+        </section>
+
+        {!rows.length ? (
+          <div className="mt-10 rounded-2xl border border-border bg-surface p-8 text-center">
+            <h2 className="font-display text-2xl">No restaurant saved yet.</h2>
+            <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
+              Find restaurants for the night, then save the ones you would actually consider.
+            </p>
+            <Link to="/" hash="ranked" className="mt-6 inline-flex rounded-full bg-primary px-4 py-2.5 text-xs font-medium text-primary-foreground">
+              Find a restaurant
+            </Link>
           </div>
         ) : (
           <>
-            <NightSummary
-              stops={rows.map(({ record, live: lr }) => ({ record, live: lr }))}
-              partySize={situation.partySize}
-              arriveAt={situation.arriveAt}
-              now={now}
-            />
-
-            {rows.filter((r) => r.live?.ll).length > 1 ? (
-              <ResultsMap
-                // On a night plan the number on the pin is the stop order, not
-                // a rank — scoreRecord leaves rank at 0 because only rank() sets it.
-                scored={rows.map((r, i) => ({ ...r.sc, rank: i + 1 }))}
-                numberLabel="Stops in order"
-                origin={situation.origin}
-                originLabel={situation.originLabel}
-                radiusMi={null}
-              />
-            ) : null}
-
-            <ol className="mt-12 space-y-5">
-              {rows.map(({ record, sc, live: liveRow }, i) => (
-                <Reveal as="li" key={record.slug} delay={i * 40}>
-                  {legs[i] ? (
-                    <p className="mb-2 pl-1 text-[11px] uppercase tracking-[0.14em] text-subtle">
-                      {formatDistance(legs[i]!.mi, legs[i]!.exact)} from stop {i}
-                      {legs[i]!.exact ? "" : " · city-level estimate"}
-                    </p>
-                  ) : null}
-                  <article className="plate p-5 sm:p-6">
-                    <div className="flex flex-wrap items-start justify-between gap-4">
-                      <div className="min-w-0">
-                        <p className="text-eyebrow">Stop {i + 1}</p>
-                        <h2 className="mt-2 font-display text-2xl leading-tight tracking-tight">
-                          <Link
-                            to="/record/$slug"
-                            params={{ slug: record.slug }}
-                            className="transition-colors hover:text-primary"
-                          >
-                            {record.title}
-                          </Link>
-                        </h2>
-                        <p className="mt-2 max-w-xl text-[13px] leading-relaxed text-muted-foreground">
-                          {record.serviceSummary}
-                        </p>
-                      </div>
-                      <div className="no-print flex shrink-0 items-center gap-1.5">
-                        <button
-                          type="button"
-                          onClick={() => move(record.slug, -1)}
-                          disabled={i === 0}
-                          aria-label="Move earlier"
-                          className="rounded-full border border-border px-2.5 py-1 text-xs text-muted-foreground disabled:opacity-30"
-                        >
-                          ↑
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => move(record.slug, 1)}
-                          disabled={i === rows.length - 1}
-                          aria-label="Move later"
-                          className="rounded-full border border-border px-2.5 py-1 text-xs text-muted-foreground disabled:opacity-30"
-                        >
-                          ↓
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => remove(record.slug)}
-                          className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground hover:border-critical/40 hover:text-critical"
-                        >
-                          Remove
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* What you need at the moment of committing to this stop. */}
-                    <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 rounded-xl border border-border bg-surface-sunken/40 px-4 py-3 sm:grid-cols-4">
-                      {(() => {
-                        // sc.open already resolves the reader's arrival moment;
-                        // recomputing from the wall clock here would label a
-                        // 7pm arrival with the state at the current hour.
-                        const state = openLabel(sc.open, Boolean(situation.arriveAt));
-                        const spend = spendLine(liveRow);
-                        const total = partyTotal(liveRow, situation.partySize);
-                        const risk = bookingRiskLine(liveRow);
-                        const dish = liveRow?.dishes?.[0];
-                        const cells: {
-                          label: string;
-                          value: string;
-                          note?: string | undefined;
-                          tone?: string | undefined;
-                        }[] = [
-                          {
-                            label: situation.arriveAt ? "At your time" : "Right now",
-                            value: state.text,
-                            note: liveRow?.hours ? undefined : "no schedule on file",
-                            tone: state.tone,
-                          },
-                          {
-                            label: "Per guest",
-                            value: spend ? spend.text.replace(/^About /, "") : "Not stated",
-                            note: spend ? (total ?? spend.source) : "no figure on file",
-                          },
-                          {
-                            label: "Known for",
-                            value: dish ? dish.name : "No dish named",
-                            note: dish
-                              ? dish.source === "first-party"
-                                ? "named by the restaurant"
-                                : "recurring in reviews"
-                              : undefined,
-                          },
-                          {
-                            label: "If you cancel",
-                            value: risk ?? "Nothing stated",
-                            note: risk ? "not the price of dinner" : undefined,
-                            tone: risk ? "watch" : undefined,
-                          },
-                        ];
-                        return cells.map((c) => (
-                          <div key={c.label} className="min-w-0">
-                            <dt className="text-[10px] uppercase tracking-[0.14em] text-subtle">
-                              {c.label}
-                            </dt>
-                            <dd
-                              className={
-                                "mt-0.5 truncate text-[13px] font-medium " +
-                                (c.tone === "verified"
-                                  ? "text-verified"
-                                  : c.tone === "watch"
-                                    ? "text-watch"
-                                    : c.tone === "critical"
-                                      ? "text-critical"
-                                      : c.tone === "unknown"
-                                        ? "text-subtle"
-                                        : "text-foreground")
-                              }
-                              title={c.value}
-                            >
-                              {c.value}
-                            </dd>
-                            {c.note ? (
-                              <p className="mt-0.5 truncate text-[11px] text-subtle">{c.note}</p>
-                            ) : null}
-                          </div>
-                        ));
-                      })()}
-                    </dl>
-
-                    <div className="mt-4 flex flex-wrap gap-1.5">
-                      <Chip tone="accent">{liveRow?.hood ?? record.region}</Chip>
-                      <Chip>{topOccasion(record).occasion}</Chip>
-                      <Chip>{record.depthLabel}</Chip>
-                      {record.hasOfficialConflict ? (
-                        <Chip tone="critical">Official conflict</Chip>
-                      ) : null}
-                      <Chip tone="unknown">{record.unknownsCount} unknowns</Chip>
-                    </div>
-
-                    <Rule className="my-5" />
-
-                    <div className="grid gap-6 sm:grid-cols-2">
-                      <div>
-                        <Eyebrow>Before you call</Eyebrow>
-                        <ul className="mt-3 space-y-2 text-[13px] leading-relaxed text-muted-foreground">
-                          {(sc.criticals.length ? sc.criticals : sc.watch).slice(0, 3).map((f) => (
-                            <li key={f.id} className="flex gap-2.5">
-                              <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-critical" />
-                              {f.action}
-                            </li>
-                          ))}
-                          {!sc.criticals.length && !sc.watch.length ? (
-                            <li className="text-verified">
-                              Nothing critical on the record. Confirm the volatile lines anyway.
-                            </li>
-                          ) : null}
-                        </ul>
-                      </div>
-                      <div>
-                        <Eyebrow>Reach</Eyebrow>
-                        <ul className="mt-3 space-y-2 text-[13px]">
-                          <li className="text-num text-muted-foreground">
-                            {record.hasPhone ? record.phone : "No published phone line"}
-                          </li>
-                          <li className="truncate text-muted-foreground">{record.address}</li>
-                          <li>
-                            <Link
-                              to="/packet/$slug"
-                              params={{ slug: record.slug }}
-                              className="text-primary"
-                            >
-                              Open decision packet →
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </article>
-                </Reveal>
+            <div className="mt-10 space-y-5">
+              {rows.map(({ record, sc }, index) => (
+                <NightDecisionCard
+                  key={record.slug}
+                  sc={sc}
+                  situation={situation}
+                  details={details}
+                  index={index}
+                  onOpen={() => setSelectedSlug(record.slug)}
+                  onMakePrimary={() => shortlist.makePrimary(record.slug)}
+                  onRemove={() => shortlist.remove(record.slug)}
+                />
               ))}
-            </ol>
+            </div>
 
-            <div className="no-print mt-10 flex flex-wrap items-center gap-2">
+            <div className="mt-8 border-t border-border pt-5">
               <button
                 type="button"
-                onClick={() => window.print()}
-                className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
+                onClick={() => {
+                  shortlist.clear();
+                  clearNightContext();
+                  setStored({ situation: { ...emptySituation }, details: { ...emptyNightDetails } });
+                }}
+                className="tap text-xs text-muted-foreground underline underline-offset-4 hover:text-critical"
               >
-                Print the plan
-              </button>
-              <button
-                type="button"
-                onClick={clear}
-                className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:border-critical/40 hover:text-critical"
-              >
-                Clear the plan
+                Clear this night
               </button>
             </div>
           </>
         )}
       </div>
+
+      <DecisionWorkflow
+        sc={selected}
+        situation={situation}
+        details={details}
+        onClose={() => setSelectedSlug(null)}
+        onNextBest={nextBest}
+      />
     </main>
   );
 }
