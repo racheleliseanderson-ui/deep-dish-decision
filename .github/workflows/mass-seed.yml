@@ -1,0 +1,116 @@
+name: Deep Dish mass seed
+
+# Broad first-party depth pass. This is deliberately separate from hygiene:
+# hygiene keeps revisiting the thinnest records; this sweep walks the entire
+# corpus oldest-first so every restaurant gets a turn.
+
+on:
+  schedule:
+    # Daily at 08:17 UTC (02:17 MDT / 01:17 MST). One rolling wave per day.
+    - cron: "17 8 * * *"
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "Restaurants to refresh in this wave (1-250)"
+        required: false
+        default: "100"
+  push:
+    branches:
+      - main
+    paths:
+      - "src/data/mass-seed-control.json"
+
+concurrency:
+  group: deep-dish-mass-seed
+  cancel-in-progress: false
+
+jobs:
+  seed:
+    # Corpus writes are only permitted from the default branch. This prevents a
+    # feature branch that changes the control file from trying to rebase/push
+    # generated corpus data onto main.
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      # The broad pass stays cheap and polite. Chromium recovery belongs to the
+      # narrower hygiene/recovery queue, not a 100-restaurant sweep.
+      RI_PLAYWRIGHT: "0"
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Resolve wave settings
+        id: wave
+        shell: bash
+        run: |
+          CONTROL_BATCH=$(node -e "const c=require('./src/data/mass-seed-control.json'); process.stdout.write(String(c.batch || 100))")
+          ENABLED=$(node -e "const c=require('./src/data/mass-seed-control.json'); process.stdout.write(c.enabled === false ? 'false' : 'true')")
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.batch }}" ]; then
+            BATCH="${{ inputs.batch }}"
+          else
+            BATCH="$CONTROL_BATCH"
+          fi
+          if ! [[ "$BATCH" =~ ^[0-9]+$ ]] || [ "$BATCH" -lt 1 ] || [ "$BATCH" -gt 250 ]; then
+            echo "Invalid batch: $BATCH (expected 1-250)" >&2
+            exit 1
+          fi
+          echo "batch=$BATCH" >> "$GITHUB_OUTPUT"
+          echo "enabled=$ENABLED" >> "$GITHUB_OUTPUT"
+          echo "Wave enabled=$ENABLED batch=$BATCH"
+
+      - name: Sweep owned first-party sources
+        if: ${{ steps.wave.outputs.enabled == 'true' || github.event_name == 'workflow_dispatch' }}
+        run: node scripts/pipeline/sweep-owned.mjs --batch=${{ steps.wave.outputs.batch }}
+
+      - name: Validate corpus invariants
+        if: ${{ steps.wave.outputs.enabled == 'true' || github.event_name == 'workflow_dispatch' }}
+        run: node scripts/corpus-invariants.mjs
+
+      - name: Sync Supabase corpus
+        if: ${{ steps.wave.outputs.enabled == 'true' || github.event_name == 'workflow_dispatch' }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        shell: bash
+        run: |
+          if [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_SERVICE_KEY" ]; then
+            node scripts/db/seed-corpus.mjs
+          else
+            echo "::warning::Supabase service secrets are not configured; corpus files were refreshed but database sync was skipped."
+          fi
+
+      - name: Commit refreshed corpus
+        if: ${{ steps.wave.outputs.enabled == 'true' || github.event_name == 'workflow_dispatch' }}
+        shell: bash
+        run: |
+          git config user.name "Rachel Elise Anderson"
+          git config user.email "Rachel.Elise.Anderson@gmail.com"
+          git add \
+            src/data/enrichment.json \
+            src/data/enrichment \
+            src/data/first-party-dishes.json \
+            src/data/live \
+            src/data/coverage.json \
+            src/data/refresh-queue.json \
+            src/data/run-log.json
+          if git diff --staged --quiet; then
+            echo "No corpus changes"
+          else
+            git commit -m "chore(corpus): mass seed ${{ steps.wave.outputs.batch }} owned restaurant records"
+            # Enrichment snapshots and reports can leave deliberately untracked or
+            # unstaged diagnostics. They are not part of the published corpus and
+            # must not block the rebase of the committed data wave.
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
