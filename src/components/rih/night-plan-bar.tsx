@@ -1,14 +1,13 @@
 import { useShortlist } from "@/lib/shortlist";
 import { titleForSlug } from "@/lib/corpus-meta";
+import { readNightFromLocation, type SaltyNightRecord } from "@/lib/salty-night-record";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
 /**
- * Always-visible slim bar for the night plan (browser-local shortlist).
- * Empty state invites the reader to the ranked rooms.
- * When the address bar already carries a situation query, expose a quick
- * "Copy link" that shares the current URL (no situation prop required).
+ * Always-visible decision bar. The shortlist stays local to Restaurant Intelligence;
+ * the Salty Night Record carries only the cross-suite decision summary and resume point.
  */
 export function NightPlanBar() {
   const shortlist = useShortlist();
@@ -16,13 +15,14 @@ export function NightPlanBar() {
   const titles = shortlist.slugs
     .map((s) => titleForSlug(s))
     .filter(Boolean)
-    .slice(0, 3) as string[];
+    .slice(0, 2) as string[];
   const [copied, setCopied] = useState(false);
   const [hasQuery, setHasQuery] = useState(false);
+  const [night, setNight] = useState<SaltyNightRecord | null>(null);
 
-  // Client-only: avoid SSR/client mismatch on search params.
   useEffect(() => {
     setHasQuery(window.location.search.length > 1);
+    setNight(readNightFromLocation("restaurant"));
   }, []);
 
   const onCopyUrl = async () => {
@@ -35,7 +35,6 @@ export function NightPlanBar() {
     }
   };
 
-  /* Publish our height so the compare tray can sit above us rather than on top. */
   const barRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = barRef.current;
@@ -61,13 +60,25 @@ export function NightPlanBar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
         <div className="min-w-0 flex-1">
-          {count === 0 ? (
+          {night ? (
             <p className="truncate text-[12px] text-muted-foreground">
-              Night plan is empty — add rooms from the ranked list.
+              <span className="text-eyebrow text-primary">Night record</span>
+              <span className="text-foreground"> · {night.decision}</span>
+              <span className="hidden md:inline"> · Next: {night.nextStep}</span>
+              {count ? (
+                <span className="text-subtle">
+                  {" "}· {count} room{count === 1 ? "" : "s"} saved
+                  {titles.length ? ` · ${titles.join(" · ")}` : ""}
+                </span>
+              ) : null}
+            </p>
+          ) : count === 0 ? (
+            <p className="truncate text-[12px] text-muted-foreground">
+              No Salty Night Record yet — describe this night, then save or confirm a room.
             </p>
           ) : (
             <p className="truncate text-[12px] text-muted-foreground">
-              <span className="text-num text-foreground">{count}</span> on the night plan
+              <span className="text-num text-foreground">{count}</span> on the restaurant shortlist
               {titles.length ? <span className="text-subtle"> · {titles.join(" · ")}</span> : null}
             </p>
           )}
@@ -84,7 +95,7 @@ export function NightPlanBar() {
                   : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground",
               )}
             >
-              {copied ? "Copied" : "Copy link"}
+              {copied ? "Copied" : "Copy night"}
             </button>
           ) : null}
           <Link
@@ -92,7 +103,7 @@ export function NightPlanBar() {
             hash="ranked"
             className="tap rounded-full border border-border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-muted-foreground hover:border-border-strong hover:text-foreground"
           >
-            Rooms
+            Ranked rooms
           </Link>
           <Link
             to="/shortlist"
@@ -103,7 +114,7 @@ export function NightPlanBar() {
                 : "border border-border text-muted-foreground hover:border-border-strong hover:text-foreground",
             )}
           >
-            Night plan{count ? ` · ${count}` : ""}
+            Shortlist{count ? ` · ${count}` : ""}
           </Link>
         </div>
       </div>
