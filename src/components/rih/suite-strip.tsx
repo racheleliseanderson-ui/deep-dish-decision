@@ -1,6 +1,12 @@
-import { APP_LABELS, APP_ORIGINS, type SaltyApp } from "@/lib/salty-handoff/contract.ts";
+import { APP_ORIGINS, type SaltyApp } from "@/lib/salty-handoff/contract.ts";
 
 const ORDER: SaltyApp[] = ["desk", "kitchen", "occasion", "restaurant"];
+const LABELS: Record<SaltyApp, string> = {
+  desk: "Salty Desk",
+  kitchen: "Kitchen & Bar",
+  occasion: "Occasion",
+  restaurant: "Restaurant Intelligence",
+};
 
 export function SuiteStrip({ current }: { current: SaltyApp }) {
   return (
@@ -24,7 +30,7 @@ export function SuiteStrip({ current }: { current: SaltyApp }) {
               }
             >
               <span className="sm:hidden">{short(id)}</span>
-              <span className="hidden sm:inline">{APP_LABELS[id]}</span>
+              <span className="hidden sm:inline">{LABELS[id]}</span>
             </a>
           );
         })}
