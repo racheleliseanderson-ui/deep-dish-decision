@@ -1,1 +1,623 @@
-{"regionGroup":"Colorado","generatedAt":"2026-09-02T17:05:23.959Z","records":{"tavernetta-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"hop-alley-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"uncle-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"cart-driver-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"guard-and-grace-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"the-wolf-s-tailor-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"mercantile-dining-provision-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"work-class-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"ultreia-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"el-five-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"sushi-den-denver":{"ll":[39.7392,-104.9903],"llSource":"city","tz":"America/Denver"},"four-by-brother-luck-colorado-springs":{"ll":[38.8339,-104.8214],"llSource":"city","tz":"America/Denver","hours":[[[900,1320]],[],[[900,1320]],[[900,1320]],[[900,1320]],[[900,1320]],[[900,1320]]],"hoursSource":"first-party-prose"},"the-rabbit-hole-colorado-springs":{"ll":[38.8339,-104.8214],"llSource":"city","tz":"America/Denver","hours":[[[960,90]],[[960,90]],[[960,90]],[[960,90]],[[960,90]],[[960,90]],[[960,90]]],"hoursSource":"first-party-prose"},"ephemera-colorado-springs":{"ll":[38.8339,-104.8214],"llSource":"city","tz":"America/Denver"},"paravicini-s-italian-bistro-colorado-springs":{"ll":[38.8339,-104.8214],"llSource":"city","tz":"America/Denver"},"shuga-s-colorado-springs":{"ll":[38.8339,-104.8214],"llSource":"city","tz":"America/Denver"},"pizzeria-rustica-colorado-springs":{"ll":[38.8339,-104.8214],"llSource":"city","tz":"America/Denver"},"the-farmhouse-at-jessup-farm-fort-collins":{"ll":[40.5853,-105.0844],"llSource":"city","tz":"America/Denver"},"the-regional-fort-collins":{"ll":[40.5853,-105.0844],"llSource":"city","tz":"America/Denver"},"silver-grill-cafe-fort-collins":{"ll":[40.5853,-105.0844],"llSource":"city","tz":"America/Denver","hours":[[[420,780]],[[420,780]],[[420,780]],[[420,780]],[[420,780]],[[420,780]],[]],"hoursSource":"first-party-prose","band":"$$","bandSource":"planning-band","pp":[25,50],"ppSource":"planning-band"},"cafe-vino-fort-collins":{"ll":[40.5853,-105.0844],"llSource":"city","tz":"America/Denver","hours":[[],[],[[690,1260]],[[690,1260]],[[690,1260]],[[690,1320]],[]],"hoursSource":"first-party-prose"},"coopersmith-s-brewpub-fort-collins":{"ll":[40.5853,-105.0844],"llSource":"city","tz":"America/Denver","hours":[[],[],[],[],[[660,1260]],[],[[660,1320]]],"hoursSource":"first-party-prose","band":"$$","bandSource":"planning-band","pp":[25,50],"ppSource":"planning-band"},"the-emporium-fort-collins":{"ll":[40.5853,-105.0844],"llSource":"city","tz":"America/Denver"}}}
+{
+  "regionGroup": "Colorado",
+  "generatedAt": "2026-09-02T21:28:27.010Z",
+  "records": {
+    "tavernetta-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "hop-alley-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "uncle-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "cart-driver-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "guard-and-grace-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "the-wolf-s-tailor-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "mercantile-dining-provision-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "work-class-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "ultreia-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "el-five-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "sushi-den-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "four-by-brother-luck-colorado-springs": {
+      "ll": [
+        38.8339,
+        -104.8214
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "hours": [
+        [
+          [
+            900,
+            1320
+          ]
+        ],
+        [],
+        [
+          [
+            900,
+            1320
+          ]
+        ],
+        [
+          [
+            900,
+            1320
+          ]
+        ],
+        [
+          [
+            900,
+            1320
+          ]
+        ],
+        [
+          [
+            900,
+            1320
+          ]
+        ],
+        [
+          [
+            900,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
+    },
+    "the-rabbit-hole-colorado-springs": {
+      "ll": [
+        38.8339,
+        -104.8214
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "hours": [
+        [
+          [
+            960,
+            90
+          ]
+        ],
+        [
+          [
+            960,
+            90
+          ]
+        ],
+        [
+          [
+            960,
+            90
+          ]
+        ],
+        [
+          [
+            960,
+            90
+          ]
+        ],
+        [
+          [
+            960,
+            90
+          ]
+        ],
+        [
+          [
+            960,
+            90
+          ]
+        ],
+        [
+          [
+            960,
+            90
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
+    },
+    "ephemera-colorado-springs": {
+      "ll": [
+        38.8339,
+        -104.8214
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "paravicini-s-italian-bistro-colorado-springs": {
+      "ll": [
+        38.8339,
+        -104.8214
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "shuga-s-colorado-springs": {
+      "ll": [
+        38.8339,
+        -104.8214
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "pizzeria-rustica-colorado-springs": {
+      "ll": [
+        38.8339,
+        -104.8214
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "the-farmhouse-at-jessup-farm-fort-collins": {
+      "ll": [
+        40.5853,
+        -105.0844
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "the-regional-fort-collins": {
+      "ll": [
+        40.5853,
+        -105.0844
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "silver-grill-cafe-fort-collins": {
+      "ll": [
+        40.5853,
+        -105.0844
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "hours": [
+        [
+          [
+            420,
+            780
+          ]
+        ],
+        [
+          [
+            420,
+            780
+          ]
+        ],
+        [
+          [
+            420,
+            780
+          ]
+        ],
+        [
+          [
+            420,
+            780
+          ]
+        ],
+        [
+          [
+            420,
+            780
+          ]
+        ],
+        [
+          [
+            420,
+            780
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
+    },
+    "cafe-vino-fort-collins": {
+      "ll": [
+        40.5853,
+        -105.0844
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "hours": [
+        [],
+        [],
+        [
+          [
+            690,
+            1260
+          ]
+        ],
+        [
+          [
+            690,
+            1260
+          ]
+        ],
+        [
+          [
+            690,
+            1260
+          ]
+        ],
+        [
+          [
+            690,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose"
+    },
+    "coopersmith-s-brewpub-fort-collins": {
+      "ll": [
+        40.5853,
+        -105.0844
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "hours": [
+        [],
+        [],
+        [],
+        [],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [],
+        [
+          [
+            660,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
+    },
+    "the-emporium-fort-collins": {
+      "ll": [
+        40.5853,
+        -105.0844
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "alma-fonda-fina-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "barolo-grill-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "restaurant-olivia-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "sap-sua-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "makfam-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "rioja-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "potager-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "molotov-kitschen-cocktails-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "temaki-den-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "somebody-people-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "the-bindery-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "bar-dough-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "coperta-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "senor-bear-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "nocturne-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "the-way-back-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "buckhorn-exchange-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "rosenberg-s-bagels-delicatessen-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "ace-eat-serve-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "tacos-tequila-whiskey-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "domo-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "spuntino-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "dishes": [
+        {
+          "name": "its tradition and innovation, award-winning cuisine, and com",
+          "source": "first-party"
+        }
+      ]
+    },
+    "kaos-pizzeria-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "margot-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "angelo-s-taverna-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "cimera-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "welton-street-cafe-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver",
+      "dishes": [
+        {
+          "name": "fried chicken",
+          "source": "first-party"
+        }
+      ]
+    },
+    "q-house-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    },
+    "ash-kara-denver": {
+      "ll": [
+        39.7392,
+        -104.9903
+      ],
+      "llSource": "city",
+      "tz": "America/Denver"
+    }
+  }
+}

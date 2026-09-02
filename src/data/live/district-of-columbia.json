@@ -1,1 +1,384 @@
-{"regionGroup":"District Of Columbia","generatedAt":"2026-09-02T17:05:23.959Z","records":{"the-dabney-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"pineapple-and-pearls-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"rose-s-luxury-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"minibar-by-jos-andr-s-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"fiola-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York","risk":{"cancelFee":150,"perGuest":true}},"rasika-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"zaytinya-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"oyamel-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"jaleo-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"moon-rabbit-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"succotash-prime-washington-dc-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"joe-s-seafood-prime-steak-stone-crab-washington-dc-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"the-capital-grille-washington-dc-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"del-mar-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"},"causa-washington":{"ll":[38.9072,-77.0369],"llSource":"city","tz":"America/New_York"}}}
+{
+  "regionGroup": "District Of Columbia",
+  "generatedAt": "2026-09-02T21:28:27.010Z",
+  "records": {
+    "the-dabney-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "pineapple-and-pearls-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "rose-s-luxury-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "minibar-by-jos-andr-s-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "fiola-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York",
+      "risk": {
+        "cancelFee": 150,
+        "perGuest": true
+      }
+    },
+    "rasika-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "zaytinya-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "oyamel-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "jaleo-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "moon-rabbit-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "succotash-prime-washington-dc-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "joe-s-seafood-prime-steak-stone-crab-washington-dc-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "the-capital-grille-washington-dc-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "del-mar-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "causa-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "albi-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "oyster-oyster-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "maydan-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "daru-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "primrose-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "bresca-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "rooster-owl-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "purple-patch-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "sushi-taro-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "ethiopic-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "martin-s-tavern-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "filomena-ristorante-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "thip-khao-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "anafre-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "unconventional-diner-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "lutece-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "chercher-ethiopian-restaurant-mart-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "anju-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "l-ardente-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "imperfecto-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "daikaya-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "tabard-inn-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "amparo-fondita-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York",
+      "dishes": [
+        {
+          "name": "seasonal cuisine, refined dishes, and a curated cocktail pro",
+          "source": "first-party"
+        }
+      ]
+    },
+    "ben-s-chili-bowl-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "kathmandu-tapas-cocktails-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "doi-moi-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "pascual-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "mita-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "nina-may-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "baan-siam-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    },
+    "little-pearl-washington": {
+      "ll": [
+        38.9072,
+        -77.0369
+      ],
+      "llSource": "city",
+      "tz": "America/New_York"
+    }
+  }
+}
