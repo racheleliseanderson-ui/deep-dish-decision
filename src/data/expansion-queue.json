@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T17:05:24.223Z",
+  "generatedAt": "2026-09-02T21:28:27.302Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -32,8 +32,8 @@
   ],
   "summary": {
     "targetMarkets": 124,
-    "underFloor": 124,
-    "totalGap": 3156
+    "underFloor": 123,
+    "totalGap": 2748
   },
   "cities": [
     {
@@ -42,14 +42,14 @@
       "population": 19498249,
       "priority": 1,
       "tier": "top-50-metro",
-      "status": "pending",
-      "densityStatus": "under-floor",
+      "status": "done",
+      "densityStatus": "at-floor",
       "targetCount": 60,
-      "currentCount": 30,
-      "gap": 30,
+      "currentCount": 61,
+      "gap": 0,
       "pinned": false,
-      "inserted": 30,
-      "lastRunAt": "2026-09-02T17:04:45.689Z",
+      "inserted": 61,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -61,11 +61,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 18,
-      "gap": 42,
+      "currentCount": 51,
+      "gap": 9,
       "pinned": false,
-      "inserted": 26,
-      "lastRunAt": "2026-09-02T17:04:45.689Z",
+      "inserted": 59,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -77,11 +77,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 24,
-      "gap": 36,
+      "currentCount": 58,
+      "gap": 2,
       "pinned": false,
-      "inserted": 26,
-      "lastRunAt": "2026-09-02T17:04:45.689Z",
+      "inserted": 60,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -93,11 +93,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 15,
-      "gap": 45,
+      "currentCount": 45,
+      "gap": 15,
       "pinned": false,
-      "inserted": 15,
-      "lastRunAt": "2026-08-21T01:14:38.256Z",
+      "inserted": 45,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -109,12 +109,12 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 10,
-      "gap": 50,
+      "currentCount": 40,
+      "gap": 20,
       "pinned": false,
-      "inserted": 11,
-      "lastRunAt": "2026-08-11T00:03:02.773Z",
-      "note": ""
+      "inserted": 41,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
+      "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
       "city": "Atlanta",
@@ -125,11 +125,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 15,
-      "gap": 45,
+      "currentCount": 47,
+      "gap": 13,
       "pinned": false,
-      "inserted": 15,
-      "lastRunAt": "2026-08-12T06:45:02.762Z",
+      "inserted": 47,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -141,11 +141,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 15,
-      "gap": 45,
+      "currentCount": 46,
+      "gap": 14,
       "pinned": false,
-      "inserted": 15,
-      "lastRunAt": "2026-08-12T06:45:02.762Z",
+      "inserted": 46,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -157,11 +157,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 14,
-      "gap": 46,
+      "currentCount": 44,
+      "gap": 16,
       "pinned": false,
-      "inserted": 14,
-      "lastRunAt": "2026-08-12T06:45:02.762Z",
+      "inserted": 44,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -173,11 +173,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 15,
-      "gap": 45,
+      "currentCount": 45,
+      "gap": 15,
       "pinned": false,
-      "inserted": 15,
-      "lastRunAt": "2026-08-12T06:45:34.941Z",
+      "inserted": 45,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -189,11 +189,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 15,
-      "gap": 45,
+      "currentCount": 45,
+      "gap": 15,
       "pinned": false,
-      "inserted": 15,
-      "lastRunAt": "2026-08-12T06:45:34.941Z",
+      "inserted": 45,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -205,11 +205,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 50,
-      "currentCount": 12,
-      "gap": 38,
+      "currentCount": 20,
+      "gap": 30,
       "pinned": false,
-      "inserted": 12,
-      "lastRunAt": "2026-08-12T06:45:34.941Z",
+      "inserted": 20,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -237,12 +237,12 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 50,
-      "currentCount": 11,
-      "gap": 39,
+      "currentCount": 30,
+      "gap": 20,
       "pinned": false,
-      "inserted": 11,
-      "lastRunAt": "2026-08-11T00:03:41.686Z",
-      "note": ""
+      "inserted": 30,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
+      "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
       "city": "Detroit",
@@ -269,11 +269,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 50,
-      "currentCount": 14,
-      "gap": 36,
+      "currentCount": 16,
+      "gap": 34,
       "pinned": false,
-      "inserted": 10,
-      "lastRunAt": "2026-08-19T02:53:28.994Z",
+      "inserted": 12,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -333,11 +333,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 50,
-      "currentCount": 11,
-      "gap": 39,
+      "currentCount": 40,
+      "gap": 10,
       "pinned": false,
-      "inserted": 11,
-      "lastRunAt": "2026-08-18T22:55:05.661Z",
+      "inserted": 40,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -429,11 +429,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 50,
-      "currentCount": 12,
-      "gap": 38,
+      "currentCount": 43,
+      "gap": 7,
       "pinned": false,
-      "inserted": 12,
-      "lastRunAt": "2026-08-19T02:53:28.994Z",
+      "inserted": 43,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -573,11 +573,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 40,
-      "currentCount": 10,
-      "gap": 30,
+      "currentCount": 14,
+      "gap": 26,
       "pinned": false,
-      "inserted": 10,
-      "lastRunAt": "2026-08-18T22:55:05.661Z",
+      "inserted": 14,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -765,11 +765,11 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 40,
-      "currentCount": 8,
-      "gap": 32,
+      "currentCount": 13,
+      "gap": 27,
       "pinned": false,
-      "inserted": 8,
-      "lastRunAt": "2026-08-20T11:28:46.678Z",
+      "inserted": 13,
+      "lastRunAt": "2026-09-02T21:11:13.370Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {

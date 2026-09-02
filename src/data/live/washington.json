@@ -1,6 +1,6 @@
 {
   "regionGroup": "Washington",
-  "generatedAt": "2026-09-02T17:05:23.959Z",
+  "generatedAt": "2026-09-02T21:28:27.010Z",
   "records": {
     "canlis": {
       "ll": [
@@ -2242,6 +2242,22 @@
       "ll": [
         47.25291,
         -122.44041
+      ],
+      "llSource": "city",
+      "tz": "America/Los_Angeles"
+    },
+    "spinasse-seattle": {
+      "ll": [
+        47.63005,
+        -122.33947
+      ],
+      "llSource": "city",
+      "tz": "America/Los_Angeles"
+    },
+    "homer-seattle": {
+      "ll": [
+        47.63005,
+        -122.33947
       ],
       "llSource": "city",
       "tz": "America/Los_Angeles"

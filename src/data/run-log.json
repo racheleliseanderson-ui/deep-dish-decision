@@ -1,6 +1,5179 @@
 {
   "runs": [
     {
+      "kind": "level-records",
+      "startedAt": "2026-09-02T21:28:53.553Z",
+      "finishedAt": "2026-09-02T21:28:53.553Z",
+      "records": 1522,
+      "promoted": 392,
+      "fullBefore": 1094,
+      "fullAfter": 41,
+      "avgCompleteness": 97,
+      "ops": {
+        "overdue": 0,
+        "dueSoon": 11,
+        "current": 1474,
+        "officialConflicts": 11,
+        "thinRecords": 798,
+        "avgUnknowns": 5.13,
+        "avgThinFields": 7.59,
+        "lastReviewAt": "2026-09-02",
+        "reachableAtLastReview": 803
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-09-02T21:11:13.780Z",
+      "finishedAt": "2026-09-02T21:28:25.407Z",
+      "batchSize": 409,
+      "cities": [
+        "Atlanta, Georgia",
+        "Austin, Texas",
+        "Boston, Massachusetts",
+        "Chicago, Illinois",
+        "Dallas, Texas",
+        "Denver, Colorado",
+        "Houston, Texas",
+        "Los Angeles, California",
+        "Miami, Florida",
+        "Nashville, Tennessee",
+        "New Orleans, Louisiana",
+        "New York, New York",
+        "Philadelphia, Pennsylvania",
+        "Phoenix, Arizona",
+        "San Francisco, California",
+        "Seattle, Washington",
+        "Washington, District Of Columbia"
+      ],
+      "resolved": 382,
+      "unresolved": 27,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 86,
+      "corpusEnriched": 1522,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 409
+      },
+      "retries": 5,
+      "failures": 27,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-09-02T21-11-13-780Z-enrich-owned",
+      "records": [
+        {
+          "slug": "the-optimist-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "mary-mac-s-tea-room-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "ticonderoga-club-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "busy-bee-cafe-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "little-bear-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "cooks-soldiers-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "desta-ethiopian-kitchen-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "delbar-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "lyla-lila-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "wisteria-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "storico-fresco-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "bones-restaurant-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "la-grotta-ristorante-italiano-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "home-grown-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "varasano-s-pizzeria-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "chops-lobster-bar-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "gu-s-dumplings-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "marcel-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "st-cecilia-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "ecco-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "bhojanic-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "banshee-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "cafe-sunflower-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "bomb-biscuit-co-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "poor-calvin-s-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "madeira-park-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "botiwalla-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "the-vortex-bar-grill-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "fox-bros-bar-b-q-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "the-little-tart-bakeshop-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "wood-s-chapel-bbq-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "the-colonnade-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "la-barbecue-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "dai-due-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "comedor-austin",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "este-austin",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "la-condesa-austin",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "launderette-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "birdie-s-austin",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "mattie-s-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "distant-relatives-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "nixta-taqueria-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "micklethwait-craft-meats-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "joe-s-bakery-coffee-shop-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "fonda-san-miguel-austin",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "justine-s-brasserie-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "perla-s-seafood-and-oyster-bar-austin",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "wu-chow-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "sour-duck-market-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "bufalina-austin",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "intero-austin",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "thai-fresh-austin",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "licha-s-cantina-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "24-diner-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "stiles-switch-bbq-austin",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "june-s-all-day-austin",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "juan-in-a-million-austin",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "counter-cafe-austin",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "curra-s-grill-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "ranch-616-austin",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "hopfields-austin",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "lucky-robot-austin",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 0 fetch failed:ENOTFOUND"
+          ]
+        },
+        {
+          "slug": "paperboy-austin",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "comfort-kitchen-boston",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "krasi-boston",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "saltie-girl-boston",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "myers-chang-boston",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "srv-boston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "select-oyster-bar-boston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "ostra-boston",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "tres-gatos-boston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "monteverde-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "lula-cafe-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "elske-chicago",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "virtue-restaurant-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "sepia-chicago",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "galit-chicago",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "rose-mary-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "gene-georgetti-chicago",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "manny-s-cafeteria-delicatessen-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "pequod-s-pizza-chicago",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "big-jones-chicago",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "smoque-bbq-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "sun-wah-bbq-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "mi-tocaya-antojeria-chicago",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "andros-taverna-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "longman-eagle-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "alinea-chicago",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "kasama-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-publican-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "frontera-grill-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "boka-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "daisies-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "carnitas-uruapan-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "thattu-chicago",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "indienne-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "obelix-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "bistro-campagne-chicago",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "the-chicago-diner-chicago",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "vito-nick-s-pizzeria-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "anelya-chicago",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "mott-st-chicago",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "warlord-chicago",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "piece-brewery-and-pizzeria-chicago",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "avec-chicago",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "quarter-acre-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "georgie-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "knox-bistro-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "partenope-ristorante-dallas",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "el-carlos-elegante-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "mot-hai-ba-dallas",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "via-triozzi-dallas",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "cafe-momentum-dallas",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "ka-tip-thai-street-food-dallas",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "el-come-taco-dallas",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "meridian-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "tango-room-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "green-point-seafood-oyster-bar-dallas",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "pesca-coastal-classics-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "norman-s-japanese-grill-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "la-calle-doce-dallas",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "revolver-taco-lounge-dallas",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "baby-back-shak-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "mamani-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "al-biernat-s-dallas",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 31"
+          ]
+        },
+        {
+          "slug": "pecan-lodge-dallas",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "vidorra-dallas",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "mister-charles-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "billy-can-can-dallas",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "sushi-kozy-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "fond-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "lockhart-smokehouse-dallas",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "hugo-s-seafood-bar-dallas",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "namo-dallas",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "smokey-joe-s-bbq-dallas",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "alma-fonda-fina-denver",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "barolo-grill-denver",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "restaurant-olivia-denver",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "sap-sua-denver",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "makfam-denver",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "rioja-denver",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "potager-denver",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "molotov-kitschen-cocktails-denver",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "temaki-den-denver",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "somebody-people-denver",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-bindery-denver",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "bar-dough-denver",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "coperta-denver",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "senor-bear-denver",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "nocturne-denver",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "the-way-back-denver",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "buckhorn-exchange-denver",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "rosenberg-s-bagels-delicatessen-denver",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "ace-eat-serve-denver",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 17"
+          ]
+        },
+        {
+          "slug": "tacos-tequila-whiskey-denver",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "domo-denver",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "spuntino-denver",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "kaos-pizzeria-denver",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "margot-denver",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "angelo-s-taverna-denver",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "cimera-denver",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "welton-street-cafe-denver",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "q-house-denver",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "ash-kara-denver",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "katami-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "march-houston",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "chopnblok-houston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "milton-s-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "hugo-s-houston",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "theodore-rex-houston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "truth-bbq-houston",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "chardon-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "kata-robata-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "the-breakfast-klub-houston",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "lucille-s-houston",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "feges-bbq-houston",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "coltivare-houston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "gatlin-s-bbq-houston",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "pinkerton-s-barbecue-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "aga-s-restaurant-catering-houston",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "traveler-s-table-houston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "georgia-james-houston",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        },
+        {
+          "slug": "tony-s-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "rosie-cannonball-houston",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "da-marco-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "montrose-cheese-wine-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "money-cat-houston",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "bari-ristorante-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "nobie-s-houston",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "brennan-s-of-houston-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "the-pit-room-houston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "late-august-houston",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "candente-houston",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "bcn-taste-tradition-houston",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "providence-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "n-naka-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "langer-s-delicatessen-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "musso-frank-grill-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "rossoblu-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "jitlada-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "bavel-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "pizzeria-mozza-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "osteria-mozza-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "yuca-s-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "sonoratown-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "dunsmoor-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "tsubaki-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3"
+          ]
+        },
+        {
+          "slug": "ototo-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "pijja-palace-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "park-s-bbq-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "soban-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 15"
+          ]
+        },
+        {
+          "slug": "found-oyster-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "holbox-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "chichen-itza-restaurant-los-angeles",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "redbird-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "woon-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "shibumi-los-angeles",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 404 HTTP 404"
+          ]
+        },
+        {
+          "slug": "ronan-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "yang-chow-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "the-apple-pan-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "mother-wolf-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "kali-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "damian-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "kismet-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "alimento-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "joy-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "el-coyote-mexican-cafe-los-angeles",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "michael-s-genuine-food-drink-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "cafe-la-trova-miami",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "casablanca-seafood-bar-grill-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "zak-the-baker-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "hiyakawa-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "bar-bucce-miami",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "niu-kitchen-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "red-rooster-overtown-miami",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "tam-tam-miami",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "doya-miami",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "lil-greenhouse-grill-miami",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "bombay-darbar-miami",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "fiorito-miami",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "phuc-yea-miami",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "sanguich-de-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "chug-s-diner-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "ogawa-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "the-river-oyster-bar-miami",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "amara-at-paraiso-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "bakan-miami",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "la-camaronera-seafood-joint-and-fish-market-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "klaw-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "old-s-havana-cuban-bar-cocina-miami",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "shiso-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "lung-yai-thai-tapas-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "kaori-miami",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "greenstreet-cafe-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "il-gabbiano-miami",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "ball-chain-miami",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "monty-s-raw-bar-miami",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "lyra-nashville",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "city-house-nashville",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "cafe-roze-nashville",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "pelican-pig-nashville",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 404 HTTP 404"
+          ]
+        },
+        {
+          "slug": "galatoire-s-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "arnaud-s-restaurant-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "antoine-s-restaurant-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "casamento-s-restaurant-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "peche-seafood-grill-new-orleans",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "katz-s-delicatessen-new-york",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "keens-steakhouse-new-york",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "rubirosa-new-york",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "veselka-new-york",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "nom-wah-tea-parlor-new-york",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "dirt-candy-new-york",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "john-s-of-bleecker-street-new-york",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "don-angie-new-york",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "i-sodi-new-york",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "estela-new-york",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "superiority-burger-new-york",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "minetta-tavern-new-york",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "casa-mono-new-york",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "hanoi-house-new-york",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "thai-diner-new-york",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "semma-new-york",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "dhamaka-new-york",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "cosme-new-york",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "barney-greengrass-new-york",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-odeon-new-york",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "2nd-ave-deli-new-york",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "sylvia-s-restaurant-new-york",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 10"
+          ]
+        },
+        {
+          "slug": "frenchette-new-york",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "le-coucou-new-york",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "scarr-s-pizza-new-york",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "una-pizza-napoletana-new-york",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "sparks-steak-house-new-york",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "aquavit-new-york",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "rezdora-new-york",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "il-buco-new-york",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "amy-ruth-s-new-york",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "honeysuckle-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "illata-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "vedge-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "river-twice-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "le-virtu-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "high-street-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 83,
+          "notes": [
+            "pages 4",
+            "quotes 13"
+          ]
+        },
+        {
+          "slug": "famous-4th-street-delicatessen-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "dalessandro-s-steaks-hoagies-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "my-loup-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "little-water-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "mish-mish-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "southwark-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "royal-tavern-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "dante-luigi-s-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "del-rossi-s-cheesesteak-pizza-co-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "mawn-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "ogawa-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "bolo-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "emmett-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "middle-child-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "barbuzzo-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "talula-s-garden-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "little-nonna-s-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "nam-phuong-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "osteria-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "sang-kee-peking-duck-house-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "ama-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "double-knot-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "a-kitchen-bar-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "cry-baby-pasta-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "bacanora-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "beckett-s-table-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "little-miss-bbq-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "los-dos-molinos-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "cocina-madrigal-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "restaurant-progress-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "gallo-blanco-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "vecina-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4"
+          ]
+        },
+        {
+          "slug": "nook-kitchen-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "chilte-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "ollie-vaughn-s-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "sidewinder-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "kid-sister-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "taco-chelo-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "the-stockyards-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "brasserie-melrose-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "stoop-kid-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 44,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "bitter-twisted-cocktail-parlour-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "cibo-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "mr-baan-s-bar-and-mookata-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "macalpine-s-diner-soda-fountain-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "casa-corazon-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "rustler-s-rooste-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "noble-eatery-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "otro-cafe-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "ocotillo-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "kabob-grill-n-go-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "lovebite-dumplings-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "los-reyes-de-la-torta-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "green-new-american-vegetarian-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "zuni-cafe-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "nopa-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "foreign-cinema-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "kokkari-estiatorio-san-francisco",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "state-bird-provisions-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "che-fico-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 89,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "rich-table-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "flour-water-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "cotogna-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "rintaro-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "tony-s-pizza-napoletana-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "sotto-mare-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "brenda-s-french-soul-food-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "nopalito-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 50,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "restaurant-gary-danko-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "californios-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "mourad-san-francisco",
+          "matchStatus": "site-failure",
+          "completeness": 28,
+          "notes": [
+            "site 0 fetch failed:CERT_HAS_EXPIRED"
+          ]
+        },
+        {
+          "slug": "tadich-grill-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "lazy-bear-san-francisco",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "spinasse-seattle",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "homer-seattle",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "albi-washington",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "oyster-oyster-washington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "maydan-washington",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "daru-washington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "primrose-washington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "bresca-washington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "rooster-owl-washington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "purple-patch-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "sushi-taro-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "ethiopic-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "martin-s-tavern-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "filomena-ristorante-washington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "thip-khao-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "anafre-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "unconventional-diner-washington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "lutece-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "chercher-ethiopian-restaurant-mart-washington",
+          "matchStatus": "site-failure",
+          "completeness": 33,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "anju-washington",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "l-ardente-washington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "imperfecto-washington",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 20"
+          ]
+        },
+        {
+          "slug": "daikaya-washington",
+          "matchStatus": "resolved",
+          "completeness": 78,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "tabard-inn-washington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "amparo-fondita-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "ben-s-chili-bowl-washington",
+          "matchStatus": "resolved",
+          "completeness": 72,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "kathmandu-tapas-cocktails-washington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "doi-moi-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "pascual-washington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "mita-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "nina-may-washington",
+          "matchStatus": "resolved",
+          "completeness": 61,
+          "notes": [
+            "pages 2"
+          ]
+        },
+        {
+          "slug": "baan-siam-washington",
+          "matchStatus": "resolved",
+          "completeness": 56,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "little-pearl-washington",
+          "matchStatus": "resolved",
+          "completeness": 67,
+          "notes": [
+            "pages 2",
+            "quotes 6"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-09-02T21:11:13.370Z",
+      "finishedAt": "2026-09-02T21:11:13.474Z",
+      "cities": [
+        {
+          "city": "Charlotte, NC",
+          "queueCity": "Charlotte",
+          "found": 4,
+          "inserted": 0,
+          "duplicates": 4
+        },
+        {
+          "city": "Baltimore, MD",
+          "queueCity": "Baltimore",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Oklahoma City, OK",
+          "queueCity": "Oklahoma City",
+          "found": 3,
+          "inserted": 0,
+          "duplicates": 3
+        },
+        {
+          "city": "Jacksonville, FL",
+          "queueCity": "Jacksonville",
+          "found": 4,
+          "inserted": 0,
+          "duplicates": 4
+        },
+        {
+          "city": "San Diego, CA",
+          "queueCity": "San Diego",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Dallas, TX",
+          "queueCity": "Dallas",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Newark, NJ",
+          "queueCity": "new jersey",
+          "found": 3,
+          "inserted": 0,
+          "duplicates": 3
+        },
+        {
+          "city": "Jersey City, NJ",
+          "queueCity": "new jersey",
+          "found": 3,
+          "inserted": 0,
+          "duplicates": 3
+        },
+        {
+          "city": "Montclair, NJ",
+          "queueCity": "new jersey",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Princeton, NJ",
+          "queueCity": "new jersey",
+          "found": 3,
+          "inserted": 0,
+          "duplicates": 3
+        },
+        {
+          "city": "New Brunswick, NJ",
+          "queueCity": "new jersey",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Collingswood, NJ",
+          "queueCity": "new jersey",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Atlantic City, NJ",
+          "queueCity": "new jersey",
+          "found": 1,
+          "inserted": 0,
+          "duplicates": 1
+        },
+        {
+          "city": "Birmingham, AL",
+          "queueCity": "Birmingham",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Grand Rapids, MI",
+          "queueCity": "Grand Rapids",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Rochester, NY",
+          "queueCity": "Rochester",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Tucson, AZ",
+          "queueCity": "Tucson",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Fresno, CA",
+          "queueCity": "Fresno",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Tulsa, OK",
+          "queueCity": "Tulsa",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Omaha, NE",
+          "queueCity": "Omaha",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Albuquerque, NM",
+          "queueCity": "Albuquerque",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Bakersfield, CA",
+          "queueCity": "Bakersfield",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Knoxville, TN",
+          "queueCity": "Knoxville",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Albany, NY",
+          "queueCity": "Albany",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Boise, ID",
+          "queueCity": "Boise",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Columbia, SC",
+          "queueCity": "Columbia",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Little Rock, AR",
+          "queueCity": "Little Rock",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Des Moines, IA",
+          "queueCity": "Des Moines",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Spokane, WA",
+          "queueCity": "Spokane",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Madison, WI",
+          "queueCity": "Madison",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Wichita, KS",
+          "queueCity": "Wichita",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Jackson, MS",
+          "queueCity": "Jackson",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Portland, ME",
+          "queueCity": "Portland",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Charleston, WV",
+          "queueCity": "Charleston",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Manchester, NH",
+          "queueCity": "Manchester",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Wilmington, DE",
+          "queueCity": "Wilmington",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Burlington, VT",
+          "queueCity": "Burlington",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Sioux Falls, SD",
+          "queueCity": "Sioux Falls",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Fargo, ND",
+          "queueCity": "Fargo",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Billings, MT",
+          "queueCity": "Billings",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Cheyenne, WY",
+          "queueCity": "Cheyenne",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Anchorage, AK",
+          "queueCity": "Anchorage",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Honolulu, HI",
+          "queueCity": "Honolulu",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Richmond, VA",
+          "queueCity": "Richmond",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Memphis, TN",
+          "queueCity": "Memphis",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Salt Lake City, UT",
+          "queueCity": "Salt Lake City",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "New Orleans, LA",
+          "queueCity": "New Orleans",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Buffalo, NY",
+          "queueCity": "Buffalo",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Hartford, CT",
+          "queueCity": "Hartford",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Fort Worth, TX",
+          "queueCity": "Fort Worth",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Savannah, GA",
+          "queueCity": "Savannah",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Colorado Springs, CO",
+          "queueCity": "Colorado Springs",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Oakland, CA",
+          "queueCity": "Oakland",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Fort Lauderdale, FL",
+          "queueCity": "Fort Lauderdale",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Asheville, NC",
+          "queueCity": "Asheville",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "St. Louis, MO",
+          "queueCity": "St. Louis",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Worcester, MA",
+          "queueCity": "Worcester",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Baton Rouge, LA",
+          "queueCity": "Baton Rouge",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "El Paso, TX",
+          "queueCity": "El Paso",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Lexington, KY",
+          "queueCity": "Lexington",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Ann Arbor, MI",
+          "queueCity": "Ann Arbor",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Norfolk, VA",
+          "queueCity": "Norfolk",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Lincoln, NE",
+          "queueCity": "Lincoln",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Charleston, SC",
+          "queueCity": "Charleston",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Huntsville, AL",
+          "queueCity": "Huntsville",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Fort Wayne, IN",
+          "queueCity": "Fort Wayne",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "New Haven, CT",
+          "queueCity": "New Haven",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Santa Fe, NM",
+          "queueCity": "Santa Fe",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Lawrence, KS",
+          "queueCity": "Lawrence",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Athens, GA",
+          "queueCity": "Athens",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Cedar Rapids, IA",
+          "queueCity": "Cedar Rapids",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Rapid City, SD",
+          "queueCity": "Rapid City",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Mobile, AL",
+          "queueCity": "Mobile",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Fort Collins, CO",
+          "queueCity": "Fort Collins",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Springfield, MO",
+          "queueCity": "Springfield",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Greenville, SC",
+          "queueCity": "Greenville",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Rochester, MN",
+          "queueCity": "Rochester",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Durham, NC",
+          "queueCity": "Durham",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Topeka, KS",
+          "queueCity": "Topeka",
+          "found": 4,
+          "inserted": 0,
+          "duplicates": 4
+        },
+        {
+          "city": "Lafayette, LA",
+          "queueCity": "Lafayette",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Bozeman, MT",
+          "queueCity": "Bozeman",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Missoula, MT",
+          "queueCity": "Missoula",
+          "found": 4,
+          "inserted": 0,
+          "duplicates": 4
+        },
+        {
+          "city": "Tacoma, WA",
+          "queueCity": "Tacoma",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Flagstaff, AZ",
+          "queueCity": "Flagstaff",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Frederick, MD",
+          "queueCity": "Frederick",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Greensboro, NC",
+          "queueCity": "Greensboro",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Toledo, OH",
+          "queueCity": "Toledo",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Corpus Christi, TX",
+          "queueCity": "Corpus Christi",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Reno, NV",
+          "queueCity": "Reno",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Chattanooga, TN",
+          "queueCity": "Chattanooga",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Wilmington, NC",
+          "queueCity": "Wilmington",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Dayton, OH",
+          "queueCity": "Dayton",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Allentown, PA",
+          "queueCity": "Allentown",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Winston-Salem, NC",
+          "queueCity": "Winston-Salem",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Atlanta, GA",
+          "queueCity": "Atlanta",
+          "found": 32,
+          "inserted": 32,
+          "duplicates": 0
+        },
+        {
+          "city": "Austin, TX",
+          "queueCity": "Austin",
+          "found": 31,
+          "inserted": 31,
+          "duplicates": 0
+        },
+        {
+          "city": "Boston, MA",
+          "queueCity": "Boston",
+          "found": 8,
+          "inserted": 8,
+          "duplicates": 0
+        },
+        {
+          "city": "Chicago, IL",
+          "queueCity": "Chicago",
+          "found": 35,
+          "inserted": 34,
+          "duplicates": 1
+        },
+        {
+          "city": "Dallas, TX",
+          "queueCity": "Dallas",
+          "found": 30,
+          "inserted": 30,
+          "duplicates": 0
+        },
+        {
+          "city": "Denver, CO",
+          "queueCity": "Denver",
+          "found": 30,
+          "inserted": 29,
+          "duplicates": 1
+        },
+        {
+          "city": "Houston, TX",
+          "queueCity": "Houston",
+          "found": 30,
+          "inserted": 30,
+          "duplicates": 0
+        },
+        {
+          "city": "Los Angeles, CA",
+          "queueCity": "Los Angeles",
+          "found": 33,
+          "inserted": 33,
+          "duplicates": 0
+        },
+        {
+          "city": "Miami, FL",
+          "queueCity": "Miami",
+          "found": 30,
+          "inserted": 30,
+          "duplicates": 0
+        },
+        {
+          "city": "Nashville, TN",
+          "queueCity": "Nashville",
+          "found": 4,
+          "inserted": 4,
+          "duplicates": 0
+        },
+        {
+          "city": "New Orleans, LA",
+          "queueCity": "New Orleans",
+          "found": 5,
+          "inserted": 5,
+          "duplicates": 0
+        },
+        {
+          "city": "New York, NY",
+          "queueCity": "New York",
+          "found": 31,
+          "inserted": 31,
+          "duplicates": 0
+        },
+        {
+          "city": "Philadelphia, PA",
+          "queueCity": "Philadelphia",
+          "found": 30,
+          "inserted": 30,
+          "duplicates": 0
+        },
+        {
+          "city": "Phoenix, AZ",
+          "queueCity": "Phoenix",
+          "found": 30,
+          "inserted": 30,
+          "duplicates": 0
+        },
+        {
+          "city": "San Francisco, CA",
+          "queueCity": "San Francisco",
+          "found": 19,
+          "inserted": 19,
+          "duplicates": 0
+        },
+        {
+          "city": "Seattle, WA",
+          "queueCity": "Seattle",
+          "found": 2,
+          "inserted": 2,
+          "duplicates": 0
+        },
+        {
+          "city": "Washington, DC",
+          "queueCity": "Washington",
+          "found": 31,
+          "inserted": 31,
+          "duplicates": 0
+        },
+        {
+          "city": "New York, NY",
+          "queueCity": "New York",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        },
+        {
+          "city": "Los Angeles, CA",
+          "queueCity": "Los Angeles",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Chicago, IL",
+          "queueCity": "Chicago",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Atlanta, GA",
+          "queueCity": "Atlanta",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Washington, DC",
+          "queueCity": "Washington",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Philadelphia, PA",
+          "queueCity": "Philadelphia",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Miami, FL",
+          "queueCity": "Miami",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Phoenix, AZ",
+          "queueCity": "Phoenix",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Boston, MA",
+          "queueCity": "Boston",
+          "found": 12,
+          "inserted": 0,
+          "duplicates": 12
+        },
+        {
+          "city": "Detroit, MI",
+          "queueCity": "Detroit",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Minneapolis, MN",
+          "queueCity": "Minneapolis",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Denver, CO",
+          "queueCity": "Denver",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Baltimore, MD",
+          "queueCity": "Baltimore",
+          "found": 7,
+          "inserted": 0,
+          "duplicates": 7
+        },
+        {
+          "city": "Charlotte, NC",
+          "queueCity": "Charlotte",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Nashville, TN",
+          "queueCity": "Nashville",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Seattle, WA",
+          "queueCity": "Seattle",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Tampa, FL",
+          "queueCity": "Tampa",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "San Diego, CA",
+          "queueCity": "San Diego",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        },
+        {
+          "city": "Austin, TX",
+          "queueCity": "Austin",
+          "found": 12,
+          "inserted": 0,
+          "duplicates": 12
+        },
+        {
+          "city": "Las Vegas, NV",
+          "queueCity": "Las Vegas",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Pittsburgh, PA",
+          "queueCity": "Pittsburgh",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Sacramento, CA",
+          "queueCity": "Sacramento",
+          "found": 12,
+          "inserted": 0,
+          "duplicates": 12
+        },
+        {
+          "city": "Cincinnati, OH",
+          "queueCity": "Cincinnati",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Kansas City, MO",
+          "queueCity": "Kansas City",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Columbus, OH",
+          "queueCity": "Columbus",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Indianapolis, IN",
+          "queueCity": "Indianapolis",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Cleveland, OH",
+          "queueCity": "Cleveland",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Riverside, CA",
+          "queueCity": "Riverside",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Orlando, FL",
+          "queueCity": "Orlando",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "San Antonio, TX",
+          "queueCity": "San Antonio",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Portland, OR",
+          "queueCity": "Portland",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "San Jose, CA",
+          "queueCity": "San Jose",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Virginia Beach, VA",
+          "queueCity": "Virginia Beach",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Jacksonville, FL",
+          "queueCity": "Jacksonville",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Providence, RI",
+          "queueCity": "Providence",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Milwaukee, WI",
+          "queueCity": "Milwaukee",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        },
+        {
+          "city": "Raleigh, NC",
+          "queueCity": "Raleigh",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Oklahoma City, OK",
+          "queueCity": "Oklahoma City",
+          "found": 7,
+          "inserted": 0,
+          "duplicates": 7
+        },
+        {
+          "city": "Louisville, KY",
+          "queueCity": "Louisville",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        }
+      ],
+      "inserted": 409,
+      "duplicatesSkipped": 988,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-09-02T21-11-13-371Z-seed-listings",
+      "seedFiles": [
+        "seed-listings-2026-08-20-density-d01.json",
+        "seed-listings-2026-08-20-new-jersey-state-floor.json",
+        "seed-listings-2026-08-20-queue-49-54.json",
+        "seed-listings-2026-08-20-queue-55-60.json",
+        "seed-listings-2026-08-20-queue-61-66.json",
+        "seed-listings-2026-08-20-queue-67-72.json",
+        "seed-listings-2026-08-20-queue-73-78.json",
+        "seed-listings-2026-08-20-top50-43-48.json",
+        "seed-listings-2026-08-31-statewide-f01.json",
+        "seed-listings-2026-08-31-statewide-f02.json",
+        "seed-listings-2026-08-31-statewide-f03.json",
+        "seed-listings-2026-08-31-statewide-f04.json",
+        "seed-listings-2026-08-31-statewide-f05.json",
+        "seed-listings-2026-08-31-statewide-f06.json",
+        "seed-listings-2026-08-31-statewide-f07.json",
+        "seed-listings-2026-08-31-statewide-f08.json",
+        "seed-listings-2026-08-31-statewide-f09.json",
+        "seed-listings-2026-08-31-statewide-f10.json",
+        "seed-listings-2026-08-31-statewide-f11.json",
+        "seed-listings-2026-08-31-statewide-f12.json",
+        "seed-listings-2026-08-31-statewide-f13.json",
+        "seed-listings-2026-08-31-statewide-f14.json",
+        "seed-listings-2026-08-31-statewide-f15.json",
+        "seed-listings-density-2026-09-02-w01.json",
+        "seed-listings-density-2026-09-02-wave-01.json",
+        "seed-listings.json"
+      ],
+      "insertedSlugs": [
+        "the-optimist-atlanta",
+        "mary-mac-s-tea-room-atlanta",
+        "ticonderoga-club-atlanta",
+        "busy-bee-cafe-atlanta",
+        "little-bear-atlanta",
+        "cooks-soldiers-atlanta",
+        "desta-ethiopian-kitchen-atlanta",
+        "delbar-atlanta",
+        "lyla-lila-atlanta",
+        "wisteria-atlanta",
+        "storico-fresco-atlanta",
+        "bones-restaurant-atlanta",
+        "la-grotta-ristorante-italiano-atlanta",
+        "home-grown-atlanta",
+        "varasano-s-pizzeria-atlanta",
+        "chops-lobster-bar-atlanta",
+        "gu-s-dumplings-atlanta",
+        "marcel-atlanta",
+        "st-cecilia-atlanta",
+        "ecco-atlanta",
+        "bhojanic-atlanta",
+        "banshee-atlanta",
+        "cafe-sunflower-atlanta",
+        "bomb-biscuit-co-atlanta",
+        "poor-calvin-s-atlanta",
+        "madeira-park-atlanta",
+        "botiwalla-atlanta",
+        "the-vortex-bar-grill-atlanta",
+        "fox-bros-bar-b-q-atlanta",
+        "the-little-tart-bakeshop-atlanta",
+        "wood-s-chapel-bbq-atlanta",
+        "the-colonnade-atlanta",
+        "la-barbecue-austin",
+        "dai-due-austin",
+        "comedor-austin",
+        "este-austin",
+        "la-condesa-austin",
+        "launderette-austin",
+        "birdie-s-austin",
+        "mattie-s-austin",
+        "distant-relatives-austin",
+        "nixta-taqueria-austin",
+        "micklethwait-craft-meats-austin",
+        "joe-s-bakery-coffee-shop-austin",
+        "fonda-san-miguel-austin",
+        "justine-s-brasserie-austin",
+        "perla-s-seafood-and-oyster-bar-austin",
+        "wu-chow-austin",
+        "sour-duck-market-austin",
+        "bufalina-austin",
+        "intero-austin",
+        "thai-fresh-austin",
+        "licha-s-cantina-austin",
+        "24-diner-austin",
+        "stiles-switch-bbq-austin",
+        "june-s-all-day-austin",
+        "juan-in-a-million-austin",
+        "counter-cafe-austin",
+        "curra-s-grill-austin",
+        "ranch-616-austin",
+        "hopfields-austin",
+        "lucky-robot-austin",
+        "paperboy-austin",
+        "comfort-kitchen-boston",
+        "krasi-boston",
+        "saltie-girl-boston",
+        "myers-chang-boston",
+        "srv-boston",
+        "select-oyster-bar-boston",
+        "ostra-boston",
+        "tres-gatos-boston",
+        "monteverde-chicago",
+        "lula-cafe-chicago",
+        "elske-chicago",
+        "virtue-restaurant-chicago",
+        "sepia-chicago",
+        "galit-chicago",
+        "rose-mary-chicago",
+        "gene-georgetti-chicago",
+        "manny-s-cafeteria-delicatessen-chicago",
+        "pequod-s-pizza-chicago",
+        "big-jones-chicago",
+        "smoque-bbq-chicago",
+        "sun-wah-bbq-chicago",
+        "mi-tocaya-antojeria-chicago",
+        "andros-taverna-chicago",
+        "longman-eagle-chicago",
+        "alinea-chicago",
+        "kasama-chicago",
+        "the-publican-chicago",
+        "frontera-grill-chicago",
+        "boka-chicago",
+        "daisies-chicago",
+        "carnitas-uruapan-chicago",
+        "thattu-chicago",
+        "indienne-chicago",
+        "obelix-chicago",
+        "bistro-campagne-chicago",
+        "the-chicago-diner-chicago",
+        "vito-nick-s-pizzeria-chicago",
+        "anelya-chicago",
+        "mott-st-chicago",
+        "warlord-chicago",
+        "piece-brewery-and-pizzeria-chicago",
+        "avec-chicago",
+        "quarter-acre-dallas",
+        "georgie-dallas",
+        "knox-bistro-dallas",
+        "partenope-ristorante-dallas",
+        "el-carlos-elegante-dallas",
+        "mot-hai-ba-dallas",
+        "via-triozzi-dallas",
+        "cafe-momentum-dallas",
+        "ka-tip-thai-street-food-dallas",
+        "el-come-taco-dallas",
+        "meridian-dallas",
+        "tango-room-dallas",
+        "green-point-seafood-oyster-bar-dallas",
+        "pesca-coastal-classics-dallas",
+        "norman-s-japanese-grill-dallas",
+        "la-calle-doce-dallas",
+        "revolver-taco-lounge-dallas",
+        "baby-back-shak-dallas",
+        "mamani-dallas",
+        "al-biernat-s-dallas",
+        "pecan-lodge-dallas",
+        "vidorra-dallas",
+        "mister-charles-dallas",
+        "billy-can-can-dallas",
+        "sushi-kozy-dallas",
+        "fond-dallas",
+        "lockhart-smokehouse-dallas",
+        "hugo-s-seafood-bar-dallas",
+        "namo-dallas",
+        "smokey-joe-s-bbq-dallas",
+        "alma-fonda-fina-denver",
+        "barolo-grill-denver",
+        "restaurant-olivia-denver",
+        "sap-sua-denver",
+        "makfam-denver",
+        "rioja-denver",
+        "potager-denver",
+        "molotov-kitschen-cocktails-denver",
+        "temaki-den-denver",
+        "somebody-people-denver",
+        "the-bindery-denver",
+        "bar-dough-denver",
+        "coperta-denver",
+        "senor-bear-denver",
+        "nocturne-denver",
+        "the-way-back-denver",
+        "buckhorn-exchange-denver",
+        "rosenberg-s-bagels-delicatessen-denver",
+        "ace-eat-serve-denver",
+        "tacos-tequila-whiskey-denver",
+        "domo-denver",
+        "spuntino-denver",
+        "kaos-pizzeria-denver",
+        "margot-denver",
+        "angelo-s-taverna-denver",
+        "cimera-denver",
+        "welton-street-cafe-denver",
+        "q-house-denver",
+        "ash-kara-denver",
+        "katami-houston",
+        "march-houston",
+        "chopnblok-houston",
+        "milton-s-houston",
+        "hugo-s-houston",
+        "theodore-rex-houston",
+        "truth-bbq-houston",
+        "chardon-houston",
+        "kata-robata-houston",
+        "the-breakfast-klub-houston",
+        "lucille-s-houston",
+        "feges-bbq-houston",
+        "coltivare-houston",
+        "gatlin-s-bbq-houston",
+        "pinkerton-s-barbecue-houston",
+        "aga-s-restaurant-catering-houston",
+        "traveler-s-table-houston",
+        "georgia-james-houston",
+        "tony-s-houston",
+        "rosie-cannonball-houston",
+        "da-marco-houston",
+        "montrose-cheese-wine-houston",
+        "money-cat-houston",
+        "bari-ristorante-houston",
+        "nobie-s-houston",
+        "brennan-s-of-houston-houston",
+        "the-pit-room-houston",
+        "late-august-houston",
+        "candente-houston",
+        "bcn-taste-tradition-houston",
+        "providence-los-angeles",
+        "n-naka-los-angeles",
+        "langer-s-delicatessen-los-angeles",
+        "musso-frank-grill-los-angeles",
+        "rossoblu-los-angeles",
+        "jitlada-los-angeles",
+        "bavel-los-angeles",
+        "pizzeria-mozza-los-angeles",
+        "osteria-mozza-los-angeles",
+        "yuca-s-los-angeles",
+        "sonoratown-los-angeles",
+        "dunsmoor-los-angeles",
+        "tsubaki-los-angeles",
+        "ototo-los-angeles",
+        "pijja-palace-los-angeles",
+        "park-s-bbq-los-angeles",
+        "soban-los-angeles",
+        "found-oyster-los-angeles",
+        "holbox-los-angeles",
+        "chichen-itza-restaurant-los-angeles",
+        "redbird-los-angeles",
+        "woon-los-angeles",
+        "shibumi-los-angeles",
+        "ronan-los-angeles",
+        "yang-chow-los-angeles",
+        "the-apple-pan-los-angeles",
+        "mother-wolf-los-angeles",
+        "kali-los-angeles",
+        "damian-los-angeles",
+        "kismet-los-angeles",
+        "alimento-los-angeles",
+        "joy-los-angeles",
+        "el-coyote-mexican-cafe-los-angeles",
+        "michael-s-genuine-food-drink-miami",
+        "cafe-la-trova-miami",
+        "casablanca-seafood-bar-grill-miami",
+        "zak-the-baker-miami",
+        "hiyakawa-miami",
+        "bar-bucce-miami",
+        "niu-kitchen-miami",
+        "red-rooster-overtown-miami",
+        "tam-tam-miami",
+        "doya-miami",
+        "lil-greenhouse-grill-miami",
+        "bombay-darbar-miami",
+        "fiorito-miami",
+        "phuc-yea-miami",
+        "sanguich-de-miami-miami",
+        "chug-s-diner-miami",
+        "ogawa-miami",
+        "the-river-oyster-bar-miami",
+        "amara-at-paraiso-miami",
+        "bakan-miami",
+        "la-camaronera-seafood-joint-and-fish-market-miami",
+        "klaw-miami-miami",
+        "old-s-havana-cuban-bar-cocina-miami",
+        "shiso-miami",
+        "lung-yai-thai-tapas-miami",
+        "kaori-miami",
+        "greenstreet-cafe-miami",
+        "il-gabbiano-miami",
+        "ball-chain-miami",
+        "monty-s-raw-bar-miami",
+        "lyra-nashville",
+        "city-house-nashville",
+        "cafe-roze-nashville",
+        "pelican-pig-nashville",
+        "galatoire-s-new-orleans",
+        "arnaud-s-restaurant-new-orleans",
+        "antoine-s-restaurant-new-orleans",
+        "casamento-s-restaurant-new-orleans",
+        "peche-seafood-grill-new-orleans",
+        "katz-s-delicatessen-new-york",
+        "keens-steakhouse-new-york",
+        "rubirosa-new-york",
+        "veselka-new-york",
+        "nom-wah-tea-parlor-new-york",
+        "dirt-candy-new-york",
+        "john-s-of-bleecker-street-new-york",
+        "don-angie-new-york",
+        "i-sodi-new-york",
+        "estela-new-york",
+        "superiority-burger-new-york",
+        "minetta-tavern-new-york",
+        "casa-mono-new-york",
+        "hanoi-house-new-york",
+        "thai-diner-new-york",
+        "semma-new-york",
+        "dhamaka-new-york",
+        "cosme-new-york",
+        "barney-greengrass-new-york",
+        "the-odeon-new-york",
+        "2nd-ave-deli-new-york",
+        "sylvia-s-restaurant-new-york",
+        "frenchette-new-york",
+        "le-coucou-new-york",
+        "scarr-s-pizza-new-york",
+        "una-pizza-napoletana-new-york",
+        "sparks-steak-house-new-york",
+        "aquavit-new-york",
+        "rezdora-new-york",
+        "il-buco-new-york",
+        "amy-ruth-s-new-york",
+        "honeysuckle-philadelphia",
+        "illata-philadelphia",
+        "vedge-philadelphia",
+        "river-twice-philadelphia",
+        "le-virtu-philadelphia",
+        "high-street-philadelphia",
+        "famous-4th-street-delicatessen-philadelphia",
+        "dalessandro-s-steaks-hoagies-philadelphia",
+        "my-loup-philadelphia",
+        "little-water-philadelphia",
+        "mish-mish-philadelphia",
+        "southwark-philadelphia",
+        "royal-tavern-philadelphia",
+        "dante-luigi-s-philadelphia",
+        "del-rossi-s-cheesesteak-pizza-co-philadelphia",
+        "mawn-philadelphia",
+        "ogawa-philadelphia",
+        "bolo-philadelphia",
+        "emmett-philadelphia",
+        "middle-child-philadelphia",
+        "barbuzzo-philadelphia",
+        "talula-s-garden-philadelphia",
+        "little-nonna-s-philadelphia",
+        "nam-phuong-philadelphia",
+        "osteria-philadelphia",
+        "sang-kee-peking-duck-house-philadelphia",
+        "ama-philadelphia",
+        "double-knot-philadelphia",
+        "a-kitchen-bar-philadelphia",
+        "cry-baby-pasta-philadelphia",
+        "bacanora-phoenix",
+        "beckett-s-table-phoenix",
+        "little-miss-bbq-phoenix",
+        "los-dos-molinos-phoenix",
+        "cocina-madrigal-phoenix",
+        "restaurant-progress-phoenix",
+        "gallo-blanco-phoenix",
+        "vecina-phoenix",
+        "nook-kitchen-phoenix",
+        "chilte-phoenix",
+        "ollie-vaughn-s-phoenix",
+        "sidewinder-phoenix",
+        "kid-sister-phoenix",
+        "taco-chelo-phoenix",
+        "the-stockyards-phoenix",
+        "brasserie-melrose-phoenix",
+        "stoop-kid-phoenix",
+        "bitter-twisted-cocktail-parlour-phoenix",
+        "cibo-phoenix",
+        "mr-baan-s-bar-and-mookata-phoenix",
+        "macalpine-s-diner-soda-fountain-phoenix",
+        "casa-corazon-phoenix",
+        "rustler-s-rooste-phoenix",
+        "noble-eatery-phoenix",
+        "otro-cafe-phoenix",
+        "ocotillo-phoenix",
+        "kabob-grill-n-go-phoenix",
+        "lovebite-dumplings-phoenix",
+        "los-reyes-de-la-torta-phoenix",
+        "green-new-american-vegetarian-phoenix",
+        "zuni-cafe-san-francisco",
+        "nopa-san-francisco",
+        "foreign-cinema-san-francisco",
+        "kokkari-estiatorio-san-francisco",
+        "state-bird-provisions-san-francisco",
+        "che-fico-san-francisco",
+        "rich-table-san-francisco",
+        "flour-water-san-francisco",
+        "cotogna-san-francisco",
+        "rintaro-san-francisco",
+        "tony-s-pizza-napoletana-san-francisco",
+        "sotto-mare-san-francisco",
+        "brenda-s-french-soul-food-san-francisco",
+        "nopalito-san-francisco",
+        "restaurant-gary-danko-san-francisco",
+        "californios-san-francisco",
+        "mourad-san-francisco",
+        "tadich-grill-san-francisco",
+        "lazy-bear-san-francisco",
+        "spinasse-seattle",
+        "homer-seattle",
+        "albi-washington",
+        "oyster-oyster-washington",
+        "maydan-washington",
+        "daru-washington",
+        "primrose-washington",
+        "bresca-washington",
+        "rooster-owl-washington",
+        "purple-patch-washington",
+        "sushi-taro-washington",
+        "ethiopic-washington",
+        "martin-s-tavern-washington",
+        "filomena-ristorante-washington",
+        "thip-khao-washington",
+        "anafre-washington",
+        "unconventional-diner-washington",
+        "lutece-washington",
+        "chercher-ethiopian-restaurant-mart-washington",
+        "anju-washington",
+        "l-ardente-washington",
+        "imperfecto-washington",
+        "daikaya-washington",
+        "tabard-inn-washington",
+        "amparo-fondita-washington",
+        "ben-s-chili-bowl-washington",
+        "kathmandu-tapas-cocktails-washington",
+        "doi-moi-washington",
+        "pascual-washington",
+        "mita-washington",
+        "nina-may-washington",
+        "baan-siam-washington",
+        "little-pearl-washington"
+      ]
+    },
+    {
       "kind": "enrich-owned",
       "startedAt": "2026-09-02T17:04:46.035Z",
       "finishedAt": "2026-09-02T17:05:22.966Z",
@@ -7549,208 +12722,6 @@
           "completeness": 28,
           "notes": [
             "site 429 HTTP 429"
-          ]
-        }
-      ],
-      "hygiene": null
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-21T01:20:32.479Z",
-      "finishedAt": "2026-08-21T01:20:38.235Z",
-      "batchSize": 2,
-      "cities": [
-        "Dallas, Texas"
-      ],
-      "resolved": 2,
-      "unresolved": 0,
-      "sourceLimited": 0,
-      "deferred": 0,
-      "avgCompleteness": 61,
-      "corpusEnriched": 836,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 2
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-20-32-479Z-enrich-owned",
-      "records": [
-        {
-          "slug": "monarch-dallas",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4",
-            "quotes 4"
-          ]
-        },
-        {
-          "slug": "crown-block-dallas",
-          "matchStatus": "resolved",
-          "completeness": 78,
-          "notes": [
-            "pages 4",
-            "quotes 10"
-          ]
-        }
-      ],
-      "hygiene": null
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-21T01:19:44.577Z",
-      "finishedAt": "2026-08-21T01:20:23.523Z",
-      "batchSize": 6,
-      "cities": [
-        "San Diego, California",
-        "Dallas, Texas"
-      ],
-      "resolved": 5,
-      "unresolved": 1,
-      "sourceLimited": 0,
-      "deferred": 0,
-      "avgCompleteness": 61,
-      "corpusEnriched": 834,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 6
-      },
-      "retries": 5,
-      "failures": 1,
-      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-19-44-577Z-enrich-owned",
-      "records": [
-        {
-          "slug": "ironside-fish-oyster-san-diego",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 429 HTTP 429"
-          ]
-        },
-        {
-          "slug": "the-marine-room-san-diego",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "fort-oak-san-diego",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 3",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "uchi-dallas-dallas",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 3",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "sachet-dallas",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 4",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "tei-an-dallas",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 5"
-          ]
-        }
-      ],
-      "hygiene": null
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-21T01:19:02.306Z",
-      "finishedAt": "2026-08-21T01:19:40.797Z",
-      "batchSize": 6,
-      "cities": [
-        "Jacksonville, Florida",
-        "San Diego, California"
-      ],
-      "resolved": 5,
-      "unresolved": 1,
-      "sourceLimited": 0,
-      "deferred": 0,
-      "avgCompleteness": 61,
-      "corpusEnriched": 832,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 6
-      },
-      "retries": 5,
-      "failures": 1,
-      "snapshot": "/tmp/ddd/.pipeline-snapshots/2026-08-21T01-19-02-306Z-enrich-owned",
-      "records": [
-        {
-          "slug": "taverna-jacksonville",
-          "matchStatus": "resolved",
-          "completeness": 56,
-          "notes": [
-            "pages 4"
-          ]
-        },
-        {
-          "slug": "eleven-south-jacksonville",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "brick-restaurant-jacksonville",
-          "matchStatus": "resolved",
-          "completeness": 44,
-          "notes": [
-            "pages 1",
-            "quotes 1"
-          ]
-        },
-        {
-          "slug": "mezza-luna-jacksonville",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 4",
-            "quotes 8"
-          ]
-        },
-        {
-          "slug": "born-raised-san-diego",
-          "matchStatus": "site-failure",
-          "completeness": 28,
-          "notes": [
-            "site 429 HTTP 429"
-          ]
-        },
-        {
-          "slug": "george-s-at-the-cove-san-diego",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4",
-            "quotes 5"
           ]
         }
       ],

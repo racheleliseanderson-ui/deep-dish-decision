@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-02T17:04:45.730Z",
-  "builtAt": "2026-09-02T17:05:23Z",
-  "count": 1113,
+  "generatedAt": "2026-09-02T21:11:13.430Z",
+  "builtAt": "2026-09-02T21:28:26Z",
+  "count": 1522,
   "regions": 167,
   "source": "https://saltnotes.blog",
   "ops": {
@@ -9,14 +9,14 @@
     "dueSoon": 11,
     "current": 1073,
     "officialConflicts": 11,
-    "thinRecords": 579,
-    "avgUnknowns": 5.14,
-    "avgThinFields": 7.58,
-    "lastReviewAt": "2026-08-31",
-    "reachableAtLastReview": 436
+    "thinRecords": 598,
+    "avgUnknowns": 5.12,
+    "avgThinFields": 7.59,
+    "lastReviewAt": "2026-09-02",
+    "reachableAtLastReview": 451
   },
   "fullCaseFiles": 1094,
-  "listingOnly": 29,
+  "listingOnly": 438,
   "regionGroups": [
     "Alabama",
     "Alaska",
@@ -516,8 +516,10 @@
   "cuisineTagOptions": [
     "Afghan",
     "American",
+    "American Contemporary",
     "Appalachian",
     "Asian",
+    "Asian Contemporary",
     "Asian fusion",
     "Bakery",
     "Barbecue",
@@ -533,6 +535,7 @@
     "Cafe",
     "Cajun",
     "California",
+    "Californian",
     "Caribbean",
     "Casual",
     "Chinese",
@@ -559,6 +562,7 @@
     "Fine dining",
     "Florida",
     "French",
+    "French Contemporary",
     "Fried chicken",
     "Fusion",
     "Galician",
@@ -569,6 +573,7 @@
     "Grill",
     "Hawaii Regional",
     "Hummus",
+    "Hyderabadi",
     "Indian",
     "Indigenous",
     "Indonesian",
@@ -644,6 +649,7 @@
     "Supper club",
     "Sushi",
     "Sustainable",
+    "Szechuan",
     "Tapas",
     "Tasting menu",
     "Tavern",
@@ -665,6 +671,7 @@
     "Wild game",
     "Wine",
     "Wine bar",
+    "Wine Bar",
     "Wine-forward",
     "Wood-fired",
     "Yemeni"
@@ -8515,6 +8522,2869 @@
       "region": "Chicago, IL",
       "regionGroup": "Illinois",
       "city": "Chicago"
+    },
+    {
+      "slug": "the-optimist-atlanta",
+      "title": "The Optimist",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "mary-mac-s-tea-room-atlanta",
+      "title": "Mary Mac's Tea Room",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "ticonderoga-club-atlanta",
+      "title": "Ticonderoga Club",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "busy-bee-cafe-atlanta",
+      "title": "Busy Bee Cafe",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "little-bear-atlanta",
+      "title": "Little Bear",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "cooks-soldiers-atlanta",
+      "title": "Cooks & Soldiers",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "desta-ethiopian-kitchen-atlanta",
+      "title": "Desta Ethiopian Kitchen",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "delbar-atlanta",
+      "title": "Delbar",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "lyla-lila-atlanta",
+      "title": "Lyla Lila",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "wisteria-atlanta",
+      "title": "Wisteria",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "storico-fresco-atlanta",
+      "title": "Storico Fresco",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "bones-restaurant-atlanta",
+      "title": "Bones Restaurant",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "la-grotta-ristorante-italiano-atlanta",
+      "title": "La Grotta Ristorante Italiano",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "home-grown-atlanta",
+      "title": "Home grown",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "varasano-s-pizzeria-atlanta",
+      "title": "Varasano's Pizzeria",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "chops-lobster-bar-atlanta",
+      "title": "Chops Lobster Bar",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "gu-s-dumplings-atlanta",
+      "title": "Gu's Dumplings",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "marcel-atlanta",
+      "title": "Marcel",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "st-cecilia-atlanta",
+      "title": "St. Cecilia",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "ecco-atlanta",
+      "title": "Ecco",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "bhojanic-atlanta",
+      "title": "Bhojanic",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "banshee-atlanta",
+      "title": "Banshee",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "cafe-sunflower-atlanta",
+      "title": "Cafe Sunflower",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "bomb-biscuit-co-atlanta",
+      "title": "Bomb Biscuit Co.",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "poor-calvin-s-atlanta",
+      "title": "Poor Calvin's",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "madeira-park-atlanta",
+      "title": "Madeira Park",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "botiwalla-atlanta",
+      "title": "Botiwalla",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "the-vortex-bar-grill-atlanta",
+      "title": "The Vortex Bar & Grill",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "fox-bros-bar-b-q-atlanta",
+      "title": "Fox Bros. Bar-B-Q",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "the-little-tart-bakeshop-atlanta",
+      "title": "The Little Tart Bakeshop",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "wood-s-chapel-bbq-atlanta",
+      "title": "Wood's Chapel BBQ",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "the-colonnade-atlanta",
+      "title": "The Colonnade",
+      "region": "Atlanta, GA",
+      "regionGroup": "Georgia",
+      "city": "Atlanta"
+    },
+    {
+      "slug": "la-barbecue-austin",
+      "title": "la Barbecue",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "dai-due-austin",
+      "title": "Dai Due",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "comedor-austin",
+      "title": "Comedor",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "este-austin",
+      "title": "Este",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "la-condesa-austin",
+      "title": "La Condesa",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "launderette-austin",
+      "title": "Launderette",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "birdie-s-austin",
+      "title": "Birdie's",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "mattie-s-austin",
+      "title": "Mattie's",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "distant-relatives-austin",
+      "title": "Distant Relatives",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "nixta-taqueria-austin",
+      "title": "Nixta Taqueria",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "micklethwait-craft-meats-austin",
+      "title": "Micklethwait Craft Meats",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "joe-s-bakery-coffee-shop-austin",
+      "title": "Joe's Bakery & Coffee Shop",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "fonda-san-miguel-austin",
+      "title": "Fonda San Miguel",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "justine-s-brasserie-austin",
+      "title": "Justine's Brasserie",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "perla-s-seafood-and-oyster-bar-austin",
+      "title": "Perla's Seafood and Oyster Bar",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "wu-chow-austin",
+      "title": "Wu Chow",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "sour-duck-market-austin",
+      "title": "Sour Duck Market",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "bufalina-austin",
+      "title": "Bufalina",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "intero-austin",
+      "title": "Intero",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "thai-fresh-austin",
+      "title": "Thai Fresh",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "licha-s-cantina-austin",
+      "title": "Licha's Cantina",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "24-diner-austin",
+      "title": "24 Diner",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "stiles-switch-bbq-austin",
+      "title": "Stiles Switch BBQ",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "june-s-all-day-austin",
+      "title": "June's All Day",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "juan-in-a-million-austin",
+      "title": "Juan in a Million",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "counter-cafe-austin",
+      "title": "Counter Cafe",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "curra-s-grill-austin",
+      "title": "Curra's Grill",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "ranch-616-austin",
+      "title": "Ranch 616",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "hopfields-austin",
+      "title": "Hopfields",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "lucky-robot-austin",
+      "title": "Lucky Robot",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "paperboy-austin",
+      "title": "Paperboy",
+      "region": "Austin, TX",
+      "regionGroup": "Texas",
+      "city": "Austin"
+    },
+    {
+      "slug": "comfort-kitchen-boston",
+      "title": "Comfort Kitchen",
+      "region": "Boston, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Boston"
+    },
+    {
+      "slug": "krasi-boston",
+      "title": "Krasi",
+      "region": "Boston, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Boston"
+    },
+    {
+      "slug": "saltie-girl-boston",
+      "title": "Saltie Girl",
+      "region": "Boston, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Boston"
+    },
+    {
+      "slug": "myers-chang-boston",
+      "title": "Myers + Chang",
+      "region": "Boston, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Boston"
+    },
+    {
+      "slug": "srv-boston",
+      "title": "SRV",
+      "region": "Boston, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Boston"
+    },
+    {
+      "slug": "select-oyster-bar-boston",
+      "title": "Select Oyster Bar",
+      "region": "Boston, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Boston"
+    },
+    {
+      "slug": "ostra-boston",
+      "title": "Ostra",
+      "region": "Boston, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Boston"
+    },
+    {
+      "slug": "tres-gatos-boston",
+      "title": "Tres Gatos",
+      "region": "Boston, MA",
+      "regionGroup": "Massachusetts",
+      "city": "Boston"
+    },
+    {
+      "slug": "monteverde-chicago",
+      "title": "Monteverde",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "lula-cafe-chicago",
+      "title": "Lula Cafe",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "elske-chicago",
+      "title": "Elske",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "virtue-restaurant-chicago",
+      "title": "Virtue Restaurant",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "sepia-chicago",
+      "title": "Sepia",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "galit-chicago",
+      "title": "Galit",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "rose-mary-chicago",
+      "title": "Rose Mary",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "gene-georgetti-chicago",
+      "title": "Gene & Georgetti",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "manny-s-cafeteria-delicatessen-chicago",
+      "title": "Manny's Cafeteria & Delicatessen",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "pequod-s-pizza-chicago",
+      "title": "Pequod's Pizza",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "big-jones-chicago",
+      "title": "Big Jones",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "smoque-bbq-chicago",
+      "title": "Smoque BBQ",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "sun-wah-bbq-chicago",
+      "title": "Sun Wah BBQ",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "mi-tocaya-antojeria-chicago",
+      "title": "Mi Tocaya Antojería",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "andros-taverna-chicago",
+      "title": "Andros Taverna",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "longman-eagle-chicago",
+      "title": "Longman & Eagle",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "alinea-chicago",
+      "title": "Alinea",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "kasama-chicago",
+      "title": "Kasama",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "the-publican-chicago",
+      "title": "The Publican",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "frontera-grill-chicago",
+      "title": "Frontera Grill",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "boka-chicago",
+      "title": "Boka",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "daisies-chicago",
+      "title": "Daisies",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "carnitas-uruapan-chicago",
+      "title": "Carnitas Uruapan",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "thattu-chicago",
+      "title": "Thattu",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "indienne-chicago",
+      "title": "Indienne",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "obelix-chicago",
+      "title": "Obélix",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "bistro-campagne-chicago",
+      "title": "Bistro Campagne",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "the-chicago-diner-chicago",
+      "title": "The Chicago Diner",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "vito-nick-s-pizzeria-chicago",
+      "title": "Vito & Nick's Pizzeria",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "anelya-chicago",
+      "title": "Anelya",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "mott-st-chicago",
+      "title": "Mott St",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "warlord-chicago",
+      "title": "Warlord",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "piece-brewery-and-pizzeria-chicago",
+      "title": "Piece Brewery and Pizzeria",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "avec-chicago",
+      "title": "avec",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "quarter-acre-dallas",
+      "title": "Quarter Acre",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "georgie-dallas",
+      "title": "Georgie",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "knox-bistro-dallas",
+      "title": "Knox Bistro",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "partenope-ristorante-dallas",
+      "title": "Partenope Ristorante",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "el-carlos-elegante-dallas",
+      "title": "El Carlos Elegante",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "mot-hai-ba-dallas",
+      "title": "Mot Hai Ba",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "via-triozzi-dallas",
+      "title": "Via Triozzi",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "cafe-momentum-dallas",
+      "title": "Cafe Momentum",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "ka-tip-thai-street-food-dallas",
+      "title": "Ka-Tip Thai Street Food",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "el-come-taco-dallas",
+      "title": "El Come Taco",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "meridian-dallas",
+      "title": "Meridian",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "tango-room-dallas",
+      "title": "Tango Room",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "green-point-seafood-oyster-bar-dallas",
+      "title": "Green Point Seafood & Oyster Bar",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "pesca-coastal-classics-dallas",
+      "title": "Pesca Coastal Classics",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "norman-s-japanese-grill-dallas",
+      "title": "Norman's Japanese Grill",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "la-calle-doce-dallas",
+      "title": "La Calle Doce",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "revolver-taco-lounge-dallas",
+      "title": "Revolver Taco Lounge",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "baby-back-shak-dallas",
+      "title": "Baby Back Shak",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "mamani-dallas",
+      "title": "Mamani",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "al-biernat-s-dallas",
+      "title": "Al Biernat's",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "pecan-lodge-dallas",
+      "title": "Pecan Lodge",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "vidorra-dallas",
+      "title": "Vidorra",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "mister-charles-dallas",
+      "title": "Mister Charles",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "billy-can-can-dallas",
+      "title": "Billy Can Can",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "sushi-kozy-dallas",
+      "title": "Sushi Kozy",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "fond-dallas",
+      "title": "Fond",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "lockhart-smokehouse-dallas",
+      "title": "Lockhart Smokehouse",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "hugo-s-seafood-bar-dallas",
+      "title": "Hugo's Seafood Bar",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "namo-dallas",
+      "title": "Namo",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "smokey-joe-s-bbq-dallas",
+      "title": "Smokey Joe's BBQ",
+      "region": "Dallas, TX",
+      "regionGroup": "Texas",
+      "city": "Dallas"
+    },
+    {
+      "slug": "alma-fonda-fina-denver",
+      "title": "Alma Fonda Fina",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "barolo-grill-denver",
+      "title": "Barolo Grill",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "restaurant-olivia-denver",
+      "title": "Restaurant Olivia",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "sap-sua-denver",
+      "title": "Sap Sua",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "makfam-denver",
+      "title": "MAKfam",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "rioja-denver",
+      "title": "Rioja",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "potager-denver",
+      "title": "Potager",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "molotov-kitschen-cocktails-denver",
+      "title": "Molotov Kitschen + Cocktails",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "temaki-den-denver",
+      "title": "Temaki Den",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "somebody-people-denver",
+      "title": "Somebody People",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "the-bindery-denver",
+      "title": "The Bindery",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "bar-dough-denver",
+      "title": "Bar Dough",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "coperta-denver",
+      "title": "Coperta",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "senor-bear-denver",
+      "title": "Señor Bear",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "nocturne-denver",
+      "title": "Nocturne",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "the-way-back-denver",
+      "title": "The Way Back",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "buckhorn-exchange-denver",
+      "title": "Buckhorn Exchange",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "rosenberg-s-bagels-delicatessen-denver",
+      "title": "Rosenberg's Bagels & Delicatessen",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "ace-eat-serve-denver",
+      "title": "Ace Eat Serve",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "tacos-tequila-whiskey-denver",
+      "title": "Tacos Tequila Whiskey",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "domo-denver",
+      "title": "Domo",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "spuntino-denver",
+      "title": "Spuntino",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "kaos-pizzeria-denver",
+      "title": "Kaos Pizzeria",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "margot-denver",
+      "title": "Margot",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "angelo-s-taverna-denver",
+      "title": "Angelo's Taverna",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "cimera-denver",
+      "title": "Cimera",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "welton-street-cafe-denver",
+      "title": "Welton Street Cafe",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "q-house-denver",
+      "title": "Q House",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "ash-kara-denver",
+      "title": "Ash'Kara",
+      "region": "Denver, CO",
+      "regionGroup": "Colorado",
+      "city": "Denver"
+    },
+    {
+      "slug": "katami-houston",
+      "title": "Katami",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "march-houston",
+      "title": "March",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "chopnblok-houston",
+      "title": "ChòpnBlọk",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "milton-s-houston",
+      "title": "Milton's",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "hugo-s-houston",
+      "title": "Hugo's",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "theodore-rex-houston",
+      "title": "Theodore Rex",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "truth-bbq-houston",
+      "title": "Truth BBQ",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "chardon-houston",
+      "title": "Chardon",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "kata-robata-houston",
+      "title": "Kata Robata",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "the-breakfast-klub-houston",
+      "title": "The Breakfast Klub",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "lucille-s-houston",
+      "title": "Lucille's",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "feges-bbq-houston",
+      "title": "Feges BBQ",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "coltivare-houston",
+      "title": "Coltivare",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "gatlin-s-bbq-houston",
+      "title": "Gatlin's BBQ",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "pinkerton-s-barbecue-houston",
+      "title": "Pinkerton's Barbecue",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "aga-s-restaurant-catering-houston",
+      "title": "Aga's Restaurant & Catering",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "traveler-s-table-houston",
+      "title": "Traveler's Table",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "georgia-james-houston",
+      "title": "Georgia James",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "tony-s-houston",
+      "title": "Tony's",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "rosie-cannonball-houston",
+      "title": "Rosie Cannonball",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "da-marco-houston",
+      "title": "Da Marco",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "montrose-cheese-wine-houston",
+      "title": "Montrose Cheese & Wine",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "money-cat-houston",
+      "title": "Money Cat",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "bari-ristorante-houston",
+      "title": "Bari Ristorante",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "nobie-s-houston",
+      "title": "nobie's",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "brennan-s-of-houston-houston",
+      "title": "Brennan's of Houston",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "the-pit-room-houston",
+      "title": "The Pit Room",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "late-august-houston",
+      "title": "Late August",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "candente-houston",
+      "title": "Candente",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "bcn-taste-tradition-houston",
+      "title": "BCN Taste & Tradition",
+      "region": "Houston, TX",
+      "regionGroup": "Texas",
+      "city": "Houston"
+    },
+    {
+      "slug": "providence-los-angeles",
+      "title": "Providence",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "n-naka-los-angeles",
+      "title": "n/naka",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "langer-s-delicatessen-los-angeles",
+      "title": "Langer's Delicatessen",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "musso-frank-grill-los-angeles",
+      "title": "Musso & Frank Grill",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "rossoblu-los-angeles",
+      "title": "Rossoblu",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "jitlada-los-angeles",
+      "title": "Jitlada",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "bavel-los-angeles",
+      "title": "Bavel",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "pizzeria-mozza-los-angeles",
+      "title": "Pizzeria Mozza",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "osteria-mozza-los-angeles",
+      "title": "Osteria Mozza",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "yuca-s-los-angeles",
+      "title": "Yuca's",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "sonoratown-los-angeles",
+      "title": "Sonoratown",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "dunsmoor-los-angeles",
+      "title": "Dunsmoor",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "tsubaki-los-angeles",
+      "title": "Tsubaki",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "ototo-los-angeles",
+      "title": "Ototo",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "pijja-palace-los-angeles",
+      "title": "Pijja Palace",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "park-s-bbq-los-angeles",
+      "title": "Park's BBQ",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "soban-los-angeles",
+      "title": "Soban",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "found-oyster-los-angeles",
+      "title": "Found Oyster",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "holbox-los-angeles",
+      "title": "HOLBOX",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "chichen-itza-restaurant-los-angeles",
+      "title": "Chichen Itza Restaurant",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "redbird-los-angeles",
+      "title": "Redbird",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "woon-los-angeles",
+      "title": "Woon",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "shibumi-los-angeles",
+      "title": "Shibumi",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "ronan-los-angeles",
+      "title": "Ronan",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "yang-chow-los-angeles",
+      "title": "Yang Chow",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "the-apple-pan-los-angeles",
+      "title": "The Apple Pan",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "mother-wolf-los-angeles",
+      "title": "Mother Wolf",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "kali-los-angeles",
+      "title": "Kali",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "damian-los-angeles",
+      "title": "Damian",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "kismet-los-angeles",
+      "title": "Kismet",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "alimento-los-angeles",
+      "title": "Alimento",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "joy-los-angeles",
+      "title": "Joy",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "el-coyote-mexican-cafe-los-angeles",
+      "title": "El Coyote Mexican Cafe",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "michael-s-genuine-food-drink-miami",
+      "title": "Michael's Genuine Food & Drink",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "cafe-la-trova-miami",
+      "title": "Cafe La Trova",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "casablanca-seafood-bar-grill-miami",
+      "title": "Casablanca Seafood Bar & Grill",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "zak-the-baker-miami",
+      "title": "Zak the Baker",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "hiyakawa-miami",
+      "title": "Hiyakawa",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "bar-bucce-miami",
+      "title": "Bar Bucce",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "niu-kitchen-miami",
+      "title": "NIU Kitchen",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "red-rooster-overtown-miami",
+      "title": "Red Rooster Overtown",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "tam-tam-miami",
+      "title": "Tâm Tâm",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "doya-miami",
+      "title": "Doya",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "lil-greenhouse-grill-miami",
+      "title": "Lil Greenhouse Grill",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "bombay-darbar-miami",
+      "title": "Bombay Darbar",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "fiorito-miami",
+      "title": "Fiorito",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "phuc-yea-miami",
+      "title": "Phuc Yea",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "sanguich-de-miami-miami",
+      "title": "Sanguich de Miami",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "chug-s-diner-miami",
+      "title": "Chug's Diner",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "ogawa-miami",
+      "title": "Ogawa",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "the-river-oyster-bar-miami",
+      "title": "The River Oyster Bar",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "amara-at-paraiso-miami",
+      "title": "Amara at Paraiso",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "bakan-miami",
+      "title": "Bakan",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "la-camaronera-seafood-joint-and-fish-market-miami",
+      "title": "La Camaronera Seafood Joint and Fish Market",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "klaw-miami-miami",
+      "title": "Klaw Miami",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "old-s-havana-cuban-bar-cocina-miami",
+      "title": "Old's Havana Cuban Bar & Cocina",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "shiso-miami",
+      "title": "Shiso",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "lung-yai-thai-tapas-miami",
+      "title": "Lung Yai Thai Tapas",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "kaori-miami",
+      "title": "Kaori",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "greenstreet-cafe-miami",
+      "title": "Greenstreet Cafe",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "il-gabbiano-miami",
+      "title": "Il Gabbiano",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "ball-chain-miami",
+      "title": "Ball & Chain",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "monty-s-raw-bar-miami",
+      "title": "Monty's Raw Bar",
+      "region": "Miami, FL",
+      "regionGroup": "Florida",
+      "city": "Miami"
+    },
+    {
+      "slug": "lyra-nashville",
+      "title": "Lyra",
+      "region": "Nashville, TN",
+      "regionGroup": "Tennessee",
+      "city": "Nashville"
+    },
+    {
+      "slug": "city-house-nashville",
+      "title": "City House",
+      "region": "Nashville, TN",
+      "regionGroup": "Tennessee",
+      "city": "Nashville"
+    },
+    {
+      "slug": "cafe-roze-nashville",
+      "title": "Cafe Roze",
+      "region": "Nashville, TN",
+      "regionGroup": "Tennessee",
+      "city": "Nashville"
+    },
+    {
+      "slug": "pelican-pig-nashville",
+      "title": "Pelican & Pig",
+      "region": "Nashville, TN",
+      "regionGroup": "Tennessee",
+      "city": "Nashville"
+    },
+    {
+      "slug": "galatoire-s-new-orleans",
+      "title": "Galatoire's",
+      "region": "New Orleans, LA",
+      "regionGroup": "Louisiana",
+      "city": "New Orleans"
+    },
+    {
+      "slug": "arnaud-s-restaurant-new-orleans",
+      "title": "Arnaud's Restaurant",
+      "region": "New Orleans, LA",
+      "regionGroup": "Louisiana",
+      "city": "New Orleans"
+    },
+    {
+      "slug": "antoine-s-restaurant-new-orleans",
+      "title": "Antoine's Restaurant",
+      "region": "New Orleans, LA",
+      "regionGroup": "Louisiana",
+      "city": "New Orleans"
+    },
+    {
+      "slug": "casamento-s-restaurant-new-orleans",
+      "title": "Casamento's Restaurant",
+      "region": "New Orleans, LA",
+      "regionGroup": "Louisiana",
+      "city": "New Orleans"
+    },
+    {
+      "slug": "peche-seafood-grill-new-orleans",
+      "title": "Pêche Seafood Grill",
+      "region": "New Orleans, LA",
+      "regionGroup": "Louisiana",
+      "city": "New Orleans"
+    },
+    {
+      "slug": "katz-s-delicatessen-new-york",
+      "title": "Katz's Delicatessen",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "keens-steakhouse-new-york",
+      "title": "Keens Steakhouse",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "rubirosa-new-york",
+      "title": "Rubirosa",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "veselka-new-york",
+      "title": "Veselka",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "nom-wah-tea-parlor-new-york",
+      "title": "Nom Wah Tea Parlor",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "dirt-candy-new-york",
+      "title": "Dirt Candy",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "john-s-of-bleecker-street-new-york",
+      "title": "John's of Bleecker Street",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "don-angie-new-york",
+      "title": "Don Angie",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "i-sodi-new-york",
+      "title": "I Sodi",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "estela-new-york",
+      "title": "Estela",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "superiority-burger-new-york",
+      "title": "Superiority Burger",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "minetta-tavern-new-york",
+      "title": "Minetta Tavern",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "casa-mono-new-york",
+      "title": "Casa Mono",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "hanoi-house-new-york",
+      "title": "Hanoi House",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "thai-diner-new-york",
+      "title": "Thai Diner",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "semma-new-york",
+      "title": "Semma",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "dhamaka-new-york",
+      "title": "Dhamaka",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "cosme-new-york",
+      "title": "Cosme",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "barney-greengrass-new-york",
+      "title": "Barney Greengrass",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "the-odeon-new-york",
+      "title": "The Odeon",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "2nd-ave-deli-new-york",
+      "title": "2nd Ave Deli",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "sylvia-s-restaurant-new-york",
+      "title": "Sylvia's Restaurant",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "frenchette-new-york",
+      "title": "Frenchette",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "le-coucou-new-york",
+      "title": "Le Coucou",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "scarr-s-pizza-new-york",
+      "title": "Scarr's Pizza",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "una-pizza-napoletana-new-york",
+      "title": "Una Pizza Napoletana",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "sparks-steak-house-new-york",
+      "title": "Sparks Steak House",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "aquavit-new-york",
+      "title": "Aquavit",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "rezdora-new-york",
+      "title": "Rezdôra",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "il-buco-new-york",
+      "title": "il Buco",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "amy-ruth-s-new-york",
+      "title": "Amy Ruth's",
+      "region": "New York, NY",
+      "regionGroup": "New York",
+      "city": "New York"
+    },
+    {
+      "slug": "honeysuckle-philadelphia",
+      "title": "Honeysuckle",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "illata-philadelphia",
+      "title": "Illata",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "vedge-philadelphia",
+      "title": "Vedge",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "river-twice-philadelphia",
+      "title": "River Twice",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "le-virtu-philadelphia",
+      "title": "Le Virtù",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "high-street-philadelphia",
+      "title": "High Street",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "famous-4th-street-delicatessen-philadelphia",
+      "title": "Famous 4th Street Delicatessen",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "dalessandro-s-steaks-hoagies-philadelphia",
+      "title": "Dalessandro's Steaks & Hoagies",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "my-loup-philadelphia",
+      "title": "My Loup",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "little-water-philadelphia",
+      "title": "Little Water",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "mish-mish-philadelphia",
+      "title": "Mish Mish",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "southwark-philadelphia",
+      "title": "Southwark",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "royal-tavern-philadelphia",
+      "title": "Royal Tavern",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "dante-luigi-s-philadelphia",
+      "title": "Dante & Luigi's",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "del-rossi-s-cheesesteak-pizza-co-philadelphia",
+      "title": "Del Rossi's Cheesesteak & Pizza Co.",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "mawn-philadelphia",
+      "title": "Mawn",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "ogawa-philadelphia",
+      "title": "Ogawa",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "bolo-philadelphia",
+      "title": "Bolo",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "emmett-philadelphia",
+      "title": "Emmett",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "middle-child-philadelphia",
+      "title": "Middle Child",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "barbuzzo-philadelphia",
+      "title": "Barbuzzo",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "talula-s-garden-philadelphia",
+      "title": "Talula's Garden",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "little-nonna-s-philadelphia",
+      "title": "Little Nonna's",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "nam-phuong-philadelphia",
+      "title": "Nam Phuong",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "osteria-philadelphia",
+      "title": "Osteria",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "sang-kee-peking-duck-house-philadelphia",
+      "title": "Sang Kee Peking Duck House",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "ama-philadelphia",
+      "title": "Amá",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "double-knot-philadelphia",
+      "title": "Double Knot",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "a-kitchen-bar-philadelphia",
+      "title": "a.kitchen + bar",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "cry-baby-pasta-philadelphia",
+      "title": "Cry Baby Pasta",
+      "region": "Philadelphia, PA",
+      "regionGroup": "Pennsylvania",
+      "city": "Philadelphia"
+    },
+    {
+      "slug": "bacanora-phoenix",
+      "title": "Bacanora",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "beckett-s-table-phoenix",
+      "title": "Beckett's Table",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "little-miss-bbq-phoenix",
+      "title": "Little Miss BBQ",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "los-dos-molinos-phoenix",
+      "title": "Los Dos Molinos",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "cocina-madrigal-phoenix",
+      "title": "Cocina Madrigal",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "restaurant-progress-phoenix",
+      "title": "Restaurant Progress",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "gallo-blanco-phoenix",
+      "title": "Gallo Blanco",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "vecina-phoenix",
+      "title": "Vecina",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "nook-kitchen-phoenix",
+      "title": "Nook Kitchen",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "chilte-phoenix",
+      "title": "Chilte",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "ollie-vaughn-s-phoenix",
+      "title": "Ollie Vaughn's",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "sidewinder-phoenix",
+      "title": "Sidewinder",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "kid-sister-phoenix",
+      "title": "Kid Sister",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "taco-chelo-phoenix",
+      "title": "Taco Chelo",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "the-stockyards-phoenix",
+      "title": "The Stockyards",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "brasserie-melrose-phoenix",
+      "title": "Brasserie Melrose",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "stoop-kid-phoenix",
+      "title": "Stoop Kid",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "bitter-twisted-cocktail-parlour-phoenix",
+      "title": "Bitter & Twisted Cocktail Parlour",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "cibo-phoenix",
+      "title": "Cibo",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "mr-baan-s-bar-and-mookata-phoenix",
+      "title": "Mr. Baan's Bar and Mookata",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "macalpine-s-diner-soda-fountain-phoenix",
+      "title": "MacAlpine's Diner & Soda Fountain",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "casa-corazon-phoenix",
+      "title": "Casa Corazon",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "rustler-s-rooste-phoenix",
+      "title": "Rustler's Rooste",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "noble-eatery-phoenix",
+      "title": "Noble Eatery",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "otro-cafe-phoenix",
+      "title": "Otro Cafe",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "ocotillo-phoenix",
+      "title": "Ocotillo",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "kabob-grill-n-go-phoenix",
+      "title": "Kabob Grill N' Go",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "lovebite-dumplings-phoenix",
+      "title": "Lovebite Dumplings",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "los-reyes-de-la-torta-phoenix",
+      "title": "Los Reyes de la Torta",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "green-new-american-vegetarian-phoenix",
+      "title": "Green New American Vegetarian",
+      "region": "Phoenix, AZ",
+      "regionGroup": "Arizona",
+      "city": "Phoenix"
+    },
+    {
+      "slug": "zuni-cafe-san-francisco",
+      "title": "Zuni Café",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "nopa-san-francisco",
+      "title": "Nopa",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "foreign-cinema-san-francisco",
+      "title": "Foreign Cinema",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "kokkari-estiatorio-san-francisco",
+      "title": "Kokkari Estiatorio",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "state-bird-provisions-san-francisco",
+      "title": "State Bird Provisions",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "che-fico-san-francisco",
+      "title": "Che Fico",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "rich-table-san-francisco",
+      "title": "Rich Table",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "flour-water-san-francisco",
+      "title": "Flour + Water",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "cotogna-san-francisco",
+      "title": "Cotogna",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "rintaro-san-francisco",
+      "title": "Rintaro",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "tony-s-pizza-napoletana-san-francisco",
+      "title": "Tony's Pizza Napoletana",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "sotto-mare-san-francisco",
+      "title": "Sotto Mare",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "brenda-s-french-soul-food-san-francisco",
+      "title": "Brenda's French Soul Food",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "nopalito-san-francisco",
+      "title": "Nopalito",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "restaurant-gary-danko-san-francisco",
+      "title": "Restaurant Gary Danko",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "californios-san-francisco",
+      "title": "Californios",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "mourad-san-francisco",
+      "title": "Mourad",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "tadich-grill-san-francisco",
+      "title": "Tadich Grill",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "lazy-bear-san-francisco",
+      "title": "Lazy Bear",
+      "region": "San Francisco, CA",
+      "regionGroup": "California",
+      "city": "San Francisco"
+    },
+    {
+      "slug": "spinasse-seattle",
+      "title": "Spinasse",
+      "region": "Seattle, WA",
+      "regionGroup": "Washington",
+      "city": "Seattle"
+    },
+    {
+      "slug": "homer-seattle",
+      "title": "Homer",
+      "region": "Seattle, WA",
+      "regionGroup": "Washington",
+      "city": "Seattle"
+    },
+    {
+      "slug": "albi-washington",
+      "title": "Albi",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "oyster-oyster-washington",
+      "title": "Oyster Oyster",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "maydan-washington",
+      "title": "Maydan",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "daru-washington",
+      "title": "Daru",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "primrose-washington",
+      "title": "Primrose",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "bresca-washington",
+      "title": "Bresca",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "rooster-owl-washington",
+      "title": "Rooster & Owl",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "purple-patch-washington",
+      "title": "Purple Patch",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "sushi-taro-washington",
+      "title": "Sushi Taro",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "ethiopic-washington",
+      "title": "Ethiopic",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "martin-s-tavern-washington",
+      "title": "Martin's Tavern",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "filomena-ristorante-washington",
+      "title": "Filomena Ristorante",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "thip-khao-washington",
+      "title": "Thip Khao",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "anafre-washington",
+      "title": "Anafre",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "unconventional-diner-washington",
+      "title": "Unconventional Diner",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "lutece-washington",
+      "title": "Lutèce",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "chercher-ethiopian-restaurant-mart-washington",
+      "title": "Chercher Ethiopian Restaurant & Mart",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "anju-washington",
+      "title": "Anju",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "l-ardente-washington",
+      "title": "L'Ardente",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "imperfecto-washington",
+      "title": "Imperfecto",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "daikaya-washington",
+      "title": "Daikaya",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "tabard-inn-washington",
+      "title": "Tabard Inn",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "amparo-fondita-washington",
+      "title": "Amparo Fondita",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "ben-s-chili-bowl-washington",
+      "title": "Ben's Chili Bowl",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "kathmandu-tapas-cocktails-washington",
+      "title": "Kathmandu Tapas & Cocktails",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "doi-moi-washington",
+      "title": "Doi Moi",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "pascual-washington",
+      "title": "Pascual",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "mita-washington",
+      "title": "MITA",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "nina-may-washington",
+      "title": "Nina May",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "baan-siam-washington",
+      "title": "Baan Siam",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
+    },
+    {
+      "slug": "little-pearl-washington",
+      "title": "Little Pearl",
+      "region": "Washington, DC",
+      "regionGroup": "District Of Columbia",
+      "city": "Washington"
     }
   ]
 }
