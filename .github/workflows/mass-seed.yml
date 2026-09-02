@@ -77,14 +77,14 @@ jobs:
       - name: Sync Supabase corpus
         if: ${{ steps.wave.outputs.enabled == 'true' || github.event_name == 'workflow_dispatch' }}
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_URL: "https://pqbqvrmhbxowpqzcenod.supabase.co"
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         shell: bash
         run: |
-          if [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_SERVICE_KEY" ]; then
+          if [ -n "$SUPABASE_SERVICE_KEY" ]; then
             node scripts/db/seed-corpus.mjs
           else
-            echo "::warning::Supabase service secrets are not configured; corpus files were refreshed but database sync was skipped."
+            echo "::warning::SUPABASE_SERVICE_KEY is not configured; corpus files were refreshed but database sync was skipped."
           fi
 
       - name: Commit refreshed corpus
