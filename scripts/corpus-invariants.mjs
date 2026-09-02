@@ -29,7 +29,13 @@ const requiredFiles = [
   "scripts/pipeline/build-live-index.mjs",
   "scripts/pipeline/parse-hours.mjs",
   "scripts/data/city-centroids.json",
-  "src/assets/hero-pass.jpg",
+  // The original sits in assets-src/ so it is neither deployed nor bundled;
+  // the page imports the WebP widths built from it.
+  "assets-src/hero-pass.jpg",
+  "src/assets/hero-pass-480.webp",
+  "src/assets/hero-pass-768.webp",
+  "src/assets/hero-pass-1200.webp",
+  "src/assets/hero-pass-1800.webp",
   "src/assets/fig-gold.jpg",
   "src/routes/index.tsx",
   "src/routes/record.$slug.tsx",

@@ -44,3 +44,8 @@ dist-ssr
 # Git bundles used to hand work between machines — never part of the tree
 *.bundle
 *.patch
+
+# Generated image widths. Built from assets-src/ by build-image-derivatives.mjs
+# and imported by the route, so Vite hashes them — but they are output, not source.
+# (Committed deliberately: the deploy machine has no ImageMagick. See
+# scripts/check-generated.mjs.)

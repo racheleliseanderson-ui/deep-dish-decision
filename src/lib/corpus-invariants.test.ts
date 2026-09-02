@@ -46,7 +46,14 @@ describe("corpus invariants", () => {
     expect(existsSync(resolve(ROOT, "src/data/dataset.json"))).toBe(true);
     expect(existsSync(resolve(ROOT, "src/data/by-region/washington.json"))).toBe(true);
     expect(existsSync(resolve(ROOT, "src/data/corpus-meta.json"))).toBe(true);
-    expect(existsSync(resolve(ROOT, "src/assets/hero-pass.jpg"))).toBe(true);
+    // The hero original lives in assets-src/ with the other originals, so it
+    // is neither deployed nor bundled; what the page imports are the WebP
+    // widths built from it. Both halves have to exist or the home page loses
+    // its hero — the original silently, at the next rebuild.
+    expect(existsSync(resolve(ROOT, "assets-src/hero-pass.jpg"))).toBe(true);
+    for (const w of [480, 768, 1200, 1800]) {
+      expect(existsSync(resolve(ROOT, `src/assets/hero-pass-${w}.webp`))).toBe(true);
+    }
     expect(existsSync(resolve(ROOT, "src/assets/fig-gold.jpg"))).toBe(true);
     expect(existsSync(resolve(ROOT, "src/routes/index.tsx"))).toBe(true);
     expect(existsSync(resolve(ROOT, "src/routes/record.$slug.tsx"))).toBe(true);

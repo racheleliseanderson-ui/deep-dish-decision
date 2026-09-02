@@ -6,7 +6,29 @@ import { ListingFace } from "@/components/rih/listing-face";
 import { RecordCard } from "@/components/rih/record-card";
 import { ScenarioPlaybooks } from "@/components/rih/scenario-playbooks";
 import { SituationConsole } from "@/components/rih/situation-console";
-import heroPass from "@/assets/hero-pass.jpg";
+import heroPass480 from "@/assets/hero-pass-480.webp";
+import heroPass768 from "@/assets/hero-pass-768.webp";
+import heroPass1200 from "@/assets/hero-pass-1200.webp";
+import heroPass1800 from "@/assets/hero-pass-1800.webp";
+
+/**
+ * The hero is full-bleed, so a device needs roughly its own width in CSS
+ * pixels times its pixel ratio — hence sizes="100vw" and a ladder of widths.
+ * Before this it was one 1800px JPEG with no srcset and fetchPriority="high",
+ * so a 390px phone fetched 237 KB, ahead of everything else on the page, to
+ * paint a backdrop. It now fetches 37 KB.
+ *
+ * The smallest variant is the `src`, so a browser that ignores srcset gets the
+ * cheapest file rather than the dearest. There is no JPEG fallback: every
+ * restaurant tile is already WebP-only, so one here would protect a browser
+ * the rest of the page has already lost.
+ */
+const HERO_SRCSET = [
+  `${heroPass480} 480w`,
+  `${heroPass768} 768w`,
+  `${heroPass1200} 1200w`,
+  `${heroPass1800} 1800w`,
+].join(", ");
 import { isReadyRecord } from "@/lib/completeness";
 import { corpusMeta, groupForRegion } from "@/lib/corpus-meta";
 import type { RestaurantRecord } from "@/lib/dataset";
@@ -234,10 +256,12 @@ function Hub() {
       />
       <header className="relative isolate flex min-h-[70vh] items-end overflow-hidden border-b border-border-strong sm:min-h-[62vh]">
         <img
-          src={heroPass}
+          src={heroPass480}
+          srcSet={HERO_SRCSET}
+          sizes="100vw"
           alt="Rows of bare filament bulbs hanging low over long empty wooden tables in a warehouse dining room, before service."
-          width={1920}
-          height={1088}
+          width={1800}
+          height={1008}
           fetchPriority="high"
           decoding="async"
           className="absolute inset-0 -z-10 size-full object-cover object-[62%_center]"

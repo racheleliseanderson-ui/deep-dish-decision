@@ -28,9 +28,11 @@ let made = 0;
 let savedBytes = 0;
 
 for (const img of manifest.images) {
-  const srcRel = img.src.replace(/^\//, "");
-  const srcPath = join(root, "public", srcRel.replace(/^visuals\//, "visuals/"));
-  const abs = existsSync(srcPath) ? srcPath : join(root, "public", srcRel);
+  // Originals live in assets-src/, outside public/, so they are never deployed.
+  // 6.7 MB of them were being copied into every build and served to nobody:
+  // the tiles all render from public/visuals/r/, and the originals existed
+  // only as inputs to this script.
+  const abs = join(root, "assets-src/visuals", basename(img.original ?? img.src));
   if (!existsSync(abs)) {
     console.warn("missing source:", img.src);
     continue;
@@ -71,11 +73,62 @@ for (const img of manifest.images) {
     made++;
   }
   img.sources = sources;
+  // `src` must be something the browser can actually fetch. It is the
+  // last-resort fallback in VisualTile, and pointing it at an original that no
+  // longer ships would be a 404 waiting for the first image without sources.
+  img.original = `/assets-src/visuals/${basename(abs)}`;
+  const biggest = sources.at(-1);
+  if (biggest) img.src = biggest.src;
   const largest = sources.at(-1);
   if (largest) savedBytes += originalSize - largest.bytes;
 }
 
 manifest.derivativesAt = new Date().toISOString();
 writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
-console.log(`${made} derivatives written to public/visuals/r`);
+console.log(`${made} derivatives written to public/visuals/r (originals stay in assets-src/, undeployed)`);
 console.log(`largest-derivative saving vs originals: ${(savedBytes / 1024 / 1024).toFixed(2)} MB`);
+
+/* ── full-bleed art ────────────────────────────────────────────────────────
+ * The hero is not part of the visual program — it is a backdrop, not evidence
+ * about a restaurant — so it never went through the loop above. It was a plain
+ * <img> with no srcset and fetchPriority="high", which meant every phone
+ * downloaded the full 1800px JPEG to fill a 390px screen: 237 KB, above the
+ * fold, ahead of everything else. It was larger than all 29 restaurant tiles
+ * put together.
+ *
+ * It is also a backdrop under a heavy dark gradient with text over it, so it
+ * can carry a lower quality than a photograph the reader is meant to study.
+ */
+// The original is in assets-src/ with the rest, so it is neither deployed nor
+// bundled. There is no JPEG fallback: every restaurant tile is already
+// WebP-only, so one for the hero would protect a browser the rest of the page
+// has already lost.
+const FULL_BLEED = [{ file: "hero-pass.jpg", widths: [480, 768, 1200, 1800], quality: 68 }];
+
+for (const art of FULL_BLEED) {
+  const src = join(root, "assets-src", art.file);
+  if (!existsSync(src)) {
+    console.warn("missing full-bleed source:", art.file);
+    continue;
+  }
+  const stem = basename(src, extname(src));
+  const [w] = execFileSync("identify", ["-format", "%w %h", `${src}[0]`]).toString().trim().split(" ");
+  const originalBytes = statSync(src).size;
+  let made = [];
+  for (const target of art.widths) {
+    if (target > Number(w)) continue;
+    const out = join(root, "src/assets", `${stem}-${target}.webp`);  // imported, so Vite hashes it
+    execFileSync("convert", [
+      `${src}[0]`,
+      "-resize", `${target}x>`,
+      "-strip",
+      "-quality", String(art.quality),
+      "-define", "webp:method=6",
+      out,
+    ]);
+    made.push({ w: target, bytes: statSync(out).size });
+  }
+  console.log(`\n${art.file} -> ${made.length} widths (full-bleed, srcset in the route)`);
+  console.log(`  original      ${(originalBytes / 1024).toFixed(0)} KB (what every device used to fetch)`);
+  for (const m of made) console.log(`  ${String(m.w).padStart(5)}w        ${(m.bytes / 1024).toFixed(0)} KB`);
+}
