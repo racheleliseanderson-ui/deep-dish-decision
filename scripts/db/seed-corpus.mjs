@@ -27,8 +27,18 @@ if (!DRY && (!URL || !KEY)) {
   console.error("Set SUPABASE_URL and SUPABASE_SERVICE_KEY, or pass --dry-run.");
   process.exit(1);
 }
-if (KEY && /^eyJ/.test(KEY) === false) {
-  console.error("SUPABASE_SERVICE_KEY does not look like a JWT. Refusing to send it.");
+// Supabase issues two shapes of secret key: the legacy service_role JWT
+// (eyJ...) and the newer sb_secret_... form. Both bypass row-level security.
+// A publishable key is neither, and sending one here would fail every write
+// with a confusing 401 — so name the mistake instead.
+if (KEY && !/^eyJ|^sb_secret_/.test(KEY)) {
+  const looksPublishable = /^sb_publishable_/.test(KEY);
+  console.error(
+    looksPublishable
+      ? "That is the publishable key. Seeding needs the secret one:\n" +
+          "Supabase dashboard -> Settings -> API -> service_role / secret key."
+      : "SUPABASE_SERVICE_KEY is not a service_role JWT or an sb_secret_ key. Refusing to send it.",
+  );
   process.exit(1);
 }
 
