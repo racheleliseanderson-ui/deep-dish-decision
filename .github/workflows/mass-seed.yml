@@ -70,6 +70,20 @@ jobs:
         if: ${{ steps.wave.outputs.enabled == 'true' || github.event_name == 'workflow_dispatch' }}
         run: node scripts/pipeline/sweep-owned.mjs --batch=${{ steps.wave.outputs.batch }}
 
+      - name: Install dependencies
+        if: ${{ steps.wave.outputs.enabled == 'true' || github.event_name == 'workflow_dispatch' }}
+        run: npm ci
+
+      # dataset.json's ops block and src/data/atlas.json are both generated.
+      # Nothing else in CI rebuilt them, so every sweep shipped the corpus with
+      # the previous sweep's published numbers.
+      - name: Rebuild dataset meta + atlas aggregates
+        if: ${{ steps.wave.outputs.enabled == 'true' || github.event_name == 'workflow_dispatch' }}
+        shell: bash
+        run: |
+          node scripts/pipeline/level-records.mjs
+          npm run build:atlas
+
       - name: Validate corpus invariants
         if: ${{ steps.wave.outputs.enabled == 'true' || github.event_name == 'workflow_dispatch' }}
         run: node scripts/corpus-invariants.mjs
@@ -94,6 +108,8 @@ jobs:
           git config user.name "Rachel Elise Anderson"
           git config user.email "Rachel.Elise.Anderson@gmail.com"
           git add \
+            src/data/dataset.json \
+            src/data/atlas.json \
             src/data/enrichment.json \
             src/data/enrichment \
             src/data/first-party-dishes.json \

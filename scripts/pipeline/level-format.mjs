@@ -23,6 +23,10 @@ export function stripPrefix(raw) {
 export function emptyish(value) {
   const t = String(value ?? "").trim();
   if (!t) return true;
+  // The leveling floor sentence is a placeholder we wrote, not evidence the
+  // restaurant published. Counting it as filled is what let measureDepth()
+  // score records "12 / 12 core fields" while nine of them said nothing.
+  if (t.startsWith(FLOOR_PREFIX)) return true;
   return /^(not stated|unstated|not provided|unknown|none|n\/a|na|tbd|—|–|-)$/i.test(t);
 }
 

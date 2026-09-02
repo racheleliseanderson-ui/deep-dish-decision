@@ -49,6 +49,18 @@ jobs:
           node scripts/pipeline/build-queue.mjs
           node scripts/pipeline/report.mjs
 
+      - name: Install dependencies
+        run: npm ci
+
+      # dataset.json's ops block and src/data/atlas.json are both generated.
+      # Nothing else in CI rebuilt them, so every seed wave shipped the corpus
+      # with the previous wave's published numbers.
+      - name: Rebuild dataset meta + atlas aggregates
+        shell: bash
+        run: |
+          node scripts/pipeline/level-records.mjs
+          npm run build:atlas
+
       - name: Validate corpus invariants
         run: node scripts/corpus-invariants.mjs
 
