@@ -18,7 +18,9 @@ const STATE_COPY: Record<DecisionState, { label: string; tone: "verified" | "wat
 
 function timeLabel(value: string | null) {
   if (!value) return "";
-  const [h, m] = value.split(":").map(Number);
+  const parts = value.split(":");
+  const h = Number(parts[0]);
+  const m = Number(parts[1]);
   if (!Number.isFinite(h) || !Number.isFinite(m)) return "";
   return minutesToClock(h * 60 + m);
 }
