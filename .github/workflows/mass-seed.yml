@@ -15,6 +15,8 @@ on:
         required: false
         default: "100"
   push:
+    branches:
+      - main
     paths:
       - "src/data/mass-seed-control.json"
 
@@ -24,6 +26,10 @@ concurrency:
 
 jobs:
   seed:
+    # Corpus writes are only permitted from the default branch. This prevents a
+    # feature branch that changes the control file from trying to rebase/push
+    # generated corpus data onto main.
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
