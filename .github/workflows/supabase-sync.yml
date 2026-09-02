@@ -2,6 +2,11 @@ name: Deep Dish Supabase sync
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/data/supabase-sync-control.json"
 
 concurrency:
   group: deep-dish-supabase-sync
