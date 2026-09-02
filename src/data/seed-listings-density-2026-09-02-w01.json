@@ -1,0 +1,4124 @@
+{
+  "note": "Density wave W-01 (2026-09-02). Candidates sourced from local food press, James Beard and Michelin listings, then each entry confirmed by fetching the establishment's own official website; address and phone are taken from that first-party page only, and phone is omitted where the site states none. Excluded on verification: permanently closed restaurants, parked or hijacked domains, sites that would not load, national and regional chains, and establishments outside the target city limits. Narrative first-party fields stay empty until enrich.mjs runs.",
+  "generatedAt": "2026-09-02T20:29:31.766Z",
+  "batches": [
+    {
+      "city": "Atlanta",
+      "stateCode": "GA",
+      "listings": [
+        {
+          "title": "The Optimist",
+          "website": "https://www.theoptimistrestaurant.com/",
+          "phone": "+1-404-477-6260",
+          "address": "914 Howell Mill Rd, Atlanta, GA 30318",
+          "cuisineTags": [
+            "Seafood",
+            "Oyster Bar"
+          ]
+        },
+        {
+          "title": "Mary Mac's Tea Room",
+          "website": "https://www.marymacs.com/",
+          "phone": "+1-404-876-1800",
+          "address": "224 Ponce De Leon Ave NE, Atlanta, GA 30308",
+          "cuisineTags": [
+            "Southern",
+            "Comfort Food"
+          ]
+        },
+        {
+          "title": "Ticonderoga Club",
+          "website": "https://www.ticonderogaclub.com/",
+          "phone": "+1-404-458-4534",
+          "address": "99 Krog Street NE, Ste. W, Atlanta, GA 30307",
+          "cuisineTags": [
+            "American",
+            "Cocktail Bar"
+          ]
+        },
+        {
+          "title": "Busy Bee Cafe",
+          "website": "https://www.thebusybeecafe.com/locations",
+          "phone": "+1-404-525-9212",
+          "address": "810 Martin Luther King Jr Dr SW, Atlanta, GA 30314",
+          "cuisineTags": [
+            "Soul Food",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Little Bear",
+          "website": "https://www.littlebearatl.com/",
+          "phone": "+1-404-500-5396",
+          "address": "71-A Georgia Avenue SE, Ste. A, Atlanta, GA 30312",
+          "cuisineTags": [
+            "New American",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "Cooks & Soldiers",
+          "website": "https://www.cooksandsoldiers.com/",
+          "phone": "+1-404-996-2623",
+          "address": "691 14th Street NW, Atlanta, GA 30318",
+          "cuisineTags": [
+            "Basque",
+            "Spanish",
+            "Tapas"
+          ]
+        },
+        {
+          "title": "Desta Ethiopian Kitchen",
+          "website": "https://destaethiopiankitchen.com/",
+          "phone": "+1-404-929-0011",
+          "address": "2566 Briarcliff Rd NE, Suite 101, Atlanta, GA 30329",
+          "cuisineTags": [
+            "Ethiopian",
+            "African"
+          ]
+        },
+        {
+          "title": "Delbar",
+          "website": "https://www.delbaratl.com/location-inman-park",
+          "phone": "+1-404-500-1444",
+          "address": "870 Inman Village Parkway, Suite 1, Atlanta, GA 30307",
+          "cuisineTags": [
+            "Middle Eastern",
+            "Persian"
+          ]
+        },
+        {
+          "title": "Lyla Lila",
+          "website": "https://www.lylalilaatl.com/",
+          "phone": "+1-404-963-2637",
+          "address": "693 Peachtree St NE, Suite 118, Atlanta, GA 30308",
+          "cuisineTags": [
+            "Italian",
+            "Southern European"
+          ]
+        },
+        {
+          "title": "Wisteria",
+          "website": "https://www.wisteria-atlanta.com/",
+          "phone": "+1-404-525-3363",
+          "address": "471 North Highland Avenue NE, Atlanta, GA 30307",
+          "cuisineTags": [
+            "Southern",
+            "New American"
+          ]
+        },
+        {
+          "title": "Storico Fresco",
+          "website": "https://www.yhospitality.com/storico-fresco",
+          "phone": "+1-470-665-3921",
+          "address": "3167 Peachtree Rd NE, Atlanta, GA 30305",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Bones Restaurant",
+          "website": "https://bonesrestaurant.com/",
+          "phone": "+1-404-237-2663",
+          "address": "3130 Piedmont Rd NE, Atlanta, GA 30305",
+          "cuisineTags": [
+            "Steakhouse",
+            "American"
+          ]
+        },
+        {
+          "title": "La Grotta Ristorante Italiano",
+          "website": "https://www.lagrottaatlanta.com/",
+          "phone": "+1-404-231-1368",
+          "address": "2637 Peachtree Road, Atlanta, GA 30305",
+          "cuisineTags": [
+            "Italian",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Home grown",
+          "website": "https://www.homegrownga.com/",
+          "phone": "+1-404-222-0455",
+          "address": "968 Memorial Dr SE, Atlanta, GA 30316",
+          "cuisineTags": [
+            "Southern",
+            "Diner",
+            "Breakfast"
+          ]
+        },
+        {
+          "title": "Varasano's Pizzeria",
+          "website": "https://www.varasanos.com/",
+          "address": "2171 Peachtree Rd NE, Atlanta, GA 30309",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Chops Lobster Bar",
+          "website": "https://www.chopslobsterbar.com/",
+          "phone": "+1-404-262-2675",
+          "address": "70 W Paces Ferry Rd NW, Atlanta, GA 30305",
+          "cuisineTags": [
+            "Steakhouse",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Gu's Dumplings",
+          "website": "https://www.gusdumplings.com/",
+          "phone": "+1-404-527-6007",
+          "address": "99 Krog St NE, Atlanta, GA 30307",
+          "cuisineTags": [
+            "Chinese",
+            "Sichuan"
+          ]
+        },
+        {
+          "title": "Marcel",
+          "website": "https://www.marcelatl.com/",
+          "phone": "+1-404-665-4555",
+          "address": "1170 Howell Mill Road, Atlanta, GA 30318",
+          "cuisineTags": [
+            "Steakhouse",
+            "French Brasserie"
+          ]
+        },
+        {
+          "title": "St. Cecilia",
+          "website": "https://www.stceciliaatl.com/",
+          "phone": "+1-404-554-9995",
+          "address": "3455 Peachtree Road NE, Atlanta, GA 30326",
+          "cuisineTags": [
+            "Italian",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Ecco",
+          "website": "https://www.ecco-atlanta.com/locations",
+          "phone": "+1-404-347-9555",
+          "address": "40 7th St NE, Atlanta, GA 30308",
+          "cuisineTags": [
+            "European",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Bhojanic",
+          "website": "https://www.bhojanic.com/",
+          "phone": "+1-404-793-7243",
+          "address": "1175 Peachtree St. NE, Suite 160, Atlanta, GA 30361",
+          "cuisineTags": [
+            "Indian"
+          ]
+        },
+        {
+          "title": "Banshee",
+          "website": "https://www.banshee-atl.com/",
+          "phone": "+1-470-428-2034",
+          "address": "1271 Glenwood Ave SE, Atlanta, GA 30316",
+          "cuisineTags": [
+            "New American",
+            "Bar"
+          ]
+        },
+        {
+          "title": "Cafe Sunflower",
+          "website": "https://www.cafesunflower.com/",
+          "phone": "+1-404-352-8859",
+          "address": "2140 Peachtree Road, Ste 290, Atlanta, GA 30309",
+          "cuisineTags": [
+            "Vegetarian",
+            "Vegan"
+          ]
+        },
+        {
+          "title": "Bomb Biscuit Co.",
+          "website": "https://www.bombbiscuitatl.com/pages/bb-co-location-and-hours",
+          "address": "519 Memorial Dr SE, Suite B-02, Atlanta, GA 30312",
+          "cuisineTags": [
+            "Southern",
+            "Breakfast",
+            "Bakery"
+          ]
+        },
+        {
+          "title": "Poor Calvin's",
+          "website": "https://poorcalvins.com/",
+          "phone": "+1-470-570-8741",
+          "address": "510 Piedmont Avenue NE, Atlanta, GA 30308",
+          "cuisineTags": [
+            "Asian Fusion",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Madeira Park",
+          "website": "https://www.madeiraparkatl.com/",
+          "phone": "+1-404-228-2058",
+          "address": "640 North Highland Ave NE, Atlanta, GA 30306",
+          "cuisineTags": [
+            "Wine Bar",
+            "New American"
+          ]
+        },
+        {
+          "title": "Botiwalla",
+          "website": "https://www.botiwalla.com/",
+          "phone": "+1-470-225-8963",
+          "address": "675 Ponce de Leon Ave NE, N134, Atlanta, GA 30308",
+          "cuisineTags": [
+            "Indian",
+            "Street Food"
+          ]
+        },
+        {
+          "title": "The Vortex Bar & Grill",
+          "website": "https://www.thevortexbar.com/midtown",
+          "phone": "+1-404-875-1667",
+          "address": "878 Peachtree Street NE, Atlanta, GA 30309",
+          "cuisineTags": [
+            "Burgers",
+            "American"
+          ]
+        },
+        {
+          "title": "Fox Bros. Bar-B-Q",
+          "website": "https://www.foxbrosbbq.com/dekalb-ave",
+          "phone": "+1-404-577-4030",
+          "address": "1238 DeKalb Ave NE, Atlanta, GA 30307",
+          "cuisineTags": [
+            "Barbecue",
+            "Southern"
+          ]
+        },
+        {
+          "title": "The Little Tart Bakeshop",
+          "website": "https://www.littletartatl.com/locations/",
+          "phone": "+1-404-348-4797",
+          "address": "437 Memorial Drive SE, Atlanta, GA 30312",
+          "cuisineTags": [
+            "Bakery",
+            "Cafe"
+          ]
+        },
+        {
+          "title": "Wood's Chapel BBQ",
+          "website": "https://www.woodschapelbbq.com/",
+          "phone": "+1-404-522-3000",
+          "address": "85 Georgia Ave SE, Atlanta, GA 30312",
+          "cuisineTags": [
+            "Barbecue",
+            "Southern"
+          ]
+        },
+        {
+          "title": "The Colonnade",
+          "website": "https://www.thecolonnadeatl.com/",
+          "phone": "+1-404-874-5642",
+          "address": "1879 Cheshire Bridge Rd NE, Atlanta, GA",
+          "cuisineTags": [
+            "Southern",
+            "Comfort Food"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Austin",
+      "stateCode": "TX",
+      "listings": [
+        {
+          "title": "la Barbecue",
+          "website": "https://www.labarbecue.com/",
+          "phone": "+1-512-605-9696",
+          "address": "2401 East Cesar Chavez Street, Austin, TX 78702",
+          "cuisineTags": [
+            "Barbecue",
+            "Texan"
+          ]
+        },
+        {
+          "title": "Dai Due",
+          "website": "https://daidue.com/",
+          "phone": "+1-512-524-0688",
+          "address": "2406 Manor Road, Austin, TX",
+          "cuisineTags": [
+            "New American",
+            "Butcher Shop"
+          ]
+        },
+        {
+          "title": "Comedor",
+          "website": "https://www.comedortx.com/",
+          "phone": "+1-512-499-0977",
+          "address": "501 Colorado St, Austin, TX 78701",
+          "cuisineTags": [
+            "Mexican",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Este",
+          "website": "https://www.esteatx.com/",
+          "phone": "+1-512-222-4047",
+          "address": "2113 Manor Rd, Austin, TX 78722",
+          "cuisineTags": [
+            "Mexican",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "La Condesa",
+          "website": "https://lacondesa.com/",
+          "phone": "+1-512-499-0300",
+          "address": "400A West 2nd Street, Austin, TX 78701",
+          "cuisineTags": [
+            "Mexican",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Launderette",
+          "website": "https://launderetteaustin.com/",
+          "phone": "+1-512-382-1599",
+          "address": "2115 Holly Street, Austin, TX 78702",
+          "cuisineTags": [
+            "New American",
+            "Global"
+          ]
+        },
+        {
+          "title": "Birdie's",
+          "website": "https://www.birdiesaustin.com/",
+          "address": "2944 East 12th Street, Unit A, Austin, TX 78702",
+          "cuisineTags": [
+            "New American",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Mattie's",
+          "website": "https://www.mattiesaustin.com/",
+          "address": "811 West Live Oak Street, Austin, TX 78704",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Distant Relatives",
+          "website": "https://www.distatantrelativesatx.com/",
+          "address": "3901 Promontory Point Drive, Austin, TX 78744",
+          "cuisineTags": [
+            "Barbecue",
+            "African"
+          ]
+        },
+        {
+          "title": "Nixta Taqueria",
+          "website": "https://www.nixtataqueria.com/",
+          "address": "2512 E. 12th Street, Austin, TX 78702",
+          "cuisineTags": [
+            "Mexican",
+            "Tacos"
+          ]
+        },
+        {
+          "title": "Micklethwait Craft Meats",
+          "website": "https://www.craftmeatsaustin.com/",
+          "address": "4602 Tanney St., Austin, TX 78721",
+          "cuisineTags": [
+            "Barbecue",
+            "Texan"
+          ]
+        },
+        {
+          "title": "Joe's Bakery & Coffee Shop",
+          "website": "https://www.joesbakery.com/",
+          "phone": "+1-512-472-0017",
+          "address": "2305 E 7th St, Austin, TX 78702",
+          "cuisineTags": [
+            "Tex-Mex",
+            "Bakery",
+            "Breakfast"
+          ]
+        },
+        {
+          "title": "Fonda San Miguel",
+          "website": "https://www.fondasanmiguel.com/",
+          "phone": "+1-512-459-4121",
+          "address": "2330 W. North Loop, Austin, TX 78756",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Justine's Brasserie",
+          "website": "https://justines1937.com/",
+          "phone": "+1-512-385-2900",
+          "address": "4710 East 5th Street, Austin, TX",
+          "cuisineTags": [
+            "French",
+            "Brasserie"
+          ]
+        },
+        {
+          "title": "Perla's Seafood and Oyster Bar",
+          "website": "https://www.perlasaustin.com/",
+          "phone": "+1-512-291-7300",
+          "address": "1400 South Congress Avenue, Austin, TX 78704",
+          "cuisineTags": [
+            "Seafood",
+            "Oyster Bar"
+          ]
+        },
+        {
+          "title": "Wu Chow",
+          "website": "https://www.wuchowaustin.com/",
+          "address": "500 W 5th St #168, Austin, TX 78701",
+          "cuisineTags": [
+            "Chinese",
+            "Dim Sum"
+          ]
+        },
+        {
+          "title": "Sour Duck Market",
+          "website": "https://www.sourduckmarket.com/",
+          "phone": "+1-512-394-5776",
+          "address": "1814 E Martin Luther King Jr Blvd, Austin, TX 78702",
+          "cuisineTags": [
+            "Cafe",
+            "Bakery",
+            "American"
+          ]
+        },
+        {
+          "title": "Bufalina",
+          "website": "https://www.bufalinapizza.com/",
+          "phone": "+1-512-394-5337",
+          "address": "2215 E Cesar Chavez Street, Austin, TX 78702",
+          "cuisineTags": [
+            "Pizza",
+            "Neapolitan",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Intero",
+          "website": "https://www.interorestaurant.com/",
+          "phone": "+1-512-599-4052",
+          "address": "2612 East Cesar Chavez Street, Austin, TX 78702",
+          "cuisineTags": [
+            "Italian",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Thai Fresh",
+          "website": "https://www.thai-fresh.com/",
+          "phone": "+1-512-494-6436",
+          "address": "909 West Mary St., Austin, TX 78704",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Licha's Cantina",
+          "website": "https://www.lichascantina.com/",
+          "phone": "+1-512-480-5960",
+          "address": "1306 East 6th Street, Austin, TX 78702",
+          "cuisineTags": [
+            "Mexican",
+            "Cantina"
+          ]
+        },
+        {
+          "title": "24 Diner",
+          "website": "https://www.24diner.com/",
+          "phone": "+1-512-472-5400",
+          "address": "600 N. Lamar Boulevard, Suite 200, Austin, TX 78703",
+          "cuisineTags": [
+            "Diner",
+            "American",
+            "Comfort Food"
+          ]
+        },
+        {
+          "title": "Stiles Switch BBQ",
+          "website": "https://austin.stilesswitchbbq.com/",
+          "phone": "+1-512-380-9199",
+          "address": "6610 North Lamar Boulevard, Austin, TX 78752",
+          "cuisineTags": [
+            "Barbecue",
+            "Texan"
+          ]
+        },
+        {
+          "title": "June's All Day",
+          "website": "https://www.junesallday.com/",
+          "phone": "+1-512-416-1722",
+          "address": "1722 South Congress Avenue, Austin, TX 78704",
+          "cuisineTags": [
+            "Bistro",
+            "Wine Bar",
+            "American"
+          ]
+        },
+        {
+          "title": "Juan in a Million",
+          "website": "https://www.juaninamillion.com/",
+          "phone": "+1-512-472-3872",
+          "address": "2300 East Cesar Chavez Street, Austin, TX 78702",
+          "cuisineTags": [
+            "Tex-Mex",
+            "Breakfast"
+          ]
+        },
+        {
+          "title": "Counter Cafe",
+          "website": "https://www.countercafe.com/",
+          "phone": "+1-512-383-5451",
+          "address": "603 West 29th St., Austin, TX 78705",
+          "cuisineTags": [
+            "Diner",
+            "American",
+            "Breakfast"
+          ]
+        },
+        {
+          "title": "Curra's Grill",
+          "website": "https://www.currasgrill.com/",
+          "phone": "+1-512-444-0012",
+          "address": "614 E Oltorf St, Austin, TX 78704",
+          "cuisineTags": [
+            "Mexican",
+            "Interior Mexican"
+          ]
+        },
+        {
+          "title": "Ranch 616",
+          "website": "https://ranch616.com/",
+          "phone": "+1-512-479-7616",
+          "address": "616 Nueces Street, Austin, TX 78701",
+          "cuisineTags": [
+            "Texan",
+            "Tex-Mex",
+            "Gulf Coast"
+          ]
+        },
+        {
+          "title": "Hopfields",
+          "website": "https://www.hopfieldsaustin.com/",
+          "phone": "+1-512-537-0467",
+          "address": "3110 Guadalupe St, Austin, TX 78705",
+          "cuisineTags": [
+            "French",
+            "Brasserie",
+            "Gastropub"
+          ]
+        },
+        {
+          "title": "Lucky Robot",
+          "website": "https://www.luckyrobotrestaurant.com/",
+          "phone": "+1-512-444-8081",
+          "address": "1303 South Congress, Austin, TX 78704",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Paperboy",
+          "website": "https://www.eatpaperboy.com/",
+          "address": "1203 East 11th St., Austin, TX 78702",
+          "cuisineTags": [
+            "Breakfast",
+            "Cafe",
+            "American"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Boston",
+      "stateCode": "MA",
+      "listings": [
+        {
+          "title": "Comfort Kitchen",
+          "website": "https://www.comfortkitchenbos.com/",
+          "phone": "+1-617-329-6910",
+          "address": "611 Columbia Road, Dorchester, MA 02125",
+          "cuisineTags": [
+            "Global",
+            "New American"
+          ]
+        },
+        {
+          "title": "Krasi",
+          "website": "https://www.krasiboston.com/",
+          "phone": "+1-617-536-0230",
+          "address": "48 Gloucester Street, Boston, MA 02115",
+          "cuisineTags": [
+            "Greek",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Saltie Girl",
+          "website": "https://www.saltiegirl.com/",
+          "phone": "+1-617-267-0691",
+          "address": "279 Dartmouth Street, Boston, MA 02116",
+          "cuisineTags": [
+            "Seafood",
+            "Raw Bar"
+          ]
+        },
+        {
+          "title": "Myers + Chang",
+          "website": "https://www.myersandchang.com/",
+          "phone": "+1-617-542-5200",
+          "address": "1145 Washington Street, Boston, MA 02118",
+          "cuisineTags": [
+            "Pan-Asian",
+            "Asian Fusion"
+          ]
+        },
+        {
+          "title": "SRV",
+          "website": "https://www.srvboston.com/",
+          "phone": "+1-617-536-9500",
+          "address": "569 Columbus Avenue, Boston, MA 02118",
+          "cuisineTags": [
+            "Italian",
+            "Venetian",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Select Oyster Bar",
+          "website": "https://www.selectboston.com/",
+          "phone": "+1-857-239-8064",
+          "address": "50 Gloucester Street, Boston, MA 02115",
+          "cuisineTags": [
+            "Seafood",
+            "Raw Bar"
+          ]
+        },
+        {
+          "title": "Ostra",
+          "website": "https://www.ostraboston.com/",
+          "phone": "+1-617-421-1200",
+          "address": "1 Charles Street South, Boston, MA 02116",
+          "cuisineTags": [
+            "Seafood",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Tres Gatos",
+          "website": "https://www.tresgatosjp.com/",
+          "phone": "+1-617-477-4851",
+          "address": "470 Centre Street, Jamaica Plain, MA 02130",
+          "cuisineTags": [
+            "Spanish",
+            "Tapas"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Chicago",
+      "stateCode": "IL",
+      "listings": [
+        {
+          "title": "Monteverde",
+          "website": "https://www.monteverdechicago.com/",
+          "phone": "+1-312-888-3041",
+          "address": "1020 West Madison Street, Chicago, IL 60607",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Lula Cafe",
+          "website": "https://www.lulacafe.com/",
+          "phone": "+1-773-489-9554",
+          "address": "2537 N Kedzie Blvd, Chicago, IL 60647",
+          "cuisineTags": [
+            "New American",
+            "Farm To Table"
+          ]
+        },
+        {
+          "title": "Elske",
+          "website": "https://www.elskerestaurant.com/",
+          "phone": "+1-312-733-1314",
+          "address": "1350 W Randolph St, Chicago, IL 60607",
+          "cuisineTags": [
+            "New American",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Girl & the Goat",
+          "website": "https://www.girlandthegoat.com/",
+          "phone": "+1-312-492-6262",
+          "address": "809 W. Randolph, Chicago, IL",
+          "cuisineTags": [
+            "New American",
+            "Small Plates"
+          ]
+        },
+        {
+          "title": "Virtue Restaurant",
+          "website": "https://www.virtuerestaurant.com/",
+          "phone": "+1-773-947-8831",
+          "address": "1462 E 53rd St., Chicago, IL 60615",
+          "cuisineTags": [
+            "Southern",
+            "American"
+          ]
+        },
+        {
+          "title": "Sepia",
+          "website": "https://www.sepiachicago.com/",
+          "phone": "+1-312-441-1920",
+          "address": "123 N. Jefferson Street, Chicago, IL 60661",
+          "cuisineTags": [
+            "New American",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Galit",
+          "website": "https://www.galitrestaurant.com/",
+          "phone": "+1-773-360-8755",
+          "address": "2429 N Lincoln Avenue, Chicago, IL 60614",
+          "cuisineTags": [
+            "Middle Eastern",
+            "Israeli"
+          ]
+        },
+        {
+          "title": "Rose Mary",
+          "website": "https://www.rosemarychicago.com/",
+          "phone": "+1-872-260-3921",
+          "address": "932 W Fulton Market, Chicago, IL 60607",
+          "cuisineTags": [
+            "Croatian",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Gene & Georgetti",
+          "website": "https://www.geneandgeorgetti.com/",
+          "phone": "+1-312-527-3718",
+          "address": "500 N Franklin St, Chicago, IL 60654",
+          "cuisineTags": [
+            "Steakhouse",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Manny's Cafeteria & Delicatessen",
+          "website": "https://www.mannysdeli.com/",
+          "phone": "+1-312-939-2855",
+          "address": "1141 South Jefferson Street, Chicago, IL 60607",
+          "cuisineTags": [
+            "Deli",
+            "Jewish"
+          ]
+        },
+        {
+          "title": "Pequod's Pizza",
+          "website": "https://pequodspizza.com/",
+          "phone": "+1-773-327-1512",
+          "address": "2207 N Clybourn Ave, Chicago, IL 60614",
+          "cuisineTags": [
+            "Pizza",
+            "Deep Dish"
+          ]
+        },
+        {
+          "title": "Big Jones",
+          "website": "https://www.bigjoneschicago.com/",
+          "phone": "+1-773-275-5725",
+          "address": "5347 N Clark St, Chicago, IL 60640",
+          "cuisineTags": [
+            "Southern",
+            "Creole"
+          ]
+        },
+        {
+          "title": "Smoque BBQ",
+          "website": "https://www.smoquebbq.com/",
+          "phone": "+1-773-545-7427",
+          "address": "3800 N. Pulaski, Chicago, IL 60641",
+          "cuisineTags": [
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Sun Wah BBQ",
+          "website": "https://www.sunwahbbq.com/",
+          "phone": "+1-773-769-1254",
+          "address": "5039 N Broadway, Chicago, IL 60640",
+          "cuisineTags": [
+            "Chinese",
+            "Cantonese",
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Mi Tocaya Antojería",
+          "website": "https://www.mitocaya.com/",
+          "phone": "+1-872-315-3947",
+          "address": "2800 W Logan Blvd, Chicago, IL 60647",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Andros Taverna",
+          "website": "https://www.androstaverna.com/",
+          "phone": "+1-773-365-1900",
+          "address": "2542 N Milwaukee Ave, Chicago, IL",
+          "cuisineTags": [
+            "Greek",
+            "Taverna"
+          ]
+        },
+        {
+          "title": "Longman & Eagle",
+          "website": "https://www.longmanandeagle.com/",
+          "phone": "+1-773-276-7110",
+          "address": "2657 N Kedzie Ave, Chicago, IL 60647",
+          "cuisineTags": [
+            "New American",
+            "Gastropub"
+          ]
+        },
+        {
+          "title": "Alinea",
+          "website": "https://www.alinearestaurant.com/",
+          "address": "1723 N Halsted St, Chicago, IL 60614",
+          "cuisineTags": [
+            "Fine Dining",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "Kasama",
+          "website": "https://www.kasamachicago.com/",
+          "address": "1001 N. Winchester Ave., Chicago, IL 60622",
+          "cuisineTags": [
+            "Filipino",
+            "Bakery"
+          ]
+        },
+        {
+          "title": "The Publican",
+          "website": "https://www.thepublicanrestaurant.com/",
+          "phone": "+1-312-733-9555",
+          "address": "837 W Fulton Market, Chicago, IL 60607",
+          "cuisineTags": [
+            "American",
+            "Gastropub"
+          ]
+        },
+        {
+          "title": "Frontera Grill",
+          "website": "https://www.rickbayless.com/restaurants/frontera-grill/",
+          "phone": "+1-312-661-1434",
+          "address": "445 North Clark Street, Chicago, IL 60654",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Boka",
+          "website": "https://www.bokachicago.com/",
+          "phone": "+1-312-337-6070",
+          "address": "1729 North Halsted Street, Chicago, IL 60614",
+          "cuisineTags": [
+            "New American",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Daisies",
+          "website": "https://www.daisieschicago.com/",
+          "phone": "+1-773-697-9443",
+          "address": "2375 N Milwaukee Ave, Chicago, IL 60647",
+          "cuisineTags": [
+            "New American",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Carnitas Uruapan",
+          "website": "https://www.carnitasuruapanchi.com/",
+          "phone": "+1-312-226-2654",
+          "address": "1725 W. 18th St., Chicago, IL 60608",
+          "cuisineTags": [
+            "Mexican",
+            "Carnitas"
+          ]
+        },
+        {
+          "title": "Thattu",
+          "website": "https://www.thattu.com/",
+          "phone": "+1-773-754-0199",
+          "address": "2601 W Fletcher St, Chicago, IL 60618",
+          "cuisineTags": [
+            "Indian",
+            "Keralan"
+          ]
+        },
+        {
+          "title": "Indienne",
+          "website": "https://www.indiennechicago.com/",
+          "address": "217 W Huron St, Chicago, IL 60654",
+          "cuisineTags": [
+            "Indian",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Obélix",
+          "website": "https://www.obelixchicago.com/",
+          "address": "700 North Sedgwick Street, Chicago, IL",
+          "cuisineTags": [
+            "French",
+            "Bistro"
+          ]
+        },
+        {
+          "title": "Bistro Campagne",
+          "website": "https://www.bistrocampagne.com/",
+          "phone": "+1-773-271-6100",
+          "address": "4518 N. Lincoln Avenue, Chicago, IL 60625",
+          "cuisineTags": [
+            "French",
+            "Bistro"
+          ]
+        },
+        {
+          "title": "The Chicago Diner",
+          "website": "https://www.veggiediner.com/",
+          "phone": "+1-773-935-6696",
+          "address": "3411 N. Halsted St., Chicago, IL 60657",
+          "cuisineTags": [
+            "Vegetarian",
+            "Vegan",
+            "Diner"
+          ]
+        },
+        {
+          "title": "Vito & Nick's Pizzeria",
+          "website": "https://www.vitoandnicks.com/",
+          "phone": "+1-773-735-2050",
+          "address": "8433 South Pulaski Road, Chicago, IL 60652",
+          "cuisineTags": [
+            "Pizza",
+            "Tavern Style"
+          ]
+        },
+        {
+          "title": "Anelya",
+          "website": "https://www.anelyarestaurant.com/",
+          "address": "3472 N Elston Ave, Chicago, IL 60618",
+          "cuisineTags": [
+            "Ukrainian",
+            "Eastern European"
+          ]
+        },
+        {
+          "title": "Mott St",
+          "website": "https://www.mottstreetchicago.com/",
+          "address": "1401 N. Ashland Ave., Chicago, IL 60622",
+          "cuisineTags": [
+            "Asian",
+            "Fusion"
+          ]
+        },
+        {
+          "title": "Warlord",
+          "website": "https://www.warlordchicago.com/",
+          "address": "3198 N Milwaukee Ave, Chicago, IL 60618",
+          "cuisineTags": [
+            "New American",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Piece Brewery and Pizzeria",
+          "website": "https://www.piecechicago.com/",
+          "phone": "+1-773-772-4422",
+          "address": "1927 W. North Ave., Chicago, IL 60622",
+          "cuisineTags": [
+            "Pizza",
+            "Brewpub"
+          ]
+        },
+        {
+          "title": "avec",
+          "website": "https://www.avecrestaurant.com/",
+          "address": "615 W. Randolph, Chicago, IL",
+          "cuisineTags": [
+            "Mediterranean",
+            "Small Plates"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Dallas",
+      "stateCode": "TX",
+      "listings": [
+        {
+          "title": "Quarter Acre",
+          "website": "https://www.quarteracrerestaurant.com/",
+          "phone": "+1-214-647-1616",
+          "address": "2023 Greenville Ave #110, Dallas, TX 75206",
+          "cuisineTags": [
+            "New American",
+            "New Zealand"
+          ]
+        },
+        {
+          "title": "Georgie",
+          "website": "https://georgiedallas.com/",
+          "phone": "+1-469-453-4689",
+          "address": "4514 Travis Street, Suite 132, Dallas, TX 75205",
+          "cuisineTags": [
+            "French",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Knox Bistro",
+          "website": "https://knoxbistro.com/",
+          "phone": "+1-469-250-4007",
+          "address": "3230 Knox St, Suite 140, Dallas, TX 75205",
+          "cuisineTags": [
+            "French",
+            "Bistro"
+          ]
+        },
+        {
+          "title": "Partenope Ristorante",
+          "website": "https://partenopedallas.com/locations/downtown-dallas/",
+          "phone": "+1-214-463-6222",
+          "address": "1903 Main St, Dallas, TX 75201",
+          "cuisineTags": [
+            "Italian",
+            "Neapolitan Pizza"
+          ]
+        },
+        {
+          "title": "El Carlos Elegante",
+          "website": "https://elcarloselegante.com/location/",
+          "phone": "+1-214-277-1800",
+          "address": "1400 N Riverfront Blvd, Dallas, TX 75207",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Mot Hai Ba",
+          "website": "https://www.mothaibadallas.com/",
+          "phone": "+1-972-638-7468",
+          "address": "6047 Lewis Street, Dallas, TX 75206",
+          "cuisineTags": [
+            "Vietnamese"
+          ]
+        },
+        {
+          "title": "Via Triozzi",
+          "website": "https://viatriozzi.com/",
+          "phone": "+1-469-897-5679",
+          "address": "1806 Greenville Ave, Dallas, TX 75206",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Cafe Momentum",
+          "website": "https://cafemomentum.org/restaurant/dallas/",
+          "phone": "+1-214-303-1234",
+          "address": "1510 Pacific Ave, Dallas, TX 75201",
+          "cuisineTags": [
+            "New American"
+          ]
+        },
+        {
+          "title": "Ka-Tip Thai Street Food",
+          "website": "https://katipthaidallas.com/",
+          "phone": "+1-214-238-2232",
+          "address": "1011 S Pearl Expy, Suite 190, Dallas, TX 75201",
+          "cuisineTags": [
+            "Thai",
+            "Street Food"
+          ]
+        },
+        {
+          "title": "El Come Taco",
+          "website": "https://elcometaco.com/",
+          "phone": "+1-214-821-3738",
+          "address": "2513 N Fitzhugh Ave, Dallas, TX 75204",
+          "cuisineTags": [
+            "Mexican",
+            "Tacos"
+          ]
+        },
+        {
+          "title": "Meridian",
+          "website": "https://meridiantherestaurant.com/",
+          "phone": "+1-469-659-6382",
+          "address": "5650 Village Glen Drive, Dallas, TX 75206",
+          "cuisineTags": [
+            "New American",
+            "Wood-Fired"
+          ]
+        },
+        {
+          "title": "Tango Room",
+          "website": "https://www.tangoroomdallas.com/",
+          "phone": "+1-214-252-8595",
+          "address": "1617 Hi Line Drive, Dallas, TX 75207",
+          "cuisineTags": [
+            "Steakhouse"
+          ]
+        },
+        {
+          "title": "Green Point Seafood & Oyster Bar",
+          "website": "https://greenpointdallas.com/contact/",
+          "phone": "+1-214-258-6063",
+          "address": "3219 Knox Street, Ste. 100, Dallas, TX 75205",
+          "cuisineTags": [
+            "Seafood",
+            "Oyster Bar"
+          ]
+        },
+        {
+          "title": "Pesca Coastal Classics",
+          "website": "https://www.pescacoastalclassics.com/home",
+          "phone": "+1-469-206-9920",
+          "address": "3011 Gulden Ln, Suite 107, Dallas, TX 75212",
+          "cuisineTags": [
+            "Seafood",
+            "Coastal Mexican"
+          ]
+        },
+        {
+          "title": "Norman's Japanese Grill",
+          "website": "https://normansjapanese.com/",
+          "phone": "+1-469-960-6544",
+          "address": "4002 Oak Lawn Ave, Dallas, TX 75219",
+          "cuisineTags": [
+            "Japanese",
+            "Robata"
+          ]
+        },
+        {
+          "title": "La Calle Doce",
+          "website": "https://lacalledoce-dallas.com/dallas-la-calle-doce-locations",
+          "phone": "+1-214-941-4304",
+          "address": "415 W 12th St, Dallas, TX 75208",
+          "cuisineTags": [
+            "Mexican",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Revolver Taco Lounge",
+          "website": "https://revolvertacolounge.com/gastro-cantina-deep-ellum/",
+          "phone": "+1-214-258-5900",
+          "address": "2646 Elm St, Dallas, TX 75226",
+          "cuisineTags": [
+            "Mexican",
+            "Tacos"
+          ]
+        },
+        {
+          "title": "Baby Back Shak",
+          "website": "https://babybackshak.com/",
+          "phone": "+1-214-428-7427",
+          "address": "1800 S Akard St, Dallas, TX 75215",
+          "cuisineTags": [
+            "Barbecue",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Mamani",
+          "website": "https://www.mamanirestaurant.com/",
+          "phone": "+1-469-455-1435",
+          "address": "2681 Howell Street #BU4, Dallas, TX 75204",
+          "cuisineTags": [
+            "French",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Al Biernat's",
+          "website": "https://www.albiernats.com/locations/oak-lawn/",
+          "phone": "+1-214-219-2201",
+          "address": "4217 Oak Lawn Ave, Dallas, TX 75219",
+          "cuisineTags": [
+            "Steakhouse",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Pecan Lodge",
+          "website": "https://pecanlodge.com/contact/",
+          "phone": "+1-214-748-8900",
+          "address": "2702 Main Street, Dallas, TX 75226",
+          "cuisineTags": [
+            "Barbecue",
+            "Texas"
+          ]
+        },
+        {
+          "title": "Vidorra",
+          "website": "https://vidorracocina.com/dallas/",
+          "phone": "+1-469-629-6396",
+          "address": "2646 Main St, Dallas, TX 75226",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Mister Charles",
+          "website": "https://themistercharles.com/",
+          "phone": "+1-972-920-9471",
+          "address": "3219 Knox Street, Suite 170, Dallas, TX 75205",
+          "cuisineTags": [
+            "French",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Billy Can Can",
+          "website": "https://www.billycancan.com/location/billy-can-can/",
+          "phone": "+1-214-296-2610",
+          "address": "2386 Victory Park Lane, Dallas, TX 75219",
+          "cuisineTags": [
+            "Steakhouse",
+            "Texas"
+          ]
+        },
+        {
+          "title": "Sushi Kozy",
+          "website": "https://sushikozy.com/visit",
+          "address": "2000 Ross Ave, Suite 150, Dallas, TX 75201",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Fond",
+          "website": "https://fond-dallas.com/about-us",
+          "address": "1601 Elm Street, Santander Tower, Suite 110, Dallas, TX 75201",
+          "cuisineTags": [
+            "New American"
+          ]
+        },
+        {
+          "title": "Lockhart Smokehouse",
+          "website": "https://lockhartsmokehouse.com/locations-and-menus/",
+          "phone": "+1-214-944-5521",
+          "address": "400 West Davis St, Dallas, TX 75208",
+          "cuisineTags": [
+            "Barbecue",
+            "Texas"
+          ]
+        },
+        {
+          "title": "Hugo's Seafood Bar",
+          "website": "https://www.hugoseafoodbar.com/",
+          "address": "334 W. Davis St, Dallas, TX 75208",
+          "cuisineTags": [
+            "Seafood",
+            "Oyster Bar"
+          ]
+        },
+        {
+          "title": "Namo",
+          "website": "https://www.namosushi.com/",
+          "phone": "+1-214-484-5151",
+          "address": "3699 McKinney Avenue #305, Dallas, TX 75204",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Smokey Joe's BBQ",
+          "website": "https://smokeyjoesbbqdallas.com/",
+          "address": "6403 South R L Thornton Fwy, Dallas, TX 75232",
+          "cuisineTags": [
+            "Barbecue",
+            "Soul Food"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Denver",
+      "stateCode": "CO",
+      "listings": [
+        {
+          "title": "Alma Fonda Fina",
+          "website": "https://www.almalohidenver.com/",
+          "phone": "+1-303-455-9463",
+          "address": "2556 15th Street, Denver, CO 80211",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Barolo Grill",
+          "website": "https://www.barologrilldenver.com/",
+          "phone": "+1-303-393-1040",
+          "address": "3030 East Sixth Avenue, Denver, CO 80206",
+          "cuisineTags": [
+            "Italian",
+            "Northern Italian",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Restaurant Olivia",
+          "website": "https://www.oliviadenver.com/",
+          "phone": "+1-303-999-0395",
+          "address": "290 South Downing Street, Denver, CO 80209",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Sap Sua",
+          "website": "https://www.sapsua.com/contact/",
+          "phone": "+1-303-736-2303",
+          "address": "2550 East Colfax Avenue, Denver, CO 80206",
+          "cuisineTags": [
+            "Vietnamese"
+          ]
+        },
+        {
+          "title": "MAKfam",
+          "website": "https://www.makfam.com/about/",
+          "phone": "+1-720-982-5011",
+          "address": "39 West 1st Avenue, Denver, CO 80223",
+          "cuisineTags": [
+            "Chinese",
+            "Dim Sum"
+          ]
+        },
+        {
+          "title": "Rioja",
+          "website": "https://www.riojadenver.com/",
+          "phone": "+1-303-820-2282",
+          "address": "1431 Larimer Street, Denver, CO",
+          "cuisineTags": [
+            "Mediterranean",
+            "New American"
+          ]
+        },
+        {
+          "title": "Potager",
+          "website": "http://www.potagerrestaurant.com/",
+          "phone": "+1-303-246-7073",
+          "address": "1109 Ogden Street, Denver, CO 80218",
+          "cuisineTags": [
+            "Farm To Table",
+            "New American",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Molotov Kitschen + Cocktails",
+          "website": "https://molotovdenver.com/",
+          "phone": "+1-303-316-3333",
+          "address": "3333 East Colfax Avenue, Denver, CO 80206",
+          "cuisineTags": [
+            "Ukrainian",
+            "Eastern European"
+          ]
+        },
+        {
+          "title": "Temaki Den",
+          "website": "https://www.temakiden.com/",
+          "phone": "+1-303-200-0530",
+          "address": "3350 Brighton Boulevard Unit 100, Denver, CO 80216",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Somebody People",
+          "website": "https://www.somebodypeople.com/",
+          "phone": "+1-720-502-5681",
+          "address": "1165 South Broadway, Denver, CO 80210",
+          "cuisineTags": [
+            "Vegan",
+            "Italian"
+          ]
+        },
+        {
+          "title": "The Bindery",
+          "website": "https://www.thebinderydenver.com/",
+          "phone": "+1-303-993-2364",
+          "address": "1817 Central Street, Denver, CO 80211",
+          "cuisineTags": [
+            "New American",
+            "Bakery",
+            "Cafe"
+          ]
+        },
+        {
+          "title": "Bar Dough",
+          "website": "https://www.bardoughdenver.com/",
+          "phone": "+1-720-668-8506",
+          "address": "2227 West 32nd Avenue, Denver, CO 80211",
+          "cuisineTags": [
+            "Italian",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Coperta",
+          "website": "https://www.copertadenver.com/",
+          "phone": "+1-720-749-4666",
+          "address": "400 East 20th Avenue, Denver, CO 80205",
+          "cuisineTags": [
+            "Italian",
+            "Southern Italian"
+          ]
+        },
+        {
+          "title": "Linger",
+          "website": "https://ediblebeats.com/restaurants/linger/",
+          "phone": "+1-303-993-3120",
+          "address": "2030 West 30th Avenue, Denver, CO 80211",
+          "cuisineTags": [
+            "Global Street Food",
+            "New American"
+          ]
+        },
+        {
+          "title": "Señor Bear",
+          "website": "https://www.senorbeardenver.com/",
+          "phone": "+1-720-572-5997",
+          "address": "3301 Tejon Street, Denver, CO 80211",
+          "cuisineTags": [
+            "Latin American",
+            "Cocktail Bar"
+          ]
+        },
+        {
+          "title": "Nocturne",
+          "website": "https://www.nocturnejazz.com/",
+          "phone": "+1-303-295-3333",
+          "address": "1330 27th Street, Denver, CO 80205",
+          "cuisineTags": [
+            "New American",
+            "Jazz Supper Club"
+          ]
+        },
+        {
+          "title": "The Way Back",
+          "website": "https://www.thewaybackdenver.com/",
+          "phone": "+1-970-682-6888",
+          "address": "3963 Tennyson Street, Denver, CO 80212",
+          "cuisineTags": [
+            "New American",
+            "Seasonal"
+          ]
+        },
+        {
+          "title": "Buckhorn Exchange",
+          "website": "https://www.buckhorn.com/",
+          "phone": "+1-303-534-9505",
+          "address": "1000 Osage Street, Denver, CO 80204",
+          "cuisineTags": [
+            "Steakhouse",
+            "Wild Game"
+          ]
+        },
+        {
+          "title": "Rosenberg's Bagels & Delicatessen",
+          "website": "https://www.rosenbergsbagels.com/",
+          "phone": "+1-720-440-9880",
+          "address": "725 East 26th Avenue, Denver, CO",
+          "cuisineTags": [
+            "Bagels",
+            "Delicatessen"
+          ]
+        },
+        {
+          "title": "Ace Eat Serve",
+          "website": "https://www.aceeatserve.com/",
+          "phone": "+1-303-800-7705",
+          "address": "501 East 17th Avenue, Denver, CO 80203",
+          "cuisineTags": [
+            "Chinese",
+            "Asian",
+            "Cocktail Bar"
+          ]
+        },
+        {
+          "title": "Tacos Tequila Whiskey",
+          "website": "https://www.tacostequilawhiskey.com/",
+          "phone": "+1-720-502-4608",
+          "address": "3300 West 32nd Avenue, Denver, CO 80211",
+          "cuisineTags": [
+            "Mexican",
+            "Tacos"
+          ]
+        },
+        {
+          "title": "Domo",
+          "website": "https://www.domorestaurant.com/",
+          "phone": "+1-303-595-3666",
+          "address": "1365 Osage Street, Denver, CO 80204",
+          "cuisineTags": [
+            "Japanese"
+          ]
+        },
+        {
+          "title": "Spuntino",
+          "website": "https://www.spuntinodenver.com/",
+          "phone": "+1-303-433-0949",
+          "address": "2639 West 32nd Avenue, Denver, CO 80211",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Kaos Pizzeria",
+          "website": "https://www.kaospizzeria.com/",
+          "phone": "+1-303-733-5267",
+          "address": "1439 South Pearl Street, Denver, CO 80210",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Margot",
+          "website": "https://www.margotdenver.com/",
+          "address": "1551 South Pearl Street, Denver, CO 80210",
+          "cuisineTags": [
+            "Tasting Menu",
+            "New American"
+          ]
+        },
+        {
+          "title": "Angelo's Taverna",
+          "website": "https://www.angelostaverna.com/",
+          "phone": "+1-303-744-3366",
+          "address": "620 East 6th Avenue, Denver, CO 80203",
+          "cuisineTags": [
+            "Italian",
+            "Oyster Bar",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Cimera",
+          "website": "https://www.cimeradenver.com/",
+          "address": "3330 Brighton Boulevard, Denver, CO 80216",
+          "cuisineTags": [
+            "Latin American",
+            "Peruvian",
+            "Cocktail Bar"
+          ]
+        },
+        {
+          "title": "Welton Street Cafe",
+          "website": "https://www.weltonstreetcafe.com/",
+          "phone": "+1-303-296-6602",
+          "address": "2883 Welton Street, Denver, CO 80205",
+          "cuisineTags": [
+            "Soul Food",
+            "Southern",
+            "Caribbean"
+          ]
+        },
+        {
+          "title": "Q House",
+          "website": "https://www.qhousedenver.com/",
+          "phone": "+1-720-729-8887",
+          "address": "3421 East Colfax Avenue, Denver, CO 80206",
+          "cuisineTags": [
+            "Chinese",
+            "Taiwanese"
+          ]
+        },
+        {
+          "title": "Ash'Kara",
+          "website": "https://www.ashkaradenver.com/",
+          "phone": "+1-303-537-4407",
+          "address": "2005 West 33rd Avenue, Denver, CO 80211",
+          "cuisineTags": [
+            "Israeli",
+            "Middle Eastern"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Houston",
+      "stateCode": "TX",
+      "listings": [
+        {
+          "title": "Katami",
+          "website": "https://www.katamihouston.com/",
+          "phone": "+1-713-393-7376",
+          "address": "2701 W Dallas St, Houston, TX 77019",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "March",
+          "website": "https://www.marchrestaurant.com/contact",
+          "phone": "+1-832-380-2481",
+          "address": "1624 Westheimer Rd, Houston, TX 77006",
+          "cuisineTags": [
+            "Mediterranean",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "ChòpnBlọk",
+          "website": "https://chopnblok.co/contact",
+          "phone": "+1-832-962-4500",
+          "address": "507 Westheimer Road, Houston, TX 77006",
+          "cuisineTags": [
+            "West African"
+          ]
+        },
+        {
+          "title": "Milton's",
+          "website": "https://miltonandlees.com/miltons/",
+          "phone": "+1-713-492-2490",
+          "address": "5117 Kelvin Drive, Houston, TX 77005",
+          "cuisineTags": [
+            "Italian",
+            "Trattoria"
+          ]
+        },
+        {
+          "title": "Hugo's",
+          "website": "https://www.hugosrestaurant.net/contact/",
+          "phone": "+1-713-524-7744",
+          "address": "1600 Westheimer Rd, Houston, TX 77006",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Theodore Rex",
+          "website": "https://www.trexhouston.com/",
+          "phone": "+1-832-830-8592",
+          "address": "1302 Nance Street, Houston, TX 77002",
+          "cuisineTags": [
+            "New American",
+            "French"
+          ]
+        },
+        {
+          "title": "Truth BBQ",
+          "website": "https://truthbbq.com/pages/locations",
+          "phone": "+1-832-835-0001",
+          "address": "110 S Heights Boulevard, Houston, TX 77007",
+          "cuisineTags": [
+            "Barbecue",
+            "Texan"
+          ]
+        },
+        {
+          "title": "Chardon",
+          "website": "https://www.chardonhouston.com/",
+          "phone": "+1-346-560-4180",
+          "address": "1711 Allen Pkwy, Houston, TX",
+          "cuisineTags": [
+            "French",
+            "Bistro"
+          ]
+        },
+        {
+          "title": "Kata Robata",
+          "website": "https://www.katarobata.com/",
+          "phone": "+1-713-526-8858",
+          "address": "3600 Kirby Dr Suite H, Houston, TX 77098",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "The Breakfast Klub",
+          "website": "https://www.thebreakfastklub.com/",
+          "phone": "+1-713-528-8561",
+          "address": "3711 Travis St, Houston, TX 77002",
+          "cuisineTags": [
+            "Southern",
+            "Breakfast"
+          ]
+        },
+        {
+          "title": "Lucille's",
+          "website": "https://www.lucilleshouston.net/",
+          "address": "5512 La Branch Street, Houston, TX 77004",
+          "cuisineTags": [
+            "Southern",
+            "Creole"
+          ]
+        },
+        {
+          "title": "Feges BBQ",
+          "website": "https://www.fegesbbq.com/locations/greenway-plaza/",
+          "phone": "+1-832-409-6118",
+          "address": "3 Greenway Plaza Suite C-210, Houston, TX 77046",
+          "cuisineTags": [
+            "Barbecue",
+            "Texan"
+          ]
+        },
+        {
+          "title": "Coltivare",
+          "website": "https://www.agricolehospitality.com/coltivare",
+          "phone": "+1-713-637-4095",
+          "address": "3320 White Oak Drive, Houston, TX 77007",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Gatlin's BBQ",
+          "website": "https://www.gatlinsbbq.com/",
+          "phone": "+1-713-869-4227",
+          "address": "3510 Ella Blvd Bldg C Ste A, Houston, TX 77018",
+          "cuisineTags": [
+            "Barbecue",
+            "Texan"
+          ]
+        },
+        {
+          "title": "Pinkerton's Barbecue",
+          "website": "https://www.pinkertonsbbq.com/",
+          "phone": "+1-713-802-2000",
+          "address": "1504 Airline Dr, Houston, TX 77009",
+          "cuisineTags": [
+            "Barbecue",
+            "Texan"
+          ]
+        },
+        {
+          "title": "Aga's Restaurant & Catering",
+          "website": "https://www.agasrestaurant.com/locations",
+          "phone": "+1-832-786-8000",
+          "address": "11842 Wilcrest Dr, Houston, TX 77031",
+          "cuisineTags": [
+            "Pakistani",
+            "Indian"
+          ]
+        },
+        {
+          "title": "Traveler's Table",
+          "website": "https://www.travelerstable.com/",
+          "address": "520 Westheimer Road, Houston, TX 77006",
+          "cuisineTags": [
+            "Global",
+            "Eclectic"
+          ]
+        },
+        {
+          "title": "Georgia James",
+          "website": "https://www.georgiajamessteak.com/",
+          "address": "1100 Westheimer, Houston, TX 77006",
+          "cuisineTags": [
+            "Steakhouse"
+          ]
+        },
+        {
+          "title": "Tony's",
+          "website": "https://www.tonyshouston.com/",
+          "phone": "+1-713-622-6778",
+          "address": "3755 Richmond Ave, Houston, TX 77046",
+          "cuisineTags": [
+            "Italian",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Rosie Cannonball",
+          "website": "https://www.rosiecannonball.com/",
+          "phone": "+1-832-380-2471",
+          "address": "1620 Westheimer Rd, Houston, TX 77006",
+          "cuisineTags": [
+            "European",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Da Marco",
+          "website": "https://www.damarcohouston.com/location",
+          "phone": "+1-713-807-8857",
+          "address": "1520 Westheimer Rd, Houston, TX 77006",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Montrose Cheese & Wine",
+          "website": "https://www.montrosecheeseandwine.com/",
+          "phone": "+1-832-380-2461",
+          "address": "1618 Westheimer Rd, Houston, TX 77006",
+          "cuisineTags": [
+            "Wine Bar",
+            "Small Plates"
+          ]
+        },
+        {
+          "title": "Money Cat",
+          "website": "https://moneycathtx.com/",
+          "address": "2925 Richmond Ave Ste 140, Houston, TX 77098",
+          "cuisineTags": [
+            "Japanese",
+            "Izakaya"
+          ]
+        },
+        {
+          "title": "Bari Ristorante",
+          "website": "https://www.bariristorante.com/location/bari-ristorante-1/",
+          "phone": "+1-832-415-9222",
+          "address": "4444 Westheimer Road A175, Houston, TX 77027",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "nobie's",
+          "website": "http://www.nobieshtx.com/",
+          "phone": "+1-346-319-5919",
+          "address": "2048 Colquitt Street, Houston, TX 77098",
+          "cuisineTags": [
+            "New American"
+          ]
+        },
+        {
+          "title": "Brennan's of Houston",
+          "website": "https://www.brennanshouston.com/contact",
+          "phone": "+1-713-522-9711",
+          "address": "3300 Smith St, Houston, TX",
+          "cuisineTags": [
+            "Creole",
+            "Southern"
+          ]
+        },
+        {
+          "title": "The Pit Room",
+          "website": "https://www.thepitroombbq.com/contact",
+          "address": "1201 Richmond Ave, Houston, TX 77006",
+          "cuisineTags": [
+            "Barbecue",
+            "Tex-Mex"
+          ]
+        },
+        {
+          "title": "Late August",
+          "website": "https://www.lateaugusthtx.com/",
+          "phone": "+1-713-993-6200",
+          "address": "4201 Main Street, Suite 120, Houston, TX 77002",
+          "cuisineTags": [
+            "New American",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Candente",
+          "website": "https://www.candentehtx.com/",
+          "phone": "+1-346-867-1156",
+          "address": "4306 Yoakum Boulevard, Houston, TX 77006",
+          "cuisineTags": [
+            "Tex-Mex",
+            "Mexican"
+          ]
+        },
+        {
+          "title": "BCN Taste & Tradition",
+          "website": "https://www.bcnhouston.com/",
+          "phone": "+1-832-834-3411",
+          "address": "4210 Roseland Street, Houston, TX",
+          "cuisineTags": [
+            "Spanish"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Providence",
+          "website": "https://providencela.com/",
+          "phone": "+1-323-460-4170",
+          "address": "5955 Melrose Avenue, Los Angeles, CA 90038",
+          "cuisineTags": [
+            "Seafood",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "n/naka",
+          "website": "https://n-naka.com/",
+          "phone": "+1-310-836-6252",
+          "address": "3455 Overland Ave, Los Angeles, CA 90034",
+          "cuisineTags": [
+            "Japanese",
+            "Kaiseki"
+          ]
+        },
+        {
+          "title": "Langer's Delicatessen",
+          "website": "https://www.langersdeli.com/",
+          "address": "704 S Alvarado St, Los Angeles, CA 90057",
+          "cuisineTags": [
+            "Deli",
+            "Jewish"
+          ]
+        },
+        {
+          "title": "Musso & Frank Grill",
+          "website": "https://www.mussoandfrank.com/",
+          "phone": "+1-323-467-7788",
+          "address": "6667 Hollywood Blvd, Los Angeles, CA 90028",
+          "cuisineTags": [
+            "American",
+            "Steakhouse"
+          ]
+        },
+        {
+          "title": "Rossoblu",
+          "website": "https://www.rossoblula.com/",
+          "phone": "+1-213-749-1099",
+          "address": "1124 San Julian Street, Los Angeles, CA 90015",
+          "cuisineTags": [
+            "Italian",
+            "Bolognese"
+          ]
+        },
+        {
+          "title": "Jitlada",
+          "website": "https://www.jitladala.com/",
+          "phone": "+1-323-667-9809",
+          "address": "5233 1/2 W Sunset Blvd, Los Angeles, CA 90027",
+          "cuisineTags": [
+            "Thai",
+            "Southern Thai"
+          ]
+        },
+        {
+          "title": "Bavel",
+          "website": "https://baveldtla.com/",
+          "phone": "+1-213-232-4966",
+          "address": "500 Mateo St, Los Angeles, CA 90013",
+          "cuisineTags": [
+            "Middle Eastern"
+          ]
+        },
+        {
+          "title": "Pizzeria Mozza",
+          "website": "https://www.pizzeriamozza.com/",
+          "phone": "+1-323-297-0101",
+          "address": "641 N Highland Ave, Los Angeles, CA 90036",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Osteria Mozza",
+          "website": "https://www.osteriamozza.com/",
+          "phone": "+1-323-297-0100",
+          "address": "6602 Melrose Ave, Los Angeles, CA 90038",
+          "cuisineTags": [
+            "Italian",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Yuca's",
+          "website": "https://www.yucasla.com/",
+          "phone": "+1-323-662-1214",
+          "address": "2056 Hillhurst Ave, Los Angeles, CA 90027",
+          "cuisineTags": [
+            "Mexican",
+            "Yucatecan"
+          ]
+        },
+        {
+          "title": "Sonoratown",
+          "website": "https://www.sonoratown.com/",
+          "phone": "+1-213-222-5071",
+          "address": "208 E 8th Street, Los Angeles, CA 90014",
+          "cuisineTags": [
+            "Mexican",
+            "Tacos"
+          ]
+        },
+        {
+          "title": "Dunsmoor",
+          "website": "https://www.dunsmoor.la/",
+          "address": "3501 Eagle Rock Blvd, Los Angeles, CA 90065",
+          "cuisineTags": [
+            "American",
+            "Hearth"
+          ]
+        },
+        {
+          "title": "Tsubaki",
+          "website": "https://www.tsubakila.com/",
+          "phone": "+1-213-900-4900",
+          "address": "1356 Allison Avenue, Los Angeles, CA 90026",
+          "cuisineTags": [
+            "Japanese",
+            "Izakaya"
+          ]
+        },
+        {
+          "title": "Ototo",
+          "website": "https://www.ototo.la/",
+          "address": "1360 Allison Ave, Los Angeles, CA 90026",
+          "cuisineTags": [
+            "Japanese",
+            "Sake Bar"
+          ]
+        },
+        {
+          "title": "Pijja Palace",
+          "website": "https://www.pijjapalace.com/",
+          "address": "2711 West Sunset Blvd, Los Angeles, CA 90026",
+          "cuisineTags": [
+            "Indian",
+            "Italian",
+            "Sports Bar"
+          ]
+        },
+        {
+          "title": "Park's BBQ",
+          "website": "https://www.parksbbq.com/",
+          "phone": "+1-213-380-1717",
+          "address": "955 S Vermont Ave, Los Angeles, CA 90006",
+          "cuisineTags": [
+            "Korean",
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Soban",
+          "website": "https://www.sobanla.com/",
+          "phone": "+1-323-936-9106",
+          "address": "4001 W Olympic Blvd, Los Angeles, CA 90019",
+          "cuisineTags": [
+            "Korean"
+          ]
+        },
+        {
+          "title": "Found Oyster",
+          "website": "https://www.foundoyster.com/",
+          "phone": "+1-213-377-2726",
+          "address": "4880 Fountain Ave, Los Angeles, CA 90029",
+          "cuisineTags": [
+            "Seafood",
+            "Oyster Bar"
+          ]
+        },
+        {
+          "title": "HOLBOX",
+          "website": "https://www.holboxla.com/",
+          "phone": "+1-213-986-9972",
+          "address": "3655 S Grand Ave #C9, Los Angeles, CA 90007",
+          "cuisineTags": [
+            "Mexican",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Chichen Itza Restaurant",
+          "website": "https://www.chichenitzarestaurant.com/",
+          "phone": "+1-213-741-1075",
+          "address": "3655 South Grand Avenue C6, Los Angeles, CA 90007",
+          "cuisineTags": [
+            "Mexican",
+            "Yucatecan"
+          ]
+        },
+        {
+          "title": "Redbird",
+          "website": "https://www.redbird.la/",
+          "phone": "+1-213-788-1191",
+          "address": "114 E 2nd St, Los Angeles, CA 90012",
+          "cuisineTags": [
+            "New American"
+          ]
+        },
+        {
+          "title": "Woon",
+          "website": "https://www.woonkitchen.com/",
+          "address": "2920 W Temple St, Los Angeles, CA 90026",
+          "cuisineTags": [
+            "Chinese",
+            "Noodles"
+          ]
+        },
+        {
+          "title": "Shibumi",
+          "website": "https://www.shibumidtla.com/",
+          "phone": "+1-323-484-8915",
+          "address": "815 S Hill St, Los Angeles, CA",
+          "cuisineTags": [
+            "Japanese",
+            "Kappo"
+          ]
+        },
+        {
+          "title": "Ronan",
+          "website": "https://www.ronanla.com/",
+          "phone": "+1-323-917-5100",
+          "address": "7315 Melrose Ave, Los Angeles, CA 90046",
+          "cuisineTags": [
+            "Italian",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Yang Chow",
+          "website": "https://www.yangchow.com/",
+          "address": "819 N Broadway, Los Angeles, CA",
+          "cuisineTags": [
+            "Chinese",
+            "Szechuan"
+          ]
+        },
+        {
+          "title": "The Apple Pan",
+          "website": "https://www.theapplepan.com/",
+          "phone": "+1-310-475-3585",
+          "address": "10801 W Pico Blvd, Los Angeles, CA 90064",
+          "cuisineTags": [
+            "American",
+            "Burgers"
+          ]
+        },
+        {
+          "title": "Mother Wolf",
+          "website": "https://www.motherwolfla.com/",
+          "address": "1545 Wilcox Ave, Los Angeles, CA 90028",
+          "cuisineTags": [
+            "Italian",
+            "Roman"
+          ]
+        },
+        {
+          "title": "Kali",
+          "website": "https://www.kalirestaurant.com/",
+          "phone": "+1-323-871-4160",
+          "address": "5722 Melrose Avenue, Los Angeles, CA 90038",
+          "cuisineTags": [
+            "New American",
+            "Steakhouse"
+          ]
+        },
+        {
+          "title": "Damian",
+          "website": "https://www.damiandtla.com/",
+          "address": "2132 E 7th Pl, Los Angeles, CA 90021",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Kismet",
+          "website": "https://www.kismetla.com/",
+          "phone": "+1-323-409-0404",
+          "address": "4648 Hollywood Blvd, Los Angeles, CA 90027",
+          "cuisineTags": [
+            "Middle Eastern",
+            "Californian"
+          ]
+        },
+        {
+          "title": "Alimento",
+          "website": "https://www.alimentola.com/",
+          "phone": "+1-323-928-2888",
+          "address": "1710 Silver Lake Blvd, Los Angeles, CA 90026",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Joy",
+          "website": "https://www.joyonyork.com/",
+          "phone": "+1-323-999-7642",
+          "address": "5100 York Blvd, Los Angeles, CA 90042",
+          "cuisineTags": [
+            "Taiwanese"
+          ]
+        },
+        {
+          "title": "El Coyote Mexican Cafe",
+          "website": "https://www.elcoyotecafe.com/",
+          "phone": "+1-323-939-2255",
+          "address": "7312 Beverly Boulevard, Los Angeles, CA 90036",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Miami",
+      "stateCode": "FL",
+      "listings": [
+        {
+          "title": "Michael's Genuine Food & Drink",
+          "website": "https://www.michaelsgenuine.com/",
+          "phone": "+1-305-676-0894",
+          "address": "130 NE 40th St, Miami, FL 33137",
+          "cuisineTags": [
+            "New American",
+            "Seasonal"
+          ]
+        },
+        {
+          "title": "Cafe La Trova",
+          "website": "https://www.cafelatrova.com/",
+          "phone": "+1-786-615-4379",
+          "address": "971 SW 8th Street, Miami, FL 33130",
+          "cuisineTags": [
+            "Cuban",
+            "Cocktail Bar"
+          ]
+        },
+        {
+          "title": "Casablanca Seafood Bar & Grill",
+          "website": "https://www.casablancaseafood.com/",
+          "phone": "+1-305-371-4107",
+          "address": "400 NW North River Dr, Miami, FL 33128",
+          "cuisineTags": [
+            "Seafood",
+            "Cuban"
+          ]
+        },
+        {
+          "title": "Zak the Baker",
+          "website": "https://www.zakthebaker.com/",
+          "phone": "+1-786-294-0876",
+          "address": "295 NW 26th St, Miami, FL 33127",
+          "cuisineTags": [
+            "Bakery",
+            "Jewish Deli"
+          ]
+        },
+        {
+          "title": "Hiyakawa",
+          "website": "https://www.hiyakawamiami.com/",
+          "phone": "+1-305-333-2417",
+          "address": "2700 N Miami Ave, Miami, FL 33127",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Bar Bucce",
+          "website": "https://www.barbucce.com/",
+          "phone": "+1-305-202-2526",
+          "address": "7220 N Miami Ave, Miami, FL",
+          "cuisineTags": [
+            "Pizza",
+            "Italian",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "NIU Kitchen",
+          "website": "https://www.niukitchen.com/",
+          "phone": "+1-786-717-6711",
+          "address": "104 NE 2nd Avenue, Miami, FL",
+          "cuisineTags": [
+            "Catalan",
+            "Spanish"
+          ]
+        },
+        {
+          "title": "Red Rooster Overtown",
+          "website": "https://www.redroosterovertown.com/",
+          "phone": "+1-305-640-9880",
+          "address": "920 NW 2nd Ave, Miami, FL 33136",
+          "cuisineTags": [
+            "Southern",
+            "Caribbean"
+          ]
+        },
+        {
+          "title": "Tâm Tâm",
+          "website": "https://www.tam-tam-mia.com/",
+          "phone": "+1-786-933-6378",
+          "address": "99 NW 1st St, Miami, FL 33128",
+          "cuisineTags": [
+            "Vietnamese",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Doya",
+          "website": "https://doyarestaurant.com/",
+          "phone": "+1-305-501-2848",
+          "address": "347 NW 24th St, Miami, FL 33127",
+          "cuisineTags": [
+            "Aegean",
+            "Turkish",
+            "Greek"
+          ]
+        },
+        {
+          "title": "Lil Greenhouse Grill",
+          "website": "https://www.lilgreenhousegrill.com/",
+          "phone": "+1-786-277-3582",
+          "address": "1300 Northwest 3rd Avenue, Miami, FL 33136",
+          "cuisineTags": [
+            "Southern",
+            "Soul Food"
+          ]
+        },
+        {
+          "title": "Bombay Darbar",
+          "website": "https://www.bombaydarbar.com/",
+          "phone": "+1-305-444-7272",
+          "address": "2901 Florida Ave, Miami, FL 33133",
+          "cuisineTags": [
+            "Indian"
+          ]
+        },
+        {
+          "title": "Fiorito",
+          "website": "https://www.fioritomiami.com/",
+          "phone": "+1-305-754-2899",
+          "address": "5555 Northeast 2nd Avenue, Miami, FL 33137",
+          "cuisineTags": [
+            "Argentine",
+            "Steakhouse"
+          ]
+        },
+        {
+          "title": "Phuc Yea",
+          "website": "https://www.phucyea.com/",
+          "phone": "+1-305-602-3710",
+          "address": "7100 Biscayne Boulevard, Miami, FL 33138",
+          "cuisineTags": [
+            "Vietnamese",
+            "Cajun"
+          ]
+        },
+        {
+          "title": "Sanguich de Miami",
+          "website": "https://www.sanguich.com/",
+          "phone": "+1-305-539-0969",
+          "address": "2057 SW 8th St, Miami, FL 33135",
+          "cuisineTags": [
+            "Cuban",
+            "Sandwiches"
+          ]
+        },
+        {
+          "title": "Chug's Diner",
+          "website": "https://www.chugsdiner.com/",
+          "phone": "+1-305-422-9453",
+          "address": "3444 Main Hwy Suite 21, Miami, FL 33133",
+          "cuisineTags": [
+            "Cuban",
+            "Diner"
+          ]
+        },
+        {
+          "title": "Ogawa",
+          "website": "https://www.ogawamiami.com/",
+          "address": "7223 NW 2nd Ave, Miami, FL 33150",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "The River Oyster Bar",
+          "website": "https://www.therivermiami.com/",
+          "phone": "+1-305-530-1915",
+          "address": "33 SE 7th Street, Suite 100, Miami, FL 33131",
+          "cuisineTags": [
+            "Seafood",
+            "Oyster Bar"
+          ]
+        },
+        {
+          "title": "Amara at Paraiso",
+          "website": "https://www.amaraatparaiso.com/",
+          "phone": "+1-786-708-6408",
+          "address": "3101 NE 7th Ave, Miami, FL 33137",
+          "cuisineTags": [
+            "Latin American",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Bakan",
+          "website": "https://www.bakanwynwood.com/",
+          "phone": "+1-305-396-7080",
+          "address": "2801 Northwest 2nd Avenue, Miami, FL 33127",
+          "cuisineTags": [
+            "Mexican",
+            "Mezcaleria"
+          ]
+        },
+        {
+          "title": "La Camaronera Seafood Joint and Fish Market",
+          "website": "https://www.lacamaronera.com/",
+          "phone": "+1-305-642-3322",
+          "address": "1952 W Flagler St, Miami, FL 33135",
+          "cuisineTags": [
+            "Seafood",
+            "Cuban"
+          ]
+        },
+        {
+          "title": "Klaw Miami",
+          "website": "https://www.klawrestaurant.com/",
+          "phone": "+1-305-239-2523",
+          "address": "1737 North Bayshore Drive, Miami, FL 33132",
+          "cuisineTags": [
+            "Seafood",
+            "Steakhouse"
+          ]
+        },
+        {
+          "title": "Old's Havana Cuban Bar & Cocina",
+          "website": "https://www.oldshavana.com/",
+          "phone": "+1-786-518-2196",
+          "address": "1442 SW 8th St, Miami, FL 33135",
+          "cuisineTags": [
+            "Cuban"
+          ]
+        },
+        {
+          "title": "Shiso",
+          "website": "https://www.shisomiami.com/",
+          "phone": "+1-786-559-1706",
+          "address": "239 NW 28th St, Miami, FL 33127",
+          "cuisineTags": [
+            "Asian",
+            "Barbecue"
+          ]
+        },
+        {
+          "title": "Lung Yai Thai Tapas",
+          "website": "https://lungyai.com/",
+          "phone": "+1-786-334-6262",
+          "address": "1731 SW 8th St, Miami, FL 33135",
+          "cuisineTags": [
+            "Thai",
+            "Small Plates"
+          ]
+        },
+        {
+          "title": "Kaori",
+          "website": "https://www.kaorimiami.com/",
+          "phone": "+1-786-848-5900",
+          "address": "871 South Miami Avenue, Miami, FL 33130",
+          "cuisineTags": [
+            "Asian",
+            "Listening Bar"
+          ]
+        },
+        {
+          "title": "Greenstreet Cafe",
+          "website": "https://www.greenstreetcafe.net/",
+          "phone": "+1-305-444-0244",
+          "address": "3468 Main Highway, Miami, FL 33133",
+          "cuisineTags": [
+            "Mediterranean",
+            "Cafe"
+          ]
+        },
+        {
+          "title": "Il Gabbiano",
+          "website": "https://www.ilgabbianomia.com/",
+          "phone": "+1-305-373-0063",
+          "address": "335 South Biscayne Blvd, Miami, FL 33131",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Ball & Chain",
+          "website": "https://ballandchainmiami.com/",
+          "phone": "+1-305-643-7820",
+          "address": "1513 SW 8th Street, Miami, FL 33135",
+          "cuisineTags": [
+            "Cuban",
+            "Live Music"
+          ]
+        },
+        {
+          "title": "Monty's Raw Bar",
+          "website": "https://www.montysrawbar.com/",
+          "phone": "+1-305-856-3992",
+          "address": "2550 S Bayshore Drive, Miami, FL 33133",
+          "cuisineTags": [
+            "Seafood",
+            "Raw Bar"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Nashville",
+      "stateCode": "TN",
+      "listings": [
+        {
+          "title": "Lyra",
+          "website": "https://www.lyranashville.com/",
+          "phone": "+1-615-928-8040",
+          "address": "935 W. Eastland Ave, Nashville, TN 37216",
+          "cuisineTags": [
+            "Middle Eastern",
+            "Modern"
+          ]
+        },
+        {
+          "title": "City House",
+          "website": "https://www.cityhousenashville.com/",
+          "phone": "+1-615-736-5838",
+          "address": "1222 4th Ave N, Nashville, TN 37208",
+          "cuisineTags": [
+            "Italian",
+            "Southern",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Cafe Roze",
+          "website": "https://www.caferoze.com/",
+          "phone": "+1-615-645-9100",
+          "address": "1115 Porter Road, Nashville, TN 37206",
+          "cuisineTags": [
+            "American",
+            "All-Day Cafe"
+          ]
+        },
+        {
+          "title": "Pelican & Pig",
+          "website": "https://www.pelicanandpig.com/",
+          "phone": "+1-615-730-6887",
+          "address": "1010 Gallatin Ave, Nashville, TN 37206",
+          "cuisineTags": [
+            "New American",
+            "Wood-Fired"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "New Orleans",
+      "stateCode": "LA",
+      "listings": [
+        {
+          "title": "Galatoire's",
+          "website": "https://www.galatoires.com/",
+          "phone": "+1-504-525-2021",
+          "address": "209 Bourbon Street, New Orleans, LA 70130",
+          "cuisineTags": [
+            "Creole",
+            "French"
+          ]
+        },
+        {
+          "title": "Arnaud's Restaurant",
+          "website": "https://www.arnaudsrestaurant.com/",
+          "phone": "+1-504-523-5433",
+          "address": "813 Rue Bienville, New Orleans, LA 70112",
+          "cuisineTags": [
+            "Creole",
+            "French"
+          ]
+        },
+        {
+          "title": "Antoine's Restaurant",
+          "website": "https://antoines.com/",
+          "phone": "+1-504-581-4422",
+          "address": "713 Saint Louis Street, New Orleans, LA 70130",
+          "cuisineTags": [
+            "Creole",
+            "French"
+          ]
+        },
+        {
+          "title": "Casamento's Restaurant",
+          "website": "https://www.casamentosrestaurant.com/",
+          "phone": "+1-504-895-9761",
+          "address": "4330 Magazine Street, New Orleans, LA 70115",
+          "cuisineTags": [
+            "Seafood",
+            "Oyster Bar"
+          ]
+        },
+        {
+          "title": "Pêche Seafood Grill",
+          "website": "https://www.pecherestaurant.com/",
+          "phone": "+1-504-522-1744",
+          "address": "800 Magazine Street, New Orleans, LA 70130",
+          "cuisineTags": [
+            "Seafood",
+            "Cajun"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "New York",
+      "stateCode": "NY",
+      "listings": [
+        {
+          "title": "Katz's Delicatessen",
+          "website": "https://katzsdelicatessen.com/",
+          "phone": "+1-212-254-2246",
+          "address": "205 East Houston Street, New York, NY 10002",
+          "cuisineTags": [
+            "Jewish Deli",
+            "Sandwiches"
+          ]
+        },
+        {
+          "title": "Keens Steakhouse",
+          "website": "https://www.keens.com/",
+          "phone": "+1-212-947-3636",
+          "address": "72 West 36th Street, New York, NY 10018",
+          "cuisineTags": [
+            "Steakhouse",
+            "American"
+          ]
+        },
+        {
+          "title": "Rubirosa",
+          "website": "https://www.rubirosanyc.com/",
+          "phone": "+1-212-965-0500",
+          "address": "235 Mulberry Street, New York, NY 10012",
+          "cuisineTags": [
+            "Italian",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Veselka",
+          "website": "https://www.veselka.com/",
+          "address": "144 Second Avenue, New York, NY 10003",
+          "cuisineTags": [
+            "Ukrainian",
+            "Diner"
+          ]
+        },
+        {
+          "title": "Nom Wah Tea Parlor",
+          "website": "https://nomwah.com/",
+          "phone": "+1-212-962-6047",
+          "address": "13 Doyers Street, New York, NY 10013",
+          "cuisineTags": [
+            "Chinese",
+            "Dim Sum"
+          ]
+        },
+        {
+          "title": "Dirt Candy",
+          "website": "https://www.dirtcandynyc.com/",
+          "phone": "+1-212-228-7732",
+          "address": "86 Allen Street, New York, NY",
+          "cuisineTags": [
+            "Vegetarian",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "John's of Bleecker Street",
+          "website": "https://www.johnsofbleecker.com/",
+          "phone": "+1-212-243-1680",
+          "address": "278 Bleecker Street, New York, NY 10014",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Don Angie",
+          "website": "https://www.donangie.com/",
+          "address": "103 Greenwich Avenue, New York, NY 10014",
+          "cuisineTags": [
+            "Italian American"
+          ]
+        },
+        {
+          "title": "I Sodi",
+          "website": "https://www.isodinyc.com/",
+          "phone": "+1-212-414-5774",
+          "address": "314 Bleecker Street, New York, NY 10014",
+          "cuisineTags": [
+            "Italian",
+            "Tuscan"
+          ]
+        },
+        {
+          "title": "Estela",
+          "website": "https://www.estelanyc.com/",
+          "address": "47 East Houston Street, New York, NY 10012",
+          "cuisineTags": [
+            "New American",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Superiority Burger",
+          "website": "https://www.superiorityburger.com/",
+          "phone": "+1-212-339-7425",
+          "address": "119 Avenue A, New York, NY 10009",
+          "cuisineTags": [
+            "Vegetarian",
+            "Burgers"
+          ]
+        },
+        {
+          "title": "Minetta Tavern",
+          "website": "https://www.minettatavernny.com/",
+          "phone": "+1-212-475-3850",
+          "address": "113 MacDougal Street, New York, NY",
+          "cuisineTags": [
+            "French Bistro",
+            "Steakhouse"
+          ]
+        },
+        {
+          "title": "Casa Mono",
+          "website": "https://www.casamononyc.com/",
+          "phone": "+1-212-253-2773",
+          "address": "52 Irving Place, New York, NY 10003",
+          "cuisineTags": [
+            "Spanish",
+            "Tapas"
+          ]
+        },
+        {
+          "title": "Hanoi House",
+          "website": "https://www.hanoihousenyc.com/",
+          "phone": "+1-212-995-5010",
+          "address": "119 Saint Marks Place, New York, NY 10009",
+          "cuisineTags": [
+            "Vietnamese"
+          ]
+        },
+        {
+          "title": "Thai Diner",
+          "website": "https://www.thaidiner.com/",
+          "address": "186 Mott Street, New York, NY 10012",
+          "cuisineTags": [
+            "Thai",
+            "Diner"
+          ]
+        },
+        {
+          "title": "Semma",
+          "website": "https://www.semma.nyc/",
+          "address": "60 Greenwich Avenue, New York, NY 10011",
+          "cuisineTags": [
+            "Indian",
+            "South Indian"
+          ]
+        },
+        {
+          "title": "Dhamaka",
+          "website": "https://www.dhamaka.nyc/",
+          "address": "119 Delancey Street, Essex Market Store #34, New York, NY 10002",
+          "cuisineTags": [
+            "Indian",
+            "Regional Indian"
+          ]
+        },
+        {
+          "title": "Cosme",
+          "website": "https://www.cosmenyc.com/",
+          "address": "35 East 21st Street, New York, NY 10010",
+          "cuisineTags": [
+            "Mexican",
+            "Contemporary"
+          ]
+        },
+        {
+          "title": "Barney Greengrass",
+          "website": "https://www.barneygreengrass.com/",
+          "phone": "+1-212-724-4707",
+          "address": "541 Amsterdam Avenue, New York, NY 10024",
+          "cuisineTags": [
+            "Jewish Deli",
+            "Appetizing"
+          ]
+        },
+        {
+          "title": "The Odeon",
+          "website": "https://www.theodeonrestaurant.com/",
+          "phone": "+1-212-233-0507",
+          "address": "145 West Broadway, New York, NY",
+          "cuisineTags": [
+            "American Brasserie",
+            "Bistro"
+          ]
+        },
+        {
+          "title": "2nd Ave Deli",
+          "website": "https://www.2ndavedeli.com/",
+          "phone": "+1-212-689-9000",
+          "address": "162 East 33rd Street, New York, NY",
+          "cuisineTags": [
+            "Jewish Deli",
+            "Kosher"
+          ]
+        },
+        {
+          "title": "Sylvia's Restaurant",
+          "website": "https://sylviasrestaurant.com/",
+          "phone": "+1-212-996-0660",
+          "address": "328 Malcolm X Blvd, New York, NY 10027",
+          "cuisineTags": [
+            "Soul Food",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Frenchette",
+          "website": "https://www.frenchettenyc.com/",
+          "phone": "+1-212-334-3883",
+          "address": "241 West Broadway, New York, NY 10013",
+          "cuisineTags": [
+            "French",
+            "Bistro"
+          ]
+        },
+        {
+          "title": "Le Coucou",
+          "website": "https://www.lecoucou.com/",
+          "phone": "+1-212-271-4252",
+          "address": "138 Lafayette Street, New York, NY 10013",
+          "cuisineTags": [
+            "French"
+          ]
+        },
+        {
+          "title": "Scarr's Pizza",
+          "website": "https://www.scarrspizza.com/",
+          "phone": "+1-212-334-3481",
+          "address": "35 Orchard Street, New York, NY 10002",
+          "cuisineTags": [
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Una Pizza Napoletana",
+          "website": "https://www.unapizza.com/",
+          "address": "175 Orchard Street, New York, NY",
+          "cuisineTags": [
+            "Pizza",
+            "Neapolitan"
+          ]
+        },
+        {
+          "title": "Sparks Steak House",
+          "website": "https://www.sparkssteakhouse.com/",
+          "phone": "+1-212-687-4855",
+          "address": "210 East 46th Street, New York, NY 10017",
+          "cuisineTags": [
+            "Steakhouse"
+          ]
+        },
+        {
+          "title": "Aquavit",
+          "website": "https://www.aquavit.org/",
+          "phone": "+1-212-307-7311",
+          "address": "65 East 55th Street, New York, NY 10022",
+          "cuisineTags": [
+            "Nordic",
+            "Scandinavian"
+          ]
+        },
+        {
+          "title": "Rezdôra",
+          "website": "https://www.rezdora.nyc/",
+          "address": "27 East 20th Street, New York, NY 10003",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "il Buco",
+          "website": "https://www.ilbuco.com/",
+          "address": "47 Bond Street, New York, NY",
+          "cuisineTags": [
+            "Italian",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Amy Ruth's",
+          "website": "https://www.amyruths.com/",
+          "phone": "+1-212-280-8779",
+          "address": "113 West 116th Street, New York, NY 10026",
+          "cuisineTags": [
+            "Soul Food",
+            "Southern"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Philadelphia",
+      "stateCode": "PA",
+      "listings": [
+        {
+          "title": "Honeysuckle",
+          "website": "https://honeysucklephl.com",
+          "phone": "+1-215-307-3316",
+          "address": "631 N Broad St, Philadelphia, PA 19123",
+          "cuisineTags": [
+            "African Diaspora",
+            "New American"
+          ]
+        },
+        {
+          "title": "Illata",
+          "website": "https://illataphl.com",
+          "address": "2241 Grays Ferry Ave, Philadelphia, PA 19146",
+          "cuisineTags": [
+            "New American",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "Vedge",
+          "website": "https://vedgerestaurant.com",
+          "phone": "+1-215-320-7500",
+          "address": "1221 Locust Street, Philadelphia, PA",
+          "cuisineTags": [
+            "Vegan",
+            "Vegetable Forward"
+          ]
+        },
+        {
+          "title": "River Twice",
+          "website": "https://www.rivertwicerestaurant.com",
+          "phone": "+1-267-457-3698",
+          "address": "1601 East Passyunk Avenue, Philadelphia, PA 19148",
+          "cuisineTags": [
+            "New American",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "Le Virtù",
+          "website": "https://www.levirtu.com/contact",
+          "phone": "+1-215-271-5626",
+          "address": "1927 East Passyunk Avenue, Philadelphia, PA 19148",
+          "cuisineTags": [
+            "Italian",
+            "Abruzzese"
+          ]
+        },
+        {
+          "title": "High Street",
+          "website": "https://www.highstreetonmarket.com",
+          "phone": "+1-215-625-0988",
+          "address": "101 S. 9th Street, Philadelphia, PA 19107",
+          "cuisineTags": [
+            "New American",
+            "Bakery"
+          ]
+        },
+        {
+          "title": "Famous 4th Street Delicatessen",
+          "website": "https://www.famous4thstreetdelicatessen.com",
+          "phone": "+1-215-922-3274",
+          "address": "700 S 4th St, Philadelphia, PA 19147",
+          "cuisineTags": [
+            "Jewish Deli",
+            "Sandwiches"
+          ]
+        },
+        {
+          "title": "Dalessandro's Steaks & Hoagies",
+          "website": "https://www.dalessandros.com",
+          "phone": "+1-215-482-5407",
+          "address": "600 Wendover Street, Philadelphia, PA 19128",
+          "cuisineTags": [
+            "Cheesesteaks",
+            "Sandwiches"
+          ]
+        },
+        {
+          "title": "My Loup",
+          "website": "https://www.myloupphl.com",
+          "phone": "+1-267-239-5925",
+          "address": "2005 Walnut St, Philadelphia, PA 19103",
+          "cuisineTags": [
+            "French",
+            "Bistro"
+          ]
+        },
+        {
+          "title": "Little Water",
+          "website": "https://www.littlewaterphl.com",
+          "phone": "+1-215-337-3343",
+          "address": "261 S 20th Street, Philadelphia, PA 19103",
+          "cuisineTags": [
+            "Seafood",
+            "New American"
+          ]
+        },
+        {
+          "title": "Mish Mish",
+          "website": "https://www.mishmishphilly.com",
+          "address": "1046 Tasker Street, Philadelphia, PA",
+          "cuisineTags": [
+            "Mediterranean",
+            "Israeli"
+          ]
+        },
+        {
+          "title": "Southwark",
+          "website": "https://www.southwarkrestaurantphilly.com",
+          "phone": "+1-267-930-8538",
+          "address": "701 S 4th Street, Philadelphia, PA",
+          "cuisineTags": [
+            "Italian",
+            "Cocktail Bar"
+          ]
+        },
+        {
+          "title": "Royal Tavern",
+          "website": "https://www.royaltavern.com",
+          "phone": "+1-215-389-6694",
+          "address": "937 E Passyunk Ave, Philadelphia, PA 19147",
+          "cuisineTags": [
+            "New American",
+            "Gastropub"
+          ]
+        },
+        {
+          "title": "Dante & Luigi's",
+          "website": "https://www.danteandluigis.com",
+          "phone": "+1-215-922-9501",
+          "address": "762 S 10th Street, Philadelphia, PA 19147",
+          "cuisineTags": [
+            "Italian",
+            "Red Gravy"
+          ]
+        },
+        {
+          "title": "Del Rossi's Cheesesteak & Pizza Co.",
+          "website": "https://www.delrossisrestaurant.com",
+          "address": "538 North 4th Street, Philadelphia, PA",
+          "cuisineTags": [
+            "Cheesesteaks",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Mawn",
+          "website": "https://mawnphilly.com/",
+          "address": "764 S. 9th Street, Philadelphia, PA 19147",
+          "cuisineTags": [
+            "Cambodian",
+            "Noodles"
+          ]
+        },
+        {
+          "title": "Ogawa",
+          "website": "https://www.ogawaphilly.com/",
+          "phone": "+1-215-238-5757",
+          "address": "310 Market Street, Philadelphia, PA 19106",
+          "cuisineTags": [
+            "Japanese",
+            "Omakase"
+          ]
+        },
+        {
+          "title": "Bolo",
+          "website": "https://bolophl.com/",
+          "phone": "+1-267-639-2741",
+          "address": "2025 Sansom St, Philadelphia, PA 19103",
+          "cuisineTags": [
+            "Latin American",
+            "Caribbean"
+          ]
+        },
+        {
+          "title": "Emmett",
+          "website": "https://www.emmettphilly.com/",
+          "phone": "+1-215-207-0161",
+          "address": "161 W Girard Ave, Philadelphia, PA 19123",
+          "cuisineTags": [
+            "Levantine",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Middle Child",
+          "website": "https://www.middlechildphilly.com",
+          "address": "248 S 11th St, Philadelphia, PA 19107",
+          "cuisineTags": [
+            "Sandwiches",
+            "Luncheonette"
+          ]
+        },
+        {
+          "title": "Barbuzzo",
+          "website": "https://www.barbuzzo.com",
+          "phone": "+1-215-546-9300",
+          "address": "110 South 13th Street, Philadelphia, PA 19107",
+          "cuisineTags": [
+            "Mediterranean",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Talula's Garden",
+          "website": "https://www.talulasgarden.com",
+          "phone": "+1-215-592-7787",
+          "address": "210 West Washington Square, Philadelphia, PA 19106",
+          "cuisineTags": [
+            "New American",
+            "Farm To Table"
+          ]
+        },
+        {
+          "title": "Little Nonna's",
+          "website": "https://www.littlenonnas.com",
+          "phone": "+1-215-546-2100",
+          "address": "1234 Locust St, Philadelphia, PA 19107",
+          "cuisineTags": [
+            "Italian American",
+            "Red Gravy"
+          ]
+        },
+        {
+          "title": "Nam Phuong",
+          "website": "https://www.namphuongphilly.com",
+          "phone": "+1-215-468-0410",
+          "address": "1100 Washington Ave, Philadelphia, PA 19147",
+          "cuisineTags": [
+            "Vietnamese",
+            "Pho"
+          ]
+        },
+        {
+          "title": "Osteria",
+          "website": "https://www.osteriaphilly.com",
+          "phone": "+1-215-763-0920",
+          "address": "640 North Broad Street, Philadelphia, PA 19130",
+          "cuisineTags": [
+            "Italian",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Sang Kee Peking Duck House",
+          "website": "https://toast.app/r/sangkeechinatown",
+          "phone": "+1-215-925-7532",
+          "address": "238 N 9th St, Philadelphia, PA 19107",
+          "cuisineTags": [
+            "Chinese",
+            "Cantonese"
+          ]
+        },
+        {
+          "title": "Amá",
+          "website": "https://amaphl.com/",
+          "phone": "+1-215-425-5880",
+          "address": "101 West Oxford Street, Philadelphia, PA 19122",
+          "cuisineTags": [
+            "Mexican",
+            "Live Fire"
+          ]
+        },
+        {
+          "title": "Double Knot",
+          "website": "https://www.doubleknotphilly.com",
+          "phone": "+1-215-631-3868",
+          "address": "120 South 13th Street, Philadelphia, PA 19107",
+          "cuisineTags": [
+            "Japanese",
+            "Izakaya"
+          ]
+        },
+        {
+          "title": "a.kitchen + bar",
+          "website": "https://www.akitchenandbar.com",
+          "phone": "+1-215-825-7030",
+          "address": "135 S. 18th Street, Philadelphia, PA 19103",
+          "cuisineTags": [
+            "New American",
+            "Wine Bar"
+          ]
+        },
+        {
+          "title": "Cry Baby Pasta",
+          "website": "https://www.crybabypasta.com",
+          "phone": "+1-267-534-3076",
+          "address": "627 S 3rd St, Philadelphia, PA 19147",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Phoenix",
+      "stateCode": "AZ",
+      "listings": [
+        {
+          "title": "Bacanora",
+          "website": "https://bacanoraphx.com/",
+          "address": "1301 NW Grand Ave Unit 1, Phoenix, AZ 85007",
+          "cuisineTags": [
+            "Mexican",
+            "Sonoran"
+          ]
+        },
+        {
+          "title": "Beckett's Table",
+          "website": "https://www.beckettstable.com/",
+          "phone": "+1-602-954-1700",
+          "address": "3717 E Indian School Rd, Phoenix, AZ 85018",
+          "cuisineTags": [
+            "New American",
+            "Comfort Food"
+          ]
+        },
+        {
+          "title": "Little Miss BBQ",
+          "website": "https://www.littlemissbbq.com/",
+          "phone": "+1-602-314-6922",
+          "address": "8901 N 7th St, Phoenix, AZ 85020",
+          "cuisineTags": [
+            "Barbecue",
+            "Texan"
+          ]
+        },
+        {
+          "title": "Los Dos Molinos",
+          "website": "https://losdosmolinosphoenix.com/",
+          "phone": "+1-602-243-9113",
+          "address": "8646 S Central Ave, Phoenix, AZ 85042",
+          "cuisineTags": [
+            "Mexican",
+            "New Mexican"
+          ]
+        },
+        {
+          "title": "Cocina Madrigal",
+          "website": "https://www.cocinamadrigal.com/",
+          "phone": "+1-602-243-9000",
+          "address": "4044 S 16th St, Phoenix, AZ 85040",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Restaurant Progress",
+          "website": "https://progressphx.com/",
+          "phone": "+1-602-441-0553",
+          "address": "702 W Montecito Ave, Phoenix, AZ 85013",
+          "cuisineTags": [
+            "New American",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "Gallo Blanco",
+          "website": "https://www.galloblancocafe.com/",
+          "phone": "+1-602-327-0880",
+          "address": "928 E Pierce St, Phoenix, AZ 85006",
+          "cuisineTags": [
+            "Mexican",
+            "Tacos"
+          ]
+        },
+        {
+          "title": "Vecina",
+          "website": "https://www.vecinaphx.com/",
+          "phone": "+1-602-675-2000",
+          "address": "3433 N 56th St, Phoenix, AZ 85018",
+          "cuisineTags": [
+            "New American",
+            "Latin"
+          ]
+        },
+        {
+          "title": "Nook Kitchen",
+          "website": "https://www.nookkitchen.com/",
+          "phone": "+1-602-296-5655",
+          "address": "4231 E Indian School Rd, Phoenix, AZ 85018",
+          "cuisineTags": [
+            "American",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Chilte",
+          "website": "https://www.chiltephx.com/",
+          "phone": "+1-602-807-5226",
+          "address": "765 Grand Ave, Phoenix, AZ 85007",
+          "cuisineTags": [
+            "Modern Mexican"
+          ]
+        },
+        {
+          "title": "Ollie Vaughn's",
+          "website": "https://www.ollievaughns.com/",
+          "phone": "+1-602-254-1392",
+          "address": "1526 E McDowell Rd, Phoenix, AZ 85006",
+          "cuisineTags": [
+            "Cafe",
+            "Bakery"
+          ]
+        },
+        {
+          "title": "Sidewinder",
+          "website": "https://www.sidewinderphx.com/",
+          "phone": "+1-602-626-8535",
+          "address": "924 E Roosevelt St, Phoenix, AZ 85006",
+          "cuisineTags": [
+            "American",
+            "Bar"
+          ]
+        },
+        {
+          "title": "Kid Sister",
+          "website": "https://www.kidsisterphx.com/",
+          "phone": "+1-602-633-9559",
+          "address": "4810 N 7th St, Phoenix, AZ 85014",
+          "cuisineTags": [
+            "Wine Bar",
+            "New American"
+          ]
+        },
+        {
+          "title": "Taco Chelo",
+          "website": "https://tacochelo.com/",
+          "phone": "+1-602-368-5316",
+          "address": "501 E Roosevelt St, Phoenix, AZ 85004",
+          "cuisineTags": [
+            "Mexican",
+            "Tacos"
+          ]
+        },
+        {
+          "title": "The Stockyards",
+          "website": "https://stockyardssteakhouse.com/",
+          "phone": "+1-602-273-7378",
+          "address": "5009 E Washington St, Phoenix, AZ 85034",
+          "cuisineTags": [
+            "Steakhouse",
+            "American"
+          ]
+        },
+        {
+          "title": "Brasserie Melrose",
+          "website": "https://www.brasseriemelrose.com/",
+          "phone": "+1-480-600-7975",
+          "address": "4971 N 7th Ave, Phoenix, AZ 85013",
+          "cuisineTags": [
+            "French",
+            "Bakery"
+          ]
+        },
+        {
+          "title": "Stoop Kid",
+          "website": "https://www.getstoopkid.com/home",
+          "address": "901 N 1st St, Phoenix, AZ 85004",
+          "cuisineTags": [
+            "Bagels",
+            "Burgers"
+          ]
+        },
+        {
+          "title": "Bitter & Twisted Cocktail Parlour",
+          "website": "https://www.bitterandtwistedaz.com/",
+          "phone": "+1-602-340-1924",
+          "address": "1 W Jefferson St, Phoenix, AZ 85003",
+          "cuisineTags": [
+            "Cocktail Bar",
+            "American"
+          ]
+        },
+        {
+          "title": "Cibo",
+          "website": "https://www.cibophoenix.com/",
+          "phone": "+1-602-441-2697",
+          "address": "603 N 5th Ave, Phoenix, AZ 85003",
+          "cuisineTags": [
+            "Italian",
+            "Pizza"
+          ]
+        },
+        {
+          "title": "Mr. Baan's Bar and Mookata",
+          "website": "https://www.mrbaans.com/",
+          "address": "218 E Portland Street #B, Phoenix, AZ 85004",
+          "cuisineTags": [
+            "Thai",
+            "Mookata"
+          ]
+        },
+        {
+          "title": "MacAlpine's Diner & Soda Fountain",
+          "website": "https://www.macalpines.com/",
+          "phone": "+1-602-262-5545",
+          "address": "2303 N 7th St, Phoenix, AZ 85006",
+          "cuisineTags": [
+            "Diner",
+            "American"
+          ]
+        },
+        {
+          "title": "Casa Corazon",
+          "website": "https://www.casacorazonrestaurant.com/",
+          "phone": "+1-602-334-1917",
+          "address": "2637 N 16th St, Phoenix, AZ 85006",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Rustler's Rooste",
+          "website": "https://www.rustlersrooste.com/",
+          "phone": "+1-602-431-6474",
+          "address": "8383 S 48th St, Phoenix, AZ 85044",
+          "cuisineTags": [
+            "Steakhouse",
+            "Southwestern"
+          ]
+        },
+        {
+          "title": "Noble Eatery",
+          "website": "https://noblebread.com/eatery/",
+          "phone": "+1-602-688-2424",
+          "address": "4525 N 24th St, Phoenix, AZ 85016",
+          "cuisineTags": [
+            "Deli",
+            "Bakery"
+          ]
+        },
+        {
+          "title": "Otro Cafe",
+          "website": "https://www.otrocafe.com/",
+          "phone": "+1-602-266-0831",
+          "address": "6035 N 7th St, Phoenix, AZ 85014",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Ocotillo",
+          "website": "https://www.ocotillophx.com/",
+          "phone": "+1-602-687-9080",
+          "address": "3243 N 3rd St, Phoenix, AZ 85012",
+          "cuisineTags": [
+            "New American"
+          ]
+        },
+        {
+          "title": "Kabob Grill N' Go",
+          "website": "https://www.kabobgrillngo.com/",
+          "phone": "+1-602-607-5272",
+          "address": "3050 N 16th St, Phoenix, AZ 85016",
+          "cuisineTags": [
+            "Middle Eastern",
+            "Kebab"
+          ]
+        },
+        {
+          "title": "Lovebite Dumplings",
+          "website": "https://www.lovebite.me/",
+          "phone": "+1-602-314-4122",
+          "address": "116 E Roosevelt St, Phoenix, AZ 85004",
+          "cuisineTags": [
+            "Chinese",
+            "Dumplings"
+          ]
+        },
+        {
+          "title": "Los Reyes de la Torta",
+          "website": "https://losreyesaz.com/",
+          "phone": "+1-602-870-2967",
+          "address": "9230 N 7th St, Phoenix, AZ 85020",
+          "cuisineTags": [
+            "Mexican",
+            "Tortas"
+          ]
+        },
+        {
+          "title": "Green New American Vegetarian",
+          "website": "https://www.greenvegetarian.com/",
+          "phone": "+1-602-258-1870",
+          "address": "2022 N 7th St, Phoenix, AZ 85006",
+          "cuisineTags": [
+            "Vegan",
+            "Vegetarian"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Zuni Café",
+          "website": "https://zunicafe.com/",
+          "phone": "+1-415-552-2522",
+          "address": "1658 Market Street, San Francisco, CA 94102",
+          "cuisineTags": [
+            "Californian",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Nopa",
+          "website": "https://nopasf.com/",
+          "phone": "+1-415-864-8643",
+          "address": "560 Divisadero Street, San Francisco, CA 94117",
+          "cuisineTags": [
+            "Californian",
+            "New American"
+          ]
+        },
+        {
+          "title": "Foreign Cinema",
+          "website": "https://foreigncinema.com/",
+          "phone": "+1-415-648-7600",
+          "address": "2534 Mission Street, San Francisco, CA 94110",
+          "cuisineTags": [
+            "Californian",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "Kokkari Estiatorio",
+          "website": "https://www.kokkari.com/",
+          "phone": "+1-415-981-0983",
+          "address": "200 Jackson Street, San Francisco, CA 94111",
+          "cuisineTags": [
+            "Greek",
+            "Mediterranean"
+          ]
+        },
+        {
+          "title": "State Bird Provisions",
+          "website": "https://www.statebirdsf.com/",
+          "phone": "+1-415-795-1272",
+          "address": "1529 Fillmore Street, San Francisco, CA 94115",
+          "cuisineTags": [
+            "New American",
+            "Small Plates"
+          ]
+        },
+        {
+          "title": "Che Fico",
+          "website": "https://www.chefico.com/",
+          "phone": "+1-415-416-6959",
+          "address": "838 Divisadero Street, San Francisco, CA 94117",
+          "cuisineTags": [
+            "Italian",
+            "Cal-Italian"
+          ]
+        },
+        {
+          "title": "Rich Table",
+          "website": "https://www.richtablesf.com/",
+          "address": "199 Gough Street, San Francisco, CA 94102",
+          "cuisineTags": [
+            "Californian",
+            "New American"
+          ]
+        },
+        {
+          "title": "Flour + Water",
+          "website": "https://www.flourandwater.com/",
+          "phone": "+1-415-826-7000",
+          "address": "2401 Harrison Street, San Francisco, CA 94110",
+          "cuisineTags": [
+            "Italian",
+            "Pasta"
+          ]
+        },
+        {
+          "title": "Cotogna",
+          "website": "https://cotognasf.com/",
+          "phone": "+1-415-775-8508",
+          "address": "490 Pacific Avenue, San Francisco, CA 94133",
+          "cuisineTags": [
+            "Italian",
+            "Rustic Italian"
+          ]
+        },
+        {
+          "title": "Rintaro",
+          "website": "https://www.izakayarintaro.com/",
+          "phone": "+1-415-589-7022",
+          "address": "82 14th Street, San Francisco, CA",
+          "cuisineTags": [
+            "Japanese",
+            "Izakaya"
+          ]
+        },
+        {
+          "title": "Tony's Pizza Napoletana",
+          "website": "https://www.tonyspizzanapoletana.com/",
+          "phone": "+1-415-835-9888",
+          "address": "1570 Stockton Street, San Francisco, CA 94133",
+          "cuisineTags": [
+            "Pizza",
+            "Italian"
+          ]
+        },
+        {
+          "title": "Sotto Mare",
+          "website": "https://sottomaresf.com/",
+          "phone": "+1-415-398-3181",
+          "address": "552 Green Street, San Francisco, CA 94133",
+          "cuisineTags": [
+            "Italian",
+            "Seafood"
+          ]
+        },
+        {
+          "title": "Brenda's French Soul Food",
+          "website": "https://www.frenchsoulfood.com/",
+          "phone": "+1-415-345-8100",
+          "address": "652 Polk Street, San Francisco, CA",
+          "cuisineTags": [
+            "Creole",
+            "Southern"
+          ]
+        },
+        {
+          "title": "Nopalito",
+          "website": "https://www.nopalitosf.com/",
+          "phone": "+1-415-437-0303",
+          "address": "306 Broderick Street, San Francisco, CA 94117",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Restaurant Gary Danko",
+          "website": "https://www.garydanko.com/",
+          "phone": "+1-415-749-2060",
+          "address": "800 North Point Street, San Francisco, CA 94109",
+          "cuisineTags": [
+            "Contemporary American",
+            "Fine Dining"
+          ]
+        },
+        {
+          "title": "Californios",
+          "website": "https://www.californiossf.com/",
+          "phone": "+1-415-757-0994",
+          "address": "355 11th Street, San Francisco, CA 94103",
+          "cuisineTags": [
+            "Mexican",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "Mourad",
+          "website": "https://www.mouradsf.com/",
+          "address": "140 New Montgomery Street, San Francisco, CA 94105",
+          "cuisineTags": [
+            "Moroccan",
+            "Californian"
+          ]
+        },
+        {
+          "title": "Tadich Grill",
+          "website": "https://tadichgrillsf.com/",
+          "phone": "+1-415-391-1849",
+          "address": "240 California Street, San Francisco, CA 94111",
+          "cuisineTags": [
+            "Seafood",
+            "American"
+          ]
+        },
+        {
+          "title": "Lazy Bear",
+          "website": "https://www.lazybearsf.com/",
+          "phone": "+1-415-874-9921",
+          "address": "3416 19th Street, San Francisco, CA 94110",
+          "cuisineTags": [
+            "New American",
+            "Tasting Menu"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Seattle",
+      "stateCode": "WA",
+      "listings": [
+        {
+          "title": "Spinasse",
+          "website": "https://spinasse.com/contact/",
+          "phone": "+1-206-251-7673",
+          "address": "1531 14th Avenue, Seattle, WA 98122",
+          "cuisineTags": [
+            "Italian",
+            "Piedmontese"
+          ]
+        },
+        {
+          "title": "Homer",
+          "website": "https://www.restauranthomer.com/contact",
+          "phone": "+1-206-785-6099",
+          "address": "3013 Beacon Avenue South, Seattle, WA 98144",
+          "cuisineTags": [
+            "Mediterranean"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Washington",
+      "stateCode": "DC",
+      "listings": [
+        {
+          "title": "Albi",
+          "website": "https://albidc.com",
+          "address": "1346 4th Street SE, Washington, DC",
+          "cuisineTags": [
+            "Middle Eastern",
+            "Levantine"
+          ]
+        },
+        {
+          "title": "Oyster Oyster",
+          "website": "https://www.oysteroysterdc.com/",
+          "address": "1440 8th Street NW, Washington, DC 20001",
+          "cuisineTags": [
+            "Vegetarian",
+            "New American"
+          ]
+        },
+        {
+          "title": "Maydan",
+          "website": "https://meetatmaydan.com/contact",
+          "phone": "+1-202-370-3696",
+          "address": "1346 Florida Avenue NW, Washington, DC 20009",
+          "cuisineTags": [
+            "Middle Eastern",
+            "Live Fire"
+          ]
+        },
+        {
+          "title": "Daru",
+          "website": "https://www.darudc.com/",
+          "phone": "+1-202-388-1848",
+          "address": "1451 Maryland Avenue NE, Washington, DC 20002",
+          "cuisineTags": [
+            "Indian"
+          ]
+        },
+        {
+          "title": "Primrose",
+          "website": "https://www.primrosedc.com/",
+          "phone": "+1-202-248-4558",
+          "address": "3000 12th Street NE, Washington, DC",
+          "cuisineTags": [
+            "French",
+            "Bistro"
+          ]
+        },
+        {
+          "title": "Bresca",
+          "website": "https://www.brescadc.com/",
+          "phone": "+1-771-210-3168",
+          "address": "1906 14th Street NW, Washington, DC 20009",
+          "cuisineTags": [
+            "French",
+            "New American"
+          ]
+        },
+        {
+          "title": "Rooster & Owl",
+          "website": "https://www.roosterowl.com/",
+          "phone": "+1-202-915-9004",
+          "address": "2436 14th Street NW, Washington, DC 20009",
+          "cuisineTags": [
+            "New American",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "Purple Patch",
+          "website": "https://www.purplepatchdc.com/",
+          "phone": "+1-202-299-0022",
+          "address": "3155 Mount Pleasant Street NW, Washington, DC",
+          "cuisineTags": [
+            "Filipino"
+          ]
+        },
+        {
+          "title": "Sushi Taro",
+          "website": "https://www.sushitaro.com/",
+          "phone": "+1-202-462-8999",
+          "address": "1503 17th Street NW, Washington, DC",
+          "cuisineTags": [
+            "Japanese",
+            "Sushi"
+          ]
+        },
+        {
+          "title": "Ethiopic",
+          "website": "https://www.ethiopicrestaurant.com/",
+          "phone": "+1-202-675-2066",
+          "address": "401 H Street NE, Washington, DC 20002",
+          "cuisineTags": [
+            "Ethiopian"
+          ]
+        },
+        {
+          "title": "Martin's Tavern",
+          "website": "https://www.martinstavern.com/",
+          "phone": "+1-202-333-7370",
+          "address": "1264 Wisconsin Avenue NW, Washington, DC 20007",
+          "cuisineTags": [
+            "American",
+            "Tavern"
+          ]
+        },
+        {
+          "title": "Filomena Ristorante",
+          "website": "https://www.filomena.com/",
+          "phone": "+1-202-338-8800",
+          "address": "1063 Wisconsin Avenue NW, Washington, DC 20007",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Thip Khao",
+          "website": "https://www.thipkhao.com/",
+          "phone": "+1-202-387-5426",
+          "address": "3462 14th Street NW, Washington, DC 20010",
+          "cuisineTags": [
+            "Laotian"
+          ]
+        },
+        {
+          "title": "Anafre",
+          "website": "https://www.anafredc.com/",
+          "phone": "+1-202-758-2127",
+          "address": "3704 14th Street NW, Washington, DC 20010",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Unconventional Diner",
+          "website": "https://www.unconventionaldiner.com/",
+          "phone": "+1-202-847-0122",
+          "address": "1207 9th Street NW, Washington, DC 20001",
+          "cuisineTags": [
+            "American",
+            "Diner"
+          ]
+        },
+        {
+          "title": "Lutèce",
+          "website": "https://www.lutecedc.com/contactus",
+          "address": "1522 Wisconsin Avenue NW, Washington, DC",
+          "cuisineTags": [
+            "French",
+            "Neobistro"
+          ]
+        },
+        {
+          "title": "Chercher Ethiopian Restaurant & Mart",
+          "website": "https://chercherrestaurant.com/",
+          "phone": "+1-202-299-9703",
+          "address": "1334 9th Street NW, Washington, DC 20001",
+          "cuisineTags": [
+            "Ethiopian"
+          ]
+        },
+        {
+          "title": "Anju",
+          "website": "https://www.anjurestaurant.com/",
+          "phone": "+1-202-845-8935",
+          "address": "1805 18th Street NW, Washington, DC 20009",
+          "cuisineTags": [
+            "Korean"
+          ]
+        },
+        {
+          "title": "L'Ardente",
+          "website": "https://www.lardente.com/",
+          "phone": "+1-202-448-0450",
+          "address": "200 Massachusetts Avenue NW, Washington, DC 20001",
+          "cuisineTags": [
+            "Italian"
+          ]
+        },
+        {
+          "title": "Imperfecto",
+          "website": "https://www.sevenreasonsgroup.com/imperfecto",
+          "address": "1124 23rd Street NW, Washington, DC 20037",
+          "cuisineTags": [
+            "Mediterranean",
+            "Latin American"
+          ]
+        },
+        {
+          "title": "Daikaya",
+          "website": "https://www.daikaya.com/location/daikaya-dine-in-hours/",
+          "phone": "+1-202-589-1600",
+          "address": "705 6th Street NW, Washington, DC 20001",
+          "cuisineTags": [
+            "Japanese",
+            "Ramen"
+          ]
+        },
+        {
+          "title": "Tabard Inn",
+          "website": "https://www.tabardinn.com/",
+          "phone": "+1-202-785-1277",
+          "address": "1739 N Street NW, Washington, DC 20036",
+          "cuisineTags": [
+            "American"
+          ]
+        },
+        {
+          "title": "Amparo Fondita",
+          "website": "https://www.amparofondita.com/",
+          "phone": "+1-202-621-8166",
+          "address": "2002 P Street NW, Washington, DC 20036",
+          "cuisineTags": [
+            "Mexican"
+          ]
+        },
+        {
+          "title": "Ben's Chili Bowl",
+          "website": "https://www.benschilibowl.com/locations",
+          "phone": "+1-202-667-0909",
+          "address": "1213 U Street NW, Washington, DC 20009",
+          "cuisineTags": [
+            "American",
+            "Diner"
+          ]
+        },
+        {
+          "title": "Kathmandu Tapas & Cocktails",
+          "website": "https://kathmandu-dc.site/",
+          "phone": "+1-202-498-2447",
+          "address": "1342 U Street NW, Washington, DC 20009",
+          "cuisineTags": [
+            "Nepalese",
+            "Tapas"
+          ]
+        },
+        {
+          "title": "Doi Moi",
+          "website": "https://www.doimoidc.com/",
+          "phone": "+1-202-733-5131",
+          "address": "1800 14th Street NW, Washington, DC 20009",
+          "cuisineTags": [
+            "Southeast Asian",
+            "Thai"
+          ]
+        },
+        {
+          "title": "Pascual",
+          "website": "https://www.pascualdc.com/",
+          "address": "732 Maryland Avenue NE, Washington, DC 20002",
+          "cuisineTags": [
+            "Mexican",
+            "Live Fire"
+          ]
+        },
+        {
+          "title": "MITA",
+          "website": "https://www.mitadc.com/",
+          "phone": "+1-202-929-7792",
+          "address": "804 V Street NW, Washington, DC 20001",
+          "cuisineTags": [
+            "Vegan",
+            "Tasting Menu"
+          ]
+        },
+        {
+          "title": "Nina May",
+          "website": "https://www.ninamaydc.com/",
+          "phone": "+1-202-518-3609",
+          "address": "1337 11th Street NW, Washington, DC 20001",
+          "cuisineTags": [
+            "New American",
+            "Farm To Table"
+          ]
+        },
+        {
+          "title": "Baan Siam",
+          "website": "https://www.baansiamdc.com/",
+          "phone": "+1-202-588-5889",
+          "address": "425 I Street NW, Washington, DC 20001",
+          "cuisineTags": [
+            "Thai"
+          ]
+        },
+        {
+          "title": "Little Pearl",
+          "website": "https://www.littlepearldc.com/location/little-pearl/",
+          "phone": "+1-202-618-1868",
+          "address": "921 Pennsylvania Avenue SE, Washington, DC 20003",
+          "cuisineTags": [
+            "New American",
+            "Wine Bar"
+          ]
+        }
+      ]
+    }
+  ]
+}
