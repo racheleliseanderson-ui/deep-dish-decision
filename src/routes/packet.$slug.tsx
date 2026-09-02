@@ -18,8 +18,8 @@ import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react
 
 export const Route = createFileRoute("/packet/$slug")({
   loader: async ({ params }): Promise<{ record: RestaurantRecord }> => {
-    const { bySlug } = await import("@/lib/dataset");
-    const record = bySlug.get(params.slug);
+    const { loadRecordBySlug } = await import("@/lib/region-load");
+    const record = await loadRecordBySlug(params.slug);
     if (!record) throw notFound();
     return { record };
   },

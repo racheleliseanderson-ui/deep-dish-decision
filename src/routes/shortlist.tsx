@@ -17,9 +17,9 @@ import {
   spendLine,
 } from "@/lib/live";
 import { decodeSituation } from "@/lib/situation-url";
+import { useRecordsBySlug } from "@/hooks/use-records-by-slug";
 
 export const Route = createFileRoute("/shortlist")({
-  loader: () => import("@/lib/dataset"),
   head: () => ({
     meta: [
       { title: "Night Plan — your shortlisted restaurant records" },
@@ -42,7 +42,6 @@ export const Route = createFileRoute("/shortlist")({
 });
 
 function Shortlist() {
-  const { bySlug } = Route.useLoaderData();
   const { slugs, remove, clear, move } = useShortlist();
   const enrichment = useEnrichmentSignals();
   // A night plan reached from a shared situation link keeps that situation, so
@@ -51,7 +50,7 @@ function Shortlist() {
   const situation = search ? decodeSituation(search) : emptySituation;
   const now = useMinuteClock();
 
-  const records = slugs.map((s) => bySlug.get(s)).filter((r): r is RestaurantRecord => Boolean(r));
+  const { records } = useRecordsBySlug(slugs);
   const { rows: live } = useLiveRows(records);
 
   const rows = records.map((r) => ({

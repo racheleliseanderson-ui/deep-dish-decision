@@ -1,11 +1,18 @@
-import { dataset, records, type RestaurantRecord } from "@/lib/dataset";
-import { topOccasion } from "@/lib/intelligence";
-
 /**
- * Derived corpus intelligence. Nothing here invents evidence — every number is
- * counted or averaged from fields already recorded on the case files. Where a
- * field is unstated it is counted as unstated, never inferred.
+ * The atlas aggregates, as data.
+ *
+ * /atlas used to import src/lib/atlas-compute.ts, which imports the whole
+ * corpus — so opening the page downloaded a 5.4 MB JavaScript chunk to render
+ * a few hundred counts and averages. The numbers are deterministic and change
+ * only when the corpus does, so they are computed once at build time
+ * (scripts/build-atlas.ts) and read here: 101 KB instead of 5.4 MB.
+ *
+ * Same export names as before, so the page did not have to be rewritten around
+ * this. The two exceptions are `unreachable` and `fullCaseFiles`, which were
+ * only ever read for their length — they are counts now, because serialising
+ * ~600 records to render two numbers would have undone the point.
  */
+import raw from "@/data/atlas.json";
 
 export type Facet = {
   label: string;
@@ -17,115 +24,87 @@ export type Facet = {
   reachable: number;
 };
 
-function facet(label: string, rows: RestaurantRecord[], total: number): Facet {
-  const unknowns = rows.reduce((a, r) => a + r.unknownsCount, 0);
-  return {
-    label,
-    count: rows.length,
-    share: total ? Math.round((rows.length / total) * 100) : 0,
-    thin: rows.filter((r) => r.thinFieldCount >= 4).length,
-    conflicts: rows.filter((r) => r.hasOfficialConflict).length,
-    avgUnknowns: rows.length ? Math.round((unknowns / rows.length) * 10) / 10 : 0,
-    reachable: rows.filter((r) => r.hasPhone).length,
-  };
-}
-
-function groupBy(key: (r: RestaurantRecord) => string[]): Facet[] {
-  const map = new Map<string, RestaurantRecord[]>();
-  for (const r of records) {
-    const keys = key(r);
-    for (const k of keys.length ? keys : ["Unstated"]) {
-      const list = map.get(k) ?? [];
-      list.push(r);
-      map.set(k, list);
-    }
-  }
-  return Array.from(map.entries())
-    .map(([label, rows]) => facet(label, rows, records.length))
-    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
-}
-
-export const byRegionGroup = groupBy((r) => [r.regionGroup || r.region]);
-export const byStateProvince = groupBy((r) => [r.stateProvince || "Unstated"]);
-export const byCity = groupBy((r) => {
-  const city = (r.city || "").trim();
-  const state = (r.stateProvince || "").trim();
-  if (!city) return ["Unstated city"];
-  return [state ? `${city}, ${state}` : city];
-});
-export const thinnestMetros = [...byCity].sort(
-  (a, b) => a.count - b.count || a.label.localeCompare(b.label),
-);
-export const densestMetros = byCity;
-export const byCuisine = groupBy((r) => r.cuisineTags);
-export const byBookingPath = groupBy((r) => r.bookingPlatforms);
-export const bySpendBand = groupBy((r) => r.spendBands ?? []);
-export const byPlanningLoad = groupBy((r) => (r.planningLoad ? [r.planningLoad] : []));
-export const byDaypart = groupBy((r) => r.daypartTags ?? []);
-export const byServiceStyle = groupBy((r) => r.serviceStyles);
-export const byAccessibility = groupBy((r) => r.accessibilityTags);
-export const byDietary = groupBy((r) => r.dietaryTags);
-
-/** Which occasion each record reads strongest for, on its own evidence. */
-export const byStrongestOccasion = (() => {
-  const map = new Map<string, RestaurantRecord[]>();
-  for (const r of records) {
-    const k = topOccasion(r).occasion;
-    const list = map.get(k) ?? [];
-    list.push(r);
-    map.set(k, list);
-  }
-  return Array.from(map.entries())
-    .map(([label, rows]) => facet(label, rows, records.length))
-    .sort((a, b) => b.count - a.count);
-})();
-
-/** Fields that are most often unstated across the corpus — the real gap map. */
-export const gapMap: { field: string; missing: number; share: number }[] = (() => {
-  const counts = new Map<string, number>();
-  for (const r of records) {
-    for (const f of r.thinFields) counts.set(f, (counts.get(f) ?? 0) + 1);
-  }
-  return Array.from(counts.entries())
-    .map(([field, missing]) => ({
-      field,
-      missing,
-      share: Math.round((missing / records.length) * 100),
-    }))
-    .sort((a, b) => b.missing - a.missing);
-})();
-
-export const conflictRecords = records.filter((r) => r.hasOfficialConflict);
-export const overdueRecords = records.filter((r) => r.reviewStatus === "overdue");
-export const dueSoonRecords = records.filter((r) => r.reviewDueSoon);
-export const fullCaseFiles = records.filter((r) => r.isFullCaseFile);
-export const unreachable = records.filter((r) => !r.hasPhone);
-
-export const depthLeaders = [...records]
-  .sort((a, b) => b.depthFilled - a.depthFilled || a.unknownsCount - b.unknownsCount)
-  .slice(0, 8);
-
-export const thinnest = [...records]
-  .sort((a, b) => b.thinFieldCount - a.thinFieldCount || b.unknownsCount - a.unknownsCount)
-  .slice(0, 8);
-
-export const corpus = {
-  count: records.length,
-  regions: dataset.regions,
-  regionGroups: byRegionGroup.length,
-  cuisines: byCuisine.length,
-  bookingPaths: byBookingPath.length,
-  reachable: records.filter((r) => r.hasPhone).length,
-  fullCaseFiles: fullCaseFiles.length,
-  conflicts: conflictRecords.length,
-  avgDepth:
-    Math.round(
-      (records.reduce((a, r) => a + r.depthFilled / Math.max(1, r.depthTotal), 0) /
-        records.length) *
-        100,
-    ) || 0,
-  totalUnknowns: records.reduce((a, r) => a + r.unknownsCount, 0),
-  totalThin: records.reduce((a, r) => a + r.thinFieldCount, 0),
-  generatedAt: dataset.generatedAt,
-  sourceSync: dataset.sourceSync,
+/** The fields src/routes/atlas.tsx renders off a record. */
+export type AtlasRecord = {
+  slug: string;
+  title: string;
+  region: string;
+  recordId: string;
+  depthLabel: string;
+  unknownsCount: number;
+  thinFieldCount: number;
+  reviewedAt: string;
+  nextReviewAt: string;
+  conflict: string;
 };
+
+type AtlasFile = {
+  generatedAt: string;
+  corpus: {
+    count: number;
+    regions: number;
+    regionGroups: number;
+    cuisines: number;
+    bookingPaths: number;
+    reachable: number;
+    fullCaseFiles: number;
+    conflicts: number;
+    avgDepth: number;
+    totalUnknowns: number;
+    totalThin: number;
+    generatedAt: string;
+    sourceSync: string;
+  };
+  gapMap: { field: string; missing: number; share: number }[];
+  unreachableCount: number;
+  fullCaseFileCount: number;
+} & Record<string, unknown>;
+
+const data = raw as unknown as AtlasFile;
+const facets = (key: string) => (data[key] ?? []) as Facet[];
+const rows = (key: string) => (data[key] ?? []) as AtlasRecord[];
+
+export const corpus = data.corpus;
+export const gapMap = data.gapMap;
+
+export const byRegionGroup = facets("byRegionGroup");
+export const byStateProvince = facets("byStateProvince");
+export const byCity = facets("byCity");
+export const thinnestMetros = facets("thinnestMetros");
+export const densestMetros = facets("densestMetros");
+export const byCuisine = facets("byCuisine");
+export const byBookingPath = facets("byBookingPath");
+export const bySpendBand = facets("bySpendBand");
+export const byPlanningLoad = facets("byPlanningLoad");
+export const byDaypart = facets("byDaypart");
+export const byServiceStyle = facets("byServiceStyle");
+export const byAccessibility = facets("byAccessibility");
+export const byDietary = facets("byDietary");
+export const byStrongestOccasion = facets("byStrongestOccasion");
+
+export const conflictRecords = rows("conflictRecords");
+export const overdueRecords = rows("overdueRecords");
+export const dueSoonRecords = rows("dueSoonRecords");
+export const depthLeaders = rows("depthLeaders");
+export const thinnest = rows("thinnest");
+
+export const unreachableCount = data.unreachableCount;
+export const fullCaseFileCount = data.fullCaseFileCount;
+
+/** The five strongest records per occasion, precomputed. See atlas-compute.ts. */
+export type AtlasPick = AtlasRecord & {
+  serviceSummary: string;
+  occasionFit: string;
+  city: string;
+  regionGroup: string;
+  cuisineTags: string[];
+  spendBands: string[];
+  bookingPlatforms: string[];
+};
+export const topPicksByOccasion = (data["topPicksByOccasion"] ?? {}) as Record<
+  string,
+  (AtlasPick & { score: number })[]
+>;
+
+/** When these numbers were last computed from the corpus. */
+export const atlasGeneratedAt = data.generatedAt;

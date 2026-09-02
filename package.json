@@ -10,6 +10,8 @@
     "build:dev": "vite build --mode development",
     "build:live": "node scripts/pipeline/build-live-index.mjs",
     "build:enrichment": "node scripts/pipeline/split-enrichment.mjs",
+    "build:atlas": "vite-node scripts/build-atlas.ts",
+    "build:slug-index": "node scripts/pipeline/build-slug-index.mjs",
     "build:visuals": "node scripts/build-image-derivatives.mjs",
     "check:generated": "node scripts/check-generated.mjs",
     "preview": "vite preview --host 0.0.0.0 --port 8080",
@@ -33,7 +35,6 @@
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.22",
-    "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-aspect-ratio": "^1.1.8",
@@ -69,7 +70,6 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
-    "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.575.0",
@@ -107,6 +107,7 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
     "vite": "^8.2.0",
+    "vite-node": "^6.0.0",
     "vitest": "^4.1.10"
   }
 }

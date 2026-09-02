@@ -141,7 +141,7 @@ function Atlas() {
     overdueRecords,
     thinnest,
     thinnestMetros,
-    unreachable,
+    unreachableCount,
   } = Route.useLoaderData();
   return (
     <main className="min-h-screen pb-28">
@@ -380,7 +380,7 @@ function Atlas() {
           </div>
 
           <p className="mt-8 max-w-3xl text-[13px] leading-relaxed text-muted-foreground">
-            {unreachable.length} record{unreachable.length === 1 ? " has" : "s have"} no published
+            {unreachableCount} record{unreachableCount === 1 ? " has" : "s have"} no published
             phone line, which means the confirmation pass has to run through the booking platform or
             an email thread. Corpus generated {corpus.generatedAt}; source sync {corpus.sourceSync}.
           </p>

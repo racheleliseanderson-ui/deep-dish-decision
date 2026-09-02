@@ -29,6 +29,8 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const liveDir = join(root, "src/data/live");
 const enrichmentDir = join(root, "src/data/enrichment");
+const atlasFile = join(root, "src/data/atlas.json");
+const slugIndexFile = join(root, "src/data/slug-index.json");
 const visualDir = join(root, "public/visuals/r");
 const count = (d) => (existsSync(d) ? readdirSync(d).filter((f) => !f.startsWith(".")).length : 0);
 
@@ -58,6 +60,33 @@ if (enriched === 0) {
   process.exit(1);
 }
 
+if (!existsSync(slugIndexFile)) {
+  console.warn("slug index missing — rebuilding it");
+  execFileSync(process.execPath, [join(root, "scripts/pipeline/build-slug-index.mjs")], {
+    stdio: "inherit",
+  });
+}
+if (!existsSync(slugIndexFile)) {
+  console.error("src/data/slug-index.json is missing. Every record page would 404.");
+  process.exit(1);
+}
+
+// atlas.json needs TypeScript (it runs the real atlas-compute module rather
+// than a second copy of the scoring logic), so it rebuilds through vite-node.
+if (!existsSync(atlasFile)) {
+  console.warn("atlas aggregates missing — rebuilding them");
+  try {
+    execFileSync("npx", ["vite-node", join(root, "scripts/build-atlas.ts")], { stdio: "inherit", cwd: root });
+  } catch {
+    console.error("could not rebuild src/data/atlas.json. /atlas would render nothing.");
+    process.exit(1);
+  }
+}
+if (!existsSync(atlasFile)) {
+  console.error("src/data/atlas.json is still missing. /atlas would render nothing.");
+  process.exit(1);
+}
+
 const visuals = count(visualDir);
 if (visuals === 0) {
   const manifest = JSON.parse(readFileSync(join(root, "src/data/visual-program.json"), "utf8"));
@@ -79,5 +108,5 @@ if (visuals === 0) {
 }
 
 console.log(
-  `generated assets ok — live index ${live} regions, enrichment ${enriched} regions, ${visuals} image derivatives`,
+  `generated assets ok — live index ${live} regions, enrichment ${enriched} regions, ${visuals} image derivatives, atlas aggregates`,
 );

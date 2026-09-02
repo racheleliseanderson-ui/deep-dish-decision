@@ -7,8 +7,9 @@ import { useMemo, useState } from "react";
 
 export const Route = createFileRoute("/guide")({
   loader: async () => {
-    const [ds, atlas] = await Promise.all([import("@/lib/dataset"), import("@/lib/atlas")]);
-    return { records: ds.records, atlas };
+    // Was `import("@/lib/dataset")` alongside this — 5.4 MB, to score the
+    // corpus in the browser and show five rows. The picks are precomputed now.
+    return { atlas: await import("@/lib/atlas") };
   },
   head: () => ({
     meta: [
@@ -103,18 +104,16 @@ const PITFALLS = [
 ] as const;
 
 function Guide() {
-  const { records, atlas } = Route.useLoaderData();
-  const { byBookingPath, byPlanningLoad, bySpendBand, conflictRecords, corpus, gapMap, unreachable } =
+  const { atlas } = Route.useLoaderData();
+  const { byBookingPath, byPlanningLoad, bySpendBand, conflictRecords, corpus, gapMap, unreachableCount } =
     atlas;
   const [occasion, setOccasion] = useState<Occasion>(OCCASIONS[0]);
 
+  // Precomputed by scripts/build-atlas.ts using the same occasionScore this
+  // page used to run over all 1,094 records on every occasion change.
   const picks = useMemo(
-    () =>
-      [...records]
-        .map((r) => ({ r, score: occasionScore(r, occasion) }))
-        .sort((a, b) => b.score - a.score || a.r.unknownsCount - b.r.unknownsCount)
-        .slice(0, 5),
-    [occasion, records],
+    () => (atlas.topPicksByOccasion[occasion] ?? []).map(({ score, ...r }) => ({ r, score })),
+    [occasion, atlas],
   );
 
   const topGaps = gapMap.slice(0, 5);
@@ -155,7 +154,7 @@ function Guide() {
             />
             <Stat
               label="Rooms with no phone"
-              value={unreachable.length}
+              value={unreachableCount}
               note="Cannot be confirmed by call"
               tone="critical"
             />
@@ -348,7 +347,7 @@ function Guide() {
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   <Chip tone="unknown">{corpus.totalUnknowns} open questions corpus-wide</Chip>
-                  <Chip tone="critical">{unreachable.length} rooms unreachable</Chip>
+                  <Chip tone="critical">{unreachableCount} rooms unreachable</Chip>
                 </div>
               </div>
               <ol className="divide-y divide-border">

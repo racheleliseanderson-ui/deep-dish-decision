@@ -49,3 +49,8 @@ dist-ssr
 # and imported by the route, so Vite hashes them — but they are output, not source.
 # (Committed deliberately: the deploy machine has no ImageMagick. See
 # scripts/check-generated.mjs.)
+
+# Pipeline rollback snapshots. The pipeline writes a dataset copy before each
+# run so a bad pass can be undone; they are local safety, not source. 18.6 MB
+# of them from one afternoon in August had been committed and never left.
+.pipeline-snapshots/
