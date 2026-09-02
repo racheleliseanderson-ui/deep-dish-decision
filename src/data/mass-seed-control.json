@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "batch": 100,
+  "wave": 1,
+  "startedAt": "2026-09-02",
+  "note": "Rolling first-party depth sweep. One hundred oldest/never-enriched restaurant records per wave; database sync follows when Supabase service secrets are configured."
+}
