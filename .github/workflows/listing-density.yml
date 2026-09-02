@@ -1,0 +1,82 @@
+name: Deep Dish verified listing density
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/data/seed-listings-density-*.json"
+
+concurrency:
+  group: deep-dish-listing-density
+  cancel-in-progress: false
+
+jobs:
+  seed:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      RI_PLAYWRIGHT: "0"
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Seed and first-party enrich new listings
+        run: node scripts/pipeline/seed-and-enrich.mjs
+
+      - name: Rebuild consumer data layers
+        shell: bash
+        run: |
+          node scripts/pipeline/extract-first-party-dishes.mjs
+          python3 scripts/build-consumer-layers.py
+          node scripts/pipeline/build-slug-index.mjs
+          node scripts/pipeline/build-live-index.mjs
+          node scripts/pipeline/inject-first-party-dishes.mjs
+          node scripts/pipeline/split-enrichment.mjs
+          node scripts/pipeline/build-queue.mjs
+          node scripts/pipeline/report.mjs
+
+      - name: Validate corpus invariants
+        run: node scripts/corpus-invariants.mjs
+
+      - name: Sync Supabase corpus
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        shell: bash
+        run: |
+          if [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_SERVICE_KEY" ]; then
+            node scripts/db/seed-corpus.mjs
+          else
+            echo "::warning::Supabase service secrets are not configured; repository corpus was seeded but database sync was skipped."
+          fi
+
+      - name: Commit seeded corpus
+        shell: bash
+        run: |
+          git config user.name "Rachel Elise Anderson"
+          git config user.email "Rachel.Elise.Anderson@gmail.com"
+          git add src/data
+          if git diff --staged --quiet; then
+            echo "No corpus changes"
+          else
+            git commit -m "chore(corpus): seed verified restaurant density batch"
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
