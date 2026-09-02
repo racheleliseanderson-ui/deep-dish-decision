@@ -105,6 +105,12 @@ jobs:
             echo "No corpus changes"
           else
             git commit -m "chore(corpus): mass seed ${{ steps.wave.outputs.batch }} owned restaurant records"
-            git pull --rebase origin main
+            # Enrichment snapshots and reports can leave deliberately untracked or
+            # unstaged diagnostics. They are not part of the published corpus and
+            # must not block the rebase of the committed data wave.
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin main
+            git rebase origin/main
             git push origin HEAD:main
           fi
