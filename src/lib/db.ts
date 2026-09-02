@@ -116,6 +116,11 @@ async function restOk(path: string, init: RequestInit & RestOpts = {}): Promise<
 /* ── search ───────────────────────────────────────────────────────────────
  * The one thing JSON genuinely cannot do: look across all 1094 records
  * without loading them. Falls back to the loaded region when unavailable.
+ *
+ * Searches name, place, cuisine, summary prose and known-for dishes. The
+ * dishes were invisible to it until 0007 — "gumbo" returned nothing while the
+ * database held Dooky Chase's gumbo, which is the wrong failure for a product
+ * that means to answer "what should we order".
  */
 
 export type SearchHit = {
@@ -127,6 +132,15 @@ export type SearchHit = {
   lat: number | null;
   lng: number | null;
   score: number;
+  /**
+   * Set only when a known-for dish is the reason this row matched — so the
+   * result can say "known for gumbo" rather than appearing for no visible
+   * reason. Null when the name, place, cuisine or summary matched instead.
+   *
+   * Dish names come from review patterns, not the restaurant's own pages, and
+   * anything rendering this should keep that distinction visible.
+   */
+  matched_dish: string | null;
 };
 
 export async function searchCorpus(

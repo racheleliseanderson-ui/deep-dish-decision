@@ -29,13 +29,14 @@ psql "$SUPABASE_DB_URL" -f supabase/migrations/0003_enrichment.sql
 psql "$SUPABASE_DB_URL" -f supabase/migrations/0004_plan_id_is_the_capability.sql
 psql "$SUPABASE_DB_URL" -f supabase/migrations/0005_lock_down_maintenance.sql
 psql "$SUPABASE_DB_URL" -f supabase/migrations/0006_corpus_coverage.sql
+psql "$SUPABASE_DB_URL" -f supabase/migrations/0007_search_the_dishes.sql
 
 # then load the corpus (idempotent — safe to re-run after any pipeline pass)
 npm run db:seed:dry      # parse and report, write nothing
 SUPABASE_URL=... SUPABASE_SERVICE_KEY=... npm run db:seed
 ```
 
-All six migrations are applied to `pqbqvrmhbxowpqzcenod` and were exercised
+All seven migrations are applied to `pqbqvrmhbxowpqzcenod` and were exercised
 against PostgreSQL 16 with the full 1,094-record corpus before being committed.
 
 ## There is no sign-in
@@ -79,16 +80,20 @@ false and every call returns an empty result without touching the network.
 
 ## Seeding, and why coverage is reported
 
-The JSON is the source of truth and holds all 1,094 records. Postgres holds
-however many have been pushed to it — currently **258 across 57 regions**,
-loaded through the MCP connection because the sandbox has no route to
-`supabase.co`.
+The JSON is the source of truth. Postgres now holds **all 1,094 records across
+167 regions**, 1,003 of them with the corpus prose in `search_text`.
+
+Loaded with `node scripts/db/seed-corpus.mjs` from a machine that can reach
+Supabase. Note *node*, not npm: the seeder imports only node builtins and calls
+global fetch, so a broken npm does not stop it — something that cost a couple
+of failed attempts to work out.
 
 A half-seeded database is more dangerous than an empty one. Search returns
 *something*, so a restaurant that simply has not been loaded yet reads as one
 Deep Dish has never heard of. `corpus_coverage` (0006) exposes the real number
 and `coverageIsComplete()` refuses to call a partial index complete — including
 when the check itself fails, because unknown must never resolve to "complete".
+It now reports complete, but the guard stays: the corpus grows.
 
 To load the rest, from a machine that can reach Supabase:
 
@@ -145,3 +150,21 @@ returns 0 rows, a prefix returns 0, `%` returns 0, the exact id returns 1.
 `0005` then revoked `purge_expired_night_plans()` from `anon` — the linter was
 right that an unauthenticated endpoint which deletes rows and reports the count
 was not something anyone had chosen.
+
+### Search could not see the dishes
+
+`search_restaurants` read only `restaurants.search_text` — name, place, cuisine
+tags, summary prose. The 77 known-for dish names live in `live_rows.dishes` and
+were invisible to it, so **"gumbo" returned nothing** while the database held
+Dooky Chase's gumbo, and "lasagna" missed The Pink Door.
+
+For a product that means to answer *what should we order*, a search that knows
+the answer and says nothing is worse than one that never knew.
+
+0007 matches dishes alongside the text and returns `matched_dish` — set only
+when a dish is the actual reason a row appeared, so a result can say "known for
+gumbo" instead of surfacing unexplained. Name and place still win where they
+should: "pink door" returns The Pink Door with no dish attribution.
+
+Dish coverage is thin — 77 names across 31 of 1,094 records. That is a data
+gap, not a search gap, and it is what `pipeline:enrich` fills.

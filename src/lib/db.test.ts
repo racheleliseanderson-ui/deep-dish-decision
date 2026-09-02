@@ -238,3 +238,34 @@ describe("coverage is reported, not assumed", () => {
     expect(mod.coverageIsComplete(c)).toBe(false);
   });
 });
+
+describe("search results carry why they matched", () => {
+  const URL = "https://pqbqvrmhbxowpqzcenod.supabase.co";
+
+  afterEach(() => {
+    vi.unstubAllEnvs();
+    vi.resetModules();
+  });
+
+  it("passes a dish attribution through untouched", async () => {
+    vi.resetModules();
+    vi.stubEnv("VITE_SUPABASE_URL", URL);
+    vi.stubEnv("VITE_SUPABASE_ANON_KEY", "test-anon-key");
+    vi.stubGlobal("fetch", () =>
+      Promise.resolve(
+        new Response(
+          JSON.stringify([
+            { slug: "dooky", title: "Dooky Chase's", score: 1, matched_dish: "gumbo" },
+            { slug: "pink", title: "The Pink Door", score: 1, matched_dish: null },
+          ]),
+          { status: 200, headers: { "Content-Type": "application/json" } },
+        ),
+      ),
+    );
+    const mod = await import("@/lib/db");
+    const hits = await mod.searchCorpus("gumbo");
+    expect(hits[0]?.matched_dish).toBe("gumbo");
+    // A name match must not be dressed up as a dish match.
+    expect(hits[1]?.matched_dish).toBeNull();
+  });
+});
