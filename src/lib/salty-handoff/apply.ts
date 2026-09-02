@@ -13,6 +13,12 @@ import {
   type TimingWindow,
 } from "./contract.ts";
 import type { Constraint, Occasion, Situation } from "../intelligence.ts";
+import {
+  mergeNightFromHandoff,
+  nightRecordUrl,
+  readNightRecord,
+  writeNightRecord,
+} from "../salty-night-record.ts";
 
 export { DIET_DISCLAIMER };
 
@@ -98,7 +104,6 @@ export function situationFromHandoff(handoff: SaltyHandoff, current: Situation):
   if (diet.some((d) => /alcohol|zero-?proof/.test(d)) && !next.constraints.includes("Zero-proof / no alcohol")) {
     next.constraints = [...next.constraints, "Zero-proof / no alcohol"];
   }
-  // Planning-level dietary categories never flip the allergy constraint.
   if (diet.length && !next.occasion) next.occasion = "Dietary-sensitive visit";
 
   if (handoff.timing?.time) {
@@ -129,7 +134,12 @@ export function outgoingRestaurantToDesk(opts: {
       ? { room: opts.room, status: opts.status ?? "shortlisted", unresolved }
       : { room: opts.room, status: opts.status ?? "shortlisted" },
   });
-  return { url: handoffUrl(handoff, "/"), handoff };
+  const baseUrl = handoffUrl(handoff, "/");
+  const currentNight = readNightRecord();
+  if (!currentNight) return { url: baseUrl, handoff };
+  const nextNight = mergeNightFromHandoff(currentNight, handoff, "desk");
+  writeNightRecord(nextNight);
+  return { url: nightRecordUrl(baseUrl, nextNight), handoff };
 }
 
 export function isEmptySituation(s: Situation): boolean {
