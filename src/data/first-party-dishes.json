@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-02T17:02:11.970Z",
-  "note": "Named only where the restaurant's own pages or owned-site quotes mention the item. Existing verified names are preserved; ambiguous cuisine language is never promoted as a dish.",
+  "generatedAt": "2026-09-02T17:05:23Z",
+  "note": "Named only where the restaurant's own pages or owned-site quotes mention the item. Empty means not named — never invented.",
   "records": {
     "hama-hama-oyster-saloon": [
       "oysters grown and harvested by Hama Hama"
@@ -14,28 +14,34 @@
     "luccas": [
       "house-made pasta"
     ],
+    "real-de-oaxaca": [
+      "his famous cuisine and cultural events"
+    ],
+    "sichuan-impression": [
+      "its bold, spicy flavors rooted in China’s Sichuan province"
+    ],
+    "lao-sze-chuan": [
+      "spicy Chinese dishes, handmade dumplings, and flavorful stir"
+    ],
     "civico-1845-san-diego": [
       "house-made pasta"
     ],
     "joe-s-kansas-city-bar-b-que-kansas-city": [
       "Z-man sandwich",
-      "burnt ends",
-      "our ribs, Z-man sandwich, burnt ends, brisket, & more! Stop by or send BBQ onlin"
+      "burnt ends"
     ],
     "hat-yai-portland": [
       "Fried Chicken"
     ],
     "screen-door-portland": [
       "fried chicken",
-      "chicken and waffles",
-      "fried chicken, chicken and waffles, brunch, and dinner"
+      "chicken and waffles"
     ],
     "campo-enoteca-manchester": [
       "house-made pasta"
     ],
     "peppercorn-s-grill-hartford": [
-      "Orange Ravioli, Osso Bucco, Veal Chop, and Crab Crusted",
-      "Orange Ravioli, Osso Bucco, Veal Chop, and Crab Crusted Grouper, all crafte"
+      "Orange Ravioli, Osso Bucco, Veal Chop, and Crab Crusted"
     ],
     "brochu-s-family-tradition-savannah": [
       "Fried chicken"
@@ -44,38 +50,8 @@
       "fried chicken"
     ],
     "modern-apizza-new-haven": [
-      "brick-oven pizza",
-      "its delicious, brick-oven pizza"
-    ],
-    "real-de-oaxaca": [
-      "his famous cuisine and cultural events"
-    ],
-    "sichuan-impression": [
-      "its bold, spicy flavors rooted in China’s Sichuan province"
-    ],
-    "lao-sze-chuan": [
-      "spicy Chinese dishes, handmade dumplings, and flavorful stir-fries"
-    ],
-    "anima-by-edo-las-vegas": [
-      "Handmade pasta"
-    ],
-    "allora-sacramento": [
-      "handmade pasta"
-    ],
-    "bata-tucson": [
-      "its modern approach to food and deep respect for local sourcing"
-    ],
-    "kemuri-little-rock": [
-      "its sushi and exceptional Asian Fusion cuisine"
-    ],
-    "current-fish-oyster-salt-lake-city": [
-      "it title"
-    ],
-    "volturno-worcester": [
-      "handmade pasta"
-    ],
-    "independent-ale-house-rapid-city": [
-      "its namesake—independently, intelligently crafted beers—but that doesn’t mean we"
+      "its delicious, brick-oven pizza",
+      "brick-oven pizza"
     ]
   }
 }

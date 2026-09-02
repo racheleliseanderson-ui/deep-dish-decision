@@ -1,6 +1,6 @@
 {
   "regionGroup": "Illinois",
-  "generatedAt": "2026-09-02T17:02:12.107Z",
+  "generatedAt": "2026-09-02T17:05:23.959Z",
   "records": {
     "stk-steakhouse": {
       "ll": [
@@ -1016,7 +1016,7 @@
       "category": "Chinese Restaurant",
       "dishes": [
         {
-          "name": "spicy Chinese dishes, handmade dumplings, and flavorful stir-fries",
+          "name": "spicy Chinese dishes, handmade dumplings, and flavorful stir",
           "source": "first-party"
         }
       ]
@@ -1225,6 +1225,46 @@
       },
       "mapUri": "https://maps.google.com/?cid=8254450298239825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "category": "Chinese Restaurant"
+    },
+    "milli-by-metric-chicago": {
+      "ll": [
+        41.89471,
+        -87.64103
+      ],
+      "llSource": "city",
+      "tz": "America/Chicago"
+    },
+    "oliver-s-chicago": {
+      "ll": [
+        41.89471,
+        -87.64103
+      ],
+      "llSource": "city",
+      "tz": "America/Chicago"
+    },
+    "maxwells-trading-chicago": {
+      "ll": [
+        41.89471,
+        -87.64103
+      ],
+      "llSource": "city",
+      "tz": "America/Chicago"
+    },
+    "akahoshi-ramen-chicago": {
+      "ll": [
+        41.89471,
+        -87.64103
+      ],
+      "llSource": "city",
+      "tz": "America/Chicago"
+    },
+    "pompette-chicago": {
+      "ll": [
+        41.89471,
+        -87.64103
+      ],
+      "llSource": "city",
+      "tz": "America/Chicago"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T16:59:35.341Z",
+  "generatedAt": "2026-09-02T17:05:24.223Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -33,7 +33,7 @@
   "summary": {
     "targetMarkets": 124,
     "underFloor": 124,
-    "totalGap": 3175
+    "totalGap": 3156
   },
   "cities": [
     {
@@ -45,12 +45,12 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 21,
-      "gap": 39,
+      "currentCount": 30,
+      "gap": 30,
       "pinned": false,
-      "inserted": 21,
-      "lastRunAt": "2026-08-11T00:03:02.773Z",
-      "note": ""
+      "inserted": 30,
+      "lastRunAt": "2026-09-02T17:04:45.689Z",
+      "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
       "city": "Los Angeles",
@@ -61,12 +61,12 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 13,
-      "gap": 47,
+      "currentCount": 18,
+      "gap": 42,
       "pinned": false,
-      "inserted": 21,
-      "lastRunAt": "2026-08-11T00:03:02.773Z",
-      "note": ""
+      "inserted": 26,
+      "lastRunAt": "2026-09-02T17:04:45.689Z",
+      "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
       "city": "Chicago",
@@ -77,12 +77,12 @@
       "status": "pending",
       "densityStatus": "under-floor",
       "targetCount": 60,
-      "currentCount": 19,
-      "gap": 41,
+      "currentCount": 24,
+      "gap": 36,
       "pinned": false,
-      "inserted": 21,
-      "lastRunAt": "2026-08-11T00:03:02.773Z",
-      "note": ""
+      "inserted": 26,
+      "lastRunAt": "2026-09-02T17:04:45.689Z",
+      "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
       "city": "Dallas",

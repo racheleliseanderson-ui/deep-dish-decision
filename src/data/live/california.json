@@ -1,6 +1,6 @@
 {
   "regionGroup": "California",
-  "generatedAt": "2026-09-02T17:02:12.107Z",
+  "generatedAt": "2026-09-02T17:05:23.959Z",
   "records": {
     "philippe-the-original": {
       "ll": [
@@ -2937,13 +2937,7 @@
         -121.4944
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles",
-      "dishes": [
-        {
-          "name": "handmade pasta",
-          "source": "first-party"
-        }
-      ]
+      "tz": "America/Los_Angeles"
     },
     "the-firehouse-sacramento": {
       "ll": [
@@ -3654,6 +3648,46 @@
         ]
       ],
       "hoursSource": "first-party-prose"
+    },
+    "corridor-109-los-angeles": {
+      "ll": [
+        34.05379,
+        -118.28447
+      ],
+      "llSource": "city",
+      "tz": "America/Los_Angeles"
+    },
+    "lielle-los-angeles": {
+      "ll": [
+        34.05379,
+        -118.28447
+      ],
+      "llSource": "city",
+      "tz": "America/Los_Angeles"
+    },
+    "kojima-los-angeles": {
+      "ll": [
+        34.05379,
+        -118.28447
+      ],
+      "llSource": "city",
+      "tz": "America/Los_Angeles"
+    },
+    "bar-etoile-los-angeles": {
+      "ll": [
+        34.05379,
+        -118.28447
+      ],
+      "llSource": "city",
+      "tz": "America/Los_Angeles"
+    },
+    "electric-bleu-los-angeles": {
+      "ll": [
+        34.05379,
+        -118.28447
+      ],
+      "llSource": "city",
+      "tz": "America/Los_Angeles"
     }
   }
 }

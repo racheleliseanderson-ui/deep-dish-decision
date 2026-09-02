@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T17:02:11.825Z",
+  "generatedAt": "2026-09-02T17:05:22.951Z",
   "records": {
     "canlis": {
       "google": {
@@ -76486,6 +76486,887 @@
           "http://forsythseafood.com/menu-1"
         ],
         "retrievedAt": "2026-08-31T13:31:19.514Z",
+        "playwrightPages": 0
+      }
+    },
+    "noz-market-new-york": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:04:46.041Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.sevenrooms.com/explore/nozmarket/reservations/create/search/",
+        "reservationPlatform": "SevenRooms",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Two tables in the back room are available for larger parties and private events.",
+        "groupPolicyLanguage": [
+          "Two tables in the back room are available for larger parties and private events."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.nozmarket.com/"
+        ],
+        "retrievedAt": "2026-09-02T17:04:46.041Z",
+        "playwrightPages": 0
+      }
+    },
+    "le-veau-d-or-new-york": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:04:46.849Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 72
+      },
+      "site": {
+        "menuUrl": "https://www.lvdnyc.com/menus",
+        "reservationUrl": "https://www.toasttab.com/le-veau-d-or-129-east-60th-street/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Large Parties & Private Dining Our main dining room accommodates up to four guests per table.",
+        "groupPolicyLanguage": [
+          "Large Parties & Private Dining Our main dining room accommodates up to four guests per table.",
+          "For gatherings beyond four, we are pleased to offer our private dining room upstairs, featuring an exclusive experience."
+        ],
+        "dressCode": "Dress Code While we don't enforce a strict dress code, we always love when our guests make an effort!",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Private Events | Le Veau d’Or",
+            "sourceUrl": "https://www.lvdnyc.com/private-events/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.lvdnyc.com/",
+          "https://www.lvdnyc.com/faq/",
+          "https://www.lvdnyc.com/private-events/",
+          "https://www.lvdnyc.com/menus"
+        ],
+        "retrievedAt": "2026-09-02T17:04:46.849Z",
+        "playwrightPages": 0
+      }
+    },
+    "gallaghers-steakhouse-new-york": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:04:49.443Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 72
+      },
+      "site": {
+        "menuUrl": "https://www.gallaghersnysteakhouse.com/menus-new-york/",
+        "reservationUrl": "https://www.opentable.com/gallaghers-steakhouse-manhattan?corrid=828da05d-8ea5-4ef4-958f-9937339a7e7b&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2025-09-11T19%3A00%3A00",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (212) 586-5000"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Steak House"
+        ],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "View Menus Private Events Our private rooms can accommodate as few as 10 people for a private dinner, can expand to accommodate as many as 95 guests for a sit down dinner, or 125 persons for cocktails, with flexible menus to cater to your every need.",
+        "groupPolicyLanguage": [
+          "View Menus Private Events Our private rooms can accommodate as few as 10 people for a private dinner, can expand to accommodate as many as 95 guests for a sit down dinner, or 125 persons for cocktails, with flexible menus to cater to your every need.",
+          "For inquiries regarding private events or large group reservations, please visit our \"Private Events\" pages and fill out the respective inquiry form.",
+          "General Inquiries Media & Filming Inquiries Private Events - Please inquire via link on Private Events page Reservations - Please reserve through Opentable or call the respective restaurant Please, enter a valid which location are you inquiring about?"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (212) 586-5000",
+            "sourceUrl": "https://www.gallaghersnysteakhouse.com/location/gallaghers-nyc/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.gallaghersnysteakhouse.com/location/gallaghers-nyc/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Steak House",
+            "sourceUrl": "https://www.gallaghersnysteakhouse.com/location/gallaghers-nyc/"
+          },
+          {
+            "quote": "og:description: Visit Gallaghers in New York, NY at 228 W 52nd St. Open Sunday - Thursday from 11:45am - 10pm, and Friday - Saturday from 11:45am - 11pm.",
+            "sourceUrl": "https://www.gallaghersnysteakhouse.com/location/gallaghers-nyc/"
+          },
+          {
+            "quote": "title: Locations | Gallaghers in New York City, NY",
+            "sourceUrl": "https://www.gallaghersnysteakhouse.com/location/gallaghers-nyc/"
+          },
+          {
+            "quote": "og:description: See menus for the Gallaghers Steakhouse in FL, NY. Serving steaks for delivery, takeaway, dine-in!",
+            "sourceUrl": "https://www.gallaghersnysteakhouse.com/menus-new-york/"
+          },
+          {
+            "quote": "title: New York City Menus | Gallaghers Steakhouse in New York City, NY",
+            "sourceUrl": "https://www.gallaghersnysteakhouse.com/menus-new-york/"
+          },
+          {
+            "quote": "og:description: Send a message to Gallaghers Steakhouse in NYC and Boca Raton, FL",
+            "sourceUrl": "https://www.gallaghersnysteakhouse.com/contact/"
+          },
+          {
+            "quote": "title: Contact | Gallaghers Steakhouse in NYC and Boca Raton, FL",
+            "sourceUrl": "https://www.gallaghersnysteakhouse.com/contact/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.gallaghersnysteakhouse.com/location/gallaghers-nyc/",
+          "https://www.gallaghersnysteakhouse.com/menus-new-york/",
+          "https://www.gallaghersnysteakhouse.com/contact/"
+        ],
+        "retrievedAt": "2026-09-02T17:04:49.443Z",
+        "playwrightPages": 0
+      }
+    },
+    "sky-pavilion-new-york": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:04:51.370Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.skypavilionnyc.com/menu",
+        "reservationUrl": "https://www.skypavilionnyc.com/reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Sky Pavilion NYC 川雲涧 is an authentic Chinese Szechuan restaurant at the heart of Manhattan, right next to the Times Squares. Headed by previous Michelin-starred Executive Chef Zhongqing Wang. Featured on NYT, Eater NY, National Television.",
+            "sourceUrl": "https://www.skypavilionnyc.com/"
+          },
+          {
+            "quote": "title: Menu &mdash; Sky Pavilion",
+            "sourceUrl": "https://www.skypavilionnyc.com/menu"
+          },
+          {
+            "quote": "title: About Us &mdash; Sky Pavilion",
+            "sourceUrl": "https://www.skypavilionnyc.com/about"
+          },
+          {
+            "quote": "title: Reservations &mdash; Sky Pavilion",
+            "sourceUrl": "https://www.skypavilionnyc.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.skypavilionnyc.com/",
+          "https://www.skypavilionnyc.com/menu",
+          "https://www.skypavilionnyc.com/about",
+          "https://www.skypavilionnyc.com/reservations"
+        ],
+        "retrievedAt": "2026-09-02T17:04:51.370Z",
+        "playwrightPages": 0
+      }
+    },
+    "hyderabadi-zaiqa-midtown-east-new-york": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:04:54.109Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://hyderabadizaiqa2026.com/"
+        ],
+        "retrievedAt": "2026-09-02T17:04:54.109Z",
+        "playwrightPages": 0
+      }
+    },
+    "s-p-lunch-new-york": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:04:55.247Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://sandwich.place/"
+        ],
+        "retrievedAt": "2026-09-02T17:04:55.247Z",
+        "playwrightPages": 0
+      }
+    },
+    "zimmi-s-new-york": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:04:56.472Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.zimmisnyc.com/p/menu",
+        "reservationUrl": "https://resy.com/cities/new-york-ny/venues/zimmis",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "We reserve seats for parties of 1-4 for dinner reservations at both dining room tables and our bar, though we do often have room for walk-ins.",
+        "groupPolicyLanguage": [
+          "We reserve seats for parties of 1-4 for dinner reservations at both dining room tables and our bar, though we do often have room for walk-ins.",
+          "For parties of 5-8, we offer a 3 or 4 course, family style, prix fixe menu of the day's best offerings for $95, or $125 respectively, plus tax, 22% gratuity.",
+          "For private events and larger groups, we offer a full buyout of the restaurant, for which you can reach out to our events team at events@zimmisnyc.com."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: 72 Bedford St, New York City",
+            "sourceUrl": "https://www.zimmisnyc.com/"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.zimmisnyc.com/",
+          "https://www.zimmisnyc.com/p/reserve",
+          "https://www.zimmisnyc.com/p/about",
+          "https://www.zimmisnyc.com/p/menu"
+        ],
+        "retrievedAt": "2026-09-02T17:04:56.472Z",
+        "playwrightPages": 0
+      }
+    },
+    "crevette-new-york": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:04:58.978Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.crevettenyc.com/menu",
+        "reservationUrl": "https://resy.com/cities/new-york-ny/venues/crevette?date=2026-07-21&seats=2",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Large Party Seated Reservations: for 7-14 guests Full Buyouts for Lunch or Dinner: Standing events for up to 100 guests, seated dinner for up to 80 Events & Large Parties",
+        "groupPolicyLanguage": [
+          "Large Party Seated Reservations: for 7-14 guests Full Buyouts for Lunch or Dinner: Standing events for up to 100 guests, seated dinner for up to 80 Events & Large Parties"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [
+          "All cancellations within 12 hours of the reservation are charged $50 per person."
+        ],
+        "jsonLdLanguage": [],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.crevettenyc.com/",
+          "https://www.crevettenyc.com/menu",
+          "https://www.crevettenyc.com/info"
+        ],
+        "retrievedAt": "2026-09-02T17:04:58.978Z",
+        "playwrightPages": 0
+      }
+    },
+    "smithereens-new-york": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:00.808Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.smithereensnyc.com/menus",
+        "reservationUrl": "https://www.toasttab.com/smithereens-414-e-9th-street-gl/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: menus &mdash; Smithereens",
+            "sourceUrl": "https://www.smithereensnyc.com/menus"
+          },
+          {
+            "quote": "title: book &mdash; Smithereens",
+            "sourceUrl": "https://www.smithereensnyc.com/book"
+          },
+          {
+            "quote": "title: about &mdash; Smithereens",
+            "sourceUrl": "https://www.smithereensnyc.com/about"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.smithereensnyc.com/",
+          "https://www.smithereensnyc.com/menus",
+          "https://www.smithereensnyc.com/book",
+          "https://www.smithereensnyc.com/about"
+        ],
+        "retrievedAt": "2026-09-02T17:05:00.808Z",
+        "playwrightPages": 0
+      }
+    },
+    "corridor-109-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:03.482Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.exploretock.com/corridor109/",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Visit &mdash; Corridor 109",
+            "sourceUrl": "https://www.corridor109.com/visit"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.corridor109.com/",
+          "https://www.corridor109.com/visit"
+        ],
+        "retrievedAt": "2026-09-02T17:05:03.482Z",
+        "playwrightPages": 0
+      }
+    },
+    "lielle-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:04.909Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.opentable.com/r/lielle-reservations-los-angeles?restref=1389481&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Lielle offers an elegant, guest-focused dining experience in West Los Angeles, featuring a creative Californian menu shaped by strong relationships with local farmers and artisans. The atmosphere is both intimate and refined, with an attentive ",
+            "sourceUrl": "https://www.lielle.la/"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.lielle.la/",
+          "https://www.lielle.la/contact"
+        ],
+        "retrievedAt": "2026-09-02T17:05:04.909Z",
+        "playwrightPages": 0
+      }
+    },
+    "kojima-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:06.409Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://kojima-2130.square.site/"
+        ],
+        "retrievedAt": "2026-09-02T17:05:06.409Z",
+        "playwrightPages": 0
+      }
+    },
+    "bar-etoile-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:07.590Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.baretoile.com/food-menu",
+        "reservationUrl": "https://resy.com/cities/los-angeles-ca/venues/bar-etoile?date=2024-12-16&seats=2",
+        "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Menu 1 &mdash; Bar Etoile",
+            "sourceUrl": "https://www.baretoile.com/food-menu"
+          },
+          {
+            "quote": "title: Visit &mdash; Bar Etoile",
+            "sourceUrl": "https://www.baretoile.com/visit"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.baretoile.com/",
+          "https://www.baretoile.com/food-menu",
+          "https://www.baretoile.com/visit"
+        ],
+        "retrievedAt": "2026-09-02T17:05:07.590Z",
+        "playwrightPages": 0
+      }
+    },
+    "electric-bleu-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:09.507Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://electricbleu.com/wp-content/uploads/2026/08/Menus-Food-Wine-Aug-29.pdf",
+        "reservationUrl": "https://order.toasttab.com/online/electricbleu",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "twitter:description: Visit the post for more.",
+            "sourceUrl": "https://electricbleu.com/"
+          },
+          {
+            "quote": "og:description: A Mar Vista neighborhood restaurant from Chef Craig Hopson, serving California-kissed French bistro fare for special nights and for every night. Good food, good wines and good times. *** Corkage $…",
+            "sourceUrl": "https://electricbleu.com/about"
+          },
+          {
+            "quote": "meta description: A Mar Vista neighborhood restaurant from Chef Craig Hopson, serving California-kissed French bistro fare for special nights and for every night. Good food, good wines and good times. *** Corkage $45 per bottle. One corkage fee waived for each",
+            "sourceUrl": "https://electricbleu.com/about"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://electricbleu.com/",
+          "https://electricbleu.com/about"
+        ],
+        "retrievedAt": "2026-09-02T17:05:09.507Z",
+        "playwrightPages": 0
+      }
+    },
+    "milli-by-metric-chicago": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:12.436Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/millibymetric",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.milliallday.com/"
+        ],
+        "retrievedAt": "2026-09-02T17:05:12.436Z",
+        "playwrightPages": 0
+      }
+    },
+    "oliver-s-chicago": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:13.543Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.eatatolivers.com/drinks",
+        "reservationUrl": "https://www.opentable.com/r/olivers-chicago",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "reservations are available for parties of 1-6 guests.",
+        "groupPolicyLanguage": [
+          "reservations are available for parties of 1-6 guests.",
+          "see our current ticketed events here private events please fill out the form below to get more information about private events at Oliver’s."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: reservations &mdash; oliver's",
+            "sourceUrl": "https://www.eatatolivers.com/reservations"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.eatatolivers.com/",
+          "https://www.eatatolivers.com/drinks",
+          "https://www.eatatolivers.com/reservations",
+          "https://www.eatatolivers.com/events"
+        ],
+        "retrievedAt": "2026-09-02T17:05:13.543Z",
+        "playwrightPages": 0
+      }
+    },
+    "maxwells-trading-chicago": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:16.197Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 78
+      },
+      "site": {
+        "menuUrl": "https://www.maxwellstrading.com/food",
+        "reservationUrl": "https://www.toasttab.com/maxwellstrading/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-312-896-4410"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday 16:30 21:00",
+          "JSON-LD openingHoursSpecification: Friday,Saturday 16:30 22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Contemporary American, Asian"
+        ],
+        "dietaryLanguage": [
+          "Please let your server know of any food allergies A 20% suggested gratuity is applied to your bill to ensure equitable pay for our entire team."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-312-896-4410",
+            "sourceUrl": "https://www.maxwellstrading.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://www.maxwellstrading.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Contemporary American, Asian",
+            "sourceUrl": "https://www.maxwellstrading.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday,Wednesday,Thursday 16:30 21:00",
+            "sourceUrl": "https://www.maxwellstrading.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday,Saturday 16:30 22:00",
+            "sourceUrl": "https://www.maxwellstrading.com/"
+          },
+          {
+            "quote": "JSON-LD amenityFeature (first-party statement, not a verified access route): Wheelchair accessible",
+            "sourceUrl": "https://www.maxwellstrading.com/"
+          },
+          {
+            "quote": "og:description: Maxwells Trading is a bold, seasonal American restaurant with Asian influences in Chicago’s Kinzie Industrial Corridor near Fulton Market. Set beneath a working rooftop farm, chefs Erling Wu-Bower and Chris Jung draw on their multicultural back",
+            "sourceUrl": "https://www.maxwellstrading.com/"
+          },
+          {
+            "quote": "meta description: Maxwells Trading is a bold, seasonal American restaurant with Asian influences in Chicago’s Kinzie Industrial Corridor near Fulton Market. Set beneath a working rooftop farm, chefs Erling Wu-Bower and Chris Jung draw on their multicultural ba",
+            "sourceUrl": "https://www.maxwellstrading.com/"
+          },
+          {
+            "quote": "og:description: Maxwells Trading is an Underscore Hospitality restaurant located directly beneath a rooftop farm. Led by James Beard “Best Chef: Great Lakes” (2025) finalists Chef-Partner Erling Wu-Bower and Executive Chef Chris Jung, Maxwells Trading is a bol",
+            "sourceUrl": "https://www.maxwellstrading.com/about"
+          },
+          {
+            "quote": "meta description: Maxwells Trading is an Underscore Hospitality restaurant located directly beneath a rooftop farm. Led by James Beard “Best Chef: Great Lakes” (2025) finalists Chef-Partner Erling Wu-Bower and Executive Chef Chris Jung, Maxwells Trading is a b",
+            "sourceUrl": "https://www.maxwellstrading.com/about"
+          },
+          {
+            "quote": "title: About Maxwells Trading &mdash; Maxwells Trading",
+            "sourceUrl": "https://www.maxwellstrading.com/about"
+          },
+          {
+            "quote": "title: Food Menu &mdash; Maxwells Trading",
+            "sourceUrl": "https://www.maxwellstrading.com/food"
+          },
+          {
+            "quote": "og:description: Maxwells Trading offers a versatile, design-forward setting for corporate events, social gatherings and intimate weddings in Chicago. Our flexible spaces accommodate seated dinners and reception-style events for groups ranging from 12 to 300 gu",
+            "sourceUrl": "https://www.maxwellstrading.com/events"
+          },
+          {
+            "quote": "title: Private Events &mdash; Maxwells Trading",
+            "sourceUrl": "https://www.maxwellstrading.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.maxwellstrading.com/",
+          "https://www.maxwellstrading.com/about",
+          "https://www.maxwellstrading.com/food",
+          "https://www.maxwellstrading.com/events"
+        ],
+        "retrievedAt": "2026-09-02T17:05:16.197Z",
+        "playwrightPages": 0
+      }
+    },
+    "akahoshi-ramen-chicago": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:18.505Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 67
+      },
+      "site": {
+        "menuUrl": "https://www.akahoshiramen.com/menu",
+        "reservationUrl": "https://www.toasttab.com/akahoshi-ramen-2340-north-california-avenue/giftcards",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Can be made vegetarian/vegan upon request.",
+          "Vegetarian dashi, cashew cream, soy milk, Sapporo style noodles, burnt garlic oil.",
+          "Can be made vegan upon request.",
+          "For allergy details, please click here"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: , Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,",
+            "sourceUrl": "https://www.akahoshiramen.com/"
+          },
+          {
+            "quote": "title: About &mdash; Akahoshi Ramen",
+            "sourceUrl": "https://www.akahoshiramen.com/about"
+          },
+          {
+            "quote": "title: Menu &mdash; Akahoshi Ramen",
+            "sourceUrl": "https://www.akahoshiramen.com/menu"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.akahoshiramen.com/",
+          "https://www.akahoshiramen.com/about",
+          "https://www.akahoshiramen.com/menu"
+        ],
+        "retrievedAt": "2026-09-02T17:05:18.505Z",
+        "playwrightPages": 0
+      }
+    },
+    "pompette-chicago": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T17:05:20.313Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 61
+      },
+      "site": {
+        "menuUrl": "https://www.pompettechicago.com/menu",
+        "reservationUrl": "https://www.toasttab.com/pompette-chicago",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: About &mdash; Pompette Chicago",
+            "sourceUrl": "https://www.pompettechicago.com/about"
+          },
+          {
+            "quote": "title: Menu &mdash; Pompette Chicago",
+            "sourceUrl": "https://www.pompettechicago.com/menu"
+          },
+          {
+            "quote": "title: Events &mdash; Pompette Chicago",
+            "sourceUrl": "https://www.pompettechicago.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.pompettechicago.com/",
+          "https://www.pompettechicago.com/about",
+          "https://www.pompettechicago.com/menu",
+          "https://www.pompettechicago.com/events"
+        ],
+        "retrievedAt": "2026-09-02T17:05:20.313Z",
         "playwrightPages": 0
       }
     }
