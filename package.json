@@ -25,13 +25,15 @@
     "pipeline:enrich": "node scripts/pipeline/enrich.mjs --batch=10",
     "pipeline:enrich:slugs": "node scripts/pipeline/enrich.mjs --slugs",
     "pipeline:discover": "node scripts/pipeline/discover.mjs",
+    "pipeline:resolve": "node scripts/pipeline/resolve-targets.mjs",
+    "pipeline:resolve:dry": "node scripts/pipeline/resolve-targets.mjs --dry",
     "pipeline:seed": "node scripts/pipeline/seed-listings.mjs",
     "pipeline:seed:enrich": "node scripts/pipeline/seed-and-enrich.mjs",
     "pipeline:retire": "node scripts/pipeline/retire-closed.mjs",
     "db:seed": "node scripts/db/seed-corpus.mjs",
     "db:seed:dry": "node scripts/db/seed-corpus.mjs --dry-run",
     "validate:seed": "node scripts/validate-seed.mjs",
-    "test": "node scripts/check-generated.mjs && vitest run && node --test scripts/corpus-invariants.test.mjs scripts/pipeline/level-records.test.mjs scripts/pipeline/parse-hours.test.mjs && node scripts/corpus-invariants.mjs && node --experimental-strip-types --test tests/salty-handoff.test.ts"
+    "test": "node scripts/check-generated.mjs && vitest run && node --test scripts/corpus-invariants.test.mjs scripts/pipeline/level-records.test.mjs scripts/pipeline/parse-hours.test.mjs scripts/pipeline/resolve-targets.test.mjs && node scripts/corpus-invariants.mjs && node --experimental-strip-types --test tests/salty-handoff.test.ts"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.22",

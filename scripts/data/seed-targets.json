@@ -1,0 +1,101 @@
+{
+  "note": "Curated restaurant targets. A target carries a NAME and a market, nothing more — the URL is optional because resolve-targets.mjs resolves and verifies the site itself and silently drops anything it cannot confirm belongs to the named restaurant. Nothing in this file is a claim about a restaurant: it is a list of establishments worth reading. Cuisine tags are deliberately absent so they come from the restaurant's own JSON-LD, not from us. Names here were surfaced from local food press, James Beard listings and Michelin coverage during the 2026-09-02 density pass, where the research budget ran out before they could be verified.",
+  "markets": [
+    {
+      "key": "minneapolis",
+      "city": "Minneapolis",
+      "stateCode": "MN",
+      "targets": [
+        "Khaluna", "Diane's Place", "Oro by Nixta", "Vinai", "Young Joni",
+        "All Saints", "Bucheron", "Dario", "Gai Noi", "Lynette",
+        "Nightingale", "P.S. Steak", "Rosalia", "Marty's Deli", "Juche",
+        "Clancey's Meats", "Jax Cafe", "Hola Arepa", "Martina", "Reverie",
+        "World Street Kitchen", "Wrecktangle Pizza", "Mama Safia's Kitchen",
+        "Bull's Horn", "Camden Social"
+      ]
+    },
+    {
+      "key": "san diego",
+      "city": "San Diego",
+      "stateCode": "CA",
+      "targets": [
+        "Wolf in the Woods", "A L'ouest", "Mabel's Gone Fishing", "Cherryfish",
+        "The Smoking Goat", "Bencotto", "Marisi", "Lucien", "Fleurette",
+        "Paradisaea", "Lola 55", "Cowboy Star", "The Lion's Share", "Wormwood",
+        "Soichi", "Sushi Ota", "Kingfisher", "Ambrogio15", "Solare", "Bosforo",
+        "Nine-Ten", "Catania", "Tribute Pizza", "Wayfarer Bread",
+        "Casa Guadalajara", "Cafe Sevilla", "Wa Dining Okan"
+      ]
+    },
+    {
+      "key": "detroit",
+      "city": "Detroit",
+      "stateCode": "MI",
+      "targets": [
+        "Alpino", "Freya", "Ladder 4 Wine Bar", "Bar Pigalle", "Nepantla",
+        "Folk", "Oak & Reel", "Lena", "Vecino", "Warda Patisserie", "El Barzon"
+      ]
+    },
+    {
+      "key": "charlotte",
+      "city": "Charlotte",
+      "stateCode": "NC",
+      "targets": [
+        "Rada", "Albertine", "L'Ostrica", "Yunta", "La Lima Sangucheria",
+        "Restaurant Constance", "Menya Daruma", "Calle Sol", "Spaghett",
+        "Chapter 6", "Lang Van", "Fin & Fino", "El Puro", "Bird Pizzeria",
+        "Ever Andalo", "Beef 'N Bottle", "Noble Smoke"
+      ]
+    },
+    {
+      "key": "boston",
+      "city": "Boston",
+      "stateCode": "MA",
+      "targets": [
+        "Zurito", "Dovetail", "La Padrona", "Tonino", "Yunnan Kitchen",
+        "Baleia", "Carmelina's", "Taiwan Cafe", "Suya Joint", "Mooncusser"
+      ]
+    },
+    {
+      "key": "seattle",
+      "city": "Seattle",
+      "stateCode": "WA",
+      "targets": [
+        "Bar del Corso", "Off Alley", "Taurus Ox", "Il Nido", "Saint Bread",
+        "Beast and Cleaver", "Kilig", "Phnom Penh Noodle House", "Pancita",
+        "Atoma", "Ramie", "Little Beast", "Kamonegi"
+      ]
+    },
+    {
+      "key": "nashville",
+      "city": "Nashville",
+      "stateCode": "TN",
+      "targets": [
+        "Pinewood Social", "Butchertown Hall", "The Southern Steak & Oyster",
+        "Redheaded Stranger", "Xiao Bao", "Hathorne", "Riddim N Spice",
+        "Soy Cubano", "Edessa", "Gojo Ethiopian", "Osh", "Kisser"
+      ]
+    },
+    {
+      "key": "new orleans",
+      "city": "New Orleans",
+      "stateCode": "LA",
+      "targets": [
+        "Saint-Germain", "Palm and Pine", "Bacchanal Wine", "Paladar 511",
+        "Gautreau's", "Charmant", "Saint Claire", "Coquette",
+        "Turkey and the Wolf", "Toups' Meatery", "Mosquito Supper Club",
+        "Willie Mae's Scotch House"
+      ]
+    },
+    {
+      "key": "san francisco",
+      "city": "San Francisco",
+      "stateCode": "CA",
+      "targets": [
+        "Nari", "Kin Khao", "Acquerello", "Liholiho Yacht Club",
+        "Wayfare Tavern", "Sorrel", "Robin", "Besharam", "Ernest",
+        "Anchor Oyster Bar"
+      ]
+    }
+  ]
+}
