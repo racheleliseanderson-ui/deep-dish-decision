@@ -46,6 +46,7 @@ const pick = (r: RestaurantRecord) => ({
 const out = {
   generatedAt: new Date().toISOString(),
   corpus: atlas.corpus,
+  caseDepth: atlas.caseDepth,
   byRegionGroup: atlas.byRegionGroup,
   byStateProvince: atlas.byStateProvince,
   byCity: atlas.byCity,

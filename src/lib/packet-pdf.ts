@@ -16,8 +16,6 @@ export type PacketInput = {
   situation: Situation;
   scored: Scored;
   brief: Brief;
-  /** Whether labeled third-party signals were included in the scoring run. */
-  enrichment: boolean;
   /** Fixed stamp so callers control determinism (tests pass a literal). */
   generatedAt: string;
 };
@@ -46,7 +44,7 @@ export function buildPacketPdf(input: PacketInput): Uint8Array {
     { size: 9, gray: 0.4, leading: 13 },
   );
   doc.text(
-    `Generated ${input.generatedAt} · signals: ${input.enrichment ? "first-party plus labeled third-party" : "first-party only"}`,
+    `Generated ${input.generatedAt} · signals: first-party evidence only`,
     { size: 9, gray: 0.4, leading: 16 },
   );
 

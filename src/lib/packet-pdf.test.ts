@@ -13,7 +13,6 @@ function input(index = 0) {
     situation,
     scored,
     brief: decisionBrief(scored, situation),
-    enrichment: true,
     generatedAt: "2026-01-01 00:00 UTC",
   };
 }

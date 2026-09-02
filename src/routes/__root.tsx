@@ -91,13 +91,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { charSet: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "google-adsense-account", content: ADSENSE_CLIENT },
-        { title: "Restaurant Intelligence — evidence-led restaurant decisions" },
+        { title: "Deep Dish · Restaurant Intelligence" },
         {
           name: "description",
           content:
             "First-party restaurant evidence, ranked against this night: fit, unknowns, official sources, live confirmations and the decision you return to Salty Desk.",
         },
-        { property: "og:title", content: "Restaurant Intelligence" },
+        { property: "og:title", content: "Deep Dish · Restaurant Intelligence" },
         {
           property: "og:description",
           content: "Is this restaurant right for this night — and what still needs confirming?",
@@ -107,7 +107,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { property: "og:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
-        { property: "og:image:alt", content: "Dining room — Restaurant Intelligence" },
+        { property: "og:image:alt", content: "Dining room · Deep Dish" },
         { property: "og:url", content: canonical },
         { name: "twitter:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
         { name: "theme-color", content: "#0c1220" },

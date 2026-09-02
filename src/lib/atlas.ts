@@ -55,6 +55,11 @@ type AtlasFile = {
     generatedAt: string;
     sourceSync: string;
   };
+  caseDepth: {
+    totalFields: number;
+    avgUnstated: number;
+    completeCaseFiles: number;
+  };
   gapMap: { field: string; missing: number; share: number }[];
   unreachableCount: number;
   fullCaseFileCount: number;
@@ -66,6 +71,9 @@ const rows = (key: string) => (data[key] ?? []) as AtlasRecord[];
 
 export const corpus = data.corpus;
 export const gapMap = data.gapMap;
+
+/** The field-level reading of the corpus. See atlas-compute.ts. */
+export const caseDepth = data.caseDepth;
 
 export const byRegionGroup = facets("byRegionGroup");
 export const byStateProvince = facets("byStateProvince");

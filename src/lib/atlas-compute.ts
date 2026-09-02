@@ -1,3 +1,4 @@
+import { CASE_FIELDS, isUnstated } from "@/lib/case-depth";
 import { dataset, records, type RestaurantRecord } from "@/lib/dataset";
 import { OCCASIONS, occasionScore, topOccasion, type Occasion } from "@/lib/intelligence";
 
@@ -19,6 +20,14 @@ import { OCCASIONS, occasionScore, topOccasion, type Occasion } from "@/lib/inte
  * and a second copy of scoring logic is a drift bug with a long fuse.
  */
 
+/**
+ * A record counts as thin at four or more unstated core slots. Kept in step
+ * with THIN_FIELD_THRESHOLD in scripts/pipeline/level-format.mjs, which the
+ * browser bundle cannot import; the pipeline counts ops.thinRecords with the
+ * same number so the Atlas columns and the ops block agree.
+ */
+export const THIN_FIELD_THRESHOLD = 4;
+
 export type Facet = {
   label: string;
   count: number;
@@ -35,7 +44,7 @@ function facet(label: string, rows: RestaurantRecord[], total: number): Facet {
     label,
     count: rows.length,
     share: total ? Math.round((rows.length / total) * 100) : 0,
-    thin: rows.filter((r) => r.thinFieldCount >= 4).length,
+    thin: rows.filter((r) => r.thinFieldCount >= THIN_FIELD_THRESHOLD).length,
     conflicts: rows.filter((r) => r.hasOfficialConflict).length,
     avgUnknowns: rows.length ? Math.round((unknowns / rows.length) * 10) / 10 : 0,
     reachable: rows.filter((r) => r.hasPhone).length,
@@ -92,11 +101,24 @@ export const byStrongestOccasion = (() => {
     .sort((a, b) => b.count - a.count);
 })();
 
-/** Fields that are most often unstated across the corpus — the real gap map. */
+/**
+ * Fields that are most often unstated across the corpus — the real gap map.
+ *
+ * Counted with the same isUnstated() over the same CASE_FIELDS the record page
+ * renders, so the map and the page cannot disagree. It used to count each
+ * record's stored `thinFields`, which is derived from the pipeline's 12-slot
+ * CORE_SLOTS: beverage, meal length and parking/transit are not in that list,
+ * so the map reported parking at 2%, meal length at 0% and beverage not at all
+ * while the record page held all three open on nearly every record.
+ */
 export const gapMap: { field: string; missing: number; share: number }[] = (() => {
   const counts = new Map<string, number>();
   for (const r of records) {
-    for (const f of r.thinFields) counts.set(f, (counts.get(f) ?? 0) + 1);
+    for (const f of CASE_FIELDS) {
+      if (isUnstated(r[f.key] as string | null | undefined)) {
+        counts.set(f.label, (counts.get(f.label) ?? 0) + 1);
+      }
+    }
   }
   return Array.from(counts.entries())
     .map(([field, missing]) => ({
@@ -104,7 +126,40 @@ export const gapMap: { field: string; missing: number; share: number }[] = (() =
       missing,
       share: Math.round((missing / records.length) * 100),
     }))
-    .sort((a, b) => b.missing - a.missing);
+    .sort((a, b) => b.missing - a.missing || a.field.localeCompare(b.field));
+})();
+
+/**
+ * The field-level reading of the same corpus, and the honest companion to
+ * `corpus.avgDepth`.
+ *
+ * `avgDepth` is a schema check: level-format.mjs counts a core slot as filled
+ * unless emptyish() matches a short token like "n/a", and the leveling floor
+ * sentence ("Not stated on the restaurant's own pages...") is neither short nor
+ * matched, so a record whose twelve core fields all say nothing still scores
+ * 12 / 12. It measures whether the slot carries text, not whether the
+ * restaurant published anything.
+ *
+ * This measures the second thing, with the same isUnstated() over the same
+ * CASE_FIELDS the record page renders -- so /atlas and a record page cannot
+ * report opposite readings of the same file.
+ */
+export const caseDepth = (() => {
+  const totalFields = CASE_FIELDS.length;
+  let unstated = 0;
+  let complete = 0;
+  for (const r of records) {
+    const missing = CASE_FIELDS.filter((f) =>
+      isUnstated(r[f.key] as string | null | undefined),
+    ).length;
+    unstated += missing;
+    if (missing === 0) complete += 1;
+  }
+  return {
+    totalFields,
+    avgUnstated: records.length ? Math.round((unstated / records.length) * 100) / 100 : 0,
+    completeCaseFiles: complete,
+  };
 })();
 
 export const conflictRecords = records.filter((r) => r.hasOfficialConflict);

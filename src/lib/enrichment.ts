@@ -247,6 +247,9 @@ function hoursLine(
   return sample.join(" · ") + (open.length > 3 ? ` (+${open.length - 3} more days)` : "");
 }
 
+// UNUSED as of 2026-09-02 — no callers. Kept on disk deliberately; the
+// "All sources / First-party only" control that would have reached it was
+// removed from display-controls.tsx because it changed nothing a reader saw.
 /** Build labeled Watch/Unknown findings from enrichment when first-party is silent. */
 export function buildEnrichmentFindings(
   r: RestaurantRecord,

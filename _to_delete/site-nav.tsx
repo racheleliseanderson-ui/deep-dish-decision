@@ -1,3 +1,5 @@
+// Not rendered anywhere. src/components/rih/nav-links.ts is the source of
+// truth for navigation; edit that, not this file.
 import { Link, useRouterState } from "@tanstack/react-router";
 import { DisplayControls } from "@/components/rih/display-controls";
 import { useT } from "@/lib/i18n";

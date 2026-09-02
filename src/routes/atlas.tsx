@@ -16,7 +16,7 @@ export const Route = createFileRoute("/atlas")({
   loader: () => import("@/lib/atlas"),
   head: () => ({
     meta: [
-      { title: "Corpus Atlas — Restaurant Intelligence Hub" },
+      { title: "Corpus Atlas · Deep Dish" },
       {
         name: "description",
         content:
@@ -132,6 +132,7 @@ function Atlas() {
     bySpendBand,
     byStateProvince,
     byStrongestOccasion,
+    caseDepth,
     conflictRecords,
     corpus,
     densestMetros,
@@ -159,13 +160,18 @@ function Atlas() {
             below is counted from recorded fields. Nothing is modelled or estimated.
           </p>
 
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             <Stat label="Records" value={corpus.count} note={`${corpus.regions} regions`} />
             <Stat
-              label="Mean evidence depth"
+              label="Core-field schema coverage"
               value={`${corpus.avgDepth}%`}
-              note={`${corpus.fullCaseFiles} full case files`}
-              tone="verified"
+              note={`${corpus.fullCaseFiles} records fill all 12 slots`}
+            />
+            <Stat
+              label="Case fields left unstated"
+              value={`${caseDepth.avgUnstated} / ${caseDepth.totalFields}`}
+              note={`${caseDepth.completeCaseFiles} complete case files`}
+              tone="unknown"
             />
             <Stat
               label="Unknowns held open"
@@ -180,6 +186,13 @@ function Atlas() {
               tone="critical"
             />
           </div>
+
+          <p className="mt-5 max-w-2xl text-[12px] leading-relaxed text-subtle">
+            Those two middle figures read the same corpus and disagree on purpose. Schema coverage
+            counts whether each of the twelve core slots holds text; the case-field figure counts
+            whether the restaurant published an answer, using the same test the record pages use. A
+            record can fill every slot and still say nothing, which is why both are printed here.
+          </p>
         </div>
       </header>
 

@@ -1,6 +1,9 @@
-# Restaurant Intelligence Hub
+# Deep Dish
 
-Salty & Clever first-party restaurant decision instrument.
+Salty & Clever first-party restaurant decision instrument. "Deep Dish" is the
+product name (it is the one on the domain and in the body copy); "Restaurant
+Intelligence" is its descriptor and the name the shared suite contract uses for
+this app. "Restaurant Intelligence Hub" and "RI" are retired.
 
 This application is part of the Salty & Clever host-and-dine suite.
 

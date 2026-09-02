@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { DisplayControls } from "@/components/rih/display-controls";
-import { NAV_LINKS } from "@/components/rih/nav-links";
+import { HEADER_NAV_LINKS } from "@/components/rih/nav-links";
 import { useT } from "@/lib/i18n";
 import { useShortlist } from "@/lib/shortlist";
 import { cn } from "@/lib/utils";
@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
  * horizontal scroller and the Display control stays reachable on a phone.
  */
 
-const LINKS = NAV_LINKS;
+const LINKS = HEADER_NAV_LINKS;
 
 export const HOUSE_URL = "https://northernlanternhouse.com";
 

@@ -118,7 +118,7 @@ export function Stat({
             : "text-foreground";
   return (
     <div className="min-w-0">
-      <p className="text-eyebrow truncate">{label}</p>
+      <p className="text-eyebrow text-balance">{label}</p>
       <p className={cn("text-num mt-1 text-2xl font-medium tracking-tight", color)}>{value}</p>
       {note ? <p className="mt-1 truncate text-xs text-subtle">{note}</p> : null}
     </div>

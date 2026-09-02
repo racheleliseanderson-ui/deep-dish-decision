@@ -3,7 +3,6 @@ import { ThemeToggle } from "@/components/rih/theme-toggle";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { decisionBrief, scoreRecord, situationDepth, SITUATION_SLOTS } from "@/lib/intelligence";
 import { downloadPacketPdf } from "@/lib/packet-pdf";
-import { useEnrichmentSignals } from "@/lib/prefs";
 import { decodeSituation } from "@/lib/situation-url";
 import { useEffect, useState } from "react";
 import {
@@ -25,7 +24,7 @@ export const Route = createFileRoute("/packet/$slug")({
   },
   head: () => ({
     meta: [
-      { title: "Restaurant Decision Packet — Restaurant Intelligence Hub" },
+      { title: "Restaurant Decision Packet · Deep Dish" },
       {
         name: "description",
         content:
@@ -69,8 +68,7 @@ function Packet() {
 
   const search = useRouterState({ select: (s) => s.location.searchStr });
   const situation = decodeSituation(search ?? "");
-  const enrichment = useEnrichmentSignals();
-  const sc = scoreRecord(record, situation, { useEnrichment: enrichment.enabled });
+  const sc = scoreRecord(record, situation);
 
   const brief = decisionBrief(sc, situation);
   const depth = situationDepth(situation);
@@ -121,7 +119,6 @@ function Packet() {
                 situation,
                 scored: sc,
                 brief,
-                enrichment: enrichment.enabled,
                 generatedAt: new Date().toISOString().slice(0, 16).replace("T", " ") + " UTC",
               })
             }

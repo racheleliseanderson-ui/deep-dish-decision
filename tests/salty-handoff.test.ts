@@ -33,8 +33,10 @@ import {
   shouldApply,
 } from "../src/lib/salty-handoff/import-session.ts";
 import {
+  MEDICAL_PLACEHOLDER,
   outgoingRestaurantToDesk,
   planningDietBanner,
+  sanitiseUnresolved,
   situationFromHandoff,
   situationIsStarted,
 } from "../src/lib/salty-handoff/apply.ts";
@@ -444,6 +446,44 @@ test("return packet carries the chosen room, not a shortlist", () => {
   assert.equal(raw.includes("shortlist"), false);
   assert.match(url, /^https:\/\/salty\.saltnotes\.blog\/#sh=/);
   assert.equal(url.includes("?"), false);
+});
+
+test("a guest allergy disclosure does not survive the return packet", () => {
+  const allergy =
+    "Hi — we\u2019re considering Tavernetta tonight for 4. One guest has a severe allergy or " +
+    "celiac disease. Can the kitchen currently accommodate that safely, including cross-contact?";
+  const { url, handoff } = outgoingRestaurantToDesk({
+    room: "Tavernetta",
+    status: "hold",
+    unresolved: [allergy, "Deposit terms unconfirmed", "Hard end time 21:30 unconfirmed"],
+  });
+
+  // The codec's PROHIBITED_FIELDS check inspects keys only, so the encoded
+  // packet and the URL fragment are where a value-level leak would show up.
+  const raw = JSON.stringify(handoff);
+  for (const term of ["allerg", "celiac", "coeliac", "cross-contact", "epipen", "medical"]) {
+    assert.equal(raw.toLowerCase().includes(term), false, `leaked "${term}" in the packet`);
+  }
+  assert.equal(decodeURIComponent(url).toLowerCase().includes("allerg"), false);
+
+  // The neutral placeholder replaces it; unrelated items are untouched.
+  assert.deepEqual(handoff.decision?.unresolved, [
+    MEDICAL_PLACEHOLDER,
+    "Deposit terms unconfirmed",
+    "Hard end time 21:30 unconfirmed",
+  ]);
+
+  // And a decoded round trip carries the same sanitised list.
+  const token = readHandoffToken(url.slice(url.indexOf("#")));
+  const decoded = decodeHandoff(token, "desk");
+  assert.equal(decoded.ok, true);
+  assert.equal(decoded.ok && decoded.handoff.decision?.unresolved?.[0], MEDICAL_PLACEHOLDER);
+
+  // The sanitiser itself: medical in, placeholder out; everything else passes.
+  assert.deepEqual(sanitiseUnresolved(["No EpiPen policy stated"]), [MEDICAL_PLACEHOLDER]);
+  assert.deepEqual(sanitiseUnresolved(["Private room minimum spend unconfirmed"]), [
+    "Private room minimum spend unconfirmed",
+  ]);
 });
 
 test("an incoming packet is offered, never auto-applied over an open situation", () => {

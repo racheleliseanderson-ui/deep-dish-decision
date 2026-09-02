@@ -123,12 +123,67 @@ export function planningDietBanner(handoff: SaltyHandoff): string | null {
   return `Planning-level dietary: ${diet.join(", ")}. ${DIET_DISCLAIMER}`;
 }
 
+/**
+ * Guest medical detail must not cross the app boundary.
+ *
+ * The shared contract lists allergen / allergy / medical in PROHIBITED_FIELDS,
+ * but codec.ts walks object KEYS only — it never inspects string values. An
+ * unresolved item is free text (it comes from the call script, which writes
+ * sentences like "One guest has a severe allergy or celiac disease..."), so
+ * the disclosure sails straight through the filter written to stop it, into
+ * the URL fragment and into localStorage under salty-night-record-v1.
+ *
+ * Matching items are replaced whole rather than redacted in place: scrubbing
+ * one word out of the sentence still leaves the diagnosis legible from what
+ * remains. Non-medical items (hours, deposit, private room, hard end time)
+ * pass through untouched.
+ */
+const MEDICAL_KEYWORDS = [
+  "allergy",
+  "allergies",
+  "allergic",
+  "allergen",
+  "celiac",
+  "coeliac",
+  "cross-contact",
+  "anaphyla",
+  "epipen",
+  "medical",
+  "intolerance",
+] as const;
+
+export const MEDICAL_PLACEHOLDER =
+  "Confirm the declared dietary requirement directly with the kitchen.";
+
+function mentionsMedical(text: string): boolean {
+  const lower = String(text ?? "")
+    .toLowerCase()
+    .replace(/[\u2010-\u2015]/g, "-");
+  // Collapsed form catches "cross contact" and "epi-pen" as well.
+  const collapsed = lower.replace(/[-\s]+/g, "");
+  return MEDICAL_KEYWORDS.some(
+    (word) => lower.includes(word) || collapsed.includes(word.replace(/-/g, "")),
+  );
+}
+
+/** Replace any medical clause with a neutral instruction, keeping the rest. */
+export function sanitiseUnresolved(items: readonly string[]): string[] {
+  const out: string[] = [];
+  for (const item of items) {
+    const safe = mentionsMedical(item) ? MEDICAL_PLACEHOLDER : item;
+    if (!out.includes(safe)) out.push(safe);
+  }
+  return out;
+}
+
 export function outgoingRestaurantToDesk(opts: {
   room: string;
   status?: DecisionStatus;
   unresolved?: string[];
 }): { url: string; handoff: SaltyHandoff } {
-  const unresolved = opts.unresolved?.slice(0, 8);
+  const unresolved = opts.unresolved?.length
+    ? sanitiseUnresolved(opts.unresolved).slice(0, 8)
+    : undefined;
   const handoff = createHandoff("restaurant", "desk", "return-decision", {
     decision: unresolved?.length
       ? { room: opts.room, status: opts.status ?? "shortlisted", unresolved }

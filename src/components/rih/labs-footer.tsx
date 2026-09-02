@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { NAV_LINKS } from "@/components/rih/nav-links";
+import { FOOTER_NAV_LINKS } from "@/components/rih/nav-links";
 import { useT } from "@/lib/i18n";
 
 /**
@@ -16,7 +16,7 @@ export function LabsFooter() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
         <p className="text-eyebrow text-house-gold">Northern Lantern House Labs</p>
         <h2 className="mt-3 font-display text-2xl tracking-tight sm:text-3xl">
-          Restaurant Intelligence
+          Deep Dish · Restaurant Intelligence
         </h2>
         <p className="mt-3 max-w-xl text-[13px] leading-relaxed text-ink-foreground/70">
           What the record actually supports for tonight — not a ranking, not a reservation.
@@ -25,7 +25,7 @@ export function LabsFooter() {
         <nav aria-label="In this site" className="mt-10">
           <p className="text-eyebrow text-ink-foreground/78">In this site</p>
           <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-[13px]">
-            {NAV_LINKS.map((item) => (
+            {FOOTER_NAV_LINKS.map((item) => (
               <li key={item.to}>
                 <Link
                   to={item.to}

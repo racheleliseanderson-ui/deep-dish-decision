@@ -13,7 +13,7 @@ export const Route = createFileRoute("/guide")({
   },
   head: () => ({
     meta: [
-      { title: "How to Choose a Restaurant — Restaurant Intelligence Hub" },
+      { title: "How to Choose a Restaurant · Deep Dish" },
       {
         name: "description",
         content:
@@ -105,8 +105,16 @@ const PITFALLS = [
 
 function Guide() {
   const { atlas } = Route.useLoaderData();
-  const { byBookingPath, byPlanningLoad, bySpendBand, conflictRecords, corpus, gapMap, unreachableCount } =
-    atlas;
+  const {
+    byBookingPath,
+    byPlanningLoad,
+    bySpendBand,
+    caseDepth,
+    conflictRecords,
+    corpus,
+    gapMap,
+    unreachableCount,
+  } = atlas;
   const [occasion, setOccasion] = useState<Occasion>(OCCASIONS[0]);
 
   // Precomputed by scripts/build-atlas.ts using the same occasionScore this
@@ -134,17 +142,22 @@ function Guide() {
             instrument applies, written out — with the counts from our own corpus that show where
             the published evidence usually runs out.
           </p>
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             <Stat
               label="Records under review"
               value={corpus.count}
               note={`${corpus.regions} regions`}
             />
             <Stat
-              label="Mean evidence depth"
+              label="Core-field schema coverage"
               value={`${corpus.avgDepth}%`}
-              note="Across published fields"
-              tone="verified"
+              note="Whether the 12 core slots hold text"
+            />
+            <Stat
+              label="Case fields left unstated"
+              value={`${caseDepth.avgUnstated} / ${caseDepth.totalFields}`}
+              note={`${caseDepth.completeCaseFiles} complete case files`}
+              tone="unknown"
             />
             <Stat
               label="Questions left open"
@@ -159,6 +172,13 @@ function Guide() {
               tone="critical"
             />
           </div>
+
+          <p className="mt-5 max-w-2xl text-[12px] leading-relaxed text-subtle">
+            The two depth figures measure different things. Schema coverage counts whether each of
+            the twelve core slots holds text; the case-field figure counts whether the restaurant
+            published an answer, by the same test the record pages apply. A record can fill every
+            slot and still state nothing.
+          </p>
         </div>
       </header>
 

@@ -446,22 +446,29 @@
   opacity: 0.16;
 }
 
-/* Colour-vision-safe: brass/gilt stay gold ~92; danger becomes cyan/magenta.
-   .cvd is an alias of .mode-cvd so the desk overlay class also applies. */
+/* Colour-vision-safe: brass/gilt stay gold ~92; danger becomes cyan.
+   .cvd is an alias of .mode-cvd so the desk overlay class also applies.
+
+   critical and verified must separate in LIGHTNESS, not only hue. They used to
+   sit at L 0.72 / hue 215 and L 0.72 / hue 235 — 20 degrees apart at identical
+   lightness, so the diverging bar in why-this-rank.tsx (aria-hidden, colour is
+   the whole signal) drew gain and loss in the same grey. Measured on the
+   rendered sRGB: the old pair differed by 1.04x in relative luminance, this one
+   by 3.39x. */
 .cvd,
 .mode-cvd {
-  --critical: oklch(0.72 0.14 215);
-  --critical-soft: oklch(0.72 0.14 215 / 15%);
+  --critical: oklch(0.88 0.11 200);
+  --critical-soft: oklch(0.88 0.11 200 / 15%);
   --watch: oklch(0.86 0.15 92);
   --watch-soft: oklch(0.86 0.15 92 / 14%);
   --unknown: oklch(0.72 0.04 250);
   --unknown-soft: oklch(0.72 0.04 250 / 12%);
-  --verified: oklch(0.72 0.13 235);
-  --verified-soft: oklch(0.72 0.13 235 / 14%);
+  --verified: oklch(0.6 0.15 268);
+  --verified-soft: oklch(0.6 0.15 268 / 18%);
   --primary: oklch(0.86 0.15 92);
   --primary-foreground: oklch(0.17 0.045 258);
   --ring: oklch(0.86 0.15 92 / 55%);
-  --destructive: oklch(0.72 0.14 215);
+  --destructive: oklch(0.88 0.11 200);
   --gilt: oklch(0.86 0.15 92);
   --gilt-soft: oklch(0.86 0.15 92 / 15%);
 }
@@ -470,13 +477,16 @@
 .mode-cvd:not(.dark) {
   --primary: oklch(0.5 0.11 78);
   --primary-foreground: oklch(0.988 0.004 265);
-  --critical: oklch(0.42 0.13 225);
-  --critical-soft: oklch(0.42 0.13 225 / 12%);
+  /* Same rule on Pearl: the old 0.42/225 and 0.44/240 differed by 1.05x in
+     relative luminance. This pair differs by 6.82x. */
+  --critical: oklch(0.52 0.14 205);
+  --critical-soft: oklch(0.52 0.14 205 / 12%);
   --watch: oklch(0.5 0.11 78);
   --watch-soft: oklch(0.5 0.11 78 / 12%);
-  --verified: oklch(0.44 0.13 240);
+  --verified: oklch(0.3 0.13 268);
+  --verified-soft: oklch(0.3 0.13 268 / 14%);
   --unknown: oklch(0.5 0.03 250);
-  --destructive: oklch(0.42 0.13 225);
+  --destructive: oklch(0.52 0.14 205);
   --gilt: oklch(0.5 0.11 78);
   --gilt-soft: oklch(0.5 0.11 78 / 12%);
 }

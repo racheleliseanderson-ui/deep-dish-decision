@@ -17,7 +17,6 @@ import {
   type NightDetails,
   type StoredNightContext,
 } from "@/lib/night-context";
-import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
 import { useRecordsBySlug } from "@/hooks/use-records-by-slug";
 import { useLiveRows, useMinuteClock } from "@/hooks/use-live-rows";
@@ -210,7 +209,6 @@ function NightDecisionCard({
 
 function Shortlist() {
   const shortlist = useShortlist();
-  const enrichment = useEnrichmentSignals();
   const search = useRouterState({ select: (st) => st.location.searchStr });
   const urlSituation = useMemo(() => (search ? decodeSituation(search) : null), [search]);
   const [stored, setStored] = useState<StoredNightContext>({
@@ -232,7 +230,6 @@ function Shortlist() {
   const rows = records.map((record) => ({
     record,
     sc: scoreRecord(record, situation, {
-      useEnrichment: enrichment.enabled,
       live,
       now,
     }),

@@ -7,7 +7,6 @@ import { Reveal } from "@/components/rih/reveal";
 import { fieldDisplay, isUnstated } from "@/lib/case-depth";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
-import { useEnrichmentSignals } from "@/lib/prefs";
 import { useShortlist } from "@/lib/shortlist";
 import { enrichmentAudit } from "@/lib/enrichment";
 import { useEnrichmentGroup } from "@/hooks/use-enrichment";
@@ -86,7 +85,6 @@ function Dossier() {
   const { record } = Route.useLoaderData();
   const search = useRouterState({ select: (s) => s.location.searchStr });
   const situation = search ? decodeSituation(search) : emptySituation;
-  const enrichment = useEnrichmentSignals();
   const [live, setLive] = useState<LiveRow | undefined>(undefined);
   const [now, setNow] = useState(() => new Date());
 
@@ -106,7 +104,6 @@ function Dossier() {
   }, []);
 
   const sc = scoreRecord(record, situation, {
-    useEnrichment: enrichment.enabled,
     ...(live ? { live: { [record.slug]: live } } : {}),
     now,
   });

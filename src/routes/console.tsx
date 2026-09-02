@@ -8,7 +8,7 @@ import { useMemo, useState } from "react";
 export const Route = createFileRoute("/console")({
   head: () => ({
     meta: [
-      { title: "Coverage Console — Restaurant Intelligence Hub" },
+      { title: "Coverage Console · Deep Dish" },
       {
         name: "description",
         content:

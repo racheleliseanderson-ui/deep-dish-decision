@@ -43,7 +43,7 @@ export function visionToFindings(result: VisionResult): Finding[] {
   }));
 }
 
-export const VISION_SYSTEM_PROMPT = `You are analyzing a photograph related to a restaurant for a first-party evidence decision tool called Deep Dish Decision / Restaurant Insight Engine.
+export const VISION_SYSTEM_PROMPT = `You are analyzing a photograph related to a restaurant for a first-party evidence decision tool called Deep Dish.
 
 Perform multi-item detection and OCR with high conservatism.
 

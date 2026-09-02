@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { APP_ORIGINS, type SaltyApp } from "@/lib/salty-handoff/contract.ts";
+import { APP_LABELS, APP_ORIGINS, type SaltyApp } from "@/lib/salty-handoff/contract.ts";
 import {
   nightRecordUrl,
   readNightRecord,
@@ -7,12 +7,13 @@ import {
 } from "@/lib/salty-night-record";
 
 const ORDER: SaltyApp[] = ["desk", "kitchen", "occasion", "restaurant"];
-const LABELS: Record<SaltyApp, string> = {
-  desk: "Salty Desk",
-  kitchen: "Kitchen & Bar",
-  occasion: "Occasion",
-  restaurant: "Restaurant Intelligence",
-};
+
+/**
+ * Names come from the shared contract. This file used to keep its own map,
+ * which quietly shortened "Occasion OS" to "Occasion" — the suite ribbon is
+ * exactly the place where every app has to be called the same thing.
+ */
+const LABELS = APP_LABELS;
 
 export function SuiteStrip({ current }: { current: SaltyApp }) {
   const [night, setNight] = useState<SaltyNightRecord | null>(null);
