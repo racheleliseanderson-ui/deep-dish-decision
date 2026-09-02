@@ -42,7 +42,7 @@ export function readNightContext(): StoredNightContext {
     const raw = localStorage.getItem(KEY);
     if (!raw) return { situation: { ...emptySituation }, details: { ...emptyNightDetails } };
     const parsed = JSON.parse(raw) as Partial<StoredNightContext>;
-    const incoming = parsed.situation ?? {};
+    const incoming: Partial<Situation> = parsed.situation ?? {};
     return {
       situation: {
         ...emptySituation,
