@@ -311,6 +311,7 @@ function Hub() {
                       key={sc.record.slug}
                       sc={sc}
                       situation={situation}
+                      details={details}
                       onOpen={() => setSelectedSlug(sc.record.slug)}
                     />
                   ))}
