@@ -4,12 +4,7 @@ import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
-/**
- * Always-visible slim bar for the night plan (browser-local shortlist).
- * Empty state invites the reader to the ranked rooms.
- * When the address bar already carries a situation query, expose a quick
- * "Copy link" that shares the current URL (no situation prop required).
- */
+/** Always-visible browser-local Night Plan bar. */
 export function NightPlanBar() {
   const shortlist = useShortlist();
   const count = shortlist.slugs.length;
@@ -20,7 +15,6 @@ export function NightPlanBar() {
   const [copied, setCopied] = useState(false);
   const [hasQuery, setHasQuery] = useState(false);
 
-  // Client-only: avoid SSR/client mismatch on search params.
   useEffect(() => {
     setHasQuery(window.location.search.length > 1);
   }, []);
@@ -35,7 +29,6 @@ export function NightPlanBar() {
     }
   };
 
-  /* Publish our height so the compare tray can sit above us rather than on top. */
   const barRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = barRef.current;
@@ -63,11 +56,11 @@ export function NightPlanBar() {
         <div className="min-w-0 flex-1">
           {count === 0 ? (
             <p className="truncate text-[12px] text-muted-foreground">
-              Night plan is empty — add rooms from the ranked list.
+              Night plan is empty — save a restaurant from your results.
             </p>
           ) : (
             <p className="truncate text-[12px] text-muted-foreground">
-              <span className="text-num text-foreground">{count}</span> on the night plan
+              <span className="text-num text-foreground">{count}</span> in the night plan
               {titles.length ? <span className="text-subtle"> · {titles.join(" · ")}</span> : null}
             </p>
           )}
@@ -92,7 +85,7 @@ export function NightPlanBar() {
             hash="ranked"
             className="tap rounded-full border border-border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-muted-foreground hover:border-border-strong hover:text-foreground"
           >
-            Rooms
+            Results
           </Link>
           <Link
             to="/shortlist"
