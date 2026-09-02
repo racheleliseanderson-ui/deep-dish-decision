@@ -1,4 +1,4 @@
-import { Chip, Eyebrow, Rule } from "@/components/rih/bits";
+import { Chip, Eyebrow } from "@/components/rih/bits";
 import { DecisionBrief } from "@/components/rih/decision-brief";
 import { DinerQuestions } from "@/components/rih/diner-questions";
 import { FindingsStack } from "@/components/rih/findings";
@@ -18,6 +18,7 @@ import { useEffect, useState } from "react";
 import { loadLiveGroup, type LiveRow } from "@/lib/live";
 import { TableIntelligence, TableIntelligenceHeading } from "@/components/rih/table-intelligence";
 import { WhyThisRank } from "@/components/rih/why-this-rank";
+import { saveNightContext } from "@/lib/night-context";
 
 export const Route = createFileRoute("/record/$slug")({
   loader: async ({ params }): Promise<{ record: RestaurantRecord }> => {
@@ -29,11 +30,11 @@ export const Route = createFileRoute("/record/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) {
       return {
-        meta: [{ title: "Record unavailable" }, { name: "robots", content: "noindex" }],
+        meta: [{ title: "Restaurant unavailable" }, { name: "robots", content: "noindex" }],
       };
     }
     const r = loaderData.record;
-    const title = `${r.title} — first-party record · ${r.region}`;
+    const title = `${r.title} — Deep Dish restaurant research · ${r.region}`;
     const description = `${r.serviceSummary.slice(0, 150)}`;
     return {
       meta: [
@@ -46,20 +47,19 @@ export const Route = createFileRoute("/record/$slug")({
       ],
     };
   },
-  notFoundComponent: RecordNotFound,
+  notFoundComponent: RestaurantNotFound,
   component: Dossier,
 });
 
-function RecordNotFound() {
+function RestaurantNotFound() {
   return (
     <main className="mx-auto max-w-2xl px-5 py-24 text-center">
-      <h1 className="font-display text-4xl tracking-tight">No such record</h1>
+      <h1 className="font-display text-4xl tracking-tight">Restaurant not found</h1>
       <p className="mt-3 text-sm text-muted-foreground">
-        Nothing in the corpus carries that identifier. Records are only created where first-party
-        evidence exists.
+        Deep Dish does not have a current research page for that restaurant.
       </p>
       <Link to="/" className="mt-6 inline-block text-sm text-primary">
-        Back to the instrument
+        Back to Deep Dish
       </Link>
     </main>
   );
@@ -111,8 +111,6 @@ function Dossier() {
     now,
   });
   const shortlist = useShortlist();
-  // Only this record's region is fetched. Before it arrives the audit reads as
-  // absent, which is what the panel already shows for an unenriched record.
   const enrichmentReady = useEnrichmentGroup(record.regionGroup);
   const audit = enrichmentReady
     ? enrichmentAudit(record.slug)
@@ -137,18 +135,14 @@ function Dossier() {
                     : null,
                 ]
                   .filter(Boolean)
-                  .join(" · ") || "First-party case file — unstated fields held open."
+                  .join(" · ") || "Restaurant research — details the restaurant does not publish remain open."
               : record.cuisineContext}
           </p>
           <div className="mt-6 flex flex-wrap gap-1.5">
             <Chip tone="accent">{record.region}</Chip>
-            <Chip>{record.depthLabel}</Chip>
-            <Chip tone="unknown">{record.unknownsCount} unknowns held open</Chip>
-            {record.hasOfficialConflict ? <Chip tone="critical">Official conflict</Chip> : null}
-            <Chip tone={record.reviewStatus === "overdue" ? "critical" : "verified"}>
-              Reviewed {record.reviewedAt} · next {record.nextReviewAt}
-            </Chip>
-            <Chip>Strongest recorded use: {strongest.occasion}</Chip>
+            {record.hasOfficialConflict ? <Chip tone="critical">Conflicting official information</Chip> : null}
+            <Chip>Updated {record.reviewedAt}</Chip>
+            <Chip>Best recorded use: {strongest.occasion}</Chip>
           </div>
 
           <div className="mt-7 flex flex-wrap items-center gap-2">
@@ -158,11 +152,14 @@ function Dossier() {
               search={(q ? Object.fromEntries(new URLSearchParams(q)) : {}) as never}
               className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
             >
-              Open decision packet
+              Open decision details
             </Link>
             <button
               type="button"
-              onClick={() => shortlist.toggle(record.slug)}
+              onClick={() => {
+                saveNightContext(situation);
+                shortlist.toggle(record.slug);
+              }}
               aria-pressed={shortlist.has(record.slug)}
               className={cn(
                 "rounded-full border px-4 py-2 text-xs transition-colors",
@@ -180,7 +177,7 @@ function Dossier() {
                 rel="noreferrer"
                 className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:border-border-strong hover:text-foreground"
               >
-                Booking pathway ({record.bookingPlatforms[0] ?? "direct"})
+                Book / reserve
               </a>
             ) : null}
             {record.hasPhone ? (
@@ -225,16 +222,16 @@ function Dossier() {
         </Reveal>
 
         <Reveal as="section" className="mt-12">
-          <Eyebrow>Findings</Eyebrow>
-          <h2 className="mt-2 font-display text-2xl tracking-tight">Against this situation</h2>
+          <Eyebrow>What Deep Dish is watching</Eyebrow>
+          <h2 className="mt-2 font-display text-2xl tracking-tight">For this night</h2>
           <div className="mt-5">
             <FindingsStack findings={sc.findings} />
           </div>
         </Reveal>
 
         <Reveal as="section" className="mt-12 pb-16">
-          <Eyebrow>First-party evidence</Eyebrow>
-          <h2 className="mt-2 font-display text-2xl tracking-tight">The record as published</h2>
+          <Eyebrow>Restaurant sources</Eyebrow>
+          <h2 className="mt-2 font-display text-2xl tracking-tight">What the restaurant publishes</h2>
           <dl className="mt-6 divide-y divide-border">
             <EvidenceRow label="Service" value={record.serviceSummary} />
             <EvidenceRow label="Menu" value={record.menuSummary} />
@@ -252,13 +249,13 @@ function Dossier() {
             <EvidenceRow label="Typical meal length" value={record.typicalMealLength} />
             <EvidenceRow label="Practical notes" value={record.practicalNotes} />
             <EvidenceRow label="Address" value={record.address} />
-            <EvidenceRow label="Open unknowns" value={record.unknowns} />
-            <EvidenceRow label="Conflict" value={record.conflict} />
-            <EvidenceRow label="Source authority" value={record.sourceAuthority} />
+            <EvidenceRow label="Still unstated" value={record.unknowns} />
+            <EvidenceRow label="Conflicting information" value={record.conflict} />
+            <EvidenceRow label="Source quality" value={record.sourceAuthority} />
             <EvidenceRow label="Confidence" value={record.confidence} />
             <EvidenceRow label="Freshness" value={record.freshnessStatus} />
-            <EvidenceRow label="Field volatility" value={record.fieldVolatility} />
-            <EvidenceRow label="Next action" value={record.nextAction} />
+            <EvidenceRow label="Likely to change" value={record.fieldVolatility} />
+            <EvidenceRow label="What to verify next" value={record.nextAction} />
           </dl>
         </Reveal>
       </div>

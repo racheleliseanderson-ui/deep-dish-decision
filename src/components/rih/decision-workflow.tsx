@@ -1,20 +1,36 @@
 import { Chip, Eyebrow } from "@/components/rih/bits";
+import { decisionState, materialFindings } from "@/components/rih/decision-card";
 import { ReturnToDesk } from "@/components/rih/return-to-desk";
-import { decisionState, materialFindings, type DecisionState } from "@/components/rih/decision-card";
+import {
+  confirmationSummary,
+  readConfirmationEvidence,
+  setConfirmationDetail,
+  updateConfirmationEvidence,
+  writeConfirmationEvidence,
+  type ConfirmationMap,
+  type ConfirmationMethod,
+  type ConfirmationStatus,
+  type DecisionState,
+} from "@/lib/confirmation-evidence";
 import { openLabel, spendLine, minutesToClock } from "@/lib/live";
 import type { Finding, Scored, Situation } from "@/lib/intelligence";
+import type { NightDetails } from "@/lib/night-context";
 import type { DecisionStatus } from "@/lib/salty-handoff/contract";
 import { cn } from "@/lib/utils";
 import { useEffect, useMemo, useState } from "react";
-
-type ConfirmStatus = "confirmed" | "cannot" | "unclear";
-type ConfirmMap = Record<string, ConfirmStatus>;
 
 const STATE_COPY: Record<DecisionState, { label: string; tone: "verified" | "watch" | "critical" }> = {
   good: { label: "GOOD FIT", tone: "verified" },
   verify: { label: "VERIFY FIRST", tone: "watch" },
   hold: { label: "HOLD", tone: "critical" },
 };
+
+const METHOD_LABELS: { value: ConfirmationMethod; label: string }[] = [
+  { value: "website", label: "Website" },
+  { value: "call", label: "Call" },
+  { value: "email", label: "Email" },
+  { value: "other", label: "Other" },
+];
 
 function timeLabel(value: string | null) {
   if (!value) return "";
@@ -25,10 +41,28 @@ function timeLabel(value: string | null) {
   return minutesToClock(h * 60 + m);
 }
 
-function callScript(finding: Finding, sc: Scored, situation: Situation) {
+function checkedLabel(value: string | null) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  return date.toLocaleString([], {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  });
+}
+
+function callScript(finding: Finding, sc: Scored, situation: Situation, details: NightDetails) {
   const room = sc.record.title;
   const time = timeLabel(situation.arriveAt);
-  const when = situation.leadDays === 0 ? "tonight" : situation.leadDays !== null ? `in ${situation.leadDays} days` : "for an upcoming dinner";
+  const hardOut = timeLabel(details.hardEndAt);
+  const when =
+    situation.leadDays === 0
+      ? "tonight"
+      : situation.leadDays !== null
+        ? `in ${situation.leadDays} days`
+        : "for an upcoming dinner";
   const at = time ? ` around ${time}` : "";
   const party = situation.partySize ? ` for ${situation.partySize}` : "";
 
@@ -42,7 +76,9 @@ function callScript(finding: Finding, sc: Scored, situation: Situation) {
     case "noise":
       return `Hi — we’re considering ${room} ${when}${at}${party}. We need a table where conversation is comfortable. Is there a quieter section or earlier seating you would recommend?`;
     case "endtime":
-      return `Hi — we’re considering ${room} ${when}${at}${party}. We have a hard end time. What table duration should we realistically allow, and can that timing be honored for this seating?`;
+      return hardOut
+        ? `Hi — we’re considering ${room} ${when}${at}${party}. We need to be completely finished by ${hardOut}. What table duration should we realistically allow, and can that end time be honored for this seating?`
+        : `Hi — we’re considering ${room} ${when}${at}${party}. We have a hard end time. What table duration should we realistically allow, and can that timing be honored for this seating?`;
     case "party":
       return `Hi — we’re considering ${room} ${when}${at}${party}. Can you confirm the large-party booking path, including table configuration, deposit, set-menu rules, and cut-off date?`;
     case "private":
@@ -100,39 +136,177 @@ function Step({
   );
 }
 
+function SourceLinks({ sc }: { sc: Scored }) {
+  const r = sc.record;
+  const sources = [
+    ["Restaurant website", r.officialSource || r.website],
+    ["Menu", r.menuUrl],
+    ["Reservations", r.reservationUrl],
+  ].filter((item): item is [string, string] => Boolean(item[1]));
+  const unique = sources.filter(
+    (item, index) => sources.findIndex((other) => other[1] === item[1]) === index,
+  );
+
+  if (!unique.length) {
+    return <p className="text-sm text-muted-foreground">No official link is saved for this restaurant. Use the phone path if one is available.</p>;
+  }
+
+  return (
+    <div className="flex flex-wrap gap-2">
+      {unique.map(([label, href]) => (
+        <a
+          key={`${label}-${href}`}
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          className="tap rounded-full border border-border px-4 py-2.5 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
+        >
+          Open {label.toLowerCase()}
+        </a>
+      ))}
+    </div>
+  );
+}
+
+function ConfirmationCard({
+  finding,
+  sc,
+  situation,
+  details,
+  evidence,
+  onStatus,
+  onMethod,
+  onNote,
+}: {
+  finding: Finding;
+  sc: Scored;
+  situation: Situation;
+  details: NightDetails;
+  evidence: ConfirmationMap[string] | undefined;
+  onStatus: (status: ConfirmationStatus) => void;
+  onMethod: (method: ConfirmationMethod) => void;
+  onNote: (note: string) => void;
+}) {
+  const source = sourceForFinding(finding, sc);
+  const checked = checkedLabel(evidence?.checkedAt ?? null);
+  return (
+    <div className="rounded-2xl border border-border bg-surface p-4 sm:p-5">
+      <div className="flex flex-wrap items-start justify-between gap-2">
+        <p className="font-medium text-foreground">{finding.title}</p>
+        {evidence?.status ? (
+          <Chip tone={evidence.status === "confirmed" ? "verified" : evidence.status === "cannot" ? "critical" : "watch"}>
+            {evidence.status === "confirmed" ? "Confirmed" : evidence.status === "cannot" ? "Cannot accommodate" : "Still unclear"}
+          </Chip>
+        ) : null}
+      </div>
+      <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
+        <span className="text-foreground">What we know:</span> {finding.detail}
+      </p>
+      <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
+        <span className="text-foreground">Ask this:</span> “{callScript(finding, sc, situation, details)}”
+      </p>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {source ? (
+          <a href={source} target="_blank" rel="noreferrer" className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground">
+            Check official source
+          </a>
+        ) : null}
+        {sc.record.hasPhone ? (
+          <a href={`tel:${sc.record.phone.replace(/[^\d+]/g, "")}`} className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground">
+            Call {sc.record.phone}
+          </a>
+        ) : null}
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-2" aria-label={`Confirmation status for ${finding.title}`}>
+        <button type="button" onClick={() => onStatus("confirmed")} className={cn("tap rounded-full border px-3 py-2 text-xs", evidence?.status === "confirmed" ? "border-verified bg-verified/10 text-verified" : "border-border text-muted-foreground")}>✓ Confirmed</button>
+        <button type="button" onClick={() => onStatus("cannot")} className={cn("tap rounded-full border px-3 py-2 text-xs", evidence?.status === "cannot" ? "border-critical bg-critical/10 text-critical" : "border-border text-muted-foreground")}>✕ Cannot accommodate</button>
+        <button type="button" onClick={() => onStatus("unclear")} className={cn("tap rounded-full border px-3 py-2 text-xs", evidence?.status === "unclear" ? "border-watch bg-watch/10 text-watch" : "border-border text-muted-foreground")}>? Still unclear</button>
+      </div>
+
+      {evidence ? (
+        <div className="mt-4 rounded-xl bg-surface-sunken/45 p-3">
+          <p className="text-[11px] uppercase tracking-[0.12em] text-subtle">How did you check?</p>
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {METHOD_LABELS.map((method) => (
+              <button
+                key={method.value}
+                type="button"
+                onClick={() => onMethod(method.value)}
+                className={cn(
+                  "tap rounded-full border px-2.5 py-1.5 text-xs",
+                  evidence.method === method.value
+                    ? "border-primary bg-primary/10 text-primary"
+                    : "border-border text-muted-foreground",
+                )}
+              >
+                {method.label}
+              </button>
+            ))}
+          </div>
+          <label className="mt-3 block">
+            <span className="text-[11px] uppercase tracking-[0.12em] text-subtle">Optional note</span>
+            <input
+              type="text"
+              maxLength={180}
+              value={evidence.note}
+              onChange={(event) => onNote(event.target.value)}
+              placeholder="e.g. host confirmed the 7:00 table can be quiet"
+              className="mt-1.5 w-full rounded-lg border border-border bg-background/40 px-3 py-2 text-xs text-foreground placeholder:text-subtle"
+            />
+          </label>
+          {checked ? <p className="mt-2 text-[11px] text-subtle">Checked {checked}</p> : null}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function BookingAction({ sc, state }: { sc: Scored; state: DecisionState }) {
+  const r = sc.record;
+  if (state === "hold") {
+    return <p className="text-sm leading-relaxed text-critical">This restaurant is on hold. Do not book it against the night as currently defined.</p>;
+  }
+  if (state === "verify") {
+    return <p className="text-sm leading-relaxed text-muted-foreground">One or more important answers are still open. Finish those before booking.</p>;
+  }
+  if (r.reservationUrl || r.website) {
+    return (
+      <a href={r.reservationUrl || r.website} target="_blank" rel="noreferrer" className="tap inline-flex min-h-11 items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90">
+        Book through the restaurant
+      </a>
+    );
+  }
+  if (r.hasPhone) {
+    return (
+      <a href={`tel:${r.phone.replace(/[^\d+]/g, "")}`} className="tap inline-flex min-h-11 items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground">
+        Call to book · {r.phone}
+      </a>
+    );
+  }
+  return <p className="text-sm text-muted-foreground">No live booking path is saved. Keep this decision open rather than guessing.</p>;
+}
+
 export function DecisionWorkflow({
   sc,
   situation,
+  details,
   onClose,
+  onNextBest,
 }: {
   sc: Scored | null;
   situation: Situation;
+  details: NightDetails;
   onClose: () => void;
+  onNextBest?: (() => void) | undefined;
 }) {
   const material = useMemo(() => (sc ? materialFindings(sc) : []), [sc]);
-  const storageKey = sc
-    ? `deep-dish-confirm:${sc.record.slug}:${situation.occasion ?? "any"}:${situation.constraints.join("|")}:${situation.leadDays ?? "na"}:${situation.arriveAt ?? "na"}`
-    : "deep-dish-confirm:none";
-  const [confirmed, setConfirmed] = useState<ConfirmMap>({});
+  const [evidence, setEvidence] = useState<ConfirmationMap>({});
 
   useEffect(() => {
     if (!sc) return;
-    try {
-      const raw = localStorage.getItem(storageKey);
-      setConfirmed(raw ? (JSON.parse(raw) as ConfirmMap) : {});
-    } catch {
-      setConfirmed({});
-    }
-  }, [sc, storageKey]);
-
-  useEffect(() => {
-    if (!sc) return;
-    try {
-      localStorage.setItem(storageKey, JSON.stringify(confirmed));
-    } catch {
-      // Confirmation still works for the current session when storage is unavailable.
-    }
-  }, [confirmed, sc, storageKey]);
+    setEvidence(readConfirmationEvidence(sc.record.slug, situation, details));
+  }, [sc, situation, details]);
 
   useEffect(() => {
     if (!sc) return;
@@ -151,23 +325,79 @@ export function DecisionWorkflow({
   if (!sc) return null;
 
   const r = sc.record;
-  const state = decisionState(sc);
-  const stateCopy = STATE_COPY[state];
+  const baseState = decisionState(sc);
+  const summary = confirmationSummary(baseState, material, evidence);
+  const effectiveState = summary.state;
+  const stateCopy = STATE_COPY[effectiveState];
   const spend = spendLine(sc.live);
   const open = openLabel(sc.open, Boolean(situation.arriveAt));
-  const hasCannot = material.some((f) => confirmed[f.id] === "cannot");
-  const unresolved = material.filter((f) => confirmed[f.id] !== "confirmed");
-  const allConfirmed = material.length === 0 || unresolved.length === 0;
-  const readyToBook = state !== "hold" && !hasCannot && allConfirmed;
-  const returnStatus: DecisionStatus = hasCannot || state === "hold" ? "hold" : readyToBook ? "verified" : "in-progress";
+  const returnStatus: DecisionStatus =
+    effectiveState === "hold" ? "hold" : effectiveState === "good" ? "verified" : "in-progress";
 
-  const sources = [
-    ["Restaurant website", r.officialSource || r.website],
-    ["Menu", r.menuUrl],
-    ["Reservations", r.reservationUrl],
-  ].filter((item): item is [string, string] => Boolean(item[1]));
+  const saveEvidence = (next: ConfirmationMap) => {
+    setEvidence(next);
+    writeConfirmationEvidence(r.slug, situation, details, next);
+  };
 
-  const uniqueSources = sources.filter((item, index) => sources.findIndex((other) => other[1] === item[1]) === index);
+  const setStatus = (finding: Finding, status: ConfirmationStatus) => {
+    saveEvidence(updateConfirmationEvidence(evidence, finding.id, { status }));
+  };
+
+  const setMethod = (finding: Finding, method: ConfirmationMethod) => {
+    saveEvidence(setConfirmationDetail(evidence, finding.id, { method }));
+  };
+
+  const setNote = (finding: Finding, note: string) => {
+    saveEvidence(setConfirmationDetail(evidence, finding.id, { note }));
+  };
+
+  const fitContent = (
+    <ul className="space-y-2 text-sm leading-relaxed text-muted-foreground">
+      {sc.reasons.slice(0, 4).map((reason) => (
+        <li key={reason} className="flex gap-2"><span className="text-primary">✓</span><span>{reason}</span></li>
+      ))}
+      {sc.distanceMi !== null ? (
+        <li className="flex gap-2"><span className="text-primary">✓</span><span>{Math.round(sc.distanceMi * 10) / 10} miles from {situation.originLabel ?? "your starting point"}</span></li>
+      ) : null}
+      {spend ? <li className="flex gap-2"><span className="text-primary">✓</span><span>{spend.text} · {spend.source}</span></li> : null}
+      <li className="flex gap-2"><span className={open.tone === "critical" ? "text-critical" : "text-primary"}>✓</span><span>{open.text}</span></li>
+    </ul>
+  );
+
+  const confirmedRecap = summary.confirmed.length ? (
+    <div className="space-y-2">
+      {summary.confirmed.map((finding) => {
+        const item = evidence[finding.id];
+        const checked = checkedLabel(item?.checkedAt ?? null);
+        return (
+          <div key={finding.id} className="rounded-xl border border-verified/25 bg-verified/5 p-3 text-[13px] leading-relaxed text-muted-foreground">
+            <p className="font-medium text-foreground">✓ {finding.title}</p>
+            <p className="mt-1">
+              Confirmed{item?.method ? ` by ${item.method}` : ""}{checked ? ` · ${checked}` : ""}{item?.note ? ` · ${item.note}` : ""}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  ) : null;
+
+  const confirmationCards = (findings: Finding[]) => (
+    <div className="space-y-4">
+      {findings.map((finding) => (
+        <ConfirmationCard
+          key={finding.id}
+          finding={finding}
+          sc={sc}
+          situation={situation}
+          details={details}
+          evidence={evidence[finding.id]}
+          onStatus={(status) => setStatus(finding, status)}
+          onMethod={(method) => setMethod(finding, method)}
+          onNote={(note) => setNote(finding, note)}
+        />
+      ))}
+    </div>
+  );
 
   return (
     <div className="fixed inset-0 z-[100] overflow-y-auto bg-ink/80 p-3 backdrop-blur-sm sm:p-6" role="dialog" aria-modal="true" aria-label={`Decision for ${r.title}`}>
@@ -189,105 +419,86 @@ export function DecisionWorkflow({
         </header>
 
         <div className="px-5 py-6 sm:px-7 sm:py-8">
-          <Step number="01" title="FIT — why this works for your night">
-            <ul className="space-y-2 text-sm leading-relaxed text-muted-foreground">
-              {sc.reasons.slice(0, 5).map((reason) => (
-                <li key={reason} className="flex gap-2"><span className="text-primary">✓</span><span>{reason}</span></li>
-              ))}
-              {sc.distanceMi !== null ? (
-                <li className="flex gap-2"><span className="text-primary">✓</span><span>{Math.round(sc.distanceMi * 10) / 10} miles from {situation.originLabel ?? "your starting point"}</span></li>
-              ) : null}
-              {spend ? <li className="flex gap-2"><span className="text-primary">✓</span><span>{spend.text} · {spend.source}</span></li> : null}
-              <li className="flex gap-2"><span className={open.tone === "critical" ? "text-critical" : "text-primary"}>✓</span><span>{open.text}</span></li>
-            </ul>
-          </Step>
+          {effectiveState === "hold" ? (
+            <>
+              <section className="rounded-2xl border border-critical/35 bg-critical/8 p-5 sm:p-6">
+                <p className="text-eyebrow text-critical">Hold this one</p>
+                <h3 className="mt-2 font-display text-2xl leading-tight">Something important does not clear the night yet.</h3>
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                  A hard requirement is either unsupported or has been confirmed as unavailable. Resolve it only if the restaurant gives you a different live answer; otherwise move on.
+                </p>
+                {onNextBest ? (
+                  <button type="button" onClick={onNextBest} className="tap mt-4 rounded-full bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground">
+                    Show me the next best option
+                  </button>
+                ) : null}
+              </section>
 
-          <Step number="02" title="UNKNOWNS — only what matters to this night">
-            {material.length ? (
-              <div className="space-y-3">
-                {material.map((finding) => (
-                  <div key={finding.id} className="rounded-xl border border-border bg-surface-sunken/40 p-4">
-                    <div className="flex flex-wrap items-start justify-between gap-2">
-                      <p className="font-medium text-foreground">{finding.title}</p>
-                      <Chip tone={finding.layer === "critical" ? "critical" : finding.layer === "watch" ? "watch" : "unknown"}>{finding.layer}</Chip>
+              <Step number="01" title="What is blocking it">
+                {confirmationCards([
+                  ...summary.cannot,
+                  ...summary.unanswered.filter((finding) => finding.layer === "critical"),
+                  ...summary.unclear.filter((finding) => finding.layer === "critical"),
+                ].filter((finding, index, all) => all.findIndex((item) => item.id === finding.id) === index))}
+              </Step>
+
+              {confirmedRecap ? <Step number="02" title="Already confirmed">{confirmedRecap}</Step> : null}
+
+              <Step number="03" title="Keep the decision with the night">
+                <ReturnToDesk
+                  room={r.title}
+                  status={returnStatus}
+                  unresolved={summary.unresolved.map((finding) => callScript(finding, sc, situation, details))}
+                />
+              </Step>
+            </>
+          ) : effectiveState === "good" ? (
+            <>
+              <Step number="01" title="Why it works">{fitContent}</Step>
+              <Step number="02" title="Quick live check">
+                <div className="space-y-4">
+                  {confirmedRecap}
+                  <SourceLinks sc={sc} />
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    Check current hours and reservation inventory before committing. Deep Dish is not treating a stale opening or old menu as a live guarantee.
+                  </p>
+                </div>
+              </Step>
+              <Step number="03" title="Book"><BookingAction sc={sc} state={effectiveState} /></Step>
+              <Step number="04" title="Keep the decision with the night">
+                <ReturnToDesk room={r.title} status={returnStatus} unresolved={[]} />
+              </Step>
+            </>
+          ) : (
+            <>
+              <Step number="01" title="Why it works">{fitContent}</Step>
+              <Step number="02" title="What still needs an answer">
+                <div className="space-y-4">
+                  {confirmedRecap}
+                  {summary.unresolved.length ? (
+                    <div className="space-y-3">
+                      {summary.unresolved.map((finding) => (
+                        <div key={finding.id} className="rounded-xl border border-border bg-surface-sunken/40 p-4">
+                          <p className="font-medium text-foreground">{finding.title}</p>
+                          <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">{finding.detail}</p>
+                        </div>
+                      ))}
                     </div>
-                    <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground"><span className="text-foreground">What we know:</span> {finding.detail}</p>
-                    <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground"><span className="text-foreground">What we don’t know:</span> {finding.action}</p>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className="text-sm leading-relaxed text-muted-foreground">No material unknown is currently attached to the needs you gave Deep Dish. Volatile details still get a final live check before booking.</p>
-            )}
-          </Step>
-
-          <Step number="03" title="OFFICIAL SOURCE — check the restaurant, not another directory">
-            {uniqueSources.length ? (
-              <div className="flex flex-wrap gap-2">
-                {uniqueSources.map(([label, href]) => (
-                  <a key={`${label}-${href}`} href={href} target="_blank" rel="noreferrer" className="tap rounded-full border border-border px-4 py-2.5 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground">
-                    Open {label.toLowerCase()}
-                  </a>
-                ))}
-              </div>
-            ) : (
-              <p className="text-sm text-muted-foreground">No official URL is held on this record. Use the phone path below.</p>
-            )}
-          </Step>
-
-          <Step number="04" title="CONFIRM — get the remaining answer">
-            {material.length ? (
-              <div className="space-y-4">
-                {material.map((finding) => {
-                  const source = sourceForFinding(finding, sc);
-                  const status = confirmed[finding.id];
-                  return (
-                    <div key={finding.id} className="rounded-2xl border border-border bg-surface p-4 sm:p-5">
-                      <p className="text-eyebrow">Ask this</p>
-                      <p className="mt-2 text-sm leading-relaxed text-foreground">“{callScript(finding, sc, situation)}”</p>
-                      <div className="mt-3 flex flex-wrap gap-2">
-                        {source ? (
-                          <a href={source} target="_blank" rel="noreferrer" className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground">Check official source</a>
-                        ) : null}
-                        {r.hasPhone ? (
-                          <a href={`tel:${r.phone.replace(/[^\d+]/g, "")}`} className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground">Call {r.phone}</a>
-                        ) : null}
-                      </div>
-                      <div className="mt-4 flex flex-wrap gap-2" aria-label={`Confirmation status for ${finding.title}`}>
-                        <button type="button" onClick={() => setConfirmed((prev) => ({ ...prev, [finding.id]: "confirmed" }))} className={cn("tap rounded-full border px-3 py-2 text-xs", status === "confirmed" ? "border-verified bg-verified/10 text-verified" : "border-border text-muted-foreground")}>✓ Confirmed</button>
-                        <button type="button" onClick={() => setConfirmed((prev) => ({ ...prev, [finding.id]: "cannot" }))} className={cn("tap rounded-full border px-3 py-2 text-xs", status === "cannot" ? "border-critical bg-critical/10 text-critical" : "border-border text-muted-foreground")}>✕ Cannot accommodate</button>
-                        <button type="button" onClick={() => setConfirmed((prev) => ({ ...prev, [finding.id]: "unclear" }))} className={cn("tap rounded-full border px-3 py-2 text-xs", status === "unclear" ? "border-watch bg-watch/10 text-watch" : "border-border text-muted-foreground")}>? Still unclear</button>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            ) : (
-              <p className="text-sm text-muted-foreground">Nothing situation-specific is waiting on a call. Check current hours and reservation inventory, then move to booking.</p>
-            )}
-          </Step>
-
-          <Step number="05" title="BOOK — only after the material questions are clear">
-            {hasCannot ? (
-              <div className="rounded-xl border border-critical/35 bg-critical/8 p-4 text-sm leading-relaxed text-critical">One of your hard requirements cannot be accommodated. Deep Dish is holding this restaurant rather than routing you into a booking.</div>
-            ) : !readyToBook ? (
-              <div className="rounded-xl border border-watch/35 bg-watch/8 p-4 text-sm leading-relaxed text-muted-foreground">{unresolved.length} confirmation{unresolved.length === 1 ? "" : "s"} still open. Finish those before booking.</div>
-            ) : r.reservationUrl || r.website ? (
-              <a href={r.reservationUrl || r.website} target="_blank" rel="noreferrer" className="tap inline-flex min-h-11 items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90">Book through the restaurant</a>
-            ) : r.hasPhone ? (
-              <a href={`tel:${r.phone.replace(/[^\d+]/g, "")}`} className="tap inline-flex min-h-11 items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground">Call to book · {r.phone}</a>
-            ) : (
-              <p className="text-sm text-muted-foreground">No live booking path is held. Return this as unresolved rather than guessing.</p>
-            )}
-          </Step>
-
-          <Step number="06" title="RETURN — keep the decision with the night">
-            <ReturnToDesk
-              room={r.title}
-              status={returnStatus}
-              unresolved={unresolved.map((finding) => callScript(finding, sc, situation))}
-            />
-          </Step>
+                  ) : null}
+                </div>
+              </Step>
+              <Step number="03" title="Check the restaurant"><SourceLinks sc={sc} /></Step>
+              <Step number="04" title="Confirm it">{confirmationCards(summary.unresolved)}</Step>
+              <Step number="05" title="Book"><BookingAction sc={sc} state={effectiveState} /></Step>
+              <Step number="06" title="Keep the decision with the night">
+                <ReturnToDesk
+                  room={r.title}
+                  status={returnStatus}
+                  unresolved={summary.unresolved.map((finding) => callScript(finding, sc, situation, details))}
+                />
+              </Step>
+            </>
+          )}
         </div>
       </div>
     </div>

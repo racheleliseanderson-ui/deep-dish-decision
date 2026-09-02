@@ -1,5 +1,11 @@
 import { corpusMeta } from "@/lib/corpus-meta";
-import type { Constraint, Occasion, Situation } from "@/lib/intelligence";
+import {
+  SPEND_BANDS,
+  type Constraint,
+  type Occasion,
+  type Situation,
+} from "@/lib/intelligence";
+import type { NightDetails } from "@/lib/night-context";
 import type { OriginState } from "@/lib/origin";
 import { cn } from "@/lib/utils";
 import { useEffect, useMemo, useState } from "react";
@@ -86,14 +92,18 @@ function Choice({
 
 export function QuickStart({
   situation,
+  details,
   onChange,
+  onDetailsChange,
   originState,
   nearMeResolving,
   nearMeError,
   onSubmit,
 }: {
   situation: Situation;
+  details: NightDetails;
   onChange: (next: Situation) => void;
+  onDetailsChange: (next: NightDetails) => void;
   originState: OriginState;
   nearMeResolving: boolean;
   nearMeError: string | null;
@@ -120,7 +130,10 @@ export function QuickStart({
   const [locationError, setLocationError] = useState<string | null>(null);
   const [dateValue, setDateValue] = useState(() => dateFromLeadDays(situation.leadDays));
   const [otherNight, setOtherNight] = useState(false);
+  const [nightError, setNightError] = useState<string | null>(null);
+  const [whenError, setWhenError] = useState<string | null>(null);
   const [constraintAnswered, setConstraintAnswered] = useState(situation.constraints.length > 0);
+  const [constraintError, setConstraintError] = useState<string | null>(null);
 
   useEffect(() => {
     if (situation.region && !locationText) setLocationText(situation.region);
@@ -158,7 +171,7 @@ export function QuickStart({
     if (!locationText.trim()) return Boolean(situation.regionGroup);
     const place = findPlace(locationText);
     if (!place) {
-      setLocationError("Choose a city from the suggestions so Deep Dish knows which regional file to load.");
+      setLocationError("Choose a city from the suggestions so Deep Dish knows where to look.");
       return false;
     }
 
@@ -178,16 +191,19 @@ export function QuickStart({
   };
 
   const selectNight = (value: Occasion | null, label: string) => {
-    setOtherNight(value === null && label === "Something else");
+    const isOther = value === null && label === "Something else";
+    setOtherNight(isOther);
+    setNightError(null);
     onChange({
       ...situation,
       occasion: value,
-      preferWalkIn: value === "Walk-in / spontaneous" ? true : situation.preferWalkIn,
+      preferWalkIn: value === "Walk-in / spontaneous",
     });
   };
 
   const toggleConstraint = (value: Constraint) => {
     setConstraintAnswered(true);
+    setConstraintError(null);
     const exists = situation.constraints.includes(value);
     onChange({
       ...situation,
@@ -195,19 +211,55 @@ export function QuickStart({
         ? situation.constraints.filter((x) => x !== value)
         : [...situation.constraints, value],
     });
+    if (exists && value === "Hard end time (show, train, childcare)") {
+      onDetailsChange({ ...details, hardEndAt: null });
+    }
+  };
+
+  const validateConstraintDetails = () => {
+    if (!constraintAnswered) {
+      setConstraintError("Choose a hard constraint or Nothing critical.");
+      return false;
+    }
+    if (situation.constraints.includes("Large party (6+)") && (situation.partySize ?? 0) < 6) {
+      setConstraintError("How many people are in the group?");
+      return false;
+    }
+    if (situation.constraints.includes("Hard budget cap") && !situation.spendBand) {
+      setConstraintError("Choose the budget ceiling you need Deep Dish to respect.");
+      return false;
+    }
+    if (situation.constraints.includes("Hard end time (show, train, childcare)") && !details.hardEndAt) {
+      setConstraintError("What time do you need to be finished?");
+      return false;
+    }
+    return true;
   };
 
   const submit = () => {
+    let valid = true;
     if (!situation.regionGroup && originState.origin?.kind !== "device") {
-      if (!commitPlace()) return;
+      valid = commitPlace() && valid;
     } else if (locationText.trim() && originState.origin?.kind !== "device") {
-      if (!commitPlace()) return;
+      valid = commitPlace() && valid;
     }
-    if (nearMeResolving) return;
+    if (!situation.occasion && !otherNight) {
+      setNightError("Choose the kind of night, or Something else.");
+      valid = false;
+    }
+    if (situation.leadDays === null) {
+      setWhenError("Choose Tonight or a date.");
+      valid = false;
+    }
+    if (!validateConstraintDetails()) valid = false;
+    if (!valid || nearMeResolving) return;
     onSubmit();
   };
 
   const nearMeActive = originState.origin?.kind === "device";
+  const largeGroup = situation.constraints.includes("Large party (6+)");
+  const hardBudget = situation.constraints.includes("Hard budget cap");
+  const hardEnd = situation.constraints.includes("Hard end time (show, train, childcare)");
 
   return (
     <section id="situation" className="scroll-mt-24 rounded-3xl border border-border bg-surface p-5 shadow-lift sm:p-7 lg:p-8">
@@ -217,7 +269,7 @@ export function QuickStart({
           What does this night actually need?
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Start here. Deep Dish can refine the answer later; it does not need eleven inputs before it can help.
+          Start here. Add more detail only if you want to refine the answer later.
         </p>
       </div>
 
@@ -241,11 +293,11 @@ export function QuickStart({
                 originState.request();
               }}
             >
-              {originState.status === "asking" || nearMeResolving ? "Finding nearby restaurants…" : "Near me"}
+              {originState.status === "asking" || nearMeResolving ? "Searching near you…" : "Near me"}
             </Choice>
           </div>
           <label className="mt-3 block text-xs uppercase tracking-[0.14em] text-subtle" htmlFor="deep-dish-place">
-            Or city / neighborhood
+            Or city / area
           </label>
           <input
             id="deep-dish-place"
@@ -268,7 +320,7 @@ export function QuickStart({
           </datalist>
           {nearMeActive && situation.regionGroup ? (
             <p className="mt-2 text-xs text-muted-foreground">
-              Using your location · nearest Deep Dish region: <span className="text-foreground">{situation.regionGroup}</span>
+              Searching the Deep Dish restaurants nearest your location.
             </p>
           ) : null}
           {originState.status === "denied" ? (
@@ -292,6 +344,7 @@ export function QuickStart({
               </Choice>
             ))}
           </div>
+          {nightError ? <p className="mt-2 text-xs text-watch">{nightError}</p> : null}
         </fieldset>
 
         <fieldset>
@@ -302,6 +355,7 @@ export function QuickStart({
               onClick={() => {
                 const today = localIso(new Date());
                 setDateValue(today);
+                setWhenError(null);
                 onChange({ ...situation, leadDays: 0 });
               }}
             >
@@ -315,6 +369,7 @@ export function QuickStart({
                 value={dateValue}
                 onChange={(e) => {
                   setDateValue(e.target.value);
+                  setWhenError(null);
                   onChange({ ...situation, leadDays: leadDaysFromDate(e.target.value) });
                 }}
                 className="w-full rounded-xl border border-border bg-background/35 px-3 py-2.5 text-sm text-foreground"
@@ -330,7 +385,8 @@ export function QuickStart({
               />
             </label>
           </div>
-          <p className="mt-2 text-xs text-subtle">Date and approximate seating time are enough. Exact availability still gets confirmed with the restaurant.</p>
+          <p className="mt-2 text-xs text-subtle">The seating time can be approximate. Deep Dish will still tell you what needs a live check.</p>
+          {whenError ? <p className="mt-2 text-xs text-watch">{whenError}</p> : null}
         </fieldset>
 
         <fieldset>
@@ -349,12 +405,74 @@ export function QuickStart({
               active={constraintAnswered && situation.constraints.length === 0}
               onClick={() => {
                 setConstraintAnswered(true);
+                setConstraintError(null);
+                onDetailsChange({ ...details, hardEndAt: null });
                 onChange({ ...situation, constraints: [] });
               }}
             >
               Nothing critical
             </Choice>
           </div>
+
+          {largeGroup || hardBudget || hardEnd ? (
+            <div className="mt-4 grid gap-3 rounded-xl border border-border bg-surface-sunken/45 p-4 sm:grid-cols-2">
+              {largeGroup ? (
+                <label>
+                  <span className="text-xs font-medium text-foreground">How many people?</span>
+                  <input
+                    type="number"
+                    min={6}
+                    max={50}
+                    inputMode="numeric"
+                    value={situation.partySize ?? ""}
+                    onChange={(e) => {
+                      setConstraintError(null);
+                      const value = e.target.value ? Number(e.target.value) : null;
+                      onChange({ ...situation, partySize: value });
+                    }}
+                    placeholder="8"
+                    className="mt-1.5 w-full rounded-xl border border-border bg-background/35 px-3 py-2.5 text-sm text-foreground"
+                  />
+                </label>
+              ) : null}
+
+              {hardBudget ? (
+                <label>
+                  <span className="text-xs font-medium text-foreground">Budget ceiling</span>
+                  <select
+                    value={situation.spendBand ?? ""}
+                    onChange={(e) => {
+                      setConstraintError(null);
+                      onChange({ ...situation, spendBand: e.target.value || null });
+                    }}
+                    className="mt-1.5 w-full rounded-xl border border-border bg-background/35 px-3 py-2.5 text-sm text-foreground"
+                  >
+                    <option value="">Choose a ceiling</option>
+                    {SPEND_BANDS.map((band) => (
+                      <option key={band} value={band}>{band}</option>
+                    ))}
+                  </select>
+                </label>
+              ) : null}
+
+              {hardEnd ? (
+                <label>
+                  <span className="text-xs font-medium text-foreground">Need to be finished by</span>
+                  <input
+                    type="time"
+                    value={details.hardEndAt ?? ""}
+                    onChange={(e) => {
+                      setConstraintError(null);
+                      onDetailsChange({ ...details, hardEndAt: e.target.value || null });
+                    }}
+                    className="mt-1.5 w-full rounded-xl border border-border bg-background/35 px-3 py-2.5 text-sm text-foreground"
+                  />
+                </label>
+              ) : null}
+            </div>
+          ) : null}
+
+          {constraintError ? <p className="mt-2 text-xs text-watch">{constraintError}</p> : null}
         </fieldset>
       </div>
 

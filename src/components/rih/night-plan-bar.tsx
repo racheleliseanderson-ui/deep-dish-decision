@@ -5,10 +5,7 @@ import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
-/**
- * Always-visible decision bar. The shortlist stays local to Restaurant Intelligence;
- * the Salty Night Record carries only the cross-suite decision summary and resume point.
- */
+/** Always-visible decision bar. Cross-suite night continuity remains separate from local restaurant saves. */
 export function NightPlanBar() {
   const shortlist = useShortlist();
   const count = shortlist.slugs.length;
@@ -62,23 +59,23 @@ export function NightPlanBar() {
         <div className="min-w-0 flex-1">
           {night ? (
             <p className="truncate text-[12px] text-muted-foreground">
-              <span className="text-eyebrow text-primary">Night record</span>
+              <span className="text-eyebrow text-primary">Current night</span>
               <span className="text-foreground"> · {night.decision}</span>
               <span className="hidden md:inline"> · Next: {night.nextStep}</span>
               {count ? (
                 <span className="text-subtle">
-                  {" "}· {count} room{count === 1 ? "" : "s"} saved
+                  {" "}· {count} restaurant{count === 1 ? "" : "s"} saved
                   {titles.length ? ` · ${titles.join(" · ")}` : ""}
                 </span>
               ) : null}
             </p>
           ) : count === 0 ? (
             <p className="truncate text-[12px] text-muted-foreground">
-              No Salty Night Record yet — describe this night, then save or confirm a room.
+              Night plan is empty — save a restaurant from your results.
             </p>
           ) : (
             <p className="truncate text-[12px] text-muted-foreground">
-              <span className="text-num text-foreground">{count}</span> on the restaurant shortlist
+              <span className="text-num text-foreground">{count}</span> in the night plan
               {titles.length ? <span className="text-subtle"> · {titles.join(" · ")}</span> : null}
             </p>
           )}
@@ -103,7 +100,7 @@ export function NightPlanBar() {
             hash="ranked"
             className="tap rounded-full border border-border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] text-muted-foreground hover:border-border-strong hover:text-foreground"
           >
-            Ranked rooms
+            Results
           </Link>
           <Link
             to="/shortlist"
@@ -114,7 +111,7 @@ export function NightPlanBar() {
                 : "border border-border text-muted-foreground hover:border-border-strong hover:text-foreground",
             )}
           >
-            Shortlist{count ? ` · ${count}` : ""}
+            Night plan{count ? ` · ${count}` : ""}
           </Link>
         </div>
       </div>

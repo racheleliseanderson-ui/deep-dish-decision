@@ -22,10 +22,7 @@ function write(next: string[]) {
   window.dispatchEvent(new CustomEvent(EVENT));
 }
 
-/**
- * The shortlist is deliberately local to the reader's browser: nothing about a
- * night out is sent anywhere, and no record is altered by being shortlisted.
- */
+/** The night plan stays local to this browser. */
 export function useShortlist() {
   const [slugs, setSlugs] = useState<string[]>([]);
 
@@ -47,6 +44,10 @@ export function useShortlist() {
       write(slugs.includes(slug) ? slugs.filter((s) => s !== slug) : [...slugs, slug]),
     remove: (slug: string) => write(slugs.filter((s) => s !== slug)),
     clear: () => write([]),
+    makePrimary: (slug: string) => {
+      if (!slugs.includes(slug)) return;
+      write([slug, ...slugs.filter((item) => item !== slug)]);
+    },
     move: (slug: string, dir: -1 | 1) => {
       const i = slugs.indexOf(slug);
       const j = i + dir;
