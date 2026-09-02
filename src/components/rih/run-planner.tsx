@@ -150,8 +150,8 @@ export function RunPlanner() {
               </p>
               <p className="mt-1 font-mono text-[11px] text-subtle">{refreshQueueCommand()}</p>
               <p className="mt-2 text-[12px] text-muted-foreground">
-                Rebuilds the stale-by-tier queue, then enriches never-enriched, thin, site-failure,
-                and review-due slugs only — no new cities.
+                Rebuilds the stale-by-tier queue, then enriches existing slugs only: never
+                enriched, thin, site-failure and review-due.
               </p>
             </div>
           </div>

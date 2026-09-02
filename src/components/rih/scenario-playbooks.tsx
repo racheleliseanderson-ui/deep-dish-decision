@@ -72,8 +72,8 @@ export function ScenarioPlaybooks({
       </div>
       <GiltRule className="mt-3" />
       <p className="mt-4 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
-        Starting points only. Each playbook fills situation fields — never invents menu items,
-        prices, or ratings. Fail-closed rules still apply.
+        Starting points only. Each playbook fills situation fields and leaves the evidence alone.
+        Fail-closed rules still apply.
       </p>
 
       <div className="mt-6 space-y-8">

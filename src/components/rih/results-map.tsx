@@ -398,8 +398,8 @@ export function ResultsMap({
       </div>
 
       <figcaption className="mt-1.5 text-[11px] leading-relaxed text-subtle">
-        Equirectangular plot from recorded coordinates — not a street map. Dashed points are city
-        centroids, used where the room&rsquo;s own coordinate is not on file.
+        Equirectangular plot from recorded coordinates. Dashed points are city centroids, used
+        where the room&rsquo;s own coordinate is not on file.
       </figcaption>
     </figure>
   );

@@ -162,7 +162,7 @@ function Guide() {
             <Stat
               label="Questions left open"
               value={corpus.totalUnknowns}
-              note="Held as unknown, never inferred"
+              note="Held open as unknown"
               tone="unknown"
             />
             <Stat
@@ -187,7 +187,7 @@ function Guide() {
         <Reveal as="section" className="mt-14">
           <div className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-4">
             <span className="text-num shrink-0 text-[11px] tracking-[0.2em] text-gilt">000</span>
-            <h2 className="text-eyebrow truncate">How a night becomes a shortlist</h2>
+            <h2 className="text-eyebrow">How a night becomes a shortlist</h2>
           </div>
           <p className="mt-4 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
             Before the five decisions, the mechanism. Three things remove a room from your list, one

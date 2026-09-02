@@ -229,7 +229,7 @@ export function NightSummary({
           tone={model.atRisk ? "watch" : undefined}
           note={
             model.atRisk
-              ? "deposits and cancellation fees — not the price of dinner"
+              ? "deposits and cancellation fees, separate from the meal"
               : "no deposit or fee on file"
           }
         />

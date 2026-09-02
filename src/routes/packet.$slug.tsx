@@ -109,9 +109,9 @@ function Packet() {
       <div className="no-print mb-6 flex flex-wrap items-center justify-between gap-3">
         <Link
           to="/"
-          className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:text-foreground"
+          className="tap inline-flex items-center rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:text-foreground"
         >
-          ← Back to the hub
+          ← Back to Deep Dish
         </Link>
         <div className="flex items-center gap-2">
           <ThemeToggle />
@@ -126,14 +126,14 @@ function Packet() {
                 generatedAt: new Date().toISOString().slice(0, 16).replace("T", " ") + " UTC",
               })
             }
-            className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
+            className="tap inline-flex items-center rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
           >
             Download packet PDF
           </button>
           <button
             type="button"
             onClick={() => window.print()}
-            className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:text-foreground"
+            className="tap inline-flex items-center rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:text-foreground"
           >
             Print
           </button>

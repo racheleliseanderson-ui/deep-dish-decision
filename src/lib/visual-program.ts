@@ -129,7 +129,7 @@ export function primaryVisual(slug: string): RestaurantVisual | null {
 
 export function identityCaption(record: RestaurantRecord): string {
   const family: MarkFamily = markFamily(record);
-  return `Identity mark (${family}) derived from cuisine and room signals on this record — not a photograph of ${record.title}.`;
+  return `Identity mark (${family}), drawn from cuisine and room signals recorded for ${record.title}.`;
 }
 
 export function provenanceLabel(visual: RestaurantVisual): string {
@@ -145,8 +145,8 @@ export function provenanceLabel(visual: RestaurantVisual): string {
   }
   if (p.kind === "licensed_media") return `Licensed media · ${p.credit}`;
   if (p.kind === "editorial_illustration")
-    return `Editorial illustration — not a documentary photo. ${p.note}`;
-  return "Identity mark — not a photograph.";
+    return `Editorial illustration. ${p.note}`;
+  return "Identity mark, drawn from the record.";
 }
 
 export function visualCoverage(): {

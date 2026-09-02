@@ -229,7 +229,7 @@ export function CompareDialog({
           </DialogTitle>
           <p className="mt-1 text-[13px] text-muted-foreground">
             Ranked against the same situation. Fail-closed holds stay visible. Unknowns are held
-            open — never filled in to make a column look complete.
+            open and shown as unknown.
           </p>
         </div>
         <div className="scroll-slim max-h-[74vh] overflow-y-auto px-5 py-5 sm:px-6">

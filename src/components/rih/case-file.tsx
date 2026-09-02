@@ -192,7 +192,7 @@ export function CaseFile({
                 <Eyebrow>Recorded fields</Eyebrow>
                 <p className="mt-2 text-[12px] leading-relaxed text-subtle">
                   Every record uses this same field set. Unstated means the restaurant's own
-                  pages were silent — not that the instrument guessed.
+                  pages were silent on it.
                 </p>
                 <dl className="mt-3 divide-y divide-border">
                   {CASE_FIELDS.map((field) => {

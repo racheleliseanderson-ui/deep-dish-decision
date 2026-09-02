@@ -110,7 +110,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { property: "og:image:alt", content: "Dining room · Deep Dish" },
         { property: "og:url", content: canonical },
         { name: "twitter:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
-        { name: "theme-color", content: "#0c1220" },
+        // One fixed navy went out on every route, so Pearl readers got navy
+        // browser chrome around a light page. Emit both variants and let the
+        // browser pick; the values are --background for each mode.
+        { name: "theme-color", content: "#f9fafd", media: "(prefers-color-scheme: light)" },
+        { name: "theme-color", content: "#0c1220", media: "(prefers-color-scheme: dark)" },
       ],
       links: [
         { rel: "canonical", href: canonical },
@@ -146,7 +150,11 @@ const stalePwaCleanup = `(function(){try{if(!("serviceWorker" in navigator))retu
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className="dark">
+    // themeInit below rewrites this class before paint from the reader's stored
+    // mode, so the server-rendered "dark" is a default, not a claim. Without
+    // suppressHydrationWarning every Pearl reader hydrated against a root whose
+    // class React had already been told was something else.
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />

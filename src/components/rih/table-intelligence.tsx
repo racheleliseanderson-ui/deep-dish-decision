@@ -114,6 +114,19 @@ function HoursGrid({ live, now }: { live: LiveRow; now: Date }) {
   );
 }
 
+/**
+ * Tailwind scans source text for class names, so `text-${tone}` only ever
+ * resolved because all four literals happened to be written out elsewhere in
+ * the repo. Deleting the last such line anywhere would have silently unstyled
+ * this one. Name them here instead.
+ */
+const OPEN_TONE_CLASS: Record<"verified" | "watch" | "critical" | "unknown", string> = {
+  verified: "text-verified",
+  watch: "text-watch",
+  critical: "text-critical",
+  unknown: "text-unknown",
+};
+
 const AMENITY_LABELS: Record<string, string> = {
   reservable: "Takes reservations",
   outdoorSeating: "Outdoor seating",
@@ -278,7 +291,7 @@ export function TableIntelligence({
       <Panel title="When you can go" source={hoursProvenance(live) ?? undefined}>
         {live?.hours ? (
           <>
-            <p className={cn("mb-3 text-[13px] font-medium", `text-${openState.tone}`)}>
+            <p className={cn("mb-3 text-[13px] font-medium", OPEN_TONE_CLASS[openState.tone])}>
               {openState.text}
             </p>
             <HoursGrid live={live} now={now} />

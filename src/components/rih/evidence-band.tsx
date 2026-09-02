@@ -70,7 +70,7 @@ export function EvidenceBand({
           </p>
           <p className="text-[12px] text-subtle">
             {regionLabel
-              ? "A gap is shown as a gap — never filled in to make a column look complete."
+              ? "A gap is shown as a gap."
               : `${corpusCount.toLocaleString()} records. Choose a region to see its coverage.`}
           </p>
         </div>

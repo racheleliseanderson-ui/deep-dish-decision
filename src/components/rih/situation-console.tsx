@@ -102,7 +102,7 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
             </div>
           </Field>
 
-          <Field label="Guest needs" hint="never assumed satisfied — we'll hold rather than guess">
+          <Field label="Guest needs" hint="we hold the room rather than guess">
             <div className="flex flex-wrap gap-1.5">
               {CONSTRAINTS.map((c) => (
                 <Toggle key={c} active={s.constraints.includes(c)} onClick={() => toggleConstraint(c)}>

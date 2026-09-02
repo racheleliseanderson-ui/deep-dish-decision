@@ -50,7 +50,7 @@ function foodGood(
   const identity = food.culinaryIdentity;
   const parts: string[] = [];
   if (identity) {
-    parts.push(`The restaurant describes itself as ${uncap(identity)}`);
+    parts.push(`The restaurant describes itself as ${uncap(identity, properOpeners(record))}`);
   } else {
     parts.push("Culinary identity is not stated on the restaurant's own pages.");
   }
@@ -177,7 +177,7 @@ function whatPeopleThink(rep: ReturnType<typeof buildReputation>): DinerAnswer {
     "What do other people think?",
     rep.patternSummary,
     rep.evidenceStrength === "none" ? "notOnFile" : "publicReputationEvidence",
-    "Directory sample only — no review-pattern consensus",
+    "Directory sample only",
     true,
   );
 }
@@ -286,7 +286,7 @@ function menuLike(
   if (food.beverageProgram) bits.push(`Drinks: ${uncap(food.beverageProgram)}`);
   if (rep.dishesRecommended.length) {
     bits.push(
-      `Public-review pattern names: ${rep.dishesRecommended.slice(0, 3).join("; ")} — not a first-party menu, confirm live.`,
+      `Public-review pattern names: ${rep.dishesRecommended.slice(0, 3).join("; ")}. Confirm against the current menu.`,
     );
   }
   if (!bits.length) {
@@ -404,6 +404,53 @@ function q(
   return { id, n, question, answer, source, sourceLabel, open };
 }
 
-function uncap(s: string): string {
-  return s.replace(/\.$/, "") + ".";
+/**
+ * Words that open a description as ordinary sentence case even though the
+ * corpus also files them as cuisine tags. Without this "Contemporary" and
+ * "Seasonal" would be protected as names and the capital would survive.
+ */
+const GENERIC_OPENERS = new Set([
+  "contemporary",
+  "creative",
+  "casual",
+  "fine",
+  "modern",
+  "seasonal",
+  "small",
+  "tasting",
+  "wine",
+]);
+
+/** The proper nouns this particular record is entitled to keep capitalised. */
+function properOpeners(r: RestaurantRecord): Set<string> {
+  const out = new Set<string>();
+  for (const source of [r.city, r.stateProvince, r.region, r.regionGroup, ...(r.cuisineTags ?? [])]) {
+    for (const word of String(source ?? "").split(/[^A-Za-z'-]+/)) {
+      const key = word.toLowerCase();
+      if (key.length > 2 && !GENERIC_OPENERS.has(key)) out.add(key);
+    }
+  }
+  return out;
+}
+
+/**
+ * Fit a stored sentence into the middle of another one: lowercase its opening
+ * letter and leave it with exactly one full stop.
+ *
+ * It only ever did the second half, despite the name, so
+ * `The restaurant describes itself as ${uncap(identity)}` printed a capital
+ * mid-clause on every record with a stated culinary identity.
+ *
+ * The opener is left capitalised when it is a name rather than a sentence
+ * start: a word carrying an internal capital ("Italian-American", "PNW"), or
+ * one of this record's own places and cuisines ("Seattle destination dining").
+ * Lowercasing those would read worse than the bug being fixed.
+ */
+function uncap(s: string, keep?: Set<string>): string {
+  const text = String(s ?? "").trim().replace(/\s*\.+$/, "");
+  if (!text) return "";
+  const opener = (text.split(/[^A-Za-z'-]+/, 1)[0] ?? "").replace(/^['-]+/, "");
+  const isName = /[A-Z]/.test(opener.slice(1)) || (keep?.has(opener.toLowerCase()) ?? false);
+  const head = isName ? text : text.charAt(0).toLowerCase() + text.slice(1);
+  return `${head}.`;
 }

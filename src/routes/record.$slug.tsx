@@ -161,7 +161,7 @@ function Dossier() {
               to="/packet/$slug"
               params={{ slug: record.slug }}
               search={(q ? Object.fromEntries(new URLSearchParams(q)) : {}) as never}
-              className="rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
+              className="tap inline-flex items-center rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
             >
               Open decision details
             </Link>
@@ -173,7 +173,7 @@ function Dossier() {
               }}
               aria-pressed={shortlist.has(record.slug)}
               className={cn(
-                "rounded-full border px-4 py-2 text-xs transition-colors",
+                "tap inline-flex items-center rounded-full border px-4 py-2 text-xs transition-colors",
                 shortlist.has(record.slug)
                   ? "border-primary/50 bg-primary/12 text-primary"
                   : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground",
@@ -186,7 +186,7 @@ function Dossier() {
                 href={record.reservationUrl || record.website}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:border-border-strong hover:text-foreground"
+                className="tap inline-flex items-center rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:border-border-strong hover:text-foreground"
               >
                 Book / reserve
               </a>
@@ -194,7 +194,7 @@ function Dossier() {
             {record.hasPhone ? (
               <a
                 href={`tel:${record.phone.replace(/[^\d+]/g, "")}`}
-                className="text-num rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:border-border-strong hover:text-foreground"
+                className="tap text-num inline-flex items-center rounded-full border border-border px-4 py-2 text-xs text-muted-foreground hover:border-border-strong hover:text-foreground"
               >
                 {record.phone}
               </a>

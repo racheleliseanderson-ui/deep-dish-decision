@@ -19,7 +19,7 @@ export function SupportFooter() {
       data-print="hide"
       data-bmc-campaign="keep-the-curtain-up"
       style={{
-        borderTop: "1px solid rgba(128, 128, 128, 0.22)",
+        borderTop: "1px solid var(--color-border)",
         padding: "0.8rem 1rem max(0.9rem, env(safe-area-inset-bottom))",
         marginBottom: "var(--night-bar-h, 0px)",
         textAlign: "center",

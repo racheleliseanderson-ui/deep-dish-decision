@@ -19,7 +19,7 @@ export function LabsFooter() {
           Deep Dish · Restaurant Intelligence
         </h2>
         <p className="mt-3 max-w-xl text-[13px] leading-relaxed text-ink-foreground/70">
-          What the record actually supports for tonight — not a ranking, not a reservation.
+          What the record actually supports for tonight.
         </p>
 
         <nav aria-label="In this site" className="mt-10">

@@ -43,7 +43,7 @@ function ReputationBody({ rep }: { rep: PublicReputationEvidence }) {
       {rep.directoryBlurb ? (
         <p className="mt-4 text-[12px] leading-relaxed text-muted-foreground">
           <span className="text-eyebrow block">
-            {rep.listingSource ?? "Directory"} editorial — not a review consensus
+            {rep.listingSource ?? "Directory"} editorial copy
           </span>
           <span className="mt-1 block">{rep.directoryBlurb}</span>
         </p>
@@ -61,7 +61,7 @@ function ReputationBody({ rep }: { rep: PublicReputationEvidence }) {
       ) : null}
 
       <p className="mt-4 text-[11px] leading-relaxed text-subtle">
-        Sources: {rep.sourceMix.join(" · ") || "none"}. Ranking eligible: never.
+        Sources: {rep.sourceMix.join(" · ") || "none"}. Held off the ranking.
       </p>
     </section>
   );

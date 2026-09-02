@@ -26,7 +26,7 @@ export const Route = createFileRoute("/atlas")({
       {
         property: "og:description",
         content:
-          "Coverage, depth and gaps across every record under review — counted from first-party evidence, never inferred.",
+          "Coverage, depth and gaps across every record under review, counted from first-party evidence.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -208,9 +208,8 @@ function Atlas() {
                 </h2>
               </div>
               <p className="max-w-md text-[12px] leading-relaxed text-subtle">
-                Read this before any coverage chart. A field missing here means the restaurant has
-                not published it — not that it does not exist. These are the lines a call has to
-                close.
+                Read this before any coverage chart. A field missing here means the restaurant
+                has not published it. These are the lines a call has to close.
               </p>
             </div>
             <ul className="mt-7 grid gap-x-10 gap-y-4 sm:grid-cols-2">
@@ -235,7 +234,7 @@ function Atlas() {
           <div className="grid gap-10 lg:grid-cols-2">
             <FacetTable
               title="Region groups"
-              note="Coverage is uneven by design — records enter the corpus when first-party evidence exists, not to fill a map."
+              note="Coverage is uneven by design: a record enters the corpus when first-party evidence exists."
               rows={byRegionGroup}
               limit={12}
             />
@@ -293,7 +292,7 @@ function Atlas() {
             </div>
             <p className="max-w-md text-[12px] leading-relaxed text-subtle">
               Strongest occasion is derived from each record&apos;s own stated service, pacing and
-              format signals — not from anyone&apos;s opinion of the room.
+              format signals.
             </p>
           </div>
           <div className="mt-8 grid gap-10 lg:grid-cols-3">
@@ -317,7 +316,7 @@ function Atlas() {
             <div className="grid gap-10 sm:grid-cols-2">
               <FacetTable
                 title="Accessibility recorded"
-                note="Unrecorded access is never treated as available."
+                note="Unrecorded access stays unrecorded."
                 rows={byAccessibility}
                 limit={8}
                 tone="unknown"

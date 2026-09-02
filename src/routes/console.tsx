@@ -246,7 +246,7 @@ function Console() {
                   }}
                   aria-pressed={ledgerFilter === id}
                   className={
-                    "rounded-full border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] transition-colors " +
+                    "tap inline-flex items-center rounded-full border px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] transition-colors " +
                     (ledgerFilter === id
                       ? "border-primary/40 bg-primary/12 text-primary"
                       : "border-border text-muted-foreground hover:text-foreground")
@@ -494,7 +494,7 @@ function Console() {
                   type="button"
                   onClick={() => setQuery("")}
                   aria-label="Clear search"
-                  className="absolute right-1 top-1/2 flex size-9 -translate-y-1/2 items-center justify-center rounded-md text-subtle transition-colors hover:text-foreground"
+                  className="tap absolute right-1 top-1/2 flex size-11 -translate-y-1/2 items-center justify-center rounded-md text-subtle transition-colors hover:text-foreground"
                 >
                   ×
                 </button>

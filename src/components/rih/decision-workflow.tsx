@@ -17,7 +17,7 @@ import type { Finding, Scored, Situation } from "@/lib/intelligence";
 import type { NightDetails } from "@/lib/night-context";
 import type { DecisionStatus } from "@/lib/salty-handoff/contract";
 import { cn } from "@/lib/utils";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 const STATE_COPY: Record<DecisionState, { label: string; tone: "verified" | "watch" | "critical" }> = {
   good: { label: "GOOD FIT", tone: "verified" },
@@ -308,19 +308,74 @@ export function DecisionWorkflow({
     setEvidence(readConfirmationEvidence(sc.record.slug, situation, details));
   }, [sc, situation, details]);
 
+  const dialogRef = useRef<HTMLDivElement | null>(null);
+
+  const focusableIn = useCallback((root: HTMLElement): HTMLElement[] => {
+    const nodes = root.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+    );
+    return Array.from(nodes).filter(
+      (el) => el.offsetParent !== null || el === document.activeElement,
+    );
+  }, []);
+
+  /**
+   * aria-modal="true" is a promise to assistive tech that the rest of the page
+   * is inert. Escape and the scroll lock were already here; focus was not, so
+   * a keyboard reader tabbed straight out of the dialog into the page behind it
+   * and had no way back. Move focus in on open, cycle it at the ends, and give
+   * it back to whatever opened the dialog on close.
+   */
   useEffect(() => {
     if (!sc) return;
     const prior = document.body.style.overflow;
+    const previouslyFocused = document.activeElement as HTMLElement | null;
     document.body.style.overflow = "hidden";
+
+    const root = dialogRef.current;
+    if (root) {
+      const first = focusableIn(root)[0];
+      (first ?? root).focus();
+    }
+
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
+      if (event.key === "Escape") {
+        onClose();
+        return;
+      }
+      if (event.key !== "Tab") return;
+      const container = dialogRef.current;
+      if (!container) return;
+      const items = focusableIn(container);
+      if (!items.length) {
+        event.preventDefault();
+        container.focus();
+        return;
+      }
+      const first = items[0]!;
+      const last = items[items.length - 1]!;
+      const active = document.activeElement as HTMLElement | null;
+      if (!container.contains(active)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
+        return;
+      }
+      if (event.shiftKey && active === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && active === last) {
+        event.preventDefault();
+        first.focus();
+      }
     };
+
     window.addEventListener("keydown", onKey);
     return () => {
       document.body.style.overflow = prior;
       window.removeEventListener("keydown", onKey);
+      previouslyFocused?.focus?.();
     };
-  }, [sc, onClose]);
+  }, [sc, onClose, focusableIn]);
 
   if (!sc) return null;
 
@@ -400,7 +455,14 @@ export function DecisionWorkflow({
   );
 
   return (
-    <div className="fixed inset-0 z-[100] overflow-y-auto bg-ink/80 p-3 backdrop-blur-sm sm:p-6" role="dialog" aria-modal="true" aria-label={`Decision for ${r.title}`}>
+    <div
+      ref={dialogRef}
+      tabIndex={-1}
+      className="fixed inset-0 z-[100] overflow-y-auto bg-ink/80 p-3 backdrop-blur-sm outline-none sm:p-6"
+      role="dialog"
+      aria-modal="true"
+      aria-label={`Decision for ${r.title}`}
+    >
       <div className="mx-auto max-w-4xl rounded-3xl border border-border bg-background shadow-2xl">
         <header className="sticky top-0 z-10 rounded-t-3xl border-b border-border bg-background/95 px-5 py-4 backdrop-blur sm:px-7">
           <div className="flex items-start justify-between gap-4">
