@@ -1,4 +1,5 @@
 import type { Finding, Situation } from "@/lib/intelligence";
+import type { NightDetails } from "@/lib/night-context";
 
 export type DecisionState = "good" | "verify" | "hold";
 export type ConfirmationStatus = "confirmed" | "cannot" | "unclear";
@@ -15,7 +16,7 @@ export type ConfirmationMap = Record<string, ConfirmationEvidence>;
 
 export const CONFIRMATION_EVENT = "deep-dish-confirmation-change";
 
-function stableSituationKey(situation: Situation): string {
+function stableSituationKey(situation: Situation, details: NightDetails): string {
   const parts = [
     situation.regionGroup ?? "",
     situation.region ?? "",
@@ -24,15 +25,15 @@ function stableSituationKey(situation: Situation): string {
     situation.partySize ?? "",
     situation.leadDays ?? "",
     situation.arriveAt ?? "",
-    situation.hardEndAt ?? "",
+    details.hardEndAt ?? "",
     situation.spendBand ?? "",
     situation.cuisine ?? "",
   ];
   return encodeURIComponent(parts.join("~"));
 }
 
-export function confirmationStorageKey(slug: string, situation: Situation): string {
-  return `deep-dish-confirm:v2:${slug}:${stableSituationKey(situation)}`;
+export function confirmationStorageKey(slug: string, situation: Situation, details: NightDetails): string {
+  return `deep-dish-confirm:v2:${slug}:${stableSituationKey(situation, details)}`;
 }
 
 function normalizeEntry(value: unknown): ConfirmationEvidence | null {
@@ -59,10 +60,14 @@ function normalizeEntry(value: unknown): ConfirmationEvidence | null {
   };
 }
 
-export function readConfirmationEvidence(slug: string, situation: Situation): ConfirmationMap {
+export function readConfirmationEvidence(
+  slug: string,
+  situation: Situation,
+  details: NightDetails,
+): ConfirmationMap {
   if (typeof window === "undefined") return {};
   try {
-    const raw = localStorage.getItem(confirmationStorageKey(slug, situation));
+    const raw = localStorage.getItem(confirmationStorageKey(slug, situation, details));
     if (!raw) return {};
     const parsed = JSON.parse(raw) as Record<string, unknown>;
     const result: ConfirmationMap = {};
@@ -76,10 +81,15 @@ export function readConfirmationEvidence(slug: string, situation: Situation): Co
   }
 }
 
-export function writeConfirmationEvidence(slug: string, situation: Situation, map: ConfirmationMap) {
+export function writeConfirmationEvidence(
+  slug: string,
+  situation: Situation,
+  details: NightDetails,
+  map: ConfirmationMap,
+) {
   if (typeof window === "undefined") return;
   try {
-    localStorage.setItem(confirmationStorageKey(slug, situation), JSON.stringify(map));
+    localStorage.setItem(confirmationStorageKey(slug, situation, details), JSON.stringify(map));
   } catch {
     // Current-session behavior still works when storage is unavailable.
   }
