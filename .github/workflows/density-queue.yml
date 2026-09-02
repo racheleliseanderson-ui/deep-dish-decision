@@ -1,0 +1,49 @@
+name: Deep Dish density queue
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/data/density-control.json"
+
+concurrency:
+  group: deep-dish-density-queue
+  cancel-in-progress: true
+
+jobs:
+  rebuild:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Recalculate market density gaps
+        run: node scripts/pipeline/build-queue.mjs
+
+      - name: Commit queue
+        shell: bash
+        run: |
+          git config user.name "Rachel Elise Anderson"
+          git config user.email "Rachel.Elise.Anderson@gmail.com"
+          git add src/data/expansion-queue.json
+          if git diff --staged --quiet; then
+            echo "No density queue changes"
+          else
+            git commit -m "chore(corpus): rebuild restaurant density queue"
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
