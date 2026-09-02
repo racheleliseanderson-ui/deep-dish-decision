@@ -1,0 +1,153 @@
+{
+  "note": "Verified density wave 01 for the three largest current corpus gaps: New York, Los Angeles, and Chicago. Candidates were checked against the current state corpus before insertion. Websites are current restaurant-controlled or direct first-party ordering sites verified 2026-09-02; narrative/policy fields remain listing-only until seed-and-enrich.mjs reads the owned site. Santa Monica and Beverly Hills candidates were intentionally excluded from the Los Angeles city batch so city density stays honest.",
+  "generatedAt": "2026-09-02T17:05:00.000Z",
+  "batches": [
+    {
+      "city": "New York",
+      "stateCode": "NY",
+      "listings": [
+        {
+          "title": "Noz Market",
+          "website": "https://www.nozmarket.com/",
+          "phone": "+1-646-669-7435",
+          "address": "1374 Third Avenue, New York, NY 10075",
+          "cuisineTags": ["Japanese", "Sushi"]
+        },
+        {
+          "title": "Le Veau d'Or",
+          "website": "https://www.lvdnyc.com/",
+          "phone": "+1-646-386-7608",
+          "address": "129 E 60th Street, New York, NY 10022",
+          "cuisineTags": ["French"]
+        },
+        {
+          "title": "Gallaghers Steakhouse",
+          "website": "https://www.gallaghersnysteakhouse.com/location/gallaghers-nyc/",
+          "phone": "+1-212-586-5000",
+          "address": "228 W 52nd Street, New York, NY 10019",
+          "cuisineTags": ["Steakhouse"]
+        },
+        {
+          "title": "Sky Pavilion",
+          "website": "https://www.skypavilionnyc.com/",
+          "phone": "+1-646-371-9839",
+          "address": "325 W 42nd Street, New York, NY 10036",
+          "cuisineTags": ["Chinese", "Szechuan"]
+        },
+        {
+          "title": "Hyderabadi Zaiqa - Midtown East",
+          "website": "https://hyderabadizaiqa2026.com/",
+          "phone": "+1-646-952-0066",
+          "address": "184 Lexington Avenue, New York, NY 10016",
+          "cuisineTags": ["Indian", "Hyderabadi"]
+        },
+        {
+          "title": "S&P Lunch",
+          "website": "https://sandwich.place/",
+          "phone": "+1-212-691-8862",
+          "address": "174 Fifth Avenue, New York, NY 10010",
+          "cuisineTags": ["Deli", "American"]
+        },
+        {
+          "title": "Zimmi's",
+          "website": "https://www.zimmisnyc.com/",
+          "phone": "+1-646-770-9038",
+          "address": "72 Bedford Street, New York, NY 10014",
+          "cuisineTags": ["French"]
+        },
+        {
+          "title": "Crevette",
+          "website": "https://www.crevettenyc.com/",
+          "phone": "+1-646-397-4073",
+          "address": "10 Downing Street, New York, NY 10014",
+          "cuisineTags": ["Seafood"]
+        },
+        {
+          "title": "Smithereens",
+          "website": "https://www.smithereensnyc.com/",
+          "address": "414 E 9th Street, New York, NY 10009",
+          "cuisineTags": ["Seafood", "American"]
+        }
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Corridor 109",
+          "website": "https://www.corridor109.com/",
+          "address": "641 N Western Avenue Suite A, Los Angeles, CA 90004",
+          "cuisineTags": ["Asian Contemporary", "Seafood"]
+        },
+        {
+          "title": "Lielle",
+          "website": "https://www.lielle.la/",
+          "phone": "+1-213-376-6574",
+          "address": "9575 W Pico Boulevard, Los Angeles, CA 90035",
+          "cuisineTags": ["Californian"]
+        },
+        {
+          "title": "KOJIMA",
+          "website": "https://kojima-2130.square.site/",
+          "phone": "+1-424-248-0116",
+          "address": "2130 Sawtelle Boulevard Suite 211, Los Angeles, CA 90025",
+          "cuisineTags": ["Japanese", "Omakase"]
+        },
+        {
+          "title": "Bar Etoile",
+          "website": "https://www.baretoile.com/",
+          "phone": "+1-323-380-5040",
+          "address": "632 N Western Avenue, Los Angeles, CA 90004",
+          "cuisineTags": ["French"]
+        },
+        {
+          "title": "Electric Bleu",
+          "website": "https://electricbleu.com/",
+          "phone": "+1-424-316-9416",
+          "address": "3523 Centinela Avenue, Los Angeles, CA 90066",
+          "cuisineTags": ["French Contemporary"]
+        }
+      ]
+    },
+    {
+      "city": "Chicago",
+      "stateCode": "IL",
+      "listings": [
+        {
+          "title": "Milli by Metric",
+          "website": "https://www.milliallday.com/",
+          "phone": "+1-773-904-2900",
+          "address": "3110 N Kedzie Avenue, Chicago, IL 60618",
+          "cuisineTags": ["Cafe", "Bakery"]
+        },
+        {
+          "title": "Oliver's",
+          "website": "https://www.eatatolivers.com/",
+          "address": "1639 S Wabash Avenue, Chicago, IL 60616",
+          "cuisineTags": ["American", "Steak", "Seafood"]
+        },
+        {
+          "title": "Maxwells Trading",
+          "website": "https://www.maxwellstrading.com/",
+          "phone": "+1-312-896-4410",
+          "address": "1516 W Carroll Avenue, Chicago, IL 60607",
+          "cuisineTags": ["American Contemporary", "Asian"]
+        },
+        {
+          "title": "Akahoshi Ramen",
+          "website": "https://www.akahoshiramen.com/",
+          "address": "2340 N California Avenue Suite B, Chicago, IL 60647",
+          "cuisineTags": ["Japanese", "Ramen"]
+        },
+        {
+          "title": "Pompette",
+          "website": "https://www.pompettechicago.com/",
+          "phone": "+1-773-799-8072",
+          "address": "1960 N Damen Avenue, Chicago, IL 60647",
+          "cuisineTags": ["American", "Wine Bar"]
+        }
+      ]
+    }
+  ]
+}
