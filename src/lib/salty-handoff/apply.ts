@@ -18,7 +18,7 @@ import {
   nightRecordUrl,
   readNightRecord,
   writeNightRecord,
-} from "../salty-night-record";
+} from "../salty-night-record.ts";
 
 export { DIET_DISCLAIMER };
 
