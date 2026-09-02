@@ -403,21 +403,27 @@ function Console() {
             </div>
 
             <div className="min-w-0">
-              <Eyebrow as="h2">Not yet represented</Eyebrow>
-              <p className="mt-2 text-[12px] leading-relaxed text-subtle">
-                These states hold no record yet. They are queued by population, not filled to make a
-                map look complete.
-              </p>
-              <div className="mt-4 flex flex-wrap gap-1.5">
-                {empty.map((s) => (
-                  <span
-                    key={s.code}
-                    className="text-num rounded-md border border-border bg-surface-raised px-2 py-1 text-[11px] text-subtle"
-                  >
-                    {s.code}
-                  </span>
-                ))}
-              </div>
+              {/* Every state carries a record today, so this heading and its
+                  paragraph sat above an empty row claiming the opposite. */}
+              {empty.length ? (
+                <>
+                  <Eyebrow as="h2">Not yet represented</Eyebrow>
+                  <p className="mt-2 text-[12px] leading-relaxed text-subtle">
+                    These states hold no record yet. They are queued by population, not filled to
+                    make a map look complete.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {empty.map((s) => (
+                      <span
+                        key={s.code}
+                        className="text-num rounded-md border border-border bg-surface-raised px-2 py-1 text-[11px] text-subtle"
+                      >
+                        {s.code}
+                      </span>
+                    ))}
+                  </div>
+                </>
+              ) : null}
 
               {outsideUs.length ? (
                 <>

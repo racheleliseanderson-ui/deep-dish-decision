@@ -101,15 +101,30 @@ export function useRunPlan() {
   return { plan, update, reset, hydrated };
 }
 
-/** The instruction line that executes this exact plan. */
+/**
+ * The instruction line that executes this exact plan.
+ *
+ * This printed `node scripts/pipeline/discover.mjs --plan=run-plan.json …`
+ * until now. discover.mjs has been a stub since Google Places was removed: it
+ * prints a refusal and exits 1, so the "command of record" was a command that
+ * could not run. The working path is the offline seed, which is what
+ * discover.mjs itself directs you to, and it takes --cities.
+ *
+ * `restaurantsPerRun`, `citiesPerRun`, `dailyCap`, `paused` and `cuisineFocus`
+ * have no flag on the seed scripts, so they are not smuggled into the command
+ * line as though they did — planLimitsAreAdvisory() says so in the UI instead.
+ */
 export function planCommand(plan: RunPlan) {
-  const flags = [
-    "--plan=run-plan.json",
-    plan.paused ? "--force" : null,
-    plan.enrichAfterInsert ? null : "--no-enrich",
-  ].filter(Boolean);
-  return `node scripts/pipeline/discover.mjs ${flags.join(" ")}`;
+  const script = plan.enrichAfterInsert
+    ? "scripts/pipeline/seed-and-enrich.mjs"
+    : "scripts/pipeline/seed-listings.mjs";
+  const cities = plan.pinnedCities.length ? ` --cities="${plan.pinnedCities.join(",")}"` : "";
+  return `node ${script}${cities}`;
 }
+
+/** What the command line cannot carry, said plainly rather than implied. */
+export const PLAN_COMMAND_NOTE =
+  "Google Places discovery is disabled in this project, so there is no discover run to dispatch. This seeds from the verified listing batches in src/data/seed-listings*.json. Batch size, cities per run, the daily cap and cuisine focus are planning figures only — the seed scripts take no flags for them.";
 
 /** Hygiene before expansion — never-enriched, thin, site failures, review due. */
 export function hygieneCommand(batch = 25) {

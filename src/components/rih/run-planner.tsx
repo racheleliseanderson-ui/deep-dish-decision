@@ -6,6 +6,7 @@ import {
   clamp,
   hygieneCommand,
   planCommand,
+  PLAN_COMMAND_NOTE,
   planJson,
   projectedInserts,
   projectedSearchCalls,
@@ -339,7 +340,8 @@ export function RunPlanner() {
             </dl>
             <p className="mt-3 text-[12px] leading-relaxed text-subtle">
               A projection, not a promise: duplicates, thin listings and unmatched candidates all
-              reduce the real insert count. {plan.paused ? "The plan is paused, so the command carries --force." : ""}
+              reduce the real insert count.{" "}
+              {plan.paused ? "The plan is paused, so run nothing until you unpause it." : ""}
             </p>
           </div>
         </div>
@@ -362,6 +364,7 @@ export function RunPlanner() {
           <pre className="mt-2 overflow-x-auto rounded-lg border border-border bg-ink px-4 py-3 text-[12px] text-ink-foreground">
             <code>{command}</code>
           </pre>
+          <p className="mt-2 text-[12px] leading-relaxed text-subtle">{PLAN_COMMAND_NOTE}</p>
         </div>
         <div>
           <div className="flex flex-wrap items-center justify-between gap-2">

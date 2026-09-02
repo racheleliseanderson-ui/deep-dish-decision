@@ -47,7 +47,6 @@ jobs:
       - name: Hygiene enrich
         if: ${{ github.event_name == 'schedule' || inputs.mode == 'hygiene' || inputs.mode == 'seed' }}
         env:
-          LOVABLE_API_KEY: ${{ secrets.LOVABLE_API_KEY }}
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: node scripts/pipeline/enrich.mjs --hygiene --batch=${{ inputs.batch || 25 }}
@@ -56,7 +55,6 @@ jobs:
       - name: Controlled discover
         if: ${{ github.event_name == 'workflow_dispatch' && (inputs.mode == 'discover' || inputs.mode == 'seed') }}
         env:
-          LOVABLE_API_KEY: ${{ secrets.LOVABLE_API_KEY }}
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: |

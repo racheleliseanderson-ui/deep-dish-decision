@@ -165,9 +165,18 @@ export function loadEnrichmentGroup(group: string): Promise<void> {
 
   const loader = loaders[`../data/enrichment/${key}.json`];
   const task = loader
-    ? loader().then((mod) => {
-        for (const [slug, entry] of Object.entries(unpack(mod))) registry.set(slug, entry);
-      })
+    ? loader()
+        .then((mod) => {
+          for (const [slug, entry] of Object.entries(unpack(mod))) registry.set(slug, entry);
+        })
+        .catch((error: unknown) => {
+          // The in-flight promise is cached, so a rejection here used to poison
+          // this group for the life of the page: every later caller inherited
+          // the same rejected promise and no retry was possible. Drop the entry
+          // and resolve, so the next caller starts a fresh load.
+          loaded.delete(key);
+          console.error(`Enrichment group "${key}" failed to load`, error);
+        })
     : Promise.resolve();
 
   loaded.set(key, task);

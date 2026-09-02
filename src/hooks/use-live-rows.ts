@@ -29,11 +29,19 @@ export function useLiveRows(records: RestaurantRecord[]): {
     }
     let cancelled = false;
     setLoading(true);
-    Promise.all(groups.map(loadLiveGroup)).then((sets) => {
-      if (cancelled) return;
-      setRows(Object.assign({}, ...sets));
-      setLoading(false);
-    });
+    Promise.all(groups.map(loadLiveGroup))
+      .then((sets) => {
+        if (cancelled) return;
+        setRows(Object.assign({}, ...sets));
+        setLoading(false);
+      })
+      .catch((error: unknown) => {
+        if (cancelled) return;
+        // Distance and "open now" degrade; the plan itself still renders.
+        console.error("Live rows failed to load", error);
+        setRows({});
+        setLoading(false);
+      });
     return () => {
       cancelled = true;
     };

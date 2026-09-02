@@ -77,6 +77,7 @@ function Hub() {
   const [regionLoading, setRegionLoading] = useState(false);
   const [nearMeResolving, setNearMeResolving] = useState(false);
   const [nearMeError, setNearMeError] = useState<string | null>(null);
+  const [regionError, setRegionError] = useState<string | null>(null);
   const [now, setNow] = useState(() => new Date());
   const appliedRef = useRef(false);
   const originState = useOrigin();
@@ -162,11 +163,21 @@ function Hub() {
 
     let cancelled = false;
     setRegionLoading(true);
+    setRegionError(null);
     Promise.all([loadRegionGroup(activeGroup), loadLiveGroup(activeGroup)])
       .then(([records, live]) => {
         if (cancelled) return;
         setRegionRecords(records);
         setLiveRows(live);
+      })
+      .catch((error: unknown) => {
+        if (cancelled) return;
+        // An empty region reads as "no rooms here", which is a different claim
+        // from "the region file did not load". Say the second one.
+        console.error(`Region group "${activeGroup}" failed to load`, error);
+        setRegionRecords([]);
+        setLiveRows(null);
+        setRegionError("This region could not be loaded. Reload the page, or choose another city.");
       })
       .finally(() => {
         if (!cancelled) setRegionLoading(false);
@@ -177,8 +188,16 @@ function Hub() {
     };
   }, [activeGroup]);
 
+  // `now` is a dependency of scoreOpts, which is a dependency of the `ranked`
+  // memo, so a tick re-scored the whole region. Open/closed state does not move
+  // second to second: commit only when the five-minute slot actually changes.
   useEffect(() => {
-    const id = window.setInterval(() => setNow(new Date()), 60_000);
+    const SLOT_MS = 5 * 60_000;
+    const slot = (d: Date) => Math.floor(d.getTime() / SLOT_MS);
+    const id = window.setInterval(() => {
+      const next = new Date();
+      setNow((current) => (slot(current) === slot(next) ? current : next));
+    }, 30_000);
     return () => window.clearInterval(id);
   }, []);
 
@@ -294,6 +313,16 @@ function Hub() {
           ) : regionLoading ? (
             <div className="rounded-2xl border border-border bg-surface-sunken/40 p-6 sm:p-8">
               <p className="font-display text-2xl">Finding the restaurants that could work for this night…</p>
+            </div>
+          ) : regionError ? (
+            <div
+              role="status"
+              className="rounded-2xl border border-critical/35 bg-critical-soft p-6 sm:p-8"
+            >
+              <p className="font-display text-2xl">This region did not load.</p>
+              <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+                {regionError}
+              </p>
             </div>
           ) : (
             <>

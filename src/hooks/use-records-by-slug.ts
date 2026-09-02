@@ -32,15 +32,23 @@ export function useRecordsBySlug(slugs: string[]): {
     }
     let alive = true;
     setState((s) => ({ ...s, loading: true }));
-    void Promise.all(wanted.map(loadRecordBySlug)).then((found) => {
-      if (!alive) return;
-      // A slug with no record is dropped, not rendered as a hole — the same
-      // thing the bySlug lookup did for a retired or misspelled slug.
-      setState({
-        records: found.filter((r): r is RestaurantRecord => Boolean(r)),
-        loading: false,
+    void Promise.all(wanted.map(loadRecordBySlug))
+      .then((found) => {
+        if (!alive) return;
+        // A slug with no record is dropped, not rendered as a hole — the same
+        // thing the bySlug lookup did for a retired or misspelled slug.
+        setState({
+          records: found.filter((r): r is RestaurantRecord => Boolean(r)),
+          loading: false,
+        });
+      })
+      .catch((error: unknown) => {
+        if (!alive) return;
+        // Without this the hook stayed on `loading` forever and the shortlist
+        // showed a spinner with no way out.
+        console.error("Shortlist records failed to resolve", error);
+        setState({ records: [], loading: false });
       });
-    });
     return () => {
       alive = false;
     };

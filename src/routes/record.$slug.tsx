@@ -90,16 +90,30 @@ function Dossier() {
 
   useEffect(() => {
     let cancelled = false;
-    loadLiveGroup(record.regionGroup || record.region).then((rows) => {
-      if (!cancelled) setLive(rows[record.slug]);
-    });
+    loadLiveGroup(record.regionGroup || record.region)
+      .then((rows) => {
+        if (!cancelled) setLive(rows[record.slug]);
+      })
+      .catch((error: unknown) => {
+        // The live layer is an overlay on a record that already renders; log it
+        // and leave `live` undefined rather than failing the page.
+        console.error(`Live layer for "${record.slug}" failed to load`, error);
+      });
     return () => {
       cancelled = true;
     };
   }, [record.regionGroup, record.region, record.slug]);
 
+  // `now` is a dependency of scoreOpts, which is a dependency of the `ranked`
+  // memo, so a tick re-scored the whole region. Open/closed state does not move
+  // second to second: commit only when the five-minute slot actually changes.
   useEffect(() => {
-    const id = window.setInterval(() => setNow(new Date()), 60_000);
+    const SLOT_MS = 5 * 60_000;
+    const slot = (d: Date) => Math.floor(d.getTime() / SLOT_MS);
+    const id = window.setInterval(() => {
+      const next = new Date();
+      setNow((current) => (slot(current) === slot(next) ? current : next));
+    }, 30_000);
     return () => window.clearInterval(id);
   }, []);
 

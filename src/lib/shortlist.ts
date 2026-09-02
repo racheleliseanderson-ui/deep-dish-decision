@@ -37,22 +37,30 @@ export function useShortlist() {
     };
   }, []);
 
+  // Every mutation reads through read() rather than the `slugs` render value.
+  // Closing over state meant two calls in the same tick both computed from the
+  // same stale array and the second silently discarded the first — reordering
+  // twice quickly, or adding two rooms from one handler, lost one.
   return {
     slugs,
     has: (slug: string) => slugs.includes(slug),
-    toggle: (slug: string) =>
-      write(slugs.includes(slug) ? slugs.filter((s) => s !== slug) : [...slugs, slug]),
-    remove: (slug: string) => write(slugs.filter((s) => s !== slug)),
+    toggle: (slug: string) => {
+      const current = read();
+      write(current.includes(slug) ? current.filter((s) => s !== slug) : [...current, slug]);
+    },
+    remove: (slug: string) => write(read().filter((s) => s !== slug)),
     clear: () => write([]),
     makePrimary: (slug: string) => {
-      if (!slugs.includes(slug)) return;
-      write([slug, ...slugs.filter((item) => item !== slug)]);
+      const current = read();
+      if (!current.includes(slug)) return;
+      write([slug, ...current.filter((item) => item !== slug)]);
     },
     move: (slug: string, dir: -1 | 1) => {
-      const i = slugs.indexOf(slug);
+      const current = read();
+      const i = current.indexOf(slug);
       const j = i + dir;
-      if (i < 0 || j < 0 || j >= slugs.length) return;
-      const next = [...slugs];
+      if (i < 0 || j < 0 || j >= current.length) return;
+      const next = [...current];
       const a = next[i]!;
       next[i] = next[j]!;
       next[j] = a;

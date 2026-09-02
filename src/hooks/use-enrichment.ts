@@ -27,9 +27,17 @@ export function useEnrichmentGroups(groups: string[]): boolean {
     }
     let alive = true;
     setReady(false);
-    void Promise.all(wanted.map(loadEnrichmentGroup)).then(() => {
-      if (alive) setReady(true);
-    });
+    void Promise.all(wanted.map(loadEnrichmentGroup))
+      .then(() => {
+        if (alive) setReady(true);
+      })
+      .catch((error: unknown) => {
+        if (!alive) return;
+        // Ready means "asked and answered". A failed group answers with no
+        // enrichment, which the audit already renders as "never enriched".
+        console.error("Enrichment groups failed to load", error);
+        setReady(true);
+      });
     return () => {
       alive = false;
     };

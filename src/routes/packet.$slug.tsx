@@ -58,9 +58,13 @@ function Packet() {
   const [live, setLive] = useState<LiveRow | undefined>(undefined);
   useEffect(() => {
     let cancelled = false;
-    loadLiveGroup(record.regionGroup || record.region).then((rows) => {
-      if (!cancelled) setLive(rows[record.slug]);
-    });
+    loadLiveGroup(record.regionGroup || record.region)
+      .then((rows) => {
+        if (!cancelled) setLive(rows[record.slug]);
+      })
+      .catch((error: unknown) => {
+        console.error(`Live layer for "${record.slug}" failed to load`, error);
+      });
     return () => {
       cancelled = true;
     };
