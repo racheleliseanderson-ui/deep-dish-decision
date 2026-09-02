@@ -104,6 +104,7 @@ run([
 // actually consume. These are all deterministic and offline after enrichment.
 run(["scripts/pipeline/extract-first-party-dishes.mjs"]);
 run(["scripts/pipeline/build-live-index.mjs"]);
+run(["scripts/pipeline/inject-first-party-dishes.mjs"]);
 run(["scripts/pipeline/split-enrichment.mjs"]);
 run(["scripts/pipeline/report.mjs"]);
 
