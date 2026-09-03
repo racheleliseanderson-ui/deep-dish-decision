@@ -1,6 +1,6 @@
 {
   "regionGroup": "District Of Columbia",
-  "generatedAt": "2026-09-02T21:28:27.010Z",
+  "generatedAt": "2026-09-03T02:29:43.519Z",
   "records": {
     "the-dabney-washington": {
       "ll": [
@@ -116,7 +116,54 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [
+          [
+            900,
+            1200
+          ]
+        ],
+        [
+          [
+            720,
+            1290
+          ]
+        ],
+        [
+          [
+            720,
+            1290
+          ]
+        ],
+        [
+          [
+            720,
+            1290
+          ]
+        ],
+        [
+          [
+            720,
+            1290
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        90,
+        200
+      ],
+      "ppSource": "planning-band"
     },
     "causa-washington": {
       "ll": [
@@ -164,7 +211,51 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            660,
+            840
+          ]
+        ],
+        [],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            840
+          ],
+          [
+            1020,
+            1260
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "bresca-washington": {
       "ll": [
@@ -236,7 +327,52 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "unconventional-diner-washington": {
       "ll": [
@@ -252,7 +388,10 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "risk": {
+        "prepaid": true
+      }
     },
     "chercher-ethiopian-restaurant-mart-washington": {
       "ll": [
@@ -268,7 +407,67 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            660,
+            810
+          ],
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            810
+          ],
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     },
     "l-ardente-washington": {
       "ll": [
@@ -276,7 +475,12 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "risk": {
+        "cancelFee": 35,
+        "perGuest": true,
+        "windowHours": 24
+      }
     },
     "imperfecto-washington": {
       "ll": [
@@ -284,7 +488,58 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            660,
+            870
+          ],
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1050,
+            1290
+          ]
+        ],
+        [
+          [
+            1050,
+            1290
+          ]
+        ],
+        [
+          [
+            1050,
+            1290
+          ]
+        ],
+        [
+          [
+            1050,
+            1290
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band"
     },
     "daikaya-washington": {
       "ll": [
@@ -292,7 +547,59 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            690,
+            1260
+          ]
+        ],
+        [
+          [
+            690,
+            1260
+          ]
+        ],
+        [
+          [
+            690,
+            1260
+          ]
+        ],
+        [
+          [
+            690,
+            1260
+          ]
+        ],
+        [
+          [
+            690,
+            1260
+          ]
+        ],
+        [
+          [
+            690,
+            1320
+          ]
+        ],
+        [
+          [
+            690,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     },
     "tabard-inn-washington": {
       "ll": [
@@ -378,7 +685,14 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     }
   }
 }

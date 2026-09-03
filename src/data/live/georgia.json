@@ -1,6 +1,6 @@
 {
   "regionGroup": "Georgia",
-  "generatedAt": "2026-09-02T21:28:27.010Z",
+  "generatedAt": "2026-09-03T02:29:43.519Z",
   "records": {
     "lazy-betty-atlanta": {
       "ll": [
@@ -116,7 +116,54 @@
         -84.388
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        90,
+        200
+      ],
+      "ppSource": "planning-band"
     },
     "trader-vic-s-atlanta-atlanta": {
       "ll": [
@@ -369,7 +416,14 @@
         -84.388
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band"
     },
     "bones-restaurant-atlanta": {
       "ll": [
@@ -409,7 +463,14 @@
         -84.388
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "band": "$$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        90,
+        200
+      ],
+      "ppSource": "planning-band"
     },
     "gu-s-dumplings-atlanta": {
       "ll": [
@@ -449,7 +510,42 @@
         -84.388
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [],
+        [],
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [
+          [
+            720,
+            1200
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "banshee-atlanta": {
       "ll": [
@@ -505,7 +601,47 @@
         -84.388
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            120
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose"
     },
     "fox-bros-bar-b-q-atlanta": {
       "ll": [

@@ -1,6 +1,6 @@
 {
   "regionGroup": "Texas",
-  "generatedAt": "2026-09-02T21:28:27.010Z",
+  "generatedAt": "2026-09-03T02:29:43.519Z",
   "records": {
     "kitchen-kocktails": {
       "ll": [
@@ -1952,7 +1952,42 @@
         -97.7431
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [],
+        [],
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [
+          [
+            720,
+            1200
+          ]
+        ],
+        [
+          [
+            720,
+            1200
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "nixta-taqueria-austin": {
       "ll": [
@@ -2032,7 +2067,47 @@
         -97.7431
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "thai-fresh-austin": {
       "ll": [
@@ -2056,7 +2131,52 @@
         -97.7431
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            420,
+            1380
+          ]
+        ],
+        [
+          [
+            420,
+            1380
+          ]
+        ],
+        [
+          [
+            420,
+            1380
+          ]
+        ],
+        [
+          [
+            420,
+            1380
+          ]
+        ],
+        [
+          [
+            420,
+            1380
+          ]
+        ],
+        [
+          [
+            420,
+            1380
+          ]
+        ],
+        [
+          [
+            420,
+            1380
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "stiles-switch-bbq-austin": {
       "ll": [
@@ -2080,7 +2200,54 @@
         -97.7431
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            420,
+            900
+          ]
+        ],
+        [
+          [
+            420,
+            900
+          ]
+        ],
+        [
+          [
+            420,
+            900
+          ]
+        ],
+        [
+          [
+            420,
+            900
+          ]
+        ],
+        [
+          [
+            420,
+            900
+          ]
+        ],
+        [
+          [
+            420,
+            900
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     },
     "counter-cafe-austin": {
       "ll": [
@@ -2112,7 +2279,59 @@
         -97.7431
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     },
     "lucky-robot-austin": {
       "ll": [
@@ -2161,6 +2380,53 @@
       ],
       "llSource": "city",
       "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1350
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band",
       "dishes": [
         {
           "name": "authentic Italian food and the best pizza crafted with tradi",
@@ -2238,7 +2504,54 @@
         -96.797
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1380
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band"
     },
     "pesca-coastal-classics-dallas": {
       "ll": [
@@ -2278,7 +2591,44 @@
         -96.797
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [],
+        [],
+        [
+          [
+            660,
+            1065
+          ]
+        ],
+        [
+          [
+            660,
+            1065
+          ]
+        ],
+        [
+          [
+            660,
+            1065
+          ]
+        ],
+        [
+          [
+            660,
+            1125
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$",
+      "bandSource": "planning-band",
+      "pp": [
+        12,
+        25
+      ],
+      "ppSource": "planning-band"
     },
     "mamani-dallas": {
       "ll": [
@@ -2294,7 +2644,54 @@
         -96.797
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            540,
+            1020
+          ]
+        ],
+        [
+          [
+            540,
+            1080
+          ]
+        ],
+        [
+          [
+            540,
+            1320
+          ]
+        ],
+        [
+          [
+            540,
+            1320
+          ]
+        ],
+        [
+          [
+            540,
+            1320
+          ]
+        ],
+        [
+          [
+            540,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$",
+      "bandSource": "planning-band",
+      "pp": [
+        12,
+        25
+      ],
+      "ppSource": "planning-band"
     },
     "pecan-lodge-dallas": {
       "ll": [
@@ -2326,7 +2723,14 @@
         -96.797
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     },
     "sushi-kozy-dallas": {
       "ll": [
@@ -2430,7 +2834,49 @@
         -95.42266
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            660,
+            960
+          ]
+        ],
+        [],
+        [
+          [
+            660,
+            960
+          ]
+        ],
+        [
+          [
+            660,
+            960
+          ]
+        ],
+        [
+          [
+            660,
+            960
+          ]
+        ],
+        [
+          [
+            660,
+            960
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     },
     "chardon-houston": {
       "ll": [
@@ -2494,7 +2940,49 @@
         -95.42266
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     },
     "aga-s-restaurant-catering-houston": {
       "ll": [
@@ -2566,7 +3054,14 @@
         -95.42266
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band"
     },
     "nobie-s-houston": {
       "ll": [

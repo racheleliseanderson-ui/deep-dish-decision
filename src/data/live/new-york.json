@@ -1,6 +1,6 @@
 {
   "regionGroup": "New York",
-  "generatedAt": "2026-09-02T21:28:27.010Z",
+  "generatedAt": "2026-09-03T02:29:43.519Z",
   "records": {
     "carmine-s-44th-street-nyc": {
       "ll": [
@@ -2399,7 +2399,14 @@
         -73.99138
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     },
     "sky-pavilion-new-york": {
       "ll": [
@@ -2439,7 +2446,12 @@
         -73.99138
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "risk": {
+        "cancelFee": 50,
+        "perGuest": true,
+        "windowHours": 12
+      }
     },
     "smithereens-new-york": {
       "ll": [
@@ -2455,7 +2467,10 @@
         -73.99138
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "risk": {
+        "cancelFee": 100
+      }
     },
     "keens-steakhouse-new-york": {
       "ll": [
@@ -2503,7 +2518,47 @@
         -73.99138
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            690,
+            1320
+          ]
+        ],
+        [
+          [
+            690,
+            1320
+          ]
+        ],
+        [
+          [
+            690,
+            1320
+          ]
+        ],
+        [
+          [
+            690,
+            1320
+          ]
+        ],
+        [
+          [
+            690,
+            1320
+          ]
+        ],
+        [
+          [
+            690,
+            1380
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose"
     },
     "don-angie-new-york": {
       "ll": [
@@ -2519,7 +2574,64 @@
         -73.99138
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            660,
+            870
+          ],
+          [
+            1050,
+            1380
+          ]
+        ],
+        [
+          [
+            1050,
+            1380
+          ]
+        ],
+        [
+          [
+            1050,
+            1380
+          ]
+        ],
+        [
+          [
+            1050,
+            1380
+          ]
+        ],
+        [
+          [
+            1050,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            870
+          ],
+          [
+            1050,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            870
+          ],
+          [
+            1050,
+            1380
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "estela-new-york": {
       "ll": [
@@ -2623,7 +2735,47 @@
         -73.99138
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            660,
+            1200
+          ]
+        ],
+        [
+          [
+            660,
+            1200
+          ]
+        ],
+        [
+          [
+            660,
+            1200
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose"
     },
     "frenchette-new-york": {
       "ll": [
@@ -2647,7 +2799,10 @@
         -73.99138
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "risk": {
+        "prepaid": true
+      }
     },
     "una-pizza-napoletana-new-york": {
       "ll": [
@@ -2671,7 +2826,67 @@
         -73.99138
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [],
+        [
+          [
+            705,
+            870
+          ],
+          [
+            1050,
+            1350
+          ]
+        ],
+        [
+          [
+            705,
+            870
+          ],
+          [
+            1050,
+            1350
+          ]
+        ],
+        [
+          [
+            705,
+            870
+          ],
+          [
+            1050,
+            1350
+          ]
+        ],
+        [
+          [
+            705,
+            870
+          ],
+          [
+            1050,
+            1350
+          ]
+        ],
+        [
+          [
+            705,
+            870
+          ],
+          [
+            1050,
+            1350
+          ]
+        ],
+        [
+          [
+            1050,
+            1350
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "rezdora-new-york": {
       "ll": [

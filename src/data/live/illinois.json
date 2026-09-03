@@ -1,6 +1,6 @@
 {
   "regionGroup": "Illinois",
-  "generatedAt": "2026-09-02T21:28:27.010Z",
+  "generatedAt": "2026-09-03T02:29:43.519Z",
   "records": {
     "stk-steakhouse": {
       "ll": [
@@ -613,6 +613,51 @@
       ],
       "llSource": "city",
       "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            690,
+            1230
+          ]
+        ],
+        [
+          [
+            690,
+            1230
+          ]
+        ],
+        [
+          [
+            690,
+            1230
+          ]
+        ],
+        [
+          [
+            690,
+            1230
+          ]
+        ],
+        [
+          [
+            690,
+            1230
+          ]
+        ],
+        [
+          [
+            690,
+            1290
+          ]
+        ],
+        [
+          [
+            690,
+            1290
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
       "band": "$$",
       "bandSource": "planning-band",
       "pp": [
@@ -1248,7 +1293,44 @@
         -87.64103
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [],
+        [],
+        [
+          [
+            990,
+            1260
+          ]
+        ],
+        [
+          [
+            990,
+            1260
+          ]
+        ],
+        [
+          [
+            990,
+            1260
+          ]
+        ],
+        [
+          [
+            990,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band"
     },
     "akahoshi-ramen-chicago": {
       "ll": [
@@ -1256,7 +1338,42 @@
         -87.64103
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [],
+        [],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "pompette-chicago": {
       "ll": [
@@ -1304,7 +1421,59 @@
         -87.64103
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band",
+      "risk": {
+        "cancelFee": 35,
+        "perGuest": true,
+        "windowHours": 24
+      }
     },
     "galit-chicago": {
       "ll": [
@@ -1312,7 +1481,54 @@
         -87.64103
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1350
+          ]
+        ],
+        [
+          [
+            1020,
+            1350
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band"
     },
     "rose-mary-chicago": {
       "ll": [
@@ -1382,7 +1598,37 @@
         -87.64103
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [],
+        [],
+        [],
+        [
+          [
+            780,
+            1200
+          ]
+        ],
+        [
+          [
+            780,
+            1200
+          ]
+        ],
+        [
+          [
+            780,
+            1200
+          ]
+        ],
+        [
+          [
+            780,
+            1200
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "andros-taverna-chicago": {
       "ll": [
@@ -1398,7 +1644,52 @@
         -87.64103
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            540,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            60
+          ]
+        ],
+        [
+          [
+            540,
+            60
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "alinea-chicago": {
       "ll": [
@@ -1492,7 +1783,47 @@
         -87.64103
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            1050,
+            1200
+          ]
+        ],
+        [],
+        [
+          [
+            1050,
+            1200
+          ]
+        ],
+        [
+          [
+            1050,
+            1200
+          ]
+        ],
+        [
+          [
+            1050,
+            1200
+          ]
+        ],
+        [
+          [
+            1050,
+            1200
+          ]
+        ],
+        [
+          [
+            1050,
+            1200
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "the-chicago-diner-chicago": {
       "ll": [
