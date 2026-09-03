@@ -34,7 +34,7 @@
     "db:seed": "node scripts/db/seed-corpus.mjs",
     "db:seed:dry": "node scripts/db/seed-corpus.mjs --dry-run",
     "validate:seed": "node scripts/validate-seed.mjs",
-    "test": "node scripts/check-vendored-parity.mjs && node scripts/check-generated.mjs && vitest run && node --test scripts/corpus-invariants.test.mjs scripts/pipeline/level-records.test.mjs scripts/pipeline/parse-hours.test.mjs scripts/pipeline/resolve-targets.test.mjs && node scripts/corpus-invariants.mjs && node --experimental-strip-types --test tests/salty-handoff.test.ts"
+    "test": "node scripts/run-tests.mjs"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.22",
