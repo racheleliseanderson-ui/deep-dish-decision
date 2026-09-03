@@ -8,6 +8,8 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { THIN_FIELD_THRESHOLD } from "./pipeline/level-format.mjs";
+import { readMenuLink } from "./pipeline/menu-url.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const FLOOR = Number(process.env.CORPUS_FLOOR ?? 800);
@@ -159,6 +161,38 @@ if (existsSync(byRegionDir)) {
   }
 } else if (count >= FLOOR) {
   errors.push("src/data/by-region missing while corpus is intact");
+}
+
+/* "Thin" has to mean one thing. The Atlas columns, the ops block and the
+   pipeline log all count it, and for a while they counted three different
+   numbers because the browser copy of the threshold could not import the
+   pipeline one. It still cannot; this fails the build when the two drift. */
+{
+  const atlas = readFileSync(resolve(root, "src/lib/atlas-compute.ts"), "utf8");
+  const match = atlas.match(/export const THIN_FIELD_THRESHOLD\s*=\s*(\d+)/);
+  if (!match) {
+    errors.push("atlas-compute.ts no longer exports THIN_FIELD_THRESHOLD");
+  } else if (Number(match[1]) !== THIN_FIELD_THRESHOLD) {
+    errors.push(
+      `thin threshold drifted: atlas-compute.ts says ${match[1]}, level-format.mjs says ${THIN_FIELD_THRESHOLD}`,
+    );
+  }
+}
+
+/* A menu link is a first-party claim. Nothing on a publisher's domain may sit
+   in menuUrl, whatever the pages choose to do with it. */
+{
+  const data = JSON.parse(readFileSync(datasetPath, "utf8"));
+  const offenders = [];
+  for (const r of data.records ?? []) {
+    const read = readMenuLink(r.menuUrl, r.website);
+    if (read && read.kind === "press") offenders.push(`${r.slug} → ${read.host}`);
+  }
+  if (offenders.length) {
+    errors.push(
+      `menuUrl holds press coverage on ${offenders.length} records: ${offenders.slice(0, 5).join(", ")}`,
+    );
+  }
 }
 
 const listingPath = resolve(root, "src/data/listing-samples.json");

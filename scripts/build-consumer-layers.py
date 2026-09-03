@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -29,6 +30,38 @@ def write(path: Path, obj) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n")
     print(f"wrote {path.relative_to(ROOT)} ({path.stat().st_size:,} bytes)")
+
+
+REFUSED: list[str] = []
+
+
+def write_layer(path: Path, obj, source: str) -> None:
+    """Write a matched layer, unless that would empty one that currently holds data.
+
+    On 2026-09-03 this script ran with /tmp/intel cleared. The inspection
+    matcher found no files, produced `records: {}`, and wrote it over 31 real
+    inspection records without a word. An empty ephemeral input directory is
+    not evidence that a restaurant has no inspection, and a layer that silently
+    becomes empty is worse than one that fails: nothing downstream can tell the
+    difference between "not on file" and "not built".
+
+    So: an empty result never replaces a non-empty file. The old layer stays,
+    the run is marked failed, and main() exits non-zero naming the input.
+    """
+    incoming = len(obj.get("records") or {})
+    existing = 0
+    if path.exists():
+        try:
+            existing = len((load(path).get("records") or {}))
+        except (json.JSONDecodeError, OSError):
+            existing = 0
+    if incoming == 0 and existing > 0:
+        REFUSED.append(
+            f"{path.relative_to(ROOT)}: refused to replace {existing} records with 0. "
+            f"Nothing was read from {source}. The layer on disk is untouched."
+        )
+        return
+    write(path, obj)
 
 
 def quote_texts(site: dict, *keys: str) -> list[str]:
@@ -274,22 +307,33 @@ def main() -> None:
     write(DATA / "completeness.json", {"generatedAt": NOW, "records": completeness})
 
     out_dir = DATA / "by-region"
-    if out_dir.exists():
-        for old in out_dir.glob("*.json"):
-            old.unlink()
+    written = {f"{slugify(g)}.json" for g in by_group}
     for g, rows in by_group.items():
         write(
             out_dir / f"{slugify(g)}.json",
             {"regionGroup": g, "count": len(rows), "records": rows},
         )
+    # Prune only what this run did not produce, and after producing it. The old
+    # order emptied the whole layer first, so any failure between the unlink and
+    # the write left the region files gone rather than stale.
+    if out_dir.exists():
+        for stale in out_dir.glob("*.json"):
+            if stale.name in written:
+                continue
+            try:
+                stale.unlink()
+                print(f"pruned {stale.relative_to(ROOT)}")
+            except OSError as err:
+                REFUSED.append(f"{stale.relative_to(ROOT)}: stale region file could not be removed ({err})")
 
-    write(
+    write_layer(
         DATA / "first-party-dishes.json",
         {
             "generatedAt": NOW,
             "note": "Named only where the restaurant's own pages or owned-site quotes mention the item. Empty means not named — never invented.",
             "records": dishes,
         },
+        "src/data/enrichment.json",
     )
 
     listing = {}
@@ -424,13 +468,14 @@ def main() -> None:
         if slug not in listing:
             listing[slug] = row
 
-    write(
+    write_layer(
         DATA / "listing-samples.json",
         {
             "generatedAt": NOW,
             "note": "Directory listing samples only. Never ranking-eligible. A star rating is not a review-pattern consensus.",
             "records": listing,
         },
+        "src/data/enrichment.json",
     )
 
     inspections: dict[str, dict] = {}
@@ -490,13 +535,14 @@ def main() -> None:
             rec["slug"] = slug
             inspections[slug] = rec
 
-    write(
+    write_layer(
         DATA / "health-inspections.json",
         {
             "generatedAt": NOW,
             "note": "Matched public inspection records only (name + address). Unmatched restaurants stay not-on-file. Never inferred from cuisine, stars, or reviews.",
             "records": inspections,
         },
+        str(INTEL),
     )
 
     print(
@@ -514,6 +560,20 @@ def main() -> None:
             indent=2,
         )
     )
+
+    if REFUSED:
+        print(
+            "\nbuild-consumer-layers: a matched layer came back empty and was NOT written.",
+            file=sys.stderr,
+        )
+        for line in REFUSED:
+            print(f"  - {line}", file=sys.stderr)
+        print(
+            "\nEmpty is a claim about every restaurant in the corpus. Restore the input "
+            "directory and run again, or retire the layer deliberately.",
+            file=sys.stderr,
+        )
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

@@ -586,12 +586,12 @@
       "phone": "",
       "email": "",
       "website": "https://www.rasikarestaurant.com/",
-      "menuUrl": "https://www.washingtonpost.com/graphics/2019/food/dc-fall-restaurant-guide/",
+      "menuUrl": "",
       "reservationUrl": "https://resy.com/cities/dc/rasika?date=2020-11-10&seats=2",
       "coverageArea": "Washington, District Of Columbia",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via Resy.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is washingtonpost.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
@@ -659,12 +659,13 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "dietaryDetails",
         "accessibilityState",
         "groupDetails",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -672,10 +673,9 @@
         "Indian"
       ],
       "officialSource": "https://www.rasikarestaurant.com/",
-      "additionalSources": "https://www.washingtonpost.com/graphics/2019/food/dc-fall-restaurant-guide/ | https://resy.com/cities/dc/rasika?date=2020-11-10&seats=2",
+      "additionalSources": "https://resy.com/cities/dc/rasika?date=2020-11-10&seats=2",
       "sources": [
         "https://www.rasikarestaurant.com/",
-        "https://www.washingtonpost.com/graphics/2019/food/dc-fall-restaurant-guide/",
         "https://resy.com/cities/dc/rasika?date=2020-11-10&seats=2"
       ],
       "retrievedAt": "2026-08-21T01:42:18.446Z",
@@ -815,12 +815,12 @@
       "phone": "",
       "email": "",
       "website": "https://www.oyamel.com/",
-      "menuUrl": "https://wtop.com/food-restaurant/2024/12/holiday-new-years-restaurant-specials-dc/",
+      "menuUrl": "",
       "reservationUrl": "https://blog.resy.com/2022/07/best-summer-desserts-in-washington-dc/",
       "coverageArea": "Washington, District Of Columbia",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via Resy.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is wtop.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
@@ -888,13 +888,14 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "dietaryDetails",
         "accessibilityState",
         "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 9,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -902,12 +903,11 @@
         "Mexican"
       ],
       "officialSource": "https://www.oyamel.com/",
-      "additionalSources": "https://www.oyamel.com/private-events-ny/ | https://www.oyamel.com/contact/ | https://wtop.com/food-restaurant/2024/12/holiday-new-years-restaurant-specials-dc/ | https://blog.resy.com/2022/07/best-summer-desserts-in-washington-dc/",
+      "additionalSources": "https://www.oyamel.com/private-events-ny/ | https://www.oyamel.com/contact/ | https://blog.resy.com/2022/07/best-summer-desserts-in-washington-dc/",
       "sources": [
         "https://www.oyamel.com/",
         "https://www.oyamel.com/private-events-ny/",
         "https://www.oyamel.com/contact/",
-        "https://wtop.com/food-restaurant/2024/12/holiday-new-years-restaurant-specials-dc/",
         "https://blog.resy.com/2022/07/best-summer-desserts-in-washington-dc/"
       ],
       "retrievedAt": "2026-08-21T01:42:18.446Z",
@@ -3369,12 +3369,12 @@
       "phone": "+1-202-847-0122",
       "email": "",
       "website": "https://www.unconventionaldiner.com/",
-      "menuUrl": "https://bestof2024.washingtoncitypaper.com/food-and-drink-readers-picks/best-american-restaurant",
+      "menuUrl": "",
       "reservationUrl": "https://resy.com/cities/dc/unconventional-diner",
       "coverageArea": "Washington, District Of Columbia",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via Resy.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is bestof2024.washingtoncitypaper.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
@@ -3440,11 +3440,12 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Resy",
         "Phone"
@@ -3455,11 +3456,10 @@
         "Contemporary American"
       ],
       "officialSource": "https://www.unconventionaldiner.com/",
-      "additionalSources": "https://www.unconventionaldiner.com/faq | https://bestof2024.washingtoncitypaper.com/food-and-drink-readers-picks/best-american-restaurant | https://resy.com/cities/dc/unconventional-diner",
+      "additionalSources": "https://www.unconventionaldiner.com/faq | https://resy.com/cities/dc/unconventional-diner",
       "sources": [
         "https://www.unconventionaldiner.com/",
         "https://www.unconventionaldiner.com/faq",
-        "https://bestof2024.washingtoncitypaper.com/food-and-drink-readers-picks/best-american-restaurant",
         "https://resy.com/cities/dc/unconventional-diner"
       ],
       "retrievedAt": "2026-09-02T21:28:53.451Z",

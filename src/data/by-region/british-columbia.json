@@ -39,7 +39,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -141,12 +141,9 @@
       "stateProvince": "British Columbia",
       "regionGroup": "British Columbia",
       "thinFields": [
-        "parkingTransit",
-        "dressCode",
-        "accessibilityState",
-        "typicalMealLength"
+        "accessibilityState"
       ],
-      "thinFieldCount": 4,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Direct / confirm live",
         "Phone"
@@ -238,7 +235,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -440,7 +437,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -629,7 +626,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "Official first-party pages currently publish both $110 and $135 for the four-course menu. Confirm the charged price before booking.",
@@ -717,7 +714,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Live availability",
         "detailed step-free route and restroom configuration",
@@ -828,7 +825,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1028,7 +1025,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1219,7 +1216,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1317,10 +1314,9 @@
       "stateProvince": "British Columbia",
       "regionGroup": "British Columbia",
       "thinFields": [
-        "parkingTransit",
         "accessibilityState"
       ],
-      "thinFieldCount": 2,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Direct / confirm live"
       ],

@@ -706,12 +706,12 @@
       "phone": "",
       "email": "",
       "website": "https://therussellct.com/",
-      "menuUrl": "https://www.courant.com/ctnow/food-drink/hc-ctnow-the-russell-jamaican-west-hartford-20220502-2qng7j32wnhzrkue4fzcsdrpki-story.html",
+      "menuUrl": "",
       "reservationUrl": "",
       "coverageArea": "Hartford, Connecticut",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is courant.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
@@ -777,6 +777,7 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "reservation",
         "dietaryDetails",
         "accessibilityState",
@@ -784,19 +785,18 @@
         "atmosphereSummary",
         "serviceSummary"
       ],
-      "thinFieldCount": 9,
+      "thinFieldCount": 10,
       "bookingPlatforms": [],
       "cuisineTags": [
         "Caribbean",
         "Jamaican"
       ],
       "officialSource": "https://therussellct.com/",
-      "additionalSources": "https://therussellct.com/events/ | https://therussellct.com/contact/ | https://www.courant.com/ctnow/food-drink/hc-ctnow-the-russell-jamaican-west-hartford-20220502-2qng7j32wnhzrkue4fzcsdrpki-story.html",
+      "additionalSources": "https://therussellct.com/events/ | https://therussellct.com/contact/",
       "sources": [
         "https://therussellct.com/",
         "https://therussellct.com/events/",
-        "https://therussellct.com/contact/",
-        "https://www.courant.com/ctnow/food-drink/hc-ctnow-the-russell-jamaican-west-hartford-20220502-2qng7j32wnhzrkue4fzcsdrpki-story.html"
+        "https://therussellct.com/contact/"
       ],
       "retrievedAt": "2026-08-21T01:42:46.009Z",
       "searchText": "the russell hartford connecticut hartford, ct not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. caribbean jamaican hartford, ct",

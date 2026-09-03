@@ -1,13 +1,13 @@
 // UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { Chip, Eyebrow } from "@/components/rih/bits";
-import { getInspection, inspectionCoverage } from "@/lib/inspections";
+import { getInspection, inspectionLayerLoaded } from "@/lib/inspections";
 
 export function InspectionPanel({ slug }: { slug: string }) {
   const row = getInspection(slug);
   // "Not on file" is a claim about this restaurant. It is only true when the
   // layer holds records at all; when the layer is empty the honest statement
   // is about the build, and the chip should not read as a finding.
-  const layerLoaded = inspectionCoverage() > 0;
+  const layerLoaded = inspectionLayerLoaded();
   return (
     <section className="rounded-xl border border-border bg-surface-raised/40 p-4 sm:p-5">
       <div className="flex flex-wrap items-start justify-between gap-2">

@@ -378,12 +378,28 @@ export function TableIntelligence({
               <dd className="text-foreground">{live.hood}</dd>
             </div>
           ) : null}
-          {record.address ? (
-            <div className="flex gap-3">
-              <dt className="w-28 shrink-0 text-subtle">Address</dt>
-              <dd className="text-muted-foreground">{record.address}</dd>
-            </div>
-          ) : null}
+          <div className="flex gap-3">
+            <dt className="w-28 shrink-0 text-subtle">Address</dt>
+            <dd className={record.address ? "text-muted-foreground" : "text-unknown"}>
+              {record.address || "No street address is on file."}
+            </dd>
+          </div>
+          {/*
+           * Provenance for the point, said in the same breath as the address.
+           * Only 111 rooms in the corpus carry their own coordinate; the rest
+           * sit on their city's centroid, and any distance drawn against that
+           * is a distance to the middle of town.
+           */}
+          <div className="flex gap-3">
+            <dt className="w-28 shrink-0 text-subtle">Coordinate</dt>
+            <dd className={live?.llSource === "exact" ? "text-muted-foreground" : "text-unknown"}>
+              {live?.llSource === "exact"
+                ? "This room's own point, from its directory listing."
+                : live?.ll
+                  ? `City centroid for ${record.city || "this city"}. Every room here shares it, so any distance shown is to the middle of town.`
+                  : "No coordinate is held. Deep Dish cannot state a distance to this room."}
+            </dd>
+          </div>
           {parkingFacts.length ? (
             <div className="flex gap-3">
               <dt className="w-28 shrink-0 text-subtle">Parking</dt>

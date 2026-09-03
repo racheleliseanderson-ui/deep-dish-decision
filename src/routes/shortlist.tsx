@@ -142,7 +142,18 @@ function NightDecisionCard({
       <div className="mt-4 flex flex-wrap gap-2 text-xs text-muted-foreground">
         <span className="rounded-full border border-border px-3 py-1.5">{open.text}</span>
         {spend ? <span className="rounded-full border border-border px-3 py-1.5">{spend.text}</span> : null}
-        {sc.distanceMi !== null ? <span className="rounded-full border border-border px-3 py-1.5">{Math.round(sc.distanceMi * 10) / 10} mi away</span> : null}
+        {sc.distanceRead ? (
+          <span
+            className={
+              sc.distanceRead.exact
+                ? "rounded-full border border-border px-3 py-1.5"
+                : "rounded-full border border-dashed border-border px-3 py-1.5 text-subtle"
+            }
+          >
+            {sc.distanceRead.value}
+            {sc.distanceRead.measuredTo ? ` ${sc.distanceRead.measuredTo}` : " away"}
+          </span>
+        ) : null}
       </div>
 
       {summary.confirmed.length ? (

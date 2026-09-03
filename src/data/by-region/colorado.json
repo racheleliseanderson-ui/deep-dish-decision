@@ -5354,12 +5354,12 @@
       "phone": "",
       "email": "",
       "website": "https://www.margotdenver.com/",
-      "menuUrl": "https://www.westword.com/best-of-denver/2026/food-and-drink/best-new-tasting-menu-restaurant-40862521",
+      "menuUrl": "",
       "reservationUrl": "https://www.exploretock.com/margot-denver/",
       "coverageArea": "Denver, Colorado",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via Tock.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is westword.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via Tock on a path published by the restaurant.",
@@ -5426,12 +5426,13 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "Tock"
       ],
@@ -5441,11 +5442,10 @@
         "Contemporary American"
       ],
       "officialSource": "https://www.margotdenver.com/",
-      "additionalSources": "https://www.margotdenver.com/private-events | https://www.westword.com/best-of-denver/2026/food-and-drink/best-new-tasting-menu-restaurant-40862521 | https://www.exploretock.com/margot-denver/",
+      "additionalSources": "https://www.margotdenver.com/private-events | https://www.exploretock.com/margot-denver/",
       "sources": [
         "https://www.margotdenver.com/",
         "https://www.margotdenver.com/private-events",
-        "https://www.westword.com/best-of-denver/2026/food-and-drink/best-new-tasting-menu-restaurant-40862521",
         "https://www.exploretock.com/margot-denver/"
       ],
       "retrievedAt": "2026-09-02T21:28:52.128Z",

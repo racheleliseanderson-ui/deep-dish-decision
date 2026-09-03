@@ -12,6 +12,7 @@
  * than presenting an estimate as a fact.
  */
 import { regionGroupFileName } from "@/lib/corpus-meta";
+import liveIndex from "@/data/live/index.json";
 
 export type LatLng = [lat: number, lng: number];
 export type Interval = [openMin: number, closeMin: number];
@@ -88,6 +89,20 @@ export function peekLiveGroup(group: string): Record<string, LiveRow> | null {
   return cache.get(group) ?? null;
 }
 
+/**
+ * How many rooms carry their own coordinate, corpus-wide.
+ *
+ * A 1.8 KB index, safe to import anywhere. The numbers are the reason distance
+ * is banded below: 111 rooms have an address point and 1,416 sit on the middle
+ * of their city.
+ */
+export const COORDINATE_COVERAGE = liveIndex.stats as {
+  total: number;
+  exact: number;
+  city: number;
+  none: number;
+};
+
 /* ── distance ───────────────────────────────────────────────────────────── */
 
 const R_MILES = 3958.8;
@@ -102,10 +117,68 @@ export function haversineMi(a: LatLng, b: LatLng): number {
   return 2 * R_MILES * Math.asin(Math.min(1, Math.sqrt(s)));
 }
 
-export function formatDistance(mi: number, precise: boolean): string {
-  const n = mi < 10 ? Math.round(mi * 10) / 10 : Math.round(mi);
-  const value = mi < 0.1 ? "under 0.1" : String(n);
-  return precise ? `${value} mi` : `~${value} mi`;
+/**
+ * How far a city centroid may sit from the door before a radius filter is
+ * entitled to act on it. Four miles covers the spread of a normal metro; it is
+ * a deliberate refusal to exclude a room on a point that is not its address.
+ */
+export const CENTROID_SLACK_MI = 4;
+
+/**
+ * Bands for a point that is not the restaurant's address.
+ *
+ * 1,416 of 1,527 rooms have no address coordinate on file. The point stored for
+ * them is the middle of their city, which means every room in Chicago is the
+ * same distance from you. A decimal against that point is a measurement the
+ * corpus never made, so a centroid distance is published only as a band wide
+ * enough to survive being wrong, and never without saying what it measured to.
+ */
+const BANDS: [limit: number, label: string][] = [
+  [1, "under 1 mi"],
+  [2, "1–2 mi"],
+  [5, "2–5 mi"],
+  [10, "5–10 mi"],
+  [25, "10–25 mi"],
+  [50, "25–50 mi"],
+];
+
+export function distanceBand(mi: number): string {
+  for (const [limit, label] of BANDS) if (mi < limit) return label;
+  return "over 50 mi";
+}
+
+export type DistanceRead = {
+  /** The figure a reader may act on. Banded whenever the point is a centroid. */
+  value: string;
+  /** What the figure was measured to. Null only for a real address point. */
+  measuredTo: string | null;
+  exact: boolean;
+};
+
+/**
+ * One distance, stated as what it is.
+ *
+ * There is no call path that yields a bare decimal for a centroid: the band and
+ * the "middle of town" clause are produced together, so a render site cannot
+ * print half of the reading.
+ */
+export function readDistance(mi: number, exact: boolean, city?: string | null): DistanceRead {
+  if (exact) {
+    const n = mi < 10 ? Math.round(mi * 10) / 10 : Math.round(mi);
+    return { value: mi < 0.1 ? "under 0.1 mi" : `${n} mi`, measuredTo: null, exact: true };
+  }
+  const place = String(city ?? "").trim();
+  return {
+    value: distanceBand(mi),
+    measuredTo: `to the middle of ${place || "town"}`,
+    exact: false,
+  };
+}
+
+/** The whole reading as one string, for prose, alt text and tooltips. */
+export function formatDistance(mi: number, exact: boolean, city?: string | null): string {
+  const read = readDistance(mi, exact, city);
+  return read.measuredTo ? `${read.value} ${read.measuredTo}` : read.value;
 }
 
 /* ── opening hours ──────────────────────────────────────────────────────── */

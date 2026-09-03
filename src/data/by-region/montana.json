@@ -39,7 +39,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -229,7 +229,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -332,9 +332,10 @@
       "stateProvince": "Montana",
       "regionGroup": "Montana",
       "thinFields": [
+        "priceDetails",
         "accessibilityState"
       ],
-      "thinFieldCount": 1,
+      "thinFieldCount": 2,
       "bookingPlatforms": [
         "OpenTable",
         "Phone"
@@ -429,7 +430,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -631,7 +632,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -731,11 +732,10 @@
       "stateProvince": "Montana",
       "regionGroup": "Montana",
       "thinFields": [
-        "parkingTransit",
-        "accessibilityState",
-        "dietaryDetails"
+        "dietaryDetails",
+        "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 2,
       "bookingPlatforms": [
         "Direct / confirm live",
         "Phone"
@@ -831,7 +831,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -933,11 +933,10 @@
       "stateProvince": "Montana",
       "regionGroup": "Montana",
       "thinFields": [
-        "parkingTransit",
-        "accessibilityState",
-        "dietaryDetails"
+        "dietaryDetails",
+        "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 2,
       "bookingPlatforms": [
         "Phone",
         "Direct / confirm live"
@@ -1033,7 +1032,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1135,11 +1134,10 @@
       "stateProvince": "Montana",
       "regionGroup": "Montana",
       "thinFields": [
-        "dressCode",
-        "accessibilityState",
-        "dietaryDetails"
+        "dietaryDetails",
+        "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 2,
       "bookingPlatforms": [
         "Phone",
         "Resy",

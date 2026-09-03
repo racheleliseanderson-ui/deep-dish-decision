@@ -7,11 +7,15 @@ export default defineConfig({
   test: {
     environment: "happy-dom",
     include: ["src/**/*.test.ts", "src/**/*.test.tsx", "scripts/pipeline/**/*.test.mjs"],
-    // Runs under `node --test` (it imports node:test, which vitest cannot bundle).
+    // These import node:test, which vitest cannot bundle. package.json runs them
+    // under `node --test`. resolve-targets was added to that command and not to
+    // this list, so `vitest run` has been failing on it ever since — one red
+    // suite is enough to stop anyone reading the other four.
     exclude: [
       "**/node_modules/**",
       "scripts/pipeline/level-records.test.mjs",
       "scripts/pipeline/parse-hours.test.mjs",
+      "scripts/pipeline/resolve-targets.test.mjs",
     ],
   },
 });

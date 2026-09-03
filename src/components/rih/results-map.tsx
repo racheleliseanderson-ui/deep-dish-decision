@@ -178,7 +178,8 @@ export function ResultsMap({
 
   const active = hover ?? activeSlug ?? null;
   const activePt = model.pts.find((p) => p.sc.record.slug === active);
-  const anyEstimated = model.pts.some((p) => !p.exact);
+  const estimatedCount = model.pts.filter((p) => !p.exact).length;
+  const anyEstimated = estimatedCount > 0;
 
   return (
     <figure className="mt-6">
@@ -288,7 +289,9 @@ export function ResultsMap({
                 ) : null}
                 <title>
                   {p.sc.record.title}
-                  {p.sc.distanceMi !== null ? ` — ${formatDistance(p.sc.distanceMi, p.exact)}` : ""}
+                  {p.sc.distanceMi !== null
+                    ? ` — ${formatDistance(p.sc.distanceMi, p.exact, p.sc.record.city)}`
+                    : ""}
                 </title>
               </g>
             );
@@ -371,9 +374,9 @@ export function ResultsMap({
             <li key={`sr-${p.sc.record.slug}`}>
               {`${p.sc.rank}. ${p.sc.record.title}`}
               {p.sc.distanceMi !== null
-                ? ` — ${formatDistance(p.sc.distanceMi, p.exact)}`
+                ? ` — ${formatDistance(p.sc.distanceMi, p.exact, p.sc.record.city)}`
                 : " — distance unknown"}
-              {p.exact ? "" : " (city-level point, not a street address)"}
+              {p.exact ? "" : ". The plotted point is the city centre, not this room's address"}
               {p.sc.blocked ? " — held: it does not clear the night" : ""}
             </li>
           ))}
@@ -392,7 +395,7 @@ export function ResultsMap({
               {activePt.sc.rank}. {activePt.sc.record.title}
               {activePt.sc.distanceMi !== null ? (
                 <span className="ml-2 text-subtle">
-                  {formatDistance(activePt.sc.distanceMi, activePt.exact)}
+                  {formatDistance(activePt.sc.distanceMi, activePt.exact, activePt.sc.record.city)}
                 </span>
               ) : null}
             </Link>
@@ -424,8 +427,10 @@ export function ResultsMap({
       </div>
 
       <figcaption className="mt-1.5 text-[11px] leading-relaxed text-subtle">
-        Equirectangular plot from recorded coordinates. Dashed points are city centroids, used
-        where the room&rsquo;s own coordinate is not on file.
+        Equirectangular plot from recorded coordinates.{" "}
+        {anyEstimated
+          ? `${estimatedCount} of ${model.pts.length} points are dashed: no address coordinate is on file, so the room sits at its city centroid. Rooms sharing a city share a point, and none of those points is a street location.`
+          : "Every point here is the room's own coordinate."}
       </figcaption>
     </figure>
   );

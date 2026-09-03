@@ -39,7 +39,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "Retain each source, date and field conflict; do not select the more favorable statement without evidence.",
@@ -115,7 +115,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Live availability",
         "detailed physical-access route and restroom configuration",
@@ -125,9 +125,10 @@
       "stateProvince": "Oregon",
       "regionGroup": "Oregon",
       "thinFields": [
+        "priceDetails",
         "accessibilityState"
       ],
-      "thinFieldCount": 1,
+      "thinFieldCount": 2,
       "bookingPlatforms": [
         "Phone",
         "Resy",
@@ -222,7 +223,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "Retain each source, date and field conflict; do not select the more favorable statement without evidence.",
@@ -298,7 +299,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Live table availability",
         "exact walk-in capacity",
@@ -308,11 +309,8 @@
       "city": "Portland",
       "stateProvince": "Oregon",
       "regionGroup": "Oregon",
-      "thinFields": [
-        "dressCode",
-        "coverageAreaDerived"
-      ],
-      "thinFieldCount": 1,
+      "thinFields": [],
+      "thinFieldCount": 0,
       "bookingPlatforms": [
         "Phone",
         "Walk-in / open seating",
@@ -407,7 +405,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "Retain each source, date and field conflict; do not select the more favorable statement without evidence.",
@@ -485,7 +483,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Current tasting-menu price",
         "live availability",
@@ -496,12 +494,9 @@
       "stateProvince": "Oregon",
       "regionGroup": "Oregon",
       "thinFields": [
-        "parkingTransit",
-        "dressCode",
-        "accessibilityState",
-        "coverageAreaDerived"
+        "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Direct / confirm live",
         "Phone"
@@ -593,7 +588,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "CONFLICT field=hours. A: https://www.oxpdx.com/info retrieved 2026-08-02 states Monday-Sunday 5pm-10pm. B: homepage and first-party social retrieved 2026-08-02 state every night 4:30pm-10:00pm. Rule: Do not select the more favorable statement. Reader must confirm live. Last rechecked: 2026-08-02. Close only when official pages converge or outlier removed or written operator confirmation.",
@@ -671,7 +666,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Live reservation availability",
         "current booking mechanics",
@@ -682,12 +677,9 @@
       "stateProvince": "Oregon",
       "regionGroup": "Oregon",
       "thinFields": [
-        "parkingTransit",
-        "dressCode",
-        "accessibilityState",
-        "coverageAreaDerived"
+        "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Direct / confirm live",
         "Phone"
@@ -778,7 +770,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "CONFLICT field=price+platform. A: home, reservations, FAQ retrieved 2026-08-02: $145 tasting, OpenTable, 20% auto gratuity. B: older contact page prior capture 2026-07-24: $125 and Resy language. Rule: Do not select the more favorable statement. Reader must confirm live. Last rechecked: 2026-08-02. Close only when official pages converge or outlier removed or written operator confirmation.",
@@ -856,7 +848,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Live availability",
         "exact physical-access route and restroom configuration",
@@ -866,12 +858,9 @@
       "stateProvince": "Oregon",
       "regionGroup": "Oregon",
       "thinFields": [
-        "dressCode",
-        "accessibilityState",
-        "coverageAreaDerived",
-        "dietaryDetails"
+        "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Direct / confirm live",
         "Phone",
@@ -967,7 +956,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "Retain each source, date and field conflict; do not select the more favorable statement without evidence.",
@@ -1051,7 +1040,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Live availability",
         "detailed step-free route and restroom configuration",
@@ -1061,12 +1050,9 @@
       "stateProvince": "Oregon",
       "regionGroup": "Oregon",
       "thinFields": [
-        "dressCode",
-        "accessibilityState",
-        "coverageAreaDerived",
-        "dietaryDetails"
+        "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "OpenTable",
         "Phone",
@@ -1158,7 +1144,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1256,12 +1242,9 @@
       "stateProvince": "Oregon",
       "regionGroup": "Oregon",
       "thinFields": [
-        "parkingTransit",
-        "dressCode",
-        "accessibilityState",
-        "typicalMealLength"
+        "accessibilityState"
       ],
-      "thinFieldCount": 4,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Phone",
         "Tock"
@@ -1355,7 +1338,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1559,7 +1542,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",

@@ -39,7 +39,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "Retain each source, date and field conflict; do not select the more favorable statement without evidence.",
@@ -115,7 +115,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Live reservation availability",
         "exact current accessibility route and restroom configuration",
@@ -125,11 +125,9 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "parkingTransit",
-        "accessibilityState",
-        "coverageAreaDerived"
+        "accessibilityState"
       ],
-      "thinFieldCount": 2,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Phone",
         "Tock",
@@ -224,7 +222,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "Retain each source, date and field conflict; do not select the more favorable statement without evidence.",
@@ -300,7 +298,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Live table availability",
         "detailed step-free route and restroom configuration",
@@ -310,7 +308,7 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "dressCode"
+        "priceDetails"
       ],
       "thinFieldCount": 1,
       "bookingPlatforms": [
@@ -404,7 +402,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "Retain each source, date and field conflict; do not select the more favorable statement without evidence.",
@@ -480,7 +478,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Temporary entertainment schedule",
         "live room availability",
@@ -491,11 +489,10 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "parkingTransit",
-        "dressCode",
+        "priceDetails",
         "dietaryDetails"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 2,
       "bookingPlatforms": [
         "Phone",
         "Walk-in / open seating",
@@ -592,7 +589,7 @@
       "freshnessStatus": "CURRENT_WITH_OFFICIAL_CONFLICTS",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-12",
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, dietary and cross-contact claims require same-cycle confirmation; hours, reservations and price are reviewed within 7 days; menu and access statements within 31 days.",
       "nextAction": "Sources reachable as of 2026-08-05; official conflicts still open — do not collapse to friendlier claim. Reconfirm live before booking.",
       "conflict": "Retain each source, date and field conflict; do not select the more favorable statement without evidence.",
@@ -670,7 +667,7 @@
       "hasPhone": true,
       "hasOfficialConflict": true,
       "isFullCaseFile": true,
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "unknownList": [
         "Live availability",
         "detailed physical-access route and restroom configuration",
@@ -680,12 +677,9 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "parkingTransit",
-        "dressCode",
-        "accessibilityState",
-        "coverageAreaDerived"
+        "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Phone",
         "Walk-in / open seating",
@@ -778,7 +772,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -876,11 +870,9 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "parkingTransit",
-        "dressCode",
         "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Phone",
         "Walk-in / open seating",
@@ -979,7 +971,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1171,7 +1163,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1272,10 +1264,9 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "parkingTransit",
         "accessibilityState"
       ],
-      "thinFieldCount": 2,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Phone",
         "Walk-in / open seating",
@@ -1372,7 +1363,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1470,8 +1461,8 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "parkingTransit",
-        "accessibilityState"
+        "accessibilityState",
+        "groupDetails"
       ],
       "thinFieldCount": 2,
       "bookingPlatforms": [
@@ -1568,7 +1559,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1665,10 +1656,9 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "parkingTransit",
         "accessibilityState"
       ],
-      "thinFieldCount": 2,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Direct / confirm live",
         "Phone",
@@ -1759,7 +1749,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -1950,7 +1940,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -2148,7 +2138,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -2336,7 +2326,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -2437,10 +2427,9 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "parkingTransit",
         "accessibilityState"
       ],
-      "thinFieldCount": 2,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "Phone",
         "Walk-in / open seating",
@@ -2533,7 +2522,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -2723,7 +2712,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -2820,11 +2809,10 @@
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "thinFields": [
-        "parkingTransit",
-        "accessibilityState",
-        "dietaryDetails"
+        "dietaryDetails",
+        "accessibilityState"
       ],
-      "thinFieldCount": 3,
+      "thinFieldCount": 2,
       "bookingPlatforms": [
         "Direct / confirm live",
         "Phone",
@@ -2917,7 +2905,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -3884,12 +3872,12 @@
       "phone": "",
       "email": "",
       "website": "https://www.archipelagoseattle.com/",
-      "menuUrl": "https://www.seattletimes.com/life/food-drink/psst-hoy-seattle-archipelago-masterfully-combines-filipino-food-with-pacific-northwest-flair/",
+      "menuUrl": "",
       "reservationUrl": "https://www.exploretock.com/archipelagoseattle/faq",
       "coverageArea": "Seattle, Washington",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via Tock.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is seattletimes.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via Tock on a path published by the restaurant. Cancellation policy Archipelago is dedicated to building community equity. · We do however, allow for prepaid dinners that will allow your recipient to book at their own convenience.",
@@ -3955,11 +3943,12 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Tock"
       ],
@@ -3968,12 +3957,11 @@
         "Tasting menu"
       ],
       "officialSource": "https://www.archipelagoseattle.com/",
-      "additionalSources": "https://www.archipelagoseattle.com/reservations | https://www.archipelagoseattle.com/faq | https://www.seattletimes.com/life/food-drink/psst-hoy-seattle-archipelago-masterfully-combines-filipino-food-with-pacific-northwest-flair/ | https://www.exploretock.com/archipelagoseattle/faq",
+      "additionalSources": "https://www.archipelagoseattle.com/reservations | https://www.archipelagoseattle.com/faq | https://www.exploretock.com/archipelagoseattle/faq",
       "sources": [
         "https://www.archipelagoseattle.com/",
         "https://www.archipelagoseattle.com/reservations",
         "https://www.archipelagoseattle.com/faq",
-        "https://www.seattletimes.com/life/food-drink/psst-hoy-seattle-archipelago-masterfully-combines-filipino-food-with-pacific-northwest-flair/",
         "https://www.exploretock.com/archipelagoseattle/faq"
       ],
       "retrievedAt": "2026-08-21T01:42:18.456Z",

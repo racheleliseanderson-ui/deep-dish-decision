@@ -1378,12 +1378,12 @@
       "phone": "",
       "email": "",
       "website": "https://www.indo-stl.com/",
-      "menuUrl": "https://www.esquire.com/food-drink/restaurants/a34648683/best-new-restaurants-in-america-2020/",
+      "menuUrl": "",
       "reservationUrl": "https://resy.com/cities/st-louis-mo/venues/indo",
       "coverageArea": "St. Louis, Missouri",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via Resy.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is esquire.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
@@ -1451,13 +1451,14 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "dietaryDetails",
         "accessibilityState",
         "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 9,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -1466,10 +1467,9 @@
         "Japanese"
       ],
       "officialSource": "https://www.indo-stl.com/",
-      "additionalSources": "https://www.esquire.com/food-drink/restaurants/a34648683/best-new-restaurants-in-america-2020/ | https://resy.com/cities/st-louis-mo/venues/indo",
+      "additionalSources": "https://resy.com/cities/st-louis-mo/venues/indo",
       "sources": [
         "https://www.indo-stl.com/",
-        "https://www.esquire.com/food-drink/restaurants/a34648683/best-new-restaurants-in-america-2020/",
         "https://resy.com/cities/st-louis-mo/venues/indo"
       ],
       "retrievedAt": "2026-08-31T03:21:10.965Z",

@@ -118,7 +118,7 @@ export function CompareDialog({
       label: "Distance",
       get: (s) =>
         s.distanceMi !== null
-          ? formatDistance(s.distanceMi, s.distanceExact) + (s.distanceExact ? "" : " (city-level)")
+          ? formatDistance(s.distanceMi, s.distanceExact, s.record.city)
           : "no origin set",
     },
     {

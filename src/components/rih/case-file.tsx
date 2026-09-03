@@ -5,6 +5,7 @@ import { DecisionBrief } from "@/components/rih/decision-brief";
 import { DinerQuestions } from "@/components/rih/diner-questions";
 import { FindingsStack } from "@/components/rih/findings";
 import { InspectionPanel } from "@/components/rih/inspection-panel";
+import { readMenuLink } from "@/lib/menu-link";
 import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import {
@@ -134,6 +135,7 @@ export function CaseFile({
                   ? ownedSiteEvidence(r.slug)
                   : null;
                 if (!owned?.present) return null;
+                const ownedMenu = readMenuLink(owned.menuUrl, r.website);
                 return (
                   <section>
                     <Eyebrow>From the restaurant's own pages</Eyebrow>
@@ -145,16 +147,16 @@ export function CaseFile({
                       case file when those pages state them. Remaining fields stay unstated on
                       the same floor as every other record.
                     </p>
-                    {owned.menuUrl || owned.reservationUrl ? (
+                    {ownedMenu || owned.reservationUrl ? (
                       <div className="mt-3 flex flex-wrap gap-1.5">
-                        {owned.menuUrl ? (
+                        {ownedMenu ? (
                           <a
-                            href={owned.menuUrl}
+                            href={ownedMenu.url}
                             target="_blank"
                             rel="noreferrer"
                             className="tap rounded-full border border-border px-3 py-1 text-[11px] text-muted-foreground hover:border-gilt hover:text-foreground"
                           >
-                            Menu path
+                            {ownedMenu.isMenu ? "Menu path" : ownedMenu.label}
                           </a>
                         ) : null}
                         {owned.reservationUrl ? (

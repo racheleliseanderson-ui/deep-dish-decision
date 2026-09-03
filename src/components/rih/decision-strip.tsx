@@ -2,7 +2,6 @@
 import type { Scored, Situation } from "@/lib/intelligence";
 import {
   bookingRiskLine,
-  formatDistance,
   hoursProvenance,
   openLabel,
   partyTotal,
@@ -62,16 +61,18 @@ export function DecisionStrip({ sc, situation }: { sc: Scored; situation: Situat
       <Cell
         label="Distance"
         value={
-          sc.distanceMi !== null
-            ? formatDistance(sc.distanceMi, sc.distanceExact)
+          sc.distanceRead
+            ? sc.distanceRead.value
             : situation.origin
               ? "No coordinate"
               : "Set a location"
         }
-        {...(sc.distanceMi !== null
+        {...(sc.distanceRead
           ? {
-              note: sc.distanceExact ? (live?.hood ?? "Exact point") : "City-level estimate",
-              tone: sc.distanceMi <= 3 ? "verified" : "unknown",
+              note: sc.distanceRead.exact
+                ? (live?.hood ?? "Measured to the address")
+                : `${sc.distanceRead.measuredTo}, not the door`,
+              tone: sc.distanceRead.exact && sc.distanceMi! <= 3 ? "verified" : "unknown",
             }
           : { note: situation.origin ? "Not on file" : "to see distance" })}
       />

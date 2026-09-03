@@ -1038,7 +1038,7 @@
       "coverageArea": "Phoenix, Arizona",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via OpenTable.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "The menu on file is hosted on azhideawaycollection.com, not on the restaurant's own domain. Deep Dish cannot confirm the restaurant controls that page.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
@@ -1598,12 +1598,12 @@
       "phone": "",
       "email": "",
       "website": "https://www.trattophx.com/",
-      "menuUrl": "https://www.phoenixnewtimes.com/best-of/2020/food-and-drink/best-italian-restaurant-11496957",
+      "menuUrl": "",
       "reservationUrl": "",
       "coverageArea": "Phoenix, Arizona",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is phoenixnewtimes.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
@@ -1669,6 +1669,7 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "reservation",
         "dietaryDetails",
         "accessibilityState",
@@ -1677,17 +1678,16 @@
         "atmosphereSummary",
         "serviceSummary"
       ],
-      "thinFieldCount": 10,
+      "thinFieldCount": 11,
       "bookingPlatforms": [],
       "cuisineTags": [
         "Italian"
       ],
       "officialSource": "https://www.trattophx.com/",
-      "additionalSources": "https://www.trattophx.com/about | https://www.phoenixnewtimes.com/best-of/2020/food-and-drink/best-italian-restaurant-11496957",
+      "additionalSources": "https://www.trattophx.com/about",
       "sources": [
         "https://www.trattophx.com/",
-        "https://www.trattophx.com/about",
-        "https://www.phoenixnewtimes.com/best-of/2020/food-and-drink/best-italian-restaurant-11496957"
+        "https://www.trattophx.com/about"
       ],
       "retrievedAt": "2026-08-21T01:42:18.450Z",
       "searchText": "tratto phoenix arizona phoenix, az not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. italian phoenix, az",
@@ -3916,12 +3916,12 @@
       "phone": "+1-602-807-5226",
       "email": "",
       "website": "https://www.chiltephx.com/",
-      "menuUrl": "https://www.esquire.com/food-drink/restaurants/a45847159/best-new-restaurants-in-america-2023/",
+      "menuUrl": "",
       "reservationUrl": "https://order.toasttab.com/egiftcards/chilte-765-grand-ave",
       "coverageArea": "Phoenix, Arizona",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via Toast.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is esquire.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
@@ -3988,12 +3988,13 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "Toast",
         "Phone"
@@ -4003,11 +4004,10 @@
         "Mexican"
       ],
       "officialSource": "https://www.chiltephx.com/",
-      "additionalSources": "https://www.chiltephx.com/reservations | https://www.esquire.com/food-drink/restaurants/a45847159/best-new-restaurants-in-america-2023/ | https://order.toasttab.com/egiftcards/chilte-765-grand-ave",
+      "additionalSources": "https://www.chiltephx.com/reservations | https://order.toasttab.com/egiftcards/chilte-765-grand-ave",
       "sources": [
         "https://www.chiltephx.com/",
         "https://www.chiltephx.com/reservations",
-        "https://www.esquire.com/food-drink/restaurants/a45847159/best-new-restaurants-in-america-2023/",
         "https://order.toasttab.com/egiftcards/chilte-765-grand-ave"
       ],
       "retrievedAt": "2026-09-02T21:28:53.448Z",

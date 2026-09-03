@@ -7,7 +7,7 @@ import { isUnstated } from "@/lib/case-depth";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { firstPoint, statedText } from "@/lib/consumer-snapshot";
 import { buildFoodIntel } from "@/lib/food-intel";
-import { getInspection, inspectionCoverage } from "@/lib/inspections";
+import { getInspection, inspectionLayerLoaded } from "@/lib/inspections";
 import { buildReputation, getListingSample, getResearchedPattern } from "@/lib/reputation";
 
 export type AnswerSource =
@@ -323,7 +323,7 @@ function cleanTrustworthy(slug: string): DinerAnswer {
     // matched it. With the layer empty, which is what happens whenever
     // build-consumer-layers.py runs without its source snapshot, silence is a
     // statement about our build, and the record has not been checked at all.
-    const layerLoaded = inspectionCoverage() > 0;
+    const layerLoaded = inspectionLayerLoaded();
     const opening = layerLoaded
       ? "No health-inspection record matched this restaurant."
       : "The health-inspection layer is empty in this build, so this restaurant has not been checked against one.";

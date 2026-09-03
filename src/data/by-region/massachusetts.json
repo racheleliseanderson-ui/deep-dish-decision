@@ -2658,12 +2658,12 @@
       "phone": "+1-857-239-8064",
       "email": "",
       "website": "https://www.selectboston.com/",
-      "menuUrl": "http://www.improper.com/bostons-best/food-drink/seafood-select-oyster-bar1/",
+      "menuUrl": "",
       "reservationUrl": "https://www.toasttab.com/select-oyster-bar/giftcards",
       "coverageArea": "Boston, Massachusetts",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via Toast.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is improper.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
@@ -2730,12 +2730,13 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "Toast",
         "Phone"
@@ -2746,10 +2747,9 @@
         "Cocktail / lounge"
       ],
       "officialSource": "https://www.selectboston.com/",
-      "additionalSources": "http://www.improper.com/bostons-best/food-drink/seafood-select-oyster-bar1/ | https://www.toasttab.com/select-oyster-bar/giftcards",
+      "additionalSources": "https://www.toasttab.com/select-oyster-bar/giftcards",
       "sources": [
         "https://www.selectboston.com/",
-        "http://www.improper.com/bostons-best/food-drink/seafood-select-oyster-bar1/",
         "https://www.toasttab.com/select-oyster-bar/giftcards"
       ],
       "retrievedAt": "2026-09-02T21:28:39.653Z",

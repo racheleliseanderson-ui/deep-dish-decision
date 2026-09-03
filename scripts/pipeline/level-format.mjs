@@ -365,6 +365,44 @@ export const CORE_SLOTS = [
   { id: "serviceSummary", label: "Service", get: (r) => r.serviceSummary },
 ];
 
+/**
+ * A record is thin when eight or more of its twelve core slots say nothing.
+ *
+ * There used to be two numbers. This file's threshold was implied at eight and
+ * hard-coded in level-records.mjs; src/lib/atlas-compute.ts used four and
+ * carried a comment saying it was "kept in step with THIN_FIELD_THRESHOLD in
+ * scripts/pipeline/level-format.mjs" — a constant that did not exist. So the
+ * ops block published 801 thin records, /atlas counted 1,474, and the log line
+ * printed the eight-slot figure under the label "≥4".
+ *
+ * Four is not a useful line: 1,474 of 1,527 records clear it, which describes
+ * the corpus rather than distinguishing anything inside it. Eight is more than
+ * half the file empty. src/lib/atlas-compute.ts holds the same number and
+ * scripts/corpus-invariants.mjs fails if the two ever part company again.
+ */
+export const THIN_FIELD_THRESHOLD = 8;
+
+/** Days before nextReviewAt that a record counts as due soon rather than current. */
+export const REVIEW_DUE_SOON_DAYS = 14;
+
+/**
+ * Review state read from the date on the record, not from a label.
+ *
+ * `overdue` was counted as `reviewStatus === "overdue"`, and nothing in the
+ * pipeline ever assigned that status, so the ops block reported zero overdue
+ * records while 41 sat past their own nextReviewAt — eleven of them labelled
+ * "due soon" three weeks after the date they were due.
+ */
+export function reviewState(record, today = new Date().toISOString().slice(0, 10)) {
+  if (record.reviewStatus === "listing_only") return "listing_only";
+  const due = String(record.nextReviewAt ?? "").slice(0, 10);
+  if (!due) return "current";
+  if (due < today) return "overdue";
+  const soon = new Date(`${today}T00:00:00Z`);
+  soon.setUTCDate(soon.getUTCDate() + REVIEW_DUE_SOON_DAYS);
+  return due <= soon.toISOString().slice(0, 10) ? "due_soon" : "current";
+}
+
 export function isOperationallyThin(value) {
   const t = String(value ?? "").trim();
   if (!t) return true;

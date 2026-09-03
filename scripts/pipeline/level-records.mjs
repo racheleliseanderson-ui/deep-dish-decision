@@ -13,6 +13,7 @@ import path from "node:path";
 import {
   CORE_SLOTS,
   FLOOR_PREFIX,
+  THIN_FIELD_THRESHOLD,
   canFill,
   cuisineTagsFrom,
   emptyish,
@@ -26,10 +27,12 @@ import {
   measureDepth,
   platformFromUrl,
   quoteText,
+  reviewState,
   sentenceFromQuotes,
   stripPrefix,
   usableQuotes,
 } from "./level-format.mjs";
+import { isStorableMenuUrl } from "./menu-url.mjs";
 
 const ROOT = process.cwd();
 const PATHS = {
@@ -173,7 +176,10 @@ function applyEvidence(record, site) {
     }
   }
 
-  if (canFill(record.menuUrl) && site.menuUrl) {
+  // menuUrl says "the restaurant published this". Only a link on its own domain
+  // or on an ordering platform it controls is allowed to make that claim; the
+  // owned-site read is not trusted to have checked.
+  if (canFill(record.menuUrl) && site.menuUrl && isStorableMenuUrl(site.menuUrl, record.website)) {
     record.menuUrl = site.menuUrl;
     changed.push("menuUrl");
   }
@@ -227,7 +233,11 @@ function applyEvidence(record, site) {
     }
   }
 
-  if (canFill(record.menuSummary) && (record.menuUrl || site.menuUrl)) {
+  const storedMenu =
+    (isStorableMenuUrl(record.menuUrl, record.website) && record.menuUrl) ||
+    (isStorableMenuUrl(site.menuUrl, record.website) && site.menuUrl) ||
+    "";
+  if (canFill(record.menuSummary) && storedMenu) {
     record.menuSummary = "A menu path is published on the restaurant's own site.";
     changed.push("menuSummary");
   }
@@ -258,7 +268,7 @@ function applyFloor(record, site, matchStatus) {
     fill("typicalMealLength", floor("typical meal length was not published"));
     fill("occasionFit", floor("occasion fit is not independently reviewed beyond the stated fields"));
     if (canFill(record.menuSummary)) {
-      record.menuSummary = record.menuUrl
+      record.menuSummary = isStorableMenuUrl(record.menuUrl, record.website)
         ? "A menu path is published on the restaurant's own site."
         : floor("a menu path was not published");
     }
@@ -497,11 +507,16 @@ function rebuildDatasetMeta(dataset) {
   dataset.sourceSync =
     "wp-rest+first-party-auto-review · owned-site leveling (every record on the same 12-field floor)";
 
-  const overdue = records.filter((r) => r.reviewStatus === "overdue").length;
-  const dueSoon = records.filter((r) => r.reviewStatus === "due_soon" || r.reviewDueSoon).length;
-  const current = records.filter((r) => r.reviewStatus === "current").length;
+  // Read from the date each record carries, not from a status label. Nothing in
+  // this pipeline ever wrote reviewStatus = "overdue", so counting the label
+  // reported zero while 41 records sat past their own nextReviewAt.
+  const today = new Date().toISOString().slice(0, 10);
+  const state = records.map((r) => reviewState(r, today));
+  const overdue = state.filter((x) => x === "overdue").length;
+  const dueSoon = state.filter((x) => x === "due_soon").length;
+  const current = state.filter((x) => x === "current").length;
   const thinRecords = records.filter(
-    (r) => r.reviewStatus === "listing_only" || (r.thinFieldCount ?? 0) >= 8,
+    (r) => r.reviewStatus === "listing_only" || (r.thinFieldCount ?? 0) >= THIN_FIELD_THRESHOLD,
   ).length;
   const unknowns = records.reduce((a, r) => a + (r.unknownsCount || 0), 0);
   const thinFields = records.reduce((a, r) => a + (r.thinFieldCount || 0), 0);
@@ -714,7 +729,7 @@ console.log(
       dataset.records.reduce((a, r) => a + (store.records[r.slug]?.meta?.completeness ?? 0), 0) /
         dataset.records.length,
     )}%`,
-    `thin records (≥4)   ${dataset.ops.thinRecords}`,
+    `thin records (≥${THIN_FIELD_THRESHOLD})   ${dataset.ops.thinRecords}`,
     `reachable           ${dataset.ops.reachableAtLastReview}`,
   ].join("\n"),
 );

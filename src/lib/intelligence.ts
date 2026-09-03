@@ -2,12 +2,16 @@ import type { RestaurantRecord } from "@/lib/dataset";
 import { corpusMeta } from "@/lib/corpus-meta";
 import { getCompleteness } from "@/lib/completeness";
 import {
+  CENTROID_SLACK_MI,
+  formatDistance,
   haversineMi,
+  readDistance,
   openStateAt,
   openStateAtMoment,
   servesAt,
   localNow,
   minutesToClock,
+  type DistanceRead,
   type LatLng,
   type LiveRow,
   type OpenState,
@@ -588,13 +592,20 @@ export function buildFindings(
   if (s.origin && live?.ll) {
     const mi = haversineMi(s.origin, live.ll);
     const exact = live.llSource === "exact";
-    if (s.radiusMi !== null && mi > s.radiusMi) {
+    const read = readDistance(mi, exact, r.city);
+    // A centroid is not the door. Excluding a room on it would be the same
+    // false precision in filter form, so the radius gets slack it did not ask
+    // for rather than a hard edge the corpus cannot support.
+    const edge = s.radiusMi === null ? null : s.radiusMi + (exact ? 0 : CENTROID_SLACK_MI);
+    if (edge !== null && mi > edge) {
       push({
         id: "distance-out",
         layer: "critical",
         domain: "location",
         title: `Outside your ${s.radiusMi}-mile radius`,
-        detail: `${exact ? "" : "City-level estimate: "}about ${Math.round(mi)} miles from ${s.originLabel ?? "your origin"}.`,
+        detail: exact
+          ? `${read.value} from ${s.originLabel ?? "your origin"}.`
+          : `${read.value} ${read.measuredTo}. No address coordinate is on file, so the radius was read against the city rather than the door.`,
         action: "Widen the radius or accept the travel time.",
         impact: 86,
         confidence: exact ? "high" : "moderate",
@@ -606,7 +617,7 @@ export function buildFindings(
         layer: "watch",
         domain: "location",
         title: "Walkable from where you are",
-        detail: `About ${mi < 0.1 ? "under 0.1" : Math.round(mi * 10) / 10} miles${live.hood ? ` — ${live.hood}` : ""}.`,
+        detail: `${read.value} from where you are${live.hood ? ` — ${live.hood}` : ""}.`,
         action: "No parking question to resolve.",
         impact: 14,
         confidence: "high",
@@ -1022,6 +1033,11 @@ export type Scored = {
   distanceMi: number | null;
   /** Whether the distance came from an exact point or a city centroid. */
   distanceExact: boolean;
+  /**
+   * The distance as it may be shown. Banded and qualified whenever the point is
+   * a city centroid, so no render site has to remember to do that itself.
+   */
+  distanceRead: DistanceRead | null;
   /** Serving state at the arrival moment. */
   open: OpenState;
 };
@@ -1034,6 +1050,8 @@ export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOption
   const now = opts.now ?? new Date();
   const distanceMi = s.origin && live?.ll ? haversineMi(s.origin, live.ll) : null;
   const distanceExact = live?.llSource === "exact";
+  const distanceRead =
+    distanceMi === null ? null : readDistance(distanceMi, distanceExact, r.city);
   // The reader's arrival moment, not "now" — otherwise the card can print
   // "Serving at 7pm" beside a strip reading "Closed today" and charge the
   // penalty for a room that is open when they mean to go.
@@ -1170,21 +1188,18 @@ export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOption
   // centroid earns a much smaller nudge because every room in that city shares it.
   if (distanceMi !== null) {
     const weight = distanceExact ? 1 : 0.3;
-    const near = `${Math.round(distanceMi * 10) / 10} mi away`;
-    if (distanceMi <= 1) {
-      add("Walkable from you", 12 * weight, "location");
+    // The label a reader sees for this term carries the same qualifier the card
+    // does. "3.2 mi away" on a centroid was the lie in miniature.
+    const near = `${formatDistance(distanceMi, distanceExact, r.city)} away`;
+    if (distanceMi <= 1 && distanceExact) {
+      add("Walkable from you", 12, "location");
       reasons.push("walkable from you");
     } else if (distanceMi <= 3) {
       add(near, 8 * weight, "location");
-      reasons.push(near);
+      if (distanceExact) reasons.push(near);
     } else if (distanceMi <= 8) add(near, 3 * weight, "location");
     else if (distanceMi <= 20) add(near, -3 * weight, "location");
-    else
-      add(
-        `${Math.round(distanceMi)} mi away`,
-        -Math.min(18, distanceMi * 0.25) * weight,
-        "location",
-      );
+    else add(near, -Math.min(18, distanceMi * 0.25) * weight, "location");
   }
 
   // Serving at the moment you actually want to arrive.
@@ -1240,6 +1255,7 @@ export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOption
     live,
     distanceMi,
     distanceExact,
+    distanceRead,
     open,
   };
 }
@@ -1270,13 +1286,11 @@ export function filterRecords(
     const row = live?.[r.slug];
     if (s.radiusMi !== null && s.radiusMi > 0 && s.origin && row) {
       const ll = row.ll;
-      if (
-        ll &&
-        Number.isFinite(haversineMi(s.origin, ll)) &&
-        haversineMi(s.origin, ll) > s.radiusMi
-      ) {
-        return false;
-      }
+      // Same slack as the distance-out finding: a room is never dropped on a
+      // point that is the middle of its city rather than its address.
+      const edge = s.radiusMi + (row.llSource === "exact" ? 0 : CENTROID_SLACK_MI);
+      const mi = ll ? haversineMi(s.origin, ll) : null;
+      if (mi !== null && Number.isFinite(mi) && mi > edge) return false;
     }
     // "Only rooms serving then" is a filter, as the control says it is. A room
     // whose schedule is not held is kept — silence is not evidence of closure —

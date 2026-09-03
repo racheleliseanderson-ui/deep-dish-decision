@@ -14,12 +14,12 @@
       "phone": "",
       "email": "",
       "website": "https://carbonemiami.com/",
-      "menuUrl": "https://robbreport.com/food-drink/dining/carbone-miami-major-food-group-expansion-1234593420/",
+      "menuUrl": "",
       "reservationUrl": "https://resy.com/cities/miami-fl/venues/carbone-miami",
       "coverageArea": "Miami, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via Resy.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is robbreport.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
@@ -87,12 +87,13 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "dietaryDetails",
         "accessibilityState",
         "groupDetails",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -100,11 +101,10 @@
         "Italian"
       ],
       "officialSource": "https://carbonemiami.com/",
-      "additionalSources": "https://carbonemiami.com/contact | https://robbreport.com/food-drink/dining/carbone-miami-major-food-group-expansion-1234593420/ | https://resy.com/cities/miami-fl/venues/carbone-miami",
+      "additionalSources": "https://carbonemiami.com/contact | https://resy.com/cities/miami-fl/venues/carbone-miami",
       "sources": [
         "https://carbonemiami.com/",
         "https://carbonemiami.com/contact",
-        "https://robbreport.com/food-drink/dining/carbone-miami-major-food-group-expansion-1234593420/",
         "https://resy.com/cities/miami-fl/venues/carbone-miami"
       ],
       "retrievedAt": "2026-08-21T01:42:18.448Z",
@@ -480,7 +480,7 @@
       "coverageArea": "Miami, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via OpenTable.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "The menu on file is hosted on taogroup.com, not on the restaurant's own domain. Deep Dish cannot confirm the restaurant controls that page.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
@@ -2298,12 +2298,12 @@
       "phone": "",
       "email": "",
       "website": "https://www.roosterandthetill.com/",
-      "menuUrl": "https://local.cltampa.com/publication/best-of-the-bay/2016/food-and-drink/best-restaurant",
+      "menuUrl": "",
       "reservationUrl": "https://www.opentable.com/r/rooster-and-the-till-reservations-tampa?restref=397762&",
       "coverageArea": "Tampa, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via OpenTable.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is local.cltampa.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
@@ -2371,13 +2371,14 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "dietaryDetails",
         "accessibilityState",
         "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 9,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -2386,10 +2387,9 @@
         "Contemporary American"
       ],
       "officialSource": "https://www.roosterandthetill.com/",
-      "additionalSources": "https://local.cltampa.com/publication/best-of-the-bay/2016/food-and-drink/best-restaurant | https://www.opentable.com/r/rooster-and-the-till-reservations-tampa?restref=397762&",
+      "additionalSources": "https://www.opentable.com/r/rooster-and-the-till-reservations-tampa?restref=397762&",
       "sources": [
         "https://www.roosterandthetill.com/",
-        "https://local.cltampa.com/publication/best-of-the-bay/2016/food-and-drink/best-restaurant",
         "https://www.opentable.com/r/rooster-and-the-till-reservations-tampa?restref=397762&"
       ],
       "retrievedAt": "2026-08-21T01:42:18.457Z",

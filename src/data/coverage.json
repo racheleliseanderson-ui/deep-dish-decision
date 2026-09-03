@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T02:29:56.288Z",
+  "generatedAt": "2026-09-03T06:26:54.946Z",
   "totals": {
     "records": 1527,
     "enriched": 1527,
@@ -9,12 +9,12 @@
     "statesTotal": 51,
     "avgCompleteness": 97,
     "withRating": 111,
-    "withPrice": 119,
-    "hygiene": 55,
+    "withPrice": 108,
+    "hygiene": 85,
     "neverEnriched": 0,
     "thin": 0,
     "siteFailures": 5,
-    "reviewDue": 11,
+    "reviewDue": 41,
     "staleA": 0,
     "staleB": 0,
     "staleC": 0
@@ -28,31 +28,31 @@
     "preferRefreshOverDiscover": true,
     "hygieneBatchSize": 25,
     "hygieneSlugs": [
-      "canlis",
-      "kann",
-      "nue",
-      "the-pink-door",
-      "tusk",
-      "le-pigeon",
-      "revel",
-      "ox",
-      "langbaan",
-      "kachka",
-      "st-lawrence",
-      "bottega-louie",
-      "home-restaurant",
-      "the-purple-pig-restaurant",
-      "simply-pho",
-      "sichuan-impression-los-angeles",
-      "triple-pepper-river-oaks",
-      "cooking-girl",
-      "house-of-nanking",
-      "busy-bee-cafe-atlanta",
-      "desta-ethiopian-kitchen-atlanta",
-      "delbar-atlanta",
-      "ecco-atlanta",
+      "barrington-s-charlotte",
+      "born-raised-san-diego",
+      "del-rossi-s-cheesesteak-pizza-co-philadelphia",
+      "georgia-james-houston",
+      "ironside-fish-oyster-san-diego",
+      "jens-restaurant-anchorage",
+      "locale-farm-to-table-eatery-bakersfield",
+      "mourad-san-francisco",
+      "mr-szechuan",
+      "aga-s-restaurant-catering-houston",
+      "big-jones-chicago",
       "botiwalla-atlanta",
-      "fox-bros-bar-b-q-atlanta"
+      "busy-bee-cafe-atlanta",
+      "chercher-ethiopian-restaurant-mart-washington",
+      "chichen-itza-restaurant-los-angeles",
+      "delbar-atlanta",
+      "desta-ethiopian-kitchen-atlanta",
+      "ecco-atlanta",
+      "famous-4th-street-delicatessen-philadelphia",
+      "fox-bros-bar-b-q-atlanta",
+      "gatlin-s-bbq-houston",
+      "hugo-s-houston",
+      "kokkari-estiatorio-san-francisco",
+      "little-miss-bbq-phoenix",
+      "lockhart-smokehouse-dallas"
     ],
     "nextHygiene": [
       {
@@ -1321,14 +1321,14 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-01T17:41:43.401Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1346,14 +1346,14 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-01T17:41:48.360Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1371,14 +1371,14 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-01T17:41:54.345Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1396,14 +1396,14 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-01T17:42:01.828Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1421,14 +1421,14 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-01T17:42:03.974Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1446,14 +1446,14 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-01T17:41:53.281Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1471,14 +1471,14 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-01T17:41:58.300Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1496,14 +1496,14 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-01T17:41:56.791Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1521,14 +1521,14 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-01T17:41:50.812Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1546,14 +1546,14 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-01T17:41:45.658Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1571,13 +1571,15 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-02T16:57:50.642Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1594,13 +1596,15 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-08-19T12:25:24.524Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 14,
       "siteFailures": []
@@ -1617,13 +1621,15 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-02T16:57:51.830Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1640,13 +1646,15 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-02T16:58:09.669Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1663,13 +1671,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:57:54.348Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1686,13 +1696,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:57:56.474Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1709,13 +1721,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:57:59.193Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1732,13 +1746,15 @@
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-09-02T16:58:04.212Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1755,13 +1771,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-08-19T12:25:39.807Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 14,
       "siteFailures": []
@@ -1778,13 +1796,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:13.789Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1801,13 +1821,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:07.448Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1824,13 +1846,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:05.325Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1847,13 +1871,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:16.597Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1870,13 +1896,15 @@
       "priceBand": "",
       "lastEnrichedAt": "2026-09-02T16:58:19.253Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1893,14 +1921,14 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-01T17:42:00.253Z",
       "addedAt": null,
-      "reviewStatus": "due_soon",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-12",
       "reviewedAt": "2026-08-05",
-      "reviewDueSoon": true,
+      "reviewDueSoon": false,
       "hygiene": true,
-      "refreshPriority": 220,
+      "refreshPriority": 320,
       "refreshReasons": [
-        "review-due-soon"
+        "review-overdue"
       ],
       "staleTier": null,
       "ageDays": 1,
@@ -1918,13 +1946,15 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-02T16:58:21.859Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1941,13 +1971,15 @@
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-09-02T16:58:23.950Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1964,13 +1996,15 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-02T16:58:25.716Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -1987,13 +2021,15 @@
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-09-02T16:58:27.774Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2010,13 +2046,15 @@
       "priceBand": "$$$$",
       "lastEnrichedAt": "2026-09-02T16:58:30.015Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2033,13 +2071,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:34.691Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2056,13 +2096,15 @@
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-09-02T16:58:36.783Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2079,13 +2121,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:37.717Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2102,13 +2146,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:39.909Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2125,13 +2171,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:42.587Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2148,13 +2196,15 @@
       "priceBand": "$$$",
       "lastEnrichedAt": "2026-09-02T16:58:45.057Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2171,13 +2221,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:46.457Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2194,13 +2246,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:49.412Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2217,13 +2271,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:51.923Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2240,13 +2296,15 @@
       "priceBand": "$$",
       "lastEnrichedAt": "2026-09-02T16:58:54.342Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -2731,7 +2789,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -2754,7 +2812,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -2777,7 +2835,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -2800,7 +2858,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -2823,7 +2881,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -2846,7 +2904,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -5123,7 +5181,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5146,7 +5204,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5169,7 +5227,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5192,7 +5250,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5215,7 +5273,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5238,7 +5296,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5261,7 +5319,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5284,7 +5342,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5307,7 +5365,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5330,7 +5388,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5353,7 +5411,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5376,7 +5434,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5399,7 +5457,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5422,7 +5480,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5445,7 +5503,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5468,7 +5526,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5491,7 +5549,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5514,7 +5572,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5537,7 +5595,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5560,7 +5618,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5583,7 +5641,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5606,7 +5664,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5629,7 +5687,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5652,7 +5710,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5675,7 +5733,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5698,7 +5756,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5721,7 +5779,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5744,7 +5802,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5767,7 +5825,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5790,7 +5848,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5813,7 +5871,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5836,7 +5894,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5859,7 +5917,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5882,7 +5940,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5905,7 +5963,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5928,7 +5986,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5951,7 +6009,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5974,7 +6032,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5997,7 +6055,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6020,7 +6078,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6043,7 +6101,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6066,7 +6124,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6089,7 +6147,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6112,7 +6170,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6135,7 +6193,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6158,7 +6216,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6181,7 +6239,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6204,7 +6262,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6227,7 +6285,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6250,7 +6308,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6273,7 +6331,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6296,7 +6354,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6319,7 +6377,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6342,7 +6400,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6365,7 +6423,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6388,7 +6446,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6411,7 +6469,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6434,7 +6492,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6457,7 +6515,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6480,7 +6538,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6503,7 +6561,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6526,7 +6584,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6549,7 +6607,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6572,7 +6630,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6595,7 +6653,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6618,7 +6676,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6641,7 +6699,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -6664,7 +6722,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -18206,11 +18264,9 @@
       "nextReviewAt": "2026-10-03",
       "reviewedAt": "2026-09-03",
       "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -18231,11 +18287,9 @@
       "nextReviewAt": "2026-10-03",
       "reviewedAt": "2026-09-03",
       "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -18256,11 +18310,9 @@
       "nextReviewAt": "2026-10-03",
       "reviewedAt": "2026-09-03",
       "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 420,
-      "refreshReasons": [
-        "thin-50"
-      ],
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -18277,13 +18329,15 @@
       "priceBand": "",
       "lastEnrichedAt": "2026-09-02T16:58:33.186Z",
       "addedAt": null,
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "nextReviewAt": "2026-08-19",
       "reviewedAt": "2026-08-05",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 320,
+      "refreshReasons": [
+        "review-overdue"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -22977,7 +23031,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23000,7 +23054,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23023,7 +23077,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23046,7 +23100,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23069,7 +23123,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23092,7 +23146,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23115,7 +23169,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23138,7 +23192,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23161,7 +23215,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23184,7 +23238,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23207,7 +23261,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23230,7 +23284,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23253,7 +23307,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23276,7 +23330,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23299,7 +23353,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23322,7 +23376,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23345,7 +23399,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23368,7 +23422,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23391,7 +23445,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23414,7 +23468,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23437,7 +23491,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23460,7 +23514,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23483,7 +23537,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23506,7 +23560,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23529,7 +23583,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23552,7 +23606,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23575,7 +23629,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23598,7 +23652,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23621,7 +23675,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23644,7 +23698,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23667,7 +23721,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23690,7 +23744,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23713,7 +23767,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23736,7 +23790,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23759,7 +23813,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23782,7 +23836,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23828,7 +23882,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23851,7 +23905,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23874,7 +23928,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23897,7 +23951,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23920,7 +23974,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23943,7 +23997,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23966,7 +24020,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -23989,7 +24043,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -24012,7 +24066,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -24058,7 +24112,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -24081,7 +24135,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -24104,7 +24158,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -24127,7 +24181,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -24150,7 +24204,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -24173,7 +24227,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -24196,7 +24250,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -33741,7 +33795,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -33764,7 +33818,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -33787,7 +33841,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -33810,7 +33864,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -35378,31 +35432,6 @@
       "siteFailures": []
     },
     {
-      "slug": "wayfare-tavern-san-francisco",
-      "title": "Wayfare Tavern",
-      "stateCode": "CA",
-      "city": "San Francisco",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T22:52:52.180Z",
-      "addedAt": "2026-09-02T22:52:45.640Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-03",
-      "reviewedAt": "2026-09-03",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 414,
-      "refreshReasons": [
-        "thin-56"
-      ],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
       "slug": "fin-fino-charlotte",
       "title": "Fin & Fino",
       "stateCode": "NC",
@@ -35418,11 +35447,32 @@
       "nextReviewAt": "2026-10-03",
       "reviewedAt": "2026-09-03",
       "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 420,
-      "refreshReasons": [
-        "thin-50"
-      ],
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "wayfare-tavern-san-francisco",
+      "title": "Wayfare Tavern",
+      "stateCode": "CA",
+      "city": "San Francisco",
+      "completeness": 94,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:52:52.180Z",
+      "addedAt": "2026-09-02T22:52:45.640Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-10-03",
+      "reviewedAt": "2026-09-03",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -36829,9 +36879,9 @@
       "priceBand": "",
       "lastEnrichedAt": "2026-09-02T22:57:09.601Z",
       "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-10-03",
+      "reviewedAt": "2026-09-03",
       "reviewDueSoon": false,
       "hygiene": false,
       "refreshPriority": 0,
@@ -37040,6 +37090,34 @@
     ]
   },
   "runs": [
+    {
+      "kind": "level-records",
+      "startedAt": "2026-09-03T06:18:42.340Z",
+      "batchSize": 0,
+      "inserted": 0,
+      "cities": [],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 97,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "level-records",
+      "startedAt": "2026-09-03T02:29:56.371Z",
+      "batchSize": 0,
+      "inserted": 0,
+      "cities": [],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 97,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
     {
       "kind": "seed-listings",
       "startedAt": "2026-09-03T02:29:42.205Z",
@@ -39335,1093 +39413,6 @@
       },
       "retries": 5,
       "failures": 27,
-      "flagged": false
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-09-02T21:11:13.370Z",
-      "batchSize": 0,
-      "inserted": 409,
-      "cities": [
-        {
-          "city": "Charlotte, NC",
-          "queueCity": "Charlotte",
-          "found": 4,
-          "inserted": 0,
-          "duplicates": 4
-        },
-        {
-          "city": "Baltimore, MD",
-          "queueCity": "Baltimore",
-          "found": 5,
-          "inserted": 0,
-          "duplicates": 5
-        },
-        {
-          "city": "Oklahoma City, OK",
-          "queueCity": "Oklahoma City",
-          "found": 3,
-          "inserted": 0,
-          "duplicates": 3
-        },
-        {
-          "city": "Jacksonville, FL",
-          "queueCity": "Jacksonville",
-          "found": 4,
-          "inserted": 0,
-          "duplicates": 4
-        },
-        {
-          "city": "San Diego, CA",
-          "queueCity": "San Diego",
-          "found": 5,
-          "inserted": 0,
-          "duplicates": 5
-        },
-        {
-          "city": "Dallas, TX",
-          "queueCity": "Dallas",
-          "found": 5,
-          "inserted": 0,
-          "duplicates": 5
-        },
-        {
-          "city": "Newark, NJ",
-          "queueCity": "new jersey",
-          "found": 3,
-          "inserted": 0,
-          "duplicates": 3
-        },
-        {
-          "city": "Jersey City, NJ",
-          "queueCity": "new jersey",
-          "found": 3,
-          "inserted": 0,
-          "duplicates": 3
-        },
-        {
-          "city": "Montclair, NJ",
-          "queueCity": "new jersey",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Princeton, NJ",
-          "queueCity": "new jersey",
-          "found": 3,
-          "inserted": 0,
-          "duplicates": 3
-        },
-        {
-          "city": "New Brunswick, NJ",
-          "queueCity": "new jersey",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Collingswood, NJ",
-          "queueCity": "new jersey",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Atlantic City, NJ",
-          "queueCity": "new jersey",
-          "found": 1,
-          "inserted": 0,
-          "duplicates": 1
-        },
-        {
-          "city": "Birmingham, AL",
-          "queueCity": "Birmingham",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Grand Rapids, MI",
-          "queueCity": "Grand Rapids",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Rochester, NY",
-          "queueCity": "Rochester",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Tucson, AZ",
-          "queueCity": "Tucson",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Fresno, CA",
-          "queueCity": "Fresno",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Tulsa, OK",
-          "queueCity": "Tulsa",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Omaha, NE",
-          "queueCity": "Omaha",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Albuquerque, NM",
-          "queueCity": "Albuquerque",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Bakersfield, CA",
-          "queueCity": "Bakersfield",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Knoxville, TN",
-          "queueCity": "Knoxville",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Albany, NY",
-          "queueCity": "Albany",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Boise, ID",
-          "queueCity": "Boise",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Columbia, SC",
-          "queueCity": "Columbia",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Little Rock, AR",
-          "queueCity": "Little Rock",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Des Moines, IA",
-          "queueCity": "Des Moines",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Spokane, WA",
-          "queueCity": "Spokane",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Madison, WI",
-          "queueCity": "Madison",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Wichita, KS",
-          "queueCity": "Wichita",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Jackson, MS",
-          "queueCity": "Jackson",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Portland, ME",
-          "queueCity": "Portland",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Charleston, WV",
-          "queueCity": "Charleston",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Manchester, NH",
-          "queueCity": "Manchester",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Wilmington, DE",
-          "queueCity": "Wilmington",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Burlington, VT",
-          "queueCity": "Burlington",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Sioux Falls, SD",
-          "queueCity": "Sioux Falls",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Fargo, ND",
-          "queueCity": "Fargo",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Billings, MT",
-          "queueCity": "Billings",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Cheyenne, WY",
-          "queueCity": "Cheyenne",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Anchorage, AK",
-          "queueCity": "Anchorage",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Honolulu, HI",
-          "queueCity": "Honolulu",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Richmond, VA",
-          "queueCity": "Richmond",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Memphis, TN",
-          "queueCity": "Memphis",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Salt Lake City, UT",
-          "queueCity": "Salt Lake City",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "New Orleans, LA",
-          "queueCity": "New Orleans",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Buffalo, NY",
-          "queueCity": "Buffalo",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Hartford, CT",
-          "queueCity": "Hartford",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Fort Worth, TX",
-          "queueCity": "Fort Worth",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Savannah, GA",
-          "queueCity": "Savannah",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Colorado Springs, CO",
-          "queueCity": "Colorado Springs",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Oakland, CA",
-          "queueCity": "Oakland",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Fort Lauderdale, FL",
-          "queueCity": "Fort Lauderdale",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Asheville, NC",
-          "queueCity": "Asheville",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "St. Louis, MO",
-          "queueCity": "St. Louis",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Worcester, MA",
-          "queueCity": "Worcester",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Baton Rouge, LA",
-          "queueCity": "Baton Rouge",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "El Paso, TX",
-          "queueCity": "El Paso",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Lexington, KY",
-          "queueCity": "Lexington",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Ann Arbor, MI",
-          "queueCity": "Ann Arbor",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Norfolk, VA",
-          "queueCity": "Norfolk",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Lincoln, NE",
-          "queueCity": "Lincoln",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Charleston, SC",
-          "queueCity": "Charleston",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Huntsville, AL",
-          "queueCity": "Huntsville",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Fort Wayne, IN",
-          "queueCity": "Fort Wayne",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "New Haven, CT",
-          "queueCity": "New Haven",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Santa Fe, NM",
-          "queueCity": "Santa Fe",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Lawrence, KS",
-          "queueCity": "Lawrence",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Athens, GA",
-          "queueCity": "Athens",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Cedar Rapids, IA",
-          "queueCity": "Cedar Rapids",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Rapid City, SD",
-          "queueCity": "Rapid City",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Mobile, AL",
-          "queueCity": "Mobile",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Fort Collins, CO",
-          "queueCity": "Fort Collins",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Springfield, MO",
-          "queueCity": "Springfield",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Greenville, SC",
-          "queueCity": "Greenville",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Rochester, MN",
-          "queueCity": "Rochester",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Durham, NC",
-          "queueCity": "Durham",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Topeka, KS",
-          "queueCity": "Topeka",
-          "found": 4,
-          "inserted": 0,
-          "duplicates": 4
-        },
-        {
-          "city": "Lafayette, LA",
-          "queueCity": "Lafayette",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Bozeman, MT",
-          "queueCity": "Bozeman",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Missoula, MT",
-          "queueCity": "Missoula",
-          "found": 4,
-          "inserted": 0,
-          "duplicates": 4
-        },
-        {
-          "city": "Tacoma, WA",
-          "queueCity": "Tacoma",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Flagstaff, AZ",
-          "queueCity": "Flagstaff",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Frederick, MD",
-          "queueCity": "Frederick",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Greensboro, NC",
-          "queueCity": "Greensboro",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Toledo, OH",
-          "queueCity": "Toledo",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Corpus Christi, TX",
-          "queueCity": "Corpus Christi",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Reno, NV",
-          "queueCity": "Reno",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Chattanooga, TN",
-          "queueCity": "Chattanooga",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Wilmington, NC",
-          "queueCity": "Wilmington",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Dayton, OH",
-          "queueCity": "Dayton",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Allentown, PA",
-          "queueCity": "Allentown",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Winston-Salem, NC",
-          "queueCity": "Winston-Salem",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Atlanta, GA",
-          "queueCity": "Atlanta",
-          "found": 32,
-          "inserted": 32,
-          "duplicates": 0
-        },
-        {
-          "city": "Austin, TX",
-          "queueCity": "Austin",
-          "found": 31,
-          "inserted": 31,
-          "duplicates": 0
-        },
-        {
-          "city": "Boston, MA",
-          "queueCity": "Boston",
-          "found": 8,
-          "inserted": 8,
-          "duplicates": 0
-        },
-        {
-          "city": "Chicago, IL",
-          "queueCity": "Chicago",
-          "found": 35,
-          "inserted": 34,
-          "duplicates": 1
-        },
-        {
-          "city": "Dallas, TX",
-          "queueCity": "Dallas",
-          "found": 30,
-          "inserted": 30,
-          "duplicates": 0
-        },
-        {
-          "city": "Denver, CO",
-          "queueCity": "Denver",
-          "found": 30,
-          "inserted": 29,
-          "duplicates": 1
-        },
-        {
-          "city": "Houston, TX",
-          "queueCity": "Houston",
-          "found": 30,
-          "inserted": 30,
-          "duplicates": 0
-        },
-        {
-          "city": "Los Angeles, CA",
-          "queueCity": "Los Angeles",
-          "found": 33,
-          "inserted": 33,
-          "duplicates": 0
-        },
-        {
-          "city": "Miami, FL",
-          "queueCity": "Miami",
-          "found": 30,
-          "inserted": 30,
-          "duplicates": 0
-        },
-        {
-          "city": "Nashville, TN",
-          "queueCity": "Nashville",
-          "found": 4,
-          "inserted": 4,
-          "duplicates": 0
-        },
-        {
-          "city": "New Orleans, LA",
-          "queueCity": "New Orleans",
-          "found": 5,
-          "inserted": 5,
-          "duplicates": 0
-        },
-        {
-          "city": "New York, NY",
-          "queueCity": "New York",
-          "found": 31,
-          "inserted": 31,
-          "duplicates": 0
-        },
-        {
-          "city": "Philadelphia, PA",
-          "queueCity": "Philadelphia",
-          "found": 30,
-          "inserted": 30,
-          "duplicates": 0
-        },
-        {
-          "city": "Phoenix, AZ",
-          "queueCity": "Phoenix",
-          "found": 30,
-          "inserted": 30,
-          "duplicates": 0
-        },
-        {
-          "city": "San Francisco, CA",
-          "queueCity": "San Francisco",
-          "found": 19,
-          "inserted": 19,
-          "duplicates": 0
-        },
-        {
-          "city": "Seattle, WA",
-          "queueCity": "Seattle",
-          "found": 2,
-          "inserted": 2,
-          "duplicates": 0
-        },
-        {
-          "city": "Washington, DC",
-          "queueCity": "Washington",
-          "found": 31,
-          "inserted": 31,
-          "duplicates": 0
-        },
-        {
-          "city": "New York, NY",
-          "queueCity": "New York",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
-        },
-        {
-          "city": "Los Angeles, CA",
-          "queueCity": "Los Angeles",
-          "found": 5,
-          "inserted": 0,
-          "duplicates": 5
-        },
-        {
-          "city": "Chicago, IL",
-          "queueCity": "Chicago",
-          "found": 5,
-          "inserted": 0,
-          "duplicates": 5
-        },
-        {
-          "city": "Atlanta, GA",
-          "queueCity": "Atlanta",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Washington, DC",
-          "queueCity": "Washington",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Philadelphia, PA",
-          "queueCity": "Philadelphia",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Miami, FL",
-          "queueCity": "Miami",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Phoenix, AZ",
-          "queueCity": "Phoenix",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Boston, MA",
-          "queueCity": "Boston",
-          "found": 12,
-          "inserted": 0,
-          "duplicates": 12
-        },
-        {
-          "city": "Detroit, MI",
-          "queueCity": "Detroit",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Minneapolis, MN",
-          "queueCity": "Minneapolis",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Denver, CO",
-          "queueCity": "Denver",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Baltimore, MD",
-          "queueCity": "Baltimore",
-          "found": 7,
-          "inserted": 0,
-          "duplicates": 7
-        },
-        {
-          "city": "Charlotte, NC",
-          "queueCity": "Charlotte",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Nashville, TN",
-          "queueCity": "Nashville",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Seattle, WA",
-          "queueCity": "Seattle",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Tampa, FL",
-          "queueCity": "Tampa",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "San Diego, CA",
-          "queueCity": "San Diego",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
-        },
-        {
-          "city": "Austin, TX",
-          "queueCity": "Austin",
-          "found": 12,
-          "inserted": 0,
-          "duplicates": 12
-        },
-        {
-          "city": "Las Vegas, NV",
-          "queueCity": "Las Vegas",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Pittsburgh, PA",
-          "queueCity": "Pittsburgh",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Sacramento, CA",
-          "queueCity": "Sacramento",
-          "found": 12,
-          "inserted": 0,
-          "duplicates": 12
-        },
-        {
-          "city": "Cincinnati, OH",
-          "queueCity": "Cincinnati",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Kansas City, MO",
-          "queueCity": "Kansas City",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Columbus, OH",
-          "queueCity": "Columbus",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Indianapolis, IN",
-          "queueCity": "Indianapolis",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Cleveland, OH",
-          "queueCity": "Cleveland",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Riverside, CA",
-          "queueCity": "Riverside",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Orlando, FL",
-          "queueCity": "Orlando",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "San Antonio, TX",
-          "queueCity": "San Antonio",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Portland, OR",
-          "queueCity": "Portland",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "San Jose, CA",
-          "queueCity": "San Jose",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Virginia Beach, VA",
-          "queueCity": "Virginia Beach",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Jacksonville, FL",
-          "queueCity": "Jacksonville",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Providence, RI",
-          "queueCity": "Providence",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Milwaukee, WI",
-          "queueCity": "Milwaukee",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
-        },
-        {
-          "city": "Raleigh, NC",
-          "queueCity": "Raleigh",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Oklahoma City, OK",
-          "queueCity": "Oklahoma City",
-          "found": 7,
-          "inserted": 0,
-          "duplicates": 7
-        },
-        {
-          "city": "Louisville, KY",
-          "queueCity": "Louisville",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
-        }
-      ],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-09-02T17:04:46.035Z",
-      "batchSize": 19,
-      "inserted": 0,
-      "cities": [
-        "New York, New York",
-        "Los Angeles, California",
-        "Chicago, Illinois"
-      ],
-      "resolved": 19,
-      "unresolved": 0,
-      "avgCompleteness": 95,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 19
-      },
-      "retries": 0,
-      "failures": 0,
       "flagged": false
     }
   ]

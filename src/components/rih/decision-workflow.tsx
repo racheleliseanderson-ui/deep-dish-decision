@@ -13,6 +13,7 @@ import {
   type DecisionState,
 } from "@/lib/confirmation-evidence";
 import { openLabel, spendLine, minutesToClock } from "@/lib/live";
+import { firstPartyMenuUrl, readMenuLink } from "@/lib/menu-link";
 import type { Finding, Scored, Situation } from "@/lib/intelligence";
 import type { NightDetails } from "@/lib/night-context";
 import type { DecisionStatus } from "@/lib/salty-handoff/contract";
@@ -106,12 +107,16 @@ function callScript(finding: Finding, sc: Scored, situation: Situation, details:
 function sourceForFinding(finding: Finding, sc: Scored) {
   const r = sc.record;
   if (/diet|menu|zero-proof|beverage|spend/i.test(finding.domain)) {
-    return r.menuUrl || r.officialSource || r.website;
+    // A confirmation source has to be a page the restaurant wrote. A review of
+    // it answers nothing a caller can act on.
+    return firstPartyMenuUrl(r.menuUrl, r.website) || r.officialSource || r.website;
   }
   if (/booking|party|timing|hours/i.test(finding.domain)) {
     return r.reservationUrl || r.officialSource || r.website;
   }
-  return r.officialSource || r.website || r.reservationUrl || r.menuUrl;
+  return (
+    r.officialSource || r.website || r.reservationUrl || firstPartyMenuUrl(r.menuUrl, r.website)
+  );
 }
 
 function Step({
@@ -138,9 +143,14 @@ function Step({
 
 function SourceLinks({ sc }: { sc: Scored }) {
   const r = sc.record;
-  const sources = [
+  // The word "Menu" is a claim about who wrote the page. It is only used when
+  // the link is on the restaurant's own domain or on an ordering platform it
+  // controls; anything else is named by its host, and a publisher writing about
+  // the restaurant is filed as coverage rather than offered as a menu.
+  const menu = readMenuLink(r.menuUrl, r.website);
+  const sources: [string, string][] = [
     ["Restaurant website", r.officialSource || r.website],
-    ["Menu", r.menuUrl],
+    ...(menu ? ([[menu.label, menu.url]] as [string, string][]) : []),
     ["Reservations", r.reservationUrl],
   ].filter((item): item is [string, string] => Boolean(item[1]));
   const unique = sources.filter(
@@ -152,19 +162,30 @@ function SourceLinks({ sc }: { sc: Scored }) {
   }
 
   return (
-    <div className="flex flex-wrap gap-2">
-      {unique.map(([label, href]) => (
-        <a
-          key={`${label}-${href}`}
-          href={href}
-          target="_blank"
-          rel="noreferrer"
-          className="tap rounded-full border border-border px-4 py-2.5 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
-        >
-          Open {label.toLowerCase()}
-        </a>
-      ))}
-    </div>
+    <>
+      <div className="flex flex-wrap gap-2">
+        {unique.map(([label, href]) => (
+          <a
+            key={`${label}-${href}`}
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className="tap rounded-full border border-border px-4 py-2.5 text-xs text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
+          >
+            {label === "Restaurant website" || label === "Reservations"
+              ? `Open ${label.toLowerCase()}`
+              : label}
+          </a>
+        ))}
+      </div>
+      {menu && !menu.isMenu ? (
+        <p className="mt-2 text-[12px] leading-relaxed text-unknown">
+          {menu.kind === "press"
+            ? `No menu is on file for this room. The link above is ${menu.host} writing about it, kept as coverage.`
+            : `No menu on the restaurant's own domain is on file. The link above goes to ${menu.host}, which Deep Dish cannot confirm the restaurant controls.`}
+        </p>
+      ) : null}
+    </>
   );
 }
 
@@ -411,8 +432,17 @@ export function DecisionWorkflow({
       {sc.reasons.slice(0, 4).map((reason) => (
         <li key={reason} className="flex gap-2"><span className="text-primary">✓</span><span>{reason}</span></li>
       ))}
-      {sc.distanceMi !== null ? (
-        <li className="flex gap-2"><span className="text-primary">✓</span><span>{Math.round(sc.distanceMi * 10) / 10} miles from {situation.originLabel ?? "your starting point"}</span></li>
+      {sc.distanceRead ? (
+        <li className="flex gap-2">
+          <span className={sc.distanceRead.exact ? "text-primary" : "text-unknown"}>
+            {sc.distanceRead.exact ? "✓" : "~"}
+          </span>
+          <span>
+            {sc.distanceRead.exact
+              ? `${sc.distanceRead.value} from ${situation.originLabel ?? "your starting point"}`
+              : `${sc.distanceRead.value} ${sc.distanceRead.measuredTo}. No address coordinate is on file, so this is not the distance to the door.`}
+          </span>
+        </li>
       ) : null}
       {spend ? <li className="flex gap-2"><span className="text-primary">✓</span><span>{spend.text} · {spend.source}</span></li> : null}
       <li className="flex gap-2"><span className={open.tone === "critical" ? "text-critical" : "text-primary"}>✓</span><span>{open.text}</span></li>

@@ -25,11 +25,27 @@ describe("ownedSiteEvidence", () => {
 });
 
 describe("case-file floor", () => {
-  it("puts every record on a complete 12-field file", () => {
+  /*
+   * The floor is that every record is measured against the same twelve slots.
+   * It is not that every record fills them — 41 of 1,527 do, and a corpus whose
+   * whole position is "we stop rather than guess" cannot assert otherwise.
+   *
+   * This test used to require depthFilled === 12 and isFullCaseFile on every
+   * record. That was true when the corpus was 800-odd leveled files and became
+   * false the moment it grew; the suite has been failing on it since, which is
+   * how five stale assertions went unread.
+   */
+  it("puts every record on the same twelve-slot file", () => {
     expect(records.length).toBeGreaterThan(800);
     expect(records.every((r) => r.depthTotal === 12)).toBe(true);
-    expect(records.every((r) => r.depthFilled === 12)).toBe(true);
-    expect(records.every((r) => r.isFullCaseFile)).toBe(true);
+    expect(records.every((r) => r.depthFilled >= 0 && r.depthFilled <= 12)).toBe(true);
+    expect(records.every((r) => r.isFullCaseFile === (r.depthFilled === 12))).toBe(true);
+    expect(records.some((r) => r.isFullCaseFile)).toBe(true);
+  });
+
+  it("keeps thinFieldCount in step with thinFields", () => {
+    const drifted = records.filter((r) => (r.thinFields ?? []).length !== r.thinFieldCount);
+    expect(drifted.map((r) => r.slug)).toEqual([]);
   });
 
   it("keeps unstated language visible instead of inventing facts", () => {

@@ -238,12 +238,12 @@
       "phone": "",
       "email": "",
       "website": "https://www.mujoatl.com/",
-      "menuUrl": "https://www.esquire.com/food-drink/restaurants/a45847159/best-new-restaurants-in-america-2023/",
+      "menuUrl": "",
       "reservationUrl": "https://www.opentable.com/r/mujo-atlanta",
       "coverageArea": "Atlanta, Georgia",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Reservations via OpenTable.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is esquire.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant. Guests with allergies or dietary restrictions who have not familiarized themselves with our cuisine remain subject to our cancellation policy.",
@@ -309,11 +309,12 @@
         "hoursSummary",
         "priceDetails",
         "cuisineContext",
+        "menu",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -322,13 +323,12 @@
         "Omakase"
       ],
       "officialSource": "https://www.mujoatl.com/",
-      "additionalSources": "https://www.mujoatl.com/about | https://www.mujoatl.com/private-events | https://www.mujoatl.com/reservations | https://www.esquire.com/food-drink/restaurants/a45847159/best-new-restaurants-in-america-2023/ | https://www.opentable.com/r/mujo-atlanta",
+      "additionalSources": "https://www.mujoatl.com/about | https://www.mujoatl.com/private-events | https://www.mujoatl.com/reservations | https://www.opentable.com/r/mujo-atlanta",
       "sources": [
         "https://www.mujoatl.com/",
         "https://www.mujoatl.com/about",
         "https://www.mujoatl.com/private-events",
         "https://www.mujoatl.com/reservations",
-        "https://www.esquire.com/food-drink/restaurants/a45847159/best-new-restaurants-in-america-2023/",
         "https://www.opentable.com/r/mujo-atlanta"
       ],
       "retrievedAt": "2026-08-21T01:42:18.445Z",
@@ -1157,7 +1157,7 @@
       "coverageArea": "Atlanta, Georgia",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
       "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "menuSummary": "The menu on file is hosted on gunshowatlanta.com, not on the restaurant's own domain. Deep Dish cannot confirm the restaurant controls that page.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",

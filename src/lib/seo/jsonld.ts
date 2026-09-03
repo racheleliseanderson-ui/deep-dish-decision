@@ -11,6 +11,7 @@
  * format search engines quote back verbatim.
  */
 import { isUnstated } from "@/lib/case-depth";
+import { firstPartyMenuUrl } from "@/lib/menu-link";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { SITE_ORIGIN, canonicalFor } from "@/lib/site";
 
@@ -210,58 +211,6 @@ export function cuisineList(record: RestaurantRecord): string[] {
   return Array.from(new Set(tags)).slice(0, 6);
 }
 
-/** example.com from https://www.example.com/menu. Null when it will not parse. */
-function registrableDomain(url: string | undefined): string | null {
-  if (!url) return null;
-  try {
-    const parts = new URL(url).hostname.toLowerCase().replace(/^www\./, "").split(".");
-    return parts.length >= 2 ? parts.slice(-2).join(".") : parts.join(".");
-  } catch {
-    return null;
-  }
-}
-
-/**
- * Ordering platforms that host a restaurant's own menu under its own control.
- * A menu on one of these is still the restaurant speaking.
- */
-const FIRST_PARTY_MENU_HOSTS = new Set([
-  "toasttab.com",
-  "toast.site",
-  "popmenu.com",
-  "square.site",
-  "squareup.com",
-  "clover.com",
-  "spoton.com",
-  "chownow.com",
-  "olo.com",
-  "bentobox.com",
-  "getbento.com",
-  "ubereats.com",
-  "doordash.com",
-  "grubhub.com",
-  "ritual.co",
-  "orderexperience.net",
-]);
-
-/**
- * `hasMenu` only when the link is the restaurant's own menu.
- *
- * 63 records store something else in `menuUrl` — an Esquire piece, an LA Times
- * review, a city magazine round-up. Those are third-party writing about the
- * restaurant, and this product's whole claim is first-party evidence. Publishing
- * a newspaper review as a machine-readable menu would break that claim in the
- * one format nobody reads before trusting.
- */
-function firstPartyMenu(menu: string | undefined, website: string | undefined): string | undefined {
-  if (!menu) return undefined;
-  const menuDomain = registrableDomain(menu);
-  if (!menuDomain) return undefined;
-  if (FIRST_PARTY_MENU_HOSTS.has(menuDomain)) return menu;
-  const siteDomain = registrableDomain(website);
-  return siteDomain && siteDomain === menuDomain ? menu : undefined;
-}
-
 /**
  * The Restaurant entity for one record page.
  *
@@ -273,7 +222,7 @@ function firstPartyMenu(menu: string | undefined, website: string | undefined): 
 export function restaurantJsonLd(record: RestaurantRecord): Json | null {
   const pageUrl = canonicalFor(`/record/${record.slug}`);
   const website = httpUrl(record.website);
-  const menu = firstPartyMenu(httpUrl(record.menuUrl), website);
+  const menu = firstPartyMenuUrl(record.menuUrl, record.website);
   const reservations = httpUrl(record.reservationUrl);
 
   // `sameAs` is for pages that unambiguously identify the same restaurant. A

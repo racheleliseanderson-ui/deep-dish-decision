@@ -50,15 +50,21 @@ for (const [slug, entry] of Object.entries(enrichment.records ?? {})) {
   buckets.get(key)[slug] = entry;
 }
 
-rmSync(outDir, { recursive: true, force: true });
+/* Write first, prune second. Clearing the directory up front meant any failure
+   after the rm and before the writes left the enrichment layer gone rather than
+   stale, and a stale layer is recoverable. */
 mkdirSync(outDir, { recursive: true });
 
 let biggest = 0;
+const written = new Set();
 for (const [key, group] of buckets) {
   const body = JSON.stringify({ regionGroup: key, records: group });
   writeFileSync(join(outDir, `${key}.json`), body);
+  written.add(`${key}.json`);
   biggest = Math.max(biggest, body.length);
 }
+const stale = readdirSync(outDir).filter((f) => f.endsWith(".json") && !written.has(f));
+for (const file of stale) rmSync(join(outDir, file), { force: true });
 
 const total = readdirSync(outDir).reduce(
   (n, f) => n + readFileSync(join(outDir, f)).length,

@@ -2,6 +2,27 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-09-03T06:18:42.340Z",
+      "finishedAt": "2026-09-03T06:18:42.340Z",
+      "records": 1527,
+      "promoted": 0,
+      "fullBefore": 41,
+      "fullAfter": 41,
+      "avgCompleteness": 97,
+      "ops": {
+        "overdue": 41,
+        "dueSoon": 0,
+        "current": 1450,
+        "officialConflicts": 11,
+        "thinRecords": 813,
+        "avgUnknowns": 5.13,
+        "avgThinFields": 7.58,
+        "lastReviewAt": "2026-09-03",
+        "reachableAtLastReview": 807
+      }
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-09-03T02:29:56.371Z",
       "finishedAt": "2026-09-03T02:29:56.371Z",
       "records": 1527,
@@ -14871,27 +14892,6 @@
             "review-due-soon"
           ]
         }
-      }
-    },
-    {
-      "kind": "level-records",
-      "startedAt": "2026-08-28T03:27:08.545Z",
-      "finishedAt": "2026-08-28T03:27:08.545Z",
-      "records": 836,
-      "promoted": 3,
-      "fullBefore": 836,
-      "fullAfter": 836,
-      "avgCompleteness": 95,
-      "ops": {
-        "overdue": 0,
-        "dueSoon": 11,
-        "current": 814,
-        "officialConflicts": 11,
-        "thinRecords": 446,
-        "avgUnknowns": 5.16,
-        "avgThinFields": 7.62,
-        "lastReviewAt": "2026-08-21",
-        "reachableAtLastReview": 194
       }
     }
   ]

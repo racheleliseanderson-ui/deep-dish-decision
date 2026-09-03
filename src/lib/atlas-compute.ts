@@ -21,12 +21,20 @@ import { OCCASIONS, occasionScore, topOccasion, type Occasion } from "@/lib/inte
  */
 
 /**
- * A record counts as thin at four or more unstated core slots. Kept in step
- * with THIN_FIELD_THRESHOLD in scripts/pipeline/level-format.mjs, which the
- * browser bundle cannot import; the pipeline counts ops.thinRecords with the
- * same number so the Atlas columns and the ops block agree.
+ * A record counts as thin at eight or more unstated core slots — more than half
+ * the twelve-slot file empty.
+ *
+ * This said four, and the comment claimed it was kept in step with
+ * THIN_FIELD_THRESHOLD in scripts/pipeline/level-format.mjs, a constant that
+ * did not exist. The result was three numbers for one word: 1,474 here, 801 in
+ * dataset.ops, and a pipeline log line printing the 801 under the label "≥4".
+ * Four also distinguishes nothing — 97% of the corpus clears it.
+ *
+ * The constant now exists in level-format.mjs, the pipeline reads it, and
+ * scripts/corpus-invariants.mjs fails if this literal and that one part company.
+ * The browser bundle still cannot import a pipeline .mjs, hence the copy.
  */
-export const THIN_FIELD_THRESHOLD = 4;
+export const THIN_FIELD_THRESHOLD = 8;
 
 export type Facet = {
   label: string;

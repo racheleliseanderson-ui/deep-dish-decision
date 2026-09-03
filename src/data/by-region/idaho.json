@@ -39,7 +39,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile and require current confirmation.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -136,12 +136,9 @@
       "stateProvince": "Idaho",
       "regionGroup": "Idaho",
       "thinFields": [
-        "parkingTransit",
-        "dressCode",
-        "accessibilityState",
-        "typicalMealLength"
+        "accessibilityState"
       ],
-      "thinFieldCount": 4,
+      "thinFieldCount": 1,
       "bookingPlatforms": [
         "OpenTable",
         "Phone"
@@ -231,7 +228,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",
@@ -424,7 +421,7 @@
       "freshnessStatus": "CURRENT_AS_RETRIEVED",
       "reviewedAt": "2026-08-05",
       "nextReviewAt": "2026-08-19",
-      "reviewStatus": "current",
+      "reviewStatus": "overdue",
       "fieldVolatility": "Availability, menu, price, hours, dietary feasibility, and reservation terms are volatile.",
       "nextAction": "Reverify volatile hours, menus, prices, and booking mechanics within 14 days; confirm dietary and access at booking.",
       "conflict": "",

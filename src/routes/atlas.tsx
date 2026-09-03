@@ -1,4 +1,6 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
+import { COORDINATE_COVERAGE } from "@/lib/live";
+import { REGION_SHAPE } from "@/lib/region-depth";
 import { schemaDepthLabel } from "@/lib/case-depth";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
 import { createFileRoute, Link } from "@tanstack/react-router";
@@ -57,6 +59,14 @@ function FacetTable({
         <span className="text-num text-[11px] text-subtle">{rows.length} values</span>
       </div>
       {note ? <p className="mt-2 text-[12px] leading-relaxed text-subtle">{note}</p> : null}
+      {rows.length === 0 ? (
+        // A table that renders as a heading and a hairline reads as broken.
+        // Nothing recorded is a real reading of the corpus, so it gets a line.
+        <p className="mt-4 border-l-2 border-border pl-3 text-[12px] leading-relaxed text-subtle">
+          No record in the corpus carries this field yet. Not a filter that came back short — a
+          column nobody has published into.
+        </p>
+      ) : null}
       <ul className="mt-4 divide-y divide-border">
         {rows.slice(0, limit).map((r) => (
           <li key={r.label} className="py-3">
@@ -97,6 +107,11 @@ function RecordStrip({
         <Chip tone={tone}>{rows.length}</Chip>
       </div>
       <p className="mt-2 text-[12px] leading-relaxed text-subtle">{note}</p>
+      {rows.length === 0 ? (
+        <p className="mt-4 border-l-2 border-verified/60 pl-3 text-[12px] leading-relaxed text-subtle">
+          Empty, and that is the good outcome — no record is currently sitting in this state.
+        </p>
+      ) : null}
       <ul className="mt-4 divide-y divide-border">
         {rows.map((r) => (
           <li key={r.slug} className="py-2.5">
@@ -160,8 +175,19 @@ function Atlas() {
             unstated most often, and which records are carrying an unresolved conflict. Every number
             below is counted from recorded fields. Nothing is modelled or estimated.
           </p>
+          <p className="mt-4 max-w-2xl text-[13px] leading-relaxed text-subtle">
+            The thinnest layer is location. Only{" "}
+            <span className="text-num">{COORDINATE_COVERAGE.exact}</span> rooms have an address
+            coordinate on file; the other{" "}
+            <span className="text-num">{COORDINATE_COVERAGE.city}</span> sit on the middle of their
+            city, which every other room in that city also sits on. Distances against those points
+            are published as bands with the words &ldquo;to the middle of&rdquo; attached, never as
+            a decimal, because a decimal is a measurement and no measurement was made.
+          </p>
 
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          {/* Six stats, so two rows of three rather than a five-across row with
+              one straggler underneath it. */}
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             <Stat label="Records" value={corpus.count} note={`${corpus.regions} regions`} />
             <Stat
               label="Core-field schema coverage"
@@ -178,6 +204,12 @@ function Atlas() {
               label="Unknowns held open"
               value={corpus.totalUnknowns}
               note={`${corpus.totalThin} thin fields across the corpus`}
+              tone="unknown"
+            />
+            <Stat
+              label="Rooms with their own coordinate"
+              value={COORDINATE_COVERAGE.exact}
+              note={`${COORDINATE_COVERAGE.city} sit on their city centroid`}
               tone="unknown"
             />
             <Stat
@@ -262,6 +294,23 @@ function Atlas() {
               records to plan a night. Density is counted from named cities on the record.
             </p>
           </div>
+
+          {/*
+            The thin end of these tables is the most-misread thing on the site.
+            A visitor who lands in a one-record region sees a near-empty page and
+            concludes the product is broken. State the count and state the rule
+            that produced it, on the page where the counts live.
+          */}
+          <p className="mt-6 max-w-3xl border-l-2 border-gilt/60 pl-4 text-[14px] leading-relaxed text-muted-foreground">
+            Of <span className="text-num">{REGION_SHAPE.regions}</span> regions,{" "}
+            <span className="text-num">{REGION_SHAPE.underFive}</span> hold fewer than five files
+            and <span className="text-num">{REGION_SHAPE.single}</span> hold exactly one. That is
+            not a gap waiting to be papered over. A room enters this corpus when its own pages say
+            enough to enter it, never to put a pin on a map, so a region stays one file deep until
+            the second restaurant has actually been read. Where the shelf is too short for the
+            night you are planning, Deep Dish says so and says which filter is doing it rather than
+            returning a shorter list and letting you assume you asked wrong.
+          </p>
           <div className="mt-8 grid gap-10 lg:grid-cols-2">
             <FacetTable
               title="Thinnest metros"

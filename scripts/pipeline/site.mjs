@@ -9,6 +9,7 @@
  * amenityFeature is never treated as a verified access route. Nothing here
  * writes dataset.json fields.
  */
+import { isStorableMenuUrl } from "./menu-url.mjs";
 
 const PAGE_HINTS = [
   { key: "menu", re: /\/(menus?|food|drinks?|wine|beverage)\b/i },
@@ -177,7 +178,22 @@ export function extractFromSite(pages, retrievedAt) {
   const platform =
     BOOKING_PLATFORMS.find(([, re]) => re.test(reservationUrl))?.[0] ??
     (reservationUrl ? "Direct" : "");
-  const menuUrl = links.find((l) => /\/(menus?|food|drinks?|wine)\b/i.test(l)) ?? jsonLdMenu ?? "";
+  /*
+   * The menu path, and only from a page the restaurant controls.
+   *
+   * The path test alone is how an LA Times review became Rossoblu's menu:
+   * https://www.latimes.com/food/jonathan-gold/... matches /food\b. Five
+   * Esquire round-ups, a Washington Post guide and a Cleveland Magazine
+   * readers' poll arrived the same way. Every candidate is now read against
+   * the site being scraped, and anything on somebody else's domain is dropped
+   * rather than filed as the restaurant's own menu.
+   */
+  const ownSite = pages.find((p) => p.url)?.url ?? "";
+  const menuCandidates = [
+    ...links.filter((l) => /\/(menus?|food|drinks?|wine)\b/i.test(l)),
+    jsonLdMenu,
+  ].filter(Boolean);
+  const menuUrl = menuCandidates.find((l) => isStorableMenuUrl(l, ownSite)) ?? "";
 
   const dietary = matchGroup(all, PHRASE_GROUPS.dietaryLanguage);
   const accessibility = matchGroup(all, PHRASE_GROUPS.accessibilityLanguage);

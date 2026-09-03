@@ -1,7 +1,14 @@
 // UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { useMemo } from "react";
 import type { RestaurantRecord } from "@/lib/dataset";
-import { haversineMi, minutesToClock, openStateAtMoment, localNow, type LiveRow } from "@/lib/live";
+import {
+  distanceBand,
+  haversineMi,
+  minutesToClock,
+  openStateAtMoment,
+  localNow,
+  type LiveRow,
+} from "@/lib/live";
 import { cn } from "@/lib/utils";
 
 /**
@@ -181,9 +188,11 @@ export function NightSummary({
           note={
             model.spread === null
               ? "one stop"
-              : model.spread < 1
-                ? "all within a mile of each other"
-                : `${model.anyEstimatedPoint ? "~" : ""}${Math.round(model.spread * 10) / 10} mi apart at the widest`
+              : model.anyEstimatedPoint
+                ? `${distanceBand(model.spread)} at the widest, city centre to city centre. At least one stop has no address coordinate on file.`
+                : model.spread < 1
+                  ? "all within a mile of each other"
+                  : `${Math.round(model.spread * 10) / 10} mi apart at the widest`
           }
         />
 

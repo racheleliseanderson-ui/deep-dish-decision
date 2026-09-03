@@ -1,3 +1,4 @@
+import { RegionDepth } from "@/components/rih/region-depth";
 import { corpusMeta } from "@/lib/corpus-meta";
 import {
   SPEND_BANDS,
@@ -171,7 +172,11 @@ export function QuickStart({
     if (!locationText.trim()) return Boolean(situation.regionGroup);
     const place = findPlace(locationText);
     if (!place) {
-      setLocationError("Choose a city from the suggestions so Deep Dish knows where to look.");
+      // Not "you typed it wrong" — usually the city genuinely is not in the
+      // corpus. Say the real thing, and say how many cities there are.
+      setLocationError(
+        `Nothing under \u201c${locationText.trim()}\u201d. The list on this field is every place Deep Dish holds files for \u2014 ${places.length} so far, added by hand from restaurants' own pages. Pick the nearest one, or use Near me and it will find the closest covered city for you.`,
+      );
       return false;
     }
 
@@ -318,9 +323,26 @@ export function QuickStart({
               <option key={place.label} value={place.label} />
             ))}
           </datalist>
+          {/* Once a place is committed, say how deep it actually is before the
+              reader spends a search on it. 47 of 167 regions hold fewer than
+              five files and 31 hold one; a reader who finds that out after
+              answering four questions reads it as breakage. */}
+          {situation.regionGroup ? (
+            <RegionDepth
+              className="mt-3"
+              region={situation.region}
+              group={situation.regionGroup}
+              onWiden={() => onChange({ ...situation, region: null })}
+            />
+          ) : null}
           {nearMeActive && situation.regionGroup ? (
             <p className="mt-2 text-xs text-muted-foreground">
               Searching the Deep Dish restaurants nearest your location.
+            </p>
+          ) : !situation.regionGroup && !locationError ? (
+            <p className="mt-2 text-xs text-muted-foreground">
+              {places.length} places covered so far. Files are read one restaurant at a time, from
+              its own pages, so the map grows slowly and honestly.
             </p>
           ) : null}
           {originState.status === "denied" ? (
