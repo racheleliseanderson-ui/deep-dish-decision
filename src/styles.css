@@ -143,7 +143,14 @@
      boundary of anything you type into; at 18% this measured 1.45:1 on every
      Pearl ground. 52% clears 3:1 on the darkest one (surface-sunken). */
   --input: oklch(0.225 0.048 258 / 52%);
-  --ring: oklch(0.545 0.11 80 / 45%);
+  /*
+   * The focus ring is the one indicator a keyboard user has, and 2.4.11 wants
+   * 3:1 against what it sits on. At 45% alpha this brass measured 1.87:1 on
+   * the Pearl ground and 1.77:1 on `--surface-sunken` — a wash, not a ring.
+   * Opaque, it reads 4.83:1 and 4.09:1. Navy's ring was always fine; only the
+   * paper one was faint, which is exactly the ground people print from.
+   */
+  --ring: oklch(0.545 0.11 80);
 
   --plate-shadow:
     0 1px 0 0 oklch(1 0 0 / 60%) inset, 0 14px 34px -22px oklch(0.225 0.048 258 / 28%);
@@ -439,7 +446,9 @@
      and the dark one is re-stated for Pearl below. */
   --accent: oklch(0.80 0 0);
   --accent-foreground: oklch(0.14 0 0);
-  --ring: oklch(0.7 0 0 / 60%);
+  /* Opaque and lifted: at 0.7/60% the ring measured 2.77:1 against
+     `--surface-raised`, which is the ground under most of the controls. */
+  --ring: oklch(0.86 0 0);
   --critical: oklch(0.94 0 0);
   --critical-soft: oklch(1 0 0 / 16%);
   --watch: oklch(0.78 0 0);
@@ -464,6 +473,8 @@
   --primary-foreground: oklch(0.99 0 0);
   --accent: oklch(0.34 0 0);
   --accent-foreground: oklch(0.96 0 0);
+  /* 0.7 grey at 60% measured 1.69:1 on paper. */
+  --ring: oklch(0.38 0 0);
 }
 
 .mode-mono .grain-veil::after {
@@ -516,6 +527,9 @@
   --destructive: oklch(0.53 0.088 205);
   --gilt: oklch(0.5 0.11 78);
   --gilt-soft: oklch(0.5 0.11 78 / 12%);
+  /* The CVD block above sets a bright gold ring for the Navy ground; on paper
+     that same gold at 55% measured under 2:1. This is the Pearl one. */
+  --ring: oklch(0.5 0.11 78);
 }
 
 @media (prefers-reduced-motion: reduce) {

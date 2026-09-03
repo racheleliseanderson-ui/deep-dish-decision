@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Tell Deep Dish where, what kind of night, when, and what cannot go wrong. Get a restaurant decision, the unknowns that matter, official sources, a confirmation path, and a booking handoff.",
+          "Say where, what kind of night, and what cannot go wrong. Get a restaurant, the unknowns that still matter, and a script for the call that closes them.",
       },
       { property: "og:title", content: "Deep Dish — decide, verify, then book" },
       {

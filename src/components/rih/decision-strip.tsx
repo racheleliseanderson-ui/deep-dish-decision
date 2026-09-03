@@ -40,7 +40,7 @@ function Cell({
   return (
     <div className="min-w-0">
       <p className="text-[10px] uppercase tracking-[0.14em] text-subtle">{label}</p>
-      <p className={cn("mt-0.5 truncate text-[13px] font-medium", TONE[tone] ?? "text-foreground")}>
+      <p className={cn("mt-0.5 break-words text-[13px] font-medium", TONE[tone] ?? "text-foreground")}>
         {value}
       </p>
       {note ? <p className="mt-0.5 truncate text-[11px] text-subtle">{note}</p> : null}

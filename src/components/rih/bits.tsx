@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import type { FindingLayer } from "@/lib/intelligence";
-import type { ReactNode } from "react";
+import { Children, cloneElement, isValidElement, useId, type ReactNode } from "react";
 
 /**
  * The small letterspaced label that titles most sections in this app.
@@ -161,6 +161,21 @@ export function Toggle({
   );
 }
 
+/**
+ * A labelled field.
+ *
+ * The label used to be a `<span>` next to the control and nothing else — no
+ * `<label>`, no `htmlFor`, no `aria-labelledby` — so every select and input in
+ * the situation console and the run planner reached a screen reader as
+ * "combobox" and "edit text", with the one word that says what they are
+ * sitting a node away and unreachable. There is no way to answer "region or
+ * cuisine?" from that.
+ *
+ * So the label is a real `<label>` now, and the id it points at is generated
+ * here and handed to the control. When the child is a single form element it
+ * gets the id directly; anything else (a row of two inputs, a slider plus its
+ * readout) is named as a group instead, which is the honest description of it.
+ */
 export function Field({
   label,
   children,
@@ -170,13 +185,35 @@ export function Field({
   children: ReactNode;
   hint?: string;
 }) {
+  const controlId = useId();
+  const labelId = `${controlId}-label`;
+  const only = Children.count(children) === 1 ? Children.only(children) : null;
+  const labelable =
+    isValidElement(only) &&
+    typeof only.type === "string" &&
+    ["input", "select", "textarea"].includes(only.type) &&
+    !(only.props as { id?: string }).id;
+  const body = labelable
+    ? cloneElement(only as React.ReactElement<{ id?: string }>, { id: controlId })
+    : children;
   return (
-    <div className="min-w-0">
+    <div
+      className="min-w-0"
+      {...(labelable ? {} : { role: "group", "aria-labelledby": labelId })}
+    >
       <div className="mb-2 flex items-baseline justify-between gap-3">
-        <span className="text-eyebrow">{label}</span>
+        {labelable ? (
+          <label id={labelId} className="text-eyebrow" htmlFor={controlId}>
+            {label}
+          </label>
+        ) : (
+          <span id={labelId} className="text-eyebrow">
+            {label}
+          </span>
+        )}
         {hint ? <span className="shrink-0 text-[11px] text-subtle">{hint}</span> : null}
       </div>
-      {children}
+      {body}
     </div>
   );
 }

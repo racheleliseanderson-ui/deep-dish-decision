@@ -17,7 +17,7 @@ export const Route = createFileRoute("/guide")({
       {
         name: "description",
         content:
-          "A working method for choosing a restaurant: the five decisions that actually matter, how to read published evidence, what a rating cannot tell you, and the four questions one phone call should close.",
+          "Occasion, commitment, spend, pathway, room. Five decisions settle a restaurant and a star rating settles none of them. One phone call closes the rest.",
       },
       { property: "og:title", content: "How to choose a restaurant, properly" },
       {

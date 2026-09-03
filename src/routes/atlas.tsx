@@ -21,7 +21,7 @@ export const Route = createFileRoute("/atlas")({
       {
         name: "description",
         content:
-          "Every dimension of the first-party restaurant corpus: geography, cuisine, booking pathway, spend band, evidence depth, open conflicts and the fields that stay unstated.",
+          "Every angle on the corpus: where the rooms are, what they cook, how they take bookings, and exactly where the published evidence runs out.",
       },
       { property: "og:title", content: "Corpus Atlas — what the evidence covers" },
       {

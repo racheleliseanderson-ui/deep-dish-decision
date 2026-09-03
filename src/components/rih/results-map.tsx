@@ -387,7 +387,7 @@ export function ResultsMap({
             <Link
               to="/record/$slug"
               params={{ slug: activePt.sc.record.slug }}
-              className="truncate font-medium text-foreground hover:text-primary"
+              className="min-w-0 break-words font-medium text-foreground hover:text-primary"
             >
               {activePt.sc.rank}. {activePt.sc.record.title}
               {activePt.sc.distanceMi !== null ? (

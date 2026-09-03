@@ -303,7 +303,7 @@ function Console() {
                     <Link
                       to="/record/$slug"
                       params={{ slug: item.slug }}
-                      className="tap min-w-0 truncate text-[13px] text-foreground hover:text-primary"
+                      className="tap min-w-0 break-words text-[13px] text-foreground hover:text-primary"
                     >
                       {item.title}
                     </Link>
@@ -544,7 +544,7 @@ function Console() {
                   params={{ slug: r.slug }}
                   className="tap group flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1"
                 >
-                  <span className="min-w-0 truncate text-[13px] text-foreground transition-colors group-hover:text-primary">
+                  <span className="min-w-0 break-words text-[13px] text-foreground transition-colors group-hover:text-primary">
                     {r.title}
                   </span>
                   <span className="text-num shrink-0 text-[12px] text-muted-foreground">
@@ -605,7 +605,7 @@ function Console() {
                     <Link
                       to="/record/$slug"
                       params={{ slug: r.slug }}
-                      className="tap min-w-0 truncate text-[13px] text-foreground hover:text-primary"
+                      className="tap min-w-0 break-words text-[13px] text-foreground hover:text-primary"
                     >
                       {r.title}
                     </Link>

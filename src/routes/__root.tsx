@@ -99,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         {
           name: "description",
           content:
-            "First-party restaurant evidence, ranked against this night: fit, unknowns, official sources, live confirmations and the decision you send to the night plan in Occasion OS.",
+            "Restaurant files built only from what the restaurant published, ranked against the night you are planning, and honest about what it never said.",
         },
         { property: "og:title", content: "Deep Dish · Salty & Clever" },
         {

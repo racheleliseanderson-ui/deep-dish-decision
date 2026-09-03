@@ -286,60 +286,74 @@ export function CompareDialog({
             those are the rows worth reading.
           </p>
 
-          {/* Wide: a true comparison matrix. */}
-          <table className="mt-2 hidden w-full border-collapse text-left sm:table">
-            <caption className="sr-only">
-              {items.map((i) => i.record.title).join(", ")} compared across {rows.length} dimensions
-            </caption>
-            <thead>
-              <tr>
-                <td />
-                {items.map((sc) => (
-                  <th
-                    key={sc.record.slug}
-                    scope="col"
-                    className="pb-2 pr-4 text-left text-[12px] font-medium text-foreground"
-                  >
-                    {sc.record.title}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row) => {
-                const values = items.map(row.get);
-                const holds = items.map((sc) => Boolean(row.held?.(sc)));
-                const diverges = new Set(values).size > 1;
-                return (
-                  <tr key={row.label} className="border-t border-border align-top">
-                    <th scope="row" className="text-eyebrow w-[140px] py-3 pr-4 font-normal">
-                      {row.label}
-                      {diverges ? <span className="ml-1.5 text-primary">·</span> : null}
+          {/*
+           * Wide: a true comparison matrix. The scroll box is the table's own,
+           * not the dialog's — the dialog clips (`overflow-hidden`), so a long
+           * unbroken value in one cell used to widen the matrix past the panel
+           * and be cut off with nothing to scroll. It is a focusable region so
+           * the matrix can be panned from the keyboard.
+           */}
+          <div
+            role="region"
+            aria-label="Comparison matrix"
+            tabIndex={0}
+            className="scroll-slim mt-2 hidden overflow-x-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:block"
+          >
+            <table className="w-full min-w-[36rem] border-collapse text-left">
+              <caption className="sr-only">
+                {items.map((i) => i.record.title).join(", ")} compared across {rows.length}{" "}
+                dimensions
+              </caption>
+              <thead>
+                <tr>
+                  <td />
+                  {items.map((sc) => (
+                    <th
+                      key={sc.record.slug}
+                      scope="col"
+                      className="pb-2 pr-4 text-left text-[12px] font-medium text-foreground"
+                    >
+                      {sc.record.title}
                     </th>
-                    {values.map((v, i) => {
-                      const held = holds[i];
-                      const open = !held && isOpenValue(v);
-                      return (
-                        <td
-                          key={i}
-                          className={cn(
-                            "py-3 pr-4 text-[13px] leading-relaxed",
-                            held && "bg-critical-soft px-2 text-critical",
-                            open && "bg-unknown-soft px-2 text-unknown",
-                            !held &&
-                              !open &&
-                              (diverges ? "text-foreground" : "text-muted-foreground"),
-                          )}
-                        >
-                          {v || "not stated"}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row) => {
+                  const values = items.map(row.get);
+                  const holds = items.map((sc) => Boolean(row.held?.(sc)));
+                  const diverges = new Set(values).size > 1;
+                  return (
+                    <tr key={row.label} className="border-t border-border align-top">
+                      <th scope="row" className="text-eyebrow w-[140px] py-3 pr-4 font-normal">
+                        {row.label}
+                        {diverges ? <span className="ml-1.5 text-primary">·</span> : null}
+                      </th>
+                      {values.map((v, i) => {
+                        const held = holds[i];
+                        const open = !held && isOpenValue(v);
+                        return (
+                          <td
+                            key={i}
+                            className={cn(
+                              "py-3 pr-4 text-[13px] leading-relaxed",
+                              held && "bg-critical-soft px-2 text-critical",
+                              open && "bg-unknown-soft px-2 text-unknown",
+                              !held &&
+                                !open &&
+                                (diverges ? "text-foreground" : "text-muted-foreground"),
+                            )}
+                          >
+                            {v || "not stated"}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
 
           {/* Phone: one block per dimension, rooms stacked and labelled. */}
           <dl className="mt-2 sm:hidden">
