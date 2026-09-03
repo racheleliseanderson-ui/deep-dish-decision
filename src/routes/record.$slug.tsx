@@ -2,9 +2,11 @@ import { Chip, Eyebrow } from "@/components/rih/bits";
 import { DecisionBrief } from "@/components/rih/decision-brief";
 import { DinerQuestions } from "@/components/rih/diner-questions";
 import { FindingsStack } from "@/components/rih/findings";
+import { ProvenanceMasthead } from "@/components/rih/provenance";
 import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Reveal } from "@/components/rih/reveal";
 import { fieldDisplay, isUnstated } from "@/lib/case-depth";
+import { provenanceOf } from "@/lib/provenance";
 import {
   CROSS_CONTACT_LABEL,
   CROSS_CONTACT_NOTE,
@@ -141,6 +143,7 @@ function Dossier() {
   const q = encodeSituation(situation);
   const strongest = topOccasion(record);
   const crossContact = readCrossContact(record);
+  const prov = provenanceOf(record);
 
   return (
     <main id="main" tabIndex={-1} className="min-h-screen pb-28">
@@ -170,6 +173,8 @@ function Dossier() {
                 "Restaurant research — details the restaurant does not publish remain open."
               : record.cuisineContext}
           </p>
+          <ProvenanceMasthead record={record} />
+
           <div className="mt-6 flex flex-wrap gap-1.5">
             <Chip tone="accent">{record.region}</Chip>
             {record.hasOfficialConflict ? (
@@ -181,7 +186,6 @@ function Dossier() {
             >
               {CROSS_CONTACT_LABEL[crossContact.state]}
             </Chip>
-            <Chip>Updated {record.reviewedAt}</Chip>
             <Chip>Best recorded use: {strongest.occasion}</Chip>
           </div>
 
@@ -274,6 +278,65 @@ function Dossier() {
           <h2 className="mt-2 font-display text-2xl tracking-tight">
             What the restaurant publishes
           </h2>
+
+          <div className="mt-5 grid gap-6 rounded-xl border border-border bg-surface-sunken/40 p-4 sm:grid-cols-2 sm:p-5">
+            <div className="min-w-0">
+              <Eyebrow as="h3">Pages read</Eyebrow>
+              <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
+                Every line in the table below came off one of these,{" "}
+                {prov.readLong ? (
+                  <>
+                    on <span className="text-num">{prov.readLong}</span>
+                  </>
+                ) : (
+                  "on a date this record failed to write down"
+                )}
+                . None of it was assembled out of other people&rsquo;s reviews.
+              </p>
+              <ul className="mt-3 space-y-1.5">
+                {prov.pages.map((url) => (
+                  <li key={url} className="min-w-0">
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="break-all text-[12px] leading-relaxed text-primary underline decoration-primary/35 underline-offset-4 hover:decoration-primary"
+                    >
+                      {url}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="min-w-0">
+              <Eyebrow as="h3" id="never-stated">
+                Never stated
+              </Eyebrow>
+              <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
+                {prov.unknownCount === 1
+                  ? "One thing the restaurant has never published."
+                  : prov.unknownCount + " things the restaurant has never published."}{" "}
+                Listed rather than filled in. Each one is a question worth asking before you commit
+                to the table.
+              </p>
+              {prov.unknowns.length ? (
+                <ul className="mt-3 space-y-1.5">
+                  {prov.unknowns.map((item) => (
+                    <li key={item} className="flex gap-2 text-[13px] leading-relaxed text-unknown">
+                      <span aria-hidden>&#183;</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-3 text-[13px] leading-relaxed text-unknown">
+                  {fieldDisplay(record.unknowns).text}
+                </p>
+              )}
+            </div>
+          </div>
+
           <dl className="mt-6 divide-y divide-border">
             <EvidenceRow label="Service" value={record.serviceSummary} />
             <EvidenceRow label="Menu" value={record.menuSummary} />
@@ -291,7 +354,6 @@ function Dossier() {
             <EvidenceRow label="Typical meal length" value={record.typicalMealLength} />
             <EvidenceRow label="Practical notes" value={record.practicalNotes} />
             <EvidenceRow label="Address" value={record.address} />
-            <EvidenceRow label="Still unstated" value={record.unknowns} />
             <EvidenceRow label="Conflicting information" value={record.conflict} />
             <EvidenceRow label="Source quality" value={record.sourceAuthority} />
             <EvidenceRow label="Confidence" value={record.confidence} />

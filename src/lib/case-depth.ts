@@ -35,7 +35,7 @@ export function fieldDisplay(value: string | null | undefined): {
   const unstated = isUnstated(value);
   return {
     unstated,
-    text: unstated ? "Not stated — held open" : String(value).trim(),
+    text: unstated ? "The restaurant has never said." : String(value).trim(),
   };
 }
 

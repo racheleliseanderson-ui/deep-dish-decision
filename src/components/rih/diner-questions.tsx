@@ -59,7 +59,8 @@ export function DinerQuestions({ record }: { record: RestaurantRecord }) {
         <Eyebrow>Before you book</Eyebrow>
         <p className="mt-2 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
           Why go, what to order, what it costs, what the room is like, whether it fits tonight, and
-          what you still need to confirm. Held-open means the restaurant has not said.
+          what you still need to confirm. Where an answer says the restaurant has never stated it,
+          that is their silence being reported, not a gap we intend to fill.
         </p>
         <ol className="mt-4 grid gap-2 sm:grid-cols-2">
           {answers.map((a) => (
@@ -82,7 +83,7 @@ function QuestionCard({ answer }: { answer: DinerAnswer }) {
           {answer.question}
         </p>
         <Chip tone={answer.open ? "unknown" : sourceTone(answer)} className="shrink-0">
-          {answer.open ? "Held open" : "On file"}
+          {answer.open ? "Never stated" : "On file"}
         </Chip>
       </div>
       <p className="mt-2 text-[12px] leading-relaxed text-muted-foreground">{answer.answer}</p>

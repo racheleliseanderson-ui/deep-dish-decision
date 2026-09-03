@@ -23,7 +23,7 @@ export type ConsumerSnapshot = {
   provenance: typeof FIRST_PARTY;
 };
 
-const OPEN = "Not stated — held open.";
+const OPEN = "The restaurant has never put this in writing.";
 const namedFile = dishesRaw as { records: Record<string, string[]> };
 
 export function statedText(value: string | null | undefined): string | null {

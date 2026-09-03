@@ -1,5 +1,6 @@
 import { Chip } from "@/components/rih/bits";
 import { ListingFace } from "@/components/rih/listing-face";
+import { ProvenanceTrace } from "@/components/rih/provenance";
 import {
   CONFIRMATION_EVENT,
   confirmationSummary,
@@ -117,6 +118,7 @@ export function DecisionCard({
               <p className="mt-1 text-[13px] text-muted-foreground">
                 {r.region} · {r.cuisineTags.slice(0, 2).join(" · ") || "cuisine not stated"}
               </p>
+              <ProvenanceTrace record={r} />
             </div>
             <Chip tone={stateCopy.tone}>{stateCopy.label}</Chip>
           </div>
