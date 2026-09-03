@@ -120,7 +120,9 @@ const coverage = {
     hygieneBatchSize: refresh.settings.hygieneBatchSize,
     hygieneSlugs: refresh.hygiene.slice(0, refresh.settings.hygieneBatchSize),
     nextHygiene: refresh.items.filter((i) => i.hygiene).slice(0, 40),
-    stale: refresh.items.filter((i) => i.staleTier || (i.ageDays != null && i.ageDays >= TIERS.A.days)).slice(0, 40),
+    stale: refresh.items
+      .filter((i) => i.staleTier || (i.ageDays != null && i.ageDays >= TIERS.A.days))
+      .slice(0, 40),
   },
   distribution: bands.map((band, i) => {
     const max = i === 0 ? 101 : bands[i - 1].min;

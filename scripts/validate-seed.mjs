@@ -97,15 +97,24 @@ function main() {
   }
   const regionSet = new Set(records.map((r) => r.region).filter(Boolean));
   if (seed.regions != null && seed.regions !== regionSet.size) {
-    note("warn", "regions-drift", `seed.regions ${seed.regions} !== unique region ${regionSet.size}`);
+    note(
+      "warn",
+      "regions-drift",
+      `seed.regions ${seed.regions} !== unique region ${regionSet.size}`,
+    );
   }
   const taxRegions = new Set(seed.taxOptions?.ri_region ?? []);
   if (taxRegions.size) {
     const missingTax = [...regionSet].filter((r) => !taxRegions.has(r));
     if (missingTax.length) {
-      note("warn", "tax-missing", `${missingTax.length} live regions absent from taxOptions.ri_region`, {
-        sample: missingTax.slice(0, 8),
-      });
+      note(
+        "warn",
+        "tax-missing",
+        `${missingTax.length} live regions absent from taxOptions.ri_region`,
+        {
+          sample: missingTax.slice(0, 8),
+        },
+      );
     }
   }
 
@@ -263,12 +272,21 @@ function main() {
     });
   }
   if (listingWithNarrative) {
-    note("warn", "listing-narrative", `${listingWithNarrative} listing_only records have filled core fields`, {
-      sample: narrativeSamples,
-    });
+    note(
+      "warn",
+      "listing-narrative",
+      `${listingWithNarrative} listing_only records have filled core fields`,
+      {
+        sample: narrativeSamples,
+      },
+    );
   }
   if (listingMissingDisclaimer) {
-    note("warn", "listing-disclaimer", `${listingMissingDisclaimer} listings lack first-party-review disclaimer language`);
+    note(
+      "warn",
+      "listing-disclaimer",
+      `${listingMissingDisclaimer} listings lack first-party-review disclaimer language`,
+    );
   }
   if (listingMissingWebsite) {
     note("warn", "listing-no-site", `${listingMissingWebsite} listings have no official website`);

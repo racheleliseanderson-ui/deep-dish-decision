@@ -95,9 +95,13 @@ export function completeness(record, enrichment) {
     stated(record.phone) || hasStructuredSiteEvidence(s, "telephone"),
     stated(record.website),
     stated(record.coverageArea) || stated(record.city),
-    stated(record.cuisineContext) || !!(record.cuisineTags?.length) || hasStructuredSiteEvidence(s, "cuisine"),
+    stated(record.cuisineContext) ||
+      !!record.cuisineTags?.length ||
+      hasStructuredSiteEvidence(s, "cuisine"),
     stated(record.hoursSummary) || hasStructuredSiteEvidence(s, "hours"),
-    stated(record.priceDetails) || !!(record.priceTags?.length) || hasStructuredSiteEvidence(s, "price"),
+    stated(record.priceDetails) ||
+      !!record.priceTags?.length ||
+      hasStructuredSiteEvidence(s, "price"),
     stated(record.reservationDetails) || stated(record.reservationUrl) || !!s?.reservationUrl,
     stated(record.menuUrl) || !!s?.menuUrl || stated(record.menuSummary),
     stated(record.dietaryDetails) || !!s?.dietaryLanguage?.length,
@@ -115,7 +119,10 @@ export function completeness(record, enrichment) {
 }
 
 function isHandAuthored(record) {
-  return String(record.recordId || "").startsWith("RI-ENT") || (!record.origin && !String(record.recordId || "").startsWith("RI-EXP"));
+  return (
+    String(record.recordId || "").startsWith("RI-ENT") ||
+    (!record.origin && !String(record.recordId || "").startsWith("RI-EXP"))
+  );
 }
 
 function unique(values) {
@@ -189,7 +196,11 @@ function applyEvidence(record, site) {
     changed.push("reservationUrl");
   }
 
-  const diet = sentenceFromQuotes(site.dietaryLanguage, "Dietary wording from the restaurant's own pages", 2);
+  const diet = sentenceFromQuotes(
+    site.dietaryLanguage,
+    "Dietary wording from the restaurant's own pages",
+    2,
+  );
   if (canFill(record.dietaryDetails) && diet) {
     record.dietaryDetails = diet.replace(/: - /g, ": ");
     changed.push("dietaryDetails");
@@ -206,18 +217,29 @@ function applyEvidence(record, site) {
     ...(site.groupPolicyLanguage ?? []),
   ]).filter((q) => q.length >= 24);
   if (canFill(record.groupDetails) && groupQuotes.length) {
-    record.groupDetails = `Group policy from the restaurant's own pages: ${groupQuotes.slice(0, 2).map((q) => q.replace(/^[-–•]\s*/, "")).join(" · ")}`;
+    record.groupDetails = `Group policy from the restaurant's own pages: ${groupQuotes
+      .slice(0, 2)
+      .map((q) => q.replace(/^[-–•]\s*/, ""))
+      .join(" · ")}`;
     changed.push("groupDetails");
   }
 
-  if (canFill(record.dressCode) && site.dressCode && !isQuestion(site.dressCode) && String(site.dressCode).length >= 20) {
+  if (
+    canFill(record.dressCode) &&
+    site.dressCode &&
+    !isQuestion(site.dressCode) &&
+    String(site.dressCode).length >= 20
+  ) {
     record.dressCode = `Dress note from the restaurant's own pages: ${stripPrefix(site.dressCode)}`;
     changed.push("dressCode");
   }
 
   const cancel = usableQuotes(site.cancellationLanguage).slice(0, 2);
   if (canFill(record.reservationDetails)) {
-    const platform = platformFromUrl(record.reservationUrl || site.reservationUrl, site.reservationPlatform);
+    const platform = platformFromUrl(
+      record.reservationUrl || site.reservationUrl,
+      site.reservationPlatform,
+    );
     const bits = [];
     if (record.reservationUrl || site.reservationUrl) {
       bits.push(
@@ -259,14 +281,20 @@ function applyFloor(record, site, matchStatus) {
     fill("priceDetails", floor("menu prices were not published"));
     fill("cuisineContext", floor("cuisine was not named"));
     fill("dietaryDetails", floor("dietary and allergen handling were not published"));
-    fill("accessibilityState", floor("the physical-access route and restroom detail were not published"));
+    fill(
+      "accessibilityState",
+      floor("the physical-access route and restroom detail were not published"),
+    );
     fill("groupDetails", floor("group, private-dining, and large-party terms were not published"));
     fill("dressCode", floor("a dress code was not published"));
     fill("atmosphereSummary", floor("room character and noise were not described"));
     fill("parkingTransit", floor("parking and transit were not published"));
     fill("beverageDetails", floor("the beverage program was not described"));
     fill("typicalMealLength", floor("typical meal length was not published"));
-    fill("occasionFit", floor("occasion fit is not independently reviewed beyond the stated fields"));
+    fill(
+      "occasionFit",
+      floor("occasion fit is not independently reviewed beyond the stated fields"),
+    );
     if (canFill(record.menuSummary)) {
       record.menuSummary = isStorableMenuUrl(record.menuUrl, record.website)
         ? "A menu path is published on the restaurant's own site."
@@ -281,7 +309,9 @@ function applyFloor(record, site, matchStatus) {
       const bits = [];
       if (!isOurFloor(record.cuisineContext) && !emptyish(record.cuisineContext)) {
         bits.push(
-          record.cuisineContext.replace(/ — named on the restaurant's own pages\.?$/i, "").replace(/\.$/, ""),
+          record.cuisineContext
+            .replace(/ — named on the restaurant's own pages\.?$/i, "")
+            .replace(/\.$/, ""),
         );
       }
       if (!isOurFloor(record.hoursSummary) && !emptyish(record.hoursSummary)) {
@@ -404,7 +434,8 @@ function applyProvenance(record, site, matchStatus, nowDate, changed) {
     record.officialSource = record.officialSource || record.website || site?.sourceUrls?.[0] || "";
     record.additionalSources = urls.filter((u) => u && u !== record.officialSource).join(" | ");
     record.sources = urls;
-    record.confidence = record.confidence === "listing_only" ? "owned_site_leveled" : record.confidence;
+    record.confidence =
+      record.confidence === "listing_only" ? "owned_site_leveled" : record.confidence;
     record.freshnessStatus =
       record.freshnessStatus === "AWAITING_FIRST_PARTY_REVIEW"
         ? "OWNED_SITE_REVIEWED"
@@ -520,11 +551,12 @@ function rebuildDatasetMeta(dataset) {
   ).length;
   const unknowns = records.reduce((a, r) => a + (r.unknownsCount || 0), 0);
   const thinFields = records.reduce((a, r) => a + (r.thinFieldCount || 0), 0);
-  const lastReviewAt = records
-    .map((r) => r.reviewedAt)
-    .filter(Boolean)
-    .sort()
-    .at(-1) ?? "";
+  const lastReviewAt =
+    records
+      .map((r) => r.reviewedAt)
+      .filter(Boolean)
+      .sort()
+      .at(-1) ?? "";
   dataset.ops = {
     overdue,
     dueSoon,
@@ -574,7 +606,8 @@ function updateCoverage(coverage, dataset, store) {
       : 0,
     thin: rows.filter((r) => (r.completeness ?? 0) < 70).length,
     hygiene: hygieneRows.length,
-    withPrice: dataset.records.filter((r) => stated(r.priceDetails) && !isOurFloor(r.priceDetails)).length,
+    withPrice: dataset.records.filter((r) => stated(r.priceDetails) && !isOurFloor(r.priceDetails))
+      .length,
   };
   if (coverage.freshness) {
     coverage.freshness.hygieneSlugs = hygieneRows.slice(0, 25).map((r) => r.slug);

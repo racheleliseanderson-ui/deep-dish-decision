@@ -59,13 +59,20 @@ describe("validateRetirementInput", () => {
 
 describe("isRetiredListing", () => {
   const index = retiredIndex({
-    records: [{ slug: "no-9-park-boston", title: "No. 9 Park", city: "Boston", website: "https://www.no9park.com/" }],
+    records: [
+      {
+        slug: "no-9-park-boston",
+        title: "No. 9 Park",
+        city: "Boston",
+        website: "https://www.no9park.com/",
+      },
+    ],
   });
 
   it("matches host and name+city so a re-seed cannot revive the room", () => {
-    expect(isRetiredListing({ title: "No. 9 Park", website: "https://no9park.com/" }, "Boston", index)).toBe(
-      "retired-website",
-    );
+    expect(
+      isRetiredListing({ title: "No. 9 Park", website: "https://no9park.com/" }, "Boston", index),
+    ).toBe("retired-website");
     expect(isRetiredListing({ title: "No. 9 Park" }, "Boston", index)).toBe("retired-name+city");
     expect(isRetiredListing({ title: "Nine" }, "Boston", index)).toBeNull();
   });
@@ -75,7 +82,13 @@ describe("applyRetirement", () => {
   it("drops the slug and enrichment and does not write a successor", () => {
     const dataset = {
       records: [
-        { slug: "no-9-park-boston", title: "No. 9 Park", city: "Boston", region: "Boston, MA", website: "https://www.no9park.com/" },
+        {
+          slug: "no-9-park-boston",
+          title: "No. 9 Park",
+          city: "Boston",
+          region: "Boston, MA",
+          website: "https://www.no9park.com/",
+        },
         { slug: "oleana-boston", title: "Oleana", city: "Boston", region: "Boston, MA" },
       ],
     };

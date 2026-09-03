@@ -32,7 +32,12 @@ export const PLAYBOOKS: Playbook[] = [
     chapter: "night",
     title: "Business dining",
     lede: "Quiet enough to talk, predictable pacing, clear booking path.",
-    apply: { occasion: "Business dining", partySize: 2, maxCommitment: "Moderate", maxPlanningLoad: "Material" },
+    apply: {
+      occasion: "Business dining",
+      partySize: 2,
+      maxCommitment: "Moderate",
+      maxPlanningLoad: "Material",
+    },
   },
   {
     id: "celebration",
@@ -67,7 +72,11 @@ export const PLAYBOOKS: Playbook[] = [
     chapter: "night",
     title: "Low-stakes weeknight",
     lede: "Local, flexible, light planning load.",
-    apply: { occasion: "Local / low-stakes weeknight", maxCommitment: "Light", maxPlanningLoad: "Standard" },
+    apply: {
+      occasion: "Local / low-stakes weeknight",
+      maxCommitment: "Light",
+      maxPlanningLoad: "Standard",
+    },
   },
   // --- format ---
   {
@@ -75,7 +84,11 @@ export const PLAYBOOKS: Playbook[] = [
     chapter: "format",
     title: "Tasting / immersive",
     lede: "Structured menus and longer seats; high commitment only when you want it.",
-    apply: { occasion: "Tasting / immersive", maxCommitment: "Immersive", maxPlanningLoad: "Heavy" },
+    apply: {
+      occasion: "Tasting / immersive",
+      maxCommitment: "Immersive",
+      maxPlanningLoad: "Heavy",
+    },
   },
   {
     id: "wine",

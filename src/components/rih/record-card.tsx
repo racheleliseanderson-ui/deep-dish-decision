@@ -106,10 +106,7 @@ export function RecordCard({
                 </p>
               )}
               <p className="mt-1">
-                <Chip
-                  tone={r.isFullCaseFile ? "verified" : "watch"}
-                  title={SCHEMA_DEPTH_TITLE}
-                >
+                <Chip tone={r.isFullCaseFile ? "verified" : "watch"} title={SCHEMA_DEPTH_TITLE}>
                   {schemaDepthLabel(r.depthLabel)}
                 </Chip>
               </p>

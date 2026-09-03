@@ -120,7 +120,7 @@
   --muted-foreground: oklch(0.44 0.03 262);
   /* 0.55 measured 4.25:1 on surface-raised and 3.94:1 on surface-sunken, and
      `subtle` carries the eyebrow labels, which are body-sized. */
-  --subtle: oklch(0.50 0.022 258);
+  --subtle: oklch(0.5 0.022 258);
 
   --accent: oklch(0.5 0.07 205);
   --accent-foreground: oklch(0.988 0.004 265);
@@ -444,7 +444,7 @@
   /* Mono is an overlay on either ground. A single dark accent measured
      1.15:1 on the Navy popover; the light value belongs to the dark ground
      and the dark one is re-stated for Pearl below. */
-  --accent: oklch(0.80 0 0);
+  --accent: oklch(0.8 0 0);
   --accent-foreground: oklch(0.14 0 0);
   /* Opaque and lifted: at 0.7/60% the ring measured 2.77:1 against
      `--surface-raised`, which is the ground under most of the controls. */

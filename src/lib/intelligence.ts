@@ -1050,8 +1050,7 @@ export function scoreRecord(r: RestaurantRecord, s: Situation, opts: ScoreOption
   const now = opts.now ?? new Date();
   const distanceMi = s.origin && live?.ll ? haversineMi(s.origin, live.ll) : null;
   const distanceExact = live?.llSource === "exact";
-  const distanceRead =
-    distanceMi === null ? null : readDistance(distanceMi, distanceExact, r.city);
+  const distanceRead = distanceMi === null ? null : readDistance(distanceMi, distanceExact, r.city);
   // The reader's arrival moment, not "now" — otherwise the card can print
   // "Serving at 7pm" beside a strip reading "Closed today" and charge the
   // penalty for a room that is open when they mean to go.

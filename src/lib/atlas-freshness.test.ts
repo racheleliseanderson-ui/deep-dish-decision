@@ -97,7 +97,9 @@ describe("the slug index can find every record", () => {
     const missing = records.filter((r) => idx.slugs[r.slug] === undefined).map((r) => r.slug);
     expect(missing).toEqual([]);
 
-    const files = new Set(readdirSync(resolve(ROOT, "src/data/by-region")).map((f) => f.replace(/\.json$/, "")));
+    const files = new Set(
+      readdirSync(resolve(ROOT, "src/data/by-region")).map((f) => f.replace(/\.json$/, "")),
+    );
     const danglingGroups = idx.groups.filter((g) => !files.has(g));
     expect(danglingGroups).toEqual([]);
   });

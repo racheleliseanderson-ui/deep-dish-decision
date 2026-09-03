@@ -6,5 +6,7 @@
  *   node scripts/pipeline/enrich.mjs --hygiene
  */
 console.error("discover.mjs is disabled: Google Places (GPI) has been removed from this project.");
-console.error("Use: node scripts/pipeline/seed-listings.mjs  then  node scripts/pipeline/enrich.mjs --hygiene");
+console.error(
+  "Use: node scripts/pipeline/seed-listings.mjs  then  node scripts/pipeline/enrich.mjs --hygiene",
+);
 process.exit(1);

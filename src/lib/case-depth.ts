@@ -23,10 +23,15 @@ export function isUnstated(value: string | null | undefined): boolean {
   const t = String(value ?? "").trim();
   if (!t) return true;
   if (t.startsWith(FLOOR_PREFIX)) return true;
-  return /^(not stated|unstated)/i.test(t) || /not stated in the reviewed first-party pages/i.test(t);
+  return (
+    /^(not stated|unstated)/i.test(t) || /not stated in the reviewed first-party pages/i.test(t)
+  );
 }
 
-export function fieldDisplay(value: string | null | undefined): { unstated: boolean; text: string } {
+export function fieldDisplay(value: string | null | undefined): {
+  unstated: boolean;
+  text: string;
+} {
   const unstated = isUnstated(value);
   return {
     unstated,

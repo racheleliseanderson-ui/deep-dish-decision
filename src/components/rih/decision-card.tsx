@@ -30,7 +30,10 @@ export function decisionState(sc: Scored): DecisionState {
   return "good";
 }
 
-const STATE_COPY: Record<DecisionState, { label: string; line: string; tone: "verified" | "watch" | "critical" }> = {
+const STATE_COPY: Record<
+  DecisionState,
+  { label: string; line: string; tone: "verified" | "watch" | "critical" }
+> = {
   good: {
     label: "GOOD FIT",
     line: "Nothing material currently blocks this night.",
@@ -80,15 +83,20 @@ export function DecisionCard({
   const stateCopy = STATE_COPY[state];
   const why = sc.reasons[0] ?? whyGoLine(r);
   const fitLabel = sc.fit >= 78 ? "Strong fit" : sc.fit >= 62 ? "Promising fit" : "Possible fit";
-  const openItems = state === "hold"
-    ? [...summary.cannot, ...summary.unanswered.filter((finding) => finding.layer === "critical")]
-    : summary.unresolved;
+  const openItems =
+    state === "hold"
+      ? [...summary.cannot, ...summary.unanswered.filter((finding) => finding.layer === "critical")]
+      : summary.unresolved;
 
   return (
     <article
       className={cn(
         "rounded-2xl border bg-surface p-5 transition-colors sm:p-6",
-        state === "hold" ? "border-critical/35" : state === "verify" ? "border-watch/35" : "border-border hover:border-border-strong",
+        state === "hold"
+          ? "border-critical/35"
+          : state === "verify"
+            ? "border-watch/35"
+            : "border-border hover:border-border-strong",
       )}
     >
       <div className="flex flex-col gap-5 sm:flex-row">
@@ -106,7 +114,9 @@ export function DecisionCard({
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
               <h3 className="font-display text-2xl leading-tight tracking-tight">{r.title}</h3>
-              <p className="mt-1 text-[13px] text-muted-foreground">{r.region} · {r.cuisineTags.slice(0, 2).join(" · ") || "cuisine not stated"}</p>
+              <p className="mt-1 text-[13px] text-muted-foreground">
+                {r.region} · {r.cuisineTags.slice(0, 2).join(" · ") || "cuisine not stated"}
+              </p>
             </div>
             <Chip tone={stateCopy.tone}>{stateCopy.label}</Chip>
           </div>
@@ -125,7 +135,9 @@ export function DecisionCard({
               <ul className="mt-2 space-y-1.5 text-[13px] leading-relaxed text-muted-foreground">
                 {openItems.slice(0, 2).map((finding) => (
                   <li key={finding.id} className="flex gap-2">
-                    <span aria-hidden className={state === "hold" ? "text-critical" : "text-watch"}>•</span>
+                    <span aria-hidden className={state === "hold" ? "text-critical" : "text-watch"}>
+                      •
+                    </span>
                     <span>{finding.title}</span>
                   </li>
                 ))}
@@ -139,7 +151,11 @@ export function DecisionCard({
               onClick={onOpen}
               className="tap rounded-full bg-primary px-4 py-2.5 text-xs font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
-              {state === "hold" ? "See what is blocking it" : state === "verify" ? "Verify this restaurant" : "Check and book"}
+              {state === "hold"
+                ? "See what is blocking it"
+                : state === "verify"
+                  ? "Verify this restaurant"
+                  : "Check and book"}
             </button>
             <button
               type="button"

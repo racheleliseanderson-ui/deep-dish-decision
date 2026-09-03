@@ -19,7 +19,10 @@ import hosts from "@/data/menu-hosts.json";
 export function registrableDomain(url: string | null | undefined): string | null {
   if (!url) return null;
   try {
-    const parts = new URL(url).hostname.toLowerCase().replace(/^www\./, "").split(".");
+    const parts = new URL(url).hostname
+      .toLowerCase()
+      .replace(/^www\./, "")
+      .split(".");
     return parts.length >= 2 ? parts.slice(-2).join(".") : parts.join(".");
   } catch {
     return null;

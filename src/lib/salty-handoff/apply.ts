@@ -101,7 +101,10 @@ export function situationFromHandoff(handoff: SaltyHandoff, current: Situation):
   }
 
   const diet = (handoff.occasion?.diet ?? []).map((d) => d.toLowerCase());
-  if (diet.some((d) => /alcohol|zero-?proof/.test(d)) && !next.constraints.includes("Zero-proof / no alcohol")) {
+  if (
+    diet.some((d) => /alcohol|zero-?proof/.test(d)) &&
+    !next.constraints.includes("Zero-proof / no alcohol")
+  ) {
     next.constraints = [...next.constraints, "Zero-proof / no alcohol"];
   }
   if (diet.length && !next.occasion) next.occasion = "Dietary-sensitive visit";
@@ -147,8 +150,7 @@ export function planningDietBanner(handoff: SaltyHandoff): string | null {
  * question", which is true and says nothing.
  */
 export type UnresolvedItem =
-  | string
-  | { domain?: string; layer?: string; title?: string; action?: string };
+  string | { domain?: string; layer?: string; title?: string; action?: string };
 
 /** One label per Finding domain in src/lib/intelligence.ts. */
 export const UNRESOLVED_CATEGORY_BY_DOMAIN: Readonly<Record<string, string>> = {
@@ -172,7 +174,10 @@ export const DEFAULT_UNRESOLVED_CATEGORY = "open question";
 
 /** Fallback only, for a caller holding a sentence and no finding. */
 const TEXT_CATEGORY: ReadonlyArray<readonly [RegExp, string]> = [
-  [/allerg|celiac|coeliac|cross.?contact|gluten|dietary|epi.?pen|anaphyla|intoleran/i, "dietary cross-contact"],
+  [
+    /allerg|celiac|coeliac|cross.?contact|gluten|dietary|epi.?pen|anaphyla|intoleran/i,
+    "dietary cross-contact",
+  ],
   [/step.?free|wheelchair|accessib|elevator|stairs?\b/i, "accessibility"],
   [/deposit|minimum spend|prepay|cancellation/i, "deposit terms"],
   [/private (?:room|dining)|semi-private|buyout/i, "private room"],

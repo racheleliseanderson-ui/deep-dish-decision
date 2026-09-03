@@ -22,36 +22,36 @@ Two categories:
 
 ## Unreachable modules
 
-| file | lines | kind | what it was for | read |
-| --- | ---: | --- | --- | --- |
-| `src/components/rih/results-map.tsx` | 406 | ORPHAN | Map view of ranked results | Abandoned — no route ever mounted it |
-| `src/components/rih/compare.tsx` | 392 | ORPHAN | Side-by-side restaurant comparison in a dialog | Abandoned |
-| `src/components/rih/situation-console.tsx` | 296 | ORPHAN | The full situation-entry console (party, commitment, constraints) | Abandoned — the shipped route collects this inline |
-| `src/components/rih/case-file.tsx` | 272 | ORPHAN | Long-form "case file" view of one restaurant | Abandoned — `record.$slug.tsx` is the view that shipped |
-| `src/components/rih/night-summary.tsx` | 244 | ORPHAN | End-of-night summary of the decision | Paused — reads like a feature that was nearly finished |
-| `src/components/rih/record-card.tsx` | 239 | ORPHAN | Card renderer for a restaurant in a result list | Abandoned — superseded by `listing-face.tsx` |
-| `src/components/rih/where-and-when.tsx` | 234 | ORPHAN | Origin + time-window picker | Abandoned |
-| `src/components/rih/evidence-band.tsx` | 119 | ORPHAN | "What this instrument can tell you tonight" band | Paused |
-| `src/components/rih/evidence-from-photo.tsx` | 117 | ORPHAN | Upload a photo, extract findings via the vision model | Abandoned — the whole vision path is dark |
-| `src/components/rih/decision-strip.tsx` | 113 | DEAD-ONLY | Compact decision line under a result | Reachable only through `record-card.tsx`, itself dead |
-| `src/components/rih/scenario-playbooks.tsx` | 105 | ORPHAN | Preset "kind of night" playbooks | Abandoned |
-| `src/components/rih/inspection-panel.tsx` | 83 | DEAD-ONLY | Health-inspection panel | Reachable only through `case-file.tsx`, itself dead |
-| `src/components/rih/copy-night-link.tsx` | 51 | DEAD-ONLY | Copy a shareable URL encoding the Situation | Reachable only through `situation-console.tsx`, itself dead |
-| `src/lib/playbooks.ts` | 181 | DEAD-ONLY | Data + matcher behind `scenario-playbooks.tsx` | Dies with its only consumer |
-| `src/server/vision.ts` | 78 | DEAD-ONLY | Server fn calling Gemini for photo analysis | Dies with `evidence-from-photo.tsx` |
-| `src/lib/vision.ts` | 78 | DEAD-ONLY | Vision result types + findings mapper | Dies with `evidence-from-photo.tsx` |
-| `src/lib/scenario-chips.ts` | 70 | DEAD-ONLY | Situation-derived chips | Dies with `record-card.tsx` |
-| `src/hooks/use-mobile.tsx` | 19 | DEAD-ONLY | Viewport breakpoint hook | Only `components/ui/sidebar.tsx` uses it, and the sidebar is not mounted |
+| file                                         | lines | kind      | what it was for                                                   | read                                                                     |
+| -------------------------------------------- | ----: | --------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `src/components/rih/results-map.tsx`         |   406 | ORPHAN    | Map view of ranked results                                        | Abandoned — no route ever mounted it                                     |
+| `src/components/rih/compare.tsx`             |   392 | ORPHAN    | Side-by-side restaurant comparison in a dialog                    | Abandoned                                                                |
+| `src/components/rih/situation-console.tsx`   |   296 | ORPHAN    | The full situation-entry console (party, commitment, constraints) | Abandoned — the shipped route collects this inline                       |
+| `src/components/rih/case-file.tsx`           |   272 | ORPHAN    | Long-form "case file" view of one restaurant                      | Abandoned — `record.$slug.tsx` is the view that shipped                  |
+| `src/components/rih/night-summary.tsx`       |   244 | ORPHAN    | End-of-night summary of the decision                              | Paused — reads like a feature that was nearly finished                   |
+| `src/components/rih/record-card.tsx`         |   239 | ORPHAN    | Card renderer for a restaurant in a result list                   | Abandoned — superseded by `listing-face.tsx`                             |
+| `src/components/rih/where-and-when.tsx`      |   234 | ORPHAN    | Origin + time-window picker                                       | Abandoned                                                                |
+| `src/components/rih/evidence-band.tsx`       |   119 | ORPHAN    | "What this instrument can tell you tonight" band                  | Paused                                                                   |
+| `src/components/rih/evidence-from-photo.tsx` |   117 | ORPHAN    | Upload a photo, extract findings via the vision model             | Abandoned — the whole vision path is dark                                |
+| `src/components/rih/decision-strip.tsx`      |   113 | DEAD-ONLY | Compact decision line under a result                              | Reachable only through `record-card.tsx`, itself dead                    |
+| `src/components/rih/scenario-playbooks.tsx`  |   105 | ORPHAN    | Preset "kind of night" playbooks                                  | Abandoned                                                                |
+| `src/components/rih/inspection-panel.tsx`    |    83 | DEAD-ONLY | Health-inspection panel                                           | Reachable only through `case-file.tsx`, itself dead                      |
+| `src/components/rih/copy-night-link.tsx`     |    51 | DEAD-ONLY | Copy a shareable URL encoding the Situation                       | Reachable only through `situation-console.tsx`, itself dead              |
+| `src/lib/playbooks.ts`                       |   181 | DEAD-ONLY | Data + matcher behind `scenario-playbooks.tsx`                    | Dies with its only consumer                                              |
+| `src/server/vision.ts`                       |    78 | DEAD-ONLY | Server fn calling Gemini for photo analysis                       | Dies with `evidence-from-photo.tsx`                                      |
+| `src/lib/vision.ts`                          |    78 | DEAD-ONLY | Vision result types + findings mapper                             | Dies with `evidence-from-photo.tsx`                                      |
+| `src/lib/scenario-chips.ts`                  |    70 | DEAD-ONLY | Situation-derived chips                                           | Dies with `record-card.tsx`                                              |
+| `src/hooks/use-mobile.tsx`                   |    19 | DEAD-ONLY | Viewport breakpoint hook                                          | Only `components/ui/sidebar.tsx` uses it, and the sidebar is not mounted |
 
 Subtotal: **3,097 lines.**
 
 ## Test-only modules (present in the repo, absent from the bundle)
 
-| file | lines | note |
-| --- | ---: | --- |
-| `src/lib/db.ts` | 272 | The whole Supabase client surface. Every export (`searchCorpus`, `savePlan`, `loadPlan`, `corpusCoverage`, …) is imported by `src/lib/db.test.ts` and by nothing else. **Paused, not abandoned** — the file's own header explains that Postgres is deliberately additive and the app must work without it, so this reads as a wired-but-unswitched-on feature. |
-| `src/lib/db-config.ts` | 29 | Only consumed by `db.ts` (above) and the same test. |
-| `src/lib/prefs.ts` | 136 | Contrast mode / locale / enrichment-signal / hide-thin-files preferences. 11 of its 13 exports have no reference anywhere; the remaining 2 (`ENRICHMENT_KEY`, `useEnrichmentSignals`) appear only in `src/lib/hydration.test.tsx`. The brief called this "most of `prefs.ts`" — it is in fact **all** of it. Paused: the storage keys suggest a settings panel that was never mounted. |
+| file                   | lines | note                                                                                                                                                                                                                                                                                                                                                                                   |
+| ---------------------- | ----: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/lib/db.ts`        |   272 | The whole Supabase client surface. Every export (`searchCorpus`, `savePlan`, `loadPlan`, `corpusCoverage`, …) is imported by `src/lib/db.test.ts` and by nothing else. **Paused, not abandoned** — the file's own header explains that Postgres is deliberately additive and the app must work without it, so this reads as a wired-but-unswitched-on feature.                         |
+| `src/lib/db-config.ts` |    29 | Only consumed by `db.ts` (above) and the same test.                                                                                                                                                                                                                                                                                                                                    |
+| `src/lib/prefs.ts`     |   136 | Contrast mode / locale / enrichment-signal / hide-thin-files preferences. 11 of its 13 exports have no reference anywhere; the remaining 2 (`ENRICHMENT_KEY`, `useEnrichmentSignals`) appear only in `src/lib/hydration.test.tsx`. The brief called this "most of `prefs.ts`" — it is in fact **all** of it. Paused: the storage keys suggest a settings panel that was never mounted. |
 
 Subtotal: **437 lines.**
 
@@ -60,13 +60,13 @@ Subtotal: **437 lines.**
 These files are alive and must not be touched wholesale; only the named exports
 are unreferenced.
 
-| file | export | line | note |
-| --- | --- | ---: | --- |
-| `src/lib/enrichment.ts` | `buildEnrichmentFindings` | 263 | Confirmed unreferenced. Already carries its own inline `UNUSED as of 2026-09-02` note at line 259, so no marker was added to this file. |
-| `src/lib/enrichment.ts` | `loadAllEnrichment` | 202 | Also unreferenced — not previously reported. |
-| `src/lib/enrichment.ts` | 12 exported types | — | `EnrichmentRecord`, `EnrichmentGoogle`, `EnrichmentMeta`, `EnrichmentSite`, `EnrichmentSummary`, `GoogleAccessibility`, `GoogleAmenities`, `GoogleParking`, `OwnedQuote`, `OwnedQuoteGroup`, `SiteLanguage`, `SiteQuote` — all unreferenced outside the file. |
-| `src/components/rih/gilt.tsx` | `Plinth` (33), `Figure` (67), `Marquee` (106) | — | 3 of 5 exports dead. `GiltRule` and `Vitrine` are live. |
-| `src/components/rih/reveal.tsx` | `RankSlot` (141), `FadeKey` (214) | — | 2 of 5 exports dead. `Reveal`, `GrowBar`, `useReveal` are live. |
+| file                            | export                                        | line | note                                                                                                                                                                                                                                                          |
+| ------------------------------- | --------------------------------------------- | ---: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/lib/enrichment.ts`         | `buildEnrichmentFindings`                     |  263 | Confirmed unreferenced. Already carries its own inline `UNUSED as of 2026-09-02` note at line 259, so no marker was added to this file.                                                                                                                       |
+| `src/lib/enrichment.ts`         | `loadAllEnrichment`                           |  202 | Also unreferenced — not previously reported.                                                                                                                                                                                                                  |
+| `src/lib/enrichment.ts`         | 12 exported types                             |    — | `EnrichmentRecord`, `EnrichmentGoogle`, `EnrichmentMeta`, `EnrichmentSite`, `EnrichmentSummary`, `GoogleAccessibility`, `GoogleAmenities`, `GoogleParking`, `OwnedQuote`, `OwnedQuoteGroup`, `SiteLanguage`, `SiteQuote` — all unreferenced outside the file. |
+| `src/components/rih/gilt.tsx`   | `Plinth` (33), `Figure` (67), `Marquee` (106) |    — | 3 of 5 exports dead. `GiltRule` and `Vitrine` are live.                                                                                                                                                                                                       |
+| `src/components/rih/reveal.tsx` | `RankSlot` (141), `FadeKey` (214)             |    — | 2 of 5 exports dead. `Reveal`, `GrowBar`, `useReveal` are live.                                                                                                                                                                                               |
 
 ## Not listed on purpose
 

@@ -41,7 +41,10 @@ export function InspectionPanel({ slug }: { slug: string }) {
           <dl className="mt-4 grid gap-3 sm:grid-cols-3">
             <Meta label="Jurisdiction" value={row.jurisdiction} />
             <Meta label="Latest visit" value={row.latestInspectionDate ?? "Unstated"} />
-            <Meta label="Result / grade" value={[row.latestResult, row.grade].filter(Boolean).join(" · ") || "Unstated"} />
+            <Meta
+              label="Result / grade"
+              value={[row.latestResult, row.grade].filter(Boolean).join(" · ") || "Unstated"}
+            />
           </dl>
           <p className="mt-3 text-[12px] leading-relaxed text-subtle">
             {row.programName} · {row.address}
@@ -63,7 +66,12 @@ export function InspectionPanel({ slug }: { slug: string }) {
           )}
           <p className="mt-4 text-[11px] leading-relaxed text-subtle">
             Source: {row.dataset} · retrieved {row.retrievedAt.slice(0, 10)} ·{" "}
-            <a href={row.sourceUrl} target="_blank" rel="noreferrer" className="underline-offset-2 hover:underline">
+            <a
+              href={row.sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="underline-offset-2 hover:underline"
+            >
               jurisdiction search
             </a>
             . Not a Deep Dish score.

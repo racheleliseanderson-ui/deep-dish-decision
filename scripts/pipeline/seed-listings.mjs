@@ -28,11 +28,7 @@ import {
 } from "./lib.mjs";
 import { STATES } from "./regions.mjs";
 import { isRetiredListing, retiredIndex } from "./retire-closed.mjs";
-import {
-  batchMatchesCityFilter,
-  findQueueTarget,
-  queueCityForBatch,
-} from "./seed-target.mjs";
+import { batchMatchesCityFilter, findQueueTarget, queueCityForBatch } from "./seed-target.mjs";
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -130,8 +126,7 @@ const unknownList = [
 function toRecord(listing, target, retrievedAt) {
   const city = target.city;
   const stateCode = target.stateCode;
-  const stateName =
-    Object.entries(STATES).find(([, v]) => v.code === stateCode)?.[0] ?? stateCode;
+  const stateName = Object.entries(STATES).find(([, v]) => v.code === stateCode)?.[0] ?? stateCode;
   const stateProper = stateName.replace(/\b\w/g, (m) => m.toUpperCase());
   seq += 1;
   const slug = slugify(listing.title, city);
@@ -180,8 +175,10 @@ function toRecord(listing, target, retrievedAt) {
     reviewedAt: retrievedAt.slice(0, 10),
     nextReviewAt: new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10),
     reviewStatus: "listing_only",
-    fieldVolatility: "Hours, pricing and policy fields are listing-derived and change without notice.",
-    nextAction: "Promote to a reviewed record by confirming policy fields against first-party sources.",
+    fieldVolatility:
+      "Hours, pricing and policy fields are listing-derived and change without notice.",
+    nextAction:
+      "Promote to a reviewed record by confirming policy fields against first-party sources.",
     conflict: "",
     depthFilled: 0,
     depthTotal: 12,
@@ -329,4 +326,6 @@ try {
 console.log(
   `\nSeeded ${inserted} listing-only records (${skipped} duplicates skipped). Corpus now ${dataset.records.length}.`,
 );
-console.log("Run: node scripts/pipeline/enrich.mjs --hygiene   (owned site reads — no API keys required).");
+console.log(
+  "Run: node scripts/pipeline/enrich.mjs --hygiene   (owned site reads — no API keys required).",
+);

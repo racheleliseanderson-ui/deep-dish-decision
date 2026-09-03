@@ -55,9 +55,7 @@ const candidates = (dataset.records ?? [])
   })
   .sort(
     (a, b) =>
-      a.lastMs - b.lastMs ||
-      a.completeness - b.completeness ||
-      a.slug.localeCompare(b.slug),
+      a.lastMs - b.lastMs || a.completeness - b.completeness || a.slug.localeCompare(b.slug),
   );
 
 const selected = candidates.slice(0, BATCH);
@@ -95,10 +93,7 @@ function run(scriptArgs) {
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
 
-run([
-  "scripts/pipeline/enrich.mjs",
-  `--slugs=${selected.map((row) => row.slug).join(",")}`,
-]);
+run(["scripts/pipeline/enrich.mjs", `--slugs=${selected.map((row) => row.slug).join(",")}`]);
 
 // Turn newly captured first-party evidence into the files the app and database
 // actually consume. These are all deterministic and offline after enrichment.

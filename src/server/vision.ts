@@ -8,16 +8,7 @@ import { VISION_SYSTEM_PROMPT, type VisionResult } from "@/lib/vision";
 const VisionSchema = z.object({
   items: z.array(
     z.object({
-      type: z.enum([
-        "dish",
-        "price",
-        "allergen",
-        "hours",
-        "access",
-        "signage",
-        "claim",
-        "other",
-      ]),
+      type: z.enum(["dish", "price", "allergen", "hours", "access", "signage", "claim", "other"]),
       label: z.string(),
       attributes: z.record(z.string(), z.union([z.string(), z.number(), z.boolean()])).optional(),
       confidence: z.enum(["high", "moderate", "low"]),

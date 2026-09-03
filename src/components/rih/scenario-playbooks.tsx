@@ -19,11 +19,8 @@ const CHAPTER_LABEL: Record<PlaybookChapter, string> = {
 };
 
 function ChapterMark({ chapter }: { chapter: PlaybookChapter }) {
-  const glyph =
-    chapter === "night" ? "01" : chapter === "format" ? "02" : "03";
-  return (
-    <span className="text-num text-[11px] tracking-[0.2em] text-gilt">{glyph}</span>
-  );
+  const glyph = chapter === "night" ? "01" : chapter === "format" ? "02" : "03";
+  return <span className="text-num text-[11px] tracking-[0.2em] text-gilt">{glyph}</span>;
 }
 
 function PlaybookCard({
@@ -98,9 +95,7 @@ export function ScenarioPlaybooks({
         ))}
       </div>
 
-      <p className="mt-4 text-[11px] text-subtle">
-        {PLAYBOOKS.length} playbooks
-      </p>
+      <p className="mt-4 text-[11px] text-subtle">{PLAYBOOKS.length} playbooks</p>
     </section>
   );
 }

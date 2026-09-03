@@ -17,6 +17,7 @@ Direction: Fifth Avenue at dusk — plate glass, brass, lacquer, deep ink, marbl
 The pipeline is workspace scripts over static JSON — the browser cannot launch a run, and the console will say so plainly rather than faking a Start button.
 
 On `/console`, add a **Run planner** panel:
+
 - Batch size stepper, cities-per-run stepper, cuisine focus selector, pause toggle, and a pinned-cities picker fed from `expansion-queue.json` (search + click to pin, drag-free reordering by priority buttons).
 - Live projection: how many records the plan adds, which states it moves off zero, estimated call volume against the daily quota.
 - Persist the plan to localStorage via a new `src/lib/run-plan.ts`, and render the exact command to run it (`bun scripts/pipeline/discover.mjs --plan=...`) with a copy button, plus a JSON export written for the operator.

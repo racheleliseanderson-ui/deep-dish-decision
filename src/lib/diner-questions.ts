@@ -333,7 +333,9 @@ function cleanTrustworthy(slug: string): DinerAnswer {
       "Is it clean and trustworthy?",
       `${opening}${extra} Cleanliness here comes from an inspection record or from nothing at all. Reviews stay on the reputation layer, labeled as reviews.`,
       "notOnFile",
-      layerLoaded ? "Conservative — no inspection matched" : "Conservative — inspection layer not loaded",
+      layerLoaded
+        ? "Conservative — no inspection matched"
+        : "Conservative — inspection layer not loaded",
       true,
     );
   }
@@ -433,7 +435,13 @@ const GENERIC_OPENERS = new Set([
 /** The proper nouns this particular record is entitled to keep capitalised. */
 function properOpeners(r: RestaurantRecord): Set<string> {
   const out = new Set<string>();
-  for (const source of [r.city, r.stateProvince, r.region, r.regionGroup, ...(r.cuisineTags ?? [])]) {
+  for (const source of [
+    r.city,
+    r.stateProvince,
+    r.region,
+    r.regionGroup,
+    ...(r.cuisineTags ?? []),
+  ]) {
     for (const word of String(source ?? "").split(/[^A-Za-z'-]+/)) {
       const key = word.toLowerCase();
       if (key.length > 2 && !GENERIC_OPENERS.has(key)) out.add(key);
@@ -456,7 +464,9 @@ function properOpeners(r: RestaurantRecord): Set<string> {
  * Lowercasing those would read worse than the bug being fixed.
  */
 function uncap(s: string, keep?: Set<string>): string {
-  const text = String(s ?? "").trim().replace(/\s*\.+$/, "");
+  const text = String(s ?? "")
+    .trim()
+    .replace(/\s*\.+$/, "");
   if (!text) return "";
   const opener = (text.split(/[^A-Za-z'-]+/, 1)[0] ?? "").replace(/^['-]+/, "");
   const isName = /[A-Z]/.test(opener.slice(1)) || (keep?.has(opener.toLowerCase()) ?? false);

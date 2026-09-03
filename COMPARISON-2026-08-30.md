@@ -10,12 +10,12 @@ This is an improvement of the recovered 836-record hub. It is not a replacement 
 
 ## Record count before / after
 
-| Surface | Records | Regions | Dataset |
-|---|---|---|---|
-| Broken `main` (`ebdca89`) | ~30 confirmation-pass rows in `restaurants.ts` | Denver-centric demo | `dataset.json` missing |
-| Last healthy (`d9ffee3`) | **836** | **122** | `src/data/dataset.json` |
-| Consumer-intelligence branch | **836** | **122** | same corpus, generated `2026-08-28T03:27:08.444Z` |
-| This production-stack fix | **836** | **122** | unchanged |
+| Surface                      | Records                                        | Regions             | Dataset                                           |
+| ---------------------------- | ---------------------------------------------- | ------------------- | ------------------------------------------------- |
+| Broken `main` (`ebdca89`)    | ~30 confirmation-pass rows in `restaurants.ts` | Denver-centric demo | `dataset.json` missing                            |
+| Last healthy (`d9ffee3`)     | **836**                                        | **122**             | `src/data/dataset.json`                           |
+| Consumer-intelligence branch | **836**                                        | **122**             | same corpus, generated `2026-08-28T03:27:08.444Z` |
+| This production-stack fix    | **836**                                        | **122**             | unchanged                                         |
 
 Invariant: CI / `npm run check:corpus` fails if count drops below 800, if `dataset.json` disappears, if hero assets disappear, if core routes/pipeline files disappear, or if the Lovable Vercel stack is replaced by the Grok overlay. Override only with `ALLOW_CORPUS_MIGRATION=1`.
 
@@ -68,18 +68,18 @@ None verified. Ranking, fail-closed constraints, compare, packets, playbooks, si
 
 ## Coverage of new fields (derived, not invented)
 
-| Field | Populated | Notes |
-|---|---|---|
-| Consumer snapshot (6 boxes) | 836 / 836 | First-party extraction |
-| Diner questions (10) | 836 / 836 | Held-open when silent |
-| Food intel / culinary identity | 836 / 836 | From `cuisineContext` / menu |
-| Named signature dishes | only where pages say “signature / known for” | Not invented |
-| Public listing sample (Google rating + n) | 111 / 836 | Context only, not ranking |
-| Google listing editorial blurb | 88 / 836 | Labeled third-party, not consensus |
-| Recurring praise / complaint patterns | 0 / 836 | Empty until a research pass |
-| Documentary restaurant photography | 0 / 836 | Architecture ready; no random stock |
-| Identity marks | 836 / 836 | Deterministic SVG, labeled as not a photo |
-| Owned-site quotes | 826 / 836 | Existing enrichment |
+| Field                                     | Populated                                    | Notes                                     |
+| ----------------------------------------- | -------------------------------------------- | ----------------------------------------- |
+| Consumer snapshot (6 boxes)               | 836 / 836                                    | First-party extraction                    |
+| Diner questions (10)                      | 836 / 836                                    | Held-open when silent                     |
+| Food intel / culinary identity            | 836 / 836                                    | From `cuisineContext` / menu              |
+| Named signature dishes                    | only where pages say “signature / known for” | Not invented                              |
+| Public listing sample (Google rating + n) | 111 / 836                                    | Context only, not ranking                 |
+| Google listing editorial blurb            | 88 / 836                                     | Labeled third-party, not consensus        |
+| Recurring praise / complaint patterns     | 0 / 836                                      | Empty until a research pass               |
+| Documentary restaurant photography        | 0 / 836                                      | Architecture ready; no random stock       |
+| Identity marks                            | 836 / 836                                    | Deterministic SVG, labeled as not a photo |
+| Owned-site quotes                         | 826 / 836                                    | Existing enrichment                       |
 
 ## Tests added
 

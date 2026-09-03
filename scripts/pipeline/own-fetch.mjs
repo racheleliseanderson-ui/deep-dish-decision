@@ -29,8 +29,7 @@ export const TEXT_FLOOR = 400;
 const PW_TEXT_WAIT_MS = 8_000;
 const ENABLE_JS_RE =
   /enable javascript|enable js|turn on javascript|cookies to continue|please enable/i;
-const IGNORE_JSON_ATTR =
-  /wp-emoji|emoji-settings|webpack|vite-plugin|__NEXT_FONT|__framer/i;
+const IGNORE_JSON_ATTR = /wp-emoji|emoji-settings|webpack|vite-plugin|__NEXT_FONT|__framer/i;
 
 /** Surface Node fetch cause codes. Connect timeouts become 408 so the limiter retries. */
 export function classifyFetchError(err) {
@@ -52,7 +51,8 @@ export function classifyFetchError(err) {
 /** Shared limiter: one in-flight owned fetch, Retry-After honored. */
 export const siteLimiter = createLimiter({ minDelayMs: 400, maxRetries: 5 });
 
-const VENUE_TYPES = /Restaurant|FoodEstablishment|LocalBusiness|BarOrPub|CafeOrCoffeeShop|Bakery|Winery|Brewery|Distillery/i;
+const VENUE_TYPES =
+  /Restaurant|FoodEstablishment|LocalBusiness|BarOrPub|CafeOrCoffeeShop|Bakery|Winery|Brewery|Distillery/i;
 const VENUE_KEYS = new Set([
   "telephone",
   "openingHours",
@@ -65,8 +65,7 @@ const VENUE_KEYS = new Set([
   "acceptsReservations",
 ]);
 
-const JSONLD_RE =
-  /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+const JSONLD_RE = /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
 
 function decodeEntities(value) {
   return String(value ?? "")
@@ -141,7 +140,11 @@ function roleMainInner(html) {
  * A short heading inside [role=main] is a false shell — fall back to body.
  */
 export function pickContentRegion(cleaned) {
-  const candidates = [innerOfTag(cleaned, "main"), roleMainInner(cleaned), innerOfTag(cleaned, "article")];
+  const candidates = [
+    innerOfTag(cleaned, "main"),
+    roleMainInner(cleaned),
+    innerOfTag(cleaned, "article"),
+  ];
   const body = innerOfTag(cleaned, "body") ?? cleaned;
   for (const region of candidates) {
     if (region && roughTextLength(region) >= TEXT_FLOOR) return region;
@@ -193,7 +196,9 @@ function isVenueLike(node) {
   const types = [].concat(node["@type"] ?? []).map(String);
   if (types.some((t) => VENUE_TYPES.test(t))) return true;
   const keys = Object.keys(node).filter((k) => VENUE_KEYS.has(k));
-  if (keys.some((k) => k === "openingHours" || k === "openingHoursSpecification" || k === "hasMenu")) {
+  if (
+    keys.some((k) => k === "openingHours" || k === "openingHoursSpecification" || k === "hasMenu")
+  ) {
     return true;
   }
   return keys.length >= 2;
@@ -299,7 +304,9 @@ export function jsonLdIsRich(nodes) {
 export function jsonLdQuotes(nodes, sourceUrl, label = "JSON-LD") {
   const quotes = [];
   const push = (kind, quote, extra = {}) => {
-    const text = String(quote ?? "").replace(/\s+/g, " ").trim();
+    const text = String(quote ?? "")
+      .replace(/\s+/g, " ")
+      .trim();
     if (!text) return;
     quotes.push({ kind, quote: text.slice(0, 260), sourceUrl, ...extra });
   };
@@ -315,9 +322,7 @@ export function jsonLdQuotes(nodes, sourceUrl, label = "JSON-LD") {
       const hours = Array.isArray(n.openingHours) ? n.openingHours.join("; ") : n.openingHours;
       push("hours", `${label} openingHours: ${hours}`);
     }
-    const specs = n.openingHoursSpecification
-      ? [].concat(n.openingHoursSpecification)
-      : [];
+    const specs = n.openingHoursSpecification ? [].concat(n.openingHoursSpecification) : [];
     for (const spec of specs) {
       if (!spec || typeof spec !== "object") continue;
       const days = []
@@ -339,9 +344,7 @@ export function jsonLdQuotes(nodes, sourceUrl, label = "JSON-LD") {
     const menuUrl = asUrl(n.hasMenu) || asUrl(n.menu);
     if (menuUrl) push("menuUrl", menuUrl, { url: menuUrl });
     const reserve =
-      asUrl(n.acceptsReservations) ||
-      asUrl(n.potentialAction?.target) ||
-      asUrl(n.potentialAction);
+      asUrl(n.acceptsReservations) || asUrl(n.potentialAction?.target) || asUrl(n.potentialAction);
     if (reserve) push("reservationUrl", reserve, { url: reserve });
   }
   return quotes;
@@ -369,10 +372,9 @@ export function extractUsefulNoscript(html) {
 function metaContent(html, key) {
   if (!html) return "";
   const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const named = new RegExp(
-    `<meta\\b[^>]*(?:property|name)=["']${escaped}["'][^>]*>`,
-    "i",
-  ).exec(html)?.[0];
+  const named = new RegExp(`<meta\\b[^>]*(?:property|name)=["']${escaped}["'][^>]*>`, "i").exec(
+    html,
+  )?.[0];
   if (named) {
     return decodeEntities(/content=["']([^"']*)["']/i.exec(named)?.[1] || "");
   }
@@ -730,7 +732,13 @@ export function htmlToTextAndLinks(html, baseUrl) {
   let m;
   while ((m = hrefRe.exec(cleaned)) !== null) {
     const href = m[1].trim();
-    if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("javascript:")) {
+    if (
+      !href ||
+      href.startsWith("#") ||
+      href.startsWith("mailto:") ||
+      href.startsWith("tel:") ||
+      href.startsWith("javascript:")
+    ) {
       continue;
     }
     try {

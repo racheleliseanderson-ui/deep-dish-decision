@@ -14,7 +14,8 @@ export function findQueueTarget(queue, batch) {
   const queueCity = queueCityForBatch(batch);
   return queue?.cities?.find(
     (candidate) =>
-      String(candidate.city || "").trim().toLowerCase() === queueCity.toLowerCase() &&
-      candidate.stateCode === batch?.stateCode,
+      String(candidate.city || "")
+        .trim()
+        .toLowerCase() === queueCity.toLowerCase() && candidate.stateCode === batch?.stateCode,
   );
 }

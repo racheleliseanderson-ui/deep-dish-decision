@@ -96,18 +96,10 @@ const LAYER_TITLE: Record<FindingLayer, string> = {
  * Full findings stack grouped by layer (critical → watch → unknown).
  * Call sites that only have the combined findings array use this.
  */
-export function FindingsStack({
-  findings,
-  compact,
-}: {
-  findings: Finding[];
-  compact?: boolean;
-}) {
+export function FindingsStack({ findings, compact }: { findings: Finding[]; compact?: boolean }) {
   if (!findings.length) {
     return (
-      <p className="text-sm text-muted-foreground">
-        No findings recorded for this situation.
-      </p>
+      <p className="text-sm text-muted-foreground">No findings recorded for this situation.</p>
     );
   }
   return (

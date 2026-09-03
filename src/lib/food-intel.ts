@@ -24,7 +24,10 @@ export type FirstPartyFoodIntel = {
 };
 
 const FORMAT_PATTERNS: Array<[RegExp, string]> = [
-  [/six-course|multi-course|tasting|prix[\s-]?fixe|degustation|omakase|kaiseki/i, "tasting / set menu"],
+  [
+    /six-course|multi-course|tasting|prix[\s-]?fixe|degustation|omakase|kaiseki/i,
+    "tasting / set menu",
+  ],
   [/lounge menu/i, "dining room plus a separate lounge menu"],
   [/shared plates|shareable|small plates/i, "shared plates"],
   [/a\s*la\s*carte/i, "à la carte"],
@@ -45,13 +48,17 @@ export function buildFoodIntel(record: RestaurantRecord): FirstPartyFoodIntel {
   const blob = `${cuisine} ${menu} ${statedText(record.serviceSummary) ?? ""}`;
 
   const formats = FORMAT_PATTERNS.filter(([re]) => re.test(blob)).map(([, label]) => label);
-  const menuFormat = formats.length ? unique(formats).join("; ") : firstPoint(record.menuSummary, 120);
+  const menuFormat = formats.length
+    ? unique(formats).join("; ")
+    : firstPoint(record.menuSummary, 120);
 
   const signatureMentions = unique([
     ...extractSignatures(`${cuisine} ${menu}`),
     ...namedDishesFor(record.slug),
   ]).slice(0, 5);
-  const strongestCategories = (record.cuisineTags ?? []).filter((t) => t && !isUnstated(t)).slice(0, 5);
+  const strongestCategories = (record.cuisineTags ?? [])
+    .filter((t) => t && !isUnstated(t))
+    .slice(0, 5);
   const chefOrPov = extractChef(cuisine) ?? extractChef(menu);
   const sourcingClaims = extractSourcing(blob);
 

@@ -28,7 +28,9 @@ self.addEventListener("activate", (event) => {
         includeUncontrolled: true,
       });
       await Promise.all(
-        windows.map((client) => (typeof client.navigate === "function" ? client.navigate(client.url) : null)),
+        windows.map((client) =>
+          typeof client.navigate === "function" ? client.navigate(client.url) : null,
+        ),
       );
     })(),
   );

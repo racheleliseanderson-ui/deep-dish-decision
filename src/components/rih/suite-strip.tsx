@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import { APP_LABELS, APP_ORIGINS, type SaltyApp } from "@/lib/salty-handoff/contract.ts";
-import {
-  nightRecordUrl,
-  readNightRecord,
-  type SaltyNightRecord,
-} from "@/lib/salty-night-record";
+import { nightRecordUrl, readNightRecord, type SaltyNightRecord } from "@/lib/salty-night-record";
 
 const ORDER: SaltyApp[] = ["kitchen", "occasion", "restaurant"];
 

@@ -13,11 +13,11 @@ per-region files, and the ranked list still reads them. That is deliberate:
 
 Postgres is additive. It earns its place on the three things JSON cannot do:
 
-| | why it needs a database |
-|---|---|
-| **Search** | look across all 1,094 records in 167 regions without shipping them to the browser. Today search only sees the one loaded region. |
-| **Night plans** | a plan lives in one browser's localStorage. Lose the browser, lose the plan, and there is no way to send it to the people you are eating with. |
-| **Enrichment history** | `enrichment.json` is one large file that churns in git, cannot be queried, and keeps no record of what was attempted or why it failed. |
+|                        | why it needs a database                                                                                                                        |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Search**             | look across all 1,094 records in 167 regions without shipping them to the browser. Today search only sees the one loaded region.               |
+| **Night plans**        | a plan lives in one browser's localStorage. Lose the browser, lose the plan, and there is no way to send it to the people you are eating with. |
+| **Enrichment history** | `enrichment.json` is one large file that churns in git, cannot be queried, and keeps no record of what was attempted or why it failed.         |
 
 ## Applying it
 
@@ -61,13 +61,13 @@ prefix.
 
 ## Keys
 
-| variable | where | notes |
-|---|---|---|
-| _(none required)_ | client | defaults live in `src/lib/db-config.ts` |
-| `VITE_SUPABASE_URL` | client | optional override — must be a `*.supabase.co` host or it is refused outright |
-| `VITE_SUPABASE_ANON_KEY` | client | optional override |
-| `SUPABASE_URL` | server / pipeline | |
-| `SUPABASE_SERVICE_KEY` | server / pipeline | **bypasses RLS.** Never in a `VITE_` variable, never committed. |
+| variable                 | where             | notes                                                                        |
+| ------------------------ | ----------------- | ---------------------------------------------------------------------------- |
+| _(none required)_        | client            | defaults live in `src/lib/db-config.ts`                                      |
+| `VITE_SUPABASE_URL`      | client            | optional override — must be a `*.supabase.co` host or it is refused outright |
+| `VITE_SUPABASE_ANON_KEY` | client            | optional override                                                            |
+| `SUPABASE_URL`           | server / pipeline |                                                                              |
+| `SUPABASE_SERVICE_KEY`   | server / pipeline | **bypasses RLS.** Never in a `VITE_` variable, never committed.              |
 
 Vercel needs nothing set. That is the point of checking the defaults in: the
 Supabase integration injects `SUPABASE_URL` / `SUPABASE_ANON_KEY`, Vite only
@@ -84,12 +84,12 @@ The JSON is the source of truth. Postgres now holds **all 1,094 records across
 167 regions**, 1,003 of them with the corpus prose in `search_text`.
 
 Loaded with `node scripts/db/seed-corpus.mjs` from a machine that can reach
-Supabase. Note *node*, not npm: the seeder imports only node builtins and calls
+Supabase. Note _node_, not npm: the seeder imports only node builtins and calls
 global fetch, so a broken npm does not stop it — something that cost a couple
 of failed attempts to work out.
 
 A half-seeded database is more dangerous than an empty one. Search returns
-*something*, so a restaurant that simply has not been loaded yet reads as one
+_something_, so a restaurant that simply has not been loaded yet reads as one
 Deep Dish has never heard of. `corpus_coverage` (0006) exposes the real number
 and `coverageIsComplete()` refuses to call a partial index complete — including
 when the check itself fails, because unknown must never resolve to "complete".
@@ -122,7 +122,7 @@ overwrites prose that is already there.
 ### Search matched nothing
 
 `search_restaurants` first used `similarity()`, which scores the query against
-the *whole* document. A two-word query against a 200-character `search_text`
+the _whole_ document. A two-word query against a 200-character `search_text`
 scores about 0.055 — below pg_trgm's 0.3 threshold — so **every search returned
 nothing**. It uses `word_similarity` / `<%` now, which scores the best matching
 span. Verified against the real corpus: "pink door" → The Pink Door, "barbecue"
@@ -132,7 +132,7 @@ span. Verified against the real corpus: "pink door" → The Pink Door, "barbecue
 
 `0002` gave `night_plans` a `SELECT` policy of `expires_at > now()`. That reads
 like "a plan is readable by its link", and it is not. Row-level security filters
-*rows*; it never sees the *filter* the client sent. So the policy said: any
+_rows_; it never sees the _filter_ the client sent. So the policy said: any
 holder of the publishable key may read every unexpired plan.
 `GET /rest/v1/night_plans?select=*` returned all of them — every title, note and
 origin label anyone had saved. The 22-character unguessable id was decoration on
@@ -158,7 +158,7 @@ tags, summary prose. The 77 known-for dish names live in `live_rows.dishes` and
 were invisible to it, so **"gumbo" returned nothing** while the database held
 Dooky Chase's gumbo, and "lasagna" missed The Pink Door.
 
-For a product that means to answer *what should we order*, a search that knows
+For a product that means to answer _what should we order_, a search that knows
 the answer and says nothing is worse than one that never knew.
 
 0007 matches dishes alongside the text and returns `matched_dish` — set only

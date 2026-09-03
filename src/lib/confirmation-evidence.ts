@@ -32,7 +32,11 @@ function stableSituationKey(situation: Situation, details: NightDetails): string
   return encodeURIComponent(parts.join("~"));
 }
 
-export function confirmationStorageKey(slug: string, situation: Situation, details: NightDetails): string {
+export function confirmationStorageKey(
+  slug: string,
+  situation: Situation,
+  details: NightDetails,
+): string {
   return `deep-dish-confirm:v2:${slug}:${stableSituationKey(situation, details)}`;
 }
 
@@ -47,9 +51,13 @@ function normalizeEntry(value: unknown): ConfirmationEvidence | null {
   }
   if (!value || typeof value !== "object") return null;
   const raw = value as Partial<ConfirmationEvidence>;
-  if (raw.status !== "confirmed" && raw.status !== "cannot" && raw.status !== "unclear") return null;
+  if (raw.status !== "confirmed" && raw.status !== "cannot" && raw.status !== "unclear")
+    return null;
   const method =
-    raw.method === "website" || raw.method === "call" || raw.method === "email" || raw.method === "other"
+    raw.method === "website" ||
+    raw.method === "call" ||
+    raw.method === "email" ||
+    raw.method === "other"
       ? raw.method
       : null;
   return {

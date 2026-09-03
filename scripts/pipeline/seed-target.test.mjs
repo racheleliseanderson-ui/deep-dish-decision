@@ -1,9 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {
-  batchMatchesCityFilter,
-  findQueueTarget,
-  queueCityForBatch,
-} from "./seed-target.mjs";
+import { batchMatchesCityFilter, findQueueTarget, queueCityForBatch } from "./seed-target.mjs";
 
 const queue = {
   cities: [

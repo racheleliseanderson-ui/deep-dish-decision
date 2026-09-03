@@ -106,7 +106,11 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
           <Field label="Guest needs" hint="we hold the room rather than guess">
             <div className="flex flex-wrap gap-1.5">
               {CONSTRAINTS.map((c) => (
-                <Toggle key={c} active={s.constraints.includes(c)} onClick={() => toggleConstraint(c)}>
+                <Toggle
+                  key={c}
+                  active={s.constraints.includes(c)}
+                  onClick={() => toggleConstraint(c)}
+                >
                   {c}
                 </Toggle>
               ))}
@@ -285,7 +289,9 @@ export function SituationConsole({ situation: s, onChange, inViewCount, totalCou
           </div>
 
           <div className="shrink-0 sm:ml-auto sm:self-end sm:pb-0.5">
-            <Chip tone={inViewCount === 0 ? "watch" : inViewCount === totalCount ? "neutral" : "accent"}>
+            <Chip
+              tone={inViewCount === 0 ? "watch" : inViewCount === totalCount ? "neutral" : "accent"}
+            >
               <span className="text-num">{inViewCount}</span> of {totalCount}{" "}
               {s.regionGroup || s.region ? "in this region" : "waiting on a region"}
             </Chip>

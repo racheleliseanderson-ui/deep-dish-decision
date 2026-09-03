@@ -16,13 +16,7 @@ export function GiltRule({ className }: { className?: string }) {
 }
 
 /** Plate-glass display case. Content sits behind a gilt hairline and sheen. */
-export function Vitrine({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
+export function Vitrine({ children, className }: { children: ReactNode; className?: string }) {
   return <div className={cn("vitrine", className)}>{children}</div>;
 }
 

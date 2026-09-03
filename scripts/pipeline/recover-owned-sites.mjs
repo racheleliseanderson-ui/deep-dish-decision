@@ -11,14 +11,7 @@
  *   successfully yields owned-site evidence.
  */
 import path from "node:path";
-import {
-  PATHS,
-  appendRun,
-  completeness,
-  readJson,
-  snapshot,
-  writeJson,
-} from "./lib.mjs";
+import { PATHS, appendRun, completeness, readJson, snapshot, writeJson } from "./lib.mjs";
 import {
   closeSharedBrowser,
   fetchSitePages,
@@ -211,9 +204,13 @@ writeJson(resultPath, {
   resolved,
   failures,
   missing,
-  datasetSourceCorrections: results.filter((r) => (r.notes ?? []).some((n) => n.startsWith("source corrected"))).length,
+  datasetSourceCorrections: results.filter((r) =>
+    (r.notes ?? []).some((n) => n.startsWith("source corrected")),
+  ).length,
   records: results,
 });
 
 await closeSharedBrowser();
-console.log(`\nRecovery complete: ${resolved} resolved, ${failures} still failed, ${missing} missing.`);
+console.log(
+  `\nRecovery complete: ${resolved} resolved, ${failures} still failed, ${missing} missing.`,
+);

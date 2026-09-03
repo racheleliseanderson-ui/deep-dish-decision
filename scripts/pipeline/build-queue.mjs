@@ -11,32 +11,84 @@ import { STATES } from "./regions.mjs";
 
 /** Top US metros by 2023 population, in expansion order. */
 const METROS = [
-  ["New York", "NY", 19498249], ["Los Angeles", "CA", 12799100], ["Chicago", "IL", 9262825],
-  ["Dallas", "TX", 8100037], ["Houston", "TX", 7510253], ["Atlanta", "GA", 6307261],
-  ["Washington", "DC", 6304975], ["Philadelphia", "PA", 6246160], ["Miami", "FL", 6183199],
-  ["Phoenix", "AZ", 5070110], ["Boston", "MA", 4919179], ["Riverside", "CA", 4688053],
-  ["San Francisco", "CA", 4566961], ["Detroit", "MI", 4342304], ["Seattle", "WA", 4044837],
-  ["Minneapolis", "MN", 3712020], ["Tampa", "FL", 3342963], ["San Diego", "CA", 3269973],
-  ["Denver", "CO", 3005131], ["Baltimore", "MD", 2834316], ["Orlando", "FL", 2817933],
-  ["Charlotte", "NC", 2805115], ["San Antonio", "TX", 2703999], ["Portland", "OR", 2508050],
-  ["Austin", "TX", 2473275], ["Pittsburgh", "PA", 2422725], ["Sacramento", "CA", 2420608],
-  ["Las Vegas", "NV", 2336573], ["Cincinnati", "OH", 2271479], ["Kansas City", "MO", 2221343],
-  ["Columbus", "OH", 2180271], ["Indianapolis", "IN", 2138468], ["Cleveland", "OH", 2158932],
-  ["Nashville", "TN", 2102573], ["San Jose", "CA", 1945767], ["Virginia Beach", "VA", 1787169],
-  ["Jacksonville", "FL", 1713240], ["Providence", "RI", 1677803], ["Milwaukee", "WI", 1560424],
-  ["Raleigh", "NC", 1509231], ["Oklahoma City", "OK", 1477926], ["Louisville", "KY", 1365557],
-  ["Richmond", "VA", 1349732], ["Memphis", "TN", 1335674], ["Salt Lake City", "UT", 1267864],
-  ["New Orleans", "LA", 1261726], ["Buffalo", "NY", 1155604], ["Hartford", "CT", 1150826],
-  ["Birmingham", "AL", 1184290], ["Grand Rapids", "MI", 1162950], ["Rochester", "NY", 1052087],
-  ["Tucson", "AZ", 1063162], ["Fresno", "CA", 1180020], ["Tulsa", "OK", 1044757],
-  ["Omaha", "NE", 983969], ["Albuquerque", "NM", 922000], ["Bakersfield", "CA", 913820],
-  ["Knoxville", "TN", 946790], ["Albany", "NY", 906311], ["Boise", "ID", 824657],
-  ["Columbia", "SC", 858302], ["Little Rock", "AR", 754876], ["Des Moines", "IA", 754354],
-  ["Spokane", "WA", 600292], ["Madison", "WI", 693746], ["Wichita", "KS", 650000],
-  ["Jackson", "MS", 591978], ["Portland", "ME", 556893], ["Charleston", "WV", 253000],
-  ["Manchester", "NH", 422937], ["Wilmington", "DE", 730000], ["Burlington", "VT", 226000],
-  ["Sioux Falls", "SD", 300000], ["Fargo", "ND", 260000], ["Billings", "MT", 195000],
-  ["Cheyenne", "WY", 100512], ["Anchorage", "AK", 396317], ["Honolulu", "HI", 1016508],
+  ["New York", "NY", 19498249],
+  ["Los Angeles", "CA", 12799100],
+  ["Chicago", "IL", 9262825],
+  ["Dallas", "TX", 8100037],
+  ["Houston", "TX", 7510253],
+  ["Atlanta", "GA", 6307261],
+  ["Washington", "DC", 6304975],
+  ["Philadelphia", "PA", 6246160],
+  ["Miami", "FL", 6183199],
+  ["Phoenix", "AZ", 5070110],
+  ["Boston", "MA", 4919179],
+  ["Riverside", "CA", 4688053],
+  ["San Francisco", "CA", 4566961],
+  ["Detroit", "MI", 4342304],
+  ["Seattle", "WA", 4044837],
+  ["Minneapolis", "MN", 3712020],
+  ["Tampa", "FL", 3342963],
+  ["San Diego", "CA", 3269973],
+  ["Denver", "CO", 3005131],
+  ["Baltimore", "MD", 2834316],
+  ["Orlando", "FL", 2817933],
+  ["Charlotte", "NC", 2805115],
+  ["San Antonio", "TX", 2703999],
+  ["Portland", "OR", 2508050],
+  ["Austin", "TX", 2473275],
+  ["Pittsburgh", "PA", 2422725],
+  ["Sacramento", "CA", 2420608],
+  ["Las Vegas", "NV", 2336573],
+  ["Cincinnati", "OH", 2271479],
+  ["Kansas City", "MO", 2221343],
+  ["Columbus", "OH", 2180271],
+  ["Indianapolis", "IN", 2138468],
+  ["Cleveland", "OH", 2158932],
+  ["Nashville", "TN", 2102573],
+  ["San Jose", "CA", 1945767],
+  ["Virginia Beach", "VA", 1787169],
+  ["Jacksonville", "FL", 1713240],
+  ["Providence", "RI", 1677803],
+  ["Milwaukee", "WI", 1560424],
+  ["Raleigh", "NC", 1509231],
+  ["Oklahoma City", "OK", 1477926],
+  ["Louisville", "KY", 1365557],
+  ["Richmond", "VA", 1349732],
+  ["Memphis", "TN", 1335674],
+  ["Salt Lake City", "UT", 1267864],
+  ["New Orleans", "LA", 1261726],
+  ["Buffalo", "NY", 1155604],
+  ["Hartford", "CT", 1150826],
+  ["Birmingham", "AL", 1184290],
+  ["Grand Rapids", "MI", 1162950],
+  ["Rochester", "NY", 1052087],
+  ["Tucson", "AZ", 1063162],
+  ["Fresno", "CA", 1180020],
+  ["Tulsa", "OK", 1044757],
+  ["Omaha", "NE", 983969],
+  ["Albuquerque", "NM", 922000],
+  ["Bakersfield", "CA", 913820],
+  ["Knoxville", "TN", 946790],
+  ["Albany", "NY", 906311],
+  ["Boise", "ID", 824657],
+  ["Columbia", "SC", 858302],
+  ["Little Rock", "AR", 754876],
+  ["Des Moines", "IA", 754354],
+  ["Spokane", "WA", 600292],
+  ["Madison", "WI", 693746],
+  ["Wichita", "KS", 650000],
+  ["Jackson", "MS", 591978],
+  ["Portland", "ME", 556893],
+  ["Charleston", "WV", 253000],
+  ["Manchester", "NH", 422937],
+  ["Wilmington", "DE", 730000],
+  ["Burlington", "VT", 226000],
+  ["Sioux Falls", "SD", 300000],
+  ["Fargo", "ND", 260000],
+  ["Billings", "MT", 195000],
+  ["Cheyenne", "WY", 100512],
+  ["Anchorage", "AK", 396317],
+  ["Honolulu", "HI", 1016508],
 ];
 
 const STATEWIDE_FILL = [
@@ -100,10 +152,21 @@ function countMarket(city, stateCode) {
   const cityKey = city.toLowerCase();
   const stateName = properStateName(stateCode).toLowerCase();
   return (dataset.records ?? []).filter((record) => {
-    if (String(record.city ?? "").trim().toLowerCase() !== cityKey) return false;
-    const state = String(record.stateProvince ?? "").trim().toLowerCase();
-    const region = String(record.region ?? "").trim().toUpperCase();
-    return state === stateCode.toLowerCase() || state === stateName || region.endsWith(`, ${stateCode}`);
+    if (
+      String(record.city ?? "")
+        .trim()
+        .toLowerCase() !== cityKey
+    )
+      return false;
+    const state = String(record.stateProvince ?? "")
+      .trim()
+      .toLowerCase();
+    const region = String(record.region ?? "")
+      .trim()
+      .toUpperCase();
+    return (
+      state === stateCode.toLowerCase() || state === stateName || region.endsWith(`, ${stateCode}`)
+    );
   }).length;
 }
 

@@ -12,8 +12,12 @@ import { enrichmentGroupReady, loadEnrichmentGroup } from "@/lib/enrichment";
  * flash empty.
  */
 export function useEnrichmentGroups(groups: string[]): boolean {
-  const key = Array.from(new Set(groups.filter(Boolean))).sort().join("|");
-  const [ready, setReady] = useState(() => key.split("|").filter(Boolean).every(enrichmentGroupReady));
+  const key = Array.from(new Set(groups.filter(Boolean)))
+    .sort()
+    .join("|");
+  const [ready, setReady] = useState(() =>
+    key.split("|").filter(Boolean).every(enrichmentGroupReady),
+  );
 
   useEffect(() => {
     const wanted = key.split("|").filter(Boolean);

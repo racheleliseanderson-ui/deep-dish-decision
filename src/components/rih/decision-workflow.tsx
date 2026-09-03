@@ -20,7 +20,10 @@ import type { DecisionStatus } from "@/lib/salty-handoff/contract";
 import { cn } from "@/lib/utils";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-const STATE_COPY: Record<DecisionState, { label: string; tone: "verified" | "watch" | "critical" }> = {
+const STATE_COPY: Record<
+  DecisionState,
+  { label: string; tone: "verified" | "watch" | "critical" }
+> = {
   good: { label: "GOOD FIT", tone: "verified" },
   verify: { label: "VERIFY FIRST", tone: "watch" },
   hold: { label: "HOLD", tone: "critical" },
@@ -158,7 +161,11 @@ function SourceLinks({ sc }: { sc: Scored }) {
   );
 
   if (!unique.length) {
-    return <p className="text-sm text-muted-foreground">No official link is saved for this restaurant. Use the phone path if one is available.</p>;
+    return (
+      <p className="text-sm text-muted-foreground">
+        No official link is saved for this restaurant. Use the phone path if one is available.
+      </p>
+    );
   }
 
   return (
@@ -215,8 +222,20 @@ function ConfirmationCard({
       <div className="flex flex-wrap items-start justify-between gap-2">
         <p className="font-medium text-foreground">{finding.title}</p>
         {evidence?.status ? (
-          <Chip tone={evidence.status === "confirmed" ? "verified" : evidence.status === "cannot" ? "critical" : "watch"}>
-            {evidence.status === "confirmed" ? "Confirmed" : evidence.status === "cannot" ? "Cannot accommodate" : "Still unclear"}
+          <Chip
+            tone={
+              evidence.status === "confirmed"
+                ? "verified"
+                : evidence.status === "cannot"
+                  ? "critical"
+                  : "watch"
+            }
+          >
+            {evidence.status === "confirmed"
+              ? "Confirmed"
+              : evidence.status === "cannot"
+                ? "Cannot accommodate"
+                : "Still unclear"}
           </Chip>
         ) : null}
       </div>
@@ -224,25 +243,70 @@ function ConfirmationCard({
         <span className="text-foreground">What we know:</span> {finding.detail}
       </p>
       <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
-        <span className="text-foreground">Ask this:</span> “{callScript(finding, sc, situation, details)}”
+        <span className="text-foreground">Ask this:</span> “
+        {callScript(finding, sc, situation, details)}”
       </p>
       <div className="mt-3 flex flex-wrap gap-2">
         {source ? (
-          <a href={source} target="_blank" rel="noreferrer" className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground">
+          <a
+            href={source}
+            target="_blank"
+            rel="noreferrer"
+            className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground"
+          >
             Check official source
           </a>
         ) : null}
         {sc.record.hasPhone ? (
-          <a href={`tel:${sc.record.phone.replace(/[^\d+]/g, "")}`} className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground">
+          <a
+            href={`tel:${sc.record.phone.replace(/[^\d+]/g, "")}`}
+            className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground"
+          >
             Call {sc.record.phone}
           </a>
         ) : null}
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-2" aria-label={`Confirmation status for ${finding.title}`}>
-        <button type="button" onClick={() => onStatus("confirmed")} className={cn("tap rounded-full border px-3 py-2 text-xs", evidence?.status === "confirmed" ? "border-verified bg-verified/10 text-verified" : "border-border text-muted-foreground")}>✓ Confirmed</button>
-        <button type="button" onClick={() => onStatus("cannot")} className={cn("tap rounded-full border px-3 py-2 text-xs", evidence?.status === "cannot" ? "border-critical bg-critical/10 text-critical" : "border-border text-muted-foreground")}>✕ Cannot accommodate</button>
-        <button type="button" onClick={() => onStatus("unclear")} className={cn("tap rounded-full border px-3 py-2 text-xs", evidence?.status === "unclear" ? "border-watch bg-watch/10 text-watch" : "border-border text-muted-foreground")}>? Still unclear</button>
+      <div
+        className="mt-4 flex flex-wrap gap-2"
+        aria-label={`Confirmation status for ${finding.title}`}
+      >
+        <button
+          type="button"
+          onClick={() => onStatus("confirmed")}
+          className={cn(
+            "tap rounded-full border px-3 py-2 text-xs",
+            evidence?.status === "confirmed"
+              ? "border-verified bg-verified/10 text-verified"
+              : "border-border text-muted-foreground",
+          )}
+        >
+          ✓ Confirmed
+        </button>
+        <button
+          type="button"
+          onClick={() => onStatus("cannot")}
+          className={cn(
+            "tap rounded-full border px-3 py-2 text-xs",
+            evidence?.status === "cannot"
+              ? "border-critical bg-critical/10 text-critical"
+              : "border-border text-muted-foreground",
+          )}
+        >
+          ✕ Cannot accommodate
+        </button>
+        <button
+          type="button"
+          onClick={() => onStatus("unclear")}
+          className={cn(
+            "tap rounded-full border px-3 py-2 text-xs",
+            evidence?.status === "unclear"
+              ? "border-watch bg-watch/10 text-watch"
+              : "border-border text-muted-foreground",
+          )}
+        >
+          ? Still unclear
+        </button>
       </div>
 
       {evidence ? (
@@ -266,7 +330,9 @@ function ConfirmationCard({
             ))}
           </div>
           <label className="mt-3 block">
-            <span className="text-[11px] uppercase tracking-[0.12em] text-subtle">Optional note</span>
+            <span className="text-[11px] uppercase tracking-[0.12em] text-subtle">
+              Optional note
+            </span>
             <input
               type="text"
               maxLength={180}
@@ -286,26 +352,46 @@ function ConfirmationCard({
 function BookingAction({ sc, state }: { sc: Scored; state: DecisionState }) {
   const r = sc.record;
   if (state === "hold") {
-    return <p className="text-sm leading-relaxed text-critical">This restaurant is on hold. Do not book it against the night as currently defined.</p>;
+    return (
+      <p className="text-sm leading-relaxed text-critical">
+        This restaurant is on hold. Do not book it against the night as currently defined.
+      </p>
+    );
   }
   if (state === "verify") {
-    return <p className="text-sm leading-relaxed text-muted-foreground">One or more important answers are still open. Finish those before booking.</p>;
+    return (
+      <p className="text-sm leading-relaxed text-muted-foreground">
+        One or more important answers are still open. Finish those before booking.
+      </p>
+    );
   }
   if (r.reservationUrl || r.website) {
     return (
-      <a href={r.reservationUrl || r.website} target="_blank" rel="noreferrer" className="tap inline-flex min-h-11 items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90">
+      <a
+        href={r.reservationUrl || r.website}
+        target="_blank"
+        rel="noreferrer"
+        className="tap inline-flex min-h-11 items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+      >
         Book through the restaurant
       </a>
     );
   }
   if (r.hasPhone) {
     return (
-      <a href={`tel:${r.phone.replace(/[^\d+]/g, "")}`} className="tap inline-flex min-h-11 items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground">
+      <a
+        href={`tel:${r.phone.replace(/[^\d+]/g, "")}`}
+        className="tap inline-flex min-h-11 items-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground"
+      >
         Call to book · {r.phone}
       </a>
     );
   }
-  return <p className="text-sm text-muted-foreground">No live booking path is saved. Keep this decision open rather than guessing.</p>;
+  return (
+    <p className="text-sm text-muted-foreground">
+      No live booking path is saved. Keep this decision open rather than guessing.
+    </p>
+  );
 }
 
 export function DecisionWorkflow({
@@ -430,7 +516,10 @@ export function DecisionWorkflow({
   const fitContent = (
     <ul className="space-y-2 text-sm leading-relaxed text-muted-foreground">
       {sc.reasons.slice(0, 4).map((reason) => (
-        <li key={reason} className="flex gap-2"><span className="text-primary">✓</span><span>{reason}</span></li>
+        <li key={reason} className="flex gap-2">
+          <span className="text-primary">✓</span>
+          <span>{reason}</span>
+        </li>
       ))}
       {sc.distanceRead ? (
         <li className="flex gap-2">
@@ -444,8 +533,18 @@ export function DecisionWorkflow({
           </span>
         </li>
       ) : null}
-      {spend ? <li className="flex gap-2"><span className="text-primary">✓</span><span>{spend.text} · {spend.source}</span></li> : null}
-      <li className="flex gap-2"><span className={open.tone === "critical" ? "text-critical" : "text-primary"}>✓</span><span>{open.text}</span></li>
+      {spend ? (
+        <li className="flex gap-2">
+          <span className="text-primary">✓</span>
+          <span>
+            {spend.text} · {spend.source}
+          </span>
+        </li>
+      ) : null}
+      <li className="flex gap-2">
+        <span className={open.tone === "critical" ? "text-critical" : "text-primary"}>✓</span>
+        <span>{open.text}</span>
+      </li>
     </ul>
   );
 
@@ -455,10 +554,15 @@ export function DecisionWorkflow({
         const item = evidence[finding.id];
         const checked = checkedLabel(item?.checkedAt ?? null);
         return (
-          <div key={finding.id} className="rounded-xl border border-verified/25 bg-verified/5 p-3 text-[13px] leading-relaxed text-muted-foreground">
+          <div
+            key={finding.id}
+            className="rounded-xl border border-verified/25 bg-verified/5 p-3 text-[13px] leading-relaxed text-muted-foreground"
+          >
             <p className="font-medium text-foreground">✓ {finding.title}</p>
             <p className="mt-1">
-              Confirmed{item?.method ? ` by ${item.method}` : ""}{checked ? ` · ${checked}` : ""}{item?.note ? ` · ${item.note}` : ""}
+              Confirmed{item?.method ? ` by ${item.method}` : ""}
+              {checked ? ` · ${checked}` : ""}
+              {item?.note ? ` · ${item.note}` : ""}
             </p>
           </div>
         );
@@ -501,10 +605,16 @@ export function DecisionWorkflow({
                 <Eyebrow>Restaurant decision</Eyebrow>
                 <Chip tone={stateCopy.tone}>{stateCopy.label}</Chip>
               </div>
-              <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">{r.title}</h2>
+              <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+                {r.title}
+              </h2>
               <p className="mt-1 text-sm text-muted-foreground">{r.region}</p>
             </div>
-            <button type="button" onClick={onClose} className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground">
+            <button
+              type="button"
+              onClick={onClose}
+              className="tap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:text-foreground"
+            >
               Close
             </button>
           </div>
@@ -515,26 +625,43 @@ export function DecisionWorkflow({
             <>
               <section className="rounded-2xl border border-critical/35 bg-critical/8 p-5 sm:p-6">
                 <p className="text-eyebrow text-critical">Hold this one</p>
-                <h3 className="mt-2 font-display text-2xl leading-tight">Something important does not clear the night yet.</h3>
+                <h3 className="mt-2 font-display text-2xl leading-tight">
+                  Something important does not clear the night yet.
+                </h3>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                  A hard requirement is either unsupported or has been confirmed as unavailable. Resolve it only if the restaurant gives you a different live answer; otherwise move on.
+                  A hard requirement is either unsupported or has been confirmed as unavailable.
+                  Resolve it only if the restaurant gives you a different live answer; otherwise
+                  move on.
                 </p>
                 {onNextBest ? (
-                  <button type="button" onClick={onNextBest} className="tap mt-4 rounded-full bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground">
+                  <button
+                    type="button"
+                    onClick={onNextBest}
+                    className="tap mt-4 rounded-full bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground"
+                  >
                     Show me the next best option
                   </button>
                 ) : null}
               </section>
 
               <Step number="01" title="What is blocking it">
-                {confirmationCards([
-                  ...summary.cannot,
-                  ...summary.unanswered.filter((finding) => finding.layer === "critical"),
-                  ...summary.unclear.filter((finding) => finding.layer === "critical"),
-                ].filter((finding, index, all) => all.findIndex((item) => item.id === finding.id) === index))}
+                {confirmationCards(
+                  [
+                    ...summary.cannot,
+                    ...summary.unanswered.filter((finding) => finding.layer === "critical"),
+                    ...summary.unclear.filter((finding) => finding.layer === "critical"),
+                  ].filter(
+                    (finding, index, all) =>
+                      all.findIndex((item) => item.id === finding.id) === index,
+                  ),
+                )}
               </Step>
 
-              {confirmedRecap ? <Step number="02" title="Already confirmed">{confirmedRecap}</Step> : null}
+              {confirmedRecap ? (
+                <Step number="02" title="Already confirmed">
+                  {confirmedRecap}
+                </Step>
+              ) : null}
 
               <Step number="03" title="Keep the decision with the night">
                 <SendToNightPlan
@@ -547,42 +674,60 @@ export function DecisionWorkflow({
             </>
           ) : effectiveState === "good" ? (
             <>
-              <Step number="01" title="Why it works">{fitContent}</Step>
+              <Step number="01" title="Why it works">
+                {fitContent}
+              </Step>
               <Step number="02" title="Quick live check">
                 <div className="space-y-4">
                   {confirmedRecap}
                   <SourceLinks sc={sc} />
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Check current hours and reservation inventory before committing. Deep Dish is not treating a stale opening or old menu as a live guarantee.
+                    Check current hours and reservation inventory before committing. Deep Dish is
+                    not treating a stale opening or old menu as a live guarantee.
                   </p>
                 </div>
               </Step>
-              <Step number="03" title="Book"><BookingAction sc={sc} state={effectiveState} /></Step>
+              <Step number="03" title="Book">
+                <BookingAction sc={sc} state={effectiveState} />
+              </Step>
               <Step number="04" title="Keep the decision with the night">
                 <SendToNightPlan room={r.title} status={returnStatus} unresolved={[]} />
               </Step>
             </>
           ) : (
             <>
-              <Step number="01" title="Why it works">{fitContent}</Step>
+              <Step number="01" title="Why it works">
+                {fitContent}
+              </Step>
               <Step number="02" title="What still needs an answer">
                 <div className="space-y-4">
                   {confirmedRecap}
                   {summary.unresolved.length ? (
                     <div className="space-y-3">
                       {summary.unresolved.map((finding) => (
-                        <div key={finding.id} className="rounded-xl border border-border bg-surface-sunken/40 p-4">
+                        <div
+                          key={finding.id}
+                          className="rounded-xl border border-border bg-surface-sunken/40 p-4"
+                        >
                           <p className="font-medium text-foreground">{finding.title}</p>
-                          <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">{finding.detail}</p>
+                          <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
+                            {finding.detail}
+                          </p>
                         </div>
                       ))}
                     </div>
                   ) : null}
                 </div>
               </Step>
-              <Step number="03" title="Check the restaurant"><SourceLinks sc={sc} /></Step>
-              <Step number="04" title="Confirm it">{confirmationCards(summary.unresolved)}</Step>
-              <Step number="05" title="Book"><BookingAction sc={sc} state={effectiveState} /></Step>
+              <Step number="03" title="Check the restaurant">
+                <SourceLinks sc={sc} />
+              </Step>
+              <Step number="04" title="Confirm it">
+                {confirmationCards(summary.unresolved)}
+              </Step>
+              <Step number="05" title="Book">
+                <BookingAction sc={sc} state={effectiveState} />
+              </Step>
               <Step number="06" title="Keep the decision with the night">
                 <SendToNightPlan
                   room={r.title}

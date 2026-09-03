@@ -76,7 +76,10 @@ if (!existsSync(slugIndexFile)) {
 if (!existsSync(atlasFile)) {
   console.warn("atlas aggregates missing — rebuilding them");
   try {
-    execFileSync("npx", ["vite-node", join(root, "scripts/build-atlas.ts")], { stdio: "inherit", cwd: root });
+    execFileSync("npx", ["vite-node", join(root, "scripts/build-atlas.ts")], {
+      stdio: "inherit",
+      cwd: root,
+    });
   } catch {
     console.error("could not rebuild src/data/atlas.json. /atlas would render nothing.");
     process.exit(1);

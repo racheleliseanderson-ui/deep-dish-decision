@@ -121,7 +121,10 @@ describe("when a database is configured", () => {
   }
 
   const json = (body: unknown) =>
-    new Response(JSON.stringify(body), { status: 200, headers: { "Content-Type": "application/json" } });
+    new Response(JSON.stringify(body), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
 
   afterEach(() => {
     vi.unstubAllEnvs();
@@ -129,7 +132,9 @@ describe("when a database is configured", () => {
   });
 
   it("reads a plan through the capability function, never the table", async () => {
-    const { mod, calls } = await withDb(() => json([{ id: "aaaaaaaaaaaaaaaaaaaaaa", slugs: ["canlis"] }]));
+    const { mod, calls } = await withDb(() =>
+      json([{ id: "aaaaaaaaaaaaaaaaaaaaaa", slugs: ["canlis"] }]),
+    );
     const plan = await mod.loadPlan("aaaaaaaaaaaaaaaaaaaaaa");
     expect(plan?.slugs).toEqual(["canlis"]);
 
@@ -143,7 +148,10 @@ describe("when a database is configured", () => {
 
   it("saves without asking for the row back, and returns the id it minted", async () => {
     const { mod, calls } = await withDb(() => new Response(null, { status: 201 }));
-    const id = await mod.savePlan({ slugs: ["canlis", "revel"], situation: { occasion: "Date night" } });
+    const id = await mod.savePlan({
+      slugs: ["canlis", "revel"],
+      situation: { occasion: "Date night" },
+    });
     expect(id).toMatch(/^[0-9A-Za-z]{22}$/);
 
     const call = calls.at(-1)!;
@@ -219,10 +227,13 @@ describe("coverage is reported, not assumed", () => {
   it("does not call a partial index complete", async () => {
     const mod = await withDb(
       () =>
-        new Response(JSON.stringify([{ seeded: 258, regions: 57, with_prose: 17, last_seeded_at: null }]), {
-          status: 200,
-          headers: { "Content-Type": "application/json" },
-        }),
+        new Response(
+          JSON.stringify([{ seeded: 258, regions: 57, with_prose: 17, last_seeded_at: null }]),
+          {
+            status: 200,
+            headers: { "Content-Type": "application/json" },
+          },
+        ),
     );
     const c = await mod.corpusCoverage();
     expect(c?.seeded).toBe(258);

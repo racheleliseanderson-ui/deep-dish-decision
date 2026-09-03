@@ -59,7 +59,8 @@ const EXACT_PATTERNS = [
   /\bhush puppies\b/gi,
 ];
 
-const SKIP = /goldbelly|nationwide|located in|all our locations|storytelling|dining experience|tasting menu|five-course|six-course|wine program|private dining|hospitalit|globally inspired|crafted cocktails|sunday brunch|made-from-scratch fare|cuisine rooted|seasonal menu|sourced from|farms|foragers|winemakers|preservation|not stated/i;
+const SKIP =
+  /goldbelly|nationwide|located in|all our locations|storytelling|dining experience|tasting menu|five-course|six-course|wine program|private dining|hospitalit|globally inspired|crafted cocktails|sunday brunch|made-from-scratch fare|cuisine rooted|seasonal menu|sourced from|farms|foragers|winemakers|preservation|not stated/i;
 
 function clean(value) {
   return String(value ?? "")

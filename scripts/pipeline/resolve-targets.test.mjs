@@ -28,7 +28,9 @@ test("an apostrophe or accent does not change the domain guess", () => {
 });
 
 test("the page must name the restaurant", () => {
-  assert.ok(pageNamesTarget("Welcome to Maxwells Trading, an all-day room.", null, "Maxwells Trading"));
+  assert.ok(
+    pageNamesTarget("Welcome to Maxwells Trading, an all-day room.", null, "Maxwells Trading"),
+  );
   assert.ok(pageNamesTarget("nothing useful here", "Alpino", "Alpino"));
   assert.equal(pageNamesTarget("Bayview Diner serves breakfast", null, "Nepantla"), false);
 });
@@ -55,7 +57,11 @@ test("JSON-LD address is taken only when the city matches the target", () => {
 
 test("text address extraction is anchored on the target city and state", () => {
   assert.equal(
-    addressFromText("Visit us at 2800 Magazine Street, New Orleans, LA 70115.", "New Orleans", "LA"),
+    addressFromText(
+      "Visit us at 2800 Magazine Street, New Orleans, LA 70115.",
+      "New Orleans",
+      "LA",
+    ),
     "2800 Magazine Street, New Orleans, LA 70115",
   );
   assert.equal(addressFromText("400 Main St, Oakland, CA 94607", "New Orleans", "LA"), null);

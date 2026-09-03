@@ -15,12 +15,7 @@
  *
  * Does not call any external API.
  */
-import {
-  PATHS,
-  completeness,
-  readJson,
-  writeJson,
-} from "./lib.mjs";
+import { PATHS, completeness, readJson, writeJson } from "./lib.mjs";
 import path from "node:path";
 
 const args = Object.fromEntries(
@@ -96,13 +91,7 @@ export function siteFailureMap(runLog) {
  * Score one record for refresh priority. Higher = sooner.
  * Hygiene candidates always outrank pure calendar staleness.
  */
-export function scoreRefreshItem({
-  record,
-  entry,
-  score,
-  siteFails,
-  now = Date.now(),
-}) {
+export function scoreRefreshItem({ record, entry, score, siteFails, now = Date.now() }) {
   const reasons = [];
   let priority = 0;
   const meta = entry?.meta ?? {};
@@ -141,7 +130,7 @@ export function scoreRefreshItem({
 
   // 4. First-party review window
   const rs = record.reviewStatus ?? "";
-  if (rs === "overdue" || record.reviewDueSoon === true && rs === "overdue") {
+  if (rs === "overdue" || (record.reviewDueSoon === true && rs === "overdue")) {
     priority += 320;
     reasons.push("review-overdue");
   } else if (rs === "due_soon" || record.reviewDueSoon === true) {
@@ -176,10 +165,11 @@ export function scoreRefreshItem({
   }
 
   // Hygiene flag: anything that should run before geographic expansion
-  const hygiene =
-    reasons.some((r) =>
-      /^(never-enriched|match-|source-limited|site-failure|thin-|review-overdue|review-due-soon)/.test(r),
-    );
+  const hygiene = reasons.some((r) =>
+    /^(never-enriched|match-|source-limited|site-failure|thin-|review-overdue|review-due-soon)/.test(
+      r,
+    ),
+  );
 
   return {
     slug: record.slug,
@@ -201,12 +191,7 @@ export function scoreRefreshItem({
   };
 }
 
-export function buildRefreshQueue({
-  dataset,
-  store,
-  runLog,
-  now = Date.now(),
-} = {}) {
+export function buildRefreshQueue({ dataset, store, runLog, now = Date.now() } = {}) {
   const ds = dataset ?? readJson(PATHS.dataset, { records: [] });
   const enrichment = store ?? readJson(PATHS.enrichment, { records: {} });
   const log = runLog ?? readJson(PATHS.runLog, { runs: [] });
@@ -229,13 +214,13 @@ export function buildRefreshQueue({
 
   items.sort(
     (a, b) =>
-      b.priority - a.priority ||
-      a.completeness - b.completeness ||
-      a.slug.localeCompare(b.slug),
+      b.priority - a.priority || a.completeness - b.completeness || a.slug.localeCompare(b.slug),
   );
 
   const hygiene = items.filter((i) => i.hygiene);
-  const staleA = items.filter((i) => i.staleTier === "A" || (i.ageDays != null && i.ageDays >= TIERS.A.days));
+  const staleA = items.filter(
+    (i) => i.staleTier === "A" || (i.ageDays != null && i.ageDays >= TIERS.A.days),
+  );
   const staleB = items.filter((i) => i.ageDays != null && i.ageDays >= TIERS.B.days);
   const staleC = items.filter((i) => i.ageDays != null && i.ageDays >= TIERS.C.days);
   const neverEnriched = items.filter((i) => i.reasons.includes("never-enriched"));
@@ -304,10 +289,12 @@ if (isMain) {
       `hygiene batch size    ${queue.settings.hygieneBatchSize}`,
       ``,
       `top ${printN}:`,
-      ...queue.items.slice(0, printN).map(
-        (i, n) =>
-          `  ${String(n + 1).padStart(2)}. ${i.slug.padStart(0).padEnd(36)} p=${i.priority} c=${i.completeness}%  ${i.reasons.join(", ")}`,
-      ),
+      ...queue.items
+        .slice(0, printN)
+        .map(
+          (i, n) =>
+            `  ${String(n + 1).padStart(2)}. ${i.slug.padStart(0).padEnd(36)} p=${i.priority} c=${i.completeness}%  ${i.reasons.join(", ")}`,
+        ),
     ].join("\n"),
   );
 }

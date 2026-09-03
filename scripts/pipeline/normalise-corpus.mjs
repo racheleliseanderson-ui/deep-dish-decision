@@ -53,7 +53,9 @@ function cleanAddress(value, title) {
 
   // "Lola 55" → "55 1290 F Street". Drop the leading token only when it repeats
   // a number the title ends with and a street number follows it.
-  const titleTail = String(title ?? "").trim().match(/(\d+)$/);
+  const titleTail = String(title ?? "")
+    .trim()
+    .match(/(\d+)$/);
   if (titleTail) {
     const bled = text.replace(new RegExp(`^${titleTail[1]}\\s+(?=\\d)`), "");
     if (bled !== text && startsWithStreetNumber(bled)) text = bled;
@@ -93,7 +95,9 @@ for (const record of dataset.records) {
   /* 2 ── address hygiene -------------------------------------------------- */
   const address = cleanAddress(record.address, record.title);
   if (address !== record.address) {
-    changed.address.push(`${record.slug}: ${JSON.stringify(record.address)} → ${JSON.stringify(address)}`);
+    changed.address.push(
+      `${record.slug}: ${JSON.stringify(record.address)} → ${JSON.stringify(address)}`,
+    );
     record.address = address;
   }
 
@@ -132,7 +136,12 @@ dataset.ops = {
   ).length,
   avgUnknowns: Math.round((unknowns / dataset.records.length) * 100) / 100,
   avgThinFields: Math.round((thin / dataset.records.length) * 100) / 100,
-  lastReviewAt: dataset.records.map((r) => r.reviewedAt).filter(Boolean).sort().at(-1) ?? "",
+  lastReviewAt:
+    dataset.records
+      .map((r) => r.reviewedAt)
+      .filter(Boolean)
+      .sort()
+      .at(-1) ?? "",
   reachableAtLastReview: dataset.records.filter((r) => r.hasPhone).length,
 };
 dataset.generatedAt = new Date().toISOString();

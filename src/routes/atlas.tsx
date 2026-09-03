@@ -241,8 +241,8 @@ function Atlas() {
                 </h2>
               </div>
               <p className="max-w-md text-[12px] leading-relaxed text-subtle">
-                Read this before any coverage chart. A field missing here means the restaurant
-                has not published it. These are the lines a call has to close.
+                Read this before any coverage chart. A field missing here means the restaurant has
+                not published it. These are the lines a call has to close.
               </p>
             </div>
             <ul className="mt-7 grid gap-x-10 gap-y-4 sm:grid-cols-2">
@@ -307,8 +307,8 @@ function Atlas() {
             and <span className="text-num">{REGION_SHAPE.single}</span> hold exactly one. That is
             not a gap waiting to be papered over. A room enters this corpus when its own pages say
             enough to enter it, never to put a pin on a map, so a region stays one file deep until
-            the second restaurant has actually been read. Where the shelf is too short for the
-            night you are planning, Deep Dish says so and says which filter is doing it rather than
+            the second restaurant has actually been read. Where the shelf is too short for the night
+            you are planning, Deep Dish says so and says which filter is doing it rather than
             returning a shorter list and letting you assume you asked wrong.
           </p>
           <div className="mt-8 grid gap-10 lg:grid-cols-2">
@@ -442,9 +442,9 @@ function Atlas() {
           </div>
 
           <p className="mt-8 max-w-3xl text-[13px] leading-relaxed text-muted-foreground">
-            {unreachableCount} record{unreachableCount === 1 ? " has" : "s have"} no published
-            phone line, which means the confirmation pass has to run through the booking platform or
-            an email thread. Corpus generated {corpus.generatedAt}; source sync {corpus.sourceSync}.
+            {unreachableCount} record{unreachableCount === 1 ? " has" : "s have"} no published phone
+            line, which means the confirmation pass has to run through the booking platform or an
+            email thread. Corpus generated {corpus.generatedAt}; source sync {corpus.sourceSync}.
           </p>
         </Reveal>
       </div>

@@ -91,7 +91,8 @@ function PatternList({ title, items }: { title: string; items: string[] }) {
 
 function strengthTone(rep: PublicReputationEvidence): "unknown" | "watch" | "verified" {
   if (rep.evidenceStrength === "none") return "unknown";
-  if (rep.evidenceStrength === "listing_sample_only" || rep.evidenceStrength === "thin") return "watch";
+  if (rep.evidenceStrength === "listing_sample_only" || rep.evidenceStrength === "thin")
+    return "watch";
   return "verified";
 }
 

@@ -85,7 +85,9 @@ for (const img of manifest.images) {
 
 manifest.derivativesAt = new Date().toISOString();
 writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
-console.log(`${made} derivatives written to public/visuals/r (originals stay in assets-src/, undeployed)`);
+console.log(
+  `${made} derivatives written to public/visuals/r (originals stay in assets-src/, undeployed)`,
+);
 console.log(`largest-derivative saving vs originals: ${(savedBytes / 1024 / 1024).toFixed(2)} MB`);
 
 /* ── full-bleed art ────────────────────────────────────────────────────────
@@ -112,23 +114,32 @@ for (const art of FULL_BLEED) {
     continue;
   }
   const stem = basename(src, extname(src));
-  const [w] = execFileSync("identify", ["-format", "%w %h", `${src}[0]`]).toString().trim().split(" ");
+  const [w] = execFileSync("identify", ["-format", "%w %h", `${src}[0]`])
+    .toString()
+    .trim()
+    .split(" ");
   const originalBytes = statSync(src).size;
   let made = [];
   for (const target of art.widths) {
     if (target > Number(w)) continue;
-    const out = join(root, "src/assets", `${stem}-${target}.webp`);  // imported, so Vite hashes it
+    const out = join(root, "src/assets", `${stem}-${target}.webp`); // imported, so Vite hashes it
     execFileSync("convert", [
       `${src}[0]`,
-      "-resize", `${target}x>`,
+      "-resize",
+      `${target}x>`,
       "-strip",
-      "-quality", String(art.quality),
-      "-define", "webp:method=6",
+      "-quality",
+      String(art.quality),
+      "-define",
+      "webp:method=6",
       out,
     ]);
     made.push({ w: target, bytes: statSync(out).size });
   }
   console.log(`\n${art.file} -> ${made.length} widths (full-bleed, srcset in the route)`);
-  console.log(`  original      ${(originalBytes / 1024).toFixed(0)} KB (what every device used to fetch)`);
-  for (const m of made) console.log(`  ${String(m.w).padStart(5)}w        ${(m.bytes / 1024).toFixed(0)} KB`);
+  console.log(
+    `  original      ${(originalBytes / 1024).toFixed(0)} KB (what every device used to fetch)`,
+  );
+  for (const m of made)
+    console.log(`  ${String(m.w).padStart(5)}w        ${(m.bytes / 1024).toFixed(0)} KB`);
 }

@@ -197,10 +197,7 @@ export function Field({
     ? cloneElement(only as React.ReactElement<{ id?: string }>, { id: controlId })
     : children;
   return (
-    <div
-      className="min-w-0"
-      {...(labelable ? {} : { role: "group", "aria-labelledby": labelId })}
-    >
+    <div className="min-w-0" {...(labelable ? {} : { role: "group", "aria-labelledby": labelId })}>
       <div className="mb-2 flex items-baseline justify-between gap-3">
         {labelable ? (
           <label id={labelId} className="text-eyebrow" htmlFor={controlId}>

@@ -1,5 +1,11 @@
 import type { RestaurantRecord } from "@/lib/dataset";
-import { SITUATION_SLOTS, situationDepth, type Brief, type Scored, type Situation } from "@/lib/intelligence";
+import {
+  SITUATION_SLOTS,
+  situationDepth,
+  type Brief,
+  type Scored,
+  type Situation,
+} from "@/lib/intelligence";
 import { PdfDoc } from "@/lib/pdf-writer";
 
 /**
@@ -43,10 +49,11 @@ export function buildPacketPdf(input: PacketInput): Uint8Array {
     `Fit ${sc.fit}/100 · confirm burden ${sc.burden}/100 · situation ${depth}/${SITUATION_SLOTS} · reviewed ${r.reviewedAt} · next review ${r.nextReviewAt}`,
     { size: 9, gray: 0.4, leading: 13 },
   );
-  doc.text(
-    `Generated ${input.generatedAt} · signals: first-party evidence only`,
-    { size: 9, gray: 0.4, leading: 16 },
-  );
+  doc.text(`Generated ${input.generatedAt} · signals: first-party evidence only`, {
+    size: 9,
+    gray: 0.4,
+    leading: 16,
+  });
 
   /* Verdict */
   doc.eyebrow("Verdict");

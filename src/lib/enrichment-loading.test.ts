@@ -64,7 +64,8 @@ describe("the split covers what the source holds", () => {
     const placed = new Map<string, string>();
     for (const f of readdirSync(SPLIT_DIR).filter((n) => n.endsWith(".json"))) {
       const parsed = JSON.parse(readFileSync(resolve(SPLIT_DIR, f), "utf8"));
-      for (const slug of Object.keys(parsed.records ?? {})) placed.set(slug, f.replace(/\.json$/, ""));
+      for (const slug of Object.keys(parsed.records ?? {}))
+        placed.set(slug, f.replace(/\.json$/, ""));
     }
 
     const missing: string[] = [];

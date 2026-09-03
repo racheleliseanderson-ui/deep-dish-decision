@@ -9,16 +9,16 @@ Grok App Builder overlay (`grokPwaPlugin`, `AuthProvider`, `PreviewHostBridge`, 
 
 ## Recovered / preserved
 
-| Surface | Count |
-|---|---|
-| Canonical records | **1094** (floor 800; recovered 836 then statewide F-01–F-15) |
-| Regions | **167** |
-| Enrichment files | 125 |
-| Listing samples (context only) | 125 |
-| Researched reputation patterns | 32 |
-| Named first-party dishes | 13 |
-| Health inspections | 31 |
-| Documentary owned-site photos | **29** (was 13 on `main`) |
+| Surface                        | Count                                                        |
+| ------------------------------ | ------------------------------------------------------------ |
+| Canonical records              | **1094** (floor 800; recovered 836 then statewide F-01–F-15) |
+| Regions                        | **167**                                                      |
+| Enrichment files               | 125                                                          |
+| Listing samples (context only) | 125                                                          |
+| Researched reputation patterns | 32                                                           |
+| Named first-party dishes       | 13                                                           |
+| Health inspections             | 31                                                           |
+| Documentary owned-site photos  | **29** (was 13 on `main`)                                    |
 
 Kept: region-first ranking, fail-closed holds, 12-field case files, compare, playbooks, packets, HouseBar / Display / LabsFooter, hero `hero-pass.jpg` + `fig-gold.jpg`, pipeline under `scripts/pipeline/`. Directory ratings never rank. Empty stays empty. No authenticity claims from anonymous reviews.
 
@@ -37,15 +37,15 @@ Already on production `main` from the earlier recovery: HouseBar, Display popove
 
 ## Food / reputation fields
 
-| Field | Populated | Notes |
-|---|---|---|
-| Consumer snapshot (6 boxes) | 1094 / 1094 | First-party extraction; open when silent |
-| Ten diner questions | 1094 / 1094 | Held-open when silent |
-| Named signature dishes | 13 | Owned-page language only |
-| Public listing sample | 125 | Context; `rankingEligible: false` |
-| Recurring praise / complaint patterns | 32 | Researched; not fabricated for the rest |
-| Health inspections | 31 | Official snapshots, labeled not a Deep Dish score |
-| Documentary photography | 29 | Restaurant-owned og:image; slug + hash QA |
+| Field                                 | Populated   | Notes                                             |
+| ------------------------------------- | ----------- | ------------------------------------------------- |
+| Consumer snapshot (6 boxes)           | 1094 / 1094 | First-party extraction; open when silent          |
+| Ten diner questions                   | 1094 / 1094 | Held-open when silent                             |
+| Named signature dishes                | 13          | Owned-page language only                          |
+| Public listing sample                 | 125         | Context; `rankingEligible: false`                 |
+| Recurring praise / complaint patterns | 32          | Researched; not fabricated for the rest           |
+| Health inspections                    | 31          | Official snapshots, labeled not a Deep Dish score |
+| Documentary photography               | 29          | Restaurant-owned og:image; slug + hash QA         |
 
 New owned-site photographs this pass (slug-matched, logos skipped): Canlis, Fraunces Tavern, Neptune Oyster, Franklin Barbecue, Uchiko, Au Cheval, Los Tacos No. 1, Nong’s Khao Man Gai, R&G Lounge, Palette Tea House, Guelaguetza, Philippe the Original, Uchi Dallas, Carbone Miami, Sanford Milwaukee, Sorella Milwaukee.
 

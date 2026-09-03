@@ -66,10 +66,7 @@ for (const [key, group] of buckets) {
 const stale = readdirSync(outDir).filter((f) => f.endsWith(".json") && !written.has(f));
 for (const file of stale) rmSync(join(outDir, file), { force: true });
 
-const total = readdirSync(outDir).reduce(
-  (n, f) => n + readFileSync(join(outDir, f)).length,
-  0,
-);
+const total = readdirSync(outDir).reduce((n, f) => n + readFileSync(join(outDir, f)).length, 0);
 const before = readFileSync(join(root, "src/data/enrichment.json")).length;
 
 console.log(`${buckets.size} region files -> src/data/enrichment/`);

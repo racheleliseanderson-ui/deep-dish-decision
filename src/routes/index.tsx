@@ -13,12 +13,7 @@ import { RefineNight } from "@/components/rih/refine-night";
 import { useSaltyImport } from "@/hooks/use-salty-import";
 import { corpusMeta, groupForRegion } from "@/lib/corpus-meta";
 import type { RestaurantRecord } from "@/lib/dataset";
-import {
-  emptySituation,
-  filterRecords,
-  rank,
-  type Situation,
-} from "@/lib/intelligence";
+import { emptySituation, filterRecords, rank, type Situation } from "@/lib/intelligence";
 import { loadLiveGroup, type LiveRow } from "@/lib/live";
 import { findNearestRegionGroup } from "@/lib/nearest-region";
 import {
@@ -78,9 +73,12 @@ function resumeLine(s: Situation): string {
   if (s.partySize != null) parts.push(`for ${s.partySize}`);
   const where = s.region ?? s.regionGroup;
   if (where) parts.push(`in ${where}`);
-  if (s.constraints.length) parts.push(`with ${s.constraints.join(" and ").toLowerCase()} on the line`);
+  if (s.constraints.length)
+    parts.push(`with ${s.constraints.join(" and ").toLowerCase()} on the line`);
   if (!parts.length && s.query.trim()) parts.push(`a search for \u201c${s.query.trim()}\u201d`);
-  return parts.length ? `a night half-answered — ${parts.join(", ")}` : "a night you started answering";
+  return parts.length
+    ? `a night half-answered — ${parts.join(", ")}`
+    : "a night you started answering";
 }
 
 function Hub() {
@@ -253,11 +251,15 @@ function Hub() {
 
   const ranked = useMemo(() => {
     if (!regionReady || !regionRecords) return [];
-    return rank(filterRecords(regionRecords, situation, liveRows ?? undefined), situation, scoreOpts);
+    return rank(
+      filterRecords(regionRecords, situation, liveRows ?? undefined),
+      situation,
+      scoreOpts,
+    );
   }, [regionReady, regionRecords, situation, liveRows, scoreOpts]);
 
   const selected = selectedSlug
-    ? ranked.find((item) => item.record.slug === selectedSlug) ?? null
+    ? (ranked.find((item) => item.record.slug === selectedSlug) ?? null)
     : null;
 
   /* The region group Deep Dish knows best, computed from the slug index rather
@@ -426,7 +428,10 @@ function Hub() {
 
       <div className="mx-auto max-w-7xl px-4 py-7 sm:px-6 sm:py-10">
         {dietNote ? (
-          <p role="note" className="mb-6 rounded-xl border border-border bg-surface-raised/60 px-4 py-3 text-[13px] leading-relaxed text-muted-foreground">
+          <p
+            role="note"
+            className="mb-6 rounded-xl border border-border bg-surface-raised/60 px-4 py-3 text-[13px] leading-relaxed text-muted-foreground"
+          >
             {dietNote}
           </p>
         ) : null}
@@ -538,9 +543,7 @@ function Hub() {
               aria-live="polite"
               className="rounded-2xl border border-border bg-surface-sunken/40 p-6 sm:p-8"
             >
-              <p className="font-display text-2xl">
-                Reading the {activeGroup} files&hellip;
-              </p>
+              <p className="font-display text-2xl">Reading the {activeGroup} files&hellip;</p>
               <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
                 One file per restaurant, fetched for this city only. It is a few hundred kilobytes
                 and it happens once — move between nights in the same city and nothing loads again.
@@ -714,7 +717,6 @@ function Hub() {
             </>
           )}
         </section>
-
       </div>
 
       <section
@@ -724,16 +726,13 @@ function Hub() {
         <div aria-hidden className="h-px w-full bg-house-gold" />
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20">
           <p className="text-eyebrow text-gilt">The house position</p>
-          <h2
-            id="house-position"
-            className="display-statement mt-4 max-w-[16ch] text-foreground"
-          >
+          <h2 id="house-position" className="display-statement mt-4 max-w-[16ch] text-foreground">
             We stop rather than guess.
           </h2>
           <p className="mt-7 max-w-3xl text-[16px] leading-relaxed text-foreground sm:text-lg">
             Every file here starts at the restaurant&rsquo;s own pages. Where those pages say
-            nothing, Deep Dish leaves the field empty and gives you the question to ask instead of
-            a confident sentence somebody invented. Across{" "}
+            nothing, Deep Dish leaves the field empty and gives you the question to ask instead of a
+            confident sentence somebody invented. Across{" "}
             <span className="text-num">{corpusMeta.count.toLocaleString()}</span> rooms the average
             record still has <span className="text-num">{corpusMeta.ops.avgUnknowns}</span> fields
             nobody has stated, and{" "}
@@ -767,8 +766,8 @@ function Hub() {
           ) : started && ranked.length > 0 ? (
             <div className="mt-9">
               <p className="max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
-                Save a room to the night plan from any card above. Two or three is the useful
-                number — one to call, one for when the call goes badly.
+                Save a room to the night plan from any card above. Two or three is the useful number
+                — one to call, one for when the call goes badly.
               </p>
               <Link
                 to="/guide"

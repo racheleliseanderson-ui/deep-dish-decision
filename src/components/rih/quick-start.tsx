@@ -1,11 +1,6 @@
 import { RegionDepth } from "@/components/rih/region-depth";
 import { corpusMeta } from "@/lib/corpus-meta";
-import {
-  SPEND_BANDS,
-  type Constraint,
-  type Occasion,
-  type Situation,
-} from "@/lib/intelligence";
+import { SPEND_BANDS, type Constraint, type Occasion, type Situation } from "@/lib/intelligence";
 import type { NightDetails } from "@/lib/night-context";
 import type { OriginState } from "@/lib/origin";
 import { cn } from "@/lib/utils";
@@ -156,7 +151,10 @@ export function QuickStart({
       .reverse();
     for (const chunk of chunks) {
       const hit = places.find(
-        (p) => norm(p.city) === chunk || norm(p.label).startsWith(`${chunk},`) || norm(p.region).includes(chunk),
+        (p) =>
+          norm(p.city) === chunk ||
+          norm(p.label).startsWith(`${chunk},`) ||
+          norm(p.region).includes(chunk),
       );
       if (hit) return hit;
     }
@@ -234,7 +232,10 @@ export function QuickStart({
       setConstraintError("Choose the budget ceiling you need Deep Dish to respect.");
       return false;
     }
-    if (situation.constraints.includes("Hard end time (show, train, childcare)") && !details.hardEndAt) {
+    if (
+      situation.constraints.includes("Hard end time (show, train, childcare)") &&
+      !details.hardEndAt
+    ) {
       setConstraintError("What time do you need to be finished?");
       return false;
     }
@@ -267,7 +268,10 @@ export function QuickStart({
   const hardEnd = situation.constraints.includes("Hard end time (show, train, childcare)");
 
   return (
-    <section id="situation" className="scroll-mt-24 rounded-3xl border border-border bg-surface p-5 shadow-lift sm:p-7 lg:p-8">
+    <section
+      id="situation"
+      className="scroll-mt-24 rounded-3xl border border-border bg-surface p-5 shadow-lift sm:p-7 lg:p-8"
+    >
       <div className="max-w-2xl">
         <p className="text-eyebrow text-gilt">Four questions</p>
         <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
@@ -298,10 +302,15 @@ export function QuickStart({
                 originState.request();
               }}
             >
-              {originState.status === "asking" || nearMeResolving ? "Searching near you…" : "Near me"}
+              {originState.status === "asking" || nearMeResolving
+                ? "Searching near you…"
+                : "Near me"}
             </Choice>
           </div>
-          <label className="mt-3 block text-xs uppercase tracking-[0.14em] text-subtle" htmlFor="deep-dish-place">
+          <label
+            className="mt-3 block text-xs uppercase tracking-[0.14em] text-subtle"
+            htmlFor="deep-dish-place"
+          >
             Or city / area
           </label>
           <input
@@ -346,7 +355,9 @@ export function QuickStart({
             </p>
           ) : null}
           {originState.status === "denied" ? (
-            <p className="mt-2 text-xs text-watch">Location permission was declined. Pick a city instead.</p>
+            <p className="mt-2 text-xs text-watch">
+              Location permission was declined. Pick a city instead.
+            </p>
           ) : null}
           {nearMeError || locationError ? (
             <p className="mt-2 text-xs text-watch">{nearMeError || locationError}</p>
@@ -407,7 +418,10 @@ export function QuickStart({
               />
             </label>
           </div>
-          <p className="mt-2 text-xs text-subtle">The seating time can be approximate. Deep Dish will still tell you what needs a live check.</p>
+          <p className="mt-2 text-xs text-subtle">
+            The seating time can be approximate. Deep Dish will still tell you what needs a live
+            check.
+          </p>
           {whenError ? <p className="mt-2 text-xs text-watch">{whenError}</p> : null}
         </fieldset>
 
@@ -471,7 +485,9 @@ export function QuickStart({
                   >
                     <option value="">Choose a ceiling</option>
                     {SPEND_BANDS.map((band) => (
-                      <option key={band} value={band}>{band}</option>
+                      <option key={band} value={band}>
+                        {band}
+                      </option>
                     ))}
                   </select>
                 </label>
@@ -479,7 +495,9 @@ export function QuickStart({
 
               {hardEnd ? (
                 <label>
-                  <span className="text-xs font-medium text-foreground">Need to be finished by</span>
+                  <span className="text-xs font-medium text-foreground">
+                    Need to be finished by
+                  </span>
                   <input
                     type="time"
                     value={details.hardEndAt ?? ""}

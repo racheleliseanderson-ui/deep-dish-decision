@@ -161,7 +161,9 @@ describe("diner questions", () => {
     // with it empty, the room was never checked. The answer must say which, and
     // this assertion has to allow both or it enforces the conflation C5 removed.
     expect(trust.answer.toLowerCase()).toMatch(
-      inspectionLayerLoaded() ? /no health-inspection record matched/ : /layer is empty in this build/,
+      inspectionLayerLoaded()
+        ? /no health-inspection record matched/
+        : /layer is empty in this build/,
     );
   });
 

@@ -26,7 +26,11 @@ const SEGMENTS = [
       "scripts/pipeline/resolve-targets.test.mjs",
     ],
   ],
-  ["handoff contract", process.execPath, ["--experimental-strip-types", "--test", "tests/salty-handoff.test.ts"]],
+  [
+    "handoff contract",
+    process.execPath,
+    ["--experimental-strip-types", "--test", "tests/salty-handoff.test.ts"],
+  ],
   ["corpus invariants", process.execPath, ["scripts/corpus-invariants.mjs"]],
 ];
 

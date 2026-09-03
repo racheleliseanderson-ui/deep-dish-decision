@@ -93,13 +93,16 @@ function openClause(record: RestaurantRecord): string {
   }
   const open = Number(record.unknownsCount ?? 0);
   if (open === 1) return "One gap it never fills; ask that before you book.";
-  if (open > 1) return `${words(open).replace(/^./, (c) => c.toUpperCase())} gaps it never fills; ask those before you book.`;
+  if (open > 1)
+    return `${words(open).replace(/^./, (c) => c.toUpperCase())} gaps it never fills; ask those before you book.`;
   return "Nothing was left open at the last read.";
 }
 
 export function recordDescription(record: RestaurantRecord): string {
   const cuisine = cuisineLead(record);
-  const lead = cuisine ? `${cuisine} in ${place(record)}.` : `A restaurant file from ${place(record)}.`;
+  const lead = cuisine
+    ? `${cuisine} in ${place(record)}.`
+    : `A restaurant file from ${place(record)}.`;
   const full = `${lead} ${statedClause(record)} ${openClause(record)}`;
   if (full.length <= DESCRIPTION_MAX) return full;
   const short = `${lead} ${openClause(record)}`;

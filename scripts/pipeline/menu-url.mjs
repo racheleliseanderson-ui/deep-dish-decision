@@ -24,7 +24,10 @@ export const PUBLISHER_HOSTS = new Set(hosts.publisherHosts);
 export function registrableDomain(url) {
   if (!url) return null;
   try {
-    const parts = new URL(url).hostname.toLowerCase().replace(/^www\./, "").split(".");
+    const parts = new URL(url).hostname
+      .toLowerCase()
+      .replace(/^www\./, "")
+      .split(".");
     return parts.length >= 2 ? parts.slice(-2).join(".") : parts.join(".");
   } catch {
     return null;
@@ -59,8 +62,7 @@ export function readMenuLink(menuUrl, website) {
   if (!menuDomain) return null;
   const siteDomain = registrableDomain(httpUrl(website));
   if (siteDomain && siteDomain === menuDomain) return { url, kind: "own", host, isMenu: true };
-  if (FIRST_PARTY_MENU_HOSTS.has(menuDomain))
-    return { url, kind: "platform", host, isMenu: true };
+  if (FIRST_PARTY_MENU_HOSTS.has(menuDomain)) return { url, kind: "platform", host, isMenu: true };
   if (PUBLISHER_HOSTS.has(menuDomain)) return { url, kind: "press", host, isMenu: false };
   return { url, kind: "offsite", host, isMenu: false };
 }

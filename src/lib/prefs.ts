@@ -57,7 +57,8 @@ export function useContrastMode() {
   const [mode, setMode] = useState<ContrastMode>("standard");
 
   useEffect(() => {
-    const sync = () => setMode(readStored<ContrastMode>(CONTRAST_KEY, ["standard", "mono", "cvd"], "standard"));
+    const sync = () =>
+      setMode(readStored<ContrastMode>(CONTRAST_KEY, ["standard", "mono", "cvd"], "standard"));
     sync();
     window.addEventListener(EVENT, sync);
     return () => window.removeEventListener(EVENT, sync);
@@ -78,7 +79,6 @@ export function useLocale() {
     set: (_next: Locale) => {},
   };
 }
-
 
 /** Labeled third-party enrichment signals in findings. Default ON; pure first-party when off. */
 export function readEnrichmentEnabled(): boolean {

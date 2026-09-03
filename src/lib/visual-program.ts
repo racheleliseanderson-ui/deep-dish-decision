@@ -144,8 +144,7 @@ export function provenanceLabel(visual: RestaurantVisual): string {
     return `${what} · ${p.retrievedAt.slice(0, 10)}`;
   }
   if (p.kind === "licensed_media") return `Licensed media · ${p.credit}`;
-  if (p.kind === "editorial_illustration")
-    return `Editorial illustration. ${p.note}`;
+  if (p.kind === "editorial_illustration") return `Editorial illustration. ${p.note}`;
   return "Identity mark, drawn from the record.";
 }
 

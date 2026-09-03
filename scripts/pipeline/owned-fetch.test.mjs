@@ -1,9 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import {
-  createLimiter,
-  parseRetryAfter,
-  isRetriableStatus,
-} from "./lib.mjs";
+import { createLimiter, parseRetryAfter, isRetriableStatus } from "./lib.mjs";
 import {
   extractJsonLdBlocks,
   flattenJsonLd,
@@ -31,7 +27,9 @@ const RESTAURANT_LD = {
   servesCuisine: "Pacific Northwest",
   openingHours: ["Wed-Sat 17:00-22:00"],
   hasMenu: "https://example.com/menu",
-  amenityFeature: [{ "@type": "LocationFeatureSpecification", name: "wheelchairAccessibleEntrance" }],
+  amenityFeature: [
+    { "@type": "LocationFeatureSpecification", name: "wheelchairAccessibleEntrance" },
+  ],
 };
 
 const SHELL_HTML = `<!doctype html><html><body><div id="root"></div>
@@ -189,9 +187,13 @@ describe("Playwright gate", () => {
     const cf =
       "<html><head><title>Just a moment...</title></head><body>Enable JavaScript and cookies to continue<div class='cf-browser-verification'></div></body></html>";
     expect(isChallengePage(cf)).toBe(true);
-    expect(shouldRenderPlaywright({ status: 403, html: cf, textLength: 10, jsonLd: [] })).toBe(true);
+    expect(shouldRenderPlaywright({ status: 403, html: cf, textLength: 10, jsonLd: [] })).toBe(
+      true,
+    );
     process.env.RI_PLAYWRIGHT = "0";
-    expect(shouldRenderPlaywright({ status: 403, html: cf, textLength: 10, jsonLd: [] })).toBe(false);
+    expect(shouldRenderPlaywright({ status: 403, html: cf, textLength: 10, jsonLd: [] })).toBe(
+      false,
+    );
   });
 
   it("would render a 200 JS shell with no rich JSON-LD", () => {
@@ -207,21 +209,35 @@ describe("Playwright gate", () => {
 
 describe("classifyFetchError", () => {
   it("maps AbortError and connect timeouts to 408", () => {
-    expect(classifyFetchError({ name: "AbortError", message: "This operation was aborted" })).toEqual({
+    expect(
+      classifyFetchError({ name: "AbortError", message: "This operation was aborted" }),
+    ).toEqual({
       status: 408,
       error: "timeout",
     });
     expect(
-      classifyFetchError({ name: "TypeError", message: "fetch failed", cause: { code: "UND_ERR_CONNECT_TIMEOUT" } }),
+      classifyFetchError({
+        name: "TypeError",
+        message: "fetch failed",
+        cause: { code: "UND_ERR_CONNECT_TIMEOUT" },
+      }),
     ).toEqual({ status: 408, error: "timeout:UND_ERR_CONNECT_TIMEOUT" });
   });
 
   it("keeps TLS and DNS codes on status 0", () => {
     expect(
-      classifyFetchError({ name: "TypeError", message: "fetch failed", cause: { code: "ENOTFOUND" } }),
+      classifyFetchError({
+        name: "TypeError",
+        message: "fetch failed",
+        cause: { code: "ENOTFOUND" },
+      }),
     ).toEqual({ status: 0, error: "fetch failed:ENOTFOUND" });
     expect(
-      classifyFetchError({ name: "TypeError", message: "fetch failed", cause: { code: "CERT_HAS_EXPIRED" } }),
+      classifyFetchError({
+        name: "TypeError",
+        message: "fetch failed",
+        cause: { code: "CERT_HAS_EXPIRED" },
+      }),
     ).toEqual({ status: 0, error: "fetch failed:CERT_HAS_EXPIRED" });
   });
 });
@@ -238,10 +254,7 @@ describe("false-shell region picker", () => {
     const html = `<body><div role="main"><h1>Info</h1></div><p>${LONG_COPY}</p></body>`;
     const region = pickContentRegion(html);
     expect(region).toMatch(/Seasonal cooking/);
-    const parsed = parseHtmlDocument(
-      `<html>${html}</html>`,
-      "https://example.com/info/",
-    );
+    const parsed = parseHtmlDocument(`<html>${html}</html>`, "https://example.com/info/");
     expect(parsed.text.length).toBeGreaterThan(TEXT_FLOOR);
     expect(
       shouldRenderPlaywright({
@@ -260,7 +273,9 @@ describe("noscript + meta + hydration quotes", () => {
       `<noscript><p>Hours: Wednesday through Saturday 5pm to 10pm. Vegetarian tasting available.</p></noscript>`,
     );
     expect(useful.join(" ")).toMatch(/Wednesday through Saturday/);
-    const stub = extractUsefulNoscript(`<noscript>Enable JavaScript and cookies to continue</noscript>`);
+    const stub = extractUsefulNoscript(
+      `<noscript>Enable JavaScript and cookies to continue</noscript>`,
+    );
     expect(stub).toEqual([]);
   });
 

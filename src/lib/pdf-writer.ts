@@ -60,21 +60,21 @@ const WINANSI: Record<string, string> = {
   "≈": "~",
   "×": "\\327",
   "•": "\\225",
-  "é": "\\351",
-  "è": "\\350",
-  "ñ": "\\361",
-  "á": "\\341",
-  "í": "\\355",
-  "ó": "\\363",
-  "ú": "\\372",
-  "ü": "\\374",
-  "ç": "\\347",
-  "ô": "\\364",
-  "â": "\\342",
-  "ê": "\\352",
-  "ö": "\\366",
-  "å": "\\345",
-  "ø": "\\370",
+  é: "\\351",
+  è: "\\350",
+  ñ: "\\361",
+  á: "\\341",
+  í: "\\355",
+  ó: "\\363",
+  ú: "\\372",
+  ü: "\\374",
+  ç: "\\347",
+  ô: "\\364",
+  â: "\\342",
+  ê: "\\352",
+  ö: "\\366",
+  å: "\\345",
+  ø: "\\370",
 };
 
 function escapePdfText(text: string): string {
@@ -211,7 +211,8 @@ export class PdfDoc {
     const firstPageObj = 5;
 
     objects[1] = "<< /Type /Catalog /Pages 2 0 R >>";
-    objects[3] = "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>";
+    objects[3] =
+      "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>";
     objects[4] =
       "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>";
 

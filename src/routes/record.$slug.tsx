@@ -166,12 +166,15 @@ function Dossier() {
                     : null,
                 ]
                   .filter(Boolean)
-                  .join(" · ") || "Restaurant research — details the restaurant does not publish remain open."
+                  .join(" · ") ||
+                "Restaurant research — details the restaurant does not publish remain open."
               : record.cuisineContext}
           </p>
           <div className="mt-6 flex flex-wrap gap-1.5">
             <Chip tone="accent">{record.region}</Chip>
-            {record.hasOfficialConflict ? <Chip tone="critical">Conflicting official information</Chip> : null}
+            {record.hasOfficialConflict ? (
+              <Chip tone="critical">Conflicting official information</Chip>
+            ) : null}
             <Chip
               tone={CROSS_CONTACT_TONE[crossContact.state]}
               title={CROSS_CONTACT_NOTE[crossContact.state]}
@@ -268,7 +271,9 @@ function Dossier() {
 
         <Reveal as="section" className="mt-12 pb-16">
           <Eyebrow>Restaurant sources</Eyebrow>
-          <h2 className="mt-2 font-display text-2xl tracking-tight">What the restaurant publishes</h2>
+          <h2 className="mt-2 font-display text-2xl tracking-tight">
+            What the restaurant publishes
+          </h2>
           <dl className="mt-6 divide-y divide-border">
             <EvidenceRow label="Service" value={record.serviceSummary} />
             <EvidenceRow label="Menu" value={record.menuSummary} />

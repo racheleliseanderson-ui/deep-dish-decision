@@ -48,12 +48,17 @@ export function CaseFile({
 
   return (
     <Dialog open={!!sc} onOpenChange={(v) => !v && onClose()}>
-      <DialogContent
-        className="max-h-[92vh] w-[min(1040px,96vw)] max-w-none overflow-hidden border-border bg-surface p-0 sm:max-w-none"
-      >
+      <DialogContent className="max-h-[92vh] w-[min(1040px,96vw)] max-w-none overflow-hidden border-border bg-surface p-0 sm:max-w-none">
         <div className="grain-veil relative border-b border-border px-6 py-5">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-            <ListingFace record={r} fit={sc.fit} burden={sc.burden} rank={sc.rank} size={72} showGauges />
+            <ListingFace
+              record={r}
+              fit={sc.fit}
+              burden={sc.burden}
+              rank={sc.rank}
+              size={72}
+              showGauges
+            />
             <div className="min-w-0 flex-1">
               <Eyebrow>Case file</Eyebrow>
               <DialogTitle className="mt-2 font-display text-2xl font-normal leading-tight tracking-tight">
@@ -69,10 +74,7 @@ export function CaseFile({
                 </Chip>
                 {r.hasOfficialConflict ? <Chip tone="critical">Official conflict</Chip> : null}
                 <Chip tone="unknown">{r.unknownsCount} unknowns</Chip>
-                <Chip
-                  tone={r.isFullCaseFile ? "verified" : "watch"}
-                  title={SCHEMA_DEPTH_TITLE}
-                >
+                <Chip tone={r.isFullCaseFile ? "verified" : "watch"} title={SCHEMA_DEPTH_TITLE}>
                   {schemaDepthLabel(r.depthLabel)}
                 </Chip>
                 <Chip
@@ -87,9 +89,7 @@ export function CaseFile({
                     ? enrichmentAudit(r.slug)
                     : { present: false as const, completeness: null, fields: [] };
                   return audit.present ? (
-                    <Chip tone="unknown">
-                      First-party file {audit.completeness ?? "—"}%
-                    </Chip>
+                    <Chip tone="unknown">First-party file {audit.completeness ?? "—"}%</Chip>
                   ) : (
                     <Chip tone="neutral">First-party evidence only</Chip>
                   );
@@ -124,16 +124,12 @@ export function CaseFile({
               <InspectionPanel slug={r.slug} />
             </div>
           ) : null}
-          {tab === "Brief" ? (
-            <DecisionBrief sc={sc} situation={situation} />
-          ) : null}
+          {tab === "Brief" ? <DecisionBrief sc={sc} situation={situation} /> : null}
           {tab === "Findings" ? <FindingsStack findings={sc.findings} /> : null}
           {tab === "Evidence" ? (
             <div className="space-y-8">
               {(() => {
-                const owned = enrichmentReady
-                  ? ownedSiteEvidence(r.slug)
-                  : null;
+                const owned = enrichmentReady ? ownedSiteEvidence(r.slug) : null;
                 if (!owned?.present) return null;
                 const ownedMenu = readMenuLink(owned.menuUrl, r.website);
                 return (
@@ -144,8 +140,8 @@ export function CaseFile({
                       {owned.pagesRead === 1 ? "" : "s"}
                       {owned.retrievedAt ? ` · read ${owned.retrievedAt.slice(0, 10)}` : ""}. Hours,
                       telephone, price, cuisine, menu and reservation paths are written onto the
-                      case file when those pages state them. Remaining fields stay unstated on
-                      the same floor as every other record.
+                      case file when those pages state them. Remaining fields stay unstated on the
+                      same floor as every other record.
                     </p>
                     {ownedMenu || owned.reservationUrl ? (
                       <div className="mt-3 flex flex-wrap gap-1.5">
@@ -179,12 +175,17 @@ export function CaseFile({
                           <div className="flex flex-wrap items-baseline gap-2">
                             <p className="text-eyebrow">{group.label}</p>
                             <Chip tone={group.applied ? "verified" : "unknown"}>
-                              {group.applied ? "Written onto the case file" : "Quoted, not applied as fact"}
+                              {group.applied
+                                ? "Written onto the case file"
+                                : "Quoted, not applied as fact"}
                             </Chip>
                           </div>
                           <ul className="mt-2 space-y-2">
                             {group.quotes.map((q) => (
-                              <li key={q.quote} className="text-[13px] leading-relaxed text-muted-foreground">
+                              <li
+                                key={q.quote}
+                                className="text-[13px] leading-relaxed text-muted-foreground"
+                              >
                                 “{q.quote}”
                                 {q.sourceUrl ? (
                                   <a
@@ -208,17 +209,23 @@ export function CaseFile({
               <section>
                 <Eyebrow>Recorded fields</Eyebrow>
                 <p className="mt-2 text-[12px] leading-relaxed text-subtle">
-                  Every record uses this same field set. Unstated means the restaurant's own
-                  pages were silent on it.
+                  Every record uses this same field set. Unstated means the restaurant's own pages
+                  were silent on it.
                 </p>
                 <dl className="mt-3 divide-y divide-border">
                   {CASE_FIELDS.map((field) => {
                     const display = fieldDisplay(String(r[field.key] ?? ""));
                     return (
-                      <div key={field.label} className="grid gap-1 py-3 sm:grid-cols-[180px_1fr] sm:gap-6">
+                      <div
+                        key={field.label}
+                        className="grid gap-1 py-3 sm:grid-cols-[180px_1fr] sm:gap-6"
+                      >
                         <dt className="text-eyebrow pt-0.5 flex flex-wrap items-center gap-2">
                           {field.label}
-                          <Chip tone={display.unstated ? "unknown" : "verified"} className="font-normal">
+                          <Chip
+                            tone={display.unstated ? "unknown" : "verified"}
+                            className="font-normal"
+                          >
                             {display.unstated ? "Unstated" : "Stated"}
                           </Chip>
                         </dt>
@@ -240,9 +247,7 @@ export function CaseFile({
           ) : null}
           {tab === "Confirmation" ? (
             <div className="space-y-4 text-[13px] leading-relaxed text-muted-foreground">
-              <p>
-                Confirm hours, pricing, and reservation policy live before you commit.
-              </p>
+              <p>Confirm hours, pricing, and reservation policy live before you commit.</p>
               <p>
                 Next review: <span className="text-num text-foreground">{r.nextReviewAt}</span>
               </p>

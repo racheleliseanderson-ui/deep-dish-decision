@@ -36,7 +36,15 @@ export function snapshot(tag) {
   const stamp = new Date().toISOString().replace(/[:.]/g, "-");
   const dir = path.join(PATHS.snapshots, `${stamp}-${tag}`);
   fs.mkdirSync(dir, { recursive: true });
-  for (const key of ["dataset", "enrichment", "queue", "refreshQueue", "runLog", "retired", "seedListings"]) {
+  for (const key of [
+    "dataset",
+    "enrichment",
+    "queue",
+    "refreshQueue",
+    "runLog",
+    "retired",
+    "seedListings",
+  ]) {
     if (fs.existsSync(PATHS[key])) {
       fs.copyFileSync(PATHS[key], path.join(dir, path.basename(PATHS[key])));
     }
@@ -146,9 +154,7 @@ export function googleClient() {
 
 /** @deprecated Firecrawl removed — use scripts/pipeline/own-fetch.mjs. */
 export function firecrawlClient() {
-  throw new Error(
-    "firecrawlClient removed: enrichment is owned-site only. Use own-fetch.mjs.",
-  );
+  throw new Error("firecrawlClient removed: enrichment is owned-site only. Use own-fetch.mjs.");
 }
 
 // ------------------------------------------------------------------ normalize
@@ -201,7 +207,9 @@ export function similarity(a, b) {
   const gy = grams(y);
   let hits = 0;
   for (const [g, n] of gx) hits += Math.min(n, gy.get(g) ?? 0);
-  const total = [...gx.values()].reduce((a2, b2) => a2 + b2, 0) + [...gy.values()].reduce((a2, b2) => a2 + b2, 0);
+  const total =
+    [...gx.values()].reduce((a2, b2) => a2 + b2, 0) +
+    [...gy.values()].reduce((a2, b2) => a2 + b2, 0);
   return total ? (2 * hits) / total : 0;
 }
 
@@ -212,8 +220,7 @@ export function metersBetween(a, b) {
   const dLng = ((b.longitude - a.longitude) * Math.PI) / 180;
   const lat1 = (a.latitude * Math.PI) / 180;
   const lat2 = (b.latitude * Math.PI) / 180;
-  const h =
-    Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(h));
 }
 
@@ -276,9 +283,13 @@ export function completeness(record, enrichment) {
     stated(record.phone) || hasStructuredSiteEvidence(s, "telephone"),
     stated(record.website),
     stated(record.coverageArea) || stated(record.city),
-    stated(record.cuisineContext) || !!(record.cuisineTags?.length) || hasStructuredSiteEvidence(s, "cuisine"),
+    stated(record.cuisineContext) ||
+      !!record.cuisineTags?.length ||
+      hasStructuredSiteEvidence(s, "cuisine"),
     stated(record.hoursSummary) || hasStructuredSiteEvidence(s, "hours"),
-    stated(record.priceDetails) || !!(record.priceTags?.length) || hasStructuredSiteEvidence(s, "price"),
+    stated(record.priceDetails) ||
+      !!record.priceTags?.length ||
+      hasStructuredSiteEvidence(s, "price"),
     stated(record.reservationDetails) || stated(record.reservationUrl) || !!s?.reservationUrl,
     stated(record.menuUrl) || !!s?.menuUrl || stated(record.menuSummary),
     stated(record.dietaryDetails) || !!s?.dietaryLanguage?.length,

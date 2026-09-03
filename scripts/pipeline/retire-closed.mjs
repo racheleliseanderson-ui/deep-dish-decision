@@ -18,14 +18,7 @@
  *
  *   node scripts/pipeline/retire-closed.mjs --slug=… --operator=… --source=… --closed=… --quote=…
  */
-import {
-  PATHS,
-  appendRun,
-  normalizeHost,
-  readJson,
-  snapshot,
-  writeJson,
-} from "./lib.mjs";
+import { PATHS, appendRun, normalizeHost, readJson, snapshot, writeJson } from "./lib.mjs";
 
 const CLOSED_ON_RE = /^\d{4}-\d{2}(?:-\d{2})?$/;
 
@@ -58,7 +51,14 @@ export function retiredIndex(ledger) {
     hosts: new Set(records.map((r) => normalizeHost(r.website)).filter(Boolean)),
     nameCity: new Set(
       records
-        .map((r) => `${String(r.title || "").toLowerCase().trim()}|${String(r.city || "").toLowerCase().trim()}`)
+        .map(
+          (r) =>
+            `${String(r.title || "")
+              .toLowerCase()
+              .trim()}|${String(r.city || "")
+              .toLowerCase()
+              .trim()}`,
+        )
         .filter((k) => k !== "|"),
     ),
   };
@@ -66,7 +66,9 @@ export function retiredIndex(ledger) {
 
 export function isRetiredListing(listing, city, index) {
   if (!index) return null;
-  const title = String(listing.title || "").toLowerCase().trim();
+  const title = String(listing.title || "")
+    .toLowerCase()
+    .trim();
   const host = normalizeHost(listing.website);
   if (listing.slug && index.slugs.has(listing.slug)) return "retired-slug";
   if (host && index.hosts.has(host)) return "retired-website";
@@ -131,11 +133,16 @@ export function applyRetirement({ input, dataset, store, seeds, queue, ledger, r
   if (seeds?.batches) {
     const idx = retiredIndex({ records: [entry] });
     for (const batch of seeds.batches) {
-      batch.listings = batch.listings.filter((listing) => !isRetiredListing(listing, batch.city, idx));
+      batch.listings = batch.listings.filter(
+        (listing) => !isRetiredListing(listing, batch.city, idx),
+      );
     }
   }
 
-  const stateCode = String(record.region || "").split(",").pop()?.trim();
+  const stateCode = String(record.region || "")
+    .split(",")
+    .pop()
+    ?.trim();
   const target = queue?.cities?.find((c) => c.city === record.city && c.stateCode === stateCode);
   if (target && Number(target.inserted) > 0) {
     target.inserted = Math.max(0, Number(target.inserted) - 1);
@@ -201,7 +208,9 @@ function main() {
   }
 
   if (DRY) {
-    console.log(`Dry run — would retire ${applied.length}. Corpus would be ${dataset.records.length}.`);
+    console.log(
+      `Dry run — would retire ${applied.length}. Corpus would be ${dataset.records.length}.`,
+    );
     process.exit(0);
   }
 
@@ -227,7 +236,9 @@ function main() {
     successor: "",
   });
 
-  console.log(`Retired ${applied.length}. Successor not written. Corpus now ${dataset.records.length}.`);
+  console.log(
+    `Retired ${applied.length}. Successor not written. Corpus now ${dataset.records.length}.`,
+  );
 }
 
 const invoked = process.argv[1] && /retire-closed\.mjs$/.test(process.argv[1]);

@@ -30,10 +30,7 @@ export const Route = createFileRoute("/packet/$slug")({
     // announced themselves to search as the same document.
     if (!loaderData) {
       return {
-        meta: [
-          { title: "Booking packet · Deep Dish" },
-          { name: "robots", content: "noindex" },
-        ],
+        meta: [{ title: "Booking packet · Deep Dish" }, { name: "robots", content: "noindex" }],
       };
     }
     const r = loaderData.record;
@@ -115,7 +112,11 @@ function Packet() {
   ];
 
   return (
-    <main id="main" tabIndex={-1} className="mx-auto max-w-[880px] px-5 py-8 pb-28 print:px-0 print:py-0">
+    <main
+      id="main"
+      tabIndex={-1}
+      className="mx-auto max-w-[880px] px-5 py-8 pb-28 print:px-0 print:py-0"
+    >
       <JsonLd
         data={breadcrumbs([
           { name: record.title, path: `/record/${record.slug}` },

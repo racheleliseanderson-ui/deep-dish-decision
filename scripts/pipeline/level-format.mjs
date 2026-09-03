@@ -105,15 +105,7 @@ export function to12h(token) {
   return t;
 }
 
-const DAY_NAMES = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
+const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const DAY_INDEX = Object.fromEntries(
   DAY_NAMES.flatMap((name, i) => [
@@ -197,7 +189,10 @@ export function formatHoursSummary(values) {
     }
 
     // Schema.org openingHours: "Tu 11:30-22:00, We 11:30-22:00" or "Su-Th 16:00-22:00; Fr-Sa 16:00-23:00"
-    const chunks = line.split(/[;,]/).map((s) => s.trim()).filter(Boolean);
+    const chunks = line
+      .split(/[;,]/)
+      .map((s) => s.trim())
+      .filter(Boolean);
     for (const chunk of chunks) {
       const open = chunk.match(
         /^([A-Za-z]{2,9}(?:\s*[-–—to]+\s*[A-Za-z]{2,9})?(?:\s*,\s*[A-Za-z]{2,9})*)\s+(\d{1,2}:\d{2})\s*[-–—]\s*(\d{1,2}:\d{2})$/,
@@ -256,14 +251,21 @@ export function formatCuisineContext(values) {
   const lines = usableQuotes(values);
   if (!lines.length) return "";
   const labels = uniqueLabels(
-    lines.flatMap((line) => line.split(/[,;/]|&/g).map((s) => s.trim()).filter(Boolean)),
+    lines.flatMap((line) =>
+      line
+        .split(/[,;/]|&/g)
+        .map((s) => s.trim())
+        .filter(Boolean),
+    ),
   ).slice(0, 6);
   if (!labels.length) return "";
   return `${labels.join(", ")} — named on the restaurant's own pages.`;
 }
 
 export function sentenceFromQuotes(values, label, limit = 2) {
-  const lines = usableQuotes(values).filter((q) => !isNavLabel(q)).slice(0, limit);
+  const lines = usableQuotes(values)
+    .filter((q) => !isNavLabel(q))
+    .slice(0, limit);
   if (!lines.length) return "";
   return `${label}: ${lines.join(" · ")}`;
 }
@@ -356,7 +358,11 @@ export const CORE_SLOTS = [
   { id: "priceDetails", label: "Price", get: (r) => r.priceDetails },
   { id: "cuisineContext", label: "Cuisine", get: (r) => r.cuisineContext },
   { id: "menu", label: "Menu", get: (r) => r.menuUrl || r.menuSummary },
-  { id: "reservation", label: "Reservations", get: (r) => r.reservationUrl || r.reservationDetails },
+  {
+    id: "reservation",
+    label: "Reservations",
+    get: (r) => r.reservationUrl || r.reservationDetails,
+  },
   { id: "dietaryDetails", label: "Dietary", get: (r) => r.dietaryDetails },
   { id: "accessibilityState", label: "Access", get: (r) => r.accessibilityState },
   { id: "groupDetails", label: "Group", get: (r) => r.groupDetails },
@@ -407,7 +413,9 @@ export function isOperationallyThin(value) {
   const t = String(value ?? "").trim();
   if (!t) return true;
   if (isOurFloor(t)) return true;
-  return /not stated|not published|not named|not described|could not be reviewed|confirm live/i.test(t);
+  return /not stated|not published|not named|not described|could not be reviewed|confirm live/i.test(
+    t,
+  );
 }
 
 export function measureDepth(record) {

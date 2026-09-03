@@ -10,11 +10,7 @@ import listingRaw from "@/data/listing-samples.json";
 import patternsRaw from "@/data/reputation-patterns.json";
 
 export type EvidenceStrength =
-  | "none"
-  | "listing_sample_only"
-  | "thin"
-  | "mixed"
-  | "strong_but_mixed";
+  "none" | "listing_sample_only" | "thin" | "mixed" | "strong_but_mixed";
 
 export type ResearchedPattern = {
   sampleSize?: number | null;
@@ -95,11 +91,11 @@ export function buildReputation(slug: string): PublicReputationEvidence {
   const complaints = researched?.recurringComplaints ?? [];
   const hasResearch = Boolean(
     researched &&
-      (praise.length ||
-        complaints.length ||
-        researched.patternSummary ||
-        researched.foodQualityPattern ||
-        researched.operationalNote),
+    (praise.length ||
+      complaints.length ||
+      researched.patternSummary ||
+      researched.foodQualityPattern ||
+      researched.operationalNote),
   );
 
   let evidenceStrength: EvidenceStrength = "none";
@@ -111,10 +107,7 @@ export function buildReputation(slug: string): PublicReputationEvidence {
     evidenceStrength = "listing_sample_only";
   }
 
-  const sourceMix = unique([
-    ...(researched?.sourceMix ?? []),
-    listing?.source ?? "",
-  ]);
+  const sourceMix = unique([...(researched?.sourceMix ?? []), listing?.source ?? ""]);
 
   return {
     slug,

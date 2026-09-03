@@ -77,7 +77,10 @@ describe("level-format", () => {
   it("detects booking platforms from owned reservation URLs", () => {
     assert.equal(platformFromUrl("https://www.exploretock.com/canlis", "Tock"), "Tock");
     assert.equal(platformFromUrl("https://resy.com/cities/ny/foo", ""), "Resy");
-    assert.equal(platformFromUrl("https://canlis.com/reservations", "Direct"), "Direct / confirm live");
+    assert.equal(
+      platformFromUrl("https://canlis.com/reservations", "Direct"),
+      "Direct / confirm live",
+    );
   });
 
   const CORE_KEYS = [

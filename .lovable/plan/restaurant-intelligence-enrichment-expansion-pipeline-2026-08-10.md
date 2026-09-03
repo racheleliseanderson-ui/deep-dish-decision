@@ -6,7 +6,7 @@
 
 ## One constraint to name up front
 
-You chose to keep the static JSON. That works well for enrichment and for growing the corpus in reviewable batches, but a *self-running* pipeline (nightly quota, retries across days, live admin controls that change future runs) needs a database and a server scheduler. So this plan delivers:
+You chose to keep the static JSON. That works well for enrichment and for growing the corpus in reviewable batches, but a _self-running_ pipeline (nightly quota, retries across days, live admin controls that change future runs) needs a database and a server scheduler. So this plan delivers:
 
 - A **repeatable batch pipeline** run from the workspace on request ("run the next batch"), with all state kept in committed JSON files — queue, run log, quotas, retries.
 - A **Coverage Console** route in the app reading those same files: totals, coverage by state, completeness scores, recent additions, queue order.
@@ -69,6 +69,7 @@ A new route in the app, matching the existing instrument art direction (full-ble
 ## Deduplication
 
 Layered, cheapest first:
+
 1. Google `placeId` — hard unique key.
 2. Normalized phone (E.164).
 3. Normalized website host + path.
@@ -86,15 +87,15 @@ Chains and multi-location brands are kept as distinct records keyed by `placeId`
 
 ## Risks and guardrails
 
-| Risk | Guardrail |
-| --- | --- |
-| Wrong-business match pollutes a record | Match must clear name + location thresholds; failures marked `unresolved`, never guessed |
-| Aggregator data eroding the first-party credibility model | Separate `enrichment` block, per-field source and timestamp, UI labels retained |
-| AI summary asserting facts not in evidence | Summary generated only from a passed field list, stored with `basedOnFields` for audit |
-| API spend running away | Hard per-run and per-day ceilings in the queue file, field masks, logged call counts |
-| Scraping terms and robots | Firecrawl limited to each restaurant's own public site; aggregator pages are not scraped; Places data used through the official API only |
-| Quality drift as volume grows | Every run appends to the ledger with a completeness delta; a run whose average completeness drops below the corpus average is flagged for review |
-| A bad batch corrupting the dataset | Each run writes a timestamped snapshot before edits, so any batch can be reverted |
+| Risk                                                      | Guardrail                                                                                                                                        |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Wrong-business match pollutes a record                    | Match must clear name + location thresholds; failures marked `unresolved`, never guessed                                                         |
+| Aggregator data eroding the first-party credibility model | Separate `enrichment` block, per-field source and timestamp, UI labels retained                                                                  |
+| AI summary asserting facts not in evidence                | Summary generated only from a passed field list, stored with `basedOnFields` for audit                                                           |
+| API spend running away                                    | Hard per-run and per-day ceilings in the queue file, field masks, logged call counts                                                             |
+| Scraping terms and robots                                 | Firecrawl limited to each restaurant's own public site; aggregator pages are not scraped; Places data used through the official API only         |
+| Quality drift as volume grows                             | Every run appends to the ledger with a completeness delta; a run whose average completeness drops below the corpus average is flagged for review |
+| A bad batch corrupting the dataset                        | Each run writes a timestamped snapshot before edits, so any batch can be reverted                                                                |
 
 ## Technical notes
 

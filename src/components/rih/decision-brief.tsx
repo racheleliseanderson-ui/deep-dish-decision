@@ -47,7 +47,11 @@ export function DecisionBrief({
           <GrowBar
             value={sc.fit}
             tone={
-              b.verdictTone === "hold" ? "critical" : b.verdictTone === "conditional" ? "watch" : "verified"
+              b.verdictTone === "hold"
+                ? "critical"
+                : b.verdictTone === "conditional"
+                  ? "watch"
+                  : "verified"
             }
             live
             className="mt-0.5"
@@ -80,7 +84,11 @@ export function DecisionBrief({
       <SendToNightPlan
         room={sc.record.title}
         status={
-          b.verdictTone === "hold" ? "hold" : b.verdictTone === "conditional" ? "in-progress" : "shortlisted"
+          b.verdictTone === "hold"
+            ? "hold"
+            : b.verdictTone === "conditional"
+              ? "in-progress"
+              : "shortlisted"
         }
         // Findings, not the call text: only the category crosses to Occasion OS.
         unresolved={b.confirmFindings}
@@ -91,7 +99,10 @@ export function DecisionBrief({
           <Eyebrow>What you still need to ask — in order</Eyebrow>
           <ol className="mt-2 space-y-1.5">
             {b.confirmCalls.map((c, i) => (
-              <li key={i} className="flex gap-2.5 text-[13px] leading-relaxed text-muted-foreground">
+              <li
+                key={i}
+                className="flex gap-2.5 text-[13px] leading-relaxed text-muted-foreground"
+              >
                 <span className="text-num text-subtle">{String(i + 1).padStart(2, "0")}</span>
                 <span>{c}</span>
               </li>
@@ -104,7 +115,8 @@ export function DecisionBrief({
         <div className="mt-4 flex flex-wrap items-center gap-2">
           <Chip tone="critical">Official conflict preserved</Chip>
           <span className="text-[12px] text-subtle">
-            Both claims remain on the record. Nothing has been collapsed to the friendlier statement.
+            Both claims remain on the record. Nothing has been collapsed to the friendlier
+            statement.
           </span>
         </div>
       ) : null}

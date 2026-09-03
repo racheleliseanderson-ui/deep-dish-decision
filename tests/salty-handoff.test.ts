@@ -88,7 +88,10 @@ test("every destination-specific block survives a round trip", () => {
 
   const menu = createHandoff("occasion", "restaurant", "host", {
     menu: {
-      roles: [{ role: "anchor", dish: "Short rib" }, { role: "relief", dish: "Chicory salad" }],
+      roles: [
+        { role: "anchor", dish: "Short rib" },
+        { role: "relief", dish: "Chicory salad" },
+      ],
       anchor: "Short rib",
       stress: { band: "workable", weak: ["serviceFit"] },
     },
@@ -456,7 +459,11 @@ test("only a category crosses the boundary, never the call script", () => {
     room: "Tavernetta",
     status: "hold",
     unresolved: [
-      { domain: "dietary", title: "Dietary handling requires direct confirmation", action: allergy },
+      {
+        domain: "dietary",
+        title: "Dietary handling requires direct confirmation",
+        action: allergy,
+      },
       { domain: "spend", title: "No per-guest figure on file" },
       { domain: "timing", title: "Service runs long against your hard end time" },
     ],

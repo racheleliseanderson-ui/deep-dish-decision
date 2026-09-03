@@ -200,7 +200,9 @@ export function getEnrichment(slug: string): EnrichmentRecord | null {
  * change exists to remove.
  */
 export async function loadAllEnrichment(): Promise<void> {
-  await Promise.all(Object.keys(loaders).map((k) => loadEnrichmentGroup(k.replace(/^.*\/(.+)\.json$/, "$1"))));
+  await Promise.all(
+    Object.keys(loaders).map((k) => loadEnrichmentGroup(k.replace(/^.*\/(.+)\.json$/, "$1"))),
+  );
 }
 
 const NOT_STATED = [
@@ -224,7 +226,6 @@ function isThin(v: string | null | undefined): boolean {
   return !t || NOT_STATED.includes(t) || /^not stated/i.test(t);
 }
 
-
 function accessLabels(a: GoogleAccessibility): string[] {
   const out: string[] = [];
   if (a.wheelchairAccessibleEntrance) out.push("wheelchair entrance");
@@ -237,7 +238,13 @@ function accessLabels(a: GoogleAccessibility): string[] {
 function parkingLabels(p: GoogleParking): string[] {
   const out: string[] = [];
   for (const [k, v] of Object.entries(p)) {
-    if (v === true) out.push(k.replace(/([A-Z])/g, " $1").toLowerCase().trim());
+    if (v === true)
+      out.push(
+        k
+          .replace(/([A-Z])/g, " $1")
+          .toLowerCase()
+          .trim(),
+      );
   }
   return out;
 }
@@ -248,9 +255,7 @@ function hoursLine(
   const open = hours.filter((h) => h.intervals?.length);
   if (!open.length) return "Google listing hours list no open intervals (closed or unlisted).";
   const sample = open.slice(0, 3).map((h) => {
-    const ints = h.intervals
-      .map((i) => `${i.open}–${i.close}`)
-      .join(", ");
+    const ints = h.intervals.map((i) => `${i.open}–${i.close}`).join(", ");
     return `${h.day}: ${ints}`;
   });
   return sample.join(" · ") + (open.length > 3 ? ` (+${open.length - 3} more days)` : "");
@@ -282,8 +287,7 @@ export function buildEnrichmentFindings(
   const priceThin = isThin(r.priceDetails);
   const dressThin = isThin(r.dressCode);
   const groupThin = isThin(r.groupDetails);
-  const dietThin =
-    r.dietaryTags.some((t) => isThin(t)) || isThin(r.dietaryDetails);
+  const dietThin = r.dietaryTags.some((t) => isThin(t)) || isThin(r.dietaryDetails);
 
   /* --- Google accessibility (only when first-party is silent) -------- */
   if (accessThin && g?.accessibility) {
@@ -340,7 +344,11 @@ export function buildEnrichmentFindings(
           : c("Hard end time (show, train, childcare)")
             ? "Confirm valet or nearest garage timing — arrival friction breaks a hard end time."
             : "Check a map before you leave; treat Google parking flags as a lead, not a fact.",
-        impact: c("Mobility / step-free needs") ? 42 : c("Hard end time (show, train, childcare)") ? 36 : 16,
+        impact: c("Mobility / step-free needs")
+          ? 42
+          : c("Hard end time (show, train, childcare)")
+            ? 36
+            : 16,
         confidence: "low",
         situational: s.constraints.length > 0,
       });
@@ -376,9 +384,10 @@ export function buildEnrichmentFindings(
       provenance: "google-places",
       title: `Google listing price band ${g.priceBand ?? g.priceLevel} — the restaurant's own record doesn't state this`,
       detail: `Directory price level only. Does not include service charge, supplements, or beverage. Retrieved ${g.retrievedAt ?? "unknown"}.`,
-      action: c("Hard budget cap") || s.spendBand
-        ? "Get the current per-guest total in writing before treating this as inside a hard cap."
-        : "Use only as a coarse band; price the full evening from the official menu.",
+      action:
+        c("Hard budget cap") || s.spendBand
+          ? "Get the current per-guest total in writing before treating this as inside a hard cap."
+          : "Use only as a coarse band; price the full evening from the official menu.",
       impact: c("Hard budget cap") || s.spendBand ? 38 : 18,
       confidence: "low",
       situational: Boolean(c("Hard budget cap") || s.spendBand),
@@ -388,28 +397,38 @@ export function buildEnrichmentFindings(
   /* --- Amenities when first-party is silent -------------------------- */
   if (g?.amenities) {
     const a = g.amenities;
-    if (a.outdoorSeating === true && !/outdoor|patio|terrace/i.test(r.serviceSummary + r.atmosphereSummary)) {
+    if (
+      a.outdoorSeating === true &&
+      !/outdoor|patio|terrace/i.test(r.serviceSummary + r.atmosphereSummary)
+    ) {
       push({
         id: "enr-outdoor",
         layer: "unknown",
         domain: "enrichment",
         provenance: "google-places",
         title: "Google listing reports outdoor seating; the restaurant's own record is silent",
-        detail: "Directory amenity flag only — season, weather policy, and reservation path unstated first-party.",
+        detail:
+          "Directory amenity flag only — season, weather policy, and reservation path unstated first-party.",
         action: "Ask whether patio seating is open on your date and whether it can be requested.",
         impact: 18,
         confidence: "low",
         situational: false,
       });
     }
-    if (a.goodForGroups === true && (c("Large party (6+)") || (s.partySize ?? 0) >= 6) && groupThin) {
+    if (
+      a.goodForGroups === true &&
+      (c("Large party (6+)") || (s.partySize ?? 0) >= 6) &&
+      groupThin
+    ) {
       push({
         id: "enr-groups",
         layer: "watch",
         domain: "enrichment",
         provenance: "google-places",
-        title: "Google listing flags goodForGroups — the restaurant's own record doesn't state a group path",
-        detail: "Directory amenity only. Deposits, set menus, and max table size still need first-party confirmation.",
+        title:
+          "Google listing flags goodForGroups — the restaurant's own record doesn't state a group path",
+        detail:
+          "Directory amenity only. Deposits, set menus, and max table size still need first-party confirmation.",
         action: "Call for the large-party path before proposing this record to the group.",
         impact: 40,
         confidence: "low",
@@ -422,8 +441,10 @@ export function buildEnrichmentFindings(
         layer: "unknown",
         domain: "enrichment",
         provenance: "google-places",
-        title: "Google listing reports vegetarian options; the restaurant's own record doesn't state allergy or dietary policy",
-        detail: "Vegetarian amenity is not an allergy guarantee. Cross-contact practice remains first-party only.",
+        title:
+          "Google listing reports vegetarian options; the restaurant's own record doesn't state allergy or dietary policy",
+        detail:
+          "Vegetarian amenity is not an allergy guarantee. Cross-contact practice remains first-party only.",
         action: c("Severe allergy / celiac")
           ? "Ignore this flag for severe allergy — name the allergen and get kitchen confirmation."
           : "Confirm dietary handling on the official menu or by phone.",
@@ -442,7 +463,8 @@ export function buildEnrichmentFindings(
         layer: "unknown",
         domain: "enrichment",
         provenance: "google-places",
-        title: "Google listing beverage flags present; the restaurant's own record doesn't state a wine program",
+        title:
+          "Google listing beverage flags present; the restaurant's own record doesn't state a wine program",
         detail: `servesWine=${String(a.servesWine)} · servesCocktails=${String(a.servesCocktails)}. Not a cellar depth claim.`,
         action: "Ask about pairing depth and corkage if wine-forward is material to the night.",
         impact: 20,
@@ -525,13 +547,9 @@ export function buildEnrichmentFindings(
      Rank first so the situational, higher-impact signals survive the cap. */
   return f
     .slice()
-    .sort(
-      (a, b) =>
-        Number(b.situational) - Number(a.situational) || b.impact - a.impact,
-    )
+    .sort((a, b) => Number(b.situational) - Number(a.situational) || b.impact - a.impact)
     .slice(0, 8);
 }
-
 
 export type OwnedQuote = {
   quote: string;
@@ -670,7 +688,8 @@ export function enrichmentAudit(slug: string): {
   const signals: string[] = [];
   const g = enr.google;
   const site = enr.site;
-  if (g?.accessibility) signals.push(`Google access: ${accessLabels(g.accessibility).join(", ") || "flags present"}`);
+  if (g?.accessibility)
+    signals.push(`Google access: ${accessLabels(g.accessibility).join(", ") || "flags present"}`);
   if (g?.parking) {
     const p = parkingLabels(g.parking);
     if (p.length) signals.push(`Google parking: ${p.join(", ")}`);
@@ -685,9 +704,11 @@ export function enrichmentAudit(slug: string): {
   if (site?.priceLanguage?.length) signals.push("Venue website price language");
   if (site?.dietaryLanguage?.length) signals.push("Venue website dietary language");
   if (site?.accessibilityLanguage?.length) signals.push("Venue website accessibility language");
-  if (site?.groupPolicy || site?.groupPolicyLanguage?.length) signals.push("Venue website group policy");
+  if (site?.groupPolicy || site?.groupPolicyLanguage?.length)
+    signals.push("Venue website group policy");
   if (site?.dressCode) signals.push("Venue website dress note");
-  if (site?.jsonLdLanguage?.length) signals.push("Venue website page quotes (JSON-LD / meta / hydration; not applied as facts)");
+  if (site?.jsonLdLanguage?.length)
+    signals.push("Venue website page quotes (JSON-LD / meta / hydration; not applied as facts)");
   if (enr.summary?.text) signals.push("Model summary (audit only)");
 
   const sources: string[] = [];

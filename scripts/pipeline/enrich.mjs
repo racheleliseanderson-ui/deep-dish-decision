@@ -12,14 +12,7 @@
  *
  * Existing `google` blocks from prior GPI runs are left for audit history only.
  */
-import {
-  PATHS,
-  appendRun,
-  completeness,
-  readJson,
-  snapshot,
-  writeJson,
-} from "./lib.mjs";
+import { PATHS, appendRun, completeness, readJson, snapshot, writeJson } from "./lib.mjs";
 import { fetchSitePages, siteLimiter, closeSharedBrowser } from "./own-fetch.mjs";
 import { buildRefreshQueue } from "./refresh.mjs";
 import { extractFromSite, pickSitePages } from "./site.mjs";
@@ -37,7 +30,12 @@ const args = Object.fromEntries(
 
 const HYGIENE = Boolean(args.hygiene);
 const BATCH = Number(args.batch ?? (HYGIENE ? 25 : 10));
-const ONLY = args.slugs ? String(args.slugs).split(",").map((s) => s.trim()).filter(Boolean) : null;
+const ONLY = args.slugs
+  ? String(args.slugs)
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean)
+  : null;
 const REFRESH = Boolean(args.refresh) || HYGIENE;
 
 const dataset = readJson(PATHS.dataset, null);
@@ -179,16 +177,21 @@ appendRun({
   startedAt,
   finishedAt: new Date().toISOString(),
   batchSize: batch.length,
-  cities: [...new Set(batch.map((r) => r.coverageArea || `${r.city || ""}, ${r.stateProvince || ""}`))],
+  cities: [
+    ...new Set(batch.map((r) => r.coverageArea || `${r.city || ""}, ${r.stateProvince || ""}`)),
+  ],
   resolved: log.filter((l) => l.matchStatus === "resolved" || l.matchStatus === "partial").length,
-  unresolved: log.filter((l) => l.matchStatus === "site-failure" || l.matchStatus === "no-website").length,
+  unresolved: log.filter((l) => l.matchStatus === "site-failure" || l.matchStatus === "no-website")
+    .length,
   sourceLimited: log.filter((l) => l.matchStatus === "source-limited").length,
   deferred: log.filter((l) => l.matchStatus === "empty").length,
   avgCompleteness: avg,
   corpusEnriched: Object.keys(store.records).length,
   apiCalls: { google: 0, firecrawl: 0, ownedFetch: pacedCalls },
   retries: siteLimiter.stats.retries,
-  failures: log.filter((l) => String(l.matchStatus).includes("failure") || l.matchStatus === "no-website").length,
+  failures: log.filter(
+    (l) => String(l.matchStatus).includes("failure") || l.matchStatus === "no-website",
+  ).length,
   snapshot: snapshotDir,
   records: log,
   hygiene: hygieneMeta,

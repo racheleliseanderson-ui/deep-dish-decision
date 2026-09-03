@@ -10,11 +10,7 @@ import {
   type ImportSession,
 } from "@/lib/salty-handoff/import-session.ts";
 
-export function useSaltyImport(
-  destination: SaltyApp,
-  hasExistingWork: boolean,
-  ready = true,
-) {
+export function useSaltyImport(destination: SaltyApp, hasExistingWork: boolean, ready = true) {
   const [session, setSession] = useState<ImportSession>(IDLE);
 
   useEffect(() => {

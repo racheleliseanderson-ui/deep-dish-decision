@@ -6,18 +6,8 @@
  * Platform content is not scraped or promoted into owned-site policy evidence.
  */
 import path from "node:path";
-import {
-  PATHS,
-  appendRun,
-  completeness,
-  readJson,
-  snapshot,
-  writeJson,
-} from "./lib.mjs";
-import {
-  applySourceLimitedRecord,
-  sourceLimitedMeta,
-} from "./source-limited.mjs";
+import { PATHS, appendRun, completeness, readJson, snapshot, writeJson } from "./lib.mjs";
+import { applySourceLimitedRecord, sourceLimitedMeta } from "./source-limited.mjs";
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((arg) => {
@@ -31,7 +21,8 @@ const manifestPath = path.resolve(
   String(args.manifest || "src/data/source-limited-2026-08-20.json"),
 );
 const manifest = readJson(manifestPath, null);
-if (!manifest?.records?.length) throw new Error(`source-limited manifest missing/empty: ${manifestPath}`);
+if (!manifest?.records?.length)
+  throw new Error(`source-limited manifest missing/empty: ${manifestPath}`);
 
 const dataset = readJson(PATHS.dataset, null);
 if (!dataset?.records) throw new Error("dataset.json not found");
@@ -91,7 +82,8 @@ appendRun({
     slug: r.slug,
     matchStatus: r.status,
     completeness: r.completeness ?? 0,
-    notes: r.status === "source-limited" ? ["operator platform; no owned domain"] : ["slug not found"],
+    notes:
+      r.status === "source-limited" ? ["operator platform; no owned domain"] : ["slug not found"],
   })),
 });
 

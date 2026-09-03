@@ -87,7 +87,9 @@ if (missing.length > 0) {
 
 if (update) {
   writeFileSync(RECORD, serialise(current), "utf8");
-  console.log("vendored parity: recorded " + MANIFEST.length + " checksum(s) in vendored-parity.json");
+  console.log(
+    "vendored parity: recorded " + MANIFEST.length + " checksum(s) in vendored-parity.json",
+  );
   for (const rel of MANIFEST) console.log("  " + current[rel] + "  " + rel);
   console.log("Now copy the changed file(s) AND vendored-parity.json to the other three repos.");
   process.exit(0);
@@ -95,7 +97,9 @@ if (update) {
 
 if (!existsSync(RECORD)) {
   console.error("vendored parity: FAIL — vendored-parity.json is missing.");
-  console.error("If this is the first run, create it with: node scripts/check-vendored-parity.mjs --update");
+  console.error(
+    "If this is the first run, create it with: node scripts/check-vendored-parity.mjs --update",
+  );
   process.exit(1);
 }
 
@@ -127,7 +131,9 @@ for (const rel of Object.keys(expected)) {
 }
 
 if (problems.length === 0) {
-  console.log("vendored parity: OK — " + MANIFEST.length + " vendored file(s) match vendored-parity.json");
+  console.log(
+    "vendored parity: OK — " + MANIFEST.length + " vendored file(s) match vendored-parity.json",
+  );
   for (const rel of MANIFEST) console.log("  ok  " + current[rel].slice(0, 16) + "  " + rel);
   process.exit(0);
 }
@@ -140,7 +146,9 @@ for (const p of problems) {
     console.error("    recorded " + p.want);
     console.error("    actual   " + p.got);
   } else if (p.kind === "unrecorded") {
-    console.error("  UNRECORDED " + p.rel + " is vendored but has no checksum in vendored-parity.json");
+    console.error(
+      "  UNRECORDED " + p.rel + " is vendored but has no checksum in vendored-parity.json",
+    );
     console.error("    actual   " + p.got);
   } else {
     console.error("  STALE      " + p.rel + " is recorded but is no longer in the manifest");

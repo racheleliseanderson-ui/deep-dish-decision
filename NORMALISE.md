@@ -1,7 +1,7 @@
 # Normalising line endings — one-time, run by hand
 
 `.gitattributes` in this repo now pins the whole tree to LF (`* text=auto eol=lf`).
-That fixes *future* checkouts. It does **not** fix the files already sitting in
+That fixes _future_ checkouts. It does **not** fix the files already sitting in
 your working tree, which are CRLF while the index is LF.
 
 Right now: **319 of 629 tracked files are CRLF in the working tree**
@@ -30,7 +30,7 @@ in that commit.
   It must be its own commit, with no other change mixed in — otherwise the one
   line you actually meant to change is invisible inside a whole-repo rewrite.
 - `git add --renormalize .` prints nothing and takes a few seconds. It rewrites
-  the *index*, not your files' contents in any meaningful way — only the stored
+  the _index_, not your files' contents in any meaningful way — only the stored
   line endings change.
 - `git status` after it will list a very large number of modified files. That is
   correct.

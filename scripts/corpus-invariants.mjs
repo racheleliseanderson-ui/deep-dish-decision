@@ -283,4 +283,3 @@ if (errors.length) {
 }
 
 console.log(JSON.stringify({ ...report, slugs: slugs.length }, null, 2));
-

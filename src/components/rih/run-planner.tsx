@@ -138,8 +138,8 @@ export function RunPlanner() {
             <Eyebrow>Run planner</Eyebrow>
             <h2 className="display-chapter mt-3">Compose the next expansion run.</h2>
             <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-muted-foreground">
-              Nothing on this page launches a run — you take the command or plan file out and run
-              it yourself. This panel composes the plan, projects its cost, and gives you the exact
+              Nothing on this page launches a run — you take the command or plan file out and run it
+              yourself. This panel composes the plan, projects its cost, and gives you the exact
               command and file to execute unchanged. Hygiene runs ahead of expansion whenever the
               refresh queue is non-empty.
             </p>
@@ -150,8 +150,8 @@ export function RunPlanner() {
               </p>
               <p className="mt-1 font-mono text-[11px] text-subtle">{refreshQueueCommand()}</p>
               <p className="mt-2 text-[12px] text-muted-foreground">
-                Rebuilds the stale-by-tier queue, then enriches existing slugs only: never
-                enriched, thin, site-failure and review-due.
+                Rebuilds the stale-by-tier queue, then enriches existing slugs only: never enriched,
+                thin, site-failure and review-due.
               </p>
             </div>
           </div>

@@ -64,7 +64,8 @@ export function NightPlanBar() {
               <span className="hidden md:inline"> · Next: {night.nextStep}</span>
               {count ? (
                 <span className="text-subtle">
-                  {" "}· {count} restaurant{count === 1 ? "" : "s"} saved
+                  {" "}
+                  · {count} restaurant{count === 1 ? "" : "s"} saved
                   {titles.length ? ` · ${titles.join(" · ")}` : ""}
                 </span>
               ) : null}

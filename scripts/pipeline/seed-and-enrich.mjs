@@ -34,8 +34,7 @@ if (args.dry) process.exit(0);
 const log = readJson(PATHS.runLog, { runs: [] });
 const seedRun = log.runs.find(
   (entry) =>
-    entry?.kind === "seed-listings" &&
-    Date.parse(entry.startedAt || "") >= startedAt - 1000,
+    entry?.kind === "seed-listings" && Date.parse(entry.startedAt || "") >= startedAt - 1000,
 );
 const insertedSlugs = Array.isArray(seedRun?.insertedSlugs) ? seedRun.insertedSlugs : [];
 

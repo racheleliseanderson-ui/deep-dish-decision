@@ -1,5 +1,10 @@
 import { corpusMeta } from "@/lib/corpus-meta";
-import { COMMITMENT_LEVELS, PLANNING_LEVELS, SPEND_BANDS, type Situation } from "@/lib/intelligence";
+import {
+  COMMITMENT_LEVELS,
+  PLANNING_LEVELS,
+  SPEND_BANDS,
+  type Situation,
+} from "@/lib/intelligence";
 import { cn } from "@/lib/utils";
 
 function Toggle({
@@ -68,10 +73,14 @@ export function RefineNight({
           <span>
             Refine this night
             <span className="ml-2 font-normal text-muted-foreground">
-              {activeCount ? `${activeCount} refinement${activeCount === 1 ? "" : "s"} active` : "Optional"}
+              {activeCount
+                ? `${activeCount} refinement${activeCount === 1 ? "" : "s"} active`
+                : "Optional"}
             </span>
           </span>
-          <span aria-hidden className="text-primary">+</span>
+          <span aria-hidden className="text-primary">
+            +
+          </span>
         </span>
       </summary>
 
@@ -89,7 +98,11 @@ export function RefineNight({
               </Toggle>
             ))}
           </div>
-          {largeGroupIsHard ? <p className="mt-2 text-xs text-subtle">This count is also part of your hard group requirement.</p> : null}
+          {largeGroupIsHard ? (
+            <p className="mt-2 text-xs text-subtle">
+              This count is also part of your hard group requirement.
+            </p>
+          ) : null}
         </div>
 
         <div>
@@ -105,7 +118,11 @@ export function RefineNight({
               </Toggle>
             ))}
           </div>
-          {budgetIsHard ? <p className="mt-2 text-xs text-subtle">This ceiling is also part of your hard budget requirement.</p> : null}
+          {budgetIsHard ? (
+            <p className="mt-2 text-xs text-subtle">
+              This ceiling is also part of your hard budget requirement.
+            </p>
+          ) : null}
         </div>
 
         <label>
@@ -137,12 +154,17 @@ export function RefineNight({
                   {miles} mi
                 </Toggle>
               ))}
-              <Toggle active={situation.radiusMi === null} onClick={() => patch({ radiusMi: null })}>
+              <Toggle
+                active={situation.radiusMi === null}
+                onClick={() => patch({ radiusMi: null })}
+              >
                 Any distance
               </Toggle>
             </div>
           ) : (
-            <p className="mt-2 text-xs leading-relaxed text-subtle">Use “Near me” in the first question if distance needs to affect the decision.</p>
+            <p className="mt-2 text-xs leading-relaxed text-subtle">
+              Use “Near me” in the first question if distance needs to affect the decision.
+            </p>
           )}
         </div>
 
@@ -153,7 +175,9 @@ export function RefineNight({
               <Toggle
                 key={value}
                 active={situation.maxPlanningLoad === value}
-                onClick={() => patch({ maxPlanningLoad: situation.maxPlanningLoad === value ? null : value })}
+                onClick={() =>
+                  patch({ maxPlanningLoad: situation.maxPlanningLoad === value ? null : value })
+                }
               >
                 {value}
               </Toggle>
@@ -168,7 +192,9 @@ export function RefineNight({
               <Toggle
                 key={value}
                 active={situation.maxCommitment === value}
-                onClick={() => patch({ maxCommitment: situation.maxCommitment === value ? null : value })}
+                onClick={() =>
+                  patch({ maxCommitment: situation.maxCommitment === value ? null : value })
+                }
               >
                 {value}
               </Toggle>
@@ -179,10 +205,16 @@ export function RefineNight({
         <div className="lg:col-span-2">
           <p className="text-eyebrow">Preferences</p>
           <div className="mt-2 flex flex-wrap gap-2">
-            <Toggle active={situation.wineForward} onClick={() => patch({ wineForward: !situation.wineForward })}>
+            <Toggle
+              active={situation.wineForward}
+              onClick={() => patch({ wineForward: !situation.wineForward })}
+            >
               Wine-forward
             </Toggle>
-            <Toggle active={situation.openOnly} onClick={() => patch({ openOnly: !situation.openOnly })}>
+            <Toggle
+              active={situation.openOnly}
+              onClick={() => patch({ openOnly: !situation.openOnly })}
+            >
               Only places serving then
             </Toggle>
           </div>

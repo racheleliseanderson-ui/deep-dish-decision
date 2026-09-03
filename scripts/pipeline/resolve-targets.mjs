@@ -43,28 +43,61 @@ const args = Object.fromEntries(
 const DRY = Boolean(args.dry);
 const LIMIT = Number(args.limit) || Infinity;
 const ONLY = args.market ? String(args.market).toLowerCase() : null;
-const CONCURRENCY = Math.max(1, Math.min(8, Number(args.concurrency ?? process.env.RESOLVE_CONCURRENCY ?? 4)));
+const CONCURRENCY = Math.max(
+  1,
+  Math.min(8, Number(args.concurrency ?? process.env.RESOLVE_CONCURRENCY ?? 4)),
+);
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 const TARGETS = path.join(root, "scripts/data/seed-targets.json");
 
 /* ── hosts that are never a restaurant's own site ───────────────────────── */
 const AGGREGATORS = [
-  "yelp.com", "tripadvisor.com", "opentable.com", "resy.com", "doordash.com",
-  "ubereats.com", "grubhub.com", "seamless.com", "postmates.com", "caviar.com",
-  "facebook.com", "instagram.com", "twitter.com", "x.com", "tiktok.com",
-  "google.com", "maps.google.com", "mapquest.com", "zomato.com", "allmenus.com",
-  "menupix.com", "restaurantji.com", "wikipedia.org", "eater.com", "timeout.com",
-  "menupages.com", "singleplatform.com", "yellowpages.com", "foursquare.com",
-  "grubstreet.com", "michelin.com", "sedo.com", "hugedomains.com", "afternic.com",
+  "yelp.com",
+  "tripadvisor.com",
+  "opentable.com",
+  "resy.com",
+  "doordash.com",
+  "ubereats.com",
+  "grubhub.com",
+  "seamless.com",
+  "postmates.com",
+  "caviar.com",
+  "facebook.com",
+  "instagram.com",
+  "twitter.com",
+  "x.com",
+  "tiktok.com",
+  "google.com",
+  "maps.google.com",
+  "mapquest.com",
+  "zomato.com",
+  "allmenus.com",
+  "menupix.com",
+  "restaurantji.com",
+  "wikipedia.org",
+  "eater.com",
+  "timeout.com",
+  "menupages.com",
+  "singleplatform.com",
+  "yellowpages.com",
+  "foursquare.com",
+  "grubstreet.com",
+  "michelin.com",
+  "sedo.com",
+  "hugedomains.com",
+  "afternic.com",
 ];
 const isAggregator = (url) => {
   const h = hostOf(url);
   return !h || AGGREGATORS.some((a) => h === a || h.endsWith(`.${a}`));
 };
 function hostOf(url) {
-  try { return new URL(String(url)).hostname.replace(/^www\./, "").toLowerCase(); }
-  catch { return ""; }
+  try {
+    return new URL(String(url)).hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return "";
+  }
 }
 
 /* ── pages that exist but must not become records ───────────────────────── */
@@ -79,16 +112,62 @@ const LD_TYPES =
 
 /* ── name handling ──────────────────────────────────────────────────────── */
 const CLASS_WORDS = new Set([
-  "the","a","an","and","of","at","on","in","by","restaurant","restaurante","cafe","caffe",
-  "bar","kitchen","grill","grille","house","room","tavern","bistro","brasserie","eatery",
-  "steakhouse","pizzeria","trattoria","osteria","taqueria","cantina","company","co","llc",
-  "inc","and","bakery","deli","diner","lounge","club","market","pub","supper","food","foods",
+  "the",
+  "a",
+  "an",
+  "and",
+  "of",
+  "at",
+  "on",
+  "in",
+  "by",
+  "restaurant",
+  "restaurante",
+  "cafe",
+  "caffe",
+  "bar",
+  "kitchen",
+  "grill",
+  "grille",
+  "house",
+  "room",
+  "tavern",
+  "bistro",
+  "brasserie",
+  "eatery",
+  "steakhouse",
+  "pizzeria",
+  "trattoria",
+  "osteria",
+  "taqueria",
+  "cantina",
+  "company",
+  "co",
+  "llc",
+  "inc",
+  "and",
+  "bakery",
+  "deli",
+  "diner",
+  "lounge",
+  "club",
+  "market",
+  "pub",
+  "supper",
+  "food",
+  "foods",
 ]);
 const plain = (s) =>
-  String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
-    .replace(/&/g, "and").replace(/[’']/g, "");
+  String(s)
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/&/g, "and")
+    .replace(/[’']/g, "");
 const nameTokens = (name) =>
-  plain(name).split(/[^a-z0-9]+/).filter((t) => t.length > 1 && !CLASS_WORDS.has(t));
+  plain(name)
+    .split(/[^a-z0-9]+/)
+    .filter((t) => t.length > 1 && !CLASS_WORDS.has(t));
 
 /** The resolved page must name the restaurant, not merely exist. */
 function pageNamesTarget(text, ldName, name) {
@@ -110,11 +189,17 @@ function candidateUrls(target) {
   const words = p.split(/\s+/).filter(Boolean);
   const full = p.replace(/[^a-z0-9]+/g, "");
   const short = nameTokens(target.name).join("");
-  const firstTwo = words.slice(0, 2).join("").replace(/[^a-z0-9]+/g, "");
+  const firstTwo = words
+    .slice(0, 2)
+    .join("")
+    .replace(/[^a-z0-9]+/g, "");
   const first = (words[0] ?? "").replace(/[^a-z0-9]+/g, "");
   const bases = [...new Set([full, short, firstTwo, first].filter((b) => b && b.length >= 4))];
   const out = [];
-  for (const base of bases) { out.push(`https://www.${base}.com`); out.push(`https://${base}.com`); }
+  for (const base of bases) {
+    out.push(`https://www.${base}.com`);
+    out.push(`https://${base}.com`);
+  }
   return out.slice(0, 10);
 }
 
@@ -149,7 +234,9 @@ function addressFromLd(node, city, stateCode) {
   // A group site can carry a sibling branch. Only accept the target city.
   if (plain(loc) !== plain(city)) return null;
   if (region && plain(region) !== plain(stateCode) && region.length <= 2) return null;
-  return `${street}, ${loc}, ${region || stateCode}${zip ? ` ${zip}` : ""}`.replace(/\s+/g, " ").trim();
+  return `${street}, ${loc}, ${region || stateCode}${zip ? ` ${zip}` : ""}`
+    .replace(/\s+/g, " ")
+    .trim();
 }
 const escapeRe = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 function addressFromText(text, city, stateCode) {
@@ -166,14 +253,17 @@ function addressFromText(text, city, stateCode) {
   return `${street}, ${city}, ${stateCode}${m[2] ? ` ${m[2]}` : ""}`;
 }
 function phoneFrom(node, text) {
-  const raw = String(node?.telephone ?? "").trim() ||
-    (String(text).match(/\(?\b([2-9]\d{2})\)?[.\s-]?([2-9]\d{2})[.\s-]?(\d{4})\b/) ?? [])[0] || "";
+  const raw =
+    String(node?.telephone ?? "").trim() ||
+    (String(text).match(/\(?\b([2-9]\d{2})\)?[.\s-]?([2-9]\d{2})[.\s-]?(\d{4})\b/) ?? [])[0] ||
+    "";
   const digits = raw.replace(/\D/g, "").replace(/^1/, "");
   if (digits.length !== 10) return "";
   return `+1-${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
 }
 function cuisineFrom(target, node) {
-  if (Array.isArray(target.cuisineTags) && target.cuisineTags.length) return target.cuisineTags.slice(0, 3);
+  if (Array.isArray(target.cuisineTags) && target.cuisineTags.length)
+    return target.cuisineTags.slice(0, 3);
   const s = node?.servesCuisine;
   const list = (Array.isArray(s) ? s : [s]).filter(Boolean).map(String);
   return list.slice(0, 3).map((c) => c.replace(/\b\w/g, (m) => m.toUpperCase()));
@@ -188,19 +278,37 @@ async function resolveTarget(target, market) {
     tried.push(`${candidate} -> ${res.ok ? "200" : res.status || res.error}`);
     if (!res.ok) continue;
     const finalUrl = res.metadata?.finalUrl || candidate;
-    if (isAggregator(finalUrl)) { tried.push(`${finalUrl} rejected: aggregator`); continue; }
+    if (isAggregator(finalUrl)) {
+      tried.push(`${finalUrl} rejected: aggregator`);
+      continue;
+    }
     const text = res.markdown || "";
     if (text.length < 200) continue;
-    if (PARKED_RE.test(text)) { tried.push(`${finalUrl} rejected: parked`); continue; }
-    if (CLOSED_RE.test(text)) { tried.push(`${finalUrl} rejected: reads as closed`); continue; }
+    if (PARKED_RE.test(text)) {
+      tried.push(`${finalUrl} rejected: parked`);
+      continue;
+    }
+    if (CLOSED_RE.test(text)) {
+      tried.push(`${finalUrl} rejected: reads as closed`);
+      continue;
+    }
     const node = ldBusiness(res.jsonLd);
-    if (!pageNamesTarget(text, node?.name, target.name)) { tried.push(`${finalUrl} rejected: does not name target`); continue; }
-    if (!RESTAURANT_RE.test(text)) { tried.push(`${finalUrl} rejected: not a restaurant page`); continue; }
+    if (!pageNamesTarget(text, node?.name, target.name)) {
+      tried.push(`${finalUrl} rejected: does not name target`);
+      continue;
+    }
+    if (!RESTAURANT_RE.test(text)) {
+      tried.push(`${finalUrl} rejected: not a restaurant page`);
+      continue;
+    }
 
     const address =
       addressFromLd(node, market.city, market.stateCode) ??
       addressFromText(text, market.city, market.stateCode);
-    if (!address) { tried.push(`${finalUrl} rejected: no ${market.city} address on page`); continue; }
+    if (!address) {
+      tried.push(`${finalUrl} rejected: no ${market.city} address on page`);
+      continue;
+    }
 
     return {
       ok: true,
@@ -241,14 +349,18 @@ async function main() {
   const stamp = startedAt.slice(0, 10);
   const batches = [];
   const misses = [];
-  let resolved = 0, attempted = 0;
+  let resolved = 0,
+    attempted = 0;
 
   for (const market of markets) {
     const queue = [];
     for (const raw of market.targets ?? []) {
       const target = typeof raw === "string" ? { name: raw } : raw;
       const key = `${plain(target.name)}|${plain(market.city)}`;
-      if (haveNameCity.has(key)) { misses.push({ market: market.city, name: target.name, reason: "already in corpus" }); continue; }
+      if (haveNameCity.has(key)) {
+        misses.push({ market: market.city, name: target.name, reason: "already in corpus" });
+        continue;
+      }
       if (isRetiredListing({ title: target.name }, market.city, retired)) {
         misses.push({ market: market.city, name: target.name, reason: "retired/closed" });
         continue;
@@ -264,7 +376,12 @@ async function main() {
         attempted += 1;
         const out = await resolveTarget(target, market);
         if (!out.ok) {
-          misses.push({ market: market.city, name: target.name, reason: "unresolved", tried: out.tried });
+          misses.push({
+            market: market.city,
+            name: target.name,
+            reason: "unresolved",
+            tried: out.tried,
+          });
           continue;
         }
         const host = normalizeHost(out.listing.website);
@@ -282,12 +399,16 @@ async function main() {
         haveNameCity.add(`${plain(target.name)}|${plain(market.city)}`);
         listings.push(out.listing);
         resolved += 1;
-        process.stdout.write(`  + ${market.city}: ${out.listing.title} -> ${out.listing.website}\n`);
+        process.stdout.write(
+          `  + ${market.city}: ${out.listing.title} -> ${out.listing.website}\n`,
+        );
       }
     };
     await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 
-    console.log(`${market.city}, ${market.stateCode}: ${listings.length} of ${queue.length} targets resolved`);
+    console.log(
+      `${market.city}, ${market.stateCode}: ${listings.length} of ${queue.length} targets resolved`,
+    );
     if (listings.length) {
       batches.push({
         city: market.city,
@@ -314,19 +435,27 @@ async function main() {
 
   const outPath = path.join(root, "src/data", `seed-listings-density-${stamp}-resolved.json`);
   writeJson(outPath, {
-    note:
-      "Resolved by scripts/pipeline/resolve-targets.mjs. Each entry's website was reached over plain HTTPS and verified to name the establishment and read as a restaurant; address and phone were taken from that page (JSON-LD first, visible text second) and the address was required to name the target city. Unresolved, parked, closed and unverifiable targets were dropped and are listed in the matching reports/resolve-targets file. Narrative first-party fields stay empty until enrich.mjs runs.",
+    note: "Resolved by scripts/pipeline/resolve-targets.mjs. Each entry's website was reached over plain HTTPS and verified to name the establishment and read as a restaurant; address and phone were taken from that page (JSON-LD first, visible text second) and the address was required to name the target city. Unresolved, parked, closed and unverifiable targets were dropped and are listed in the matching reports/resolve-targets file. Narrative first-party fields stay empty until enrich.mjs runs.",
     generatedAt: new Date().toISOString(),
     batches,
   });
   writeJson(reportPath, report);
-  appendRun({ kind: "resolve-targets", startedAt, finishedAt: new Date().toISOString(), attempted, resolved, missed: misses.length, outPath });
+  appendRun({
+    kind: "resolve-targets",
+    startedAt,
+    finishedAt: new Date().toISOString(),
+    attempted,
+    resolved,
+    missed: misses.length,
+    outPath,
+  });
 
   console.log(`\nResolved ${resolved} of ${attempted} targets across ${batches.length} markets.`);
   console.log(`  batch:  ${path.relative(root, outPath)}`);
   console.log(`  misses: ${path.relative(root, reportPath)}`);
-  console.log("\nNext: node scripts/pipeline/seed-listings.mjs   then   node scripts/pipeline/enrich.mjs --hygiene");
-
+  console.log(
+    "\nNext: node scripts/pipeline/seed-listings.mjs   then   node scripts/pipeline/enrich.mjs --hygiene",
+  );
 }
 
 import { pathToFileURL } from "node:url";

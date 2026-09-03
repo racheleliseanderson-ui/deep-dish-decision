@@ -2,12 +2,12 @@
 
 Four repos publish one product, **Salty & Clever**:
 
-| repo | app |
-| --- | --- |
-| `salty-command-center` | Salty & Clever (the desk) — retired, still vendors these files |
-| `salty-kitchen-bar-intelligence` | Kitchen & Bar |
-| `occasion-planner-suite` | Occasion OS |
-| `deep-dish-decision` | Deep Dish |
+| repo                             | app                                                            |
+| -------------------------------- | -------------------------------------------------------------- |
+| `salty-command-center`           | Salty & Clever (the desk) — retired, still vendors these files |
+| `salty-kitchen-bar-intelligence` | Kitchen & Bar                                                  |
+| `occasion-planner-suite`         | Occasion OS                                                    |
+| `deep-dish-decision`             | Deep Dish                                                      |
 
 Three source files are **hand-copied** between all four and must stay identical:
 
@@ -23,8 +23,8 @@ The four apps deploy independently, to separate hosts, on separate schedules,
 from separate repos. There is no shared package registry between them and no
 build step that could pull one in. A published npm package would mean a version
 bump, a publish and four installs for every contract change, and — worse — it
-would make it possible for the four apps to be running *different versions of
-the contract at the same time*, which is exactly the failure the contract exists
+would make it possible for the four apps to be running _different versions of
+the contract at the same time_, which is exactly the failure the contract exists
 to prevent. `contract.ts` deliberately has no imports at all so that it can drop
 into any of the four apps unchanged.
 
@@ -63,7 +63,7 @@ install step. It is wired into:
   slower runs;
 - a GitHub Actions workflow that runs on push and pull request.
 
-## What is *not* vendored
+## What is _not_ vendored
 
 `src/lib/salty-handoff/apply.ts` is **deliberately not** in the manifest, and
 must not be added to it. Only its shared helpers are common between the apps;

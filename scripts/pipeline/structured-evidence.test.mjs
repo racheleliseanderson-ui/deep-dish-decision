@@ -105,7 +105,9 @@ describe("typed first-party structured evidence", () => {
 
     const withExplicitAccess = completeness(
       shellRecord,
-      enrichment(legacySite({ accessibilityLanguage: ["Accessible entrance is on Example Street."] })),
+      enrichment(
+        legacySite({ accessibilityLanguage: ["Accessible entrance is on Example Street."] }),
+      ),
     );
     expect(withExplicitAccess).toEqual({ filled: 12, total: 18, score: 67 });
   });

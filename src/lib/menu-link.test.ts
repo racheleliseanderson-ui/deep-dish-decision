@@ -11,7 +11,10 @@ describe("readMenuLink", () => {
   });
 
   it("calls a link on an ordering platform a menu", () => {
-    const read = readMenuLink("https://napoliwy.hrpos.heartland.us/menu", "https://napolischeyenne.com/");
+    const read = readMenuLink(
+      "https://napoliwy.hrpos.heartland.us/menu",
+      "https://napolischeyenne.com/",
+    );
     expect(read?.kind).toBe("platform");
     expect(read?.isMenu).toBe(true);
   });
@@ -51,8 +54,7 @@ describe("the corpus", () => {
 
   it("never claims a first-party menu path for a link it cannot verify", () => {
     const lying = records.filter(
-      (r) =>
-        /own site/i.test(r.menuSummary ?? "") && !firstPartyMenuUrl(r.menuUrl, r.website),
+      (r) => /own site/i.test(r.menuSummary ?? "") && !firstPartyMenuUrl(r.menuUrl, r.website),
     );
     expect(lying.map((r) => r.slug)).toEqual([]);
   });

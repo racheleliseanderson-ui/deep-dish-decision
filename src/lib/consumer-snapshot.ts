@@ -60,11 +60,17 @@ export function whyGoLine(record: RestaurantRecord): string {
 function foodAndMenu(record: RestaurantRecord): SnapshotItem {
   const identity = firstPoint(record.cuisineContext, 140);
   const menu = firstPoint(record.menuSummary, 120);
-  const named = (namedFile.records[record.slug] ?? []).filter((s) => s.trim().length >= 3).slice(0, 2);
+  const named = (namedFile.records[record.slug] ?? [])
+    .filter((s) => s.trim().length >= 3)
+    .slice(0, 2);
   if (!identity && !menu && !named.length) return { label: "Food & menu", value: OPEN, open: true };
   const namedLine = named.length ? `Pages name: ${named.join("; ")}.` : "";
   if (identity && menu && !overlaps(identity, menu)) {
-    return { label: "Food & menu", value: [identity, menu, namedLine].filter(Boolean).join(" "), open: false };
+    return {
+      label: "Food & menu",
+      value: [identity, menu, namedLine].filter(Boolean).join(" "),
+      open: false,
+    };
   }
   return {
     label: "Food & menu",

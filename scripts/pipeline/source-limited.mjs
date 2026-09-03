@@ -1,11 +1,7 @@
-export const SOURCE_LIMITED_AUTHORITY = "Operator-managed platform source; no owned domain confirmed";
+export const SOURCE_LIMITED_AUTHORITY =
+  "Operator-managed platform source; no owned domain confirmed";
 
-const PLATFORM_HOSTS = [
-  "facebook.com",
-  "instagram.com",
-  "toasttab.com",
-  "fetail.com",
-];
+const PLATFORM_HOSTS = ["facebook.com", "instagram.com", "toasttab.com", "fetail.com"];
 
 export function sourceHost(url) {
   try {

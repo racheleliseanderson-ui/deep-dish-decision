@@ -6,3 +6,17 @@ pnpm-lock.yaml
 package-lock.json
 bun.lock
 routeTree.gen.ts
+
+# Generated corpus data. These are written by scripts/pipeline/*, and a
+# formatter that reformats them is a formatter fighting the generator: the
+# next pipeline run reverts every change and check-generated.mjs is left
+# comparing a formatted file against unformatted output. Source only.
+src/data
+
+# Vendored across all four Salty & Clever repos and checked byte-for-byte by
+# scripts/check-vendored-parity.mjs. A formatter cannot touch these: reformatting
+# one copy breaks parity with the other three, which is exactly what happened
+# the first time this repo was formatted.
+src/lib/salty-handoff
+src/lib/salty-night-record.ts
+vendored-parity.json
