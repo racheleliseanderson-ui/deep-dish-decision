@@ -5,6 +5,12 @@ import { FindingsStack } from "@/components/rih/findings";
 import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Reveal } from "@/components/rih/reveal";
 import { fieldDisplay, isUnstated } from "@/lib/case-depth";
+import {
+  CROSS_CONTACT_LABEL,
+  CROSS_CONTACT_NOTE,
+  CROSS_CONTACT_TONE,
+  readCrossContact,
+} from "@/lib/cross-contact";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { emptySituation, scoreRecord, topOccasion } from "@/lib/intelligence";
 import { useShortlist } from "@/lib/shortlist";
@@ -128,6 +134,7 @@ function Dossier() {
     : { present: false as const, completeness: null, fields: [] };
   const q = encodeSituation(situation);
   const strongest = topOccasion(record);
+  const crossContact = readCrossContact(record);
 
   return (
     <main className="min-h-screen pb-28">
@@ -152,6 +159,12 @@ function Dossier() {
           <div className="mt-6 flex flex-wrap gap-1.5">
             <Chip tone="accent">{record.region}</Chip>
             {record.hasOfficialConflict ? <Chip tone="critical">Conflicting official information</Chip> : null}
+            <Chip
+              tone={CROSS_CONTACT_TONE[crossContact.state]}
+              title={CROSS_CONTACT_NOTE[crossContact.state]}
+            >
+              {CROSS_CONTACT_LABEL[crossContact.state]}
+            </Chip>
             <Chip>Updated {record.reviewedAt}</Chip>
             <Chip>Best recorded use: {strongest.occasion}</Chip>
           </div>

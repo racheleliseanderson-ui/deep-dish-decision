@@ -3,6 +3,7 @@ import heroPass768 from "@/assets/hero-pass-768.webp";
 import heroPass1200 from "@/assets/hero-pass-1200.webp";
 import heroPass1800 from "@/assets/hero-pass-1800.webp";
 import { DecisionCard, decisionState } from "@/components/rih/decision-card";
+import { CrossContactView } from "@/components/rih/cross-contact-view";
 import { DecisionWorkflow } from "@/components/rih/decision-workflow";
 import { ImportedContext } from "@/components/rih/imported-context";
 import { QuickStart } from "@/components/rih/quick-start";
@@ -212,6 +213,11 @@ function Hub() {
     ? ranked.find((item) => item.record.slug === selectedSlug) ?? null
     : null;
 
+  // Saying "allergy / celiac" is the one answer that changes what the list is
+  // for. It stops being a fit ranking and becomes a question about published
+  // kitchen practice, so it gets sorted and labelled by that instead.
+  const crossContactFocus = situation.constraints.includes("Severe allergy / celiac");
+
   const patch = (next: Partial<Situation>) => {
     setSituation((current) => ({ ...current, ...next }));
     setLimit(8);
@@ -326,14 +332,28 @@ function Hub() {
             </div>
           ) : (
             <>
-              <div>
-                <p className="text-eyebrow text-gilt">Best fits</p>
-                <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
-                  What works for this night
-                </h2>
-              </div>
+              {crossContactFocus ? null : (
+                <div>
+                  <p className="text-eyebrow text-gilt">Best fits</p>
+                  <h2 className="mt-2 font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+                    What works for this night
+                  </h2>
+                </div>
+              )}
 
-              {ranked.length ? (
+              {ranked.length && crossContactFocus ? (
+                <div className="mt-6">
+                  <CrossContactView
+                    ranked={ranked}
+                    situation={situation}
+                    details={details}
+                    onOpen={setSelectedSlug}
+                    regionLabel={situation.region ?? activeGroup ?? ""}
+                    limit={limit}
+                    onMore={() => setLimit((value) => value + 8)}
+                  />
+                </div>
+              ) : ranked.length ? (
                 <div className="mt-6 space-y-4">
                   {ranked.slice(0, limit).map((sc) => (
                     <DecisionCard
@@ -354,7 +374,7 @@ function Hub() {
                 </div>
               )}
 
-              {limit < ranked.length ? (
+              {!crossContactFocus && limit < ranked.length ? (
                 <button
                   type="button"
                   onClick={() => setLimit((value) => value + 8)}
