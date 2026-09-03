@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import * as React from "react";
 
 const MOBILE_BREAKPOINT = 768;

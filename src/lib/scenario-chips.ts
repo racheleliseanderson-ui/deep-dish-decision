@@ -1,8 +1,10 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 /**
  * Scenario and condition chips derived only from the active Situation and
  * first-party record fields. Never invents dishes, prices, or ratings.
  */
 
+import { schemaDepthLabel } from "@/lib/case-depth";
 import type { RestaurantRecord } from "@/lib/dataset";
 import type { Situation } from "@/lib/intelligence";
 
@@ -56,7 +58,8 @@ export function conditionChips(r: RestaurantRecord, s: Situation, blocked: boole
       tone: "unknown",
     });
   if (r.planningLoad) out.push({ id: "load", label: `${r.planningLoad} load`, tone: "neutral" });
-  if (r.depthLabel) out.push({ id: "depth", label: r.depthLabel, tone: "neutral" });
+  if (r.depthLabel)
+    out.push({ id: "depth", label: schemaDepthLabel(r.depthLabel), tone: "neutral" });
   // Dietary / access hold only when the situation asks for it and the record is thin
   if (s.constraints.some((c) => /allergy|celiac|dietary/i.test(c)) && /not stated|unstated|unknown/i.test(r.dietaryDetails ?? ""))
     out.push({ id: "diet-hold", label: "Dietary evidence thin", tone: "watch" });

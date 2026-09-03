@@ -395,7 +395,7 @@ function describeDate(timing: NonNullable<SaltyHandoff["timing"]>): string | nul
 
 /**
  * The line shown in the import panel, e.g.
- * "From Salty Desk: hosting at home · 6 guests · Saturday · service load is the main constraint."
+ * "From Kitchen & Bar: cooking from what's in the house · 4 guests · tonight · 9 confirmed items."
  * Plain language only — no version numbers, no field names.
  */
 export function describeHandoff(handoff: SaltyHandoff): string {

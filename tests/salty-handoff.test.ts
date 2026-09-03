@@ -33,12 +33,12 @@ import {
   shouldApply,
 } from "../src/lib/salty-handoff/import-session.ts";
 import {
-  MEDICAL_PLACEHOLDER,
-  outgoingRestaurantToDesk,
+  outgoingRestaurantToOccasion,
   planningDietBanner,
-  sanitiseUnresolved,
   situationFromHandoff,
   situationIsStarted,
+  unresolvedCategories,
+  unresolvedCategory,
 } from "../src/lib/salty-handoff/apply.ts";
 import type { Situation } from "../src/lib/intelligence.ts";
 
@@ -337,7 +337,7 @@ test("the summary line reads like a sentence, not a record", () => {
   const line = describeHandoff(fullPacket());
   assert.equal(
     line,
-    "From Salty Desk: hosting at home · 6 guests · Saturday at 19:00 · Birthday dinner · Denver metro · service load is the main constraint.",
+    "From Salty & Clever: hosting at home · 6 guests · Saturday at 19:00 · Birthday dinner · Denver metro · service load is the main constraint.",
   );
   assert.doesNotMatch(line, /payload|schema|packet|contract|localStorage|hydrat|serial/i);
 });
@@ -431,59 +431,75 @@ test("planning diet never chips the allergy constraint", () => {
 });
 
 test("return packet carries the chosen room, not a shortlist", () => {
-  const { url, handoff } = outgoingRestaurantToDesk({
+  const { url, handoff } = outgoingRestaurantToOccasion({
     room: "Tavernetta",
     status: "hold",
-    unresolved: ["Step-free entry unconfirmed"],
+    unresolved: [{ domain: "access", title: "Access route not stated on any source" }],
   });
   assert.equal(handoff.from, "restaurant");
-  assert.equal(handoff.to, "desk");
+  assert.equal(handoff.to, "occasion");
   assert.equal(handoff.intent, "return-decision");
   assert.equal(handoff.decision?.room, "Tavernetta");
   assert.equal(handoff.decision?.status, "hold");
-  assert.deepEqual(handoff.decision?.unresolved, ["Step-free entry unconfirmed"]);
+  assert.deepEqual(handoff.decision?.unresolved, ["accessibility"]);
   const raw = JSON.stringify(handoff);
   assert.equal(raw.includes("shortlist"), false);
-  assert.match(url, /^https:\/\/salty\.saltnotes\.blog\/#sh=/);
+  assert.match(url, /^https:\/\/occasion\.saltnotes\.blog\/#sh=/);
   assert.equal(url.includes("?"), false);
 });
 
-test("a guest allergy disclosure does not survive the return packet", () => {
+test("only a category crosses the boundary, never the call script", () => {
   const allergy =
-    "Hi — we\u2019re considering Tavernetta tonight for 4. One guest has a severe allergy or " +
+    "Hi \u2014 we\u2019re considering Tavernetta tonight for 4. One guest has a severe allergy or " +
     "celiac disease. Can the kitchen currently accommodate that safely, including cross-contact?";
-  const { url, handoff } = outgoingRestaurantToDesk({
+  const { url, handoff } = outgoingRestaurantToOccasion({
     room: "Tavernetta",
     status: "hold",
-    unresolved: [allergy, "Deposit terms unconfirmed", "Hard end time 21:30 unconfirmed"],
+    unresolved: [
+      { domain: "dietary", title: "Dietary handling requires direct confirmation", action: allergy },
+      { domain: "spend", title: "No per-guest figure on file" },
+      { domain: "timing", title: "Service runs long against your hard end time" },
+    ],
   });
 
   // The codec's PROHIBITED_FIELDS check inspects keys only, so the encoded
   // packet and the URL fragment are where a value-level leak would show up.
   const raw = JSON.stringify(handoff);
-  for (const term of ["allerg", "celiac", "coeliac", "cross-contact", "epipen", "medical"]) {
+  for (const term of ["allerg", "celiac", "coeliac", "epipen", "medical", "kitchen"]) {
     assert.equal(raw.toLowerCase().includes(term), false, `leaked "${term}" in the packet`);
   }
   assert.equal(decodeURIComponent(url).toLowerCase().includes("allerg"), false);
 
-  // The neutral placeholder replaces it; unrelated items are untouched.
   assert.deepEqual(handoff.decision?.unresolved, [
-    MEDICAL_PLACEHOLDER,
-    "Deposit terms unconfirmed",
-    "Hard end time 21:30 unconfirmed",
+    "dietary cross-contact",
+    "spend and deposit terms",
+    "hard end time",
   ]);
 
-  // And a decoded round trip carries the same sanitised list.
+  // And a decoded round trip carries the same labels.
   const token = readHandoffToken(url.slice(url.indexOf("#")));
-  const decoded = decodeHandoff(token, "desk");
+  const decoded = decodeHandoff(token, "occasion");
   assert.equal(decoded.ok, true);
-  assert.equal(decoded.ok && decoded.handoff.decision?.unresolved?.[0], MEDICAL_PLACEHOLDER);
-
-  // The sanitiser itself: medical in, placeholder out; everything else passes.
-  assert.deepEqual(sanitiseUnresolved(["No EpiPen policy stated"]), [MEDICAL_PLACEHOLDER]);
-  assert.deepEqual(sanitiseUnresolved(["Private room minimum spend unconfirmed"]), [
-    "Private room minimum spend unconfirmed",
+  assert.deepEqual(decoded.ok && decoded.handoff.decision?.unresolved, [
+    "dietary cross-contact",
+    "spend and deposit terms",
+    "hard end time",
   ]);
+});
+
+test("a caller holding only a sentence still emits a label, never the sentence", () => {
+  // Free text in, closed vocabulary out. Nothing unrecognised is passed through.
+  assert.deepEqual(unresolvedCategories(["No EpiPen policy stated"]), ["dietary cross-contact"]);
+  assert.deepEqual(unresolvedCategories(["Private room minimum spend unconfirmed"]), [
+    "deposit terms",
+  ]);
+  assert.equal(unresolvedCategory("Whether the chef is in a good mood"), "open question");
+  assert.equal(unresolvedCategory(""), "open question");
+  // Two findings in the same domain collapse to one label rather than repeating.
+  assert.deepEqual(
+    unresolvedCategories([{ domain: "hours" }, { domain: "hours" }, { domain: "access" }]),
+    ["hours", "accessibility"],
+  );
 });
 
 test("an incoming packet is offered, never auto-applied over an open situation", () => {

@@ -16,7 +16,7 @@ export function LabsFooter() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
         <p className="text-eyebrow text-house-gold">Northern Lantern House Labs</p>
         <h2 className="mt-3 font-display text-2xl tracking-tight sm:text-3xl">
-          Deep Dish · Restaurant Intelligence
+          Deep Dish
         </h2>
         <p className="mt-3 max-w-xl text-[13px] leading-relaxed text-ink-foreground/70">
           What the record actually supports for tonight.

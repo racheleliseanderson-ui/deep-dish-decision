@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import type { Finding } from "@/lib/intelligence";
 
 /** Structured item extracted from a restaurant-related photo. */

@@ -8,7 +8,7 @@ import { ImportedContext } from "@/components/rih/imported-context";
 import { QuickStart } from "@/components/rih/quick-start";
 import { RefineNight } from "@/components/rih/refine-night";
 import { useSaltyImport } from "@/hooks/use-salty-import";
-import { groupForRegion } from "@/lib/corpus-meta";
+import { corpusMeta, groupForRegion } from "@/lib/corpus-meta";
 import type { RestaurantRecord } from "@/lib/dataset";
 import {
   emptySituation,
@@ -367,23 +367,57 @@ function Hub() {
           )}
         </section>
 
-        <section className="mt-14 border-t border-border pt-8">
-          <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr]">
-            <div>
-              <p className="text-eyebrow">Why Deep Dish is careful</p>
-              <h2 className="mt-2 font-display text-2xl leading-tight tracking-tight">A good answer says what it still does not know.</h2>
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                Deep Dish starts with the restaurant’s own published information, keeps important uncertainty visible, and does not let ratings override the needs of your night. If a hard requirement cannot be supported, it says so.
-              </p>
-            </div>
-            <div className="flex flex-wrap items-start gap-2 lg:justify-end">
-              <Link to="/guide" className="tap rounded-full border border-border px-4 py-2.5 text-xs text-muted-foreground hover:text-foreground">How Deep Dish thinks</Link>
-              <Link to="/atlas" className="tap rounded-full border border-border px-4 py-2.5 text-xs text-muted-foreground hover:text-foreground">Browse restaurants</Link>
-              <Link to="/shortlist" className="tap rounded-full border border-border px-4 py-2.5 text-xs text-muted-foreground hover:text-foreground">Night plan</Link>
-            </div>
-          </div>
-        </section>
       </div>
+
+      <section
+        aria-labelledby="house-position"
+        className="mt-16 border-y border-border-strong bg-surface-sunken"
+      >
+        <div aria-hidden className="h-px w-full bg-house-gold" />
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20">
+          <p className="text-eyebrow text-gilt">The house position</p>
+          <h2
+            id="house-position"
+            className="display-statement mt-4 max-w-[16ch] text-foreground"
+          >
+            We stop rather than guess.
+          </h2>
+          <p className="mt-7 max-w-3xl text-[16px] leading-relaxed text-foreground sm:text-lg">
+            Every file here starts at the restaurant&rsquo;s own pages. Where those pages say
+            nothing, Deep Dish leaves the field empty and gives you the question to ask instead of
+            a confident sentence somebody invented. Across{" "}
+            <span className="text-num">{corpusMeta.count.toLocaleString()}</span> rooms the average
+            record still has <span className="text-num">{corpusMeta.ops.avgUnknowns}</span> fields
+            nobody has stated, and{" "}
+            <span className="text-num">{corpusMeta.ops.officialConflicts}</span> of them hold two
+            official sources that flatly contradict each other, both left standing rather than
+            quietly reconciled. Stars, review sentiment and reputation move nothing here; a room
+            only sinks when it has said, in its own words, that it cannot do the thing you told us
+            cannot go wrong.
+          </p>
+
+          <div className="mt-9 flex flex-wrap items-center gap-2">
+            <Link
+              to="/guide"
+              className="tap rounded-full border border-border-strong px-4 py-2.5 text-xs text-muted-foreground hover:border-gilt hover:text-foreground"
+            >
+              How Deep Dish thinks
+            </Link>
+            <Link
+              to="/atlas"
+              className="tap rounded-full border border-border-strong px-4 py-2.5 text-xs text-muted-foreground hover:border-gilt hover:text-foreground"
+            >
+              Browse restaurants
+            </Link>
+            <Link
+              to="/shortlist"
+              className="tap rounded-full border border-border-strong px-4 py-2.5 text-xs text-muted-foreground hover:border-gilt hover:text-foreground"
+            >
+              Night plan
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <DecisionWorkflow
         sc={selected}

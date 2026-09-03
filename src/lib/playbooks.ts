@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 /**
  * Situation playbooks — short, first-party-safe starting points for common nights.
  * Applying a playbook only fills Situation fields; it never invents evidence.

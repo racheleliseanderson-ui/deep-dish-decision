@@ -1,0 +1,69 @@
+{
+  "note": "Resolved by scripts/pipeline/resolve-targets.mjs. Each entry's website was reached over plain HTTPS and verified to name the establishment and read as a restaurant; address and phone were taken from that page (JSON-LD first, visible text second) and the address was required to name the target city. Unresolved, parked, closed and unverifiable targets were dropped and are listed in the matching reports/resolve-targets file. Narrative first-party fields stay empty until enrich.mjs runs.",
+  "generatedAt": "2026-09-02T22:52:45.474Z",
+  "batches": [
+    {
+      "city": "San Diego",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Lola 55",
+          "website": "https://lola55.com/",
+          "phone": "+1-619-542-9155",
+          "address": "55 1290 F Street, San Diego, CA",
+          "cuisineTags": []
+        }
+      ]
+    },
+    {
+      "city": "Detroit",
+      "stateCode": "MI",
+      "listings": [
+        {
+          "title": "Bar Pigalle",
+          "website": "https://www.barpigalle.com/",
+          "phone": "+1-313-497-9200",
+          "address": "9 Slide 9 (current slide) 2915 John R St, Detroit, MI 48201",
+          "cuisineTags": []
+        }
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "stateCode": "NC",
+      "listings": [
+        {
+          "title": "Fin & Fino",
+          "website": "https://www.finandfino.com/",
+          "address": "135 Levine Avenue of the Arts #100, Charlotte, NC 28202",
+          "cuisineTags": []
+        }
+      ]
+    },
+    {
+      "city": "Nashville",
+      "stateCode": "TN",
+      "listings": [
+        {
+          "title": "Riddim N Spice",
+          "website": "https://riddimnspice.com/",
+          "phone": "+1-615-953-7121",
+          "address": "2116 Meharry Boulevard, Nashville, TN 37208",
+          "cuisineTags": []
+        }
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Wayfare Tavern",
+          "website": "https://www.wayfaretavern.com/",
+          "address": "201 Pine Street, San Francisco, CA 94104",
+          "cuisineTags": []
+        }
+      ]
+    }
+  ]
+}

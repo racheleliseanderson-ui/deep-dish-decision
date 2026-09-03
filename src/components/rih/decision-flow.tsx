@@ -302,15 +302,10 @@ export function DecisionFlow() {
             Not in this diagram, because they are not in the calculation: star ratings, review
             sentiment, sponsored placement, popularity.
           </text>
-          <text x="20" y="424" fontSize="11" fill="var(--subtle)">
-            Directory ratings and recurring review patterns are shown on a room&rsquo;s page as
-            context. They never move its position.
-          </text>
         </svg>
       </div>
       <figcaption className="mt-2 text-[11px] leading-relaxed text-subtle">
-        The ordering rule as implemented — filters remove, scoring reorders, and a stated need can
-        only hold a room when the room itself says it cannot meet it.
+        The ordering rule as implemented: filters remove, scoring reorders.
       </figcaption>
     </figure>
   );

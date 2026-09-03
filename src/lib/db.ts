@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 /**
  * Supabase, held at arm's length.
  *

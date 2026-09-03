@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { useMemo } from "react";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { haversineMi, minutesToClock, openStateAtMoment, localNow, type LiveRow } from "@/lib/live";

@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { useMemo } from "react";
 import type { Situation } from "@/lib/intelligence";
 import type { Origin, OriginState } from "@/lib/origin";

@@ -22,10 +22,19 @@ const GROUP_LABEL: Record<Contribution["group"], string> = {
   evidence: "Evidence",
 };
 
-/* Direction carries the colour — a loss is never drawn in the gain colour,
-   whatever category it came from. The group is named in text beside it. */
+/* Direction carries three signals, not one.
+ *
+ * Colour was the whole signal here, and the bar is aria-hidden, so a reader
+ * who cannot separate the two hues had nothing. The CVD palettes now split
+ * verified and critical by lightness rather than hue, but a palette is a
+ * setting and this chart should not depend on one: gains are drawn solid and
+ * losses hatched, and each bar carries a caret at its outer end pointing the
+ * way it moved. Any one of the three is enough to read it.
+ */
 const GAIN = "var(--verified)";
 const LOSS = "var(--critical)";
+const GAIN_FILL = GAIN;
+const LOSS_FILL = `repeating-linear-gradient(135deg, ${LOSS} 0 3px, color-mix(in oklab, ${LOSS} 40%, transparent) 3px 6px)`;
 
 export function WhyThisRank({ sc, className }: { sc: Scored; className?: string }) {
   const model = useMemo(() => {
@@ -78,13 +87,24 @@ export function WhyThisRank({ sc, className }: { sc: Scored; className?: string 
                   <div
                     className="absolute inset-y-[3px] rounded-full"
                     style={{
-                      background: positive ? GAIN : LOSS,
+                      background: positive ? GAIN_FILL : LOSS_FILL,
                       left: positive ? "50%" : `${50 - pct}%`,
                       width: `${pct}%`,
                       opacity: 0.85,
                     }}
                     aria-hidden
                   />
+                  <span
+                    className="absolute top-1/2 -translate-y-1/2 text-[9px] leading-none"
+                    style={
+                      positive
+                        ? { left: `${50 + pct}%`, color: GAIN }
+                        : { right: `${50 + pct}%`, color: LOSS }
+                    }
+                    aria-hidden
+                  >
+                    {positive ? "\u25B8" : "\u25C2"}
+                  </span>
                 </div>
                 <span
                   className={cn(
@@ -102,8 +122,8 @@ export function WhyThisRank({ sc, className }: { sc: Scored; className?: string 
       </ul>
 
       <p className="mt-4 border-t border-border/60 pt-3 text-[11px] leading-relaxed text-subtle">
-        Every term is drawn to the same scale. Directory ratings and review sentiment are not in
-        this calculation — they describe a room, they never rank it.
+        Every term is drawn to the same scale. Solid bars point right and gained points; hatched
+        bars point left and lost them.
       </p>
     </section>
   );

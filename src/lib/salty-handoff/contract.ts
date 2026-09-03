@@ -38,17 +38,33 @@ export const MAX_PACKET_BYTES = 4096;
 /** A packet older than this is offered as stale rather than applied. */
 export const MAX_PACKET_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
+/**
+ * RETIRED APP ID -- `desk`.
+ *
+ * Salty Desk (salty.saltnotes.blog) was retired on 2026-09-02. Its orientation
+ * content now lives on the editorial site at https://saltnotes.blog/tools/, and
+ * the old domain 301s there. Nothing in this suite routes to `desk` any more:
+ * its origin below points at the publication and its label is the publication's
+ * name, so a stale link lands on the house rather than on a dead host.
+ *
+ * The id stays in this union -- and in APPS in codec.ts -- only so the union and
+ * the packet codec stay stable across four independently-deployed apps: a packet
+ * minted by an older build must still decode. Remove it from the union in a
+ * single coordinated pass, once a build can be run in all four repos, because
+ * every `Record<SaltyApp, ...>` map in three repos has to change in lockstep and
+ * one miss is a compile error in a live deploy.
+ */
 export type SaltyApp = "desk" | "kitchen" | "occasion" | "restaurant";
 
 export const APP_LABELS: Record<SaltyApp, string> = {
-  desk: "Salty Desk",
+  desk: "Salty & Clever",
   kitchen: "Kitchen & Bar",
   occasion: "Occasion OS",
-  restaurant: "Restaurant Intelligence",
+  restaurant: "Deep Dish", // product name is Deep Dish; "restaurant intelligence" survives only as a lowercase descriptor in prose, never as a title
 };
 
 export const APP_ORIGINS: Record<SaltyApp, string> = {
-  desk: "https://salty.saltnotes.blog",
+  desk: "https://saltnotes.blog",
   kitchen: "https://kitchen.saltnotes.blog",
   occasion: "https://occasion.saltnotes.blog",
   restaurant: "https://deepdish.saltnotes.blog",

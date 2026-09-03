@@ -32,10 +32,13 @@ export function Chip({
   children,
   tone = "neutral",
   className,
+  title,
 }: {
   children: ReactNode;
   tone?: "neutral" | "accent" | "critical" | "watch" | "unknown" | "verified";
   className?: string;
+  /** Optional hover/AT explanation for a chip whose short label needs one. */
+  title?: string;
 }) {
   const tones: Record<string, string> = {
     neutral: "border-border bg-surface-raised text-muted-foreground",
@@ -47,6 +50,7 @@ export function Chip({
   };
   return (
     <span
+      title={title}
       className={cn(
         "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] leading-none tracking-wide",
         tones[tone],

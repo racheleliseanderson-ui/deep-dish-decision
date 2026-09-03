@@ -1,6 +1,6 @@
 import { Chip, Eyebrow } from "@/components/rih/bits";
 import { decisionState, materialFindings } from "@/components/rih/decision-card";
-import { ReturnToDesk } from "@/components/rih/return-to-desk";
+import { SendToNightPlan } from "@/components/rih/send-to-night-plan";
 import {
   confirmationSummary,
   readConfirmationEvidence,
@@ -507,10 +507,11 @@ export function DecisionWorkflow({
               {confirmedRecap ? <Step number="02" title="Already confirmed">{confirmedRecap}</Step> : null}
 
               <Step number="03" title="Keep the decision with the night">
-                <ReturnToDesk
+                <SendToNightPlan
                   room={r.title}
                   status={returnStatus}
-                  unresolved={summary.unresolved.map((finding) => callScript(finding, sc, situation, details))}
+                  // The script text stays on this screen. Only the category travels.
+                  unresolved={summary.unresolved}
                 />
               </Step>
             </>
@@ -528,7 +529,7 @@ export function DecisionWorkflow({
               </Step>
               <Step number="03" title="Book"><BookingAction sc={sc} state={effectiveState} /></Step>
               <Step number="04" title="Keep the decision with the night">
-                <ReturnToDesk room={r.title} status={returnStatus} unresolved={[]} />
+                <SendToNightPlan room={r.title} status={returnStatus} unresolved={[]} />
               </Step>
             </>
           ) : (
@@ -553,10 +554,11 @@ export function DecisionWorkflow({
               <Step number="04" title="Confirm it">{confirmationCards(summary.unresolved)}</Step>
               <Step number="05" title="Book"><BookingAction sc={sc} state={effectiveState} /></Step>
               <Step number="06" title="Keep the decision with the night">
-                <ReturnToDesk
+                <SendToNightPlan
                   room={r.title}
                   status={returnStatus}
-                  unresolved={summary.unresolved.map((finding) => callScript(finding, sc, situation, details))}
+                  // The script text stays on this screen. Only the category travels.
+                  unresolved={summary.unresolved}
                 />
               </Step>
             </>

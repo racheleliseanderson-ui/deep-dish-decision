@@ -1,6 +1,6 @@
 /**
  * Matched public health-inspection snapshots.
- * Empty means not on file — never inferred from cuisine, stars, or reviews.
+ * Empty means not on file. Nothing here is inferred from cuisine, stars, or reviews.
  */
 import raw from "@/data/health-inspections.json";
 

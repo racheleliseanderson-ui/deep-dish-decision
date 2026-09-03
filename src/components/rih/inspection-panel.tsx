@@ -1,8 +1,13 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { Chip, Eyebrow } from "@/components/rih/bits";
-import { getInspection } from "@/lib/inspections";
+import { getInspection, inspectionCoverage } from "@/lib/inspections";
 
 export function InspectionPanel({ slug }: { slug: string }) {
   const row = getInspection(slug);
+  // "Not on file" is a claim about this restaurant. It is only true when the
+  // layer holds records at all; when the layer is empty the honest statement
+  // is about the build, and the chip should not read as a finding.
+  const layerLoaded = inspectionCoverage() > 0;
   return (
     <section className="rounded-xl border border-border bg-surface-raised/40 p-4 sm:p-5">
       <div className="flex flex-wrap items-start justify-between gap-2">
@@ -14,13 +19,21 @@ export function InspectionPanel({ slug }: { slug: string }) {
           </p>
         </div>
         <Chip tone={row ? (row.closed ? "critical" : "watch") : "unknown"}>
-          {row ? (row.closed ? "Closure flagged" : "Public snapshot") : "Not on file"}
+          {row
+            ? row.closed
+              ? "Closure flagged"
+              : "Public snapshot"
+            : layerLoaded
+              ? "Not on file"
+              : "Layer not loaded"}
         </Chip>
       </div>
 
       {!row ? (
         <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
-          No matched public inspection is on file. Cleanliness stays held-open.
+          {layerLoaded
+            ? "No matched public inspection is on file. Cleanliness stays held-open."
+            : "The inspection layer carries no records in this build, so this restaurant was not checked against one. Cleanliness stays held-open."}
         </p>
       ) : (
         <>

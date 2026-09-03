@@ -1,6 +1,6 @@
 import { Chip, Eyebrow, Meter } from "@/components/rih/bits";
 import { GrowBar } from "@/components/rih/reveal";
-import { ReturnToDesk } from "@/components/rih/return-to-desk";
+import { SendToNightPlan } from "@/components/rih/send-to-night-plan";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { buildConsumerSnapshot } from "@/lib/consumer-snapshot";
 import { decisionBrief, type Scored, type Situation } from "@/lib/intelligence";
@@ -77,12 +77,13 @@ export function DecisionBrief({
         <p className="mt-1.5 text-sm leading-relaxed text-foreground">{b.nextAction}</p>
       </div>
 
-      <ReturnToDesk
+      <SendToNightPlan
         room={sc.record.title}
         status={
           b.verdictTone === "hold" ? "hold" : b.verdictTone === "conditional" ? "in-progress" : "shortlisted"
         }
-        unresolved={b.confirmCalls}
+        // Findings, not the call text: only the category crosses to Occasion OS.
+        unresolved={b.confirmFindings}
       />
 
       {b.confirmCalls.length ? (
@@ -120,8 +121,7 @@ function ConsumerSnapshot({ record }: { record: RestaurantRecord }) {
         <div>
           <Eyebrow>Before you choose it</Eyebrow>
           <p className="mt-1 max-w-2xl text-[12px] leading-relaxed text-subtle">
-            {snap.whyGo} This is a first-party read of what the restaurant offers — not proof the food
-            is good, and not a public-review consensus.
+            {snap.whyGo} That is what the restaurant says it does, read off its own pages.
           </p>
         </div>
       </div>

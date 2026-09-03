@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { formatDistance, openLabel, partyTotal, spendLine } from "@/lib/live";
 import { Chip, Eyebrow, Meter } from "@/components/rih/bits";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
@@ -12,7 +13,7 @@ function isOpenValue(value: string): boolean {
   return !t || OPEN.test(t);
 }
 
-/** First-party menu architecture only — never invents a format. */
+/** Reads menu format off the restaurant's own pages. An absent format stays absent. */
 function architectureLine(r: RestaurantRecord): string {
   const blob = [r.menuSummary, r.serviceSummary, r.beverageDetails].filter(Boolean).join(" · ");
   const hits: string[] = [];

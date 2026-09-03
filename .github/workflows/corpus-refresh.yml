@@ -1,8 +1,11 @@
 name: Corpus refresh hygiene
 
-# Scheduled hygiene uses owned-site first-party reads. Discovery modes may still
-# require configured provider keys. The seed-listings mode is keyless and uses
-# verified repository seed files followed by owned-site enrichment.
+# Scheduled hygiene uses owned-site first-party reads. The seed-listings mode is
+# keyless and uses verified repository seed files followed by owned-site
+# enrichment. Google Places discovery was removed from this project and
+# scripts/pipeline/discover.mjs is a stub that exits 1, so the modes that
+# dispatched it are gone; the guard below says so instead of failing silently
+# three steps in.
 
 on:
   schedule:
@@ -11,17 +14,13 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "hygiene | discover | seed | seed-listings"
+        description: "hygiene | seed-listings"
         required: true
         default: "hygiene"
       batch:
-        description: "Hygiene batch size / restaurants per city on discover"
+        description: "Hygiene batch size"
         required: false
         default: "25"
-      cities:
-        description: "Cities per discover run (discover/seed modes)"
-        required: false
-        default: "3"
       seed_cities:
         description: "Optional comma-separated city names for seed-listings mode"
         required: false
@@ -43,29 +42,19 @@ jobs:
           node scripts/pipeline/refresh.mjs
           node scripts/pipeline/report.mjs
 
-      # Hygiene first on schedule, hygiene mode, and legacy seed/discover mode.
+      - name: Reject retired discovery modes
+        if: ${{ github.event_name == 'workflow_dispatch' && (inputs.mode == 'discover' || inputs.mode == 'seed') }}
+        run: |
+          echo "::error::mode=${{ inputs.mode }} is retired. discover.mjs was disabled when Google Places was removed. Use mode=seed-listings for offline verified seeding plus owned-site enrichment, or mode=hygiene."
+          exit 1
+
+      # Hygiene first on schedule and in hygiene mode.
       - name: Hygiene enrich
-        if: ${{ github.event_name == 'schedule' || inputs.mode == 'hygiene' || inputs.mode == 'seed' }}
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'hygiene' }}
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: node scripts/pipeline/enrich.mjs --hygiene --batch=${{ inputs.batch || 25 }}
-
-      # Pure discover still allowed, but must clear hygiene gate or allow-with-hygiene.
-      - name: Controlled discover
-        if: ${{ github.event_name == 'workflow_dispatch' && (inputs.mode == 'discover' || inputs.mode == 'seed') }}
-        env:
-          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
-          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
-        run: |
-          CITIES="${{ inputs.cities || 3 }}"
-          LIMIT="${{ inputs.batch || 25 }}"
-          # discover.mjs uses --cities and --limit (not --batch).
-          # After seed-mode hygiene, allow-with-hygiene still guards residual due items.
-          node scripts/pipeline/discover.mjs \
-            --cities="$CITIES" \
-            --limit="$LIMIT" \
-            --allow-with-hygiene
 
       - name: Seed verified listings + owned enrichment
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'seed-listings' }}

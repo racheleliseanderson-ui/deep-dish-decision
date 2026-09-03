@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { Chip, Eyebrow } from "@/components/rih/bits";
 import { ListingFace } from "@/components/rih/listing-face";
 import { DecisionBrief } from "@/components/rih/decision-brief";
@@ -6,7 +7,13 @@ import { FindingsStack } from "@/components/rih/findings";
 import { InspectionPanel } from "@/components/rih/inspection-panel";
 import { ReputationPanel } from "@/components/rih/reputation-panel";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import { CASE_FIELDS, fieldDisplay, isUnstated } from "@/lib/case-depth";
+import {
+  CASE_FIELDS,
+  SCHEMA_DEPTH_TITLE,
+  fieldDisplay,
+  isUnstated,
+  schemaDepthLabel,
+} from "@/lib/case-depth";
 import { enrichmentAudit, ownedSiteEvidence } from "@/lib/enrichment";
 import { useEnrichmentGroup } from "@/hooks/use-enrichment";
 import type { Scored, Situation } from "@/lib/intelligence";
@@ -61,9 +68,17 @@ export function CaseFile({
                 </Chip>
                 {r.hasOfficialConflict ? <Chip tone="critical">Official conflict</Chip> : null}
                 <Chip tone="unknown">{r.unknownsCount} unknowns</Chip>
-                <Chip tone={r.isFullCaseFile ? "verified" : "watch"}>{r.depthLabel}</Chip>
-                <Chip tone={statedCount >= 8 ? "verified" : "watch"}>
-                  {statedCount}/{CASE_FIELDS.length} stated
+                <Chip
+                  tone={r.isFullCaseFile ? "verified" : "watch"}
+                  title={SCHEMA_DEPTH_TITLE}
+                >
+                  {schemaDepthLabel(r.depthLabel)}
+                </Chip>
+                <Chip
+                  tone={statedCount >= 8 ? "verified" : "watch"}
+                  title="Case fields the restaurant has actually published, counted on this record."
+                >
+                  {statedCount}/{CASE_FIELDS.length} stated by the restaurant
                 </Chip>
                 <Chip>Reviewed {r.reviewedAt}</Chip>
                 {(() => {
@@ -224,8 +239,7 @@ export function CaseFile({
           {tab === "Confirmation" ? (
             <div className="space-y-4 text-[13px] leading-relaxed text-muted-foreground">
               <p>
-                Confirm hours, pricing, and reservation policy live before you commit. The instrument
-                does not invent missing fields.
+                Confirm hours, pricing, and reservation policy live before you commit.
               </p>
               <p>
                 Next review: <span className="text-num text-foreground">{r.nextReviewAt}</span>

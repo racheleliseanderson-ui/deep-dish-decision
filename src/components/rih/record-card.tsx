@@ -1,8 +1,9 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { DecisionStrip } from "@/components/rih/decision-strip";
 import { Chip } from "@/components/rih/bits";
 import { FindingRow } from "@/components/rih/findings";
 import { ListingFace } from "@/components/rih/listing-face";
-import { isUnstated } from "@/lib/case-depth";
+import { SCHEMA_DEPTH_TITLE, isUnstated, schemaDepthLabel } from "@/lib/case-depth";
 import { whyGoLine } from "@/lib/consumer-snapshot";
 import { getCompleteness } from "@/lib/completeness";
 import { conditionChips, scenarioChips } from "@/lib/scenario-chips";
@@ -105,7 +106,12 @@ export function RecordCard({
                 </p>
               )}
               <p className="mt-1">
-                <Chip tone={r.isFullCaseFile ? "verified" : "watch"}>{r.depthLabel}</Chip>
+                <Chip
+                  tone={r.isFullCaseFile ? "verified" : "watch"}
+                  title={SCHEMA_DEPTH_TITLE}
+                >
+                  {schemaDepthLabel(r.depthLabel)}
+                </Chip>
               </p>
             </div>
           </div>

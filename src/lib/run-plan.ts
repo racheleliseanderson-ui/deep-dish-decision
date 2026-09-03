@@ -126,7 +126,7 @@ export function planCommand(plan: RunPlan) {
 export const PLAN_COMMAND_NOTE =
   "Google Places discovery is disabled in this project, so there is no discover run to dispatch. This seeds from the verified listing batches in src/data/seed-listings*.json. Batch size, cities per run, the daily cap and cuisine focus are planning figures only — the seed scripts take no flags for them.";
 
-/** Hygiene before expansion — never-enriched, thin, site failures, review due. */
+/** Hygiene before expansion: never-enriched, thin, site failures, review due. */
 export function hygieneCommand(batch = 25) {
   return `node scripts/pipeline/enrich.mjs --hygiene --batch=${batch}`;
 }

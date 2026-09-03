@@ -1,0 +1,10 @@
+{
+  "$comment": "Checksums of the hand-vendored handoff files. SHA-256 over the file content with line endings normalised to LF. This file is itself vendored: it must be identical in all four Salty & Clever repos. Regenerate with: node scripts/check-vendored-parity.mjs --update",
+  "algorithm": "sha256",
+  "normalisation": "lf",
+  "files": {
+    "src/lib/salty-handoff/contract.ts": "befedd5059f78ce18a97cf1fd0695873ca528963e30f734f7c98826c9b17ee21",
+    "src/lib/salty-handoff/codec.ts": "cac3aa8171f32359bd6b3dd59a33455e2fdb982546e0d5b40a8e7d6f5d874401",
+    "src/lib/salty-night-record.ts": "94c797186c0e270e50492b6cbba276930d84b6794480e0fd4616e8dd62115990"
+  }
+}

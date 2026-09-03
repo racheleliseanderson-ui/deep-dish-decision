@@ -22,7 +22,7 @@ export interface ImportSession {
   overwrites: boolean;
   /** True when the packet is valid but over a week old. */
   stale: boolean;
-  /** Unknown fields we ignored. Developer signal only — never rendered. */
+  /** Unknown fields we ignored. Developer signal only, never rendered. */
   dropped: string[];
 }
 

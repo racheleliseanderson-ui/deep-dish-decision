@@ -3,6 +3,16 @@ import { cn } from "@/lib/utils";
 
 export type DisplayMode = "navy" | "pearl";
 
+/**
+ * Browser chrome, one value per ground: --background rendered to sRGB.
+ *
+ * __root.tsx emits these as the OS-keyed <meta name="theme-color"> fallback and
+ * inlines them into the pre-paint script, and applyMode rewrites the same
+ * elements on toggle. One definition, so the chrome and the page cannot end up
+ * different navies.
+ */
+export const THEME_COLOR = { navy: "#0c1220", pearl: "#f9fafd" } as const;
+
 const MODE_KEY = "sc-mode";
 const CVD_KEY = "sc-cvd";
 const LEGACY_THEME = "rih-theme";
@@ -30,10 +40,27 @@ function readCvd(): boolean {
   return typeof document !== "undefined" && document.documentElement.classList.contains("cvd");
 }
 
+/**
+ * Write the active ground's colour onto every theme-color meta.
+ *
+ * Content only: the elements themselves belong to the head React rendered, and
+ * adding or removing one would put a node in the head that React did not put
+ * there. Both metas get the same value, so whichever the browser's media query
+ * selects is the one the reader actually chose.
+ */
+export function syncThemeColor(mode: DisplayMode = readMode()) {
+  if (typeof document === "undefined") return;
+  const color = mode === "pearl" ? THEME_COLOR.pearl : THEME_COLOR.navy;
+  document
+    .querySelectorAll('meta[name="theme-color"]')
+    .forEach((el) => el.setAttribute("content", color));
+}
+
 export function applyMode(mode: DisplayMode) {
   const root = document.documentElement;
   root.classList.toggle("dark", mode !== "pearl");
   root.classList.toggle("light", mode === "pearl");
+  syncThemeColor(mode);
   try {
     localStorage.setItem(MODE_KEY, mode);
     localStorage.setItem(LEGACY_THEME, mode === "pearl" ? "light" : "dark");

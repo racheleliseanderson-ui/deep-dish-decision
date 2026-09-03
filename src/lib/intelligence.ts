@@ -1310,6 +1310,12 @@ export type Brief = {
   burdenLine: string;
   nextAction: string;
   confirmCalls: string[];
+  /**
+   * The findings behind confirmCalls, in the same order. The call text is for
+   * this screen; anything crossing to another app needs the finding's own
+   * domain so it can be reduced to a category instead of a sentence.
+   */
+  confirmFindings: Finding[];
 };
 
 export function decisionBrief(sc: Scored, s: Situation): Brief {
@@ -1361,12 +1367,21 @@ export function decisionBrief(sc: Scored, s: Situation): Brief {
       ? `${path} in one pass and clear every critical item below; book only after they resolve.`
       : `${path} to confirm hours, party size, and the volatile fields, then book on the ${r.bookingPlatforms[0] ?? "official"} pathway.`;
 
-  const confirmCalls = sc.findings
+  const confirmFindings = sc.findings
     .filter((f) => f.layer !== "unknown" || f.impact >= 40)
-    .slice(0, 6)
-    .map((f) => f.action);
+    .slice(0, 6);
+  const confirmCalls = confirmFindings.map((f) => f.action);
 
-  return { verdict, verdictTone: tone, fitLine, riskLine, burdenLine, nextAction, confirmCalls };
+  return {
+    verdict,
+    verdictTone: tone,
+    fitLine,
+    riskLine,
+    burdenLine,
+    nextAction,
+    confirmCalls,
+    confirmFindings,
+  };
 }
 
 export const OPS = corpusMeta.ops;

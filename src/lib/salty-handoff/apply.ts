@@ -1,5 +1,5 @@
 /**
- * Restaurant Intelligence mapping onto Salty Handoff v2.
+ * Deep Dish mapping onto Salty Handoff v2.
  * Incoming packets prefill the situation console. Planning-level dietary
  * categories never become allergy guarantees. Outgoing packets return the
  * chosen room, not the shortlist.
@@ -124,67 +124,112 @@ export function planningDietBanner(handoff: SaltyHandoff): string | null {
 }
 
 /**
- * Guest medical detail must not cross the app boundary.
+ * What crosses to Occasion OS is the category of the open question, never the
+ * question.
  *
  * The shared contract lists allergen / allergy / medical in PROHIBITED_FIELDS,
- * but codec.ts walks object KEYS only — it never inspects string values. An
- * unresolved item is free text (it comes from the call script, which writes
- * sentences like "One guest has a severe allergy or celiac disease..."), so
- * the disclosure sails straight through the filter written to stop it, into
- * the URL fragment and into localStorage under salty-night-record-v1.
+ * but codec.ts walks object KEYS only and never inspects string values. An
+ * unresolved item is free text out of the call script, which writes sentences
+ * like "One guest has a severe allergy or celiac disease...", so a guest's
+ * medical disclosure sailed straight through the filter written to stop it,
+ * into the URL fragment and into localStorage under salty-night-record-v1.
  *
- * Matching items are replaced whole rather than redacted in place: scrubbing
- * one word out of the sentence still leaves the diagnosis legible from what
- * remains. Non-medical items (hours, deposit, private room, hard end time)
- * pass through untouched.
+ * Redacting words out of the sentence is not a fix: what is left still reads
+ * as the diagnosis. So the sentence does not travel at all. Every outgoing
+ * item is mapped to one label from the closed vocabulary below, which means
+ * nothing free-typed can leave this app by this route regardless of what the
+ * script says next. The full script stays on our own screen, where the person
+ * whose night it is can read it and copy it.
+ *
+ * The label is read off the finding's own `domain` where the caller has one.
+ * String matching is the fallback for a caller that only has a sentence, and
+ * it is deliberately shallow: anything it does not recognise is "open
+ * question", which is true and says nothing.
  */
-const MEDICAL_KEYWORDS = [
-  "allergy",
-  "allergies",
-  "allergic",
-  "allergen",
-  "celiac",
-  "coeliac",
-  "cross-contact",
-  "anaphyla",
-  "epipen",
-  "medical",
-  "intolerance",
-] as const;
+export type UnresolvedItem =
+  | string
+  | { domain?: string; layer?: string; title?: string; action?: string };
 
-export const MEDICAL_PLACEHOLDER =
-  "Confirm the declared dietary requirement directly with the kitchen.";
+/** One label per Finding domain in src/lib/intelligence.ts. */
+export const UNRESOLVED_CATEGORY_BY_DOMAIN: Readonly<Record<string, string>> = {
+  access: "accessibility",
+  arrival: "parking and dress",
+  beverage: "beverage program",
+  booking: "booking pathway",
+  dietary: "dietary cross-contact",
+  environment: "noise and room",
+  evidence: "evidence gap",
+  hours: "hours",
+  location: "distance",
+  operations: "planning load",
+  party: "party size and private room",
+  residual: "open question",
+  spend: "spend and deposit terms",
+  timing: "hard end time",
+};
 
-function mentionsMedical(text: string): boolean {
-  const lower = String(text ?? "")
-    .toLowerCase()
-    .replace(/[\u2010-\u2015]/g, "-");
-  // Collapsed form catches "cross contact" and "epi-pen" as well.
-  const collapsed = lower.replace(/[-\s]+/g, "");
-  return MEDICAL_KEYWORDS.some(
-    (word) => lower.includes(word) || collapsed.includes(word.replace(/-/g, "")),
-  );
+export const DEFAULT_UNRESOLVED_CATEGORY = "open question";
+
+/** Fallback only, for a caller holding a sentence and no finding. */
+const TEXT_CATEGORY: ReadonlyArray<readonly [RegExp, string]> = [
+  [/allerg|celiac|coeliac|cross.?contact|gluten|dietary|epi.?pen|anaphyla|intoleran/i, "dietary cross-contact"],
+  [/step.?free|wheelchair|accessib|elevator|stairs?\b/i, "accessibility"],
+  [/deposit|minimum spend|prepay|cancellation/i, "deposit terms"],
+  [/private (?:room|dining)|semi-private|buyout/i, "private room"],
+  [/end time|hard out|curfew/i, "hard end time"],
+  [/park|transit|valet/i, "parking"],
+  [/dress|attire/i, "dress code"],
+  [/reserv|book|walk-?in|waitlist/i, "booking pathway"],
+  [/hours|closing|closes|open(?:ing)?\b/i, "hours"],
+  [/price|per guest|spend|cost/i, "spend"],
+  [/party size|large party|table for|seating/i, "party size"],
+  [/noise|loud|volume/i, "noise and room"],
+];
+
+/** The one label this item may become. Never the item's own text. */
+export function unresolvedCategory(item: UnresolvedItem): string {
+  if (item && typeof item === "object") {
+    const byDomain = item.domain ? UNRESOLVED_CATEGORY_BY_DOMAIN[item.domain] : undefined;
+    if (byDomain) return byDomain;
+    const text = `${item.title ?? ""} ${item.action ?? ""}`;
+    return matchCategory(text);
+  }
+  return matchCategory(String(item ?? ""));
 }
 
-/** Replace any medical clause with a neutral instruction, keeping the rest. */
-export function sanitiseUnresolved(items: readonly string[]): string[] {
+function matchCategory(text: string): string {
+  const t = text.trim();
+  if (!t) return DEFAULT_UNRESOLVED_CATEGORY;
+  for (const [re, label] of TEXT_CATEGORY) if (re.test(t)) return label;
+  return DEFAULT_UNRESOLVED_CATEGORY;
+}
+
+/** Categories for the outgoing packet: deduped, order preserved. */
+export function unresolvedCategories(items: readonly UnresolvedItem[]): string[] {
   const out: string[] = [];
   for (const item of items) {
-    const safe = mentionsMedical(item) ? MEDICAL_PLACEHOLDER : item;
-    if (!out.includes(safe)) out.push(safe);
+    const label = unresolvedCategory(item);
+    if (!out.includes(label)) out.push(label);
   }
   return out;
 }
 
-export function outgoingRestaurantToDesk(opts: {
+/**
+ * The chosen room, sent to the night plan in Occasion OS.
+ *
+ * This used to address the Desk. The Desk was retired on 2026-09-02, and the
+ * night itself lives in Occasion OS -- which already sends traffic the other
+ * way when a host decides to dine out instead -- so the return leg lands there.
+ */
+export function outgoingRestaurantToOccasion(opts: {
   room: string;
   status?: DecisionStatus;
-  unresolved?: string[];
+  unresolved?: readonly UnresolvedItem[];
 }): { url: string; handoff: SaltyHandoff } {
   const unresolved = opts.unresolved?.length
-    ? sanitiseUnresolved(opts.unresolved).slice(0, 8)
+    ? unresolvedCategories(opts.unresolved).slice(0, 8)
     : undefined;
-  const handoff = createHandoff("restaurant", "desk", "return-decision", {
+  const handoff = createHandoff("restaurant", "occasion", "return-decision", {
     decision: unresolved?.length
       ? { room: opts.room, status: opts.status ?? "shortlisted", unresolved }
       : { room: opts.room, status: opts.status ?? "shortlisted" },
@@ -192,7 +237,7 @@ export function outgoingRestaurantToDesk(opts: {
   const baseUrl = handoffUrl(handoff, "/");
   const currentNight = readNightRecord();
   if (!currentNight) return { url: baseUrl, handoff };
-  const nextNight = mergeNightFromHandoff(currentNight, handoff, "desk");
+  const nextNight = mergeNightFromHandoff(currentNight, handoff, "occasion");
   writeNightRecord(nextNight);
   return { url: nightRecordUrl(baseUrl, nextNight), handoff };
 }

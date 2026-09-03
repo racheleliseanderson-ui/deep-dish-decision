@@ -1,5 +1,5 @@
 /**
- * Seed / corpus integrity checker for Restaurant Intelligence.
+ * Seed / corpus integrity checker for Deep Dish.
  *
  * Fail-closed on identity clashes, status lies, and invented-certainty language.
  * Warns on recount drift, missing listing websites, and stale metadata.

@@ -13,5 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Vendored parity (handoff contract/codec/night-record)
+        run: node scripts/check-vendored-parity.mjs
       - name: Fail if the 836-record hub or Lovable production stack is replaced
         run: node scripts/corpus-invariants.mjs

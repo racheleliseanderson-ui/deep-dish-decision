@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Restaurant Intelligence · Salty & Clever
+ * Deep Dish · Salty & Clever
  * Design system: luxury editorial meets precision decision instrument.
  * Navy ground, brass (gilt) signal, operational colours for critical / watch /
  * unknown / verified. All colors oklch. Never hardcode colors in components.
@@ -215,6 +215,16 @@
   --marble: oklch(0.302 0.056 258);
 
   color-scheme: dark;
+}
+
+/* Pearl is :root, so `.light` carries no tokens of its own — removing `.dark`
+   is what switches the palette. The class is not decoration though: it is the
+   explicit state the pre-paint script writes and the server renders, so the
+   two agree at hydration, and it re-asserts the UA colour scheme rather than
+   relying on `.dark`'s `color-scheme: dark` simply going away. If you ever
+   need a Pearl-only rule, this is where it goes. */
+.light {
+  color-scheme: light;
 }
 
 @layer base {
@@ -451,14 +461,15 @@
 
    critical and verified must separate in LIGHTNESS, not only hue. They used to
    sit at L 0.72 / hue 215 and L 0.72 / hue 235 — 20 degrees apart at identical
-   lightness, so the diverging bar in why-this-rank.tsx (aria-hidden, colour is
-   the whole signal) drew gain and loss in the same grey. Measured on the
-   rendered sRGB: the old pair differed by 1.04x in relative luminance, this one
-   by 3.39x. */
+   lightness, so the diverging bar in why-this-rank.tsx drew gain and loss in
+   the same grey. Measured as WCAG contrast on the rendered sRGB, that pair was
+   1.04:1; this one is 3.30:1. Critical is the value that moved: verified is
+   also body text on this ground and its own contrast (4.74:1 on --background,
+   3.35:1 on --surface-raised) had no room to give. */
 .cvd,
 .mode-cvd {
-  --critical: oklch(0.88 0.11 200);
-  --critical-soft: oklch(0.88 0.11 200 / 15%);
+  --critical: oklch(0.92 0.095 200);
+  --critical-soft: oklch(0.92 0.095 200 / 15%);
   --watch: oklch(0.86 0.15 92);
   --watch-soft: oklch(0.86 0.15 92 / 14%);
   --unknown: oklch(0.72 0.04 250);
@@ -468,7 +479,7 @@
   --primary: oklch(0.86 0.15 92);
   --primary-foreground: oklch(0.17 0.045 258);
   --ring: oklch(0.86 0.15 92 / 55%);
-  --destructive: oklch(0.88 0.11 200);
+  --destructive: oklch(0.92 0.095 200);
   --gilt: oklch(0.86 0.15 92);
   --gilt-soft: oklch(0.86 0.15 92 / 15%);
 }
@@ -477,16 +488,18 @@
 .mode-cvd:not(.dark) {
   --primary: oklch(0.5 0.11 78);
   --primary-foreground: oklch(0.988 0.004 265);
-  /* Same rule on Pearl: the old 0.42/225 and 0.44/240 differed by 1.05x in
-     relative luminance. This pair differs by 6.82x. */
-  --critical: oklch(0.52 0.14 205);
-  --critical-soft: oklch(0.52 0.14 205 / 12%);
+  /* Same rule on Pearl: the old 0.42/225 and 0.44/240 were 1.03:1 apart in WCAG
+     contrast. This pair is 3.33:1. Chroma is down because 0.14 at this
+     lightness and hue is outside sRGB, so browsers were clipping it back to a
+     colour we had not measured. */
+  --critical: oklch(0.53 0.088 205);
+  --critical-soft: oklch(0.53 0.088 205 / 12%);
   --watch: oklch(0.5 0.11 78);
   --watch-soft: oklch(0.5 0.11 78 / 12%);
-  --verified: oklch(0.3 0.13 268);
-  --verified-soft: oklch(0.3 0.13 268 / 14%);
+  --verified: oklch(0.24 0.12 268);
+  --verified-soft: oklch(0.24 0.12 268 / 14%);
   --unknown: oklch(0.5 0.03 250);
-  --destructive: oklch(0.52 0.14 205);
+  --destructive: oklch(0.53 0.088 205);
   --gilt: oklch(0.5 0.11 78);
   --gilt-soft: oklch(0.5 0.11 78 / 12%);
 }

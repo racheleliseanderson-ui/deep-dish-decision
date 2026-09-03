@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { useCallback, useEffect, useState } from "react";
 
 /**
@@ -10,6 +11,9 @@ import { useCallback, useEffect, useState } from "react";
 export type ContrastMode = "standard" | "mono" | "cvd";
 export type Locale = "en";
 
+// The `rih-` prefix is historical (Restaurant Intelligence Hub, a name this
+// product no longer uses). The keys stay as they are: renaming them would drop
+// every reader's saved display settings and shortlist.
 export const CONTRAST_KEY = "rih-contrast";
 export const LOCALE_KEY = "rih-locale";
 export const ENRICHMENT_KEY = "rih-enrichment-signals";

@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 /**
  * Copy night link — encodes the active Situation into a shareable URL.
  * Clipboard + brief "Copied" feedback. Never invents evidence.

@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { createServerFn } from "@tanstack/react-start";
 import { generateObject } from "ai";
 import { google } from "@ai-sdk/google";

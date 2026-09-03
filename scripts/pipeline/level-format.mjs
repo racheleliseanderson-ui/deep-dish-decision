@@ -23,6 +23,13 @@ export function stripPrefix(raw) {
 export function emptyish(value) {
   const t = String(value ?? "").trim();
   if (!t) return true;
+  // The leveling floor sentence is a placeholder we wrote, not something the
+  // restaurant published. Counting it as filled is what let measureDepth score
+  // a record "12 / 12 core fields" while nine of those fields said nothing.
+  // The corpus currently in src/data/dataset.json was leveled with this branch
+  // in place (41 full case files, mean depth 38%); without it the next pipeline
+  // pass flips 1,481 of 1,522 records back to 12 / 12.
+  if (t.startsWith(FLOOR_PREFIX)) return true;
   return /^(not stated|unstated|not provided|unknown|none|n\/a|na|tbd|—|–|-)$/i.test(t);
 }
 

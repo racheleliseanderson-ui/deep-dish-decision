@@ -61,7 +61,7 @@ function ReputationBody({ rep }: { rep: PublicReputationEvidence }) {
       ) : null}
 
       <p className="mt-4 text-[11px] leading-relaxed text-subtle">
-        Sources: {rep.sourceMix.join(" · ") || "none"}. Held off the ranking.
+        Sources: {rep.sourceMix.join(" · ") || "none"}.
       </p>
     </section>
   );

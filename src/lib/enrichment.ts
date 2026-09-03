@@ -271,7 +271,7 @@ export function buildEnrichmentFindings(
   const g = enr.google;
   const site = enr.site;
 
-  /** Provenance is declared at each construction site — never inferred from the id. */
+  /** Provenance is declared at each construction site, and is never inferred from the id. */
   const push = (x: Finding) => {
     f.push(x);
   };

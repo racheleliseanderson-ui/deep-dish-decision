@@ -22,8 +22,7 @@ import { cn } from "@/lib/utils";
  * do people consistently complain about.
  *
  * First-party statements, directory facts and recurring review patterns are
- * kept visibly apart. Review patterns never rank a room; they only describe
- * the tradeoff.
+ * kept visibly apart in the markup, because they are kept apart in the scoring.
  */
 
 /** A field counts as stated only when it carries content, not a placeholder. */
@@ -357,10 +356,6 @@ export function TableIntelligence({
                 {rep.consistency}
               </p>
             ) : null}
-            <p className="text-[11px] leading-relaxed text-subtle">
-              Third-party review patterns, held apart from first-party evidence. These describe the
-              tradeoff; they never rank this room.
-            </p>
           </div>
         ) : (
           <p className="text-[13px] leading-relaxed text-unknown">

@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import type { Scored } from "@/lib/intelligence";

@@ -7,7 +7,7 @@ import { isUnstated } from "@/lib/case-depth";
 import type { RestaurantRecord } from "@/lib/dataset";
 import { firstPoint, statedText } from "@/lib/consumer-snapshot";
 import { buildFoodIntel } from "@/lib/food-intel";
-import { getInspection } from "@/lib/inspections";
+import { getInspection, inspectionCoverage } from "@/lib/inspections";
 import { buildReputation, getListingSample, getResearchedPattern } from "@/lib/reputation";
 
 export type AnswerSource =
@@ -318,13 +318,22 @@ function cleanTrustworthy(slug: string): DinerAnswer {
     const extra = researched?.cleanlinessPattern
       ? ` Public-review cleanliness commentary on file: ${researched.cleanlinessPattern}`
       : " Public-review cleanliness commentary is shown only as a labeled pattern, and none is on file.";
+    // Two different facts were wearing the same sentence. With the inspection
+    // layer loaded, silence is a statement about this restaurant: nothing
+    // matched it. With the layer empty, which is what happens whenever
+    // build-consumer-layers.py runs without its source snapshot, silence is a
+    // statement about our build, and the record has not been checked at all.
+    const layerLoaded = inspectionCoverage() > 0;
+    const opening = layerLoaded
+      ? "No health-inspection record matched this restaurant."
+      : "The health-inspection layer is empty in this build, so this restaurant has not been checked against one.";
     return q(
       "trust",
       9,
       "Is it clean and trustworthy?",
-      `No health-inspection record is on this file.${extra} A single angry review would never become a warning here.`,
+      `${opening}${extra} Cleanliness here comes from an inspection record or from nothing at all. Reviews stay on the reputation layer, labeled as reviews.`,
       "notOnFile",
-      "Conservative — inspections not in corpus",
+      layerLoaded ? "Conservative — no inspection matched" : "Conservative — inspection layer not loaded",
       true,
     );
   }

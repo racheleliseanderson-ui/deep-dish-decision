@@ -12,6 +12,8 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Vendored parity (handoff contract/codec/night-record)
+        run: node scripts/check-vendored-parity.mjs
       - name: Install dependencies
         run: npm ci
       - name: Typecheck

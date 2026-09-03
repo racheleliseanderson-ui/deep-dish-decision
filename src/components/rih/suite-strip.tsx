@@ -6,7 +6,7 @@ import {
   type SaltyNightRecord,
 } from "@/lib/salty-night-record";
 
-const ORDER: SaltyApp[] = ["desk", "kitchen", "occasion", "restaurant"];
+const ORDER: SaltyApp[] = ["kitchen", "occasion", "restaurant"];
 
 /**
  * Names come from the shared contract. This file used to keep its own map,
@@ -29,6 +29,15 @@ export function SuiteStrip({ current }: { current: SaltyApp }) {
     >
       <div className="mx-auto flex max-w-6xl min-w-0 items-center gap-1 overflow-x-auto px-4 py-1 sm:px-6">
         <span className="mr-1 hidden shrink-0 text-eyebrow text-gilt sm:inline">Suite</span>
+        {/* The publication, not a tool: a plain external link, no night record. */}
+        <a
+          href="https://saltnotes.blog"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="tap inline-flex min-h-11 shrink-0 items-center px-3 text-xs uppercase tracking-widest text-subtle hover:text-foreground"
+        >
+          Salty &amp; Clever
+        </a>
         {ORDER.map((id) => {
           const active = id === current;
           const base = APP_ORIGINS[id] + "/";
@@ -55,7 +64,6 @@ export function SuiteStrip({ current }: { current: SaltyApp }) {
 }
 
 function short(id: SaltyApp): string {
-  if (id === "desk") return "Desk";
   if (id === "kitchen") return "Kitchen";
   if (id === "occasion") return "Occasion";
   return "Restaurant";

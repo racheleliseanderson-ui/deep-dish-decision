@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { Chip, Eyebrow } from "@/components/rih/bits";
 import { GiltRule } from "@/components/rih/gilt";
 import {
@@ -98,7 +99,7 @@ export function ScenarioPlaybooks({
       </div>
 
       <p className="mt-4 text-[11px] text-subtle">
-        {PLAYBOOKS.length} playbooks · first-party evidence only
+        {PLAYBOOKS.length} playbooks
       </p>
     </section>
   );

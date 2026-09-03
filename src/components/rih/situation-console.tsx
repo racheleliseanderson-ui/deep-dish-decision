@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { Chip, Eyebrow, Field, Toggle } from "@/components/rih/bits";
 import { CopyNightLink } from "@/components/rih/copy-night-link";
 import { corpusMeta, groupForRegion } from "@/lib/corpus-meta";

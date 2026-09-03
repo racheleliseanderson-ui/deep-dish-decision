@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import type { Scored, Situation } from "@/lib/intelligence";
 import {
   bookingRiskLine,

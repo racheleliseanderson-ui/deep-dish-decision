@@ -1,3 +1,4 @@
+// UNREFERENCED as of 2026-09-02 — see DEAD-CODE.md
 import { useState } from "react";
 import { analyzeRestaurantPhoto } from "@/server/vision";
 import { visionToFindings, type VisionResult } from "@/lib/vision";

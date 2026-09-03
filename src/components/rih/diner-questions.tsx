@@ -52,10 +52,6 @@ export function DinerQuestions({ record }: { record: RestaurantRecord }) {
               {food.differentiator}
             </p>
           ) : null}
-          <p className="mt-3 text-[11px] leading-relaxed text-subtle">
-            First-party evidence only on this block. Public-review patterns sit in their own layer
-            and never rewrite these lines.
-          </p>
         </div>
       </section>
 

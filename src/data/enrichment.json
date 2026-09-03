@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T21:28:25.387Z",
+  "generatedAt": "2026-09-02T22:57:22.261Z",
   "records": {
     "canlis": {
       "google": {
@@ -23065,7 +23065,7 @@
         "matchStatus": "site-failure",
         "confidence": 1,
         "nameScore": 1,
-        "lastEnrichedAt": "2026-09-01T17:40:09.595Z",
+        "lastEnrichedAt": "2026-09-02T22:55:35.201Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -48181,7 +48181,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-01T17:40:08.587Z",
+        "lastEnrichedAt": "2026-09-02T22:55:33.141Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -50493,12 +50493,76 @@
     },
     "oak-park-des-moines": {
       "meta": {
-        "matchStatus": "site-failure",
+        "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-01T17:41:42.449Z",
+        "lastEnrichedAt": "2026-09-02T22:57:09.601Z",
         "enrichmentMode": "owned-site",
-        "completeness": 78
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.oakparkdsm.com/menu",
+        "reservationUrl": "https://www.exploretock.com/oakparkdesmoines",
+        "reservationPlatform": "Tock",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 515-620-2185"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Tuesday 16:30",
+          "JSON-LD openingHoursSpecification: Wednesday 16:30",
+          "JSON-LD openingHoursSpecification: Thursday 16:30",
+          "JSON-LD openingHoursSpecification: Friday 16:30",
+          "JSON-LD openingHoursSpecification: Saturday 16:30"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 515-620-2185",
+            "sourceUrl": "https://www.oakparkdsm.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 16:30",
+            "sourceUrl": "https://www.oakparkdsm.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 16:30",
+            "sourceUrl": "https://www.oakparkdsm.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 16:30",
+            "sourceUrl": "https://www.oakparkdsm.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 16:30",
+            "sourceUrl": "https://www.oakparkdsm.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 16:30",
+            "sourceUrl": "https://www.oakparkdsm.com/"
+          },
+          {
+            "quote": "og:description: Oak Park: Prairie-style design meets hospitality. Enjoy premier wines and seasonal American dishes. An experience beyond just dining.",
+            "sourceUrl": "https://www.oakparkdsm.com/"
+          },
+          {
+            "quote": "og:description: Chef Ian Robertson presents dynamic modern dishes, while Pastry Chef Jess Robertson crafts fresh takes on timeless desserts.",
+            "sourceUrl": "https://www.oakparkdsm.com/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.oakparkdsm.com/",
+          "https://www.oakparkdsm.com/menu"
+        ],
+        "retrievedAt": "2026-09-02T22:57:09.601Z",
+        "playwrightPages": 0
       }
     },
     "centro-des-moines": {
@@ -57173,7 +57237,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-01T17:39:54.302Z",
+        "lastEnrichedAt": "2026-09-02T22:55:31.870Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -60584,7 +60648,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-01T17:38:53.154Z",
+        "lastEnrichedAt": "2026-09-02T22:52:55.103Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -61228,7 +61292,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-01T17:38:53.730Z",
+        "lastEnrichedAt": "2026-09-02T22:52:56.139Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -61304,7 +61368,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-01T17:39:23.654Z",
+        "lastEnrichedAt": "2026-09-02T22:55:01.098Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -77520,7 +77584,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:11:24.544Z",
+        "lastEnrichedAt": "2026-09-02T22:57:14.919Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -77618,7 +77682,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:11:28.813Z",
+        "lastEnrichedAt": "2026-09-02T22:57:19.069Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -77628,7 +77692,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:11:29.783Z",
+        "lastEnrichedAt": "2026-09-02T22:57:18.041Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -78237,7 +78301,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:12:05.983Z",
+        "lastEnrichedAt": "2026-09-02T22:57:20.127Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -78524,7 +78588,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:12:16.858Z",
+        "lastEnrichedAt": "2026-09-02T22:57:13.796Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -81480,7 +81544,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:13:58.926Z",
+        "lastEnrichedAt": "2026-09-02T22:57:12.725Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -86956,7 +87020,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:18:02.723Z",
+        "lastEnrichedAt": "2026-09-02T22:57:11.738Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -87035,7 +87099,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:18:05.836Z",
+        "lastEnrichedAt": "2026-09-02T22:53:27.815Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -88690,7 +88754,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:20:52.235Z",
+        "lastEnrichedAt": "2026-09-02T22:57:17.000Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -93213,7 +93277,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:24:14.022Z",
+        "lastEnrichedAt": "2026-09-02T22:57:21.139Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -93673,7 +93737,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:24:32.440Z",
+        "lastEnrichedAt": "2026-09-02T22:53:26.774Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -96761,7 +96825,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:27:08.690Z",
+        "lastEnrichedAt": "2026-09-02T22:55:34.180Z",
         "enrichmentMode": "owned-site",
         "completeness": 78
       }
@@ -97942,7 +98006,7 @@
         "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-09-02T21:27:58.516Z",
+        "lastEnrichedAt": "2026-09-02T22:57:15.960Z",
         "enrichmentMode": "owned-site",
         "completeness": 83
       }
@@ -98864,6 +98928,236 @@
           "https://www.littlepearldc.com/private-events/"
         ],
         "retrievedAt": "2026-09-02T21:28:23.872Z",
+        "playwrightPages": 0
+      }
+    },
+    "bar-pigalle-detroit": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T22:52:46.491Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.barpigalle.com/menu",
+        "reservationUrl": "https://www.opentable.com/r/bar-pigalle-reservations-detroit?restref=1281100&lang=en-US&ot_source=Restaurant%20website",
+        "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Bar Pigalle - Playfully Modern French Fare and Cocktails in Brush Park",
+            "sourceUrl": "https://www.barpigalle.com/"
+          },
+          {
+            "quote": "title: Menu &mdash; Bar Pigalle - Playfully Modern French Fare and Cocktails in Brush Park",
+            "sourceUrl": "https://www.barpigalle.com/menu"
+          },
+          {
+            "quote": "title: About &mdash; Bar Pigalle - Playfully Modern French Fare and Cocktails in Brush Park",
+            "sourceUrl": "https://www.barpigalle.com/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.barpigalle.com/",
+          "https://www.barpigalle.com/menu",
+          "https://www.barpigalle.com/about"
+        ],
+        "retrievedAt": "2026-09-02T22:52:46.491Z",
+        "playwrightPages": 0
+      }
+    },
+    "fin-fino-charlotte": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T22:52:48.427Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/fin-fino-135-levine-avenue-of-the-arts-100",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Submit COPYRIGHT 2024 FIN AND FINO LOCATIONS BIRKDALE UPTOWN ORDER NOW RESERVATIONS UPTOWN MENUS THE TREATMENT COCKTAIL PROGRAM GIFT CARDS PRIVATE EVENTS ABOUT US OUR TEAM JOIN OUR TEAM CONTACT bottom of page",
+        "groupPolicyLanguage": [
+          "Submit COPYRIGHT 2024 FIN AND FINO LOCATIONS BIRKDALE UPTOWN ORDER NOW RESERVATIONS UPTOWN MENUS THE TREATMENT COCKTAIL PROGRAM GIFT CARDS PRIVATE EVENTS ABOUT US OUR TEAM JOIN OUR TEAM CONTACT bottom of page"
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Fin & Fino is a social seafood house that celebrates the explorer",
+            "sourceUrl": "https://www.finandfino.com/"
+          },
+          {
+            "quote": "title: Fin & Fino | Social Seafood House | Charlotte, NC, USA",
+            "sourceUrl": "https://www.finandfino.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.finandfino.com/"
+        ],
+        "retrievedAt": "2026-09-02T22:52:48.427Z",
+        "playwrightPages": 0
+      }
+    },
+    "lola-55-san-diego": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T22:52:49.782Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/lola55/order-and-pay/100",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-21:00, Tu 11:00-21:00, We 11:00-21:00, Th 11:00-21:00, Fr 11:00-23:00, Sa 11:00-23:00, Su 11:00-21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD openingHours: Mo 11:00-21:00, Tu 11:00-21:00, We 11:00-21:00, Th 11:00-21:00, Fr 11:00-23:00, Sa 11:00-23:00, Su 11:00-21:00",
+            "sourceUrl": "https://lola55.com/"
+          },
+          {
+            "quote": "og:description: Page shows the address and contact information of the restaurant a photo of a chicken taco on a plate with the Michelin bib gourmand logo overlaid on the photo.",
+            "sourceUrl": "https://lola55.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://lola55.com/"
+        ],
+        "retrievedAt": "2026-09-02T22:52:49.782Z",
+        "playwrightPages": 0
+      }
+    },
+    "riddim-n-spice-nashville": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T22:52:51.061Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 50
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://www.toasttab.com/catering/riddim-n-spice?source=pop_up&spot_id=120843&destination=order&promotion=order_online",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Located in North Nashville, Riddim N Spice is an homage to the brothers",
+            "sourceUrl": "https://riddimnspice.com/"
+          },
+          {
+            "quote": "title: Authentic Caribbean Restaurant in Nashville | Riddim nSpice",
+            "sourceUrl": "https://riddimnspice.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://riddimnspice.com/"
+        ],
+        "retrievedAt": "2026-09-02T22:52:51.061Z",
+        "playwrightPages": 0
+      }
+    },
+    "wayfare-tavern-san-francisco": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-02T22:52:52.180Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 56
+      },
+      "site": {
+        "menuUrl": "https://www.wayfaretavern.com/menu-1",
+        "reservationUrl": "https://order.toasttab.com/egiftcards/wayfare-tavern",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "Explore More Menus Gift Card Reservation Private Events Reserve a Table Wayfare Tavern brings our signature hospitality and timeless tavern fare to a fresh new setting.",
+        "groupPolicyLanguage": [
+          "Explore More Menus Gift Card Reservation Private Events Reserve a Table Wayfare Tavern brings our signature hospitality and timeless tavern fare to a fresh new setting.",
+          "The new location expands our bar, private dining areas, and kitchen, allowing us to serve the downtown community with greater variety and elevated offerings.",
+          "Explore Our Unique Event Spaces Discover Four beautifully designed private dining rooms, each offering a warm and inviting ambiance perfect for any special occasion."
+        ],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Wayfare Tavern - Authentic American - San Francisco, CA",
+            "sourceUrl": "https://www.wayfaretavern.com/"
+          },
+          {
+            "quote": "title: About | Wayfare Tavern in San Francisco, CA &mdash; Wayfare Tavern",
+            "sourceUrl": "https://www.wayfaretavern.com/about-us"
+          },
+          {
+            "quote": "title: Menus | Wayfare Tavern &mdash; Wayfare Tavern",
+            "sourceUrl": "https://www.wayfaretavern.com/menu-1"
+          },
+          {
+            "quote": "title: Wayfare Tavern | Private Dining; Event Space in San Francisco, CA &mdash; Wayfare Tavern",
+            "sourceUrl": "https://www.wayfaretavern.com/private-events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.wayfaretavern.com/",
+          "https://www.wayfaretavern.com/about-us",
+          "https://www.wayfaretavern.com/menu-1",
+          "https://www.wayfaretavern.com/private-events"
+        ],
+        "retrievedAt": "2026-09-02T22:52:52.180Z",
         "playwrightPages": 0
       }
     }

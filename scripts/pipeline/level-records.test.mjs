@@ -80,29 +80,49 @@ describe("level-format", () => {
     assert.equal(platformFromUrl("https://canlis.com/reservations", "Direct"), "Direct / confirm live");
   });
 
-  it("counts a complete 12-field file including honest unstated sentences", () => {
-    const record = Object.fromEntries(
-      [
-        "phone",
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "menuSummary",
-        "reservationDetails",
-        "dietaryDetails",
-        "accessibilityState",
-        "groupDetails",
-        "dressCode",
-        "atmosphereSummary",
-        "serviceSummary",
-      ].map((k) => [k, floor(k)]),
-    );
+  const CORE_KEYS = [
+    "phone",
+    "hoursSummary",
+    "priceDetails",
+    "cuisineContext",
+    "menuSummary",
+    "reservationDetails",
+    "dietaryDetails",
+    "accessibilityState",
+    "groupDetails",
+    "dressCode",
+    "atmosphereSummary",
+    "serviceSummary",
+  ];
+
+  it("does not count our own leveling floor as a filled core field", () => {
+    // The floor sentence is a placeholder we wrote, not something the
+    // restaurant published. Counting it as filled is what let a record whose
+    // eleven remaining fields all said nothing score "12 / 12 core fields" and
+    // print a mean evidence depth of 100%.
+    const record = Object.fromEntries(CORE_KEYS.map((k) => [k, floor(k)]));
     record.phone = "(206) 283-3313";
     record.menuUrl = "";
     record.reservationUrl = "";
     const depth = measureDepth(record);
+    assert.equal(depth.depthFilled, 1, "only the real phone number counts");
+    assert.equal(depth.isFullCaseFile, false);
+    // Eleven, not twelve: the phone slot holds a real number, so it is the one
+    // core slot that is neither empty nor operationally thin.
+    assert.equal(depth.thinFieldCount, 11);
+  });
+
+  it("counts a core field the restaurant actually published", () => {
+    const record = Object.fromEntries(
+      CORE_KEYS.map((k) => [k, `The restaurant's own pages state ${k} in full detail.`]),
+    );
+    record.phone = "(206) 283-3313";
+    record.menuUrl = "https://example.test/menu";
+    record.reservationUrl = "https://example.test/book";
+    const depth = measureDepth(record);
     assert.equal(depth.depthFilled, 12);
+    assert.equal(depth.depthLabel, "12 / 12 core fields");
     assert.equal(depth.isFullCaseFile, true);
-    assert.ok(depth.thinFieldCount >= 1);
+    assert.equal(depth.thinFieldCount, 0);
   });
 });

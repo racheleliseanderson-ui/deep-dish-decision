@@ -1,4 +1,5 @@
 import { Chip, Eyebrow, Rule, Stat } from "@/components/rih/bits";
+import { schemaDepthLabel } from "@/lib/case-depth";
 import { GrowBar, Reveal } from "@/components/rih/reveal";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
@@ -379,14 +380,14 @@ function Atlas() {
             />
             <RecordStrip
               title="Deepest case files"
-              note="Most complete on the record. Still confirm the volatile lines."
+              note="Most core slots filled. Slots hold text, which is not the same as the restaurant having published an answer — confirm the volatile lines."
               tone="verified"
               rows={depthLeaders.map((r) => ({
                 slug: r.slug,
                 title: r.title,
                 recordId: r.recordId,
                 region: r.region,
-                detail: r.depthLabel,
+                detail: schemaDepthLabel(r.depthLabel),
               }))}
             />
           </div>

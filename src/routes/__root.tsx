@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useRouterState,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
@@ -15,6 +16,7 @@ import { HouseBar } from "@/components/rih/house-bar";
 import { LabsFooter } from "@/components/rih/labs-footer";
 import { NightPlanBar } from "@/components/rih/night-plan-bar";
 import { SuiteStrip } from "@/components/rih/suite-strip";
+import { THEME_COLOR, syncThemeColor } from "@/components/rih/theme-toggle";
 import { SupportFooter } from "@/components/SupportFooter";
 
 import { canonicalFor } from "../lib/site";
@@ -91,13 +93,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { charSet: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "google-adsense-account", content: ADSENSE_CLIENT },
-        { title: "Deep Dish · Restaurant Intelligence" },
+        { title: "Deep Dish · Salty & Clever" },
         {
           name: "description",
           content:
-            "First-party restaurant evidence, ranked against this night: fit, unknowns, official sources, live confirmations and the decision you return to Salty Desk.",
+            "First-party restaurant evidence, ranked against this night: fit, unknowns, official sources, live confirmations and the decision you send to the night plan in Occasion OS.",
         },
-        { property: "og:title", content: "Deep Dish · Restaurant Intelligence" },
+        { property: "og:title", content: "Deep Dish · Salty & Clever" },
         {
           property: "og:description",
           content: "Is this restaurant right for this night — and what still needs confirming?",
@@ -111,10 +113,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { property: "og:url", content: canonical },
         { name: "twitter:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
         // One fixed navy went out on every route, so Pearl readers got navy
-        // browser chrome around a light page. Emit both variants and let the
-        // browser pick; the values are --background for each mode.
-        { name: "theme-color", content: "#f9fafd", media: "(prefers-color-scheme: light)" },
-        { name: "theme-color", content: "#0c1220", media: "(prefers-color-scheme: dark)" },
+        // browser chrome around a light page. These two are the no-JS floor,
+        // keyed to the OS preference; themeInit overwrites both with the colour
+        // for the mode the reader actually chose, before first paint. It writes
+        // content onto these same elements rather than adding or removing any,
+        // so React still hydrates the head it rendered. Values are --background
+        // for each ground.
+        { name: "theme-color", content: THEME_COLOR.pearl, media: "(prefers-color-scheme: light)" },
+        { name: "theme-color", content: THEME_COLOR.navy, media: "(prefers-color-scheme: dark)" },
       ],
       links: [
         { rel: "canonical", href: canonical },
@@ -144,7 +150,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
-const themeInit = `(function(){try{var d=document.documentElement;var m=localStorage.getItem("sc-mode")||localStorage.getItem("rih-theme");var cvd=localStorage.getItem("sc-cvd")==="on"||localStorage.getItem("rih-contrast")==="cvd"||m==="colorblind";if(m==="pearl"||m==="light"){d.classList.remove("dark");d.classList.add("light")}else{d.classList.add("dark");d.classList.remove("light")}if(cvd){d.classList.add("cvd");d.classList.add("mode-cvd")}d.lang="en"}catch(e){document.documentElement.classList.add("dark")}})()`;
+const themeInit = `(function(){try{var d=document.documentElement;var m=localStorage.getItem("sc-mode")||localStorage.getItem("rih-theme");var cvd=localStorage.getItem("sc-cvd")==="on"||localStorage.getItem("rih-contrast")==="cvd"||m==="colorblind";var pearl=(m==="pearl"||m==="light");if(pearl){d.classList.remove("dark");d.classList.add("light")}else{d.classList.add("dark");d.classList.remove("light")}if(cvd){d.classList.add("cvd");d.classList.add("mode-cvd")}d.lang="en";var c=pearl?"${THEME_COLOR.pearl}":"${THEME_COLOR.navy}";var t=document.querySelectorAll('meta[name="theme-color"]');for(var i=0;i<t.length;i++){t[i].setAttribute("content",c)}}catch(e){document.documentElement.classList.add("dark")}})()`;
 
 const stalePwaCleanup = `(function(){try{if(!("serviceWorker" in navigator))return;var reloadKey="rih-stale-pwa-cleanup-2026-08-28";var controlled=!!navigator.serviceWorker.controller;var unregister=navigator.serviceWorker.getRegistrations().then(function(regs){return Promise.all(regs.map(function(reg){return reg.unregister()}))}).catch(function(){});var clearCaches=Promise.resolve();if("caches" in window){clearCaches=caches.keys().then(function(keys){return Promise.all(keys.filter(function(key){return key==="pages"||key==="images"||key.indexOf("workbox-precache")===0}).map(function(key){return caches.delete(key)}))}).catch(function(){})}Promise.all([unregister,clearCaches]).then(function(){if(controlled&&sessionStorage.getItem(reloadKey)!=="1"){sessionStorage.setItem(reloadKey,"1");window.location.reload()}}).catch(function(){})}catch(e){}})()`;
 
@@ -171,6 +177,14 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  // themeInit sets the chrome colour before first paint, but every navigation
+  // re-renders the head from the descriptors above, which carry the OS-keyed
+  // defaults. Re-assert the reader's actual choice after each one.
+  useEffect(() => {
+    syncThemeColor();
+  }, [pathname]);
 
   return (
     <QueryClientProvider client={queryClient}>
