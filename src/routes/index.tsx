@@ -47,13 +47,13 @@ const HERO_SRCSET = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Deep Dish — is this restaurant right for this night?" },
+      { title: "Restaurant case files with the source and the date · Deep Dish" },
       {
         name: "description",
         content:
-          "Say where, what kind of night, and what cannot go wrong. Get a restaurant, the unknowns that still matter, and a script for the call that closes them.",
+          "1,527 restaurants read off their own pages, every field carrying the URL it came from and the day we read it. No star averages, no review sentiment. Where a place has never stated something, the field stays blank.",
       },
-      { property: "og:title", content: "Deep Dish — decide, verify, then book" },
+      { property: "og:title", content: "Every line came off the restaurant\u2019s own page." },
       {
         property: "og:description",
         content:
@@ -416,12 +416,23 @@ function Hub() {
           <p className="text-[11px] uppercase tracking-[0.18em] text-ink-foreground/65">
             Salty & Clever · Deep Dish
           </p>
-          <h1 className="display-statement mt-3 max-w-[18ch] text-ink-foreground">
-            Is this restaurant right for
-            <span className="text-primary"> this particular night?</span>
+          {/* The old headline described matching a described night against
+              places. As of August 2026 that is exactly what Google's Ask Maps
+              does, with Gemini and 500 million contributors behind it, and we
+              are not going to win that. What it structurally cannot do is tell
+              you where a fact came from and when it was read, because it is
+              built on aggregate review sentiment. All 1,527 of our records
+              carry a first-party source URL and a retrieval timestamp. That is
+              the moat, so it is the headline. */}
+          <h1 className="display-statement mt-3 max-w-[20ch] text-ink-foreground">
+            Every line came off the restaurant&rsquo;s own page.
+            <span className="text-primary"> We wrote down when.</span>
           </h1>
           <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-ink-foreground/82 sm:text-lg">
-            Find the fit, close the important unknowns, then book with the loose ends handled.
+            No star averages. No review sentiment. No confident sentence assembled out of other
+            people&rsquo;s opinions. Where a restaurant has never stated something, the field stays
+            blank and you get the question to ask at the door — because a blank is information and a
+            guess is not.
           </p>
         </div>
       </header>

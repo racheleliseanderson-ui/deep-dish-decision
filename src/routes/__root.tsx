@@ -104,7 +104,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { property: "og:title", content: "Deep Dish · Salty & Clever" },
         {
           property: "og:description",
-          content: "Is this restaurant right for this night — and what still needs confirming?",
+          content:
+            "Every field cites the restaurant\u2019s own page and the date we read it. Blanks stay blank.",
         },
         { property: "og:type", content: "website" },
         { property: "og:site_name", content: "Deep Dish" },
