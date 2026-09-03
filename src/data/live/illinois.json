@@ -1,6 +1,6 @@
 {
   "regionGroup": "Illinois",
-  "generatedAt": "2026-09-03T11:30:12.706Z",
+  "generatedAt": "2026-09-03T13:01:25.738Z",
   "records": {
     "stk-steakhouse": {
       "ll": [
@@ -1063,6 +1063,10 @@
         {
           "name": "spicy Chinese dishes, handmade dumplings, and flavorful stir",
           "source": "first-party"
+        },
+        {
+          "name": "spicy Chinese dishes, handmade dumplings, and flavorful stir-fries",
+          "source": "first-party"
         }
       ]
     },
@@ -1536,7 +1540,13 @@
         -87.64103
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "dishes": [
+        {
+          "name": "handmade pasta",
+          "source": "first-party"
+        }
+      ]
     },
     "gene-georgetti-chicago": {
       "ll": [
@@ -1556,6 +1566,10 @@
       "dishes": [
         {
           "name": "our stacked sandwiches, fresh bagels and timeless favorites",
+          "source": "first-party"
+        },
+        {
+          "name": "our stacked sandwiches, fresh bagels and timeless favorites since 1942",
           "source": "first-party"
         }
       ]
@@ -1717,6 +1731,10 @@
       "dishes": [
         {
           "name": "seasonal, farm-inspired dishes, fresh oysters, and a curated",
+          "source": "first-party"
+        },
+        {
+          "name": "seasonal, farm-inspired dishes, fresh oysters, and a curated craft beer program",
           "source": "first-party"
         }
       ]

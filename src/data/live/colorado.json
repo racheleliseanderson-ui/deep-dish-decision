@@ -1,6 +1,6 @@
 {
   "regionGroup": "Colorado",
-  "generatedAt": "2026-09-03T11:30:12.706Z",
+  "generatedAt": "2026-09-03T13:01:25.738Z",
   "records": {
     "tavernetta-denver": {
       "ll": [
@@ -432,7 +432,13 @@
         -104.9903
       ],
       "llSource": "city",
-      "tz": "America/Denver"
+      "tz": "America/Denver",
+      "dishes": [
+        {
+          "name": "handmade pasta",
+          "source": "first-party"
+        }
+      ]
     },
     "sap-sua-denver": {
       "ll": [
@@ -674,6 +680,10 @@
       "dishes": [
         {
           "name": "its tradition and innovation, award-winning cuisine, and com",
+          "source": "first-party"
+        },
+        {
+          "name": "its tradition and innovation, award-winning cuisine, and community-focused initi",
           "source": "first-party"
         }
       ]

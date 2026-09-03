@@ -2,6 +2,960 @@
   "runs": [
     {
       "kind": "level-records",
+      "startedAt": "2026-09-03T13:01:41.564Z",
+      "finishedAt": "2026-09-03T13:01:41.564Z",
+      "records": 1527,
+      "promoted": 38,
+      "fullBefore": 41,
+      "fullAfter": 41,
+      "avgCompleteness": 97,
+      "ops": {
+        "overdue": 41,
+        "dueSoon": 0,
+        "current": 1450,
+        "officialConflicts": 11,
+        "thinRecords": 797,
+        "avgUnknowns": 5.1,
+        "avgThinFields": 7.53,
+        "lastReviewAt": "2026-09-03",
+        "reachableAtLastReview": 816
+      }
+    },
+    {
+      "kind": "enrich-owned",
+      "startedAt": "2026-09-03T12:51:56.048Z",
+      "finishedAt": "2026-09-03T13:01:25.420Z",
+      "batchSize": 100,
+      "cities": [
+        "Atlanta, Georgia",
+        "Miami, Florida",
+        "Washington, District Of Columbia",
+        "Philadelphia, Pennsylvania",
+        "Chicago, Illinois",
+        "Phoenix, Arizona",
+        "San Francisco, California",
+        "Dallas, Texas",
+        "Boston, Massachusetts",
+        "Los Angeles, California",
+        "New York, New York",
+        "Detroit, Michigan",
+        "Minneapolis, Minnesota"
+      ],
+      "resolved": 97,
+      "unresolved": 3,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 97,
+      "corpusEnriched": 1527,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 100
+      },
+      "retries": 5,
+      "failures": 3,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-09-03T12-51-56-048Z-enrich-owned",
+      "records": [
+        {
+          "slug": "establishment-atlanta-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "estiatorio-milos-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "fiola-washington",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "fiorella-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "flo-santos",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "fnb-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "fork-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 21"
+          ]
+        },
+        {
+          "slug": "friday-saturday-sunday-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "good-mong-kok-bakery",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "gunshow-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "hakkasan-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 2",
+            "quotes 13"
+          ]
+        },
+        {
+          "slug": "hana-japanese-eatery-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "her-place-supper-club-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "hong-kong-clay-pot-restaurant",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "hong-kong-lounge",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 18"
+          ]
+        },
+        {
+          "slug": "il-porcellino",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "itamae-miami",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "jaleo-washington",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 2",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "jim-s-original",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "joe-s-seafood-prime-steak-stone-crab-washington-dc-washington",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "joe-s-stone-crab-miami",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "kai-restaurant-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "kimball-house-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "kitchen-kocktails",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 11"
+          ]
+        },
+        {
+          "slug": "la-carreta-miami",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 2",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "lazy-betty-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 14"
+          ]
+        },
+        {
+          "slug": "little-donkey-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "lon-s-at-the-hermosa-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "los-f-lix-miami",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "mandolin-aegean-bistro-miami",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "maple-ash",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "mastro-s-city-hall-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "miller-union-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "minibar-by-jos-andr-s-washington",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "moon-rabbit-washington",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "muj-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "nan-thai-fine-dining-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 17"
+          ]
+        },
+        {
+          "slug": "neptune-oyster-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "o-ya-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "oleana-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "oyamel-washington",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "palette-tea-house",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "perry-s-steakhouse-grille",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "pineapple-and-pearls-washington",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "pizzeria-beddia-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "river-roast",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 16"
+          ]
+        },
+        {
+          "slug": "siena-tavern",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "terry-black-s-barbecue",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "y-o-ranch-steakhouse",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 16"
+          ]
+        },
+        {
+          "slug": "the-woolworth",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 19"
+          ]
+        },
+        {
+          "slug": "the-henry",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "portillo-s-barnelli-s-chicago",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "r-g-lounge",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "staplehouse-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "trader-vic-s-atlanta-atlanta",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 8"
+          ]
+        },
+        {
+          "slug": "rose-s-luxury-washington",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "rasika-washington",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "zaytinya-washington",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "succotash-prime-washington-dc-washington",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "the-capital-grille-washington-dc-washington",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "provenance-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "zahav-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "vetri-cucina-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "royal-sushi-izakaya-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "suraya-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "vernick-food-drink-philadelphia",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "wayan-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 1",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "zuma-miami-miami",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 20"
+          ]
+        },
+        {
+          "slug": "versailles-restaurant-miami",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "the-gladly-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 7"
+          ]
+        },
+        {
+          "slug": "pizzeria-bianco-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "tarbell-s-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "virt-honest-craft-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "tratto-phoenix",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "yume-wo-katare-boston",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 408 timeout",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "sarma-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "woods-hill-pier-4-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "row-34-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "uni-boston",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "puritan-company-boston",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "kenny-s-wood-fired-grill",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 403 HTTP 403",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "summer-house-santa-monica",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "perch",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "the-best-sichuan-39",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 2",
+            "quotes 1"
+          ]
+        },
+        {
+          "slug": "the-dabney-washington",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 1"
+          ]
+        },
+        {
+          "slug": "selden-standard-detroit",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 6"
+          ]
+        },
+        {
+          "slug": "marrow-detroit",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 4",
+            "quotes 29"
+          ]
+        },
+        {
+          "slug": "grey-ghost-detroit-detroit",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 4"
+          ]
+        },
+        {
+          "slug": "takoi-detroit",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "shewolf-pastificio-bar-detroit",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "london-chop-house-detroit",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "buddy-s-pizza-detroit",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 2"
+          ]
+        },
+        {
+          "slug": "supino-pizzeria-detroit",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "baobab-fare-detroit",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "flowers-of-vietnam-detroit",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 3"
+          ]
+        },
+        {
+          "slug": "standby-detroit",
+          "matchStatus": "resolved",
+          "completeness": 100,
+          "notes": [
+            "pages 3",
+            "quotes 12"
+          ]
+        },
+        {
+          "slug": "spoon-and-stable-minneapolis",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 9"
+          ]
+        },
+        {
+          "slug": "demi-minneapolis",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 3",
+            "quotes 5"
+          ]
+        },
+        {
+          "slug": "owamni-minneapolis",
+          "matchStatus": "site-failure",
+          "completeness": 89,
+          "notes": [
+            "site 403 HTTP 403",
+            "kept prior owned-site evidence"
+          ]
+        },
+        {
+          "slug": "112-eatery-minneapolis",
+          "matchStatus": "resolved",
+          "completeness": 94,
+          "notes": [
+            "pages 4",
+            "quotes 3"
+          ]
+        }
+      ],
+      "hygiene": null
+    },
+    {
+      "kind": "level-records",
       "startedAt": "2026-09-03T11:30:25.735Z",
       "finishedAt": "2026-09-03T11:30:25.735Z",
       "records": 1527,
@@ -16508,260 +17462,6 @@
         "lastReviewAt": "2026-08-31",
         "reachableAtLastReview": 225
       }
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-08-31T02:41:58.390Z",
-      "finishedAt": "2026-08-31T02:43:10.350Z",
-      "batchSize": 18,
-      "cities": [
-        "Oakland, California",
-        "Fort Lauderdale, Florida",
-        "Asheville, North Carolina"
-      ],
-      "resolved": 18,
-      "unresolved": 0,
-      "sourceLimited": 0,
-      "deferred": 0,
-      "avgCompleteness": 94,
-      "corpusEnriched": 872,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 18
-      },
-      "retries": 0,
-      "failures": 0,
-      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T02-41-58-391Z-enrich-owned",
-      "records": [
-        {
-          "slug": "m-go-oakland",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "millennium-restaurant-oakland",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 4",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "soba-ichi-oakland",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 1",
-            "playwright 1"
-          ]
-        },
-        {
-          "slug": "burdell-oakland",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 2",
-            "quotes 2"
-          ]
-        },
-        {
-          "slug": "bombera-oakland",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 4",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "wahpepah-s-kitchen-oakland",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 3",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "the-floridian-fort-lauderdale",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 4",
-            "quotes 9"
-          ]
-        },
-        {
-          "slug": "catch-cut-fort-lauderdale",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 3",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "shooters-waterfront-fort-lauderdale",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 2",
-            "quotes 8"
-          ]
-        },
-        {
-          "slug": "anthony-s-runway-84-fort-lauderdale",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 1"
-          ]
-        },
-        {
-          "slug": "timbr-fort-lauderdale",
-          "matchStatus": "resolved",
-          "completeness": 78,
-          "notes": [
-            "pages 4",
-            "quotes 6"
-          ]
-        },
-        {
-          "slug": "calusso-fort-lauderdale",
-          "matchStatus": "resolved",
-          "completeness": 78,
-          "notes": [
-            "pages 3",
-            "quotes 8"
-          ]
-        },
-        {
-          "slug": "c-rate-asheville",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 4",
-            "quotes 8"
-          ]
-        },
-        {
-          "slug": "rhubarb-asheville",
-          "matchStatus": "resolved",
-          "completeness": 72,
-          "notes": [
-            "pages 4",
-            "quotes 8",
-            "playwright 1"
-          ]
-        },
-        {
-          "slug": "the-admiral-asheville",
-          "matchStatus": "resolved",
-          "completeness": 61,
-          "notes": [
-            "pages 3",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "limones-asheville",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 2",
-            "quotes 3"
-          ]
-        },
-        {
-          "slug": "the-market-place-asheville",
-          "matchStatus": "resolved",
-          "completeness": 67,
-          "notes": [
-            "pages 4",
-            "quotes 5"
-          ]
-        },
-        {
-          "slug": "jargon-asheville",
-          "matchStatus": "resolved",
-          "completeness": 50,
-          "notes": [
-            "pages 1",
-            "quotes 1"
-          ]
-        }
-      ],
-      "hygiene": null
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-31T02:41:57.736Z",
-      "finishedAt": "2026-08-31T02:41:57.930Z",
-      "cities": [
-        {
-          "city": "Oakland, CA",
-          "queueCity": "Oakland",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        },
-        {
-          "city": "Fort Lauderdale, FL",
-          "queueCity": "Fort Lauderdale",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        },
-        {
-          "city": "Asheville, NC",
-          "queueCity": "Asheville",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        }
-      ],
-      "inserted": 18,
-      "duplicatesSkipped": 0,
-      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T02-41-57-736Z-seed-listings",
-      "seedFiles": [
-        "seed-listings-2026-08-20-density-d01.json",
-        "seed-listings-2026-08-20-new-jersey-state-floor.json",
-        "seed-listings-2026-08-20-queue-49-54.json",
-        "seed-listings-2026-08-20-queue-55-60.json",
-        "seed-listings-2026-08-20-queue-61-66.json",
-        "seed-listings-2026-08-20-queue-67-72.json",
-        "seed-listings-2026-08-20-queue-73-78.json",
-        "seed-listings-2026-08-20-top50-43-48.json",
-        "seed-listings-2026-08-31-statewide-f01.json",
-        "seed-listings-2026-08-31-statewide-f02.json",
-        "seed-listings.json"
-      ],
-      "insertedSlugs": [
-        "m-go-oakland",
-        "millennium-restaurant-oakland",
-        "soba-ichi-oakland",
-        "burdell-oakland",
-        "bombera-oakland",
-        "wahpepah-s-kitchen-oakland",
-        "the-floridian-fort-lauderdale",
-        "catch-cut-fort-lauderdale",
-        "shooters-waterfront-fort-lauderdale",
-        "anthony-s-runway-84-fort-lauderdale",
-        "timbr-fort-lauderdale",
-        "calusso-fort-lauderdale",
-        "c-rate-asheville",
-        "rhubarb-asheville",
-        "the-admiral-asheville",
-        "limones-asheville",
-        "the-market-place-asheville",
-        "jargon-asheville"
-      ]
     }
   ]
 }

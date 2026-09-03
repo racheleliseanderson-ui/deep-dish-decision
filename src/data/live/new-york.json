@@ -1,6 +1,6 @@
 {
   "regionGroup": "New York",
-  "generatedAt": "2026-09-03T11:30:12.706Z",
+  "generatedAt": "2026-09-03T13:01:25.738Z",
   "records": {
     "carmine-s-44th-street-nyc": {
       "ll": [
@@ -2898,6 +2898,10 @@
       "dishes": [
         {
           "name": "house-made pasta",
+          "source": "first-party"
+        },
+        {
+          "name": "handmade pasta",
           "source": "first-party"
         }
       ]

@@ -1,6 +1,6 @@
 {
   "regionGroup": "Texas",
-  "generatedAt": "2026-09-03T11:30:12.706Z",
+  "generatedAt": "2026-09-03T13:01:25.738Z",
   "records": {
     "kitchen-kocktails": {
       "ll": [
@@ -15,7 +15,13 @@
         90,
         200
       ],
-      "ppSource": "planning-band"
+      "ppSource": "planning-band",
+      "dishes": [
+        {
+          "name": "Fried Chicken",
+          "source": "first-party"
+        }
+      ]
     },
     "terry-black-s-barbecue": {
       "ll": [
@@ -2431,6 +2437,10 @@
         {
           "name": "authentic Italian food and the best pizza crafted with tradi",
           "source": "first-party"
+        },
+        {
+          "name": "authentic Italian food and the best pizza crafted with tradition and flavor",
+          "source": "first-party"
         }
       ]
     },
@@ -2908,7 +2918,13 @@
         -95.42266
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "dishes": [
+        {
+          "name": "refined Southern flavor title",
+          "source": "first-party"
+        }
+      ]
     },
     "feges-bbq-houston": {
       "ll": [

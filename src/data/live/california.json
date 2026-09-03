@@ -1,6 +1,6 @@
 {
   "regionGroup": "California",
-  "generatedAt": "2026-09-03T11:30:12.706Z",
+  "generatedAt": "2026-09-03T13:01:25.738Z",
   "records": {
     "philippe-the-original": {
       "ll": [
@@ -2804,7 +2804,13 @@
         25,
         50
       ],
-      "ppSource": "planning-band"
+      "ppSource": "planning-band",
+      "dishes": [
+        {
+          "name": "their Dim Sum title",
+          "source": "first-party"
+        }
+      ]
     },
     "palette-tea-house": {
       "ll": [
@@ -2937,7 +2943,13 @@
         -121.4944
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "dishes": [
+        {
+          "name": "handmade pasta",
+          "source": "first-party"
+        }
+      ]
     },
     "the-firehouse-sacramento": {
       "ll": [
@@ -3759,7 +3771,13 @@
         -118.28447
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "dishes": [
+        {
+          "name": "handmade pasta",
+          "source": "first-party"
+        }
+      ]
     },
     "yuca-s-los-angeles": {
       "ll": [
@@ -3771,6 +3789,10 @@
       "dishes": [
         {
           "name": "cooking up authentic Mexican cuisine, where quality ingredie",
+          "source": "first-party"
+        },
+        {
+          "name": "cooking up authentic Mexican cuisine, where quality ingredients and time-honored",
           "source": "first-party"
         }
       ]
@@ -4299,6 +4321,10 @@
       "dishes": [
         {
           "name": "housemade pastas, spit-roasted and grilled meats, and seafoo",
+          "source": "first-party"
+        },
+        {
+          "name": "housemade pastas, spit-roasted and grilled meats, and seafood roast og",
           "source": "first-party"
         }
       ]
