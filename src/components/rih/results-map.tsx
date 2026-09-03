@@ -355,6 +355,31 @@ export function ResultsMap({
         </svg>
       </div>
 
+      {/*
+       * The drawing carries information — rank, distance and whether a point is
+       * a real address or a city-level guess — and `role="img"` with a one-line
+       * label throws all of it away. This is the same reading in prose, in rank
+       * order, for anyone who is not looking at the plot. Hover names one room;
+       * this names every one.
+       */}
+      <div className="sr-only">
+        <p>
+          {`Ranked rooms${originLabel ? ` around ${originLabel}` : ""}, nearest reading first:`}
+        </p>
+        <ul>
+          {model.pts.map((p) => (
+            <li key={`sr-${p.sc.record.slug}`}>
+              {`${p.sc.rank}. ${p.sc.record.title}`}
+              {p.sc.distanceMi !== null
+                ? ` — ${formatDistance(p.sc.distanceMi, p.exact)}`
+                : " — distance unknown"}
+              {p.exact ? "" : " (city-level point, not a street address)"}
+              {p.sc.blocked ? " — held: it does not clear the night" : ""}
+            </li>
+          ))}
+        </ul>
+      </div>
+
       {/* the hovered room, named */}
       <div className="mt-2 flex min-h-9 flex-wrap items-center justify-between gap-3 text-[12px]">
         <div className="min-w-0">

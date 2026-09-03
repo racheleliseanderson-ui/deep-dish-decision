@@ -14,6 +14,9 @@ import {
   type LiveRow,
 } from "@/lib/live";
 import { createFileRoute, Link, notFound, useRouterState } from "@tanstack/react-router";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbs } from "@/lib/seo/jsonld";
+import { packetDescription, packetTitle } from "@/lib/seo/record-meta";
 
 export const Route = createFileRoute("/packet/$slug")({
   loader: async ({ params }): Promise<{ record: RestaurantRecord }> => {
@@ -22,24 +25,31 @@ export const Route = createFileRoute("/packet/$slug")({
     if (!record) throw notFound();
     return { record };
   },
-  head: () => ({
-    meta: [
-      { title: "Restaurant Decision Packet · Deep Dish" },
-      {
-        name: "description",
-        content:
-          "A printable decision packet: situation of record, verdict, critical risks, watch items, residual unknowns and a confirmation script built from first-party evidence.",
-      },
-      { property: "og:title", content: "Restaurant Decision Packet" },
-      {
-        property: "og:description",
-        content:
-          "Printable first-party evidence packet with verdict, findings by layer, confirmation script and open unknowns.",
-      },
-      { property: "og:type", content: "article" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: ({ loaderData }) => {
+    // One shared title went out on every packet in the corpus, so ~1,500 pages
+    // announced themselves to search as the same document.
+    if (!loaderData) {
+      return {
+        meta: [
+          { title: "Booking packet · Deep Dish" },
+          { name: "robots", content: "noindex" },
+        ],
+      };
+    }
+    const r = loaderData.record;
+    const title = packetTitle(r);
+    const description = packetDescription(r);
+    return {
+      meta: [
+        { title },
+        { name: "description", content: description },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
+        { property: "og:type", content: "article" },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
+    };
+  },
   component: Packet,
 });
 
@@ -105,7 +115,13 @@ function Packet() {
   ];
 
   return (
-    <main className="mx-auto max-w-[880px] px-5 py-8 pb-28 print:px-0 print:py-0">
+    <main id="main" tabIndex={-1} className="mx-auto max-w-[880px] px-5 py-8 pb-28 print:px-0 print:py-0">
+      <JsonLd
+        data={breadcrumbs([
+          { name: record.title, path: `/record/${record.slug}` },
+          { name: "Booking packet", path: `/packet/${record.slug}` },
+        ])}
+      />
       <div className="no-print mb-6 flex flex-wrap items-center justify-between gap-3">
         <Link
           to="/"

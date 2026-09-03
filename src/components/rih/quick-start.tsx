@@ -311,7 +311,7 @@ export function QuickStart({
               if (locationText.trim()) commitPlace();
             }}
             placeholder="Portland, Oregon"
-            className="mt-1.5 w-full rounded-xl border border-border bg-background/35 px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-subtle focus:border-primary"
+            className="mt-1.5 w-full rounded-xl border border-border bg-background/35 px-4 py-3 text-sm text-foreground transition-colors placeholder:text-subtle focus:border-primary"
           />
           <datalist id="deep-dish-places">
             {places.map((place) => (

@@ -250,7 +250,7 @@ function Shortlist() {
   const constraints = situation.constraints.map((value) => CONSTRAINT_LABELS[value] ?? value);
 
   return (
-    <main className="min-h-screen pb-28">
+    <main id="main" tabIndex={-1} className="min-h-screen pb-28">
       <header className="border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-5xl px-4 pb-9 pt-8 sm:px-6">
           <p className="text-eyebrow text-gilt">Night Plan</p>

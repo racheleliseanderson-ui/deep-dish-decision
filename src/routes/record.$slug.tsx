@@ -24,6 +24,9 @@ import { loadLiveGroup, type LiveRow } from "@/lib/live";
 import { TableIntelligence, TableIntelligenceHeading } from "@/components/rih/table-intelligence";
 import { WhyThisRank } from "@/components/rih/why-this-rank";
 import { saveNightContext } from "@/lib/night-context";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbs, restaurantJsonLd } from "@/lib/seo/jsonld";
+import { recordDescription, recordTitle } from "@/lib/seo/record-meta";
 
 export const Route = createFileRoute("/record/$slug")({
   loader: async ({ params }): Promise<{ record: RestaurantRecord }> => {
@@ -39,8 +42,11 @@ export const Route = createFileRoute("/record/$slug")({
       };
     }
     const r = loaderData.record;
-    const title = `${r.title} — Deep Dish restaurant research · ${r.region}`;
-    const description = `${r.serviceSummary.slice(0, 150)}`;
+    // The title used to run past 90 characters and the description was a blunt
+    // 150-character slice of the service summary, which cut mid-word. Both are
+    // composed now, from fields the restaurant actually published.
+    const title = recordTitle(r);
+    const description = recordDescription(r);
     return {
       meta: [
         { title },
@@ -58,7 +64,7 @@ export const Route = createFileRoute("/record/$slug")({
 
 function RestaurantNotFound() {
   return (
-    <main className="mx-auto max-w-2xl px-5 py-24 text-center">
+    <main id="main" tabIndex={-1} className="mx-auto max-w-2xl px-5 py-24 text-center">
       <h1 className="font-display text-4xl tracking-tight">Restaurant not found</h1>
       <p className="mt-3 text-sm text-muted-foreground">
         Deep Dish does not have a current research page for that restaurant.
@@ -137,7 +143,14 @@ function Dossier() {
   const crossContact = readCrossContact(record);
 
   return (
-    <main className="min-h-screen pb-28">
+    <main id="main" tabIndex={-1} className="min-h-screen pb-28">
+      <JsonLd data={restaurantJsonLd(record)} />
+      <JsonLd
+        data={breadcrumbs([
+          { name: "Corpus Atlas", path: "/atlas" },
+          { name: record.title, path: `/record/${record.slug}` },
+        ])}
+      />
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-6xl px-4 pb-12 pt-8 sm:px-6">
           <p className="text-eyebrow mt-10">{record.region}</p>

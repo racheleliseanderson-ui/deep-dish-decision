@@ -118,7 +118,9 @@
 
   --muted: oklch(0.94 0.007 265);
   --muted-foreground: oklch(0.44 0.03 262);
-  --subtle: oklch(0.55 0.022 258);
+  /* 0.55 measured 4.25:1 on surface-raised and 3.94:1 on surface-sunken, and
+     `subtle` carries the eyebrow labels, which are body-sized. */
+  --subtle: oklch(0.50 0.022 258);
 
   --accent: oklch(0.5 0.07 205);
   --accent-foreground: oklch(0.988 0.004 265);
@@ -137,7 +139,10 @@
 
   --border: oklch(0.225 0.048 258 / 13%);
   --border-strong: oklch(0.225 0.048 258 / 26%);
-  --input: oklch(0.225 0.048 258 / 18%);
+  /* Control edges, not decorative hairlines. WCAG 1.4.11 wants 3:1 on the
+     boundary of anything you type into; at 18% this measured 1.45:1 on every
+     Pearl ground. 52% clears 3:1 on the darkest one (surface-sunken). */
+  --input: oklch(0.225 0.048 258 / 52%);
   --ring: oklch(0.545 0.11 80 / 45%);
 
   --plate-shadow:
@@ -184,7 +189,9 @@
   --accent-foreground: oklch(0.15 0.01 200);
 
   --destructive: oklch(0.64 0.18 25);
-  --destructive-foreground: oklch(0.97 0.01 80);
+  /* Ink, not bone. A 0.97 foreground on this red measured 3.36:1, and under
+     CVD — where destructive becomes a bright cyan — it measured 1.12:1. */
+  --destructive-foreground: oklch(0.17 0.045 258);
 
   --critical: oklch(0.72 0.16 32);
   --critical-soft: oklch(0.72 0.16 32 / 15%);
@@ -197,7 +204,9 @@
 
   --border: oklch(0.38 0.05 258);
   --border-strong: oklch(0.48 0.05 258);
-  --input: oklch(0.38 0.05 258);
+  /* Same rule as Pearl: the control edge is not the card hairline. 0.38
+     measured 1.35:1 against surface-raised, which is where most fields sit. */
+  --input: oklch(0.58 0.05 258);
   --ring: oklch(0.83 0.13 88 / 58%);
 
   --plate-shadow: 0 1px 0 0 oklch(1 0 0 / 6%) inset, 0 18px 40px -24px oklch(0 0 0 / 72%);
@@ -425,8 +434,11 @@
   --primary: oklch(0.62 0 0);
   --primary-strong: oklch(0.74 0 0);
   --primary-foreground: oklch(0.14 0 0);
-  --accent: oklch(0.34 0 0);
-  --accent-foreground: oklch(0.96 0 0);
+  /* Mono is an overlay on either ground. A single dark accent measured
+     1.15:1 on the Navy popover; the light value belongs to the dark ground
+     and the dark one is re-stated for Pearl below. */
+  --accent: oklch(0.80 0 0);
+  --accent-foreground: oklch(0.14 0 0);
   --ring: oklch(0.7 0 0 / 60%);
   --critical: oklch(0.94 0 0);
   --critical-soft: oklch(1 0 0 / 16%);
@@ -450,6 +462,8 @@
   --primary: oklch(0.28 0 0);
   --primary-strong: oklch(0.16 0 0);
   --primary-foreground: oklch(0.99 0 0);
+  --accent: oklch(0.34 0 0);
+  --accent-foreground: oklch(0.96 0 0);
 }
 
 .mode-mono .grain-veil::after {
@@ -528,6 +542,63 @@
   --marble: oklch(0.96 0 0);
 }
 
+/* The ink band stays navy on Pearl, so the Pearl-mono gilt — a dark grey
+   chosen for paper — measured 1.51:1 inside it. The band re-scopes its own
+   gilt, the same way the palette re-scopes tokens per ground. */
+.mode-mono:not(.dark) .ink-band {
+  --gilt: oklch(0.78 0 0);
+  --gilt-soft: oklch(1 0 0 / 12%);
+}
+
+/*
+ * Control edges, unlayered on purpose.
+ *
+ * Every field in this app is written `border border-border`, which is the
+ * decorative hairline and measures well under the 3:1 WCAG 1.4.11 asks of the
+ * boundary that tells you where a control is. Rather than rewrite forty call
+ * sites — and have the forty-first arrive without it — the boundary token is
+ * applied here to the elements that are actually controls. Unlayered rules
+ * outrank Tailwind's utility layer, so `border-border` no longer wins; the
+ * `:not(:focus)` guard hands the edge back for focus and invalid styling,
+ * which are the two states a call site legitimately owns.
+ */
+:where(
+    input:not([type="checkbox"], [type="radio"], [type="range"], [type="hidden"]),
+    textarea,
+    select
+  ):not(:focus):not(:focus-visible):not([aria-invalid="true"]) {
+  border-color: var(--color-input);
+}
+
+/*
+ * Skip link. The routes each own a `<main id="main">`; this is the keyboard
+ * path to it, visible only once it has focus.
+ */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 100;
+  transform: translateY(-200%);
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  padding: 0.65rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.skip-link:focus-visible,
+.skip-link:focus {
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .skip-link {
+    transition: transform 140ms var(--ease-instrument);
+  }
+}
+
 @media print {
   .no-print {
     display: none !important;
@@ -544,6 +615,7 @@
     --subtle: oklch(0.5 0.01 70);
     --border: oklch(0 0 0 / 16%);
     --border-strong: oklch(0 0 0 / 30%);
+    --input: oklch(0 0 0 / 55%);
     --primary: oklch(0.45 0.09 70);
     --gilt: oklch(0.35 0.02 80);
     --gilt-soft: oklch(0 0 0 / 6%);
@@ -563,5 +635,28 @@
   }
   .ink-band {
     background-image: none;
+  }
+
+  /*
+   * Paging. No `@page` margin boxes here on purpose — Firefox and Safari do
+   * not implement them, so a running head built that way silently disappears
+   * on two of the three engines the packet is printed from. The packet states
+   * its own identity in its header instead, and these rules only keep a
+   * section from being torn in half across the fold.
+   */
+  article > section,
+  article > header,
+  .packet-block {
+    break-inside: avoid;
+  }
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
   }
 }

@@ -162,7 +162,7 @@ function Console() {
   const empty = states.filter((s) => s.count === 0);
 
   return (
-    <main className="min-h-dvh pb-28">
+    <main id="main" tabIndex={-1} className="min-h-dvh pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-7xl px-4 pb-14 pt-8 sm:px-6 sm:pb-20">
           <h1 className="mt-10 max-w-4xl font-display text-[2.2rem] font-normal leading-[1.02] tracking-[-0.02em] sm:text-5xl lg:text-[3.9rem]">

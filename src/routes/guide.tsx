@@ -127,7 +127,7 @@ function Guide() {
   const topGaps = gapMap.slice(0, 5);
 
   return (
-    <main className="min-h-dvh pb-28">
+    <main id="main" tabIndex={-1} className="min-h-dvh pb-28">
       <header className="grain-veil relative isolate overflow-hidden border-b border-border-strong bg-surface-sunken">
         <div className="mx-auto max-w-7xl px-4 pb-14 pt-8 sm:px-6 sm:pb-20">
           <p className="mt-10 text-eyebrow">The method</p>
@@ -178,6 +178,18 @@ function Guide() {
             the twelve core slots holds text; the case-field figure counts whether the restaurant
             published an answer, by the same test the record pages apply. A record can fill every
             slot and still state nothing.
+          </p>
+
+          <p className="mt-4 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
+            Where the line falls between what a restaurant said and what someone said about it is
+            not a rule this instrument invented. It is written down, at length, in{" "}
+            <a
+              href="https://saltnotes.blog/research-and-standards/"
+              className="underline decoration-border underline-offset-4 hover:text-foreground"
+            >
+              How We Judge Food, Drink and Restaurant Claims
+            </a>
+            . Read it if you want to argue with a verdict on this site.
           </p>
         </div>
       </header>

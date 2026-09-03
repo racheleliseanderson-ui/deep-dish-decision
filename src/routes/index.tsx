@@ -248,7 +248,7 @@ function Hub() {
   };
 
   return (
-    <main className="min-h-screen pb-28">
+    <main id="main" tabIndex={-1} className="min-h-screen pb-28">
       <ImportedContext
         session={session}
         onApply={apply}

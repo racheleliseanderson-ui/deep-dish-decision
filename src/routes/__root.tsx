@@ -20,6 +20,8 @@ import { THEME_COLOR, syncThemeColor } from "@/components/rih/theme-toggle";
 import { SupportFooter } from "@/components/SupportFooter";
 
 import { canonicalFor } from "../lib/site";
+import { JsonLd } from "@/components/seo/json-ld";
+import { SITE_GRAPH } from "@/lib/seo/jsonld";
 const ADSENSE_CLIENT = "ca-pub-8542391068454821";
 
 function NotFoundComponent() {
@@ -105,6 +107,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           content: "Is this restaurant right for this night — and what still needs confirming?",
         },
         { property: "og:type", content: "website" },
+        { property: "og:site_name", content: "Deep Dish" },
+        { property: "og:locale", content: "en_US" },
         { name: "twitter:card", content: "summary_large_image" },
         { property: "og:image", content: "https://deepdish.saltnotes.blog/og.jpg" },
         { property: "og:image:width", content: "1200" },
@@ -188,6 +192,13 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <JsonLd data={SITE_GRAPH} />
+      {/* First stop for a keyboard or switch user: past the house bar, the
+          suite strip and the night-plan rail, straight to the route's own
+          <main id="main">. Off-screen until it takes focus. */}
+      <a href="#main" className="skip-link">
+        Skip to the decision
+      </a>
       <HouseBar className="border-b border-border" />
       <SuiteStrip current="restaurant" />
       <Outlet />
