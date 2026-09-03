@@ -1,6 +1,6 @@
 {
   "regionGroup": "Colorado",
-  "generatedAt": "2026-09-02T21:28:27.010Z",
+  "generatedAt": "2026-09-03T02:29:43.519Z",
   "records": {
     "tavernetta-denver": {
       "ll": [
@@ -389,7 +389,42 @@
         -104.9903
       ],
       "llSource": "city",
-      "tz": "America/Denver"
+      "tz": "America/Denver",
+      "hours": [
+        [],
+        [],
+        [
+          [
+            1020,
+            1290
+          ]
+        ],
+        [
+          [
+            1020,
+            1290
+          ]
+        ],
+        [
+          [
+            1020,
+            1290
+          ]
+        ],
+        [
+          [
+            1020,
+            1290
+          ]
+        ],
+        [
+          [
+            1020,
+            1290
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "restaurant-olivia-denver": {
       "ll": [
@@ -405,7 +440,11 @@
         -104.9903
       ],
       "llSource": "city",
-      "tz": "America/Denver"
+      "tz": "America/Denver",
+      "risk": {
+        "cancelFee": 20,
+        "perGuest": true
+      }
     },
     "makfam-denver": {
       "ll": [
@@ -525,7 +564,49 @@
         -104.9903
       ],
       "llSource": "city",
-      "tz": "America/Denver"
+      "tz": "America/Denver",
+      "hours": [
+        [
+          [
+            540,
+            1320
+          ]
+        ],
+        [],
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            0
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$",
+      "bandSource": "planning-band",
+      "pp": [
+        25,
+        50
+      ],
+      "ppSource": "planning-band"
     },
     "tacos-tequila-whiskey-denver": {
       "ll": [
@@ -550,6 +631,46 @@
       ],
       "llSource": "city",
       "tz": "America/Denver",
+      "hours": [
+        [
+          [
+            900,
+            1200
+          ]
+        ],
+        [],
+        [
+          [
+            900,
+            1200
+          ]
+        ],
+        [
+          [
+            900,
+            1200
+          ]
+        ],
+        [
+          [
+            900,
+            1200
+          ]
+        ],
+        [
+          [
+            690,
+            1230
+          ]
+        ],
+        [
+          [
+            690,
+            1230
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
       "dishes": [
         {
           "name": "its tradition and innovation, award-winning cuisine, and com",
@@ -596,6 +717,36 @@
       ],
       "llSource": "city",
       "tz": "America/Denver",
+      "hours": [
+        [
+          [
+            660,
+            1080
+          ]
+        ],
+        [],
+        [],
+        [
+          [
+            660,
+            1200
+          ]
+        ],
+        [
+          [
+            660,
+            1200
+          ]
+        ],
+        [
+          [
+            660,
+            1200
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
       "dishes": [
         {
           "name": "fried chicken",

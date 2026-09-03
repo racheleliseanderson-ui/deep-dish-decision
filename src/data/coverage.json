@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-02T22:52:46.299Z",
+  "generatedAt": "2026-09-03T02:29:56.288Z",
   "totals": {
     "records": 1527,
-    "enriched": 1522,
-    "resolved": 1476,
+    "enriched": 1527,
+    "resolved": 1482,
     "unresolved": 0,
     "statesCovered": 51,
     "statesTotal": 51,
     "avgCompleteness": 97,
     "withRating": 111,
-    "withPrice": 108,
-    "hygiene": 61,
-    "neverEnriched": 5,
+    "withPrice": 119,
+    "hygiene": 55,
+    "neverEnriched": 0,
     "thin": 0,
     "siteFailures": 5,
     "reviewDue": 11,
-    "staleA": 5,
+    "staleA": 0,
     "staleB": 0,
     "staleC": 0
   },
@@ -28,138 +28,33 @@
     "preferRefreshOverDiscover": true,
     "hygieneBatchSize": 25,
     "hygieneSlugs": [
-      "bar-pigalle-detroit",
-      "fin-fino-charlotte",
-      "lola-55-san-diego",
-      "riddim-n-spice-nashville",
-      "wayfare-tavern-san-francisco",
-      "barrington-s-charlotte",
-      "born-raised-san-diego",
-      "del-rossi-s-cheesesteak-pizza-co-philadelphia",
-      "georgia-james-houston",
-      "ironside-fish-oyster-san-diego",
-      "jens-restaurant-anchorage",
-      "locale-farm-to-table-eatery-bakersfield",
-      "mourad-san-francisco",
-      "mr-szechuan",
-      "oak-park-des-moines",
-      "aga-s-restaurant-catering-houston",
-      "big-jones-chicago",
-      "botiwalla-atlanta",
+      "canlis",
+      "kann",
+      "nue",
+      "the-pink-door",
+      "tusk",
+      "le-pigeon",
+      "revel",
+      "ox",
+      "langbaan",
+      "kachka",
+      "st-lawrence",
+      "bottega-louie",
+      "home-restaurant",
+      "the-purple-pig-restaurant",
+      "simply-pho",
+      "sichuan-impression-los-angeles",
+      "triple-pepper-river-oaks",
+      "cooking-girl",
+      "house-of-nanking",
       "busy-bee-cafe-atlanta",
-      "chercher-ethiopian-restaurant-mart-washington",
-      "chichen-itza-restaurant-los-angeles",
-      "delbar-atlanta",
       "desta-ethiopian-kitchen-atlanta",
+      "delbar-atlanta",
       "ecco-atlanta",
-      "famous-4th-street-delicatessen-philadelphia"
+      "botiwalla-atlanta",
+      "fox-bros-bar-b-q-atlanta"
     ],
     "nextHygiene": [
-      {
-        "slug": "bar-pigalle-detroit",
-        "title": "Bar Pigalle",
-        "city": "Detroit",
-        "stateProvince": "Michigan",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
-        "siteFailures": []
-      },
-      {
-        "slug": "fin-fino-charlotte",
-        "title": "Fin & Fino",
-        "city": "Charlotte",
-        "stateProvince": "North Carolina",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
-        "siteFailures": []
-      },
-      {
-        "slug": "lola-55-san-diego",
-        "title": "Lola 55",
-        "city": "San Diego",
-        "stateProvince": "California",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
-        "siteFailures": []
-      },
-      {
-        "slug": "riddim-n-spice-nashville",
-        "title": "Riddim N Spice",
-        "city": "Nashville",
-        "stateProvince": "Tennessee",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
-        "siteFailures": []
-      },
-      {
-        "slug": "wayfare-tavern-san-francisco",
-        "title": "Wayfare Tavern",
-        "city": "San Francisco",
-        "stateProvince": "California",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
-        "siteFailures": []
-      },
       {
         "slug": "barrington-s-charlotte",
         "title": "Barrington's",
@@ -171,10 +66,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-01T17:38:53.154Z",
+        "lastEnrichedAt": "2026-09-02T22:52:55.103Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-20",
         "reviewedAt": "2026-08-21",
@@ -192,10 +87,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-01T17:38:53.730Z",
+        "lastEnrichedAt": "2026-09-02T22:52:56.139Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-20",
         "reviewedAt": "2026-08-21",
@@ -217,7 +112,7 @@
         "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:24:32.440Z",
+        "lastEnrichedAt": "2026-09-02T22:53:26.774Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -238,7 +133,7 @@
         "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:18:05.836Z",
+        "lastEnrichedAt": "2026-09-02T22:53:27.815Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -258,10 +153,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-01T17:39:23.654Z",
+        "lastEnrichedAt": "2026-09-02T22:55:01.098Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-20",
         "reviewedAt": "2026-08-21",
@@ -280,10 +175,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-01T17:39:54.302Z",
+        "lastEnrichedAt": "2026-09-02T22:55:31.870Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-19",
         "reviewedAt": "2026-08-20",
@@ -300,10 +195,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-01T17:40:08.587Z",
+        "lastEnrichedAt": "2026-09-02T22:55:33.141Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-19",
         "reviewedAt": "2026-08-20",
@@ -323,7 +218,7 @@
         "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:27:08.690Z",
+        "lastEnrichedAt": "2026-09-02T22:55:34.180Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -341,36 +236,16 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-01T17:40:09.595Z",
+        "lastEnrichedAt": "2026-09-02T22:55:35.201Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
         "siteFailures": [
           "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
         ]
-      },
-      {
-        "slug": "oak-park-des-moines",
-        "title": "Oak Park",
-        "city": "Des Moines",
-        "stateProvince": "Iowa",
-        "priority": 900,
-        "reasons": [
-          "match-site-failure"
-        ],
-        "hygiene": true,
-        "staleTier": null,
-        "ageDays": 1,
-        "completeness": 78,
-        "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-01T17:41:42.449Z",
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-09-19",
-        "reviewedAt": "2026-08-20",
-        "siteFailures": []
       },
       {
         "slug": "aga-s-restaurant-catering-houston",
@@ -386,7 +261,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:18:02.723Z",
+        "lastEnrichedAt": "2026-09-02T22:57:11.738Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -406,7 +281,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:13:58.926Z",
+        "lastEnrichedAt": "2026-09-02T22:57:12.725Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -426,7 +301,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:12:16.858Z",
+        "lastEnrichedAt": "2026-09-02T22:57:13.796Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -446,7 +321,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:11:24.544Z",
+        "lastEnrichedAt": "2026-09-02T22:57:14.919Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -466,7 +341,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:27:58.516Z",
+        "lastEnrichedAt": "2026-09-02T22:57:15.960Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -486,7 +361,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:20:52.235Z",
+        "lastEnrichedAt": "2026-09-02T22:57:17.000Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -506,7 +381,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:11:29.783Z",
+        "lastEnrichedAt": "2026-09-02T22:57:18.041Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -526,7 +401,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:11:28.813Z",
+        "lastEnrichedAt": "2026-09-02T22:57:19.069Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -546,7 +421,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:12:05.983Z",
+        "lastEnrichedAt": "2026-09-02T22:57:20.127Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -566,7 +441,7 @@
         "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-02T21:24:14.022Z",
+        "lastEnrichedAt": "2026-09-02T22:57:21.139Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -871,124 +746,141 @@
         "nextReviewAt": "2026-09-20",
         "reviewedAt": "2026-08-21",
         "siteFailures": []
-      }
-    ],
-    "stale": [
-      {
-        "slug": "bar-pigalle-detroit",
-        "title": "Bar Pigalle",
-        "city": "Detroit",
-        "stateProvince": "Michigan",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
-        "siteFailures": []
       },
       {
-        "slug": "fin-fino-charlotte",
-        "title": "Fin & Fino",
-        "city": "Charlotte",
-        "stateProvince": "North Carolina",
-        "priority": 1020,
+        "slug": "cooking-girl",
+        "title": "Cooking Girl",
+        "city": "Houston",
+        "stateProvince": "Texas",
+        "priority": 900,
         "reasons": [
-          "never-enriched",
-          "listing-only"
+          "match-site-failure",
+          "site-failure:site 408 timeout:ETIMEDOUT"
         ],
         "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
-        "siteFailures": []
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 89,
+        "matchStatus": "site-failure",
+        "lastEnrichedAt": "2026-09-02T17:00:34.968Z",
+        "reviewStatus": "current",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
+        "siteFailures": [
+          "site 408 timeout:ETIMEDOUT"
+        ]
       },
       {
-        "slug": "lola-55-san-diego",
-        "title": "Lola 55",
-        "city": "San Diego",
+        "slug": "home-restaurant",
+        "title": "Home Restaurant",
+        "city": "Los Angeles",
         "stateProvince": "California",
-        "priority": 1020,
+        "priority": 900,
         "reasons": [
-          "never-enriched",
-          "listing-only"
+          "match-site-failure"
         ],
         "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 89,
+        "matchStatus": "site-failure",
+        "lastEnrichedAt": "2026-09-02T16:59:30.343Z",
+        "reviewStatus": "current",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
         "siteFailures": []
       },
       {
-        "slug": "riddim-n-spice-nashville",
-        "title": "Riddim N Spice",
-        "city": "Nashville",
-        "stateProvince": "Tennessee",
-        "priority": 1020,
-        "reasons": [
-          "never-enriched",
-          "listing-only"
-        ],
-        "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
-        "siteFailures": []
-      },
-      {
-        "slug": "wayfare-tavern-san-francisco",
-        "title": "Wayfare Tavern",
+        "slug": "house-of-nanking",
+        "title": "House of Nanking",
         "city": "San Francisco",
         "stateProvince": "California",
-        "priority": 1020,
+        "priority": 900,
         "reasons": [
-          "never-enriched",
-          "listing-only"
+          "match-site-failure"
         ],
         "hygiene": true,
-        "staleTier": "A",
-        "ageDays": null,
-        "completeness": 0,
-        "matchStatus": "none",
-        "lastEnrichedAt": null,
-        "reviewStatus": "listing_only",
-        "nextReviewAt": "2026-10-02",
-        "reviewedAt": "2026-09-02",
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 89,
+        "matchStatus": "site-failure",
+        "lastEnrichedAt": "2026-09-02T17:01:16.604Z",
+        "reviewStatus": "current",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
+        "siteFailures": []
+      },
+      {
+        "slug": "sichuan-impression-los-angeles",
+        "title": "Sichuan Impression",
+        "city": "Los Angeles",
+        "stateProvince": "California",
+        "priority": 900,
+        "reasons": [
+          "match-site-failure"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 89,
+        "matchStatus": "site-failure",
+        "lastEnrichedAt": "2026-09-02T17:00:19.973Z",
+        "reviewStatus": "current",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
+        "siteFailures": []
+      },
+      {
+        "slug": "simply-pho",
+        "title": "Simply Pho",
+        "city": "Houston",
+        "stateProvince": "Texas",
+        "priority": 900,
+        "reasons": [
+          "match-site-failure"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 89,
+        "matchStatus": "site-failure",
+        "lastEnrichedAt": "2026-09-02T17:00:05.774Z",
+        "reviewStatus": "current",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
+        "siteFailures": []
+      },
+      {
+        "slug": "the-purple-pig-restaurant",
+        "title": "The Purple Pig Restaurant",
+        "city": "Chicago",
+        "stateProvince": "Illinois",
+        "priority": 900,
+        "reasons": [
+          "match-site-failure"
+        ],
+        "hygiene": true,
+        "staleTier": null,
+        "ageDays": 0,
+        "completeness": 89,
+        "matchStatus": "site-failure",
+        "lastEnrichedAt": "2026-09-02T16:59:39.782Z",
+        "reviewStatus": "current",
+        "nextReviewAt": "2026-09-20",
+        "reviewedAt": "2026-08-21",
         "siteFailures": []
       }
-    ]
+    ],
+    "stale": []
   },
   "distribution": [
     {
       "label": "90-100",
-      "count": 1476
+      "count": 1482
     },
     {
       "label": "75-89",
-      "count": 43
+      "count": 42
     },
     {
       "label": "50-74",
@@ -996,14 +888,14 @@
     },
     {
       "label": "under 50",
-      "count": 5
+      "count": 0
     }
   ],
   "states": [
     {
       "code": "CA",
       "count": 159,
-      "enriched": 157,
+      "enriched": 159,
       "avgCompleteness": 95,
       "population": 38965193,
       "perMillion": 4.08
@@ -1075,7 +967,7 @@
     {
       "code": "NC",
       "count": 49,
-      "enriched": 48,
+      "enriched": 49,
       "avgCompleteness": 97,
       "population": 10835491,
       "perMillion": 4.52
@@ -1107,7 +999,7 @@
     {
       "code": "TN",
       "count": 37,
-      "enriched": 36,
+      "enriched": 37,
       "avgCompleteness": 95,
       "population": 7126489,
       "perMillion": 5.19
@@ -1123,8 +1015,8 @@
     {
       "code": "MI",
       "count": 26,
-      "enriched": 25,
-      "avgCompleteness": 96,
+      "enriched": 26,
+      "avgCompleteness": 97,
       "population": 10037261,
       "perMillion": 2.59
     },
@@ -1260,7 +1152,7 @@
       "code": "IA",
       "count": 14,
       "enriched": 14,
-      "avgCompleteness": 96,
+      "avgCompleteness": 97,
       "population": 3207004,
       "perMillion": 4.37
     },
@@ -2724,7 +2616,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -2747,7 +2639,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -2770,7 +2662,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -2793,7 +2685,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -2816,7 +2708,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -4292,6 +4184,29 @@
       "siteFailures": []
     },
     {
+      "slug": "oak-park-des-moines",
+      "title": "Oak Park",
+      "stateCode": "IA",
+      "city": "Des Moines",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:09.601Z",
+      "addedAt": "2026-08-20T11:28:46.678Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-10-03",
+      "reviewedAt": "2026-09-03",
+      "reviewDueSoon": false,
+      "hygiene": false,
+      "refreshPriority": 0,
+      "refreshReasons": [],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "proudfoot-bird-des-moines",
       "title": "Proudfoot & Bird",
       "stateCode": "IA",
@@ -4863,7 +4778,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -4886,7 +4801,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -4909,7 +4824,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -4932,7 +4847,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -4955,7 +4870,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -4978,7 +4893,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5001,7 +4916,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5024,7 +4939,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5047,7 +4962,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5070,7 +4985,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5093,7 +5008,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5116,7 +5031,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5139,7 +5054,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5162,7 +5077,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -5185,7 +5100,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -18276,6 +18191,81 @@
       "siteFailures": []
     },
     {
+      "slug": "lola-55-san-diego",
+      "title": "Lola 55",
+      "stateCode": "CA",
+      "city": "San Diego",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:52:49.782Z",
+      "addedAt": "2026-09-02T22:52:45.640Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-10-03",
+      "reviewedAt": "2026-09-03",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "bar-pigalle-detroit",
+      "title": "Bar Pigalle",
+      "stateCode": "MI",
+      "city": "Detroit",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:52:46.491Z",
+      "addedAt": "2026-09-02T22:52:45.640Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-10-03",
+      "reviewedAt": "2026-09-03",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "riddim-n-spice-nashville",
+      "title": "Riddim N Spice",
+      "stateCode": "TN",
+      "city": "Nashville",
+      "completeness": 100,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:52:51.061Z",
+      "addedAt": "2026-09-02T22:52:45.640Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-10-03",
+      "reviewedAt": "2026-09-03",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "wild-mountain-food-drink",
       "title": "Wild Mountain Food + Drink",
       "stateCode": "BC",
@@ -21837,7 +21827,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -21860,7 +21850,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -21883,7 +21873,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -21906,7 +21896,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -21929,7 +21919,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -21952,7 +21942,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -21975,7 +21965,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -21998,7 +21988,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22021,7 +22011,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22044,7 +22034,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22067,7 +22057,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22090,7 +22080,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22113,7 +22103,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22136,7 +22126,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22159,7 +22149,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22182,7 +22172,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22205,7 +22195,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22228,7 +22218,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22251,7 +22241,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22274,7 +22264,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22297,7 +22287,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22320,7 +22310,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22343,7 +22333,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22366,7 +22356,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22389,7 +22379,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22412,7 +22402,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22435,7 +22425,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22458,7 +22448,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22481,7 +22471,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22504,7 +22494,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22527,7 +22517,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22550,7 +22540,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22596,7 +22586,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22619,7 +22609,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22642,7 +22632,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22665,7 +22655,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22688,7 +22678,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22711,7 +22701,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22734,7 +22724,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22757,7 +22747,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22780,7 +22770,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22803,7 +22793,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22826,7 +22816,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22849,7 +22839,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22872,7 +22862,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22895,7 +22885,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22918,7 +22908,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22941,7 +22931,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -22964,7 +22954,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 14,
+      "ageDays": 15,
       "siteFailures": []
     },
     {
@@ -32716,7 +32706,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 4,
+      "ageDays": 5,
       "siteFailures": []
     },
     {
@@ -33153,7 +33143,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33176,7 +33166,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33199,7 +33189,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33222,7 +33212,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33245,7 +33235,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33268,7 +33258,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33291,7 +33281,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33314,7 +33304,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33337,7 +33327,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33360,7 +33350,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33383,7 +33373,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33406,7 +33396,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33452,7 +33442,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33475,7 +33465,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33498,7 +33488,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33521,7 +33511,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33544,7 +33534,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33567,7 +33557,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33590,7 +33580,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33613,7 +33603,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 12,
+      "ageDays": 13,
       "siteFailures": []
     },
     {
@@ -33636,7 +33626,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -33659,7 +33649,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -33682,7 +33672,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -33705,7 +33695,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -33728,7 +33718,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 2,
+      "ageDays": 3,
       "siteFailures": []
     },
     {
@@ -35388,6 +35378,56 @@
       "siteFailures": []
     },
     {
+      "slug": "wayfare-tavern-san-francisco",
+      "title": "Wayfare Tavern",
+      "stateCode": "CA",
+      "city": "San Francisco",
+      "completeness": 94,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:52:52.180Z",
+      "addedAt": "2026-09-02T22:52:45.640Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-10-03",
+      "reviewedAt": "2026-09-03",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 414,
+      "refreshReasons": [
+        "thin-56"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "fin-fino-charlotte",
+      "title": "Fin & Fino",
+      "stateCode": "NC",
+      "city": "Charlotte",
+      "completeness": 94,
+      "matchStatus": "resolved",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:52:48.427Z",
+      "addedAt": "2026-09-02T22:52:45.640Z",
+      "reviewStatus": "current",
+      "nextReviewAt": "2026-10-03",
+      "reviewedAt": "2026-09-03",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 420,
+      "refreshReasons": [
+        "thin-50"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
       "slug": "bottega-louie",
       "title": "Bottega Louie",
       "stateCode": "CA",
@@ -35623,7 +35663,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:11:24.544Z",
+      "lastEnrichedAt": "2026-09-02T22:57:14.919Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35648,7 +35688,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:11:28.813Z",
+      "lastEnrichedAt": "2026-09-02T22:57:19.069Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35673,7 +35713,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:11:29.783Z",
+      "lastEnrichedAt": "2026-09-02T22:57:18.041Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35698,7 +35738,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:12:05.983Z",
+      "lastEnrichedAt": "2026-09-02T22:57:20.127Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35723,7 +35763,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:12:16.858Z",
+      "lastEnrichedAt": "2026-09-02T22:57:13.796Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35798,7 +35838,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:13:58.926Z",
+      "lastEnrichedAt": "2026-09-02T22:57:12.725Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35948,7 +35988,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:18:02.723Z",
+      "lastEnrichedAt": "2026-09-02T22:57:11.738Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35973,7 +36013,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:20:52.235Z",
+      "lastEnrichedAt": "2026-09-02T22:57:17.000Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36048,7 +36088,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:24:14.022Z",
+      "lastEnrichedAt": "2026-09-02T22:57:21.139Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36198,7 +36238,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:27:58.516Z",
+      "lastEnrichedAt": "2026-09-02T22:57:15.960Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36223,7 +36263,7 @@
       "rating": 4.4,
       "reviewCount": 809,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-09-01T17:40:09.595Z",
+      "lastEnrichedAt": "2026-09-02T22:55:35.201Z",
       "addedAt": "2026-08-11T00:03:05.543Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
@@ -36236,7 +36276,7 @@
         "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": [
         "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
       ]
@@ -36251,7 +36291,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-01T17:40:08.587Z",
+      "lastEnrichedAt": "2026-09-02T22:55:33.141Z",
       "addedAt": "2026-08-20T11:28:46.678Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
@@ -36263,32 +36303,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
-      "siteFailures": []
-    },
-    {
-      "slug": "oak-park-des-moines",
-      "title": "Oak Park",
-      "stateCode": "IA",
-      "city": "Des Moines",
-      "completeness": 78,
-      "matchStatus": "site-failure",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-01T17:41:42.449Z",
-      "addedAt": "2026-08-20T11:28:46.678Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-09-19",
-      "reviewedAt": "2026-08-20",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 900,
-      "refreshReasons": [
-        "match-site-failure"
-      ],
-      "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36301,7 +36316,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-01T17:39:54.302Z",
+      "lastEnrichedAt": "2026-09-02T22:55:31.870Z",
       "addedAt": "2026-08-20T11:28:46.678Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
@@ -36313,7 +36328,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36326,7 +36341,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-01T17:38:53.154Z",
+      "lastEnrichedAt": "2026-09-02T22:52:55.103Z",
       "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-20",
@@ -36338,7 +36353,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36351,7 +36366,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-01T17:38:53.730Z",
+      "lastEnrichedAt": "2026-09-02T22:52:56.139Z",
       "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-20",
@@ -36364,7 +36379,7 @@
         "site-failure:site 429 HTTP 429"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": [
         "site 429 HTTP 429"
       ]
@@ -36379,7 +36394,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-01T17:39:23.654Z",
+      "lastEnrichedAt": "2026-09-02T22:55:01.098Z",
       "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-20",
@@ -36392,7 +36407,7 @@
         "site-failure:site 429 HTTP 429"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": [
         "site 429 HTTP 429"
       ]
@@ -36407,7 +36422,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:18:05.836Z",
+      "lastEnrichedAt": "2026-09-02T22:53:27.815Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36435,7 +36450,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:24:32.440Z",
+      "lastEnrichedAt": "2026-09-02T22:53:26.774Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36460,7 +36475,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:27:08.690Z",
+      "lastEnrichedAt": "2026-09-02T22:55:34.180Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36549,154 +36564,274 @@
       "staleTier": null,
       "ageDays": 1,
       "siteFailures": []
-    },
-    {
-      "slug": "lola-55-san-diego",
-      "title": "Lola 55",
-      "stateCode": "CA",
-      "city": "San Diego",
-      "completeness": 0,
-      "matchStatus": "none",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": null,
-      "addedAt": "2026-09-02T22:52:45.640Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1020,
-      "refreshReasons": [
-        "never-enriched",
-        "listing-only"
-      ],
-      "staleTier": "A",
-      "ageDays": null,
-      "siteFailures": []
-    },
-    {
-      "slug": "bar-pigalle-detroit",
-      "title": "Bar Pigalle",
-      "stateCode": "MI",
-      "city": "Detroit",
-      "completeness": 0,
-      "matchStatus": "none",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": null,
-      "addedAt": "2026-09-02T22:52:45.640Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1020,
-      "refreshReasons": [
-        "never-enriched",
-        "listing-only"
-      ],
-      "staleTier": "A",
-      "ageDays": null,
-      "siteFailures": []
-    },
-    {
-      "slug": "fin-fino-charlotte",
-      "title": "Fin & Fino",
-      "stateCode": "NC",
-      "city": "Charlotte",
-      "completeness": 0,
-      "matchStatus": "none",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": null,
-      "addedAt": "2026-09-02T22:52:45.640Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1020,
-      "refreshReasons": [
-        "never-enriched",
-        "listing-only"
-      ],
-      "staleTier": "A",
-      "ageDays": null,
-      "siteFailures": []
-    },
-    {
-      "slug": "riddim-n-spice-nashville",
-      "title": "Riddim N Spice",
-      "stateCode": "TN",
-      "city": "Nashville",
-      "completeness": 0,
-      "matchStatus": "none",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": null,
-      "addedAt": "2026-09-02T22:52:45.640Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1020,
-      "refreshReasons": [
-        "never-enriched",
-        "listing-only"
-      ],
-      "staleTier": "A",
-      "ageDays": null,
-      "siteFailures": []
-    },
-    {
-      "slug": "wayfare-tavern-san-francisco",
-      "title": "Wayfare Tavern",
-      "stateCode": "CA",
-      "city": "San Francisco",
-      "completeness": 0,
-      "matchStatus": "none",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": null,
-      "addedAt": "2026-09-02T22:52:45.640Z",
-      "reviewStatus": "listing_only",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": true,
-      "refreshPriority": 1020,
-      "refreshReasons": [
-        "never-enriched",
-        "listing-only"
-      ],
-      "staleTier": "A",
-      "ageDays": null,
-      "siteFailures": []
     }
   ],
   "recent": [
     {
-      "slug": "little-pearl-washington",
-      "title": "Little Pearl",
+      "slug": "famous-4th-street-delicatessen-philadelphia",
+      "title": "Famous 4th Street Delicatessen",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:21.139Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "ecco-atlanta",
+      "title": "Ecco",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:20.127Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "desta-ethiopian-kitchen-atlanta",
+      "title": "Desta Ethiopian Kitchen",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:19.069Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "delbar-atlanta",
+      "title": "Delbar",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:18.041Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "chichen-itza-restaurant-los-angeles",
+      "title": "Chichen Itza Restaurant",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:17.000Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "chercher-ethiopian-restaurant-mart-washington",
+      "title": "Chercher Ethiopian Restaurant & Mart",
       "stateCode": "DC",
       "city": "Washington",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:15.960Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "busy-bee-cafe-atlanta",
+      "title": "Busy Bee Cafe",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:14.919Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "botiwalla-atlanta",
+      "title": "Botiwalla",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:13.796Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "big-jones-chicago",
+      "title": "Big Jones",
+      "stateCode": "IL",
+      "city": "Chicago",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:12.725Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "aga-s-restaurant-catering-houston",
+      "title": "Aga's Restaurant & Catering",
+      "stateCode": "TX",
+      "city": "Houston",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-02T22:57:11.738Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "oak-park-des-moines",
+      "title": "Oak Park",
+      "stateCode": "IA",
+      "city": "Des Moines",
       "completeness": 100,
       "matchStatus": "resolved",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:23.872Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
+      "lastEnrichedAt": "2026-09-02T22:57:09.601Z",
+      "addedAt": "2026-08-20T11:28:46.678Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-19",
+      "reviewedAt": "2026-08-20",
       "reviewDueSoon": false,
       "hygiene": false,
       "refreshPriority": 0,
@@ -36706,257 +36841,32 @@
       "siteFailures": []
     },
     {
-      "slug": "baan-siam-washington",
-      "title": "Baan Siam",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:22.509Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
+      "slug": "mr-szechuan",
+      "title": "Mr Szechuan",
+      "stateCode": "CA",
+      "city": "San Francisco",
+      "completeness": 78,
+      "matchStatus": "site-failure",
+      "rating": 4.4,
+      "reviewCount": 809,
+      "priceBand": "$$",
+      "lastEnrichedAt": "2026-09-02T22:55:35.201Z",
+      "addedAt": "2026-08-11T00:03:05.543Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-09-10",
+      "reviewedAt": "2026-08-11",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure",
+        "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+      ],
       "staleTier": null,
       "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "nina-may-washington",
-      "title": "Nina May",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:21.182Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "mita-washington",
-      "title": "MITA",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:19.782Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "pascual-washington",
-      "title": "Pascual",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:17.042Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "doi-moi-washington",
-      "title": "Doi Moi",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:15.205Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "kathmandu-tapas-cocktails-washington",
-      "title": "Kathmandu Tapas & Cocktails",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:13.421Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "ben-s-chili-bowl-washington",
-      "title": "Ben's Chili Bowl",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:11.156Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "amparo-fondita-washington",
-      "title": "Amparo Fondita",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:08.582Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "tabard-inn-washington",
-      "title": "Tabard Inn",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:06.675Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "daikaya-washington",
-      "title": "Daikaya",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:04.970Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "imperfecto-washington",
-      "title": "Imperfecto",
-      "stateCode": "DC",
-      "city": "Washington",
-      "completeness": 100,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-02T21:28:03.019Z",
-      "addedAt": "2026-09-02T21:11:13.370Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-10-02",
-      "reviewedAt": "2026-09-02",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
+      "siteFailures": [
+        "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+      ]
     }
   ],
   "queue": {
@@ -36964,8 +36874,8 @@
     "restaurantsPerRun": 20,
     "citiesPerRun": 3,
     "dailyCap": 200,
-    "pending": 118,
-    "done": 6,
+    "pending": 123,
+    "done": 1,
     "next": [
       {
         "city": "Los Angeles",
@@ -37130,6 +37040,1139 @@
     ]
   },
   "runs": [
+    {
+      "kind": "seed-listings",
+      "startedAt": "2026-09-03T02:29:42.205Z",
+      "batchSize": 0,
+      "inserted": 0,
+      "cities": [
+        {
+          "city": "Charlotte, NC",
+          "queueCity": "Charlotte",
+          "found": 4,
+          "inserted": 0,
+          "duplicates": 4
+        },
+        {
+          "city": "Baltimore, MD",
+          "queueCity": "Baltimore",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Oklahoma City, OK",
+          "queueCity": "Oklahoma City",
+          "found": 3,
+          "inserted": 0,
+          "duplicates": 3
+        },
+        {
+          "city": "Jacksonville, FL",
+          "queueCity": "Jacksonville",
+          "found": 4,
+          "inserted": 0,
+          "duplicates": 4
+        },
+        {
+          "city": "San Diego, CA",
+          "queueCity": "San Diego",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Dallas, TX",
+          "queueCity": "Dallas",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Newark, NJ",
+          "queueCity": "new jersey",
+          "found": 3,
+          "inserted": 0,
+          "duplicates": 3
+        },
+        {
+          "city": "Jersey City, NJ",
+          "queueCity": "new jersey",
+          "found": 3,
+          "inserted": 0,
+          "duplicates": 3
+        },
+        {
+          "city": "Montclair, NJ",
+          "queueCity": "new jersey",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Princeton, NJ",
+          "queueCity": "new jersey",
+          "found": 3,
+          "inserted": 0,
+          "duplicates": 3
+        },
+        {
+          "city": "New Brunswick, NJ",
+          "queueCity": "new jersey",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Collingswood, NJ",
+          "queueCity": "new jersey",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Atlantic City, NJ",
+          "queueCity": "new jersey",
+          "found": 1,
+          "inserted": 0,
+          "duplicates": 1
+        },
+        {
+          "city": "Birmingham, AL",
+          "queueCity": "Birmingham",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Grand Rapids, MI",
+          "queueCity": "Grand Rapids",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Rochester, NY",
+          "queueCity": "Rochester",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Tucson, AZ",
+          "queueCity": "Tucson",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Fresno, CA",
+          "queueCity": "Fresno",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Tulsa, OK",
+          "queueCity": "Tulsa",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Omaha, NE",
+          "queueCity": "Omaha",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Albuquerque, NM",
+          "queueCity": "Albuquerque",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Bakersfield, CA",
+          "queueCity": "Bakersfield",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Knoxville, TN",
+          "queueCity": "Knoxville",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Albany, NY",
+          "queueCity": "Albany",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Boise, ID",
+          "queueCity": "Boise",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Columbia, SC",
+          "queueCity": "Columbia",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Little Rock, AR",
+          "queueCity": "Little Rock",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Des Moines, IA",
+          "queueCity": "Des Moines",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Spokane, WA",
+          "queueCity": "Spokane",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Madison, WI",
+          "queueCity": "Madison",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Wichita, KS",
+          "queueCity": "Wichita",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Jackson, MS",
+          "queueCity": "Jackson",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Portland, ME",
+          "queueCity": "Portland",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Charleston, WV",
+          "queueCity": "Charleston",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Manchester, NH",
+          "queueCity": "Manchester",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Wilmington, DE",
+          "queueCity": "Wilmington",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Burlington, VT",
+          "queueCity": "Burlington",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Sioux Falls, SD",
+          "queueCity": "Sioux Falls",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Fargo, ND",
+          "queueCity": "Fargo",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Billings, MT",
+          "queueCity": "Billings",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Cheyenne, WY",
+          "queueCity": "Cheyenne",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Anchorage, AK",
+          "queueCity": "Anchorage",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Honolulu, HI",
+          "queueCity": "Honolulu",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Richmond, VA",
+          "queueCity": "Richmond",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Memphis, TN",
+          "queueCity": "Memphis",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Salt Lake City, UT",
+          "queueCity": "Salt Lake City",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "New Orleans, LA",
+          "queueCity": "New Orleans",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Buffalo, NY",
+          "queueCity": "Buffalo",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Hartford, CT",
+          "queueCity": "Hartford",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Fort Worth, TX",
+          "queueCity": "Fort Worth",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Savannah, GA",
+          "queueCity": "Savannah",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Colorado Springs, CO",
+          "queueCity": "Colorado Springs",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Oakland, CA",
+          "queueCity": "Oakland",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Fort Lauderdale, FL",
+          "queueCity": "Fort Lauderdale",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Asheville, NC",
+          "queueCity": "Asheville",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "St. Louis, MO",
+          "queueCity": "St. Louis",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Worcester, MA",
+          "queueCity": "Worcester",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Baton Rouge, LA",
+          "queueCity": "Baton Rouge",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "El Paso, TX",
+          "queueCity": "El Paso",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Lexington, KY",
+          "queueCity": "Lexington",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Ann Arbor, MI",
+          "queueCity": "Ann Arbor",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Norfolk, VA",
+          "queueCity": "Norfolk",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Lincoln, NE",
+          "queueCity": "Lincoln",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Charleston, SC",
+          "queueCity": "Charleston",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Huntsville, AL",
+          "queueCity": "Huntsville",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Fort Wayne, IN",
+          "queueCity": "Fort Wayne",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "New Haven, CT",
+          "queueCity": "New Haven",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Santa Fe, NM",
+          "queueCity": "Santa Fe",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Lawrence, KS",
+          "queueCity": "Lawrence",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Athens, GA",
+          "queueCity": "Athens",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Cedar Rapids, IA",
+          "queueCity": "Cedar Rapids",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Rapid City, SD",
+          "queueCity": "Rapid City",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Mobile, AL",
+          "queueCity": "Mobile",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Fort Collins, CO",
+          "queueCity": "Fort Collins",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Springfield, MO",
+          "queueCity": "Springfield",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Greenville, SC",
+          "queueCity": "Greenville",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Rochester, MN",
+          "queueCity": "Rochester",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Durham, NC",
+          "queueCity": "Durham",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Topeka, KS",
+          "queueCity": "Topeka",
+          "found": 4,
+          "inserted": 0,
+          "duplicates": 4
+        },
+        {
+          "city": "Lafayette, LA",
+          "queueCity": "Lafayette",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Bozeman, MT",
+          "queueCity": "Bozeman",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Missoula, MT",
+          "queueCity": "Missoula",
+          "found": 4,
+          "inserted": 0,
+          "duplicates": 4
+        },
+        {
+          "city": "Tacoma, WA",
+          "queueCity": "Tacoma",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Flagstaff, AZ",
+          "queueCity": "Flagstaff",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Frederick, MD",
+          "queueCity": "Frederick",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Greensboro, NC",
+          "queueCity": "Greensboro",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Toledo, OH",
+          "queueCity": "Toledo",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Corpus Christi, TX",
+          "queueCity": "Corpus Christi",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Reno, NV",
+          "queueCity": "Reno",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Chattanooga, TN",
+          "queueCity": "Chattanooga",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Wilmington, NC",
+          "queueCity": "Wilmington",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Dayton, OH",
+          "queueCity": "Dayton",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Allentown, PA",
+          "queueCity": "Allentown",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Winston-Salem, NC",
+          "queueCity": "Winston-Salem",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "San Diego, CA",
+          "queueCity": "San Diego",
+          "found": 1,
+          "inserted": 0,
+          "duplicates": 1
+        },
+        {
+          "city": "Detroit, MI",
+          "queueCity": "Detroit",
+          "found": 1,
+          "inserted": 0,
+          "duplicates": 1
+        },
+        {
+          "city": "Charlotte, NC",
+          "queueCity": "Charlotte",
+          "found": 1,
+          "inserted": 0,
+          "duplicates": 1
+        },
+        {
+          "city": "Nashville, TN",
+          "queueCity": "Nashville",
+          "found": 1,
+          "inserted": 0,
+          "duplicates": 1
+        },
+        {
+          "city": "San Francisco, CA",
+          "queueCity": "San Francisco",
+          "found": 1,
+          "inserted": 0,
+          "duplicates": 1
+        },
+        {
+          "city": "Atlanta, GA",
+          "queueCity": "Atlanta",
+          "found": 32,
+          "inserted": 0,
+          "duplicates": 32
+        },
+        {
+          "city": "Austin, TX",
+          "queueCity": "Austin",
+          "found": 31,
+          "inserted": 0,
+          "duplicates": 31
+        },
+        {
+          "city": "Boston, MA",
+          "queueCity": "Boston",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Chicago, IL",
+          "queueCity": "Chicago",
+          "found": 35,
+          "inserted": 0,
+          "duplicates": 35
+        },
+        {
+          "city": "Dallas, TX",
+          "queueCity": "Dallas",
+          "found": 30,
+          "inserted": 0,
+          "duplicates": 30
+        },
+        {
+          "city": "Denver, CO",
+          "queueCity": "Denver",
+          "found": 30,
+          "inserted": 0,
+          "duplicates": 30
+        },
+        {
+          "city": "Houston, TX",
+          "queueCity": "Houston",
+          "found": 30,
+          "inserted": 0,
+          "duplicates": 30
+        },
+        {
+          "city": "Los Angeles, CA",
+          "queueCity": "Los Angeles",
+          "found": 33,
+          "inserted": 0,
+          "duplicates": 33
+        },
+        {
+          "city": "Miami, FL",
+          "queueCity": "Miami",
+          "found": 30,
+          "inserted": 0,
+          "duplicates": 30
+        },
+        {
+          "city": "Nashville, TN",
+          "queueCity": "Nashville",
+          "found": 4,
+          "inserted": 0,
+          "duplicates": 4
+        },
+        {
+          "city": "New Orleans, LA",
+          "queueCity": "New Orleans",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "New York, NY",
+          "queueCity": "New York",
+          "found": 31,
+          "inserted": 0,
+          "duplicates": 31
+        },
+        {
+          "city": "Philadelphia, PA",
+          "queueCity": "Philadelphia",
+          "found": 30,
+          "inserted": 0,
+          "duplicates": 30
+        },
+        {
+          "city": "Phoenix, AZ",
+          "queueCity": "Phoenix",
+          "found": 30,
+          "inserted": 0,
+          "duplicates": 30
+        },
+        {
+          "city": "San Francisco, CA",
+          "queueCity": "San Francisco",
+          "found": 19,
+          "inserted": 0,
+          "duplicates": 19
+        },
+        {
+          "city": "Seattle, WA",
+          "queueCity": "Seattle",
+          "found": 2,
+          "inserted": 0,
+          "duplicates": 2
+        },
+        {
+          "city": "Washington, DC",
+          "queueCity": "Washington",
+          "found": 31,
+          "inserted": 0,
+          "duplicates": 31
+        },
+        {
+          "city": "New York, NY",
+          "queueCity": "New York",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        },
+        {
+          "city": "Los Angeles, CA",
+          "queueCity": "Los Angeles",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Chicago, IL",
+          "queueCity": "Chicago",
+          "found": 5,
+          "inserted": 0,
+          "duplicates": 5
+        },
+        {
+          "city": "Atlanta, GA",
+          "queueCity": "Atlanta",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Washington, DC",
+          "queueCity": "Washington",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Philadelphia, PA",
+          "queueCity": "Philadelphia",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Miami, FL",
+          "queueCity": "Miami",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Phoenix, AZ",
+          "queueCity": "Phoenix",
+          "found": 15,
+          "inserted": 0,
+          "duplicates": 15
+        },
+        {
+          "city": "Boston, MA",
+          "queueCity": "Boston",
+          "found": 12,
+          "inserted": 0,
+          "duplicates": 12
+        },
+        {
+          "city": "Detroit, MI",
+          "queueCity": "Detroit",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Minneapolis, MN",
+          "queueCity": "Minneapolis",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Denver, CO",
+          "queueCity": "Denver",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Baltimore, MD",
+          "queueCity": "Baltimore",
+          "found": 7,
+          "inserted": 0,
+          "duplicates": 7
+        },
+        {
+          "city": "Charlotte, NC",
+          "queueCity": "Charlotte",
+          "found": 6,
+          "inserted": 0,
+          "duplicates": 6
+        },
+        {
+          "city": "Nashville, TN",
+          "queueCity": "Nashville",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Seattle, WA",
+          "queueCity": "Seattle",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Tampa, FL",
+          "queueCity": "Tampa",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "San Diego, CA",
+          "queueCity": "San Diego",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        },
+        {
+          "city": "Austin, TX",
+          "queueCity": "Austin",
+          "found": 12,
+          "inserted": 0,
+          "duplicates": 12
+        },
+        {
+          "city": "Las Vegas, NV",
+          "queueCity": "Las Vegas",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Pittsburgh, PA",
+          "queueCity": "Pittsburgh",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Sacramento, CA",
+          "queueCity": "Sacramento",
+          "found": 12,
+          "inserted": 0,
+          "duplicates": 12
+        },
+        {
+          "city": "Cincinnati, OH",
+          "queueCity": "Cincinnati",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Kansas City, MO",
+          "queueCity": "Kansas City",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Columbus, OH",
+          "queueCity": "Columbus",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Indianapolis, IN",
+          "queueCity": "Indianapolis",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Cleveland, OH",
+          "queueCity": "Cleveland",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "Riverside, CA",
+          "queueCity": "Riverside",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Orlando, FL",
+          "queueCity": "Orlando",
+          "found": 11,
+          "inserted": 0,
+          "duplicates": 11
+        },
+        {
+          "city": "San Antonio, TX",
+          "queueCity": "San Antonio",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Portland, OR",
+          "queueCity": "Portland",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "San Jose, CA",
+          "queueCity": "San Jose",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Virginia Beach, VA",
+          "queueCity": "Virginia Beach",
+          "found": 10,
+          "inserted": 0,
+          "duplicates": 10
+        },
+        {
+          "city": "Jacksonville, FL",
+          "queueCity": "Jacksonville",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Providence, RI",
+          "queueCity": "Providence",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Milwaukee, WI",
+          "queueCity": "Milwaukee",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        },
+        {
+          "city": "Raleigh, NC",
+          "queueCity": "Raleigh",
+          "found": 8,
+          "inserted": 0,
+          "duplicates": 8
+        },
+        {
+          "city": "Oklahoma City, OK",
+          "queueCity": "Oklahoma City",
+          "found": 7,
+          "inserted": 0,
+          "duplicates": 7
+        },
+        {
+          "city": "Louisville, KY",
+          "queueCity": "Louisville",
+          "found": 9,
+          "inserted": 0,
+          "duplicates": 9
+        }
+      ],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 0,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-09-02T22:52:46.478Z",
+      "batchSize": 25,
+      "inserted": 0,
+      "cities": [
+        "Detroit, Michigan",
+        "Charlotte, North Carolina",
+        "San Diego, California",
+        "Nashville, Tennessee",
+        "San Francisco, California",
+        "Philadelphia, Pennsylvania",
+        "Houston, Texas",
+        "Anchorage, Alaska",
+        "Bakersfield, California",
+        "Des Moines, Iowa",
+        "Chicago, Illinois",
+        "Atlanta, Georgia",
+        "Washington, District Of Columbia",
+        "Los Angeles, California"
+      ],
+      "resolved": 6,
+      "unresolved": 19,
+      "avgCompleteness": 96,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 25
+      },
+      "retries": 20,
+      "failures": 19,
+      "flagged": false
+    },
     {
       "kind": "seed-listings",
       "startedAt": "2026-09-02T22:52:45.640Z",
@@ -39379,994 +40422,6 @@
       },
       "retries": 0,
       "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-09-02T17:04:45.689Z",
-      "batchSize": 0,
-      "inserted": 19,
-      "cities": [
-        {
-          "city": "Charlotte, NC",
-          "queueCity": "Charlotte",
-          "found": 4,
-          "inserted": 0,
-          "duplicates": 4
-        },
-        {
-          "city": "Baltimore, MD",
-          "queueCity": "Baltimore",
-          "found": 5,
-          "inserted": 0,
-          "duplicates": 5
-        },
-        {
-          "city": "Oklahoma City, OK",
-          "queueCity": "Oklahoma City",
-          "found": 3,
-          "inserted": 0,
-          "duplicates": 3
-        },
-        {
-          "city": "Jacksonville, FL",
-          "queueCity": "Jacksonville",
-          "found": 4,
-          "inserted": 0,
-          "duplicates": 4
-        },
-        {
-          "city": "San Diego, CA",
-          "queueCity": "San Diego",
-          "found": 5,
-          "inserted": 0,
-          "duplicates": 5
-        },
-        {
-          "city": "Dallas, TX",
-          "queueCity": "Dallas",
-          "found": 5,
-          "inserted": 0,
-          "duplicates": 5
-        },
-        {
-          "city": "Newark, NJ",
-          "queueCity": "new jersey",
-          "found": 3,
-          "inserted": 0,
-          "duplicates": 3
-        },
-        {
-          "city": "Jersey City, NJ",
-          "queueCity": "new jersey",
-          "found": 3,
-          "inserted": 0,
-          "duplicates": 3
-        },
-        {
-          "city": "Montclair, NJ",
-          "queueCity": "new jersey",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Princeton, NJ",
-          "queueCity": "new jersey",
-          "found": 3,
-          "inserted": 0,
-          "duplicates": 3
-        },
-        {
-          "city": "New Brunswick, NJ",
-          "queueCity": "new jersey",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Collingswood, NJ",
-          "queueCity": "new jersey",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Atlantic City, NJ",
-          "queueCity": "new jersey",
-          "found": 1,
-          "inserted": 0,
-          "duplicates": 1
-        },
-        {
-          "city": "Birmingham, AL",
-          "queueCity": "Birmingham",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Grand Rapids, MI",
-          "queueCity": "Grand Rapids",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Rochester, NY",
-          "queueCity": "Rochester",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Tucson, AZ",
-          "queueCity": "Tucson",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Fresno, CA",
-          "queueCity": "Fresno",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Tulsa, OK",
-          "queueCity": "Tulsa",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Omaha, NE",
-          "queueCity": "Omaha",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Albuquerque, NM",
-          "queueCity": "Albuquerque",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Bakersfield, CA",
-          "queueCity": "Bakersfield",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Knoxville, TN",
-          "queueCity": "Knoxville",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Albany, NY",
-          "queueCity": "Albany",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Boise, ID",
-          "queueCity": "Boise",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Columbia, SC",
-          "queueCity": "Columbia",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Little Rock, AR",
-          "queueCity": "Little Rock",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Des Moines, IA",
-          "queueCity": "Des Moines",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Spokane, WA",
-          "queueCity": "Spokane",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Madison, WI",
-          "queueCity": "Madison",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Wichita, KS",
-          "queueCity": "Wichita",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Jackson, MS",
-          "queueCity": "Jackson",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Portland, ME",
-          "queueCity": "Portland",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Charleston, WV",
-          "queueCity": "Charleston",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Manchester, NH",
-          "queueCity": "Manchester",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Wilmington, DE",
-          "queueCity": "Wilmington",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Burlington, VT",
-          "queueCity": "Burlington",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Sioux Falls, SD",
-          "queueCity": "Sioux Falls",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Fargo, ND",
-          "queueCity": "Fargo",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Billings, MT",
-          "queueCity": "Billings",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Cheyenne, WY",
-          "queueCity": "Cheyenne",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Anchorage, AK",
-          "queueCity": "Anchorage",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Honolulu, HI",
-          "queueCity": "Honolulu",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Richmond, VA",
-          "queueCity": "Richmond",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Memphis, TN",
-          "queueCity": "Memphis",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Salt Lake City, UT",
-          "queueCity": "Salt Lake City",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "New Orleans, LA",
-          "queueCity": "New Orleans",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Buffalo, NY",
-          "queueCity": "Buffalo",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Hartford, CT",
-          "queueCity": "Hartford",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Fort Worth, TX",
-          "queueCity": "Fort Worth",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Savannah, GA",
-          "queueCity": "Savannah",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Colorado Springs, CO",
-          "queueCity": "Colorado Springs",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Oakland, CA",
-          "queueCity": "Oakland",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Fort Lauderdale, FL",
-          "queueCity": "Fort Lauderdale",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Asheville, NC",
-          "queueCity": "Asheville",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "St. Louis, MO",
-          "queueCity": "St. Louis",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Worcester, MA",
-          "queueCity": "Worcester",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Baton Rouge, LA",
-          "queueCity": "Baton Rouge",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "El Paso, TX",
-          "queueCity": "El Paso",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Lexington, KY",
-          "queueCity": "Lexington",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Ann Arbor, MI",
-          "queueCity": "Ann Arbor",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Norfolk, VA",
-          "queueCity": "Norfolk",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Lincoln, NE",
-          "queueCity": "Lincoln",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Charleston, SC",
-          "queueCity": "Charleston",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Huntsville, AL",
-          "queueCity": "Huntsville",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Fort Wayne, IN",
-          "queueCity": "Fort Wayne",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "New Haven, CT",
-          "queueCity": "New Haven",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Santa Fe, NM",
-          "queueCity": "Santa Fe",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Lawrence, KS",
-          "queueCity": "Lawrence",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Athens, GA",
-          "queueCity": "Athens",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Cedar Rapids, IA",
-          "queueCity": "Cedar Rapids",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Rapid City, SD",
-          "queueCity": "Rapid City",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Mobile, AL",
-          "queueCity": "Mobile",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Fort Collins, CO",
-          "queueCity": "Fort Collins",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Springfield, MO",
-          "queueCity": "Springfield",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Greenville, SC",
-          "queueCity": "Greenville",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Rochester, MN",
-          "queueCity": "Rochester",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Durham, NC",
-          "queueCity": "Durham",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Topeka, KS",
-          "queueCity": "Topeka",
-          "found": 4,
-          "inserted": 0,
-          "duplicates": 4
-        },
-        {
-          "city": "Lafayette, LA",
-          "queueCity": "Lafayette",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Bozeman, MT",
-          "queueCity": "Bozeman",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Missoula, MT",
-          "queueCity": "Missoula",
-          "found": 4,
-          "inserted": 0,
-          "duplicates": 4
-        },
-        {
-          "city": "Tacoma, WA",
-          "queueCity": "Tacoma",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Flagstaff, AZ",
-          "queueCity": "Flagstaff",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Frederick, MD",
-          "queueCity": "Frederick",
-          "found": 2,
-          "inserted": 0,
-          "duplicates": 2
-        },
-        {
-          "city": "Greensboro, NC",
-          "queueCity": "Greensboro",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Toledo, OH",
-          "queueCity": "Toledo",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Corpus Christi, TX",
-          "queueCity": "Corpus Christi",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Reno, NV",
-          "queueCity": "Reno",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Chattanooga, TN",
-          "queueCity": "Chattanooga",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Wilmington, NC",
-          "queueCity": "Wilmington",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Dayton, OH",
-          "queueCity": "Dayton",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Allentown, PA",
-          "queueCity": "Allentown",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Winston-Salem, NC",
-          "queueCity": "Winston-Salem",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "New York, NY",
-          "queueCity": "New York",
-          "found": 9,
-          "inserted": 9,
-          "duplicates": 0
-        },
-        {
-          "city": "Los Angeles, CA",
-          "queueCity": "Los Angeles",
-          "found": 5,
-          "inserted": 5,
-          "duplicates": 0
-        },
-        {
-          "city": "Chicago, IL",
-          "queueCity": "Chicago",
-          "found": 5,
-          "inserted": 5,
-          "duplicates": 0
-        },
-        {
-          "city": "Atlanta, GA",
-          "queueCity": "Atlanta",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Washington, DC",
-          "queueCity": "Washington",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Philadelphia, PA",
-          "queueCity": "Philadelphia",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Miami, FL",
-          "queueCity": "Miami",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Phoenix, AZ",
-          "queueCity": "Phoenix",
-          "found": 15,
-          "inserted": 0,
-          "duplicates": 15
-        },
-        {
-          "city": "Boston, MA",
-          "queueCity": "Boston",
-          "found": 12,
-          "inserted": 0,
-          "duplicates": 12
-        },
-        {
-          "city": "Detroit, MI",
-          "queueCity": "Detroit",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Minneapolis, MN",
-          "queueCity": "Minneapolis",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Denver, CO",
-          "queueCity": "Denver",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Baltimore, MD",
-          "queueCity": "Baltimore",
-          "found": 7,
-          "inserted": 0,
-          "duplicates": 7
-        },
-        {
-          "city": "Charlotte, NC",
-          "queueCity": "Charlotte",
-          "found": 6,
-          "inserted": 0,
-          "duplicates": 6
-        },
-        {
-          "city": "Nashville, TN",
-          "queueCity": "Nashville",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Seattle, WA",
-          "queueCity": "Seattle",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Tampa, FL",
-          "queueCity": "Tampa",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "San Diego, CA",
-          "queueCity": "San Diego",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
-        },
-        {
-          "city": "Austin, TX",
-          "queueCity": "Austin",
-          "found": 12,
-          "inserted": 0,
-          "duplicates": 12
-        },
-        {
-          "city": "Las Vegas, NV",
-          "queueCity": "Las Vegas",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Pittsburgh, PA",
-          "queueCity": "Pittsburgh",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Sacramento, CA",
-          "queueCity": "Sacramento",
-          "found": 12,
-          "inserted": 0,
-          "duplicates": 12
-        },
-        {
-          "city": "Cincinnati, OH",
-          "queueCity": "Cincinnati",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Kansas City, MO",
-          "queueCity": "Kansas City",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Columbus, OH",
-          "queueCity": "Columbus",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Indianapolis, IN",
-          "queueCity": "Indianapolis",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Cleveland, OH",
-          "queueCity": "Cleveland",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "Riverside, CA",
-          "queueCity": "Riverside",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Orlando, FL",
-          "queueCity": "Orlando",
-          "found": 11,
-          "inserted": 0,
-          "duplicates": 11
-        },
-        {
-          "city": "San Antonio, TX",
-          "queueCity": "San Antonio",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Portland, OR",
-          "queueCity": "Portland",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "San Jose, CA",
-          "queueCity": "San Jose",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Virginia Beach, VA",
-          "queueCity": "Virginia Beach",
-          "found": 10,
-          "inserted": 0,
-          "duplicates": 10
-        },
-        {
-          "city": "Jacksonville, FL",
-          "queueCity": "Jacksonville",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Providence, RI",
-          "queueCity": "Providence",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Milwaukee, WI",
-          "queueCity": "Milwaukee",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
-        },
-        {
-          "city": "Raleigh, NC",
-          "queueCity": "Raleigh",
-          "found": 8,
-          "inserted": 0,
-          "duplicates": 8
-        },
-        {
-          "city": "Oklahoma City, OK",
-          "queueCity": "Oklahoma City",
-          "found": 7,
-          "inserted": 0,
-          "duplicates": 7
-        },
-        {
-          "city": "Louisville, KY",
-          "queueCity": "Louisville",
-          "found": 9,
-          "inserted": 0,
-          "duplicates": 9
-        }
-      ],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "enrich-owned",
-      "startedAt": "2026-09-02T16:57:50.635Z",
-      "batchSize": 100,
-      "inserted": 0,
-      "cities": [
-        "Pacific Northwest",
-        "Inland Northwest and Montana",
-        "New York, New York",
-        "Los Angeles, California",
-        "Santa Monica, California",
-        "Chicago, Illinois",
-        "Torrance, California",
-        "Lynwood, California",
-        "Houston, Texas",
-        "Tustin, California",
-        "San Gabriel, California",
-        "Arcadia, California",
-        "Pearland, Texas",
-        "Downers Grove, Illinois",
-        "Glenview, Illinois",
-        "San Francisco, California",
-        "Dallas, Texas",
-        "Atlanta, Georgia",
-        "Philadelphia, Pennsylvania",
-        "Miami, Florida",
-        "Washington, District Of Columbia",
-        "Phoenix, Arizona",
-        "Boston, Massachusetts"
-      ],
-      "resolved": 92,
-      "unresolved": 8,
-      "avgCompleteness": 96,
-      "apiCalls": {
-        "google": 0,
-        "firecrawl": 0,
-        "ownedFetch": 100
-      },
-      "retries": 5,
-      "failures": 8,
       "flagged": false
     }
   ]

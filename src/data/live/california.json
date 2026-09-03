@@ -1,6 +1,6 @@
 {
   "regionGroup": "California",
-  "generatedAt": "2026-09-02T21:28:27.010Z",
+  "generatedAt": "2026-09-03T02:29:43.519Z",
   "records": {
     "philippe-the-original": {
       "ll": [
@@ -3805,7 +3805,11 @@
         -118.28447
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "risk": {
+        "deposit": 10,
+        "perGuest": true
+      }
     },
     "pijja-palace-los-angeles": {
       "ll": [
@@ -3829,7 +3833,42 @@
         -118.28447
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "hours": [
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose"
     },
     "found-oyster-los-angeles": {
       "ll": [
@@ -3861,7 +3900,53 @@
         -118.28447
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "hours": [
+        [
+          [
+            600,
+            840
+          ],
+          [
+            1020,
+            1260
+          ]
+        ],
+        [],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        90,
+        200
+      ],
+      "ppSource": "planning-band"
     },
     "woon-los-angeles": {
       "ll": [
@@ -3869,7 +3954,52 @@
         -118.28447
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "hours": [
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "shibumi-los-angeles": {
       "ll": [
@@ -3941,7 +4071,47 @@
         -118.28447
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "hours": [
+        [
+          [
+            1050,
+            1290
+          ]
+        ],
+        [
+          [
+            1050,
+            1290
+          ]
+        ],
+        [
+          [
+            1050,
+            1290
+          ]
+        ],
+        [],
+        [
+          [
+            1050,
+            1290
+          ]
+        ],
+        [
+          [
+            1050,
+            1350
+          ]
+        ],
+        [
+          [
+            1050,
+            1350
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "joy-los-angeles": {
       "ll": [
@@ -3973,7 +4143,47 @@
         -122.42288
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "hours": [
+        [],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1380
+          ]
+        ],
+        [
+          [
+            1050,
+            1380
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "foreign-cinema-san-francisco": {
       "ll": [
@@ -4011,7 +4221,52 @@
         -122.42288
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "hours": [
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "rich-table-san-francisco": {
       "ll": [
@@ -4027,7 +4282,12 @@
         -122.42288
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "risk": {
+        "cancelFee": 35,
+        "perGuest": true,
+        "windowHours": 48
+      }
     },
     "cotogna-san-francisco": {
       "ll": [
@@ -4049,7 +4309,14 @@
         -122.42288
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band"
     },
     "tony-s-pizza-napoletana-san-francisco": {
       "ll": [
@@ -4089,7 +4356,12 @@
         -122.42288
       ],
       "llSource": "city",
-      "tz": "America/Los_Angeles"
+      "tz": "America/Los_Angeles",
+      "risk": {
+        "cancelFee": 50,
+        "perGuest": true,
+        "windowHours": 24
+      }
     },
     "californios-san-francisco": {
       "ll": [
@@ -4116,6 +4388,22 @@
       "tz": "America/Los_Angeles"
     },
     "lazy-bear-san-francisco": {
+      "ll": [
+        37.78125,
+        -122.42288
+      ],
+      "llSource": "city",
+      "tz": "America/Los_Angeles"
+    },
+    "lola-55-san-diego": {
+      "ll": [
+        32.7157,
+        -117.1611
+      ],
+      "llSource": "city",
+      "tz": "America/Los_Angeles"
+    },
+    "wayfare-tavern-san-francisco": {
       "ll": [
         37.78125,
         -122.42288
