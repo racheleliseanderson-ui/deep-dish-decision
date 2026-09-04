@@ -83,7 +83,27 @@ echo   ^>^> STOPPED. Node.js is not installed.
 goto finish
 :missing
 echo.
-echo   ^>^> STOPPED. scripts\data\seed-targets.json is missing.
+echo   ^>^> STOPPED. Curated target file was not found.
+echo.
+echo      BAT is currently running from:
+echo      %CD%
+echo.
+echo      Expected file:
+echo      %CD%\scripts\data\seed-targets.json
+echo.
+if not exist ".git" (
+  echo      This does not appear to be the Deep Dish repository root.
+  echo      Do not run this BAT from the downloaded patch ZIP or Downloads folder.
+  echo      Copy the patch files into your deep-dish-decision repository, or
+  echo      switch your repository to pipeline-repair-2026-09-04 and run it there.
+) else (
+  echo      This appears to be a Git repository, but the target file is absent.
+  echo      Run: git fetch origin
+  echo      Run: git switch pipeline-repair-2026-09-04
+  echo      Run: git pull
+)
+echo.
+echo      For automatic NEW restaurant discovery, use RUNEXPANSION.bat instead.
 goto finish
 :failed
 echo.
