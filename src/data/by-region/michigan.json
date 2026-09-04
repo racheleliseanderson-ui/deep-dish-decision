@@ -127,19 +127,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-18T22:55:05.661Z",
       "address": "Detroit, MI",
-      "phone": "",
+      "phone": "(313) 624-1537",
       "email": "",
       "website": "https://marrowinthemarket.com/",
       "menuUrl": "https://marrowinthemarket.com/menus",
       "reservationUrl": "https://order.toasttab.com/egiftcards/marrow",
       "coverageArea": "Detroit, Michigan",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "American, French Brasserie, Farm-To-Table, Seasonal Midwest — named on the restaurant's own pages.",
+      "serviceSummary": "American, French Brasserie, Farm-To-Table, Seasonal Midwest. Hours Sunday 10:00 AM–4:00 PM and 10:00 AM–5:00 PM; Wednesday–Thursday 11:00 AM–4:00 PM and 4:00 PM–9:00 PM and 11:00 AM–9:00 PM and 11:00 AM–6:00 PM; Friday 11:00 AM–3:00 PM and 4:00 PM–10:00 PM and 11:00 AM–11:00 PM and 11:00 AM–6:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 10:00 AM–4:00 PM and 10:00 AM–5:00 PM; Wednesday–Thursday 11:00 AM–4:00 PM and 4:00 PM–9:00 PM and 11:00 AM–9:00 PM and 11:00 AM–6:00 PM; Friday 11:00 AM–3:00 PM and 4:00 PM–10:00 PM and 11:00 AM–11:00 PM and 11:00 AM–6:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant. A deposit based on your food and beverage minimum reserves your date. · Deposit terms are shared when a proposal is prepared.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: Marrow in the Market — a butcher's brasserie in Detroit's Eastern Market Restaurant Book a table View menus Private Events Scroll Butcher Shop Visit the shop Submit a butcher request Join the Meat Club Scroll A butcher's brasserie in a 1909 brick building. · At the edge of Eastern Market — dining room, two bars, retail butcher shop adjoining a state-of-the-art meat processing facility, and private event spaces upstairs.",
@@ -149,13 +149,11 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Dietary cross-contact handling; Parking and arrival logistics",
+      "unknownsCount": 2,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -167,16 +165,21 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 9,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "9 / 12 core fields",
       "signals": {},
       "region": "Detroit, MI",
       "city": "Detroit",
       "stateProvince": "Michigan",
       "regionGroup": "Michigan",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$$"
+      ],
+      "serviceStyles": [
+        "Dinner",
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -193,43 +196,49 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 3,
       "bookingPlatforms": [
-        "Toast"
+        "Toast",
+        "Phone"
       ],
       "cuisineTags": [
         "American",
         "Nose-to-tail",
-        "Contemporary American"
+        "Contemporary American",
+        "French",
+        "Seasonal / market"
       ],
       "officialSource": "https://marrowinthemarket.com/",
-      "additionalSources": "https://marrowinthemarket.com/menus | https://marrowinthemarket.com/events | https://marrowinthemarket.com/about | https://order.toasttab.com/egiftcards/marrow",
+      "additionalSources": "https://marrowinthemarket.com/events/public | https://marrowinthemarket.com/menus | https://marrowinthemarket.com/about | https://order.toasttab.com/egiftcards/marrow",
       "sources": [
         "https://marrowinthemarket.com/",
+        "https://marrowinthemarket.com/events/public",
         "https://marrowinthemarket.com/menus",
-        "https://marrowinthemarket.com/events",
         "https://marrowinthemarket.com/about",
         "https://order.toasttab.com/egiftcards/marrow"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.451Z",
-      "searchText": "marrow detroit michigan detroit, mi not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american nose-to-tail contemporary american toast detroit, mi",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-03T13:01:41.336Z",
+      "searchText": "marrow detroit michigan detroit, mi american, french brasserie, farm-to-table, seasonal midwest — named on the restaurant's own pages. american nose-to-tail contemporary american french seasonal / market toast phone detroit, mi",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Lunch language",
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "Toast"
+        "Toast",
+        "Phone"
       ]
     },
     {
@@ -362,10 +371,10 @@
       "reservationUrl": "https://order.toasttab.com/online/takoi",
       "coverageArea": "Detroit, Michigan",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours Tuesday–Saturday 4:00 PM–10:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Tuesday–Saturday 4:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant. RESERVATIONS We no longer require deposits for reservations.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: DIETARY RESTRICTIONS AND ALLERGIES We use ingredients such as soy, fish sauce, shellfish, pork, tree nuts, peanuts, and more. · Please let us know about any and all restrictions and allergies prior to your reservation.",
@@ -377,10 +386,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -395,9 +403,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Detroit, MI",
       "city": "Detroit",
@@ -426,14 +434,13 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
         "Toast"
       ],
@@ -450,7 +457,7 @@
         "https://www.takoidetroit.com/contact",
         "https://order.toasttab.com/online/takoi"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.451Z",
+      "retrievedAt": "2026-09-03T13:01:41.336Z",
       "searchText": "takoi detroit michigan detroit, mi not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. thai southeast asian toast detroit, mi",
       "spendBands": [],
       "daypartTags": [],
@@ -820,10 +827,10 @@
       "reservationUrl": "https://www.toasttab.com/supino-pizzeria-russell-st-2457-russell-st/giftcards?utmCampaign=onlineOrdering",
       "coverageArea": "Detroit, Michigan",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours , , , , ,. Reservations via Toast.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: , , , , ,.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -835,10 +842,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -854,9 +860,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Detroit, MI",
       "city": "Detroit",
@@ -885,7 +891,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -894,7 +899,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Toast"
       ],
@@ -910,7 +915,7 @@
         "https://www.supinopizzeria.com/about",
         "https://www.toasttab.com/supino-pizzeria-russell-st-2457-russell-st/giftcards?utmCampaign=onlineOrdering"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.451Z",
+      "retrievedAt": "2026-09-03T13:01:41.336Z",
       "searchText": "supino pizzeria detroit michigan detroit, mi not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. pizza italian toast detroit, mi",
       "spendBands": [],
       "daypartTags": [],
@@ -1050,10 +1055,10 @@
       "reservationUrl": "https://www.exploretock.com/flowersofvietnam",
       "coverageArea": "Detroit, Michigan",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Tock.",
+      "serviceSummary": "Hours , , , , ,. Reservations via Tock.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: , , , , ,.",
       "reservationDetails": "Reservations via Tock on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -1065,10 +1070,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
@@ -1085,9 +1089,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Detroit, MI",
       "city": "Detroit",
@@ -1116,7 +1120,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -1125,7 +1128,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Tock"
       ],
@@ -1140,7 +1143,7 @@
         "https://www.flowersofvietnam.com/menu-copy",
         "https://www.exploretock.com/flowersofvietnam"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.452Z",
+      "retrievedAt": "2026-09-03T13:01:41.336Z",
       "searchText": "flowers of vietnam detroit michigan detroit, mi not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. vietnamese tock detroit, mi",
       "spendBands": [],
       "daypartTags": [],
@@ -1158,19 +1161,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-18T22:55:05.661Z",
       "address": "Detroit, MI",
-      "phone": "",
+      "phone": "(313) 241-5719",
       "email": "",
       "website": "https://standbydetroit.com/",
       "menuUrl": "https://standbydetroit.com/food-current",
       "reservationUrl": "",
       "coverageArea": "Detroit, Michigan",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "cuisineContext": "Cocktails, American — named on the restaurant's own pages.",
+      "serviceSummary": "Cocktails, American. Hours Sunday, Wednesday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–2:00 AM. Confirm seating by phone.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Wednesday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–2:00 AM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: Please note we only take reservations of parties of six or less on weekends. · PRIVATE EVENTS Let our team coordinate food, drink, and hospitality with our full event planning services, while you enjoy the experience of a night out in downtown Detroit at one of the region’s top cocktail bars and restaurants.",
@@ -1180,15 +1183,13 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -1200,21 +1201,27 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 3,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "3 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Detroit, MI",
       "city": "Detroit",
       "stateProvince": "Michigan",
       "regionGroup": "Michigan",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$"
+      ],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
       "accessibilityTags": [],
-      "reservationTags": [],
+      "reservationTags": [
+        "Phone"
+      ],
       "groupFitTags": [],
       "checklist": [
         "Confirm current hours directly",
@@ -1224,23 +1231,21 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "reservation",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 9,
-      "bookingPlatforms": [],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "Phone"
+      ],
       "cuisineTags": [
         "American",
         "Cocktails",
@@ -1254,12 +1259,18 @@
         "https://standbydetroit.com/food-current",
         "https://standbydetroit.com/private-events"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.452Z",
-      "searchText": "standby detroit michigan detroit, mi not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american cocktails cocktail / lounge contemporary american detroit, mi",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-03T13:01:41.336Z",
+      "searchText": "standby detroit michigan detroit, mi cocktails, american — named on the restaurant's own pages. american cocktails cocktail / lounge contemporary american phone detroit, mi",
+      "spendBands": [
+        "$$"
+      ],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
-      "bookingPaths": []
+      "bookingPaths": [
+        "Phone"
+      ]
     },
     {
       "id": 2579,
@@ -2998,7 +3009,7 @@
         "https://www.opentable.com/r/bar-pigalle-reservations-detroit?restref=1281100&lang=en-US&ot_source=Restaurant%20website"
       ],
       "retrievedAt": "2026-09-03T02:29:56.263Z",
-      "searchText": "bar pigalle detroit michigan detroit, mi not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. opentable phone 9 slide 9 (current slide) 2915 john r st, detroit, mi 48201",
+      "searchText": "bar pigalle detroit michigan detroit, mi not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. opentable phone 2915 john r st, detroit, mi 48201",
       "spendBands": [],
       "daypartTags": [],
       "planningLoad": "Material",

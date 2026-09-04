@@ -258,10 +258,10 @@
       "reservationUrl": "https://www.opentable.com/restref/client/?color=1&amp;corrid=344d7c95-17a2-4664-8e8d-a13d289e5f30&amp;datetime=2023-12-05T20%3A00&amp;lang=en-US&amp;partysize=2&amp;r3uid=h63ykElBDB&amp;restref=67720&amp;rid=67720",
       "coverageArea": "Los Angeles, California",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Sunday 10:00 AM–1:00 AM; Monday–Thursday 4:00 PM–1:00 AM; Friday 4:00 PM–1:30 AM; Saturday 10:00 AM–1:30 AM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 10:00 AM–1:00 AM; Monday–Thursday 4:00 PM–1:00 AM; Friday 4:00 PM–1:30 AM; Saturday 10:00 AM–1:30 AM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -273,10 +273,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Dress note from the restaurant's own pages: Our dress code is Upscale/Casual preferred.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -292,9 +291,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Los Angeles, CA",
       "city": "Los Angeles",
@@ -330,28 +329,28 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
         "OpenTable",
         "Phone"
       ],
       "cuisineTags": [],
       "officialSource": "http://perchla.com/",
-      "additionalSources": "http://perchla.com/reservations | http://perchla.com/menu-gallery | https://www.opentable.com/restref/client/?color=1&amp;corrid=344d7c95-17a2-4664-8e8d-a13d289e5f30&amp;datetime=2023-12-05T20%3A00&amp;lang=en-US&amp;partysize=2&amp;r3uid=h63ykElBDB&amp;restref=67720&amp;rid=67720",
+      "additionalSources": "http://perchla.com/reservations | http://perchla.com/menu-gallery | http://perchla.com/faq-and-experiences | https://www.opentable.com/restref/client/?color=1&amp;corrid=344d7c95-17a2-4664-8e8d-a13d289e5f30&amp;datetime=2023-12-05T20%3A00&amp;lang=en-US&amp;partysize=2&amp;r3uid=h63ykElBDB&amp;restref=67720&amp;rid=67720",
       "sources": [
         "http://perchla.com/",
         "http://perchla.com/reservations",
         "http://perchla.com/menu-gallery",
+        "http://perchla.com/faq-and-experiences",
         "https://www.opentable.com/restref/client/?color=1&amp;corrid=344d7c95-17a2-4664-8e8d-a13d289e5f30&amp;datetime=2023-12-05T20%3A00&amp;lang=en-US&amp;partysize=2&amp;r3uid=h63ykElBDB&amp;restref=67720&amp;rid=67720"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.437Z",
+      "retrievedAt": "2026-09-03T13:01:41.320Z",
       "searchText": "perch los angeles california los angeles, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. opentable phone",
       "spendBands": [
         "$$$"
@@ -3560,20 +3559,19 @@
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Call Us Now for vegetarian, vegan, and dietary questions before ordering.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: For parties of 10 or more or same-day dining, call +1 415-989-2638.",
       "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Live hours for your date; Reservation release pattern; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
         "Live hours for your date",
         "Reservation release pattern",
         "Accessibility route detail",
-        "Private-dining terms",
         "Parking and arrival logistics",
         "Current per-guest total"
       ],
@@ -3587,9 +3585,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "San Francisco, CA",
       "city": "San Francisco",
@@ -3625,11 +3623,10 @@
         "cuisineContext",
         "reservation",
         "accessibilityState",
-        "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Phone"
       ],
@@ -3642,7 +3639,7 @@
         "https://hongkongclaypotrestaurant.com/contact/",
         "https://hongkongclaypotrestaurant.com/group-dining/"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.444Z",
+      "retrievedAt": "2026-09-03T13:01:41.327Z",
       "searchText": "hong kong clay pot restaurant san francisco california san francisco, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. phone",
       "spendBands": [
         "$"
@@ -3669,10 +3666,10 @@
       "reservationUrl": "",
       "coverageArea": "San Francisco, California",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Confirm seating by phone.",
+      "serviceSummary": "Hours Sunday 10:00 AM–2:30 PM and 5:00 PM–8:30 PM; Tuesday–Friday 10:30 AM–2:30 PM and 5:00 PM–8:30 PM. Confirm seating by phone.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 10:00 AM–2:30 PM and 5:00 PM–8:30 PM; Tuesday–Friday 10:30 AM–2:30 PM and 5:00 PM–8:30 PM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: 上素斎餃 Vegetarian Dumplings · Our new vegetarian noodle roll.",
@@ -3684,10 +3681,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Reservation release pattern; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Accessibility route detail",
         "Private-dining terms",
@@ -3704,9 +3700,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "San Francisco, CA",
       "city": "San Francisco",
@@ -3715,7 +3711,10 @@
       "priceTags": [
         "$$"
       ],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner",
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -3741,7 +3740,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "reservation",
@@ -3750,7 +3748,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Phone"
       ],
@@ -3762,12 +3760,15 @@
         "https://www.newhongkonglounge.com/menu-1",
         "https://www.newhongkonglounge.com/contact-8"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.444Z",
+      "retrievedAt": "2026-09-03T13:01:41.327Z",
       "searchText": "hong kong lounge san francisco california san francisco, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. phone",
       "spendBands": [
         "$$"
       ],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language",
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
         "Phone"
@@ -4252,10 +4253,10 @@
       "reservationUrl": "https://www.toasttab.com/callie-1195-island-ave/giftcards",
       "coverageArea": "San Diego, California",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours Sunday, Tuesday–Saturday 5:00 AM–10:00 AM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Tuesday–Saturday 5:00 AM–10:00 AM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -4267,10 +4268,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -4286,9 +4286,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "San Diego, CA",
       "city": "San Diego",
@@ -4317,7 +4317,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -4325,7 +4324,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "Toast"
       ],
@@ -4341,7 +4340,7 @@
         "https://www.calliesd.com/private-dining",
         "https://www.toasttab.com/callie-1195-island-ave/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
+      "retrievedAt": "2026-09-04T12:50:08.384Z",
       "searchText": "callie san diego california san diego, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. mediterranean toast san diego, ca",
       "spendBands": [],
       "daypartTags": [],
@@ -4814,19 +4813,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "San Diego, CA",
-      "phone": "",
+      "phone": "(619) 431-5990",
       "email": "",
       "website": "https://civico1845.com/",
       "menuUrl": "https://civico1845.com/menu/",
       "reservationUrl": "https://www.toasttab.com/civico-1845/giftcards",
       "coverageArea": "San Diego, California",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "Italian, Calabrian, Vegan Italian — named on the restaurant's own pages.",
+      "serviceSummary": "Italian, Calabrian, Vegan Italian. Hours Sunday 12:00 PM–9:00 PM; Monday–Thursday 4:00 PM–9:00 PM; Friday 4:00 PM–10:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 12:00 PM–9:00 PM; Monday–Thursday 4:00 PM–9:00 PM; Friday 4:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant. Capacity, menu format, pricing, deposits, and event policies should be confirmed directly with the team.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Reserve through Resy Traditional and Vegan Southern Italian. · Bruschetta Ricotta & Pomodorini Italian grilled bread, vegan ricotta, confit tomatoes, basil, and lemon zest.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: For birthdays, business meals, family occasions, and other group plans, use the private dining guide and contact the restaurant with the proposed date and approximate guest count.",
@@ -4836,13 +4835,11 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 2,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -4854,15 +4851,17 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 9,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "9 / 12 core fields",
       "signals": {},
       "region": "San Diego, CA",
       "city": "San Diego",
       "stateProvince": "California",
       "regionGroup": "California",
-      "priceTags": [],
+      "priceTags": [
+        "$$"
+      ],
       "serviceStyles": [],
       "dietaryTags": [
         "Direct confirmation required"
@@ -4880,24 +4879,23 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 3,
       "bookingPlatforms": [
-        "Toast"
+        "Toast",
+        "Phone"
       ],
       "cuisineTags": [
-        "Italian"
+        "Italian",
+        "Plant-forward"
       ],
       "officialSource": "https://civico1845.com/",
       "additionalSources": "https://civico1845.com/menu/ | https://civico1845.com/visit/ | https://civico1845.com/reservations/guide/ | https://www.toasttab.com/civico-1845/giftcards",
@@ -4908,13 +4906,16 @@
         "https://civico1845.com/reservations/guide/",
         "https://www.toasttab.com/civico-1845/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.458Z",
-      "searchText": "civico 1845 san diego california san diego, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. italian toast san diego, ca",
-      "spendBands": [],
+      "retrievedAt": "2026-09-04T12:50:08.384Z",
+      "searchText": "civico 1845 san diego california san diego, ca italian, calabrian, vegan italian — named on the restaurant's own pages. italian plant-forward toast phone san diego, ca",
+      "spendBands": [
+        "$$"
+      ],
       "daypartTags": [],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "Toast"
+        "Toast",
+        "Phone"
       ]
     },
     {
@@ -5159,10 +5160,10 @@
       "reservationUrl": "https://www.exploretock.com/localis/",
       "coverageArea": "Sacramento, California",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Tock.",
+      "serviceSummary": "Hours Wednesday–Thursday 5:30 PM–10:00 PM; Friday–Saturday 5:30 PM–12:00 AM. Reservations via Tock.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Wednesday–Thursday 5:30 PM–10:00 PM; Friday–Saturday 5:30 PM–12:00 AM.",
       "reservationDetails": "Reservations via Tock on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -5174,10 +5175,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -5193,16 +5193,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Sacramento, CA",
       "city": "Sacramento",
       "stateProvince": "California",
       "regionGroup": "California",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -5224,7 +5226,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -5233,7 +5234,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Tock"
       ],
@@ -5250,10 +5251,12 @@
         "https://www.localissacramento.com/private-events",
         "https://www.exploretock.com/localis/"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.461Z",
+      "retrievedAt": "2026-09-04T12:50:08.390Z",
       "searchText": "localis sacramento california sacramento, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary contemporary american tock sacramento, ca",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "Tock"
@@ -18401,7 +18404,7 @@
         "https://www.toasttab.com/lola55/order-and-pay/100"
       ],
       "retrievedAt": "2026-09-03T02:29:56.263Z",
-      "searchText": "lola 55 san diego california san diego, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. toast phone 55 1290 f street, san diego, ca",
+      "searchText": "lola 55 san diego california san diego, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. toast phone 1290 f street, san diego, ca",
       "spendBands": [],
       "daypartTags": [
         "Lunch language"

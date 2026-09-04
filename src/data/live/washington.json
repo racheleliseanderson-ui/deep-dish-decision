@@ -1,6 +1,6 @@
 {
   "regionGroup": "Washington",
-  "generatedAt": "2026-09-04T12:49:54.838Z",
+  "generatedAt": "2026-09-04T14:37:42.302Z",
   "records": {
     "canlis": {
       "ll": [
@@ -1761,6 +1761,13 @@
       ],
       "llSource": "city",
       "tz": "America/Los_Angeles",
+      "band": "$",
+      "bandSource": "planning-band",
+      "pp": [
+        12,
+        25
+      ],
+      "ppSource": "planning-band",
       "dishes": [
         {
           "name": "wood-oven vegetables",
@@ -1890,6 +1897,39 @@
       ],
       "llSource": "city",
       "tz": "America/Los_Angeles",
+      "hours": [
+        [
+          [
+            540,
+            840
+          ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          [
+            600,
+            840
+          ],
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            540,
+            840
+          ],
+          [
+            1020,
+            1260
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
       "dishes": [
         {
           "name": "Dutch baby",

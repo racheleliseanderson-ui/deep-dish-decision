@@ -239,10 +239,10 @@
       "reservationUrl": "https://resy.com/cities/bos/oleana",
       "coverageArea": "Boston, Massachusetts",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Resy.",
+      "serviceSummary": "Hours Sunday–Thursday 5:30 PM–10:00 PM; Friday–Saturday 5:30 PM–10:30 PM. Reservations via Resy.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 5:30 PM–10:00 PM; Friday–Saturday 5:30 PM–10:30 PM.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Grapefruit IPA (Gluten Free!) , Ghostfish ‘Grapefruit IPA,’ Seattle, WA",
@@ -254,10 +254,124 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
+        "Accessibility route detail",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-21",
+      "nextReviewAt": "2026-09-20",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 7,
+      "depthTotal": 12,
+      "depthLabel": "7 / 12 core fields",
+      "signals": {},
+      "region": "Boston, MA",
+      "city": "Boston",
+      "stateProvince": "Massachusetts",
+      "regionGroup": "Massachusetts",
+      "priceTags": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": false,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "priceDetails",
+        "cuisineContext",
+        "accessibilityState",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "Resy"
+      ],
+      "cuisineTags": [
+        "Eastern Mediterranean",
+        "Mediterranean"
+      ],
+      "officialSource": "https://www.oleanarestaurant.com/",
+      "additionalSources": "https://www.oleanarestaurant.com/menu-new | https://www.oleanarestaurant.com/reservations | https://www.oleanarestaurant.com/private-events | https://resy.com/cities/bos/oleana",
+      "sources": [
+        "https://www.oleanarestaurant.com/",
+        "https://www.oleanarestaurant.com/menu-new",
+        "https://www.oleanarestaurant.com/reservations",
+        "https://www.oleanarestaurant.com/private-events",
+        "https://resy.com/cities/bos/oleana"
+      ],
+      "retrievedAt": "2026-09-03T13:01:41.334Z",
+      "searchText": "oleana boston massachusetts boston, ma not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. eastern mediterranean mediterranean resy cambridge, ma",
+      "spendBands": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
+      "planningLoad": "Material",
+      "bookingPaths": [
+        "Resy"
+      ]
+    },
+    {
+      "id": 2253,
+      "slug": "sarma-boston",
+      "title": "Sarma",
+      "link": "",
+      "recordId": "RI-EXP-0174",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "address": "Somerville, MA",
+      "phone": "",
+      "email": "",
+      "website": "https://www.sarmarestaurant.com/",
+      "menuUrl": "",
+      "reservationUrl": "https://resy.com/cities/bos/sarma",
+      "coverageArea": "Boston, Massachusetts",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–1:00 AM. Reservations via Resy.",
+      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–1:00 AM.",
+      "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: We are able to accommodate dietary restrictions/ allergies to Dairy, Gluten, Shellfish, and Nuts; please reach out for information if you or a member of your party will have allergies outside of these. · Due to the nature of our cuisine, we are NOT able to accommodate any allergies or aversions to Allium, Single Spices i.e.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: We encourage large parties to book further than one month out, due to the difficulty of reserving the space once general public reservations open 30 days in advance. · Please note that parties of 13 or more are bookable only on Sunday - Thursday evenings.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
+      "unknownList": [
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -281,7 +395,9 @@
       "stateProvince": "Massachusetts",
       "regionGroup": "Massachusetts",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -303,120 +419,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "accessibilityState",
-        "dressCode",
-        "atmosphereSummary"
-      ],
-      "thinFieldCount": 6,
-      "bookingPlatforms": [
-        "Resy"
-      ],
-      "cuisineTags": [
-        "Eastern Mediterranean",
-        "Mediterranean"
-      ],
-      "officialSource": "https://www.oleanarestaurant.com/",
-      "additionalSources": "https://www.oleanarestaurant.com/menu-new | https://www.oleanarestaurant.com/reservations | https://www.oleanarestaurant.com/private-events | https://resy.com/cities/bos/oleana",
-      "sources": [
-        "https://www.oleanarestaurant.com/",
-        "https://www.oleanarestaurant.com/menu-new",
-        "https://www.oleanarestaurant.com/reservations",
-        "https://www.oleanarestaurant.com/private-events",
-        "https://resy.com/cities/bos/oleana"
-      ],
-      "retrievedAt": "2026-08-21T01:42:18.450Z",
-      "searchText": "oleana boston massachusetts boston, ma not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. eastern mediterranean mediterranean resy cambridge, ma",
-      "spendBands": [],
-      "daypartTags": [],
-      "planningLoad": "Material",
-      "bookingPaths": [
-        "Resy"
-      ]
-    },
-    {
-      "id": 2253,
-      "slug": "sarma-boston",
-      "title": "Sarma",
-      "link": "",
-      "recordId": "RI-EXP-0174",
-      "origin": "expansion-seed",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "address": "Somerville, MA",
-      "phone": "",
-      "email": "",
-      "website": "https://www.sarmarestaurant.com/",
-      "menuUrl": "",
-      "reservationUrl": "https://resy.com/cities/bos/sarma",
-      "coverageArea": "Boston, Massachusetts",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Resy.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
-      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Dietary wording from the restaurant's own pages: We are able to accommodate dietary restrictions/ allergies to Dairy, Gluten, Shellfish, and Nuts; please reach out for information if you or a member of your party will have allergies outside of these. · Due to the nature of our cuisine, we are NOT able to accommodate any allergies or aversions to Allium, Single Spices i.e.",
-      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Group policy from the restaurant's own pages: We encourage large parties to book further than one month out, due to the difficulty of reserving the space once general public reservations open 30 days in advance. · Please note that parties of 13 or more are bookable only on Sunday - Thursday evenings.",
-      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
-      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
-      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
-      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
-      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
-      "unknownList": [
-        "Live hours for your date",
-        "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
-      ],
-      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
-      "sourceAuthority": "Official restaurant website / first-party page",
-      "confidence": "owned_site_leveled",
-      "freshnessStatus": "OWNED_SITE_REVIEWED",
-      "reviewedAt": "2026-08-21",
-      "nextReviewAt": "2026-09-20",
-      "reviewStatus": "current",
-      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
-      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "conflict": "",
-      "depthFilled": 5,
-      "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
-      "signals": {},
-      "region": "Boston, MA",
-      "city": "Boston",
-      "stateProvince": "Massachusetts",
-      "regionGroup": "Massachusetts",
-      "priceTags": [],
-      "serviceStyles": [],
-      "dietaryTags": [
-        "Direct confirmation required"
-      ],
-      "accessibilityTags": [],
-      "reservationTags": [
-        "Reservations"
-      ],
-      "groupFitTags": [],
-      "checklist": [
-        "Confirm current hours directly",
-        "Confirm reservation release and cancellation terms",
-        "Confirm dietary handling with the kitchen",
-        "Confirm accessibility route and restroom detail",
-        "Verify parking or transit for arrival window",
-        "Check current menu prices"
-      ],
-      "hasPhone": false,
-      "hasOfficialConflict": false,
-      "isFullCaseFile": false,
-      "reviewDueSoon": false,
-      "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -424,7 +426,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -440,10 +442,12 @@
         "https://www.sarmarestaurant.com/private-events",
         "https://resy.com/cities/bos/sarma"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.450Z",
+      "retrievedAt": "2026-09-03T13:01:41.334Z",
       "searchText": "sarma boston massachusetts boston, ma not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. eastern mediterranean mediterranean resy somerville, ma",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "Resy"
@@ -802,10 +806,10 @@
       "reservationUrl": "",
       "coverageArea": "Boston, Massachusetts",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday, Saturday 11:30 AM–10:30 PM; Monday–Friday 11:30 AM–9:30 PM.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Saturday 11:30 AM–10:30 PM; Monday–Friday 11:30 AM–9:30 PM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -817,15 +821,15 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
       "unknownsCount": 6,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics"
+        "Parking and arrival logistics",
+        "Current per-guest total"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -837,16 +841,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 2,
+      "depthFilled": 4,
       "depthTotal": 12,
-      "depthLabel": "2 / 12 core fields",
+      "depthLabel": "4 / 12 core fields",
       "signals": {},
       "region": "Boston, MA",
       "city": "Boston",
       "stateProvince": "Massachusetts",
       "regionGroup": "Massachusetts",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -866,7 +872,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "reservation",
@@ -874,10 +879,9 @@
         "accessibilityState",
         "groupDetails",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 10,
+      "thinFieldCount": 8,
       "bookingPlatforms": [],
       "cuisineTags": [
         "Seafood"
@@ -889,10 +893,12 @@
         "https://www.neptuneoyster.com/menu",
         "https://www.neptuneoyster.com/events"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.450Z",
+      "retrievedAt": "2026-09-03T13:01:41.335Z",
       "searchText": "neptune oyster boston massachusetts boston, ma not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. seafood boston, ma",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": []
     },
@@ -1019,19 +1025,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-12T06:45:34.941Z",
       "address": "Boston, MA",
-      "phone": "",
+      "phone": "(617) 536-7200",
       "email": "",
       "website": "https://www.uni-boston.com/",
       "menuUrl": "https://www.uni-boston.com/menu/dinner-menu/download",
       "reservationUrl": "",
       "coverageArea": "Boston, Massachusetts",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday 5:30 PM–9:30 PM; Saturday 5:30 PM–10:00 PM. Confirm seating by phone.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 5:30 PM–9:30 PM; Saturday 5:30 PM–10:00 PM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Published price range 3 on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: UNI is available for private events in both the restaurant space and in the Eliot Hotel. · From our vibrant Chef's Table within the restaurant to our intimate Private Dining Room, we offer a variety of ways to celebrate any event.",
@@ -1041,15 +1047,13 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Dress note from the restaurant's own pages: We do not have a dress code.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -1061,21 +1065,25 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Boston, MA",
       "city": "Boston",
       "stateProvince": "Massachusetts",
       "regionGroup": "Massachusetts",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
       "accessibilityTags": [],
-      "reservationTags": [],
+      "reservationTags": [
+        "Phone"
+      ],
       "groupFitTags": [],
       "checklist": [
         "Confirm current hours directly",
@@ -1085,22 +1093,21 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
         "cuisineContext",
         "reservation",
         "dietaryDetails",
         "accessibilityState",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
-      "bookingPlatforms": [],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "Phone"
+      ],
       "cuisineTags": [
         "Japanese",
         "Sushi"
@@ -1113,12 +1120,16 @@
         "https://www.uni-boston.com/private-events",
         "https://www.uni-boston.com/faq"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.451Z",
-      "searchText": "uni boston massachusetts boston, ma not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. japanese sushi boston, ma",
+      "retrievedAt": "2026-09-03T13:01:41.335Z",
+      "searchText": "uni boston massachusetts boston, ma not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. japanese sushi phone boston, ma",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
-      "bookingPaths": []
+      "bookingPaths": [
+        "Phone"
+      ]
     },
     {
       "id": 2262,
@@ -1136,27 +1147,142 @@
       "reservationUrl": "https://www.toasttab.com/little-donkey/giftcards",
       "coverageArea": "Boston, Massachusetts",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours Monday–Thursday 5:00 PM–9:00 PM; Friday–Saturday 5:00 PM–10:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday–Thursday 5:00 PM–9:00 PM; Friday–Saturday 5:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: With a full raw bar, vegan, vegetarian and gluten-free options, we’ve truly got something for everyone. · GF = gluten-free V = vegetarian VG = vegan",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: Public Transportation: Red Line - Central Little Donkey 505 Massachusetts Avenue Cambridge, MA, 02139 617.945.1008 GIFT CARDS LARGE PARTIES & PRIVATE EVENTS GALLERY HIRING PRESS Photography by Andrea Merrill & David Ma & Natalie Schaefer & Brooke Elmore",
       "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
-        "Private-dining terms",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-21",
+      "nextReviewAt": "2026-09-20",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 7,
+      "depthTotal": 12,
+      "depthLabel": "7 / 12 core fields",
+      "signals": {},
+      "region": "Boston, MA",
+      "city": "Boston",
+      "stateProvince": "Massachusetts",
+      "regionGroup": "Massachusetts",
+      "priceTags": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": false,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "priceDetails",
+        "cuisineContext",
+        "accessibilityState",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "Toast"
+      ],
+      "cuisineTags": [
+        "Global",
+        "American",
+        "Contemporary American"
+      ],
+      "officialSource": "https://www.littledonkeybos.com/",
+      "additionalSources": "https://www.littledonkeybos.com/reservations/ | https://www.littledonkeybos.com/menu | https://www.littledonkeybos.com/hours-location | https://www.toasttab.com/little-donkey/giftcards",
+      "sources": [
+        "https://www.littledonkeybos.com/",
+        "https://www.littledonkeybos.com/reservations/",
+        "https://www.littledonkeybos.com/menu",
+        "https://www.littledonkeybos.com/hours-location",
+        "https://www.toasttab.com/little-donkey/giftcards"
+      ],
+      "retrievedAt": "2026-09-03T13:01:41.335Z",
+      "searchText": "little donkey boston massachusetts boston, ma not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. global american contemporary american toast cambridge, ma",
+      "spendBands": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast"
+      ]
+    },
+    {
+      "id": 2263,
+      "slug": "puritan-company-boston",
+      "title": "Puritan & Company",
+      "link": "",
+      "recordId": "RI-EXP-0184",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-12T06:45:34.941Z",
+      "address": "Cambridge, MA",
+      "phone": "",
+      "email": "",
+      "website": "https://www.puritancambridge.com/",
+      "menuUrl": "",
+      "reservationUrl": "https://www.toasttab.com/puritanco/marketing-signup?utm_campaign=null&utm_medium=email&utm_source=toastemail",
+      "coverageArea": "Boston, Massachusetts",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Hours Monday–Wednesday 5:00 PM–9:00 PM; Thursday–Saturday 5:00 PM–10:00 PM. Reservations via Toast.",
+      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday–Wednesday 5:00 PM–9:00 PM; Thursday–Saturday 5:00 PM–10:00 PM.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: Host your event in our private dining room , do a full restaurant buyout , or order catering for any size group .",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
+      "unknownList": [
+        "Dietary cross-contact handling",
+        "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
       ],
@@ -1179,7 +1305,9 @@
       "stateProvince": "Massachusetts",
       "regionGroup": "Massachusetts",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -1201,123 +1329,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "accessibilityState",
-        "groupDetails",
-        "dressCode",
-        "atmosphereSummary"
-      ],
-      "thinFieldCount": 7,
-      "bookingPlatforms": [
-        "Toast"
-      ],
-      "cuisineTags": [
-        "Global",
-        "American",
-        "Contemporary American"
-      ],
-      "officialSource": "https://www.littledonkeybos.com/",
-      "additionalSources": "https://www.littledonkeybos.com/reservations/ | https://www.littledonkeybos.com/menu | https://www.littledonkeybos.com/hours-location | https://www.toasttab.com/little-donkey/giftcards",
-      "sources": [
-        "https://www.littledonkeybos.com/",
-        "https://www.littledonkeybos.com/reservations/",
-        "https://www.littledonkeybos.com/menu",
-        "https://www.littledonkeybos.com/hours-location",
-        "https://www.toasttab.com/little-donkey/giftcards"
-      ],
-      "retrievedAt": "2026-08-21T01:42:18.451Z",
-      "searchText": "little donkey boston massachusetts boston, ma not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. global american contemporary american toast cambridge, ma",
-      "spendBands": [],
-      "daypartTags": [],
-      "planningLoad": "Standard",
-      "bookingPaths": [
-        "Toast"
-      ]
-    },
-    {
-      "id": 2263,
-      "slug": "puritan-company-boston",
-      "title": "Puritan & Company",
-      "link": "",
-      "recordId": "RI-EXP-0184",
-      "origin": "expansion-seed",
-      "addedAt": "2026-08-12T06:45:34.941Z",
-      "address": "Cambridge, MA",
-      "phone": "",
-      "email": "",
-      "website": "https://www.puritancambridge.com/",
-      "menuUrl": "",
-      "reservationUrl": "https://www.toasttab.com/puritanco/marketing-signup?utm_campaign=null&utm_medium=email&utm_source=toastemail",
-      "coverageArea": "Boston, Massachusetts",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
-      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
-      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Group policy from the restaurant's own pages: Host your event in our private dining room , do a full restaurant buyout , or order catering for any size group .",
-      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
-      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
-      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
-      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
-      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
-      "unknownList": [
-        "Live hours for your date",
-        "Dietary cross-contact handling",
-        "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
-      ],
-      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
-      "sourceAuthority": "Official restaurant website / first-party page",
-      "confidence": "owned_site_leveled",
-      "freshnessStatus": "OWNED_SITE_REVIEWED",
-      "reviewedAt": "2026-08-21",
-      "nextReviewAt": "2026-09-20",
-      "reviewStatus": "current",
-      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
-      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "conflict": "",
-      "depthFilled": 4,
-      "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
-      "signals": {},
-      "region": "Boston, MA",
-      "city": "Boston",
-      "stateProvince": "Massachusetts",
-      "regionGroup": "Massachusetts",
-      "priceTags": [],
-      "serviceStyles": [],
-      "dietaryTags": [
-        "Direct confirmation required"
-      ],
-      "accessibilityTags": [],
-      "reservationTags": [
-        "Reservations"
-      ],
-      "groupFitTags": [],
-      "checklist": [
-        "Confirm current hours directly",
-        "Confirm reservation release and cancellation terms",
-        "Confirm dietary handling with the kitchen",
-        "Confirm accessibility route and restroom detail",
-        "Verify parking or transit for arrival window",
-        "Check current menu prices"
-      ],
-      "hasPhone": false,
-      "hasOfficialConflict": false,
-      "isFullCaseFile": false,
-      "reviewDueSoon": false,
-      "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -1326,7 +1337,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Toast"
       ],
@@ -1342,10 +1353,12 @@
         "https://www.puritancambridge.com/reserve",
         "https://www.toasttab.com/puritanco/marketing-signup?utm_campaign=null&utm_medium=email&utm_source=toastemail"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.451Z",
+      "retrievedAt": "2026-09-03T13:01:41.335Z",
       "searchText": "puritan & company boston massachusetts boston, ma not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american toast cambridge, ma",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
         "Toast"

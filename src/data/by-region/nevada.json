@@ -459,36 +459,32 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Las Vegas, NV",
-      "phone": "",
+      "phone": "(702) 445-6100",
       "email": "",
       "website": "https://www.honeysalt.com/",
-      "menuUrl": "",
-      "reservationUrl": "",
+      "menuUrl": "https://honeysalt.com/menus/",
+      "reservationUrl": "https://honeysalt.com/reservations/",
       "coverageArea": "Las Vegas, Nevada",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday 10:00 AM–10:00 PM; Monday–Thursday 11:30 AM–9:00 PM; Friday 11:30 AM–10:00 PM. Reservations via Direct / confirm live.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 10:00 AM–10:00 PM; Monday–Thursday 11:30 AM–9:00 PM; Friday 11:30 AM–10:00 PM.",
+      "reservationDetails": "Reservations via Direct / confirm live on a path published by the restaurant.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: Whether it’s our interpretations of classic comfort food or our lighter, wellness-based fare, our vegan options or our decadent brunch, Honey Salt’s product is always sourced, prepared and served with love. · Vegan, vegetarian and gluten-free options are always available and the menu can be tailored for individual guests if they are unable to enjoy our set menu offerings.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: Private Events & Group Dining We want to create a fabulous event for you and your guests! · FAQs I have a smaller group so the private dining room is not necessary.",
       "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
-      "unknownsCount": 6,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 2,
       "unknownList": [
-        "Live hours for your date",
-        "Reservation release pattern",
-        "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Private-dining terms",
         "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
@@ -501,21 +497,27 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 1,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "1 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Las Vegas, NV",
       "city": "Las Vegas",
       "stateProvince": "Nevada",
       "regionGroup": "Nevada",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$$"
+      ],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
       "accessibilityTags": [],
-      "reservationTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
       "groupFitTags": [],
       "checklist": [
         "Confirm current hours directly",
@@ -525,40 +527,48 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
         "cuisineContext",
-        "menu",
-        "reservation",
-        "dietaryDetails",
         "accessibilityState",
-        "groupDetails",
         "dressCode",
         "atmosphereSummary",
         "serviceSummary"
       ],
-      "thinFieldCount": 11,
-      "bookingPlatforms": [],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "Direct / confirm live",
+        "Phone"
+      ],
       "cuisineTags": [
         "American",
         "Contemporary American"
       ],
       "officialSource": "https://www.honeysalt.com/",
-      "additionalSources": "",
+      "additionalSources": "https://honeysalt.com/about-honey-salt/ | https://honeysalt.com/menus/ | https://honeysalt.com/group-dining-private-events/ | https://honeysalt.com/reservations/",
       "sources": [
-        "https://www.honeysalt.com/"
+        "https://www.honeysalt.com/",
+        "https://honeysalt.com/about-honey-salt/",
+        "https://honeysalt.com/menus/",
+        "https://honeysalt.com/group-dining-private-events/",
+        "https://honeysalt.com/reservations/"
       ],
-      "retrievedAt": "2026-08-19T02:53:28.994Z",
-      "searchText": "honey salt las vegas nevada las vegas, nv not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american las vegas, nv",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-04T12:50:08.388Z",
+      "searchText": "honey salt las vegas nevada las vegas, nv not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american direct / confirm live phone las vegas, nv",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Standard",
-      "bookingPaths": []
+      "bookingPaths": [
+        "Direct / confirm live",
+        "Phone"
+      ]
     },
     {
       "id": 2365,
@@ -569,19 +579,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Las Vegas, NV",
-      "phone": "",
+      "phone": "(702) 364-5300",
       "email": "",
       "website": "https://ferraroslasvegas.com/",
       "menuUrl": "https://www.ferraroslasvegas.com/gallery/wine/",
       "reservationUrl": "https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651",
       "coverageArea": "Las Vegas, Nevada",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "cuisineContext": "Italian, Traditional Italian, Fine Dining, Seafood, Steak, Pasta — named on the restaurant's own pages.",
+      "serviceSummary": "Italian, Traditional Italian, Fine Dining, Seafood, Steak, Pasta. Hours Sunday 4:00 PM–10:30 PM; Monday–Friday 11:30 AM–3:30 PM and 4:00 PM–10:30 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 4:00 PM–10:30 PM; Monday–Friday 11:30 AM–3:30 PM and 4:00 PM–10:30 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Happy Hour Lunch Dinner Tasting Menu Vegan Dessert Pre-Show Dinner Summer In Italy Italian version of small plates from 4pm-7pm MUST BE 21 YEARS OF AGE TO SIT IN THE BAR OR LOUNGE AREA FOR HAPPY HOUR!",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: 18% service charge on parties of 6 or more. · 20% service charge on parties of 12 or more.",
@@ -589,15 +599,136 @@
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Dress note from the restaurant's own pages: Dress Code Ferraro’s maintains a business casual dress code .",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 2,
+      "unknownList": [
+        "Accessibility route detail",
+        "Parking and arrival logistics"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-21",
+      "nextReviewAt": "2026-09-20",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 10,
+      "depthTotal": 12,
+      "depthLabel": "10 / 12 core fields",
+      "signals": {},
+      "region": "Las Vegas, NV",
+      "city": "Las Vegas",
+      "stateProvince": "Nevada",
+      "regionGroup": "Nevada",
+      "priceTags": [
+        "$$$$"
+      ],
+      "serviceStyles": [
+        "Daytime",
+        "Fine dining"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "accessibilityState",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 2,
+      "bookingPlatforms": [
+        "OpenTable",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "Italian",
+        "Fine dining",
+        "Seafood",
+        "Steak / grill"
+      ],
+      "officialSource": "https://ferraroslasvegas.com/",
+      "additionalSources": "https://www.ferraroslasvegas.com/about-us/ | https://www.ferraroslasvegas.com/gallery/wine/ | https://www.ferraroslasvegas.com/reservations/ | https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651",
+      "sources": [
+        "https://ferraroslasvegas.com/",
+        "https://www.ferraroslasvegas.com/about-us/",
+        "https://www.ferraroslasvegas.com/gallery/wine/",
+        "https://www.ferraroslasvegas.com/reservations/",
+        "https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651"
+      ],
+      "retrievedAt": "2026-09-04T12:50:08.388Z",
+      "searchText": "ferraro's italian restaurant & wine bar las vegas nevada las vegas, nv italian, traditional italian, fine dining, seafood, steak, pasta — named on the restaurant's own pages. italian fine dining seafood steak / grill opentable phone las vegas, nv",
+      "spendBands": [
+        "$$$$"
+      ],
+      "daypartTags": [
+        "Lunch language"
+      ],
+      "planningLoad": "Material",
+      "bookingPaths": [
+        "OpenTable",
+        "Phone"
+      ]
+    },
+    {
+      "id": 2366,
+      "slug": "anima-by-edo-las-vegas",
+      "title": "Anima by EDO",
+      "link": "",
+      "recordId": "RI-EXP-0287",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "address": "Las Vegas, NV",
+      "phone": "(702) 202-4291",
+      "email": "",
+      "website": "https://www.animabyedo.com/",
+      "menuUrl": "https://animabyedo.com/menu",
+      "reservationUrl": "",
+      "coverageArea": "Las Vegas, Nevada",
+      "cuisineContext": "Mediterranean, Italian, Spanish, Catalan, Tapas — named on the restaurant's own pages.",
+      "serviceSummary": "Mediterranean, Italian, Spanish, Catalan, Tapas. Hours Sunday–Friday 5:00 PM–10:00 PM. Confirm seating by phone.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Friday 5:00 PM–10:00 PM.",
+      "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
+        "Reservation release pattern",
+        "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Private-dining terms",
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -617,14 +748,18 @@
       "city": "Las Vegas",
       "stateProvince": "Nevada",
       "regionGroup": "Nevada",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$$"
+      ],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
       "accessibilityTags": [],
       "reservationTags": [
-        "Reservations"
+        "Phone"
       ],
       "groupFitTags": [],
       "checklist": [
@@ -635,139 +770,29 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "accessibilityState",
-        "dressCode",
-        "atmosphereSummary"
-      ],
-      "thinFieldCount": 6,
-      "bookingPlatforms": [
-        "OpenTable"
-      ],
-      "cuisineTags": [
-        "Italian"
-      ],
-      "officialSource": "https://ferraroslasvegas.com/",
-      "additionalSources": "https://www.ferraroslasvegas.com/about-us/ | https://www.ferraroslasvegas.com/gallery/wine/ | https://www.ferraroslasvegas.com/reservations/ | https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651",
-      "sources": [
-        "https://ferraroslasvegas.com/",
-        "https://www.ferraroslasvegas.com/about-us/",
-        "https://www.ferraroslasvegas.com/gallery/wine/",
-        "https://www.ferraroslasvegas.com/reservations/",
-        "https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651"
-      ],
-      "retrievedAt": "2026-08-21T01:42:18.460Z",
-      "searchText": "ferraro's italian restaurant & wine bar las vegas nevada las vegas, nv not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. italian opentable las vegas, nv",
-      "spendBands": [],
-      "daypartTags": [],
-      "planningLoad": "Material",
-      "bookingPaths": [
-        "OpenTable"
-      ]
-    },
-    {
-      "id": 2366,
-      "slug": "anima-by-edo-las-vegas",
-      "title": "Anima by EDO",
-      "link": "",
-      "recordId": "RI-EXP-0287",
-      "origin": "expansion-seed",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "address": "Las Vegas, NV",
-      "phone": "",
-      "email": "",
-      "website": "https://www.animabyedo.com/",
-      "menuUrl": "https://animabyedo.com/menu",
-      "reservationUrl": "",
-      "coverageArea": "Las Vegas, Nevada",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
-      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
-      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
-      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
-      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
-      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
-      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
-      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
-      "unknownsCount": 6,
-      "unknownList": [
-        "Live hours for your date",
-        "Reservation release pattern",
-        "Dietary cross-contact handling",
-        "Accessibility route detail",
-        "Private-dining terms",
-        "Parking and arrival logistics"
-      ],
-      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
-      "sourceAuthority": "Official restaurant website / first-party page",
-      "confidence": "owned_site_leveled",
-      "freshnessStatus": "OWNED_SITE_REVIEWED",
-      "reviewedAt": "2026-08-21",
-      "nextReviewAt": "2026-09-20",
-      "reviewStatus": "current",
-      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
-      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "conflict": "",
-      "depthFilled": 2,
-      "depthTotal": 12,
-      "depthLabel": "2 / 12 core fields",
-      "signals": {},
-      "region": "Las Vegas, NV",
-      "city": "Las Vegas",
-      "stateProvince": "Nevada",
-      "regionGroup": "Nevada",
-      "priceTags": [],
-      "serviceStyles": [],
-      "dietaryTags": [
-        "Direct confirmation required"
-      ],
-      "accessibilityTags": [],
-      "reservationTags": [],
-      "groupFitTags": [],
-      "checklist": [
-        "Confirm current hours directly",
-        "Confirm reservation release and cancellation terms",
-        "Confirm dietary handling with the kitchen",
-        "Confirm accessibility route and restroom detail",
-        "Verify parking or transit for arrival window",
-        "Check current menu prices"
-      ],
-      "hasPhone": false,
-      "hasOfficialConflict": false,
-      "isFullCaseFile": false,
-      "reviewDueSoon": false,
-      "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "reservation",
         "dietaryDetails",
         "accessibilityState",
         "groupDetails",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 10,
-      "bookingPlatforms": [],
+      "thinFieldCount": 6,
+      "bookingPlatforms": [
+        "Phone"
+      ],
       "cuisineTags": [
         "Japanese",
-        "Omakase"
+        "Omakase",
+        "Italian",
+        "Mediterranean",
+        "Spanish",
+        "Small plates"
       ],
       "officialSource": "https://www.animabyedo.com/",
       "additionalSources": "https://animabyedo.com/menu",
@@ -775,12 +800,18 @@
         "https://www.animabyedo.com/",
         "https://animabyedo.com/menu"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.460Z",
-      "searchText": "anima by edo las vegas nevada las vegas, nv not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. japanese omakase las vegas, nv",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-04T12:50:08.388Z",
+      "searchText": "anima by edo las vegas nevada las vegas, nv mediterranean, italian, spanish, catalan, tapas — named on the restaurant's own pages. japanese omakase italian mediterranean spanish small plates phone las vegas, nv",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
-      "bookingPaths": []
+      "bookingPaths": [
+        "Phone"
+      ]
     },
     {
       "id": 2367,
