@@ -1,0 +1,101 @@
+{
+  "note": "OpenStreetMap was used only to surface candidate names and likely official websites. Every listing below was then fetched and verified against the restaurant's own site by resolveTarget.mjs; persisted restaurant evidence comes from that first-party page. Candidate discovery: © OpenStreetMap contributors, ODbL.",
+  "generatedAt": "2026-09-04T19:27:04.156Z",
+  "provider": "osm",
+  "batches": [
+    {
+      "city": "Los Angeles",
+      "stateCode": "CA",
+      "listings": [
+        {
+          "title": "Daikokuya",
+          "website": "https://group.bishamon-ten.com/daikokuya/littletokyo/",
+          "phone": "+1-213-626-1680",
+          "address": "327 E.1st. St., Los Angeles, CA 90012",
+          "cuisineTags": []
+        },
+        {
+          "title": "Izakaya Gazen",
+          "website": "https://gazen-la.com/",
+          "address": "362 E 1st St, Los Angeles, CA 90012",
+          "cuisineTags": []
+        },
+        {
+          "title": "Chi Dynasty",
+          "website": "https://chidynasty.com/",
+          "phone": "+1-323-667-3388",
+          "address": "1813 Hillhurst Ave, Los Angeles, CA",
+          "cuisineTags": []
+        },
+        {
+          "title": "Sushi Ai",
+          "website": "http://sushiailosfeliz.com/",
+          "phone": "+1-323-664-1891",
+          "address": "323.664.1891 1972 Hillhurst Ave, Los Angeles, CA 90027",
+          "cuisineTags": []
+        },
+        {
+          "title": "Palermo Italian Restaurant",
+          "website": "https://palermorestaurant.net/",
+          "phone": "+1-323-663-1178",
+          "address": "1858 N Vermont Ave, Los Angeles, CA 90027",
+          "cuisineTags": [
+            "Italian",
+            " Pizza",
+            " Pasta"
+          ]
+        },
+        {
+          "title": "Lucy's Drive In",
+          "website": "https://www.lucysdrivein.com/",
+          "phone": "+1-323-938-4337",
+          "address": "1373 S La Brea Ave, Los Angeles, CA 90019",
+          "cuisineTags": []
+        },
+        {
+          "title": "Mr. Ramen",
+          "website": "https://www.mrramendtla.com/",
+          "phone": "+1-213-626-4252",
+          "address": "341 1/2 1st Street, Los Angeles, CA 90012",
+          "cuisineTags": []
+        },
+        {
+          "title": "Guisados",
+          "website": "https://www.guisados.la/",
+          "phone": "+1-323-264-7201",
+          "address": "213.627.7656 WEST HOLLYWOOD 8935 SANTA MONICA BLVD., Los Angeles, CA",
+          "cuisineTags": []
+        },
+        {
+          "title": "The Highland Cafe",
+          "website": "https://thehighlandcafela.com/",
+          "phone": "+1-323-259-1000",
+          "address": "5010 York Blvd, Los Angeles, CA 90042",
+          "cuisineTags": [
+            "Restaurant"
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Chicago",
+      "stateCode": "IL",
+      "listings": [
+        {
+          "title": "Twin Anchors Restaurant & Tavern",
+          "website": "https://www.twinanchorsribs.com/",
+          "phone": "+1-312-266-1616",
+          "address": "1655 N Sedgwick St, Chicago, IL 60614",
+          "cuisineTags": []
+        },
+        {
+          "title": "The Wild Goose Bar & Grill",
+          "website": "https://www.wildgoosebar.com/",
+          "phone": "+1-773-281-7112",
+          "address": "4265 North Lincoln Avenue, Chicago, IL 60618",
+          "cuisineTags": []
+        }
+      ]
+    }
+  ]
+}

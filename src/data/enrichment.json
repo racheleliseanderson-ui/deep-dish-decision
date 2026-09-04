@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T17:27:43.662Z",
+  "generatedAt": "2026-09-04T19:27:29.850Z",
   "records": {
     "canlis": {
       "google": {
@@ -102521,6 +102521,652 @@
           "https://www.wayfaretavern.com/private-events"
         ],
         "retrievedAt": "2026-09-02T22:52:52.180Z",
+        "playwrightPages": 0
+      }
+    },
+    "daikokuya-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:04.781Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/daikokuya-anex-321-1-4-1st-street",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "meta description: Bishamon Group currently operates 15 individual establishments throughout the Los Angeles area, as well as overseas. We provide Japanese food and also sell our Japanese sake and restaurant goods in our online store.",
+            "sourceUrl": "https://group.bishamon-ten.com/daikokuya/littletokyo/"
+          },
+          {
+            "quote": "title: Restaurant page：Daikokuya-LITTLE TOKYO | Bishamon Group Restaurants",
+            "sourceUrl": "https://group.bishamon-ten.com/daikokuya/littletokyo/"
+          },
+          {
+            "quote": "title: Bishamon Group | Bishamon Group Restaurants",
+            "sourceUrl": "https://group.bishamon-ten.com/about-bishamon-group/"
+          },
+          {
+            "quote": "title: Events at Bishamon Group Restaurants | Bishamon Group Restaurants",
+            "sourceUrl": "https://group.bishamon-ten.com/events-at-bishamon/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://group.bishamon-ten.com/daikokuya/littletokyo/",
+          "https://group.bishamon-ten.com/about-bishamon-group/",
+          "https://group.bishamon-ten.com/events-at-bishamon/"
+        ],
+        "retrievedAt": "2026-09-04T19:27:04.781Z",
+        "playwrightPages": 0
+      }
+    },
+    "izakaya-gazen-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:07.716Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 94
+      },
+      "site": {
+        "menuUrl": "https://gazen-la.com/menu/drinks",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Izakaya GAZEN L.A. | Gazen is a izakaya dining that is loved by the locals and japanese residents.",
+            "sourceUrl": "https://gazen-la.com/"
+          },
+          {
+            "quote": "title: Drinks | Izakaya GAZEN L.A.",
+            "sourceUrl": "https://gazen-la.com/menu/drinks"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://gazen-la.com/",
+          "https://gazen-la.com/menu/drinks"
+        ],
+        "retrievedAt": "2026-09-04T19:27:07.716Z",
+        "playwrightPages": 0
+      }
+    },
+    "chi-dynasty-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:10.180Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "https://order.toasttab.com/online/chi-dynasty-1813-hillhurst-ave",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://chidynasty.com/"
+        ],
+        "retrievedAt": "2026-09-04T19:27:10.180Z",
+        "playwrightPages": 0
+      }
+    },
+    "sushi-ai-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:11.814Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "http://sushiailosfeliz.com/menu.html",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Sushi Ai - Los Feliz, Japanese Cuisine",
+            "sourceUrl": "http://sushiailosfeliz.com/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "http://sushiailosfeliz.com/",
+          "http://sushiailosfeliz.com/about.html",
+          "http://sushiailosfeliz.com/menu.html"
+        ],
+        "retrievedAt": "2026-09-04T19:27:11.814Z",
+        "playwrightPages": 0
+      }
+    },
+    "palermo-italian-restaurant-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:13.789Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://palermorestaurant.net/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +3236631178"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [
+          "JSON-LD priceRange: 0"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Italian, Pizza, Pasta, Salads"
+        ],
+        "dietaryLanguage": [
+          "Home Menu Contact Order Online Home Menu Order Online Contact The world famous Palermo Italian Restaurant Order Online Direct Amazing Pasta Gluten free options as well!",
+          "We have a gluten free options for a large portion of our menu!",
+          "World famous Pizza Gluten free options!",
+          "$7.85 Click to enlarge Choose Your Pasta Spaghetti, Linguine, Penne, Roteli, Angel Hair or Rigatoni Whole Wheat & Gluten free options as well!"
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +3236631178",
+            "sourceUrl": "https://palermorestaurant.net/"
+          },
+          {
+            "quote": "JSON-LD priceRange: 0",
+            "sourceUrl": "https://palermorestaurant.net/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Italian, Pizza, Pasta, Salads",
+            "sourceUrl": "https://palermorestaurant.net/"
+          },
+          {
+            "quote": "og:description: Official website & Menu for Palermo Ristorante Italiano Los Angeles. Order Italian Online DIRECTLY for take-out or delivery! Palermo Italian Restaurant",
+            "sourceUrl": "https://palermorestaurant.net/"
+          },
+          {
+            "quote": "title: Official Site, Menu and Online Ordering • Palermo Ristorante Italiano Los Angeles",
+            "sourceUrl": "https://palermorestaurant.net/"
+          },
+          {
+            "quote": "og:description: Palermo Ristorante Italiano Food Menu Featuring Italian, Pizza, Pasta, Salads and more.",
+            "sourceUrl": "https://palermorestaurant.net/menu"
+          },
+          {
+            "quote": "title: Palermo Ristorante Italiano - Menu • Palermo Ristorante Italiano Los Angeles",
+            "sourceUrl": "https://palermorestaurant.net/menu"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://palermorestaurant.net/",
+          "https://palermorestaurant.net/menu"
+        ],
+        "retrievedAt": "2026-09-04T19:27:13.789Z",
+        "playwrightPages": 0
+      }
+    },
+    "lucy-s-drive-in-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:15.725Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.lucysdrivein.com/menu-2/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "title: Lucy's Drive In – Burgers & More 24/7",
+            "sourceUrl": "https://www.lucysdrivein.com/"
+          },
+          {
+            "quote": "noscript: .wpb_animate_when_almost_visible { opacity: 1; }",
+            "sourceUrl": "https://www.lucysdrivein.com/"
+          },
+          {
+            "quote": "title: Contact – Lucy's Drive In",
+            "sourceUrl": "https://www.lucysdrivein.com/contact/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.lucysdrivein.com/",
+          "https://www.lucysdrivein.com/menu-2/",
+          "https://www.lucysdrivein.com/contact/"
+        ],
+        "retrievedAt": "2026-09-04T19:27:15.725Z",
+        "playwrightPages": 0
+      }
+    },
+    "mr-ramen-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:19.153Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 2136264252"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 12:00 23:00",
+          "JSON-LD openingHoursSpecification: Tuesday 17:00 23:00",
+          "JSON-LD openingHoursSpecification: Thursday 17:00 23:00",
+          "JSON-LD openingHoursSpecification: Friday 12:00 23:00",
+          "JSON-LD openingHoursSpecification: Saturday 12:00 23:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "View Here View Here View Vegetarian Menu View Alcohol Menu View Main Menu Mr."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 2136264252",
+            "sourceUrl": "https://www.mrramendtla.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 12:00 23:00",
+            "sourceUrl": "https://www.mrramendtla.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 17:00 23:00",
+            "sourceUrl": "https://www.mrramendtla.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 17:00 23:00",
+            "sourceUrl": "https://www.mrramendtla.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 12:00 23:00",
+            "sourceUrl": "https://www.mrramendtla.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 12:00 23:00",
+            "sourceUrl": "https://www.mrramendtla.com/"
+          },
+          {
+            "quote": "og:description: We are going OUT OF MR RAMEN! Join us for our first ever off-site event experience at Sake in the Park. More info here >> https://www.ltsc.org/sake2024/",
+            "sourceUrl": "https://www.mrramendtla.com/event-details-registration/mr-ramen-at-sake-in-the-park"
+          },
+          {
+            "quote": "title: Mr. Ramen at Sake in the Park | Mr Ramen",
+            "sourceUrl": "https://www.mrramendtla.com/event-details-registration/mr-ramen-at-sake-in-the-park"
+          }
+        ],
+        "pagesRead": 2,
+        "sourceUrls": [
+          "https://www.mrramendtla.com/",
+          "https://www.mrramendtla.com/event-details-registration/mr-ramen-at-sake-in-the-park"
+        ],
+        "retrievedAt": "2026-09-04T19:27:19.153Z",
+        "playwrightPages": 0
+      }
+    },
+    "guisados-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:20.882Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.guisados.la/menu",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "TACOS ARE GLUTEN FREE EXCEPT: BREAKFAST BURRITO, CHILE RELLENO, CAMARONES AND VEGAN PEPPERS Order online CLICK HERE FOR Breakfast Menu STEAK View fullsize Bistek en Salsa Roja Flank steak simmered with red bell peppers and tomatoes.",
+          "$4.50 VEGETARIAN / VEGAN View fullsize Calabacitas Squash, tomatoes, bell peppers, corn and onions.",
+          "$4.50 Vegan Medley Sautéed squash, tomato, corn, onions, bell peppers & mushrooms.",
+          "$4.50 Vegan Peppers Green and red bell peppers grilled fajita-style in salsa Huichol (marinade contains soy)."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "og:description: Born and Braised in Boyle Heights; Guisados features an authentic menu of homestyle Mexican braises on fresh handmade corn tortillas. Continuing a tradition of serving the best tacos in Los Angeles since 2010.",
+            "sourceUrl": "https://www.guisados.la/"
+          },
+          {
+            "quote": "title: Our Menu &mdash; Guisados",
+            "sourceUrl": "https://www.guisados.la/menu"
+          },
+          {
+            "quote": "title: Born & Braised &mdash; Guisados",
+            "sourceUrl": "https://www.guisados.la/about"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.guisados.la/",
+          "https://www.guisados.la/menu",
+          "https://www.guisados.la/about"
+        ],
+        "retrievedAt": "2026-09-04T19:27:20.882Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-highland-cafe-los-angeles": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:23.286Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://thehighlandcafela.com/food-menu",
+        "reservationUrl": "https://thehighlandcafela.com/reserve?source=pop_up&spot_id=19264&destination=reservations&promotion=reservations",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 3232591000"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Restaurant"
+        ],
+        "dietaryLanguage": [
+          "Skip Photo Gallery Reviews Start stop reviews carousel Review by - Google five star review by Ashlee B: Best little coffee shop with late hours, gluten free bagels, and incredible coffee.",
+          "The California Bagel $15.50 Toasted everything bagel, vegan cream cheese, sunflower seeds, avocado, cucumber, tomato, and alfalfa sprouts.",
+          "Tacos, Tostados & Bowls All tacos, bowls & tostados are naturally gluten-free."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: 3232591000",
+            "sourceUrl": "https://thehighlandcafela.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Restaurant",
+            "sourceUrl": "https://thehighlandcafela.com/"
+          },
+          {
+            "quote": "og:description: Welcome to The Highland Cafe, a local favorite for breakfast and brunch in Los Angeles, serving fresh comfort food, specialty coffee, and classic cafe dishes made with quality ingredients. O...",
+            "sourceUrl": "https://thehighlandcafela.com/"
+          },
+          {
+            "quote": "meta description: Welcome to The Highland Cafe, a local favorite for breakfast and brunch in Los Angeles, serving fresh comfort food, specialty coffee, and classic cafe dishes made with quality ingredients. Our cozy cafe is known for flavorful morning favorite",
+            "sourceUrl": "https://thehighlandcafela.com/"
+          },
+          {
+            "quote": "title: The Highland Cafe - Los Angeles, CA",
+            "sourceUrl": "https://thehighlandcafela.com/"
+          },
+          {
+            "quote": "title: The Highland Cafe - Reserve",
+            "sourceUrl": "https://thehighlandcafela.com/reserve"
+          },
+          {
+            "quote": "title: The Highland Cafe - Food Menu",
+            "sourceUrl": "https://thehighlandcafela.com/food-menu"
+          },
+          {
+            "quote": "title: The Highland Cafe - Events",
+            "sourceUrl": "https://thehighlandcafela.com/events"
+          }
+        ],
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://thehighlandcafela.com/",
+          "https://thehighlandcafela.com/reserve",
+          "https://thehighlandcafela.com/food-menu",
+          "https://thehighlandcafela.com/events"
+        ],
+        "retrievedAt": "2026-09-04T19:27:23.286Z",
+        "playwrightPages": 0
+      }
+    },
+    "twin-anchors-restaurant-tavern-chicago": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:26.414Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.twinanchorsribs.com/menu/",
+        "reservationUrl": "",
+        "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (312) 266-1616"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday 22:00 00:00",
+          "JSON-LD openingHoursSpecification: Tuesday 22:00 00:00",
+          "JSON-LD openingHoursSpecification: Wednesday 22:00 00:00",
+          "JSON-LD openingHoursSpecification: Thursday 22:00 00:00",
+          "JSON-LD openingHoursSpecification: Friday 22:00 00:00",
+          "JSON-LD openingHoursSpecification: Saturday 22:00 00:00",
+          "JSON-LD openingHoursSpecification: Sunday 22:00 00:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Appetizers & Sides Salads Sandwiches Entrées Kids Menu Desserts Drinks Sauces Appetizers & Sides The Gluten free icon indicates if there is a gluten free option for the menu item.",
+          "Salmon Fillet/Tuna Steak Zesty “Soy”natra Sandwich Vegetarian sloppy Joe made with Impossible™ “burger meat”, chopped green peppers, onions and tomatoes, simmered in Zesty or Prohibition sauce.",
+          "Disclaimer language for posted Gluten-Free Information : Please Know that we practice caution and proper procedure when preparing gluten-free items, however gluten is present in all of our kitchens."
+        ],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (312) 266-1616",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday 22:00 00:00",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Tuesday 22:00 00:00",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Wednesday 22:00 00:00",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Thursday 22:00 00:00",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 22:00 00:00",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday 22:00 00:00",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Sunday 22:00 00:00",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "og:description: Located in an historic Old Town building that dates back to 1881, Twin Anchors Restaurant & Tavern is one of the oldest restaurants in the city of Chicago.",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "title: Twin Anchors Restaurant & Tavern - Chicago",
+            "sourceUrl": "https://www.twinanchorsribs.com/"
+          },
+          {
+            "quote": "og:description: View Our Menu Enjoyed by generations of our customers! Appetizers & Sides *The Gluten free icon indicates if there is a gluten free option for the menu item. *Zesty Sauce - Our most popular since its introduction in 1981. Tangy tomato based sau",
+            "sourceUrl": "https://www.twinanchorsribs.com/menu/"
+          },
+          {
+            "quote": "title: Menu - Twin Anchors Restaurant & Tavern",
+            "sourceUrl": "https://www.twinanchorsribs.com/menu/"
+          },
+          {
+            "quote": "og:description: Twin Anchors Restaurant® is conveniently located in Chicago's Old Town neighborhood at 1655 North Sedgwick Street. Telephone: +1 (312) 266-1616Fax: +1 (312) 943-3528 Our dining, carryout and delivery hours currently are:Monday - Friday: 4:30-10",
+            "sourceUrl": "https://www.twinanchorsribs.com/contact-us/"
+          },
+          {
+            "quote": "title: Contact Us - Twin Anchors Restaurant & Tavern",
+            "sourceUrl": "https://www.twinanchorsribs.com/contact-us/"
+          }
+        ],
+        "pagesRead": 3,
+        "sourceUrls": [
+          "https://www.twinanchorsribs.com/",
+          "https://www.twinanchorsribs.com/menu/",
+          "https://www.twinanchorsribs.com/contact-us/"
+        ],
+        "retrievedAt": "2026-09-04T19:27:26.414Z",
+        "playwrightPages": 0
+      }
+    },
+    "the-wild-goose-bar-grill-chicago": {
+      "meta": {
+        "matchStatus": "resolved",
+        "confidence": null,
+        "nameScore": null,
+        "lastEnrichedAt": "2026-09-04T19:27:28.708Z",
+        "enrichmentMode": "owned-site",
+        "completeness": 100
+      },
+      "site": {
+        "menuUrl": "https://www.ubereats.com/chicago/food-delivery/wild-goose-bar-%26-grill/f6ZLZUxFT7uoemd7y23XtQ",
+        "reservationUrl": "https://order.toasttab.com/online/wildgoose",
+        "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: + 773.281.7112"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [],
+        "accessibilityLanguage": [],
+        "groupPolicy": "",
+        "groupPolicyLanguage": [],
+        "dressCode": "",
+        "cancellationLanguage": [],
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: + 773.281.7112",
+            "sourceUrl": "https://www.wildgoosebar.com/"
+          },
+          {
+            "quote": "og:description: Wild Goose is the best Craft Beer Sports Bar in Chicago, serving award winning Wings and Home Crafted Food",
+            "sourceUrl": "https://www.wildgoosebar.com/"
+          },
+          {
+            "quote": "title: Sports Bar | Wild Goose | Chicago",
+            "sourceUrl": "https://www.wildgoosebar.com/"
+          }
+        ],
+        "pagesRead": 1,
+        "sourceUrls": [
+          "https://www.wildgoosebar.com/"
+        ],
+        "retrievedAt": "2026-09-04T19:27:28.708Z",
         "playwrightPages": 0
       }
     }

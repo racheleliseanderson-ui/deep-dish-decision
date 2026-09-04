@@ -1,0 +1,851 @@
+{
+  "generatedAt": "2026-09-04T19:27:04.156Z",
+  "provider": "osm",
+  "discoveryQueries": 2,
+  "attempted": 110,
+  "resolved": 11,
+  "duplicates": 3,
+  "attribution": "Candidate discovery: © OpenStreetMap contributors, ODbL.",
+  "markets": [
+    {
+      "city": "Los Angeles",
+      "stateCode": "CA",
+      "verified": 9
+    },
+    {
+      "city": "Chicago",
+      "stateCode": "IL",
+      "verified": 2
+    }
+  ],
+  "misses": [
+    {
+      "market": "Los Angeles, CA",
+      "name": "Cafe Etc.",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.caffeetc.com/ -> 530"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Bossa Nova",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.bossanovafood.com -> 200"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Pizza Hut",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://locations.pizzahut.com/ca/sunland/8337-foothill-blvd -> 404"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Tequila Jack's",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://tequilajacks.com/ -> 200",
+        "https://tequilajacks.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Margo's",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.margossantamonica.com/ -> fetch failed:ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Art's Table",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.artstablesm.com/ -> fetch failed:ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Cole's P.E. Buffet",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.colesfrenchdip.com/ -> 404"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Bottega Louie",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://bottegalouie.com/dtla -> 403"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Wokcano",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.wokcanorestaurant.com/ -> 200",
+        "https://wokcanorestaurant.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Bistro de la Gare",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.bistrodelagare.com/ -> 200",
+        "https://www.bistrodelagare.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Taqueria El Tapatio",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://taqeltap.com/ -> 200",
+        "https://taqeltap.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Purgatory Pizza",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.eatpurgatorypizza.com/ -> 200",
+        "https://www.eatpurgatorypizza.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Mike and Anne's",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.mikeandannes.net/ -> 200",
+        "https://www.mikeandannes.net/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Charlie's Trio",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://charliestrio.com/ -> 200",
+        "https://charliestrio.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Musso & Frank",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://mussoandfrank.com -> 200",
+        "https://mussoandfrank.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "California Pizza Kitchen",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.cpk.com/locations/california-pizza-kitchen-westwood -> fetch failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Messhall Kitchen",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.messhallkitchen.com/ -> 200",
+        "https://messhallkitchen.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Encanto",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.encantola.com/contact -> 200",
+        "https://www.encantola.com/contact rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Pattaya Bai Thai Restaurant",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.pattayabaythai.com/ -> 500"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Simply Thai",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://simplythailosfeliz.net/ -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Alcove Cafe & Bakery",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.alcovecafe.com/ -> 200",
+        "https://www.alcovecafe.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Louvre Banquet Hall",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.louvrehall.com/ -> fetch failed:UND_ERR_SOCKET"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Fred 62",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://fred62.com/ -> 200",
+        "https://fred62.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Figaro Bistrot",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.figarobistrot.com/ -> 200",
+        "https://cipit88epic.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Desert Rose",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://desertrosemenu.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Trattoria Farfalla",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://trattoriafarfalla.com/ -> 408"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "The Dresden Restaurant & Lounge",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.thedresden.com/ -> 200",
+        "https://www.thedresden.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Green Leaves Vegan",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://glvegan.com/ -> 200",
+        "https://glvegan.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "House of Pies",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://houseofpiesla.com/ -> 200",
+        "https://houseofpiesla.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Shanghai Rose",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://shanghairosedimsum.com/ -> 200",
+        "https://shanghairosedimsum.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "La Dolce Vita",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.LaDolceVitaBeverlyHills.com/ -> 200",
+        "https://www.ladolcevitabeverlyhills.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Roxbury Cafe",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.roxburycafe.com/ -> fetch failed:ECONNRESET"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Roni's",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.ieatatronis.com/ -> 200",
+        "https://www.ieatatronis.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Prado's",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.greatwhite.cafe/ -> 200",
+        "https://www.greatwhite.cafe/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Sinful Pizza",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.sinfulpizza.com/ -> 200",
+        "https://www.sinfulpizza.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Wurstküche",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.wurstkuche.com/ -> 200",
+        "https://www.wurstkuche.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Kitchen 24",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.kitchen24.info/ -> 403"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Pinball Pizza",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://pinballpizza.net/ -> 200",
+        "https://pinballpizza.net/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Chili Johns",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.chilijohnsla.com/ -> 200",
+        "https://www.chilijohnsla.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Govinda's Buffet",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.iskconla.com/govindas-buffet/ -> 530"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Rakkan Ramen",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://rakkanramen.com/locations/dtla/ -> 200",
+        "https://rakkanramen.com/locations/dtla/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Far Bar",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.farbarla.com/ -> 200",
+        "https://www.farbarla.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Korean BBQ House",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.koreabbqhouse.com/ -> 200",
+        "https://www.koreabbqhouse.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "JinCook",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.jincooks.com -> 200",
+        "https://www.jincooks.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Zen Buffet",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://zenbuffetwh.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Morton's The Steakhouse",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.mortons.com/location/mortons-the-steakhouse-woodland-hills-ca/ -> 200",
+        "https://www.mortons.com/location/mortons-the-steakhouse-woodland-hills-ca/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Sugarfish",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://sugarfishsushi.com/ -> 200",
+        "https://sugarfishsushi.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "IHOP",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://restaurants.ihop.com/en-us/ca/los-angeles/breakfast-800-s-flower-st-797 -> 200",
+        "https://restaurants.ihop.com/en-us/ca/los-angeles/breakfast-800-s-flower-st-797 rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Roy's Hawaiian Fusion",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.roysrestaurant.com/ -> 200",
+        "https://www.roysrestaurant.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Panini Cafe Downtown",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://mypaninicafe.com -> 522"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Community",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://communitylosfeliz.com -> 200",
+        "https://www.airkayaks.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Yen Sushi & Sake Bar",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.yenrestaurants.com/ -> 200",
+        "http://depot69main.vip/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Bistro Miyoda & Sushi Ichiriki",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.miyodaredondobeach.com -> 200",
+        "https://www.miyodarestaurant.com/?utm_source=redirect&utm_medium=miyodaredondobeach.com rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "esme",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.esme-la.com/ -> 200",
+        "https://www.esme-la.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Denny's",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://locations.dennys.com/CA/LOS-ANGELES/202125 -> 200",
+        "https://locations.dennys.com/ca/los-angeles/202125 rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Tokyo Wako Long Beach",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.tokyo-wako.com/ -> 200",
+        "https://www.tokyo-wako.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Mama Terano",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://mamaterano.com -> 200"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Pizza Hut",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://locations.pizzahut.com/ca/panorama-city/14500-nordhoff-st -> 200",
+        "https://locations.pizzahut.com/ca/panorama-city/14500-nordhoff-st rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Urth Caffé",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.urthcaffe.com/ -> 403"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "California Pizza Kitchen",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://order.cpk.com/menu/california-pizza-kitchen-beverly-hills/ -> 200"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Pizza Hut",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://locations.pizzahut.com/ca/north-hills/15650-nordhoff-st -> 200",
+        "https://locations.pizzahut.com/ca/north-hills/15650-nordhoff-st rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Sharky's",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.sharkys.com/en-us/locations/ca/burkbank/1791-north-victory-place/ -> 404"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Ugo",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.cafeugo.com/ -> 200",
+        "https://www.cafeugo.com/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Home Restaurant",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.homerestaurantla.com/los-feliz -> 403"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Carousel Restaurant",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.carouselrestaurant.com/ -> 200"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Buggy Whip",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.buggywhipsteakhouse.com/ -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "El Tepeyac (Manuel's)",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.manuelseltepeyac.com/ -> 200",
+        "https://manuelseltepeyac.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Chandni",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://chandnivegrestaurant.com/ -> 200",
+        "https://foodnearme.restaurant/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Bäco Mercat",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.bacomercat.com -> 404"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Tempo Cantina",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://tempocantina.com/ -> fetch failed:ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Saint Felix Hollywood",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.saintfelix.net/ -> 200",
+        "https://hollywood.saintfelix.net/ rejected: no Los Angeles address on page"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Beso Hollywood",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://besohollywood.com/ -> 200"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Cinespace",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.cinespace.info/Welcome.html -> 404"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Katsuya Hollywood",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.katsuyarestaurant.com/hollywood/ -> 200",
+        "https://www.katsuyarestaurant.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Dos Burritos",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.dosburritosla.com -> 408"
+      ]
+    },
+    {
+      "market": "Los Angeles, CA",
+      "name": "Elena's Greek-Armenian Cuisine",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.elenasgreek.com/ -> 403"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Pizano's Pizza & Pasta",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.pizanoschicago.com/locations/chicago-loop/ -> 200",
+        "https://www.pizanoschicago.com/locations/chicago-loop/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "La Amistad",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.laamistadchicago.com/ -> 200",
+        "https://www.laamistadchicago.com/ rejected: no Chicago address on page"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "The Berghoff Restaurant",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.theberghoff.com/ -> 200",
+        "https://www.theberghoff.com/ rejected: no Chicago address on page"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Wake n Bacon",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://eatwakenbacon.com/ -> 403"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Tapia's Pizza",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.tapiaspizza.com/ -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Centre Street Kitchen",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.centrestreetchicago.com/ -> fetch failed:ECONNRESET"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Old Pueblo Cantina",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://oldpueblochicago.com/ -> 200",
+        "https://oldpueblochicago.com/ rejected: no Chicago address on page"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Lincoln Park Corner Kitchen",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.lpcornerkitchen.com/ -> 403"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Sushi Rotary",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://state-chicago.com/ -> fetch failed:ECONNRESET"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Ghareeb Nawaz",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://ghareebnawazonline.com/ -> 200",
+        "https://www.ghareebnawazonline.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Ann Sather",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://annsather.com/ -> 200",
+        "http://annsather.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "San Soo Gab San",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://sansoogabsan.com/ -> 200",
+        "https://sansoogabsan.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Tre Kronor",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.trekronorrestaurant.com/ -> 404"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Jake Melnick's Corner Tap",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.jakemelnicks.com/ -> 200",
+        "https://www.jakemelnicks.com/ rejected: no Chicago address on page"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Angelina's Italian Restaurant",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.angelinaristorante.com/ -> 200",
+        "https://www.angelinaristorante.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Taqueria La Penca",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.taquerialapenca.com/ -> 200",
+        "https://www.taquerialapenca.com/ rejected: no Chicago address on page"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Jalisco Express",
+      "reason": "official-site validation failed",
+      "tried": [
+        "http://www.jaliscoexpressrestaurantofoaklawn.com/ -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Bayan Ko Diner",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.bayankodiner.com/ -> 403"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "Chicago's Pizza",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.chicagos-pizza.com/ -> 403"
+      ]
+    },
+    {
+      "market": "Chicago, IL",
+      "name": "The Bad Apple",
+      "reason": "official-site validation failed",
+      "tried": [
+        "https://www.badapplebar.com/ -> 403"
+      ]
+    },
+    {
+      "market": "Dallas, TX",
+      "reason": "Overpass 429 for Dallas, TX",
+      "stage": "discovery"
+    }
+  ]
+}

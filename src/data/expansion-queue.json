@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T15:02:33.770Z",
+  "generatedAt": "2026-09-04T19:27:30.504Z",
   "settings": {
     "paused": false,
     "restaurantsPerRun": 20,
@@ -32,8 +32,8 @@
   ],
   "summary": {
     "targetMarkets": 124,
-    "underFloor": 123,
-    "totalGap": 2743
+    "underFloor": 121,
+    "totalGap": 2732
   },
   "cities": [
     {
@@ -58,14 +58,14 @@
       "population": 12799100,
       "priority": 2,
       "tier": "top-50-metro",
-      "status": "pending",
-      "densityStatus": "under-floor",
+      "status": "done",
+      "densityStatus": "at-floor",
       "targetCount": 60,
-      "currentCount": 51,
-      "gap": 9,
+      "currentCount": 60,
+      "gap": 0,
       "pinned": false,
-      "inserted": 59,
-      "lastRunAt": "2026-09-02T21:11:13.370Z",
+      "inserted": 68,
+      "lastRunAt": "2026-09-04T19:27:04.339Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
@@ -74,14 +74,14 @@
       "population": 9262825,
       "priority": 3,
       "tier": "top-50-metro",
-      "status": "pending",
-      "densityStatus": "under-floor",
+      "status": "done",
+      "densityStatus": "at-floor",
       "targetCount": 60,
-      "currentCount": 58,
-      "gap": 2,
+      "currentCount": 60,
+      "gap": 0,
       "pinned": false,
-      "inserted": 60,
-      "lastRunAt": "2026-09-02T21:11:13.370Z",
+      "inserted": 62,
+      "lastRunAt": "2026-09-04T19:27:04.339Z",
       "note": "Seeded via public listing seed file (Places key unavailable)."
     },
     {
