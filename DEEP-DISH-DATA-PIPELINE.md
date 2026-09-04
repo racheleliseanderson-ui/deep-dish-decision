@@ -6,7 +6,7 @@ The three batch files have separate jobs. Do not use one giant loop for discover
 
 Use this when you want geographic growth. It rebuilds the density queue, chooses under-covered markets, uses Google Places Text Search only to surface candidate names/websites, verifies each candidate on the restaurant's own site, deduplicates against the corpus, then enriches only the restaurants that were actually inserted.
 
-Requirement: put `GOOGLE_MAPS_API_KEY=...` in `.env.local` in the repository root. `.env.local` is gitignored.
+Requirement: copy `.env.example` to `.env.local.pipeline` and set `GOOGLE_MAPS_API_KEY=...` there. The expansion BAT also accepts `.env.local`. Both are gitignored.
 
 Defaults: 3 cities per run, up to 20 accepted restaurants per city. Failed candidates are stored in `src/data/discovery-ledger.json` and cooled down instead of being retried every run.
 
