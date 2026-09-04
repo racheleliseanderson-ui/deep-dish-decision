@@ -1,12 +1,25 @@
 # Deep Dish local data pipeline
 
-The three batch files now have separate jobs. Do not use one giant loop for all three concerns.
+The three batch files have separate jobs. Do not use one giant loop for discovery, refresh, and curated intake.
 
 ## RUNEXPANSION.bat — genuinely new restaurants
 
-Use this when you want geographic growth. It rebuilds the density queue, chooses under-covered markets, uses Google Places Text Search only to surface candidate names/websites, verifies each candidate on the restaurant's own site, deduplicates against the corpus, then enriches only the restaurants that were actually inserted.
+Use this when you want geographic growth. It rebuilds the density queue, chooses under-covered markets, surfaces candidate restaurants, verifies each candidate on the restaurant's own site, deduplicates against the corpus, then enriches only the restaurants that were actually inserted.
 
-Requirements: put `GOOGLE_MAPS_API_KEY=...` in `.env.local` in the repository root. `.env.local` should remain gitignored.
+**No Google API key is required.** The default provider is OpenStreetMap:
+
+- Nominatim resolves only the selected city/state to a bounding box. City lookups are cached in `src/data/discovery-geo-cache.json` and uncached requests are spaced at least 15 seconds apart.
+- Overpass surfaces `amenity=restaurant` candidates and their website tags. Queries are serial and intentionally small.
+- OpenStreetMap is candidate discovery only. A restaurant is not admitted unless `resolveTarget()` fetches and verifies the restaurant's own first-party website.
+- Candidate discovery is attributed to © OpenStreetMap contributors, ODbL, in generated discovery artifacts.
+
+Google Places is retained as an optional provider for users who already have a key. To use it explicitly:
+
+```bash
+node scripts/pipeline/discover.mjs --provider=google --cities=3 --limit=20
+```
+
+Only that optional mode requires `GOOGLE_MAPS_API_KEY`. The normal `RUNEXPANSION.bat` does not.
 
 Defaults: 3 cities per run, up to 20 accepted restaurants per city. Failed candidates are stored in `src/data/discovery-ledger.json` and cooled down instead of being retried every run.
 
@@ -31,7 +44,9 @@ Use this only after deliberately adding restaurant names to `scripts/data/seed-t
 
 ## Why finalize.mjs exists
 
-Changes to `dataset.json` and `enrichment.json` are not enough. `finalize.mjs` first runs `level-records.mjs`, which promotes first-party website evidence into the standard case-file fields and writes an explicit honest “not published” floor where a criterion was actually checked but not stated. It then rebuilds the geographic queue, refresh queue, coverage/report data, live-region data, split enrichment files, slug index, atlas aggregates, and sitemaps before running corpus invariants.
+Changes to `dataset.json` and `enrichment.json` are not enough. `finalize.mjs` first runs `level-records.mjs`, which promotes first-party website evidence into the standard case-file fields and writes an explicit honest “not published” floor where a criterion was actually checked but not stated.
+
+It then rebuilds the geographic queue, refresh queue, coverage/report data, live-region data, split enrichment files, slug index, atlas aggregates, and sitemaps before running corpus invariants.
 
 ## Recommended operating rhythm
 
