@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T14:28:19.694Z",
+  "generatedAt": "2026-09-04T14:54:59.871Z",
   "attempted": 132,
   "resolved": 0,
   "missed": 137,
@@ -20,8 +20,8 @@
       "name": "Vinai",
       "reason": "unresolved",
       "tried": [
-        "https://www.vinai.com -> fetch failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE",
-        "https://vinai.com -> fetch failed:CERT_HAS_EXPIRED"
+        "https://www.vinai.com -> fetch failed:CERT_HAS_EXPIRED",
+        "https://vinai.com -> fetch failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE"
       ]
     },
     {
@@ -142,7 +142,7 @@
       "reason": "unresolved",
       "tried": [
         "https://www.juche.com -> 408",
-        "https://juche.com -> fetch failed:ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+        "https://juche.com -> 408"
       ]
     },
     {
@@ -193,8 +193,7 @@
         "https://www.clanceysmeats.com/ rejected: no Minneapolis address on page",
         "https://www.clanceys.com -> 200",
         "https://www.hugedomains.com/domain_profile.cfm?d=clanceys.com rejected: aggregator",
-        "https://clanceys.com -> 200",
-        "https://www.hugedomains.com/domain_profile.cfm?d=clanceys.com rejected: aggregator"
+        "https://clanceys.com -> fetch failed:ECONNRESET"
       ]
     },
     {
@@ -638,7 +637,8 @@
       "name": "Nepantla",
       "reason": "unresolved",
       "tried": [
-        "https://www.nepantla.com -> fetch failed:ECONNRESET",
+        "https://www.nepantla.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=nepantla.com rejected: aggregator",
         "https://nepantla.com -> 200",
         "https://www.hugedomains.com/domain_profile.cfm?d=nepantla.com rejected: aggregator"
       ]
@@ -803,8 +803,7 @@
       "tried": [
         "https://www.callesol.com -> 200",
         "https://www.hugedomains.com/domain_profile.cfm?d=callesol.com rejected: aggregator",
-        "https://callesol.com -> 200",
-        "https://www.hugedomains.com/domain_profile.cfm?d=callesol.com rejected: aggregator",
+        "https://callesol.com -> fetch failed:ECONNRESET",
         "https://www.calle.com -> 200",
         "https://calle.com/ rejected: does not name target",
         "https://calle.com -> 200",
@@ -862,10 +861,8 @@
       "name": "Lang Van",
       "reason": "unresolved",
       "tried": [
-        "https://www.langvan.com -> 200",
-        "https://www.langvan.com/ rejected: not a restaurant page",
-        "https://langvan.com -> 200",
-        "https://www.langvan.com/ rejected: not a restaurant page",
+        "https://www.langvan.com -> fetch failed",
+        "https://langvan.com -> fetch failed",
         "https://www.lang.com -> 200",
         "https://www.calendars.com/home-lang?t=lang rejected: does not name target",
         "https://lang.com -> 200",
@@ -926,7 +923,8 @@
         "https://beefnbottle.com/ rejected: not a restaurant page",
         "https://www.beefbottle.com -> fetch failed:ENOTFOUND",
         "https://beefbottle.com -> fetch failed:ENOTFOUND",
-        "https://www.beefn.com -> fetch failed:ECONNRESET",
+        "https://www.beefn.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=beefn.com rejected: aggregator",
         "https://beefn.com -> 200",
         "https://www.hugedomains.com/domain_profile.cfm?d=beefn.com rejected: aggregator",
         "https://www.beef.com -> 200",
@@ -971,8 +969,8 @@
       "name": "Tonino",
       "reason": "unresolved",
       "tried": [
-        "https://www.tonino.com -> fetch failed:ENOTFOUND",
-        "https://tonino.com -> fetch failed:ENOTFOUND"
+        "https://www.tonino.com -> fetch failed:EAI_AGAIN",
+        "https://tonino.com -> fetch failed:EAI_AGAIN"
       ]
     },
     {
@@ -1000,7 +998,7 @@
       "tried": [
         "https://www.yunnankitchen.com -> 403",
         "https://yunnankitchen.com -> 403",
-        "https://www.yunnan.com -> fetch failed:ENOTFOUND",
+        "https://www.yunnan.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID",
         "https://yunnan.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
       ]
     },
@@ -1018,7 +1016,8 @@
       "name": "Taiwan Cafe",
       "reason": "unresolved",
       "tried": [
-        "https://www.taiwancafe.com -> fetch failed:ECONNRESET",
+        "https://www.taiwancafe.com -> 200",
+        "https://www.taiwancafe.com/ rejected: parked",
         "https://taiwancafe.com -> 200",
         "https://taiwancafe.com/ rejected: parked",
         "https://www.taiwan.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
@@ -1151,8 +1150,7 @@
         "https://www.beastcleaver.com -> 200",
         "https://www.beastcleaver.com/ rejected: does not name target",
         "https://beastcleaver.com -> fetch failed:ENOTFOUND",
-        "https://www.beastand.com -> 200",
-        "https://www.hugedomains.com/domain_profile.cfm?d=beastand.com rejected: aggregator",
+        "https://www.beastand.com -> fetch failed:ECONNRESET",
         "https://beastand.com -> 200",
         "https://www.hugedomains.com/domain_profile.cfm?d=beastand.com rejected: aggregator",
         "https://www.beast.com -> fetch failed:ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE",
@@ -1297,10 +1295,8 @@
         "https://southernsteakandoyster.com -> fetch failed:ENOTFOUND",
         "https://www.southernsteakoyster.com -> fetch failed:ENOTFOUND",
         "https://southernsteakoyster.com -> fetch failed:ENOTFOUND",
-        "https://www.southernsteak.com -> 200",
-        "https://www.hugedomains.com/domain_profile.cfm?d=southernsteak.com rejected: aggregator",
-        "https://southernsteak.com -> 200",
-        "https://www.hugedomains.com/domain_profile.cfm?d=southernsteak.com rejected: aggregator",
+        "https://www.southernsteak.com -> fetch failed:ECONNRESET",
+        "https://southernsteak.com -> fetch failed:ECONNRESET",
         "https://www.southern.com -> 403",
         "https://southern.com -> 403"
       ]
@@ -1402,9 +1398,9 @@
       "tried": [
         "https://www.palmandpine.com -> 200",
         "https://palmandpine.com -> 200",
-        "https://www.palmpine.com -> 200",
+        "https://www.palmpine.com -> fetch failed:ECONNRESET",
+        "https://palmpine.com -> 200",
         "https://www.hugedomains.com/domain_profile.cfm?d=palmpine.com rejected: aggregator",
-        "https://palmpine.com -> fetch failed:ECONNRESET",
         "https://www.palmand.com -> 200",
         "https://palmand.com -> 200",
         "https://www.palm.com -> 200",
