@@ -625,13 +625,13 @@
       "menuUrl": "https://www.riverroastchicago.com/menus",
       "reservationUrl": "https://www.opentable.com/booking/restref/availability?rid=146197&restRef=146197",
       "coverageArea": "Chicago, Illinois",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "cuisineContext": "American, Roast, Seafood, Tavern-Fare — named on the restaurant's own pages.",
+      "serviceSummary": "American, Roast, Seafood, Tavern-Fare. Hours Sunday 11:00 AM–9:00 PM; Monday–Thursday 9:00 AM–9:00 PM; Friday 11:30 AM–10:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 11:00 AM–9:00 PM; Monday–Thursday 9:00 AM–9:00 PM; Friday 11:30 AM–10:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: River Roast Private Events · River Roast Private Events offers six spaces, all with spectacular views, for parties from 10 to 1,000.",
@@ -641,14 +641,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -660,9 +658,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Chicago, IL",
       "city": "Chicago",
@@ -671,7 +669,9 @@
       "priceTags": [
         "$$"
       ],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -698,20 +698,20 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 4,
       "bookingPlatforms": [
         "OpenTable",
         "Phone"
       ],
-      "cuisineTags": [],
+      "cuisineTags": [
+        "Seafood",
+        "Contemporary American"
+      ],
       "officialSource": "https://www.riverroastchicago.com/",
       "additionalSources": "https://www.riverroastchicago.com/menus/group-dining | https://www.riverroastchicago.com/about | https://www.riverroastchicago.com/menus | https://www.opentable.com/booking/restref/availability?rid=146197&restRef=146197",
       "sources": [
@@ -721,12 +721,14 @@
         "https://www.riverroastchicago.com/menus",
         "https://www.opentable.com/booking/restref/availability?rid=146197&restRef=146197"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.439Z",
-      "searchText": "river roast chicago illinois chicago, il not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. opentable phone",
+      "retrievedAt": "2026-09-03T13:01:41.322Z",
+      "searchText": "river roast chicago illinois chicago, il american, roast, seafood, tavern-fare — named on the restaurant's own pages. seafood contemporary american opentable phone",
       "spendBands": [
         "$$"
       ],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "OpenTable",
@@ -1716,20 +1718,19 @@
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: No split checks on parties of 8 or more Copyright © 2026 Flo & Santos - All Rights Reserved.",
       "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
         "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Private-dining terms",
         "Parking and arrival logistics",
         "Current per-guest total"
       ],
@@ -1743,9 +1744,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Chicago, IL",
       "city": "Chicago",
@@ -1785,11 +1786,10 @@
         "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
-        "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Toast",
         "Phone"
@@ -1803,7 +1803,7 @@
         "http://www.floandsantos.com/contact-us",
         "https://www.toasttab.com/flo-and-santos/v3"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.441Z",
+      "retrievedAt": "2026-09-03T13:01:41.325Z",
       "searchText": "flo & santos chicago illinois chicago, il not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. toast phone",
       "spendBands": [
         "$$"

@@ -101,10 +101,10 @@
         "Contemporary American"
       ],
       "officialSource": "https://www.theasbury.com/",
-      "additionalSources": "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/ | https://www.theasbury.com/menus/ | https://www.theasbury.com/about/ | https://order.toasttab.com/online/theasbury",
+      "additionalSources": "https://www.theasbury.com/events/murder-mystery-experience-evil-on-the-beach/ | https://www.theasbury.com/menus/ | https://www.theasbury.com/about/ | https://order.toasttab.com/online/theasbury",
       "sources": [
         "https://www.theasbury.com/",
-        "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/",
+        "https://www.theasbury.com/events/murder-mystery-experience-evil-on-the-beach/",
         "https://www.theasbury.com/menus/",
         "https://www.theasbury.com/about/",
         "https://order.toasttab.com/online/theasbury"
@@ -134,10 +134,10 @@
       "reservationUrl": "https://resy.com/cities/davidson-nc/venues/kindred-restaurant",
       "coverageArea": "Charlotte, North Carolina",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Resy.",
+      "serviceSummary": "Hours Tuesday–Saturday 5:00 PM–10:00 PM. Reservations via Resy.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Tuesday–Saturday 5:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Our team is delighted to offer assistance with identifying options to accommodate any restrictions or allergies.",
@@ -149,10 +149,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -167,16 +166,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Charlotte, NC",
       "city": "Charlotte",
       "stateProvince": "North Carolina",
       "regionGroup": "North Carolina",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -198,14 +199,13 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -222,10 +222,12 @@
         "https://www.kindreddavidson.com/menu",
         "https://resy.com/cities/davidson-nc/venues/kindred-restaurant"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.454Z",
+      "retrievedAt": "2026-09-04T12:50:08.377Z",
       "searchText": "kindred charlotte north carolina charlotte, nc not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary contemporary american resy davidson, nc",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "Resy"
@@ -355,14 +357,14 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-18T22:55:05.661Z",
       "address": "Charlotte, NC",
-      "phone": "",
+      "phone": "(704) 295-4227",
       "email": "",
       "website": "https://midwoodsmokehouse.com/",
       "menuUrl": "https://midwoodsmokehouse.com/menus/",
       "reservationUrl": "https://order.toasttab.com/online/locations/34fff39a-b77f-46c7-bad4-bdf6bec8c7ae/1234",
       "coverageArea": "Charlotte, North Carolina",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "Barbecue — named on the restaurant's own pages.",
+      "serviceSummary": "Barbecue. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
@@ -396,9 +398,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Charlotte, NC",
       "city": "Charlotte",
@@ -422,22 +424,22 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
         "hoursSummary",
         "priceDetails",
-        "cuisineContext",
         "accessibilityState",
         "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
-        "Toast"
+        "Toast",
+        "Phone"
       ],
       "cuisineTags": [
         "Barbecue",
@@ -452,13 +454,14 @@
         "https://midwoodsmokehouse.com/menus/",
         "https://order.toasttab.com/online/locations/34fff39a-b77f-46c7-bad4-bdf6bec8c7ae/1234"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.454Z",
-      "searchText": "midwood smokehouse charlotte north carolina charlotte, nc not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. barbecue cocktail / lounge toast charlotte, nc",
+      "retrievedAt": "2026-09-04T12:50:08.378Z",
+      "searchText": "midwood smokehouse charlotte north carolina charlotte, nc barbecue — named on the restaurant's own pages. barbecue cocktail / lounge toast phone charlotte, nc",
       "spendBands": [],
       "daypartTags": [],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "Toast"
+        "Toast",
+        "Phone"
       ]
     },
     {

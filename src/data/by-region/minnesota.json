@@ -480,10 +480,10 @@
       "reservationUrl": "https://www.opentable.com/r/hai-hai-reservations-minneapolis?restref=1033801&lang=en-US&ot_source=Restaurant%20website",
       "coverageArea": "Minneapolis, Minnesota",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Sunday, Saturday 10:00 AM–12:00 AM; Tuesday–Thursday 3:00 PM–11:00 PM; Friday 3:00 PM–12:00 AM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Saturday 10:00 AM–12:00 AM; Tuesday–Thursday 3:00 PM–11:00 PM; Friday 3:00 PM–12:00 AM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -495,10 +495,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -514,9 +513,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Minneapolis, MN",
       "city": "Minneapolis",
@@ -545,7 +544,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -553,7 +551,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -569,7 +567,7 @@
         "https://www.haihaimpls.com/events",
         "https://www.opentable.com/r/hai-hai-reservations-minneapolis?restref=1033801&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.452Z",
+      "retrievedAt": "2026-09-04T12:50:08.374Z",
       "searchText": "hai hai minneapolis minnesota minneapolis, mn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. southeast asian opentable minneapolis, mn",
       "spendBands": [],
       "daypartTags": [],
@@ -929,19 +927,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-18T22:55:05.661Z",
       "address": "Minneapolis, MN",
-      "phone": "",
+      "phone": "(612) 886-1606",
       "email": "",
       "website": "https://www.colitampls.com/",
       "menuUrl": "https://www.colitampls.com/menu/dinner",
       "reservationUrl": "https://www.opentable.com/r/colita-reservations-minneapolis?restref=731530&lang=en-US&ot_source=Restaurant%20website",
       "coverageArea": "Minneapolis, Minnesota",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "cuisineContext": "Oaxacan, Mexican, Tex-Oaxacan — named on the restaurant's own pages.",
+      "serviceSummary": "Oaxacan, Mexican, Tex-Oaxacan. Hours Sunday 4:00 PM–9:00 PM; Monday–Thursday 5:00 PM–9:00 PM and 4:00 PM–9:00 PM; Friday–Saturday 4:00 PM–10:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 4:00 PM–9:00 PM; Monday–Thursday 5:00 PM–9:00 PM and 4:00 PM–9:00 PM; Friday–Saturday 4:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: Private EventS Celebrate in style at Colita—perfect for small weddings, rehearsal dinners, parties, or corporate events. · Semi Private 30 guests Full Restaurant buyout 74 inside, 48 patio A 25% service fee, administrative fees, taxes or other charges may be included.",
@@ -951,14 +949,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -970,16 +966,20 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Minneapolis, MN",
       "city": "Minneapolis",
       "stateProvince": "Minnesota",
       "regionGroup": "Minnesota",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$$"
+      ],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -996,22 +996,20 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 4,
       "bookingPlatforms": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ],
       "cuisineTags": [
         "Mexican"
@@ -1026,13 +1024,18 @@
         "https://www.colitampls.com/menu/dinner",
         "https://www.opentable.com/r/colita-reservations-minneapolis?restref=731530&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.453Z",
-      "searchText": "colita minneapolis minnesota minneapolis, mn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. mexican opentable minneapolis, mn",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-04T12:50:08.375Z",
+      "searchText": "colita minneapolis minnesota minneapolis, mn oaxacan, mexican, tex-oaxacan — named on the restaurant's own pages. mexican opentable phone minneapolis, mn",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ]
     },
     {

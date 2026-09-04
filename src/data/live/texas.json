@@ -1,6 +1,6 @@
 {
   "regionGroup": "Texas",
-  "generatedAt": "2026-09-04T12:49:54.838Z",
+  "generatedAt": "2026-09-04T14:37:42.302Z",
   "records": {
     "kitchen-kocktails": {
       "ll": [
@@ -1386,7 +1386,59 @@
         -97.7431
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1380
+          ]
+        ],
+        [
+          [
+            960,
+            1380
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        90,
+        200
+      ],
+      "ppSource": "planning-band"
     },
     "barley-swine-austin": {
       "ll": [
@@ -1466,7 +1518,47 @@
         -97.7431
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            990,
+            1380
+          ]
+        ],
+        [
+          [
+            990,
+            1380
+          ]
+        ],
+        [
+          [
+            990,
+            1380
+          ]
+        ],
+        [
+          [
+            990,
+            1380
+          ]
+        ],
+        [
+          [
+            990,
+            1380
+          ]
+        ],
+        [
+          [
+            990,
+            1380
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose"
     },
     "mixtli-san-antonio": {
       "ll": [
@@ -2568,10 +2660,6 @@
         {
           "name": "authentic Italian food and the best pizza crafted with tradi",
           "source": "first-party"
-        },
-        {
-          "name": "authentic Italian food and the best pizza crafted with tradition and flavor",
-          "source": "first-party"
         }
       ]
     },
@@ -3049,13 +3137,7 @@
         -95.42266
       ],
       "llSource": "city",
-      "tz": "America/Chicago",
-      "dishes": [
-        {
-          "name": "refined Southern flavor title",
-          "source": "first-party"
-        }
-      ]
+      "tz": "America/Chicago"
     },
     "feges-bbq-houston": {
       "ll": [

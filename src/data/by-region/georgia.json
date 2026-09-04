@@ -11,17 +11,17 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-12T06:45:02.762Z",
       "address": "Atlanta, GA",
-      "phone": "",
+      "phone": "(470) 851-1199",
       "email": "",
       "website": "https://www.lazybettyatl.com/",
       "menuUrl": "https://www.lazybettyatl.com/menu",
       "reservationUrl": "",
       "coverageArea": "Atlanta, Georgia",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "serviceSummary": "Hours Tuesday–Thursday 5:00 PM–8:30 PM; Friday 5:00 PM–9:00 PM. Confirm seating by phone.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Tuesday–Thursday 5:00 PM–8:30 PM; Friday 5:00 PM–9:00 PM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: A multi-course Vegetarian Menu is available upon request. · ​ As always, we do our best to accommodate any allergies or dietary restrictions.",
@@ -33,10 +33,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Reservation release pattern; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -52,21 +51,25 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Atlanta, GA",
       "city": "Atlanta",
       "stateProvince": "Georgia",
       "regionGroup": "Georgia",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
       "accessibilityTags": [],
-      "reservationTags": [],
+      "reservationTags": [
+        "Phone"
+      ],
       "groupFitTags": [],
       "checklist": [
         "Confirm current hours directly",
@@ -76,22 +79,22 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "reservation",
         "accessibilityState",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
-      "bookingPlatforms": [],
+      "thinFieldCount": 6,
+      "bookingPlatforms": [
+        "Phone"
+      ],
       "cuisineTags": [
         "Contemporary",
         "Tasting menu"
@@ -104,12 +107,16 @@
         "https://www.lazybettyatl.com/menu",
         "https://www.lazybettyatl.com/events"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.444Z",
-      "searchText": "lazy betty atlanta georgia atlanta, ga not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. contemporary tasting menu atlanta, ga",
+      "retrievedAt": "2026-09-03T13:01:41.327Z",
+      "searchText": "lazy betty atlanta georgia atlanta, ga not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. contemporary tasting menu phone atlanta, ga",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
-      "bookingPaths": []
+      "bookingPaths": [
+        "Phone"
+      ]
     },
     {
       "id": 2176,
@@ -355,14 +362,14 @@
       "menuUrl": "https://www.nanfinedining.com/menu",
       "reservationUrl": "https://www.opentable.com/r/nan-thai-fine-dining-reservations-atlanta?restref=2716&lang=en-US&ot_source=Restaurant%20website&ot_campaign=Website%20Reservations",
       "coverageArea": "Atlanta, Georgia",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "cuisineContext": "Thai — named on the restaurant's own pages.",
+      "serviceSummary": "Thai. Hours Sunday 12:00 AM–12:00 AM; Monday–Thursday 11:30 AM–2:30 PM and 5:30 PM–10:00 PM; Friday 11:30 AM–2:30 PM and 5:30 PM–11:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 12:00 AM–12:00 AM; Monday–Thursday 11:30 AM–2:30 PM and 5:30 PM–10:00 PM; Friday 11:30 AM–2:30 PM and 5:30 PM–11:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant. A $25.00 per-head cancellation fee applies to parties of six or more.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: Allergies and Dietary Needs Several dishes on this menu are prepared with peanuts or cashews. · Every plate is cooked to order in a shared kitchen, so we cannot guarantee that a dish is free of a given allergen.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: Private Dining in Midtown Atlanta · From milestone celebrations and rehearsal dinners to corporate gatherings and holiday parties, Nan Thai Fine Dining hosts private events in the heart of Midtown Atlanta.",
       "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
@@ -371,14 +378,11 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Dress note from the restaurant's own pages: Business Casual to Elegant",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 2,
       "unknownList": [
-        "Live hours for your date",
-        "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -390,15 +394,17 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 10,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "10 / 12 core fields",
       "signals": {},
       "region": "Atlanta, GA",
       "city": "Atlanta",
       "stateProvince": "Georgia",
       "regionGroup": "Georgia",
-      "priceTags": [],
+      "priceTags": [
+        "$$$"
+      ],
       "serviceStyles": [
         "Fine dining"
       ],
@@ -423,14 +429,10 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "dietaryDetails",
         "accessibilityState",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 2,
       "bookingPlatforms": [
         "OpenTable",
         "Phone"
@@ -448,10 +450,15 @@
         "https://www.nanfinedining.com/reservations",
         "https://www.opentable.com/r/nan-thai-fine-dining-reservations-atlanta?restref=2716&lang=en-US&ot_source=Restaurant%20website&ot_campaign=Website%20Reservations"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.445Z",
-      "searchText": "nan thai fine dining atlanta georgia atlanta, ga not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. thai fine dining opentable phone 1350 spring street nw, atlanta, ga 30309",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-03T13:01:41.328Z",
+      "searchText": "nan thai fine dining atlanta georgia atlanta, ga thai — named on the restaurant's own pages. thai fine dining opentable phone 1350 spring street nw, atlanta, ga 30309",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Lunch language",
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "OpenTable",
@@ -702,8 +709,8 @@
       "menuUrl": "https://establishmentatlanta.com/food-menu",
       "reservationUrl": "https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=d17b06fc-29ee-494b-bb88-0e8190e070d0&restRef=262393&otSource=Restaurant%20website",
       "coverageArea": "Atlanta, Georgia",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "cuisineContext": "Lounge — named on the restaurant's own pages.",
+      "serviceSummary": "Lounge. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
@@ -736,9 +743,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Atlanta, GA",
       "city": "Atlanta",
@@ -769,12 +776,11 @@
       "thinFields": [
         "hoursSummary",
         "priceDetails",
-        "cuisineContext",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
         "OpenTable",
         "Phone"
@@ -783,19 +789,20 @@
         "American",
         "Steak",
         "Steak / grill",
-        "Contemporary American"
+        "Contemporary American",
+        "Cocktail / lounge"
       ],
       "officialSource": "https://establishmentatlanta.com/",
-      "additionalSources": "https://establishmentatlanta.com/events | https://establishmentatlanta.com/food-menu | https://establishmentatlanta.com/about | https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=d17b06fc-29ee-494b-bb88-0e8190e070d0&restRef=262393&otSource=Restaurant%20website",
+      "additionalSources": "https://establishmentatlanta.com/food-menu | https://establishmentatlanta.com/events | https://establishmentatlanta.com/about | https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=d17b06fc-29ee-494b-bb88-0e8190e070d0&restRef=262393&otSource=Restaurant%20website",
       "sources": [
         "https://establishmentatlanta.com/",
-        "https://establishmentatlanta.com/events",
         "https://establishmentatlanta.com/food-menu",
+        "https://establishmentatlanta.com/events",
         "https://establishmentatlanta.com/about",
         "https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=d17b06fc-29ee-494b-bb88-0e8190e070d0&restRef=262393&otSource=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.445Z",
-      "searchText": "establishment atlanta atlanta georgia atlanta, ga not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american steak steak / grill contemporary american opentable phone 1197 peachtree street ne, atlanta, ga 30308",
+      "retrievedAt": "2026-09-03T13:01:41.328Z",
+      "searchText": "establishment atlanta atlanta georgia atlanta, ga lounge — named on the restaurant's own pages. american steak steak / grill contemporary american cocktail / lounge opentable phone 1197 peachtree street ne, atlanta, ga 30308",
       "spendBands": [],
       "daypartTags": [],
       "planningLoad": "Material",
@@ -931,10 +938,10 @@
       "reservationUrl": "",
       "coverageArea": "Atlanta, Georgia",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "serviceSummary": "Hours Monday–Thursday 5:00 PM–9:00 PM; Friday–Saturday 5:00 PM–10:00 PM.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday–Thursday 5:00 PM–9:00 PM; Friday–Saturday 5:00 PM–10:00 PM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -946,10 +953,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Dietary cross-contact handling",
         "Accessibility route detail",
@@ -966,16 +972,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 3,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "3 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Atlanta, GA",
       "city": "Atlanta",
       "stateProvince": "Georgia",
       "regionGroup": "Georgia",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -995,17 +1003,15 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "reservation",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 9,
+      "thinFieldCount": 7,
       "bookingPlatforms": [],
       "cuisineTags": [
         "Southern",
@@ -1020,10 +1026,12 @@
         "https://www.millerunion.com/about",
         "https://www.millerunion.com/menus"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.445Z",
+      "retrievedAt": "2026-09-03T13:01:41.328Z",
       "searchText": "miller union atlanta georgia atlanta, ga not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. southern american contemporary american atlanta, ga",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": []
     },
@@ -1266,10 +1274,10 @@
       "reservationUrl": "https://resy.com/cities/atl/kimball-house",
       "coverageArea": "Atlanta, Georgia",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Resy.",
+      "serviceSummary": "Hours Sunday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–1:00 AM. Reservations via Resy.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–1:00 AM.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -1281,10 +1289,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -1300,16 +1307,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Atlanta, GA",
       "city": "Atlanta",
       "stateProvince": "Georgia",
       "regionGroup": "Georgia",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -1331,7 +1340,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -1340,7 +1348,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -1357,10 +1365,12 @@
         "https://www.kimball-house.com/private-dining",
         "https://resy.com/cities/atl/kimball-house"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.445Z",
+      "retrievedAt": "2026-09-03T13:01:41.329Z",
       "searchText": "kimball house atlanta georgia atlanta, ga not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. seafood american contemporary american resy decatur, ga",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "Resy"
@@ -1615,33 +1625,31 @@
       "phone": "+1-404-221-6339",
       "email": "",
       "website": "https://tradervicsatl.com/",
-      "menuUrl": "",
-      "reservationUrl": "",
+      "menuUrl": "https://tradervicsatl.com/menus/",
+      "reservationUrl": "https://www.opentable.com/trader-vics-atlanta",
       "coverageArea": "Atlanta, Georgia",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Confirm seating by phone.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "cuisineContext": "Tropical, Global Fusion, Polynesian — named on the restaurant's own pages.",
+      "serviceSummary": "Tropical, Global Fusion, Polynesian. Reservations via OpenTable.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: Home Menus Private Dining Offers & Promotions Retail Book A Table Where Fusion Flavors Meet Tropical Vibes Welcome To Trader Vic’s Atlanta An island escape since 1976.",
       "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
-      "unknownsCount": 6,
+      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 4,
       "unknownList": [
         "Live hours for your date",
-        "Reservation release pattern",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Private-dining terms",
         "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
@@ -1654,15 +1662,17 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 2,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "2 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Atlanta, GA",
       "city": "Atlanta",
       "stateProvince": "Georgia",
       "regionGroup": "Georgia",
-      "priceTags": [],
+      "priceTags": [
+        "$$$"
+      ],
       "serviceStyles": [],
       "dietaryTags": [
         "Direct confirmation required"
@@ -1686,19 +1696,15 @@
       "reviewDueSoon": false,
       "thinFields": [
         "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "menu",
-        "reservation",
         "dietaryDetails",
         "accessibilityState",
-        "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 10,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
-        "Phone"
+        "Phone",
+        "OpenTable"
       ],
       "cuisineTags": [
         "Polynesian",
@@ -1706,17 +1712,23 @@
         "Contemporary American"
       ],
       "officialSource": "https://tradervicsatl.com/",
-      "additionalSources": "",
+      "additionalSources": "https://tradervicsatl.com/menus/ | https://tradervicsatl.com/private-dining/ | https://www.opentable.com/trader-vics-atlanta",
       "sources": [
-        "https://tradervicsatl.com/"
+        "https://tradervicsatl.com/",
+        "https://tradervicsatl.com/menus/",
+        "https://tradervicsatl.com/private-dining/",
+        "https://www.opentable.com/trader-vics-atlanta"
       ],
-      "retrievedAt": "2026-08-12T06:45:02.762Z",
-      "searchText": "trader vic's atlanta atlanta georgia atlanta, ga not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. polynesian american contemporary american phone 255 courtland street ne, atlanta, ga 30303",
-      "spendBands": [],
+      "retrievedAt": "2026-09-03T13:01:41.329Z",
+      "searchText": "trader vic's atlanta atlanta georgia atlanta, ga tropical, global fusion, polynesian — named on the restaurant's own pages. polynesian american contemporary american phone opentable 255 courtland street ne, atlanta, ga 30303",
+      "spendBands": [
+        "$$$"
+      ],
       "daypartTags": [],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "Phone"
+        "Phone",
+        "OpenTable"
       ]
     },
     {

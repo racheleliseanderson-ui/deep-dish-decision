@@ -17,13 +17,13 @@
       "menuUrl": "",
       "reservationUrl": "",
       "coverageArea": "Dallas, Texas",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Confirm seating by phone.",
+      "cuisineContext": "Southern, Soul Food, Comfort Food, American, Brunch, Fried Chicken — named on the restaurant's own pages.",
+      "serviceSummary": "Southern, Soul Food, Comfort Food, American, Brunch, Fried Chicken. Confirm seating by phone.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
@@ -53,9 +53,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 2,
+      "depthFilled": 4,
       "depthTotal": 12,
-      "depthLabel": "2 / 12 core fields",
+      "depthLabel": "4 / 12 core fields",
       "signals": {},
       "region": "Dallas, TX",
       "city": "Dallas",
@@ -92,8 +92,6 @@
       "reviewDueSoon": false,
       "thinFields": [
         "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "menu",
         "reservation",
         "dietaryDetails",
@@ -102,18 +100,21 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 10,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "Phone"
       ],
-      "cuisineTags": [],
+      "cuisineTags": [
+        "Breakfast / brunch",
+        "Contemporary American"
+      ],
       "officialSource": "https://kitchenkocktailsusa.com/",
       "additionalSources": "",
       "sources": [
         "https://kitchenkocktailsusa.com/"
       ],
-      "retrievedAt": "2026-08-10T22:54:35.174Z",
-      "searchText": "kitchen + kocktails dallas texas dallas, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. phone",
+      "retrievedAt": "2026-09-03T13:01:41.323Z",
+      "searchText": "kitchen + kocktails dallas texas dallas, tx southern, soul food, comfort food, american, brunch, fried chicken — named on the restaurant's own pages. breakfast / brunch contemporary american phone",
       "spendBands": [
         "$$$$"
       ],
@@ -260,13 +261,13 @@
       "menuUrl": "https://www.yoranchsteakhouse.com/wine-list/",
       "reservationUrl": "https://www.toasttab.com/yoranchsteakhouse/giftcards",
       "coverageArea": "Dallas, Texas",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "American, Steakhouse, Texas, Wild Game, Seafood, Steak — named on the restaurant's own pages.",
+      "serviceSummary": "American, Steakhouse, Texas, Wild Game, Seafood, Steak. Hours Sunday 11:00 AM–9:00 PM and 11:00 AM–10:00 PM and 11:30 AM–9:00 PM; Monday–Friday 11:00 AM–10:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 11:00 AM–9:00 PM and 11:00 AM–10:00 PM and 11:30 AM–9:00 PM; Monday–Friday 11:00 AM–10:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Gluten-free chocolate torte spiked with Chambord and served with Raspberry Coulis · raw marinated farmers market vegetables--- Served with buttermilk herb dressing (vegan",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: Book Your Texas Style Private Event Now! · For private dining and banquet questions and reservations, please call 214-744-3287 and ask for Michael Street, or you may contact us to discuss your private dining room needs.",
@@ -276,13 +277,11 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Dress note from the restaurant's own pages: Business casual required.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 2,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -294,9 +293,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 7,
+      "depthFilled": 10,
       "depthTotal": 12,
-      "depthLabel": "7 / 12 core fields",
+      "depthLabel": "10 / 12 core fields",
       "signals": {},
       "region": "Dallas, TX",
       "city": "Dallas",
@@ -305,7 +304,9 @@
       "priceTags": [
         "$$$"
       ],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -332,18 +333,19 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "accessibilityState",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 5,
+      "thinFieldCount": 2,
       "bookingPlatforms": [
         "Toast",
         "Phone"
       ],
-      "cuisineTags": [],
+      "cuisineTags": [
+        "Seafood",
+        "Steak / grill",
+        "Contemporary American"
+      ],
       "officialSource": "https://www.yoranchsteakhouse.com/",
       "additionalSources": "https://www.yoranchsteakhouse.com/contact-us/ | https://www.yoranchsteakhouse.com/wine-list/ | https://www.yoranchsteakhouse.com/private-dining-menus/ | https://www.toasttab.com/yoranchsteakhouse/giftcards",
       "sources": [
@@ -353,12 +355,14 @@
         "https://www.yoranchsteakhouse.com/private-dining-menus/",
         "https://www.toasttab.com/yoranchsteakhouse/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.439Z",
-      "searchText": "y.o. ranch steakhouse dallas texas dallas, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. toast phone",
+      "retrievedAt": "2026-09-03T13:01:41.323Z",
+      "searchText": "y.o. ranch steakhouse dallas texas dallas, tx american, steakhouse, texas, wild game, seafood, steak — named on the restaurant's own pages. seafood steak / grill contemporary american toast phone",
       "spendBands": [
         "$$$"
       ],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
         "Toast",
@@ -380,13 +384,13 @@
       "menuUrl": "https://www.thewoolworthdallas.com/menu",
       "reservationUrl": "https://www.toasttab.com/the-woolworth-1520-elm-st-ste-201/giftcards",
       "coverageArea": "Dallas, Texas",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "American — named on the restaurant's own pages.",
+      "serviceSummary": "American. Hours Monday 4:00 PM–11:00 PM; Tuesday–Thursday 11:00 AM–11:00 PM; Friday 11:00 AM–12:00 AM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday 4:00 PM–11:00 PM; Tuesday–Thursday 11:00 AM–11:00 PM; Friday 11:00 AM–12:00 AM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant. For catering events, a deposit may be required, with the balance due per the agreed terms. · Deposits and Fees: A non-refundable deposit (amount specified at booking) is required to secure catering services.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: However, we are not liable for allergic reactions unless you notify us of specific dietary restrictions in advance. · Food and Allergies: While we take care to accommodate dietary needs, we cannot guarantee an allergen-free environment.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
@@ -396,14 +400,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -415,16 +417,20 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Dallas, TX",
       "city": "Dallas",
       "stateProvince": "Texas",
       "regionGroup": "Texas",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$$"
+      ],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -450,20 +456,19 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "accessibilityState",
         "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 4,
       "bookingPlatforms": [
         "Toast",
         "Phone"
       ],
-      "cuisineTags": [],
+      "cuisineTags": [
+        "Contemporary American"
+      ],
       "officialSource": "https://www.thewoolworthdallas.com/",
       "additionalSources": "https://www.thewoolworthdallas.com/menu | https://www.thewoolworthdallas.com/private-events-downtown-dallas | https://www.thewoolworthdallas.com/policies | https://www.toasttab.com/the-woolworth-1520-elm-st-ste-201/giftcards",
       "sources": [
@@ -473,10 +478,14 @@
         "https://www.thewoolworthdallas.com/policies",
         "https://www.toasttab.com/the-woolworth-1520-elm-st-ste-201/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.439Z",
-      "searchText": "the woolworth dallas texas dallas, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. toast phone",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-03T13:01:41.323Z",
+      "searchText": "the woolworth dallas texas dallas, tx american — named on the restaurant's own pages. contemporary american toast phone",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
         "Toast",
@@ -983,13 +992,13 @@
       "menuUrl": "https://www.thehenryrestaurant.com/menus/",
       "reservationUrl": "https://www.opentable.com/restaurant/profile/1017667/reserve?restref=1017667",
       "coverageArea": "Dallas, Texas",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "cuisineContext": "Healthy, American — named on the restaurant's own pages.",
+      "serviceSummary": "Healthy, American. Hours Sunday 8:00 AM–12:00 AM and 8:00 AM–10:00 PM and 9:00 AM–4:00 PM; Monday 8:00 AM–10:30 AM; Tuesday 4:00 PM–10:00 PM; Wednesday 4:00 PM–11:00 PM; Thursday 8:00 AM–10:00 PM; Friday 8:00 AM–11:00 PM and 4:00 PM–12:00 AM; Saturday 9:00 AM–4:00 PM and 10:00 AM–3:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 8:00 AM–12:00 AM and 8:00 AM–10:00 PM and 9:00 AM–4:00 PM; Monday 8:00 AM–10:30 AM; Tuesday 4:00 PM–10:00 PM; Wednesday 4:00 PM–11:00 PM; Thursday 8:00 AM–10:00 PM; Friday 8:00 AM–11:00 PM and 4:00 PM–12:00 AM; Saturday 9:00 AM–4:00 PM and 10:00 AM–3:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: Please visit our group dining page to learn more about group dining and private events at Fox Restaurant Concepts and to make an inquiry.",
@@ -999,14 +1008,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -1018,9 +1025,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Dallas, TX",
       "city": "Dallas",
@@ -1029,7 +1036,9 @@
       "priceTags": [
         "$$"
       ],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -1056,20 +1065,19 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 4,
       "bookingPlatforms": [
         "OpenTable",
         "Phone"
       ],
-      "cuisineTags": [],
+      "cuisineTags": [
+        "Contemporary American"
+      ],
       "officialSource": "https://www.thehenryrestaurant.com/locations/the-henry-dallas/?utm_source=Google&utm_medium=Organic&utm_campaign=Maps",
       "additionalSources": "https://www.thehenryrestaurant.com/menus/ | https://www.thehenryrestaurant.com/group-dining/ | https://www.thehenryrestaurant.com/contact-us/ | https://www.opentable.com/restaurant/profile/1017667/reserve?restref=1017667",
       "sources": [
@@ -1079,12 +1087,14 @@
         "https://www.thehenryrestaurant.com/contact-us/",
         "https://www.opentable.com/restaurant/profile/1017667/reserve?restref=1017667"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.439Z",
-      "searchText": "the henry dallas texas dallas, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. opentable phone",
+      "retrievedAt": "2026-09-03T13:01:41.324Z",
+      "searchText": "the henry dallas texas dallas, tx healthy, american — named on the restaurant's own pages. contemporary american opentable phone",
       "spendBands": [
         "$$"
       ],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "OpenTable",
@@ -2678,19 +2688,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Austin, TX",
-      "phone": "",
+      "phone": "(512) 916-4808",
       "email": "",
       "website": "https://uchikoaustin.com/",
       "menuUrl": "https://uchiko.uchirestaurants.com/location/sushi-austin/menu/",
       "reservationUrl": "https://www.sevenrooms.com/explore/uchikoaustin/reservations/create/search?venues=uchikoaustin%2Cuchiaustin%2Cuchibaaustin",
       "coverageArea": "Austin, Texas",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via SevenRooms.",
+      "cuisineContext": "Sushi, Japanese — named on the restaurant's own pages.",
+      "serviceSummary": "Sushi, Japanese. Hours Sunday–Thursday 4:00 PM–10:00 PM; Friday–Saturday 4:00 PM–11:00 PM. Reservations via SevenRooms.",
       "menuSummary": "The menu on file is hosted on uchiko.uchirestaurants.com, not on the restaurant's own domain. Deep Dish cannot confirm the restaurant controls that page.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 4:00 PM–10:00 PM; Friday–Saturday 4:00 PM–11:00 PM.",
       "reservationDetails": "Reservations via SevenRooms on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: hours sun - thur 4pm - 10pm fri - sat 4pm - 11pm happy hour every day 4pm - 6pm private dining Ideal space to gather for any occasion such as corporate events, birthdays, and other special gatherings. · click here to reserve a table For large parties or special requests, please call us at 512-916-4808 .",
@@ -2700,14 +2710,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -2719,15 +2727,17 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Austin, TX",
       "city": "Austin",
       "stateProvince": "Texas",
       "regionGroup": "Texas",
-      "priceTags": [],
+      "priceTags": [
+        "$$$$"
+      ],
       "serviceStyles": [],
       "dietaryTags": [
         "Direct confirmation required"
@@ -2745,22 +2755,20 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 4,
       "bookingPlatforms": [
-        "SevenRooms"
+        "SevenRooms",
+        "Phone"
       ],
       "cuisineTags": [
         "Japanese"
@@ -2774,13 +2782,16 @@
         "https://uchiko.uchirestaurants.com/location/sushi-austin/menu/",
         "https://www.sevenrooms.com/explore/uchikoaustin/reservations/create/search?venues=uchikoaustin%2Cuchiaustin%2Cuchibaaustin"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.458Z",
-      "searchText": "uchiko austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. japanese sevenrooms austin, tx",
-      "spendBands": [],
+      "retrievedAt": "2026-09-04T12:50:08.385Z",
+      "searchText": "uchiko austin texas austin, tx sushi, japanese — named on the restaurant's own pages. japanese sevenrooms phone austin, tx",
+      "spendBands": [
+        "$$$$"
+      ],
       "daypartTags": [],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "SevenRooms"
+        "SevenRooms",
+        "Phone"
       ]
     },
     {
@@ -2914,10 +2925,10 @@
       "reservationUrl": "https://resy.com/cities/austin-tx/venues/odd-duck?utm_source=Paid&utm_medium=Search&utm_campaign=Reservationships_Evergreen&gad_source=1&gclid=Cj0KCQjw3vO3BhCqARIsAEWblcDBwz-7OJtq10m2nWQb2YUCLUipsTn-KZ-15ZEQ9G0oxSOC1mAOEDAaAoL2EALw_wcB&gclsrc=aw.ds&date=2024-10-02&seats=2",
       "coverageArea": "Austin, Texas",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Resy.",
+      "serviceSummary": "Hours , , , , ,. Reservations via Resy.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: , , , , ,.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -2929,10 +2940,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
@@ -2949,9 +2959,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Austin, TX",
       "city": "Austin",
@@ -2980,7 +2990,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -2989,7 +2998,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -3005,7 +3014,7 @@
         "https://oddduckaustin.com/wine",
         "https://resy.com/cities/austin-tx/venues/odd-duck?utm_source=Paid&utm_medium=Search&utm_campaign=Reservationships_Evergreen&gad_source=1&gclid=Cj0KCQjw3vO3BhCqARIsAEWblcDBwz-7OJtq10m2nWQb2YUCLUipsTn-KZ-15ZEQ9G0oxSOC1mAOEDAaAoL2EALw_wcB&gclsrc=aw.ds&date=2024-10-02&seats=2"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.458Z",
+      "retrievedAt": "2026-09-04T12:50:08.385Z",
       "searchText": "odd duck austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american resy austin, tx",
       "spendBands": [],
       "daypartTags": [],
@@ -3370,10 +3379,10 @@
       "reservationUrl": "https://www.toasttab.com/franklinbbq/giftcards",
       "coverageArea": "Austin, Texas",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours Sunday, Tuesday–Saturday 12:00 AM–12:00 AM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Tuesday–Saturday 12:00 AM–12:00 AM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -3385,10 +3394,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Dress note from the restaurant's own pages: Come as you are daily or nightly.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -3404,9 +3412,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Austin, TX",
       "city": "Austin",
@@ -3435,14 +3443,13 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
         "Toast"
       ],
@@ -3459,7 +3466,7 @@
         "https://franklinbarbecue.com/about",
         "https://www.toasttab.com/franklinbbq/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.458Z",
+      "retrievedAt": "2026-09-04T12:50:08.386Z",
       "searchText": "franklin barbecue austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. barbecue cocktail / lounge toast austin, tx",
       "spendBands": [],
       "daypartTags": [],
@@ -3682,12 +3689,13 @@
         "Cocktail / lounge"
       ],
       "officialSource": "https://www.kemuri-tatsuya.com/",
-      "additionalSources": "https://www.kemuri-tatsuya.com/contact | https://www.kemuri-tatsuya.com/menu-1 | https://www.kemuri-tatsuya.com/events | https://www.toasttab.com/tatsu-ya-hq-507-pressler-st-ste-700/giftcards",
+      "additionalSources": "https://www.kemuri-tatsuya.com/menu | https://www.kemuri-tatsuya.com/events | https://www.kemuri-tatsuya.com/contact | https://www.kemuri-tatsuya.com/menu-1 | https://www.toasttab.com/tatsu-ya-hq-507-pressler-st-ste-700/giftcards",
       "sources": [
         "https://www.kemuri-tatsuya.com/",
+        "https://www.kemuri-tatsuya.com/menu",
+        "https://www.kemuri-tatsuya.com/events",
         "https://www.kemuri-tatsuya.com/contact",
         "https://www.kemuri-tatsuya.com/menu-1",
-        "https://www.kemuri-tatsuya.com/events",
         "https://www.toasttab.com/tatsu-ya-hq-507-pressler-st-ste-700/giftcards"
       ],
       "retrievedAt": "2026-08-21T01:42:18.458Z",
@@ -3817,17 +3825,17 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Austin, TX",
-      "phone": "",
+      "phone": "(512) 477-5584",
       "email": "",
       "website": "https://www.jeffreysofaustin.com/",
       "menuUrl": "https://jeffreysofaustin.com/menus/",
       "reservationUrl": "https://www.opentable.com/r/jeffreys-restaurant-austin",
       "coverageArea": "Austin, Texas",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Sunday–Friday 4:30 PM–11:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Friday 4:30 PM–11:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -3839,10 +3847,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -3858,9 +3865,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Austin, TX",
       "city": "Austin",
@@ -3884,12 +3891,11 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -3897,9 +3903,10 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ],
       "cuisineTags": [
         "American",
@@ -3916,13 +3923,14 @@
         "https://jeffreysofaustin.com/reservations/",
         "https://www.opentable.com/r/jeffreys-restaurant-austin"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.459Z",
-      "searchText": "jeffrey's austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american steak steak / grill contemporary american opentable austin, tx",
+      "retrievedAt": "2026-09-04T12:50:08.386Z",
+      "searchText": "jeffrey's austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american steak steak / grill contemporary american opentable phone austin, tx",
       "spendBands": [],
       "daypartTags": [],
       "planningLoad": "Material",
       "bookingPaths": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ]
     },
     {

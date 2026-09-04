@@ -18,10 +18,10 @@
       "reservationUrl": "https://www.opentable.com/r/the-catbird-seat",
       "coverageArea": "Nashville, Tennessee",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Wednesday–Saturday 12:00 AM–12:00 AM. Reservations via OpenTable.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Wednesday–Saturday 12:00 AM–12:00 AM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -33,10 +33,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -52,9 +51,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Nashville, TN",
       "city": "Nashville",
@@ -83,7 +82,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -92,7 +90,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -106,7 +104,7 @@
         "https://www.thecatbirdseatrestaurant.com/",
         "https://www.opentable.com/r/the-catbird-seat"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
+      "retrievedAt": "2026-09-04T12:50:08.378Z",
       "searchText": "the catbird seat nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. tasting menu contemporary opentable nashville, tn",
       "spendBands": [],
       "daypartTags": [],
@@ -361,8 +359,8 @@
       "menuUrl": "https://www.rolfanddaughters.com/menu-1",
       "reservationUrl": "https://www.toasttab.com/rolf-and-daughters/giftcards",
       "coverageArea": "Nashville, Tennessee",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "New American, Farm-To-Table, Seasonal, Pasta — named on the restaurant's own pages.",
+      "serviceSummary": "New American, Farm-To-Table, Seasonal, Pasta. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
@@ -382,120 +380,6 @@
       "unknownList": [
         "Live hours for your date",
         "Dietary cross-contact handling",
-        "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
-      ],
-      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
-      "sourceAuthority": "Official restaurant website / first-party page",
-      "confidence": "owned_site_leveled",
-      "freshnessStatus": "OWNED_SITE_REVIEWED",
-      "reviewedAt": "2026-08-21",
-      "nextReviewAt": "2026-09-20",
-      "reviewStatus": "current",
-      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
-      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "conflict": "",
-      "depthFilled": 5,
-      "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
-      "signals": {},
-      "region": "Nashville, TN",
-      "city": "Nashville",
-      "stateProvince": "Tennessee",
-      "regionGroup": "Tennessee",
-      "priceTags": [],
-      "serviceStyles": [],
-      "dietaryTags": [
-        "Direct confirmation required"
-      ],
-      "accessibilityTags": [],
-      "reservationTags": [
-        "Reservations"
-      ],
-      "groupFitTags": [],
-      "checklist": [
-        "Confirm current hours directly",
-        "Confirm reservation release and cancellation terms",
-        "Confirm dietary handling with the kitchen",
-        "Confirm accessibility route and restroom detail",
-        "Verify parking or transit for arrival window",
-        "Check current menu prices"
-      ],
-      "hasPhone": false,
-      "hasOfficialConflict": false,
-      "isFullCaseFile": false,
-      "reviewDueSoon": false,
-      "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "dietaryDetails",
-        "accessibilityState",
-        "dressCode",
-        "atmosphereSummary"
-      ],
-      "thinFieldCount": 7,
-      "bookingPlatforms": [
-        "Toast"
-      ],
-      "cuisineTags": [
-        "American",
-        "Pasta",
-        "Contemporary American"
-      ],
-      "officialSource": "https://www.rolfanddaughters.com/",
-      "additionalSources": "https://www.rolfanddaughters.com/menu-1 | https://www.rolfanddaughters.com/about | https://www.toasttab.com/rolf-and-daughters/giftcards",
-      "sources": [
-        "https://www.rolfanddaughters.com/",
-        "https://www.rolfanddaughters.com/menu-1",
-        "https://www.rolfanddaughters.com/about",
-        "https://www.toasttab.com/rolf-and-daughters/giftcards"
-      ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
-      "searchText": "rolf and daughters nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american pasta contemporary american toast nashville, tn",
-      "spendBands": [],
-      "daypartTags": [],
-      "planningLoad": "Standard",
-      "bookingPaths": [
-        "Toast"
-      ]
-    },
-    {
-      "id": 2313,
-      "slug": "henrietta-red-nashville",
-      "title": "Henrietta Red",
-      "link": "",
-      "recordId": "RI-EXP-0234",
-      "origin": "expansion-seed",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "address": "Nashville, TN",
-      "phone": "",
-      "email": "",
-      "website": "https://www.henriettared.com/",
-      "menuUrl": "https://www.henriettared.com/menu",
-      "reservationUrl": "https://www.opentable.com/r/henrietta-red-nashville-3",
-      "coverageArea": "Nashville, Tennessee",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
-      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Dietary wording from the restaurant's own pages: We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry. · We do ask that you inform us of any allergies or dietary restrictions in the notes area when making your reservation so we have plenty of time to plan for your dinner.",
-      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Group policy from the restaurant's own pages: If you have a larger party, we encourage inquiring about our private event space!",
-      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
-      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
-      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
-      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
-      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
-      "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -543,72 +427,72 @@
       "thinFields": [
         "hoursSummary",
         "priceDetails",
-        "cuisineContext",
+        "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
       "thinFieldCount": 6,
       "bookingPlatforms": [
-        "OpenTable"
+        "Toast"
       ],
       "cuisineTags": [
-        "Seafood",
         "American",
-        "Contemporary American"
+        "Pasta",
+        "Contemporary American",
+        "Seasonal / market"
       ],
-      "officialSource": "https://www.henriettared.com/",
-      "additionalSources": "https://www.henriettared.com/menu | https://www.henriettared.com/faq | https://www.opentable.com/r/henrietta-red-nashville-3",
+      "officialSource": "https://www.rolfanddaughters.com/",
+      "additionalSources": "https://www.rolfanddaughters.com/menu-1 | https://www.rolfanddaughters.com/about | https://www.toasttab.com/rolf-and-daughters/giftcards",
       "sources": [
-        "https://www.henriettared.com/",
-        "https://www.henriettared.com/menu",
-        "https://www.henriettared.com/faq",
-        "https://www.opentable.com/r/henrietta-red-nashville-3"
+        "https://www.rolfanddaughters.com/",
+        "https://www.rolfanddaughters.com/menu-1",
+        "https://www.rolfanddaughters.com/about",
+        "https://www.toasttab.com/rolf-and-daughters/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
-      "searchText": "henrietta red nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. seafood american contemporary american opentable nashville, tn",
+      "retrievedAt": "2026-09-04T12:50:08.378Z",
+      "searchText": "rolf and daughters nashville tennessee nashville, tn new american, farm-to-table, seasonal, pasta — named on the restaurant's own pages. american pasta contemporary american seasonal / market toast nashville, tn",
       "spendBands": [],
       "daypartTags": [],
-      "planningLoad": "Material",
+      "planningLoad": "Standard",
       "bookingPaths": [
-        "OpenTable"
+        "Toast"
       ]
     },
     {
-      "id": 2314,
-      "slug": "bastion-nashville",
-      "title": "Bastion",
+      "id": 2313,
+      "slug": "henrietta-red-nashville",
+      "title": "Henrietta Red",
       "link": "",
-      "recordId": "RI-EXP-0235",
+      "recordId": "RI-EXP-0234",
       "origin": "expansion-seed",
       "addedAt": "2026-08-18T22:55:05.661Z",
       "address": "Nashville, TN",
       "phone": "",
       "email": "",
-      "website": "https://www.bastionnashville.com/",
-      "menuUrl": "",
-      "reservationUrl": "https://www.opentable.com/r/bastion-reservations-nashville?restref=985351&lang=en-US&ot_source=Restaurant%20website",
+      "website": "https://www.henriettared.com/",
+      "menuUrl": "https://www.henriettared.com/menu",
+      "reservationUrl": "https://www.opentable.com/r/henrietta-red-nashville-3",
       "coverageArea": "Nashville, Tennessee",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday 10:00 AM–2:00 PM and 5:00 PM–9:00 PM; Tuesday–Friday 5:00 PM–10:00 PM; Saturday 10:00 AM–2:00 PM and 5:00 PM–10:00 PM. Reservations via OpenTable.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant. Reservations are prepaid and can be made online here. · We book private dinners a minimum of 60 days in advance with a 40% non-refundable deposit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 10:00 AM–2:00 PM and 5:00 PM–9:00 PM; Tuesday–Friday 5:00 PM–10:00 PM; Saturday 10:00 AM–2:00 PM and 5:00 PM–10:00 PM.",
+      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Dietary wording from the restaurant's own pages: We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry. · Unfortunately, we cannot adjust the set menu for strict vegan diets.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry. · We do ask that you inform us of any allergies or dietary restrictions in the notes area when making your reservation so we have plenty of time to plan for your dinner.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Group policy from the restaurant's own pages: The restaurant operates Wednesday thru Saturday with reservations available from 5:30pm to 9:00pm for parties of 1 to 6. · There are several options for private events at Bastion.",
+      "groupDetails": "Group policy from the restaurant's own pages: If you have a larger party, we encourage inquiring about our private event space!",
       "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -623,16 +507,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Nashville, TN",
       "city": "Nashville",
       "stateProvince": "Tennessee",
       "regionGroup": "Tennessee",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -654,7 +540,121 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
+        "priceDetails",
+        "cuisineContext",
+        "accessibilityState",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "OpenTable"
+      ],
+      "cuisineTags": [
+        "Seafood",
+        "American",
+        "Contemporary American"
+      ],
+      "officialSource": "https://www.henriettared.com/",
+      "additionalSources": "https://www.henriettared.com/menu | https://www.henriettared.com/faq | https://www.opentable.com/r/henrietta-red-nashville-3",
+      "sources": [
+        "https://www.henriettared.com/",
+        "https://www.henriettared.com/menu",
+        "https://www.henriettared.com/faq",
+        "https://www.opentable.com/r/henrietta-red-nashville-3"
+      ],
+      "retrievedAt": "2026-09-04T12:50:08.379Z",
+      "searchText": "henrietta red nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. seafood american contemporary american opentable nashville, tn",
+      "spendBands": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
+      "planningLoad": "Material",
+      "bookingPaths": [
+        "OpenTable"
+      ]
+    },
+    {
+      "id": 2314,
+      "slug": "bastion-nashville",
+      "title": "Bastion",
+      "link": "",
+      "recordId": "RI-EXP-0235",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "address": "Nashville, TN",
+      "phone": "",
+      "email": "",
+      "website": "https://www.bastionnashville.com/",
+      "menuUrl": "",
+      "reservationUrl": "https://www.opentable.com/r/bastion-reservations-nashville?restref=985351&lang=en-US&ot_source=Restaurant%20website",
+      "coverageArea": "Nashville, Tennessee",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–1:00 AM. Reservations via OpenTable.",
+      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–1:00 AM.",
+      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant. Reservations are prepaid and can be made online here. · We book private dinners a minimum of 60 days in advance with a 40% non-refundable deposit.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry. · Unfortunately, we cannot adjust the set menu for strict vegan diets.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: The restaurant operates Wednesday thru Saturday with reservations available from 5:30pm to 9:00pm for parties of 1 to 6. · There are several options for private events at Bastion.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
+      "unknownList": [
+        "Accessibility route detail",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-21",
+      "nextReviewAt": "2026-09-20",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 6,
+      "depthTotal": 12,
+      "depthLabel": "6 / 12 core fields",
+      "signals": {},
+      "region": "Nashville, TN",
+      "city": "Nashville",
+      "stateProvince": "Tennessee",
+      "regionGroup": "Tennessee",
+      "priceTags": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": false,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -662,7 +662,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -679,10 +679,12 @@
         "https://www.bastionnashville.com/private-events",
         "https://www.opentable.com/r/bastion-reservations-nashville?restref=985351&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
+      "retrievedAt": "2026-09-04T12:50:08.379Z",
       "searchText": "bastion nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. contemporary american contemporary american opentable nashville, tn",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "OpenTable"
@@ -815,10 +817,10 @@
       "reservationUrl": "https://order.toasttab.com/online/lockeland-table-1520-woodland-st",
       "coverageArea": "Nashville, Tennessee",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours Monday–Saturday 4:00 PM–10:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday–Saturday 4:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -830,129 +832,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics",
-        "Current per-guest total"
-      ],
-      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
-      "sourceAuthority": "Official restaurant website / first-party page",
-      "confidence": "owned_site_leveled",
-      "freshnessStatus": "OWNED_SITE_REVIEWED",
-      "reviewedAt": "2026-08-21",
-      "nextReviewAt": "2026-09-20",
-      "reviewStatus": "current",
-      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
-      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "conflict": "",
-      "depthFilled": 4,
-      "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
-      "signals": {},
-      "region": "Nashville, TN",
-      "city": "Nashville",
-      "stateProvince": "Tennessee",
-      "regionGroup": "Tennessee",
-      "priceTags": [],
-      "serviceStyles": [],
-      "dietaryTags": [
-        "Direct confirmation required"
-      ],
-      "accessibilityTags": [],
-      "reservationTags": [
-        "Reservations"
-      ],
-      "groupFitTags": [],
-      "checklist": [
-        "Confirm current hours directly",
-        "Confirm reservation release and cancellation terms",
-        "Confirm dietary handling with the kitchen",
-        "Confirm accessibility route and restroom detail",
-        "Verify parking or transit for arrival window",
-        "Check current menu prices"
-      ],
-      "hasPhone": false,
-      "hasOfficialConflict": false,
-      "isFullCaseFile": false,
-      "reviewDueSoon": false,
-      "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "dietaryDetails",
-        "accessibilityState",
-        "groupDetails",
-        "dressCode",
-        "atmosphereSummary"
-      ],
-      "thinFieldCount": 8,
-      "bookingPlatforms": [
-        "Toast"
-      ],
-      "cuisineTags": [
-        "American",
-        "Southern",
-        "Contemporary American"
-      ],
-      "officialSource": "https://www.lockelandtable.com/",
-      "additionalSources": "https://www.lockelandtable.com/drinks | https://www.lockelandtable.com/events | https://order.toasttab.com/online/lockeland-table-1520-woodland-st",
-      "sources": [
-        "https://www.lockelandtable.com/",
-        "https://www.lockelandtable.com/drinks",
-        "https://www.lockelandtable.com/events",
-        "https://order.toasttab.com/online/lockeland-table-1520-woodland-st"
-      ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
-      "searchText": "lockeland table nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american southern contemporary american toast nashville, tn",
-      "spendBands": [],
-      "daypartTags": [],
-      "planningLoad": "Standard",
-      "bookingPaths": [
-        "Toast"
-      ]
-    },
-    {
-      "id": 2317,
-      "slug": "folk-nashville",
-      "title": "Folk",
-      "link": "",
-      "recordId": "RI-EXP-0238",
-      "origin": "expansion-seed",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "address": "Nashville, TN",
-      "phone": "",
-      "email": "",
-      "website": "https://www.goodasfolk.com/",
-      "menuUrl": "https://www.goodasfolk.com/menu",
-      "reservationUrl": "https://order.toasttab.com/online/folknashville",
-      "coverageArea": "Nashville, Tennessee",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
-      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
-      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Group policy from the restaurant's own pages: Menu Large Parties Online Orders Gift Cards About Contact Jobs Cake Orders Uber Eats Delivery Make a Reservation VIEW THE MENU Seasonal Cooking.",
-      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
-      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
-      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
-      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
-      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
-      "unknownList": [
-        "Live hours for your date",
-        "Dietary cross-contact handling",
-        "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
       ],
@@ -997,7 +882,122 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
+        "priceDetails",
+        "cuisineContext",
+        "dietaryDetails",
+        "accessibilityState",
+        "groupDetails",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 7,
+      "bookingPlatforms": [
+        "Toast"
+      ],
+      "cuisineTags": [
+        "American",
+        "Southern",
+        "Contemporary American"
+      ],
+      "officialSource": "https://www.lockelandtable.com/",
+      "additionalSources": "https://www.lockelandtable.com/drinks | https://www.lockelandtable.com/events | https://order.toasttab.com/online/lockeland-table-1520-woodland-st",
+      "sources": [
+        "https://www.lockelandtable.com/",
+        "https://www.lockelandtable.com/drinks",
+        "https://www.lockelandtable.com/events",
+        "https://order.toasttab.com/online/lockeland-table-1520-woodland-st"
+      ],
+      "retrievedAt": "2026-09-04T12:50:08.379Z",
+      "searchText": "lockeland table nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american southern contemporary american toast nashville, tn",
+      "spendBands": [],
+      "daypartTags": [],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast"
+      ]
+    },
+    {
+      "id": 2317,
+      "slug": "folk-nashville",
+      "title": "Folk",
+      "link": "",
+      "recordId": "RI-EXP-0238",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "address": "Nashville, TN",
+      "phone": "",
+      "email": "",
+      "website": "https://www.goodasfolk.com/",
+      "menuUrl": "https://www.goodasfolk.com/menu",
+      "reservationUrl": "https://order.toasttab.com/online/folknashville",
+      "coverageArea": "Nashville, Tennessee",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Monday, Thursday–Saturday 5:00 PM–10:00 PM. Reservations via Toast.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Monday, Thursday–Saturday 5:00 PM–10:00 PM.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: Menu Large Parties Online Orders Gift Cards About Contact Jobs Cake Orders Uber Eats Delivery Make a Reservation VIEW THE MENU Seasonal Cooking.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
+      "unknownList": [
+        "Dietary cross-contact handling",
+        "Accessibility route detail",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-21",
+      "nextReviewAt": "2026-09-20",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 6,
+      "depthTotal": 12,
+      "depthLabel": "6 / 12 core fields",
+      "signals": {},
+      "region": "Nashville, TN",
+      "city": "Nashville",
+      "stateProvince": "Tennessee",
+      "regionGroup": "Tennessee",
+      "priceTags": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": false,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -1005,7 +1005,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "Toast"
       ],
@@ -1022,10 +1022,12 @@
         "https://www.goodasfolk.com/about",
         "https://order.toasttab.com/online/folknashville"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
+      "retrievedAt": "2026-09-04T12:50:08.379Z",
       "searchText": "folk nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. pizza american contemporary american toast nashville, tn",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
         "Toast"

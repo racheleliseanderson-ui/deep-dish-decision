@@ -3654,7 +3654,7 @@
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: Weekdays Wednesday & Thursday: 4:00 PM - 9:00 PM Friday: 12:00 PM - 9:00 PM Saturday & Sunday Saturday & Sunday: 10:00 AM - 9:00 PM Private Dining Reservations The Whale Wins To-Go Enjoy The Whale Wins at home!",
@@ -3664,14 +3664,13 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 4,
       "unknownList": [
         "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -3683,15 +3682,17 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Seattle, WA",
       "city": "Seattle",
       "stateProvince": "Washington",
       "regionGroup": "Washington",
-      "priceTags": [],
+      "priceTags": [
+        "$"
+      ],
       "serviceStyles": [],
       "dietaryTags": [
         "Direct confirmation required"
@@ -3715,14 +3716,13 @@
       "reviewDueSoon": false,
       "thinFields": [
         "hoursSummary",
-        "priceDetails",
         "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -3740,9 +3740,11 @@
         "https://thewhalewins.com/about",
         "https://www.opentable.com/the-whale-wins-reservations-seattle?restref=148678&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.456Z",
+      "retrievedAt": "2026-09-04T12:50:08.380Z",
       "searchText": "the whale wins seattle washington seattle, wa not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american seasonal contemporary american seasonal / market opentable seattle, wa",
-      "spendBands": [],
+      "spendBands": [
+        "$"
+      ],
       "daypartTags": [],
       "planningLoad": "Material",
       "bookingPaths": [
@@ -3989,10 +3991,10 @@
       "reservationUrl": "",
       "coverageArea": "Seattle, Washington",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Monday, Thursday–Saturday 7:00 AM–7:00 AM.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Monday, Thursday–Saturday 7:00 AM–7:00 AM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -4004,15 +4006,15 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
       "unknownsCount": 6,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics"
+        "Parking and arrival logistics",
+        "Current per-guest total"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -4024,9 +4026,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 1,
+      "depthFilled": 3,
       "depthTotal": 12,
-      "depthLabel": "1 / 12 core fields",
+      "depthLabel": "3 / 12 core fields",
       "signals": {},
       "region": "Seattle, WA",
       "city": "Seattle",
@@ -4053,7 +4055,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -4062,10 +4063,9 @@
         "accessibilityState",
         "groupDetails",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 11,
+      "thinFieldCount": 9,
       "bookingPlatforms": [],
       "cuisineTags": [
         "Italian",
@@ -4078,7 +4078,7 @@
         "https://www.stapleandfancy.com/",
         "https://www.stapleandfancy.com/about"
       ],
-      "retrievedAt": "2026-08-19T02:53:28.994Z",
+      "retrievedAt": "2026-09-04T12:50:08.381Z",
       "searchText": "staple & fancy seattle washington seattle, wa not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. italian american contemporary american seattle, wa",
       "spendBands": [],
       "daypartTags": [],
@@ -4101,10 +4101,10 @@
       "reservationUrl": "https://www.tilikumplacecafe.com/reservation",
       "coverageArea": "Seattle, Washington",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Direct / confirm live.",
+      "serviceSummary": "Hours Sunday 9:00 AM–2:00 PM; Friday 10:00 AM–2:00 PM and 5:00 PM–9:00 PM; Saturday 9:00 AM–2:00 PM and 5:00 PM–9:00 PM. Reservations via Direct / confirm live.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 9:00 AM–2:00 PM; Friday 10:00 AM–2:00 PM and 5:00 PM–9:00 PM; Saturday 9:00 AM–2:00 PM and 5:00 PM–9:00 PM.",
       "reservationDetails": "Reservations via Direct / confirm live on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -4116,10 +4116,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
@@ -4136,16 +4135,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Seattle, WA",
       "city": "Seattle",
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -4167,7 +4168,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -4177,7 +4177,7 @@
         "atmosphereSummary",
         "serviceSummary"
       ],
-      "thinFieldCount": 9,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "Direct / confirm live"
       ],
@@ -4192,10 +4192,12 @@
         "https://www.tilikumplacecafe.com/menus",
         "https://www.tilikumplacecafe.com/reservation"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.456Z",
+      "retrievedAt": "2026-09-04T12:50:08.381Z",
       "searchText": "tilikum place cafe seattle washington seattle, wa not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american direct / confirm live seattle, wa",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
         "Direct / confirm live"

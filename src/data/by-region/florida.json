@@ -358,17 +358,17 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-12T06:45:34.941Z",
       "address": "Miami, FL",
-      "phone": "",
+      "phone": "(305) 577-0277",
       "email": "",
       "website": "https://www.zumarestaurant.com/en/miami/",
       "menuUrl": "https://www.zumarestaurant.com/en/miami/menu",
       "reservationUrl": "https://www.sevenrooms.com/explore/zumamiami/reservations/create/search/?date=2026-08-02",
       "coverageArea": "Miami, Florida",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via SevenRooms.",
+      "cuisineContext": "Modern Japanese Cuisine — named on the restaurant's own pages.",
+      "serviceSummary": "Modern Japanese Cuisine. Hours Sunday 11:30 AM–4:00 PM and 6:00 PM–11:00 PM and 11:30 AM–12:00 AM; Monday–Wednesday 12:00 PM–3:00 PM and 6:00 PM–11:00 PM; Thursday 12:00 PM–3:00 PM and 6:00 PM–11:30 PM; Friday 12:00 PM–3:00 PM and 6:00 PM–11:30 PM and 11:45 AM–1:00 AM; Saturday 6:00 PM–11:30 PM. Reservations via SevenRooms.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 11:30 AM–4:00 PM and 6:00 PM–11:00 PM and 11:30 AM–12:00 AM; Monday–Wednesday 12:00 PM–3:00 PM and 6:00 PM–11:00 PM; Thursday 12:00 PM–3:00 PM and 6:00 PM–11:30 PM; Friday 12:00 PM–3:00 PM and 6:00 PM–11:30 PM and 11:45 AM–1:00 AM; Saturday 6:00 PM–11:30 PM.",
       "reservationDetails": "Reservations via SevenRooms on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -380,10 +380,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -399,16 +398,19 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Miami, FL",
       "city": "Miami",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner",
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -425,22 +427,21 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
-        "SevenRooms"
+        "SevenRooms",
+        "Phone"
       ],
       "cuisineTags": [
         "Japanese"
@@ -454,13 +455,17 @@
         "https://www.zumarestaurant.com/en/miami/book-a-table",
         "https://www.sevenrooms.com/explore/zumamiami/reservations/create/search/?date=2026-08-02"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.448Z",
-      "searchText": "zuma miami miami florida miami, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. japanese sevenrooms miami, fl",
+      "retrievedAt": "2026-09-03T13:01:41.332Z",
+      "searchText": "zuma miami miami florida miami, fl modern japanese cuisine — named on the restaurant's own pages. japanese sevenrooms phone miami, fl",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language",
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "SevenRooms"
+        "SevenRooms",
+        "Phone"
       ]
     },
     {
@@ -472,19 +477,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-12T06:45:34.941Z",
       "address": "Miami Beach, FL",
-      "phone": "",
+      "phone": "(305) 538-2000",
       "email": "",
       "website": "https://hakkasan.com/miami/",
       "menuUrl": "https://taogroup.com/venues/hakkasan-miami/menu/",
       "reservationUrl": "https://www.opentable.com/booking/restref/availability?lang=en-US&_gl=1%2A1bwcm7h%2A_gcl_aw%2AR0NMLjE3ODE1NDk1MzYuQ2p3S0NBand4YjdSQmhBNUVpd0FRLUFBZEVfUUpWTDZGaks0akU0OHJPbjZrRnRKcFdJNVdjdGdQOVZ1MFVyYWFzUG5IcXhONXI2dFdob0NIVWNRQXZEX0J3RQ..%2A_gcl_au%2AMTM0MjM3NzUwNi4xNzgxMTkxMDU2LjczNzIzNTEwMC4xNzgzNjM4MTI5LjE3ODM2Mzg0Njc.%2AFPAU%2AMTM0MjM3NzUwNi4xNzgxMTkxMDU2%2A_ga%2ANzMwOTYxMTI2LjE3ODExOTEwNTY.%2A_ga_318XVGVW9C%2AczE3ODQyMTY2NTkkbzYkZzEkdDE3ODQyMTY2NjQkajU1JGwwJGgw%2A_fplc%2AaWxBcXUlMkJtZ0tVemtZdUslMkYlMkJHR2tsdDA2JTJCTFp3aUZhenYlMkYyeVdBNWhUdHkyWUZaV05HNWtFM0VmYjJBem1HRXpFZ0t5RERsQlFhVmx2Z2tjRVhnMkFWeUlyaHNhanpYYUNoQUElMkIzYnJOQWpERVJCWndPSUhjTzVDdmpyYUZ3JTNEJTNE&correlationId=3b91857b-92de-452c-8bb9-fa2e15c374a2&restRef=745729&otSource=Email",
       "coverageArea": "Miami, Florida",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "cuisineContext": "Authentic Cantonese — named on the restaurant's own pages.",
+      "serviceSummary": "Authentic Cantonese. Hours Sunday–Thursday 6:00 PM–10:00 PM; Friday 6:00 PM–11:00 PM. Reservations via OpenTable.",
       "menuSummary": "The menu on file is hosted on taogroup.com, not on the restaurant's own domain. Deep Dish cannot confirm the restaurant controls that page.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 6:00 PM–10:00 PM; Friday 6:00 PM–11:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: For Exclusive Private Events or Large Group Bookings, Hakkasan Miami has a Selection of Areas and Menus to Choose From",
@@ -494,14 +499,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -513,16 +516,20 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Miami, FL",
       "city": "Miami",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$$"
+      ],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -539,22 +546,20 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 4,
       "bookingPlatforms": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ],
       "cuisineTags": [
         "Chinese"
@@ -567,13 +572,18 @@
         "https://taogroup.com/venues/hakkasan-miami/menu/",
         "https://www.opentable.com/booking/restref/availability?lang=en-US&_gl=1%2A1bwcm7h%2A_gcl_aw%2AR0NMLjE3ODE1NDk1MzYuQ2p3S0NBand4YjdSQmhBNUVpd0FRLUFBZEVfUUpWTDZGaks0akU0OHJPbjZrRnRKcFdJNVdjdGdQOVZ1MFVyYWFzUG5IcXhONXI2dFdob0NIVWNRQXZEX0J3RQ..%2A_gcl_au%2AMTM0MjM3NzUwNi4xNzgxMTkxMDU2LjczNzIzNTEwMC4xNzgzNjM4MTI5LjE3ODM2Mzg0Njc.%2AFPAU%2AMTM0MjM3NzUwNi4xNzgxMTkxMDU2%2A_ga%2ANzMwOTYxMTI2LjE3ODExOTEwNTY.%2A_ga_318XVGVW9C%2AczE3ODQyMTY2NTkkbzYkZzEkdDE3ODQyMTY2NjQkajU1JGwwJGgw%2A_fplc%2AaWxBcXUlMkJtZ0tVemtZdUslMkYlMkJHR2tsdDA2JTJCTFp3aUZhenYlMkYyeVdBNWhUdHkyWUZaV05HNWtFM0VmYjJBem1HRXpFZ0t5RERsQlFhVmx2Z2tjRVhnMkFWeUlyaHNhanpYYUNoQUElMkIzYnJOQWpERVJCWndPSUhjTzVDdmpyYUZ3JTNEJTNE&correlationId=3b91857b-92de-452c-8bb9-fa2e15c374a2&restRef=745729&otSource=Email"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.448Z",
-      "searchText": "hakkasan miami miami florida miami, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. chinese opentable miami beach, fl",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-03T13:01:41.332Z",
+      "searchText": "hakkasan miami miami florida miami, fl authentic cantonese — named on the restaurant's own pages. chinese opentable phone miami beach, fl",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ]
     },
     {
@@ -1950,17 +1960,17 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Tampa, FL",
-      "phone": "",
+      "phone": "(813) 248-4961",
       "email": "",
       "website": "https://www.columbiarestaurant.com/",
       "menuUrl": "https://www.columbiarestaurant.com/food-drink",
       "reservationUrl": "https://www.opentable.com/columbia-restaurant-ybor-city-reservations-tampa?restref=40510&lang=en-US&ot_source=Restaurant%20website",
       "coverageArea": "Tampa, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Sunday, Tuesday–Thursday 11:00 AM–9:00 PM; Friday 11:00 AM–10:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Tuesday–Thursday 11:00 AM–9:00 PM; Friday 11:00 AM–10:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Cup $8 Bowl $10 Gluten free Cuban Black Bean Soup Frijoles Negros prepared exactly as our grandmother Carmen Hernandez did. · Cup $8 Bowl $10 Gluten free Vegan Gazpacho Andalucia Spain's famous cold soup of purée of ripe tomatoes, green peppers, onions, cucumbers and garlic.",
@@ -1972,10 +1982,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -1990,16 +1999,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -2016,21 +2027,21 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ],
       "cuisineTags": [
         "Spanish",
@@ -2045,13 +2056,16 @@
         "https://www.columbiarestaurant.com/food-drink",
         "https://www.opentable.com/columbia-restaurant-ybor-city-reservations-tampa?restref=40510&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
-      "searchText": "columbia restaurant tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. spanish cuban opentable tampa, fl",
+      "retrievedAt": "2026-09-04T12:50:08.381Z",
+      "searchText": "columbia restaurant tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. spanish cuban opentable phone tampa, fl",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ]
     },
     {
@@ -2302,10 +2316,10 @@
       "reservationUrl": "https://www.opentable.com/r/rooster-and-the-till-reservations-tampa?restref=397762&",
       "coverageArea": "Tampa, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Monday–Saturday 5:00 PM–10:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is local.cltampa.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday–Saturday 5:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -2317,10 +2331,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
@@ -2337,16 +2350,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -2368,7 +2383,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -2378,7 +2392,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 9,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -2392,10 +2406,12 @@
         "https://www.roosterandthetill.com/",
         "https://www.opentable.com/r/rooster-and-the-till-reservations-tampa?restref=397762&"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
+      "retrievedAt": "2026-09-04T12:50:08.382Z",
       "searchText": "rooster and the till tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american opentable tampa, fl",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "OpenTable"
@@ -2528,14 +2544,14 @@
       "phone": "",
       "email": "",
       "website": "https://www.oakandola.com/",
-      "menuUrl": "",
+      "menuUrl": "https://www.oakandola.com/s/Drink-Side-lindsey.pdf",
       "reservationUrl": "https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola",
       "coverageArea": "Tampa, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Resy.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Thursday 11:00 AM–3:00 PM and 5:00 PM–10:00 PM; Friday–Saturday 11:00 AM–3:00 PM and 5:00 PM–11:00 PM. Reservations via Resy.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 11:00 AM–3:00 PM and 5:00 PM–10:00 PM; Friday–Saturday 11:00 AM–3:00 PM and 5:00 PM–11:00 PM.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -2547,10 +2563,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -2566,16 +2581,19 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner",
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -2597,16 +2615,14 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
-        "menu",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -2615,17 +2631,21 @@
         "Contemporary American"
       ],
       "officialSource": "https://www.oakandola.com/",
-      "additionalSources": "https://www.oakandola.com/reserve | https://www.oakandola.com/events | https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola",
+      "additionalSources": "https://www.oakandola.com/reserve | https://www.oakandola.com/events | https://www.oakandola.com/s/Drink-Side-lindsey.pdf | https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola",
       "sources": [
         "https://www.oakandola.com/",
         "https://www.oakandola.com/reserve",
         "https://www.oakandola.com/events",
+        "https://www.oakandola.com/s/Drink-Side-lindsey.pdf",
         "https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
+      "retrievedAt": "2026-09-04T12:50:08.382Z",
       "searchText": "oak & ola tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american resy tampa, fl",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language",
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "Resy"
@@ -2640,19 +2660,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "St. Petersburg, FL",
-      "phone": "",
+      "phone": "(727) 350-1019",
       "email": "",
       "website": "https://www.stillwaterstavern.com/",
       "menuUrl": "https://www.stillwaterstavern.com/menu/brunchnew?",
       "reservationUrl": "https://www.toasttab.com/stillwaters-tavern/giftcards",
       "coverageArea": "Tampa, Florida",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "American, Scratch Kitchen, Bar Food — named on the restaurant's own pages.",
+      "serviceSummary": "American, Scratch Kitchen, Bar Food. Hours Sunday 11:00 AM–10:00 PM and 11:00 AM–9:00 PM; Monday–Thursday 11:30 AM–10:00 PM and 11:30 AM–9:00 PM; Friday 11:30 AM–11:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 11:00 AM–10:00 PM and 11:00 AM–9:00 PM; Monday–Thursday 11:30 AM–10:00 PM and 11:30 AM–9:00 PM; Friday 11:30 AM–11:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
@@ -2662,15 +2682,13 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -2682,16 +2700,20 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$"
+      ],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -2708,28 +2730,27 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
-        "Toast"
+        "Toast",
+        "Phone"
       ],
       "cuisineTags": [
         "American",
         "Seafood",
-        "Contemporary American"
+        "Contemporary American",
+        "Cocktail / lounge"
       ],
       "officialSource": "https://www.stillwaterstavern.com/",
       "additionalSources": "https://www.stillwaterstavern.com/menu/brunchnew | https://www.stillwaterstavern.com/private-events | https://www.stillwaterstavern.com/about | https://www.stillwaterstavern.com/menu/brunchnew? | https://www.toasttab.com/stillwaters-tavern/giftcards",
@@ -2741,13 +2762,18 @@
         "https://www.stillwaterstavern.com/menu/brunchnew?",
         "https://www.toasttab.com/stillwaters-tavern/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
-      "searchText": "stillwaters tavern tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american seafood contemporary american toast st. petersburg, fl",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-04T12:50:08.383Z",
+      "searchText": "stillwaters tavern tampa florida tampa, fl american, scratch kitchen, bar food — named on the restaurant's own pages. american seafood contemporary american cocktail / lounge toast phone st. petersburg, fl",
+      "spendBands": [
+        "$$"
+      ],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "Toast"
+        "Toast",
+        "Phone"
       ]
     },
     {
@@ -2766,10 +2792,10 @@
       "reservationUrl": "",
       "coverageArea": "Tampa, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "serviceSummary": "Hours Daily 5:00 PM–10:00 PM.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Daily 5:00 PM–10:00 PM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -2781,15 +2807,15 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
       "unknownsCount": 6,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics"
+        "Parking and arrival logistics",
+        "Current per-guest total"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -2801,16 +2827,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 2,
+      "depthFilled": 4,
       "depthTotal": 12,
-      "depthLabel": "2 / 12 core fields",
+      "depthLabel": "4 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -2830,7 +2858,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "reservation",
@@ -2838,10 +2865,9 @@
         "accessibilityState",
         "groupDetails",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 10,
+      "thinFieldCount": 8,
       "bookingPlatforms": [],
       "cuisineTags": [
         "American",
@@ -2853,10 +2879,12 @@
         "https://edison-tampa.com/",
         "https://edison-tampa.com/menu"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
+      "retrievedAt": "2026-09-04T12:50:08.383Z",
       "searchText": "edison: food+drink lab tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american tampa, fl",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": []
     },
