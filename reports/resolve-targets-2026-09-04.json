@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T14:54:59.871Z",
+  "generatedAt": "2026-09-04T15:29:25.271Z",
   "attempted": 132,
   "resolved": 0,
   "missed": 137,
@@ -193,7 +193,8 @@
         "https://www.clanceysmeats.com/ rejected: no Minneapolis address on page",
         "https://www.clanceys.com -> 200",
         "https://www.hugedomains.com/domain_profile.cfm?d=clanceys.com rejected: aggregator",
-        "https://clanceys.com -> fetch failed:ECONNRESET"
+        "https://clanceys.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=clanceys.com rejected: aggregator"
       ]
     },
     {
@@ -803,7 +804,8 @@
       "tried": [
         "https://www.callesol.com -> 200",
         "https://www.hugedomains.com/domain_profile.cfm?d=callesol.com rejected: aggregator",
-        "https://callesol.com -> fetch failed:ECONNRESET",
+        "https://callesol.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=callesol.com rejected: aggregator",
         "https://www.calle.com -> 200",
         "https://calle.com/ rejected: does not name target",
         "https://calle.com -> 200",
@@ -1016,8 +1018,7 @@
       "name": "Taiwan Cafe",
       "reason": "unresolved",
       "tried": [
-        "https://www.taiwancafe.com -> 200",
-        "https://www.taiwancafe.com/ rejected: parked",
+        "https://www.taiwancafe.com -> fetch failed:ECONNRESET",
         "https://taiwancafe.com -> 200",
         "https://taiwancafe.com/ rejected: parked",
         "https://www.taiwan.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
@@ -1151,8 +1152,7 @@
         "https://www.beastcleaver.com/ rejected: does not name target",
         "https://beastcleaver.com -> fetch failed:ENOTFOUND",
         "https://www.beastand.com -> fetch failed:ECONNRESET",
-        "https://beastand.com -> 200",
-        "https://www.hugedomains.com/domain_profile.cfm?d=beastand.com rejected: aggregator",
+        "https://beastand.com -> fetch failed:ECONNRESET",
         "https://www.beast.com -> fetch failed:ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE",
         "https://beast.com -> 403"
       ]
@@ -1295,8 +1295,10 @@
         "https://southernsteakandoyster.com -> fetch failed:ENOTFOUND",
         "https://www.southernsteakoyster.com -> fetch failed:ENOTFOUND",
         "https://southernsteakoyster.com -> fetch failed:ENOTFOUND",
-        "https://www.southernsteak.com -> fetch failed:ECONNRESET",
-        "https://southernsteak.com -> fetch failed:ECONNRESET",
+        "https://www.southernsteak.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=southernsteak.com rejected: aggregator",
+        "https://southernsteak.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=southernsteak.com rejected: aggregator",
         "https://www.southern.com -> 403",
         "https://southern.com -> 403"
       ]
@@ -1350,7 +1352,7 @@
         "https://www.bacchanalwine.com/ rejected: no New Orleans address on page",
         "https://bacchanalwine.com -> 200",
         "https://www.bacchanalwine.com/ rejected: no New Orleans address on page",
-        "https://www.bacchanal.com -> fetch failed:ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR",
+        "https://www.bacchanal.com -> 200",
         "https://bacchanal.com -> 200"
       ]
     },
@@ -1398,9 +1400,9 @@
       "tried": [
         "https://www.palmandpine.com -> 200",
         "https://palmandpine.com -> 200",
-        "https://www.palmpine.com -> fetch failed:ECONNRESET",
-        "https://palmpine.com -> 200",
+        "https://www.palmpine.com -> 200",
         "https://www.hugedomains.com/domain_profile.cfm?d=palmpine.com rejected: aggregator",
+        "https://palmpine.com -> fetch failed:ECONNRESET",
         "https://www.palmand.com -> 200",
         "https://palmand.com -> 200",
         "https://www.palm.com -> 200",

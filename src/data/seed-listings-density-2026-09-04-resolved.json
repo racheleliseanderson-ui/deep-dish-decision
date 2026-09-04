@@ -1,5 +1,5 @@
 {
   "note": "Resolved by scripts/pipeline/resolve-targets.mjs. Each entry's website was reached over plain HTTPS and verified to name the establishment and read as a restaurant; address and phone were taken from that page (JSON-LD first, visible text second) and the address was required to name the target city. Unresolved, parked, closed and unverifiable targets were dropped and are listed in the matching reports/resolve-targets file. Narrative first-party fields stay empty until enrich.mjs runs.",
-  "generatedAt": "2026-09-04T14:54:59.871Z",
+  "generatedAt": "2026-09-04T15:29:25.271Z",
   "batches": []
 }
