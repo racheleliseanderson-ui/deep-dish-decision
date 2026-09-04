@@ -18,7 +18,7 @@ echo   restaurant's own website, then enriches ONLY newly-added records.
 echo.
 echo   NO GOOGLE KEY IS REQUIRED. OpenStreetMap is the default discovery source.
 echo   Google Places remains optional if you explicitly run discover.mjs with
-necho   --provider=google and have a GOOGLE_MAPS_API_KEY configured.
+echo   --provider=google and have a GOOGLE_MAPS_API_KEY configured.
 echo.
 echo   Existing restaurants are deduplicated and skipped.
 echo   Failed candidates enter a cooldown ledger so the next run moves on.
