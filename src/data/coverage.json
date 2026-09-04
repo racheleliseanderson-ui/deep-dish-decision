@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T15:02:46.822Z",
+  "generatedAt": "2026-09-04T17:27:43.873Z",
   "totals": {
     "records": 1527,
     "enriched": 1527,
@@ -9,7 +9,7 @@
     "statesTotal": 51,
     "avgCompleteness": 97,
     "withRating": 111,
-    "withPrice": 141,
+    "withPrice": 108,
     "hygiene": 93,
     "neverEnriched": 0,
     "thin": 0,
@@ -28,31 +28,31 @@
     "preferRefreshOverDiscover": true,
     "hygieneBatchSize": 25,
     "hygieneSlugs": [
-      "canlis",
-      "kann",
-      "nue",
-      "the-pink-door",
-      "tusk",
-      "le-pigeon",
-      "revel",
-      "ox",
-      "langbaan",
-      "kachka",
-      "kin",
-      "ariana",
-      "gander-and-ryegrass",
-      "published-on-main",
-      "wooden-city-tacoma",
-      "cynara-restaurant-lounge",
-      "marche",
-      "elements-restaurant",
-      "roe",
-      "part-parcel",
-      "hama-hama-oyster-saloon",
-      "saffron-mediterranean-kitchen",
-      "passatempo-taverna",
-      "wind-cries-mary",
-      "st-lawrence"
+      "barrington-s-charlotte",
+      "born-raised-san-diego",
+      "del-rossi-s-cheesesteak-pizza-co-philadelphia",
+      "georgia-james-houston",
+      "ironside-fish-oyster-san-diego",
+      "jens-restaurant-anchorage",
+      "locale-farm-to-table-eatery-bakersfield",
+      "mourad-san-francisco",
+      "mr-szechuan",
+      "aga-s-restaurant-catering-houston",
+      "big-jones-chicago",
+      "botiwalla-atlanta",
+      "busy-bee-cafe-atlanta",
+      "chercher-ethiopian-restaurant-mart-washington",
+      "chichen-itza-restaurant-los-angeles",
+      "delbar-atlanta",
+      "desta-ethiopian-kitchen-atlanta",
+      "ecco-atlanta",
+      "famous-4th-street-delicatessen-philadelphia",
+      "fox-bros-bar-b-q-atlanta",
+      "gatlin-s-bbq-houston",
+      "hugo-s-houston",
+      "kokkari-estiatorio-san-francisco",
+      "little-miss-bbq-phoenix",
+      "lockhart-smokehouse-dallas"
     ],
     "nextHygiene": [
       {
@@ -66,10 +66,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:44:38.934Z",
+        "lastEnrichedAt": "2026-09-04T17:23:15.463Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-20",
         "reviewedAt": "2026-08-21",
@@ -87,10 +87,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:44:39.612Z",
+        "lastEnrichedAt": "2026-09-04T17:23:16.020Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-20",
         "reviewedAt": "2026-08-21",
@@ -109,10 +109,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:45:10.522Z",
+        "lastEnrichedAt": "2026-09-04T17:23:46.829Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -130,10 +130,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:45:11.571Z",
+        "lastEnrichedAt": "2026-09-04T17:23:47.753Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -153,10 +153,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:46:45.574Z",
+        "lastEnrichedAt": "2026-09-04T17:25:20.903Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-20",
         "reviewedAt": "2026-08-21",
@@ -175,10 +175,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:47:16.693Z",
+        "lastEnrichedAt": "2026-09-04T17:25:51.743Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-19",
         "reviewedAt": "2026-08-20",
@@ -195,10 +195,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:47:17.946Z",
+        "lastEnrichedAt": "2026-09-04T17:25:52.854Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-19",
         "reviewedAt": "2026-08-20",
@@ -215,10 +215,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:47:18.976Z",
+        "lastEnrichedAt": "2026-09-04T17:25:53.957Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -236,10 +236,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 78,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:47:19.999Z",
+        "lastEnrichedAt": "2026-09-04T17:25:54.858Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-09-10",
         "reviewedAt": "2026-08-11",
@@ -258,10 +258,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:48:53.570Z",
+        "lastEnrichedAt": "2026-09-04T17:27:27.977Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -278,10 +278,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:48:54.730Z",
+        "lastEnrichedAt": "2026-09-04T17:27:28.968Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -298,10 +298,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:48:55.816Z",
+        "lastEnrichedAt": "2026-09-04T17:27:29.968Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -318,10 +318,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:48:56.897Z",
+        "lastEnrichedAt": "2026-09-04T17:27:30.934Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -338,10 +338,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:48:57.935Z",
+        "lastEnrichedAt": "2026-09-04T17:27:31.845Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -358,10 +358,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:48:59.000Z",
+        "lastEnrichedAt": "2026-09-04T17:27:32.793Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -378,10 +378,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:00.036Z",
+        "lastEnrichedAt": "2026-09-04T17:27:33.754Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -398,10 +398,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:01.099Z",
+        "lastEnrichedAt": "2026-09-04T17:27:34.713Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -418,10 +418,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:02.178Z",
+        "lastEnrichedAt": "2026-09-04T17:27:35.801Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -438,10 +438,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:03.228Z",
+        "lastEnrichedAt": "2026-09-04T17:27:36.760Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -458,10 +458,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:04.405Z",
+        "lastEnrichedAt": "2026-09-04T17:27:37.692Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -478,10 +478,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:05.439Z",
+        "lastEnrichedAt": "2026-09-04T17:27:38.617Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -498,10 +498,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:06.621Z",
+        "lastEnrichedAt": "2026-09-04T17:27:39.537Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -518,10 +518,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:07.744Z",
+        "lastEnrichedAt": "2026-09-04T17:27:40.558Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -538,10 +538,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:08.826Z",
+        "lastEnrichedAt": "2026-09-04T17:27:41.615Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -558,10 +558,10 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 0,
         "completeness": 83,
         "matchStatus": "site-failure",
-        "lastEnrichedAt": "2026-09-03T10:49:09.855Z",
+        "lastEnrichedAt": "2026-09-04T17:27:42.617Z",
         "reviewStatus": "listing_only",
         "nextReviewAt": "2026-10-02",
         "reviewedAt": "2026-09-02",
@@ -758,7 +758,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 2,
         "completeness": 89,
         "matchStatus": "site-failure",
         "lastEnrichedAt": "2026-09-02T16:59:18.887Z",
@@ -799,7 +799,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 2,
         "completeness": 89,
         "matchStatus": "site-failure",
         "lastEnrichedAt": "2026-09-02T17:00:34.968Z",
@@ -821,7 +821,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 2,
         "completeness": 89,
         "matchStatus": "site-failure",
         "lastEnrichedAt": "2026-09-02T16:59:30.343Z",
@@ -841,7 +841,7 @@
         ],
         "hygiene": true,
         "staleTier": null,
-        "ageDays": 1,
+        "ageDays": 2,
         "completeness": 89,
         "matchStatus": "site-failure",
         "lastEnrichedAt": "2026-09-02T17:01:16.604Z",
@@ -1581,7 +1581,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1631,7 +1631,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1656,7 +1656,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1681,7 +1681,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1706,7 +1706,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1731,7 +1731,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1756,7 +1756,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1806,7 +1806,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1831,7 +1831,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1856,7 +1856,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1881,7 +1881,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1906,7 +1906,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1956,7 +1956,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -1981,7 +1981,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2006,7 +2006,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2031,7 +2031,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2056,7 +2056,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2081,7 +2081,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2106,7 +2106,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2131,7 +2131,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2156,7 +2156,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2181,7 +2181,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2206,7 +2206,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2231,7 +2231,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2256,7 +2256,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2281,7 +2281,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2306,7 +2306,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2398,7 +2398,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2444,7 +2444,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2605,7 +2605,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -2789,7 +2789,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10655,7 +10655,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10678,7 +10678,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10701,7 +10701,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10724,7 +10724,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10747,7 +10747,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10770,7 +10770,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10793,7 +10793,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10816,7 +10816,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10839,7 +10839,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10862,7 +10862,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10885,7 +10885,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10908,7 +10908,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10931,7 +10931,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10954,7 +10954,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -10977,7 +10977,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18546,7 +18546,7 @@
         "review-overdue"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18569,7 +18569,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18638,7 +18638,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18661,7 +18661,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18707,7 +18707,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18730,7 +18730,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18753,7 +18753,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18776,7 +18776,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18799,7 +18799,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18845,7 +18845,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18868,7 +18868,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18914,7 +18914,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18937,7 +18937,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18960,7 +18960,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -18983,7 +18983,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19029,7 +19029,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19121,7 +19121,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19282,7 +19282,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19397,7 +19397,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19420,7 +19420,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19443,7 +19443,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19466,7 +19466,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19489,7 +19489,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19512,7 +19512,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19535,7 +19535,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19558,7 +19558,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19581,7 +19581,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19604,7 +19604,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19627,7 +19627,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19650,7 +19650,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19742,7 +19742,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19834,7 +19834,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19857,7 +19857,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19880,7 +19880,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19903,7 +19903,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19926,7 +19926,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19972,7 +19972,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -19995,7 +19995,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20018,7 +20018,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20041,7 +20041,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20064,7 +20064,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20087,7 +20087,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20110,7 +20110,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20133,7 +20133,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20156,7 +20156,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20179,7 +20179,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20202,7 +20202,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20225,7 +20225,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20248,7 +20248,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20271,7 +20271,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20294,7 +20294,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20478,7 +20478,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20593,7 +20593,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -20800,7 +20800,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -21030,7 +21030,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -21122,7 +21122,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -21145,7 +21145,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -21237,7 +21237,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -21444,7 +21444,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -21720,7 +21720,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -21766,7 +21766,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -33864,7 +33864,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -33887,7 +33887,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -33910,7 +33910,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -33933,7 +33933,7 @@
       "refreshPriority": 0,
       "refreshReasons": [],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -35315,7 +35315,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -35340,7 +35340,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -35365,7 +35365,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -35438,7 +35438,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -35463,7 +35463,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -35488,7 +35488,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -35514,7 +35514,7 @@
         "site-failure:site 408 timeout:ETIMEDOUT"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": [
         "site 408 timeout:ETIMEDOUT"
       ]
@@ -35541,7 +35541,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 2,
       "siteFailures": []
     },
     {
@@ -35732,7 +35732,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:48:56.897Z",
+      "lastEnrichedAt": "2026-09-04T17:27:30.934Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35744,7 +35744,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -35757,7 +35757,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:01.099Z",
+      "lastEnrichedAt": "2026-09-04T17:27:34.713Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35769,7 +35769,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -35782,7 +35782,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:00.036Z",
+      "lastEnrichedAt": "2026-09-04T17:27:33.754Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35794,7 +35794,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -35807,7 +35807,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:02.178Z",
+      "lastEnrichedAt": "2026-09-04T17:27:35.801Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35819,7 +35819,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -35832,7 +35832,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:48:55.816Z",
+      "lastEnrichedAt": "2026-09-04T17:27:29.968Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35844,7 +35844,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -35857,7 +35857,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:04.405Z",
+      "lastEnrichedAt": "2026-09-04T17:27:37.692Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35869,7 +35869,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -35907,7 +35907,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:48:54.730Z",
+      "lastEnrichedAt": "2026-09-04T17:27:28.968Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35919,7 +35919,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -35957,7 +35957,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:09.855Z",
+      "lastEnrichedAt": "2026-09-04T17:27:42.617Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -35969,7 +35969,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36007,7 +36007,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:06.621Z",
+      "lastEnrichedAt": "2026-09-04T17:27:39.537Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36019,7 +36019,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36032,7 +36032,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:05.439Z",
+      "lastEnrichedAt": "2026-09-04T17:27:38.617Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36044,7 +36044,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36057,7 +36057,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:48:53.570Z",
+      "lastEnrichedAt": "2026-09-04T17:27:27.977Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36069,7 +36069,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36082,7 +36082,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:48:59.000Z",
+      "lastEnrichedAt": "2026-09-04T17:27:32.793Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36094,7 +36094,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36157,7 +36157,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:03.228Z",
+      "lastEnrichedAt": "2026-09-04T17:27:36.760Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36169,7 +36169,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36207,7 +36207,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:08.826Z",
+      "lastEnrichedAt": "2026-09-04T17:27:41.615Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36219,7 +36219,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36282,7 +36282,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:49:07.744Z",
+      "lastEnrichedAt": "2026-09-04T17:27:40.558Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36294,7 +36294,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36307,7 +36307,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:48:57.935Z",
+      "lastEnrichedAt": "2026-09-04T17:27:31.845Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36319,7 +36319,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36332,7 +36332,7 @@
       "rating": 4.4,
       "reviewCount": 809,
       "priceBand": "$$",
-      "lastEnrichedAt": "2026-09-03T10:47:19.999Z",
+      "lastEnrichedAt": "2026-09-04T17:25:54.858Z",
       "addedAt": "2026-08-11T00:03:05.543Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-10",
@@ -36345,7 +36345,7 @@
         "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": [
         "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
       ]
@@ -36360,7 +36360,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:47:17.946Z",
+      "lastEnrichedAt": "2026-09-04T17:25:52.854Z",
       "addedAt": "2026-08-20T11:28:46.678Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
@@ -36372,7 +36372,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36385,7 +36385,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:47:16.693Z",
+      "lastEnrichedAt": "2026-09-04T17:25:51.743Z",
       "addedAt": "2026-08-20T11:28:46.678Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-19",
@@ -36397,7 +36397,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36410,7 +36410,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:44:38.934Z",
+      "lastEnrichedAt": "2026-09-04T17:23:15.463Z",
       "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-20",
@@ -36422,7 +36422,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36435,7 +36435,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:44:39.612Z",
+      "lastEnrichedAt": "2026-09-04T17:23:16.020Z",
       "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-20",
@@ -36448,7 +36448,7 @@
         "site-failure:site 429 HTTP 429"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": [
         "site 429 HTTP 429"
       ]
@@ -36463,7 +36463,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:46:45.574Z",
+      "lastEnrichedAt": "2026-09-04T17:25:20.903Z",
       "addedAt": "2026-08-21T01:14:38.256Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-09-20",
@@ -36476,7 +36476,7 @@
         "site-failure:site 429 HTTP 429"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": [
         "site 429 HTTP 429"
       ]
@@ -36491,7 +36491,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:45:11.571Z",
+      "lastEnrichedAt": "2026-09-04T17:23:47.753Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36504,7 +36504,7 @@
         "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": [
         "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
       ]
@@ -36519,7 +36519,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:45:10.522Z",
+      "lastEnrichedAt": "2026-09-04T17:23:46.829Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36531,7 +36531,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36544,7 +36544,7 @@
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-03T10:47:18.976Z",
+      "lastEnrichedAt": "2026-09-04T17:25:53.957Z",
       "addedAt": "2026-09-02T21:11:13.370Z",
       "reviewStatus": "listing_only",
       "nextReviewAt": "2026-10-02",
@@ -36556,7 +36556,7 @@
         "match-site-failure"
       ],
       "staleTier": null,
-      "ageDays": 1,
+      "ageDays": 0,
       "siteFailures": []
     },
     {
@@ -36637,227 +36637,20 @@
   ],
   "recent": [
     {
-      "slug": "localis-sacramento",
-      "title": "Localis",
-      "stateCode": "CA",
-      "city": "Sacramento",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:52.166Z",
-      "addedAt": "2026-08-19T11:38:32.827Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "mulvaney-s-b-l-sacramento",
-      "title": "Mulvaney's B&L",
-      "stateCode": "CA",
-      "city": "Sacramento",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:47.265Z",
-      "addedAt": "2026-08-19T11:38:32.827Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "the-kitchen-sacramento",
-      "title": "The Kitchen",
-      "stateCode": "CA",
-      "city": "Sacramento",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:42.915Z",
-      "addedAt": "2026-08-19T11:38:32.827Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "point-brugge-caf-pittsburgh",
-      "title": "Point Brugge Café",
-      "stateCode": "PA",
-      "city": "Pittsburgh",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:42.016Z",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "dianoia-s-eatery-pittsburgh",
-      "title": "DiAnoia's Eatery",
-      "stateCode": "PA",
-      "city": "Pittsburgh",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:38.063Z",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "chengdu-gourmet-pittsburgh",
-      "title": "Chengdu Gourmet",
-      "stateCode": "PA",
-      "city": "Pittsburgh",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:36.587Z",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "grit-grace-pittsburgh",
-      "title": "Grit & Grace",
-      "stateCode": "PA",
-      "city": "Pittsburgh",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:34.070Z",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "legume-pittsburgh",
-      "title": "Legume",
-      "stateCode": "PA",
-      "city": "Pittsburgh",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:33.102Z",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "meat-potatoes-pittsburgh",
-      "title": "Meat & Potatoes",
-      "stateCode": "PA",
-      "city": "Pittsburgh",
-      "completeness": 94,
-      "matchStatus": "resolved",
-      "rating": null,
-      "reviewCount": null,
-      "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:29.094Z",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
-      "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
-      "staleTier": null,
-      "ageDays": 0,
-      "siteFailures": []
-    },
-    {
-      "slug": "altius-pittsburgh",
-      "title": "Altius",
-      "stateCode": "PA",
-      "city": "Pittsburgh",
-      "completeness": 89,
+      "slug": "lockhart-smokehouse-dallas",
+      "title": "Lockhart Smokehouse",
+      "stateCode": "TX",
+      "city": "Dallas",
+      "completeness": 83,
       "matchStatus": "site-failure",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:28.084Z",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
+      "lastEnrichedAt": "2026-09-04T17:27:42.617Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
       "reviewDueSoon": false,
       "hygiene": true,
       "refreshPriority": 900,
@@ -36869,47 +36662,276 @@
       "siteFailures": []
     },
     {
-      "slug": "morcilla-pittsburgh",
-      "title": "Morcilla",
-      "stateCode": "PA",
-      "city": "Pittsburgh",
-      "completeness": 94,
-      "matchStatus": "resolved",
+      "slug": "little-miss-bbq-phoenix",
+      "title": "Little Miss BBQ",
+      "stateCode": "AZ",
+      "city": "Phoenix",
+      "completeness": 83,
+      "matchStatus": "site-failure",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:27.206Z",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
+      "lastEnrichedAt": "2026-09-04T17:27:41.615Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
     },
     {
-      "slug": "superior-motors-pittsburgh",
-      "title": "Superior Motors",
-      "stateCode": "PA",
-      "city": "Pittsburgh",
-      "completeness": 94,
-      "matchStatus": "resolved",
+      "slug": "kokkari-estiatorio-san-francisco",
+      "title": "Kokkari Estiatorio",
+      "stateCode": "CA",
+      "city": "San Francisco",
+      "completeness": 83,
+      "matchStatus": "site-failure",
       "rating": null,
       "reviewCount": null,
       "priceBand": "",
-      "lastEnrichedAt": "2026-09-04T12:49:24.598Z",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "reviewStatus": "current",
-      "nextReviewAt": "2026-09-20",
-      "reviewedAt": "2026-08-21",
+      "lastEnrichedAt": "2026-09-04T17:27:40.558Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
       "reviewDueSoon": false,
-      "hygiene": false,
-      "refreshPriority": 0,
-      "refreshReasons": [],
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "hugo-s-houston",
+      "title": "Hugo's",
+      "stateCode": "TX",
+      "city": "Houston",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-04T17:27:39.537Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "gatlin-s-bbq-houston",
+      "title": "Gatlin's BBQ",
+      "stateCode": "TX",
+      "city": "Houston",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-04T17:27:38.617Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "fox-bros-bar-b-q-atlanta",
+      "title": "Fox Bros. Bar-B-Q",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-04T17:27:37.692Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "famous-4th-street-delicatessen-philadelphia",
+      "title": "Famous 4th Street Delicatessen",
+      "stateCode": "PA",
+      "city": "Philadelphia",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-04T17:27:36.760Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "ecco-atlanta",
+      "title": "Ecco",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-04T17:27:35.801Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "desta-ethiopian-kitchen-atlanta",
+      "title": "Desta Ethiopian Kitchen",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-04T17:27:34.713Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "delbar-atlanta",
+      "title": "Delbar",
+      "stateCode": "GA",
+      "city": "Atlanta",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-04T17:27:33.754Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "chichen-itza-restaurant-los-angeles",
+      "title": "Chichen Itza Restaurant",
+      "stateCode": "CA",
+      "city": "Los Angeles",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-04T17:27:32.793Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
+      "staleTier": null,
+      "ageDays": 0,
+      "siteFailures": []
+    },
+    {
+      "slug": "chercher-ethiopian-restaurant-mart-washington",
+      "title": "Chercher Ethiopian Restaurant & Mart",
+      "stateCode": "DC",
+      "city": "Washington",
+      "completeness": 83,
+      "matchStatus": "site-failure",
+      "rating": null,
+      "reviewCount": null,
+      "priceBand": "",
+      "lastEnrichedAt": "2026-09-04T17:27:31.845Z",
+      "addedAt": "2026-09-02T21:11:13.370Z",
+      "reviewStatus": "listing_only",
+      "nextReviewAt": "2026-10-02",
+      "reviewedAt": "2026-09-02",
+      "reviewDueSoon": false,
+      "hygiene": true,
+      "refreshPriority": 900,
+      "refreshReasons": [
+        "match-site-failure"
+      ],
       "staleTier": null,
       "ageDays": 0,
       "siteFailures": []
@@ -37086,6 +37108,52 @@
     ]
   },
   "runs": [
+    {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-09-04T17:23:15.456Z",
+      "batchSize": 25,
+      "inserted": 0,
+      "cities": [
+        "Charlotte, North Carolina",
+        "San Diego, California",
+        "Philadelphia, Pennsylvania",
+        "Houston, Texas",
+        "Anchorage, Alaska",
+        "Bakersfield, California",
+        "San Francisco, California",
+        "Chicago, Illinois",
+        "Atlanta, Georgia",
+        "Washington, District Of Columbia",
+        "Los Angeles, California",
+        "Phoenix, Arizona",
+        "Dallas, Texas"
+      ],
+      "resolved": 0,
+      "unresolved": 25,
+      "avgCompleteness": 97,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 25
+      },
+      "retries": 20,
+      "failures": 25,
+      "flagged": false
+    },
+    {
+      "kind": "level-records",
+      "startedAt": "2026-09-04T15:02:46.899Z",
+      "batchSize": 0,
+      "inserted": 0,
+      "cities": [],
+      "resolved": 0,
+      "unresolved": 0,
+      "avgCompleteness": 97,
+      "apiCalls": {},
+      "retries": 0,
+      "failures": 0,
+      "flagged": false
+    },
     {
       "kind": "seed-listings",
       "startedAt": "2026-09-04T15:02:32.048Z",
@@ -41509,34 +41577,6 @@
       "resolved": 0,
       "unresolved": 0,
       "avgCompleteness": 0,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "resolve-targets",
-      "startedAt": "2026-09-04T13:55:52.909Z",
-      "batchSize": 0,
-      "inserted": 0,
-      "cities": [],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 0,
-      "apiCalls": {},
-      "retries": 0,
-      "failures": 0,
-      "flagged": false
-    },
-    {
-      "kind": "level-records",
-      "startedAt": "2026-09-04T12:50:08.594Z",
-      "batchSize": 0,
-      "inserted": 0,
-      "cities": [],
-      "resolved": 0,
-      "unresolved": 0,
-      "avgCompleteness": 97,
       "apiCalls": {},
       "retries": 0,
       "failures": 0,

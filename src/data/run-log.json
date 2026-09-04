@@ -1,6 +1,354 @@
 {
   "runs": [
     {
+      "kind": "hygiene-owned",
+      "startedAt": "2026-09-04T17:23:15.456Z",
+      "finishedAt": "2026-09-04T17:27:43.684Z",
+      "batchSize": 25,
+      "cities": [
+        "Charlotte, North Carolina",
+        "San Diego, California",
+        "Philadelphia, Pennsylvania",
+        "Houston, Texas",
+        "Anchorage, Alaska",
+        "Bakersfield, California",
+        "San Francisco, California",
+        "Chicago, Illinois",
+        "Atlanta, Georgia",
+        "Washington, District Of Columbia",
+        "Los Angeles, California",
+        "Phoenix, Arizona",
+        "Dallas, Texas"
+      ],
+      "resolved": 0,
+      "unresolved": 25,
+      "sourceLimited": 0,
+      "deferred": 0,
+      "avgCompleteness": 97,
+      "corpusEnriched": 1527,
+      "apiCalls": {
+        "google": 0,
+        "firecrawl": 0,
+        "ownedFetch": 25
+      },
+      "retries": 20,
+      "failures": 25,
+      "snapshot": "/home/runner/work/deep-dish-decision/deep-dish-decision/.pipeline-snapshots/2026-09-04T17-23-15-457Z-hygiene-owned",
+      "records": [
+        {
+          "slug": "barrington-s-charlotte",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "born-raised-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        },
+        {
+          "slug": "del-rossi-s-cheesesteak-pizza-co-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "georgia-james-houston",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        },
+        {
+          "slug": "ironside-fish-oyster-san-diego",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 429 HTTP 429"
+          ]
+        },
+        {
+          "slug": "jens-restaurant-anchorage",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 0 fetch failed:CERT_HAS_EXPIRED"
+          ]
+        },
+        {
+          "slug": "locale-farm-to-table-eatery-bakersfield",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 0 fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+          ]
+        },
+        {
+          "slug": "mourad-san-francisco",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 0 fetch failed:CERT_HAS_EXPIRED"
+          ]
+        },
+        {
+          "slug": "mr-szechuan",
+          "matchStatus": "site-failure",
+          "completeness": 78,
+          "notes": [
+            "site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ]
+        },
+        {
+          "slug": "aga-s-restaurant-catering-houston",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "big-jones-chicago",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "botiwalla-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "busy-bee-cafe-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "chercher-ethiopian-restaurant-mart-washington",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "chichen-itza-restaurant-los-angeles",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "delbar-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "desta-ethiopian-kitchen-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "ecco-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "famous-4th-street-delicatessen-philadelphia",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "fox-bros-bar-b-q-atlanta",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "gatlin-s-bbq-houston",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "hugo-s-houston",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "kokkari-estiatorio-san-francisco",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "little-miss-bbq-phoenix",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        },
+        {
+          "slug": "lockhart-smokehouse-dallas",
+          "matchStatus": "site-failure",
+          "completeness": 83,
+          "notes": [
+            "site 403 HTTP 403"
+          ]
+        }
+      ],
+      "hygiene": {
+        "hygieneDue": 93,
+        "selected": [
+          "barrington-s-charlotte",
+          "born-raised-san-diego",
+          "del-rossi-s-cheesesteak-pizza-co-philadelphia",
+          "georgia-james-houston",
+          "ironside-fish-oyster-san-diego",
+          "jens-restaurant-anchorage",
+          "locale-farm-to-table-eatery-bakersfield",
+          "mourad-san-francisco",
+          "mr-szechuan",
+          "aga-s-restaurant-catering-houston",
+          "big-jones-chicago",
+          "botiwalla-atlanta",
+          "busy-bee-cafe-atlanta",
+          "chercher-ethiopian-restaurant-mart-washington",
+          "chichen-itza-restaurant-los-angeles",
+          "delbar-atlanta",
+          "desta-ethiopian-kitchen-atlanta",
+          "ecco-atlanta",
+          "famous-4th-street-delicatessen-philadelphia",
+          "fox-bros-bar-b-q-atlanta",
+          "gatlin-s-bbq-houston",
+          "hugo-s-houston",
+          "kokkari-estiatorio-san-francisco",
+          "little-miss-bbq-phoenix",
+          "lockhart-smokehouse-dallas"
+        ],
+        "reasons": {
+          "barrington-s-charlotte": [
+            "match-site-failure"
+          ],
+          "born-raised-san-diego": [
+            "match-site-failure",
+            "site-failure:site 429 HTTP 429"
+          ],
+          "del-rossi-s-cheesesteak-pizza-co-philadelphia": [
+            "match-site-failure"
+          ],
+          "georgia-james-houston": [
+            "match-site-failure",
+            "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ],
+          "ironside-fish-oyster-san-diego": [
+            "match-site-failure",
+            "site-failure:site 429 HTTP 429"
+          ],
+          "jens-restaurant-anchorage": [
+            "match-site-failure"
+          ],
+          "locale-farm-to-table-eatery-bakersfield": [
+            "match-site-failure"
+          ],
+          "mourad-san-francisco": [
+            "match-site-failure"
+          ],
+          "mr-szechuan": [
+            "match-site-failure",
+            "site-failure:site 408 timeout:UND_ERR_CONNECT_TIMEOUT"
+          ],
+          "aga-s-restaurant-catering-houston": [
+            "match-site-failure"
+          ],
+          "big-jones-chicago": [
+            "match-site-failure"
+          ],
+          "botiwalla-atlanta": [
+            "match-site-failure"
+          ],
+          "busy-bee-cafe-atlanta": [
+            "match-site-failure"
+          ],
+          "chercher-ethiopian-restaurant-mart-washington": [
+            "match-site-failure"
+          ],
+          "chichen-itza-restaurant-los-angeles": [
+            "match-site-failure"
+          ],
+          "delbar-atlanta": [
+            "match-site-failure"
+          ],
+          "desta-ethiopian-kitchen-atlanta": [
+            "match-site-failure"
+          ],
+          "ecco-atlanta": [
+            "match-site-failure"
+          ],
+          "famous-4th-street-delicatessen-philadelphia": [
+            "match-site-failure"
+          ],
+          "fox-bros-bar-b-q-atlanta": [
+            "match-site-failure"
+          ],
+          "gatlin-s-bbq-houston": [
+            "match-site-failure"
+          ],
+          "hugo-s-houston": [
+            "match-site-failure"
+          ],
+          "kokkari-estiatorio-san-francisco": [
+            "match-site-failure"
+          ],
+          "little-miss-bbq-phoenix": [
+            "match-site-failure"
+          ],
+          "lockhart-smokehouse-dallas": [
+            "match-site-failure"
+          ]
+        }
+      }
+    },
+    {
       "kind": "level-records",
       "startedAt": "2026-09-04T15:02:46.899Z",
       "finishedAt": "2026-09-04T15:02:46.899Z",
@@ -22052,74 +22400,6 @@
         }
       ],
       "hygiene": null
-    },
-    {
-      "kind": "seed-listings",
-      "startedAt": "2026-08-31T11:56:47.697Z",
-      "finishedAt": "2026-08-31T11:56:47.864Z",
-      "cities": [
-        {
-          "city": "Huntsville, AL",
-          "queueCity": "Huntsville",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        },
-        {
-          "city": "Fort Wayne, IN",
-          "queueCity": "Fort Wayne",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        },
-        {
-          "city": "New Haven, CT",
-          "queueCity": "New Haven",
-          "found": 6,
-          "inserted": 6,
-          "duplicates": 0
-        }
-      ],
-      "inserted": 18,
-      "duplicatesSkipped": 0,
-      "snapshot": "/workspace/.pipeline-snapshots/2026-08-31T11-56-47-697Z-seed-listings",
-      "seedFiles": [
-        "seed-listings-2026-08-20-density-d01.json",
-        "seed-listings-2026-08-20-new-jersey-state-floor.json",
-        "seed-listings-2026-08-20-queue-49-54.json",
-        "seed-listings-2026-08-20-queue-55-60.json",
-        "seed-listings-2026-08-20-queue-61-66.json",
-        "seed-listings-2026-08-20-queue-67-72.json",
-        "seed-listings-2026-08-20-queue-73-78.json",
-        "seed-listings-2026-08-20-top50-43-48.json",
-        "seed-listings-2026-08-31-statewide-f01.json",
-        "seed-listings-2026-08-31-statewide-f02.json",
-        "seed-listings-2026-08-31-statewide-f03.json",
-        "seed-listings-2026-08-31-statewide-f04.json",
-        "seed-listings-2026-08-31-statewide-f05.json",
-        "seed-listings-2026-08-31-statewide-f06.json",
-        "seed-listings.json"
-      ],
-      "insertedSlugs": [
-        "cotton-row-huntsville",
-        "commerce-kitchen-huntsville",
-        "domaine-south-huntsville",
-        "revivalist-huntsville",
-        "the-poppy-and-parliament-huntsville",
-        "phat-sammy-s-huntsville",
-        "rune-fort-wayne",
-        "the-oyster-bar-fort-wayne",
-        "the-hoppy-gnome-fort-wayne",
-        "copper-spoon-fort-wayne",
-        "proximo-fort-wayne",
-        "spoke-ivy-fort-wayne",
-        "zinc-new-haven",
-        "olea-new-haven",
-        "gioia-new-haven",
-        "modern-apizza-new-haven",
-        "lalibela-new-haven",
-        "roli-new-haven"
-      ]
     }
   ]
 }
