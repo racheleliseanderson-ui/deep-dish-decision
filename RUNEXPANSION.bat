@@ -16,6 +16,10 @@ echo   This is not a refresh job. It uses the expansion queue to pick cities,
 echo   searches for new candidates, verifies every candidate against the
 echo   restaurant's own website, then enriches ONLY newly-added records.
 echo.
+echo   NO GOOGLE KEY IS REQUIRED. OpenStreetMap is the default discovery source.
+echo   Google Places remains optional if you explicitly run discover.mjs with
+necho   --provider=google and have a GOOGLE_MAPS_API_KEY configured.
+echo.
 echo   Existing restaurants are deduplicated and skipped.
 echo   Failed candidates enter a cooldown ledger so the next run moves on.
 echo.
@@ -24,7 +28,7 @@ echo.
 pause
 
 REM ---------------------------------------------------------------- setup
-echo  [1/7] Checking Node, project files, and API key...
+echo  [1/7] Checking Node and project files...
 where node >nul 2>&1
 if errorlevel 1 goto nonode
 if not exist "node_modules\" (
@@ -32,29 +36,7 @@ if not exist "node_modules\" (
   if errorlevel 1 goto failed
 )
 if not exist "scripts\pipeline\discover.mjs" goto missing
-
-REM Existing repository convention is .env.local.pipeline. Read the key into
-REM this process without printing it. .env.local is also accepted.
-if exist ".env.local.pipeline" (
-  for /f "usebackq tokens=1,* delims==" %%A in (".env.local.pipeline") do (
-    if /i "%%A"=="GOOGLE_MAPS_API_KEY" set "GOOGLE_MAPS_API_KEY=%%B"
-  )
-)
-if not defined GOOGLE_MAPS_API_KEY if exist ".env.local" (
-  for /f "usebackq tokens=1,* delims==" %%A in (".env.local") do (
-    if /i "%%A"=="GOOGLE_MAPS_API_KEY" set "GOOGLE_MAPS_API_KEY=%%B"
-  )
-)
-if not defined GOOGLE_MAPS_API_KEY (
-  echo.
-  echo   ^>^> STOPPED. GOOGLE_MAPS_API_KEY is not configured.
-  echo      Copy .env.example to .env.local.pipeline and add the key there:
-  echo      GOOGLE_MAPS_API_KEY=your_key_here
-  echo.
-  pause
-  exit /b 1
-)
-echo        Ready.
+echo        Ready. No API key required.
 echo.
 
 REM ---------------------------------------------------------------- queue
@@ -72,7 +54,7 @@ echo.
 REM ---------------------------------------------------------------- discover
 echo  [4/7] Discovering new restaurants in the next under-covered markets...
 echo        Default: up to 3 cities, up to 20 verified additions per city.
-echo        Google is candidate discovery only; the restaurant's own site is proof.
+echo        OpenStreetMap surfaces candidates; the restaurant's own site is proof.
 echo.
 call node scripts\pipeline\discover.mjs --cities=3 --limit=20
 if errorlevel 1 goto failed
@@ -102,6 +84,7 @@ echo    After:  !AFTER!
 echo.
 echo    Discovery report: reports\discovery-latest.json
 echo    Retry ledger:      src\data\discovery-ledger.json
+echo    Geo cache:         src\data\discovery-geo-cache.json
 echo  ========================================================================
 echo.
 
@@ -131,6 +114,7 @@ goto finish
 :missing
 echo.
 echo   ^>^> STOPPED. The new pipeline files are not installed in this checkout.
+echo      Running from: %CD%
 goto finish
 
 :failed
