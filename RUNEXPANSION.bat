@@ -32,20 +32,24 @@ if not exist "node_modules\" (
   if errorlevel 1 goto failed
 )
 if not exist "scripts\pipeline\discover.mjs" goto missing
-if not exist ".env.local" (
-  echo.
-  echo   ^>^> STOPPED. .env.local is missing.
-  echo      Add this line in the repository root:
-  echo      GOOGLE_MAPS_API_KEY=your_key_here
-  echo.
-  pause
-  exit /b 1
+
+REM Existing repository convention is .env.local.pipeline. Read the key into
+REM this process without printing it. .env.local is also accepted.
+if exist ".env.local.pipeline" (
+  for /f "usebackq tokens=1,* delims==" %%A in (".env.local.pipeline") do (
+    if /i "%%A"=="GOOGLE_MAPS_API_KEY" set "GOOGLE_MAPS_API_KEY=%%B"
+  )
 )
-findstr /b /c:"GOOGLE_MAPS_API_KEY=" ".env.local" >nul 2>&1
-if errorlevel 1 (
+if not defined GOOGLE_MAPS_API_KEY if exist ".env.local" (
+  for /f "usebackq tokens=1,* delims==" %%A in (".env.local") do (
+    if /i "%%A"=="GOOGLE_MAPS_API_KEY" set "GOOGLE_MAPS_API_KEY=%%B"
+  )
+)
+if not defined GOOGLE_MAPS_API_KEY (
   echo.
-  echo   ^>^> STOPPED. GOOGLE_MAPS_API_KEY is not in .env.local.
-  echo      Add: GOOGLE_MAPS_API_KEY=your_key_here
+  echo   ^>^> STOPPED. GOOGLE_MAPS_API_KEY is not configured.
+  echo      Copy .env.example to .env.local.pipeline and add the key there:
+  echo      GOOGLE_MAPS_API_KEY=your_key_here
   echo.
   pause
   exit /b 1
