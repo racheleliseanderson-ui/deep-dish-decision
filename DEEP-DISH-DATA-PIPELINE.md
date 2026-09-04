@@ -4,9 +4,22 @@ The three batch files have separate jobs. Do not use one giant loop for discover
 
 ## RUNEXPANSION.bat — genuinely new restaurants
 
-Use this when you want geographic growth. It rebuilds the density queue, chooses under-covered markets, uses Google Places Text Search only to surface candidate names/websites, verifies each candidate on the restaurant's own site, deduplicates against the corpus, then enriches only the restaurants that were actually inserted.
+Use this when you want geographic growth. It rebuilds the density queue, chooses under-covered markets, surfaces candidate restaurants, verifies each candidate on the restaurant's own site, deduplicates against the corpus, then enriches only the restaurants that were actually inserted.
 
-Requirement: copy `.env.example` to `.env.local.pipeline` and set `GOOGLE_MAPS_API_KEY=...` there. The expansion BAT also accepts `.env.local`. Both are gitignored.
+**No Google API key is required.** The default provider is OpenStreetMap:
+
+- Nominatim resolves only the selected city/state to a bounding box. City lookups are cached in `src/data/discovery-geo-cache.json` and uncached requests are spaced at least 15 seconds apart.
+- Overpass surfaces `amenity=restaurant` candidates and their website tags. Queries are serial and intentionally small.
+- OpenStreetMap is candidate discovery only. A restaurant is not admitted unless `resolveTarget()` fetches and verifies the restaurant's own first-party website.
+- Candidate discovery is attributed to © OpenStreetMap contributors, ODbL, in generated discovery artifacts.
+
+Google Places is retained as an optional provider for users who already have a key. To use it explicitly:
+
+```bash
+node scripts/pipeline/discover.mjs --provider=google --cities=3 --limit=20
+```
+
+Only that optional mode requires `GOOGLE_MAPS_API_KEY`. The normal `RUNEXPANSION.bat` does not.
 
 Defaults: 3 cities per run, up to 20 accepted restaurants per city. Failed candidates are stored in `src/data/discovery-ledger.json` and cooled down instead of being retried every run.
 
