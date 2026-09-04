@@ -1,6 +1,6 @@
 {
   "regionGroup": "California",
-  "generatedAt": "2026-09-03T13:01:25.738Z",
+  "generatedAt": "2026-09-04T12:49:54.838Z",
   "records": {
     "philippe-the-original": {
       "ll": [
@@ -2798,6 +2798,61 @@
       ],
       "llSource": "city",
       "tz": "America/Los_Angeles",
+      "hours": [
+        [
+          [
+            600,
+            870
+          ],
+          [
+            1020,
+            1230
+          ]
+        ],
+        [],
+        [
+          [
+            630,
+            870
+          ],
+          [
+            1020,
+            1230
+          ]
+        ],
+        [
+          [
+            630,
+            870
+          ],
+          [
+            1020,
+            1230
+          ]
+        ],
+        [
+          [
+            630,
+            870
+          ],
+          [
+            1020,
+            1230
+          ]
+        ],
+        [
+          [
+            630,
+            870
+          ],
+          [
+            1020,
+            1230
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
       "band": "$$",
       "bandSource": "planning-band",
       "pp": [

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T13:01:25.395Z",
+  "generatedAt": "2026-09-04T12:49:54.503Z",
   "records": {
     "canlis": {
       "google": {
@@ -31148,7 +31148,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:55:56.761Z",
+        "lastEnrichedAt": "2026-09-04T12:45:40.112Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31156,6 +31156,12 @@
         "menuUrl": "https://www.haihaimpls.com/menus",
         "reservationUrl": "https://www.opentable.com/r/hai-hai-reservations-minneapolis?restref=1033801&lang=en-US&ot_source=Restaurant%20website",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 15:00-23:00, We 15:00-23:00, Th 15:00-23:00, Fr 15:00-00:00, Sa 10:00-00:00, Su 10:00-00:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "CHEF'S KISS POTLUCK Menus Reservations Private Dining & Events Order SHOP Hola Arepa Home CHEF'S KISS POTLUCK Menus Reservations Private Dining & Events Order SHOP Hola Arepa Home Cover Food Cocktails You Ready?",
@@ -31186,7 +31192,7 @@
           "https://www.haihaimpls.com/reservations-2",
           "https://www.haihaimpls.com/events"
         ],
-        "retrievedAt": "2026-08-18T22:55:56.761Z",
+        "retrievedAt": "2026-09-04T12:45:40.112Z",
         "playwrightPages": 0
       }
     },
@@ -31195,7 +31201,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:55:58.952Z",
+        "lastEnrichedAt": "2026-09-04T12:45:42.179Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31203,6 +31209,10 @@
         "menuUrl": "https://www.barlagrassa.com/menu",
         "reservationUrl": "https://resy.com/cities/minneapolis-mn/venues/bar-la-grassa?date=2024-07-02&seats=2",
         "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "We also offer several options for PRIVATE DINING .",
@@ -31235,7 +31245,7 @@
           "https://www.barlagrassa.com/reservations",
           "https://www.barlagrassa.com/private-dining"
         ],
-        "retrievedAt": "2026-08-18T22:55:58.952Z",
+        "retrievedAt": "2026-09-04T12:45:42.179Z",
         "playwrightPages": 0
       }
     },
@@ -31244,7 +31254,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:01.130Z",
+        "lastEnrichedAt": "2026-09-04T12:45:44.529Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31252,6 +31262,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -31273,7 +31287,7 @@
           "https://www.restaurantalma.com/",
           "https://www.restaurantalma.com/contact/"
         ],
-        "retrievedAt": "2026-08-18T22:56:01.130Z",
+        "retrievedAt": "2026-09-04T12:45:44.529Z",
         "playwrightPages": 0
       }
     },
@@ -31282,7 +31296,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:03.109Z",
+        "lastEnrichedAt": "2026-09-04T12:45:46.707Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31290,6 +31304,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.exploretock.com/kadonomise/",
         "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -31319,7 +31337,7 @@
           "https://www.kadonomise.com/",
           "https://www.kadonomise.com/reserve"
         ],
-        "retrievedAt": "2026-08-18T22:56:03.109Z",
+        "retrievedAt": "2026-09-04T12:45:46.707Z",
         "playwrightPages": 0
       }
     },
@@ -31328,7 +31346,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:04.453Z",
+        "lastEnrichedAt": "2026-09-04T12:45:48.023Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -31336,6 +31354,20 @@
         "menuUrl": "https://www.colitampls.com/menu/dinner",
         "reservationUrl": "https://www.opentable.com/r/colita-reservations-minneapolis?restref=731530&lang=en-US&ot_source=Restaurant%20website",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 612-886-1606"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-21:00, Tu 17:00-21:00, We 17:00-21:00, Th 17:00-21:00, Fr 16:00-22:00, Sa 16:00-22:00, Su 16:00-21:00",
+          "JSON-LD openingHoursSpecification: Sunday,Monday,Tuesday,Wednesday,Thursday 16:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday,Saturday 16:00 22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Oaxacan, Mexican, Tex-Oaxacan"
+        ],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Private EventS Celebrate in style at Colita—perfect for small weddings, rehearsal dinners, parties, or corporate events.",
@@ -31402,7 +31434,7 @@
           "https://www.colitampls.com/private-events",
           "https://www.colitampls.com/reservation-section"
         ],
-        "retrievedAt": "2026-08-18T22:56:04.453Z",
+        "retrievedAt": "2026-09-04T12:45:48.023Z",
         "playwrightPages": 0
       }
     },
@@ -31411,7 +31443,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:06.809Z",
+        "lastEnrichedAt": "2026-09-04T12:45:50.654Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31419,6 +31451,10 @@
         "menuUrl": "https://www.pizzerialola.com/menu/",
         "reservationUrl": "https://www.opentable.com/r/pizzeria-lola-minneapolis",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -31454,7 +31490,7 @@
           "https://www.pizzerialola.com/private-events/",
           "https://www.pizzerialola.com/contact/"
         ],
-        "retrievedAt": "2026-08-18T22:56:06.809Z",
+        "retrievedAt": "2026-09-04T12:45:50.654Z",
         "playwrightPages": 0
       }
     },
@@ -31463,7 +31499,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:08.934Z",
+        "lastEnrichedAt": "2026-09-04T12:45:52.960Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31471,6 +31507,10 @@
         "menuUrl": "https://www.tavernettadenver.com/menus/",
         "reservationUrl": "https://www.opentable.com/r/tavernetta-denver",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Main content starts here, tab to start navigating Private Dining Book an Event with Us Memorable gatherings begin with imagination and thoughtful planning.",
@@ -31511,7 +31551,7 @@
           "https://www.tavernettadenver.com/about/",
           "https://www.tavernettadenver.com/private-dining/"
         ],
-        "retrievedAt": "2026-08-18T22:56:08.934Z",
+        "retrievedAt": "2026-09-04T12:45:52.960Z",
         "playwrightPages": 0
       }
     },
@@ -31520,7 +31560,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:11.036Z",
+        "lastEnrichedAt": "2026-09-04T12:45:55.470Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31528,6 +31568,12 @@
         "menuUrl": "",
         "reservationUrl": "https://www.toasttab.com/hop-alley/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-22:00, Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "We can accommodate certain dietary restrictions and allergies, please contact us at least 14 days in advance."
         ],
@@ -31550,7 +31596,7 @@
         "sourceUrls": [
           "https://hopalleydenver.com/"
         ],
-        "retrievedAt": "2026-08-18T22:56:11.036Z",
+        "retrievedAt": "2026-09-04T12:45:55.470Z",
         "playwrightPages": 0
       }
     },
@@ -31559,7 +31605,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:11.909Z",
+        "lastEnrichedAt": "2026-09-04T12:45:56.371Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31567,6 +31613,12 @@
         "menuUrl": "",
         "reservationUrl": "https://www.opentable.com/r/uncle-highlands-reservations-denver?restref=228973&lang=en-US&ot_source=Restaurant%20website",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-22:00, Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -31587,7 +31639,7 @@
         "sourceUrls": [
           "https://www.uncleramen.com/"
         ],
-        "retrievedAt": "2026-08-18T22:56:11.909Z",
+        "retrievedAt": "2026-09-04T12:45:56.371Z",
         "playwrightPages": 0
       }
     },
@@ -31596,7 +31648,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:12.772Z",
+        "lastEnrichedAt": "2026-09-04T12:45:57.321Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31604,6 +31656,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.toasttab.com/cart-driver-west-ave/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -31621,7 +31677,7 @@
           "https://www.cart-driver.com/",
           "https://www.cart-driver.com/contact-feed"
         ],
-        "retrievedAt": "2026-08-18T22:56:12.772Z",
+        "retrievedAt": "2026-09-04T12:45:57.321Z",
         "playwrightPages": 0
       }
     },
@@ -31630,7 +31686,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:14.079Z",
+        "lastEnrichedAt": "2026-09-04T12:45:58.693Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31638,6 +31694,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.opentable.com/restref/client/?rid=115339&restref=115339&lang=en-US&color=1&r3uid=cfe&dark=false&partysize=2&datetime=2024-07-11T19%3A00&ot_source=Restaurant%20website&corrid=7422f682-8e69-4a0b-bd11-0cf6377c7561",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "For larger events, you can combine all three private dining rooms to create The Ohana Room, which can accommodate up to 80 people.",
@@ -31678,7 +31738,7 @@
           "https://www.guardandgrace.com/reservations",
           "https://www.guardandgrace.com/contact-us"
         ],
-        "retrievedAt": "2026-08-18T22:56:14.079Z",
+        "retrievedAt": "2026-09-04T12:45:58.693Z",
         "playwrightPages": 0
       }
     },
@@ -31687,7 +31747,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:16.275Z",
+        "lastEnrichedAt": "2026-09-04T12:46:00.938Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31695,6 +31755,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -31711,7 +31775,7 @@
         "sourceUrls": [
           "https://www.thewolfstailor.com/"
         ],
-        "retrievedAt": "2026-08-18T22:56:16.275Z",
+        "retrievedAt": "2026-09-04T12:46:00.938Z",
         "playwrightPages": 0
       }
     },
@@ -31720,7 +31784,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:17.171Z",
+        "lastEnrichedAt": "2026-09-04T12:46:01.911Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31728,6 +31792,10 @@
         "menuUrl": "https://www.mercantiledenver.com/menus/",
         "reservationUrl": "https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=b56380a9-9db5-4247-aa90-acb4100d542e&restRef=150205&otSource=Restaurant%20website",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Please inform us of any allergies or dietary restrictions."
         ],
@@ -31779,7 +31847,7 @@
           "https://www.mercantiledenver.com/private-events/",
           "https://www.mercantiledenver.com/about/"
         ],
-        "retrievedAt": "2026-08-18T22:56:17.171Z",
+        "retrievedAt": "2026-09-04T12:46:01.911Z",
         "playwrightPages": 0
       }
     },
@@ -31788,7 +31856,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:19.242Z",
+        "lastEnrichedAt": "2026-09-04T12:46:05.173Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31796,6 +31864,10 @@
         "menuUrl": "https://workandclassdenver.com/menus-rino",
         "reservationUrl": "https://www.toasttab.com/work&class/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -31820,7 +31892,7 @@
             "sourceUrl": "https://workandclassdenver.com/about"
           },
           {
-            "quote": "og:description: Discover restaurants to love in your city and beyond. Get the latest restaurant intel and explore Resy’s curated guides to find the right spot for any occasion. Book your table now through the Resy iOS app or Resy.com.",
+            "quote": "og:description: Discover restaurants to love in your city and beyond. Get the latest restaurant intel and explore Resy’s curated guides to find the right spot for any occasion. Book your table now through the Resy iOS or Android app, or on Resy.com.",
             "sourceUrl": "https://workandclassdenver.com/reservations"
           }
         ],
@@ -31831,7 +31903,7 @@
           "https://workandclassdenver.com/about",
           "https://workandclassdenver.com/reservations"
         ],
-        "retrievedAt": "2026-08-18T22:56:19.242Z",
+        "retrievedAt": "2026-09-04T12:46:05.173Z",
         "playwrightPages": 0
       }
     },
@@ -31840,7 +31912,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:21.921Z",
+        "lastEnrichedAt": "2026-09-04T12:46:08.196Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31848,6 +31920,10 @@
         "menuUrl": "https://ultreiadenver.com/menus/",
         "reservationUrl": "https://order.toasttab.com/online/ultreia-1701-wynkoop-st-suite-105",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "FOR PRIVATE EVENTS Event Request Ultreia is part of Crafted Concepts restaurant group along with Rioja and Bistro Vendome and we welcome your private dining event at all of those locations.",
@@ -31874,7 +31950,7 @@
           "https://ultreiadenver.com/events/",
           "https://ultreiadenver.com/contact/"
         ],
-        "retrievedAt": "2026-08-18T22:56:21.921Z",
+        "retrievedAt": "2026-09-04T12:46:08.196Z",
         "playwrightPages": 0
       }
     },
@@ -31883,7 +31959,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:29.034Z",
+        "lastEnrichedAt": "2026-09-04T12:46:18.056Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31891,6 +31967,10 @@
         "menuUrl": "https://ediblebeats.com/menus/el-five-menu",
         "reservationUrl": "https://www.opentable.com/restref/client/?restref=443986&",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Denver, CO 80212 Located in a reformed candy factory on historic Tennyson Street, the space is Gluten-Free Certified and brimming with plants and natural light.",
           "Serving up vegan, gluten-free, sustainably sourced fare, with all-day brunch and the option to add animal-based proteins.",
@@ -31939,7 +32019,7 @@
           "https://ediblebeats.com/about/",
           "https://ediblebeats.com/menus/el-five-menu"
         ],
-        "retrievedAt": "2026-08-18T22:56:29.034Z",
+        "retrievedAt": "2026-09-04T12:46:18.056Z",
         "playwrightPages": 0
       }
     },
@@ -31948,7 +32028,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:31.742Z",
+        "lastEnrichedAt": "2026-09-04T12:46:21.434Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -31956,6 +32036,10 @@
         "menuUrl": "",
         "reservationUrl": "https://order.toasttab.com/online/sushi-den",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Chef’s Table Private Room Chef’s Table in Okonomi-style with Private Chef Chef’s Table takes place in Sushi Den’s private room, with your Omakase Chef.",
@@ -31983,7 +32067,7 @@
           "https://www.sushiden.net/",
           "https://www.sushiden.net/about/"
         ],
-        "retrievedAt": "2026-08-18T22:56:31.742Z",
+        "retrievedAt": "2026-09-04T12:46:21.434Z",
         "playwrightPages": 0
       }
     },
@@ -31992,7 +32076,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:33.051Z",
+        "lastEnrichedAt": "2026-09-04T12:46:23.136Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32000,6 +32084,10 @@
         "menuUrl": "https://charlestonrestaurant.com/menu/",
         "reservationUrl": "https://www.toasttab.com/charleston-baltimore-1000-lancaster-st/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "An Exceptional Dining Experience Charleston’s private dining features the culinary talents of award winning chef, Cindy Wolf.",
@@ -32052,7 +32140,7 @@
           "https://charlestonrestaurant.com/menu/",
           "https://charlestonrestaurant.com/private-dining-rooms/"
         ],
-        "retrievedAt": "2026-08-18T22:56:33.051Z",
+        "retrievedAt": "2026-09-04T12:46:23.136Z",
         "playwrightPages": 0
       }
     },
@@ -32061,7 +32149,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:36.158Z",
+        "lastEnrichedAt": "2026-09-04T12:46:26.232Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32069,6 +32157,10 @@
         "menuUrl": "http://www.thamesstreetoysterhouse.com/menu/TSOH_Menu-carryout.pdf",
         "reservationUrl": "https://resy.com/cities/bal/thames-street-oyster-house?date=2021-02-09&seats=2",
         "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -32086,7 +32178,7 @@
           "https://thamesstreetoysterhouse.com/",
           "https://thamesstreetoysterhouse.com/hours.htm"
         ],
-        "retrievedAt": "2026-08-18T22:56:36.158Z",
+        "retrievedAt": "2026-09-04T12:46:26.232Z",
         "playwrightPages": 0
       }
     },
@@ -32095,7 +32187,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:37.519Z",
+        "lastEnrichedAt": "2026-09-04T12:46:27.708Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -32103,6 +32195,12 @@
         "menuUrl": "https://www.lacucharabaltimore.com/menu",
         "reservationUrl": "https://resy.com/cities/bal/la-cuchara?date=2021-03-03&seats=2",
         "reservationPlatform": "Resy",
+        "telephoneLanguage": [
+          "JSON-LD telephone: + +14437083838"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "top of page MENUS EVENTS RESERVATIONS DIRECTIONS PRIVATE DINING ABOUT US PRESS More Use tab to navigate through the menu items.",
@@ -32141,7 +32239,7 @@
           "https://www.lacucharabaltimore.com/menu",
           "https://www.lacucharabaltimore.com/events"
         ],
-        "retrievedAt": "2026-08-18T22:56:37.519Z",
+        "retrievedAt": "2026-09-04T12:46:27.708Z",
         "playwrightPages": 0
       }
     },
@@ -32150,7 +32248,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:39.308Z",
+        "lastEnrichedAt": "2026-09-04T12:46:29.580Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32158,6 +32256,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.toasttab.com/woodberry-kitchen-2010-clipper-park-rd-ste-126/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -32175,7 +32277,7 @@
           "https://www.woodberrykitchen.com/",
           "https://www.woodberrykitchen.com/about"
         ],
-        "retrievedAt": "2026-08-18T22:56:39.308Z",
+        "retrievedAt": "2026-09-04T12:46:29.580Z",
         "playwrightPages": 0
       }
     },
@@ -32225,7 +32327,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:41.446Z",
+        "lastEnrichedAt": "2026-09-04T12:46:30.972Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32233,6 +32335,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -32249,7 +32355,7 @@
         "sourceUrls": [
           "https://www.thebygonerestaurant.com/"
         ],
-        "retrievedAt": "2026-08-18T22:56:41.446Z",
+        "retrievedAt": "2026-09-04T12:46:30.972Z",
         "playwrightPages": 0
       }
     },
@@ -32258,7 +32364,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:42.269Z",
+        "lastEnrichedAt": "2026-09-04T12:46:31.983Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32266,6 +32372,12 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -32300,7 +32412,7 @@
           "https://www.cinghiale.com/about-us",
           "https://www.cinghiale.com/booking"
         ],
-        "retrievedAt": "2026-08-18T22:56:42.269Z",
+        "retrievedAt": "2026-09-04T12:46:31.983Z",
         "playwrightPages": 0
       }
     },
@@ -32309,7 +32421,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:44.300Z",
+        "lastEnrichedAt": "2026-09-04T12:46:34.190Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32317,6 +32429,10 @@
         "menuUrl": "https://www.theasbury.com/menus/",
         "reservationUrl": "https://order.toasttab.com/online/theasbury",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "The Dunhill Bar Private Events A historic setting for all types of private events with catering by The Asbury.",
@@ -32336,12 +32452,12 @@
             "sourceUrl": "https://www.theasbury.com/"
           },
           {
-            "quote": "og:description: Parlor of Wonder is an intimate and interactive dining and magic experience happening at The Dunhill on Saturday, August 22. Guests will enjoy a cocktail hour and three-course dinner from The Asbury’s culinary team followed by a dynamic perform",
-            "sourceUrl": "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/"
+            "quote": "og:description: Charlotte Murder Mystery Company returns to The Dunhill Hotel on Saturday, September 12, with “Evil on the Beach” – an immersive whodunit experience that includes a three-course dinner and cocktail hour – set in 1928, just one year before The D",
+            "sourceUrl": "https://www.theasbury.com/events/murder-mystery-experience-evil-on-the-beach/"
           },
           {
-            "quote": "title: Parlor of Wonder: Dinner & a Magic Show | Uptown Charlotte Event",
-            "sourceUrl": "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/"
+            "quote": "title: Murder Mystery Experience at The Dunhill Hotel | Uptown Charlotte Event",
+            "sourceUrl": "https://www.theasbury.com/events/murder-mystery-experience-evil-on-the-beach/"
           },
           {
             "quote": "og:description: Discover a uniquely Carolinian experience at The Asbury: Modern southern cuisine, made with ingredients from small, local family farms. View Menus.",
@@ -32363,11 +32479,11 @@
         "pagesRead": 4,
         "sourceUrls": [
           "https://www.theasbury.com/",
-          "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/",
+          "https://www.theasbury.com/events/murder-mystery-experience-evil-on-the-beach/",
           "https://www.theasbury.com/menus/",
           "https://www.theasbury.com/about/"
         ],
-        "retrievedAt": "2026-08-18T22:56:44.300Z",
+        "retrievedAt": "2026-09-04T12:46:34.190Z",
         "playwrightPages": 0
       }
     },
@@ -32376,7 +32492,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:46.917Z",
+        "lastEnrichedAt": "2026-09-04T12:46:43.552Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32384,6 +32500,12 @@
         "menuUrl": "https://www.kindreddavidson.com/menu",
         "reservationUrl": "https://resy.com/cities/davidson-nc/venues/kindred-restaurant",
         "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Our team is delighted to offer assistance with identifying options to accommodate any restrictions or allergies."
         ],
@@ -32437,7 +32559,7 @@
           "https://www.kindreddavidson.com/events",
           "https://www.kindreddavidson.com/menu"
         ],
-        "retrievedAt": "2026-08-18T22:56:46.917Z",
+        "retrievedAt": "2026-09-04T12:46:43.552Z",
         "playwrightPages": 0
       }
     },
@@ -32446,7 +32568,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:48.712Z",
+        "lastEnrichedAt": "2026-09-04T12:46:45.350Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32454,6 +32576,10 @@
         "menuUrl": "https://haberdish.com/food-philosophy/",
         "reservationUrl": "https://www.toasttab.com/haberdish/v2/online-order",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -32472,7 +32598,7 @@
           "https://haberdish.com/about-us/",
           "https://haberdish.com/food-philosophy/"
         ],
-        "retrievedAt": "2026-08-18T22:56:48.712Z",
+        "retrievedAt": "2026-09-04T12:46:45.350Z",
         "playwrightPages": 0
       }
     },
@@ -32481,7 +32607,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:52.789Z",
+        "lastEnrichedAt": "2026-09-04T12:46:50.550Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -32489,6 +32615,19 @@
         "menuUrl": "https://midwoodsmokehouse.com/menus/",
         "reservationUrl": "https://order.toasttab.com/online/locations/34fff39a-b77f-46c7-bad4-bdf6bec8c7ae/1234",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-704-295-4227",
+          "JSON-LD telephone: +1-980-430-1086",
+          "JSON-LD telephone: +1-980-237-7929",
+          "JSON-LD telephone: +1-980-689-2990",
+          "JSON-LD telephone: +1-803-764-1231",
+          "JSON-LD telephone: +1-919-267-2666"
+        ],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Barbecue"
+        ],
         "dietaryLanguage": [
           "Vegetarians and health-conscious diners will find plenty to savor, from fresh salads to inventive veggie dishes."
         ],
@@ -32570,18 +32709,18 @@
           "https://midwoodsmokehouse.com/about/",
           "https://midwoodsmokehouse.com/menus/"
         ],
-        "retrievedAt": "2026-08-18T22:56:52.789Z",
+        "retrievedAt": "2026-09-04T12:46:50.550Z",
         "playwrightPages": 0
       }
     },
     "stagioni-charlotte": {
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:56.975Z",
+        "lastEnrichedAt": "2026-09-04T12:46:54.527Z",
         "enrichmentMode": "owned-site",
-        "completeness": 94
+        "completeness": 89
       },
       "site": {
         "menuUrl": "https://www.stagioniclt.com/menu.php",
@@ -32615,7 +32754,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:56:59.436Z",
+        "lastEnrichedAt": "2026-09-04T12:46:55.471Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32623,6 +32762,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.toasttab.com/the-custom-shop-1601-elizabeth-ave/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Allergies & Accommodations We can accommodate most allergies, with the exception of Allium.",
           "Feel free to reach out to us directly at info@customshopfood.com for any allergy questions or specific accommodations you might need."
@@ -32665,7 +32808,7 @@
           "https://customshopfood.com/reservations",
           "https://customshopfood.com/about"
         ],
-        "retrievedAt": "2026-08-18T22:56:59.436Z",
+        "retrievedAt": "2026-09-04T12:46:55.471Z",
         "playwrightPages": 0
       }
     },
@@ -32674,7 +32817,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:06.561Z",
+        "lastEnrichedAt": "2026-09-04T12:47:02.736Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32682,6 +32825,12 @@
         "menuUrl": "",
         "reservationUrl": "https://www.opentable.com/r/the-catbird-seat",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , We 00:00-00:00, Th 00:00-00:00, Fr 00:00-00:00, Sa 00:00-00:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "PRIVATE EVENTS GIFT CARDS Now located atop the Bill Voorhees Building on 8th Avenue South, the restaurant enters a new chapter with chefs Andy Doubrava and Tiffani Ortiz at the helm.",
@@ -32701,7 +32850,7 @@
         "sourceUrls": [
           "https://www.thecatbirdseatrestaurant.com/"
         ],
-        "retrievedAt": "2026-08-18T22:57:06.561Z",
+        "retrievedAt": "2026-09-04T12:47:02.736Z",
         "playwrightPages": 0
       }
     },
@@ -32710,7 +32859,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:07.443Z",
+        "lastEnrichedAt": "2026-09-04T12:47:03.682Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32718,6 +32867,10 @@
         "menuUrl": "https://husknashville.com/menus/",
         "reservationUrl": "https://www.toasttab.com/husk-nashville/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Private Dining Options Spotlight on some of our Southern suppliers Villa Acres Farms Sparta, TN Bucksnort Trout Ranch McEwen, TN Blue Heron Farmstead Milton, TN Interested in Joining Our Team?",
@@ -32770,7 +32923,7 @@
           "https://husknashville.com/contact/",
           "https://husknashville.com/private-dining/"
         ],
-        "retrievedAt": "2026-08-18T22:57:07.443Z",
+        "retrievedAt": "2026-09-04T12:47:03.682Z",
         "playwrightPages": 0
       }
     },
@@ -32779,7 +32932,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:09.700Z",
+        "lastEnrichedAt": "2026-09-04T12:47:06.232Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32787,12 +32940,16 @@
         "menuUrl": "",
         "reservationUrl": "https://blog.resy.com/the-hit-list/nashville-restaurants-may-2026/",
         "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Our party of 4 did the chef&rsquo;s choice style dinner and got to try so many delicious dishes.",
         "groupPolicyLanguage": [
           "Our party of 4 did the chef&rsquo;s choice style dinner and got to try so many delicious dishes.",
-          "The Rose Room A private dining venue and lounge located at Butcher & Bee Nashville.",
+          "Private Semi-Private All Options The Rose Room A private dining venue and lounge located at Butcher & Bee Nashville.",
           "Email Sign Up Private Dining Spaces Break bread with us.",
           "The Rose Room is a fully private dining room that is versatile enough to swing from cozy lounge space to dinner party."
         ],
@@ -32830,7 +32987,7 @@
           "https://www.butcherandbee.com/locations/nashville/events",
           "https://www.butcherandbee.com/about-us/"
         ],
-        "retrievedAt": "2026-08-18T22:57:09.700Z",
+        "retrievedAt": "2026-09-04T12:47:06.232Z",
         "playwrightPages": 0
       }
     },
@@ -32839,7 +32996,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:12.079Z",
+        "lastEnrichedAt": "2026-09-04T12:47:08.639Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32847,6 +33004,13 @@
         "menuUrl": "https://www.rolfanddaughters.com/menu-1",
         "reservationUrl": "https://www.toasttab.com/rolf-and-daughters/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: New American, Farm-to-Table, Seasonal, Pasta",
+          "JSON-LD servesCuisine: Farm-to-Table, Seasonal, New American, Pasta"
+        ],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "menu large parties merch gift cards about contact jobs Make a Reservation View the Menu Our Menu Changes with the Seasons.",
@@ -32883,7 +33047,7 @@
           "https://www.rolfanddaughters.com/menu-1",
           "https://www.rolfanddaughters.com/about"
         ],
-        "retrievedAt": "2026-08-18T22:57:12.079Z",
+        "retrievedAt": "2026-09-04T12:47:08.639Z",
         "playwrightPages": 0
       }
     },
@@ -32892,7 +33056,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:13.832Z",
+        "lastEnrichedAt": "2026-09-04T12:47:10.414Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32900,6 +33064,12 @@
         "menuUrl": "https://www.henriettared.com/menu",
         "reservationUrl": "https://www.opentable.com/r/henrietta-red-nashville-3",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 10:00-14:00, Sa 17:00-22:00, Su 10:00-14:00, Su 17:00-21:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "I have dietary restrictions, is that okay?",
           "We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry.",
@@ -32933,7 +33103,7 @@
           "https://www.henriettared.com/menu",
           "https://www.henriettared.com/faq"
         ],
-        "retrievedAt": "2026-08-18T22:57:13.832Z",
+        "retrievedAt": "2026-09-04T12:47:10.414Z",
         "playwrightPages": 0
       }
     },
@@ -32942,7 +33112,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:15.581Z",
+        "lastEnrichedAt": "2026-09-04T12:47:12.543Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -32950,6 +33120,12 @@
         "menuUrl": "",
         "reservationUrl": "https://www.opentable.com/r/bastion-reservations-nashville?restref=985351&lang=en-US&ot_source=Restaurant%20website",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-00:00, Tu 17:00-00:00, We 17:00-00:00, Th 17:00-00:00, Fr 17:00-01:00, Sa 17:00-01:00, Su 17:00-00:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "I have dietary restrictions, is that OK?",
           "We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry.",
@@ -33002,7 +33178,7 @@
           "https://www.bastionnashville.com/faq",
           "https://www.bastionnashville.com/private-events"
         ],
-        "retrievedAt": "2026-08-18T22:57:15.581Z",
+        "retrievedAt": "2026-09-04T12:47:12.543Z",
         "playwrightPages": 0
       }
     },
@@ -33011,7 +33187,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:17.362Z",
+        "lastEnrichedAt": "2026-09-04T12:47:14.377Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33019,6 +33195,10 @@
         "menuUrl": "https://www.locustnashville.com/menus",
         "reservationUrl": "https://www.opentable.com/r/locust-nashville?corrid=dfcf995d-0153-4767-afa7-a7d874494bf6&p=4&sd=2025-05-30T19%3A00%3A00",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Can you accommodate dietary restrictions?",
           "We are not able to cater to vegetarian or vegan diets.",
@@ -33067,7 +33247,7 @@
           "https://www.locustnashville.com/faq",
           "https://www.locustnashville.com/menus"
         ],
-        "retrievedAt": "2026-08-18T22:57:17.362Z",
+        "retrievedAt": "2026-09-04T12:47:14.377Z",
         "playwrightPages": 0
       }
     },
@@ -33076,7 +33256,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:19.231Z",
+        "lastEnrichedAt": "2026-09-04T12:47:16.296Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33084,6 +33264,12 @@
         "menuUrl": "https://www.lockelandtable.com/drinks",
         "reservationUrl": "https://order.toasttab.com/online/lockeland-table-1520-woodland-st",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 16:00-22:00, Tu 16:00-22:00, We 16:00-22:00, Th 16:00-22:00, Fr 16:00-22:00, Sa 16:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -33110,7 +33296,7 @@
           "https://www.lockelandtable.com/drinks",
           "https://www.lockelandtable.com/events"
         ],
-        "retrievedAt": "2026-08-18T22:57:19.231Z",
+        "retrievedAt": "2026-09-04T12:47:16.296Z",
         "playwrightPages": 0
       }
     },
@@ -33119,7 +33305,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:21.076Z",
+        "lastEnrichedAt": "2026-09-04T12:47:18.129Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33127,6 +33313,12 @@
         "menuUrl": "https://www.goodasfolk.com/menu",
         "reservationUrl": "https://order.toasttab.com/online/folknashville",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-22:00, , , Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00, Su 17:00-22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Menu Large Parties Online Orders Gift Cards About Contact Jobs Cake Orders Uber Eats Delivery Make a Reservation VIEW THE MENU Seasonal Cooking.",
@@ -33171,7 +33363,7 @@
           "https://www.goodasfolk.com/menu",
           "https://www.goodasfolk.com/about"
         ],
-        "retrievedAt": "2026-08-18T22:57:21.076Z",
+        "retrievedAt": "2026-09-04T12:47:18.129Z",
         "playwrightPages": 0
       }
     },
@@ -33180,7 +33372,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-18T22:57:22.777Z",
+        "lastEnrichedAt": "2026-09-04T12:47:19.922Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33188,6 +33380,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -33212,7 +33408,7 @@
         "sourceUrls": [
           "https://josephineon12th.com/"
         ],
-        "retrievedAt": "2026-08-18T22:57:22.777Z",
+        "retrievedAt": "2026-09-04T12:47:19.922Z",
         "playwrightPages": 0
       }
     },
@@ -33221,7 +33417,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:21.209Z",
+        "lastEnrichedAt": "2026-09-04T12:47:23.030Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33229,6 +33425,10 @@
         "menuUrl": "https://thewalrusbar.com/menu",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Hours Sunday - Thursday: 4:00 PM - 9:00 PM Friday & Saturday: 4:00 PM - 10:00 PM $3 Oyster Happy Hour Monday - Friday: 4:00 PM - 5:00 PM Private Dining The Sea Creatures Wine Club Gift Shop Our Purveyors Welcome!",
@@ -33257,7 +33457,7 @@
           "https://thewalrusbar.com/menu",
           "https://thewalrusbar.com/about"
         ],
-        "retrievedAt": "2026-08-19T02:54:21.209Z",
+        "retrievedAt": "2026-09-04T12:47:23.030Z",
         "playwrightPages": 0
       }
     },
@@ -33266,7 +33466,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:24.792Z",
+        "lastEnrichedAt": "2026-09-04T12:47:26.992Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33274,6 +33474,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.toasttab.com/joulerestaurant/giftcards?utm_source=undefined&utm_content=online--joulerestaurant&utm_medium=toast_sites&utm_campaign=giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "1.5 hours of dining time is reserved for parties of 2-3 guests and 2 hours for parties of 4-5 guests.",
@@ -33296,7 +33500,7 @@
         "sourceUrls": [
           "https://www.joulerestaurant.com/"
         ],
-        "retrievedAt": "2026-08-19T02:54:24.792Z",
+        "retrievedAt": "2026-09-04T12:47:26.992Z",
         "playwrightPages": 0
       }
     },
@@ -33305,7 +33509,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:26.358Z",
+        "lastEnrichedAt": "2026-09-04T12:47:28.726Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33313,6 +33517,10 @@
         "menuUrl": "https://www.larkseattle.com/menu",
         "reservationUrl": "https://www.toasttab.com/slab-sandwiches/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Vegetarian and pescatarian tastings available on request."
         ],
@@ -33363,7 +33571,7 @@
           "https://www.larkseattle.com/menu",
           "https://www.larkseattle.com/about"
         ],
-        "retrievedAt": "2026-08-19T02:54:26.358Z",
+        "retrievedAt": "2026-09-04T12:47:28.726Z",
         "playwrightPages": 0
       }
     },
@@ -33372,7 +33580,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:28.522Z",
+        "lastEnrichedAt": "2026-09-04T12:47:31.129Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33380,6 +33588,10 @@
         "menuUrl": "https://cafejuanita.com/menu",
         "reservationUrl": "https://www.opentable.com/r/cafe-juanita-reservations-kirkland?lang=en-US&ot_source=Restaurant%20website&restref=322",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "We proudly present two distinct tasting menus: one for omnivore and pescatarian diners, and a dedicated option for vegetarian and vegan guests.",
           "We are happy to modify dishes for most dietary restrictions; please advise when making reservations.",
@@ -33418,7 +33630,7 @@
           "https://cafejuanita.com/menu",
           "https://cafejuanita.com/book-your-event"
         ],
-        "retrievedAt": "2026-08-19T02:54:28.522Z",
+        "retrievedAt": "2026-09-04T12:47:31.129Z",
         "playwrightPages": 0
       }
     },
@@ -33427,7 +33639,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:30.850Z",
+        "lastEnrichedAt": "2026-09-04T12:47:33.877Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33435,6 +33647,10 @@
         "menuUrl": "https://www.theherbfarm.com/menu/",
         "reservationUrl": "https://reservations.theherbfarm.com/Reservation",
         "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -33465,7 +33681,7 @@
           "https://www.theherbfarm.com/menu/",
           "https://www.theherbfarm.com/contact/"
         ],
-        "retrievedAt": "2026-08-19T02:54:30.850Z",
+        "retrievedAt": "2026-09-04T12:47:33.877Z",
         "playwrightPages": 0
       }
     },
@@ -33474,7 +33690,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:32.550Z",
+        "lastEnrichedAt": "2026-09-04T12:47:35.998Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33482,6 +33698,12 @@
         "menuUrl": "https://thewhalewins.com/menu",
         "reservationUrl": "https://www.opentable.com/the-whale-wins-reservations-seattle?restref=148678&lang=en-US&ot_source=Restaurant%20website",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [
+          "JSON-LD priceRange: $"
+        ],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Weekdays Wednesday & Thursday: 4:00 PM - 9:00 PM Friday: 12:00 PM - 9:00 PM Saturday & Sunday Saturday & Sunday: 10:00 AM - 9:00 PM Private Dining Reservations The Whale Wins To-Go Enjoy The Whale Wins at home!",
@@ -33502,7 +33724,7 @@
           "https://thewhalewins.com/menu",
           "https://thewhalewins.com/about"
         ],
-        "retrievedAt": "2026-08-19T02:54:32.550Z",
+        "retrievedAt": "2026-09-04T12:47:35.998Z",
         "playwrightPages": 0
       }
     },
@@ -33511,7 +33733,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:35.543Z",
+        "lastEnrichedAt": "2026-09-04T12:47:39.402Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33519,6 +33741,10 @@
         "menuUrl": "https://musangseattle.com/menus",
         "reservationUrl": "https://www.opentable.com/restref/client/?corrid=76138835-8c14-44ec-99fd-0a3888ed83b9&lang=en-US&ot_source=Restaurant%20website&restref=1089493",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "please alert your server of any allergies or dietary restrictions Musang has added a 22% service charge to all checks that is retained (100%) by the house."
         ],
@@ -33549,7 +33775,7 @@
           "https://musangseattle.com/menus",
           "https://musangseattle.com/info-hours"
         ],
-        "retrievedAt": "2026-08-19T02:54:35.543Z",
+        "retrievedAt": "2026-09-04T12:47:39.402Z",
         "playwrightPages": 0
       }
     },
@@ -33558,7 +33784,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:37.541Z",
+        "lastEnrichedAt": "2026-09-04T12:47:41.676Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33566,6 +33792,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.exploretock.com/archipelagoseattle/faq",
         "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "We accommodate ALL preferences, aversions, allergies, and restrictions , creating each individual's tasting menu to ensure an inclusive and enjoyable experience for everyone.",
           "frequently asked questions Do you accommodate dietary restrictions?",
@@ -33602,7 +33832,7 @@
           "https://www.archipelagoseattle.com/reservations",
           "https://www.archipelagoseattle.com/faq"
         ],
-        "retrievedAt": "2026-08-19T02:54:37.541Z",
+        "retrievedAt": "2026-09-04T12:47:41.676Z",
         "playwrightPages": 0
       }
     },
@@ -33611,7 +33841,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:39.270Z",
+        "lastEnrichedAt": "2026-09-04T12:47:43.516Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33619,6 +33849,12 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 07:00-07:00, , , Th 07:00-07:00, Fr 07:00-07:00, Sa 07:00-07:00, Su 07:00-07:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -33652,7 +33888,7 @@
           "https://www.stapleandfancy.com/",
           "https://www.stapleandfancy.com/about"
         ],
-        "retrievedAt": "2026-08-19T02:54:39.270Z",
+        "retrievedAt": "2026-09-04T12:47:43.516Z",
         "playwrightPages": 0
       }
     },
@@ -33661,7 +33897,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:40.580Z",
+        "lastEnrichedAt": "2026-09-04T12:47:45.180Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33669,6 +33905,12 @@
         "menuUrl": "https://www.tilikumplacecafe.com/menus",
         "reservationUrl": "https://www.tilikumplacecafe.com/reservation",
         "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , Fr 10:00-14:00, Fr 17:00-21:00, Sa 09:00-14:00, Sa 17:00-21:00, Su 09:00-14:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -33695,7 +33937,7 @@
           "https://www.tilikumplacecafe.com/menus",
           "https://www.tilikumplacecafe.com/reservation"
         ],
-        "retrievedAt": "2026-08-19T02:54:40.580Z",
+        "retrievedAt": "2026-09-04T12:47:45.180Z",
         "playwrightPages": 0
       }
     },
@@ -33704,7 +33946,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:42.295Z",
+        "lastEnrichedAt": "2026-09-04T12:47:47.029Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33712,6 +33954,10 @@
         "menuUrl": "https://bernssteakhouse.com/wine-cellar/",
         "reservationUrl": "https://www.opentable.com/blog/top-100-restaurants-america-2023/",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "For our group dining department or to secure a large party (9 and above) or private reservation, please email us at bshgroupsales@bernssteakhouse.com.",
@@ -33774,7 +34020,7 @@
           "https://bernssteakhouse.com/contact/",
           "https://bernssteakhouse.com/reservation/"
         ],
-        "retrievedAt": "2026-08-19T02:54:42.295Z",
+        "retrievedAt": "2026-09-04T12:47:47.029Z",
         "playwrightPages": 0
       }
     },
@@ -33783,7 +34029,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:44.791Z",
+        "lastEnrichedAt": "2026-09-04T12:47:50.426Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33791,6 +34037,10 @@
         "menuUrl": "https://ulele.com/menus/",
         "reservationUrl": "https://www.opentable.com/ulele-reservations-tampa?restref=139954&lang=en-US&ot_source=Restaurant%20website",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Ulele Gift Cards Menu Reservations Menu About Find Us Ulele Artwork News / Q&A Group Reservations Our inspiration Videos Get In Touch Charity Requests Sound Bites Reservations Gift Cards Ulele Spring Brewery OPEN FOR LUNCH AND DINNER Sunday – Thursday 11 a.m.",
@@ -33834,7 +34084,7 @@
           "https://ulele.com/menus/",
           "https://ulele.com/group-reservations/"
         ],
-        "retrievedAt": "2026-08-19T02:54:44.791Z",
+        "retrievedAt": "2026-09-04T12:47:50.426Z",
         "playwrightPages": 0
       }
     },
@@ -33843,7 +34093,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:48.614Z",
+        "lastEnrichedAt": "2026-09-04T12:47:54.957Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -33851,6 +34101,19 @@
         "menuUrl": "https://www.columbiarestaurant.com/food-drink",
         "reservationUrl": "https://www.opentable.com/columbia-restaurant-ybor-city-reservations-tampa?restref=40510&lang=en-US&ot_source=Restaurant%20website",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (813) 248-4961"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Sunday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Tuesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 11:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Saturday 11:00 22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Cup $8 Bowl $10 Gluten free Cuban Black Bean Soup Frijoles Negros prepared exactly as our grandmother Carmen Hernandez did.",
           "Cup $8 Bowl $10 Gluten free Vegan Gazpacho Andalucia Spain's famous cold soup of purée of ripe tomatoes, green peppers, onions, cucumbers and garlic.",
@@ -33922,7 +34185,7 @@
           "https://www.columbiarestaurant.com/group-dining-catering",
           "https://www.columbiarestaurant.com/food-drink"
         ],
-        "retrievedAt": "2026-08-19T02:54:48.614Z",
+        "retrievedAt": "2026-09-04T12:47:54.957Z",
         "playwrightPages": 0
       }
     },
@@ -33931,7 +34194,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:50.898Z",
+        "lastEnrichedAt": "2026-09-04T12:47:57.306Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33939,6 +34202,10 @@
         "menuUrl": "https://www.miseonline.com/menus/",
         "reservationUrl": "https://www.opentable.com/restaurant/profile/1482652?corrid=d5d485d9-d76a-4cbd-8195-2c25c3381936&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2026-01-30T19%3A00%3A00",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Main content starts here, tab to start navigating Private Events The Latest at Mise en Place in Ybor Browse Private Events Brochure Inquire Now Parties at Your Place...",
@@ -33976,7 +34243,7 @@
           "https://www.miseonline.com/menus/",
           "https://www.miseonline.com/private-dining/"
         ],
-        "retrievedAt": "2026-08-19T02:54:50.898Z",
+        "retrievedAt": "2026-09-04T12:47:57.306Z",
         "playwrightPages": 0
       }
     },
@@ -33985,7 +34252,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:52.564Z",
+        "lastEnrichedAt": "2026-09-04T12:47:59.074Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -33993,6 +34260,10 @@
         "menuUrl": "https://oxfordexchange.com/pages/menus",
         "reservationUrl": "https://order.toasttab.com/online/oxford-exchange",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -34028,7 +34299,7 @@
           "https://oxfordexchange.com/pages/visit-us",
           "https://oxfordexchange.com/pages/reservations"
         ],
-        "retrievedAt": "2026-08-19T02:54:52.564Z",
+        "retrievedAt": "2026-09-04T12:47:59.074Z",
         "playwrightPages": 0
       }
     },
@@ -34037,7 +34308,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:55.667Z",
+        "lastEnrichedAt": "2026-09-04T12:48:02.326Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -34045,6 +34316,12 @@
         "menuUrl": "",
         "reservationUrl": "https://www.opentable.com/r/rooster-and-the-till-reservations-tampa?restref=397762&",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-22:00, Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -34065,7 +34342,7 @@
         "sourceUrls": [
           "https://www.roosterandthetill.com/"
         ],
-        "retrievedAt": "2026-08-19T02:54:55.667Z",
+        "retrievedAt": "2026-09-04T12:48:02.326Z",
         "playwrightPages": 0
       }
     },
@@ -34074,7 +34351,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:56.545Z",
+        "lastEnrichedAt": "2026-09-04T12:48:03.299Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -34082,6 +34359,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.opentable.com/restref/client/?rid=110953&",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Dinner Menu Wine Selections Wine & Cocktails Dessert Menu Happy Hour NYE Menu Dinner Menu Wine Selections Wine & Cocktails Dessert Menu Happy Hour NYE Menu Weddings or Corporate Private Events A modern take on Steak.",
@@ -34108,7 +34389,7 @@
           "https://www.rococosteak.com/",
           "https://rococosteak.com/private-events/"
         ],
-        "retrievedAt": "2026-08-19T02:54:56.545Z",
+        "retrievedAt": "2026-09-04T12:48:03.299Z",
         "playwrightPages": 0
       }
     },
@@ -34117,14 +34398,20 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:54:59.089Z",
+        "lastEnrichedAt": "2026-09-04T12:48:06.728Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
       "site": {
-        "menuUrl": "",
-        "reservationUrl": "https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola",
+        "menuUrl": "https://www.oakandola.com/s/Drink-Side-lindsey.pdf",
+        "reservationUrl": "https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola/events/ron-de-barrilito-rum-d-inner-2026-09-01?date=2026-08-03&seats=2",
         "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 11:00-15:00, Mo 17:00-22:00, Tu 11:00-15:00, Tu 17:00-22:00, We 11:00-15:00, We 17:00-22:00, Th 11:00-15:00, Th 17:00-22:00, Fr 11:00-15:00, Fr 17:00-23:00, Sa 11:00-15:00, Sa 17:00-23:00, Su 11:00-15:00, Su 17:00-22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Please contact us for inquiries & more information Private Event Software powered by Tripleseat We have a small from scratch kitchen.",
@@ -34153,7 +34440,7 @@
           "https://www.oakandola.com/reserve",
           "https://www.oakandola.com/events"
         ],
-        "retrievedAt": "2026-08-19T02:54:59.089Z",
+        "retrievedAt": "2026-09-04T12:48:06.728Z",
         "playwrightPages": 0
       }
     },
@@ -34162,7 +34449,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:00.792Z",
+        "lastEnrichedAt": "2026-09-04T12:48:08.524Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -34170,6 +34457,23 @@
         "menuUrl": "https://www.stillwaterstavern.com/menu/brunchnew?",
         "reservationUrl": "https://www.toasttab.com/stillwaters-tavern/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +17273501019",
+          "JSON-LD telephone: +18136567980"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:30 22:00",
+          "JSON-LD openingHoursSpecification: Friday,Saturday 11:30 23:00",
+          "JSON-LD openingHoursSpecification: Sunday 11:00 22:00",
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:30 21:00",
+          "JSON-LD openingHoursSpecification: Sunday 11:00 21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: American, Scratch Kitchen, Bar Food"
+        ],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -34277,7 +34581,7 @@
           "https://www.stillwaterstavern.com/private-events",
           "https://www.stillwaterstavern.com/about"
         ],
-        "retrievedAt": "2026-08-19T02:55:00.792Z",
+        "retrievedAt": "2026-09-04T12:48:08.524Z",
         "playwrightPages": 0
       }
     },
@@ -34286,14 +34590,20 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:04.469Z",
+        "lastEnrichedAt": "2026-09-04T12:48:12.298Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
       "site": {
-        "menuUrl": "https://edison-tampa.com/menu",
+        "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Mo 17:00-22:00, Tu 17:00-22:00, We 17:00-22:00, Th 17:00-22:00, Fr 17:00-22:00, Sa 17:00-22:00, Su 17:00-22:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -34306,20 +34616,15 @@
             "sourceUrl": "https://edison-tampa.com/"
           },
           {
-            "quote": "og:description: New interpretations of everyday food expertly engineered into current, modern cuisine.",
-            "sourceUrl": "https://edison-tampa.com/menu"
-          },
-          {
-            "quote": "title: menu &mdash; edison:food+drink lab",
-            "sourceUrl": "https://edison-tampa.com/menu"
+            "quote": "og:description: After 14 years of creating, serving and welcoming you, we are closing edison:food+drink lab. Thank you for every adventurous bite, every craft cocktail, every moment you trusted us to surprise your palates. Please join us at COUNTER CULTURE 290",
+            "sourceUrl": "https://edison-tampa.com/"
           }
         ],
-        "pagesRead": 2,
+        "pagesRead": 1,
         "sourceUrls": [
-          "https://edison-tampa.com/",
-          "https://edison-tampa.com/menu"
+          "https://edison-tampa.com/"
         ],
-        "retrievedAt": "2026-08-19T02:55:04.469Z",
+        "retrievedAt": "2026-09-04T12:48:12.298Z",
         "playwrightPages": 0
       }
     },
@@ -34328,7 +34633,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:05.909Z",
+        "lastEnrichedAt": "2026-09-04T12:48:13.335Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -34336,6 +34641,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.addisondelmar.com/reservations/",
         "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "+ How do you handle dietary restrictions?"
         ],
@@ -34385,7 +34694,7 @@
           "https://www.addisondelmar.com/faq/",
           "https://www.addisondelmar.com/reservations/"
         ],
-        "retrievedAt": "2026-08-19T02:55:05.909Z",
+        "retrievedAt": "2026-09-04T12:48:13.335Z",
         "playwrightPages": 0
       }
     },
@@ -34394,7 +34703,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:08.557Z",
+        "lastEnrichedAt": "2026-09-04T12:48:15.547Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -34402,6 +34711,10 @@
         "menuUrl": "https://www.juniperandivy.com/menu/",
         "reservationUrl": "https://www.opentable.com/restref/client/?restref=114097&lang=en-US&ot_source=Restaurant%20website&corrid=e8a503c1-0ec1-4c68-bdd2-8757fd6bdb7c",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Celebrate With Us From intimate gatherings to blowout soirées, each of our private event spaces has been recently updated to create the ideal setting for your next celebration.",
@@ -34454,7 +34767,7 @@
           "https://www.juniperandivy.com/events/",
           "https://www.juniperandivy.com/contact/"
         ],
-        "retrievedAt": "2026-08-19T02:55:08.557Z",
+        "retrievedAt": "2026-09-04T12:48:15.547Z",
         "playwrightPages": 0
       }
     },
@@ -34463,7 +34776,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:11.186Z",
+        "lastEnrichedAt": "2026-09-04T12:48:18.477Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -34471,6 +34784,10 @@
         "menuUrl": "https://www.herbandwood.com/menu",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Purchase a Gift Card PRIVATE EVENTS Weddings Corporate Events Dinner Parties Herb & Wood is here to put on the perfect event, large or small.",
@@ -34513,7 +34830,7 @@
           "https://www.herbandwood.com/contact",
           "https://www.herbandwood.com/menu"
         ],
-        "retrievedAt": "2026-08-19T02:55:11.186Z",
+        "retrievedAt": "2026-09-04T12:48:18.477Z",
         "playwrightPages": 0
       }
     },
@@ -34522,7 +34839,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:13.058Z",
+        "lastEnrichedAt": "2026-09-04T12:48:20.440Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -34530,6 +34847,12 @@
         "menuUrl": "https://www.calliesd.com/menu",
         "reservationUrl": "https://www.toasttab.com/callie-1195-island-ave/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 05:00-10:00, We 05:00-10:00, Th 05:00-10:00, Fr 05:00-10:00, Sa 05:00-10:00, Su 05:00-10:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Slide 1 Slide 1 (current slide) Private dinning Elevate your gatherings and celebrations with our private event spaces, designed to create unforgettable moments for you and your guests.",
@@ -34594,7 +34917,7 @@
           "https://www.calliesd.com/about",
           "https://www.calliesd.com/private-dining"
         ],
-        "retrievedAt": "2026-08-19T02:55:13.058Z",
+        "retrievedAt": "2026-09-04T12:48:20.440Z",
         "playwrightPages": 0
       }
     },
@@ -34603,7 +34926,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:15.195Z",
+        "lastEnrichedAt": "2026-09-04T12:48:22.664Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -34611,6 +34934,10 @@
         "menuUrl": "https://www.animaesd.com/menu",
         "reservationUrl": "https://www.animaesd.com/reservations",
         "reservationPlatform": "Direct",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -34650,7 +34977,7 @@
           "https://www.animaesd.com/about",
           "https://www.animaesd.com/private-events"
         ],
-        "retrievedAt": "2026-08-19T02:55:15.195Z",
+        "retrievedAt": "2026-09-04T12:48:22.664Z",
         "playwrightPages": 0
       }
     },
@@ -34659,7 +34986,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:17.375Z",
+        "lastEnrichedAt": "2026-09-04T12:48:25.234Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -34667,6 +34994,10 @@
         "menuUrl": "https://www.thefishery.com/wine",
         "reservationUrl": "https://www.toasttab.com/the-fishery/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -34688,18 +35019,18 @@
           "https://www.thefishery.com/",
           "https://www.thefishery.com/wine"
         ],
-        "retrievedAt": "2026-08-19T02:55:17.375Z",
+        "retrievedAt": "2026-09-04T12:48:25.234Z",
         "playwrightPages": 0
       }
     },
     "jeune-et-jolie-san-diego": {
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:18.677Z",
+        "lastEnrichedAt": "2026-09-04T12:48:27.073Z",
         "enrichmentMode": "owned-site",
-        "completeness": 94
+        "completeness": 89
       },
       "site": {
         "menuUrl": "",
@@ -34725,7 +35056,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:19.505Z",
+        "lastEnrichedAt": "2026-09-04T12:48:28.079Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -34733,6 +35064,10 @@
         "menuUrl": "https://cesarinarestaurant.com/menu/",
         "reservationUrl": "https://order.toasttab.com/egiftcards/cesarina-hhcoj",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "For parties larger than 8 we only offer Semi-Private or Private Dining.",
@@ -34777,7 +35112,7 @@
           "https://cesarinarestaurant.com/reservations/",
           "https://cesarinarestaurant.com/private-dining/"
         ],
-        "retrievedAt": "2026-08-19T02:55:19.505Z",
+        "retrievedAt": "2026-09-04T12:48:28.079Z",
         "playwrightPages": 0
       }
     },
@@ -34786,7 +35121,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:22.555Z",
+        "lastEnrichedAt": "2026-09-04T12:48:31.414Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -34794,6 +35129,24 @@
         "menuUrl": "https://civico1845.com/menu/",
         "reservationUrl": "https://www.toasttab.com/civico-1845/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (619) 431 5990"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday 16:00 21:00",
+          "JSON-LD openingHoursSpecification: Tuesday 16:00 21:00",
+          "JSON-LD openingHoursSpecification: Wednesday 16:00 21:00",
+          "JSON-LD openingHoursSpecification: Thursday 16:00 21:00",
+          "JSON-LD openingHoursSpecification: Friday 16:00 22:00",
+          "JSON-LD openingHoursSpecification: Saturday 12:00 22:00",
+          "JSON-LD openingHoursSpecification: Sunday 12:00 21:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Italian, Calabrian, Vegan Italian"
+        ],
         "dietaryLanguage": [
           "Reserve through Resy Traditional and Vegan Southern Italian.",
           "Bruschetta Ricotta & Pomodorini Italian grilled bread, vegan ricotta, confit tomatoes, basil, and lemon zest.",
@@ -34843,7 +35196,7 @@
             "sourceUrl": "https://civico1845.com/"
           },
           {
-            "quote": "JSON-LD openingHoursSpecification: Saturday 12:00 21:00",
+            "quote": "JSON-LD openingHoursSpecification: Saturday 12:00 22:00",
             "sourceUrl": "https://civico1845.com/"
           },
           {
@@ -34859,7 +35212,7 @@
             "sourceUrl": "https://civico1845.com/"
           },
           {
-            "quote": "meta description: Civico 1845 in San Diego: Experience authentic Calabrian flavors, including vegan options and house-made pasta. Reserve your table now.",
+            "quote": "meta description: Civico 1845 is an Italian restaurant in Little Italy, San Diego, serving house-made pasta, Calabrian cuisine and a dedicated plant-based menu. Reserve on Resy.",
             "sourceUrl": "https://civico1845.com/"
           },
           {
@@ -34910,7 +35263,7 @@
           "https://civico1845.com/visit/",
           "https://civico1845.com/reservations/guide/"
         ],
-        "retrievedAt": "2026-08-19T02:55:22.555Z",
+        "retrievedAt": "2026-09-04T12:48:31.414Z",
         "playwrightPages": 0
       }
     },
@@ -34919,14 +35272,18 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:25.136Z",
+        "lastEnrichedAt": "2026-09-04T12:48:34.385Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
       "site": {
-        "menuUrl": "https://uchi.uchirestaurants.com/location/sushi-austin/menu/",
+        "menuUrl": "https://uchiaustin.com/location/sushi-austin/menu/",
         "reservationUrl": "https://www.sevenrooms.com/explore/uchiaustin/reservations/create/search?venues=uchikoaustin,uchiaustin,uchibaaustin",
         "reservationPlatform": "SevenRooms",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "hours sun - thur 4pm - 10pm fri- sat 4pm - 11pm happy hour every day 4pm - 6pm private dining From elegant receptions to intimate dinners, our private dining space offers a calm and curated setting.",
@@ -34957,7 +35314,7 @@
           "https://uchiaustin.com/private-rooms/",
           "https://uchiaustin.com/location/sushi-austin/menu/"
         ],
-        "retrievedAt": "2026-08-19T02:55:25.136Z",
+        "retrievedAt": "2026-09-04T12:48:34.385Z",
         "playwrightPages": 0
       }
     },
@@ -34966,14 +35323,26 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:28.783Z",
+        "lastEnrichedAt": "2026-09-04T12:48:37.701Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
       "site": {
-        "menuUrl": "https://uchiko.uchirestaurants.com/location/sushi-austin/menu/",
+        "menuUrl": "https://uchikoaustin.com/location/sushi-austin/menu/",
         "reservationUrl": "https://www.sevenrooms.com/explore/uchikoaustin/reservations/create/search?venues=uchikoaustin%2Cuchiaustin%2Cuchibaaustin",
         "reservationPlatform": "SevenRooms",
+        "telephoneLanguage": [
+          "JSON-LD telephone: 512-916-4808"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHours: Su-Th 16:00-22:00; Fr-Sa 16:00-23:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: sushi, Japanese"
+        ],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "hours sun - thur 4pm - 10pm fri - sat 4pm - 11pm happy hour every day 4pm - 6pm private dining Ideal space to gather for any occasion such as corporate events, birthdays, and other special gatherings.",
@@ -35020,7 +35389,7 @@
           "https://uchikoaustin.com/private-rooms/",
           "https://uchikoaustin.com/location/sushi-austin/menu/"
         ],
-        "retrievedAt": "2026-08-19T02:55:28.783Z",
+        "retrievedAt": "2026-09-04T12:48:37.701Z",
         "playwrightPages": 0
       }
     },
@@ -35029,7 +35398,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:34.557Z",
+        "lastEnrichedAt": "2026-09-04T12:48:40.802Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35037,6 +35406,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.toasttab.com/barleyswine/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "During certain seasons, some allergens may not be able to be accommodated due to our local sourcing ethos.",
           "Please note, our menu does not suit a vegan or keto diet, and requests will be politely declined."
@@ -35057,7 +35430,7 @@
           "https://www.barleyswine.com/",
           "https://www.barleyswine.com/about"
         ],
-        "retrievedAt": "2026-08-19T02:55:34.557Z",
+        "retrievedAt": "2026-09-04T12:48:40.802Z",
         "playwrightPages": 0
       }
     },
@@ -35066,7 +35439,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:35.868Z",
+        "lastEnrichedAt": "2026-09-04T12:48:42.214Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35074,6 +35447,12 @@
         "menuUrl": "https://oddduckaustin.com/wine",
         "reservationUrl": "https://resy.com/cities/austin-tx/venues/odd-duck?utm_source=Paid&utm_medium=Search&utm_campaign=Reservationships_Evergreen&gad_source=1&gclid=Cj0KCQjw3vO3BhCqARIsAEWblcDBwz-7OJtq10m2nWQb2YUCLUipsTn-KZ-15ZEQ9G0oxSOC1mAOEDAaAoL2EALw_wcB&gclsrc=aw.ds&date=2024-10-02&seats=2",
         "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , , , , ,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -35096,7 +35475,7 @@
           "https://oddduckaustin.com/about",
           "https://oddduckaustin.com/wine"
         ],
-        "retrievedAt": "2026-08-19T02:55:35.868Z",
+        "retrievedAt": "2026-09-04T12:48:42.214Z",
         "playwrightPages": 0
       }
     },
@@ -35105,7 +35484,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:37.755Z",
+        "lastEnrichedAt": "2026-09-04T12:48:44.323Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35113,6 +35492,10 @@
         "menuUrl": "https://www.lenoirrestaurant.com/menu",
         "reservationUrl": "https://resy.com/cities/atx/lenoir",
         "reservationPlatform": "Resy",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -35148,7 +35531,7 @@
           "https://www.lenoirrestaurant.com/private-dining",
           "https://www.lenoirrestaurant.com/contact"
         ],
-        "retrievedAt": "2026-08-19T02:55:37.755Z",
+        "retrievedAt": "2026-09-04T12:48:44.323Z",
         "playwrightPages": 0
       }
     },
@@ -35157,7 +35540,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:39.974Z",
+        "lastEnrichedAt": "2026-09-04T12:48:46.733Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35165,6 +35548,10 @@
         "menuUrl": "",
         "reservationUrl": "https://www.toasttab.com/suerte/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Large Party Reservations For parties of 10 or more, we offer a large party dining experience in our semi-private dining room or outdoor covered deck.",
@@ -35193,18 +35580,18 @@
           "https://www.suerteatx.com/about/",
           "https://www.suerteatx.com/reserve-table/"
         ],
-        "retrievedAt": "2026-08-19T02:55:39.974Z",
+        "retrievedAt": "2026-09-04T12:48:46.733Z",
         "playwrightPages": 0
       }
     },
     "l-oca-d-oro-austin": {
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:41.617Z",
+        "lastEnrichedAt": "2026-09-04T12:48:48.473Z",
         "enrichmentMode": "owned-site",
-        "completeness": 94
+        "completeness": 89
       },
       "site": {
         "menuUrl": "",
@@ -35239,7 +35626,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:42.626Z",
+        "lastEnrichedAt": "2026-09-04T12:48:49.357Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35247,6 +35634,12 @@
         "menuUrl": "https://franklinbarbecue.com/menu",
         "reservationUrl": "https://www.toasttab.com/franklinbbq/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , Tu 00:00-00:00, We 00:00-00:00, Th 00:00-00:00, Fr 00:00-00:00, Sa 00:00-00:00, Su 00:00-00:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Order Now Private Party at Franklin Barbecue Evening Restaurant Buyout 900 E.",
@@ -35297,7 +35690,7 @@
           "https://franklinbarbecue.com/private-events",
           "https://franklinbarbecue.com/about"
         ],
-        "retrievedAt": "2026-08-19T02:55:42.626Z",
+        "retrievedAt": "2026-09-04T12:48:49.357Z",
         "playwrightPages": 0
       }
     },
@@ -35306,7 +35699,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:44.843Z",
+        "lastEnrichedAt": "2026-09-04T12:48:51.695Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35314,6 +35707,10 @@
         "menuUrl": "https://www.olamaieaustin.com/s/Wine-List.pdf",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -35327,7 +35724,7 @@
           "https://www.olamaieaustin.com/about",
           "https://www.olamaieaustin.com/menus"
         ],
-        "retrievedAt": "2026-08-19T02:55:44.843Z",
+        "retrievedAt": "2026-09-04T12:48:51.695Z",
         "playwrightPages": 0
       }
     },
@@ -35336,14 +35733,18 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:46.732Z",
+        "lastEnrichedAt": "2026-09-04T12:48:53.774Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
       "site": {
-        "menuUrl": "https://www.kemuri-tatsuya.com/menu-1",
+        "menuUrl": "https://www.kemuri-tatsuya.com/menu",
         "reservationUrl": "https://www.toasttab.com/tatsu-ya-hq-507-pressler-st-ste-700/giftcards",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -35365,28 +35766,28 @@
           },
           {
             "quote": "og:description: Japanese izakaya meets Texas smokehouse at Kemuri Tatsu-Ya in Austin, Texas. Explore our menu featuring smoked BBQ meats, skewers, sashimi, and desserts, all complemented by an extensive selection of sake and cocktails.",
-            "sourceUrl": "https://www.kemuri-tatsuya.com/menu-1"
+            "sourceUrl": "https://www.kemuri-tatsuya.com/menu"
           }
         ],
         "pagesRead": 4,
         "sourceUrls": [
           "https://www.kemuri-tatsuya.com/",
-          "https://www.kemuri-tatsuya.com/contact",
-          "https://www.kemuri-tatsuya.com/menu-1",
-          "https://www.kemuri-tatsuya.com/events"
+          "https://www.kemuri-tatsuya.com/menu",
+          "https://www.kemuri-tatsuya.com/events",
+          "https://www.kemuri-tatsuya.com/contact"
         ],
-        "retrievedAt": "2026-08-19T02:55:46.732Z",
+        "retrievedAt": "2026-09-04T12:48:53.774Z",
         "playwrightPages": 0
       }
     },
     "canje-austin": {
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:48.993Z",
+        "lastEnrichedAt": "2026-09-04T12:48:56.293Z",
         "enrichmentMode": "owned-site",
-        "completeness": 94
+        "completeness": 89
       },
       "site": {
         "menuUrl": "",
@@ -35412,7 +35813,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:49.832Z",
+        "lastEnrichedAt": "2026-09-04T12:48:57.328Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -35420,6 +35821,20 @@
         "menuUrl": "https://jeffreysofaustin.com/menus/",
         "reservationUrl": "https://www.opentable.com/r/jeffreys-restaurant-austin",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +15124775584"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday 16:30 23:00",
+          "JSON-LD openingHoursSpecification: Tuesday 16:30 23:00",
+          "JSON-LD openingHoursSpecification: Wednesday 16:30 23:00",
+          "JSON-LD openingHoursSpecification: Thursday 16:30 23:00",
+          "JSON-LD openingHoursSpecification: Friday 16:30 23:00",
+          "JSON-LD openingHoursSpecification: Saturday 16:30 23:00",
+          "JSON-LD openingHoursSpecification: Sunday 16:30 23:00"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "For special events or private dining, please contact [email protected] .",
@@ -35479,7 +35894,7 @@
           "https://jeffreysofaustin.com/about/",
           "https://jeffreysofaustin.com/reservations/"
         ],
-        "retrievedAt": "2026-08-19T02:55:49.832Z",
+        "retrievedAt": "2026-09-04T12:48:57.328Z",
         "playwrightPages": 0
       }
     },
@@ -35543,7 +35958,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:53.954Z",
+        "lastEnrichedAt": "2026-09-04T12:49:00.239Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35551,6 +35966,10 @@
         "menuUrl": "https://www.estherslv.com/menus/",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Please let your server know of any dietary restrictions."
         ],
@@ -35588,7 +36007,7 @@
           "https://www.estherslv.com/menus/",
           "https://www.estherslv.com/events/"
         ],
-        "retrievedAt": "2026-08-19T02:55:53.954Z",
+        "retrievedAt": "2026-09-04T12:49:00.239Z",
         "playwrightPages": 0
       }
     },
@@ -35597,7 +36016,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:55:56.039Z",
+        "lastEnrichedAt": "2026-09-04T12:49:02.802Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35605,6 +36024,10 @@
         "menuUrl": "https://sparrowandwolflv.com/menu/",
         "reservationUrl": "https://www.opentable.com/restref/client/?rid=732187",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Please inform us of allergies or aversions."
         ],
@@ -35656,7 +36079,7 @@
           "https://sparrowandwolflv.com/group-dining/",
           "https://sparrowandwolflv.com/about-us/"
         ],
-        "retrievedAt": "2026-08-19T02:55:56.039Z",
+        "retrievedAt": "2026-09-04T12:49:02.802Z",
         "playwrightPages": 0
       }
     },
@@ -35665,7 +36088,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:02.058Z",
+        "lastEnrichedAt": "2026-09-04T12:49:09.771Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35673,6 +36096,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -35681,7 +36108,11 @@
         "cancellationLanguage": [],
         "jsonLdLanguage": [
           {
-            "quote": "meta description: Carson Kitchen Urban Neighborhood Dining: Las Vegas | Atlanta | Salt Lake City",
+            "quote": "meta description: Downtown Las Vegas neighborhood urban dining located at 6th St. & Carson Ave., in the historic John E. Carson Hotel.",
+            "sourceUrl": "https://carsonkitchen.com/"
+          },
+          {
+            "quote": "title: Carson Kitchen | Las Vegas",
             "sourceUrl": "https://carsonkitchen.com/"
           }
         ],
@@ -35689,7 +36120,7 @@
         "sourceUrls": [
           "https://carsonkitchen.com/"
         ],
-        "retrievedAt": "2026-08-19T02:56:02.058Z",
+        "retrievedAt": "2026-09-04T12:49:09.771Z",
         "playwrightPages": 0
       }
     },
@@ -35698,26 +36129,102 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:03.094Z",
+        "lastEnrichedAt": "2026-09-04T12:49:10.960Z",
         "enrichmentMode": "owned-site",
-        "completeness": 94
+        "completeness": 100
       },
       "site": {
-        "menuUrl": "",
-        "reservationUrl": "",
-        "reservationPlatform": "",
-        "dietaryLanguage": [],
+        "menuUrl": "https://honeysalt.com/menus/",
+        "reservationUrl": "https://honeysalt.com/reservations/",
+        "reservationPlatform": "Direct",
+        "telephoneLanguage": [
+          "JSON-LD telephone: (702)-445-6100"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:30 21:00",
+          "JSON-LD openingHoursSpecification: Friday 11:30 22:00",
+          "JSON-LD openingHoursSpecification: Saturday,Sunday 10:00 22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$"
+        ],
+        "cuisineLanguage": [],
+        "dietaryLanguage": [
+          "Whether it’s our interpretations of classic comfort food or our lighter, wellness-based fare, our vegan options or our decadent brunch, Honey Salt’s product is always sourced, prepared and served with love.",
+          "Guests with allergies/dietary restrictions?",
+          "Vegan, vegetarian and gluten-free options are always available and the menu can be tailored for individual guests if they are unable to enjoy our set menu offerings."
+        ],
         "accessibilityLanguage": [],
-        "groupPolicy": "",
-        "groupPolicyLanguage": [],
+        "groupPolicy": "Private Events & Group Dining We want to create a fabulous event for you and your guests!",
+        "groupPolicyLanguage": [
+          "Private Events & Group Dining We want to create a fabulous event for you and your guests!",
+          "FAQs I have a smaller group so the private dining room is not necessary.",
+          "We have a 65-inch flatscreen in our private dining room that includes HDMI cables and WIFI for a fee of $250."
+        ],
         "dressCode": "",
         "cancellationLanguage": [],
-        "jsonLdLanguage": [],
-        "pagesRead": 1,
-        "sourceUrls": [
-          "https://www.honeysalt.com/"
+        "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: (702)-445-6100",
+            "sourceUrl": "https://www.honeysalt.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$",
+            "sourceUrl": "https://www.honeysalt.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday 11:30 21:00",
+            "sourceUrl": "https://www.honeysalt.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Friday 11:30 22:00",
+            "sourceUrl": "https://www.honeysalt.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Saturday,Sunday 10:00 22:00",
+            "sourceUrl": "https://www.honeysalt.com/"
+          },
+          {
+            "quote": "og:description: Welcome to Honey Salt, a Summerlin Las Vegas restaurant offering market inspired cuisine and seasonal farm-to-table events.",
+            "sourceUrl": "https://www.honeysalt.com/"
+          },
+          {
+            "quote": "title: Honey Salt | Summerlin Las Vegas Restaurant",
+            "sourceUrl": "https://www.honeysalt.com/"
+          },
+          {
+            "quote": "og:description: Elizabeth Blau & Chef Kim Canteenwalla opened Honey Salt in 2012, serving market inspired cuisine sourced, prepared, and served with love.",
+            "sourceUrl": "https://honeysalt.com/about-honey-salt/"
+          },
+          {
+            "quote": "title: About Honey Salt - Honey Salt Restaurant Las Vegas",
+            "sourceUrl": "https://honeysalt.com/about-honey-salt/"
+          },
+          {
+            "quote": "og:description: Explore Honey Salt's chef-driven menus in Las Vegas — including our acclaimed brunch, happy hour, lunch, and dinner offerings.",
+            "sourceUrl": "https://honeysalt.com/menus/"
+          },
+          {
+            "quote": "title: Menus - Honey Salt Restaurant Las Vegas",
+            "sourceUrl": "https://honeysalt.com/menus/"
+          },
+          {
+            "quote": "og:description: We want to create a fabulous event for you and your guests! Our hospitality team is ready to take care of every detail.",
+            "sourceUrl": "https://honeysalt.com/group-dining-private-events/"
+          },
+          {
+            "quote": "title: Private Events & Group Dining - Honey Salt Restaurant Las Vegas",
+            "sourceUrl": "https://honeysalt.com/group-dining-private-events/"
+          }
         ],
-        "retrievedAt": "2026-08-19T02:56:03.094Z",
+        "pagesRead": 4,
+        "sourceUrls": [
+          "https://www.honeysalt.com/",
+          "https://honeysalt.com/about-honey-salt/",
+          "https://honeysalt.com/menus/",
+          "https://honeysalt.com/group-dining-private-events/"
+        ],
+        "retrievedAt": "2026-09-04T12:49:10.960Z",
         "playwrightPages": 0
       }
     },
@@ -35726,16 +36233,31 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:04.216Z",
+        "lastEnrichedAt": "2026-09-04T12:49:15.714Z",
         "enrichmentMode": "owned-site",
-        "completeness": 94
+        "completeness": 100
       },
       "site": {
         "menuUrl": "https://www.ferraroslasvegas.com/gallery/wine/",
         "reservationUrl": "https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-702-364-5300"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday 11:30 15:30",
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 16:00 22:30"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Italian, Traditional Italian, Fine Dining, Seafood, Steak, Pasta, Pizza, Vegan"
+        ],
         "dietaryLanguage": [
-          "Happy Hour Lunch Dinner Tasting Menu Vegan Dessert Pre-Show Dinner Summer In Italy Italian version of small plates from 4pm-7pm MUST BE 21 YEARS OF AGE TO SIT IN THE BAR OR LOUNGE AREA FOR HAPPY HOUR!"
+          "Happy Hour Lunch Dinner Vegan Dessert Pre-Show Dinner Italian version of small plates from 4pm-7pm MUST BE 21 YEARS OF AGE TO SIT IN THE BAR OR LOUNGE AREA FOR HAPPY HOUR!",
+          "About Gallery Wine Food Venue Menu Lunch Happy Hour Pre-Show Dinner Vegan Take Out Wine Wine Events Wine Walk Sept.",
+          "9.04 Wine Dinner 9.26 Reservations Contact Private Dining & Catering Catering Menu Private Events Gift Cards Book a Table About Gallery Wine Food Venue Menu Lunch Happy Hour Pre-Show Dinner Vegan Take Out Wine Wine Events Wine Walk Sept."
         ],
         "accessibilityLanguage": [],
         "groupPolicy": "18% service charge on parties of 6 or more.",
@@ -35745,9 +36267,31 @@
           "Yelp Get in Touch Contact and Reservations Private Dining & Events Looking for an ideal venue?",
           "Ferraro’s accommodates private events for 8 to 120 guests, with full-venue buyout options for up to 300 guests."
         ],
-        "dressCode": "",
-        "cancellationLanguage": [],
+        "dressCode": "Dress Code Ferraro’s maintains a business casual dress code .",
+        "cancellationLanguage": [
+          "Cancellation Policy: Reservations requiring a credit card must be canceled at least 48 hours in advance to avoid a $50 per person charge."
+        ],
         "jsonLdLanguage": [
+          {
+            "quote": "JSON-LD telephone: +1-702-364-5300",
+            "sourceUrl": "https://ferraroslasvegas.com/"
+          },
+          {
+            "quote": "JSON-LD priceRange: $$$$",
+            "sourceUrl": "https://ferraroslasvegas.com/"
+          },
+          {
+            "quote": "JSON-LD servesCuisine: Italian, Traditional Italian, Fine Dining, Seafood, Steak, Pasta, Pizza, Vegan",
+            "sourceUrl": "https://ferraroslasvegas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday 11:30 15:30",
+            "sourceUrl": "https://ferraroslasvegas.com/"
+          },
+          {
+            "quote": "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 16:00 22:30",
+            "sourceUrl": "https://ferraroslasvegas.com/"
+          },
           {
             "quote": "og:description: Since 1985, Ferraro's serves traditional Italian cuisine—fresh pasta, pizza, seafood & steaks. Open for Lunch, Happy Hour & Dinner.",
             "sourceUrl": "https://ferraroslasvegas.com/"
@@ -35788,7 +36332,7 @@
           "https://www.ferraroslasvegas.com/gallery/wine/",
           "https://www.ferraroslasvegas.com/reservations/"
         ],
-        "retrievedAt": "2026-08-19T02:56:04.216Z",
+        "retrievedAt": "2026-09-04T12:49:15.714Z",
         "playwrightPages": 0
       }
     },
@@ -35797,7 +36341,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:07.392Z",
+        "lastEnrichedAt": "2026-09-04T12:49:18.273Z",
         "enrichmentMode": "owned-site",
         "completeness": 100
       },
@@ -35805,6 +36349,18 @@
         "menuUrl": "https://animabyedo.com/menu",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [
+          "JSON-LD telephone: +1-702-202-4291"
+        ],
+        "hoursLanguage": [
+          "JSON-LD openingHoursSpecification: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 17:00 22:00"
+        ],
+        "priceLanguage": [
+          "JSON-LD priceRange: $$$"
+        ],
+        "cuisineLanguage": [
+          "JSON-LD servesCuisine: Mediterranean, Italian, Spanish, Catalan, Tapas"
+        ],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -35845,7 +36401,7 @@
         "sourceUrls": [
           "https://www.animabyedo.com/"
         ],
-        "retrievedAt": "2026-08-19T02:56:07.392Z",
+        "retrievedAt": "2026-09-04T12:49:18.273Z",
         "playwrightPages": 0
       }
     },
@@ -35854,7 +36410,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:08.944Z",
+        "lastEnrichedAt": "2026-09-04T12:49:20.121Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35862,6 +36418,10 @@
         "menuUrl": "https://lotusofsiamlv.com/menu/food",
         "reservationUrl": "https://www.opentable.com/booking/restref/availability?lang=en-US&correlationId=6d3c0b5e-84dd-4267-9bcf-0681acca5f75&restRef=1360798&otSource=Restaurant%20website",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Please notify your server if you have any food allergies and food sensitivities before ordering."
         ],
@@ -35889,7 +36449,7 @@
           "https://lotusofsiamlv.com/menu/food",
           "https://lotusofsiamlv.com/contact"
         ],
-        "retrievedAt": "2026-08-19T02:56:08.944Z",
+        "retrievedAt": "2026-09-04T12:49:20.121Z",
         "playwrightPages": 0
       }
     },
@@ -35898,7 +36458,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:10.912Z",
+        "lastEnrichedAt": "2026-09-04T12:49:22.270Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35906,6 +36466,10 @@
         "menuUrl": "https://partage.vegas/menu",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Please note we can't accommodate dairy free, vegan, vegetarian, celiac, onion or garlic free diets.",
           "Unfortunately, we can't accommodate vegan, dairy free, celiac, garlic & onion free diets."
@@ -35947,7 +36511,7 @@
           "https://partage.vegas/private-room",
           "https://partage.vegas/contact"
         ],
-        "retrievedAt": "2026-08-19T02:56:10.912Z",
+        "retrievedAt": "2026-09-04T12:49:22.270Z",
         "playwrightPages": 0
       }
     },
@@ -35956,7 +36520,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:13.156Z",
+        "lastEnrichedAt": "2026-09-04T12:49:24.598Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -35964,6 +36528,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -35993,7 +36561,7 @@
           "https://superiormotors.us/",
           "https://www.superiormotors.us/contact/"
         ],
-        "retrievedAt": "2026-08-19T02:56:13.156Z",
+        "retrievedAt": "2026-09-04T12:49:24.598Z",
         "playwrightPages": 0
       }
     },
@@ -36002,7 +36570,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:16.887Z",
+        "lastEnrichedAt": "2026-09-04T12:49:27.206Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -36010,6 +36578,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -36021,7 +36593,7 @@
         "sourceUrls": [
           "https://www.morcilla.com/"
         ],
-        "retrievedAt": "2026-08-19T02:56:16.887Z",
+        "retrievedAt": "2026-09-04T12:49:27.206Z",
         "playwrightPages": 0
       }
     },
@@ -36059,12 +36631,12 @@
     },
     "altius-pittsburgh": {
       "meta": {
-        "matchStatus": "resolved",
+        "matchStatus": "site-failure",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:18.636Z",
+        "lastEnrichedAt": "2026-09-04T12:49:28.084Z",
         "enrichmentMode": "owned-site",
-        "completeness": 94
+        "completeness": 89
       },
       "site": {
         "menuUrl": "https://www.altiuspgh.com/menus/",
@@ -36134,7 +36706,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:21.091Z",
+        "lastEnrichedAt": "2026-09-04T12:49:29.094Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -36142,6 +36714,10 @@
         "menuUrl": "https://meatandpotatoespgh.com/food/",
         "reservationUrl": "https://www.opentable.com/r/meat-and-potatoes-pittsburgh-2",
         "reservationPlatform": "OpenTable",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Does Meat & Potatoes host private events?",
@@ -36185,7 +36761,7 @@
           "https://meatandpotatoespgh.com/food/",
           "https://meatandpotatoespgh.com/contact-us/"
         ],
-        "retrievedAt": "2026-08-19T02:56:21.091Z",
+        "retrievedAt": "2026-09-04T12:49:29.094Z",
         "playwrightPages": 0
       }
     },
@@ -36194,14 +36770,18 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:23.548Z",
+        "lastEnrichedAt": "2026-09-04T12:49:33.102Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
       "site": {
-        "menuUrl": "https://butterjoint.com/drinks-menu/",
+        "menuUrl": "",
         "reservationUrl": "https://www.toasttab.com/butterjoint-208-n-craig-st/v3/?mode=fulfillment",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -36222,7 +36802,7 @@
         "sourceUrls": [
           "https://www.legumebistro.com/"
         ],
-        "retrievedAt": "2026-08-19T02:56:23.548Z",
+        "retrievedAt": "2026-09-04T12:49:33.102Z",
         "playwrightPages": 0
       }
     },
@@ -36231,7 +36811,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:24.409Z",
+        "lastEnrichedAt": "2026-09-04T12:49:34.070Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -36239,27 +36819,22 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
         "groupPolicyLanguage": [],
         "dressCode": "",
         "cancellationLanguage": [],
-        "jsonLdLanguage": [
-          {
-            "quote": "og:description: Pin Up Casino Қазақстан ресми бетінде тегін ойнау және нақты ақшаға бәс тігу мүмкіндігі бар. Үлкен бонус пен эксклюзивті акциялар сізді күтеді!",
-            "sourceUrl": "https://www.gritandgracepgh.com/"
-          },
-          {
-            "quote": "title: Pin Up Казино Қазақстан: ресми сайт және 100% бонус",
-            "sourceUrl": "https://www.gritandgracepgh.com/"
-          }
-        ],
+        "jsonLdLanguage": [],
         "pagesRead": 1,
         "sourceUrls": [
           "https://www.gritandgracepgh.com/"
         ],
-        "retrievedAt": "2026-08-19T02:56:24.409Z",
+        "retrievedAt": "2026-09-04T12:49:34.070Z",
         "playwrightPages": 0
       }
     },
@@ -36268,7 +36843,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:26.291Z",
+        "lastEnrichedAt": "2026-09-04T12:49:36.587Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -36276,6 +36851,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -36296,7 +36875,7 @@
         "sourceUrls": [
           "https://chengdugourmet.com/"
         ],
-        "retrievedAt": "2026-08-19T02:56:26.291Z",
+        "retrievedAt": "2026-09-04T12:49:36.587Z",
         "playwrightPages": 0
       }
     },
@@ -36305,7 +36884,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:27.366Z",
+        "lastEnrichedAt": "2026-09-04T12:49:38.063Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -36313,6 +36892,10 @@
         "menuUrl": "https://dianoiaseatery.com/menu/",
         "reservationUrl": "https://order.toasttab.com/online/dianoias-eatery-2549-penn-ave",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [
           "Do you offer gluten-free menu items?",
           "In addition to menu items that are already gluten-free – like our Branzino and Steak Florentine – guests can also substitute gluten-free pasta for most pasta dishes on our menu."
@@ -36363,7 +36946,7 @@
           "https://dianoiaseatery.com/reservations/",
           "https://dianoiaseatery.com/menu/"
         ],
-        "retrievedAt": "2026-08-19T02:56:27.366Z",
+        "retrievedAt": "2026-09-04T12:49:38.063Z",
         "playwrightPages": 0
       }
     },
@@ -36372,7 +36955,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T02:56:30.875Z",
+        "lastEnrichedAt": "2026-09-04T12:49:42.016Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -36380,6 +36963,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -36396,7 +36983,7 @@
         "sourceUrls": [
           "https://www.pointbrugge.com/"
         ],
-        "retrievedAt": "2026-08-19T02:56:30.875Z",
+        "retrievedAt": "2026-09-04T12:49:42.016Z",
         "playwrightPages": 0
       }
     },
@@ -36405,7 +36992,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T11:39:46.531Z",
+        "lastEnrichedAt": "2026-09-04T12:49:42.915Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -36413,6 +37000,10 @@
         "menuUrl": "",
         "reservationUrl": "",
         "reservationPlatform": "",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "",
@@ -36424,7 +37015,7 @@
         "sourceUrls": [
           "https://thekitchenrestaurant.com/"
         ],
-        "retrievedAt": "2026-08-19T11:39:46.531Z",
+        "retrievedAt": "2026-09-04T12:49:42.915Z",
         "playwrightPages": 0
       }
     },
@@ -36433,7 +37024,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T11:39:47.855Z",
+        "lastEnrichedAt": "2026-09-04T12:49:47.265Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -36441,6 +37032,10 @@
         "menuUrl": "https://mulvaneysbl.com/wine-list/",
         "reservationUrl": "https://order.toasttab.com/egiftcards/mulvaneysbl",
         "reservationPlatform": "Toast",
+        "telephoneLanguage": [],
+        "hoursLanguage": [],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "From intimate celebrations to large-scale gatherings, our private event spaces are designed to create a seamless and memorable experience for you and your guests.",
@@ -36466,7 +37061,7 @@
           "https://mulvaneysbl.com/about-us/",
           "https://mulvaneysbl.com/events/"
         ],
-        "retrievedAt": "2026-08-19T11:39:47.855Z",
+        "retrievedAt": "2026-09-04T12:49:47.265Z",
         "playwrightPages": 0
       }
     },
@@ -36475,7 +37070,7 @@
         "matchStatus": "resolved",
         "confidence": null,
         "nameScore": null,
-        "lastEnrichedAt": "2026-08-19T11:39:51.025Z",
+        "lastEnrichedAt": "2026-09-04T12:49:52.166Z",
         "enrichmentMode": "owned-site",
         "completeness": 94
       },
@@ -36483,6 +37078,12 @@
         "menuUrl": "",
         "reservationUrl": "https://www.exploretock.com/localis/",
         "reservationPlatform": "Tock",
+        "telephoneLanguage": [],
+        "hoursLanguage": [
+          "JSON-LD openingHours: , , We 17:30-22:00, Th 17:30-22:00, Fr 17:30-00:00, Sa 17:30-00:00,"
+        ],
+        "priceLanguage": [],
+        "cuisineLanguage": [],
         "dietaryLanguage": [],
         "accessibilityLanguage": [],
         "groupPolicy": "Private Events WE LOVE A GOOD PARTY!",
@@ -36519,7 +37120,7 @@
           "https://www.localissacramento.com/about",
           "https://www.localissacramento.com/private-events"
         ],
-        "retrievedAt": "2026-08-19T11:39:51.025Z",
+        "retrievedAt": "2026-09-04T12:49:52.166Z",
         "playwrightPages": 0
       }
     },

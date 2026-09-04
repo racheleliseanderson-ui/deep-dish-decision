@@ -1,6 +1,6 @@
 {
   "regionGroup": "District Of Columbia",
-  "generatedAt": "2026-09-03T13:01:25.738Z",
+  "generatedAt": "2026-09-04T12:49:54.838Z",
   "records": {
     "the-dabney-washington": {
       "ll": [
@@ -41,6 +41,43 @@
       ],
       "llSource": "city",
       "tz": "America/New_York",
+      "hours": [
+        [],
+        [],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        90,
+        200
+      ],
+      "ppSource": "planning-band",
       "risk": {
         "cancelFee": 150,
         "perGuest": true
@@ -76,7 +113,14 @@
         -77.0369
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band"
     },
     "moon-rabbit-washington": {
       "ll": [

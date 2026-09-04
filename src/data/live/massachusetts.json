@@ -1,6 +1,6 @@
 {
   "regionGroup": "Massachusetts",
-  "generatedAt": "2026-09-03T13:01:25.738Z",
+  "generatedAt": "2026-09-04T12:49:54.838Z",
   "records": {
     "o-ya-boston": {
       "ll": [
@@ -27,7 +27,52 @@
         -71.0589
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1320
+          ]
+        ],
+        [
+          [
+            1050,
+            1350
+          ]
+        ],
+        [
+          [
+            1050,
+            1350
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "sarma-boston": {
       "ll": [
@@ -35,7 +80,52 @@
         -71.0589
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            1020,
+            0
+          ]
+        ],
+        [
+          [
+            1020,
+            0
+          ]
+        ],
+        [
+          [
+            1020,
+            0
+          ]
+        ],
+        [
+          [
+            1020,
+            0
+          ]
+        ],
+        [
+          [
+            1020,
+            0
+          ]
+        ],
+        [
+          [
+            1020,
+            60
+          ]
+        ],
+        [
+          [
+            1020,
+            60
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "contessa-boston": {
       "ll": [
@@ -67,7 +157,52 @@
         -71.0589
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            690,
+            1350
+          ]
+        ],
+        [
+          [
+            690,
+            1290
+          ]
+        ],
+        [
+          [
+            690,
+            1290
+          ]
+        ],
+        [
+          [
+            690,
+            1290
+          ]
+        ],
+        [
+          [
+            690,
+            1290
+          ]
+        ],
+        [
+          [
+            690,
+            1290
+          ]
+        ],
+        [
+          [
+            690,
+            1350
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "row-34-boston": {
       "ll": [
@@ -83,7 +218,27 @@
         -71.0589
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [
+          [
+            1050,
+            1290
+          ]
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          [
+            1050,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "little-donkey-boston": {
       "ll": [
@@ -91,7 +246,47 @@
         -71.0589
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "puritan-company-boston": {
       "ll": [
@@ -99,7 +294,47 @@
         -71.0589
       ],
       "llSource": "city",
-      "tz": "America/New_York"
+      "tz": "America/New_York",
+      "hours": [
+        [],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1260
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ],
+        [
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "deadhorse-hill-worcester": {
       "ll": [

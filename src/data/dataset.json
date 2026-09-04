@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T13:01:41.430Z",
+  "generatedAt": "2026-09-04T12:50:08.493Z",
   "source": "https://saltnotes.blog",
   "sourceSync": "wp-rest+first-party-auto-review · owned-site leveling (every record on the same 12-field floor)",
   "count": 1527,
@@ -334,11 +334,11 @@
     "dueSoon": 0,
     "current": 1450,
     "officialConflicts": 11,
-    "thinRecords": 797,
-    "avgUnknowns": 5.1,
-    "avgThinFields": 7.53,
+    "thinRecords": 788,
+    "avgUnknowns": 5.07,
+    "avgThinFields": 7.5,
     "lastReviewAt": "2026-09-03",
-    "reachableAtLastReview": 816
+    "reachableAtLastReview": 827
   },
   "taxOptions": {
     "ri_region": [
@@ -31597,10 +31597,10 @@
       "reservationUrl": "https://www.opentable.com/r/hai-hai-reservations-minneapolis?restref=1033801&lang=en-US&ot_source=Restaurant%20website",
       "coverageArea": "Minneapolis, Minnesota",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Sunday, Saturday 10:00 AM–12:00 AM; Tuesday–Thursday 3:00 PM–11:00 PM; Friday 3:00 PM–12:00 AM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Saturday 10:00 AM–12:00 AM; Tuesday–Thursday 3:00 PM–11:00 PM; Friday 3:00 PM–12:00 AM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -31612,10 +31612,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -31631,9 +31630,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Minneapolis, MN",
       "city": "Minneapolis",
@@ -31662,7 +31661,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -31670,7 +31668,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -31686,7 +31684,7 @@
         "https://www.haihaimpls.com/events",
         "https://www.opentable.com/r/hai-hai-reservations-minneapolis?restref=1033801&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.452Z",
+      "retrievedAt": "2026-09-04T12:50:08.374Z",
       "searchText": "hai hai minneapolis minnesota minneapolis, mn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. southeast asian opentable minneapolis, mn",
       "spendBands": [],
       "daypartTags": [],
@@ -32046,19 +32044,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-18T22:55:05.661Z",
       "address": "Minneapolis, MN",
-      "phone": "",
+      "phone": "(612) 886-1606",
       "email": "",
       "website": "https://www.colitampls.com/",
       "menuUrl": "https://www.colitampls.com/menu/dinner",
       "reservationUrl": "https://www.opentable.com/r/colita-reservations-minneapolis?restref=731530&lang=en-US&ot_source=Restaurant%20website",
       "coverageArea": "Minneapolis, Minnesota",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "cuisineContext": "Oaxacan, Mexican, Tex-Oaxacan — named on the restaurant's own pages.",
+      "serviceSummary": "Oaxacan, Mexican, Tex-Oaxacan. Hours Sunday 4:00 PM–9:00 PM; Monday–Thursday 5:00 PM–9:00 PM and 4:00 PM–9:00 PM; Friday–Saturday 4:00 PM–10:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 4:00 PM–9:00 PM; Monday–Thursday 5:00 PM–9:00 PM and 4:00 PM–9:00 PM; Friday–Saturday 4:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: Private EventS Celebrate in style at Colita—perfect for small weddings, rehearsal dinners, parties, or corporate events. · Semi Private 30 guests Full Restaurant buyout 74 inside, 48 patio A 25% service fee, administrative fees, taxes or other charges may be included.",
@@ -32068,14 +32066,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -32087,16 +32083,20 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Minneapolis, MN",
       "city": "Minneapolis",
       "stateProvince": "Minnesota",
       "regionGroup": "Minnesota",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$$"
+      ],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -32113,22 +32113,20 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 4,
       "bookingPlatforms": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ],
       "cuisineTags": [
         "Mexican"
@@ -32143,13 +32141,18 @@
         "https://www.colitampls.com/menu/dinner",
         "https://www.opentable.com/r/colita-reservations-minneapolis?restref=731530&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.453Z",
-      "searchText": "colita minneapolis minnesota minneapolis, mn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. mexican opentable minneapolis, mn",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-04T12:50:08.375Z",
+      "searchText": "colita minneapolis minnesota minneapolis, mn oaxacan, mexican, tex-oaxacan — named on the restaurant's own pages. mexican opentable phone minneapolis, mn",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ]
     },
     {
@@ -32398,10 +32401,10 @@
       "reservationUrl": "https://www.toasttab.com/hop-alley/giftcards",
       "coverageArea": "Denver, Colorado",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours Monday–Saturday 5:00 PM–10:00 PM. Reservations via Toast.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday–Saturday 5:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: We can accommodate certain dietary restrictions and allergies, please contact us at least 14 days in advance.",
@@ -32413,10 +32416,124 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknowns": "Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
+      "unknownList": [
+        "Accessibility route detail",
+        "Private-dining terms",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-21",
+      "nextReviewAt": "2026-09-20",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 5,
+      "depthTotal": 12,
+      "depthLabel": "5 / 12 core fields",
+      "signals": {},
+      "region": "Denver, CO",
+      "city": "Denver",
+      "stateProvince": "Colorado",
+      "regionGroup": "Colorado",
+      "priceTags": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": false,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "priceDetails",
+        "cuisineContext",
+        "menu",
+        "accessibilityState",
+        "groupDetails",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 7,
+      "bookingPlatforms": [
+        "Toast"
+      ],
+      "cuisineTags": [
+        "Chinese"
+      ],
+      "officialSource": "https://hopalleydenver.com/",
+      "additionalSources": "https://www.toasttab.com/hop-alley/giftcards",
+      "sources": [
+        "https://hopalleydenver.com/",
+        "https://www.toasttab.com/hop-alley/giftcards"
+      ],
+      "retrievedAt": "2026-09-04T12:50:08.376Z",
+      "searchText": "hop alley denver colorado denver, co not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. chinese toast denver, co",
+      "spendBands": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast"
+      ]
+    },
+    {
+      "id": 2287,
+      "slug": "uncle-denver",
+      "title": "Uncle",
+      "link": "",
+      "recordId": "RI-EXP-0208",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "address": "Denver, CO",
+      "phone": "",
+      "email": "",
+      "website": "https://www.uncleramen.com/",
+      "menuUrl": "",
+      "reservationUrl": "https://www.opentable.com/r/uncle-highlands-reservations-denver?restref=228973&lang=en-US&ot_source=Restaurant%20website",
+      "coverageArea": "Denver, Colorado",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Hours Monday–Saturday 5:00 PM–10:00 PM. Reservations via OpenTable.",
+      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday–Saturday 5:00 PM–10:00 PM.",
+      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
       "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
+        "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
         "Parking and arrival logistics",
@@ -32441,7 +32558,9 @@
       "stateProvince": "Colorado",
       "regionGroup": "Colorado",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -32463,120 +32582,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "menu",
-        "accessibilityState",
-        "groupDetails",
-        "dressCode",
-        "atmosphereSummary"
-      ],
-      "thinFieldCount": 8,
-      "bookingPlatforms": [
-        "Toast"
-      ],
-      "cuisineTags": [
-        "Chinese"
-      ],
-      "officialSource": "https://hopalleydenver.com/",
-      "additionalSources": "https://www.toasttab.com/hop-alley/giftcards",
-      "sources": [
-        "https://hopalleydenver.com/",
-        "https://www.toasttab.com/hop-alley/giftcards"
-      ],
-      "retrievedAt": "2026-08-21T01:42:18.453Z",
-      "searchText": "hop alley denver colorado denver, co not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. chinese toast denver, co",
-      "spendBands": [],
-      "daypartTags": [],
-      "planningLoad": "Standard",
-      "bookingPaths": [
-        "Toast"
-      ]
-    },
-    {
-      "id": 2287,
-      "slug": "uncle-denver",
-      "title": "Uncle",
-      "link": "",
-      "recordId": "RI-EXP-0208",
-      "origin": "expansion-seed",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "address": "Denver, CO",
-      "phone": "",
-      "email": "",
-      "website": "https://www.uncleramen.com/",
-      "menuUrl": "",
-      "reservationUrl": "https://www.opentable.com/r/uncle-highlands-reservations-denver?restref=228973&lang=en-US&ot_source=Restaurant%20website",
-      "coverageArea": "Denver, Colorado",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
-      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
-      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
-      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
-      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
-      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
-      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
-      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
-      "unknownList": [
-        "Live hours for your date",
-        "Dietary cross-contact handling",
-        "Accessibility route detail",
-        "Private-dining terms",
-        "Parking and arrival logistics",
-        "Current per-guest total"
-      ],
-      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
-      "sourceAuthority": "Official restaurant website / first-party page",
-      "confidence": "owned_site_leveled",
-      "freshnessStatus": "OWNED_SITE_REVIEWED",
-      "reviewedAt": "2026-08-21",
-      "nextReviewAt": "2026-09-20",
-      "reviewStatus": "current",
-      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
-      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "conflict": "",
-      "depthFilled": 3,
-      "depthTotal": 12,
-      "depthLabel": "3 / 12 core fields",
-      "signals": {},
-      "region": "Denver, CO",
-      "city": "Denver",
-      "stateProvince": "Colorado",
-      "regionGroup": "Colorado",
-      "priceTags": [],
-      "serviceStyles": [],
-      "dietaryTags": [
-        "Direct confirmation required"
-      ],
-      "accessibilityTags": [],
-      "reservationTags": [
-        "Reservations"
-      ],
-      "groupFitTags": [],
-      "checklist": [
-        "Confirm current hours directly",
-        "Confirm reservation release and cancellation terms",
-        "Confirm dietary handling with the kitchen",
-        "Confirm accessibility route and restroom detail",
-        "Verify parking or transit for arrival window",
-        "Check current menu prices"
-      ],
-      "hasPhone": false,
-      "hasOfficialConflict": false,
-      "isFullCaseFile": false,
-      "reviewDueSoon": false,
-      "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -32586,7 +32591,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 9,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -32600,10 +32605,12 @@
         "https://www.uncleramen.com/",
         "https://www.opentable.com/r/uncle-highlands-reservations-denver?restref=228973&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.453Z",
+      "retrievedAt": "2026-09-04T12:50:08.376Z",
       "searchText": "uncle denver colorado denver, co not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. ramen japanese opentable denver, co",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "OpenTable"
@@ -33767,7 +33774,7 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-18T22:55:05.661Z",
       "address": "Baltimore, MD",
-      "phone": "",
+      "phone": "(443) 708-3838",
       "email": "",
       "website": "https://www.lacucharabaltimore.com/",
       "menuUrl": "https://www.lacucharabaltimore.com/menu",
@@ -33834,7 +33841,7 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
@@ -33849,7 +33856,8 @@
       ],
       "thinFieldCount": 7,
       "bookingPlatforms": [
-        "Resy"
+        "Resy",
+        "Phone"
       ],
       "cuisineTags": [
         "Basque",
@@ -33863,13 +33871,14 @@
         "https://www.lacucharabaltimore.com/events",
         "https://resy.com/cities/bal/la-cuchara?date=2021-03-03&seats=2"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.454Z",
-      "searchText": "la cuchara baltimore maryland baltimore, md not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. basque spanish resy baltimore, md",
+      "retrievedAt": "2026-09-04T12:50:08.377Z",
+      "searchText": "la cuchara baltimore maryland baltimore, md not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. basque spanish resy phone baltimore, md",
       "spendBands": [],
       "daypartTags": [],
       "planningLoad": "Material",
       "bookingPaths": [
-        "Resy"
+        "Resy",
+        "Phone"
       ]
     },
     {
@@ -34228,10 +34237,10 @@
       "reservationUrl": "",
       "coverageArea": "Baltimore, Maryland",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "serviceSummary": "Hours , , , , ,.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: , , , , ,.",
       "reservationDetails": "DEPOSIT We require a $1,000 deposit per person in order to confirm your space/s on the tour. · We will provide you with electronic deposit information when we confirm your booking form via email.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -34243,10 +34252,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
@@ -34263,9 +34271,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 2,
+      "depthFilled": 4,
       "depthTotal": 12,
-      "depthLabel": "2 / 12 core fields",
+      "depthLabel": "4 / 12 core fields",
       "signals": {},
       "region": "Baltimore, MD",
       "city": "Baltimore",
@@ -34292,7 +34300,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -34300,10 +34307,9 @@
         "accessibilityState",
         "groupDetails",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 10,
+      "thinFieldCount": 8,
       "bookingPlatforms": [],
       "cuisineTags": [
         "Italian"
@@ -34315,7 +34321,7 @@
         "https://www.cinghiale.com/about-us",
         "https://www.cinghiale.com/booking"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.454Z",
+      "retrievedAt": "2026-09-04T12:50:08.377Z",
       "searchText": "cinghiale baltimore maryland baltimore, md not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. italian baltimore, md",
       "spendBands": [],
       "daypartTags": [],
@@ -34421,10 +34427,10 @@
         "Contemporary American"
       ],
       "officialSource": "https://www.theasbury.com/",
-      "additionalSources": "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/ | https://www.theasbury.com/menus/ | https://www.theasbury.com/about/ | https://order.toasttab.com/online/theasbury",
+      "additionalSources": "https://www.theasbury.com/events/murder-mystery-experience-evil-on-the-beach/ | https://www.theasbury.com/menus/ | https://www.theasbury.com/about/ | https://order.toasttab.com/online/theasbury",
       "sources": [
         "https://www.theasbury.com/",
-        "https://www.theasbury.com/events/parlor-of-wonder-dinner-a-magic-show/",
+        "https://www.theasbury.com/events/murder-mystery-experience-evil-on-the-beach/",
         "https://www.theasbury.com/menus/",
         "https://www.theasbury.com/about/",
         "https://order.toasttab.com/online/theasbury"
@@ -34454,10 +34460,10 @@
       "reservationUrl": "https://resy.com/cities/davidson-nc/venues/kindred-restaurant",
       "coverageArea": "Charlotte, North Carolina",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Resy.",
+      "serviceSummary": "Hours Tuesday–Saturday 5:00 PM–10:00 PM. Reservations via Resy.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Tuesday–Saturday 5:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Our team is delighted to offer assistance with identifying options to accommodate any restrictions or allergies.",
@@ -34469,10 +34475,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -34487,16 +34492,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Charlotte, NC",
       "city": "Charlotte",
       "stateProvince": "North Carolina",
       "regionGroup": "North Carolina",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -34518,14 +34525,13 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -34542,10 +34548,12 @@
         "https://www.kindreddavidson.com/menu",
         "https://resy.com/cities/davidson-nc/venues/kindred-restaurant"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.454Z",
+      "retrievedAt": "2026-09-04T12:50:08.377Z",
       "searchText": "kindred charlotte north carolina charlotte, nc not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary contemporary american resy davidson, nc",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "Resy"
@@ -34675,14 +34683,14 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-18T22:55:05.661Z",
       "address": "Charlotte, NC",
-      "phone": "",
+      "phone": "(704) 295-4227",
       "email": "",
       "website": "https://midwoodsmokehouse.com/",
       "menuUrl": "https://midwoodsmokehouse.com/menus/",
       "reservationUrl": "https://order.toasttab.com/online/locations/34fff39a-b77f-46c7-bad4-bdf6bec8c7ae/1234",
       "coverageArea": "Charlotte, North Carolina",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "Barbecue — named on the restaurant's own pages.",
+      "serviceSummary": "Barbecue. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
@@ -34716,9 +34724,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Charlotte, NC",
       "city": "Charlotte",
@@ -34742,22 +34750,22 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
         "hoursSummary",
         "priceDetails",
-        "cuisineContext",
         "accessibilityState",
         "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
-        "Toast"
+        "Toast",
+        "Phone"
       ],
       "cuisineTags": [
         "Barbecue",
@@ -34772,13 +34780,14 @@
         "https://midwoodsmokehouse.com/menus/",
         "https://order.toasttab.com/online/locations/34fff39a-b77f-46c7-bad4-bdf6bec8c7ae/1234"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.454Z",
-      "searchText": "midwood smokehouse charlotte north carolina charlotte, nc not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. barbecue cocktail / lounge toast charlotte, nc",
+      "retrievedAt": "2026-09-04T12:50:08.378Z",
+      "searchText": "midwood smokehouse charlotte north carolina charlotte, nc barbecue — named on the restaurant's own pages. barbecue cocktail / lounge toast phone charlotte, nc",
       "spendBands": [],
       "daypartTags": [],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "Toast"
+        "Toast",
+        "Phone"
       ]
     },
     {
@@ -35026,10 +35035,10 @@
       "reservationUrl": "https://www.opentable.com/r/the-catbird-seat",
       "coverageArea": "Nashville, Tennessee",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Wednesday–Saturday 12:00 AM–12:00 AM. Reservations via OpenTable.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Wednesday–Saturday 12:00 AM–12:00 AM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -35041,10 +35050,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -35060,9 +35068,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Nashville, TN",
       "city": "Nashville",
@@ -35091,7 +35099,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -35100,7 +35107,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -35114,7 +35121,7 @@
         "https://www.thecatbirdseatrestaurant.com/",
         "https://www.opentable.com/r/the-catbird-seat"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
+      "retrievedAt": "2026-09-04T12:50:08.378Z",
       "searchText": "the catbird seat nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. tasting menu contemporary opentable nashville, tn",
       "spendBands": [],
       "daypartTags": [],
@@ -35369,8 +35376,8 @@
       "menuUrl": "https://www.rolfanddaughters.com/menu-1",
       "reservationUrl": "https://www.toasttab.com/rolf-and-daughters/giftcards",
       "coverageArea": "Nashville, Tennessee",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "New American, Farm-To-Table, Seasonal, Pasta — named on the restaurant's own pages.",
+      "serviceSummary": "New American, Farm-To-Table, Seasonal, Pasta. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
@@ -35390,120 +35397,6 @@
       "unknownList": [
         "Live hours for your date",
         "Dietary cross-contact handling",
-        "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
-      ],
-      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
-      "sourceAuthority": "Official restaurant website / first-party page",
-      "confidence": "owned_site_leveled",
-      "freshnessStatus": "OWNED_SITE_REVIEWED",
-      "reviewedAt": "2026-08-21",
-      "nextReviewAt": "2026-09-20",
-      "reviewStatus": "current",
-      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
-      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "conflict": "",
-      "depthFilled": 5,
-      "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
-      "signals": {},
-      "region": "Nashville, TN",
-      "city": "Nashville",
-      "stateProvince": "Tennessee",
-      "regionGroup": "Tennessee",
-      "priceTags": [],
-      "serviceStyles": [],
-      "dietaryTags": [
-        "Direct confirmation required"
-      ],
-      "accessibilityTags": [],
-      "reservationTags": [
-        "Reservations"
-      ],
-      "groupFitTags": [],
-      "checklist": [
-        "Confirm current hours directly",
-        "Confirm reservation release and cancellation terms",
-        "Confirm dietary handling with the kitchen",
-        "Confirm accessibility route and restroom detail",
-        "Verify parking or transit for arrival window",
-        "Check current menu prices"
-      ],
-      "hasPhone": false,
-      "hasOfficialConflict": false,
-      "isFullCaseFile": false,
-      "reviewDueSoon": false,
-      "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "dietaryDetails",
-        "accessibilityState",
-        "dressCode",
-        "atmosphereSummary"
-      ],
-      "thinFieldCount": 7,
-      "bookingPlatforms": [
-        "Toast"
-      ],
-      "cuisineTags": [
-        "American",
-        "Pasta",
-        "Contemporary American"
-      ],
-      "officialSource": "https://www.rolfanddaughters.com/",
-      "additionalSources": "https://www.rolfanddaughters.com/menu-1 | https://www.rolfanddaughters.com/about | https://www.toasttab.com/rolf-and-daughters/giftcards",
-      "sources": [
-        "https://www.rolfanddaughters.com/",
-        "https://www.rolfanddaughters.com/menu-1",
-        "https://www.rolfanddaughters.com/about",
-        "https://www.toasttab.com/rolf-and-daughters/giftcards"
-      ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
-      "searchText": "rolf and daughters nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american pasta contemporary american toast nashville, tn",
-      "spendBands": [],
-      "daypartTags": [],
-      "planningLoad": "Standard",
-      "bookingPaths": [
-        "Toast"
-      ]
-    },
-    {
-      "id": 2313,
-      "slug": "henrietta-red-nashville",
-      "title": "Henrietta Red",
-      "link": "",
-      "recordId": "RI-EXP-0234",
-      "origin": "expansion-seed",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "address": "Nashville, TN",
-      "phone": "",
-      "email": "",
-      "website": "https://www.henriettared.com/",
-      "menuUrl": "https://www.henriettared.com/menu",
-      "reservationUrl": "https://www.opentable.com/r/henrietta-red-nashville-3",
-      "coverageArea": "Nashville, Tennessee",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
-      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Dietary wording from the restaurant's own pages: We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry. · We do ask that you inform us of any allergies or dietary restrictions in the notes area when making your reservation so we have plenty of time to plan for your dinner.",
-      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Group policy from the restaurant's own pages: If you have a larger party, we encourage inquiring about our private event space!",
-      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
-      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
-      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
-      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
-      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
-      "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -35551,72 +35444,72 @@
       "thinFields": [
         "hoursSummary",
         "priceDetails",
-        "cuisineContext",
+        "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
       "thinFieldCount": 6,
       "bookingPlatforms": [
-        "OpenTable"
+        "Toast"
       ],
       "cuisineTags": [
-        "Seafood",
         "American",
-        "Contemporary American"
+        "Pasta",
+        "Contemporary American",
+        "Seasonal / market"
       ],
-      "officialSource": "https://www.henriettared.com/",
-      "additionalSources": "https://www.henriettared.com/menu | https://www.henriettared.com/faq | https://www.opentable.com/r/henrietta-red-nashville-3",
+      "officialSource": "https://www.rolfanddaughters.com/",
+      "additionalSources": "https://www.rolfanddaughters.com/menu-1 | https://www.rolfanddaughters.com/about | https://www.toasttab.com/rolf-and-daughters/giftcards",
       "sources": [
-        "https://www.henriettared.com/",
-        "https://www.henriettared.com/menu",
-        "https://www.henriettared.com/faq",
-        "https://www.opentable.com/r/henrietta-red-nashville-3"
+        "https://www.rolfanddaughters.com/",
+        "https://www.rolfanddaughters.com/menu-1",
+        "https://www.rolfanddaughters.com/about",
+        "https://www.toasttab.com/rolf-and-daughters/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
-      "searchText": "henrietta red nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. seafood american contemporary american opentable nashville, tn",
+      "retrievedAt": "2026-09-04T12:50:08.378Z",
+      "searchText": "rolf and daughters nashville tennessee nashville, tn new american, farm-to-table, seasonal, pasta — named on the restaurant's own pages. american pasta contemporary american seasonal / market toast nashville, tn",
       "spendBands": [],
       "daypartTags": [],
-      "planningLoad": "Material",
+      "planningLoad": "Standard",
       "bookingPaths": [
-        "OpenTable"
+        "Toast"
       ]
     },
     {
-      "id": 2314,
-      "slug": "bastion-nashville",
-      "title": "Bastion",
+      "id": 2313,
+      "slug": "henrietta-red-nashville",
+      "title": "Henrietta Red",
       "link": "",
-      "recordId": "RI-EXP-0235",
+      "recordId": "RI-EXP-0234",
       "origin": "expansion-seed",
       "addedAt": "2026-08-18T22:55:05.661Z",
       "address": "Nashville, TN",
       "phone": "",
       "email": "",
-      "website": "https://www.bastionnashville.com/",
-      "menuUrl": "",
-      "reservationUrl": "https://www.opentable.com/r/bastion-reservations-nashville?restref=985351&lang=en-US&ot_source=Restaurant%20website",
+      "website": "https://www.henriettared.com/",
+      "menuUrl": "https://www.henriettared.com/menu",
+      "reservationUrl": "https://www.opentable.com/r/henrietta-red-nashville-3",
       "coverageArea": "Nashville, Tennessee",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday 10:00 AM–2:00 PM and 5:00 PM–9:00 PM; Tuesday–Friday 5:00 PM–10:00 PM; Saturday 10:00 AM–2:00 PM and 5:00 PM–10:00 PM. Reservations via OpenTable.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant. Reservations are prepaid and can be made online here. · We book private dinners a minimum of 60 days in advance with a 40% non-refundable deposit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 10:00 AM–2:00 PM and 5:00 PM–9:00 PM; Tuesday–Friday 5:00 PM–10:00 PM; Saturday 10:00 AM–2:00 PM and 5:00 PM–10:00 PM.",
+      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Dietary wording from the restaurant's own pages: We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry. · Unfortunately, we cannot adjust the set menu for strict vegan diets.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry. · We do ask that you inform us of any allergies or dietary restrictions in the notes area when making your reservation so we have plenty of time to plan for your dinner.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Group policy from the restaurant's own pages: The restaurant operates Wednesday thru Saturday with reservations available from 5:30pm to 9:00pm for parties of 1 to 6. · There are several options for private events at Bastion.",
+      "groupDetails": "Group policy from the restaurant's own pages: If you have a larger party, we encourage inquiring about our private event space!",
       "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -35631,16 +35524,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Nashville, TN",
       "city": "Nashville",
       "stateProvince": "Tennessee",
       "regionGroup": "Tennessee",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -35662,7 +35557,121 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
+        "priceDetails",
+        "cuisineContext",
+        "accessibilityState",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "OpenTable"
+      ],
+      "cuisineTags": [
+        "Seafood",
+        "American",
+        "Contemporary American"
+      ],
+      "officialSource": "https://www.henriettared.com/",
+      "additionalSources": "https://www.henriettared.com/menu | https://www.henriettared.com/faq | https://www.opentable.com/r/henrietta-red-nashville-3",
+      "sources": [
+        "https://www.henriettared.com/",
+        "https://www.henriettared.com/menu",
+        "https://www.henriettared.com/faq",
+        "https://www.opentable.com/r/henrietta-red-nashville-3"
+      ],
+      "retrievedAt": "2026-09-04T12:50:08.379Z",
+      "searchText": "henrietta red nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. seafood american contemporary american opentable nashville, tn",
+      "spendBands": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
+      "planningLoad": "Material",
+      "bookingPaths": [
+        "OpenTable"
+      ]
+    },
+    {
+      "id": 2314,
+      "slug": "bastion-nashville",
+      "title": "Bastion",
+      "link": "",
+      "recordId": "RI-EXP-0235",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "address": "Nashville, TN",
+      "phone": "",
+      "email": "",
+      "website": "https://www.bastionnashville.com/",
+      "menuUrl": "",
+      "reservationUrl": "https://www.opentable.com/r/bastion-reservations-nashville?restref=985351&lang=en-US&ot_source=Restaurant%20website",
+      "coverageArea": "Nashville, Tennessee",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–1:00 AM. Reservations via OpenTable.",
+      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 5:00 PM–12:00 AM; Friday–Saturday 5:00 PM–1:00 AM.",
+      "reservationDetails": "Reservations via OpenTable on a path published by the restaurant. Reservations are prepaid and can be made online here. · We book private dinners a minimum of 60 days in advance with a 40% non-refundable deposit.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: We can accommodate most food allergies and aversions and will do everything in our power to ensure your meal can be enjoyed without worry. · Unfortunately, we cannot adjust the set menu for strict vegan diets.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: The restaurant operates Wednesday thru Saturday with reservations available from 5:30pm to 9:00pm for parties of 1 to 6. · There are several options for private events at Bastion.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
+      "unknownList": [
+        "Accessibility route detail",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-21",
+      "nextReviewAt": "2026-09-20",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 6,
+      "depthTotal": 12,
+      "depthLabel": "6 / 12 core fields",
+      "signals": {},
+      "region": "Nashville, TN",
+      "city": "Nashville",
+      "stateProvince": "Tennessee",
+      "regionGroup": "Tennessee",
+      "priceTags": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": false,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -35670,7 +35679,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -35687,10 +35696,12 @@
         "https://www.bastionnashville.com/private-events",
         "https://www.opentable.com/r/bastion-reservations-nashville?restref=985351&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
+      "retrievedAt": "2026-09-04T12:50:08.379Z",
       "searchText": "bastion nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. contemporary american contemporary american opentable nashville, tn",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "OpenTable"
@@ -35823,10 +35834,10 @@
       "reservationUrl": "https://order.toasttab.com/online/lockeland-table-1520-woodland-st",
       "coverageArea": "Nashville, Tennessee",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours Monday–Saturday 4:00 PM–10:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday–Saturday 4:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -35838,129 +35849,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics",
-        "Current per-guest total"
-      ],
-      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
-      "sourceAuthority": "Official restaurant website / first-party page",
-      "confidence": "owned_site_leveled",
-      "freshnessStatus": "OWNED_SITE_REVIEWED",
-      "reviewedAt": "2026-08-21",
-      "nextReviewAt": "2026-09-20",
-      "reviewStatus": "current",
-      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
-      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "conflict": "",
-      "depthFilled": 4,
-      "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
-      "signals": {},
-      "region": "Nashville, TN",
-      "city": "Nashville",
-      "stateProvince": "Tennessee",
-      "regionGroup": "Tennessee",
-      "priceTags": [],
-      "serviceStyles": [],
-      "dietaryTags": [
-        "Direct confirmation required"
-      ],
-      "accessibilityTags": [],
-      "reservationTags": [
-        "Reservations"
-      ],
-      "groupFitTags": [],
-      "checklist": [
-        "Confirm current hours directly",
-        "Confirm reservation release and cancellation terms",
-        "Confirm dietary handling with the kitchen",
-        "Confirm accessibility route and restroom detail",
-        "Verify parking or transit for arrival window",
-        "Check current menu prices"
-      ],
-      "hasPhone": false,
-      "hasOfficialConflict": false,
-      "isFullCaseFile": false,
-      "reviewDueSoon": false,
-      "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "dietaryDetails",
-        "accessibilityState",
-        "groupDetails",
-        "dressCode",
-        "atmosphereSummary"
-      ],
-      "thinFieldCount": 8,
-      "bookingPlatforms": [
-        "Toast"
-      ],
-      "cuisineTags": [
-        "American",
-        "Southern",
-        "Contemporary American"
-      ],
-      "officialSource": "https://www.lockelandtable.com/",
-      "additionalSources": "https://www.lockelandtable.com/drinks | https://www.lockelandtable.com/events | https://order.toasttab.com/online/lockeland-table-1520-woodland-st",
-      "sources": [
-        "https://www.lockelandtable.com/",
-        "https://www.lockelandtable.com/drinks",
-        "https://www.lockelandtable.com/events",
-        "https://order.toasttab.com/online/lockeland-table-1520-woodland-st"
-      ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
-      "searchText": "lockeland table nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american southern contemporary american toast nashville, tn",
-      "spendBands": [],
-      "daypartTags": [],
-      "planningLoad": "Standard",
-      "bookingPaths": [
-        "Toast"
-      ]
-    },
-    {
-      "id": 2317,
-      "slug": "folk-nashville",
-      "title": "Folk",
-      "link": "",
-      "recordId": "RI-EXP-0238",
-      "origin": "expansion-seed",
-      "addedAt": "2026-08-18T22:55:05.661Z",
-      "address": "Nashville, TN",
-      "phone": "",
-      "email": "",
-      "website": "https://www.goodasfolk.com/",
-      "menuUrl": "https://www.goodasfolk.com/menu",
-      "reservationUrl": "https://order.toasttab.com/online/folknashville",
-      "coverageArea": "Nashville, Tennessee",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
-      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
-      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Group policy from the restaurant's own pages: Menu Large Parties Online Orders Gift Cards About Contact Jobs Cake Orders Uber Eats Delivery Make a Reservation VIEW THE MENU Seasonal Cooking.",
-      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
-      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
-      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
-      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
-      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
-      "unknownList": [
-        "Live hours for your date",
-        "Dietary cross-contact handling",
-        "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
       ],
@@ -36005,7 +35899,122 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
+        "priceDetails",
+        "cuisineContext",
+        "dietaryDetails",
+        "accessibilityState",
+        "groupDetails",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 7,
+      "bookingPlatforms": [
+        "Toast"
+      ],
+      "cuisineTags": [
+        "American",
+        "Southern",
+        "Contemporary American"
+      ],
+      "officialSource": "https://www.lockelandtable.com/",
+      "additionalSources": "https://www.lockelandtable.com/drinks | https://www.lockelandtable.com/events | https://order.toasttab.com/online/lockeland-table-1520-woodland-st",
+      "sources": [
+        "https://www.lockelandtable.com/",
+        "https://www.lockelandtable.com/drinks",
+        "https://www.lockelandtable.com/events",
+        "https://order.toasttab.com/online/lockeland-table-1520-woodland-st"
+      ],
+      "retrievedAt": "2026-09-04T12:50:08.379Z",
+      "searchText": "lockeland table nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american southern contemporary american toast nashville, tn",
+      "spendBands": [],
+      "daypartTags": [],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast"
+      ]
+    },
+    {
+      "id": 2317,
+      "slug": "folk-nashville",
+      "title": "Folk",
+      "link": "",
+      "recordId": "RI-EXP-0238",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-18T22:55:05.661Z",
+      "address": "Nashville, TN",
+      "phone": "",
+      "email": "",
+      "website": "https://www.goodasfolk.com/",
+      "menuUrl": "https://www.goodasfolk.com/menu",
+      "reservationUrl": "https://order.toasttab.com/online/folknashville",
+      "coverageArea": "Nashville, Tennessee",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Monday, Thursday–Saturday 5:00 PM–10:00 PM. Reservations via Toast.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Monday, Thursday–Saturday 5:00 PM–10:00 PM.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: Menu Large Parties Online Orders Gift Cards About Contact Jobs Cake Orders Uber Eats Delivery Make a Reservation VIEW THE MENU Seasonal Cooking.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
+      "unknownList": [
+        "Dietary cross-contact handling",
+        "Accessibility route detail",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-21",
+      "nextReviewAt": "2026-09-20",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 6,
+      "depthTotal": 12,
+      "depthLabel": "6 / 12 core fields",
+      "signals": {},
+      "region": "Nashville, TN",
+      "city": "Nashville",
+      "stateProvince": "Tennessee",
+      "regionGroup": "Tennessee",
+      "priceTags": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": false,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -36013,7 +36022,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "Toast"
       ],
@@ -36030,10 +36039,12 @@
         "https://www.goodasfolk.com/about",
         "https://order.toasttab.com/online/folknashville"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.455Z",
+      "retrievedAt": "2026-09-04T12:50:08.379Z",
       "searchText": "folk nashville tennessee nashville, tn not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. pizza american contemporary american toast nashville, tn",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
         "Toast"
@@ -36739,7 +36750,7 @@
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
       "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: Weekdays Wednesday & Thursday: 4:00 PM - 9:00 PM Friday: 12:00 PM - 9:00 PM Saturday & Sunday Saturday & Sunday: 10:00 AM - 9:00 PM Private Dining Reservations The Whale Wins To-Go Enjoy The Whale Wins at home!",
@@ -36749,14 +36760,13 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 4,
       "unknownList": [
         "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -36768,15 +36778,17 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Seattle, WA",
       "city": "Seattle",
       "stateProvince": "Washington",
       "regionGroup": "Washington",
-      "priceTags": [],
+      "priceTags": [
+        "$"
+      ],
       "serviceStyles": [],
       "dietaryTags": [
         "Direct confirmation required"
@@ -36800,14 +36812,13 @@
       "reviewDueSoon": false,
       "thinFields": [
         "hoursSummary",
-        "priceDetails",
         "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -36825,9 +36836,11 @@
         "https://thewhalewins.com/about",
         "https://www.opentable.com/the-whale-wins-reservations-seattle?restref=148678&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.456Z",
+      "retrievedAt": "2026-09-04T12:50:08.380Z",
       "searchText": "the whale wins seattle washington seattle, wa not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american seasonal contemporary american seasonal / market opentable seattle, wa",
-      "spendBands": [],
+      "spendBands": [
+        "$"
+      ],
       "daypartTags": [],
       "planningLoad": "Material",
       "bookingPaths": [
@@ -37074,10 +37087,10 @@
       "reservationUrl": "",
       "coverageArea": "Seattle, Washington",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Monday, Thursday–Saturday 7:00 AM–7:00 AM.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Monday, Thursday–Saturday 7:00 AM–7:00 AM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -37089,15 +37102,15 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
       "unknownsCount": 6,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics"
+        "Parking and arrival logistics",
+        "Current per-guest total"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -37109,9 +37122,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 1,
+      "depthFilled": 3,
       "depthTotal": 12,
-      "depthLabel": "1 / 12 core fields",
+      "depthLabel": "3 / 12 core fields",
       "signals": {},
       "region": "Seattle, WA",
       "city": "Seattle",
@@ -37138,7 +37151,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -37147,10 +37159,9 @@
         "accessibilityState",
         "groupDetails",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 11,
+      "thinFieldCount": 9,
       "bookingPlatforms": [],
       "cuisineTags": [
         "Italian",
@@ -37163,7 +37174,7 @@
         "https://www.stapleandfancy.com/",
         "https://www.stapleandfancy.com/about"
       ],
-      "retrievedAt": "2026-08-19T02:53:28.994Z",
+      "retrievedAt": "2026-09-04T12:50:08.381Z",
       "searchText": "staple & fancy seattle washington seattle, wa not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. italian american contemporary american seattle, wa",
       "spendBands": [],
       "daypartTags": [],
@@ -37186,10 +37197,10 @@
       "reservationUrl": "https://www.tilikumplacecafe.com/reservation",
       "coverageArea": "Seattle, Washington",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Direct / confirm live.",
+      "serviceSummary": "Hours Sunday 9:00 AM–2:00 PM; Friday 10:00 AM–2:00 PM and 5:00 PM–9:00 PM; Saturday 9:00 AM–2:00 PM and 5:00 PM–9:00 PM. Reservations via Direct / confirm live.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 9:00 AM–2:00 PM; Friday 10:00 AM–2:00 PM and 5:00 PM–9:00 PM; Saturday 9:00 AM–2:00 PM and 5:00 PM–9:00 PM.",
       "reservationDetails": "Reservations via Direct / confirm live on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -37201,10 +37212,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
@@ -37221,16 +37231,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Seattle, WA",
       "city": "Seattle",
       "stateProvince": "Washington",
       "regionGroup": "Washington",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -37252,7 +37264,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -37262,7 +37273,7 @@
         "atmosphereSummary",
         "serviceSummary"
       ],
-      "thinFieldCount": 9,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "Direct / confirm live"
       ],
@@ -37277,10 +37288,12 @@
         "https://www.tilikumplacecafe.com/menus",
         "https://www.tilikumplacecafe.com/reservation"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.456Z",
+      "retrievedAt": "2026-09-04T12:50:08.381Z",
       "searchText": "tilikum place cafe seattle washington seattle, wa not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american direct / confirm live seattle, wa",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
         "Direct / confirm live"
@@ -37527,17 +37540,17 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Tampa, FL",
-      "phone": "",
+      "phone": "(813) 248-4961",
       "email": "",
       "website": "https://www.columbiarestaurant.com/",
       "menuUrl": "https://www.columbiarestaurant.com/food-drink",
       "reservationUrl": "https://www.opentable.com/columbia-restaurant-ybor-city-reservations-tampa?restref=40510&lang=en-US&ot_source=Restaurant%20website",
       "coverageArea": "Tampa, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Sunday, Tuesday–Thursday 11:00 AM–9:00 PM; Friday 11:00 AM–10:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Tuesday–Thursday 11:00 AM–9:00 PM; Friday 11:00 AM–10:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Cup $8 Bowl $10 Gluten free Cuban Black Bean Soup Frijoles Negros prepared exactly as our grandmother Carmen Hernandez did. · Cup $8 Bowl $10 Gluten free Vegan Gazpacho Andalucia Spain's famous cold soup of purée of ripe tomatoes, green peppers, onions, cucumbers and garlic.",
@@ -37549,10 +37562,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
         "Parking and arrival logistics",
         "Current per-guest total"
@@ -37567,16 +37579,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -37593,21 +37607,21 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ],
       "cuisineTags": [
         "Spanish",
@@ -37622,13 +37636,16 @@
         "https://www.columbiarestaurant.com/food-drink",
         "https://www.opentable.com/columbia-restaurant-ybor-city-reservations-tampa?restref=40510&lang=en-US&ot_source=Restaurant%20website"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
-      "searchText": "columbia restaurant tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. spanish cuban opentable tampa, fl",
+      "retrievedAt": "2026-09-04T12:50:08.381Z",
+      "searchText": "columbia restaurant tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. spanish cuban opentable phone tampa, fl",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ]
     },
     {
@@ -37879,10 +37896,10 @@
       "reservationUrl": "https://www.opentable.com/r/rooster-and-the-till-reservations-tampa?restref=397762&",
       "coverageArea": "Tampa, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Monday–Saturday 5:00 PM–10:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu is not published on any page the restaurant controls. The link held for this room is local.cltampa.com writing about the restaurant, kept under sources as coverage.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Monday–Saturday 5:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -37894,10 +37911,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
@@ -37914,16 +37930,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -37945,7 +37963,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -37955,7 +37972,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 9,
+      "thinFieldCount": 8,
       "bookingPlatforms": [
         "OpenTable"
       ],
@@ -37969,10 +37986,12 @@
         "https://www.roosterandthetill.com/",
         "https://www.opentable.com/r/rooster-and-the-till-reservations-tampa?restref=397762&"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
+      "retrievedAt": "2026-09-04T12:50:08.382Z",
       "searchText": "rooster and the till tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american opentable tampa, fl",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "OpenTable"
@@ -38105,14 +38124,14 @@
       "phone": "",
       "email": "",
       "website": "https://www.oakandola.com/",
-      "menuUrl": "",
+      "menuUrl": "https://www.oakandola.com/s/Drink-Side-lindsey.pdf",
       "reservationUrl": "https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola",
       "coverageArea": "Tampa, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Resy.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Thursday 11:00 AM–3:00 PM and 5:00 PM–10:00 PM; Friday–Saturday 11:00 AM–3:00 PM and 5:00 PM–11:00 PM. Reservations via Resy.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 11:00 AM–3:00 PM and 5:00 PM–10:00 PM; Friday–Saturday 11:00 AM–3:00 PM and 5:00 PM–11:00 PM.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -38124,10 +38143,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -38143,16 +38161,19 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner",
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -38174,16 +38195,14 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
-        "menu",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -38192,17 +38211,21 @@
         "Contemporary American"
       ],
       "officialSource": "https://www.oakandola.com/",
-      "additionalSources": "https://www.oakandola.com/reserve | https://www.oakandola.com/events | https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola",
+      "additionalSources": "https://www.oakandola.com/reserve | https://www.oakandola.com/events | https://www.oakandola.com/s/Drink-Side-lindsey.pdf | https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola",
       "sources": [
         "https://www.oakandola.com/",
         "https://www.oakandola.com/reserve",
         "https://www.oakandola.com/events",
+        "https://www.oakandola.com/s/Drink-Side-lindsey.pdf",
         "https://resy.com/cities/tampa-bay-fl/venues/oak-and-ola"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
+      "retrievedAt": "2026-09-04T12:50:08.382Z",
       "searchText": "oak & ola tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american resy tampa, fl",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Lunch language",
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "Resy"
@@ -38217,19 +38240,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "St. Petersburg, FL",
-      "phone": "",
+      "phone": "(727) 350-1019",
       "email": "",
       "website": "https://www.stillwaterstavern.com/",
       "menuUrl": "https://www.stillwaterstavern.com/menu/brunchnew?",
       "reservationUrl": "https://www.toasttab.com/stillwaters-tavern/giftcards",
       "coverageArea": "Tampa, Florida",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "American, Scratch Kitchen, Bar Food — named on the restaurant's own pages.",
+      "serviceSummary": "American, Scratch Kitchen, Bar Food. Hours Sunday 11:00 AM–10:00 PM and 11:00 AM–9:00 PM; Monday–Thursday 11:30 AM–10:00 PM and 11:30 AM–9:00 PM; Friday 11:30 AM–11:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 11:00 AM–10:00 PM and 11:00 AM–9:00 PM; Monday–Thursday 11:30 AM–10:00 PM and 11:30 AM–9:00 PM; Friday 11:30 AM–11:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
@@ -38239,15 +38262,13 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -38259,16 +38280,20 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$"
+      ],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -38285,28 +38310,27 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "groupDetails",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
-        "Toast"
+        "Toast",
+        "Phone"
       ],
       "cuisineTags": [
         "American",
         "Seafood",
-        "Contemporary American"
+        "Contemporary American",
+        "Cocktail / lounge"
       ],
       "officialSource": "https://www.stillwaterstavern.com/",
       "additionalSources": "https://www.stillwaterstavern.com/menu/brunchnew | https://www.stillwaterstavern.com/private-events | https://www.stillwaterstavern.com/about | https://www.stillwaterstavern.com/menu/brunchnew? | https://www.toasttab.com/stillwaters-tavern/giftcards",
@@ -38318,13 +38342,18 @@
         "https://www.stillwaterstavern.com/menu/brunchnew?",
         "https://www.toasttab.com/stillwaters-tavern/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
-      "searchText": "stillwaters tavern tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american seafood contemporary american toast st. petersburg, fl",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-04T12:50:08.383Z",
+      "searchText": "stillwaters tavern tampa florida tampa, fl american, scratch kitchen, bar food — named on the restaurant's own pages. american seafood contemporary american cocktail / lounge toast phone st. petersburg, fl",
+      "spendBands": [
+        "$$"
+      ],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "Toast"
+        "Toast",
+        "Phone"
       ]
     },
     {
@@ -38343,10 +38372,10 @@
       "reservationUrl": "",
       "coverageArea": "Tampa, Florida",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
+      "serviceSummary": "Hours Daily 5:00 PM–10:00 PM.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Daily 5:00 PM–10:00 PM.",
       "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -38358,15 +38387,15 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
       "unknownsCount": 6,
       "unknownList": [
-        "Live hours for your date",
         "Reservation release pattern",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
-        "Parking and arrival logistics"
+        "Parking and arrival logistics",
+        "Current per-guest total"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -38378,16 +38407,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 2,
+      "depthFilled": 4,
       "depthTotal": 12,
-      "depthLabel": "2 / 12 core fields",
+      "depthLabel": "4 / 12 core fields",
       "signals": {},
       "region": "Tampa, FL",
       "city": "Tampa",
       "stateProvince": "Florida",
       "regionGroup": "Florida",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -38407,7 +38438,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "reservation",
@@ -38415,10 +38445,9 @@
         "accessibilityState",
         "groupDetails",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 10,
+      "thinFieldCount": 8,
       "bookingPlatforms": [],
       "cuisineTags": [
         "American",
@@ -38430,10 +38459,12 @@
         "https://edison-tampa.com/",
         "https://edison-tampa.com/menu"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
+      "retrievedAt": "2026-09-04T12:50:08.383Z",
       "searchText": "edison: food+drink lab tampa florida tampa, fl not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american tampa, fl",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
       "bookingPaths": []
     },
@@ -38795,10 +38826,10 @@
       "reservationUrl": "https://www.toasttab.com/callie-1195-island-ave/giftcards",
       "coverageArea": "San Diego, California",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours Sunday, Tuesday–Saturday 5:00 AM–10:00 AM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Tuesday–Saturday 5:00 AM–10:00 AM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -38810,10 +38841,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -38829,9 +38859,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "San Diego, CA",
       "city": "San Diego",
@@ -38860,7 +38890,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -38868,7 +38897,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
         "Toast"
       ],
@@ -38884,7 +38913,7 @@
         "https://www.calliesd.com/private-dining",
         "https://www.toasttab.com/callie-1195-island-ave/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.457Z",
+      "retrievedAt": "2026-09-04T12:50:08.384Z",
       "searchText": "callie san diego california san diego, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. mediterranean toast san diego, ca",
       "spendBands": [],
       "daypartTags": [],
@@ -39357,19 +39386,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "San Diego, CA",
-      "phone": "",
+      "phone": "(619) 431-5990",
       "email": "",
       "website": "https://civico1845.com/",
       "menuUrl": "https://civico1845.com/menu/",
       "reservationUrl": "https://www.toasttab.com/civico-1845/giftcards",
       "coverageArea": "San Diego, California",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "cuisineContext": "Italian, Calabrian, Vegan Italian — named on the restaurant's own pages.",
+      "serviceSummary": "Italian, Calabrian, Vegan Italian. Hours Sunday 12:00 PM–9:00 PM; Monday–Thursday 4:00 PM–9:00 PM; Friday 4:00 PM–10:00 PM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 12:00 PM–9:00 PM; Monday–Thursday 4:00 PM–9:00 PM; Friday 4:00 PM–10:00 PM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant. Capacity, menu format, pricing, deposits, and event policies should be confirmed directly with the team.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Reserve through Resy Traditional and Vegan Southern Italian. · Bruschetta Ricotta & Pomodorini Italian grilled bread, vegan ricotta, confit tomatoes, basil, and lemon zest.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: For birthdays, business meals, family occasions, and other group plans, use the private dining guide and contact the restaurant with the proposed date and approximate guest count.",
@@ -39379,13 +39408,11 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 2,
       "unknownList": [
-        "Live hours for your date",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -39397,15 +39424,17 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 9,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "9 / 12 core fields",
       "signals": {},
       "region": "San Diego, CA",
       "city": "San Diego",
       "stateProvince": "California",
       "regionGroup": "California",
-      "priceTags": [],
+      "priceTags": [
+        "$$"
+      ],
       "serviceStyles": [],
       "dietaryTags": [
         "Direct confirmation required"
@@ -39423,24 +39452,23 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 3,
       "bookingPlatforms": [
-        "Toast"
+        "Toast",
+        "Phone"
       ],
       "cuisineTags": [
-        "Italian"
+        "Italian",
+        "Plant-forward"
       ],
       "officialSource": "https://civico1845.com/",
       "additionalSources": "https://civico1845.com/menu/ | https://civico1845.com/visit/ | https://civico1845.com/reservations/guide/ | https://www.toasttab.com/civico-1845/giftcards",
@@ -39451,13 +39479,16 @@
         "https://civico1845.com/reservations/guide/",
         "https://www.toasttab.com/civico-1845/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.458Z",
-      "searchText": "civico 1845 san diego california san diego, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. italian toast san diego, ca",
-      "spendBands": [],
+      "retrievedAt": "2026-09-04T12:50:08.384Z",
+      "searchText": "civico 1845 san diego california san diego, ca italian, calabrian, vegan italian — named on the restaurant's own pages. italian plant-forward toast phone san diego, ca",
+      "spendBands": [
+        "$$"
+      ],
       "daypartTags": [],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "Toast"
+        "Toast",
+        "Phone"
       ]
     },
     {
@@ -39584,19 +39615,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Austin, TX",
-      "phone": "",
+      "phone": "(512) 916-4808",
       "email": "",
       "website": "https://uchikoaustin.com/",
       "menuUrl": "https://uchiko.uchirestaurants.com/location/sushi-austin/menu/",
       "reservationUrl": "https://www.sevenrooms.com/explore/uchikoaustin/reservations/create/search?venues=uchikoaustin%2Cuchiaustin%2Cuchibaaustin",
       "coverageArea": "Austin, Texas",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via SevenRooms.",
+      "cuisineContext": "Sushi, Japanese — named on the restaurant's own pages.",
+      "serviceSummary": "Sushi, Japanese. Hours Sunday–Thursday 4:00 PM–10:00 PM; Friday–Saturday 4:00 PM–11:00 PM. Reservations via SevenRooms.",
       "menuSummary": "The menu on file is hosted on uchiko.uchirestaurants.com, not on the restaurant's own domain. Deep Dish cannot confirm the restaurant controls that page.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Thursday 4:00 PM–10:00 PM; Friday–Saturday 4:00 PM–11:00 PM.",
       "reservationDetails": "Reservations via SevenRooms on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: hours sun - thur 4pm - 10pm fri - sat 4pm - 11pm happy hour every day 4pm - 6pm private dining Ideal space to gather for any occasion such as corporate events, birthdays, and other special gatherings. · click here to reserve a table For large parties or special requests, please call us at 512-916-4808 .",
@@ -39606,14 +39637,12 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 3,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -39625,15 +39654,17 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Austin, TX",
       "city": "Austin",
       "stateProvince": "Texas",
       "regionGroup": "Texas",
-      "priceTags": [],
+      "priceTags": [
+        "$$$$"
+      ],
       "serviceStyles": [],
       "dietaryTags": [
         "Direct confirmation required"
@@ -39651,22 +39682,20 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 4,
       "bookingPlatforms": [
-        "SevenRooms"
+        "SevenRooms",
+        "Phone"
       ],
       "cuisineTags": [
         "Japanese"
@@ -39680,13 +39709,16 @@
         "https://uchiko.uchirestaurants.com/location/sushi-austin/menu/",
         "https://www.sevenrooms.com/explore/uchikoaustin/reservations/create/search?venues=uchikoaustin%2Cuchiaustin%2Cuchibaaustin"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.458Z",
-      "searchText": "uchiko austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. japanese sevenrooms austin, tx",
-      "spendBands": [],
+      "retrievedAt": "2026-09-04T12:50:08.385Z",
+      "searchText": "uchiko austin texas austin, tx sushi, japanese — named on the restaurant's own pages. japanese sevenrooms phone austin, tx",
+      "spendBands": [
+        "$$$$"
+      ],
       "daypartTags": [],
       "planningLoad": "Standard",
       "bookingPaths": [
-        "SevenRooms"
+        "SevenRooms",
+        "Phone"
       ]
     },
     {
@@ -39820,10 +39852,10 @@
       "reservationUrl": "https://resy.com/cities/austin-tx/venues/odd-duck?utm_source=Paid&utm_medium=Search&utm_campaign=Reservationships_Evergreen&gad_source=1&gclid=Cj0KCQjw3vO3BhCqARIsAEWblcDBwz-7OJtq10m2nWQb2YUCLUipsTn-KZ-15ZEQ9G0oxSOC1mAOEDAaAoL2EALw_wcB&gclsrc=aw.ds&date=2024-10-02&seats=2",
       "coverageArea": "Austin, Texas",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Resy.",
+      "serviceSummary": "Hours , , , , ,. Reservations via Resy.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: , , , , ,.",
       "reservationDetails": "Reservations via Resy on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -39835,10 +39867,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 6,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Private-dining terms",
@@ -39855,9 +39886,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Austin, TX",
       "city": "Austin",
@@ -39886,7 +39917,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -39895,7 +39925,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Resy"
       ],
@@ -39911,7 +39941,7 @@
         "https://oddduckaustin.com/wine",
         "https://resy.com/cities/austin-tx/venues/odd-duck?utm_source=Paid&utm_medium=Search&utm_campaign=Reservationships_Evergreen&gad_source=1&gclid=Cj0KCQjw3vO3BhCqARIsAEWblcDBwz-7OJtq10m2nWQb2YUCLUipsTn-KZ-15ZEQ9G0oxSOC1mAOEDAaAoL2EALw_wcB&gclsrc=aw.ds&date=2024-10-02&seats=2"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.458Z",
+      "retrievedAt": "2026-09-04T12:50:08.385Z",
       "searchText": "odd duck austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american resy austin, tx",
       "spendBands": [],
       "daypartTags": [],
@@ -40276,10 +40306,10 @@
       "reservationUrl": "https://www.toasttab.com/franklinbbq/giftcards",
       "coverageArea": "Austin, Texas",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Toast.",
+      "serviceSummary": "Hours Sunday, Tuesday–Saturday 12:00 AM–12:00 AM. Reservations via Toast.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday, Tuesday–Saturday 12:00 AM–12:00 AM.",
       "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -40291,10 +40321,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Dress note from the restaurant's own pages: Come as you are daily or nightly.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -40310,9 +40339,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 6,
+      "depthFilled": 7,
       "depthTotal": 12,
-      "depthLabel": "6 / 12 core fields",
+      "depthLabel": "7 / 12 core fields",
       "signals": {},
       "region": "Austin, TX",
       "city": "Austin",
@@ -40341,14 +40370,13 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
         "accessibilityState",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 6,
+      "thinFieldCount": 5,
       "bookingPlatforms": [
         "Toast"
       ],
@@ -40365,7 +40393,7 @@
         "https://franklinbarbecue.com/about",
         "https://www.toasttab.com/franklinbbq/giftcards"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.458Z",
+      "retrievedAt": "2026-09-04T12:50:08.386Z",
       "searchText": "franklin barbecue austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. barbecue cocktail / lounge toast austin, tx",
       "spendBands": [],
       "daypartTags": [],
@@ -40588,12 +40616,13 @@
         "Cocktail / lounge"
       ],
       "officialSource": "https://www.kemuri-tatsuya.com/",
-      "additionalSources": "https://www.kemuri-tatsuya.com/contact | https://www.kemuri-tatsuya.com/menu-1 | https://www.kemuri-tatsuya.com/events | https://www.toasttab.com/tatsu-ya-hq-507-pressler-st-ste-700/giftcards",
+      "additionalSources": "https://www.kemuri-tatsuya.com/menu | https://www.kemuri-tatsuya.com/events | https://www.kemuri-tatsuya.com/contact | https://www.kemuri-tatsuya.com/menu-1 | https://www.toasttab.com/tatsu-ya-hq-507-pressler-st-ste-700/giftcards",
       "sources": [
         "https://www.kemuri-tatsuya.com/",
+        "https://www.kemuri-tatsuya.com/menu",
+        "https://www.kemuri-tatsuya.com/events",
         "https://www.kemuri-tatsuya.com/contact",
         "https://www.kemuri-tatsuya.com/menu-1",
-        "https://www.kemuri-tatsuya.com/events",
         "https://www.toasttab.com/tatsu-ya-hq-507-pressler-st-ste-700/giftcards"
       ],
       "retrievedAt": "2026-08-21T01:42:18.458Z",
@@ -40723,17 +40752,17 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Austin, TX",
-      "phone": "",
+      "phone": "(512) 477-5584",
       "email": "",
       "website": "https://www.jeffreysofaustin.com/",
       "menuUrl": "https://jeffreysofaustin.com/menus/",
       "reservationUrl": "https://www.opentable.com/r/jeffreys-restaurant-austin",
       "coverageArea": "Austin, Texas",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "serviceSummary": "Hours Sunday–Friday 4:30 PM–11:00 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Friday 4:30 PM–11:00 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -40745,10 +40774,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -40764,9 +40792,9 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 5,
+      "depthFilled": 6,
       "depthTotal": 12,
-      "depthLabel": "5 / 12 core fields",
+      "depthLabel": "6 / 12 core fields",
       "signals": {},
       "region": "Austin, TX",
       "city": "Austin",
@@ -40790,12 +40818,11 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "dietaryDetails",
@@ -40803,9 +40830,10 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 7,
+      "thinFieldCount": 6,
       "bookingPlatforms": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ],
       "cuisineTags": [
         "American",
@@ -40822,13 +40850,14 @@
         "https://jeffreysofaustin.com/reservations/",
         "https://www.opentable.com/r/jeffreys-restaurant-austin"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.459Z",
-      "searchText": "jeffrey's austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american steak steak / grill contemporary american opentable austin, tx",
+      "retrievedAt": "2026-09-04T12:50:08.386Z",
+      "searchText": "jeffrey's austin texas austin, tx not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american steak steak / grill contemporary american opentable phone austin, tx",
       "spendBands": [],
       "daypartTags": [],
       "planningLoad": "Material",
       "bookingPaths": [
-        "OpenTable"
+        "OpenTable",
+        "Phone"
       ]
     },
     {
@@ -41288,36 +41317,32 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Las Vegas, NV",
-      "phone": "",
+      "phone": "(702) 445-6100",
       "email": "",
       "website": "https://www.honeysalt.com/",
-      "menuUrl": "",
-      "reservationUrl": "",
+      "menuUrl": "https://honeysalt.com/menus/",
+      "reservationUrl": "https://honeysalt.com/reservations/",
       "coverageArea": "Las Vegas, Nevada",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
-      "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday 10:00 AM–10:00 PM; Monday–Thursday 11:30 AM–9:00 PM; Friday 11:30 AM–10:00 PM. Reservations via Direct / confirm live.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 10:00 AM–10:00 PM; Monday–Thursday 11:30 AM–9:00 PM; Friday 11:30 AM–10:00 PM.",
+      "reservationDetails": "Reservations via Direct / confirm live on a path published by the restaurant.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: Whether it’s our interpretations of classic comfort food or our lighter, wellness-based fare, our vegan options or our decadent brunch, Honey Salt’s product is always sourced, prepared and served with love. · Vegan, vegetarian and gluten-free options are always available and the menu can be tailored for individual guests if they are unable to enjoy our set menu offerings.",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "groupDetails": "Group policy from the restaurant's own pages: Private Events & Group Dining We want to create a fabulous event for you and your guests! · FAQs I have a smaller group so the private dining room is not necessary.",
       "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
-      "unknownsCount": 6,
+      "unknowns": "Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 2,
       "unknownList": [
-        "Live hours for your date",
-        "Reservation release pattern",
-        "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Private-dining terms",
         "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
@@ -41330,21 +41355,27 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 1,
+      "depthFilled": 8,
       "depthTotal": 12,
-      "depthLabel": "1 / 12 core fields",
+      "depthLabel": "8 / 12 core fields",
       "signals": {},
       "region": "Las Vegas, NV",
       "city": "Las Vegas",
       "stateProvince": "Nevada",
       "regionGroup": "Nevada",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$$"
+      ],
+      "serviceStyles": [
+        "Daytime"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
       "accessibilityTags": [],
-      "reservationTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
       "groupFitTags": [],
       "checklist": [
         "Confirm current hours directly",
@@ -41354,40 +41385,48 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
         "cuisineContext",
-        "menu",
-        "reservation",
-        "dietaryDetails",
         "accessibilityState",
-        "groupDetails",
         "dressCode",
         "atmosphereSummary",
         "serviceSummary"
       ],
-      "thinFieldCount": 11,
-      "bookingPlatforms": [],
+      "thinFieldCount": 5,
+      "bookingPlatforms": [
+        "Direct / confirm live",
+        "Phone"
+      ],
       "cuisineTags": [
         "American",
         "Contemporary American"
       ],
       "officialSource": "https://www.honeysalt.com/",
-      "additionalSources": "",
+      "additionalSources": "https://honeysalt.com/about-honey-salt/ | https://honeysalt.com/menus/ | https://honeysalt.com/group-dining-private-events/ | https://honeysalt.com/reservations/",
       "sources": [
-        "https://www.honeysalt.com/"
+        "https://www.honeysalt.com/",
+        "https://honeysalt.com/about-honey-salt/",
+        "https://honeysalt.com/menus/",
+        "https://honeysalt.com/group-dining-private-events/",
+        "https://honeysalt.com/reservations/"
       ],
-      "retrievedAt": "2026-08-19T02:53:28.994Z",
-      "searchText": "honey salt las vegas nevada las vegas, nv not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american las vegas, nv",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-04T12:50:08.388Z",
+      "searchText": "honey salt las vegas nevada las vegas, nv not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary american direct / confirm live phone las vegas, nv",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Lunch language"
+      ],
       "planningLoad": "Standard",
-      "bookingPaths": []
+      "bookingPaths": [
+        "Direct / confirm live",
+        "Phone"
+      ]
     },
     {
       "id": 2365,
@@ -41398,19 +41437,19 @@
       "origin": "expansion-seed",
       "addedAt": "2026-08-19T02:53:28.994Z",
       "address": "Las Vegas, NV",
-      "phone": "",
+      "phone": "(702) 364-5300",
       "email": "",
       "website": "https://ferraroslasvegas.com/",
       "menuUrl": "https://www.ferraroslasvegas.com/gallery/wine/",
       "reservationUrl": "https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651",
       "coverageArea": "Las Vegas, Nevada",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via OpenTable.",
+      "cuisineContext": "Italian, Traditional Italian, Fine Dining, Seafood, Steak, Pasta — named on the restaurant's own pages.",
+      "serviceSummary": "Italian, Traditional Italian, Fine Dining, Seafood, Steak, Pasta. Hours Sunday 4:00 PM–10:30 PM; Monday–Friday 11:30 AM–3:30 PM and 4:00 PM–10:30 PM. Reservations via OpenTable.",
       "menuSummary": "A menu path is published on the restaurant's own site.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday 4:00 PM–10:30 PM; Monday–Friday 11:30 AM–3:30 PM and 4:00 PM–10:30 PM.",
       "reservationDetails": "Reservations via OpenTable on a path published by the restaurant.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$$ as published on the restaurant's own pages.",
       "dietaryDetails": "Dietary wording from the restaurant's own pages: Happy Hour Lunch Dinner Tasting Menu Vegan Dessert Pre-Show Dinner Summer In Italy Italian version of small plates from 4pm-7pm MUST BE 21 YEARS OF AGE TO SIT IN THE BAR OR LOUNGE AREA FOR HAPPY HOUR!",
       "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
       "groupDetails": "Group policy from the restaurant's own pages: 18% service charge on parties of 6 or more. · 20% service charge on parties of 12 or more.",
@@ -41418,15 +41457,136 @@
       "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Dress note from the restaurant's own pages: Dress Code Ferraro’s maintains a business casual dress code .",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Accessibility route detail; Parking and arrival logistics",
+      "unknownsCount": 2,
+      "unknownList": [
+        "Accessibility route detail",
+        "Parking and arrival logistics"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-08-21",
+      "nextReviewAt": "2026-09-20",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 10,
+      "depthTotal": 12,
+      "depthLabel": "10 / 12 core fields",
+      "signals": {},
+      "region": "Las Vegas, NV",
+      "city": "Las Vegas",
+      "stateProvince": "Nevada",
+      "regionGroup": "Nevada",
+      "priceTags": [
+        "$$$$"
+      ],
+      "serviceStyles": [
+        "Daytime",
+        "Fine dining"
+      ],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "accessibilityState",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 2,
+      "bookingPlatforms": [
+        "OpenTable",
+        "Phone"
+      ],
+      "cuisineTags": [
+        "Italian",
+        "Fine dining",
+        "Seafood",
+        "Steak / grill"
+      ],
+      "officialSource": "https://ferraroslasvegas.com/",
+      "additionalSources": "https://www.ferraroslasvegas.com/about-us/ | https://www.ferraroslasvegas.com/gallery/wine/ | https://www.ferraroslasvegas.com/reservations/ | https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651",
+      "sources": [
+        "https://ferraroslasvegas.com/",
+        "https://www.ferraroslasvegas.com/about-us/",
+        "https://www.ferraroslasvegas.com/gallery/wine/",
+        "https://www.ferraroslasvegas.com/reservations/",
+        "https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651"
+      ],
+      "retrievedAt": "2026-09-04T12:50:08.388Z",
+      "searchText": "ferraro's italian restaurant & wine bar las vegas nevada las vegas, nv italian, traditional italian, fine dining, seafood, steak, pasta — named on the restaurant's own pages. italian fine dining seafood steak / grill opentable phone las vegas, nv",
+      "spendBands": [
+        "$$$$"
+      ],
+      "daypartTags": [
+        "Lunch language"
+      ],
+      "planningLoad": "Material",
+      "bookingPaths": [
+        "OpenTable",
+        "Phone"
+      ]
+    },
+    {
+      "id": 2366,
+      "slug": "anima-by-edo-las-vegas",
+      "title": "Anima by EDO",
+      "link": "",
+      "recordId": "RI-EXP-0287",
+      "origin": "expansion-seed",
+      "addedAt": "2026-08-19T02:53:28.994Z",
+      "address": "Las Vegas, NV",
+      "phone": "(702) 202-4291",
+      "email": "",
+      "website": "https://www.animabyedo.com/",
+      "menuUrl": "https://animabyedo.com/menu",
+      "reservationUrl": "",
+      "coverageArea": "Las Vegas, Nevada",
+      "cuisineContext": "Mediterranean, Italian, Spanish, Catalan, Tapas — named on the restaurant's own pages.",
+      "serviceSummary": "Mediterranean, Italian, Spanish, Catalan, Tapas. Hours Sunday–Friday 5:00 PM–10:00 PM. Confirm seating by phone.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Friday 5:00 PM–10:00 PM.",
+      "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$$ as published on the restaurant's own pages.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 4,
+      "unknowns": "Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknownsCount": 5,
       "unknownList": [
-        "Live hours for your date",
+        "Reservation release pattern",
+        "Dietary cross-contact handling",
         "Accessibility route detail",
-        "Parking and arrival logistics",
-        "Current per-guest total"
+        "Private-dining terms",
+        "Parking and arrival logistics"
       ],
       "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
       "sourceAuthority": "Official restaurant website / first-party page",
@@ -41446,14 +41606,18 @@
       "city": "Las Vegas",
       "stateProvince": "Nevada",
       "regionGroup": "Nevada",
-      "priceTags": [],
-      "serviceStyles": [],
+      "priceTags": [
+        "$$$"
+      ],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
       "accessibilityTags": [],
       "reservationTags": [
-        "Reservations"
+        "Phone"
       ],
       "groupFitTags": [],
       "checklist": [
@@ -41464,139 +41628,29 @@
         "Verify parking or transit for arrival window",
         "Check current menu prices"
       ],
-      "hasPhone": false,
+      "hasPhone": true,
       "hasOfficialConflict": false,
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
-        "accessibilityState",
-        "dressCode",
-        "atmosphereSummary"
-      ],
-      "thinFieldCount": 6,
-      "bookingPlatforms": [
-        "OpenTable"
-      ],
-      "cuisineTags": [
-        "Italian"
-      ],
-      "officialSource": "https://ferraroslasvegas.com/",
-      "additionalSources": "https://www.ferraroslasvegas.com/about-us/ | https://www.ferraroslasvegas.com/gallery/wine/ | https://www.ferraroslasvegas.com/reservations/ | https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651",
-      "sources": [
-        "https://ferraroslasvegas.com/",
-        "https://www.ferraroslasvegas.com/about-us/",
-        "https://www.ferraroslasvegas.com/gallery/wine/",
-        "https://www.ferraroslasvegas.com/reservations/",
-        "https://www.opentable.com/restref/client/?rid=7148&restref=7148&corrid=30254504-09cb-43ee-ae96-fb1cc05b7651"
-      ],
-      "retrievedAt": "2026-08-21T01:42:18.460Z",
-      "searchText": "ferraro's italian restaurant & wine bar las vegas nevada las vegas, nv not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. italian opentable las vegas, nv",
-      "spendBands": [],
-      "daypartTags": [],
-      "planningLoad": "Material",
-      "bookingPaths": [
-        "OpenTable"
-      ]
-    },
-    {
-      "id": 2366,
-      "slug": "anima-by-edo-las-vegas",
-      "title": "Anima by EDO",
-      "link": "",
-      "recordId": "RI-EXP-0287",
-      "origin": "expansion-seed",
-      "addedAt": "2026-08-19T02:53:28.994Z",
-      "address": "Las Vegas, NV",
-      "phone": "",
-      "email": "",
-      "website": "https://www.animabyedo.com/",
-      "menuUrl": "https://animabyedo.com/menu",
-      "reservationUrl": "",
-      "coverageArea": "Las Vegas, Nevada",
-      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Not stated on the restaurant's own pages — service format is not independently summarized beyond the stated fields. Confirm live before you commit.",
-      "menuSummary": "A menu path is published on the restaurant's own site.",
-      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
-      "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
-      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
-      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
-      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
-      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
-      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
-      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
-      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
-      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
-      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Reservation release pattern; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
-      "unknownsCount": 6,
-      "unknownList": [
-        "Live hours for your date",
-        "Reservation release pattern",
-        "Dietary cross-contact handling",
-        "Accessibility route detail",
-        "Private-dining terms",
-        "Parking and arrival logistics"
-      ],
-      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
-      "sourceAuthority": "Official restaurant website / first-party page",
-      "confidence": "owned_site_leveled",
-      "freshnessStatus": "OWNED_SITE_REVIEWED",
-      "reviewedAt": "2026-08-21",
-      "nextReviewAt": "2026-09-20",
-      "reviewStatus": "current",
-      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
-      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
-      "conflict": "",
-      "depthFilled": 2,
-      "depthTotal": 12,
-      "depthLabel": "2 / 12 core fields",
-      "signals": {},
-      "region": "Las Vegas, NV",
-      "city": "Las Vegas",
-      "stateProvince": "Nevada",
-      "regionGroup": "Nevada",
-      "priceTags": [],
-      "serviceStyles": [],
-      "dietaryTags": [
-        "Direct confirmation required"
-      ],
-      "accessibilityTags": [],
-      "reservationTags": [],
-      "groupFitTags": [],
-      "checklist": [
-        "Confirm current hours directly",
-        "Confirm reservation release and cancellation terms",
-        "Confirm dietary handling with the kitchen",
-        "Confirm accessibility route and restroom detail",
-        "Verify parking or transit for arrival window",
-        "Check current menu prices"
-      ],
-      "hasPhone": false,
-      "hasOfficialConflict": false,
-      "isFullCaseFile": false,
-      "reviewDueSoon": false,
-      "thinFields": [
-        "hoursSummary",
-        "priceDetails",
-        "cuisineContext",
         "reservation",
         "dietaryDetails",
         "accessibilityState",
         "groupDetails",
         "dressCode",
-        "atmosphereSummary",
-        "serviceSummary"
+        "atmosphereSummary"
       ],
-      "thinFieldCount": 10,
-      "bookingPlatforms": [],
+      "thinFieldCount": 6,
+      "bookingPlatforms": [
+        "Phone"
+      ],
       "cuisineTags": [
         "Japanese",
-        "Omakase"
+        "Omakase",
+        "Italian",
+        "Mediterranean",
+        "Spanish",
+        "Small plates"
       ],
       "officialSource": "https://www.animabyedo.com/",
       "additionalSources": "https://animabyedo.com/menu",
@@ -41604,12 +41658,18 @@
         "https://www.animabyedo.com/",
         "https://animabyedo.com/menu"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.460Z",
-      "searchText": "anima by edo las vegas nevada las vegas, nv not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. japanese omakase las vegas, nv",
-      "spendBands": [],
-      "daypartTags": [],
+      "retrievedAt": "2026-09-04T12:50:08.388Z",
+      "searchText": "anima by edo las vegas nevada las vegas, nv mediterranean, italian, spanish, catalan, tapas — named on the restaurant's own pages. japanese omakase italian mediterranean spanish small plates phone las vegas, nv",
+      "spendBands": [
+        "$$$"
+      ],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Standard",
-      "bookingPaths": []
+      "bookingPaths": [
+        "Phone"
+      ]
     },
     {
       "id": 2367,
@@ -43188,10 +43248,10 @@
       "reservationUrl": "https://www.exploretock.com/localis/",
       "coverageArea": "Sacramento, California",
       "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
-      "serviceSummary": "Reservations via Tock.",
+      "serviceSummary": "Hours Wednesday–Thursday 5:30 PM–10:00 PM; Friday–Saturday 5:30 PM–12:00 AM. Reservations via Tock.",
       "menuSummary": "Not stated on the restaurant's own pages — a menu path was not published. Confirm live before you commit.",
       "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
-      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Wednesday–Thursday 5:30 PM–10:00 PM; Friday–Saturday 5:30 PM–12:00 AM.",
       "reservationDetails": "Reservations via Tock on a path published by the restaurant.",
       "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
       "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
@@ -43203,10 +43263,9 @@
       "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
       "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
       "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
-      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
-      "unknownsCount": 5,
+      "unknowns": "Dietary cross-contact handling; Accessibility route detail; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 4,
       "unknownList": [
-        "Live hours for your date",
         "Dietary cross-contact handling",
         "Accessibility route detail",
         "Parking and arrival logistics",
@@ -43222,16 +43281,18 @@
       "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
       "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
       "conflict": "",
-      "depthFilled": 4,
+      "depthFilled": 5,
       "depthTotal": 12,
-      "depthLabel": "4 / 12 core fields",
+      "depthLabel": "5 / 12 core fields",
       "signals": {},
       "region": "Sacramento, CA",
       "city": "Sacramento",
       "stateProvince": "California",
       "regionGroup": "California",
       "priceTags": [],
-      "serviceStyles": [],
+      "serviceStyles": [
+        "Dinner"
+      ],
       "dietaryTags": [
         "Direct confirmation required"
       ],
@@ -43253,7 +43314,6 @@
       "isFullCaseFile": false,
       "reviewDueSoon": false,
       "thinFields": [
-        "hoursSummary",
         "priceDetails",
         "cuisineContext",
         "menu",
@@ -43262,7 +43322,7 @@
         "dressCode",
         "atmosphereSummary"
       ],
-      "thinFieldCount": 8,
+      "thinFieldCount": 7,
       "bookingPlatforms": [
         "Tock"
       ],
@@ -43279,10 +43339,12 @@
         "https://www.localissacramento.com/private-events",
         "https://www.exploretock.com/localis/"
       ],
-      "retrievedAt": "2026-08-21T01:42:18.461Z",
+      "retrievedAt": "2026-09-04T12:50:08.390Z",
       "searchText": "localis sacramento california sacramento, ca not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. american contemporary contemporary american tock sacramento, ca",
       "spendBands": [],
-      "daypartTags": [],
+      "daypartTags": [
+        "Dinner language"
+      ],
       "planningLoad": "Material",
       "bookingPaths": [
         "Tock"

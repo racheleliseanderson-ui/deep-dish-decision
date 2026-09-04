@@ -1,6 +1,6 @@
 {
   "regionGroup": "Illinois",
-  "generatedAt": "2026-09-03T13:01:25.738Z",
+  "generatedAt": "2026-09-04T12:49:54.838Z",
   "records": {
     "stk-steakhouse": {
       "ll": [
@@ -500,6 +500,46 @@
       ],
       "llSource": "city",
       "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            540,
+            1260
+          ]
+        ],
+        [
+          [
+            540,
+            1260
+          ]
+        ],
+        [
+          [
+            540,
+            1260
+          ]
+        ],
+        [
+          [
+            540,
+            1260
+          ]
+        ],
+        [
+          [
+            690,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
       "band": "$$",
       "bandSource": "planning-band",
       "pp": [

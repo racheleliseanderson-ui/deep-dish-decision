@@ -1,6 +1,6 @@
 {
   "regionGroup": "Texas",
-  "generatedAt": "2026-09-03T13:01:25.738Z",
+  "generatedAt": "2026-09-04T12:49:54.838Z",
   "records": {
     "kitchen-kocktails": {
       "ll": [
@@ -45,6 +45,46 @@
       ],
       "llSource": "city",
       "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
       "band": "$$$",
       "bandSource": "planning-band",
       "pp": [
@@ -59,7 +99,49 @@
         -96.797
       ],
       "llSource": "city",
-      "tz": "America/Chicago"
+      "tz": "America/Chicago",
+      "hours": [
+        [],
+        [
+          [
+            960,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            1380
+          ]
+        ],
+        [
+          [
+            660,
+            0
+          ]
+        ],
+        []
+      ],
+      "hoursSource": "first-party-prose",
+      "band": "$$$",
+      "bandSource": "planning-band",
+      "pp": [
+        50,
+        90
+      ],
+      "ppSource": "planning-band"
     },
     "3eleven-kitchen-and-cocktails": {
       "ll": [
@@ -128,6 +210,55 @@
       ],
       "llSource": "city",
       "tz": "America/Chicago",
+      "hours": [
+        [
+          [
+            480,
+            0
+          ],
+          [
+            480,
+            1320
+          ]
+        ],
+        [
+          [
+            480,
+            630
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1380
+          ]
+        ],
+        [
+          [
+            480,
+            1320
+          ]
+        ],
+        [
+          [
+            480,
+            1380
+          ]
+        ],
+        [
+          [
+            540,
+            960
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose",
       "band": "$$",
       "bandSource": "planning-band",
       "pp": [

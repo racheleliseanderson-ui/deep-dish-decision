@@ -1,6 +1,6 @@
 {
   "regionGroup": "Arizona",
-  "generatedAt": "2026-09-03T13:01:25.738Z",
+  "generatedAt": "2026-09-04T12:49:54.838Z",
   "records": {
     "kai-restaurant-phoenix": {
       "ll": [
@@ -16,7 +16,51 @@
         -112.074
       ],
       "llSource": "city",
-      "tz": "America/Phoenix"
+      "tz": "America/Phoenix",
+      "hours": [
+        [
+          [
+            780,
+            1260
+          ]
+        ],
+        [],
+        [
+          [
+            660,
+            840
+          ]
+        ],
+        [
+          [
+            660,
+            840
+          ]
+        ],
+        [
+          [
+            660,
+            840
+          ]
+        ],
+        [
+          [
+            660,
+            840
+          ]
+        ],
+        [
+          [
+            660,
+            840
+          ],
+          [
+            1020,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "the-gladly-phoenix": {
       "ll": [
@@ -24,7 +68,47 @@
         -112.074
       ],
       "llSource": "city",
-      "tz": "America/Phoenix"
+      "tz": "America/Phoenix",
+      "hours": [
+        [],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1260
+          ]
+        ],
+        [
+          [
+            660,
+            1320
+          ]
+        ],
+        [
+          [
+            960,
+            1320
+          ]
+        ]
+      ],
+      "hoursSource": "first-party-prose"
     },
     "barrio-caf-phoenix": {
       "ll": [
