@@ -1,0 +1,1600 @@
+{
+  "generatedAt": "2026-09-05T02:28:57.427Z",
+  "attempted": 132,
+  "resolved": 0,
+  "missed": 137,
+  "misses": [
+    {
+      "market": "Minneapolis",
+      "name": "Khaluna",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.khaluna.com -> 200",
+        "https://khaluna.com/ rejected: no Minneapolis address on page",
+        "https://khaluna.com -> 200",
+        "https://khaluna.com/ rejected: no Minneapolis address on page"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Vinai",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.vinai.com -> fetch failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+        "https://vinai.com -> fetch failed:CERT_HAS_EXPIRED"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Diane's Place",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.dianesplace.com -> 200",
+        "https://www.dianesplace.com/ rejected: no Minneapolis address on page",
+        "https://dianesplace.com -> 200",
+        "https://dianesplace.com/ rejected: no Minneapolis address on page",
+        "https://www.dianes.com -> 200",
+        "https://dianes.com -> 200"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "All Saints",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.allsaints.com -> 403",
+        "https://allsaints.com -> 403"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Young Joni",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.youngjoni.com -> fetch failed:CERT_HAS_EXPIRED",
+        "https://youngjoni.com -> 408",
+        "https://www.young.com -> 200",
+        "https://young.com/ rejected: does not name target",
+        "https://young.com -> 200",
+        "https://young.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Bucheron",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.bucheron.com -> 200",
+        "https://bucheron.com -> 200"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Oro by Nixta",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.orobynixta.com -> fetch failed:ENOTFOUND",
+        "https://orobynixta.com -> fetch failed:ENOTFOUND",
+        "https://www.oronixta.com -> fetch failed:ENOTFOUND",
+        "https://oronixta.com -> fetch failed:ENOTFOUND",
+        "https://www.oroby.com -> 200",
+        "https://www.brandbucket.com/names/oroby rejected: does not name target",
+        "https://oroby.com -> 200",
+        "https://www.brandbucket.com/names/oroby rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Dario",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.dario.com -> 200",
+        "https://dario.com/ rejected: not a restaurant page",
+        "https://dario.com -> 200",
+        "https://dario.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Gai Noi",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.gainoi.com -> 200",
+        "https://www.gainoi.com/ rejected: no Minneapolis address on page",
+        "https://gainoi.com -> 200",
+        "https://www.gainoi.com/ rejected: no Minneapolis address on page"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Lynette",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.lynette.com -> 408",
+        "https://lynette.com -> 408"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Nightingale",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.nightingale.com -> 200",
+        "https://www.nightingale.com/ rejected: not a restaurant page",
+        "https://nightingale.com -> 200",
+        "https://www.nightingale.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Rosalia",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.rosalia.com -> 200",
+        "https://www.rosalia.com/ rejected: not a restaurant page",
+        "https://rosalia.com -> 200",
+        "https://www.rosalia.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Juche",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.juche.com -> 408",
+        "https://juche.com -> 408"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "P.S. Steak",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.pssteak.com -> fetch failed:ENOTFOUND",
+        "https://pssteak.com -> fetch failed:ENOTFOUND",
+        "https://www.steak.com -> 200",
+        "https://steak.com/ rejected: not a restaurant page",
+        "https://steak.com -> 200",
+        "https://steak.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Marty's Deli",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.martysdeli.com -> 200",
+        "https://martysdeli.com/ rejected: no Minneapolis address on page",
+        "https://martysdeli.com -> 200",
+        "https://martysdeli.com/ rejected: no Minneapolis address on page",
+        "https://www.martys.com -> fetch failed:ENOTFOUND",
+        "https://martys.com -> 200"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Jax Cafe",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.jaxcafe.com -> 200",
+        "https://www.jaxcafe.com/ rejected: no Minneapolis address on page",
+        "https://jaxcafe.com -> 200",
+        "https://www.jaxcafe.com/ rejected: no Minneapolis address on page"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Clancey's Meats",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.clanceysmeats.com -> 200",
+        "https://www.clanceysmeats.com/ rejected: no Minneapolis address on page",
+        "https://clanceysmeats.com -> 200",
+        "https://www.clanceysmeats.com/ rejected: no Minneapolis address on page",
+        "https://www.clanceys.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=clanceys.com rejected: aggregator",
+        "https://clanceys.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=clanceys.com rejected: aggregator"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Martina",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.martina.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+        "https://martina.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Reverie",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.reverie.com -> 200",
+        "https://reverie.com/ rejected: not a restaurant page",
+        "https://reverie.com -> 200",
+        "https://reverie.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Hola Arepa",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.holaarepa.com -> 200",
+        "https://www.holaarepa.com/ rejected: no Minneapolis address on page",
+        "https://holaarepa.com -> 200",
+        "https://www.holaarepa.com/ rejected: no Minneapolis address on page",
+        "https://www.hola.com -> 200",
+        "https://www.hola.com/us/ rejected: does not name target",
+        "https://hola.com -> 200",
+        "https://www.hola.com/us/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Wrecktangle Pizza",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.wrecktanglepizza.com -> 200",
+        "https://wrecktanglepizza.com/ rejected: no Minneapolis address on page",
+        "https://wrecktanglepizza.com -> 200",
+        "https://wrecktanglepizza.com/ rejected: no Minneapolis address on page",
+        "https://www.wrecktangle.com -> 200",
+        "https://wrecktangle.com -> 200"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Bull's Horn",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.bullshorn.com -> fetch failed:ENOTFOUND",
+        "https://bullshorn.com -> fetch failed:ENOTFOUND",
+        "https://www.bulls.com -> 403",
+        "https://bulls.com -> 403"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "World Street Kitchen",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.worldstreetkitchen.com -> 200",
+        "https://worldstreetkitchen.com -> 200",
+        "https://www.worldstreet.com -> 200",
+        "https://www.worldstreet.com/ rejected: not a restaurant page",
+        "https://worldstreet.com -> 200",
+        "https://worldstreet.com/ rejected: not a restaurant page",
+        "https://www.world.com -> 200",
+        "https://couple.ai/?r=world rejected: does not name target",
+        "https://world.com -> 200",
+        "https://couple.ai/?r=world rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Mama Safia's Kitchen",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.mamasafiaskitchen.com -> fetch failed:ENOTFOUND",
+        "https://mamasafiaskitchen.com -> fetch failed:ENOTFOUND",
+        "https://www.mamasafias.com -> fetch failed:ENOTFOUND",
+        "https://mamasafias.com -> fetch failed:ENOTFOUND",
+        "https://www.mama.com -> 200",
+        "https://x.com/DomainMaster rejected: aggregator",
+        "https://mama.com -> 200",
+        "https://x.com/DomainMaster rejected: aggregator"
+      ]
+    },
+    {
+      "market": "Minneapolis",
+      "name": "Camden Social",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.camdensocial.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=camdensocial.com rejected: aggregator",
+        "https://camdensocial.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=camdensocial.com rejected: aggregator",
+        "https://www.camden.com -> 408",
+        "https://camden.com -> 408"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Lola 55",
+      "reason": "already in corpus"
+    },
+    {
+      "market": "San Diego",
+      "name": "Cherryfish",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.cherryfish.com -> 408",
+        "https://cherryfish.com -> fetch failed:ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "A L'ouest",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.alouest.com -> 200",
+        "https://alouest.com -> 200",
+        "https://www.louest.com -> 200",
+        "https://louest.com -> 200"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Bencotto",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.bencotto.com -> 200",
+        "https://bencotto.com -> 200"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Mabel's Gone Fishing",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.mabelsgonefishing.com -> 200",
+        "https://www.mabelsgonefishing.com/ rejected: no San Diego address on page",
+        "https://mabelsgonefishing.com -> 200",
+        "https://www.mabelsgonefishing.com/ rejected: no San Diego address on page",
+        "https://www.mabelsgone.com -> fetch failed:ENOTFOUND",
+        "https://mabelsgone.com -> fetch failed:ENOTFOUND",
+        "https://www.mabels.com -> 200",
+        "https://mabels.com/ rejected: does not name target",
+        "https://mabels.com -> 200",
+        "https://mabels.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "The Smoking Goat",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.smokinggoat.com -> fetch failed:ENOTFOUND",
+        "https://smokinggoat.com -> fetch failed:ENOTFOUND",
+        "https://www.smoking.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID",
+        "https://smoking.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Wolf in the Woods",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.wolfinthewoods.com -> 200",
+        "https://www.wolfinthewoods.com/ rejected: no San Diego address on page",
+        "https://wolfinthewoods.com -> 200",
+        "https://www.wolfinthewoods.com/ rejected: no San Diego address on page",
+        "https://www.wolfwoods.com -> 200",
+        "https://www.wolfwoods.com/ rejected: not a restaurant page",
+        "https://wolfwoods.com -> fetch failed:ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE",
+        "https://www.wolfin.com -> 200",
+        "https://www.bmigroup.com/de/wolfin/ rejected: does not name target",
+        "https://wolfin.com -> 200",
+        "https://www.bmigroup.com/de/wolfin/ rejected: does not name target",
+        "https://www.wolf.com -> 200",
+        "https://www.wolf.com/ rejected: parked",
+        "https://wolf.com -> 200",
+        "https://wolf.com/ rejected: parked"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Marisi",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.marisi.com -> 200",
+        "https://marisi.com -> 200"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Lucien",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.lucien.com -> 200",
+        "https://www.lucien.com/ rejected: not a restaurant page",
+        "https://lucien.com -> 200",
+        "https://www.lucien.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Fleurette",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.fleurette.com -> 200",
+        "https://www.fleurette.com/ rejected: no San Diego address on page",
+        "https://fleurette.com -> 200",
+        "https://www.fleurette.com/ rejected: no San Diego address on page"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Paradisaea",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.paradisaea.com -> 200",
+        "https://www.paradisaea.com/ rejected: no San Diego address on page",
+        "https://paradisaea.com -> 200",
+        "https://www.paradisaea.com/ rejected: no San Diego address on page"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Wormwood",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.wormwood.com -> fetch failed:ENOTFOUND",
+        "https://wormwood.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Soichi",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.soichi.com -> 200",
+        "https://soichi.com/ rejected: not a restaurant page",
+        "https://soichi.com -> 200",
+        "https://soichi.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Cowboy Star",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.cowboystar.com -> 200",
+        "https://cowboystar.com -> 200",
+        "https://www.cowboy.com -> 200",
+        "https://cowboy.com/ rejected: does not name target",
+        "https://cowboy.com -> 200",
+        "https://cowboy.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "The Lion's Share",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.lionsshare.com -> 200",
+        "https://www.lionsshare.com/ rejected: does not name target",
+        "https://lionsshare.com -> 200",
+        "https://www.lionsshare.com/ rejected: does not name target",
+        "https://www.lions.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID",
+        "https://lions.com -> 200",
+        "https://lions.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Kingfisher",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.kingfisher.com -> 200",
+        "https://www.kingfisher.com/ rejected: not a restaurant page",
+        "https://kingfisher.com -> 200",
+        "https://www.kingfisher.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Ambrogio15",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.ambrogio15.com -> 200",
+        "https://ambrogio15.com/ rejected: no San Diego address on page",
+        "https://ambrogio15.com -> 200",
+        "https://ambrogio15.com/ rejected: no San Diego address on page"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Solare",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.solare.com -> fetch failed:ENOTFOUND",
+        "https://solare.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Sushi Ota",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.sushiota.com -> 200",
+        "https://sushiota.com -> 200",
+        "https://www.sushi.com -> 200",
+        "https://www.sushi.com/ethereum/swap rejected: does not name target",
+        "https://sushi.com -> 200",
+        "https://www.sushi.com/ethereum/swap rejected: does not name target"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Bosforo",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.bosforo.com -> fetch failed:ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE",
+        "https://bosforo.com -> fetch failed:ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Nine-Ten",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.nineten.com -> fetch failed:EAI_AGAIN",
+        "https://nineten.com -> fetch failed:EAI_AGAIN"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Catania",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.catania.com -> fetch failed:CERT_HAS_EXPIRED",
+        "https://catania.com -> fetch failed:CERT_HAS_EXPIRED"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Tribute Pizza",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.tributepizza.com -> 200",
+        "https://www.tributepizza.com/ rejected: no San Diego address on page",
+        "https://tributepizza.com -> 200",
+        "https://www.tributepizza.com/ rejected: no San Diego address on page",
+        "https://www.tribute.com -> 200",
+        "https://www.tribute.com/ rejected: does not name target",
+        "https://tribute.com -> 200",
+        "https://www.tribute.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Wayfarer Bread",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.wayfarerbread.com -> 200",
+        "https://www.wayfarerbread.com/ rejected: no San Diego address on page",
+        "https://wayfarerbread.com -> 200",
+        "https://www.wayfarerbread.com/ rejected: no San Diego address on page",
+        "https://www.wayfarer.com -> 200",
+        "https://wayfarer.com -> 200"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Casa Guadalajara",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.casaguadalajara.com -> 403",
+        "https://casaguadalajara.com -> 403",
+        "https://www.casa.com -> fetch failed:ENOTFOUND",
+        "https://casa.com -> 408"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Cafe Sevilla",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.cafesevilla.com -> 200",
+        "https://www.cafesevilla.com/ rejected: no San Diego address on page",
+        "https://cafesevilla.com -> 200",
+        "https://www.cafesevilla.com/ rejected: no San Diego address on page",
+        "https://www.sevilla.com -> 200",
+        "https://sevilla.com -> 200",
+        "https://www.cafe.com -> 200",
+        "https://cafe.com/ rejected: does not name target",
+        "https://cafe.com -> 200",
+        "https://cafe.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "San Diego",
+      "name": "Wa Dining Okan",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.wadiningokan.com -> fetch failed:ENOTFOUND",
+        "https://wadiningokan.com -> fetch failed:ENOTFOUND",
+        "https://www.wadining.com -> fetch failed:ENOTFOUND",
+        "https://wadining.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "Bar Pigalle",
+      "reason": "already in corpus"
+    },
+    {
+      "market": "Detroit",
+      "name": "Alpino",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.alpino.com -> 403",
+        "https://alpino.com -> 403"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "Freya",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.freya.com -> fetch failed:ENOTFOUND",
+        "https://freya.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "Nepantla",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.nepantla.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=nepantla.com rejected: aggregator",
+        "https://nepantla.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=nepantla.com rejected: aggregator"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "Folk",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.folk.com -> 200",
+        "https://folk.com -> 200",
+        "https://www.folk.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "Lena",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.lena.com -> 200",
+        "https://lena.com -> 200"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "Vecino",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.vecino.com -> fetch failed:ENOTFOUND",
+        "https://vecino.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "El Barzon",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.elbarzon.com -> 200",
+        "https://elbarzon.com -> 200"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "Oak & Reel",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.oakandreel.com -> 200",
+        "https://www.oakandreel.com/ rejected: no Detroit address on page",
+        "https://oakandreel.com -> 200",
+        "https://www.oakandreel.com/ rejected: no Detroit address on page",
+        "https://www.oakreel.com -> 200",
+        "https://www.oakreel.com/ rejected: no Detroit address on page",
+        "https://oakreel.com -> 200",
+        "https://www.oakreel.com/ rejected: no Detroit address on page",
+        "https://www.oakand.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=oakand.com rejected: aggregator",
+        "https://oakand.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=oakand.com rejected: aggregator"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "Ladder 4 Wine Bar",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.ladder4winebar.com -> 200",
+        "https://ladder4winebar.com -> 200",
+        "https://www.ladderwine.com -> fetch failed:ENOTFOUND",
+        "https://ladderwine.com -> fetch failed:ENOTFOUND",
+        "https://www.ladder4.com -> fetch failed:EAI_AGAIN",
+        "https://ladder4.com -> fetch failed:EAI_AGAIN",
+        "https://www.ladder.com -> 200",
+        "https://www.ladder.com/ rejected: does not name target",
+        "https://ladder.com -> 200",
+        "https://www.ladder.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Detroit",
+      "name": "Warda Patisserie",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.wardapatisserie.com -> fetch failed:ENOTFOUND",
+        "https://wardapatisserie.com -> fetch failed:ENOTFOUND",
+        "https://www.warda.com -> 200",
+        "https://www.warda.com/ rejected: does not name target",
+        "https://warda.com -> 200",
+        "http://www.warda.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Fin & Fino",
+      "reason": "already in corpus"
+    },
+    {
+      "market": "Charlotte",
+      "name": "Rada",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.rada.com -> 403",
+        "https://rada.com -> 403"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Albertine",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.albertine.com -> 200",
+        "https://www.albertine.com/ rejected: no Charlotte address on page",
+        "https://albertine.com -> 200",
+        "https://www.albertine.com/ rejected: no Charlotte address on page"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "L'Ostrica",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.lostrica.com -> fetch failed:ENOTFOUND",
+        "https://lostrica.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Yunta",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.yunta.com -> fetch failed:CERT_HAS_EXPIRED",
+        "https://yunta.com -> fetch failed:CERT_HAS_EXPIRED"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "La Lima Sangucheria",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.lalimasangucheria.com -> 200",
+        "https://www.lalimasangucheria.com/ rejected: does not name target",
+        "https://lalimasangucheria.com -> 200",
+        "https://www.lalimasangucheria.com/ rejected: does not name target",
+        "https://www.lalima.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+        "https://lalima.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Menya Daruma",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.menyadaruma.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID",
+        "https://menyadaruma.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID",
+        "https://www.menya.com -> 200",
+        "https://menya.com -> 200"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Calle Sol",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.callesol.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=callesol.com rejected: aggregator",
+        "https://callesol.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=callesol.com rejected: aggregator",
+        "https://www.calle.com -> 200",
+        "https://calle.com/ rejected: does not name target",
+        "https://calle.com -> 200",
+        "https://calle.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Spaghett",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.spaghett.com -> 200",
+        "https://spaghett.com -> 200"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Restaurant Constance",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.restaurantconstance.com -> 200",
+        "https://restaurantconstance.com/ rejected: no Charlotte address on page",
+        "https://restaurantconstance.com -> 200",
+        "https://restaurantconstance.com/ rejected: no Charlotte address on page",
+        "https://www.constance.com -> 200",
+        "https://constance.com -> 200",
+        "https://www.restaurant.com -> 403",
+        "https://restaurant.com -> 403"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "El Puro",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.elpuro.com -> fetch failed:EAI_AGAIN",
+        "https://elpuro.com -> fetch failed:EAI_AGAIN"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Chapter 6",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.chapter6.com -> 408",
+        "https://chapter6.com -> 408",
+        "https://www.chapter.com -> 200",
+        "https://askchapter.org/ rejected: no Charlotte address on page",
+        "https://chapter.com -> 200",
+        "https://askchapter.org/ rejected: no Charlotte address on page"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Lang Van",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.langvan.com -> 200",
+        "https://www.langvan.com/ rejected: not a restaurant page",
+        "https://langvan.com -> 200",
+        "https://www.langvan.com/ rejected: not a restaurant page",
+        "https://www.lang.com -> 200",
+        "https://www.calendars.com/home-lang?t=lang rejected: does not name target",
+        "https://lang.com -> 200",
+        "https://www.calendars.com/home-lang?t=lang rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Bird Pizzeria",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.birdpizzeria.com -> 200",
+        "https://www.birdpizzeria.com/ rejected: no Charlotte address on page",
+        "https://birdpizzeria.com -> 200",
+        "https://www.birdpizzeria.com/ rejected: no Charlotte address on page",
+        "https://www.bird.com -> 200",
+        "https://bird.com/ rejected: not a restaurant page",
+        "https://bird.com -> 200",
+        "https://bird.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Ever Andalo",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.everandalo.com -> 200",
+        "https://www.everandalo.com/ rejected: no Charlotte address on page",
+        "https://everandalo.com -> 200",
+        "https://www.everandalo.com/ rejected: no Charlotte address on page",
+        "https://www.ever.com -> 200",
+        "https://www.ever.com/ rejected: does not name target",
+        "https://ever.com -> 200",
+        "https://www.ever.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Noble Smoke",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.noblesmoke.com -> 200",
+        "https://noblesmoke.com -> 200",
+        "https://www.noble.com -> 200",
+        "https://www.noble.com/ rejected: does not name target",
+        "https://noble.com -> 200",
+        "https://www.noble.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Charlotte",
+      "name": "Beef 'N Bottle",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.beefnbottle.com -> 200",
+        "https://beefnbottle.com/ rejected: not a restaurant page",
+        "https://beefnbottle.com -> 200",
+        "https://beefnbottle.com/ rejected: not a restaurant page",
+        "https://www.beefbottle.com -> fetch failed:ENOTFOUND",
+        "https://beefbottle.com -> fetch failed:ENOTFOUND",
+        "https://www.beefn.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=beefn.com rejected: aggregator",
+        "https://beefn.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=beefn.com rejected: aggregator",
+        "https://www.beef.com -> 200",
+        "https://www.beef.com/ rejected: does not name target",
+        "https://beef.com -> 200",
+        "https://www.beef.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "Zurito",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.zurito.com -> 200",
+        "https://www.zurito.com/ rejected: no Boston address on page",
+        "https://zurito.com -> 200",
+        "https://www.zurito.com/ rejected: no Boston address on page"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "Dovetail",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.dovetail.com -> 200",
+        "https://dovetail.com/ rejected: no Boston address on page",
+        "https://dovetail.com -> 200",
+        "https://dovetail.com/ rejected: no Boston address on page"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "La Padrona",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.lapadrona.com -> 404",
+        "https://lapadrona.com -> 404"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "Tonino",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.tonino.com -> fetch failed:EAI_AGAIN",
+        "https://tonino.com -> fetch failed:EAI_AGAIN"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "Baleia",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.baleia.com -> 200",
+        "https://baleia.com -> 200"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "Carmelina's",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.carmelinas.com -> fetch failed:ENOTFOUND",
+        "https://carmelinas.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "Yunnan Kitchen",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.yunnankitchen.com -> 403",
+        "https://yunnankitchen.com -> 403",
+        "https://www.yunnan.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID",
+        "https://yunnan.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "Mooncusser",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.mooncusser.com -> fetch failed:EAI_AGAIN",
+        "https://mooncusser.com -> fetch failed:EAI_AGAIN"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "Taiwan Cafe",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.taiwancafe.com -> 200",
+        "https://www.taiwancafe.com/ rejected: parked",
+        "https://taiwancafe.com -> 200",
+        "https://taiwancafe.com/ rejected: parked",
+        "https://www.taiwan.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+        "https://taiwan.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+      ]
+    },
+    {
+      "market": "Boston",
+      "name": "Suya Joint",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.suyajoint.com -> 403",
+        "https://suyajoint.com -> 403",
+        "https://www.suya.com -> 408",
+        "https://suya.com -> 408"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Off Alley",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.offalley.com -> fetch failed:ENOTFOUND",
+        "https://offalley.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Il Nido",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.ilnido.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID",
+        "https://ilnido.com -> fetch failed:ERR_TLS_CERT_ALTNAME_INVALID"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Taurus Ox",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.taurusox.com -> 200",
+        "https://www.taurusox.com/ rejected: no Seattle address on page",
+        "https://taurusox.com -> 200",
+        "https://www.taurusox.com/ rejected: no Seattle address on page",
+        "https://www.taurus.com -> 200",
+        "https://taurus.com/ rejected: does not name target",
+        "https://taurus.com -> 200",
+        "https://taurus.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Bar del Corso",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.bardelcorso.com -> 200",
+        "https://www.bardelcorso.com/ rejected: no Seattle address on page",
+        "https://bardelcorso.com -> 200",
+        "https://www.bardelcorso.com/ rejected: no Seattle address on page",
+        "https://www.delcorso.com -> fetch failed:ECONNRESET",
+        "https://delcorso.com -> fetch failed:ECONNRESET",
+        "https://www.bardel.com -> 200",
+        "https://bardel.com -> 200"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Saint Bread",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.saintbread.com -> 200",
+        "https://www.saintbread.com/ rejected: no Seattle address on page",
+        "https://saintbread.com -> 200",
+        "https://www.saintbread.com/ rejected: no Seattle address on page",
+        "https://www.saint.com -> 200",
+        "https://www.saint.com/ rejected: does not name target",
+        "https://saint.com -> 200",
+        "https://saint.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Kilig",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.kilig.com -> 200",
+        "https://kilig.com -> 200"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Pancita",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.pancita.com -> fetch failed:ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR",
+        "https://pancita.com -> fetch failed:ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Atoma",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.atoma.com -> 200",
+        "https://www.atoma.com/ rejected: not a restaurant page",
+        "https://atoma.com -> 200",
+        "https://www.atoma.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Ramie",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.ramie.com -> 200",
+        "https://ramie.com/ rejected: not a restaurant page",
+        "https://ramie.com -> 200",
+        "https://ramie.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Beast and Cleaver",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.beastandcleaver.com -> 200",
+        "https://beastandcleaver.com/ rejected: no Seattle address on page",
+        "https://beastandcleaver.com -> 200",
+        "https://beastandcleaver.com/ rejected: no Seattle address on page",
+        "https://www.beastcleaver.com -> 200",
+        "https://www.beastcleaver.com/ rejected: does not name target",
+        "https://beastcleaver.com -> fetch failed:ENOTFOUND",
+        "https://www.beastand.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=beastand.com rejected: aggregator",
+        "https://beastand.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=beastand.com rejected: aggregator",
+        "https://www.beast.com -> fetch failed:ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE",
+        "https://beast.com -> 403"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Kamonegi",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.kamonegi.com -> 200",
+        "https://kamonegi.com -> 200"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Little Beast",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.littlebeast.com -> 200",
+        "https://www.littlebeast.com/ rejected: no Seattle address on page",
+        "https://littlebeast.com -> 200",
+        "https://www.littlebeast.com/ rejected: no Seattle address on page",
+        "https://www.little.com -> fetch failed:ENOTFOUND",
+        "https://little.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Seattle",
+      "name": "Phnom Penh Noodle House",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.phnompenhnoodlehouse.com -> fetch failed:DEPTH_ZERO_SELF_SIGNED_CERT",
+        "https://phnompenhnoodlehouse.com -> fetch failed:DEPTH_ZERO_SELF_SIGNED_CERT",
+        "https://www.phnompenhnoodle.com -> fetch failed:ENOTFOUND",
+        "https://phnompenhnoodle.com -> fetch failed:ENOTFOUND",
+        "https://www.phnompenh.com -> 200",
+        "https://phnompenh.com/ rejected: not a restaurant page",
+        "https://phnompenh.com -> 200",
+        "https://phnompenh.com/ rejected: not a restaurant page",
+        "https://www.phnom.com -> 200",
+        "https://phnom.com -> 200"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "Riddim N Spice",
+      "reason": "already in corpus"
+    },
+    {
+      "market": "Nashville",
+      "name": "Pinewood Social",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.pinewoodsocial.com -> 200",
+        "https://pinewoodsocial.com/ rejected: no Nashville address on page",
+        "https://pinewoodsocial.com -> 200",
+        "https://pinewoodsocial.com/ rejected: no Nashville address on page",
+        "https://www.pinewood.com -> 408",
+        "https://pinewood.com -> 408"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "Butchertown Hall",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.butchertownhall.com -> 200",
+        "https://www.butchertownhall.com/ rejected: no Nashville address on page",
+        "https://butchertownhall.com -> 200",
+        "https://www.butchertownhall.com/ rejected: no Nashville address on page",
+        "https://www.butchertown.com -> 200",
+        "https://butchertown.com -> 200"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "Redheaded Stranger",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.redheadedstranger.com -> fetch failed:EAI_AGAIN",
+        "https://redheadedstranger.com -> fetch failed:EAI_AGAIN",
+        "https://www.redheaded.com -> 200",
+        "https://redheaded.com/ rejected: does not name target",
+        "https://redheaded.com -> 200",
+        "https://redheaded.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "Hathorne",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.hathorne.com -> 200",
+        "https://www.hathorne.com/ rejected: does not name target",
+        "https://hathorne.com -> 200",
+        "https://www.hathorne.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "Soy Cubano",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.soycubano.com -> fetch failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+        "https://soycubano.com -> fetch failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "Xiao Bao",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.xiaobao.com -> fetch failed:ENOTFOUND",
+        "https://xiaobao.com -> fetch failed:ENOTFOUND",
+        "https://www.xiao.com -> 200",
+        "https://xiao.com -> 200"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "Osh",
+      "reason": "unresolved",
+      "tried": []
+    },
+    {
+      "market": "Nashville",
+      "name": "Edessa",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.edessa.com -> fetch failed:ENOTFOUND",
+        "https://edessa.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "The Southern Steak & Oyster",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.southernsteakandoyster.com -> fetch failed:ENOTFOUND",
+        "https://southernsteakandoyster.com -> fetch failed:ENOTFOUND",
+        "https://www.southernsteakoyster.com -> fetch failed:ENOTFOUND",
+        "https://southernsteakoyster.com -> fetch failed:ENOTFOUND",
+        "https://www.southernsteak.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=southernsteak.com rejected: aggregator",
+        "https://southernsteak.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=southernsteak.com rejected: aggregator",
+        "https://www.southern.com -> 403",
+        "https://southern.com -> 403"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "Kisser",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.kisser.com -> 200",
+        "https://www.kisser.com/ rejected: not a restaurant page",
+        "https://kisser.com -> 200",
+        "https://kisser.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "Nashville",
+      "name": "Gojo Ethiopian",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.gojoethiopian.com -> fetch failed:ENOTFOUND",
+        "https://gojoethiopian.com -> fetch failed:ENOTFOUND",
+        "https://www.gojo.com -> 403",
+        "https://gojo.com -> 403"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Saint-Germain",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.saintgermain.com -> fetch failed:EAI_AGAIN",
+        "https://saintgermain.com -> fetch failed:EAI_AGAIN"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Gautreau's",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.gautreaus.com -> fetch failed:ENOTFOUND",
+        "https://gautreaus.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Bacchanal Wine",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.bacchanalwine.com -> 200",
+        "https://www.bacchanalwine.com/ rejected: no New Orleans address on page",
+        "https://bacchanalwine.com -> 200",
+        "https://www.bacchanalwine.com/ rejected: no New Orleans address on page",
+        "https://www.bacchanal.com -> 200",
+        "https://bacchanal.com -> 200"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Paladar 511",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.paladar511.com -> 200",
+        "https://www.paladar511.com/ rejected: no New Orleans address on page",
+        "https://paladar511.com -> 200",
+        "https://www.paladar511.com/ rejected: no New Orleans address on page",
+        "https://www.paladar.com -> 200",
+        "https://www.paladar.com/ rejected: does not name target",
+        "https://paladar.com -> 200",
+        "https://paladar.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Charmant",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.charmant.com -> 200",
+        "https://www.charmant.com/ rejected: not a restaurant page",
+        "https://charmant.com -> 200",
+        "https://www.charmant.com/ rejected: not a restaurant page"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Coquette",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.coquette.com -> 200",
+        "https://coquette.com/ rejected: does not name target",
+        "https://coquette.com -> 200",
+        "https://coquette.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Palm and Pine",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.palmandpine.com -> 200",
+        "https://palmandpine.com -> 200",
+        "https://www.palmpine.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=palmpine.com rejected: aggregator",
+        "https://palmpine.com -> 200",
+        "https://www.hugedomains.com/domain_profile.cfm?d=palmpine.com rejected: aggregator",
+        "https://www.palmand.com -> 200",
+        "https://palmand.com -> 200",
+        "https://www.palm.com -> 200",
+        "https://palm.com/ rejected: does not name target",
+        "https://palm.com -> 200",
+        "https://palm.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Saint Claire",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.saintclaire.com -> 200",
+        "https://saintclaire.com/ rejected: not a restaurant page",
+        "https://saintclaire.com -> 200",
+        "https://saintclaire.com/ rejected: not a restaurant page",
+        "https://www.saint.com -> 200",
+        "https://www.saint.com/ rejected: does not name target",
+        "https://saint.com -> 200",
+        "https://saint.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Toups' Meatery",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.toupsmeatery.com -> 200",
+        "https://toupsmeatery.com/ rejected: no New Orleans address on page",
+        "https://toupsmeatery.com -> 200",
+        "https://toupsmeatery.com/ rejected: no New Orleans address on page",
+        "https://www.toups.com -> fetch failed:CERT_HAS_EXPIRED",
+        "https://toups.com -> fetch failed:CERT_HAS_EXPIRED"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Turkey and the Wolf",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.turkeyandthewolf.com -> 200",
+        "https://www.turkeyandthewolf.com/ rejected: no New Orleans address on page",
+        "https://turkeyandthewolf.com -> 200",
+        "https://www.turkeyandthewolf.com/ rejected: no New Orleans address on page",
+        "https://www.turkeywolf.com -> fetch failed:ENOTFOUND",
+        "https://turkeywolf.com -> fetch failed:ENOTFOUND",
+        "https://www.turkeyand.com -> 200",
+        "https://turkeyand.com -> 200",
+        "https://www.turkey.com -> 200",
+        "https://www.turkey.com/ rejected: does not name target",
+        "https://turkey.com -> 200",
+        "https://turkey.com/ rejected: does not name target"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Mosquito Supper Club",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.mosquitosupperclub.com -> 200",
+        "https://www.mosquitosupperclub.com/ rejected: no New Orleans address on page",
+        "https://mosquitosupperclub.com -> 200",
+        "https://www.mosquitosupperclub.com/ rejected: no New Orleans address on page",
+        "https://www.mosquito.com -> 200",
+        "https://www.mosquito.com/ rejected: not a restaurant page",
+        "https://mosquito.com -> 200",
+        "http://www.mosquito.com/ rejected: not a restaurant page",
+        "https://www.mosquitosupper.com -> fetch failed:ENOTFOUND",
+        "https://mosquitosupper.com -> fetch failed:ENOTFOUND"
+      ]
+    },
+    {
+      "market": "New Orleans",
+      "name": "Willie Mae's Scotch House",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.williemaesscotchhouse.com -> fetch failed:ENOTFOUND",
+        "https://williemaesscotchhouse.com -> 200",
+        "https://williemaesnola.com/ rejected: no New Orleans address on page",
+        "https://www.williemaesscotch.com -> fetch failed:ENOTFOUND",
+        "https://williemaesscotch.com -> fetch failed:ENOTFOUND",
+        "https://www.williemaes.com -> 200",
+        "https://williemaes.com -> 200",
+        "https://www.willie.com -> fetch failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+        "https://willie.com -> fetch failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      ]
+    },
+    {
+      "market": "San Francisco",
+      "name": "Wayfare Tavern",
+      "reason": "already in corpus"
+    },
+    {
+      "market": "San Francisco",
+      "name": "Nari",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.nari.com -> 200",
+        "https://nari.com -> 200"
+      ]
+    },
+    {
+      "market": "San Francisco",
+      "name": "Kin Khao",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.kinkhao.com -> 200",
+        "https://www.kinkhao.com/ rejected: no San Francisco address on page",
+        "https://kinkhao.com -> 200",
+        "https://www.kinkhao.com/ rejected: no San Francisco address on page"
+      ]
+    },
+    {
+      "market": "San Francisco",
+      "name": "Acquerello",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.acquerello.com -> fetch failed:EAI_AGAIN",
+        "https://acquerello.com -> fetch failed:EAI_AGAIN"
+      ]
+    },
+    {
+      "market": "San Francisco",
+      "name": "Sorrel",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.sorrel.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+        "https://sorrel.com -> fetch failed:UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+      ]
+    },
+    {
+      "market": "San Francisco",
+      "name": "Robin",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.robin.com -> 200",
+        "https://robin.com -> 200"
+      ]
+    },
+    {
+      "market": "San Francisco",
+      "name": "Besharam",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.besharam.com -> 200",
+        "https://besharam.com -> 200"
+      ]
+    },
+    {
+      "market": "San Francisco",
+      "name": "Ernest",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.ernest.com -> 408",
+        "https://ernest.com -> 408"
+      ]
+    },
+    {
+      "market": "San Francisco",
+      "name": "Liholiho Yacht Club",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.liholihoyachtclub.com -> fetch failed:ENOTFOUND",
+        "https://liholihoyachtclub.com -> 200",
+        "https://lycsf.com/ rejected: no San Francisco address on page",
+        "https://www.liholihoyacht.com -> fetch failed:ENOTFOUND",
+        "https://liholihoyacht.com -> fetch failed:ENOTFOUND",
+        "https://www.liholiho.com -> 408",
+        "https://liholiho.com -> 408"
+      ]
+    },
+    {
+      "market": "San Francisco",
+      "name": "Anchor Oyster Bar",
+      "reason": "unresolved",
+      "tried": [
+        "https://www.anchoroysterbar.com -> fetch failed:CERT_HAS_EXPIRED",
+        "https://anchoroysterbar.com -> fetch failed:CERT_HAS_EXPIRED",
+        "https://www.anchoroyster.com -> fetch failed:ENOTFOUND",
+        "https://anchoroyster.com -> fetch failed:ENOTFOUND",
+        "https://www.anchor.com -> 200",
+        "https://anchor.com -> 200"
+      ]
+    }
+  ]
+}
