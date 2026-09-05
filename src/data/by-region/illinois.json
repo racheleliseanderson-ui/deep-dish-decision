@@ -1,6 +1,6 @@
 {
   "regionGroup": "Illinois",
-  "count": 60,
+  "count": 62,
   "records": [
     {
       "id": 2100,
@@ -7094,6 +7094,232 @@
       "planningLoad": "Material",
       "bookingPaths": [
         "OpenTable"
+      ]
+    },
+    {
+      "id": 3578,
+      "slug": "twin-anchors-restaurant-tavern-chicago",
+      "title": "Twin Anchors Restaurant & Tavern",
+      "link": "",
+      "recordId": "RI-EXP-1499",
+      "origin": "expansion-seed",
+      "addedAt": "2026-09-04T19:27:04.339Z",
+      "address": "1655 N Sedgwick St, Chicago, IL 60614",
+      "phone": "+1-312-266-1616",
+      "email": "",
+      "website": "https://www.twinanchorsribs.com/",
+      "menuUrl": "https://www.twinanchorsribs.com/menu/",
+      "reservationUrl": "",
+      "coverageArea": "Chicago, Illinois",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Hours Sunday–Friday 10:00 PM–12:00 AM. Confirm seating by phone.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Hours as published on the restaurant's own pages: Sunday–Friday 10:00 PM–12:00 AM.",
+      "reservationDetails": "Not stated on the restaurant's own pages — reservation release and cancellation terms were not published. Confirm live before you commit.",
+      "priceDetails": "Price band $$ as published on the restaurant's own pages.",
+      "dietaryDetails": "Dietary wording from the restaurant's own pages: Appetizers & Sides Salads Sandwiches Entrées Kids Menu Desserts Drinks Sauces Appetizers & Sides The Gluten free icon indicates if there is a gluten free option for the menu item. · Salmon Fillet/Tuna Steak Zesty “Soy”natra Sandwich Vegetarian sloppy Joe made with Impossible™ “burger meat”, chopped green peppers, onions and tomatoes, simmered in Zesty or Prohibition sauce.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Reservation release pattern; Accessibility route detail; Private-dining terms; Parking and arrival logistics",
+      "unknownsCount": 4,
+      "unknownList": [
+        "Reservation release pattern",
+        "Accessibility route detail",
+        "Private-dining terms",
+        "Parking and arrival logistics"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-09-04",
+      "nextReviewAt": "2026-10-04",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 6,
+      "depthTotal": 12,
+      "depthLabel": "6 / 12 core fields",
+      "signals": {},
+      "region": "Chicago, IL",
+      "city": "Chicago",
+      "stateProvince": "Illinois",
+      "regionGroup": "Illinois",
+      "priceTags": [
+        "$$"
+      ],
+      "serviceStyles": [],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Phone"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "cuisineContext",
+        "reservation",
+        "accessibilityState",
+        "groupDetails",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 6,
+      "bookingPlatforms": [
+        "Phone"
+      ],
+      "cuisineTags": [],
+      "officialSource": "https://www.twinanchorsribs.com/",
+      "additionalSources": "https://www.twinanchorsribs.com/menu/ | https://www.twinanchorsribs.com/contact-us/",
+      "sources": [
+        "https://www.twinanchorsribs.com/",
+        "https://www.twinanchorsribs.com/menu/",
+        "https://www.twinanchorsribs.com/contact-us/"
+      ],
+      "retrievedAt": "2026-09-04T19:27:30.296Z",
+      "searchText": "twin anchors restaurant & tavern chicago illinois chicago, il not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. phone 1655 n sedgwick st, chicago, il 60614",
+      "spendBands": [
+        "$$"
+      ],
+      "daypartTags": [],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Phone"
+      ]
+    },
+    {
+      "id": 3579,
+      "slug": "the-wild-goose-bar-grill-chicago",
+      "title": "The Wild Goose Bar & Grill",
+      "link": "",
+      "recordId": "RI-EXP-1500",
+      "origin": "expansion-seed",
+      "addedAt": "2026-09-04T19:27:04.339Z",
+      "address": "4265 North Lincoln Avenue, Chicago, IL 60618",
+      "phone": "+1-773-281-7112",
+      "email": "",
+      "website": "https://www.wildgoosebar.com/",
+      "menuUrl": "https://www.ubereats.com/chicago/food-delivery/wild-goose-bar-%26-grill/f6ZLZUxFT7uoemd7y23XtQ",
+      "reservationUrl": "https://order.toasttab.com/online/wildgoose",
+      "coverageArea": "Chicago, Illinois",
+      "cuisineContext": "Not stated on the restaurant's own pages — cuisine was not named. Confirm live before you commit.",
+      "serviceSummary": "Reservations via Toast.",
+      "menuSummary": "A menu path is published on the restaurant's own site.",
+      "occasionFit": "Not stated on the restaurant's own pages — occasion fit is not independently reviewed beyond the stated fields. Confirm live before you commit.",
+      "hoursSummary": "Not stated on the restaurant's own pages — hours were not published. Confirm live before you commit.",
+      "reservationDetails": "Reservations via Toast on a path published by the restaurant.",
+      "priceDetails": "Not stated on the restaurant's own pages — menu prices were not published. Confirm live before you commit.",
+      "dietaryDetails": "Not stated on the restaurant's own pages — dietary and allergen handling were not published. Confirm live before you commit.",
+      "beverageDetails": "Not stated on the restaurant's own pages — the beverage program was not described. Confirm live before you commit.",
+      "groupDetails": "Not stated on the restaurant's own pages — group, private-dining, and large-party terms were not published. Confirm live before you commit.",
+      "atmosphereSummary": "Not stated on the restaurant's own pages — room character and noise were not described. Confirm live before you commit.",
+      "practicalNotes": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "accessibilityState": "Not stated on the restaurant's own pages — the physical-access route and restroom detail were not published. Confirm live before you commit.",
+      "parkingTransit": "Not stated on the restaurant's own pages — parking and transit were not published. Confirm live before you commit.",
+      "dressCode": "Not stated on the restaurant's own pages — a dress code was not published. Confirm live before you commit.",
+      "typicalMealLength": "Not stated on the restaurant's own pages — typical meal length was not published. Confirm live before you commit.",
+      "unknowns": "Live hours for your date; Dietary cross-contact handling; Accessibility route detail; Private-dining terms; Parking and arrival logistics; Current per-guest total",
+      "unknownsCount": 6,
+      "unknownList": [
+        "Live hours for your date",
+        "Dietary cross-contact handling",
+        "Accessibility route detail",
+        "Private-dining terms",
+        "Parking and arrival logistics",
+        "Current per-guest total"
+      ],
+      "disclaimer": "Fields below are taken from the restaurant's own public pages, or marked unstated when those pages were silent. Confirm live before booking.",
+      "sourceAuthority": "Official restaurant website / first-party page",
+      "confidence": "owned_site_leveled",
+      "freshnessStatus": "OWNED_SITE_REVIEWED",
+      "reviewedAt": "2026-09-04",
+      "nextReviewAt": "2026-10-04",
+      "reviewStatus": "current",
+      "fieldVolatility": "Hours, pricing and policy fields change without notice — reconfirm for your date.",
+      "nextAction": "Confirm hours, booking terms, and any field marked unstated live before you commit.",
+      "conflict": "",
+      "depthFilled": 4,
+      "depthTotal": 12,
+      "depthLabel": "4 / 12 core fields",
+      "signals": {},
+      "region": "Chicago, IL",
+      "city": "Chicago",
+      "stateProvince": "Illinois",
+      "regionGroup": "Illinois",
+      "priceTags": [],
+      "serviceStyles": [],
+      "dietaryTags": [
+        "Direct confirmation required"
+      ],
+      "accessibilityTags": [],
+      "reservationTags": [
+        "Reservations"
+      ],
+      "groupFitTags": [],
+      "checklist": [
+        "Confirm current hours directly",
+        "Confirm reservation release and cancellation terms",
+        "Confirm dietary handling with the kitchen",
+        "Confirm accessibility route and restroom detail",
+        "Verify parking or transit for arrival window",
+        "Check current menu prices"
+      ],
+      "hasPhone": true,
+      "hasOfficialConflict": false,
+      "isFullCaseFile": false,
+      "reviewDueSoon": false,
+      "thinFields": [
+        "hoursSummary",
+        "priceDetails",
+        "cuisineContext",
+        "dietaryDetails",
+        "accessibilityState",
+        "groupDetails",
+        "dressCode",
+        "atmosphereSummary"
+      ],
+      "thinFieldCount": 8,
+      "bookingPlatforms": [
+        "Toast",
+        "Phone"
+      ],
+      "cuisineTags": [],
+      "officialSource": "https://www.wildgoosebar.com/",
+      "additionalSources": "https://www.ubereats.com/chicago/food-delivery/wild-goose-bar-%26-grill/f6ZLZUxFT7uoemd7y23XtQ | https://order.toasttab.com/online/wildgoose",
+      "sources": [
+        "https://www.wildgoosebar.com/",
+        "https://www.ubereats.com/chicago/food-delivery/wild-goose-bar-%26-grill/f6ZLZUxFT7uoemd7y23XtQ",
+        "https://order.toasttab.com/online/wildgoose"
+      ],
+      "retrievedAt": "2026-09-04T19:27:30.296Z",
+      "searchText": "the wild goose bar & grill chicago illinois chicago, il not stated on the restaurant's own pages — cuisine was not named. confirm live before you commit. toast phone 4265 north lincoln avenue, chicago, il 60618",
+      "spendBands": [],
+      "daypartTags": [],
+      "planningLoad": "Standard",
+      "bookingPaths": [
+        "Toast",
+        "Phone"
       ]
     }
   ]

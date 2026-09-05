@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-04T15:02:32.093Z",
-  "builtAt": "2026-09-04T15:02:32Z",
-  "count": 1527,
+  "generatedAt": "2026-09-05T02:42:03.497Z",
+  "builtAt": "2026-09-05T02:42:03Z",
+  "count": 1538,
   "regions": 167,
   "source": "https://saltnotes.blog",
   "ops": {
     "overdue": 41,
     "dueSoon": 0,
-    "current": 1450,
+    "current": 1461,
     "officialConflicts": 11,
-    "thinRecords": 788,
-    "avgUnknowns": 5.07,
+    "thinRecords": 796,
+    "avgUnknowns": 5.08,
     "avgThinFields": 7.5,
-    "lastReviewAt": "2026-09-03",
-    "reachableAtLastReview": 827
+    "lastReviewAt": "2026-09-04",
+    "reachableAtLastReview": 837
   },
   "fullCaseFiles": 41,
   "listingOnly": 36,
@@ -514,6 +514,8 @@
     "Winston-Salem, NC": "North Carolina"
   },
   "cuisineTagOptions": [
+    " Pasta",
+    " Pizza",
     "Abruzzese",
     "Aegean",
     "Afghan",
@@ -695,6 +697,7 @@
     "Raw Bar",
     "Red Gravy",
     "Regional Indian",
+    "Restaurant",
     "Robata",
     "Roman",
     "Rustic Italian",
@@ -11517,6 +11520,83 @@
       "region": "San Francisco, CA",
       "regionGroup": "California",
       "city": "San Francisco"
+    },
+    {
+      "slug": "daikokuya-los-angeles",
+      "title": "Daikokuya",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "izakaya-gazen-los-angeles",
+      "title": "Izakaya Gazen",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "chi-dynasty-los-angeles",
+      "title": "Chi Dynasty",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "sushi-ai-los-angeles",
+      "title": "Sushi Ai",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "palermo-italian-restaurant-los-angeles",
+      "title": "Palermo Italian Restaurant",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "lucy-s-drive-in-los-angeles",
+      "title": "Lucy's Drive In",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "mr-ramen-los-angeles",
+      "title": "Mr. Ramen",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "guisados-los-angeles",
+      "title": "Guisados",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "the-highland-cafe-los-angeles",
+      "title": "The Highland Cafe",
+      "region": "Los Angeles, CA",
+      "regionGroup": "California",
+      "city": "Los Angeles"
+    },
+    {
+      "slug": "twin-anchors-restaurant-tavern-chicago",
+      "title": "Twin Anchors Restaurant & Tavern",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
+    },
+    {
+      "slug": "the-wild-goose-bar-grill-chicago",
+      "title": "The Wild Goose Bar & Grill",
+      "region": "Chicago, IL",
+      "regionGroup": "Illinois",
+      "city": "Chicago"
     }
   ]
 }
