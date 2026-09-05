@@ -54,3 +54,9 @@ dist-ssr
 # run so a bad pass can be undone; they are local safety, not source. 18.6 MB
 # of them from one afternoon in August had been committed and never left.
 .pipeline-snapshots/
+
+# Retired files live in GitHub/_TO_Delete, outside every repository, so git
+# never sees them and the delete scripts have one safe target. This entry is a
+# safety net only: if something ever lands in a repo-local _to_delete, it must
+# not be committed.
+_to_delete/
